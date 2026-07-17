@@ -1,0 +1,53 @@
+﻿##### d_zengshi ############################
+
+### c_zeng
+# ZENG
+393 = {
+	culture = xiaren
+	religion = xiali
+	holding = castle_holding
+}
+# ZHONGLI
+399 = {
+	holding = none
+}
+
+
+### c_cishi
+# CISHI
+396 = {
+	culture = xiaren
+	religion = xiali
+	holding = castle_holding
+}
+
+
+### c_ge1
+# GE1
+398 = {
+	culture = xiaren
+	religion = xiali
+	holding = castle_holding
+}
+
+
+##### d_xiaoshishi ############################
+
+### c_ji3
+# JI3
+380 = {
+	culture = xiaren
+	religion = xiali
+	holding = castle_holding
+}
+
+
+### c_xuqiu
+# XUQIU
+392 = {
+	culture = xiaren
+	religion = xiali
+	holding = castle_holding
+}
+
+

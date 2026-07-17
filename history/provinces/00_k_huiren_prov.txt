@@ -1,0 +1,100 @@
+﻿##### d_huishi ############################
+
+### c_yafu
+# YAFU
+3844 = {
+	holding = none
+}
+# CHANGPINGXIAN
+3847 = {
+	holding = none
+}
+# HUI1
+3845 = {
+	holding = none
+}
+
+
+### c_hui1
+
+
+### c_wangping
+# WANGPING
+3474 = {
+	holding = none
+}
+# CHILV
+3853 = {
+	holding = none
+}
+# XINAN
+3850 = {
+	holding = none
+}
+# ERMIAN
+3852 = {
+	holding = none
+}
+
+
+### c_nansu
+
+
+### c_xiepi
+
+
+### c_changpingxian
+
+
+### c_buduo
+
+
+### c_quechuan
+# QUECHUAN
+3849 = {
+	holding = none
+}
+
+
+### c_xinan
+
+
+### c_yugu
+
+
+### c_ermian
+# YUGU
+3851 = {
+	holding = none
+}
+# DABO
+3855 = {
+	holding = none
+}
+# BUDUO
+3848 = {
+	holding = none
+}
+
+
+### c_chilv
+# QIANGSHI
+3854 = {
+	holding = none
+}
+# XIEPI
+3846 = {
+	holding = none
+}
+# NANSU
+3477 = {
+	holding = none
+}
+
+
+### c_qiangshi
+
+
+### c_dabo
+
+

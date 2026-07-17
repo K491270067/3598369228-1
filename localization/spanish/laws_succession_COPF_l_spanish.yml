@@ -1,0 +1,29 @@
+﻿l_spanish:
+ feudal_governor_appointment_succession_law: "Governor Appointment Succession"
+ feudal_governor_appointment_succession_law_subname: "The candidate with the highest score shall inherits"
+ feudal_governor_appointment_succession_law_effects: "\n#V A form of [appointment_succession_law|E] under [feudal]. Under $feudal_governor_appointment_succession_law$, the [title|E] and associated [holdings|E] are assumed by the candidate with the highest [candidate_score|E].\n\n#!"
+
+ feudal_governor_promotion_succession_law: "Governor Promotion Succession"
+ feudal_governor_promotion_succession_law_subname: "The candidate promoted within the bureaucratic system shall inherits"
+ feudal_governor_promotion_succession_law_effects: "\n#V A form of [appointment_succession_law|E] under [feudal]. Under $feudal_governor_appointment_succession_law$, the [title|E] and associated [holdings|E] are assumed by an official promoted within the bureaucratic system.\n\n#!"
+
+ tt_succession_laws_must_be_governor_appointment: "Your succession law must be Governor Appointment Succession."
+ tt_succession_laws_must_not_be_locked_by_contracts: "Your succession law must not be locked by a [vassal_contract|E]."
+
+ tt_is_landed_other_ruler: "Landed [ruler|E] outside the realm"
+ tt_is_landed_direct_vassal: "Non de jure direct [vassal|E]"
+ tt_is_landed_dejure_direct_vassal: "De jure direct [vassal|E]"
+ tt_is_hereditary: "Is hereditary"
+ tt_is_clergy: "Is [clergy|E]"
+ tt_is_local_gentry: "Is local [noble_family|E]"
+
+ tt_is_liege_close_family: "[close_family|E] of the [holder]'s [liege|E]"
+ tt_is_liege_spouse_close_family: "[close_family|E] of the spouse of the [holder]'s [liege|E]"
+ tt_is_liege_extended_family: "[extended_family|E] of the [holder]'s [liege|E]"
+ tt_is_liege_friend: "[friend|E] of [holder]'s [liege|E]"
+ tt_is_liege_best_friend: "[best_friend|E] of [holder]'s [liege|E]"
+
+ tt_is_liege_culture: "Is of the [culture|E] of the [holder]'s [liege|E]"
+ tt_is_foreign_culture: "Is of a foreign [culture|E]"
+ tt_is_child: "Is a [child]"
+ tt_is_liege: "Is [holder]'s [liege|E]"

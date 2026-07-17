@@ -1,0 +1,95 @@
+﻿l_spanish:
+ # 君权 # ————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+ crown_authority_extended: "[crown_authority|E]"
+
+ crown_authority_legacy_head: "Legacy Head"
+ crown_authority_legacy_head_effects_not_in_prev: "$EFFECT_LIST_BULLET$All [titles], except the [primary_title|E] and the [capital|E] [county|E], will be usurped by your [regent|E]\n$EFFECT_LIST_BULLET$All hereditary [vassals|E] immediately declare autonomy\n$EFFECT_LIST_BULLET$All [governors|E] immediately adopt hereditary succession laws\n$EFFECT_LIST_BULLET$Cannot use #high Offer Vassalage#! [interaction|E]"
+
+ crown_authority_titular_liege: "Titular Liege"
+ crown_authority_titular_liege_effects_not_in_prev: "$EFFECT_LIST_BULLET$Disloyal [vassals|E] might declare autonomy\n$EFFECT_LIST_BULLET$Disloyal [governor|E] might adopt hereditary succession laws
+
+ crown_authority_extended_0: "Autonomous Vassals"
+ crown_authority_extended_0_effects_not_in_prev: "#weak Vassals provide [levies|E] and [taxes|E], but are otherwise free to do as they wish#!"
+
+ crown_authority_extended_1: "Limited Crown Authority"
+ crown_authority_extended_1_effects: "$EFFECT_LIST_BULLET$#indent_newline:3 Can establish [tributaries|E]#!\n$EFFECT_LIST_BULLET$#indent_newline:3 Rulers can change between available Partition [succession_laws|E]#!"
+
+ crown_authority_extended_2: "High Crown Authority"
+ crown_authority_extended_2_effects: "$EFFECT_LIST_BULLET$#indent_newline:3 Rulers can change between all available [succession_laws|E]#!\n$EFFECT_LIST_BULLET$#indent_newline:3 All Vassals who refuse Title revocation or Vassal retraction are considered [criminals|E]#!"
+
+ crown_authority_extended_3: "Absolute Crown Authority"
+ crown_authority_extended_3_effects: "$EFFECT_LIST_BULLET$Rulers can designate their [heir|E]"
+
+ tt_only_feudal_can_have_this: "Only [GetGovernment('feudal_admin_government').GetName] or [GetGovernment('feudal_admin_government').GetName] [rulers|E] can lose power this much"
+ tt_cannot_actively_lower_crown_authority_to_this_level: "You cannot actively lower Crown Authority to this level"
+ tt_cannot_have_diarch: "Must first dismiss the [regent|E]"
+
+ # 政策：封臣继承权 # ————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+ law_group_vassal_succession_rights_policy: "[vassal|E] Succession Rights Policy"
+ law_group_vassal_succession_rights_policy_singular: "[vassal|E] Succession Rights Policy"
+
+ law_vassal_succession_rights_policy_hereditary: "Traditional Hereditary"
+ law_vassal_succession_rights_policy_hereditary_subname: "Hereditary succession is the norm"
+ law_vassal_succession_rights_policy_hereditary_effects: "$EFFECT_LIST_BULLET$[vassals|E] who are newly conferred by #high Grant Titles#! will use #high [GetSubjectContractType( 'feudal_government_succession_rights' ).GetObligationName( 'feudal_succession_rights_hereditary' )]#! [vassal_contract|E]\n\n#flavor Power and property have been passed down through inheritance since time immemorial.#!"
+
+ law_vassal_succession_rights_policy_forced_partition: "Forced Partition"
+ law_vassal_succession_rights_policy_forced_partition_subname: "[title] partition succession is the norm"
+ law_vassal_succession_rights_policy_forced_partition_effects: "$EFFECT_LIST_BULLET$[vassals|E] who are newly conferred by #high Grant Titles#! will use #high [GetSubjectContractType( 'feudal_government_succession_rights' ).GetObligationName( 'feudal_succession_rights_forced_partition' )]#! [vassal_contract|E]\n\n#flavor All children should have a right to inherit; only then is it fair.#!"
+
+ law_vassal_succession_rights_policy_grant_recognition: "Granted Recognition"
+ law_vassal_succession_rights_policy_grant_recognition_subname: "Requiring [liege]'s recognition is the norm"
+ law_vassal_succession_rights_policy_grant_recognition_effects: "$EFFECT_LIST_BULLET$[vassals|E] who are newly conferred by #high Grant Titles#! will use #high [GetSubjectContractType( 'feudal_government_succession_rights' ).GetObligationName( 'feudal_succession_rights_grant_recognition' )]#! [vassal_contract|E]\n\n#flavor Investiture by the [liege] is a grant of favor, and the [vassal] must repay it with loyalty.#!"
+
+ law_vassal_succession_rights_policy_court_supervision: "Court Supervision"
+ law_vassal_succession_rights_policy_court_supervision_subname: "Supervised ruling of the [realm] is the norm"
+ law_vassal_succession_rights_policy_court_supervision_effects: "$EFFECT_LIST_BULLET$[vassals|E] who are newly conferred by #high Grant Titles#! will use #high [GetSubjectContractType( 'feudal_government_succession_rights' ).GetObligationName( 'feudal_succession_rights_court_supervision' )]#! [vassal_contract|E]\n\n#flavor Not everybody knows the art of ruling, some [vassals] need guidance from others.#!"
+
+ law_vassal_succession_rights_policy_governor_appointment: "Governor Appointment"
+ law_vassal_succession_rights_policy_governor_appointment_subname: "The appointment of governors is the norm"
+ law_vassal_succession_rights_policy_governor_appointment_effects: "$EFFECT_LIST_BULLET$[vassals|E] who are newly conferred by #high Grant Titles#! will use #high [GetSubjectContractType( 'feudal_government_succession_rights' ).GetObligationName( 'feudal_succession_rights_governor_appointment' )]#! [vassal_contract|E]\n\n#flavor Authority is not innate; only those capable of bearing responsibility are qualified to govern the [realm].#!"
+
+ # 政策：封臣头衔领地外继承 # ————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+ law_group_vassal_title_leave_realm_policy: "[title|E] Realm Succession Policy"
+ law_group_vassal_title_leave_realm_policy_singular: "[title|E] Realm Succession Policy"
+
+ law_vassal_title_leave_realm_policy_allowed: "Freely"
+ law_vassal_title_leave_realm_policy_allowed_subname: "[vassal]'s [titles] Can Be Inherited Freely"
+ law_vassal_title_leave_realm_policy_allowed_effects: "$EFFECT_LIST_BULLET$[vassals|E]' [titles|E] may be freely inherited by [characters] outside the [realm|E]."
+
+ law_vassal_title_leave_realm_policy_restricted: "Restricted"
+ law_vassal_title_leave_realm_policy_restricted_subname: "[vassal]'s [titles] Succession Restricted"
+ law_vassal_title_leave_realm_policy_restricted_effects: "$EFFECT_LIST_BULLET$[vassals|E]' [titles|E] [succession|E] is restricted within the [realm|E]"
+
+ # 政策：封臣头衔剥夺 # ————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+ law_group_vassal_revoke_title_policy: "[title|E] Revocation Policy"
+ law_group_vassal_revoke_title_policy_singular: "[title|E] Revocation Policy"
+
+ law_vassal_revoke_title_policy_prohibit_revoke: "Prohibited"
+ law_vassal_revoke_title_policy_prohibit_revoke_subname: "Prohibit Revoking [vassal] [title]"
+ law_vassal_revoke_title_policy_prohibit_revoke_effects: "$EFFECT_LIST_BULLET$Revoking a [vassal|E]'s [title|E] is prohibited\n$EFFECT_LIST_BULLET$Retracting a [vassal|E]'s [direct_vassal|E] is prohibited"
+
+ law_vassal_revoke_title_policy_allow_revoke: "Allowed"
+ law_vassal_revoke_title_policy_allow_revoke_subname: "Allow Revoking [vassal] [title]"
+ law_vassal_revoke_title_policy_allow_revoke_effects: "$EFFECT_LIST_BULLET$Revoking a [vassal|E]'s [title|E] is allowed\n$EFFECT_LIST_BULLET$Retracting a [vassal|E]'s [direct_vassal|E] is allowed"
+
+ has_law_allowing_title_revocation_policy: "You do not have [GetLaw('law_vassal_revoke_title_policy_allow_revoke').GetName] [vassal|E] [title|E] Policy"
+
+ # 政策：封臣战争 # ————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+ law_group_vassal_war_policy: "[vassal|E] War Policy"
+ law_group_vassal_war_policy_singular: "[vassal|E] War Policy"
+
+ law_vassal_war_policy_no_restriction: "No Restrictions"
+ law_vassal_war_policy_no_restriction_subname: "[vassals]' [wars] delcaring is Unrestricted"
+ law_vassal_war_policy_no_restriction_effects: "$EFFECT_LIST_BULLET$[vassal|E] may declare any type of [war|E] without restriction"
+
+ law_vassal_war_policy_prohibit_internal_wars: "Internal Wars Prohibited"
+ law_vassal_war_policy_prohibit_internal_wars_subname: "[vassals] are Prohibited from Internal [wars]"
+ law_vassal_war_policy_prohibit_internal_wars_effects: "$EFFECT_LIST_BULLET$[vassal|E] is restricted from declaring [war|E] against fellow vassals"
+
+ law_vassal_war_policy_prohibit_all_wars: "All Wars Prohibited"
+ law_vassal_war_policy_prohibit_all_wars_subname: "[vassals] are Prohibited from All [wars]"
+ law_vassal_war_policy_prohibit_all_wars_effects: "$EFFECT_LIST_BULLET$[vassal|E] is restricted from declaring any type of [war|E]"
+
+ law_vassal_war_policy_permanent_prohibit_all_wars: "Prohibited Permenently"
+ law_vassal_war_policy_permanent_prohibit_all_wars_subname: "[vassals] are Permenently Prohibited from All [wars]"
+ law_vassal_war_policy_permanent_prohibit_all_wars_effects: "$EFFECT_LIST_BULLET$[vassals|E] is restricted from declaring any type of [war|E] regardless of situations\n$EFFECT_LIST_BULLET$[vassals|E]' #high [GetSubjectContractType( 'war_declaration_rights' ).GetObligationName( 'war_declaration_rights_allowed' )]#! [vassal_contract|E] will be revoked."

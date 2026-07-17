@@ -1,0 +1,122 @@
+﻿heritage_zhouren = {
+	type = heritage
+	is_shown = {
+		heritage_is_shown_trigger = {
+			HERITAGE = heritage_zhouren
+		}
+	}
+	audio_parameter = sea
+}
+heritage_dongyiren = {
+	type = heritage
+	is_shown = {
+		heritage_is_shown_trigger = {
+			HERITAGE = heritage_dongyi
+		}
+	}
+	audio_parameter = sea
+}
+heritage_shangren = {
+	type = heritage
+	is_shown = {
+		heritage_is_shown_trigger = {
+			HERITAGE = heritage_shangren
+		}
+	}
+	audio_parameter = sea
+}
+heritage_xiaren = {
+	type = heritage
+	is_shown = {
+		heritage_is_shown_trigger = {
+			HERITAGE = heritage_xiaren
+		}
+	}
+	audio_parameter = sea
+}
+heritage_huaxiaxianmin = {
+	type = heritage
+	is_shown = {
+		heritage_is_shown_trigger = {
+			HERITAGE = heritage_huaxiaxianmin
+		}
+	}
+	audio_parameter = sea
+}
+heritage_xirong = {
+	type = heritage
+	is_shown = {
+		heritage_is_shown_trigger = {
+			HERITAGE = heritage_xirong
+		}
+	}
+	audio_parameter = sea
+}
+heritage_beidi = {
+	type = heritage
+	is_shown = {
+		heritage_is_shown_trigger = {
+			HERITAGE = heritage_beidi
+		}
+	}
+	audio_parameter = sea
+}
+heritage_jingchu = {
+	type = heritage
+	is_shown = {
+		heritage_is_shown_trigger = {
+			HERITAGE = heritage_jingchu
+		}
+	}
+	audio_parameter = sea
+}
+
+heritage_baiyue = {
+	type = heritage
+	is_shown = {
+		heritage_is_shown_trigger = {
+			HERITAGE = heritage_baiyue
+		}
+	}
+	audio_parameter = sea
+}
+
+heritage_baipu = {
+	type = heritage
+	is_shown = {
+		heritage_is_shown_trigger = {
+			HERITAGE = heritage_baipu
+		}
+	}
+	audio_parameter = sea
+}
+
+heritage_xinanyi = {
+	type = heritage
+	is_shown = {
+		heritage_is_shown_trigger = {
+			HERITAGE = heritage_xinanyi
+		}
+	}
+	audio_parameter = sea
+}
+
+heritage_dongbeiyi = {
+	type = heritage
+	is_shown = {
+		heritage_is_shown_trigger = {
+			HERITAGE = heritage_dongbeiyi
+		}
+	}
+	audio_parameter = sea
+}
+
+heritage_fusang = {
+	type = heritage
+	is_shown = {
+		heritage_is_shown_trigger = {
+			HERITAGE = heritage_fusang
+		}
+	}
+	audio_parameter = sea
+}

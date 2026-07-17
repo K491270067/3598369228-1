@@ -1,0 +1,323 @@
+﻿########## 夏朝世系--姒姓夏后氏 ###########
+han1362={
+  name="qi13"#夏朝君主，禹的继位之子
+  dynasty_house=house_xin58
+	religion="xiali" 
+	culture="xiaren"
+  father=han1337
+  mother=tushanshi3
+
+  2528.1.1 = {
+		birth = yes
+	}
+  2568.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1363={
+  name="nanming221"#太康失国的那个人
+  dynasty_house=house_xin58
+	religion="xiali" 
+	culture="xiaren"
+  father=han1362
+
+  2548.1.1 = {
+		birth = yes
+	}
+  2594.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1365={
+  name="nanming223"#非夏朝君主
+  dynasty_house=house_xin58
+	religion="xiali" 
+	culture="xiaren"
+  father=han1362
+
+  2552.1.1 = {
+		birth = yes
+	}
+  2567.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1366={
+  name="nanming224"#一作仲康或仲卢，启之子，太康之弟，夏朝第四任君主。
+  dynasty_house=house_xin58
+	religion="xiali" 
+	culture="xiaren"
+  father=han1362
+
+  2553.1.1 = {
+		birth = yes
+	}
+  2610.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1367={
+  name="nanming225"#历史记载有武观之乱，为启的第五子
+  dynasty=xin499
+	religion="xiali" 
+	culture="xiaren"
+  father=han1362
+
+  2553.1.2 = {
+		birth = yes
+	}
+  2572.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1368={
+  name="xiang3"
+  dynasty_house=house_xin58
+	religion="xiali" 
+	culture="xiaren"
+  father=han1366
+
+  2573.1.1 = {
+		birth = yes
+	}
+  2647.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1370={
+  name="nanming227"
+  dynasty_house=house_xin377
+	religion="xiali" 
+	culture="xiaren"
+  father=donglai32
+
+  2610.1.1 = {
+		birth = yes
+	}
+  2688.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+#夏后复国
+han1371={
+  name="nanming228"
+  dynasty_house=house_xin58
+	religion="xiali" 
+	culture="xiaren"
+  father=han1368
+
+  2647.12.30 = {
+		birth = yes
+	}
+  2708.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1372={
+  name="zhu2"
+  dynasty_house=house_xin58
+	religion="xiali" 
+	culture="xiaren"
+  father=han1371
+
+  2680.1.1 = {
+		birth = yes
+	}
+  2725.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1373={
+  name="nanming229"
+  dynasty_house=house_xin58
+	religion="xiali" 
+	culture="xiaren"
+  father=han1372
+
+  2710.1.1 = {
+		birth = yes
+	}
+  2768.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1374={
+  name="nanming230"
+  dynasty_house=house_xin58
+	religion="xiali" 
+	culture="xiaren"
+  father=han1373
+
+  2740.1.1 = {
+		birth = yes
+	}
+  2812.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1375={
+  name="xie2"
+  dynasty_house=house_xin58
+	religion="xiali" 
+	culture="xiaren"
+  father=han1374
+
+  2790.1.1 = {
+		birth = yes
+	}
+  2830.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1376={
+  name="nanming231"
+  dynasty_house=house_xin58
+	religion="xiali" 
+	culture="xiaren"
+  father=han1375
+
+  2810.1.1 = {
+		birth = yes
+	}
+  2889.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1377={
+  name="nanming232"
+  dynasty_house=house_xin58
+	religion="xiali" 
+	culture="xiaren"
+  father=han1375
+
+  2822.1.1 = {
+		birth = yes
+	}
+  2910.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1378={
+  name="nanming233"
+  dynasty_house=house_xin58
+	religion="xiali" 
+	culture="xiaren"
+  father=han1377
+
+  2870.12.1 = {
+		birth = yes
+	}
+  2930.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1379={
+  name="nanming234"
+  dynasty_house=house_xin58
+	religion="xiali" 
+	culture="xiaren"
+  father=han1376
+
+  2888.12.1 = {
+		birth = yes
+	}
+  2939.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1380={
+  name="gao1"
+  dynasty_house=house_xin58
+	religion="xiali" 
+	culture="xiaren"
+  father=han1379
+
+  2930.1.1 = {
+		birth = yes
+	}
+  2952.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1381={
+  name="fa"
+  dynasty_house=house_xin58
+	religion="xiali" 
+	culture="xiaren"
+  father=han1380
+
+  2948.1.1 = {
+		birth = yes
+	}
+  2969.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1382={
+  name="nanming235"#桀，夏朝最后一代君主
+  dynasty_house=house_xin58
+	religion="xiali" 
+	culture="xiaren"
+  father=han1381
+
+  2966.1.1 = {
+		birth = yes
+	}
+  3028.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1383={
+  name="nanming236"#又名熏育，《史记》载淳维为夏桀妾之子，妺喜为其后母，匈奴先祖，传说匈奴是淳维北逃所建。
+  dynasty_house=house_xin58
+	religion="xiali" 
+	culture="xiaren"
+  father=han1382
+
+  3010.1.1 = {
+		birth = yes
+	}
+  3067.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}

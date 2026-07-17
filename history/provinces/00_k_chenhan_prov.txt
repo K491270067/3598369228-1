@@ -1,0 +1,119 @@
+﻿##### d_piaoshi ############################
+
+### c_silu
+# SILU
+3384 = {
+	holding = none
+}
+
+
+### c_youyou
+
+
+### c_weizhen
+
+
+### c_youling
+
+
+### c_zhulan
+# YOUYOU
+3385 = {
+	holding = none
+}
+# YOULING
+3439 = {
+	holding = none
+}
+
+
+### c_bihuo
+
+
+### c_ezhi
+
+
+### c_jiezhibian
+
+
+### c_lipu
+
+
+### c_yuhuo
+
+
+### c_qinshe
+# QINSHE
+3387 = {
+	holding = none
+}
+# NANMILIMIDONG
+3388 = {
+	holding = none
+}
+# BANLU
+3399 = {
+	holding = none
+}
+
+
+### c_nanmilimidong
+
+
+### c_guzimidong
+
+
+### c_guchunshi
+
+
+### c_gaosigeyi
+
+
+### c_jiahai
+
+
+### c_jiayou
+
+
+### c_lanshan
+
+
+### c_linfeng
+
+
+### c_maigu
+
+
+### c_gusima
+# GUCHUNSHI
+3400 = {
+	holding = none
+}
+# GUZIMIDONG
+3398 = {
+	holding = none
+}
+
+
+### c_yizhi1
+
+
+### c_rexi
+
+
+### c_gaoqiu
+
+
+### c_ranxi
+
+
+### c_daodonghuo
+
+
+### c_xihuo
+# RANXI
+3386 = {
+	holding = none
+}
+
+

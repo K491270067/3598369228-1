@@ -1,0 +1,53 @@
+﻿##### d_feishi ############################
+
+### c_fei2
+# FEI2
+510 = {
+	culture = lu
+	religion = xizhouli
+	holding = castle_holding
+}
+# PINGLE
+2394 = {
+	holding = none
+}
+
+
+### c_fangyu
+# FANGYU
+515 = {
+	culture = lu
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_jian1
+# JIAN1
+2395 = {
+	culture = lu
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+##### d_xianqiushi ############################
+
+### c_zhou4
+# ZHOU4
+2396 = {
+	culture = lu
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_suo3
+# SUO3
+2397 = {
+	culture = lu
+	religion = xizhouli
+	holding = castle_holding
+}
+
+

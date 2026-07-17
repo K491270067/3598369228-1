@@ -1,0 +1,566 @@
+﻿# 给予封臣自治权 # ————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+interaction_grant_vassal_autonomy = {
+	category = interaction_category_vassal
+	common_interaction = no
+	interface_priority = 150
+
+	name = interaction_grant_vassal_autonomy_name
+	desc = interaction_grant_vassal_autonomy_desc
+	icon = icon_banner_copf
+	greeting = positive
+	notification_text = BECOME_TRIBUTARY_INTERACTION_NOTIFICATION
+
+	ai_maybe = no
+	can_send_despite_rejection = yes
+	popup_on_receive = no
+	pause_on_receive = no
+
+	# 对【发起者】是否显示及可用：
+	is_available = {
+		is_ai = no
+		is_independent_ruler = yes
+		OR = {
+			government_has_flag = government_is_feudal
+			government_has_flag = government_is_feudal_admin
+		}
+	}
+	# 是否显示：
+	is_shown = {
+		scope:recipient = {
+			is_landed = yes
+			OR = {
+				government_has_flag = government_is_feudal
+				government_has_flag = government_is_feudal_admin
+			}
+			is_vassal_of = scope:actor 							# 是直属封臣
+			highest_held_title_tier >= tier_county				# 必须是伯爵或者以上
+		}
+	}
+	# 是否可用（仅显示未满足条件）：
+	is_valid_showing_failures_only = {
+		scope:recipient = {
+			custom_tooltip = {
+				text = tt_cannot_grant_autonomy_to_feudal_governor
+				NOT = { subject_contract_has_flag = succession_rights_governor_appointment }
+			}
+		}
+		scope:actor = {
+			is_at_war = no
+		}
+	}
+
+	send_option = {
+		flag = autonomy_vassal_military
+		localization = autonomy_vassal_military
+	}
+	send_option = {
+		flag = autonomy_vassal_tax
+		localization = autonomy_vassal_tax
+	}
+	send_option = {
+		flag = autonomy_vassal_nominal
+		localization = autonomy_vassal_nominal
+	}
+
+	# 接收者自动同意
+	auto_accept = yes
+	# 同意后效果：
+	on_accept = {
+		hidden_effect = {
+			scope:recipient = {
+				create_title_and_vassal_change = {
+					type = independency
+					save_scope_as = change
+					add_claim_on_loss = no
+				}
+				becomes_independent = {
+					change = scope:change
+				}
+				resolve_title_and_vassal_change = scope:change
+			}
+		}
+		scope:recipient = {
+			start_tributary = {
+				contract_group = feudal_autonomous_vassal
+				suzerain = scope:actor
+			}
+			hidden_effect = {
+				if = {
+					limit = { is_tributary_of = scope:actor } # 加个IF是为了消除错误报告
+					# 边区
+					if = {
+						limit = { scope:autonomy_vassal_military = yes }
+						tributary_contract_set_obligation_level = {
+							type = contract_feudal_autonomous_taxes
+							level = 0
+						}
+						tributary_contract_set_obligation_level = {
+							type = contract_feudal_liege_offer_protection
+							level = 1
+						}
+						tributary_contract_set_obligation_level = {
+							type = contract_feudal_vassal_support_war
+							level = 1
+						}
+						add_opinion = {
+							target = scope:actor
+							modifier = opinion_granted_autonomy
+						}
+					}
+					# 税区
+					else_if = {
+						limit = { scope:autonomy_vassal_tax = yes }
+						tributary_contract_set_obligation_level = {
+							type = contract_feudal_autonomous_taxes
+							level = 4
+						}
+						tributary_contract_set_obligation_level = {
+							type = contract_feudal_liege_offer_protection
+							level = 1
+						}
+						tributary_contract_set_obligation_level = {
+							type = contract_feudal_vassal_support_war
+							level = 0
+						}
+						add_opinion = {
+							target = scope:actor
+							modifier = opinion_granted_autonomy
+						}
+					}
+					# 名义封臣
+					else_if = {
+						limit = { scope:autonomy_vassal_nominal = yes }
+						tributary_contract_set_obligation_level = {
+							type = contract_feudal_autonomous_taxes
+							level = 1
+						}
+						tributary_contract_set_obligation_level = {
+							type = contract_feudal_liege_offer_protection
+							level = 0
+						}
+						tributary_contract_set_obligation_level = {
+							type = contract_feudal_vassal_support_war
+							level = 0
+						}
+						add_opinion = {
+							target = scope:actor
+							modifier = opinion_granted_full_autonomy
+						}
+					}
+				}
+			}
+			show_as_tooltip = {
+				# 边区
+				if = {
+					limit = { scope:autonomy_vassal_military = yes }
+					vassal_contract_set_obligation_level = {
+						type = contract_feudal_autonomous_taxes
+						level = 0
+					}
+					vassal_contract_set_obligation_level = {
+						type = contract_feudal_liege_offer_protection
+						level = 1
+					}
+					vassal_contract_set_obligation_level = {
+						type = contract_feudal_vassal_support_war
+						level = 1
+					}
+					add_opinion = {
+						target = scope:actor
+						modifier = opinion_granted_autonomy
+					}
+				}
+				# 税区
+				else_if = {
+					limit = { scope:autonomy_vassal_tax = yes }
+					vassal_contract_set_obligation_level = {
+						type = contract_feudal_autonomous_taxes
+						level = 4
+					}
+					vassal_contract_set_obligation_level = {
+						type = contract_feudal_liege_offer_protection
+						level = 1
+					}
+					vassal_contract_set_obligation_level = {
+						type = contract_feudal_vassal_support_war
+						level = 0
+					}
+					add_opinion = {
+						target = scope:actor
+						modifier = opinion_granted_autonomy
+					}
+				}
+				# 名义封臣
+				else_if = {
+					limit = { scope:autonomy_vassal_nominal = yes }
+					vassal_contract_set_obligation_level = {
+						type = contract_feudal_autonomous_taxes
+						level = 1
+					}
+					vassal_contract_set_obligation_level = {
+						type = contract_feudal_liege_offer_protection
+						level = 0
+					}
+					vassal_contract_set_obligation_level = {
+						type = contract_feudal_vassal_support_war
+						level = 0
+					}
+					add_opinion = {
+						target = scope:actor
+						modifier = opinion_granted_full_autonomy
+					}
+				}
+			}
+		}
+	}
+	# AI接收者是否瞬间回复
+	ai_instant_response = yes
+
+	# AI考虑目标
+	ai_targets = {
+		ai_recipients = vassals # 类型：封臣
+	}
+	# AI考虑频率（月）
+	ai_frequency = 24
+	# AI考虑因素（最高100）
+	ai_will_do = {
+		base = 0
+
+		# 倾向于释放军力过强的封臣
+		modifier = {
+			add = {
+				value = scope:recipient.max_military_strength
+				divide = scope:actor.max_military_strength
+				multiply = 25
+			}
+		}
+
+		# 如果对方不忠（+25/+50）
+		modifier = {
+			years_from_game_start >= 1
+			scope:recipient = {
+				opinion = {
+					target = scope:actor
+					value <= 0
+				}
+			}
+			add = 25
+		}
+		modifier = {
+			years_from_game_start >= 1
+			scope:recipient = {
+				opinion = {
+					target = scope:actor
+					value <= -50
+				}
+			}
+			add = 25
+		}
+		# 我不喜欢对方（-25/-50）
+		modifier = {
+			years_from_game_start >= 1
+			scope:actor = {
+				opinion = {
+					target = scope:recipient
+					value <= 0
+				}
+			}
+			add = -35
+		}
+		modifier = {
+			years_from_game_start >= 1
+			scope:actor = {
+				opinion = {
+					target = scope:recipient
+					value <= -50
+				}
+			}
+			add = -35
+		}
+
+		# 倾向于将强力封臣释放为自治封臣（+15）
+		modifier = {
+			years_from_game_start >= 1
+			scope:recipient = {
+				is_powerful_vassal_of = scope:actor
+			}
+			add = 15
+		}
+	}
+}
+# 隐藏互动：召唤自治封臣加入所有战争 # ————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+interaction_call_autonomous_vassal = {
+	category = interaction_category_vassal
+	desc = call_ally_interaction_desc
+	interface_priority = 200
+	icon = alliance
+
+	greeting = positive
+	notification_text = CALL_ALLY_NOTIFICATION
+
+	hidden = yes
+
+	# 是否显示：
+	is_shown = {
+		scope:recipient = {
+			NOT = { is_at_war_with = scope:actor }
+			is_tributary_of = scope:actor
+			has_subject_contract_group = feudal_autonomous_vassal
+		}
+	}
+	# 是否可用（仅显示未满足条件）：
+	is_valid_showing_failures_only = {
+		scope:actor = {
+			is_at_war = yes
+			custom_tooltip = {
+				text = tt_autonomous_vassal_already_in_all_wars
+				any_character_war = {
+					scope:recipient = {
+						NOR = {
+							is_at_war_with = prev.primary_attacker
+							is_at_war_with = prev.primary_defender
+						}
+					}
+				}
+			}
+		}
+		scope:recipient = {
+			NOT = { is_at_war_with = scope:actor }
+			custom_tooltip = {
+				text = tt_autonomous_vassal_no_war_obligation
+				subject_contract_has_flag = obligation_contract_feudal_vassal_support_war_forced
+			}
+		}
+	}
+	# 发送时效果：
+	on_send = {
+		if = {
+			limit = { scope:recipient = { is_ai = no } }
+			scope:actor = { save_scope_as = target_liege }
+			scope:recipient = {
+				save_scope_as = target_vassal
+				trigger_event = {
+					id = feudal_autonomous_vassal.1
+					delayed = yes
+				}
+			}
+		}
+	}
+	# 同意后效果：
+	on_accept = {
+		if = {
+			limit = { scope:recipient = { is_ai = yes } }
+			scope:actor = {
+				every_character_war = {
+					if = {
+						limit = { scope:recipient = { NOT = { is_participant_in_war = prev } } }
+						if = {
+							limit = { scope:actor = primary_attacker }
+							add_attacker = scope:recipient
+						}
+						else_if = {
+							limit = { scope:actor = primary_defender }
+							add_defender = scope:recipient
+						}
+					}
+				}
+			}
+		}
+	}
+	# 拒绝后效果：
+	on_decline = {
+		scope:recipient = { save_scope_as = target_vassal }
+		scope:actor = {
+			save_scope_as = target_liege
+			trigger_event = feudal_autonomous_vassal.2
+		}
+	}
+	# AI接受可能性（高于0则接受）：
+	ai_accept = {
+		base = 25
+
+		# 自治封臣有“封臣支援战争”契约
+		modifier = {
+			desc = tt_autonomous_vassal_support_war_forced
+			
+			scope:recipient = {
+				is_tributary_of = scope:actor
+				has_subject_contract_group = feudal_autonomous_vassal
+				subject_contract_has_flag = obligation_contract_feudal_vassal_support_war_forced
+			}
+			add = 25
+		}
+		# 自治封臣没有“封臣支援战争”契约
+		modifier = {
+			desc = tt_autonomous_vassal_no_war_obligation
+			
+			scope:recipient = {
+				is_tributary_of = scope:actor
+				has_subject_contract_group = feudal_autonomous_vassal
+				NOT = { subject_contract_has_flag = obligation_contract_feudal_vassal_support_war_forced }
+			}
+			add = -200
+		}
+		# 【自治封臣】和【领主】军力对比
+		modifier = {
+			desc = tt_autonomous_vassal_army_strength_relative_to_liege
+
+			scope:recipient = {
+				is_tributary_of = scope:actor
+				has_subject_contract_group = feudal_autonomous_vassal
+			}
+			# 【自治封臣】军力一旦高于【领主】军力的50%，之后每多10%就-10意愿
+			add = {
+				value = scope:recipient.max_military_strength
+				divide = scope:actor.max_military_strength
+				subtract = 0.5
+				multiply = -100
+			}
+		}
+		# 【自治封臣】对【领主】的好感度
+		opinion_modifier = {
+			who = scope:recipient
+			opinion_target = scope:actor
+			multiplier = 1.0
+			desc = AI_OPINION_REASON
+		}
+		# 荣耀
+		ai_value_modifier = {
+			ai_honor = 1
+			min = 0
+		}
+	}
+}
+# 隐藏互动：自治封臣召唤领主加入所有战争 # ————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+interaction_autonomous_vassal_call_liege = {
+	category = interaction_category_vassal
+	desc = call_ally_interaction_desc
+	interface_priority = 200
+	icon = alliance
+
+	greeting = positive
+	notification_text = CALL_ALLY_NOTIFICATION
+
+	hidden = yes
+
+	# 是否显示：
+	is_shown = {
+		scope:actor = {
+			has_subject_contract_group = feudal_autonomous_vassal
+		}
+		scope:recipient = {
+			NOT = { is_at_war_with = scope:actor } 	# 【接收者】不能在和【发起者】的战争中
+			this = scope:actor.suzerain				# 【接收者】是【发起者】的宗主
+		}
+	}
+	# 是否可用（仅显示未满足条件）：
+	is_valid_showing_failures_only = {
+		scope:actor = {
+			is_at_war = yes
+			custom_tooltip = { # 【发起者】需要有“强制领主保护封臣”契约
+				text = tt_autonomous_vassal_no_war_obligation
+				subject_contract_has_flag = obligation_feudal_liege_offer_protection_forced
+			}
+			custom_tooltip = {
+				text = tt_liege_already_in_all_wars
+				# 【发起者】的任何战争：
+				any_character_war = {
+					# 【发起者】是主要防御者
+					primary_defender = scope:actor
+					scope:recipient = {
+						# 【接收者】不能已经和这场战争的敌人敌对
+						NOT = { is_at_war_with = prev.primary_attacker }
+						# 如果：敌方和【发起者】处在同一领地：
+						trigger_if = {
+							limit = { 
+								prev.primary_attacker = {
+									is_tributary = yes
+									has_subject_contract_group = feudal_autonomous_vassal
+									suzerain ?= scope:recipient
+								}
+							}
+							# 那么：他们共同的领主不能有【封臣禁止内部战争】法律
+							OR = {
+								has_realm_law_flag = vassal_internal_wars_banned
+								has_realm_law_flag = vassal_all_wars_banned
+							}
+							prev.primary_attacker = { NOT = { vassal_contract_has_flag = vassal_contract_war_override } }
+						}
+					}
+				}
+			}
+		}
+		scope:recipient = {
+			NOT = { is_at_war_with = scope:actor } # 【接收者】不能在和【发起者】的战争中
+		}
+	}
+	# 同意后效果：
+	on_accept = {
+		scope:actor = {
+			every_character_war = {
+				limit = {
+					primary_defender = scope:actor
+					scope:recipient = {
+						NOT = { is_participant_in_war = prev }
+						trigger_if = {
+							limit = { 
+								prev.primary_attacker = {
+									is_tributary = yes
+									has_subject_contract_group = feudal_autonomous_vassal
+									suzerain ?= scope:recipient
+								}
+							}
+							NOR = {
+								has_realm_law_flag = vassal_internal_wars_banned
+								has_realm_law_flag = vassal_all_wars_banned
+							}
+						}
+					}
+				}
+				add_defender = scope:recipient
+			}
+		}
+	}
+	# 拒绝后效果：
+	on_decline = {
+		scope:actor = {
+			trigger_event = call_ally.0101
+		}
+	}
+	# AI接受可能性（高于0则接受）：
+	ai_accept = {
+		base = 25
+		# 自治封臣有“封臣支援战争”契约
+		modifier = {
+			desc = tt_autonomous_vassal_support_war_forced
+			
+			scope:actor = {
+				subject_contract_has_flag = obligation_feudal_liege_offer_protection_forced
+				is_tributary_of = scope:recipient
+			}
+			add = 40
+		}
+		# 自治封臣没有“封臣支援战争”契约
+		modifier = {
+			desc = tt_autonomous_vassal_no_war_obligation
+			
+			scope:actor = {
+				NOT = { subject_contract_has_flag = obligation_feudal_liege_offer_protection_forced }
+				is_tributary_of = scope:recipient
+			}
+			add = -200
+		}
+		# 【领主】对【自治封臣】的好感度
+		opinion_modifier = {
+			who = scope:recipient
+			opinion_target = scope:actor
+			multiplier = 1.0
+			desc = AI_OPINION_REASON
+		}
+		# 荣耀
+		ai_value_modifier = {
+			ai_honor = 1
+			min = 0
+		}
+	}
+}

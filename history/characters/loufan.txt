@@ -1,0 +1,429 @@
+﻿#############  妤肩儲鍥?-鐕曚含鎴庡浗鍒嗘敮 妤肩儲濮?#############
+#鍙傝€冭祫鏂欍€婃矀宸炴棩鎶ャ€嬩腑鐨勩€婄嚂浜垘涓庢ゼ鐑︺€?
+#绾﹀湪鏄ョ涔嬮檯寤哄浗
+han2692={
+  name="ying5"
+  dynasty=xin213
+	religion="saman" 
+	culture="beirong" 
+	father=yunxingyanjingrong7
+
+  3693.1.1 = {
+		birth = yes
+	}
+  3752.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han2693={
+  name="wusi"
+  dynasty=xin213
+	religion="saman" 
+	culture="beirong" 
+  father=han2692
+
+  3714.1.1 = {
+		birth = yes
+	}
+  3760.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han2694={
+  name="hu6"
+  dynasty=xin213
+	religion="saman" 
+	culture="beirong" 
+  father=han2693
+
+  3743.1.1 = {
+		birth = yes
+	}
+  3793.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han2695={
+  name="lv2"
+  dynasty=xin213
+	religion="saman" 
+	culture="beirong" 
+  father=han2694
+
+  3775.1.1 = {
+		birth = yes
+	}
+  3829.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han2696={
+  name="han2"#骞崇帇涓滆縼鏃舵湡妤肩儲鍥藉悰锛屾父鎴忓紑灞€鏃?3宀?
+  dynasty=xin213
+	religion="saman" 
+	culture="beirong" 
+  father=han2695
+
+  3827.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han2697={
+  name="lu4"#鍌ㄥ悰1鍙?
+  dynasty=xin213
+	religion="saman" 
+	culture="beirong" 
+  father=han2696
+
+  3846.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han2698={
+  name="wei4"#鍌ㄥ悰2鍙?
+  dynasty=xin213
+	religion="saman" 
+	culture="beirong" 
+  father=han2696
+
+  3847.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han2699={
+  name="nanming82"#鍌ㄥ悰2鍙?
+  dynasty=xin213
+	religion="saman" 
+	culture="beirong" 
+  father=han2696
+
+  3848.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han2700={
+  name="nvming120"#濂?鍙?
+  dynasty=xin213
+	religion="saman" 
+	culture="beirong" 
+  father=han2696
+  female=yes
+
+  3849.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han2701={
+  name="nvming121"
+  dynasty=xin213
+	religion="saman" 
+	culture="beirong" 
+  father=han2695
+  female=yes
+
+  3828.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han2704={
+  name="nvming122"#
+  dynasty=xin213
+	religion="saman" 
+	culture="beirong" 
+  father=han2695
+  female=yes
+
+  3828.3.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+############ 鍛艰濮?################
+han2705={
+  name="yang2"
+  dynasty=xin205
+	religion="saman" 
+	culture="beirong" 
+	father=han2694
+
+  3792.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han2706={
+  name="gao1"#鍌ㄥ悰1鍙?
+  dynasty=xin205
+	religion="saman" 
+	culture="beirong" 
+  father=han2705
+
+  3820.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han2707={
+  name="jie3"#鍌ㄥ悰2鍙?
+  dynasty=xin205
+	religion="saman" 
+	culture="beirong" 
+  father=han2705
+
+  3821.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han2708={
+  name="gun1"#鍌ㄥ悰2鍙?
+  dynasty=xin205
+	religion="saman" 
+	culture="beirong" 
+  father=han2705
+
+  3822.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han2709={
+  name="ci2"
+  dynasty=xin205
+	religion="saman" 
+	culture="beirong" 
+  father=han2705
+
+  3823.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han2710={
+  name="nvming73"
+  dynasty=xin205
+	religion="saman" 
+	culture="beirong" 
+  father=han2705
+  female=yes
+
+  3824.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han2711={
+  name="nvming83"
+  dynasty=xin205
+	religion="saman" 
+	culture="beirong" 
+  father=han2705
+  female=yes
+
+  3825.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han2712={
+  name="nvming103"
+  dynasty=xin205
+	religion="saman" 
+	culture="beirong" 
+  father=han2705
+  female=yes
+
+  3826.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han2713={
+  name="nanming513"
+  dynasty=xin205
+	religion="saman" 
+	culture="beirong" 
+  father=han2705
+
+  3827.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+#################
+han2702={
+  name="bfyznan218"
+  dynasty=xin776
+	religion="saman" 
+	culture="beirong" 
+  father=han2695
+
+  3828.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+loufanguo1={
+  name="bfyznan307"#
+  dynasty=xin776
+	religion="saman" 
+	culture="beirong" 
+  father=han2702
+
+  3846.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+loufanguo2={
+  name="bfyznan350"#
+  dynasty=xin776
+	religion="saman" 
+	culture="beirong" 
+  father=han2702
+
+  3847.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+loufanguo5={
+  name="bfyznv41"#
+  dynasty=xin776
+	religion="saman" 
+	culture="beirong" 
+  father=han2702
+  female=yes
+
+  3848.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+loufanguo4={
+  name="bfyznv48"
+  dynasty=xin776
+	religion="saman" 
+	culture="beirong" 
+  father=han2702
+  female=yes
+
+  3849.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+##############
+han2703={
+  name="bfyznan333"
+  dynasty=xin777
+	religion="saman" 
+	culture="beirong" 
+  father=han2695
+
+  3829.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+loufanguo5={
+  name="bfyznan338"
+  dynasty=xin777
+	religion="saman" 
+	culture="beirong" 
+  father=han2703
+
+  3847.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+loufanguo6={
+  name="bfyznan344"
+  dynasty=xin777
+	religion="saman" 
+	culture="beirong" 
+  father=han2703
+
+  3848.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+loufanguo7={
+  name="bfyznv32"
+  dynasty=xin777
+	religion="saman" 
+	culture="beirong" 
+  father=han2703
+  female=yes
+
+  3849.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}

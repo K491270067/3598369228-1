@@ -1,0 +1,254 @@
+﻿############### 绀煎穿涔愬潖 - 娲剧郴鍒囨崲鍐宠 ###############
+
+# 鍒囨崲鑷崇帇閬撴淳绯?
+switch_to_supporters = {
+	title = switch_to_supporters_title
+	desc = switch_to_supporters_desc
+	confirm_text = switch_to_supporters_confirm
+
+	picture = {
+		reference = "gfx/interface/icons/dynastic_cycle/dynastic_cycle_group_pro.dds"
+	}
+
+	decision_group_type = switch_faction_group
+
+	is_shown = {
+		# 鍦ㄥ眬鍔夸腑锛屼笖闈炲綋鍓嶆淳绯讳笖闈炲洓澶?
+		any_character_situation = {
+			type = spring_and_autumn_situation
+			involvement = involved
+		}
+		NOR = {
+			has_trait = character_involve_supporters_of_zhou_dynasty
+			has_trait = character_interloper_of_zhou_dynasty
+		}
+	}
+
+	is_valid = {
+		is_available_adult = yes
+		is_imprisoned = no
+		is_commanding_army = no
+		is_in_prison = no
+		is_traveling = no
+		NOT = { has_character_flag = recently_switched_faction_flag }
+	}
+
+	cost = {
+		prestige = 500
+	}
+
+	effect = {
+		# 浜斿勾鍐峰嵈
+		add_character_flag = {
+			flag = recently_switched_faction_flag
+			years = 5
+		}
+
+		# 淇濆瓨鍘熸淳绯讳互渚垮悗缁晥鏋?
+		if = {
+			limit = { has_trait = character_involve_opponents_of_zhou_dynasty }
+			remove_trait = character_involve_opponents_of_zhou_dynasty
+			# 鎵€鏈夊師闇搁亾娲剧郴鎴愬憳瀵逛綘闄嶄綆濂芥劅
+			every_situation_participant = {
+				limit = {
+					has_trait = character_involve_opponents_of_zhou_dynasty
+					NOT = { this = root }
+				}
+				add_opinion = {
+					target = root
+					modifier = switched_faction_opinion
+				}
+			}
+		}
+		else_if = {
+			limit = { has_trait = character_involve_neutral_of_zhou_dynasty }
+			remove_trait = character_involve_neutral_of_zhou_dynasty
+			# 鎵€鏈夊師涓珛娲剧郴鎴愬憳瀵逛綘闄嶄綆濂芥劅
+			every_situation_participant = {
+				limit = {
+					has_trait = character_involve_neutral_of_zhou_dynasty
+					NOT = { this = root }
+				}
+				add_opinion = {
+					target = root
+					modifier = switched_faction_opinion
+				}
+			}
+		}
+
+		# 鍔犲叆鏂版淳绯?
+		add_trait = character_involve_supporters_of_zhou_dynasty
+
+		# 闄嶄綆濞佹湜绛夌骇
+		add_prestige = -1000
+		
+		# 闄嶄綆姝ｇ粺搴?
+		add_legitimacy = -15
+
+		custom_tooltip = switch_faction_penalty_tooltip
+	}
+
+	ai_check_interval = 0
+}
+
+# 鍒囨崲鑷抽湼閬撴淳绯?
+switch_to_opponents = {
+	title = switch_to_opponents_title
+	desc = switch_to_opponents_desc
+	confirm_text = switch_to_opponents_confirm
+
+	picture = {
+		reference = "gfx/interface/icons/dynastic_cycle/dynastic_cycle_group_expand.dds"
+	}
+
+	decision_group_type = switch_faction_group
+
+	is_shown = {
+		any_character_situation = {
+			type = spring_and_autumn_situation
+			involvement = involved
+		}
+		NOR = {
+			has_trait = character_involve_opponents_of_zhou_dynasty
+			has_trait = character_interloper_of_zhou_dynasty
+		}
+	}
+
+	is_valid = {
+		is_available_adult = yes
+		is_imprisoned = no
+		is_commanding_army = no
+		is_in_prison = no
+		is_traveling = no
+		NOT = { has_character_flag = recently_switched_faction_flag }
+	}
+
+	cost = {
+		prestige = 500
+	}
+
+	effect = {
+		add_character_flag = {
+			flag = recently_switched_faction_flag
+			years = 5
+		}
+
+		if = {
+			limit = { has_trait = character_involve_supporters_of_zhou_dynasty }
+			remove_trait = character_involve_supporters_of_zhou_dynasty
+			every_situation_participant = {
+				limit = {
+					has_trait = character_involve_supporters_of_zhou_dynasty
+					NOT = { this = root }
+				}
+				add_opinion = {
+					target = root
+					modifier = switched_faction_opinion
+				}
+			}
+		}
+		else_if = {
+			limit = { has_trait = character_involve_neutral_of_zhou_dynasty }
+			remove_trait = character_involve_neutral_of_zhou_dynasty
+			every_situation_participant = {
+				limit = {
+					has_trait = character_involve_neutral_of_zhou_dynasty
+					NOT = { this = root }
+				}
+				add_opinion = {
+					target = root
+					modifier = switched_faction_opinion
+				}
+			}
+		}
+
+		add_trait = character_involve_opponents_of_zhou_dynasty
+		add_prestige = -1000
+		add_legitimacy = -15
+
+		custom_tooltip = switch_faction_penalty_tooltip
+	}
+
+	ai_check_interval = 0
+}
+
+# 鍒囨崲鑷充腑绔嬫淳绯?
+switch_to_neutral = {
+	title = switch_to_neutral_title
+	desc = switch_to_neutral_desc
+	confirm_text = switch_to_neutral_confirm
+
+	picture = {
+		reference = "gfx/interface/icons/dynastic_cycle/dynastic_cycle_group_advance.dds"
+	}
+
+	decision_group_type = switch_faction_group
+
+	is_shown = {
+		any_character_situation = {
+			type = spring_and_autumn_situation
+			involvement = involved
+		}
+		NOR = {
+			has_trait = character_involve_neutral_of_zhou_dynasty
+			has_trait = character_interloper_of_zhou_dynasty
+		}
+	}
+
+	is_valid = {
+		is_available_adult = yes
+		is_imprisoned = no
+		is_commanding_army = no
+		is_in_prison = no
+		is_traveling = no
+		NOT = { has_character_flag = recently_switched_faction_flag }
+	}
+
+	cost = {
+		prestige = 500
+	}
+
+	effect = {
+		add_character_flag = {
+			flag = recently_switched_faction_flag
+			years = 5
+		}
+
+		if = {
+			limit = { has_trait = character_involve_supporters_of_zhou_dynasty }
+			remove_trait = character_involve_supporters_of_zhou_dynasty
+			every_situation_participant = {
+				limit = {
+					has_trait = character_involve_supporters_of_zhou_dynasty
+					NOT = { this = root }
+				}
+				add_opinion = {
+					target = root
+					modifier = switched_faction_opinion
+				}
+			}
+		}
+		else_if = {
+			limit = { has_trait = character_involve_opponents_of_zhou_dynasty }
+			remove_trait = character_involve_opponents_of_zhou_dynasty
+			every_situation_participant = {
+				limit = {
+					has_trait = character_involve_opponents_of_zhou_dynasty
+					NOT = { this = root }
+				}
+				add_opinion = {
+					target = root
+					modifier = switched_faction_opinion
+				}
+			}
+		}
+
+		add_trait = character_involve_neutral_of_zhou_dynasty
+		add_prestige = -1000
+		add_legitimacy = -15
+
+		custom_tooltip = switch_faction_penalty_tooltip
+	}
+
+	ai_check_interval = 0
+}

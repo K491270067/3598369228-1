@@ -1,0 +1,67 @@
+﻿k_qingyiqiang = {
+3779.1.1 = {
+		holder = qingyiqiang1
+	}
+3821.1.1 = {
+		holder = han4729
+	}
+3849.12.31 = {
+		government = tribal_government
+		change_development_level = 25
+	}
+}
+
+d_qingshi = {
+3779.1.1 = {
+		liege = "k_qingyiqiang"
+		holder = qingyiqiang1
+	}
+3821.1.1 = {
+		holder = han4729
+	}
+}
+
+d_danlishi = {
+3781.1.1 = {
+		liege = "k_qingyiqiang"
+		holder = qingyiqiang2
+	}
+3823.1.1 = {
+		holder = qingyiqiang3
+	}
+3849.1.1 = {
+		change_development_level = 23
+		government = tribal_government
+	}
+}
+
+d_huojingshi = {
+3789.1.1 = {
+		liege = "k_qingyiqiang"
+		holder = qingyiqiang8
+	}
+3835.1.1 = {
+		holder = qingyiqiang9
+	}
+3849.1.1 = {
+		change_development_level = 24
+		government = tribal_government
+	}
+}
+
+d_qiandi = {
+3770.1.1 = {
+		liege = "k_ranmangqian"
+		holder = ranmangqian20
+	}
+3811.1.1 = {
+		holder = ranmangqian21
+	}
+3841.1.1 = {
+		holder = ranmangqian22
+	}
+3849.1.1 = {
+		change_development_level = 24
+		government = tribal_government
+	}
+}

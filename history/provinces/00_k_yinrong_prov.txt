@@ -1,0 +1,42 @@
+﻿##### d_yinshi ############################
+
+### c_yiyang1
+# YIYANG1
+828 = {
+	culture = yiluozhirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+
+
+### c_shazha
+# SHAZHA
+829 = {
+	culture = yiluozhirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+
+
+### c_changshui
+# CHANGSHUI
+830 = {
+	culture = yiluozhirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+
+
+### c_yin3
+# YIN3
+831 = {
+	culture = yiluozhirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+# TIHUGUAN
+832 = {
+	holding = none
+}
+
+

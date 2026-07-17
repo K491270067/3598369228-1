@@ -1,0 +1,95 @@
+﻿### 连接到原版触发器 ### ============================================================================================================================================
+
+# 战争开始时（ROOT：战争的主要攻击方）
+on_war_started = {
+	on_actions = {
+		call_all_autonomous_vassals_to_war
+		call_liege_to_autonomous_vassals_war
+	}
+	# scope:war（战争本身）
+	# scope:defender（战争的主要防御方）
+}
+
+### 自定义触发器 ### ============================================================================================================================================
+
+# 召唤所有【自治封臣】进入战争 # ————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+call_all_autonomous_vassals_to_war = {
+	trigger = {
+		OR = {
+			scope:attacker = {
+				is_independent_ruler = yes
+				any_tributary = {
+					has_subject_contract_group = feudal_autonomous_vassal
+					NOR = {
+						is_participant_in_war = scope:war
+						is_at_war_with = scope:war.primary_attacker
+					}
+				}
+			}
+			scope:defender = {
+				is_independent_ruler = yes
+				any_tributary = {
+					has_subject_contract_group = feudal_autonomous_vassal
+					NOR = {
+						is_participant_in_war = scope:war
+						is_at_war_with = scope:war.primary_attacker
+					}
+				}
+			}
+		}
+	}
+	effect = {
+		scope:attacker  = {
+			every_tributary ?= {
+				limit = {
+					subject_contract_has_flag = obligation_contract_feudal_vassal_support_war_forced
+					NOR = {
+						is_participant_in_war = scope:war
+						is_at_war_with = scope:war.primary_attacker
+					}
+				}
+				run_interaction = {
+					interaction = interaction_call_autonomous_vassal
+					actor = scope:war.primary_attacker
+					recipient = this
+					send_threshold = decline
+				}
+			}
+		}
+		scope:defender = {
+			every_tributary ?= {
+				limit = {
+					subject_contract_has_flag = obligation_contract_feudal_vassal_support_war_forced
+					NOR = {
+						is_participant_in_war = scope:war
+						is_at_war_with = scope:war.primary_defender
+					}
+				}
+				run_interaction = {
+					interaction = interaction_call_autonomous_vassal
+					actor = scope:war.primary_defender
+					recipient = this
+					send_threshold = decline
+				}
+			}
+		}
+	}
+}
+# 召唤【领主】进入战争 # ————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+call_liege_to_autonomous_vassals_war = {
+	trigger = {
+		scope:defender = {
+			is_tributary = yes
+			has_subject_contract_group = feudal_autonomous_vassal
+			subject_contract_has_flag = obligation_feudal_liege_offer_protection_forced
+		}
+	}
+	effect = {
+		run_interaction = {
+			interaction = interaction_autonomous_vassal_call_liege
+			actor = scope:defender
+			recipient = scope:defender.suzerain
+			send_threshold = decline
+		}
+	}
+}

@@ -1,0 +1,48 @@
+﻿d_jiushi = {
+	3735.10.1 = {
+		liege = "k_qiangjiuru"
+		holder = han2113
+	}
+	3816.1.1 = {
+		holder = qiangjiuru8
+	}
+	3849.1.1 = {
+		change_development_level = 20
+	}
+	3849.12.31 = {
+		government = tribal_government
+	}
+}
+d_weiyushi = {
+	3735.10.1 = {
+		liege = "k_qiangjiuru"
+		holder = han2113
+	}
+	3816.1.1 = {
+		holder = qiangjiuru1
+	}
+	3820.1.1 = {
+		holder = qiangjiuru2
+	}
+	3849.1.1 = {
+		change_development_level = 18
+	}
+	3849.12.31 = {
+		government = tribal_government
+	}
+}
+k_qiangjiuru = {
+	3735.10.1 = {
+		holder = han2113
+	}
+	3816.1.1 = {
+		holder = han2114
+	}
+	3825.1.1 = {
+		holder = han2115
+	}
+	3849.12.31 = {
+		government = tribal_government
+		change_development_level = 23
+	}
+}

@@ -1,0 +1,37 @@
+﻿##### d_binshi ############################
+
+### c_jiexiu
+# JIEXIU
+2716 = {
+	culture = yinshang
+	religion = yinli
+	holding = castle_holding
+}
+
+
+### c_bin1
+# BIN1
+2717 = {
+	culture = yinshang
+	religion = yinli
+	holding = castle_holding
+}
+# QUCHAN
+2718 = {
+	holding = none
+}
+
+
+### c_xu6
+# XU6
+2721 = {
+	culture = yinshang
+	religion = yinli
+	holding = castle_holding
+}
+# PI2
+2722 = {
+	holding = none
+}
+
+

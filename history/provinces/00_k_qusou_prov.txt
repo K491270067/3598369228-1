@@ -1,0 +1,129 @@
+﻿##### d_qusou ############################
+
+### c_huqiu1
+# HUQIU1
+1579 = {
+	culture = hehuangzhirong
+	religion = xirongfangling
+	holding = nomad_holding
+}
+
+
+### c_qusou
+# QUSOU
+1578 = {
+	culture = hehuangzhirong
+	religion = xirongfangling
+	holding = nomad_holding
+}
+# YUANTING
+1580 = {
+	culture = hehuangzhirong
+	religion = xirongfangling
+	holding = nomad_holding
+}
+
+
+### c_shuofang
+# SHUOFANG
+1577 = {
+	culture = hehuangzhirong
+	religion = xirongfangling
+	holding = nomad_holding
+}
+
+
+##### d_juqushi ############################
+
+### c_wenguledu
+# WENGULEDU
+1397 = {
+	culture = hehuangzhirong
+	religion = xirongfangling
+	holding = nomad_holding
+}
+# GANCAOCHENG
+1399 = {
+	holding = none
+}
+# YONGFEN
+1401 = {
+	holding = none
+}
+
+
+### c_linhe
+# LINHE
+1400 = {
+	culture = hehuangzhirong
+	religion = xirongfangling
+	holding = nomad_holding
+}
+
+
+### c_gaoquesai
+# GAOQUESAI
+1396 = {
+	culture = hehuangzhirong
+	religion = xirongfangling
+	holding = nomad_holding
+}
+# FENGAN
+1398 = {
+	holding = none
+}
+
+
+##### d_qujinshi ############################
+
+### c_jilusai
+# JILUSAI
+1416 = {
+	culture = hehuangzhirong
+	religion = xirongfangling
+	holding = nomad_holding
+}
+
+
+### c_yuhun
+# YUHUN
+1417 = {
+	culture = hehuangzhirong
+	religion = xirongfangling
+	holding = nomad_holding
+}
+
+
+### c_sanfeng
+# SANFENG
+1420 = {
+	culture = hehuangzhirong
+	religion = xirongfangling
+	holding = nomad_holding
+}
+
+
+##### d_qufushi ############################
+
+### c_linrong
+# LINRONG
+1419 = {
+	culture = hehuangzhirong
+	religion = xirongfangling
+	holding = nomad_holding
+}
+# WOYE1
+1418 = {
+	holding = none
+}
+
+
+### c_guangmu
+# GUANGMU
+1576 = {
+	culture = hehuangzhirong
+	religion = xirongfangling
+	holding = nomad_holding
+}
+
+

@@ -1,0 +1,33 @@
+﻿##### d_aoshi ############################
+
+### c_shilai
+# SHILAI
+621 = {
+	culture = song
+	religion = yinli
+	holding = castle_holding
+}
+
+
+### c_xingyang
+# XINGYANG
+761 = {
+	culture = song
+	religion = yinli
+	holding = castle_holding
+}
+# CHUILONG
+622 = {
+	holding = none
+}
+
+
+### c_shiqiu
+# SHIQIU
+762 = {
+	culture = song
+	religion = yinli
+	holding = castle_holding
+}
+
+

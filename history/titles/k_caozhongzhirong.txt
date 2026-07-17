@@ -1,0 +1,27 @@
+﻿d_xuanshi1 = {
+	3780.12.12 = {
+		liege = "k_caozhongzhirong"
+		holder = caozhongzhirong1
+	}
+	3831.1.1 = {
+		holder = caozhongzhirong8
+	}
+	3849.1.1 = {
+		change_development_level = 22
+	}
+	3849.12.31 = {
+		government = tribal_government
+	}
+}
+k_caozhongzhirong = {
+	3780.12.12 = {
+		holder = caozhongzhirong1
+	}
+	3831.1.1 = {
+		holder = caozhongzhirong2
+	}
+	3849.12.31 = {
+		government = tribal_government
+		change_development_level = 25
+	}
+}

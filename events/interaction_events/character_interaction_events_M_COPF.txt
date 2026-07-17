@@ -1,0 +1,182 @@
+﻿namespace = char_interaction
+
+# 通知封臣授予总督头衔
+# This also includes a change_government effect in case you grant it to someone that doesn't have an estate yet and it has to be generated
+char_interaction.0111 = {
+	type = letter_event
+	opening = {
+		desc = char_interaction.0030.opening
+	}
+	desc = char_interaction.0111.desc
+		
+	sender = scope:actor
+	
+	trigger = {
+		is_landed = yes
+		# 如果：【封臣】或者其【领主】是封建行政制
+		trigger_if = { #COPF
+			# 那么：必须是一个总督（有【委任总督】继承权封臣契约，而非仅仅是封建行政制）才会触发此事件
+			limit = {
+				OR = {
+					government_has_flag = government_is_feudal_admin
+					liege ?= { government_has_flag = government_is_feudal_admin }
+				}
+			}
+			subject_contract_has_flag = succession_rights_governor_appointment
+		}
+	}
+
+	immediate = {
+		if = {
+			limit = { NOT = { government_has_flag = government_is_feudal_admin } } #COPF
+			change_to_administrative_effect = yes
+		}
+	}
+
+	option = {
+		name = char_interaction.0110.a
+	}
+}
+
+# Cease Paying Tribute - Notification
+char_interaction.0370 = {
+	type = letter_event
+	opening = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { scope:actor = { government_has_flag = government_is_herder } }
+				desc = char_interaction.0370.opening.herder
+			}
+			desc = char_interaction.0370.opening
+		}
+	}
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { scope:actor = { government_has_flag = government_is_herder } }
+				desc = char_interaction.0370.desc.herder
+			}
+			desc = char_interaction.0370.desc
+		}
+	}
+		
+	sender = scope:actor
+
+	immediate = {
+		show_as_tooltip = { 
+			scope:actor = {
+				end_tributary = yes
+			}
+		}
+	}
+
+	option = {
+		name = {
+			trigger = { scope:actor = { government_has_flag = government_is_herder } }
+			text = char_interaction.0370.a.herder
+		}
+		name = {
+			trigger = { NOT = { scope:actor = { government_has_flag = government_is_herder } } }
+			text = char_interaction.0370.a
+		}
+
+		if = {
+			limit = {
+				can_retaliate_trigger = yes
+				NOT = {
+					scope:recipient = { government_has_flag = government_is_mandala }
+				}
+			}
+			add_legitimacy = -50
+		}
+
+		ai_chance = {
+			base = 10
+		}
+	}
+
+	option = {
+		name = char_interaction.0370.b
+
+		trigger = { 
+			can_retaliate_trigger = yes
+			trigger_if = {
+				limit = {
+					government_has_flag = government_is_mandala
+					is_ai = yes
+					house = { has_house_power_parameter = aspect_of_serenity }
+				}
+				always = no
+			}
+		}
+
+		# To war!
+		scope:recipient = {
+			if = { #COPF
+				limit = { scope:actor = { has_variable = is_feudal_autonomous_vassal } }
+				start_war = {
+					casus_belli = vassalization_cb
+					target = scope:actor
+				}
+				remove_variable = is_feudal_autonomous_vassal
+			}
+			else = {
+				start_war = {
+					casus_belli = retaliation_cb
+					target = scope:actor
+				}
+			}
+		}
+
+		ai_chance = {
+			base = 0
+
+			modifier = {
+				scope:recipient = {
+					primary_title = title:h_china
+					any_character_situation = {
+						situation_type = dynastic_cycle
+					}
+				}
+				add = -40
+			}
+					
+            ai_value_modifier = {
+                ai_vengefulness = 1
+                ai_boldness = 1
+            }
+
+			ai_military_threat_modifier = { 
+				SENDER = root
+				RECEIVER = scope:actor
+				MULTIPLIER = -2
+			}
+
+			modifier = { # Generally don't try to tributarize those of higher rank than you
+				trigger = {
+					"scope:recipient.tier_difference(scope:actor)" > 1
+				}
+				add = -20
+			}
+
+			modifier = { # Generally don't try to tributarize those of higher dominance than you
+				trigger = {
+					scope:recipient.dominance_value > scope:actor.dominance_value
+				}
+				add = -30
+			}
+
+			modifier = { # Remote Realm.
+				trigger = {
+					scope:actor = {
+						NOT = {
+							any_neighboring_top_liege_realm_owner = { this = scope:recipient }
+						}
+					}
+					scope:actor.capital_province = { squared_distance = { target = scope:recipient.capital_province value >= 200000 } }
+				}
+				add = -25
+			}
+		}
+	}
+}

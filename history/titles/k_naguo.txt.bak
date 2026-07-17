@@ -1,0 +1,84 @@
+﻿k_naguo = {
+3724.1.1 = {
+		holder = baipunaguo1
+	}
+3770.1.1 = {
+		holder = baipunaguo2
+	}
+3801.1.1 = {
+		holder = baipunaguo3
+	}
+3827.1.1 = {
+		holder = baipunaguo4
+	}
+3849.12.31 = {
+		government = tribal_government
+		change_development_level = 25
+	}
+}
+
+d_xishi1 = {
+3530.1.1 = {
+		liege = "k_xiguo1"
+		holder = han5106
+	}
+3583.12.31 = {
+		holder = han5107
+	}
+3631.12.31 = {
+		holder = han5108
+	}
+3673.12.31 = {
+		holder = han5109
+	}
+3701.12.31 = {
+		holder = han5110
+	}
+3740.12.31 = {
+		holder = han5111
+	}
+3767.12.31 = {
+		holder = han5112
+	}
+3800.12.31 = {
+		holder = han5113
+	}
+3818.12.31 = {
+		holder = han5114
+	}
+}
+
+d_gongshi2 = {
+3530.1.1 = {
+		liege = "k_xiguo1"
+		holder = han5106
+	}
+3583.12.31 = {
+		holder = han5107
+	}
+3631.12.31 = {
+		holder = han5108
+	}
+3673.12.31 = {
+		holder = han5109
+	}
+3701.12.31 = {
+		holder = han5110
+	}
+3740.12.31 = {
+		holder = han5111
+	}
+3767.12.31 = {
+		holder = han5112
+	}
+3800.12.31 = {
+		holder = han5113
+	}
+3818.12.31 = {
+		holder = dizuxiguo1
+	}
+3849.1.1 = {
+		change_development_level = 24
+		government = tribal_government
+	}
+}

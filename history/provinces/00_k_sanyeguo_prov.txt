@@ -1,0 +1,66 @@
+﻿##### d_sanyeshi ############################
+
+### c_sanyehou
+
+
+### c_wuyi
+
+
+### c_anba
+
+
+### c_bupo
+
+
+### c_duoyun
+
+
+### c_gemou
+
+
+### c_meinong
+
+
+### c_huina
+# HUINA
+3545 = {
+	holding = none
+}
+# ZHUMO
+3550 = {
+	holding = none
+}
+# TUQI
+3546 = {
+	holding = none
+}
+
+
+### c_tuqi
+
+
+### c_keye2
+
+
+### c_gaoxu
+
+
+### c_jiamao
+# JIAMAO
+3557 = {
+	holding = none
+}
+# KEYE
+3547 = {
+	holding = none
+}
+# MEINONG
+2837 = {
+	holding = none
+}
+# GAOXU
+3548 = {
+	holding = none
+}
+
+

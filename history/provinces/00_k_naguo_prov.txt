@@ -1,0 +1,66 @@
+﻿##### d_naguo ############################
+
+### c_kaizhou
+# KAIZHOU
+3175 = {
+	culture = baipu
+	religion = guiwu
+	holding = tribal_holding
+}
+
+
+### c_guiren
+# GUIREN
+3198 = {
+	holding = none
+}
+
+
+### c_shigu1
+# SHIGU1
+3201 = {
+	holding = none
+}
+
+
+### c_langying
+# LANGYING
+3203 = {
+	holding = none
+}
+
+
+### c_baqu
+# BAQU
+3204 = {
+	culture = baipu
+	religion = guiwu
+	holding = tribal_holding
+}
+
+
+### c_na1
+# NA1
+3692 = {
+	culture = baipu
+	religion = guiwu
+	holding = tribal_holding
+}
+
+
+### c_taiping
+# TAIPING
+3693 = {
+	holding = none
+}
+
+
+### c_dongxiang
+# DONGXIANG
+3694 = {
+	culture = baipu
+	religion = guiwu
+	holding = tribal_holding
+}
+
+

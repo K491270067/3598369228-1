@@ -1,0 +1,797 @@
+﻿######周王先祖
+han1348={
+  name="qi2"##又被称为后稷
+  dynasty=baijia297#姬
+	religion="xiali" 
+	culture="zhou"
+  father=han1315
+  
+  2440.1.1 = {
+		birth = yes
+	}
+  2550.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+    give_nickname=nick_houji
+  }
+}
+han1349={
+  name="nanming218"
+  dynasty=baijia297#姬
+	religion="xiali" 
+	culture="zhou"
+  father=han1315
+  
+  2443.1.1 = {
+		birth = yes
+	}
+  2552.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1350={
+  name="nanming219"
+  dynasty=baijia297#姬
+	religion="xiali" 
+	culture="zhou"
+  father=han1349
+  
+  2510.1.1 = {
+		birth = yes
+	}
+  2600.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1351={
+  name="buku"
+  dynasty=baijia297#姬
+	religion="xiali" 
+	culture="zhou"
+  father=han1348
+
+  2550.1.1 = {
+		birth = yes
+	}
+  2640.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1352={
+  name="ju1"
+  dynasty=baijia297#姬
+	religion="xiali" 
+	culture="zhou"
+  father=han1351
+
+  2639.1.1 = {
+		birth = yes
+	}
+  2725.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1353={
+  name="liu"
+  dynasty=baijia297#姬
+	religion="xiali" 
+	culture="zhou"
+  father=han1352
+
+  2724.1.1 = {
+		birth = yes
+	}
+  2800.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1354={
+  name="qingjie"
+  dynasty=baijia297#姬
+	religion="xiali" 
+	culture="zhou"
+  father=han1353
+
+  2799.1.1 = {
+		birth = yes
+	}
+  2888.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1355={
+  name="huangpu"
+  dynasty=baijia297#姬
+	religion="xiali" 
+	culture="zhou"
+  father=han1354
+
+  2821.1.1 = {
+		birth = yes
+	}
+  2885.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1356={
+  name="chafu"
+  dynasty=baijia297#姬
+	religion="xiali" 
+	culture="zhou"
+  father=han1355
+
+  2884.1.1 = {
+		birth = yes
+	}
+  2970.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1357={
+  name="huiyu"
+  dynasty=baijia297#姬
+	religion="xiali" 
+	culture="zhou"
+  father=han1356
+
+  2967.1.1 = {
+		birth = yes
+	}
+  3050.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1358={
+  name="fei4"
+  dynasty=baijia297#姬
+	religion="xiali" 
+	culture="zhou"
+  father=han1357
+
+  3046.1.1 = {
+		birth = yes
+	}
+  3134.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1359={
+  name="gaoyu"
+  dynasty=baijia297#姬
+	religion="xiali" 
+	culture="zhou"
+  father=han1358
+
+  3133.1.1 = {
+		birth = yes
+	}
+  3222.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1360={
+  name="yayu"
+  dynasty=baijia297#姬
+	religion="xiali" 
+	culture="zhou"
+  father=han1359
+
+  3221.1.1 = {
+		birth = yes
+	}
+  3299.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1361={
+  name="nanming220"#《世本》称公叔祖类为"太公组绀诸盩"，《史记·三代世表》称公叔祖类为"公祖类"，皇甫谧则说公叔祖类名叫"公祖"，一名"组绀诸盩"，字"叔类"，号"太公"。
+  dynasty=baijia297#姬
+	religion="xiali" 
+	culture="zhou"
+  father=han1360
+
+  3265.1.1 = {
+		birth = yes
+	}
+  3314.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1={
+  name="dan"##太王
+  dynasty=baijia297#姬
+	religion="xizhouli" 
+	culture="zhou"
+	father=han1361
+
+  3313.1.1 = {
+		birth = yes
+	}
+  3389.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+    give_nickname=nick_taiwang
+  }
+}
+han2={
+  name="tai"##吴泰伯
+  dynasty=baijia297#姬
+	religion="xizhouli" 
+	culture="wu"
+  father=han1
+
+  3335.1.9 = {
+		birth = yes
+	}
+  3426.3.3 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+    give_nickname=nick_taibo1 
+  }
+}
+han3={
+  name="yong"##吴仲
+  dynasty_house=house_baijia6#姬
+	religion="xizhouli" 
+	culture="wu"
+  father=han1
+
+  3339.7.1 = {
+		birth = yes
+	}
+  3431.7.3 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+    give_nickname=nick_wuzhong
+  }
+}
+han4={
+  name="li"##季历
+  dynasty=baijia297#姬
+	religion="xizhouli" 
+	culture="zhou"
+  father=han1
+
+  3340.7.1 = {
+		birth = yes
+	}
+	3359.1.1={
+		add_spouse=han2153
+	}	
+  3460.7.3 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+    give_nickname=nick_jili
+  }
+}
+han5={
+  name="chang"##文王
+  dynasty=baijia297#姬
+	religion="xizhouli" 
+	culture="zhou"
+  father=han4
+
+  3452.1.1 = {
+		birth = yes
+	}
+	3492.1.1={
+		add_spouse=sixingyoushenshitaisi
+	}	
+  3564.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+    give_nickname=nick_wenwang
+  }
+}
+han6={
+  name="zhong"##虢仲
+  dynasty=xin710
+	religion="xizhouli" 
+	culture="zhou"
+  father=han4
+
+  3458.1.1 = {
+		birth = yes
+	}
+  3575.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+    give_nickname=nick_guozhong
+  }
+}
+han7={
+  name="fu"##虢叔
+  dynasty=xin332
+	religion="xizhouli" 
+	culture="zhou"
+  father=han4
+
+  3459.1.1 = {
+		birth = yes
+	}
+  3575.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+    give_nickname=nick_guoshu
+  }
+}
+han8={
+  name="kao"##伯邑考
+  dynasty=baijia297#姬
+	religion="xizhouli" 
+	culture="zhou"
+  father=han5
+  mother=sixingyoushenshitaisi
+
+  3541.1.1 = {
+		birth = yes
+	}
+  3563.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+    give_nickname=nick_boyikao
+  }
+}
+han9={
+  name="fa"##武王
+  dynasty=baijia297#姬
+	religion="xizhouli" 
+	culture="zhou"
+  father=han5
+  mother=sixingyoushenshitaisi
+
+  3543.1.1 = {
+		birth = yes
+	}
+  3577.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+    give_nickname=nick_wuwang
+  }
+}
+han10={
+  name="xian"##管叔鲜
+  dynasty=baijia297#姬
+	religion="xizhouli" 
+	culture="zhou"
+  father=han5
+  mother=sixingyoushenshitaisi
+
+  3544.1.1 = {
+		birth = yes
+	}
+  3581.12.31 = {
+		death = {
+			death_reason = death_execution
+			killer = han11
+		}
+    give_nickname=nick_guanshu
+  }
+}
+han11={
+  name="dan1"##周公旦
+  dynasty=xin717
+	religion="xizhouli" 
+	culture="zhou"
+  father=han5
+	mother=sixingyoushenshitaisi
+
+  3545.1.1 = {
+		birth = yes
+	}
+  3586.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+    give_nickname=nick_zhougongdan
+  }
+}
+han12={
+  name="du"##蔡叔度
+  dynasty_house=house_baijia155
+	religion="xizhouli" 
+	culture="zhou"
+  father=han5
+  mother=sixingyoushenshitaisi
+
+  3546.1.1 = {
+		birth = yes
+	}
+  3582.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+    give_nickname=nick_caishu
+  }
+}
+han13={
+  name="zhenduo"##曹叔振铎
+  dynasty=xin493
+	religion="xizhouli" 
+	culture="zhou"
+  father=han5
+  mother=sixingyoushenshitaisi
+
+  3547.1.1 = {
+		birth = yes
+	}
+  3580.1.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+    give_nickname=nick_caoshuzhenduo
+  }
+}
+han14={
+  name="wu"##郕叔武
+  dynasty=xin408
+	religion="xizhouli" 
+	culture="zhou"
+  father=han5
+  mother=sixingyoushenshitaisi
+
+  3548.1.1 = {
+		birth = yes
+	}
+  3581.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+    give_nickname=nick_chengshuwu
+  }
+}
+han15={
+  name="chu1"##霍叔处
+  dynasty_house=xin563
+	religion="xizhouli" 
+	culture="zhou"
+  father=han5
+  mother=sixingyoushenshitaisi
+  
+  3549.1.1 = {
+		birth = yes
+	}
+  3580.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+    give_nickname=nick_huoshuchu
+  }
+}
+han16={
+  name="feng"##康叔封
+  dynasty=xin507
+	religion="xizhouli" 
+	culture="zhou"
+  father=han5
+  mother=sixingyoushenshitaisi
+
+  3550.1.1 = {
+		birth = yes
+	}
+  3598.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+    give_nickname=nick_weikangshu
+  }
+}
+han17={
+  name="song2"##成王
+  dynasty=baijia297#姬
+	religion="xizhouli" 
+	culture="zhou"
+  father=han9
+
+  3563.1.1 = {
+		birth = yes
+	}
+  3599.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+    give_nickname=nick_chengwang
+  }
+}
+han18={
+  name="yu"##唐叔虞
+  dynasty_house=house_xin645
+	religion="xizhouli" 
+	culture="jin"
+  father=han9
+
+  3564.1.1 = {
+		birth = yes
+	}
+  3611.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+    give_nickname=nick_tangshuyu
+  }
+}
+han19={
+  name="yuannv"##大姬
+  dynasty=baijia297#姬
+	religion="xizhouli" 
+	culture="zhou"
+  father=han9
+  female=yes
+
+  3563.2.1 = {
+		birth = yes
+	}
+	3581.3.1 = {
+		add_spouse = han1156
+	}	
+  3623.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+    give_nickname=nick_taiji
+  }
+}
+han20={
+  name="zhao"##康王
+  dynasty=baijia297#姬
+	religion="xizhouli" 
+	culture="zhou"
+  father=han17
+
+  3579.1.1 = {
+		birth = yes
+	}
+  3624.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+    give_nickname=nick_kangwang
+  }
+}
+han21={
+  name="xia"##昭王
+  dynasty=baijia297#姬
+	religion="xizhouli" 
+	culture="zhou"
+  father=han20
+
+  3599.1.1 = {
+		birth = yes
+	}
+	3620.3.15={
+		add_spouse=han3839
+	}
+  3643.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+    give_nickname=nick_zhaowang
+  }
+}
+han22={
+  name="man"##穆王
+  dynasty=baijia297#姬
+	religion="xizhouli" 
+	culture="zhou"
+  father=han21
+  mother=han3839
+
+  3615.1.1 = {
+		birth = yes
+	}
+  3698.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+    give_nickname=nick_muwang
+  }
+}
+han23={
+  name="yihu"##共王
+  dynasty=baijia297#姬
+	religion="xizhouli" 
+	culture="zhou"
+  father=han22
+
+  3659.1.1 = {
+		birth = yes
+	}
+  3720.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+    give_nickname=nick_gongwang1
+  }
+}
+han24={
+  name="jian"##懿王
+  dynasty=baijia297#姬
+	religion="xizhouli" 
+	culture="zhou"
+  father=han23
+
+  3683.1.1 = {
+		birth = yes
+	}
+  3723.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+    give_nickname=nick_yiwang1
+  }
+}
+han25={
+  name="pifang"##孝王
+  dynasty=baijia297#姬
+	religion="xizhouli" 
+	culture="zhou"
+  father=han22
+
+  3660.1.1 = {
+		birth = yes
+	}
+  3734.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+    give_nickname=nick_xiaowang
+  }
+}
+han26={
+  name="xie"##夷王
+  dynasty=baijia297#姬
+	religion="xizhouli" 
+	culture="zhou"
+  father=han24
+
+  3699.1.1 = {
+		birth = yes
+	}
+  3742.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+    give_nickname=nick_yiwang2
+  }
+}
+han27={
+  name="hu"##厉王
+  dynasty=baijia297#姬
+	religion="xizhouli" 
+	culture="zhou"
+  father=han26
+
+  3716.1.1 = {
+		birth = yes
+	}
+  3792.12.31 = {
+		death = {
+			death_reason = death_siege
+		}
+    give_nickname=nick_liwang1
+  }
+}
+han28={
+  name="jing"##宣王
+  dynasty=baijia297#姬
+	religion="xizhouli" 
+	culture="zhou"
+  father=han27
+
+  3787.1.1 = {
+		birth = yes
+	}
+  3837.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+    give_nickname=nick_xuannwang
+  }
+}
+han30={
+  name="gongsheng"##幽王
+  dynasty=baijia297#姬
+	religion="xizhouli" 
+	culture="zhou"
+  father=han28
+
+  3807.1.1 = {
+		birth = yes
+	}
+  3826.1.1  = {
+		add_spouse = han3466
+	}	
+	3840.1.1  = {
+		add_spouse = han3369
+	}	
+  3849.12.31 = {
+		death = {
+			death_reason = death_battle
+			killer = han32
+		}
+    give_nickname=nick_youwang
+  }
+}
+han31={
+  name="wang"##携王
+  dynasty=baijia297
+	religion="xizhouli" 
+	culture="zhou"
+  father=han28
+
+  3810.1.1 = {
+		birth = yes
+	}
+  3870.12.31 = {
+    death = yes
+  }
+}
+han32={
+  name="yijiu"##平王
+  dynasty=baijia297#姬
+	religion="dongzhouli" 
+	culture="zhou"
+  father=han30
+  mother=han3466
+
+  3827.1.1 = {
+		birth = yes
+	}
+  3900.12.31 = {
+    death = yes
+  }
+}
+han33={
+  name="bofu"
+  dynasty=baijia297#姬
+	religion="xizhouli" 
+	culture="zhou"
+  father=han30
+  mother=han3369
+
+  3841.1.1 = {
+		birth = yes
+	}
+  3849.12.31 = {
+		death = {
+			death_reason = death_battle
+			killer = han32
+		}
+  }
+}

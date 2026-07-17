@@ -1,0 +1,211 @@
+﻿#############  榄忓浗--榄忔皬 #############
+han1991={
+  name="lie1"
+  dynasty=xin673
+	religion="xizhouli" 
+	culture="jin"
+  father=han1980
+
+  3582.1.1 = {
+		birth = yes
+	}
+  3646.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1992={
+  name="mang2"
+  dynasty_house=house_baijia30#鑺?
+	religion="xizhouli" 
+	culture="jin"
+  father=han1991
+
+  3612.1.1 = {
+		birth = yes
+	}
+  3677.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1993={
+  name="wu3"
+  dynasty_house=house_baijia30
+	religion="xizhouli" 
+	culture="jin"
+  father=han1992
+
+  3640.1.1 = {
+		birth = yes
+	}
+  3708.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1994={
+  name="meng1"
+  dynasty_house=house_baijia30
+	religion="xizhouli" 
+	culture="jin"
+  father=han1993
+
+  3682.1.1 = {
+		birth = yes
+	}
+  3763.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1995={
+  name="ci1"
+  dynasty_house=house_baijia30
+	religion="dongzhouli" 
+	culture="jin"
+  father=han1994
+
+  3756.1.1 = {
+		birth = yes
+	}
+  3820.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1996={
+  name="ben1"
+  dynasty_house=house_baijia30
+	religion="dongzhouli" 
+	culture="jin"
+  father=han1995
+
+  3813.6.2 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han1997={
+  name="shuang1"
+  dynasty_house=house_baijia30
+	religion="dongzhouli" 
+	culture="jin"
+  father=han1996
+
+  3831.2.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han1998={
+  name="nvming101"#濂?
+  dynasty_house=house_baijia30
+	religion="dongzhouli" 
+	culture="jin"
+  father=han1996
+  female=yes
+
+  3832.2.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han1999={
+  name="junwen"
+  dynasty_house=house_baijia30
+	religion="dongzhouli" 
+	culture="jin"
+  father=han1996
+
+  3833.2.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han2000={
+  name="qi7"
+  dynasty_house=house_baijia30
+	religion="dongzhouli" 
+	culture="jin"
+  father=han1996
+
+  3834.2.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+###########鏍?
+jixinglishi1={
+  name="yu6"
+  dynasty_house=house_xin674
+	religion="dongzhouli" 
+	culture="jin"
+  father=han1995
+
+  3818.9.9 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+jixinglishi2={
+  name="pu"
+  dynasty_house=house_xin674
+	religion="dongzhouli" 
+	culture="jin"
+  father=jixinglishi1
+
+  3836.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+jixinglishi3={
+  name="nvming21"
+  dynasty_house=house_xin674
+	religion="dongzhouli" 
+	culture="jin"
+  father=jixinglishi1
+  female=yes
+
+  3837.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+jixinglishi4={
+  name="nvming25"
+  dynasty_house=house_xin674
+	religion="dongzhouli" 
+	culture="jin"
+  father=jixinglishi1
+  female=yes
+
+  3838.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}

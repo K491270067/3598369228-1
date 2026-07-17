@@ -1,0 +1,9 @@
+﻿l_simp_chinese:
+ tt_has_crown_authority_0_or_above: "需要至少有[GetLaw('crown_authority_0').GetName][law|E]"
+ tt_has_crown_authority_1_or_above: "需要至少有[GetLaw('crown_authority_1').GetName][law|E]"
+ tt_has_crown_authority_2_or_above: "需要至少有[GetLaw('crown_authority_2').GetName][law|E]"
+ tt_has_crown_authority_3: "需要有[GetLaw('crown_authority_3').GetName][law|E]"
+
+ tt_cannot_compete_for_same_or_lower_rank_titles: "[governors|E]无法争夺[title_tier|E]低于或等于当前[governorship|E]辖区的[titles|E]"
+
+ tt_cannot_grant_autonomy_to_feudal_governor: "无法授予[governor|E]自治权"

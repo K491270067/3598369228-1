@@ -1,0 +1,92 @@
+﻿d_lishi6 = {
+	3616.1.1 = {
+		liege = "k_beitangguo"
+		holder = yunxingbeitangshi1
+	}
+	3668.12.31 = {
+		holder = yunxingbeitangshi2
+	}
+	3683.12.31 = {
+		holder = yunxingbeitangshi3
+	}
+	3729.12.31 = {
+		holder = yunxingbeitangshi4
+	}
+	3742.12.31 = {
+		holder = yunxingbeitangshi5
+	}
+	3791.12.31 = {
+		holder = yunxingbeitangshi6
+	}
+	3830.12.31 = {
+		holder = yunxingbeitangshi7
+	}
+	3843.12.31 = {
+		holder = yunxingbeitangshi62
+	}
+	3849.12.31 = {
+		government = tribal_government
+		change_development_level = 25
+	}
+}
+d_wujiushi = {
+	3616.1.1 = {
+		liege = "k_beitangguo"
+		holder = yunxingbeitangshi1
+	}
+	3668.12.31 = {
+		holder = yunxingbeitangshi2
+	}
+	3683.12.31 = {
+		holder = yunxingbeitangshi3
+	}
+	3729.12.31 = {
+		holder = yunxingbeitangshi4
+	}
+	3742.12.31 = {
+		holder = yunxingbeitangshi5
+	}
+	3791.12.31 = {
+		holder = yunxingbeitangshi6
+	}
+	3830.12.31 = {
+		holder = yunxingbeitangshi7
+	}
+	3843.12.31 = {
+		holder = yunxingbeitangshi14
+	}
+	3849.12.31 = {
+		government = tribal_government
+		change_development_level = 26
+	}
+}
+k_beitangguo = {
+	3616.1.1 = {
+		holder = yunxingbeitangshi1
+	}
+	3668.12.31 = {
+		holder = yunxingbeitangshi2
+	}
+	3683.12.31 = {
+		holder = yunxingbeitangshi3
+	}
+	3729.12.31 = {
+		holder = yunxingbeitangshi4
+	}
+	3742.12.31 = {
+		holder = yunxingbeitangshi5
+	}
+	3791.12.31 = {
+		holder = yunxingbeitangshi6
+	}
+	3830.12.31 = {
+		holder = yunxingbeitangshi7
+	}
+	3843.12.31 = {
+		holder = yunxingbeitangshi8
+	}
+	3849.12.31 = {
+		government = tribal_government
+		change_development_level = 27
+	}
+}

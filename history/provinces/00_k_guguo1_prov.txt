@@ -1,0 +1,33 @@
+﻿##### d_gushi1 ############################
+
+### c_gu6
+# GU6
+1359 = {
+	culture = jin
+	religion = dongzhouli
+	holding = castle_holding
+}
+# JIUYUAN
+1358 = {
+	holding = none
+}
+
+
+### c_pingyang4
+# PINGYANG4
+1360 = {
+	culture = jin
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+### c_shouduo
+# SHOUDUO
+1362 = {
+	culture = jin
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+

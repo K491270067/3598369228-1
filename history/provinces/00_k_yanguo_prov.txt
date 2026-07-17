@@ -1,0 +1,48 @@
+﻿##### d_yanshi ############################
+
+### c_yan2
+# YAN2
+594 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+# SANTING
+620 = {
+	holding = none
+}
+
+
+### c_tongqiu
+# TONGQIU
+595 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+##### d_zhoushi2 ############################
+
+### c_fugou
+# FUGOU
+2339 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+### c_zhou3
+# ZHOU3
+2341 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+# NIUSHOU
+593 = {
+	holding = none
+}
+
+

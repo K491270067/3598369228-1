@@ -1,0 +1,31 @@
+﻿l_simp_chinese:
+ feudal_admin_government: "封建行政制"
+ feudal_admin_government_with_icon: "@government_type_feudal!$feudal_admin_government$"
+ feudal_admin_government_text_icon: "@government_type_feudal!$feudal_admin_government$"
+ feudal_admin_government_adjective: "[Character.Custom('GetFeudalAdminGovName')]"
+ feudal_admin_government_realm: "封建行政领地"
+ feudal_admin_government_vassals_label: "封建[obligations|E]基于每个[vassal|E]的[vassal_contract|E]"
+ feudal_admin_government_desc: "\n$game_concept_feudal_desc$\n\n#F 封建制是九世纪至十五世纪在欧洲占主导地位的政体。土地持有者与那些提供服务与劳动以换取居住权的人之间形成的关系，是封建系统的基石。随着技术和行政能力的发展，这种基于契约和人身依附关系的社会模式也开始发生变动。统治者们开始更多的利用法律和委派的官员彰显中央的权威。#!"
+
+ FEUDAL_GOV_DEFAULT: "封建制"
+ FEUDAL_GOV_FRANCE: "世袭采邑制"
+ FEUDAL_ADMIN_GOV_DEFAULT: "封建行政制"
+ FEUDAL_ADMIN_GOV_FRANCE: "行政采邑制"
+
+ FEUDAL_ADMIN_GOVERNORSHIP_TOOLTIP: "[Character.Custom('GetGovernmentIcon')][SelectLocalization( ROOT.Char.GetGovernment.IsValid(), 'GOVERNMENT_ADJECTIVE', '' )][governorship|E]辖区"
+ FEUDAL_ADMIN_VASSAL_TOOLTIP: "[Character.Custom('GetGovernmentIcon')][SelectLocalization( ROOT.Char.GetGovernment.IsValid(), 'GOVERNMENT_ADJECTIVE', '' )][realm|E][vassal|E]"
+
+ feudal_autonomous_vassal: "封建自治封臣"
+ feudal_autonomous_vassal_desc: "封建自治封臣不会直接为[liege|E]提供[levies|E]，[taxes|E]也比较少。但是他们可以在[vassal_contract|E]允许的情况下动用全部军力以加入[liege|E]的[wars]。"
+ feudal_autonomous_vassals_amount: "封建自治[vassals]数量"
+ is_feudal_autonomous_vassal: "是封建自治封臣 : $VALUE|=+0$"
+ 
+ FEUDAL_AUTONOMOUS_VASSAL_TOOLTIP: "[Character.Custom('GetGovernmentIcon')][SelectLocalization( ROOT.Char.GetGovernment.IsValid(), 'GOVERNMENT_ADJECTIVE', '' )]自治[realm|E][vassal|E]"
+ FEUDAL_AUTONOMOUS_VASSAL_TOTAL_SUBORDINATE_TOOLTIP: "[Character.Custom('GetGovernmentIcon')][SelectLocalization( ROOT.Char.GetGovernment.IsValid(), 'GOVERNMENT_ADJECTIVE', '' )]仆役[realm|E][vassal|E]"
+ FEUDAL_AUTONOMOUS_VASSAL_MARCH_TOOLTIP: "[Character.Custom('GetGovernmentIcon')][SelectLocalization( ROOT.Char.GetGovernment.IsValid(), 'GOVERNMENT_ADJECTIVE', '' )]边防区[realm|E][vassal|E]"
+ FEUDAL_AUTONOMOUS_VASSAL_MILITARY_SUBORDINATE_TOOLTIP: "[Character.Custom('GetGovernmentIcon')][SelectLocalization( ROOT.Char.GetGovernment.IsValid(), 'GOVERNMENT_ADJECTIVE', '' )]军事仆从[realm|E][vassal|E]"
+ FEUDAL_AUTONOMOUS_VASSAL_CLIENTELA_TOOLTIP: "[Character.Custom('GetGovernmentIcon')][SelectLocalization( ROOT.Char.GetGovernment.IsValid(), 'GOVERNMENT_ADJECTIVE', '' )]客属[realm|E][vassal|E]"
+ FEUDAL_AUTONOMOUS_VASSAL_TAX_FARM_TOOLTIP: "[Character.Custom('GetGovernmentIcon')][SelectLocalization( ROOT.Char.GetGovernment.IsValid(), 'GOVERNMENT_ADJECTIVE', '' )]包税区[realm|E][vassal|E]"
+ FEUDAL_AUTONOMOUS_VASSAL_NOMINAL_TOOLTIP: "[Character.Custom('GetGovernmentIcon')][SelectLocalization( ROOT.Char.GetGovernment.IsValid(), 'GOVERNMENT_ADJECTIVE', '' )]名义[realm|E][vassal|E]"
+ FEUDAL_AUTONOMOUS_VASSAL_CONFEDERATION_MEMBER_TOOLTIP: "[Character.Custom('GetGovernmentIcon')][SelectLocalization( ROOT.Char.GetGovernment.IsValid(), 'GOVERNMENT_ADJECTIVE', '' )]联盟成员"
+ 

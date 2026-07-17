@@ -1,0 +1,251 @@
+﻿k_weiguo = {
+3574.1.1 = {
+    liege = "e_zhoutianzi"
+		holder = han16
+	}
+3598.12.31 = {
+		holder = han176
+	}
+3613.1.1 = {
+		holder = han177
+	}
+3628.1.1 = {
+		holder = han178
+	}
+3637.1.1 = {
+		holder = han179
+	}
+3676.1.1 = {
+		holder = han180
+	}
+3713.1.1 = {
+		holder = han181
+	}
+3752.1.1 = {
+		holder = han182
+	}
+3763.1.1 = {
+		holder = han183
+	}
+3807.1.1 = {
+		holder = han184
+	}
+3807.1.1 = {
+		holder = han185
+	}
+3849.1.1 = {
+		liege = "e_zhoutianzi1"
+	}
+3849.1.1 = { change_development_level = 40 }
+3849.1.1 = {
+	government = feudal_admin_government
+	}
+}
+
+d_changshi1 = {
+3574.1.1 = {
+    liege = "k_weiguo"
+		holder = han16
+	}
+3598.12.31 = {
+		holder = han176
+	}
+3613.1.1 = {
+		holder = han177
+	}
+3628.1.1 = {
+		holder = han178
+	}
+3637.1.1 = {
+		holder = han179
+	}
+3676.1.1 = {
+		holder = han180
+	}
+3713.1.1 = {
+		holder = han181
+	}
+3752.1.1 = {
+		holder = han182
+	}
+3763.1.1 = {
+		holder = han183
+	}
+3807.1.1 = {
+		holder = han184
+	}
+3807.1.1 = {
+		holder = kangshi6
+	}
+3849.1.1 = { change_development_level = 27 }
+3849.1.1 = {
+	government = feudal_admin_government
+	}
+}
+
+d_ningshi = {
+3574.1.1 = {
+    liege = "k_weiguo"
+		holder = han16
+	}
+3598.12.31 = {
+		holder = han176
+	}
+3613.1.1 = {
+		holder = han177
+	}
+3628.1.1 = {
+		holder = han178
+	}
+3637.1.1 = {
+		holder = han179
+	}
+3676.1.1 = {
+		holder = han180
+	}
+3713.1.1 = {
+		holder = han181
+	}
+3752.1.1 = {
+		holder = han182
+	}
+3763.1.1 = {
+		holder = han183
+	}
+3807.1.1 = {
+		holder = han184
+	}
+3807.1.1 = {
+		holder = han185
+	}
+3810.1.1 = {
+		holder = han200
+	}	
+3849.1.1 = { change_development_level = 28 }
+3849.1.1 = {
+	government = feudal_admin_government
+	}
+}
+
+d_sunshi = {
+3574.1.1 = {
+    liege = "k_weiguo"
+		holder = han16
+	}
+3598.12.31 = {
+		holder = han176
+	}
+3613.1.1 = {
+		holder = han177
+	}
+3628.1.1 = {
+		holder = han178
+	}
+3637.1.1 = {
+		holder = han179
+	}
+3676.1.1 = {
+		holder = han180
+	}
+3713.1.1 = {
+		holder = han181
+	}
+3752.1.1 = {
+		holder = han182
+	}
+3763.1.1 = {
+		holder = han183
+	}
+3807.1.1 = {
+		holder = han184
+	}
+3807.1.1 = {
+		holder = han185
+	}
+3810.1.1 = {
+		holder = han196
+	}	
+3849.1.1 = { change_development_level = 40 }
+3849.1.1 = {
+	government = feudal_admin_government
+	}
+}
+
+d_kangshi = {
+3574.1.1 = {
+    liege = "k_weiguo"
+		holder = han16
+	}
+3598.12.31 = {
+		holder = han176
+	}
+3613.1.1 = {
+		holder = han177
+	}
+3628.1.1 = {
+		holder = han178
+	}
+3637.1.1 = {
+		holder = han179
+	}
+3676.1.1 = {
+		holder = han180
+	}
+3713.1.1 = {
+		holder = han181
+	}
+3752.1.1 = {
+		holder = han182
+	}
+3763.1.1 = {
+		holder = han183
+	}
+3807.1.1 = {
+		holder = han184
+	}
+3807.1.1 = {
+		holder = kangshi1
+	}
+3849.1.1 = { change_development_level = 28 }
+3849.1.1 = {
+	government = feudal_admin_government
+	}
+}
+
+d_shishi1 = {
+3574.1.1 = {
+    liege = "k_weiguo"
+		holder = han16
+	}
+3598.12.31 = {
+		holder = han176
+	}
+3613.1.1 = {
+		holder = han177
+	}
+3628.1.1 = {
+		holder = han178
+	}
+3637.1.1 = {
+		holder = han179
+	}
+3676.1.1 = {
+		holder = han180
+	}
+3713.1.1 = {
+		holder = han181
+	}
+3752.1.1 = {
+		holder = han182
+	}
+3763.1.1 = {
+		holder = han205
+	}
+3826.1.1 = {
+		holder = han206
+	}
+3849.1.1 = { change_development_level = 29 }
+3849.1.1 = {
+	government = feudal_admin_government
+	}
+}

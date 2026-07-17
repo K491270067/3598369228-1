@@ -1,0 +1,128 @@
+﻿##### d_yanjingshi ############################
+
+### c_fenyang
+# FENYANG
+1346 = {
+	culture = beirong
+	religion = saman
+	holding = tribal_holding
+}
+# WAN3
+2690 = {
+	holding = none
+}
+# QI16
+2691 = {
+	holding = none
+}
+
+
+### c_guancen
+# GUANCEN
+2686 = {
+	culture = beirong
+	religion = saman
+	holding = tribal_holding
+}
+# NINGHUA
+2687 = {
+	holding = none
+}
+
+
+### c_shu4
+# SHU4
+2689 = {
+	culture = beirong
+	religion = saman
+	holding = tribal_holding
+}
+# SHAGOU
+2688 = {
+	holding = none
+}
+
+
+### c_tianmenguan
+# TIANMENGUAN
+2693 = {
+	culture = beirong
+	religion = saman
+	holding = tribal_holding
+}
+# LINJINGKOU
+2692 = {
+	holding = none
+}
+
+
+##### d_yanfushi ############################
+
+### c_hehe
+# HEHE
+1348 = {
+	culture = beirong
+	religion = saman
+	holding = tribal_holding
+}
+
+
+### c_yifan
+# YIFAN
+1349 = {
+	culture = beirong
+	religion = saman
+	holding = tribal_holding
+}
+# FU4
+2680 = {
+	holding = none
+}
+
+
+### c_linshui
+# LINSHUI
+1390 = {
+	culture = beirong
+	religion = saman
+	holding = tribal_holding
+}
+# FOU
+2681 = {
+	holding = none
+}
+
+
+##### d_langshi ############################
+
+### c_gaolang
+# GAOLANG
+1389 = {
+	culture = beirong
+	religion = saman
+	holding = tribal_holding
+}
+# FANGSHAN
+1391 = {
+	holding = none
+}
+
+
+### c_wutu
+# WUTU
+1392 = {
+	culture = beirong
+	religion = saman
+	holding = tribal_holding
+}
+
+
+### c_keihu
+# KEIHU
+1393 = {
+	culture = beirong
+	religion = saman
+	holding = tribal_holding
+}
+
+

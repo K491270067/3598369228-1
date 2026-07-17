@@ -1,0 +1,244 @@
+#################纳
+baipunaguo1={
+  name="baiyuenan308"
+  dynasty=xin890
+	religion="guiwu" 
+	culture="baipu"
+
+  3724.1.1 = {
+		birth = yes
+	}
+  3770.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+baipunaguo2={
+  name="baiyuenan329"
+  dynasty=xin890
+	religion="guiwu" 
+	culture="baipu"
+	father=baipunaguo1
+
+  3749.1.1 = {
+		birth = yes
+	}
+  3801.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+baipunaguo3={
+  name="baiyuenan353"
+  dynasty=xin890
+	religion="guiwu" 
+	culture="baipu"
+	father=baipunaguo2
+
+  3781.1.1 = {
+		birth = yes
+	}
+  3827.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+baipunaguo4={
+  name="baiyuenan374"
+  dynasty=xin890
+	religion="guiwu" 
+	culture="baipu"
+	father=baipunaguo3
+
+  3803.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+baipunaguo5={
+  name="baiyuenan398"
+  dynasty=xin890
+	religion="guiwu" 
+	culture="baipu"
+	father=baipunaguo4
+
+  3824.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+baipunaguo6={
+  name="baiyuenan423"
+  dynasty=xin890
+	religion="guiwu" 
+	culture="baipu"
+	father=baipunaguo4
+
+  3826.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+baipunaguo7={
+  name="baiyuenv35"
+  dynasty=xin890
+	religion="guiwu" 
+	culture="baipu"
+	father=baipunaguo4
+	female=yes
+
+  3829.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+baipunaguo8={
+  name="baiyuenv39"
+  dynasty=xin890
+	religion="guiwu" 
+	culture="baipu"
+	father=baipunaguo4
+	female=yes
+
+  3832.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+############
+baipunaguo9={
+  name="baiyuenan278"
+  dynasty=xin891
+	religion="guiwu" 
+	culture="baipu"
+
+  3762.1.1 = {
+		birth = yes
+	}
+  3817.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+baipunaguo10={
+  name="baiyuenan290"
+  dynasty=xin891
+	religion="guiwu" 
+	culture="baipu"
+	father=baipunaguo9
+
+  3789.1.1 = {
+		birth = yes
+	}
+  3834.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+baipunaguo11={
+  name="baiyuenan312"
+  dynasty=xin891
+	religion="guiwu" 
+	culture="baipu"
+	father=baipunaguo10
+
+  3813.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+baipunaguo12={
+  name="baiyuenan333"
+  dynasty=xin891
+	religion="guiwu" 
+	culture="baipu"
+	father=baipunaguo11
+
+  3831.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+baipunaguo13={
+  name="baiyuenan282"
+  dynasty=xin891
+	religion="guiwu" 
+	culture="baipu"
+	father=baipunaguo11
+
+  3832.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+baipunaguo14={
+  name="baiyuenv80"
+  dynasty=xin891
+	religion="guiwu" 
+	culture="baipu"
+	father=baipunaguo11
+	female=yes
+
+  3833.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+baipunaguo15={
+  name="baiyuenv92"
+  dynasty=xin891
+	religion="guiwu" 
+	culture="baipu"
+	father=baipunaguo11
+	female=yes
+
+  3834.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}

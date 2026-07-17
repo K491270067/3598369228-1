@@ -1,0 +1,365 @@
+﻿##### 偪阳国--妘姓偪阳氏 #####
+#参考文献《淮夷古国——偪阳国，春秋时期最牛逼的小国，十国重兵月余不拔》
+han1556={
+  name="qian1"
+  dynasty=xin423
+	religion="yili" 
+	culture="dongyi"
+  father=lai25
+
+  3469.1.1 = {
+		birth = yes
+	}
+  3537.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1557={
+  name="jie1"
+  dynasty_house=house_xin62#偪阳
+	religion="yili" 
+	culture="dongyi"
+  father=han1556
+
+  3509.1.1 = {
+		birth = yes
+	}
+  3587.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1558={
+  name="chuan"
+  dynasty_house=house_xin62#偪阳
+	religion="yili" 
+	culture="dongyi"
+  father=han1557
+
+  3544.1.1 = {
+		birth = yes
+	}
+  3619.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1559={
+  name="liang1"
+  dynasty_house=house_xin62#偪阳
+	religion="yili" 
+	culture="dongyi"
+  father=han1558
+
+  3595.1.1 = {
+		birth = yes
+	}
+  3668.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1560={
+  name="teng"
+  dynasty_house=house_xin62#偪阳
+	religion="yili" 
+	culture="dongyi"
+  father=han1559
+
+  3609.1.1 = {
+		birth = yes
+	}
+  3688.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1561={
+  name="ding3"
+  dynasty_house=house_xin62#偪阳
+	religion="yili" 
+	culture="dongyi"
+  father=han1560
+
+  3656.1.1 = {
+		birth = yes
+	}
+  3709.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1562={
+  name="mi1"
+  dynasty_house=house_xin62#偪阳
+	religion="yili" 
+	culture="dongyi"
+  father=han1561
+
+  3695.1.1 = {
+		birth = yes
+	}
+  3767.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1563={
+  name="qing1"
+  dynasty_house=house_xin62#偪阳
+	religion="yili" 
+	culture="dongyi"
+  father=han1562
+
+  3745.1.1 = {
+		birth = yes
+	}
+  3818.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1564={
+  name="yu7"#平王东迁时逼阳国国君
+  dynasty_house=house_xin62#偪阳
+	religion="yili" 
+	culture="dongyi"
+  father=han1563
+
+  3811.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han1565={
+  name="fang1"#储君1号，游戏开局19岁
+  dynasty_house=house_xin62#偪阳
+	religion="yili" 
+	culture="dongyi"
+  father=han1564
+
+  3835.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han1566={
+  name="ci"#储君2号，游戏开局时15岁
+  dynasty_house=house_xin62#偪阳
+	religion="yili" 
+	culture="dongyi"
+  father=han1564
+
+  3836.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han1567={
+  name="nvming54"#女1号
+  dynasty_house=house_xin62#偪阳
+	religion="yili" 
+	culture="dongyi"
+  father=han1564
+  female=yes
+
+  3837.2.2 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han1568={
+  name="nvming55"#女2号
+  dynasty_house=house_xin62#偪阳
+	religion="yili" 
+	culture="dongyi"
+  father=han1564
+  female=yes
+
+  3840.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han1569={
+  name="nvming56"#女3号
+  dynasty_house=house_xin62#偪阳
+	religion="yili" 
+	culture="dongyi"
+  father=han1564
+  female=yes
+
+  3839.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han1570={
+  name="que1"#弟1号
+  dynasty_house=house_xin62#偪阳
+	religion="yili" 
+	culture="dongyi"
+  father=han1564
+
+  3837.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han1571={
+  name="chi1"#弟2号
+  dynasty_house=house_xin62#偪阳
+	religion="yili" 
+	culture="dongyi"
+  father=han1564
+
+  3838.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+########偪氏
+biyangshi1={
+  name="nanming763"
+  dynasty_house=house_xin424
+	religion="yili" 
+	culture="dongyi"
+  father=han1561
+
+  3696.1.1 = {
+		birth = yes
+	}
+  3755.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+biyangshi2={
+  name="nanming770"
+  dynasty_house=house_xin424
+	religion="yili" 
+	culture="dongyi"
+  father=biyangshi1
+
+  3745.1.1 = {
+		birth = yes
+	}
+  3818.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+biyangshi3={
+  name="nanming778"#平王东迁时逼阳国国君
+  dynasty_house=house_xin424
+	religion="yili" 
+	culture="dongyi"
+  father=biyangshi2
+
+  3816.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+biyangshi4={
+  name="nanming909"#储君1号，游戏开局19岁
+  dynasty_house=house_xin424
+	religion="yili" 
+	culture="dongyi"
+  father=biyangshi3
+
+  3835.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+biyangshi5={
+  name="nanming932"#储君2号，游戏开局时15岁
+  dynasty_house=house_xin424
+	religion="yili" 
+	culture="dongyi"
+  father=biyangshi3
+
+  3836.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+biyangshi6={
+  name="niao1"
+  dynasty_house=house_xin424
+	religion="yili" 
+	culture="dongyi"
+  father=biyangshi3
+  female=yes
+
+  3837.2.2 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+biyangshi7={
+  name="xian5"
+  dynasty_house=house_xin424
+	religion="yili" 
+	culture="dongyi"
+  father=biyangshi3
+  female=yes
+
+  3838.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+biyangshi8={
+  name="nai1"
+  dynasty_house=house_xin424
+	religion="yili" 
+	culture="dongyi"
+  father=biyangshi3
+  female=yes
+
+  3839.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}

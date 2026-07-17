@@ -1,0 +1,79 @@
+﻿##### d_wojushi ############################
+
+### c_woju
+
+
+### c_fuzu
+
+
+### c_huali
+
+
+### c_diaoling
+# DIAOLING
+3441 = {
+	holding = none
+}
+
+
+### c_nanjiang
+# NANJIANG
+3502 = {
+	holding = none
+}
+# WOJU
+3576 = {
+	holding = none
+}
+# JIUYAN
+3577 = {
+	holding = none
+}
+
+
+### c_jiuyan
+# LONGSHAN
+3578 = {
+	holding = none
+}
+# BINHAI
+3579 = {
+	holding = none
+}
+
+
+### c_longshan
+
+
+### c_binhai
+
+
+### c_maishida
+
+
+### c_fusida
+# HUALI
+3437 = {
+	holding = none
+}
+# FUZHU
+3410 = {
+	holding = none
+}
+
+
+### c_yanyuan
+
+
+### c_tianqing
+
+
+### c_lianchi
+
+
+### c_shengping
+
+
+### c_lingquan
+
+

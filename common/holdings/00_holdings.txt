@@ -1,0 +1,934 @@
+﻿castle_holding = {
+	primary_building = castle_01
+	buildings = {
+		Jixiaxuegong_01
+		zhanghuagong_01
+		zhanghuagong_01
+		zhanghuagong_01
+		hulaoguan_01
+		zhouwanggong_01
+		hanguguan_01
+		yijue_01
+		dagu_01
+		guancheng_01
+		xuanmen_01
+		xuanyuan_01
+		xiaopingjin_01
+		mengjin_01
+		dasanguan_01
+		xiaoguan_01
+		wuguan_01
+		jianmenguan_01
+		yangping_01
+		jingjinguan_01
+		xiameng_01
+		tongguan_01
+		yanmenguan_01
+		loufan_01
+		fengyue_01
+		piantou_01
+		baijing_01
+		wushengguan_01
+		tianjing_01
+		dasuisai_01
+		yaoguan_01
+		mineguan_01
+		zijin_01
+		juyongguan_01
+		hongzhisai_01
+		yumen_01
+		yangguan_01
+		zhennan_01
+		dujiangyan_01
+		huangjintai_01
+		lingqu_01
+		huangjintai_01
+		Storehouse_01
+		capital_bureau_01
+		powerful_fortress_01
+		powerful_palace_01
+		hospices_01
+		curtain_walls_01
+		watchtowers_01
+		outposts_01
+		hill_forts_01
+		ramparts_01
+		farm_estates_01
+		cereal_fields_01
+		paddy_fields_01
+		pastures_01
+		peat_quarries_01
+		hill_farms_01
+		logging_camps_01
+		plantations_01
+		quarries_01
+		orchards_01
+		elephant_pens_01
+		hunting_grounds_01
+		regimental_grounds_01
+		barracks_01
+		military_camps_01
+		camel_farms_01
+		stables_01
+		smiths_01
+		hillside_grazing_01
+		warrior_lodges_01
+		horse_pastures_01
+		windmills_01
+		watermills_01
+		caravanserai_01
+		workshops_01
+		wind_furnace_01
+		powder_magazine_01
+		common_tradeport_01
+		hall_of_heroes_01
+		special_sicilian_parliament_01
+		special_greenhouse_01
+		qanats_01
+		murex_farm_01
+		waterworks_01
+		spice_plantation_01
+		breweries_01
+		monastic_schools_01 # only for the monastic_schools_allowed_in_every_holding_type faith tenet
+
+		oath_warriors_building_01
+		oath_faithful_building_01
+		oath_poor_building_01
+
+		uba_herbal_01
+		uba_vineyard_01
+		uba_olive_01
+		uba_fur_01
+		uba_manor_01
+		uba_aqueduct_01
+		uba_taxing_01
+		uba_townhall_01
+		uba_temple_01
+		uba_piazza_01
+		uba_bazaar_01
+		uba_bathroom_01
+		uba_library_01
+		uba_residence_01
+		uba_checkpoint_01
+		uba_joust_01
+		uba_private_01
+		uba_tea_01
+		uba_kiln_01
+		uba_silk_01
+		domain_castle_center_01
+		#东方建筑扩展#
+		qianmutian_01
+		qianmutian_01_ai
+		lutaiyanchang_01
+		shanhaiguan_01
+		heitudi_01
+		a_heitudi_01
+		bunudui_01
+		nulishichang_01
+		changshanyuchang_01
+		chayuan_01
+		shutian_01
+		shutian_01_ai
+		weibojun_01
+		dongfangchengqiang_01
+#		qishizhihua_regimental_grounds_01
+
+		#More building++#
+		tunnel_01
+		expansion_01
+		expansion_archer_cavalry_01
+		expansion_camel_cavalry_01
+		improvement_01
+		interior_01
+		support_01
+		town_01
+		muhou_01
+		silk_01
+		czhen_01
+		district_01
+		waterfront_01
+		spice_01
+		plain_01
+		mif_01
+		shanqiu_01
+		vineyard_01
+		farming_01
+		restau_01
+		slaughterhouse_01
+		lcamp_01
+		tavern_01
+		supm_01
+		stash_01
+		crockery_01
+		currier_01
+		hbm_01
+		hospital_01
+		fayuan_01
+		heishi_01
+		militia_01
+		horse_01
+		MBRXXX_horse_archer_01
+		MBRXXX_camel_01
+		embassy_01
+		civil_engineering_01
+		#COW奇迹之城#
+		#cow_generic_university_01 #高等学府
+		#cow_royal_palace_01 #皇家宫殿
+		#cow_great_harbor_01 #大海港
+		#cow_generic_library_01 #大图书馆
+		#cow_walls_new #大城墙
+		#cow_grand_fortress_01 #大要塞
+		#cow_great_lighthouse_01 #大灯塔
+		#cow_grand_amphitheatre_01 #大竞技场
+		#cow_city_gates_01 #城门
+		#COW奇迹之城#
+		#####TRADE#######
+		common_tradeport_01
+		special_sicilian_parliament_01
+		special_greenhouse_01
+		resources_market_01
+		resources_market_02
+		resources_market_03
+		resources_market_04
+		resources_market_05
+		resources_market_06
+		resources_market_07
+		resources_market_08
+		resources_market_09
+		resources_market_10
+		resources_market_11
+		resources_market_12
+		resources_market_13
+		resources_market_14
+		resources_market_15
+		resources_market_16
+		resources_market_17
+		resources_market_18
+		resources_market_19
+		resources_market_20
+		resources_market_21
+
+		resources_textile
+
+	}
+}
+
+tribal_holding = {
+	primary_building = tribe_01
+
+	buildings = {
+		palisades_01
+		war_camps_01
+		longhouses_01
+		market_villages_01
+		powerful_fortress_01
+		powerful_palace_01
+		idjang_forts_01
+		wantilan_01
+		kora_kora_yards_01
+		water_temples_01
+		stilted_granaries_01
+		Storehouse_01
+		hillside_grazing_01
+		warrior_lodges_01
+		horse_pastures_01
+
+		common_tradeport_01 # only for trade_ports_enabled_for_tribals culture parameter
+	
+		oath_warriors_building_01
+		oath_faithful_building_01
+		oath_poor_building_01
+		domain_castle_center_01
+			#东方建筑扩展
+		muchang_01
+		gaoshanjudian_01
+		
+		#More building++
+		car_01
+		Townsquare_01
+		zhanshi_01
+		raiding_01
+		liehu_01
+		pimao_01
+		war_01
+		tribeport_01
+		support_01
+		militia_01
+		horse_01
+		MBRXXX_horse_archer_01
+		MBRXXX_camel_01
+		medicine_lodge_01
+		ting_01
+		civil_engineering_01
+		######TRADE#######
+		common_tradeport_01
+
+		resources_market_01
+		resources_market_02
+		resources_market_03
+		resources_market_04
+		resources_market_05
+		resources_market_06
+		resources_market_07
+		resources_market_08
+		resources_market_09
+		resources_market_10
+		resources_market_11
+		resources_market_12
+		resources_market_13
+		resources_market_14
+		resources_market_15
+		resources_market_16
+		resources_market_17
+		resources_market_18
+		resources_market_19
+		resources_market_20
+		resources_market_21
+
+		monastic_schools_01 # only for the monastic_schools_allowed_in_every_holding_type faith tenet
+	}
+}
+
+city_holding = {
+	primary_building = city_01
+	buildings = {
+		dujiangyan_01
+		lingqu_01
+		hospices_01
+		outposts_01
+		farm_estates_01
+		cereal_fields_01
+		paddy_fields_01
+		pastures_01
+		peat_quarries_01
+		hill_farms_01
+		logging_camps_01
+		plantations_01
+		quarries_01
+		orchards_01
+		elephant_pens_01
+		hunting_grounds_01
+		regimental_grounds_01
+		barracks_01
+		military_camps_01
+		camel_farms_01
+		stables_01
+		smiths_01
+		hillside_grazing_01
+		warrior_lodges_01
+		horse_pastures_01
+		windmills_01
+		watermills_01
+		caravanserai_01
+		workshops_01
+		wind_furnace_01
+		powerful_fortress_01
+		powerful_palace_01
+		guild_halls_01
+Storehouse_01
+		common_tradeport_01
+		qanats_01
+		murex_farm_01
+		waterworks_01
+		spice_plantation_01
+
+		breweries_01
+		domain_castle_center_01
+		oath_warriors_building_01
+		oath_faithful_building_01
+		oath_poor_building_01
+
+		monastic_schools_01 # only for the monastic_schools_allowed_in_every_holding_type faith tenet
+		
+		uba_herbal_01
+		uba_vineyard_01
+		uba_olive_01
+		uba_fur_01
+		uba_manor_01
+		uba_aqueduct_01
+		uba_taxing_01
+		uba_townhall_01
+		uba_temple_01
+		uba_piazza_01
+		uba_bazaar_01
+		uba_bathroom_01
+		uba_library_01
+		uba_residence_01
+		uba_checkpoint_01
+		uba_joust_01
+		uba_private_01
+		uba_tea_01
+		uba_kiln_01
+		uba_silk_01
+		#东方建筑扩展#
+		qianmutian_01
+		qianmutian_01_ai
+		heitudi_01
+		a_heitudi_01
+		shanhaiguan_01
+		changshanyuchang_01
+		chayuan_01
+		shutian_01
+		shutian_01_ai
+
+		#More building++
+		czhen_01
+		district_01
+		waterfront_01
+		spice_01
+		silk_01
+		plain_01
+		mif_01
+		shanqiu_01
+		vineyard_01
+		farming_01
+		restau_01
+		slaughterhouse_01
+		lcamp_01
+		tavern_01
+		supm_01
+		stash_01
+		crockery_01
+		currier_01
+		hbm_01
+		hospital_01
+		fayuan_01
+		heishi_01
+		militia_01
+		horse_01
+		MBRXXX_horse_archer_01
+		MBRXXX_camel_01
+		civil_engineering_01
+		#COW奇迹之城#
+		#cow_generic_university_01 #高等学府
+		#cow_generic_library_01 #大图书馆
+		#cow_royal_palace_01 #皇家宫殿
+		#cow_great_harbor_01 #大海港
+		#cow_great_lighthouse_01 #大灯塔
+		#cow_grand_amphitheatre_01 #大竞技场
+		#cow_city_gates_01 #城门
+		#COW奇迹之城#
+		#City Walls#
+		city_walls_01
+		#City Walls#
+		###TRADE###
+		common_tradeport_01
+
+		resources_market_01
+		resources_market_02
+		resources_market_03
+		resources_market_04
+		resources_market_05
+		resources_market_06
+		resources_market_07
+		resources_market_08
+		resources_market_09
+		resources_market_10
+		resources_market_11
+		resources_market_12
+		resources_market_13
+		resources_market_14
+		resources_market_15
+		resources_market_16
+		resources_market_17
+		resources_market_18
+		resources_market_19
+		resources_market_20
+		resources_market_21
+		
+		resources_textile
+
+
+		yrc_capital_building_diplomacy
+		yrc_capital_building_martial
+		yrc_capital_building_stewardship
+		yrc_capital_building_intrigue
+		yrc_capital_building_learning
+
+	}
+
+	can_be_inherited = yes
+}
+
+church_holding = {
+	primary_building = temple_01
+	buildings = {
+		hospices_01
+		scriptorium_01
+		outposts_01
+		farm_estates_01
+		cereal_fields_01
+		paddy_fields_01
+		pastures_01
+		peat_quarries_01
+		hill_farms_01
+		logging_camps_01
+		plantations_01
+		quarries_01
+		orchards_01
+		elephant_pens_01
+		hunting_grounds_01
+		regimental_grounds_01
+		barracks_01
+		military_camps_01
+		camel_farms_01
+		stables_01
+		smiths_01
+		hillside_grazing_01
+		warrior_lodges_01
+		horse_pastures_01
+		windmills_01
+		watermills_01
+		caravanserai_01
+		workshops_01
+		wind_furnace_01
+		domain_castle_center_01
+		monastic_schools_01
+		megalith_01
+		powerful_fortress_01
+		powerful_palace_01
+		common_tradeport_01
+		hall_of_heroes_01
+		qanats_01
+		waterworks_01
+Storehouse_01
+		murex_farm_01
+
+		breweries_01
+
+		oath_warriors_building_01
+		oath_faithful_building_01
+		oath_poor_building_01
+
+		uba_herbal_01
+		uba_vineyard_01
+		uba_olive_01
+		uba_fur_01
+		uba_manor_01
+		uba_aqueduct_01
+		uba_taxing_01
+		uba_townhall_01
+		uba_temple_01
+		uba_piazza_01
+		uba_bazaar_01
+		uba_bathroom_01
+		# uba_library_01
+		uba_residence_01
+		uba_checkpoint_01
+		uba_joust_01
+		uba_private_01
+		uba_tea_01
+		uba_kiln_01
+		uba_silk_01
+		#东方建筑扩展#
+		qianmutian_01
+		qianmutian_01_ai
+		heitudi_01
+		a_heitudi_01
+		shanhaiguan_01
+		chayuan_01
+		shutian_01
+		shutian_01_ai
+		
+		#More building++
+		spice_01
+		silk_01
+		plain_01
+		mif_01
+		shanqiu_01
+		vineyard_01
+		farming_01
+		restau_01
+		stash_01
+		crockery_01
+		currier_01
+		hbm_01
+		hospital_01
+		fayuan_01
+		heishi_01
+		militia_01
+		horse_01
+		MBRXXX_horse_archer_01
+		MBRXXX_camel_01
+		civil_engineering_01
+		#COW奇迹之城#
+		#cow_generic_library_01 #大图书馆
+		#cow_christian_cathedral_01 #大教堂
+		#cow_muslim_mosque_01 #大清真寺
+		#cow_jewish_synagogue_01 #大犹太会堂
+		#cow_indian_temple_01
+		#cow_pagan_temple_01 #大神庙
+		#cow_zoroastrian_temple_01 #琐罗亚斯德神殿
+		#COW奇迹之城#
+		####TRADE######
+		common_tradeport_01
+
+		resources_market_01
+		resources_market_02
+		resources_market_03
+		resources_market_04
+		resources_market_05
+		resources_market_06
+		resources_market_07
+		resources_market_08
+		resources_market_09
+		resources_market_10
+		resources_market_11
+		resources_market_12
+		resources_market_13
+		resources_market_14
+		resources_market_15
+		resources_market_16
+		resources_market_17
+		resources_market_18
+		resources_market_19
+		resources_market_20
+		resources_market_21
+		
+		resources_textile
+	}
+
+	can_be_inherited = yes
+}
+
+nomad_holding = {
+	primary_building = nomadic_camp_01
+	counts_toward_domain_limit_if_disabled = no
+	can_be_inherited = yes
+	required_heir_government_types = { nomad_government }
+
+	parameters = {
+		no_buildings
+		no_levies
+		county_fertility
+	}
+}
+
+herder_holding = {
+	primary_building = herder_camp_01
+	counts_toward_domain_limit_if_disabled = no
+	can_be_inherited = yes
+	required_heir_government_types = {
+		nomad_government
+		herder_government
+	}
+	
+	parameters = {
+		no_buildings
+		no_levies
+		county_fertility
+	}
+}
+wsgport_holding = {
+	primary_building = wsgport_01
+	# counts_toward_domain_limit_if_disabled = no
+	buildings = {
+		super_gangqu_sushe_01 # 大宿舍
+		super_hm_regimental_grounds_01 # 格黑娜学园（大骑兵训练场）
+		super_hm_generic_university_01 # 学园都市
+		super_hm_library_01 # 大图书馆
+		super_siege_works_01 # 千年科技学园
+		super_fortress_arians_01 #  阿里乌斯堡垒
+		super_synagogue_01 # 三一大圣堂
+		super_shanhaijing_restaurant_01 # 山海经大酒店
+		super_national_security_agency_01 # 瓦尔基里国家安全部
+		super_special_rabbit_technology_01 # SRT战术学园
+		super_abaidos_bank_01 # 阿拜多斯对策委员会
+		powerful_fortress_01
+		powerful_palace_01
+		gangqu_veterinary_hospital_01
+		capital_garrison_01 #首都卫戍区
+		state_faith_temple_01		
+		hm_coast_gun_01 #海岸炮
+		vv_qanats_01 # 利托里奥井
+		state_faith_schools_01
+		shelter_hospital_01 # 港区方舱医院 
+		fort_monastery_01 # 要塞修道院
+		hm_vigilante_corps_01
+		hm_railway_road_01
+		gangqu_spandex_silkroad_trade_01
+		hm_coastal_railway_01
+		hm_camel_farms_01
+		hm_regimental_grounds_01
+		hm_underground_railroad_01
+		hm_fortress_artillery_01
+		hm_helicopter_base_01
+		hm_frontline_training_ground_01
+        gangqu_juntuan_01
+		gangqu_sushe_01
+		gangqu_xianbing_01
+		wsgport_curtain_walls_01
+		gangqu_engineering_bureau_01
+		gangqu_baths_01
+		gangqu_expedia_01
+		hm_military_camps_01
+		gangqu_spandex_plantation_01
+		hm_barracks_01
+		# curtain_walls_01
+		# watchtowers_01
+		# outposts_01
+		# hill_forts_01
+		# ramparts_01
+		
+		
+		
+		salander_wind_furnace_01
+		everchosen_city_01
+
+		capital_bureau_01
+
+		hospices_01
+		farm_estates_01
+		cereal_fields_01
+		paddy_fields_01
+		pastures_01
+		peat_quarries_01
+		hill_farms_01
+		logging_camps_01
+		plantations_01
+		quarries_01
+		orchards_01
+		elephant_pens_01
+		hunting_grounds_01
+		regimental_grounds_01
+		barracks_01
+		military_camps_01
+		camel_farms_01
+		stables_01
+		smiths_01
+		hillside_grazing_01
+		warrior_lodges_01
+		horse_pastures_01
+		windmills_01
+		watermills_01
+		caravanserai_01
+		workshops_01
+		wind_furnace_01
+
+		common_tradeport_01
+		hall_of_heroes_01
+		special_sicilian_parliament_01
+		special_greenhouse_01
+		qanats_01
+		murex_farm_01
+		waterworks_01
+		breweries_01
+		spice_plantation_01
+		monastic_schools_01
+		hm_cow_university_pandidakterion_01
+		hm_cow_palace_byzantion_01
+		hm_cow_hippodrome_byz_01
+		hm_cow_harbor_byzantion_01
+
+		hm_test_dome_of_the_rock_01
+		hm_test_temple_in_jerusalem_01
+		hm_test_temple_in_cathedral_01
+		
+		oath_warriors_building_01
+		oath_faithful_building_01
+		oath_poor_building_01
+	}
+}
+
+hmchurch_holding = {
+	primary_building = wsgport_temple_01
+	# counts_toward_domain_limit_if_disabled = no
+	buildings = {
+		state_faith_schools_01
+		super_gangqu_sushe_01 # 大宿舍
+		super_hm_regimental_grounds_01 # 格黑娜学园（大骑兵训练场）
+		super_hm_generic_university_01 # 学园都市
+		super_hm_library_01 # 大图书馆
+		super_siege_works_01 # 千年科技学园
+		super_fortress_arians_01 #  阿里乌斯堡垒
+		super_synagogue_01 # 三一大圣堂
+		super_shanhaijing_restaurant_01 # 山海经大酒店
+		super_national_security_agency_01 # 瓦尔基里国家安全部
+		super_special_rabbit_technology_01 # SRT战术学园
+		super_abaidos_bank_01 # 阿拜多斯对策委员会
+		powerful_fortress_01
+		powerful_palace_01
+		hm_coast_gun_01
+		vv_qanats_01 # 利托里奥井
+		shelter_hospital_01 # 港区方舱医院 
+		fort_monastery_01 # 要塞修道院
+		hm_vigilante_corps_01
+		hm_railway_road_01
+		gangqu_spandex_silkroad_trade_01
+		hm_coastal_railway_01
+		hm_camel_farms_01
+		hm_regimental_grounds_01
+		hm_underground_railroad_01
+		hm_fortress_artillery_01
+		hm_helicopter_base_01
+		hm_frontline_training_ground_01
+        gangqu_juntuan_01
+		gangqu_sushe_01
+		gangqu_xianbing_01
+		wsgport_curtain_walls_01
+		gangqu_engineering_bureau_01
+		gangqu_baths_01
+		gangqu_expedia_01
+		hm_military_camps_01
+		gangqu_spandex_plantation_01
+		hm_barracks_01
+
+		scriptorium_01
+		hospices_01
+		outposts_01
+		farm_estates_01
+		cereal_fields_01
+		paddy_fields_01
+		pastures_01
+		peat_quarries_01
+		hill_farms_01
+		logging_camps_01
+		plantations_01
+		quarries_01
+		orchards_01
+		elephant_pens_01
+		hunting_grounds_01
+		regimental_grounds_01
+		barracks_01
+		military_camps_01
+		camel_farms_01
+		breweries_01
+		spice_plantation_01
+		monastic_schools_01
+		megalith_01
+
+		common_tradeport_01
+		hall_of_heroes_01
+		qanats_01
+
+		hm_test_dome_of_the_rock_01
+		hm_test_temple_in_jerusalem_01
+		hm_test_temple_in_cathedral_01
+		
+		oath_warriors_building_01
+		oath_faithful_building_01
+		oath_poor_building_01
+	}
+
+	can_be_inherited = yes
+}
+
+war_ruins_holding = {
+	primary_building = war_ruins_01
+	powerful_fortress_01
+	powerful_palace_01
+	counts_toward_domain_limit_if_disabled = no
+	buildings = {}
+}
+
+temple_citadel_holding = {
+	primary_building = temple_citadel_01
+	buildings = {
+		citadel_shrine_01
+		sacred_pool_01
+		vihara_halls_01
+		waterworks_01
+		spice_plantation_01
+		powerful_fortress_01
+		powerful_palace_01
+		capital_bureau_01
+		
+		scriptorium_01
+		monastic_schools_01
+		megalith_01
+		domain_castle_center_01
+		hospices_01
+		farm_estates_01
+		cereal_fields_01
+		paddy_fields_01
+		pastures_01
+		peat_quarries_01
+		hill_farms_01
+		logging_camps_01
+		plantations_01
+		quarries_01
+		orchards_01
+		elephant_pens_01
+		regimental_grounds_01
+		barracks_01
+		military_camps_01
+		camel_farms_01
+		stables_01
+		smiths_01
+		hillside_grazing_01
+		warrior_lodges_01
+		horse_pastures_01
+		windmills_01
+		watermills_01
+		caravanserai_01
+		workshops_01
+		wind_furnace_01
+		powder_magazine_01
+		
+		common_tradeport_01
+		hall_of_heroes_01
+		qanats_01
+
+		breweries_01
+
+		oath_warriors_building_01
+		oath_faithful_building_01
+		oath_poor_building_01
+
+		uba_herbal_01
+		uba_vineyard_01
+		uba_olive_01
+		uba_fur_01
+		uba_manor_01
+		uba_aqueduct_01
+		uba_taxing_01
+		uba_townhall_01
+		uba_temple_01
+		uba_piazza_01
+		uba_bazaar_01
+		uba_bathroom_01
+		# uba_library_01
+		uba_residence_01
+		uba_checkpoint_01
+		uba_joust_01
+		uba_private_01
+		uba_tea_01
+		uba_kiln_01
+		uba_silk_01
+		# [mbrxxx]
+		hospital_01
+		farming_01
+		vineyard_01
+		militia_01
+		horse_01
+		mbrxxx_horse_archer_01
+		mbrxxx_camel_01
+		civil_engineering_01
+		# [/mbrxxx]
+		
+		#王国建筑师#奇观建筑师#
+		uba_herbal_01
+		uba_vineyard_01
+		uba_olive_01
+		uba_fur_01
+		uba_manor_01
+		uba_aqueduct_01
+		uba_taxing_01
+		uba_townhall_01
+		uba_temple_01
+		uba_piazza_01
+		uba_bazaar_01
+		uba_bathroom_01
+		# uba_library_01
+		uba_residence_01
+		uba_checkpoint_01
+		uba_joust_01
+		uba_private_01
+		uba_tea_01
+		uba_kiln_01
+		uba_silk_01
+
+	}
+
+	can_be_inherited = yes
+}

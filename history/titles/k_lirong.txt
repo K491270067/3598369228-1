@@ -1,0 +1,78 @@
+﻿k_lirong = {
+	2550.1.1 = {
+		holder = han3087
+	}
+	2623.1.1 = {
+		holder = han3088
+	}
+	2666.1.1 = {
+		holder = han3089
+	}
+	2711.1.1 = {
+		holder = han3090
+	}
+	2754.1.1 = {
+		holder = han3091
+	}
+	2822.1.1 = {
+		holder = han3092
+	}
+	2855.1.1 = {
+		holder = han3093
+	}
+	2900.1.1 = {
+		holder = han3094
+	}
+	2943.1.1 = {
+		holder = han3095
+	}
+	3000.1.1 = {
+		holder = han3096
+	}
+	3052.1.1 = {
+		holder = han3097
+	}
+	3107.12.31 = {
+		holder = han3098
+	}
+	3167.12.31 = {
+		holder = han3099
+	}
+	3209.12.31 = {
+		holder = han3100
+	}
+	3287.12.31 = {
+		holder = han3101
+	}
+	3349.12.31 = {
+		holder = han3102
+	}
+	3407.12.31 = {
+		holder = han3103
+	}
+	3474.12.31 = {
+		holder = han3104
+	}
+	3524.12.31 = {
+		holder = han3105
+	}
+	3588.12.31 = {
+		holder = han3106
+	}
+	3645.12.31 = {
+		holder = han3107
+	}
+	3711.12.31 = {
+		holder = han3108
+	}
+	3761.12.31 = {
+		holder = han3109
+	}
+	3821.12.31 = {
+		holder = han3110
+	}
+	3849.12.31 = {
+		government = tribal_government
+		change_development_level = 30
+	}
+}

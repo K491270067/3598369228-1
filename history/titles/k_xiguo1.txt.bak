@@ -1,0 +1,157 @@
+﻿d_baishuishi = {
+	3526.1.1 = {
+		liege = "k_juguo1"
+		holder = han5039
+	}
+	3580.12.31 = {
+		holder = han5040
+	}
+	3633.12.31 = {
+		holder = han5041
+	}
+	3673.12.31 = {
+		holder = han5042
+	}
+	3709.12.31 = {
+		holder = han5043
+	}
+	3745.12.31 = {
+		holder = han5044
+	}
+	3787.12.31 = {
+		holder = han5045
+	}
+	3811.12.31 = {
+		holder = pingzhouguo5
+	}
+	3849.1.1 = {
+		change_development_level = 24
+		government = tribal_government
+	}
+}
+
+d_danshi2 = {
+	3526.1.1 = {
+		liege = "k_juguo1"
+		holder = han5039
+	}
+	3580.12.31 = {
+		holder = han5040
+	}
+	3633.12.31 = {
+		holder = han5041
+	}
+	3673.12.31 = {
+		holder = han5042
+	}
+	3709.12.31 = {
+		holder = han5043
+	}
+	3745.12.31 = {
+		holder = han5044
+	}
+	3787.12.31 = {
+		holder = han5045
+	}
+	3811.12.31 = {
+		holder = pingzhouguo9
+	}
+	3849.1.1 = {
+		change_development_level = 25
+		government = tribal_government
+	}
+}
+
+d_goushi = {
+	3526.1.1 = {
+		liege = "k_juguo1"
+		holder = han5039
+	}
+	3580.12.31 = {
+		holder = han5040
+	}
+	3633.12.31 = {
+		holder = han5041
+	}
+	3673.12.31 = {
+		holder = han5042
+	}
+	3709.12.31 = {
+		holder = han5043
+	}
+	3745.12.31 = {
+		holder = han5044
+	}
+	3787.12.31 = {
+		holder = han5045
+	}
+	3811.12.31 = {
+		holder = pingzhouguo1
+	}
+	3849.1.1 = {
+		change_development_level = 26
+		government = tribal_government
+	}
+}
+
+d_jushi2 = {
+	3526.1.1 = {
+		liege = "k_juguo1"
+		holder = han5039
+	}
+	3580.12.31 = {
+		holder = han5040
+	}
+	3633.12.31 = {
+		holder = han5041
+	}
+	3673.12.31 = {
+		holder = han5042
+	}
+	3709.12.31 = {
+		holder = han5043
+	}
+	3745.12.31 = {
+		holder = han5044
+	}
+	3787.12.31 = {
+		holder = han5045
+	}
+	3811.12.31 = {
+		holder = han5046
+	}
+}
+
+k_xiguo1 = {
+3530.1.1 = {
+		holder = han5106
+	}
+3583.12.31 = {
+		holder = han5107
+	}
+3631.12.31 = {
+		holder = han5108
+	}
+3673.12.31 = {
+		holder = han5109
+	}
+3701.12.31 = {
+		holder = han5110
+	}
+3740.12.31 = {
+		holder = han5111
+	}
+3767.12.31 = {
+		holder = han5112
+	}
+3800.12.31 = {
+		holder = han5113
+	}
+3818.12.31 = {
+		holder = han5114
+	}
+3849.12.31 = {
+		government = tribal_government
+		change_development_level = 26
+	}
+}

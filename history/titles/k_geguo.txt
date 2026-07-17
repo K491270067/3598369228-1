@@ -1,0 +1,448 @@
+﻿c_gaotang = {
+	2530.1.1 = {
+		liege = "d_geshi"
+		holder = yougeshi1
+	}
+	2602.1.1 = {
+		holder = yougeshi2
+	}
+	2643.1.1 = {
+		holder = yougeshi3
+	}
+	2685.1.1 = {
+		holder = yougeshi4
+	}
+	2717.1.1 = {
+		holder = yougeshi5
+	}
+	2763.1.1 = {
+		holder = yougeshi6
+	}
+	2809.1.1 = {
+		holder = yougeshi7
+	}
+	2855.1.1 = {
+		holder = yougeshi8
+	}
+	2890.1.1 = {
+		holder = yougeshi9
+	}
+	2918.1.1 = {
+		holder = yougeshi10
+	}
+	2965.1.1 = {
+		holder = yougeshi11
+	}
+	3020.1.1 = {
+		holder = yougeshi12
+	}
+	3054.1.1 = {
+		holder = yougeshi13
+	}
+	3091.1.1 = {
+		holder = yougeshi14
+	}
+	3123.1.1 = {
+		holder = yougeshi15
+	}
+	3172.1.1 = {
+		holder = yougeshi16
+	}
+	3209.1.1 = {
+		holder = yougeshi17
+	}
+	3248.1.1 = {
+		holder = yougeshi18
+	}
+	3294.1.1 = {
+		holder = yougeshi19
+	}
+	3311.1.1 = {
+		holder = yougeshi20
+	}
+	3355.1.1 = {
+		holder = yougeshi21
+	}
+	3400.1.1 = {
+		holder = yougeshi22
+	}
+	3453.1.1 = {
+		holder = yougeshi23
+	}
+	3486.1.1 = {
+		holder = yougeshi24
+	}
+	3519.1.1 = {
+		holder = yougeshi25
+	}
+	3542.1.1 = {
+		holder = yougeshi26
+	}
+	3576.1.1 = {
+		holder = yougeshi27
+	}
+	3602.1.1 = {
+		holder = yougeshi28
+	}
+	3649.1.1 = {
+		holder = yougeshi29
+	}
+	3673.1.1 = {
+		holder = yougeshi30
+	}
+	3705.1.1 = {
+		holder = yougeshi31
+	}
+	3757.1.1 = {
+		holder = yougeshi32
+	}
+	3789.1.1 = {
+		holder = yougeshi33
+	}
+	3813.1.1 = {
+		holder = yougeshi34
+	}
+	3832.1.1 = {
+		holder = yougeshi49
+	}
+	3849.1.1 = {
+		government = feudal_admin_government
+		change_development_level = 25
+	}
+}
+c_zhongqiu1 = {
+	2530.1.1 = {
+		liege = "k_geguo"
+		holder = yougeshi1
+	}
+	2602.1.1 = {
+		holder = yougeshi2
+	}
+	2643.1.1 = {
+		holder = yougeshi3
+	}
+	2685.1.1 = {
+		holder = yougeshi4
+	}
+	2717.1.1 = {
+		holder = yougeshi5
+	}
+	2763.1.1 = {
+		holder = yougeshi6
+	}
+	2809.1.1 = {
+		holder = yougeshi7
+	}
+	2855.1.1 = {
+		holder = yougeshi8
+	}
+	2890.1.1 = {
+		holder = yougeshi9
+	}
+	2918.1.1 = {
+		holder = yougeshi10
+	}
+	2965.1.1 = {
+		holder = yougeshi11
+	}
+	3020.1.1 = {
+		holder = yougeshi12
+	}
+	3054.1.1 = {
+		holder = yougeshi13
+	}
+	3091.1.1 = {
+		holder = yougeshi14
+	}
+	3123.1.1 = {
+		holder = yougeshi15
+	}
+	3172.1.1 = {
+		holder = yougeshi16
+	}
+	3209.1.1 = {
+		holder = yougeshi17
+	}
+	3248.1.1 = {
+		holder = yougeshi18
+	}
+	3294.1.1 = {
+		holder = yougeshi19
+	}
+	3311.1.1 = {
+		holder = yougeshi20
+	}
+	3355.1.1 = {
+		holder = yougeshi21
+	}
+	3400.1.1 = {
+		holder = yougeshi22
+	}
+	3453.1.1 = {
+		holder = yougeshi23
+	}
+	3486.1.1 = {
+		holder = yougeshi24
+	}
+	3519.1.1 = {
+		holder = yougeshi25
+	}
+	3542.1.1 = {
+		holder = yougeshi26
+	}
+	3576.1.1 = {
+		holder = yougeshi27
+	}
+	3602.1.1 = {
+		holder = yougeshi28
+	}
+	3649.1.1 = {
+		holder = yougeshi29
+	}
+	3673.1.1 = {
+		holder = yougeshi30
+	}
+	3705.1.1 = {
+		holder = yougeshi31
+	}
+	3757.1.1 = {
+		holder = yougeshi32
+	}
+	3789.1.1 = {
+		holder = yougeshi33
+	}
+	3813.1.1 = {
+		holder = yougeshi34
+	}
+	3832.1.1 = {
+		holder = yougeshi46
+	}
+	3849.1.1 = {
+		government = feudal_admin_government
+		change_development_level = 27
+	}
+}
+d_geshi = {
+	2530.1.1 = {
+		liege = "k_geguo"
+		holder = yougeshi1
+	}
+	2602.1.1 = {
+		holder = yougeshi2
+	}
+	2643.1.1 = {
+		holder = yougeshi3
+	}
+	2685.1.1 = {
+		holder = yougeshi4
+	}
+	2717.1.1 = {
+		holder = yougeshi5
+	}
+	2763.1.1 = {
+		holder = yougeshi6
+	}
+	2809.1.1 = {
+		holder = yougeshi7
+	}
+	2855.1.1 = {
+		holder = yougeshi8
+	}
+	2890.1.1 = {
+		holder = yougeshi9
+	}
+	2918.1.1 = {
+		holder = yougeshi10
+	}
+	2965.1.1 = {
+		holder = yougeshi11
+	}
+	3020.1.1 = {
+		holder = yougeshi12
+	}
+	3054.1.1 = {
+		holder = yougeshi13
+	}
+	3091.1.1 = {
+		holder = yougeshi14
+	}
+	3123.1.1 = {
+		holder = yougeshi15
+	}
+	3172.1.1 = {
+		holder = yougeshi16
+	}
+	3209.1.1 = {
+		holder = yougeshi17
+	}
+	3248.1.1 = {
+		holder = yougeshi18
+	}
+	3294.1.1 = {
+		holder = yougeshi19
+	}
+	3311.1.1 = {
+		holder = yougeshi20
+	}
+	3355.1.1 = {
+		holder = yougeshi21
+	}
+	3400.1.1 = {
+		holder = yougeshi22
+	}
+	3453.1.1 = {
+		holder = yougeshi23
+	}
+	3486.1.1 = {
+		holder = yougeshi24
+	}
+	3519.1.1 = {
+		holder = yougeshi25
+	}
+	3542.1.1 = {
+		holder = yougeshi26
+	}
+	3576.1.1 = {
+		holder = yougeshi27
+	}
+	3602.1.1 = {
+		holder = yougeshi28
+	}
+	3649.1.1 = {
+		holder = yougeshi29
+	}
+	3673.1.1 = {
+		holder = yougeshi30
+	}
+	3705.1.1 = {
+		holder = yougeshi31
+	}
+	3757.1.1 = {
+		holder = yougeshi32
+	}
+	3789.1.1 = {
+		holder = yougeshi33
+	}
+	3813.1.1 = {
+		holder = yougeshi34
+	}
+	3832.1.1 = {
+		holder = yougeshi41
+	}
+	3849.1.1 = {
+		government = feudal_admin_government
+		change_development_level = 27
+	}
+}
+k_geguo = {
+	2530.1.1 = {
+		holder = yougeshi1
+	}
+	2602.1.1 = {
+		holder = yougeshi2
+	}
+	2643.1.1 = {
+		holder = yougeshi3
+	}
+	2685.1.1 = {
+		holder = yougeshi4
+	}
+	2717.1.1 = {
+		holder = yougeshi5
+	}
+	2763.1.1 = {
+		holder = yougeshi6
+	}
+	2809.1.1 = {
+		holder = yougeshi7
+	}
+	2855.1.1 = {
+		holder = yougeshi8
+	}
+	2890.1.1 = {
+		holder = yougeshi9
+	}
+	2918.1.1 = {
+		holder = yougeshi10
+	}
+	2965.1.1 = {
+		holder = yougeshi11
+	}
+	3020.1.1 = {
+		holder = yougeshi12
+	}
+	3054.1.1 = {
+		holder = yougeshi13
+	}
+	3091.1.1 = {
+		holder = yougeshi14
+	}
+	3123.1.1 = {
+		holder = yougeshi15
+	}
+	3172.1.1 = {
+		holder = yougeshi16
+	}
+	3209.1.1 = {
+		holder = yougeshi17
+	}
+	3248.1.1 = {
+		holder = yougeshi18
+	}
+	3294.1.1 = {
+		holder = yougeshi19
+	}
+	3311.1.1 = {
+		holder = yougeshi20
+	}
+	3355.1.1 = {
+		holder = yougeshi21
+	}
+	3400.1.1 = {
+		holder = yougeshi22
+	}
+	3453.1.1 = {
+		holder = yougeshi23
+	}
+	3486.1.1 = {
+		holder = yougeshi24
+	}
+	3519.1.1 = {
+		holder = yougeshi25
+	}
+	3542.1.1 = {
+		holder = yougeshi26
+	}
+	3576.1.1 = {
+		liege = "e_zhoutianzi"
+		holder = yougeshi27
+	}
+	3602.1.1 = {
+		holder = yougeshi28
+	}
+	3649.1.1 = {
+		holder = yougeshi29
+	}
+	3673.1.1 = {
+		holder = yougeshi30
+	}
+	3705.1.1 = {
+		holder = yougeshi31
+	}
+	3757.1.1 = {
+		holder = yougeshi32
+	}
+	3789.1.1 = {
+		holder = yougeshi33
+	}
+	3813.1.1 = {
+		holder = yougeshi34
+	}
+	3832.1.1 = {
+		holder = yougeshi35
+	}
+	3849.1.1 = {
+		government = feudal_admin_government
+		change_development_level = 29
+	}
+}

@@ -1,0 +1,17 @@
+﻿l_simp_chinese:
+ petition_restore_succession_title: "请求恢复头衔继承"
+ petition_restore_succession_desc: "\n“您之前宣布一些头衔将不再由我的家族世袭，这让我的继承人深感不安，他们不确定接下来会发生什么。”\n\n#flavor 你的封臣正站在大殿之中，向你称述他认为合理的请求。#!"
+ petition_restore_succession_submission_desc: "\n\n“我希望您能收回这一决定。为此，我想重申我对您的忠心！”\n\n#flavor 他单膝下跪，开始对你宣誓效忠。#!"
+ petition_restore_succession_hook_desc: "\n\n“我希望您能收回这一决定。为此，我能满足您的任何要求！”\n\n#flavor 他单膝下跪，大谈君臣之间的人情交往，并开始对你宣誓效忠。#!"
+ petition_restore_succession_gift_desc: "\n\n“我希望您能收回这一决定。为此，请收下这份礼物！”\n\n#flavor 他单膝下跪，呈上了一份明显是精心挑选的礼物，并开始对你宣誓效忠。#!" 
+ petition_restore_succession_agree: "这正合我意！"
+ petition_restore_succession_disagree: "驳回"
+
+ restore_all_title_succession: "所有头衔的继承不再被否决" 
+
+ petition_restore_succession_agree_reply_vassal_opening: "敬启，[scope_petition_restore_succession_vassal.GetFullNameNoTooltip]"
+ petition_restore_succession_disagree_reply_vassal_opening: "敬启，[scope_petition_restore_succession_vassal.GetFullNameNoTooltip]"
+ petition_restore_succession_agree_reply_vassal_desc: "你的忠心日月可鉴，我当然不会为难一位忠臣。我的决定总是基于[realm]的需求，而现在情况显然已经改变。" 
+ petition_restore_succession_agree_reply_vassal_desc.1: "这太好了"
+ petition_restore_succession_disagree_reply_vassal_desc: "我做出的决定是基于[realm]的需求，你的个人请求不能撼动共同的利益。希望你能理解。"
+ petition_restore_succession_disagree_reply_vassal_desc.1: "或许还有其他办法..."

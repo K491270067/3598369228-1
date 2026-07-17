@@ -1,0 +1,189 @@
+﻿##### d_pinmushi ############################
+
+### c_qiyuan
+# QIYUAN
+930 = {
+	culture = quanrong
+	religion = xirongfangling
+	holding = nomad_holding
+}
+# XIANGLE
+2806 = {
+	holding = none
+}
+# LONGQUAN
+955 = {
+	holding = none
+}
+
+
+### c_didao
+# DIDAO
+947 = {
+	culture = quanrong
+	religion = xirongfangling
+	holding = nomad_holding
+}
+# QUYAN
+945 = {
+	holding = none
+}
+
+
+### c_li7
+# LI7
+944 = {
+	culture = quanrong
+	religion = xirongfangling
+	holding = nomad_holding
+}
+# YIJUN
+946 = {
+	holding = none
+}
+
+
+### c_niyang
+# NIYANG
+1469 = {
+	culture = quanrong
+	religion = xirongfangling
+	holding = nomad_holding
+}
+# YIJU
+1468 = {
+	holding = none
+}
+
+
+##### d_bailuanshi ############################
+
+### c_bin
+# BIN
+952 = {
+	culture = quanrong
+	religion = xirongfangling
+	holding = nomad_holding
+}
+# GANQUAN
+924 = {
+	holding = none
+}
+# TUQIAO
+951 = {
+	holding = none
+}
+
+
+### c_xun2
+# XUN2
+954 = {
+	culture = quanrong
+	religion = xirongfangling
+	holding = nomad_holding
+}
+# SANSHUI
+953 = {
+	holding = none
+}
+
+
+### c_lvepang
+# LVEPANG
+1470 = {
+	culture = quanrong
+	religion = xirongfangling
+	holding = nomad_holding
+}
+# DAYAO
+1467 = {
+	holding = none
+}
+
+
+##### d_bailangshi ############################
+
+### c_tongguan
+# TONGGUAN
+928 = {
+	culture = quanrong
+	religion = xirongfangling
+	holding = nomad_holding
+}
+# HUAYUAN
+937 = {
+	holding = none
+}
+# FENGHUANGGU
+929 = {
+	holding = none
+}
+
+
+### c_wang
+# WANG
+942 = {
+	culture = quanrong
+	religion = xirongfangling
+	holding = nomad_holding
+}
+# CHANGLE
+940 = {
+	holding = none
+}
+
+
+### c_baishui
+# BAISHUI
+943 = {
+	culture = quanrong
+	religion = xirongfangling
+	holding = nomad_holding
+}
+
+
+##### d_bailushi ############################
+
+### c_duiyu
+# DUIYU
+926 = {
+	culture = quanrong
+	religion = xirongfangling
+	holding = nomad_holding
+}
+# SANYUAN
+927 = {
+	holding = none
+}
+# MENGHOUYUAN
+949 = {
+	holding = none
+}
+
+
+### c_gaoping1
+# GAOPING1
+950 = {
+	culture = quanrong
+	religion = xirongfangling
+	holding = nomad_holding
+}
+# BAILUYUAN
+948 = {
+	holding = none
+}
+
+
+### c_yunyang
+# YUNYANG
+923 = {
+	culture = quanrong
+	religion = xirongfangling
+	holding = nomad_holding
+}
+# JIAOHUO
+913 = {
+	holding = none
+}
+
+

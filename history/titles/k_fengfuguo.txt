@@ -1,0 +1,248 @@
+﻿d_fengshi5 = {
+	1919.1.1 = {
+		liege = "k_fengfuguo"
+		holder = fengfu4
+	}
+	1974.1.1 = {
+		holder = fengfu5
+	}
+	2023.1.1 = {
+		holder = fengfu6
+	}
+	2077.1.1 = {
+		holder = fengfu7
+	}
+	2140.1.1 = {
+		holder = fengfu8
+	}
+	2200.1.1 = {
+		holder = fengfu9
+	}
+	2264.1.1 = {
+		holder = fengfu10
+	}
+	2304.1.1 = {
+		holder = fengfu11
+	}
+	2367.1.1 = {
+		holder = fengfu12
+	}
+	2411.1.1 = {
+		holder = fengfu13
+	}
+	2477.1.1 = {
+		holder = fengfu14
+	}
+	2514.1.1 = {
+		holder = fengfu15
+	}
+	2577.1.1 = {
+		holder = fengfu16
+	}
+	2611.1.1 = {
+		holder = fengfu17
+	}
+	2671.1.1 = {
+		holder = fengfu18
+	}
+	2715.1.1 = {
+		holder = fengfu19
+	}
+	2800.1.1 = {
+		holder = fengfu20
+	}
+	2857.1.1 = {
+		holder = fengfu21
+	}
+	2917.1.1 = {
+		holder = fengfu22
+	}
+	3000.1.1 = {
+		holder = fengfu23
+	}
+	3043.1.1 = {
+		holder = fengfu24
+	}
+	3103.1.1 = {
+		holder = fengfu25
+	}
+	3163.1.1 = {
+		holder = fengfu26
+	}
+	3223.1.1 = {
+		holder = fengfu27
+	}
+	3283.1.1 = {
+		holder = fengfu28
+	}
+	3343.1.1 = {
+		holder = fengfu29
+	}
+	3403.1.1 = {
+		holder = fengfu30
+	}
+	3473.1.1 = {
+		holder = fengfu31
+	}
+	3493.1.1 = {
+		holder = fengfu32
+	}
+	3533.1.1 = {
+		holder = fengfu33
+	}
+	3603.1.1 = {
+		holder = fengfu34
+	}
+	3655.1.1 = {
+		holder = fengfu35
+	}
+	3688.1.1 = {
+		holder = fengfu36
+	}
+	3741.1.1 = {
+		holder = fengfu37
+	}
+	3752.1.1 = {
+		holder = fengfu38
+	}
+	3795.1.1 = {
+		holder = fengfu39
+	}
+	3805.1.1 = {
+		holder = fengfu40
+	}
+	3816.1.1 = {
+		holder = fengfu41
+	}
+	3843.1.1 = {
+		holder = fengfu47
+	}
+	3849.1.1 = {
+		change_development_level = 24
+	}
+}
+k_fengfuguo = {
+	1919.1.1 = {
+		holder = fengfu4
+	}
+	1974.1.1 = {
+		holder = fengfu5
+	}
+	2023.1.1 = {
+		holder = fengfu6
+	}
+	2077.1.1 = {
+		holder = fengfu7
+	}
+	2140.1.1 = {
+		holder = fengfu8
+	}
+	2200.1.1 = {
+		holder = fengfu9
+	}
+	2264.1.1 = {
+		holder = fengfu10
+	}
+	2304.1.1 = {
+		holder = fengfu11
+	}
+	2367.1.1 = {
+		holder = fengfu12
+	}
+	2411.1.1 = {
+		holder = fengfu13
+	}
+	2477.1.1 = {
+		holder = fengfu14
+	}
+	2514.1.1 = {
+		holder = fengfu15
+	}
+	2577.1.1 = {
+		holder = fengfu16
+	}
+	2611.1.1 = {
+		holder = fengfu17
+	}
+	2671.1.1 = {
+		holder = fengfu18
+	}
+	2715.1.1 = {
+		holder = fengfu19
+	}
+	2800.1.1 = {
+		holder = fengfu20
+	}
+	2857.1.1 = {
+		holder = fengfu21
+	}
+	2917.1.1 = {
+		holder = fengfu22
+	}
+	3000.1.1 = {
+		holder = fengfu23
+	}
+	3043.1.1 = {
+		holder = fengfu24
+	}
+	3103.1.1 = {
+		holder = fengfu25
+	}
+	3163.1.1 = {
+		holder = fengfu26
+	}
+	3223.1.1 = {
+		holder = fengfu27
+	}
+	3283.1.1 = {
+		holder = fengfu28
+	}
+	3343.1.1 = {
+		holder = fengfu29
+	}
+	3403.1.1 = {
+		holder = fengfu30
+	}
+	3473.1.1 = {
+		holder = fengfu31
+	}
+	3493.1.1 = {
+		holder = fengfu32
+	}
+	3533.1.1 = {
+		holder = fengfu33
+	}
+	3603.1.1 = {
+		liege = "e_zhoutianzi"
+		holder = fengfu34
+	}
+	3655.1.1 = {
+		holder = fengfu35
+	}
+	3688.1.1 = {
+		holder = fengfu36
+	}
+	3741.1.1 = {
+		holder = fengfu37
+	}
+	3752.1.1 = {
+		holder = fengfu38
+	}
+	3795.1.1 = {
+		holder = fengfu39
+	}
+	3805.1.1 = {
+		holder = fengfu40
+	}
+	3816.1.1 = {
+		holder = fengfu41
+	}
+	3843.1.1 = {
+		liege = "e_zhoutianzi1"
+		holder = fengfu42
+		government = feudal_admin_government
+	}
+	3849.1.1 = {
+		change_development_level = 30
+	}
+}

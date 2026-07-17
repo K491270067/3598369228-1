@@ -1,0 +1,13 @@
+﻿############### 绀煎穿涔愬潖 - 娲剧郴鍒囨崲濂芥劅淇 ###############
+
+switched_faction_opinion = {
+	opinion = -30
+	desc = opinion_switched_faction
+	months = 120
+}
+
+opinion_refused_demand = {
+	opinion = -15
+	desc = opinion_refused_demand_desc
+	months = 60
+}

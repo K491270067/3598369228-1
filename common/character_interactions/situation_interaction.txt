@@ -1,0 +1,375 @@
+﻿############### 绀煎穿涔愬潖 - 瑕佹眰灏佽嚕鏀规崲闃佃惀 ###############
+
+demand_faction_switch = {
+	category = interaction_category_diplomacy
+	common_interaction = no
+	interface_priority = 20
+
+	icon = icon_culture
+
+	is_shown = {
+		always = yes
+	}
+
+	is_valid = {
+		scope:actor = {
+			every_character_situation = {
+				type = spring_and_autumn_situation
+				involvement = involved
+			}
+			NOT = {
+				has_trait = character_interloper_of_zhou_dynasty
+			}
+			is_available_adult = yes
+			is_imprisoned = no
+		}
+		scope:recipient = {
+			every_character_situation = {
+				type = spring_and_autumn_situation
+				involvement = involved
+			}
+			NOT = {
+				has_trait = character_interloper_of_zhou_dynasty
+			}
+			is_available_adult = yes
+			is_imprisoned = no
+			NOT = { has_character_flag = recently_switched_faction_flag }
+		}
+		NOR = {
+			scope:actor = { has_trait = character_involve_supporters_of_zhou_dynasty }
+			scope:recipient = { has_trait = character_involve_supporters_of_zhou_dynasty }
+		}
+		NOR = {
+			scope:actor = { has_trait = character_involve_opponents_of_zhou_dynasty }
+			scope:recipient = { has_trait = character_involve_opponents_of_zhou_dynasty }
+		}
+		NOR = {
+			scope:actor = { has_trait = character_involve_neutral_of_zhou_dynasty }
+			scope:recipient = { has_trait = character_involve_neutral_of_zhou_dynasty }
+		}
+	}
+
+	is_valid_showing_failures_only = {
+		scope:actor = {
+			is_commanding_army = no
+			is_traveling = no
+		}
+		scope:recipient = {
+			is_commanding_army = no
+			is_traveling = no
+		}
+	}
+
+	### 灏戦噺璐胯祩锛氬鏂规€昏储瀵岀殑10%锛?10鎯呮効鍊?###
+	send_option = {
+		is_shown = {
+			scope:recipient = { gold >= 1 }
+		}
+		is_valid = {
+			scope:actor = { gold >= scope:recipient.gold * 0.1 }
+		}
+		flag = bribe_small
+
+		localization = demand_faction_switch_bribe_small
+		current_description = demand_faction_switch_bribe_small_desc
+		can_be_changed = { always = yes }
+	}
+
+	### 涓噺璐胯祩锛氬鏂规€昏储瀵岀殑30%锛?30鎯呮効鍊?###
+	send_option = {
+		is_shown = {
+			scope:recipient = { gold >= 1 }
+		}
+		is_valid = {
+			scope:actor = { gold >= scope:recipient.gold * 0.3 }
+		}
+		flag = bribe_medium
+		localization = demand_faction_switch_bribe_medium
+		current_description = demand_faction_switch_bribe_medium_desc
+		can_be_changed = { always = yes }
+	}
+
+	### 澶ч噺璐胯祩锛氬鏂规€昏储瀵岀殑100%锛?50鎯呮効鍊?###
+	send_option = {
+		is_shown = {
+			scope:recipient = { gold >= 1 }
+		}
+		is_valid = {
+			scope:actor = { gold >= scope:recipient.gold }
+		}
+		flag = bribe_large
+		localization = demand_faction_switch_bribe_large
+		current_description = demand_faction_switch_bribe_large_desc
+		can_be_changed = { always = yes }
+	}
+
+	### 閫艰揩锛氭秷鑰楀鏂规€诲▉鏈涚殑60%锛?40鎯呮効鍊?###
+	send_option = {
+		is_shown = { always = yes }
+		is_valid = {
+			scope:actor = { prestige >= scope:recipient.prestige * 0.6 }
+		}
+		flag = force_switch
+		localization = demand_faction_switch_force
+		current_description = demand_faction_switch_force_desc
+		#starts_enabled = { always = yes }
+		can_be_changed = { always = yes }
+			}
+
+	### 浣跨敤鐗靛埗 ###
+	send_option = {
+		is_shown = {
+			scope:actor = {
+				has_strong_hook = scope:recipient
+			}
+		}
+		flag = use_hook
+		localization = demand_faction_switch_hook
+		current_description = demand_faction_switch_hook_desc
+		starts_enabled = { always = yes }
+		can_be_changed = { always = yes }
+	}
+	
+	send_options_exclusive = yes
+
+	desc = demand_faction_switch_desc
+	greeting = neutral
+	prompt = demand_faction_switch_prompt
+	notification_text = demand_faction_switch_notification
+
+	auto_accept = no
+	use_diplomatic_range = yes
+
+	cooldown = { years = 5 }
+
+	ai_frequency = 120
+
+	on_accept = {
+		# 浜斿勾鍐峰嵈鏍囧織
+		scope:recipient = {
+			add_character_flag = {
+				flag = recently_switched_faction_flag
+				years = 5
+			}
+
+			# 绉婚櫎鎵€鏈夋棫娲剧郴鐗硅川
+			remove_trait ?= character_involve_supporters_of_zhou_dynasty
+			remove_trait ?= character_involve_opponents_of_zhou_dynasty
+			remove_trait ?= character_involve_neutral_of_zhou_dynasty
+		}
+
+		# 鎺ユ敹鏂规敼涓鸿姹傛柟鐨勬淳绯?
+		if = {
+			limit = { scope:actor = { has_trait = character_involve_supporters_of_zhou_dynasty } }
+			scope:recipient = { add_trait = character_involve_supporters_of_zhou_dynasty }
+		}
+		else_if = {
+			limit = { scope:actor = { has_trait = character_involve_opponents_of_zhou_dynasty } }
+			scope:recipient = { add_trait = character_involve_opponents_of_zhou_dynasty }
+		}
+		else_if = {
+			limit = { scope:actor = { has_trait = character_involve_neutral_of_zhou_dynasty } }
+			scope:recipient = { add_trait = character_involve_neutral_of_zhou_dynasty }
+		}
+
+		# 灏戦噺璐胯祩
+		if = {
+			limit = { has_flag = bribe_small }
+			scope:actor = { add_gold = { value = scope:recipient.gold multiply = -0.1 } }
+			scope:recipient = { add_gold = { value = scope:recipient.gold multiply = 0.1 } }
+		}
+
+		# 涓噺璐胯祩
+		if = {
+			limit = { has_flag = bribe_medium }
+			scope:actor = { add_gold = { value = scope:recipient.gold multiply = -0.3 } }
+			scope:recipient = { add_gold = { value = scope:recipient.gold multiply = 0.3 } }
+		}
+
+		# 澶ч噺璐胯祩
+		if = {
+			limit = { has_flag = bribe_large }
+			scope:actor = { add_gold = { value = scope:recipient.gold multiply = -1 } }
+			scope:recipient = { add_gold = { value = scope:recipient.gold multiply = 1 } }
+		}
+
+		# 閫艰揩
+		if = {
+			limit = { has_flag = force_switch }
+			scope:actor = { add_prestige = { value = scope:recipient.prestige multiply = -0.6 } }
+		}
+	}
+
+	on_decline = {
+		scope:recipient = {
+			add_opinion = {
+				target = scope:actor
+				modifier = opinion_refused_demand
+			}
+		}
+	}
+
+	ai_accept = {
+		base = -80
+
+		# 濂芥劅搴︾洿鎺ュ奖鍝嶆儏鎰垮€硷細姝ｅソ鎰熷姞鍊硷紝璐熷ソ鎰熷噺鍊硷紙姣?0鐐?卤10锛?
+		### 姝ｉ潰濂芥劅 ###
+		modifier = {
+			add = 10
+			scope:recipient = { opinion_of = { target = scope:actor value >= 10 } }
+		}
+		modifier = {
+			add = 10
+			scope:recipient = { opinion_of = { target = scope:actor value >= 20 } }
+		}
+		modifier = {
+			add = 10
+			scope:recipient = { opinion_of = { target = scope:actor value >= 30 } }
+		}
+		modifier = {
+			add = 10
+			scope:recipient = { opinion_of = { target = scope:actor value >= 40 } }
+		}
+		modifier = {
+			add = 10
+			scope:recipient = { opinion_of = { target = scope:actor value >= 50 } }
+		}
+		modifier = {
+			add = 10
+			scope:recipient = { opinion_of = { target = scope:actor value >= 60 } }
+		}
+		modifier = {
+			add = 10
+			scope:recipient = { opinion_of = { target = scope:actor value >= 70 } }
+		}
+		modifier = {
+			add = 10
+			scope:recipient = { opinion_of = { target = scope:actor value >= 80 } }
+		}
+		modifier = {
+			add = 10
+			scope:recipient = { opinion_of = { target = scope:actor value >= 90 } }
+		}
+		modifier = {
+			add = 10
+			scope:recipient = { opinion_of = { target = scope:actor value >= 100 } }
+		}
+
+		### 璐熼潰濂芥劅 ###
+		modifier = {
+			add = -10
+			scope:recipient = { NOT = { opinion_of = { target = scope:actor value >= -9 } } }
+		}
+		modifier = {
+			add = -10
+			scope:recipient = { NOT = { opinion_of = { target = scope:actor value >= -19 } } }
+		}
+		modifier = {
+			add = -10
+			scope:recipient = { NOT = { opinion_of = { target = scope:actor value >= -29 } } }
+		}
+		modifier = {
+			add = -10
+			scope:recipient = { NOT = { opinion_of = { target = scope:actor value >= -39 } } }
+		}
+		modifier = {
+			add = -10
+			scope:recipient = { NOT = { opinion_of = { target = scope:actor value >= -49 } } }
+		}
+		modifier = {
+			add = -10
+			scope:recipient = { NOT = { opinion_of = { target = scope:actor value >= -59 } } }
+		}
+		modifier = {
+			add = -10
+			scope:recipient = { NOT = { opinion_of = { target = scope:actor value >= -69 } } }
+		}
+		modifier = {
+			add = -10
+			scope:recipient = { NOT = { opinion_of = { target = scope:actor value >= -79 } } }
+		}
+		modifier = {
+			add = -10
+			scope:recipient = { NOT = { opinion_of = { target = scope:actor value >= -89 } } }
+		}
+		modifier = {
+			add = -10
+			scope:recipient = { NOT = { opinion_of = { target = scope:actor value >= -99 } } }
+		}
+
+		# 灏戦噺璐胯祩 +10
+		modifier = {
+			add = 10
+			has_flag = bribe_small
+		}
+
+		# 涓噺璐胯祩 +30
+		modifier = {
+			add = 30
+			has_flag = bribe_medium
+		}
+
+		# 澶ч噺璐胯祩 +50
+		modifier = {
+			add = 50
+			has_flag = bribe_large
+		}
+
+		# 灏佽嚕璐┆鐗硅川锛氳纯璧傞澶?10
+		modifier = {
+			add = 10
+			scope:recipient = { has_trait = greedy }
+			OR = {
+				has_flag = bribe_small
+				has_flag = bribe_medium
+				has_flag = bribe_large
+			}
+		}
+
+		# 閫艰揩 +40
+		modifier = {
+			add = 40
+			has_flag = force_switch
+		}
+
+		# 浣跨敤鐗靛埗 +80锛堝己鐗靛埗锛?
+		modifier = {
+			add = 80
+			has_flag = use_hook
+		}
+
+		# 娓╁拰娲剧郴鐨勫皝鑷ｆ洿闅捐璇存湇
+		modifier = {
+			add = -20
+			scope:recipient = { has_trait = character_involve_neutral_of_zhou_dynasty }
+		}
+
+
+	}
+
+	ai_will_do = {
+		base = 50
+		# 寮哄娍棰嗕富鏇村€惧悜浜庤繖鏍疯姹?
+		modifier = {
+			add = 40
+			scope:actor = { has_trait = arrogant }
+		}
+		modifier = {
+			add = 20
+			scope:actor = { has_trait = ambitious }
+		}
+		# 娓╁拰鐨勯涓讳笉澶細杩欐牱鍋?
+		modifier = {
+			add = -30
+			scope:actor = { has_trait = compassionate }
+		}
+		modifier = {
+			add = -20
+			scope:actor = { has_trait = content }
+		}
+	}
+
+	ai_potential = {
+		always = yes
+	}
+}

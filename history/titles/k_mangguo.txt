@@ -1,0 +1,99 @@
+﻿d_xiangshi2 = {
+	3291.1.1 = {
+		liege = "k_mangguo"
+		holder = mangguo1
+	}
+	3371.1.1 = {
+		holder = mangguo2
+	}
+	3412.1.1 = {
+		holder = mangguo3
+	}
+	3474.1.1 = {
+		holder = mangguo4
+	}
+	3518.1.1 = {
+		holder = mangguo5
+	}
+	3555.1.1 = {
+		holder = mangguo6
+	}
+	3574.1.1 = {
+		holder = mangguo7
+	}
+	3607.1.1 = {
+		holder = mangguo8
+	}
+	3652.1.1 = {
+		holder = mangguo9
+	}
+	3683.1.1 = {
+		holder = mangguo10
+	}
+	3712.1.1 = {
+		holder = mangguo11
+	}
+	3761.1.1 = {
+		holder = mangguo12
+	}
+	3789.1.1 = {
+		holder = mangguo13
+	}
+	3833.1.1 = {
+		holder = mangguo20
+	}
+	3849.1.1 = {
+		change_development_level = 20
+		government = feudal_admin_government
+	}
+}
+k_mangguo = {
+	3291.1.1 = {
+		holder = mangguo1
+	}
+	3371.1.1 = {
+		holder = mangguo2
+	}
+	3412.1.1 = {
+		holder = mangguo3
+	}
+	3474.1.1 = {
+		holder = mangguo4
+	}
+	3518.1.1 = {
+		holder = mangguo5
+	}
+	3555.1.1 = {
+		holder = mangguo6
+	}
+	3574.1.1 = {
+		liege = "e_zhoutianzi"
+		holder = mangguo7
+	}
+	3607.1.1 = {
+		holder = mangguo8
+	}
+	3652.1.1 = {
+		holder = mangguo9
+	}
+	3683.1.1 = {
+		holder = mangguo10
+	}
+	3712.1.1 = {
+		holder = mangguo11
+	}
+	3761.1.1 = {
+		holder = mangguo12
+	}
+	3789.1.1 = {
+		holder = mangguo13
+	}
+	3833.1.1 = {
+		holder = mangguo14
+	}
+	3849.1.1 = {
+		change_development_level = 23
+		liege = "e_zhoutianzi1"
+		government = feudal_admin_government
+	}
+}

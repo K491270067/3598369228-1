@@ -1,0 +1,65 @@
+﻿##### d_luoshi ############################
+
+### c_luo1
+# 
+1798 = {
+	holding = none
+}
+
+
+### c_jiangying
+# 
+1794 = {
+	holding = none
+}
+
+
+### c_yan6
+# 
+1795 = {
+	holding = none
+}
+
+
+### c_ruo
+# 
+1796 = {
+	holding = none
+}
+
+
+### c_lan2
+# 
+1799 = {
+	holding = none
+}
+
+
+### c_mian
+# 
+1801 = {
+	holding = none
+}
+
+
+### c_xiao2
+# 
+1802 = {
+	holding = none
+}
+
+
+### c_ganyukou
+# 
+1803 = {
+	holding = none
+}
+
+
+### c_lankou
+# 
+1804 = {
+	holding = none
+}
+
+

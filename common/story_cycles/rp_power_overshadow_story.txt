@@ -1,0 +1,74 @@
+﻿rp_power_overshadow_story = {
+	on_setup = {
+		if = {
+			limit = { exists = story_owner.var:rp_power_story_target }
+			set_variable = {
+				name = rp_power_hero
+				value = story_owner.var:rp_power_story_target
+			}
+			set_variable = { name = rp_power_phase value = 1 }
+			set_variable = { name = rp_power_suspicion value = 0 }
+			set_variable = { name = rp_power_cycle value = 0 }
+			story_owner = {
+				remove_variable = rp_power_story_target
+				add_character_flag = rp_power_story_active
+				trigger_event = {
+					id = rp_merit.4000
+					days = { 3 7 }
+				}
+			}
+			var:rp_power_hero = {
+				add_character_flag = rp_power_story_hero
+			}
+		}
+		else = {
+			end_story = yes
+		}
+	}
+
+	on_end = {
+		story_owner = {
+			remove_character_flag = rp_power_story_active
+			remove_variable = rp_power_story_target
+		}
+		var:rp_power_hero ?= {
+			remove_character_flag = rp_power_story_hero
+			remove_character_modifier = rp_power_under_suspicion_modifier
+		}
+	}
+
+	on_owner_death = {
+		if = {
+			limit = {
+				exists = story_owner.primary_heir
+				story_owner.primary_heir = {
+					is_alive = yes
+					is_ruler = yes
+				}
+			}
+			make_story_owner = story_owner.primary_heir
+			story_owner = {
+				add_character_flag = rp_power_story_active
+			}
+		}
+		else = {
+			end_story = yes
+		}
+	}
+
+	effect_group = {
+		days = { 365 547 }
+		chance = 65
+
+		triggered_effect = {
+			trigger = {
+				story_owner = { is_alive = yes }
+			}
+			effect = {
+				story_owner = {
+					trigger_event = rp_merit.4001
+				}
+			}
+		}
+	}
+}

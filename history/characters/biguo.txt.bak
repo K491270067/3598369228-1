@@ -1,0 +1,181 @@
+﻿#############  姣曞浗--濮姣曟皬 #############
+han491={
+  name="gao"##姣曞叕楂?
+  dynasty=xin815
+	religion="xizhouli" 
+	culture="zhou"
+  father=han5
+
+  3556.1.1 = {
+		birth = yes
+	}
+  3627.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han492={
+  name="zhong"
+  dynasty_house=house_baijia76#姣?
+	religion="xizhouli" 
+	culture="zhou"
+  father=han491
+
+  3585.1.1 = {
+		birth = yes
+	}
+  3633.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han493={
+  name="heng"
+  dynasty_house=house_baijia76#姣?
+	religion="xizhouli" 
+	culture="zhou"
+  father=han492
+
+  3610.1.1 = {
+		birth = yes
+	}
+  3683.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han494={
+  name="ke1"
+  dynasty_house=house_baijia76#姣?
+	religion="xizhouli" 
+	culture="zhou"
+  father=han493
+
+  3681.6.2 = {
+		birth = yes
+	}
+  3760.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han495={
+  name="shuofu"
+  dynasty_house=house_baijia76#姣?
+	religion="xizhouli" 
+	culture="zhou"
+  father=han494
+
+  3730.2.1 = {
+		birth = yes
+	}
+  3793.11.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han496={
+  name="han1"
+  dynasty_house=house_baijia76#姣?
+	religion="xizhouli" 
+	culture="zhou"
+  father=han495
+
+  3780.1.1 = {
+		birth = yes
+	}
+  3860.12.31 = {
+    death = yes
+  }
+}
+han497={
+  name="xuwu"
+  dynasty_house=house_baijia76#姣?
+	religion="xizhouli" 
+	culture="zhou"
+  father=han496
+
+  3820.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+    death = yes
+  }
+}
+han498={
+  name="shangchen"
+  dynasty_house=house_baijia76#姣?
+	religion="xizhouli" 
+	culture="zhou"
+  father=han496
+
+  3825.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+    death = yes
+  }
+}
+han499={
+  name="yu10"
+  dynasty_house=house_baijia76#姣?
+	religion="xizhouli" 
+	culture="zhou"
+  father=han496
+  female=yes
+
+  3824.6.6 = {
+		birth = yes
+	}
+  3880.12.31 = {
+    death = yes
+  }
+}
+han500={
+  name="mei3"
+  dynasty_house=house_baijia76#姣?
+	religion="xizhouli" 
+	culture="zhou"
+  father=han496
+  female=yes
+
+  3827.6.6 = {
+		birth = yes
+	}
+  3880.12.31 = {
+    death = yes
+  }
+}
+han501={
+  name="jia1"
+  dynasty_house=house_baijia76#姣?
+	religion="xizhouli" 
+	culture="zhou"
+  father=han497
+
+  3838.6.6 = {
+		birth = yes
+	}
+  3880.12.31 = {
+    death = yes
+  }
+}
+han502={
+  name="wan2"
+  dynasty_house=house_baijia76#姣?
+	religion="dongzhouli" 
+	culture="zhou"
+  father=han497
+
+  3839.6.6 = {
+		birth = yes
+	}
+  3880.12.31 = {
+    death = yes
+  }
+}

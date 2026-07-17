@@ -1,0 +1,51 @@
+﻿##### d_fengshi1 ############################
+
+### c_xiang3
+# XIANG3
+581 = {
+	holding = none
+}
+
+
+### c_yicheng2
+# YICHENG2
+2333 = {
+	holding = none
+}
+
+
+### c_wokou
+# WOKOU
+2334 = {
+	holding = none
+}
+
+
+### c_shangdian
+# SHANGDIAN
+2363 = {
+	holding = none
+}
+
+
+### c_longkang
+# LONGKANG
+2386 = {
+	holding = none
+}
+
+
+### c_gou
+# GOU
+2387 = {
+	holding = none
+}
+
+
+### c_tan3
+# TAN3
+2388 = {
+	holding = none
+}
+
+

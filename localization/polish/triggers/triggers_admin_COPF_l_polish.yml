@@ -1,0 +1,9 @@
+﻿l_polish:
+ tt_has_crown_authority_0_or_above: "Has [GetLaw('crown_authority_extended_0').GetName] or higher [GetLawGroup('crown_authority_extended').GetName][law|E]"
+ tt_has_crown_authority_1_or_above: "Has [GetLaw('crown_authority_extended_1').GetName] or higher [GetLawGroup('crown_authority_extended').GetName][law|E]"
+ tt_has_crown_authority_2_or_above: "Has [GetLaw('crown_authority_extended_2').GetName] or higher [GetLawGroup('crown_authority_extended').GetName][law|E]"
+ tt_has_crown_authority_3: "Has [GetLaw('crown_authority_extended_3').GetName][law|E]"
+
+ tt_cannot_compete_for_same_or_lower_rank_titles: "[governors|E] cannot compete for [titles|E] same or lower in [title_tier|E] than their current [governorship|E]"
+
+ tt_cannot_grant_autonomy_to_feudal_governor: "Cannot grant autonomy to [governor|E]"

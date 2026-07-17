@@ -1,0 +1,24 @@
+﻿namespace = feudal_admin
+
+### 通知：正式化行政事务 ### ————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+feudal_admin.1 = {
+	type = character_event
+	title = event_convert_to_feudal_admin_title
+	desc = event_convert_to_feudal_admin_desc
+	theme = administrative
+	right_portrait = {
+		character = root
+		animation = thinking
+	}
+
+	immediate = {
+		show_as_tooltip = {
+			effect_change_to_feudal_admin = yes
+			change_influence = 250
+		}
+	}
+
+	option = {
+		name = event_option_convert_to_feudal_admin_finish
+	}
+}

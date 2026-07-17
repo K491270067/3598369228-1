@@ -1,0 +1,50 @@
+﻿l_russian:
+ decision_petition_restore_succession: "Petition to Restore Succession"
+ decision_petition_restore_succession_tooltip: "Request your [liege|E] to restore recognition of the succession of [title|E]"
+ decision_petition_restore_succession_desc: "My [liege] has refused to recognize my passing of the [title] to my descendants; perhaps I can pay a price to request the reversal of this decision."
+ decision_petition_restore_succession_effects: "You travel to your [liege]'s court for an audience."
+ decision_petition_restore_succession_confirm: "Send the petition"
+ decision_petition_restore_succession_NEXT_STEP_BUTTON: "Choose a gift to bring"
+ decision_petition_restore_succession_BUTTON: "Choose a gift to bring"
+ i_have_denied_title_succession: "I have been denied the succession of [title|E]"
+
+ decision_petition_restore_succession_option_submission: "Pledge loyalty"
+ petition_restore_succession_submission_tooltip: "[liege|E] will receive only your oath of loyalty"
+
+ decision_petition_restore_succession_option_hook: "Invoke a favor"
+ decision_petition_restore_succession_effects_hook: "[liege|E] will gain a weak [hook|E] on you"
+ petition_restore_succession_hook_tooltip: "[liege|E] will gain a weak [hook|E] on you"
+ petition_restore_succession_hook_tt: "[liege|E] already has a [hook|E] on you"
+
+ decision_petition_restore_succession_option_contract: "Adjust the contract"
+ decision_petition_restore_succession_effects_contract_levies: "[liege|E] will receive a [vassal_contract|E] with increased levies"
+ decision_petition_restore_succession_effects_contract_gold: "[liege|E] will receive a [vassal_contract|E] with increased taxes"
+ petition_restore_succession_contract_tooltip: "[liege|E] will receive a [vassal_contract|E] with increased taxes or levies"
+ petition_restore_succession_contract_modifiable_tt: "[vassal_contract|E] can be modified"
+ petition_restore_succession_contract_increasable_tt: "[vassal_contract|E] can be increased"
+
+ decision_petition_restore_succession_option_gift: "Pay gold"
+ decision_petition_restore_succession_effects_gift: "[liege|E] will receive the [gold|E] you offer"
+ petition_restore_succession_gift_tooltip: "[liege|E] will receive the [gold|E] you offer"
+
+ petition_restore_succession_uncrowned_tt: "[liege|E] is uncrowned"
+
+ decision_convert_to_feudal_admin: "Formalize Administration"
+ decision_convert_to_feudal_admin_desc: "Glory and oaths have gradually given way to intricate court politics. Scattered farms with chaotic taxation are being replaced by vast landed estates. Hiding in a stone castles is no longer enough for adapting to the growing complexity of the realm.\n\nTo maintain my rule, relying on armies alone is no longer sufficient. I must intervene more in the administration of the realm, through laws and institutions."
+ decision_convert_to_feudal_admin_tooltip: "Formally implement and clarify administrative practices within the realm through laws and institutions"
+ decision_convert_to_feudal_admin_confirm: "Formalize Laws and Institutions"
+
+ decision_build_domicile: "Build an Estate"
+ decision_build_domicile_desc: "A beautiful and comfortable [estate|E] is not only the glory of the [house], but also the economic center of the [realm|E].\nEven if one day we are unfortunate enough to be removed from the political affairs of the [realm|E], the harvests of the land and the rents of the tenants will ensure the prosperity of the [house] for generations."
+ decision_build_domicile_tooltip: "Build a beautiful and comfortable [domicile|E] in the fertile lands of the [realm|E]"
+ decision_build_domicile_confirm: "Start Building an Estate"
+ tt_capital_county_has_high_control: "[capital|E] [county]'s [control|E] is higher than 75"
+
+ decision_declare_autonomy_title: "Declare Autonomy"
+ decision_declare_autonomy_desc: "The authority of the [liege|E] is waning. They may no longer be able to protect our interests, and the realm stands on the brink of fragmentation. It is time to plan for the future of our house and the [realm|E].\n\nAmid the chaos, I can seize greater power, and demanding the abolition of certain harsh [vassal_contract|E] obligations seems like a good place to begin."
+ decision_declare_autonomy_tooltip: "Abolish certain harsh [vassal_contract|E] obligations to gain greater power"
+ decision_declare_autonomy_confirm: "Declare Autonomy"
+
+ tt_culture_is_chinese_or_sinophilic: "[culture|E] has [GetCulturePillar('heritage_chinese').GetName] [heritage|E] or [GetCultureTradition('tradition_sinophilic').GetName] [tradition|E]"
+ tt_culture_is_byzantine: "[culture|E] has [GetCulturePillar('heritage_byzantine').GetName] [heritage|E]"
+ tt_convert_to_administrative_copf_desc: "You do #bold not#! fulfill at least one of the following:\n$EFFECT_LIST_BULLET$$tt_most_vassals_are_governor_or_admin$\n$EFFECT_LIST_BULLET$You have [GetLaw('law_vassal_succession_rights_policy_governor_appointment').GetName] [law|E]\n$EFFECT_LIST_BULLET$You have [GetGovernment( 'feudal_admin_government' ).GetName]"

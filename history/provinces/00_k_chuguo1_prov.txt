@@ -1,0 +1,170 @@
+﻿##### d_xiongshi ############################
+
+### c_jiangling
+# 
+1811 = {
+	holding = none
+}
+
+
+### c_xunying
+# 
+1813 = {
+	holding = none
+}
+
+
+### c_wufu1
+# 
+1816 = {
+	holding = none
+}
+
+
+### c_jing2
+# 
+1818 = {
+	holding = none
+}
+
+
+### c_qiaoduo
+# 
+1819 = {
+	holding = none
+}
+
+
+### c_weiying
+# 
+1820 = {
+	holding = none
+}
+
+
+### c_luo2
+# 
+1821 = {
+	holding = none
+}
+
+
+### c_mi5
+# 
+1822 = {
+	holding = none
+}
+
+
+### c_yiling
+# 
+1823 = {
+	holding = none
+}
+
+
+### c_fajian
+# 
+1824 = {
+	holding = none
+}
+
+
+### c_xiaoting
+# 
+1825 = {
+	holding = none
+}
+
+
+### c_maicheng
+# 
+1826 = {
+	holding = none
+}
+
+
+### c_lvcheng
+# 
+1827 = {
+	holding = none
+}
+
+
+### c_pangan
+# 
+1828 = {
+	holding = none
+}
+
+
+### c_mocheng
+# 
+1829 = {
+	holding = none
+}
+
+
+### c_linju
+# 
+1830 = {
+	holding = none
+}
+
+
+### c_jinxiang
+# 
+1871 = {
+	holding = none
+}
+
+
+### c_yefu
+# 
+1872 = {
+	holding = none
+}
+
+
+### c_zhanghuatai
+# 
+1873 = {
+	holding = none
+}
+
+
+### c_jiangjin
+# 
+1874 = {
+	holding = none
+}
+
+
+### c_huarong
+# 
+1875 = {
+	holding = none
+}
+
+
+### c_xiashou
+# 
+1876 = {
+	holding = none
+}
+
+
+### c_jiu
+# 
+1877 = {
+	holding = none
+}
+
+
+### c_shaxian
+# 
+1878 = {
+	holding = none
+}
+
+

@@ -1,0 +1,127 @@
+﻿beidi = {
+	color = { 136 94 41 }
+
+	name_order_convention = dynasty_always_first
+	ethos = ethos_communal
+	heritage = heritage_beidi
+	language = language_beidi
+	martial_custom = martial_custom_equal
+	head_determination = head_determination_domain
+   
+	traditions = {
+        tradition_only_the_strong
+		    tradition_battlefield_looters
+        tradition_eye_for_an_eye
+        tradition_warrior_culture
+        tradition_hit_and_run
+        tradition_quarrelsome
+	}
+
+	name_list = name_list_han
+
+	coa_gfx = { chinese_group_coa_gfx }
+	building_gfx = { chinese_building_gfx }
+	clothing_gfx = { chinese_clothing_gfx }
+	unit_gfx = { chinese_unit_gfx }
+	house_coa_frame = house_china
+
+	ethnicities = {
+		10 = asian_han_chinese
+	}
+}
+
+chidi = {
+	color = { 156 29 185 }
+
+	name_order_convention = dynasty_always_first
+	ethos = ethos_communal
+	heritage = heritage_beidi
+	language = language_beidi
+	martial_custom = martial_custom_equal
+	head_determination = head_determination_domain
+   
+	traditions = {
+        tradition_strength_in_numbers
+		    tradition_tribe_unity
+        tradition_eye_for_an_eye
+        tradition_xenophilic
+        tradition_hit_and_run
+        tradition_quarrelsome
+	}
+
+	name_list = name_list_han
+
+	coa_gfx = { chinese_group_coa_gfx }
+	building_gfx = { chinese_building_gfx }
+	clothing_gfx = { chinese_clothing_gfx }
+	unit_gfx = { chinese_unit_gfx }
+	house_coa_frame = house_china
+
+	ethnicities = {
+		10 = asian_han_chinese
+	}
+}
+
+baidi = {
+	color = { 146 173 189 }
+
+	name_order_convention = dynasty_always_first
+	ethos = ethos_stoic
+	heritage = heritage_beidi
+	language = language_beidi
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+   
+	traditions = {
+        tradition_religion_blending
+		    tradition_culture_blending
+        tradition_stalwart_defenders
+        tradition_martial_admiration
+        tradition_forest_folk
+        tradition_sacred_hunts
+	}
+
+	name_list = name_list_han
+
+	coa_gfx = { chinese_group_coa_gfx }
+	building_gfx = { chinese_building_gfx }
+	clothing_gfx = { chinese_clothing_gfx }
+	unit_gfx = { chinese_unit_gfx }
+	house_coa_frame = house_china
+
+	ethnicities = {
+		10 = asian_han_chinese
+	}
+}
+
+changdi = {
+	color = { 112 63 136 }
+
+	name_order_convention = dynasty_always_first
+	ethos = ethos_bellicose
+	heritage = heritage_beidi
+	language = language_beidi
+	martial_custom = martial_custom_equal
+	head_determination = head_determination_domain
+   
+	traditions = {
+        tradition_hit_and_run
+		    tradition_tribe_unity
+        tradition_battlefield_looters
+        tradition_only_the_strong
+        tradition_quarrelsome
+        tradition_debug
+	}
+
+	name_list = name_list_han
+
+	coa_gfx = { chinese_group_coa_gfx }
+	building_gfx = { chinese_building_gfx }
+	clothing_gfx = { chinese_clothing_gfx }
+	unit_gfx = { chinese_unit_gfx }
+	house_coa_frame = house_china
+
+	ethnicities = {
+		10 = asian_han_chinese
+	}
+}

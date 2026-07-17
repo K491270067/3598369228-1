@@ -1,0 +1,782 @@
+﻿### 郯国--己姓郯氏 ###
+#《左传·昭公十七年》:郯子曰：吾祖也，我知之...我高祖少皞挚之立也；不知姓
+tanguo1={
+  name="chong1"#句芒
+  dynasty=xin401
+	religion="yili" 
+	culture="dongyi"
+  father=han1311
+  
+  2240.1.1 = {
+		birth = yes
+	}
+  2307.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+tanguo2={
+  name="nanming1088"
+  dynasty=xin401
+	religion="yili" 
+	culture="dongyi"
+  father=tanguo1
+  
+  2288.1.1 = {
+		birth = yes
+	}
+  2347.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+tanguo3={
+  name="nanming1089"
+  dynasty_house=house_xin241
+	religion="yili" 
+	culture="dongyi"
+  father=tanguo2
+  
+  2324.1.1 = {
+		birth = yes
+	}
+  2400.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+tanguo4={
+  name="nanming1090"
+  dynasty_house=house_xin241
+	religion="yili" 
+	culture="dongyi"
+  father=tanguo3
+  
+  2387.1.1 = {
+		birth = yes
+	}
+  2449.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+tanguo5={
+  name="nanming1091"
+  dynasty_house=house_xin241
+	religion="yili" 
+	culture="dongyi"
+  father=tanguo4
+  
+  2427.1.1 = {
+		birth = yes
+	}
+  2509.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+tanguo6={
+  name="nanming1092"
+  dynasty_house=house_xin241
+	religion="yili" 
+	culture="dongyi"
+  father=tanguo5
+  
+  2458.1.1 = {
+		birth = yes
+	}
+  2549.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1713={
+  name="wan"
+  dynasty_house=house_xin402
+	religion="yili" 
+	culture="dongyi"
+  father=tanguo6
+
+  2543.1.1 = {
+		birth = yes
+	}
+  2620.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1714={
+  name="bian"
+  dynasty_house=house_xin402
+	religion="yili" 
+	culture="dongyi"
+  father=han1713
+
+  2599.1.1 = {
+		birth = yes
+	}
+  2682.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1715={
+  name="nanming355"
+  dynasty_house=house_xin402#姬
+	religion="yili" 
+	culture="dongyi"
+  father=han1714
+
+  2679.1.1 = {
+		birth = yes
+	}
+  2764.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1716={
+  name="chong2"
+  dynasty_house=house_xin402#姬
+	religion="yili" 
+	culture="dongyi"
+  father=han1715
+
+  2759.1.1 = {
+		birth = yes
+	}
+  2844.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1717={
+  name="he"
+  dynasty_house=house_xin402#姬
+	religion="yili" 
+	culture="dongyi"
+  father=han1716
+
+  2829.1.1 = {
+		birth = yes
+	}
+  2907.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1718={
+  name="heng"
+  dynasty_house=house_xin402#姬
+	religion="yili" 
+	culture="dongyi"
+  father=han1717
+
+  2860.1.1 = {
+		birth = yes
+	}
+  2920.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1719={
+  name="yu1"
+  dynasty_house=house_xin402#姬
+	religion="yili" 
+	culture="dongyi"
+  father=han1718
+
+  2882.1.1 = {
+		birth = yes
+	}
+  2945.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1720={
+  name="cheng2"
+  dynasty_house=house_xin402#姬
+	religion="yili" 
+	culture="dongyi"
+  father=han1719
+
+  2911.1.1 = {
+		birth = yes
+	}
+  2972.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1721={
+  name="xian3"
+  dynasty_house=house_xin402#姬
+	religion="yili" 
+	culture="dongyi"
+  father=han1720
+
+  2955.1.1 = {
+		birth = yes
+	}
+  3024.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1722={
+  name="bang"
+  dynasty_house=house_xin402#姬
+	religion="yili" 
+	culture="dongyi"
+  father=han1721
+
+  2990.1.1 = {
+		birth = yes
+	}
+  3079.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1723={
+  name="song1"
+  dynasty_house=house_xin402#姬
+	religion="yili" 
+	culture="dongyi"
+  father=han1722
+
+  3055.1.1 = {
+		birth = yes
+	}
+  3133.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1724={
+  name="chong"
+  dynasty_house=house_xin402#姬
+	religion="yili" 
+	culture="dongyi"
+  father=han1723
+
+  3083.1.1 = {
+		birth = yes
+	}
+  3155.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1725={
+  name="gong"
+  dynasty_house=house_xin402#姬
+	religion="yili" 
+	culture="dongyi"
+  father=han1724
+
+  3128.1.1 = {
+		birth = yes
+	}
+  3200.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1726={
+  name="ping"
+  dynasty_house=house_xin402#姬
+	religion="yili" 
+	culture="dongyi"
+  father=han1725
+
+  3193.1.1 = {
+		birth = yes
+	}
+  3280.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1727={
+  name="shou"
+  dynasty_house=house_xin402#姬
+	religion="yili" 
+	culture="dongyi"
+  father=han1726
+
+  3258.1.1 = {
+		birth = yes
+	}
+  3340.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1728={
+  name="mang1"
+  dynasty_house=house_xin402#姬
+	religion="yili" 
+	culture="dongyi"
+  father=han1727
+
+  3323.1.1 = {
+		birth = yes
+	}
+  3410.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1729={
+  name="pu1"
+  dynasty_house=house_xin402#姬
+	religion="yili" 
+	culture="dongyi"
+  father=han1728
+
+  3388.1.1 = {
+		birth = yes
+	}
+  3471.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1730={
+  name="ji1"
+  dynasty_house=house_xin68#姬
+	religion="yili" 
+	culture="dongyi"
+  father=han1729
+
+  3444.1.1 = {
+		birth = yes
+	}
+  3520.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1731={
+  name="gou"
+  dynasty_house=house_xin68#姬
+	religion="yili" 
+	culture="dongyi"
+  father=han1730
+
+  3477.1.1 = {
+		birth = yes
+	}
+  3553.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1732={
+  name="nanming116"
+  dynasty_house=house_xin68#姬
+	religion="yili" 
+	culture="dongyi"
+  father=han1731
+
+  3500.1.1 = {
+		birth = yes
+	}
+  3577.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1733={
+  name="nanming356"
+  dynasty_house=house_xin68#姬
+	religion="yili" 
+	culture="dongyi"
+  father=han1732
+
+  3549.1.1 = {
+		birth = yes
+	}
+  3600.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1734={
+  name="nanming357"
+  dynasty_house=house_xin68#姬
+	religion="yili" 
+	culture="dongyi"
+  father=han1733
+
+  3588.1.1 = {
+		birth = yes
+	}
+  3645.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1735={
+  name="nanming111"
+  dynasty_house=house_xin68#姬
+	religion="yili" 
+	culture="dongyi"
+  father=han1734
+  
+  3622.1.1 = {
+		birth = yes
+	}
+  3700.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1736={
+  name="qian3"
+  dynasty_house=house_xin68#姬
+	religion="yili" 
+	culture="dongyi"
+  father=han1735
+
+  3647.1.1 = {
+		birth = yes
+	}
+  3721.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1737={
+  name="shuo2"
+  dynasty_house=house_xin68#姬
+	religion="yili" 
+	culture="dongyi"
+  father=han1736
+
+  3689.1.1 = {
+		birth = yes
+	}
+  3770.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1738={
+  name="chu5"
+  dynasty_house=house_xin68#姬
+	religion="yili" 
+	culture="dongyi"
+  father=han1737
+
+  3721.1.1 = {
+		birth = yes
+	}
+  3800.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1739={
+  name="yun5"
+  dynasty_house=house_xin68#姬
+	religion="yili" 
+	culture="dongyi"
+  father=han1738
+
+  3797.1.1 = {
+		birth = yes
+	}
+  3849.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1740={
+  name="ke4"#平王东迁时郯国国君，游戏开局时23岁
+  dynasty_house=house_xin68#姬
+	religion="yili" 
+	culture="dongyi"
+  father=han1739
+
+  3827.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han1741={
+  name="jing7"#储君1号
+  dynasty_house=house_xin68#姬
+	religion="yili" 
+	culture="dongyi"
+  father=han1740
+
+  3846.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han1742={
+  name="xing5"#储君2号
+  dynasty_house=house_xin68#姬
+	religion="yili" 
+	culture="dongyi"
+  father=han1740
+
+  3847.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han1743={
+  name="nvming74"#女
+  dynasty_house=house_xin68#姬
+	religion="yili" 
+	culture="dongyi"
+  father=han1740
+  female=yes
+
+  3848.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han1744={
+  name="chang3"#弟1号
+  dynasty_house=house_xin68#姬
+	religion="yili" 
+	culture="dongyi"
+  father=han1739
+
+  3828.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han1745={
+  name="yan8"#弟2号
+  dynasty_house=house_xin68#姬
+	religion="yili" 
+	culture="dongyi"
+  father=han1739
+
+  3829.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+#########东丘氏
+tanguo7={
+  name="nanming830"
+  dynasty_house=house_xin403
+	religion="yili" 
+	culture="dongyi"
+  father=han1734
+  
+  3627.1.1 = {
+		birth = yes
+	}
+  3700.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+tanguo8={
+  name="nanming840"
+  dynasty_house=house_xin403#姬
+	religion="yili" 
+	culture="dongyi"
+  father=tanguo7
+
+  3647.1.1 = {
+		birth = yes
+	}
+  3721.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+tanguo9={
+  name="nanming856"
+  dynasty_house=house_xin403#姬
+	religion="yili" 
+	culture="dongyi"
+  father=tanguo8
+
+  3689.1.1 = {
+		birth = yes
+	}
+  3770.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+tanguo10={
+  name="nanming874"
+  dynasty_house=house_xin403#姬
+	religion="yili" 
+	culture="dongyi"
+  father=tanguo9
+
+  3721.1.1 = {
+		birth = yes
+	}
+  3800.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+tanguo11={
+  name="nanming885"#平王东迁时郯国国君，游戏开局时23岁
+  dynasty_house=house_xin403#姬
+	religion="yili" 
+	culture="dongyi"
+  father=tanguo10
+
+  3797.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+tanguo12={
+  name="nanming900"
+  dynasty_house=house_xin403#姬
+	religion="yili" 
+	culture="dongyi"
+  father=tanguo11
+
+  3827.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+tanguo13={
+  name="nanming915"#储君1号
+  dynasty_house=house_xin403#姬
+	religion="yili" 
+	culture="dongyi"
+  father=tanguo12
+
+  3846.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+tanguo14={
+  name="nanming930"#储君2号
+  dynasty_house=house_xin403#姬
+	religion="yili" 
+	culture="dongyi"
+  father=tanguo12
+
+  3847.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+tanguo15={
+  name="da1"#女
+  dynasty_house=house_xin403#姬
+	religion="yili" 
+	culture="dongyi"
+  father=tanguo12
+  female=yes
+
+  3848.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+tanguo16={
+  name="ai1"#弟1号
+  dynasty_house=house_xin403#姬
+	religion="yili" 
+	culture="dongyi"
+  father=tanguo11
+  female=yes
+
+  3828.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+tanguo17={
+  name="nanming947"#弟2号
+  dynasty_house=house_xin403#姬
+	religion="yili" 
+	culture="dongyi"
+  father=tanguo11
+
+  3829.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}

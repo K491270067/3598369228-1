@@ -1,0 +1,48 @@
+﻿##### d_rongshi1 ############################
+
+### c_rong2
+# RONG2
+871 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+# GAN3
+874 = {
+	holding = none
+}
+
+
+### c_fan2
+# FAN2
+869 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+##### d_rongqishi ############################
+
+### c_taixia
+# TAIXIA
+3123 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_ziwuguan
+# ZIWUGUAN
+3641 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+# ZIWU1
+872 = {
+	holding = none
+}
+
+

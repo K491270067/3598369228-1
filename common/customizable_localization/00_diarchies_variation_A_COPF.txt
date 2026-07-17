@@ -1,0 +1,32 @@
+﻿# 实权摄政
+GetFeudalTitularLiegeRegencyTypeName = {
+	type = character
+	log_loc_errors = no
+
+	text = {
+		trigger = {
+			culture ?= { has_cultural_pillar = heritage_frankish }
+		}
+		localization_key = FEUDAL_TITULAR_LIEGE_REGENCY_FRANKISH
+	}
+	text = {
+		localization_key = FEUDAL_TITULAR_LIEGE_REGENCY_DEFAULT
+		fallback = yes
+	}
+}
+# 监察官
+GetFeudalSubjectSupervisorTypeName = {
+	type = character
+	log_loc_errors = no
+
+	text = {
+		trigger = {
+			culture ?= { has_cultural_pillar = heritage_frankish }
+		}
+		localization_key = FEUDAL_SUBJECT_SUPERVISOR_FRANKISH
+	}
+	text = {
+		localization_key = FEUDAL_SUBJECT_SUPERVISOR_DEFAULT
+		fallback = yes
+	}
+}

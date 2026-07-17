@@ -1,0 +1,24 @@
+﻿title_revocation_is_admin_governor_trigger = {
+	trigger_if = { #COPF
+		limit = { NOT = { government_has_flag = government_is_feudal } } # 领主需要是行政制（封建制除外）
+		government_allows = administrative
+	}
+	top_liege = this
+	save_temporary_scope_as = liege_temp
+	$VASSAL$ = {
+		trigger_if = { #COPF
+			limit = {
+				OR = {
+					government_has_flag = government_is_feudal
+					government_has_flag = government_is_feudal_admin
+				}
+			}
+			subject_contract_has_flag = succession_rights_governor_appointment
+		}
+		trigger_else = {
+			is_landed_or_landless_administrative = yes
+			NOT = { government_has_flag = government_is_tribal } #COPF #为何部落制封臣会被视作总督？
+		}
+		target_is_liege_or_above = scope:liege_temp
+	}
+}

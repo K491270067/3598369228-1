@@ -1,0 +1,233 @@
+﻿#############  鏁ｅ浗--鏁ｅ疁姘?鏁ｅ疁鐢熷悗瑁?#############
+sanyishi1={
+  name="zhun2"
+  dynasty=xin823
+	religion="xizhouli" 
+	culture="zhou"
+  father=jiangshirong3
+
+  3497.12.12 = {
+		birth = yes
+	}
+  3545.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han3163={
+  name="nanming648"
+  dynasty_house=house_xin227
+	religion="xizhouli" 
+	culture="zhou"
+	father=sanyishi1
+
+  3544.4.1 = {
+		birth = yes
+	}
+  3600.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han3164={
+  name="yan3"
+  dynasty_house=house_xin227
+	religion="xizhouli" 
+	culture="zhou"
+  father=han3163
+
+  3580.6.2 = {
+		birth = yes
+	}
+  3623.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han3165={
+  name="nanming559"
+  dynasty_house=house_xin227
+	religion="xizhouli" 
+	culture="zhou"
+  father=han3164
+
+  3604.2.1 = {
+		birth = yes
+	}
+  3661.11.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han3166={
+  name="nanming62"
+  dynasty_house=house_xin227
+	religion="xizhouli" 
+	culture="zhou"
+  father=han3165
+
+  3625.5.1 = {
+		birth = yes
+	}
+  3680.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han3167={
+  name="pifang"
+  dynasty_house=house_xin227
+	religion="xizhouli" 
+	culture="zhou"
+  father=han3166
+
+  3656.3.3 = {
+		birth = yes
+	}
+  3704.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han3168={
+  name="nanming649"
+  dynasty_house=house_xin227
+	religion="xizhouli" 
+	culture="zhou"
+  father=han3167
+
+  3687.4.1 = {
+		birth = yes
+	}
+  3735.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han3169={
+  name="nanming41"
+  dynasty_house=house_xin227
+	religion="xizhouli" 
+	culture="zhou"
+  father=han3168
+
+  3712.8.1 = {
+		birth = yes
+	}
+  3753.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han3170={
+  name="nanming650"
+  dynasty_house=house_xin227
+	religion="xizhouli" 
+	culture="zhou"
+  father=han3169
+
+  3737.8.1 = {
+		birth = yes
+	}
+  3798.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han3171={
+  name="zai3"
+  dynasty_house=house_xin227
+	religion="xizhouli" 
+	culture="zhou"
+  father=han3170
+
+  3759.8.1 = {
+		birth = yes
+	}
+  3813.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han3172={
+  name="nanming651"
+  dynasty_house=house_xin227
+	religion="xizhouli" 
+	culture="zhou"
+  father=han3171 
+
+  3796.8.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han3173={
+  name="jiu2"
+  dynasty_house=house_xin227
+	religion="xizhouli" 
+	culture="zhou"
+  father=han3172
+
+  3820.9.9 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han3174={
+  name="nanming372"
+  dynasty_house=house_xin227
+	religion="xizhouli" 
+	culture="zhou"
+  father=han3172
+
+  3821.9.9 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han3175={
+  name="nvming144"
+  dynasty_house=house_xin227
+	religion="xizhouli" 
+	culture="zhou"
+  father=han3172
+  female=yes
+
+  3823.9.9 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han3176={
+  name="nvming145"
+  dynasty_house=house_xin227
+	religion="xizhouli" 
+	culture="zhou"
+  father=han3172
+  female=yes
+
+  3828.9.9 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}

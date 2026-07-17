@@ -1,0 +1,86 @@
+﻿##### d_ruoshi ############################
+
+### c_xi4
+# XI4
+1746 = {
+	holding = none
+}
+
+
+### c_zhongcheng
+# ZHONGCHENG
+1747 = {
+	holding = none
+}
+
+
+### c_wuguan
+# WUGUAN
+1748 = {
+	holding = none
+}
+
+
+### c_cangye
+# CANGYE
+1749 = {
+	holding = none
+}
+
+
+### c_shang
+# SHANG
+1750 = {
+	holding = none
+}
+
+
+### c_shangluo
+# SHANGLUO
+1751 = {
+	holding = none
+}
+
+
+### c_sanhu
+# SANHU
+1755 = {
+	holding = none
+}
+
+
+### c_dan3
+# DAN3
+1756 = {
+	holding = none
+}
+
+
+### c_shangmi
+# SHANGMI
+1757 = {
+	holding = none
+}
+
+
+### c_wei4
+# WEI4
+1759 = {
+	holding = none
+}
+
+
+### c_feng3
+# 
+1777 = {
+	holding = none
+}
+
+
+### c_du2
+# DU2
+3591 = {
+	holding = none
+}
+
+

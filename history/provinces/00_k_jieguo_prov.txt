@@ -1,0 +1,77 @@
+﻿##### d_jieshi ############################
+
+### c_jie
+# JIE
+199 = {
+	culture = dongyi
+	religion = yili
+	holding = castle_holding
+}
+# FU3
+2230 = {
+	holding = none
+}
+
+
+### c_chang
+# CHANG
+203 = {
+	culture = dongyi
+	religion = yili
+	holding = castle_holding
+}
+
+
+### c_shiquan
+# SHIQUAN
+2229 = {
+	culture = dongyi
+	religion = yili
+	holding = castle_holding
+}
+
+
+##### d_jiezhenshi ############################
+
+### c_jiegen
+# JIEGEN
+193 = {
+	culture = xiaren
+	religion = xiali
+	holding = castle_holding
+}
+
+
+### c_anling1
+# ANLING1
+195 = {
+	culture = xiaren
+	religion = xiali
+	holding = castle_holding
+}
+
+
+##### d_donggongshi ############################
+
+### c_langya
+# LANGYA
+216 = {
+	culture = dongyi
+	religion = yili
+	holding = castle_holding
+}
+# FU
+194 = {
+	holding = none
+}
+
+
+### c_muhang
+# MUHANG
+2232 = {
+	culture = dongyi
+	religion = yili
+	holding = castle_holding
+}
+
+

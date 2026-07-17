@@ -1,0 +1,44 @@
+﻿##### d_biyangshi ############################
+
+### c_jianyang
+# JIANYANG
+403 = {
+	culture = dongyi
+	religion = yili
+	holding = castle_holding
+}
+
+
+### c_biyang
+# BIYANG
+466 = {
+	culture = dongyi
+	religion = yili
+	holding = castle_holding
+}
+# YINPING
+402 = {
+	holding = none
+}
+
+
+##### d_bishi3 ############################
+
+### c_zha
+# ZHA
+467 = {
+	culture = dongyi
+	religion = yili
+	holding = castle_holding
+}
+
+
+### c_xiaqiu2
+# XIAQIU2
+2288 = {
+	culture = dongyi
+	religion = yili
+	holding = castle_holding
+}
+
+

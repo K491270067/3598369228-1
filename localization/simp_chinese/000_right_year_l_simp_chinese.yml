@@ -1,0 +1,29 @@
+﻿l_simp_chinese:
+ RIGHT_YEAR:0 "[AddTextIf(LessThan_int32('(int32)$YEAR$', '(int32)4620'),'前')][Abs_int32(Add_int32(Subtract_int32('(int32)4619', '(int32)$YEAR$'),BoolTo1And2(GreaterThanOrEqualTo_int32('(int32)$YEAR$', '(int32)4620'))))]"
+ GAME_DATE_STRING:0 "$RIGHT_YEAR$年 $MONTH$ $DAY$日"
+ GAME_DATE_STRING_SHORT:0 "公元$RIGHT_YEAR$年 $MONTH_SHORT$ $DAY$日"
+ GAME_DATE_STRING_SHORT_NO_YEAR:0 "$MONTH_SHORT$, $DAY$"
+ GAME_DATE_STRING_LONG:0 "公元$RIGHT_YEAR$年 $MONTH$ $DAY|O$日"
+ 
+ RIGHT_JOINED_YEAR:0 "[AddTextIf(LessThan_int32('(int32)$JOINED$', '(int32)4620'),'前')][Abs_int32(Add_int32(Subtract_int32('(int32)4619', '(int32)$JOINED$'),BoolTo1And2(GreaterThanOrEqualTo_int32('(int32)$JOINED$', '(int32)4620'))))]"
+ RIGHT_LEFTED_YEAR:0 "[AddTextIf(LessThan_int32('(int32)$LEFT$', '(int32)4620'),'前')][Abs_int32(Add_int32(Subtract_int32('(int32)4619', '(int32)$LEFT$'),BoolTo1And2(GreaterThanOrEqualTo_int32('(int32)$LEFT$', '(int32)4620'))))]"
+ 
+ RIGHT_FOUNATION_YEAR:0 "[AddTextIf(LessThan_int32(DynastyHouse.GetFoundYear, '(int32)4620'),'前')][Abs_int32(Add_int32(Subtract_int32('(int32)4619', DynastyHouse.GetFoundYear),BoolTo1And2(GreaterThanOrEqualTo_int32(DynastyHouse.GetFoundYear, '(int32)4620'))))]"
+ 
+ RIGHT_DATE_YEAR:0 "[AddTextIf(LessThan_int32(DATE.GetYear, '(int32)4620'),'前')][Abs_int32(Add_int32(Subtract_int32('(int32)4619', DATE.GetYear),BoolTo1And2(GreaterThanOrEqualTo_int32(DATE.GetYear, '(int32)4620'))))]"
+ 
+ RIGHT_START_DATE_YEAR:0 "[AddTextIf(LessThan_int32(LegacyItem.GetStartDate.GetYear, '(int32)4620'),'前')][Abs_int32(Add_int32(Subtract_int32('(int32)4619', LegacyItem.GetStartDate.GetYear),BoolTo1And2(GreaterThanOrEqualTo_int32(LegacyItem.GetStartDate.GetYear, '(int32)4620'))))]"
+ RIGHT_END_DATE_YEAR:0 "[AddTextIf(LessThan_int32(LegacyItem.GetEndDate.GetYear, '(int32)4620'),'前')][Abs_int32(Add_int32(Subtract_int32('(int32)4619', LegacyItem.GetEndDate.GetYear),BoolTo1And2(GreaterThanOrEqualTo_int32(LegacyItem.GetEndDate.GetYear, '(int32)4620'))))]"
+ 
+ RIGHT_RULER_DESIGNER_BIRTH_YEAR:0 "[AddTextIf(LessThan_int32(RulerDesignerWindow.GetBirthYear, '(int32)4620'),'前')][Abs_int32(Add_int32(Subtract_int32('(int32)4619', RulerDesignerWindow.GetBirthYear),BoolTo1And2(GreaterThanOrEqualTo_int32(RulerDesignerWindow.GetBirthYear, '(int32)4620'))))]"
+ 
+ RIGHT_SUCCESSION_START_DATE_YEAR:0 "[AddTextIf(LessThan_int32(SuccessionEventWindow.GetStartDate.GetYear, '(int32)4620'),'前')][Abs_int32(Add_int32(Subtract_int32('(int32)4619', SuccessionEventWindow.GetStartDate.GetYear),BoolTo1And2(GreaterThanOrEqualTo_int32(SuccessionEventWindow.GetStartDate.GetYear, '(int32)4620'))))]"
+ RIGHT_SUCCESSION_END_DATE_YEAR:0 "[AddTextIf(LessThan_int32(SuccessionEventWindow.GetEndDate.GetYear, '(int32)4620'),'前')][Abs_int32(Add_int32(Subtract_int32('(int32)4619', SuccessionEventWindow.GetEndDate.GetYear),BoolTo1And2(GreaterThanOrEqualTo_int32(SuccessionEventWindow.GetEndDate.GetYear, '(int32)4620'))))]"
+ 
+ RIGHT_PICK_ANY_CHARACTER_YEAR:0 "[AddTextIf(LessThan_int32(GameSetup.GetSelectedBookmark.GetDate.GetYear, '(int32)4620'),'前')][Abs_int32(Add_int32(Subtract_int32('(int32)4619', GameSetup.GetSelectedBookmark.GetDate.GetYear),BoolTo1And2(GreaterThanOrEqualTo_int32(GameSetup.GetSelectedBookmark.GetDate.GetYear, '(int32)4620'))))]"
+ 
+ 
+ #选剧本
+ RIGHT_BOOKMARK_YEAR:0 "[AddTextIf(LessThan_int32(BookmarkItem.GetDate.GetYear, '(int32)4620'),'前')][Abs_int32(Add_int32(Subtract_int32('(int32)4619', BookmarkItem.GetDate.GetYear),BoolTo1And2(GreaterThanOrEqualTo_int32(BookmarkItem.GetDate.GetYear, '(int32)4620'))))]"
+ #RIGHT_BOOKMARK_YEAR:0 "[Subtract_int32('(int32)4619', BookmarkItem.GetDate.GetYear)]"
+ #RIGHT_BOOKMARK_YEAR:0 "[AddTextIf(EqualTo_string(BookmarkItem.GetYear,'867'),'前')][AddTextIf(EqualTo_string(BookmarkItem.GetYear,'1066'),'后')]"

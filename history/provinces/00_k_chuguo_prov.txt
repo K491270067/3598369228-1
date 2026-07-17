@@ -1,0 +1,57 @@
+﻿##### d_youqiongshi ############################
+
+### c_zhongping
+# ZHONGPING
+104 = {
+	culture = dongyi
+	religion = xiali
+	holding = castle_holding
+}
+
+
+### c_zhonghe
+# ZHONGHE
+105 = {
+	culture = dongyi
+	religion = xiali
+	holding = castle_holding
+}
+
+
+### c_linle
+# PILTENE
+110 = {
+	culture = dongyi
+	religion = xiali
+	holding = castle_holding
+}
+# ANLING
+111 = {
+	holding = none
+}
+
+
+##### d_chushi ############################
+
+### c_nanpi
+# NANPI
+119 = {
+	culture = dongyi
+	religion = xiali
+	holding = castle_holding
+}
+# DONGGUANG
+109 = {
+	holding = none
+}
+
+
+### c_gaole
+# GAOLE
+112 = {
+	culture = dongyi
+	religion = xiali
+	holding = castle_holding
+}
+
+

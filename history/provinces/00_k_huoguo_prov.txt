@@ -1,0 +1,54 @@
+﻿##### d_huoshi ############################
+
+### c_yin4
+# YIN4
+1048 = {
+	culture = jin
+	religion = xizhouli
+	holding = castle_holding
+}
+# BAI
+1049 = {
+	holding = none
+}
+
+
+### c_huo
+# HUO
+1367 = {
+	culture = jin
+	religion = xizhouli
+	holding = castle_holding
+}
+# LV1
+1368 = {
+	holding = none
+}
+
+
+### c_pingzhou1
+# PINGZHOU1
+1369 = {
+	culture = jin
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+##### d_zhishi1 ############################
+
+### c_zhi3
+
+
+### c_sui1
+
+
+### c_guayan
+# GUAYAN
+1370 = {
+	culture = jin
+	religion = xizhouli
+	holding = castle_holding
+}
+
+

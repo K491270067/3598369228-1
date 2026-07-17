@@ -1,0 +1,37 @@
+﻿##### d_zongshi ############################
+
+### c_yongpu
+# 
+2049 = {
+	holding = none
+}
+
+
+### c_santan
+# 
+2051 = {
+	holding = none
+}
+
+
+### c_yuanjin
+# 
+2061 = {
+	holding = none
+}
+
+
+### c_zong
+# 
+2062 = {
+	holding = none
+}
+
+
+### c_shengtang
+# 
+2070 = {
+	holding = none
+}
+
+

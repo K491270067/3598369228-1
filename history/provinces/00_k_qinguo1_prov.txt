@@ -1,0 +1,85 @@
+﻿##### d_qinshi1 ############################
+
+### c_rong3
+# RONG3
+1513 = {
+	culture = qin
+	religion = dongzhouli
+	holding = castle_holding
+}
+# QINGSHUI
+1514 = {
+	holding = none
+}
+
+
+### c_qin2
+# QIN2
+1511 = {
+	culture = qin
+	religion = dongzhouli
+	holding = castle_holding
+}
+# QINTIN
+1515 = {
+	holding = none
+}
+
+
+### c_anrongguan
+# ANRONGGUAN
+1509 = {
+	culture = qin
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+##### d_guandongshi ############################
+
+### c_guandong
+# GUANDONG
+3038 = {
+	culture = qin
+	religion = dongzhouli
+	holding = castle_holding
+}
+# SHUILUO
+3035 = {
+	holding = none
+}
+
+
+### c_jiequan
+# JIEQUAN
+3036 = {
+	culture = qin
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+##### d_chengjishi ############################
+
+### c_chengji
+# CHENGJI
+1538 = {
+	culture = qin
+	religion = dongzhouli
+	holding = castle_holding
+}
+# XIANG8
+3047 = {
+	holding = none
+}
+
+
+### c_lveyang
+# LVEYANG
+1517 = {
+	culture = qin
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+

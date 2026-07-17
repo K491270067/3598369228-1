@@ -1,0 +1,45 @@
+namespace = test_huimeng
+
+### TEST: 创建家族集团 + 强制所有帝国级封建行政制加入 ###
+### 筛选/加入逻辑全部沿用原版 TGP 模板，未自创判定：
+###   - 帝国级判定：    highest_held_title_tier >= tier_empire   （原版 tgp_house_bloc_interaction_valid_trigger）
+###   - 是否使用家族集团：tgp_uses_house_blocs_trigger             （原版 tgp_uses_house_blocs_trigger）
+###   - 加入：          tgp_join_house_bloc_effect               （原版加入 effect，INVITER=领导家族）
+test_huimeng.0001 = {
+	type = character_event
+	title = test_huimeng_0001_title
+	desc = test_huimeng_0001_desc
+	theme = administrative
+	is_triggered_only = yes
+
+	option = {
+		name = test_huimeng_0001_option
+		# 1) 以 root 的家族为领导家族，创建一个 ceremony 家族集团（原版 tgp_create_house_bloc_effect）
+		root.house = {
+			tgp_create_house_bloc_effect = {
+				TYPE = ceremony
+			}
+			house_confederation = {
+				save_scope_as = test_bloc
+			}
+		}
+		# 2) 强制所有“帝国级 + 使用家族集团 + 家族族长”的家族立刻加入
+		#    筛选沿用原版 tgp_house_bloc_interaction_valid_trigger / tgp_should_join_house_bloc_trigger 的写法
+		every_character = {
+			limit = {
+				highest_held_title_tier >= tier_empire
+				tgp_uses_house_blocs_trigger = yes
+				is_house_head = yes
+				NOT = { exists = confederation }
+				NOT = { house = scope:root.house }
+			}
+			save_scope_as = joiner_char
+			scope:joiner_char.house = {
+				tgp_join_house_bloc_effect = {
+					INVITER = scope:root.house
+					OPINION = flag:no
+				}
+			}
+		}
+	}
+}

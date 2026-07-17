@@ -1,0 +1,44 @@
+﻿##### d_guangshi ############################
+
+### c_guang1
+# 
+1935 = {
+	holding = none
+}
+
+
+### c_baishaguan
+# 
+1924 = {
+	holding = none
+}
+
+
+### c_mulingguan
+# 
+1925 = {
+	holding = none
+}
+
+
+### c_xiyang2
+# 
+1937 = {
+	holding = none
+}
+
+
+### c_shi5
+# 
+1944 = {
+	holding = none
+}
+
+
+### c_jinjuguan
+# 
+1928 = {
+	holding = none
+}
+
+

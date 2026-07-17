@@ -1,0 +1,119 @@
+﻿######################################################
+##################### SITUATION ######################
+######################################################
+window = {
+	name = "window_spring_and_autumn_situation"
+	widgetid = "window_spring_and_autumn_situation"
+	datacontext = "[SituationWindow.GetSituation]"
+	datacontext = "[GetVariableSystem]"
+	datacontext = "[GetPlayer]"
+	parentanchor = top|right
+	layer = windows_layer
+	movable = no
+	allow_outside = yes
+
+	using = Window_Size_MainTab
+
+
+
+	state = {
+		name = _show
+		using = Animation_FadeIn_Quick
+		using = Sound_WindowShow_Standard
+		using = Window_Position_MainTab
+		on_start = "[SetMapMode( 'situation' )]"
+	}
+
+	state = {
+		name = _hide
+		using = Animation_FadeOut_Quick
+		using = Sound_WindowHide_Standard
+		using = Window_Position_MainTab_Hide
+		on_start = "[SetMapMode( 'realms' )]"
+	}
+
+
+
+	margin_widget = {
+		size = { 100% 100% }
+		margin = { 0 0 }
+		margin_right = 0
+		layoutpolicy_horizontal = expanding
+		layoutpolicy_vertical = expanding
+
+		margin_widget = {
+			size = { 100% 100% }
+			margin_left = 0
+			margin_right = 0
+		layoutpolicy_horizontal = expanding
+		layoutpolicy_vertical = expanding
+
+			scrollbox = {
+				size = { 100% 100% }
+
+				blockoverride "scrollbox_content" {
+					vbox = {
+						using = Window_Margins
+
+						layoutpolicy_vertical = expanding
+						layoutpolicy_horizontal = expanding
+
+						vbox = {
+							layoutpolicy_horizontal = expanding
+							spacing = 6
+
+							header_pattern = {
+								layoutpolicy_horizontal = expanding
+
+								blockoverride "header_text"
+								{
+									text = "[Situation.GetNameNoTooltip]"
+								}
+
+								blockoverride "button_close"
+								{
+									onclick = "[SituationWindow.Close]"
+								}
+							}
+						}
+
+
+	
+		vbox = {
+			hbox = {
+				#layoutpolicy_horizontal = expanding
+				#layoutpolicy_vertical = expanding
+				vbox = {
+                portrait_head = {
+					position = { 0 0 }	
+            	   datacontext = "[GetPlayer.PdxGetWidgetScreenSize(PdxGuiWidget.Self]"
+                      }
+
+				button_standard = {
+                layoutpolicy_vertical = expanding
+                text = "Participation"
+                raw_tooltip = "Window for GUI testing (test_gui.gui)"
+
+                onclick = "[ExecuteConsoleCommand('gui.CreateWidget gui/debug/test_gui.gui test_window')]"
+            }
+				}
+				icon = {
+					position = { 0 0 }	
+					texture = "gfx/interface/situations/situations_map_the_nine_regions.png"
+					#########放按钮
+				}
+   	 }
+	 
+
+
+				expand = {}
+			}
+		}					
+		}
+			expand = {	}
+	}
+
+	}
+}
+
+}

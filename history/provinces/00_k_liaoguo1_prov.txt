@@ -1,0 +1,51 @@
+﻿##### d_liaoshi1 ############################
+
+### c_ma3
+# 
+1953 = {
+	holding = none
+}
+
+
+### c_yangquan
+# 
+1952 = {
+	holding = none
+}
+
+
+### c_liao4
+# 
+1954 = {
+	holding = none
+}
+
+
+### c_luorui
+# 
+1956 = {
+	holding = none
+}
+
+
+### c_suo2
+# 
+1957 = {
+	holding = none
+}
+
+
+### c_anfeng1
+# 
+1958 = {
+	holding = none
+}
+
+
+### c_feiling
+# 
+1959 = {
+	holding = none
+}
+
+

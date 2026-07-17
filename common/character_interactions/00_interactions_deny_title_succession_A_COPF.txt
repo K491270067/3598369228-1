@@ -1,0 +1,1057 @@
+﻿# 否决头衔继承 # ————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+deny_title_succession = {
+	category = interaction_category_vassal
+	common_interaction = no
+	notification_text = REVOKE_TITLE_PROPOSAL
+	interface_priority = 115
+
+	name = deny_title_succession_interaction
+	desc = deny_title_succession_interaction_desc
+	icon = antagonistic
+
+	target_type = title
+	target_filter = recipient_domain_titles
+	ai_maybe = no
+	can_send_despite_rejection = yes
+	popup_on_receive = no
+	pause_on_receive = no
+
+	# 是否显示：
+	is_shown = {
+		scope:recipient = {
+			is_landed_or_landless_administrative = yes 						# 是无地行政制或者有地封臣
+			is_vassal_of = scope:actor 										# 是直属封臣
+			highest_held_title_tier >= tier_county							# 必须是伯爵或者以上
+			subject_contract_has_flag = can_deny_title_succession 			# 有御赐承认封臣契约
+		}
+	}
+	# 是否高亮：
+	is_highlighted = {
+		has_any_criminal_trait_in_faith_trigger = { CHARACTER = scope:recipient }
+	}
+	# 是否可用：
+	is_valid = {
+		scope:recipient = {
+			custom_tooltip = { # 接收者：是否有有效目标头衔
+				text = has_title_valid_for_deny_title_succession
+				any_held_title = {
+					tier >= tier_county
+					is_noble_family_title = no
+					is_nomad_title = no
+					NOT = { has_variable = is_denied_title_succession }
+				}
+			}
+		}
+	}
+	# 是否可用（仅在不可用时显示的原因）：
+	is_valid_showing_failures_only = {
+		title_revocation_standard_valid_showing_failures_only_trigger = yes
+		# Plus make sure there's a legal right to revoke.
+		scope:actor = {
+			trigger_if = {
+				limit = { government_has_flag = government_is_tribal }
+				custom_description = {
+					text = "has_law_allowing_title_revocation_tribal"
+					has_realm_law_flag = title_revocation_allowed
+				}
+			}
+			trigger_else_if = {
+				limit = { government_is_japanese_trigger = yes }
+				custom_description = {
+					text = "has_law_allowing_title_revocation_soryo"
+					has_realm_law_flag = title_revocation_allowed
+				}
+			}
+			trigger_else_if = {
+				limit = { government_allows = administrative }
+			}
+			trigger_else = {
+				custom_description = {
+					text = "has_law_allowing_title_revocation_crown"
+					has_realm_law_flag = title_revocation_allowed
+				}
+			}
+		}
+		trigger_if = {
+			limit = {
+				scope:recipient = {
+					subject_contract_has_flag = vassal_contract_cannot_revoke_titles
+				}
+			}
+			custom_description = {
+				text = vassal_contract_forbids_revocation
+				scope:recipient = {
+					NOT = { subject_contract_has_flag = vassal_contract_cannot_revoke_titles }
+				}
+			}
+		}
+		trigger_if = {
+			limit = {
+				scope:recipient = {
+					subject_contract_has_flag = admin_cannot_revoke_titles_without_cause
+				}
+				scope:actor = {
+					NOT = { has_revoke_title_reason = scope:recipient }
+				}
+			}
+			custom_tooltip = {
+				text = admin_contract_forbids_revocation_desc
+				scope:recipient = {
+					NOT = { subject_contract_has_flag = admin_cannot_revoke_titles_without_cause }
+				}
+			}
+		}
+		# And uhh... the sensible check.
+		scope:recipient = {
+			is_vassal_of = scope:actor
+			NOT = { primary_heir ?= scope:actor }
+			NOT = { has_strong_hook = scope:actor }
+			trigger_if = { # If admin, they need to hold a title that isn't their noble family title
+				limit = { government_allows = administrative }
+				custom_tooltip = {
+					text = admin_no_valid_appointment
+					any_held_title = { is_landless_type_title = no }
+				}
+			}
+		}
+		custom_tooltip = {
+			text = cannot_take_overt_hostile_actions_against_diarch.tt
+			NOT = { scope:recipient ?= scope:actor.diarch }
+		}
+		custom_tooltip = {
+			text = protected_from_revocation.tt
+			NOT = { scope:recipient = { has_character_flag = titles_protected } }
+		}
+	}
+	# 是否会进行此互动（包括AI）
+	is_available = {
+		highest_held_title_tier >= tier_duchy
+	}
+	# 哪些目标会被显示：
+	has_valid_target = {
+		scope:target = {	
+			tier >= tier_county
+			is_noble_family_title = no
+			is_nomad_title = no
+			NOT = { has_variable = is_denied_title_succession } # 没有：【目标头衔】已经被否决继承
+		}
+	}
+	# 哪些目标真的可以选：
+	can_be_picked_title = {
+		scope:target = {
+			trigger_if = { # 如果：【目标头衔】是【伯爵级或者更低】...
+				limit = { tier <= tier_county }
+				custom_tooltip = { # 只能选择其【法理上级头衔】，因为选择公爵级头衔会自动包括所有法理下级头衔
+					text = pick_de_jure_above_instead
+					de_jure_liege = { 
+						tier <= tier_duchy
+						NOT = { holder = scope:recipient }
+					}
+				}	
+			}
+		}
+	}
+
+	# 是否可以发送：
+	can_send = {
+		always = yes
+	}
+	# 发送后效果：
+	on_send = {
+		# 冷却时间开始
+		scope:actor = {
+			add_character_flag = {
+				flag = flag_hostile_actions_disabled_delay
+				days = 10
+			}
+		}
+	}
+	# 同意后效果：
+	on_accept = {
+		# 目标头衔（标记为被否认继承）
+		scope:target = {
+			set_variable = {
+				name = is_denied_title_succession
+				value = yes
+			}
+			if = { # 如果：目标头衔是公爵级或更低...
+				limit = { tier <= tier_duchy }			
+				every_direct_de_jure_vassal_title = { # 那就：同时标记其所有在接收人手上的法理下属头衔
+					limit = { holder = scope:recipient }
+					set_variable = {
+						name = is_denied_title_succession
+						value = yes
+					}
+				}
+			}
+		}
+		# 领主（花费）
+		scope:actor = {
+			# 如果：有特质被宗教视为罪恶
+			if = {
+				limit = {
+					OR = {
+						has_any_criminal_trait_in_faith_trigger = {
+							CHARACTER = scope:recipient
+							FAITH = scope:actor.faith
+						}
+						has_any_criminal_trait_in_faith_trigger = {
+							CHARACTER = scope:recipient.primary_heir
+							FAITH = scope:actor.faith
+						}
+					}
+				}
+				if = {
+					limit = { scope:target = { has_variable = is_restored_title_succession } }
+					custom_tooltip = {
+						text = deny_titile_succession_again_cost_is_criminal
+					}
+					add_prestige = -50
+					add_legitimacy = -25
+				}
+				else = {
+					custom_tooltip = {
+						text = deny_titile_succession_cost_is_criminal
+					}
+				}
+			}
+			# 如果：有特质被宗教忌讳
+			else_if = {
+				limit = {
+					OR = {
+						has_any_shunned_trait_in_faith_trigger = {
+							CHARACTER = scope:recipient
+							FAITH = scope:actor.faith
+						}
+						has_any_shunned_trait_in_faith_trigger = {
+							CHARACTER = scope:recipient.primary_heir
+							FAITH = scope:actor.faith
+						}
+					}
+				}
+				if = {
+					limit = { scope:target = { has_variable = is_restored_title_succession } }
+					custom_tooltip = {
+						text = deny_titile_succession_again_cost_is_shunned
+					}
+					add_prestige = -100
+					add_legitimacy = -50
+				}
+				else = {
+					custom_tooltip = {
+						text = deny_titile_succession_cost_is_shunned
+					}
+					add_prestige = -50
+					add_legitimacy = -25
+				}
+			}
+			# 无理由
+			else = {
+				if = {
+					limit = { scope:target = { has_variable = is_restored_title_succession } }
+					custom_tooltip = {
+						text = deny_titile_succession_again_cost_no_reason
+					}
+					add_prestige = -200
+					add_legitimacy = -100
+				}
+				else = {
+					custom_description = {
+						text = deny_titile_succession_cost_no_reason
+					}
+					add_prestige = -100
+					add_legitimacy = -50
+				}
+			}
+		}
+		# 封臣（添加对领主的好感度惩罚）
+		scope:recipient = {
+			this = { save_scope_as = scope_deny_title_succession_vassal }
+			if = {
+				limit = { scope:target = { has_variable = is_restored_title_succession } }
+				add_opinion = {
+					target = scope:actor
+					modifier = opinion_denied_title_succession_again
+				}
+			}
+			else = {
+				add_opinion = {
+					target = scope:actor
+					modifier = opinion_denied_title_succession
+				}
+			}
+			# 通知封臣
+			trigger_event = {
+				id = deny_succession.1
+				delayed = yes
+			}
+		}
+		# 头衔继承人（添加对领主的好感度惩罚）
+		scope:target = {
+			every_title_heir = {
+				# 主要继承人
+				if = {
+					limit = {
+						this = scope:recipient.primary_heir
+						NOT = { is_liege_or_above_of = scope:recipient }
+					}
+					if = {
+						limit = { scope:target = { has_variable = is_restored_title_succession } }
+						add_opinion = {
+							target = scope:actor
+							modifier = opinion_denied_title_succession_again_primary_heir
+						}
+					}
+					else = {
+						add_opinion = {
+							target = scope:actor
+							modifier = opinion_denied_title_succession_primary_heir
+						}
+					}
+					# 通知封臣继承人
+					this = { save_scope_as = scope_deny_title_succession_vassal }
+					trigger_event = {
+						id = deny_succession.1
+						delayed = yes
+					}
+				}
+				# 标记前2个其他继承人
+				else = {
+					if = {
+						limit = {
+							NOT = { exists = scope:scope_deny_title_succession_heir_1 }
+							NOT = { is_liege_or_above_of = scope:recipient }
+						}
+						save_scope_as = scope_deny_title_succession_heir_1
+						add_to_list = list_deny_title_succession_heirs
+					}
+					else_if = {
+						limit = {
+							exists = scope:scope_deny_title_succession_heir_1
+							NOT = { exists = scope:scope_deny_title_succession_heir_2 }
+							NOT = { is_liege_or_above_of = scope:recipient }
+						}
+						save_scope_as = scope_deny_title_succession_heir_2
+						add_to_list = list_deny_title_succession_heirs
+					}
+					# else_if = {
+					# 	limit = {
+					# 		exists = scope:scope_deny_title_succession_heir_2
+					# 		NOT = { exists = scope:scope_deny_title_succession_heir_3 }
+					#		NOT = { is_liege_or_above_of = scope:recipient }
+					# 	}
+					# 	save_scope_as = scope_deny_title_succession_heir_3
+					# 	add_to_list = list_deny_title_succession_heirs
+					# }
+					# else_if = {
+					# 	limit = {
+					# 		exists = scope:scope_deny_title_succession_heir_3
+					# 		NOT = { exists = scope:scope_deny_title_succession_heir_4 }
+					#		NOT = { is_liege_or_above_of = scope:recipient }
+					# 	}
+					# 	save_scope_as = scope_deny_title_succession_heir_4
+					# 	add_to_list = list_deny_title_succession_heirs
+					# }
+				}
+			}
+			# 给前2个其他继承人添加对领主的好感度惩罚
+			every_in_list = {
+				list = list_deny_title_succession_heirs
+				if = {
+					limit = { scope:target = { has_variable = is_restored_title_succession } }
+					add_opinion = {
+						target = scope:actor
+						modifier = opinion_denied_title_succession_again_heir
+					}
+				}
+				else = {
+					add_opinion = {
+						target = scope:actor
+						modifier = opinion_denied_title_succession_heir
+					}
+				}
+			}
+		}
+		# 冷却时间结束
+		if = {
+			limit = {
+				scope:actor = { has_character_flag = flag_hostile_actions_disabled_delay }
+			}
+			scope:actor = { remove_character_flag = flag_hostile_actions_disabled_delay }
+		}
+	}
+	# 接收者自动同意
+	auto_accept = yes
+	# AI接收者是否瞬间回复
+	ai_instant_response = yes
+
+	# AI考虑目标
+	ai_targets = {
+		ai_recipients = vassals # 类型：封臣
+	}
+	# AI考虑频率（月）
+	ai_frequency = 12
+	# AI考虑因素（最高100）
+	ai_will_do = {
+		base = -1000
+
+		# 如果接收者有特质被宗教忌讳或者视为罪恶（+950）
+		modifier = {
+			scope:recipient = {
+				OR = {
+					has_any_criminal_trait_in_faith_trigger = { CHARACTER = this }
+					has_any_shunned_trait_in_faith_trigger = { CHARACTER = this }
+				}
+			}
+
+			add = 950
+		}
+		# 如果有剥夺理由，则优先使用剥夺头衔而非这个行动（-2000）
+		modifier = {
+			scope:actor = {
+				OR = {
+					NOT = {
+						title_revocation_is_tyrannical_trigger = { VASSAL = scope:recipient }
+					}
+					AND = {
+						ai_rationality <= very_high_negative_ai_value
+						OR = {
+							has_trait = lunatic
+							has_trait = possessed
+							has_trait = arbitrary
+						}
+					}
+				}
+			}
+
+			add = -2000
+		}
+		# Only certain rulers won't revoke vassals who have revolted against them
+		modifier = {
+			scope:actor = {
+				ai_compassion <= 75
+				ai_greed >= -50
+				ai_honor <= 50
+				scope:recipient = {
+					is_imprisoned = yes
+					trigger_if = {
+						limit = {
+							NOT = { has_dlc_feature = landless_playable }
+						}
+						# Be kinder to players if they'd get game overed.
+						is_ai = yes
+					}
+					opinion = {
+						target = scope:actor
+						value <= 0
+					}
+				}
+				NOT = {
+					title_revocation_is_tyrannical_trigger = { VASSAL = scope:recipient }
+				}
+				OR = {
+					has_opinion_modifier = {
+						modifier = rebellious_vassal_opinion
+						target = scope:recipient
+					}
+					has_opinion_modifier = {
+						modifier = vassal_lost_faction_revolt_war
+						target = scope:recipient
+					}
+					has_opinion_modifier = {
+						modifier = vassal_wp_faction_revolt_war
+						target = scope:recipient
+					}
+				}
+			}
+			add = {
+				value = 100
+				add = scope:actor.ai_greed
+				add = {
+					value = scope:actor.ai_honor
+					multiply = -1
+				}
+				if = {
+					limit = {
+						scope:actor.ai_vengefulness > 0
+					}
+					add = scope:actor.ai_vengefulness
+				}
+			}
+		}
+		# Vengeful AI's want to revoke
+		modifier = {
+			scope:actor = {
+				ai_vengefulness > 0
+				scope:recipient = {
+					is_imprisoned = yes
+				}
+				NOT = {
+					title_revocation_is_tyrannical_trigger = { VASSAL = scope:recipient }
+				}
+			}
+			add = {
+				value = scope:actor.ai_vengefulness
+				multiply = 2
+			}
+		}
+		# Always revoke preferred capital and capital duchy
+		modifier = {
+			years_from_game_start >= 3
+			OR = {
+				scope:actor = {
+					is_at_war = no
+					OR = {
+						AND = {
+							has_treasury = no
+							gold > 0
+						}
+						AND = {
+							has_treasury = yes
+							treasury > 0
+						}
+					}
+				}
+				scope:recipient = {
+					is_imprisoned_by = scope:actor
+				}
+			}
+			scope:actor = { # The HRE doesn't need endless civil wars
+				NOT = {
+					primary_title = title:e_hre
+				}
+			}
+			exists = scope:actor.primary_title.title_capital_county
+			OR = {
+				scope:target = scope:actor.primary_title.title_capital_county
+				scope:target = scope:actor.primary_title.title_capital_county.de_jure_liege
+			}
+			NAND = { # Don't revoke player titles tyranically, it must be possible to play and succeed as Ulm!
+				scope:target.holder = {
+					is_ai = no
+				}
+				scope:actor = {
+					title_revocation_is_tyrannical_trigger = { VASSAL = scope:recipient }
+				}
+			}
+			add = 1100
+		}
+		# 如果还有直辖上限，试图回收首都公爵领的法理下属伯爵领（+1100）
+		modifier = {
+			years_from_game_start >= 3
+			OR = {
+				scope:actor = {
+					is_at_war = no
+					OR = {
+						AND = {
+							has_treasury = no
+							gold > 0
+						}
+						AND = {
+							has_treasury = yes
+							treasury > 0
+						}
+					}
+				}
+				scope:recipient = {
+					is_imprisoned_by = scope:actor
+				}
+			}
+			scope:actor = { # The HRE doesn't need endless civil wars
+				NOT = {
+					primary_title = title:e_hre
+				}
+			}
+			scope:actor.domain_size < scope:actor.domain_limit
+			scope:actor.primary_title.tier > tier_county
+			trigger_if = {
+				limit = {
+					scope:actor = {
+						title_revocation_is_tyrannical_trigger = { VASSAL = scope:recipient }
+						domain_size > 3
+					}
+				}
+				scope:actor = {
+					NOR = {
+						has_trait = generous
+						has_trait = just
+					}
+				}
+			}
+			exists = scope:actor.primary_title.title_capital_county
+			OR = {
+				scope:actor.primary_title.title_capital_county.holder = scope:actor # You have your de jure capital already
+				NOT = {
+					scope:actor.primary_title.title_capital_county.holder.top_liege = scope:actor.top_liege # Or your De Jure capital isn't in your realm
+				}
+			}
+			scope:target.tier = tier_county # Only Counties
+			OR = { # The AI gives away wrong-holding counties almost instantly, so we restrict to counties with holdings they can hold
+				scope:target.title_province = { has_holding_type = castle_holding } # Everyone is valid for castles
+				AND = {
+					scope:actor = {
+						government_has_flag = government_is_tribal
+					}
+					scope:target.title_province = { has_holding_type = tribal_holding }
+				}
+				AND = {
+					scope:actor = {
+						government_has_flag = government_is_republic
+					}
+					scope:target.title_province = { has_holding_type = city_holding }
+				}
+				AND = {
+					scope:actor = {
+						OR = {
+							government_has_flag = government_is_clan
+							government_has_flag = government_is_theocracy
+						}
+					}
+					scope:target.title_province = { has_holding_type = church_holding }
+				}
+			}
+			OR = { # And the capital duchy, if it exists at all
+				AND = {
+					exists = scope:actor.primary_title.title_capital_county.de_jure_liege.holder
+					scope:actor.primary_title.title_capital_county.de_jure_liege.holder = scope:actor
+				}
+				AND = {
+					exists = scope:actor.primary_title.title_capital_county.de_jure_liege.holder
+					scope:actor.primary_title.title_capital_county.de_jure_liege.holder.top_liege != scope:actor.top_liege
+				}
+				scope:actor.primary_title.title_capital_county.de_jure_liege = {
+					is_title_created = no
+				}
+			}
+
+			scope:target.de_jure_liege = scope:actor.primary_title.title_capital_county.de_jure_liege # Under the same Duchy as your capital
+
+			scope:recipient = { # Not from players
+				is_ai = yes
+			}
+
+			add = 1100
+		}
+		# 如果还有直辖上限，试图回收法理下属（+500）
+		modifier = {
+			scope:actor.domain_size < scope:actor.domain_limit
+			scope:target.tier = tier_county
+			scope:target.de_jure_liege.holder = scope:actor
+			add = 500
+		}
+		# Revoke from vassals of the wrong faith if you can do it without tyranny
+		modifier = {
+			scope:actor.faith != scope:recipient.faith
+			scope:recipient.primary_title.tier > tier_barony
+			OR = {
+				scope:actor.faith.religion != scope:recipient.faith.religion
+				scope:actor.ai_zeal >= low_negative_ai_value
+				NOT = {
+					scope:actor.faith = { has_doctrine = doctrine_pluralism_pluralistic }
+				}
+			}
+			add = 100
+		}
+		# 如果AI不喜欢接收者（+1050）
+		modifier = {
+			scope:actor = {
+				OR = {
+					has_relation_rival = scope:recipient
+					has_relation_nemesis = scope:recipient
+				}
+			}
+			add = 1050
+		}
+		# Slight preference for higher-tier titles
+		modifier = {
+			add = scope:target.tier
+		}
+		# 不要否决关系亲近者处的头衔继承（-5000）
+		modifier = {
+			scope:actor = {
+				OR = {
+					has_relation_friend = scope:recipient
+					has_relation_best_friend = scope:recipient
+					has_relation_lover = scope:recipient
+					has_relation_soulmate = scope:recipient
+					is_parent_of = scope:recipient
+					is_grandparent_of = scope:recipient
+					is_great_grandparent_of = scope:recipient
+				}
+			}
+			add = -5000
+		}
+
+		modifier = { # The AI shouldn't ruin the player's fun
+			add = -5000
+			scope:recipient = { has_character_flag = is_party_baron }
+		}
+
+		modifier = { # Avoid triggering Tyranny wars mid-war
+			factor = 0
+			scope:actor = {
+				is_at_war = yes
+			}
+			NOR = {
+				scope:recipient = {
+					is_imprisoned_by = scope:actor
+				}
+				scope:recipient = {
+					highest_held_title_tier = tier_barony
+				}
+			}
+		}
+
+		# Clan Government: Avoid revoking titles from house members if the AI wants to have high unity
+		modifier = {
+			scope:actor = {
+				government_has_flag = government_is_clan
+				exists = house
+				ai_wants_high_unity = yes
+			}
+			scope:recipient = {
+				government_has_flag = government_is_clan
+				house ?= scope:actor.house
+			}
+			add = -1000
+		}
+		# 不要在重大活动时
+		modifier = {
+			factor = 0
+			scope:actor = {
+				has_ongoing_grand_activity_trigger = yes
+			}
+			NOR = {
+				scope:recipient = {
+					is_imprisoned_by = scope:actor
+				}
+				scope:recipient = {
+					highest_held_title_tier = tier_barony
+				}
+			}
+		}
+		# 尽量不要从同宗处回收头衔（-500）
+		modifier = {
+			exists = scope:recipient.house
+			scope:actor.house ?= scope:recipient.house
+			add = -500
+		}
+		# Admin rulers should be less likely to revoke titles without a revocation reason, as they should prefer to depose governors
+		modifier = {
+			scope:actor = {
+				government_allows = administrative
+				NOT = { has_revoke_title_reason = scope:recipient }
+			}
+			scope:recipient = {
+				NOT = { highest_held_title_tier = tier_barony }
+				government_allows = administrative
+				trigger_if = {
+					limit = {
+						scope:actor = { has_government = japan_administrative_government }
+					}
+					highest_held_title_tier >= tier_county
+				}
+				trigger_else = { highest_held_title_tier >= tier_duchy }
+			}
+			factor = { # Honorable AI's will never revoke titles without a reason
+				value = 0
+				if = {
+					limit = {
+						ai_honor < 0
+					}
+					add = 0.5
+				}
+			}
+		}
+
+		# TGP Be more careful with blocs generally
+		house_bloc_tyranny_war_modifiers = yes
+
+		#Don't revoke titles from the frankokratia leader
+		modifier = {
+			scope:recipient = {
+				any_owned_story = {
+					type = frankokratia_story
+					NOT = { has_variable = franko_war_complete }
+				}
+			}
+			factor = 0
+		}
+	}
+}
+
+# 恢复头衔继承 # ————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+restore_title_succession = {
+	category = interaction_category_vassal
+	common_interaction = no
+	notification_text = REVOKE_TITLE_PROPOSAL
+	interface_priority = 114
+
+	name = restore_title_succession_interaction
+	desc = restore_title_succession_interaction_desc
+	icon = icon_contract_modification_single
+
+	target_type = title
+	target_filter = recipient_domain_titles
+	ai_maybe = no
+	can_send_despite_rejection = yes
+	popup_on_receive = no
+	pause_on_receive = no
+
+	# 是否显示：
+	is_shown = {
+		scope:recipient = {
+			is_landed_or_landless_administrative = yes 						# 是无地行政制或者有地封臣
+			is_vassal_of = scope:actor										# 是直属封臣
+			highest_held_title_tier >= tier_county							# 必须是伯爵或者以上
+			subject_contract_has_flag = can_deny_title_succession 			# 有御赐承认封臣契约
+		}
+	}
+	# 是否可用：
+	is_valid = {
+		scope:recipient = {
+			custom_tooltip = {
+				text = has_denied_title_succession
+				any_held_title = {
+					tier >= tier_county
+					has_variable = is_denied_title_succession
+				}
+			}
+		}
+	}
+	# 是否会进行此互动（包括AI）
+	is_available = {
+		highest_held_title_tier >= tier_duchy
+	}
+	# 哪些目标会被显示：
+	has_valid_target = {
+		scope:target = {	
+			has_variable = is_denied_title_succession # 被否决继承的头衔
+		}
+	}
+	# 哪些目标真的可以选：
+	can_be_picked_title = {
+		scope:target = {	
+			trigger_if = { # 如果：【目标头衔】是【伯爵级或者更低】...
+				limit = { tier <= tier_county }
+				custom_tooltip = { # 那就：只能选择其【法理上级头衔】，因为选择公爵级头衔会自动包括所有法理下级头衔
+					text = pick_de_jure_above_instead
+					de_jure_liege = { 
+						tier <= tier_duchy
+						NOT = { holder = scope:recipient }
+					}
+				}
+			}
+		}
+	}
+
+	# 是否可以发送
+	can_send = {
+		always = yes
+	}
+	# 发送时效果：
+	on_send = {
+		# 冷却时间开始
+		scope:actor = {
+			add_character_flag = {
+				flag = flag_friendly_actions_disabled_delay
+				days = 10
+			}
+		}
+	}
+	# 同意后效果：
+	on_accept = {
+		# 目标头衔（移除被否认继承标记）
+		scope:target = {
+			remove_variable = is_denied_title_succession #移除被否认头衔继承变量
+			set_variable = { #标记为被多次否认
+				name = is_restored_title_succession
+				value = yes
+			}
+			if = { # 如果：目标头衔是公爵级或更低...
+				limit = { tier <= tier_duchy }			
+				every_direct_de_jure_vassal_title = { # 那就：同时处理其所有在接收人手上的法理下属头衔
+					limit = { holder = scope:recipient }
+					remove_variable = is_denied_title_succession
+					set_variable = { #标记为被多次否认
+						name = is_restored_title_succession
+						value = yes
+					}
+				}
+			}
+		}
+		# 领主（花费）
+		scope:actor = {
+			if = {
+				limit = { scope:target = { has_variable = is_restored_title_succession } }
+				add_prestige = -500
+			}
+			else = {
+				add_legitimacy = 10
+				add_prestige = -200
+			}
+		}
+		# 封臣（移除对领主的好感度惩罚）
+		scope:recipient = {
+			this = { save_scope_as = scope_restore_title_succession_vassal }
+			if = {
+				limit = {
+					has_opinion_modifier = {
+						modifier = opinion_denied_title_succession_again
+						target = scope:actor
+					}
+				}
+				remove_opinion = {
+					modifier = opinion_denied_title_succession_again
+					target = scope:actor
+				}
+			}
+			else_if = {
+				limit = {
+					has_opinion_modifier = {
+						modifier = opinion_denied_title_succession
+						target = scope:actor
+					}
+				}
+				remove_opinion = {
+					modifier = opinion_denied_title_succession
+					target = scope:actor
+				}
+			}
+			# 通知封臣
+			trigger_event = {
+				id = deny_succession.2
+				delayed = yes
+			}
+		}
+		# 头衔继承人（移除对领主的好感度惩罚）
+		scope:target = {
+			every_title_heir = {
+				limit = {
+					OR = {
+						has_opinion_modifier = {
+							modifier = opinion_denied_title_succession_again_primary_heir
+							target = scope:actor
+						}
+						has_opinion_modifier = {
+							modifier = opinion_denied_title_succession_primary_heir
+							target = scope:actor
+						}
+						has_opinion_modifier = {
+							modifier = opinion_denied_title_succession_again_heir
+							target = scope:actor
+						}
+						has_opinion_modifier = {
+							modifier = opinion_denied_title_succession_heir
+							target = scope:actor
+						}
+					}
+				}
+				# 主要继承人
+				if = {
+					limit = { this = scope:recipient.primary_heir }
+					if = {
+						limit = {
+							has_opinion_modifier = {
+								modifier = opinion_denied_title_succession_again_primary_heir
+								target = scope:actor
+							}
+						}
+						remove_opinion = {
+							modifier = opinion_denied_title_succession_again_primary_heir
+							target = scope:actor
+						}
+					}
+					else_if = {
+						limit = {
+							has_opinion_modifier = {
+								modifier = opinion_denied_title_succession_primary_heir
+								target = scope:actor
+							}
+						}
+						remove_opinion = {
+							modifier = opinion_denied_title_succession_primary_heir
+							target = scope:actor
+						}
+					}
+					# 通知封臣继承人
+					this = { save_scope_as = scope_restore_title_succession_vassal }
+					trigger_event = {
+						id = deny_succession.2
+						delayed = yes
+					}
+				}
+				# 其他继承人
+				else = {
+					if = {
+						limit = {
+							has_opinion_modifier = {
+								modifier = opinion_denied_title_succession_again_heir
+								target = scope:actor
+							}
+						}
+						remove_opinion = {
+							modifier = opinion_denied_title_succession_again_heir
+							target = scope:actor
+						}
+					}
+					else_if = {
+						limit = {
+							has_opinion_modifier = {
+								modifier = opinion_denied_title_succession_heir
+								target = scope:actor
+							}
+						}
+						remove_opinion = {
+							modifier = opinion_denied_title_succession_heir
+							target = scope:actor
+						}
+					}
+				}
+			}
+		}
+		# 冷却时间结束
+		if = {
+			limit = {
+				scope:actor = { has_character_flag = flag_friendly_actions_disabled_delay }
+			}
+			scope:actor = { remove_character_flag = flag_friendly_actions_disabled_delay }
+		}
+	}
+	# 接收者自动同意
+	auto_accept = yes
+	# AI接收者是否瞬间回复
+	ai_instant_response = yes
+
+	# AI考虑目标
+	ai_targets = {
+		ai_recipients = vassals # 类型：封臣
+	}
+	# AI考虑频率（月）
+	ai_frequency = 12
+	# AI考虑因素（最高100）
+	ai_will_do = {
+		base = 0
+
+		# 如果和对方有亲近关系，则非常愿意（+200）
+		modifier = {
+			scope:actor = {
+				OR = {
+					has_relation_friend = scope:recipient
+					has_relation_best_friend = scope:recipient
+					has_relation_lover = scope:recipient
+					has_relation_soulmate = scope:recipient
+					is_parent_of = scope:recipient
+					is_grandparent_of = scope:recipient
+					is_great_grandparent_of = scope:recipient
+				}
+			}
+			add = 200
+		}
+		# 如果是再次恢复继承，感到尴尬，避免进行（-75）
+		modifier = {
+			scope:target = { has_variable = is_restored_title_succession }
+			add = -75
+		}
+	}	
+}

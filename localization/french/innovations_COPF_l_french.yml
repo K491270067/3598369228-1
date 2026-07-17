@@ -1,0 +1,5 @@
+﻿l_french:
+ unlock_succession_rights_grant_recognition: "Unlock #high [GetSubjectContractType( 'feudal_government_succession_rights' ).GetObligationName( 'feudal_succession_rights_grant_recognition' )]#! [vassal_contract|E]"
+ unlock_succession_rights_grant_appointment: "Unlock #high [GetSubjectContractType( 'feudal_government_succession_rights' ).GetObligationName( 'feudal_succession_rights_grant_appointment' )]#! [vassal_contract|E]"
+ unlock_succession_rights_governor_appointment: "Unlock #high [GetSubjectContractType( 'feudal_government_succession_rights' ).GetObligationName( 'feudal_succession_rights_governor_appointment' )]#! [vassal_contract|E]"
+ unlock_advanced_succession_rights: "Unlock more centralized #high Feudal Succession Rights#! [vassal_contract|E]"

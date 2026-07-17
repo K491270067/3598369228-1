@@ -1,0 +1,146 @@
+﻿#############  瑭瑰浗--濮 #############
+#璁拌浇浜庡璋憋紝鐪熷疄鎬у緟鑰冿細鍛ㄥ鐜嬪厓骞?鍏厓鍓?27骞?锛岀敓娆″瓙濮織瀹?寮?锛屽瓧鏂囧綍锛屽皝鍏朵簬瑭?
+jizhanshi1={
+  name="hong"#瑭规枃渚紝骞崇帇涓滆縼鏃惰┕鍥藉浗鍚涳紝寮€灞€鏃?6宀?
+  dynasty=xin497
+	religion="dongzhouli" 
+	culture="zhou"
+  father=han28
+
+  3812.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+    death = yes
+  }
+}
+jizhanshi2={
+  name="nanming1102"#鍌ㄥ悰1鍙凤紝娓告垙寮€灞€鏃?6宀?
+  dynasty_house=house_baijia254
+	religion="dongzhouli" 
+	culture="zhou"
+  father=jizhanshi1
+
+  3830.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+    death = yes
+  }
+}
+jizhanshi3={
+  name="xian1"#鍌ㄥ悰1鍙峰瓙1
+  dynasty_house=house_baijia254
+	religion="dongzhouli" 
+	culture="zhou"
+  father=jizhanshi2
+
+  3848.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+    death = yes
+  }
+}
+jizhanshi4={
+  name="tong1"#鍌ㄥ悰1鍙峰瓙2
+  dynasty_house=house_baijia254
+	religion="dongzhouli" 
+	culture="zhou"
+  father=jizhanshi2
+
+  3849.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+    death = yes
+  }
+}
+jizhanshi5={
+  name="nvming79"#鍌ㄥ悰1鍙峰コ
+  dynasty_house=house_baijia254
+	religion="dongzhouli" 
+	culture="zhou"
+  father=jizhanshi2
+  female=yes
+
+  3849.2.18 = {
+		birth = yes
+	}
+  3880.12.31 = {
+    death = yes
+  }
+}
+############閯勬皬
+jizhanshi6={
+  name="shi3"
+  dynasty_house=house_xin498
+	religion="dongzhouli" 
+	culture="zhou"
+  father=jizhanshi1
+
+  3831.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+    death = yes
+  }
+}
+jizhanshi7={
+  name="zhi9"
+  dynasty_house=house_xin498
+	religion="dongzhouli" 
+	culture="zhou"
+  father=jizhanshi6
+
+  3849.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+    death = yes
+  }
+}
+jizhanshi8={
+  name="huang1"
+  dynasty_house=house_xin498
+	religion="dongzhouli" 
+	culture="zhou"
+  father=jizhanshi6
+
+  3849.2.2 = {
+		birth = yes
+	}
+  3880.12.31 = {
+    death = yes
+  }
+}
+jizhanshi9={
+  name="nvming83
+  dynasty_house=house_xin498
+	religion="dongzhouli" 
+	culture="zhou"
+  father=jizhanshi6
+  female=yes
+
+  3849.3.3 = {
+		birth = yes
+	}
+  3880.12.31 = {
+    death = yes
+  }
+}
+jizhanshi10={
+  name="nvming87"
+  dynasty_house=house_xin498
+	religion="dongzhouli" 
+	culture="zhou"
+  father=jizhanshi6
+  female=yes
+
+  3849.11.11 = {
+		birth = yes
+	}
+  3880.12.31 = {
+    death = yes
+  }
+}

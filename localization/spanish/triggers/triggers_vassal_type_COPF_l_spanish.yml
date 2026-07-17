@@ -1,0 +1,30 @@
+﻿l_spanish:
+ tt_most_vassals_have_hereditary_or_above: "Require at least 15 or 50% of vassals having [GetSubjectContractType( 'feudal_government_succession_rights' ).GetObligationName( 'feudal_succession_rights_hereditary' )] or a higher-tier [vassal_contract|E]"
+ tt_any_vassals_have_hereditary_or_above: "Require any vassal has [GetSubjectContractType( 'feudal_government_succession_rights' ).GetObligationName( 'feudal_succession_rights_hereditary' )] or a higher-tier [vassal_contract|E]"
+
+ tt_most_vassals_have_forced_partition_or_above: "Require at least 15 or 50% of vassals having [GetSubjectContractType( 'feudal_government_succession_rights' ).GetObligationName( 'feudal_succession_rights_forced_partition' )] or a higher-tier [vassal_contract|E]"
+ tt_any_vassals_have_forced_partition_or_above: "Require any vassal has [GetSubjectContractType( 'feudal_government_succession_rights' ).GetObligationName( 'feudal_succession_rights_forced_partition' )] or a higher-tier [vassal_contract|E]"
+
+ tt_most_vassals_have_grant_recognition_or_above: "Require at least 15 or 50% of vassals having [GetSubjectContractType( 'feudal_government_succession_rights' ).GetObligationName( 'feudal_succession_rights_grant_recognition' )] or a higher-tier [vassal_contract|E]"
+ tt_any_vassals_have_grant_recognition_or_above: "Require any vassal has [GetSubjectContractType( 'feudal_government_succession_rights' ).GetObligationName( 'feudal_succession_rights_grant_recognition' )] or a higher-tier [vassal_contract|E]"
+
+ tt_most_vassals_have_court_supervision_or_above: "Require at least 15 or 50% of vassals having [GetSubjectContractType( 'feudal_government_succession_rights' ).GetObligationName( 'feudal_succession_rights_court_supervision' )] or a higher-tier [vassal_contract|E]"
+ tt_any_vassals_have_court_supervision_or_above: "Require any vassal has [GetSubjectContractType( 'feudal_government_succession_rights' ).GetObligationName( 'feudal_succession_rights_court_supervision' )] or a higher-tier [vassal_contract|E]"
+
+ tt_most_vassals_are_governor_or_admin: "Require at least 15 or 50% of vassals having [GetSubjectContractType( 'feudal_government_succession_rights' ).GetObligationName( 'feudal_succession_rights_governor_appointment' )] [vassal_contract|E] or are of [administrative|E] government"
+ tt_any_vassals_are_governor_or_admin: "Require any vassal has [GetSubjectContractType( 'feudal_government_succession_rights' ).GetObligationName( 'feudal_succession_rights_governor_appointment' )] [vassal_contract|E] or are of [administrative|E] government"
+
+ tt_most_vassals_have_powerful_gentry_or_above: "Require at least 15 or 50% of vassals having [GetSubjectContractType( 'feudal_admin_government_candidate_preference' ).GetObligationName( 'candidate_preference_powerful_gentry' )] or a higher-tier [vassal_contract|E]"
+ tt_any_vassals_have_powerful_gentry_or_above: "Require any vassal has [GetSubjectContractType( 'feudal_admin_government_candidate_preference' ).GetObligationName( 'candidate_preference_powerful_gentry' )] or a higher-tier [vassal_contract|E]"
+
+ tt_most_vassals_have_local_talent_or_above: "Require at least 15 or 50% of vassals having [GetSubjectContractType( 'feudal_admin_government_candidate_preference' ).GetObligationName( 'candidate_preference_local_talent' )] or a higher-tier [vassal_contract|E]"
+ tt_any_vassals_have_local_talent_or_above: "Require any vassal has [GetSubjectContractType( 'feudal_admin_government_candidate_preference' ).GetObligationName( 'candidate_preference_local_talent' )] or a higher-tier [vassal_contract|E]"
+
+ tt_most_vassals_have_favor_nepotism_or_above: "Require at least 15 or 50% of vassals having [GetSubjectContractType( 'feudal_admin_government_candidate_preference' ).GetObligationName( 'candidate_preference_favor_nepotism' )] or a higher-tier [vassal_contract|E]"
+ tt_any_vassals_have_favor_nepotism_or_above: "Require any vassal has [GetSubjectContractType( 'feudal_admin_government_candidate_preference' ).GetObligationName( 'candidate_preference_favor_nepotism' )] or a higher-tier [vassal_contract|E]"
+
+ tt_most_vassals_have_talent_only_or_above: "Require at least 15 or 50% of vassals having [GetSubjectContractType( 'feudal_admin_government_candidate_preference' ).GetObligationName( 'candidate_preference_talent_only' )][vassal_contract|E]"
+ tt_any_vassals_have_talent_only_or_above: "Require any vassal has [GetSubjectContractType( 'feudal_admin_government_candidate_preference' ).GetObligationName( 'candidate_preference_talent_only' )][vassal_contract|E]"
+
+ tt_most_vassals_have_bureaucrat_promotion: "Require at least 15 or 50% of vassals having [GetSubjectContractType( 'feudal_admin_government_candidate_preference' ).GetObligationName( 'candidate_preference_bureaucrat_promotion' )][vassal_contract|E]"
+ tt_any_vassals_have_bureaucrat_promotion: "Require any vassal has [GetSubjectContractType( 'feudal_admin_government_candidate_preference' ).GetObligationName( 'candidate_preference_bureaucrat_promotion' )][vassal_contract|E]"

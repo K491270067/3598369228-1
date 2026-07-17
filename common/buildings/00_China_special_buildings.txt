@@ -1,0 +1,2295 @@
+﻿#####################鑳朵笢閲戠熆###########################
+jiaodong_golden_mines_01 = {
+	effect_desc = mines_effect_desc
+	asset = {
+		type = pdxmesh
+		name = "building_special_mines_mesh"
+	}
+	construction_time = slow_construction_time
+	type_icon = "icon_structure_mines.dds"
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 01 }
+		culture = {
+			has_innovation = innovation_crop_rotation
+		}
+	}
+	cost_gold = expensive_building_tier_3_cost
+	province_modifier = {
+		monthly_income = special_mine_building_tax_tier_1
+		 
+
+	}
+	county_modifier = {
+		development_growth_factor = 0.05
+	}
+	next_building = jiaodong_golden_mines_02
+	province_culture_modifier = {
+		parameter = cupellation_mine_building_bonuses
+		tax_mult = innovation_cupellation_mine_tax_bonus_value
+	}
+	ai_value = {
+		base = 100
+	}
+	type = special
+	flag = travel_point_of_interest_economic
+	flag = special_mine
+	flag = special_mine_gold
+}
+
+jiaodong_golden_mines_02 = {
+	effect_desc = mines_effect_desc
+
+	asset = {
+		type = pdxmesh
+		name = "building_special_mines_mesh"
+	}
+
+	construction_time = slow_construction_time
+
+	type_icon = "icon_structure_mines.dds"
+
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 02 }
+		culture = {
+			has_innovation = innovation_manorialism
+		}
+	}
+	
+	cost_gold = expensive_building_tier_4_cost
+	
+	province_modifier = {
+		monthly_income =  special_mine_building_tax_tier_2
+		 
+	}
+	county_modifier = {
+		development_growth_factor = 0.1
+	}
+	
+	next_building = jiaodong_golden_mines_03
+	
+	province_culture_modifier = {
+		parameter = cupellation_mine_building_bonuses
+		tax_mult = innovation_cupellation_mine_tax_bonus_value
+	}
+
+	ai_value = {
+		base = 100
+	}
+	
+	type = special
+	
+	flag = travel_point_of_interest_economic
+	flag = special_mine
+	flag = special_mine_gold
+}
+
+jiaodong_golden_mines_03 = {
+	effect_desc = mines_effect_desc
+
+	asset = {
+		type = pdxmesh
+		name = "building_special_mines_mesh"
+	}
+
+	construction_time = slow_construction_time
+
+	type_icon = "icon_structure_mines.dds"
+
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 03 }
+		culture = {
+			has_innovation = innovation_windmills
+		}
+	}
+	
+	cost_gold = expensive_building_tier_5_cost
+	
+	province_modifier = {
+		monthly_income =  special_mine_building_tax_tier_3
+		 
+	}
+	county_modifier = {
+		development_growth_factor = 0.15
+	}
+	
+	next_building = jiaodong_golden_mines_04
+	
+	province_culture_modifier = {
+		parameter = cupellation_mine_building_bonuses
+		tax_mult = innovation_cupellation_mine_tax_bonus_value
+	}
+
+	ai_value = {
+		base = 100
+	}
+	
+	type = special
+	
+	flag = travel_point_of_interest_economic
+	flag = special_mine
+	flag = special_mine_gold
+}
+
+jiaodong_golden_mines_04 = {
+	effect_desc = mines_effect_desc
+
+	asset = {
+		type = pdxmesh
+		name = "building_special_mines_mesh"
+	}
+
+	construction_time = slow_construction_time
+
+	type_icon = "icon_structure_mines.dds"
+
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 04 }
+		culture = {
+			has_innovation = innovation_cranes
+		}
+	}
+	
+	cost_gold = expensive_building_tier_6_cost
+	
+	province_modifier = {
+		monthly_income =  special_mine_building_tax_tier_4
+		 
+	}
+	county_modifier = {
+		development_growth_factor = 0.2
+	}
+	
+	province_culture_modifier = {
+		parameter = cupellation_mine_building_bonuses
+		tax_mult = innovation_cupellation_mine_tax_bonus_value
+	}
+
+	ai_value = {
+		base = 100
+	}
+	
+	type = special
+	
+	flag = travel_point_of_interest_economic
+	flag = special_mine
+	flag = special_mine_gold
+}
+############################娌冲寳鍏撮殕閲戠熆###########################
+Xinglong_golden_mines_01 = {
+	effect_desc = mines_effect_desc
+	asset = {
+		type = pdxmesh
+		name = "building_special_mines_mesh"
+	}
+	construction_time = slow_construction_time
+	type_icon = "icon_structure_mines.dds"
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 01 }
+		culture = {
+			has_innovation = innovation_crop_rotation
+		}
+	}
+	cost_gold = expensive_building_tier_3_cost
+	province_modifier = {
+		monthly_income = special_mine_building_tax_tier_1
+		 
+	}
+	county_modifier = {
+		development_growth_factor = 0.05
+	}
+	next_building = Xinglong_golden_mines_02
+	province_culture_modifier = {
+		parameter = cupellation_mine_building_bonuses
+		tax_mult = innovation_cupellation_mine_tax_bonus_value
+	}
+	ai_value = {
+		base = 100
+	}
+	type = special
+	flag = travel_point_of_interest_economic
+	flag = special_mine
+	flag = special_mine_gold
+}
+
+Xinglong_golden_mines_02 = {
+	effect_desc = mines_effect_desc
+
+	asset = {
+		type = pdxmesh
+		name = "building_special_mines_mesh"
+	}
+
+	construction_time = slow_construction_time
+
+	type_icon = "icon_structure_mines.dds"
+
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 02 }
+		culture = {
+			has_innovation = innovation_manorialism
+		}
+	}
+	
+	cost_gold = expensive_building_tier_4_cost
+	
+	province_modifier = {
+		monthly_income =  special_mine_building_tax_tier_2
+		 
+	}
+	county_modifier = {
+		development_growth_factor = 0.1
+	}
+	
+	next_building = Xinglong_golden_mines_03
+	
+	province_culture_modifier = {
+		parameter = cupellation_mine_building_bonuses
+		tax_mult = innovation_cupellation_mine_tax_bonus_value
+	}
+
+	ai_value = {
+		base = 100
+	}
+	
+	type = special
+	
+	flag = travel_point_of_interest_economic
+	flag = special_mine
+	flag = special_mine_gold
+}
+
+Xinglong_golden_mines_03 = {
+	effect_desc = mines_effect_desc
+
+	asset = {
+		type = pdxmesh
+		name = "building_special_mines_mesh"
+	}
+
+	construction_time = slow_construction_time
+
+	type_icon = "icon_structure_mines.dds"
+
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 03 }
+		culture = {
+			has_innovation = innovation_windmills
+		}
+	}
+	
+	cost_gold = expensive_building_tier_5_cost
+	
+	province_modifier = {
+		monthly_income =  special_mine_building_tax_tier_3
+		 
+	}
+	county_modifier = {
+		development_growth_factor = 0.15
+	}
+	
+	next_building = Xinglong_golden_mines_04
+	
+	province_culture_modifier = {
+		parameter = cupellation_mine_building_bonuses
+		tax_mult = innovation_cupellation_mine_tax_bonus_value
+	}
+
+	ai_value = {
+		base = 100
+	}
+	
+	type = special
+	
+	flag = travel_point_of_interest_economic
+	flag = special_mine
+	flag = special_mine_gold
+}
+
+Xinglong_golden_mines_04 = {
+	effect_desc = mines_effect_desc
+
+	asset = {
+		type = pdxmesh
+		name = "building_special_mines_mesh"
+	}
+
+	construction_time = slow_construction_time
+
+	type_icon = "icon_structure_mines.dds"
+
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 04 }
+		culture = {
+			has_innovation = innovation_cranes
+		}
+	}
+	
+	cost_gold = expensive_building_tier_6_cost
+	
+	province_modifier = {
+		monthly_income =  special_mine_building_tax_tier_4
+		 
+	}
+	county_modifier = {
+		development_growth_factor = 0.2
+	}
+	
+	province_culture_modifier = {
+		parameter = cupellation_mine_building_bonuses
+		tax_mult = innovation_cupellation_mine_tax_bonus_value
+	}
+
+	ai_value = {
+		base = 100
+	}
+	
+	type = special
+	
+	flag = travel_point_of_interest_economic
+	flag = special_mine
+	flag = special_mine_gold
+}
+############################涓芥按閲戠熆###########################
+lishui_golden_mines_01 = {
+	effect_desc = mines_effect_desc
+	asset = {
+		type = pdxmesh
+		name = "building_special_mines_mesh"
+	}
+	construction_time = slow_construction_time
+	type_icon = "icon_structure_mines.dds"
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 01 }
+		culture = {
+			has_innovation = innovation_crop_rotation
+		}
+	}
+	cost_gold = expensive_building_tier_3_cost
+	province_modifier = {
+		monthly_income = special_mine_building_tax_tier_1
+		 
+	}
+	county_modifier = {
+		development_growth_factor = 0.05
+	}
+	next_building = lishui_golden_mines_02
+	province_culture_modifier = {
+		parameter = cupellation_mine_building_bonuses
+		tax_mult = innovation_cupellation_mine_tax_bonus_value
+	}
+	ai_value = {
+		base = 100
+	}
+	type = special
+	flag = travel_point_of_interest_economic
+	flag = special_mine
+	flag = special_mine_gold
+}
+
+lishui_golden_mines_02 = {
+	effect_desc = mines_effect_desc
+
+	asset = {
+		type = pdxmesh
+		name = "building_special_mines_mesh"
+	}
+
+	construction_time = slow_construction_time
+
+	type_icon = "icon_structure_mines.dds"
+
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 02 }
+		culture = {
+			has_innovation = innovation_manorialism
+		}
+	}
+	
+	cost_gold = expensive_building_tier_4_cost
+	
+	province_modifier = {
+		monthly_income =  special_mine_building_tax_tier_2
+		 
+	}
+	county_modifier = {
+		development_growth_factor = 0.1
+	}
+	
+	next_building = lishui_golden_mines_03
+	
+	province_culture_modifier = {
+		parameter = cupellation_mine_building_bonuses
+		tax_mult = innovation_cupellation_mine_tax_bonus_value
+	}
+
+	ai_value = {
+		base = 100
+	}
+	
+	type = special
+	
+	flag = travel_point_of_interest_economic
+	flag = special_mine
+	flag = special_mine_gold
+}
+
+lishui_golden_mines_03 = {
+	effect_desc = mines_effect_desc
+
+	asset = {
+		type = pdxmesh
+		name = "building_special_mines_mesh"
+	}
+
+	construction_time = slow_construction_time
+
+	type_icon = "icon_structure_mines.dds"
+
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 03 }
+		culture = {
+			has_innovation = innovation_windmills
+		}
+	}
+	
+	cost_gold = expensive_building_tier_5_cost
+	
+	province_modifier = {
+		monthly_income =  special_mine_building_tax_tier_3
+		 
+	}
+	county_modifier = {
+		development_growth_factor = 0.15
+	}
+	
+	next_building = lishui_golden_mines_04
+	
+	province_culture_modifier = {
+		parameter = cupellation_mine_building_bonuses
+		tax_mult = innovation_cupellation_mine_tax_bonus_value
+	}
+
+	ai_value = {
+		base = 100
+	}
+	
+	type = special
+	
+	flag = travel_point_of_interest_economic
+	flag = special_mine
+	flag = special_mine_gold
+}
+
+lishui_golden_mines_04 = {
+	effect_desc = mines_effect_desc
+
+	asset = {
+		type = pdxmesh
+		name = "building_special_mines_mesh"
+	}
+
+	construction_time = slow_construction_time
+
+	type_icon = "icon_structure_mines.dds"
+
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 04 }
+		culture = {
+			has_innovation = innovation_cranes
+		}
+	}
+	
+	cost_gold = expensive_building_tier_6_cost
+	
+	province_modifier = {
+		monthly_income =  special_mine_building_tax_tier_4
+		 
+	}
+	county_modifier = {
+		development_growth_factor = 0.2
+	}
+	
+	province_culture_modifier = {
+		parameter = cupellation_mine_building_bonuses
+		tax_mult = innovation_cupellation_mine_tax_bonus_value
+	}
+
+	ai_value = {
+		base = 100
+	}
+	
+	type = special
+	
+	flag = travel_point_of_interest_economic
+	flag = special_mine
+	flag = special_mine_gold
+}
+############################闆呭畨鑽ｇ粡閲戠熆###########################
+yaan_golden_mines_01 = {
+	effect_desc = mines_effect_desc
+	asset = {
+		type = pdxmesh
+		name = "building_special_mines_mesh"
+	}
+	construction_time = slow_construction_time
+	type_icon = "icon_structure_mines.dds"
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 01 }
+		culture = {
+			has_innovation = innovation_crop_rotation
+		}
+	}
+	cost_gold = expensive_building_tier_3_cost
+	province_modifier = {
+		monthly_income = special_mine_building_tax_tier_1
+		 
+	}
+	county_modifier = {
+		development_growth_factor = 0.05
+	}
+	next_building = yaan_golden_mines_02
+	province_culture_modifier = {
+		parameter = cupellation_mine_building_bonuses
+		tax_mult = innovation_cupellation_mine_tax_bonus_value
+	}
+	ai_value = {
+		base = 100
+	}
+	type = special
+	flag = travel_point_of_interest_economic
+	flag = special_mine
+	flag = special_mine_gold
+}
+
+yaan_golden_mines_02 = {
+	effect_desc = mines_effect_desc
+
+	asset = {
+		type = pdxmesh
+		name = "building_special_mines_mesh"
+	}
+
+	construction_time = slow_construction_time
+
+	type_icon = "icon_structure_mines.dds"
+
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 02 }
+		culture = {
+			has_innovation = innovation_manorialism
+		}
+	}
+	
+	cost_gold = expensive_building_tier_4_cost
+	
+	province_modifier = {
+		monthly_income =  special_mine_building_tax_tier_2
+		 
+	}
+	county_modifier = {
+		development_growth_factor = 0.1
+	}
+	
+	next_building = yaan_golden_mines_03
+	
+	province_culture_modifier = {
+		parameter = cupellation_mine_building_bonuses
+		tax_mult = innovation_cupellation_mine_tax_bonus_value
+	}
+
+	ai_value = {
+		base = 100
+	}
+	
+	type = special
+	
+	flag = travel_point_of_interest_economic
+	flag = special_mine
+	flag = special_mine_gold
+}
+
+yaan_golden_mines_03 = {
+	effect_desc = mines_effect_desc
+
+	asset = {
+		type = pdxmesh
+		name = "building_special_mines_mesh"
+	}
+
+	construction_time = slow_construction_time
+
+	type_icon = "icon_structure_mines.dds"
+
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 03 }
+		culture = {
+			has_innovation = innovation_windmills
+		}
+	}
+	
+	cost_gold = expensive_building_tier_5_cost
+	
+	province_modifier = {
+		monthly_income =  special_mine_building_tax_tier_3
+		 
+	}
+	county_modifier = {
+		development_growth_factor = 0.15
+	}
+	
+	next_building = yaan_golden_mines_04
+	
+	province_culture_modifier = {
+		parameter = cupellation_mine_building_bonuses
+		tax_mult = innovation_cupellation_mine_tax_bonus_value
+	}
+
+	ai_value = {
+		base = 100
+	}
+	
+	type = special
+	
+	flag = travel_point_of_interest_economic
+	flag = special_mine
+	flag = special_mine_gold
+}
+
+lishui_golden_mines_04 = {
+	effect_desc = mines_effect_desc
+
+	asset = {
+		type = pdxmesh
+		name = "building_special_mines_mesh"
+	}
+
+	construction_time = slow_construction_time
+
+	type_icon = "icon_structure_mines.dds"
+
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 04 }
+		culture = {
+			has_innovation = innovation_cranes
+		}
+	}
+	
+	cost_gold = expensive_building_tier_6_cost
+	
+	province_modifier = {
+		monthly_income =  special_mine_building_tax_tier_4
+		 
+	}
+	county_modifier = {
+		development_growth_factor = 0.2
+	}
+	
+	province_culture_modifier = {
+		parameter = cupellation_mine_building_bonuses
+		tax_mult = innovation_cupellation_mine_tax_bonus_value
+	}
+
+	ai_value = {
+		base = 100
+	}
+	
+	type = special
+	
+	flag = travel_point_of_interest_economic
+	flag = special_mine
+	flag = special_mine_gold
+}
+############################鐜涚憴鐭?##########################
+jiaodong_crystal_mines_01 = {
+	effect_desc = mines_effect_desc
+	asset = {
+		type = pdxmesh
+		name = "building_special_mines_mesh"
+	}
+	construction_time = slow_construction_time
+	type_icon = "icon_structure_mines.dds"
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 01 }
+		culture = {
+			has_innovation = innovation_crop_rotation
+		}
+	}
+	cost_gold = expensive_building_tier_3_cost
+	province_modifier = {
+		monthly_income =gold_mine_generic_building_tax_tier_1
+		 monthly_prestige = 0.5
+		 monthly_influence = 0.5
+	}
+	county_modifier = {
+		development_growth_factor = 0.05
+	}
+	next_building = jiaodong_crystal_mines_02
+	ai_value = {
+		base = 100
+	}
+	type = special
+	flag = travel_point_of_interest_economic
+	flag = special_mine
+}
+jiaodong_crystal_mines_02 = {
+	effect_desc = mines_effect_desc
+	asset = {
+		type = pdxmesh
+		name = "building_special_mines_mesh"
+	}
+	construction_time = slow_construction_time
+	type_icon = "icon_structure_mines.dds"
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 02 }
+		culture = {
+			has_innovation = innovation_manorialism
+		}
+	}
+	cost_gold = expensive_building_tier_4_cost
+	province_modifier = {
+		monthly_influence = 1
+		monthly_prestige = 1
+		monthly_income = gold_mine_generic_building_tax_tier_2
+	}
+	county_modifier = {
+		development_growth_factor = 0.1
+	}
+	ai_value = {
+		base = 100
+	}
+	type = special
+	flag = travel_point_of_interest_economic
+	flag = special_mine
+}
+############################灏忓瀷閾佺熆###########################
+linzi_iron_mines_01 = {
+	effect_desc = mines_effect_desc
+	asset = {
+		type = pdxmesh
+		name = "building_special_mines_mesh"
+	}
+	construction_time = slow_construction_time
+	type_icon = "icon_structure_mines.dds"
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 01 }
+		culture = {
+			has_innovation = innovation_crop_rotation
+		}
+	}
+	cost_gold = expensive_building_tier_3_cost
+	province_modifier = {
+		monthly_income = silver_mine_generic_building_tax_tier_1
+		men_at_arms_maintenance = 0.05
+		stationed_maa_damage_mult = 0.05
+	}
+	county_modifier = {
+		development_growth_factor = 0.1
+	}
+	ai_value = {
+		base = 100
+	}
+	type = special
+	flag = travel_point_of_interest_economic
+	flag = special_mine
+}
+#################澶у瀷閾佺熆鍖?##########################
+xuzhou_iron_mines_01 = {
+	effect_desc = mines_effect_desc
+	asset = {
+		type = pdxmesh
+		name = "building_special_mines_mesh"
+	}
+	construction_time = slow_construction_time
+	type_icon = "icon_structure_mines.dds"
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 01 }
+		culture = {
+			has_innovation = innovation_crop_rotation
+		}
+	}
+	cost_gold = expensive_building_tier_3_cost
+	province_modifier = {
+		monthly_income = silver_mine_generic_building_tax_tier_1
+		men_at_arms_maintenance = 0.05
+		stationed_maa_damage_mult = 0.05
+	}
+	county_modifier = {
+		development_growth_factor = 0.05
+	}
+	next_building = xuzhou_iron_mines_02
+	ai_value = {
+		base = 100
+	}
+	type = special
+	flag = travel_point_of_interest_economic
+	flag = special_mine
+}
+xuzhou_iron_mines_02 = {
+	effect_desc = mines_effect_desc
+	asset = {
+		type = pdxmesh
+		name = "building_special_mines_mesh"
+	}
+	construction_time = slow_construction_time
+	type_icon = "icon_structure_mines.dds"
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 02 }
+		culture = {
+			has_innovation = innovation_manorialism
+		}
+	}
+	next_building = xuzhou_iron_mines_03
+	cost_gold = expensive_building_tier_4_cost
+	province_modifier = {
+		monthly_income = silver_mine_generic_building_tax_tier_1
+		men_at_arms_maintenance = 0.1
+		stationed_maa_damage_mult = 0.05
+		stationed_maa_toughness_mult = 0.05
+	}
+	county_modifier = {
+		development_growth_factor = 0.1
+	}
+	ai_value = {
+		base = 100
+	}
+	type = special
+	flag = travel_point_of_interest_economic
+	flag = special_mine
+}
+
+xuzhou_iron_mines_03 = {
+	effect_desc = mines_effect_desc
+
+	asset = {
+		type = pdxmesh
+		name = "building_special_mines_mesh"
+	}
+
+	construction_time = slow_construction_time
+
+	type_icon = "icon_structure_mines.dds"
+
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 03 }
+		culture = {
+			has_innovation = innovation_windmills
+		}
+	}
+	
+	cost_gold = expensive_building_tier_5_cost
+	
+	province_modifier = {
+		monthly_income =  gold_mine_generic_building_tax_tier_2
+		 men_at_arms_maintenance = 0.15
+		stationed_maa_damage_mult = 0.1
+		stationed_maa_toughness_mult = 0.05
+
+	}
+	county_modifier = {
+		development_growth_factor = 0.15
+	}
+	
+	next_building = xuzhou_iron_mines_04
+	
+	province_culture_modifier = {
+		parameter = cupellation_mine_building_bonuses
+		tax_mult = innovation_cupellation_mine_tax_bonus_value
+	}
+
+	ai_value = {
+		base = 100
+	}
+	
+	type = special
+	
+	flag = travel_point_of_interest_economic
+	flag = special_mine
+}
+
+xuzhou_iron_mines_04 = {
+	effect_desc = mines_effect_desc
+
+	asset = {
+		type = pdxmesh
+		name = "building_special_mines_mesh"
+	}
+
+	construction_time = slow_construction_time
+
+	type_icon = "icon_structure_mines.dds"
+
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 04 }
+		culture = {
+			has_innovation = innovation_cranes
+		}
+	}
+	
+	cost_gold = expensive_building_tier_6_cost
+	
+	province_modifier = {
+		monthly_income =  gold_mine_generic_building_tax_tier_3
+		 men_at_arms_maintenance = 0.2
+		stationed_maa_damage_mult = 0.15
+		stationed_maa_toughness_mult = 0.15
+		
+	}
+	county_modifier = {
+		development_growth_factor = 0.2
+	}
+	
+	province_culture_modifier = {
+		parameter = cupellation_mine_building_bonuses
+		tax_mult = innovation_cupellation_mine_tax_bonus_value
+	}
+
+	ai_value = {
+		base = 100
+	}
+	
+	type = special
+	
+	flag = travel_point_of_interest_economic
+	flag = special_mine
+}
+##############绋蜂笅瀛﹀###################
+Jixiaxuegong_01 = {
+	construction_time = very_slow_construction_time
+	type_icon = "icon_structure_wudang_mountain_temples.dds"
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	show_disabled = yes
+	cost_gold = 2280
+	province_modifier = {
+culture_tradition_max_add = 2
+development_growth_factor = 0.15
+
+	}
+		character_modifier = {
+general_opinion = 10
+same_culture_opinion = 5
+monthly_dynasty_prestige = 0.55
+monthly_influence = 1.8
+monthly_prestige = 1
+monthly_piety = 1
+owned_legend_spread_mult = 0.8
+monthly_lifestyle_xp_gain_mult = 0.15
+ 	}
+	on_complete = {
+		on_big_t1_regular_building_built_effect = yes
+	}
+	ai_value = {
+		base = 100
+		modifier = { # Fill all building slots before going for duchy buildings
+			factor = 0
+			free_building_slots > 0
+		}
+	}	
+	type = special
+	flag = travel_point_of_interest_learning
+}
+##############绔犲崕鍙?##################
+zhanghuagong_01 = {
+	construction_time = very_slow_construction_time
+	type_icon = "icon_structure_wudang_mountain_temples.dds"
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	show_disabled = yes
+	cost_gold = 2480
+	max_garrison = 500
+	province_modifier = {
+		garrison_size = 0.4
+	}
+	county_modifier = {
+		development_growth = 0.2	
+		development_growth_factor = 0.25
+	}
+	character_modifier = {
+	    stress_loss_mult = 0.2
+		negate_health_penalty_add = 0.1
+		monthly_influence_mult = 0.3
+		monthly_prestige_gain_mult = 0.35
+		opinion_of_vassal = 15
+ 	}
+	on_complete = {
+		on_big_t1_regular_building_built_effect = yes
+	}
+	ai_value = {
+		base = 100
+		modifier = { # Fill all building slots before going for duchy buildings
+			factor = 0
+			free_building_slots > 0
+		}
+	}	
+	type = special
+	flag = travel_point_of_interest_diplomatic
+}
+##############娓氬###################
+zhanghuagong_01 = {
+	construction_time = very_slow_construction_time
+	type_icon = "icon_structure_wudang_mountain_temples.dds"
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	show_disabled = yes
+	cost_gold = 1660
+	max_garrison = 800
+	province_modifier = {
+		fort_level = 2
+		garrison_size = 0.35
+		stationed_maa_toughness_mult = 0.08
+		stationed_maa_damage_mult = 0.08
+		defender_holding_advantage = 6
+	}
+	county_modifier = {
+		development_growth = 0.1	
+		development_growth_factor = 0.2
+	}
+	character_modifier = {
+		monthly_influence_mult = 0.08
+		monthly_prestige_gain_mult = 0.05
+ 	}
+	on_complete = {
+		on_big_t1_regular_building_built_effect = yes
+	}
+	ai_value = {
+		base = 100
+		modifier = { # Fill all building slots before going for duchy buildings
+			factor = 0
+			free_building_slots > 0
+		}
+	}	
+	type = special
+	flag = travel_point_of_interest_diplomatic
+}
+##############濮戣嫃鍙?##################
+zhanghuagong_01 = {
+	construction_time = very_slow_construction_time
+	type_icon = "icon_structure_wudang_mountain_temples.dds"
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	show_disabled = yes
+	cost_gold = 2080
+	max_garrison = 300
+	province_modifier = {
+		garrison_size = 0.1
+	}
+	county_modifier = {	
+		development_growth_factor = 0.2
+	}
+	character_modifier = {
+	    stress_loss_mult = 0.35
+		negate_health_penalty_add = 0.2
+		monthly_influence_mult = 0.05
+		monthly_prestige_gain_mult = 0.05
+		spouse_opinion = 25
+ 	}
+	on_complete = {
+		on_big_t1_regular_building_built_effect = yes
+	}
+	ai_value = {
+		base = 100
+		modifier = { # Fill all building slots before going for duchy buildings
+			factor = 0
+			free_building_slots > 0
+		}
+	}	
+	type = special
+	flag = travel_point_of_interest_diplomatic
+}
+##############鍛ㄧ帇瀹?##################
+zhouwanggong_01 = {
+	construction_time = very_slow_construction_time
+	type_icon = "icon_structure_wudang_mountain_temples.dds"
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	show_disabled = yes
+	cost_gold = 2580
+	max_garrison = 780
+	province_modifier = {
+		garrison_size = 0.35
+	}
+	county_modifier = {	
+		monthly_county_control_growth_factor = 0.3
+		development_growth_factor = 0.25
+	}
+	character_modifier = {
+		monthly_influence_mult = 0.25
+		monthly_prestige_gain_mult = 0.25
+		owned_legend_spread_mult = 0.3
+		opinion_of_same_culture = 15
+		active_accolades = 2
+ 	}
+	on_complete = {
+		on_big_t1_regular_building_built_effect = yes
+	}
+	ai_value = {
+		base = 100
+		modifier = { # Fill all building slots before going for duchy buildings
+			factor = 0
+			free_building_slots > 0
+		}
+	}	
+	type = special
+	flag = travel_point_of_interest_diplomatic
+}
+##############铏庣墷鍏?##################
+hulaoguan_01 = {
+	construction_time = very_slow_construction_time
+	type_icon = "icon_building_guanzhpng4.dds"
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	show_disabled = yes
+	cost_gold = 1000
+	max_garrison = 500
+	province_modifier = {
+		fort_level = 2
+		garrison_size = 0.25
+		stationed_maa_toughness_mult = 0.15
+		defender_holding_advantage = 12
+	}
+	on_complete = {
+		on_big_t1_regular_building_built_effect = yes
+	}
+	ai_value = {
+		base = 100
+		modifier = { # Fill all building slots before going for duchy buildings
+			factor = 0
+			free_building_slots > 0
+		}
+	}	
+	type = special
+	flag = travel_point_of_interest_martial
+}
+##############鍑借胺鍏?##################
+hanguguan_01 = {
+	construction_time = very_slow_construction_time
+	type_icon = "icon_structure_celestial_great_barracks.dds"
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	show_disabled = yes
+	cost_gold = 1300
+	max_garrison = 800
+	province_modifier = {
+		fort_level = 4
+		garrison_size = 0.3
+		stationed_maa_toughness_mult = 0.15
+		defender_holding_advantage = 20
+	}
+	on_complete = {
+		on_big_t1_regular_building_built_effect = yes
+	}
+	ai_value = {
+		base = 100
+		modifier = { # Fill all building slots before going for duchy buildings
+			factor = 0
+			free_building_slots > 0
+		}
+	}	
+	type = special
+	flag = travel_point_of_interest_martial
+}
+##############浼婇槞鍏?##################
+yijue_01 = {
+	construction_time = very_slow_construction_time
+	type_icon = "icon_structure_celestial_great_barracks.dds"
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	show_disabled = yes
+	cost_gold = 1000
+	max_garrison = 500
+	province_modifier = {
+		fort_level = 2
+		garrison_size = 0.1
+		stationed_maa_toughness_mult = 0.05
+		defender_holding_advantage = 8
+	}
+	on_complete = {
+		on_big_t1_regular_building_built_effect = yes
+	}
+	ai_value = {
+		base = 100
+		modifier = { # Fill all building slots before going for duchy buildings
+			factor = 0
+			free_building_slots > 0
+		}
+	}	
+	type = special
+	flag = travel_point_of_interest_martial
+}
+##############骞挎垚鍏?##################
+guancheng_01 = {
+	construction_time = very_slow_construction_time
+	type_icon = "icon_structure_celestial_great_barracks.dds"
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	show_disabled = yes
+	cost_gold = 1000
+	max_garrison = 500
+	province_modifier = {
+		fort_level = 2
+		garrison_size = 0.1
+		stationed_maa_toughness_mult = 0.05
+		defender_holding_advantage = 8
+	}
+	on_complete = {
+		on_big_t1_regular_building_built_effect = yes
+	}
+	ai_value = {
+		base = 100
+		modifier = { # Fill all building slots before going for duchy buildings
+			factor = 0
+			free_building_slots > 0
+		}
+	}	
+	type = special
+	flag = travel_point_of_interest_martial
+}
+##############澶ц胺鍏?##################
+dagu_01 = {
+	construction_time = very_slow_construction_time
+	type_icon = "icon_structure_celestial_great_barracks.dds"
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	show_disabled = yes
+	cost_gold = 1000
+	max_garrison = 500
+	province_modifier = {
+		fort_level = 2
+		garrison_size = 0.1
+		stationed_maa_toughness_mult = 0.05
+		defender_holding_advantage = 8
+	}
+	on_complete = {
+		on_big_t1_regular_building_built_effect = yes
+	}
+	ai_value = {
+		base = 100
+		modifier = { # Fill all building slots before going for duchy buildings
+			factor = 0
+			free_building_slots > 0
+		}
+	}	
+	type = special
+	flag = travel_point_of_interest_martial
+}
+##############杞樿緯鍏?##################
+xuanyuan_01 = {
+	construction_time = very_slow_construction_time
+	type_icon = "icon_structure_celestial_great_barracks.dds"
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	show_disabled = yes
+	cost_gold = 1000
+	max_garrison = 500
+	province_modifier = {
+		fort_level = 2
+		garrison_size = 0.1
+		stationed_maa_toughness_mult = 0.05
+		defender_holding_advantage = 8
+	}
+	on_complete = {
+		on_big_t1_regular_building_built_effect = yes
+	}
+	ai_value = {
+		base = 100
+		modifier = { # Fill all building slots before going for duchy buildings
+			factor = 0
+			free_building_slots > 0
+		}
+	}	
+	type = special
+	flag = travel_point_of_interest_martial
+}
+##############鏃嬮棬鍏?##################
+xuanmen_01 = {
+	construction_time = very_slow_construction_time
+	type_icon = "icon_structure_celestial_great_barracks.dds"
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	show_disabled = yes
+	cost_gold = 1000
+	max_garrison = 500
+	province_modifier = {
+		fort_level = 2
+		garrison_size = 0.1
+		stationed_maa_toughness_mult = 0.05
+		defender_holding_advantage = 8
+	}
+	on_complete = {
+		on_big_t1_regular_building_built_effect = yes
+	}
+	ai_value = {
+		base = 100
+		modifier = { # Fill all building slots before going for duchy buildings
+			factor = 0
+			free_building_slots > 0
+		}
+	}	
+	type = special
+	flag = travel_point_of_interest_martial
+}
+##############瀛熸触鍏?##################
+mengjin_01 = {
+	construction_time = very_slow_construction_time
+	type_icon = "icon_structure_celestial_great_barracks.dds"
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	show_disabled = yes
+	cost_gold = 1000
+	max_garrison = 500
+	province_modifier = {
+		fort_level = 2
+		garrison_size = 0.1
+		stationed_maa_toughness_mult = 0.05
+		defender_holding_advantage = 8
+	}
+	on_complete = {
+		on_big_t1_regular_building_built_effect = yes
+	}
+	ai_value = {
+		base = 100
+		modifier = { # Fill all building slots before going for duchy buildings
+			factor = 0
+			free_building_slots > 0
+		}
+	}	
+	type = special
+	flag = travel_point_of_interest_martial
+}
+##############灏忓钩娲ュ叧###################
+xiaopingjin_01 = {
+	construction_time = very_slow_construction_time
+	type_icon = "icon_structure_celestial_great_barracks.dds"
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	show_disabled = yes
+	cost_gold = 1000
+	max_garrison = 500
+	province_modifier = {
+		fort_level = 2
+		garrison_size = 0.1
+		stationed_maa_toughness_mult = 0.05
+		defender_holding_advantage = 8
+	}
+	on_complete = {
+		on_big_t1_regular_building_built_effect = yes
+	}
+	ai_value = {
+		base = 100
+		modifier = { # Fill all building slots before going for duchy buildings
+			factor = 0
+			free_building_slots > 0
+		}
+	}	
+	type = special
+	flag = travel_point_of_interest_martial
+}
+##############钀у叧###################
+xiaoguan_01 = {
+	construction_time = very_slow_construction_time
+	type_icon = "icon_building_guanzhpng4.dds"
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	show_disabled = yes
+	cost_gold = 1000
+	max_garrison = 500
+	province_modifier = {
+		fort_level = 3
+		garrison_size = 0.25
+		stationed_maa_toughness_mult = 0.08
+		defender_holding_advantage = 15
+	}
+	on_complete = {
+		on_big_t1_regular_building_built_effect = yes
+	}
+	ai_value = {
+		base = 100
+		modifier = { # Fill all building slots before going for duchy buildings
+			factor = 0
+			free_building_slots > 0
+		}
+	}	
+	type = special
+	flag = travel_point_of_interest_martial
+}
+##############澶ф暎鍏?##################
+dasanguan_01 = {
+	construction_time = very_slow_construction_time
+	type_icon = "icon_building_guanzhpng4.dds"
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	show_disabled = yes
+	cost_gold = 1200
+	max_garrison = 500
+	province_modifier = {
+		fort_level = 3
+		garrison_size = 0.35
+		stationed_maa_toughness_mult = 0.08
+		defender_holding_advantage = 15
+	}
+	on_complete = {
+		on_big_t1_regular_building_built_effect = yes
+	}
+	ai_value = {
+		base = 100
+		modifier = { # Fill all building slots before going for duchy buildings
+			factor = 0
+			free_building_slots > 0
+		}
+	}	
+	type = special
+	flag = travel_point_of_interest_martial
+}
+##############姝﹀叧###################
+wuguan_01 = {
+	construction_time = very_slow_construction_time
+	type_icon = "icon_building_guanzhpng4.dds"
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	show_disabled = yes
+	cost_gold = 1100
+	max_garrison = 600
+	province_modifier = {
+		fort_level = 3
+		garrison_size = 0.25
+		stationed_maa_toughness_mult = 0.08
+		defender_holding_advantage = 15
+	}
+	on_complete = {
+		on_big_t1_regular_building_built_effect = yes
+	}
+	ai_value = {
+		base = 100
+		modifier = { # Fill all building slots before going for duchy buildings
+			factor = 0
+			free_building_slots > 0
+		}
+	}	
+	type = special
+	flag = travel_point_of_interest_martial
+}
+##############鍓戦棬鍏?##################
+jianmenguan_01 = {
+	construction_time = very_slow_construction_time
+	type_icon = "icon_structure_jaisalmer_fort.dds"
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	show_disabled = yes
+	cost_gold = 2000
+	max_garrison = 750
+	province_modifier = {
+		fort_level = 4
+		garrison_size = 0.35
+		stationed_maa_toughness_mult = 0.14
+		defender_holding_advantage = 20
+		supply_limit_mult = 0.25
+		travel_danger = -4
+	}
+	on_complete = {
+		on_big_t1_regular_building_built_effect = yes
+	}
+	ai_value = {
+		base = 100
+		modifier = { # Fill all building slots before going for duchy buildings
+			factor = 0
+			free_building_slots > 0
+		}
+	}	
+	type = special
+	flag = travel_point_of_interest_martial
+}
+##############闃冲钩鍏?##################
+yangping_01 = {
+	construction_time = very_slow_construction_time
+	type_icon = "icon_structure_jaisalmer_fort.dds"
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	show_disabled = yes
+	cost_gold = 1500
+	max_garrison = 450
+	province_modifier = {
+		fort_level = 2
+		garrison_size = 0.1
+		stationed_maa_toughness_mult = 0.08
+		defender_holding_advantage = 8
+		supply_limit_mult = 0.1
+		travel_danger = -3
+	}
+	county_modifier = {
+		monthly_county_control_growth_factor =0.15
+		tax_mult = 0.1
+	}
+	on_complete = {
+		on_big_t1_regular_building_built_effect = yes
+	}
+	ai_value = {
+		base = 100
+		modifier = { # Fill all building slots before going for duchy buildings
+			factor = 0
+			free_building_slots > 0
+		}
+	}	
+	type = special
+	flag = travel_point_of_interest_martial
+}
+##############钁悓鍏?##################
+xiameng_01 = {
+	construction_time = very_slow_construction_time
+	type_icon = "icon_structure_jaisalmer_fort.dds"
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	show_disabled = yes
+	cost_gold = 1500
+	max_garrison = 450
+	province_modifier = {
+		fort_level = 2
+		garrison_size = 0.1
+		stationed_maa_toughness_mult = 0.08
+		defender_holding_advantage = 8
+		supply_limit_mult = 0.1
+		travel_danger = -3
+	}
+	county_modifier = {
+		monthly_county_control_growth_factor =0.15
+		tax_mult = 0.1
+	}
+	on_complete = {
+		on_big_t1_regular_building_built_effect = yes
+	}
+	ai_value = {
+		base = 100
+		modifier = { # Fill all building slots before going for duchy buildings
+			factor = 0
+			free_building_slots > 0
+		}
+	}	
+	type = special
+	flag = travel_point_of_interest_martial
+}
+##############浜曞緞鍏?##################
+jingjinguan_01 = {
+	construction_time = very_slow_construction_time
+	type_icon = "icon_building_taihang8.dds"
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	show_disabled = yes
+	cost_gold = 1000
+	max_garrison = 500
+	province_modifier = {
+		fort_level = 2
+		garrison_size = 0.2
+		stationed_maa_toughness_mult = 0.04
+		defender_holding_advantage = 8
+	}
+	on_complete = {
+		on_big_t1_regular_building_built_effect = yes
+	}
+	ai_value = {
+		base = 100
+		modifier = { # Fill all building slots before going for duchy buildings
+			factor = 0
+			free_building_slots > 0
+		}
+	}	
+	type = special
+	flag = travel_point_of_interest_martial
+}
+##############娼煎叧###################
+tongguan_01 = {
+	construction_time = very_slow_construction_time
+	type_icon = "icon_building_guanzhpng4.dds"
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	show_disabled = yes
+	cost_gold = 1800
+	max_garrison = 800
+	province_modifier = {
+		fort_level = 4
+		garrison_size = 0.3
+		stationed_maa_toughness_mult = 0.1
+		defender_holding_advantage = 16
+	}
+	on_complete = {
+		on_big_t1_regular_building_built_effect = yes
+	}
+	ai_value = {
+		base = 100
+		modifier = { # Fill all building slots before going for duchy buildings
+			factor = 0
+			free_building_slots > 0
+		}
+	}	
+	type = special
+	flag = travel_point_of_interest_martial
+}
+##############闆侀棬鍏?##################
+yanmenguan_01 = {
+	construction_time = very_slow_construction_time
+	type_icon = "icon_building_taihang8.dds"
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	show_disabled = yes
+	cost_gold = 1800
+	max_garrison = 600
+	province_modifier = {
+		fort_level = 4
+		garrison_size = 0.3
+		stationed_maa_damage_mult = 0.12
+		defender_holding_advantage = 12
+	}
+	on_complete = {
+		on_big_t1_regular_building_built_effect = yes
+	}
+	ai_value = {
+		base = 100
+		modifier = { # Fill all building slots before going for duchy buildings
+			factor = 0
+			free_building_slots > 0
+		}
+	}	
+	type = special
+	flag = travel_point_of_interest_martial
+}
+
+##############濞勭儲鍏?##################
+loufan_01 = {
+	construction_time = very_slow_construction_time
+	type_icon = "icon_building_taihang8.dds"
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	show_disabled = yes
+	cost_gold = 1800
+	max_garrison = 570
+	province_modifier = {
+		fort_level = 2
+		garrison_size = 0.25
+		stationed_maa_damage_mult = 0.08
+		defender_holding_advantage = 9
+	}
+	on_complete = {
+		on_big_t1_regular_building_built_effect = yes
+	}
+	ai_value = {
+		base = 100
+		modifier = { # Fill all building slots before going for duchy buildings
+			factor = 0
+			free_building_slots > 0
+		}
+	}	
+	type = special
+	flag = travel_point_of_interest_martial
+}
+##############鍋忓ご鍏?##################
+piantou_01 = {
+	construction_time = very_slow_construction_time
+	type_icon = "icon_building_taihang8.dds"
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	show_disabled = yes
+	cost_gold = 1800
+	max_garrison = 550
+	province_modifier = {
+		fort_level = 2
+		garrison_size = 0.25
+		stationed_maa_damage_mult = 0.08
+		defender_holding_advantage = 9
+	}
+	on_complete = {
+		on_big_t1_regular_building_built_effect = yes
+	}
+	ai_value = {
+		base = 100
+		modifier = { # Fill all building slots before going for duchy buildings
+			factor = 0
+			free_building_slots > 0
+		}
+	}	
+	type = special
+	flag = travel_point_of_interest_martial
+}
+
+##############椋庢湀鍏?##################
+fengyue_01 = {
+	construction_time = very_slow_construction_time
+	type_icon = "icon_building_taihang8.dds"
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	show_disabled = yes
+	cost_gold = 1200
+	max_garrison = 550
+	province_modifier = {
+		fort_level = 2
+		garrison_size = 0.25
+		stationed_maa_damage_mult = 0.08
+		defender_holding_advantage = 9
+	}
+	on_complete = {
+		on_big_t1_regular_building_built_effect = yes
+	}
+	ai_value = {
+		base = 100
+		modifier = { # Fill all building slots before going for duchy buildings
+			factor = 0
+			free_building_slots > 0
+		}
+	}	
+	type = special
+	flag = travel_point_of_interest_martial
+}
+##############鐧介檳鍙ら亾###################
+baijing_01 = {
+	construction_time = very_slow_construction_time
+	type_icon = "icon_building_taihang8.dds"
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	show_disabled = yes
+	cost_gold = 1100
+	max_garrison = 550
+	province_modifier = {
+		fort_level = 2
+		garrison_size = 0.25
+		stationed_maa_damage_mult = 0.08
+		defender_holding_advantage = 9
+	}
+	on_complete = {
+		on_big_t1_regular_building_built_effect = yes
+	}
+	ai_value = {
+		base = 100
+		modifier = { # Fill all building slots before going for duchy buildings
+			factor = 0
+			free_building_slots > 0
+		}
+	}	
+	type = special
+	flag = travel_point_of_interest_martial
+}
+##############澶╀簳鍏?##################
+tianjing_01 = {
+	construction_time = very_slow_construction_time
+	type_icon = "icon_building_taihang8.dds"
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	show_disabled = yes
+	cost_gold = 1200
+	max_garrison = 550
+	province_modifier = {
+		fort_level = 2
+		garrison_size = 0.25
+		stationed_maa_damage_mult = 0.08
+		defender_holding_advantage = 9
+	}
+	on_complete = {
+		on_big_t1_regular_building_built_effect = yes
+	}
+	ai_value = {
+		base = 100
+		modifier = { # Fill all building slots before going for duchy buildings
+			factor = 0
+			free_building_slots > 0
+		}
+	}	
+	type = special
+	flag = travel_point_of_interest_martial
+}
+##############姝﹁儨鍏?##################
+wushengguan_01 = {
+	construction_time = very_slow_construction_time
+	type_icon = "icon_building_Yiyang3.dds"
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	show_disabled = yes
+	cost_gold = 1600
+	max_garrison = 630
+	province_modifier = {
+		fort_level = 3
+		garrison_size = 0.1
+		stationed_maa_toughness_mult = 0.1
+		defender_holding_advantage = 5
+		travel_speed_mult = 0.2
+	}
+	on_complete = {
+		on_big_t1_regular_building_built_effect = yes
+	}
+	ai_value = {
+		base = 100
+		modifier = { # Fill all building slots before going for duchy buildings
+			factor = 0
+			free_building_slots > 0
+		}
+	}	
+	type = special
+	flag = travel_point_of_interest_martial
+}
+##############澶ч毀濉?##################
+dasuisai_01 = {
+	construction_time = very_slow_construction_time
+	type_icon = "icon_building_Yiyang3.dds"
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	show_disabled = yes
+	cost_gold = 1600
+	max_garrison = 680
+	province_modifier = {
+		fort_level = 2
+		garrison_size = 0.1
+		stationed_maa_toughness_mult = 0.07
+		defender_holding_advantage = 5
+		travel_speed_mult = 0.1
+	}
+	on_complete = {
+		on_big_t1_regular_building_built_effect = yes
+	}
+	ai_value = {
+		base = 100
+		modifier = { # Fill all building slots before going for duchy buildings
+			factor = 0
+			free_building_slots > 0
+		}
+	}	
+	type = special
+	flag = travel_point_of_interest_martial
+}
+##############鍐ユ壖鍏?##################
+mineguan_01 = {
+	construction_time = very_slow_construction_time
+	type_icon = "icon_building_Yiyang3.dds"
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	show_disabled = yes
+	cost_gold = 1600
+	max_garrison = 750
+	province_modifier = {
+		fort_level = 2
+		garrison_size = 0.1
+		stationed_maa_toughness_mult = 0.08
+		defender_holding_advantage = 6
+		travel_speed_mult = 0.1
+	}
+	on_complete = {
+		on_big_t1_regular_building_built_effect = yes
+	}
+	ai_value = {
+		base = 100
+		modifier = { # Fill all building slots before going for duchy buildings
+			factor = 0
+			free_building_slots > 0
+		}
+	}	
+	type = special
+	flag = travel_point_of_interest_martial
+}
+##############宄ｅ叧###################
+yaoguan_01 = {
+	construction_time = very_slow_construction_time
+	type_icon = "icon_structure_alamut_castle.dds"
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	show_disabled = yes
+	cost_gold = 1250
+	max_garrison = 650
+	province_modifier = {
+		fort_level = 3
+		garrison_size = 0.25
+		stationed_maa_toughness_mult = 0.08
+		defender_holding_advantage = 9
+	}
+	on_complete = {
+		on_big_t1_regular_building_built_effect = yes
+	}
+	ai_value = {
+		base = 100
+		modifier = { # Fill all building slots before going for duchy buildings
+			factor = 0
+			free_building_slots > 0
+		}
+	}	
+	type = special
+	flag = travel_point_of_interest_martial
+}
+##############灞呭焊鍏?##################
+juyongguan_01 = {
+	construction_time = very_slow_construction_time
+	type_icon = "ep3_meteora.dds"
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	show_disabled = yes
+	cost_gold = 1300
+	max_garrison = 500
+	province_modifier = {
+		fort_level = 3
+		garrison_size = 0.25
+		stationed_maa_toughness_mult = 0.08
+		defender_holding_advantage = 9
+	}
+	on_complete = {
+		on_big_t1_regular_building_built_effect = yes
+	}
+	ai_value = {
+		base = 100
+		modifier = { # Fill all building slots before going for duchy buildings
+			factor = 0
+			free_building_slots > 0
+		}
+	}	
+	type = special
+	flag = travel_point_of_interest_martial
+}
+################绱崋鍏?#####################
+zijin_01 = {
+	construction_time = very_slow_construction_time
+	type_icon = "ep3_meteora.dds"
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	show_disabled = yes
+	cost_gold = 1300
+	max_garrison = 500
+	province_modifier = {
+		fort_level = 3
+		garrison_size = 0.25
+		stationed_maa_toughness_mult = 0.08
+		defender_holding_advantage = 9
+	}
+	on_complete = {
+		on_big_t1_regular_building_built_effect = yes
+	}
+	ai_value = {
+		base = 100
+		modifier = { # Fill all building slots before going for duchy buildings
+			factor = 0
+			free_building_slots > 0
+		}
+	}	
+	type = special
+	flag = travel_point_of_interest_martial
+}
+#################楦夸箣濉?#########################
+hongzhisai_01 = {
+	construction_time = very_slow_construction_time
+	type_icon = "ep3_meteora.dds"
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	show_disabled = yes
+	cost_gold = 1300
+	max_garrison = 500
+	province_modifier = {
+		fort_level = 3
+		garrison_size = 0.25
+		stationed_maa_toughness_mult = 0.08
+		defender_holding_advantage = 9
+	}
+	on_complete = {
+		on_big_t1_regular_building_built_effect = yes
+	}
+	ai_value = {
+		base = 100
+		modifier = { # Fill all building slots before going for duchy buildings
+			factor = 0
+			free_building_slots > 0
+		}
+	}	
+	type = special
+	flag = travel_point_of_interest_martial
+}
+#################鐜夐棬鍏?#########################
+yumen_01 = {
+	construction_time = very_slow_construction_time
+	type_icon = "ep3_meteora.dds"
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	show_disabled = yes
+	cost_gold = 1300
+	max_garrison = 500
+	province_modifier = {
+		fort_level = 3
+		garrison_size = 0.25
+		stationed_maa_screen_mult = 0.08
+		defender_holding_advantage = 9
+	}
+	on_complete = {
+		on_big_t1_regular_building_built_effect = yes
+	}
+	ai_value = {
+		base = 100
+		modifier = { # Fill all building slots before going for duchy buildings
+			factor = 0
+			free_building_slots > 0
+		}
+	}	
+	type = special
+	flag = travel_point_of_interest_martial
+}
+#################闃冲叧##########################
+yangguan_01 = {
+	construction_time = very_slow_construction_time
+	type_icon = "ep3_meteora.dds"
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	show_disabled = yes
+	cost_gold = 1300
+	max_garrison = 500
+	province_modifier = {
+		fort_level = 3
+		garrison_size = 0.25
+		stationed_maa_screen_mult = 0.08
+		defender_holding_advantage = 9
+	}
+	on_complete = {
+		on_big_t1_regular_building_built_effect = yes
+	}
+	ai_value = {
+		base = 100
+		modifier = { # Fill all building slots before going for duchy buildings
+			factor = 0
+			free_building_slots > 0
+		}
+	}	
+	type = special
+	flag = travel_point_of_interest_martial
+}
+#################闀囧崡鍏?#########################
+zhennan_01 = {
+	construction_time = very_slow_construction_time
+	type_icon = "ep3_meteora.dds"
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	show_disabled = yes
+	cost_gold = 2000
+	max_garrison = 500
+	province_modifier = {
+		fort_level = 4
+		garrison_size = 0.25
+		stationed_maa_toughness_mult = 0.12
+		defender_holding_advantage = 12
+		supply_capacity_mult = 0.5
+		monthly_county_control_growth_factor = 0.2
+		travel_safety = 10
+	}
+	on_complete = {
+		on_big_t1_regular_building_built_effect = yes
+	}
+	ai_value = {
+		base = 100
+		modifier = { # Fill all building slots before going for duchy buildings
+			factor = 0
+			free_building_slots > 0
+		}
+	}	
+	type = special
+	flag = travel_point_of_interest_martial
+}
+##############閮芥睙鍫?##################
+dujiangyan_01 = {
+	construction_time = very_slow_construction_time
+	type_icon = "icon_building_watermills.dds"
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	is_enabled = {
+	}
+	show_disabled = yes
+	cost_gold = 2500
+
+	county_modifier = {
+		development_growth_factor = 0.3
+		development_growth = 0.3
+		tax_mult = 0.2
+		
+	}
+		province_modifier = {
+supply_capacity_mult = 0.5
+monthly_county_control_growth_factor = 0.2
+travel_safety = 10
+	}
+		
+	on_complete = {
+		on_big_t1_regular_building_built_effect = yes
+	}
+	ai_value = {
+		base = 100
+		modifier = { # Fill all building slots before going for duchy buildings
+			factor = 0
+			free_building_slots > 0
+		}
+	}
+	
+	type = special
+
+	flag = travel_point_of_interest_economic
+}
+##############鐏垫笭###################
+lingqu_01 = {
+	construction_time = very_slow_construction_time
+	type_icon = "icon_structure_drassanes.dds"
+	can_construct_potential = {
+	}
+	is_enabled = {
+	}
+	show_disabled = yes
+	cost_gold = 800
+	county_modifier = {
+		development_growth_factor = 0.25
+		development_growth = 0.05
+		supply_limit = 1500
+		travel_safety = 8
+		travel_speed_mult = 0.15
+	}
+	on_complete = {
+		on_big_t1_regular_building_built_effect = yes
+	}
+	ai_value = {
+		base = 100
+		modifier = { # Fill all building slots before going for duchy buildings
+			factor = 0
+			free_building_slots > 0
+		}
+	}
+	type = special
+	flag = travel_point_of_interest_economic
+}
+##############榛勯噾鍙?##################
+huangjintai_01 = {
+	construction_time = very_slow_construction_time
+	type_icon = "icon_structure_wudang_mountain_temples.dds"
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	show_disabled = yes
+	cost_gold = 2000
+	province_modifier = {
+culture_tradition_max_add = 1
+development_growth_factor = 0.08
+tax_mult = -0.2
+	}
+		character_modifier = {
+opinion_of_vassal = 5
+active_accolades = 1
+attraction_opinion = 5
+councillor_opinion = 5
+guest_opinion = 15
+monthly_dynasty_prestige = 0.1
+monthly_influence = 1
+monthly_prestige = 1.5
+owned_legend_spread_mult = 0.5
+maa_damage_mult = 0.05
+ 	}
+	on_complete = {
+		on_big_t1_regular_building_built_effect = yes
+	}
+	ai_value = {
+		base = 100
+		modifier = { # Fill all building slots before going for duchy buildings
+			factor = 0
+			free_building_slots > 0
+		}
+	}	
+	type = special
+	flag = travel_point_of_interest_learning
+}

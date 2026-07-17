@@ -1,0 +1,64 @@
+﻿##### d_gongshi1 ############################
+
+### c_gong1
+# GONG1
+1104 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+# YA1
+2482 = {
+	holding = none
+}
+
+
+### c_xiuwu
+# XIUWU
+1107 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+##### d_jishi10 ############################
+
+### c_ji10
+# JI10
+1106 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+### c_muye
+# MUYE
+2481 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+##### d_mushi ############################
+
+### c_mu
+# MU
+1110 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+### c_xu4
+# XU4
+1111 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+

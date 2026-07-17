@@ -1,0 +1,105 @@
+﻿##### d_xishi1 ############################
+
+### c_jingjunshan
+# JINGJUNSHAN
+3148 = {
+	holding = none
+}
+
+
+### c_guangwu4
+# GUANGWU4
+3149 = {
+	culture = dizu
+	religion = guiwu
+	holding = tribal_holding
+}
+
+
+### c_jiangyou
+# JIANGYOU
+3150 = {
+	culture = dizu
+	religion = guiwu
+	holding = tribal_holding
+}
+
+
+### c_deyangting
+# DEYANGTING
+3151 = {
+	holding = none
+}
+
+
+### c_xi7
+# XI7
+3169 = {
+	culture = dizu
+	religion = guiwu
+	holding = tribal_holding
+}
+
+
+### c_baxi
+# BAXI
+3636 = {
+	culture = dizu
+	religion = guiwu
+	holding = tribal_holding
+}
+
+
+### c_yinping2
+# YINPING2
+3637 = {
+	culture = dizu
+	religion = guiwu
+	holding = tribal_holding
+}
+
+
+### c_huangan
+# HUANGAN
+3183 = {
+	holding = none
+}
+
+
+### c_zitong
+# ZITONG
+3184 = {
+	culture = dizu
+	religion = guiwu
+	holding = tribal_holding
+}
+
+
+### c_wulian
+# WULIAN
+3185 = {
+	holding = none
+}
+
+
+### c_xishui
+# XISHUI
+3190 = {
+	holding = none
+}
+
+
+### c_weicheng
+# WEICHENG
+3296 = {
+	holding = none
+}
+
+
+### c_changming
+# CHANGMING
+3297 = {
+	holding = none
+}
+
+

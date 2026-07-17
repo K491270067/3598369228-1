@@ -1,0 +1,26 @@
+﻿d_guoshi4 = {
+	3810.1.1 = {
+		liege = "k_moguo"
+		holder = han34
+	}
+	3849.1.1 = {
+		change_development_level = 26
+		government = feudal_admin_government
+	}
+	3849.12.31 = {
+		holder = jixingmoshi8
+	}
+}
+k_moguo = {
+	3810.1.1 = {
+		liege = "e_zhoutianzi"
+		holder = han31
+	}
+	3849.1.1 = {
+		change_development_level = 30
+		government = feudal_admin_government
+	}
+	3849.12.31 = {
+		holder = jixingmoshi5
+	}
+}

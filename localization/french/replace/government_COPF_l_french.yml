@@ -1,0 +1,2 @@
+﻿l_french:
+ feudal_government_adjective: "[Character.Custom('GetFeudalGovName')]"

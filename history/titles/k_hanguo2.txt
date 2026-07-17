@@ -1,0 +1,33 @@
+﻿c_pishi = {
+	3764.11.11 = {
+		liege = "k_hanguo2"
+		holder = jixinghanguo1
+	}
+	3805.1.1 = {
+		holder = jixinghanguo2
+	}
+	3833.1.1 = {
+		holder = jixinghanguo8
+	}
+	3849.1.1 = {
+		change_development_level = 29
+		government = feudal_admin_government
+	}
+}
+k_hanguo2 = {
+	3764.11.11 = {
+		liege = "e_zhoutianzi"
+		holder = jixinghanguo1
+	}
+	3805.1.1 = {
+		holder = jixinghanguo2
+	}
+	3833.1.1 = {
+		holder = jixinghanguo3
+	}
+	3849.1.1 = {
+		change_development_level = 30
+		government = feudal_admin_government
+		liege = "e_zhoutianzi1"
+	}
+}

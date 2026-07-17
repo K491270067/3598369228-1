@@ -1,0 +1,37 @@
+﻿##### d_quanshi1 ############################
+
+### c_quan
+# QUAN
+773 = {
+	culture = yiluozhirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+# JING1
+772 = {
+	holding = none
+}
+
+
+### c_gaodu
+# GAODU
+801 = {
+	culture = yiluozhirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+# XINCHENG1
+802 = {
+	holding = none
+}
+
+
+### c_ganlu
+# GANLU
+803 = {
+	culture = yiluozhirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+
+

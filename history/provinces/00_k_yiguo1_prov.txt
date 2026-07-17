@@ -1,0 +1,114 @@
+﻿##### d_yishi1 ############################
+
+### c_yandu
+# YANDU
+315 = {
+	holding = none
+}
+
+
+### c_zhaoyuan
+# ZHAOYUAN
+317 = {
+	holding = none
+}
+
+
+### c_gaoyou
+# GAOYOU
+319 = {
+	holding = none
+}
+
+
+### c_hailing
+# HAILING
+320 = {
+	holding = none
+}
+
+
+### c_haian
+# HAIAN
+321 = {
+	holding = none
+}
+
+
+### c_hudou
+# HUDOU
+323 = {
+	holding = none
+}
+
+
+### c_zhufang
+# 
+2085 = {
+	holding = none
+}
+
+
+### c_dongling1
+# DONGLING1
+2258 = {
+	holding = none
+}
+
+
+### c_lanyang
+# MAULEVRIER
+2259 = {
+	holding = none
+}
+
+
+### c_putao
+# PUTAO
+2260 = {
+	holding = none
+}
+
+
+### c_linjiang
+# LINJIANG
+2261 = {
+	holding = none
+}
+
+
+### c_lanyang1
+# LANYANG1
+2262 = {
+	holding = none
+}
+
+
+### c_qining
+# QINING
+2263 = {
+	holding = none
+}
+
+
+### c_lingting
+# LINGTING
+2264 = {
+	holding = none
+}
+
+
+### c_rugao
+# RUGAO
+2265 = {
+	holding = none
+}
+
+
+### c_xianping
+# XIANGPING
+2266 = {
+	holding = none
+}
+
+

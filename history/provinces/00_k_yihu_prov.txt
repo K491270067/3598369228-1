@@ -1,0 +1,79 @@
+﻿##### d_huyishi ############################
+
+### c_hu5
+# 
+2004 = {
+	holding = none
+}
+
+
+### c_shiliang
+# 
+2026 = {
+	holding = none
+}
+
+
+### c_chuyang
+# 
+2027 = {
+	holding = none
+}
+
+
+### c_zhe1
+# 
+2028 = {
+	holding = none
+}
+
+
+### c_sangqiu3
+# 
+2029 = {
+	holding = none
+}
+
+
+### c_chiyin
+# 
+2030 = {
+	holding = none
+}
+
+
+### c_guang2
+# 
+2032 = {
+	holding = none
+}
+
+
+### c_ye3
+# 
+2033 = {
+	holding = none
+}
+
+
+### c_huan1
+# 
+2034 = {
+	holding = none
+}
+
+
+### c_chiyang1
+# 
+2035 = {
+	holding = none
+}
+
+
+### c_quting
+# 
+2039 = {
+	holding = none
+}
+
+

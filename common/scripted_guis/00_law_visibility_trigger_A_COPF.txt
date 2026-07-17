@@ -1,0 +1,33 @@
+﻿province_law_visibility_trigger = {
+	scope = character
+	
+	is_shown = {
+		OR = {
+			realm_law_use_imperial_bureaucracy = yes
+			government_allows = administrative
+			government_has_flag = government_is_feudal_admin
+			trigger_if = {
+				limit = { government_has_flag = government_is_feudal }
+				any_vassals_are_governor_or_admin = yes
+			}
+		}
+	}
+}
+
+top_liege_only_province_law_trigger = {
+	scope = character
+	
+	is_shown = {
+		OR = {
+			realm_law_use_imperial_bureaucracy = yes
+			government_allows = administrative
+		}
+		NOR = {
+			government_has_flag = government_is_feudal_admin
+			trigger_if = {
+				limit = { government_has_flag = government_is_feudal }
+				any_vassals_are_governor_or_admin = yes
+			}
+		}
+	}
+}

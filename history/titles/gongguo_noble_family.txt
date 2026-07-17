@@ -1,0 +1,30 @@
+﻿c_gongshi2 = {
+	3849.12.31 = {
+		liege = k_gongguo
+		holder = jixinggongshi8
+		government = feudal_admin_government
+		succession_laws = { noble_family_succession_law }
+	}
+	5000.10.1 = {
+		effect = {
+			destroy_landless_title_no_tgp_dlc_effect = {
+				DATE = 5000.10.1
+			}
+		}
+	}
+}
+c_huangshi1 = {
+	3849.12.31 = {
+		liege = k_gongguo
+		holder = jixinggongshi13
+		government = feudal_admin_government
+		succession_laws = { noble_family_succession_law }
+	}
+	5000.10.1 = {
+		effect = {
+			destroy_landless_title_no_tgp_dlc_effect = {
+				DATE = 5000.10.1
+			}
+		}
+	}
+}

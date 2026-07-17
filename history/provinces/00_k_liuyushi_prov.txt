@@ -1,0 +1,66 @@
+﻿##### d_liuyushi ############################
+
+### c_zhangzi
+# ZHANGZI
+1130 = {
+	culture = chidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+
+
+### c_liuyu
+# LIUYU
+1132 = {
+	culture = chidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+# BANG1
+2516 = {
+	holding = none
+}
+
+
+### c_fajiu
+# FAJIU
+2518 = {
+	culture = chidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+
+
+##### d_puhushi ############################
+
+### c_puhu
+# PUHU
+1133 = {
+	culture = chidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+# GAOYANG2
+2519 = {
+	holding = none
+}
+
+
+### c_huguan
+# XUGUAN
+1136 = {
+	culture = chidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+
+
+### c_queyu
+# QUEYU
+1138 = {
+	culture = chidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+
+

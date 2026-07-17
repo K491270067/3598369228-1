@@ -1,0 +1,48 @@
+﻿##### d_zengshi1 ############################
+
+### c_zeng2
+# ZENG2
+1495 = {
+	culture = xiaren
+	religion = xiali
+	holding = castle_holding
+}
+# RUIYANG
+2815 = {
+	holding = none
+}
+
+
+### c_pingliang
+# PINGLIANG
+2997 = {
+	culture = xiaren
+	religion = xiali
+	holding = castle_holding
+}
+
+
+##### d_xigongshi ############################
+
+### c_huating
+# HUATING
+1499 = {
+	culture = xiaren
+	religion = xiali
+	holding = castle_holding
+}
+# MAPULING
+2999 = {
+	holding = none
+}
+
+
+### c_wushisai
+# WUSHISAI
+2998 = {
+	culture = xiaren
+	religion = xiali
+	holding = castle_holding
+}
+
+

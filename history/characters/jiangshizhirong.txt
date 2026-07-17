@@ -1,0 +1,275 @@
+﻿#############  濮滄皬鎴庡浗--濮滃 鐐庡笣鍚庤 #############
+jiangshirong1={
+  name="nanming609"
+  dynasty=xin556
+	religion="xirongfangling" 
+	culture="guazhouzhirong"
+  father=han3240
+
+  3381.12.12 = {
+		birth = yes
+	}
+  3426.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jiangshirong2={
+  name="nanming692"
+  dynasty=xin556
+	religion="xirongfangling" 
+	culture="guazhouzhirong"
+  father=jiangshirong1
+
+  3417.12.12 = {
+		birth = yes
+	}
+  3466.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jiangshirong3={
+  name="nanming739"
+  dynasty=xin556
+	religion="xirongfangling" 
+	culture="guazhouzhirong"
+  father=jiangshirong2
+
+  3452.12.12 = {
+		birth = yes
+	}
+  3508.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jiangshirong4={
+  name="nanming748"
+  dynasty=xin556
+	religion="xirongfangling" 
+	culture="guazhouzhirong"
+  father=jiangshirong3
+
+  3489.12.12 = {
+		birth = yes
+	}
+  3555.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jiangshirong5={
+  name="nanming754"
+  dynasty=xin556
+	religion="xirongfangling" 
+	culture="guazhouzhirong"
+  father=jiangshirong4
+
+  3523.12.12 = {
+		birth = yes
+	}
+  3580.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jiangshirong6={
+  name="nanming763"
+  dynasty=xin556
+	religion="xirongfangling" 
+	culture="guazhouzhirong"
+  father=jiangshirong5
+
+  3567.12.12 = {
+		birth = yes
+	}
+  3614.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jiangshirong7={
+  name="nanming768"
+  dynasty=xin556
+	religion="xirongfangling" 
+	culture="guazhouzhirong"
+  father=jiangshirong6
+
+  3593.12.12 = {
+		birth = yes
+	}
+  3651.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jiangshirong8={
+  name="nanming782"
+  dynasty=xin556
+	religion="xirongfangling" 
+	culture="guazhouzhirong"
+  father=jiangshirong7
+
+  3631.12.12 = {
+		birth = yes
+	}
+  3684.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jiangshirong9={
+  name="nanming798"
+  dynasty=xin556
+	religion="xirongfangling" 
+	culture="guazhouzhirong"
+  father=jiangshirong8
+
+  3663.12.12 = {
+		birth = yes
+	}
+  3717.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jiangshirong10={
+  name="nanming811"
+  dynasty=xin556
+	religion="xirongfangling" 
+	culture="guazhouzhirong"
+  father=jiangshirong9
+
+  3696.12.12 = {
+		birth = yes
+	}
+  3758.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jiangshirong11={
+  name="nanming823"
+  dynasty=xin556
+	religion="xirongfangling" 
+	culture="guazhouzhirong"
+  father=jiangshirong10
+
+  3743.12.12 = {
+		birth = yes
+	}
+  3802.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jiangshirong12={
+  name="nanming724"
+  dynasty=xin556
+	religion="xirongfangling" 
+	culture="guazhouzhirong"
+  father=jiangshirong11
+
+  3777.12.12 = {
+		birth = yes
+	}
+  3815.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jiangshirong13={#寮€灞€
+  name="nanming861"
+  dynasty=xin556
+	religion="xirongfangling" 
+	culture="guazhouzhirong"
+  father=jiangshirong12
+
+  3803.12.12 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jiangshirong14={
+  name="nanming870"
+  dynasty=xin556
+	religion="xirongfangling" 
+	culture="guazhouzhirong"
+  father=jiangshirong13
+
+  3821.12.12 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jiangshirong15={
+  name="nanming873"
+  dynasty=xin556
+	religion="xirongfangling" 
+	culture="guazhouzhirong"
+  father=jiangshirong13
+
+  3823.12.12 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jiangshirong16={
+  name="nvming175"
+  dynasty=xin556
+	religion="xirongfangling" 
+	culture="guazhouzhirong"
+  father=jiangshirong13
+  female=yes
+
+  3825.12.12 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jiangshirong17={
+  name="nvming182"
+  dynasty=xin556
+	religion="xirongfangling" 
+	culture="guazhouzhirong"
+  father=jiangshirong13
+  female=yes
+
+  3827.12.12 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}

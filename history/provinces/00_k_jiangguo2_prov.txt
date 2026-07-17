@@ -1,0 +1,44 @@
+﻿##### d_jiangshi2 ############################
+
+### c_jiang2
+# 
+1943 = {
+	holding = none
+}
+
+
+### c_yulou
+# 
+1946 = {
+	holding = none
+}
+
+
+### c_an1
+# 
+1948 = {
+	holding = none
+}
+
+
+### c_jifu
+# 
+1949 = {
+	holding = none
+}
+
+
+### c_liao3
+# 
+1950 = {
+	holding = none
+}
+
+
+### c_fan8
+# 
+1951 = {
+	holding = none
+}
+
+

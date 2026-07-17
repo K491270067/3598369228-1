@@ -1,0 +1,88 @@
+﻿##### d_yunashi ############################
+
+### c_feng7
+
+
+### c_xi6
+
+
+### c_haibu
+# HAIBU
+3525 = {
+	holding = none
+}
+# SUXIMEN
+2903 = {
+	holding = none
+}
+
+
+### c_fenghou
+# FENGHOU
+2868 = {
+	holding = none
+}
+
+
+### c_guoqian
+# GUOQIAN
+2931 = {
+	holding = none
+}
+
+
+### c_zhisan
+
+
+### c_sujinyuan
+
+
+### c_yuzuoguozao
+# YUZUO
+2919 = {
+	holding = none
+}
+# TUXIA
+2902 = {
+	holding = none
+}
+
+
+### c_yuzuo
+
+
+### c_gangshuimen
+# GANGSHUIMEN
+2901 = {
+	holding = none
+}
+
+
+### c_tuxia
+
+
+### c_fengqian
+# FENGQIAN
+2824 = {
+	holding = none
+}
+# FENG7
+2930 = {
+	holding = none
+}
+
+
+### c_ritian
+# RITIAN
+3524 = {
+	holding = none
+}
+# XI6
+2932 = {
+	holding = none
+}
+
+
+### c_tianhe
+
+

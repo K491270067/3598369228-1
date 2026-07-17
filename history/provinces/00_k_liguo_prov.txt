@@ -1,0 +1,72 @@
+﻿##### d_lishi ############################
+
+### c_minglu
+# MINGLU
+603 = {
+	holding = none
+}
+
+
+### c_ku
+# KU
+605 = {
+	holding = none
+}
+
+
+### c_li4
+# LI4
+606 = {
+	holding = none
+}
+
+
+### c_ziwu
+# ZIWU
+607 = {
+	holding = none
+}
+
+
+### c_xin1
+# XIN1
+609 = {
+	holding = none
+}
+
+
+### c_xinqi
+# XINQI
+612 = {
+	holding = none
+}
+
+
+### c_ningping
+# NINGPING
+2347 = {
+	holding = none
+}
+
+
+### c_yan10
+# YAN10
+2348 = {
+	holding = none
+}
+
+
+### c_xinyang
+# XINYANG
+2349 = {
+	holding = none
+}
+
+
+### c_xiang7
+# XIANG7
+2351 = {
+	holding = none
+}
+
+

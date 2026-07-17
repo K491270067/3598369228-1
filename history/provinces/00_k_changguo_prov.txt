@@ -1,0 +1,51 @@
+﻿##### d_changshi ############################
+
+### c_zhang3
+# 
+1917 = {
+	holding = none
+}
+
+
+### c_xiling2
+# 
+1918 = {
+	holding = none
+}
+
+
+### c_baiju1
+# 
+1919 = {
+	holding = none
+}
+
+
+### c_yongan
+# 
+1920 = {
+	holding = none
+}
+
+
+### c_mulan
+# 
+1921 = {
+	holding = none
+}
+
+
+### c_huang5
+# 
+1922 = {
+	holding = none
+}
+
+
+### c_ma2
+# 
+1923 = {
+	holding = none
+}
+
+

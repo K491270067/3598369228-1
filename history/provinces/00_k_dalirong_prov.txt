@@ -1,0 +1,123 @@
+﻿##### d_dalishi ############################
+
+### c_gaonu
+# GAONU
+1442 = {
+	culture = xirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+# GUANGLUO
+1444 = {
+	holding = none
+}
+
+
+### c_pingdu2
+# PINGDU2
+1443 = {
+	culture = xirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+# BAILUO
+2774 = {
+	holding = none
+}
+# ANDING
+2772 = {
+	holding = none
+}
+
+
+### c_bajiao
+# BAJIAO
+1445 = {
+	culture = xirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+# LUZIGUAN
+1450 = {
+	holding = none
+}
+
+
+##### d_lifeishi ############################
+
+### c_guangwu1
+# GUANGWU1
+1441 = {
+	culture = xirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+# SANCHENG
+1453 = {
+	holding = none
+}
+
+
+### c_yincheng
+# YINCHENG
+1459 = {
+	culture = xirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+
+
+### c_ansai
+# ANSAI
+2773 = {
+	culture = xirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+# MENSHAN
+1451 = {
+	holding = none
+}
+
+
+##### d_lishi8 ############################
+
+### c_wurenguan
+# WURENGUAN
+1452 = {
+	culture = xirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+
+
+### c_dingyang
+# DINGYANG
+1455 = {
+	culture = xirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+# YICHUAN1
+2777 = {
+	holding = none
+}
+
+
+### c_linzhen
+# LINZHEN
+1457 = {
+	culture = xirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+# YUNYAN
+1454 = {
+	holding = none
+}
+# FULU
+1458 = {
+	holding = none
+}
+
+

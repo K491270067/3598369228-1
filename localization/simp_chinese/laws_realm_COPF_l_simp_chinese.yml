@@ -1,0 +1,95 @@
+﻿l_simp_chinese:
+ # 君权 # ————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+ crown_authority_extended: "[crown_authority|E]"
+
+ crown_authority_legacy_head: "遗存首领"
+ crown_authority_legacy_head_effects_not_in_prev: "$EFFECT_LIST_BULLET$除[primary_title|E]和[capital|E][county|E]外的所有[titles]都被[regent|E]篡夺\n$EFFECT_LIST_BULLET$所有的世袭[vassals|E]即刻宣布自治\n$EFFECT_LIST_BULLET$所有的[governor|E]即刻采用世袭继承法\n$EFFECT_LIST_BULLET$不能使用#high 要求臣服#![interaction|E]"
+
+ crown_authority_titular_liege: "名义君主"
+ crown_authority_titular_liege_effects_not_in_prev: "$EFFECT_LIST_BULLET$不忠的世袭[vassals|E]可能会试图宣布自治\n$EFFECT_LIST_BULLET$不忠的[governor|E]可能会试图采用世袭继承法"
+
+ crown_authority_extended_0: "封臣自治"
+ crown_authority_extended_0_effects_not_in_prev: "#weak 封臣会提供[levies|E]与[taxes|E]，但是他们在其他方面可以自主行事#!"
+
+ crown_authority_extended_1: "有限君权"
+ crown_authority_extended_1_effects: "$EFFECT_LIST_BULLET$#indent_newline:3 可以获得[tributaries|E]#!\n$EFFECT_LIST_BULLET$#indent_newline:3 统治者可以在可用分割继承制[succession_laws|E]之间切换#!"
+
+ crown_authority_extended_2: "高君权"
+ crown_authority_extended_2_effects: "$EFFECT_LIST_BULLET$#indent_newline:3 统治者可以在所有可用[succession_laws|E]之间切换#!\n$EFFECT_LIST_BULLET$#indent_newline:3 所有拒绝收回封臣或剥夺头衔的封臣会被认为是[criminals|E]#!"
+
+ crown_authority_extended_3: "绝对君权"
+ crown_authority_extended_3_effects: "$EFFECT_LIST_BULLET$统治者可以指定[heir|E]"
+
+ tt_only_feudal_can_have_this: "只有[GetGovernment('feudal_admin_government').GetName]或者[GetGovernment('feudal_admin_government').GetName][ruler|E]会落魄至此"
+ tt_cannot_actively_lower_crown_authority_to_this_level: "无法主动降低君权到此等级"
+ tt_cannot_have_diarch: "必须先摆脱[regent|E]的束缚"
+
+ # 政策：封臣继承权 # ————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+ law_group_vassal_succession_rights_policy: "[vassal|E]继承权政策"
+ law_group_vassal_succession_rights_policy_singular: "[vassal|E]继承权政策"
+
+ law_vassal_succession_rights_policy_hereditary: "传统世袭"
+ law_vassal_succession_rights_policy_hereditary_subname: "[realm]的世袭被视作常态"
+ law_vassal_succession_rights_policy_hereditary_effects: "$EFFECT_LIST_BULLET$通过#high 授予头衔#!册封的新[vassals|E]将使用#high [GetSubjectContractType( 'feudal_government_succession_rights' ).GetObligationName( 'feudal_succession_rights_hereditary' )]#![vassal_contract|E]\n\n#flavor 权力与财产世袭继承，自古以来便是如此。#!"
+
+ law_vassal_succession_rights_policy_forced_partition: "强制分割"
+ law_vassal_succession_rights_policy_forced_partition_subname: "[title]分割继承被视作常态"
+ law_vassal_succession_rights_policy_forced_partition_effects: "$EFFECT_LIST_BULLET$通过#high 授予头衔#!册封的新[vassals|E]将使用#high [GetSubjectContractType( 'feudal_government_succession_rights' ).GetObligationName( 'feudal_succession_rights_forced_partition' )]#![vassal_contract|E]\n\n#flavor 所有子嗣都应当拥有继承权，这样才公平。#!"
+
+ law_vassal_succession_rights_policy_grant_recognition: "御赐承认"
+ law_vassal_succession_rights_policy_grant_recognition_subname: "继承需要[liege]的认可被视作常态"
+ law_vassal_succession_rights_policy_grant_recognition_effects: "$EFFECT_LIST_BULLET$通过#high 授予头衔#!册封的新[vassals|E]将使用#high [GetSubjectContractType( 'feudal_government_succession_rights' ).GetObligationName( 'feudal_succession_rights_grant_recognition' )]#![vassal_contract|E]\n\n#flavor [liege]的册封是一种恩赏，[vassals]当以忠心回报。#!"
+
+ law_vassal_succession_rights_policy_court_supervision: "宫廷监察"
+ law_vassal_succession_rights_policy_court_supervision_subname: "[realm]治理需要监察被视作常态"
+ law_vassal_succession_rights_policy_court_supervision_effects: "$EFFECT_LIST_BULLET$通过#high 授予头衔#!册封的新[vassals|E]将使用#high [GetSubjectContractType( 'feudal_government_succession_rights' ).GetObligationName( 'feudal_succession_rights_court_supervision' )]#![vassal_contract|E]\n\n#flavor 并非所有人都知晓统治之道，有些[vassals]需要他人的协助。#!"
+
+ law_vassal_succession_rights_policy_governor_appointment: "总督委任"
+ law_vassal_succession_rights_policy_governor_appointment_subname: "委任总督被视作常态"
+ law_vassal_succession_rights_policy_governor_appointment_effects: "$EFFECT_LIST_BULLET$通过#high 授予头衔#!册封的新[vassals|E]将使用#high [GetSubjectContractType( 'feudal_government_succession_rights' ).GetObligationName( 'feudal_succession_rights_governor_appointment' )]#![vassal_contract|E]\n\n#flavor 只有能肩负的起责任的人才有资格管理[realm]。#!"
+
+ # 政策：封臣头衔领地外继承 # ————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+ law_group_vassal_title_leave_realm_policy: "[vassal|E][title|E][realm]外[succession]政策"
+ law_group_vassal_title_leave_realm_policy_singular: "[vassal|E][title|E][realm]外[succession]政策"
+
+ law_vassal_title_leave_realm_policy_allowed: "自由继承"
+ law_vassal_title_leave_realm_policy_allowed_subname: "[vassals][title]自由继承"
+ law_vassal_title_leave_realm_policy_allowed_effects: "$EFFECT_LIST_BULLET$[vassal|E]的[title|E]可以自由的被[realm|E]外的[characters][succession|E]"
+
+ law_vassal_title_leave_realm_policy_restricted: "限制继承"
+ law_vassal_title_leave_realm_policy_restricted_subname: "[vassals][title]限制继承"
+ law_vassal_title_leave_realm_policy_restricted_effects: "$EFFECT_LIST_BULLET$[vassal|E]的[title|E][succession|E]被限制在[realm|E]内部"
+
+ # 政策：封臣头衔剥夺 # ————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+ law_group_vassal_revoke_title_policy: "[vassal|E][title|E]剥夺政策"
+ law_group_vassal_revoke_title_policy_singular: "[vassal|E][title|E]剥夺政策"
+
+ law_vassal_revoke_title_policy_prohibit_revoke: "禁止剥夺"
+ law_vassal_revoke_title_policy_prohibit_revoke_subname: "禁止剥夺[vassals][title]"
+ law_vassal_revoke_title_policy_prohibit_revoke_effects: "$EFFECT_LIST_BULLET$禁止剥夺[vassal|E]的[title|E]\n$EFFECT_LIST_BULLET$禁止收回[vassal|E]的[direct_vassal|E]"
+
+ law_vassal_revoke_title_policy_allow_revoke: "允许剥夺"
+ law_vassal_revoke_title_policy_allow_revoke_subname: "允许剥夺[vassals][title]"
+ law_vassal_revoke_title_policy_allow_revoke_effects: "$EFFECT_LIST_BULLET$允许剥夺[vassal|E]的[title|E]\n$EFFECT_LIST_BULLET$允许收回[vassal|E]的[direct_vassal|E]"
+
+ has_law_allowing_title_revocation_policy: "你没有[GetLaw('law_vassal_revoke_title_policy_allow_revoke').GetName][vassal|E][title|E]政策"
+
+ # 政策：封臣战争 # ————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+ law_group_vassal_war_policy: "[vassals|E][war|E]政策"
+ law_group_vassal_war_policy_singular: "[vassals|E][war|E]政策"
+
+ law_vassal_war_policy_no_restriction: "无限制"
+ law_vassal_war_policy_no_restriction_subname: "[vassals][war]无限制"
+ law_vassal_war_policy_no_restriction_effects: "$EFFECT_LIST_BULLET$[vassal|E]可以不受限制的发动任何类型的[war|E]"
+
+ law_vassal_war_policy_prohibit_internal_wars: "禁止内部战争"
+ law_vassal_war_policy_prohibit_internal_wars_subname: "[vassals]禁止发动内部[war]"
+ law_vassal_war_policy_prohibit_internal_wars_effects: "$EFFECT_LIST_BULLET$[vassals|E]被限制不能对其他封臣同僚发动[war|E]，除非使用[hook|E]或者拥有#high [GetSubjectContractType( 'war_declaration_rights' ).GetObligationName( 'war_declaration_rights_allowed' )]#![vassal_contract|E]"
+
+ law_vassal_war_policy_prohibit_all_wars: "禁止任何战争"
+ law_vassal_war_policy_prohibit_all_wars_subname: "[vassals]禁止发动任何[war]"
+ law_vassal_war_policy_prohibit_all_wars_effects: "$EFFECT_LIST_BULLET$[vassals|E]被限制不能发动任何类型的[war|E]，除非使用[hook|E]或者拥有#high [GetSubjectContractType( 'war_declaration_rights' ).GetObligationName( 'war_declaration_rights_allowed' )]#![vassal_contract|E]"
+
+ law_vassal_war_policy_permanent_prohibit_all_wars: "永久禁止战争"
+ law_vassal_war_policy_permanent_prohibit_all_wars_subname: "[vassals]永久禁止发动任何[war]"
+ law_vassal_war_policy_permanent_prohibit_all_wars_effects: "$EFFECT_LIST_BULLET$[vassals|E]被限制无论如何不能发动任何类型的[war|E]\n$EFFECT_LIST_BULLET$[vassals|E]若拥有#high [GetSubjectContractType( 'war_declaration_rights' ).GetObligationName( 'war_declaration_rights_allowed' )]#![vassal_contract|E]，则将被撤销"

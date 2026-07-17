@@ -1,0 +1,82 @@
+﻿l_simp_chinese:
+ # 封臣契约：封臣继承权 # ————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+ feudal_government_succession_rights: "封建继承权"
+
+ feudal_succession_rights_hereditary: "传统世袭"
+ feudal_succession_rights_hereditary_short: "传统世袭"
+ feudal_succession_rights_hereditary_desc: "#flavor [vassal]可以在[realm|E]中采用任意世袭继承法，正如其先祖一样。"
+
+ feudal_succession_rights_forced_partition: "强制分割"
+ feudal_succession_rights_forced_partition_short: "强制分割"
+ feudal_succession_rights_forced_partition_desc: "#emphasis #bold [vassal|E]限制：#!#!\n$EFFECT_LIST_BULLET$[vassal|E]不能有除了分割继承制之外的[succession_law|E]\n$EFFECT_LIST_BULLET$[vassal|E]将其[succession_law|E]切换为分割继承制\n\n#flavor [vassal]被迫只能在[realm|E]中采用分割继承制这种继承法。\n\n[vassal]的权威受到削弱，这种行政上的障碍增加了#high [EmptyScope.ScriptValue('succession_rights_contract_law_cost_tooltip')|0]%#!的[vassals][law]花费。"
+
+ feudal_succession_rights_grant_recognition: "御赐承认"
+ feudal_succession_rights_grant_recognition_short: "御赐承认"
+ feudal_succession_rights_grant_recognition_desc: "#emphasis #bold [liege|E]：#!#!\n$EFFECT_LIST_BULLET$允许对[vassal|E]使用#high 否决头衔继承#![interaction|E]\n\n#emphasis #bold [vassal|E]限制：#!#!\n$EFFECT_LIST_BULLET$被否决继承的[title|E]在被继承时会被勒令归还给[liege|E]。\n$EFFECT_LIST_BULLET$拒绝归还则被视为[revolting|E]，[liege|E]获得针对目标[title|E]的合法剥夺理由，以及针对目标[vassal|E]的合法逮捕理由\n\n#flavor [realm|E]的继承需要[liege|E]的承认，未经承认的继承将遭人质疑。"
+
+ feudal_succession_rights_court_supervision: "宫廷监察"
+ feudal_succession_rights_court_supervision_short: "宫廷监察"
+ feudal_succession_rights_court_supervision_desc: "#emphasis #bold [vassal|E]限制：#!#!\n$EFFECT_LIST_BULLET$来自[liege|E]宫廷的官员将成为[vassal|E]的[diarch|E]以监察其行政\n$EFFECT_LIST_BULLET$如果[vassal|E]试图免除[diarch|E]则被视作[revolting|E]\n\n#emphasis #bold 来自先前的等级：#!#!\n$EFFECT_LIST_BULLET$[liege|E]允许对[vassal|E]使用否决头衔继承行动\n\n#flavor [vassal]的所有政令都必须通过监察官员的审查，以确保[realm|E]的治理符合[liege|E]的施政方针。"
+
+ feudal_succession_rights_governor_appointment: "总督委任"
+ feudal_succession_rights_governor_appointment_short: "总督委任"
+ feudal_succession_rights_governor_appointment_desc: "#emphasis #bold [vassal|E]限制：#!#!\n$EFFECT_LIST_BULLET$[vassal|E]将不被允许世袭，转而由委任的[governor|E]对[realm|E]进行管理\n$EFFECT_LIST_BULLET$[vassal|E]不能有除了[GetLaw('feudal_governor_appointment_succession_law').GetName]之外的[succession_law|E]\n$EFFECT_LIST_BULLET$[vassal|E]将其[succession_law|E]切换为[GetLaw('feudal_governor_appointment_succession_law').GetName]\n$EFFECT_LIST_BULLET$[vassal|E]如果有监察官，则监察官代替[vassal|E]成为[governor|E]\n\n#flavor [vassal]的委任已经制度化，被认定合适的官员会接任[title]，无需[liege|E]的干预。"
+
+ succession_rights_cannot_be_player: "作为非行政制封臣的玩家无法执行此继承权，因为死亡会导致游戏结束！"
+ crown_authority_at_least_1: "需要至少通过有限君权[crown_authority]"
+ crown_authority_at_least_2: "需要至少通过高君权[crown_authority]"
+
+ # 封臣契约：总督候选人偏好 # ————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+ feudal_admin_government_candidate_preference: "[governor]候选人偏好"
+
+ candidate_preference_powerful_gentry: "士绅豪强"
+ candidate_preference_powerful_gentry_short: "士绅豪强"
+ candidate_preference_powerful_gentry_desc: "$EFFECT_LIST_BULLET$本地[noble_family|E]的[family|E]将获得更多[candidate_score|E]\n$EFFECT_LIST_BULLET$当前[governor|E]的[family|E]将获得更多[candidate_score|E]\n$EFFECT_LIST_BULLET$当前[governor|E]的下属[vassal|E]将获得更多[candidate_score|E]\n$EFFECT_LIST_BULLET$加重[lowborn|E]的候选人受到的[candidate_score|E]惩罚\n\n#flavor 本地的世袭统治者们依旧影响着这片土地上的政治。#!"
+
+ candidate_preference_local_talent: "本地贤能"
+ candidate_preference_local_talent_short: "本地贤能"
+ candidate_preference_local_talent_desc: "$EFFECT_LIST_BULLET$当前[governor|E]的下属[vassal|E]将获得更多[candidate_score|E]\n$EFFECT_LIST_BULLET$当前[governor|E]的[councillors|E]以及[court_positions|E]将获得更多[candidate_score|E]\n\n#flavor 经验丰富且熟悉本地情况的专业官员才能有效地进行管理。#!"
+
+ candidate_preference_favor_nepotism: "任人唯亲"
+ candidate_preference_favor_nepotism_short: "任人唯亲"
+ candidate_preference_favor_nepotism_desc: "$EFFECT_LIST_BULLET$当前[governor]的[liege|E]的[family|E]和[friends|E]将获得更多[candidate_score|E]#!\n\n#flavor 要增强影响力，就需要将土地分给可以信任的亲族与亲信。#!"
+
+ candidate_preference_talent_only: "唯才是举"
+ candidate_preference_talent_only_short: "唯才是举"
+ candidate_preference_talent_only_desc: "$EFFECT_LIST_BULLET$高[skills|E]的候选人将获得更多[candidate_score|E]#!\n$EFFECT_LIST_BULLET$减轻[lowborn|E]的候选人受到的[candidate_score|E]惩罚\n\n#flavor 领地的管理需要真正的才能而非阿谀奉承。#!"
+
+ candidate_preference_bureaucrat_promotion: "官僚选拔"
+ candidate_preference_bureaucrat_promotion_short: "官僚选拔"
+ candidate_preference_bureaucrat_promotion_desc: "$EFFECT_LIST_BULLET$不根据[candidate_score|E]进行[governor|E]任命，而是由官僚体系选拔人选\n\n#flavor 勤恳的工作，过人的经验，绝对的忠诚，胜过一切虚浮表面。#!"
+
+ # 封臣契约：自治封臣 # ————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+ contract_feudal_autonomous_taxes: "自治封臣赋税"
+ feudal_autonomous_tax_exempt: "免除[tax|E]"
+ feudal_autonomous_tax_exempt_short: "免除"
+ feudal_autonomous_tax_low: "低[taxes|E]"
+ feudal_autonomous_tax_low_short: "低"
+ feudal_autonomous_tax_normal: "正常[tax|E]"
+ feudal_autonomous_tax_normal_short: "正常"
+ feudal_autonomous_tax_high: "高[taxes|E]"
+ feudal_autonomous_tax_high_short: "高"
+ feudal_autonomous_tax_extortionate: "严苛[tax|E]"
+ feudal_autonomous_tax_extortionate_short: "严苛"
+
+ contract_feudal_liege_offer_protection: "领主提供保护"
+ obligation_feudal_liege_offer_protection_none: "领主无需提供保护"
+ obligation_feudal_liege_offer_protection_none_short: "无需提供"
+ obligation_feudal_liege_offer_protection_none_desc: "$EFFECT_LIST_BULLET$[liege|E]不会加入[vassal|E]的任何战争\n\n#flavor [liege]依照[obligation]，即使[vassal]遭受入侵也不会干预。#!"
+ obligation_feudal_liege_offer_protection_forced: "领主提供保护"
+ obligation_feudal_liege_offer_protection_forced_short: "保障"
+ obligation_feudal_liege_offer_protection_forced_desc: "$EFFECT_LIST_BULLET$[vassal|E]在防御战争开始时会自动召唤[liege|E]加入战争\n$EFFECT_LIST_BULLET$[vassal|E]可以召唤[liege|E]加入进攻战争\n\n#flavor [liege]遵守[obligation]，保护[vassal]免受入侵。#!"
+
+ contract_feudal_vassal_support_war: "封臣支援战争"
+ obligation_contract_feudal_vassal_support_war_none: "封臣无需支援战争"
+ obligation_contract_feudal_vassal_support_war_none_short: "无需支援"
+ obligation_contract_feudal_vassal_support_war_none_desc: "$EFFECT_LIST_BULLET$[vassal|E]不会加入[liege|E]的任何战争\n\n#flavor [vassal]依照[obligation]，无需支援[liege]的任何战事。#!"
+ obligation_contract_feudal_vassal_support_war_forced: "封臣支援战争"
+ obligation_contract_feudal_vassal_support_war_forced_short: "遵守"
+ obligation_contract_feudal_vassal_support_war_forced_desc: "$EFFECT_LIST_BULLET$[liege|E]在战争开始时会自动召唤[vassal|E]加入战争\n$EFFECT_LIST_BULLET$[vassal|E]可能会拒绝，尤其是在其拥兵自重的情况下\n\n#flavor [vassal]遵守[obligation]，支援[liege]的所有战事。#!"
+
+ # 封臣契约：其他 # ————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+ tt_liege_permanently_prohibit_all_wars: "[liege|E]拥有[GetLaw('law_vassal_war_policy_permanent_prohibit_all_wars').GetName][law|E]"

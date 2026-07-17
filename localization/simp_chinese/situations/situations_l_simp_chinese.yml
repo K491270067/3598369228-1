@@ -1,0 +1,207 @@
+﻿l_simp_chinese:
+spring_and_autumn_situation: "礼崩乐坏"
+situation_spring_and_autumn_situation: "礼崩乐坏"
+SITUATION_CURRENT_PHASE_NAME: "当前阶段"
+
+ world_huaxia_yizhou: "益州"
+ world_huaxia_jingzhou: "荆州"
+ world_huaxia_youzhou: "幽州"
+ world_huaxia_bingzhou: "并州"
+ world_huaxia_yongzhou: "雍州"
+ world_huaxia_jizhou: "冀州"
+ world_huaxia_sili: "司隶"
+ world_huaxia_yuzhou: "豫州"
+ world_huaxia_yangzhou: "扬州"
+ world_huaxia_qingzhou: "青州"
+
+ spring_and_autumn_situation_sub_region_world_huaxia_yizhou: "益州局势"
+
+ spring_and_autumn_situation_sub_region_world_huaxia_jingzhou: "南土"
+
+ spring_and_autumn_situation_sub_region_world_huaxia_youzhou: "幽州局势"
+ spring_and_autumn_situation_sub_region_world_huaxia_bingzhou: "并州局势"
+
+ spring_and_autumn_situation_sub_region_world_huaxia_yongzhou: "畿外"
+
+ spring_and_autumn_situation_sub_region_world_huaxia_jizhou: "冀州局势"
+ spring_and_autumn_situation_sub_region_world_huaxia_sili: "司隶局势"
+ spring_and_autumn_situation_sub_region_world_huaxia_yuzhou: "豫州局势"
+ spring_and_autumn_situation_sub_region_world_huaxia_yangzhou: "扬州局势"
+
+ spring_and_autumn_situation_sub_region_world_huaxia_qingzhou: "畿内"
+
+involve_supporters_of_zhou_dynasty: "王道"
+involve_opponents_of_zhou_dynasty: "霸道"
+involve_neutral_of_zhou_dynasty: "中立"
+interloper_of_zhou_dynasty: "四夷"
+
+spring_and_autumn_situation_participant_group_involve_supporters_of_zhou_dynasty: "王道"
+spring_and_autumn_situation_participant_group_involve_opponents_of_zhou_dynasty: "霸道"
+spring_and_autumn_situation_participant_group_involve_neutral_of_zhou_dynasty: "中立"
+spring_and_autumn_situation_participant_group_interloper_of_zhou_dynasty: "四夷"
+
+SITUATION_WINDOW_YOUR_PARTICIPANT_GROUP_MULTI_SUBREGION: "你在此区域的派系"
+SITUATION_WINDOW_YOUR_PARTICIPANT_GROUP: "你的派系"
+SITUATION_WINDOW_NO_REGION_PARTICIPANT_GROUP: "你未参与此区域的任何派系"
+SITUATION_WINDOW_VIEW_PARTICIPANT_GROUPS: "查看派系"
+SITUATION_WINDOW_CURRENT_HEADER: "当前阶段"
+SITUATION_WINDOW_FUTURE_HEADER: "未来阶段"
+SITUATION_WINDOW_SELECTED_HEADER: "已选阶段"
+SITUATION_WINDOW_LEADING_PHASE: "领先阶段"
+SITUATION_WINDOW_NOT_LEADING_PHASE: "非领先阶段"
+SITUATION_CURRENT_PHASE_ENDS: "阶段结束条件"
+SITUATION_WINDOW_PHASE_EFFECTS: "阶段效果"
+SITUATION_WINDOW_FUTURE_PHASES_HEADER: "未来阶段"
+SITUATION_WINDOW_FUTURE_CATALYSTS_HEADER: "催化剂"
+SITUATION_WINDOW_PHASE_TAKEOVER_POINTS: "转折点"
+SITUATION_WINDOW_PHASE_TAKEOVER_DURATION: "时代长度"
+SITUATION_WINDOW_VIEW_PHASE: "查看"
+SITUATION_PHASE_POINT_TAKEOVER_VALUE: "转折点"
+SITUATION_WINDOW_SUB_GROUP_SUBTITLE: "子区域局势"
+SITUATION_PARTICIPANT_WINDOW_HEADER: "派系列表"
+SITUATION_PARTICIPANT_GROUP_SUBTITLE: "派系"
+SITUATION_PARTICIPANT_GROUP_FILTER: "筛选"
+SITUATION_PARTICIPANT_WINDOW_PARTICIPANT_EMPTY: "该派系暂无参与者"
+
+spring_and_autumn_phase: "春秋时代"
+warring_states_phase: "战国时代"
+zhou_reborn_phase: "周礼复兴"
+
+spring_and_autumn_situation_spring_and_autumn_phase_situation_phase: "春秋时代"
+spring_and_autumn_situation_warring_states_phase_situation_phase: "战国时代"
+spring_and_autumn_situation_zhou_reborn_phase_situation_phase: "礼乐复兴"
+
+fallen_of_zhou_dynasty_struggle.1004.t: "礼崩乐坏"
+fallen_of_zhou_dynasty_struggle.1004.desc: "公元前770年，周王朝走到了命运的分歧点，幽王身死引爆了周王朝的政治分裂，畿内畿外二王并立，周室天命衰微，诸侯并起。外有四夷盘踞，枕戈待旦，不断蚕食着诸夏的边界。旧权威的残骸滋养着无数的野心家，用于维系统治的礼乐如今已经崩溃，现在命运的缰绳已落到个人手中。"
+fallen_of_zhou_dynasty_struggle.1004.a: "我将匡扶周礼"
+fallen_of_zhou_dynasty_struggle.1004.b: "我当取而代之"
+fallen_of_zhou_dynasty_struggle.1004.c: "静观其变，明哲保身"
+fallen_of_zhou_dynasty_struggle.1004.d: "趁虚而入，入主中原"
+
+trait_character_involve_supporters_of_zhou_dynasty: "王道"
+trait_character_involve_supporters_of_zhou_dynasty_desc: "此角色恪守周礼，拥护周天子正统。"
+trait_character_involve_supporters_of_zhou_dynasty_character_desc: "$trait_character_involve_supporters_of_zhou_dynasty$恪守周礼，拥护周天子正统。"
+
+trait_character_involve_opponents_of_zhou_dynasty: "霸道"
+trait_character_involve_opponents_of_zhou_dynasty_desc: "此角色挑战周天子权威，以力称霸诸侯。"
+trait_character_involve_opponents_of_zhou_dynasty_character_desc: "$trait_character_involve_opponents_of_zhou_dynasty$挑战周室，以力争霸天下。"
+
+trait_character_involve_neutral_of_zhou_dynasty: "中立"
+trait_character_involve_neutral_of_zhou_dynasty_desc: "此角色置身事外，静观时局变化。"
+trait_character_involve_neutral_of_zhou_dynasty_character_desc: "$trait_character_involve_neutral_of_zhou_dynasty$置身事外，明哲保身。"
+
+trait_character_interloper_of_zhou_dynasty: "四夷"
+trait_character_interloper_of_zhou_dynasty_desc: "此角色非华夏族裔，趁中原内乱而入。"
+trait_character_interloper_of_zhou_dynasty_character_desc: "$trait_character_interloper_of_zhou_dynasty$趁虚而入，图谋中原。"
+
+switch_faction_group: "改换阵营"
+
+switch_to_supporters_title: "转向王道"
+switch_to_supporters_desc: "周室虽衰，礼乐未亡。我将抛弃旧道，尊王攘夷，匡扶周室正统。"
+switch_to_supporters_confirm: "臣服于周礼之下"
+
+switch_to_opponents_title: "转向霸道"
+switch_to_opponents_desc: "周室已不可扶，天下当以力取。我将改弦易辙，以霸道争雄天下。"
+switch_to_opponents_confirm: "以力争霸天下"
+
+switch_to_neutral_title: "转向中立"
+switch_to_neutral_desc: "纷争无益，不如静观其变。我将退出派系之争，明哲保身。"
+switch_to_neutral_confirm: "置身事外"
+
+switch_faction_penalty_tooltip: "#N -#! 降低 #N 一个#! 威望等级\n#N -#! 降低 #N 15点#! 正统度\n#N -#! 原派系所有成员对你的 #N 好感降低#!"
+
+opinion_switched_faction: "背叛派系"
+
+demand_faction_switch: "要求改换阵营"
+demand_faction_switch_desc: "要求此角色放弃当前派系立场，转而效忠于你的阵营。"
+demand_faction_switch_prompt: "选择说服手段"
+demand_faction_switch_notification: "[CHARACTER.GetUINameNotMe]向你发起了一项交涉：[CHARACTER.GetSheHe|U]要求你改换阵营立场。[CHARACTER.GetSheHe|U]愿意付出以下条件来说服你。"
+
+demand_faction_switch_bribe_small: "少量贿赂"
+demand_faction_switch_bribe_small_desc: "向对方奉上其总财富的 #P 10%#! 作为礼物。#Weak (+10 情愿值)#!"
+demand_faction_switch_bribe_medium: "中量贿赂"
+demand_faction_switch_bribe_medium_desc: "向对方奉上其总财富的 #P 30%#! 作为礼物。#Weak (+30 情愿值)#!"
+demand_faction_switch_bribe_large: "大量贿赂"
+demand_faction_switch_bribe_large_desc: "向对方奉上其 #P 全部财富#! 作为礼物。#Weak (+50 情愿值)#!"
+
+demand_faction_switch_force: "以权威逼迫"
+demand_faction_switch_force_desc: "消耗自身相当于对方威望 #N 60%#! 的权威，强制要求对方服从。#Weak (+40 情愿值)#!"
+demand_faction_switch_hook: "使用强牵制"
+demand_faction_switch_hook_desc: "使用你手中掌握的牵制来迫使对方就范。#Weak (+80 情愿值)#!"
+
+opinion_refused_demand: "拒绝改换阵营"
+opinion_refused_demand_desc: "拒绝领主的要求"
+
+ ########################################
+ # 礼崩乐坏 - 最终结算决议
+ ########################################
+
+ # 决议1：宣告新天命
+ declare_new_mandate_title: "宣告新天命"
+ declare_new_mandate_desc: "战国纷争，生灵涂炭。今我控有华夏大半疆土，是时候结束这乱世，宣告新的天命所归了！"
+ declare_new_mandate_confirm: "天命在我！"
+ declare_new_mandate_toast_title: "新天命宣告"
+ declare_new_mandate_toast_desc: "[ROOT.GetTitledFirstName]宣告了新的天命，华夏迎来了新的统治者！"
+
+ # 决议2a：周虽旧邦，其命维新
+ zhou_old_state_new_mandate_title: "周虽旧邦，其命维新"
+ zhou_old_state_new_mandate_desc: "周室虽古，天命可新。在礼乐复兴的浪潮中，身为天子的我，将重新统一华夏，开创一个崭新的周王朝！"
+ zhou_old_state_new_mandate_confirm: "周命维新，天下归心！"
+ zhou_old_state_new_mandate_toast_title: "周王朝中兴"
+ zhou_old_state_new_mandate_toast_desc: "天子[ROOT.GetTitledFirstName]以周礼复兴天下，华夏重归一统，周王朝的中兴时代到来了！"
+
+ # 决议2b：命运歧点
+ fate_divergence_title: "命运歧点"
+ fate_divergence_desc: "礼乐复兴之际，我虽为周礼忠臣，却已实际掌控华夏大半疆土。天子的命运、周室的未来、华夏的走向……这一切都悬于我的一念之间。\n\n我该如何抉择？是将天下奉还天子，成就周公之德；还是顺应时势，架空天子，开创属于自己的时代？"
+
+ # 选项1：大政奉还
+ fate_divergence_option_restore: "大政奉还"
+ fate_divergence_option_restore_flavor: "「周公吐哺，天下归心。」我将效仿周公，以摄政之身辅佐天子，使周室中兴、天下大治。"
+ fate_divergence_restore_toast_title: "大政奉还"
+ fate_divergence_restore_toast_desc: "[ROOT.GetTitledFirstName]将统一后的华夏正式奉还天子[CHARACTER.GetTitledFirstName]，以摄政之身辅佐王室，天下称颂其德！"
+
+ # 选项2：架空天子
+ fate_divergence_option_usurp: "架空天子"
+ fate_divergence_option_usurp_flavor: "「天命无常，惟德是辅。」天子的时代已经过去，我将接过华夏的权柄，以荣誉之位安置旧天子，开创全新时代。"
+ fate_divergence_usurp_toast_title: "天子更替"
+ fate_divergence_usurp_toast_desc: "[ROOT.GetTitledFirstName]取代了[CHARACTER.GetTitledFirstName]成为华夏的新主宰，旧天子被尊为荣誉皇帝，天下格局从此改变！"
+
+ # 决议3：新朝征服
+ new_dynasty_conquest_title: "新朝征服"
+ new_dynasty_conquest_desc: "华夏文明虽然古老，但其天命已尽。我来自四夷之地，却已掌控华夏腹心。是时候终结这腐朽的旧秩序，以征服者的姿态建立属于我的新王朝！"
+ new_dynasty_conquest_confirm: "旧朝已去，新朝当立！"
+ new_dynasty_conquest_toast_title: "新朝建立"
+ new_dynasty_conquest_toast_desc: "[ROOT.GetTitledFirstName]以征服者之姿入主华夏，终结了周朝的统治，一个全新的王朝在征服中诞生！"
+
+ ########################################
+ # 传说名称
+ ########################################
+ legend_saas_new_mandate: "新天命"
+ legend_saas_zhou_restoration: "周王朝中兴"
+ legend_saas_duke_of_zhou_reborn: "周公在世"
+ legend_saas_world_savior: "世界拯救者"
+ legend_saas_huaxia_conqueror: "诸夏征服者"
+
+ ########################################
+ # 自定义提示
+ ########################################
+ saas_controls_80_percent_h_huaxia_tt: "控制华夏[title:h_huaxia.GetName]80%的法理领土"
+ saas_controls_60_percent_h_huaxia_tt: "控制华夏[title:h_huaxia.GetName]60%的法理领土"
+
+ ########################################
+ # 个人关系
+ ########################################
+ saas_personal_relation_ceremonial_emperor_same: "荣誉天子"
+ saas_personal_relation_ceremonial_emperor_other: "荣誉天子"
+
+ ########################################
+ # 脚本化修正
+ ########################################
+ saas_supreme_regency_power_modifier: "满级摄政权力"
+ saas_supreme_regency_power_modifier_desc: "此角色拥有至高无上的摄政权柄，代天子行天子之事。"
+
+ ########################################
+ # 荣誉头衔
+ ########################################
+ e_ceremonial_huaxia: "荣誉华夏天子"
+ e_ceremonial_huaxia_adj: "荣誉华夏"

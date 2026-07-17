@@ -1,0 +1,56 @@
+﻿##### d_kongtongshi ############################
+
+### c_kongtongshi
+# KONGTONGSHI
+3033 = {
+	culture = xirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+# QIUZILING
+3034 = {
+	holding = none
+}
+
+
+### c_wuqiu
+# WUQIU
+3037 = {
+	culture = xirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+# BAIBA
+3045 = {
+	holding = none
+}
+
+
+##### d_kongshi1 ############################
+
+### c_hun
+# HUN
+3043 = {
+	culture = xirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+# ZHUANGLANG
+3042 = {
+	holding = none
+}
+
+
+### c_ayang1
+# AYANG1
+3046 = {
+	culture = xirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+# GULE
+3049 = {
+	holding = none
+}
+
+

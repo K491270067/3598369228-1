@@ -1,0 +1,12 @@
+﻿k_gaorong = {
+	3785.1.1 = {
+		holder = yunxinggaorong2
+	}
+	3829.12.31 = {
+		holder = yunxinggaorong3
+	}
+	3849.12.31 = {
+		government = tribal_government
+		change_development_level = 29
+	}
+}

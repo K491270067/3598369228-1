@@ -1,0 +1,700 @@
+#############  卫国--姬姓卫氏 #############
+han176={
+  name="mao1"#卫康叔之子，卫康伯
+  dynasty_house=house_baijia12
+	religion="xizhouli" 
+	culture="zhou"
+  father=han16
+
+  3581.11.1 = {
+		birth = yes
+	}
+  3613.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+		give_nickname=nick_kangbo
+  }
+}
+han177={
+  name="cu1"#卫考伯，也有称卫孝伯，名已失传
+  dynasty_house=house_baijia12
+	religion="xizhouli" 
+	culture="zhou"
+  father=han176
+
+  3605.11.1 = {
+		birth = yes
+	}
+  3628.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+		give_nickname=nick_xiaobo
+  }
+}
+han178={
+  name="nen"#卫嗣伯，名已失传
+  dynasty_house=house_baijia12
+	religion="xizhouli" 
+	culture="zhou"
+  father=han177
+
+  3626.11.1 = {
+		birth = yes
+	}
+  3637.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+		give_nickname=nick_sibo1
+  }
+}
+han179={
+  name="chou2"#《史记》记载为卫榅伯，360查为卫疌伯(卫挚伯)，名已失传
+  dynasty_house=house_baijia12
+	religion="xizhouli" 
+	culture="zhou"
+  father=han178
+
+  3645.11.1 = {
+		birth = yes
+	}
+  3676.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+		give_nickname=nick_jiebo1
+  }
+}
+han180={
+  name="luo"#卫靖伯，名已失传
+  dynasty_house=house_baijia12
+	religion="xizhouli" 
+	culture="zhou"
+  father=han179
+
+  3670.1.1 = {
+		birth = yes
+	}
+  3713.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+		give_nickname=nick_jinbo1
+  }
+}
+han181={
+  name="shi1"#卫贞伯，名已失传
+  dynasty_house=house_baijia12
+	religion="xizhouli" 
+	culture="zhou"
+  father=han180
+
+  3701.1.1 = {
+		birth = yes
+	}
+  3752.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+		give_nickname=nick_zhengbo
+  }
+}
+han182={
+  name="xiu"#卫顷侯，爵位升格
+  dynasty_house=house_baijia12
+	religion="xizhouli" 
+	culture="zhou"
+  father=han181
+
+  3729.1.1 = {
+		birth = yes
+	}
+  3763.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+		give_nickname=nick_qinghou
+  }
+}
+han183={
+  name="dian"#卫釐侯，或卫厘侯，名已失传
+  dynasty_house=house_baijia12
+	religion="xizhouli" 
+	culture="zhou"
+  father=han182
+
+  3747.1.1 = {
+		birth = yes
+	}
+  3807.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+		give_nickname=nick_lihou
+  }
+}
+han184={
+  name="yu6"#卫共伯
+  dynasty_house=house_baijia12
+	religion="xizhouli" 
+	culture="zhou"
+  father=han183
+
+  3767.11.1 = {
+		birth = yes
+	}
+  3807.1.1 = {
+		death = {
+			death_reason = death_murder
+			killer = han185
+		}
+		give_nickname=nick_gongbo1
+  }
+}
+han185={
+  name="he"#卫武公，平王东迁时卫国君主，游戏开局时82岁
+  dynasty_house=house_baijia12
+	religion="dongzhouli" 
+	culture="zhou"
+  father=han183
+
+  3768.1.1 = {
+		birth = yes
+	}
+  3862.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+		give_nickname=nick_wugong
+  }
+}
+han186={
+  name="yang"#卫庄公，储君1号，游戏开局时47岁
+  dynasty_house=house_baijia12
+	religion="dongzhouli" 
+	culture="zhou"
+  father=han185
+
+  3803.1.1 = {
+		birth = yes
+	}
+  3885.1.1 = {
+    death = yes
+  }
+}
+han187={
+  name="zi"#平衡游戏女1号
+  dynasty_house=house_baijia12
+	religion="dongzhouli" 
+	culture="zhou"
+  father=han185
+  female=yes
+
+  3833.1.1 = {
+		birth = yes
+	}
+  3885.1.1 = {
+    death = yes
+  }
+}
+han188={
+  name="dan4"#第三代，庄公有早死太子，名已失传
+  dynasty_house=house_baijia12
+	religion="dongzhouli" 
+	culture="zhou"
+  father=han186
+
+  3825.1.1 = {
+		birth = yes
+	}
+  3830.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han189={
+  name="wan"#卫桓公，第三代，未找到有记载的儿子
+  dynasty_house=house_baijia12
+	religion="dongzhouli" 
+	culture="zhou"
+  father=han186
+
+  3826.1.1 = {
+		birth = yes
+	}
+  3885.1.1 = {
+    death = yes
+  }
+}
+han190={
+  name="zhouyu"#卫州吁/卫前废公，第三代，未找到有记载的儿子，继承兄长位置，同年被杀
+  dynasty_house=house_baijia12
+	religion="dongzhouli" 
+	culture="zhou"
+  father=han186
+
+  3827.1.1 = {
+		birth = yes
+	}
+  3885.1.1 = {
+    death = yes
+  }
+}
+han191={
+  name="jin1"#卫宣公，第三代，游戏开局时20岁
+  dynasty_house=house_baijia12
+	religion="dongzhouli" 
+	culture="zhou"
+  father=han186
+
+  3828.1.1 = {
+		birth = yes
+	}
+  3885.1.1 = {
+    death = yes
+  }
+}
+han192={
+  name="jianjia"#平衡游戏女2号，第三代
+  dynasty_house=house_baijia12
+	religion="dongzhouli" 
+	culture="zhou"
+  father=han186
+  female=yes
+
+  3829.1.1 = {
+		birth = yes
+	}
+  3885.1.1 = {
+    death = yes
+  }
+}
+han193={
+  name="ji"#史称太子伋，后被杀，第四代
+  dynasty_house=house_baijia12
+	religion="dongzhouli" 
+	culture="zhou"
+  father=han191
+
+  3848.1.1 = {
+		birth = yes
+	}
+  3885.1.1 = {
+    death = yes
+  }
+}
+han194={
+  name="qianmou"#应该是无谥号，史称卫君黔牟，第四代
+  dynasty_house=house_baijia12
+	religion="dongzhouli" 
+	culture="zhou"
+  father=han191
+
+  3849.2.1 = {
+		birth = yes
+	}
+  3885.1.1 = {
+    death = yes
+  }
+}
+han195={
+  name="sang"#平衡游戏女3号，第四代
+  dynasty_house=house_baijia12
+	religion="dongzhouli" 
+	culture="zhou"
+  father=han191
+  female=yes
+
+  3849.10.1 = {
+		birth = yes
+	}
+  3885.1.1 = {
+    death = yes
+  }
+}
+##### 卫国公族--卫氏 孙氏家族 #####
+han196={
+  name="huisun"#储君2号，其孙武仲乙，以孙为氏，为姬姓孙氏祖，游戏开局44岁
+  dynasty_house=house_baijia12
+	religion="dongzhouli" 
+	culture="zhou"
+  father=han185
+
+  3804.1.1 = {
+		birth = yes
+	}
+  3885.1.1 = {
+    death = yes
+  }
+}
+han197={
+  name="er"#游戏开局24岁
+  dynasty_house=house_baijia12
+	religion="dongzhouli" 
+	culture="zhou"
+  father=han196
+
+  3826.1.1 = {
+		birth = yes
+	}
+  3885.1.1 = {
+    death = yes
+  }
+}
+han198={
+  name="ling1"#平衡游戏女4号,游戏开局16岁
+  dynasty_house=house_baijia12
+	religion="dongzhouli" 
+	culture="zhou"
+  father=han196
+  female=yes
+
+  3827.1.1 = {
+		birth = yes
+	}
+  3885.1.1 = {
+    death = yes
+  }
+}
+han199={#游戏开局4岁
+  name="wuzhong"#"武仲乙是姬姓孙氏的得姓始祖，别称：姬武仲、武仲、孙乙、孙武仲
+  dynasty_house=house_baijia3
+	religion="dongzhouli" 
+	culture="zhou"
+  father=han197
+
+  3846.1.1 = {
+		birth = yes
+	}
+  3885.1.1 = {
+    death = yes
+  }
+}
+###### 卫国公族--甯氏家族（修改） #####
+han200={
+  name="jiwei"#储君3号，甯氏(宁氏)之祖，游戏开局42岁
+  dynasty_house=house_xin3
+	religion="dongzhouli" 
+	culture="zhou"
+  father=han185
+
+  3805.1.1 = {
+		birth = yes
+	}
+  3885.1.1 = {
+    death = yes
+  }
+}
+han201={#游戏开局22岁
+  name="qingshu"
+  dynasty_house=house_xin3
+	religion="dongzhouli" 
+	culture="zhou"
+  father=han200
+
+  3825.1.1 = {
+		birth = yes
+	}
+  3885.1.1 = {
+    death = yes
+  }
+}
+han202={#平衡游戏女6号，游戏开局15岁
+  name="mengxi"
+  dynasty_house=house_xin3
+	religion="dongzhouli" 
+	culture="zhou"
+  father=han200
+  female=yes
+
+  3826.1.1 = {
+		birth = yes
+	}
+  3885.1.1 = {
+    death = yes
+  }
+}
+han203={#游戏开局2岁
+  name="gui2"
+  dynasty_house=house_xin3
+	religion="dongzhouli" 
+	culture="zhou"
+  father=han201
+
+  3845.1.1 = {
+		birth = yes
+	}
+  3885.1.1 = {
+    death = yes
+  }
+}
+han204={#平衡游戏女7号，游戏开局1岁
+  name="nanfeng"
+  dynasty_house=house_xin3
+	religion="dongzhouli" 
+	culture="zhou"
+  father=han201
+  female=yes
+
+  3846.1.1 = {
+		birth = yes
+	}
+  3885.1.1 = {
+    death = yes
+  }
+}
+###### 卫国公族--石氏（修改） #####
+han205={
+  name="que1"#石祖
+  dynasty_house=house_baijia188
+	religion="dongzhouli" 
+	culture="zhou"
+  father=han181
+
+  3751.1.1 = {
+		birth = yes
+	}
+  3826.1.1 = {
+    death = yes
+  }
+}
+han206={
+  name="daizhong"#
+  dynasty_house=house_baijia188
+	religion="dongzhouli" 
+	culture="zhou"
+  father=han205
+
+  3825.1.1 = {
+		birth = yes
+	}
+  3885.1.1 = {
+    death = yes
+  }
+}
+han207={
+  name="hou"#
+  dynasty_house=house_baijia188
+	religion="dongzhouli" 
+	culture="zhou"
+  father=han205
+
+  3827.1.1 = {
+		birth = yes
+	}
+  3885.1.1 = {
+    death = yes
+  }
+}
+han208={
+  name="qian2"#
+  dynasty_house=house_baijia188
+	religion="dongzhouli" 
+	culture="zhou"
+  father=han205
+  female=yes
+
+  3827.10.1 = {
+		birth = yes
+	}
+  3885.1.1 = {
+    death = yes
+  }
+}
+han209={#游戏开局2岁
+  name="ji5"
+  dynasty_house=house_baijia188
+	religion="dongzhouli" 
+	culture="zhou"
+  father=han206
+
+  3845.1.1 = {
+		birth = yes
+	}
+  3885.1.1 = {
+    death = yes
+  }
+}
+han210={#游戏开局2岁
+  name="e"
+  dynasty_house=house_baijia188
+	religion="dongzhouli" 
+	culture="zhou"
+  father=han206
+
+  3846.11.1 = {
+		birth = yes
+	}
+  3885.1.1 = {
+    death = yes
+  }
+}
+###########康氏
+kangshi1={
+  name="nanming267"
+  dynasty_house=house_baijia88
+	religion="dongzhouli" 
+	culture="zhou"
+  father=han183
+
+  3801.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+kangshi2={
+  name="nanming276"
+  dynasty_house=house_baijia88
+	religion="dongzhouli" 
+	culture="zhou"
+  father=kangshi1
+
+  3821.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+kangshi3={
+  name="nanming282"
+  dynasty_house=house_baijia88
+	religion="dongzhouli" 
+	culture="zhou"
+  father=kangshi1
+
+  3823.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+kangshi4={
+  name="nvming157"
+  dynasty_house=house_baijia88
+	religion="dongzhouli" 
+	culture="zhou"
+  father=kangshi1
+  female=yes
+
+  3825.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+kangshi5={
+  name="nvming161"
+  dynasty_house=house_baijia88
+	religion="dongzhouli" 
+	culture="zhou"
+  father=kangshi1
+  female=yes
+
+  3827.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+###########常氏
+kangshi6={
+  name="nanming271"
+  dynasty_house=house_baijia80
+	religion="dongzhouli" 
+	culture="zhou"
+  father=han183
+
+  3805.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+kangshi7={
+  name="nanming281"
+  dynasty_house=house_baijia80
+	religion="dongzhouli" 
+	culture="zhou"
+  father=kangshi6
+
+  3825.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+kangshi8={
+  name="nanming290"
+  dynasty_house=house_baijia80
+	religion="dongzhouli" 
+	culture="zhou"
+  father=kangshi6
+
+  3827.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+kangshi9={
+  name="nvming191"
+  dynasty_house=house_baijia80
+	religion="dongzhouli" 
+	culture="zhou"
+  father=kangshi6
+  female=yes
+
+  3829.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+kangshi10={
+  name="nvming198"
+  dynasty_house=house_baijia80
+	religion="dongzhouli" 
+	culture="zhou"
+  father=kangshi6
+  female=yes
+
+  3831.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}

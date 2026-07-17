@@ -1,0 +1,57 @@
+﻿##### d_tanshi ############################
+
+### c_tan
+# TAN
+33 = {
+	culture = lu
+	religion = xizhouli
+	holding = castle_holding
+}
+# TAI2
+2181 = {
+	holding = none
+}
+
+
+### c_bao
+# BAO
+42 = {
+	culture = lu
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_lixia
+# LIXIA
+43 = {
+	culture = lu
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+##### d_gongdushi ############################
+
+### c_yan
+# YAN
+62 = {
+	culture = lu
+	religion = xizhouli
+	holding = castle_holding
+}
+# TAYING
+58 = {
+	holding = none
+}
+
+
+### c_mei
+# MEI
+57 = {
+	culture = lu
+	religion = xizhouli
+	holding = castle_holding
+}
+
+

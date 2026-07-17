@@ -1,0 +1,7 @@
+﻿modifier_feudal_governor_opinion_to_liege = {
+	opinion_modifier = {
+		target = liege
+		who = this
+		add = $VALUE$
+	}
+}

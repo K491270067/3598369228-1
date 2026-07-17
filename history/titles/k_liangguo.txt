@@ -1,0 +1,23 @@
+﻿d_liangyoushi = {
+	3788.1.1 = {
+		liege = "k_liangguo"
+		holder = han2893
+	}
+	3830.1.1 = {
+		holder = han2902
+	}
+	3849.1.1 = {
+		change_development_level = 28
+		government = feudal_admin_government
+	}
+}
+k_liangguo = {
+	3788.1.1 = {
+		liege = "e_zhoutianzi"
+		holder = han2893
+	}
+	3849.1.1 = {
+		change_development_level = 30
+		government = feudal_admin_government
+	}
+}

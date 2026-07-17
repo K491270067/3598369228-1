@@ -1,0 +1,163 @@
+﻿##### d_wushi ############################
+
+### c_jingkou
+# 
+2086 = {
+	holding = none
+}
+
+
+### c_jiangcheng
+# 
+2087 = {
+	holding = none
+}
+
+
+### c_jinling
+# 
+2088 = {
+	holding = none
+}
+
+
+### c_moling
+# 
+2089 = {
+	holding = none
+}
+
+
+### c_hushu
+# 
+2090 = {
+	holding = none
+}
+
+
+### c_jurong
+# 
+2091 = {
+	holding = none
+}
+
+
+### c_cheng4
+# 
+2092 = {
+	holding = none
+}
+
+
+### c_gouwu
+# 
+2094 = {
+	holding = none
+}
+
+
+### c_shicheng1
+# 
+2096 = {
+	holding = none
+}
+
+
+### c_danyang2
+# 
+2097 = {
+	holding = none
+}
+
+
+### c_wuhu
+# 
+2098 = {
+	holding = none
+}
+
+
+### c_yuhu
+# 
+2099 = {
+	holding = none
+}
+
+
+### c_laizhu
+# 
+2100 = {
+	holding = none
+}
+
+
+### c_liyang1
+# 
+2101 = {
+	holding = none
+}
+
+
+### c_yunyang1
+# 
+2093 = {
+	holding = none
+}
+
+
+### c_lishui
+# 
+2102 = {
+	holding = none
+}
+
+
+### c_jing6
+# 
+2103 = {
+	holding = none
+}
+
+
+### c_jiuzi
+# 
+2131 = {
+	holding = none
+}
+
+
+### c_zhaoting
+# 
+2132 = {
+	holding = none
+}
+
+
+### c_yuanling1
+# 
+2133 = {
+	holding = none
+}
+
+
+### c_xuancheng
+# 
+2134 = {
+	holding = none
+}
+
+
+### c_anwu
+# 
+2135 = {
+	holding = none
+}
+
+
+### c_chungu1
+# ROHAN
+2160 = {
+	holding = none
+}
+
+

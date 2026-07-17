@@ -1,0 +1,173 @@
+﻿##### d_soumanshi ############################
+
+### c_di1
+# DI1
+26 = {
+	culture = changdi
+	religion = beidifangling
+	holding = tribal_holding
+}
+# JIANXIN
+23 = {
+	holding = none
+}
+# DONGZOU
+28 = {
+	holding = none
+}
+
+
+### c_lean
+# LEAN
+22 = {
+	culture = changdi
+	religion = beidifangling
+	holding = tribal_holding
+}
+
+
+### c_qiansheng
+# QIANSHENG
+24 = {
+	culture = changdi
+	religion = beidifangling
+	holding = tribal_holding
+}
+
+
+##### d_qiaorushi ############################
+
+### c_liaocheng
+# LIAOCHENG
+100 = {
+	culture = changdi
+	religion = beidifangling
+	holding = tribal_holding
+}
+
+
+### c_tawo
+# TAWO
+97 = {
+	culture = changdi
+	religion = beidifangling
+	holding = tribal_holding
+}
+# PUTAI
+2199 = {
+	holding = none
+}
+
+
+### c_fuping
+# FUPING
+99 = {
+	culture = changdi
+	religion = beidifangling
+	holding = tribal_holding
+}
+# YONGLI
+2198 = {
+	holding = none
+}
+
+
+##### d_fenrushi ############################
+
+### c_raoan
+# RAOAN
+114 = {
+	culture = changdi
+	religion = beidifangling
+	holding = tribal_holding
+}
+
+
+### c_ding
+# QIANTONG
+103 = {
+	culture = changdi
+	religion = beidifangling
+	holding = tribal_holding
+}
+
+
+### c_wudi
+# WUDI
+2200 = {
+	culture = changdi
+	religion = beidifangling
+	holding = tribal_holding
+}
+# LAOLING
+94 = {
+	holding = none
+}
+
+
+##### d_dishi ############################
+
+### c_yangxin
+# YANGXIN
+96 = {
+	culture = changdi
+	religion = beidifangling
+	holding = tribal_holding
+}
+
+
+### c_gaocheng
+# GAOCHENG
+117 = {
+	culture = changdi
+	religion = beidifangling
+	holding = tribal_holding
+}
+
+
+### c_fuyang
+# FUYANG
+120 = {
+	culture = changdi
+	religion = beidifangling
+	holding = tribal_holding
+}
+# LIU
+118 = {
+	holding = none
+}
+
+
+##### d_jianrushi ############################
+
+### c_zuobo
+# ZUOBO
+121 = {
+	culture = changdi
+	religion = beidifangling
+	holding = tribal_holding
+}
+# ZHONGYI
+123 = {
+	holding = none
+}
+
+
+### c_zhangwu
+# ZHANGWU
+122 = {
+	culture = changdi
+	religion = beidifangling
+	holding = tribal_holding
+}
+
+
+### c_yanliu
+# YANLIU
+124 = {
+	culture = changdi
+	religion = beidifangling
+	holding = tribal_holding
+}
+
+

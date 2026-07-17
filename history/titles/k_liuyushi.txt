@@ -1,0 +1,47 @@
+﻿d_puhushi = {
+	3660.1.1 = {
+		liege = "k_liuyushi"
+		holder = han2093
+	}
+	3722.12.31 = {
+		holder = han2094
+	}
+	3742.12.31 = {
+		holder = han2095
+	}
+	3792.12.31 = {
+		holder = han2096
+	}
+	3830.12.31 = {
+		holder = han2097
+	}
+	3849.1.1 = {
+		change_development_level = 19
+	}
+	3849.12.31 = {
+		holder = liuxu1
+		government = tribal_government
+	}
+}
+k_liuyushi = {
+	3660.1.1 = {
+		holder = han2093
+	}
+	3722.12.31 = {
+		holder = han2094
+	}
+	3742.12.31 = {
+		holder = han2095
+	}
+	3792.12.31 = {
+		holder = han2096
+	}
+	3830.12.31 = {
+		holder = han2097
+	}
+	3849.12.31 = {
+		holder = han2098
+		government = tribal_government
+		change_development_level = 20
+	}
+}

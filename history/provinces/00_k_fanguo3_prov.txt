@@ -1,0 +1,37 @@
+﻿##### d_fanshi3 ############################
+
+### c_fan7
+# 
+1898 = {
+	holding = none
+}
+
+
+### c_zi4
+# 
+1899 = {
+	holding = none
+}
+
+
+### c_yiyang3
+# 
+1904 = {
+	holding = none
+}
+
+
+### c_zhongshan
+# 
+1905 = {
+	holding = none
+}
+
+
+### c_zhongwu1
+# 
+1931 = {
+	holding = none
+}
+
+

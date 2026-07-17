@@ -1,0 +1,798 @@
+﻿#############  燕国--姬姓燕氏 #############
+## 《史記》：召公奭与周同姓，姓姬氏。跟据《文王百子》召公奭为第十一子，在姬载之后并与其相邻 ##
+# 燕国世系中间有8世左右无考，除召公外名字皆不见记载 #
+han298={
+  name="sheng4"##召公
+  dynasty=xin381#姬
+	religion="xizhouli" 
+	culture="zhou"
+  father=han5
+
+  3552.1.1 = {
+		birth = yes
+	}
+  3625.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+    give_nickname=nick_kanggong
+  }
+}
+han299={
+  name="ke1"#失考1
+  dynasty_house=house_baijia315#姬
+	religion="xizhouli" 
+	culture="yan"
+  father=han298
+
+  3582.1.1 = {
+		birth = yes
+	}
+  3629.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han300={
+  name="zhi8"#失考2
+  dynasty_house=house_baijia315#燕
+	religion="xizhouli" 
+	culture="yan"
+  father=han298
+
+  3584.1.1 = {
+		birth = yes
+	}
+  3643.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han301={
+  name="wu2"#失考3
+  dynasty_house=house_baijia315#燕
+	religion="xizhouli" 
+	culture="yan"
+  father=han300
+
+  3616.1.1 = {
+		birth = yes
+	}
+  3663.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han302={
+  name="xian2"#失考4
+  dynasty_house=house_baijia315#燕
+	religion="xizhouli" 
+	culture="yan"
+  father=han301
+
+  3638.1.1 = {
+		birth = yes
+	}
+  3673.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han303={
+  name="he"#失考5
+  dynasty_house=house_baijia315#燕
+	religion="xizhouli" 
+	culture="yan"
+  father=han302
+
+  3663.1.1 = {
+		birth = yes
+	}
+  3702.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han304={
+  name="sheng3"#失考7
+  dynasty_house=house_baijia315#燕
+	religion="xizhouli" 
+	culture="yan"
+  father=han303
+
+  3688.1.1 = {
+		birth = yes
+	}
+  3725.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han305={
+  name="shi4"#失考8
+  dynasty_house=house_baijia315#燕
+	religion="xizhouli" 
+	culture="yan"
+  father=han304
+
+  3708.1.1 = {
+		birth = yes
+	}
+  3747.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han306={
+  name="kun1"#失考8
+  dynasty_house=house_baijia315#燕
+	religion="xizhouli" 
+	culture="yan"
+  father=han305
+
+  3725.1.1 = {
+		birth = yes
+	}
+  3755.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han307={
+  name="zhi7"#燕惠侯
+  dynasty_house=house_baijia315#燕
+	religion="xizhouli" 
+	culture="yan"
+  father=han306
+
+  3746.1.1 = {
+		birth = yes
+	}
+  3793.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+    give_nickname=nick_huihou
+  }
+}
+han308={
+  name="zhuang1"#燕釐侯/厘侯
+  dynasty_house=house_baijia315#燕
+	religion="xizhouli" 
+	culture="yan"
+  father=han307
+
+  3770.1.1 = {
+		birth = yes
+	}
+  3829.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+    give_nickname=nick_lihou
+  }
+}
+han309={
+  name="quji"#燕顷侯，平王东迁时期燕国国君，游戏开局时57岁
+  dynasty_house=house_baijia315#燕
+	religion="xizhouli" 
+	culture="yan"
+  father=han308
+
+  3793.1.1 = {
+		birth = yes
+	}
+  3853.1.1 = {
+    death = yes
+  }
+}
+han310={
+  name="qin1"
+  dynasty_house=house_baijia315
+	religion="xizhouli" 
+	culture="yan"
+  father=han309
+
+  3815.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han311={
+  name="zheng"#
+  dynasty_house=house_baijia315
+	religion="xizhouli" 
+	culture="yan"
+  father=han310
+
+  3833.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han312={
+  name="mu2"
+  dynasty_house=house_baijia315
+	religion="xizhouli" 
+	culture="yan"
+  father=han311
+
+  3849.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han313={
+  name="sheng2"
+  dynasty_house=house_baijia315
+	religion="xizhouli" 
+	culture="yan"
+  father=han309
+
+  3827.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han314={
+  name="yaoqin"
+  dynasty_house=house_baijia315
+	religion="xizhouli" 
+	culture="yan"
+  father=han309
+  female=yes
+
+  3829.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han315={
+  name="liangliang"
+  dynasty_house=house_baijia315
+	religion="xizhouli" 
+	culture="yan"
+  father=han309
+  female=yes
+
+  3831.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han316={
+  name="hui1"
+  dynasty_house=house_baijia315
+	religion="xizhouli" 
+	culture="yan"
+  father=han310
+
+  3834.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han317={
+  name="lingbin"
+  dynasty_house=house_baijia315
+	religion="xizhouli" 
+	culture="yan"
+  father=han310
+  female=yes
+
+  3835.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+### 燕国公族--奭氏（修改） ###
+han318={
+  name="liao"
+  dynasty_house=house_xin21#奭
+	religion="xizhouli" 
+	culture="yan"
+  father=han308
+
+  3794.1.1 = {
+		birth = yes
+	}
+  3854.1.1 = {
+    death = yes
+  }
+}
+han319={
+  name="xuan1"
+  dynasty_house=house_xin21#奭
+	religion="xizhouli" 
+	culture="yan"
+  father=han318
+
+  3816.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han320={
+  name="ying1"#
+  dynasty_house=house_xin21#奭
+	religion="xizhouli" 
+	culture="yan"
+  father=han319
+
+  3834.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han321={
+  name="zixia"
+  dynasty_house=house_xin21#奭
+	religion="xizhouli" 
+	culture="yan"
+  father=han319
+  female=yes
+
+  3839.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han322={
+  name="chu2"
+  dynasty_house=house_xin21#奭
+	religion="xizhouli" 
+	culture="yan"
+  father=han318
+
+  3817.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han323={
+  name="kuan1"#
+  dynasty_house=house_xin21#奭
+	religion="xizhouli" 
+	culture="yan"
+  father=han322
+
+  3845.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han324={
+  name="jilan"
+  dynasty_house=house_xin21#奭
+	religion="xizhouli" 
+	culture="yan"
+  father=han322
+  female=yes
+
+  3849.2.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+### 燕国卿族--吕甫氏 ###
+yan1={
+  name="pifang"
+  dynasty_house=house_xin384
+	religion="xizhouli" 
+	culture="yan"
+  father=han3254
+
+  3751.12.12 = {
+		birth = yes
+	}
+  3795.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+yan2={
+  name="ji5"
+  dynasty_house=house_xin384
+	religion="xizhouli" 
+	culture="yan"
+  father=yan1
+
+  3777.1.1 = {
+		birth = yes
+	}
+  3805.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+yan3={
+  name="shi3"
+  dynasty_house=house_xin384
+	religion="xizhouli" 
+	culture="yan"
+  father=yan2
+
+  3799.1.1 = {
+		birth = yes
+	}
+  3836.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+yan4={
+  name="liao3"#平王东迁时期吕国君主
+  dynasty_house=house_xin384
+  martial = 5
+	diplomacy = 5
+	intrigue = 5
+	stewardship = 5
+	learning = 5
+	religion="xizhouli" 
+	culture="yan"
+  father=yan3
+  trait = strong
+
+  3820.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+yan5={
+  name="xu3"
+  dynasty_house=house_xin384
+  martial = 5
+	diplomacy = 5
+	intrigue = 5
+	stewardship = 5
+	learning = 5
+	religion="xizhouli" 
+	culture="yan"
+  father=yan4
+
+  3840.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+yan6={
+  name="nvming39"#储君1号
+  dynasty_house=house_xin384
+  martial = 5
+	diplomacy = 5
+	intrigue = 5
+	stewardship = 5
+	learning = 5
+	religion="xizhouli" 
+	culture="yan"
+  father=yan4
+  female=yes
+
+  3841.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+yan7={
+  name="yu15"#储君1号
+  dynasty_house=house_xin384
+  martial = 5
+	diplomacy = 5
+	intrigue = 5
+	stewardship = 5
+	learning = 5
+	religion="xizhouli" 
+	culture="yan"
+  father=yan4
+  female=yes
+
+  3842.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+### 燕国公族--阎氏 ###
+yan8={
+  name="nanming1046"
+  dynasty_house=house_baijia460
+	religion="xizhouli" 
+	culture="yan"
+  father=han304
+
+  3711.1.1 = {
+		birth = yes
+	}
+  3747.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+yan9={
+  name="nanming546"
+  dynasty_house=house_baijia460
+	religion="xizhouli" 
+	culture="yan"
+  father=yan8
+
+  3725.1.1 = {
+		birth = yes
+	}
+  3755.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+yan10={
+  name="nanming567"
+  dynasty_house=house_baijia460
+	religion="xizhouli" 
+	culture="yan"
+  father=yan9
+
+  3746.1.1 = {
+		birth = yes
+	}
+  3793.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+yan11={
+  name="nanming589"
+  dynasty_house=house_baijia460
+	religion="xizhouli" 
+	culture="yan"
+  father=yan10
+
+  3770.1.1 = {
+		birth = yes
+	}
+  3829.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+yan12={
+  name="nanming610"#平王东迁时期
+  dynasty_house=house_baijia460
+	religion="xizhouli" 
+	culture="yan"
+  father=yan11
+
+  3813.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+yan13={
+  name="nanming640"
+  dynasty_house=house_baijia460
+	religion="xizhouli" 
+	culture="yan"
+  father=yan12
+
+  3833.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+yan14={
+  name="nanming667"#
+  dynasty_house=house_baijia460
+	religion="xizhouli" 
+	culture="yan"
+  father=yan12
+
+  3834.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+yan14={
+  name="nvming58"
+  dynasty_house=house_baijia460
+	religion="xizhouli" 
+	culture="yan"
+  father=yan12
+  female=yes
+
+  3839.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+yan15={
+  name="nvming64"
+  dynasty_house=house_baijia460
+	religion="xizhouli" 
+	culture="yan"
+  father=yan12
+  female=yes
+
+  3840.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+### 燕国公族--鞠氏 ###
+yan16={
+  name="nanming519"
+  dynasty_house=house_baijia390
+	religion="xizhouli" 
+	culture="yan"
+  father=han305
+
+  3726.1.1 = {
+		birth = yes
+	}
+  3755.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+yan17={
+  name="nanming535"
+  dynasty_house=house_baijia390
+	religion="xizhouli" 
+	culture="yan"
+  father=yan16
+
+  3746.1.1 = {
+		birth = yes
+	}
+  3793.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+yan18={
+  name="nanming541"
+  dynasty_house=house_baijia390
+	religion="xizhouli" 
+	culture="yan"
+  father=yan17
+
+  3770.1.1 = {
+		birth = yes
+	}
+  3829.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+yan19={
+  name="nanming544"#平王东迁时期
+  dynasty_house=house_baijia390
+	religion="xizhouli" 
+	culture="yan"
+  father=yan18
+
+  3823.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+yan20={
+  name="nanming547"
+  dynasty_house=house_baijia390
+	religion="xizhouli" 
+	culture="yan"
+  father=yan19
+
+  3843.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+yan21={
+  name="nanming550"#
+  dynasty_house=house_baijia390
+	religion="xizhouli" 
+	culture="yan"
+  father=yan19
+
+  3844.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+yan22={
+  name="li6"
+  dynasty_house=house_baijia390
+	religion="xizhouli" 
+	culture="yan"
+  father=yan19
+  female=yes
+
+  3845.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+yan23={
+  name="cha1"
+  dynasty_house=house_baijia390
+	religion="xizhouli" 
+	culture="yan"
+  father=yan19
+  female=yes
+
+  3846.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}

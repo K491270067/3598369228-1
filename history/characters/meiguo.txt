@@ -1,0 +1,375 @@
+﻿### 梅国--子姓梅伯氏 ###
+# 《黄帝至梅姓始祖总世系》武乙之子之后
+mei1={
+  name="nanming1083"
+  dynasty=xin386
+	religion="yinli" 
+	culture="yinshang"
+  father=han1238
+
+  3442.10.1 = {
+		birth = yes
+	}
+  3514.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+mei2={
+  name="daji"#
+  dynasty=xin386
+	religion="yinli" 
+	culture="yinshang"
+  father=mei1
+
+  3462.1.1 = {
+		birth = yes
+	}
+  3544.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+mei3={
+  name="yi9"
+  dynasty=xin386
+	religion="yinli" 
+	culture="yinshang"
+  father=mei2
+
+  3510.1.1 = {
+		birth = yes
+	}
+  3572.1.1 = {
+		death = {
+			 death_reason = death_execution 
+			 killer = han1243 
+		}
+  }
+}
+mei4={
+  name="biao"
+  dynasty_house=house_xin387
+	religion="yinli" 
+	culture="song"
+  father=mei3
+
+  3551.1.1 = {
+		birth = yes
+	}
+  3607.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+mei5={
+  name="qi3"
+  dynasty_house=house_xin387
+	religion="yinli" 
+	culture="song"
+  father=mei4
+
+  3572.1.1 = {
+		birth = yes
+	}
+  3621.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+mei6={
+  name="zhang"
+  dynasty_house=house_xin387
+	religion="yinli" 
+	culture="song"
+  father=mei5
+
+  3603.1.1 = {
+		birth = yes
+	}
+  3669.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+mei7={
+  name="hao1"
+  dynasty_house=house_xin387
+	religion="yinli" 
+	culture="song"
+  father=mei6
+
+  3663.1.1 = {
+		birth = yes
+	}
+  3720.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+mei8={
+  name="shi1"
+  dynasty_house=house_xin387
+	religion="yinli" 
+	culture="song"
+  father=mei7
+
+  3703.1.1 = {
+		birth = yes
+	}
+  3742.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+mei9={
+  name="shuo"
+  dynasty_house=house_xin387
+	religion="yinli" 
+	culture="song"
+  father=mei8
+
+  3731.1.1 = {
+		birth = yes
+	}
+  3800.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+mei10={
+  name="qian1"
+  dynasty_house=house_xin387
+	religion="yinli" 
+	culture="song"
+  father=mei9
+
+  3766.1.1 = {
+		birth = yes
+	}
+  3830.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+mei11={
+  name="jing1"#平王东迁时梅国国君
+  dynasty_house=house_xin387
+	religion="yinli" 
+	culture="song"
+  father=mei10
+
+  3800.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+mei12={
+  name="dan4"#储君1号
+  dynasty_house=house_xin387
+	religion="yinli" 
+	culture="song"
+  father=mei11
+
+  3825.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+mei13={
+  name="yi4"#储君2号
+  dynasty_house=house_xin387
+	religion="yinli" 
+	culture="song"
+  father=mei11
+
+  3826.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+mei14={
+  name="bi4"#储君3号
+  dynasty_house=house_xin387
+	religion="yinli" 
+	culture="song"
+  father=mei11
+
+  3827.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+mei15={
+  name="nvming40"#女1号
+  dynasty_house=house_xin387
+	religion="yinli" 
+	culture="song"
+  father=mei11
+  female=yes
+
+  3828.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+mei16={
+  name="nvming57"#女2号
+  dynasty_house=house_xin387
+	religion="yinli" 
+	culture="song"
+  father=mei11
+  female=yes
+
+  3829.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+### 梅国--子姓梅氏 ###
+mei17={
+  name="xigu"
+  dynasty_house=house_baijia145
+	religion="yinli" 
+	culture="song"
+  father=mei6
+
+  3664.1.1 = {
+		birth = yes
+	}
+  3720.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+mei18={
+  name="jiu"
+  dynasty_house=house_baijia145
+	religion="yinli" 
+	culture="song"
+  father=mei17
+
+  3703.1.1 = {
+		birth = yes
+	}
+  3742.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+mei19={
+  name="wan"
+  dynasty_house=house_baijia145
+	religion="yinli" 
+	culture="song"
+  father=mei18
+
+  3731.1.1 = {
+		birth = yes
+	}
+  3800.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+mei20={
+  name="ling"
+  dynasty_house=house_baijia145
+	religion="yinli" 
+	culture="song"
+  father=mei19
+
+  3766.1.1 = {
+		birth = yes
+	}
+  3830.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+mei21={
+  name="nanming486"#平王东迁时梅国国君
+  dynasty_house=house_baijia145
+	religion="yinli" 
+	culture="song"
+  father=mei20
+
+  3818.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+mei22={
+  name="shen"#储君1号
+  dynasty_house=house_baijia145
+	religion="yinli" 
+	culture="song"
+  father=mei21
+
+  3838.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+mei23={
+  name="nvming201"#储君2号
+  dynasty_house=house_baijia145
+	religion="yinli" 
+	culture="song"
+  father=mei21
+  female=yes
+
+  3839.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}

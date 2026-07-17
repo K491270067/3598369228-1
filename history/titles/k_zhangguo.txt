@@ -1,0 +1,68 @@
+﻿d_taoshi = {
+	3653.1.1 = {
+		liege = "k_zhangguo"
+		holder = han971
+	}
+	3689.1.1 = {
+		holder = han972
+	}
+	3693.11.1 = {
+		holder = han973
+	}
+	3713.11.1 = {
+		holder = han974
+	}
+	3746.12.31 = {
+		holder = han975
+	}
+	3763.11.1 = {
+		holder = han976
+	}
+	3793.11.1 = {
+		holder = han977
+	}
+	3813.11.1 = {
+		holder = han978
+	}
+	3844.11.1 = {
+		holder = zhang1
+	}
+	3849.1.1 = {
+		change_development_level = 23
+		government = feudal_admin_government
+	}
+}
+k_zhangguo = {
+	3653.1.1 = {
+		liege = "e_zhoutianzi"
+		holder = han971
+	}
+	3689.1.1 = {
+		holder = han972
+	}
+	3693.11.1 = {
+		holder = han973
+	}
+	3713.11.1 = {
+		holder = han974
+	}
+	3746.12.31 = {
+		holder = han975
+	}
+	3763.11.1 = {
+		holder = han976
+	}
+	3793.11.1 = {
+		holder = han977
+	}
+	3813.11.1 = {
+		holder = han978
+	}
+	3844.11.1 = {
+		holder = han979
+	}
+	3849.1.1 = {
+		change_development_level = 25
+		government = feudal_admin_government
+	}
+}

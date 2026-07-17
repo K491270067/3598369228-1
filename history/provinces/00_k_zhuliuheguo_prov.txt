@@ -1,0 +1,62 @@
+﻿##### d_zhuliuheshi ############################
+
+### c_junhe
+
+
+### c_junhejun
+# SHIZHANG
+2974 = {
+	holding = none
+}
+# XIANGWU1
+2973 = {
+	holding = none
+}
+# JUNHE
+2845 = {
+	holding = none
+}
+
+
+### c_yidou
+
+
+### c_hemiao
+# HEMAO
+3559 = {
+	holding = none
+}
+# YIDOU
+2846 = {
+	holding = none
+}
+
+
+### c_nahejun
+
+
+##### d_luyuanshi ############################
+
+### c_luyuan
+
+
+### c_zhuliuhe
+
+
+### c_youdu1
+# ZHULIUHE
+2963 = {
+	holding = none
+}
+# LUYUAN
+2962 = {
+	holding = none
+}
+
+
+### c_yitou
+
+
+### c_wubaiyuan
+
+

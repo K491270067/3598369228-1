@@ -1,0 +1,144 @@
+﻿##### d_danlanshi ############################
+
+### c_gangcheng
+
+
+### c_zaoyang
+
+
+### c_qieru
+
+
+### c_yehuling
+# YEHULING
+2601 = {
+	holding = none
+}
+# GANGCHENG
+1298 = {
+	holding = none
+}
+# QIERU
+1340 = {
+	holding = none
+}
+# ROUXUAN
+2653 = {
+	holding = none
+}
+
+
+### c_beiyang1
+
+
+### c_dushi
+
+
+### c_yuyi
+# YUYI
+2604 = {
+	holding = none
+}
+# ZAOYANG
+1300 = {
+	holding = none
+}
+# KONGSANG
+2640 = {
+	holding = none
+}
+
+
+### c_zaoyang2
+
+
+### c_luanyuan
+# LUANYUAN
+2639 = {
+	holding = none
+}
+# RIXIANG
+2841 = {
+	holding = none
+}
+# FANHAN
+3423 = {
+	holding = none
+}
+# ZAOYANG2
+2638 = {
+	holding = none
+}
+
+
+### c_kongsang
+
+
+### c_rouxuan
+
+
+### c_rixiang
+
+
+### c_hequan
+# HEQUAN
+2865 = {
+	holding = none
+}
+# BEIYANGCHENG1
+2602 = {
+	holding = none
+}
+# DUSHI
+2603 = {
+	holding = none
+}
+
+
+### c_bupoguan
+
+
+### c_gecheng
+# GECHENG
+2914 = {
+	holding = none
+}
+# YINSHAN
+3186 = {
+	holding = none
+}
+# SANGANG
+3200 = {
+	holding = none
+}
+# BUPOGUAN
+2897 = {
+	holding = none
+}
+
+
+### c_yinshan
+
+
+### c_sangang
+
+
+### c_qingxi
+# LIAOSHUI
+3471 = {
+	holding = none
+}
+
+
+### c_longan
+
+
+### c_feiwu
+
+
+### c_fanhan
+
+
+### c_liaoshui
+
+

@@ -1,0 +1,59 @@
+﻿baipu = {
+	color = malinke
+
+	name_order_convention = dynasty_always_first
+	ethos = ethos_bellicose
+	heritage = heritage_baipu
+	language = language_baipu
+	martial_custom = martial_custom_equal
+	head_determination = head_determination_domain
+   
+	traditions = {
+		tradition_tribe_unity
+		tradition_battlefield_looters
+		tradition_forest_wardens
+		tradition_land_of_the_bow
+	}
+
+	name_list = name_list_han
+
+	coa_gfx = { chinese_group_coa_gfx }
+	building_gfx = { chinese_building_gfx }
+	clothing_gfx = { chinese_clothing_gfx }
+	unit_gfx = { chinese_unit_gfx }
+	house_coa_frame = house_china
+
+	ethnicities = {
+		10 = asian_han_chinese
+	}
+}
+
+boren = {
+	color = mordvin
+
+	name_order_convention = dynasty_always_first
+	ethos = ethos_bellicose
+	heritage = heritage_baipu
+	language = language_baipu
+	martial_custom = martial_custom_equal
+	head_determination = head_determination_domain
+   
+	traditions = {
+		tradition_horn_mountain_skirmishing
+		tradition_mountaineers
+		tradition_mountaineer_ruralism
+		tradition_caucasian_wolves
+	}
+
+	name_list = name_list_han
+
+	coa_gfx = { chinese_group_coa_gfx }
+	building_gfx = { chinese_building_gfx }
+	clothing_gfx = { chinese_clothing_gfx }
+	unit_gfx = { chinese_unit_gfx }
+	house_coa_frame = house_china
+
+	ethnicities = {
+		10 = asian_han_chinese
+	}
+}

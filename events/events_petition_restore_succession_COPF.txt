@@ -1,0 +1,236 @@
+﻿namespace = petition_restore_succession
+
+# 领主收到
+petition_restore_succession.1 = {
+	type = character_event
+
+	title = petition_restore_succession_title
+	desc = {
+		desc = petition_restore_succession_desc
+		first_valid = {
+			triggered_desc = { #忠顺的文本描述
+				trigger = {
+					scope:scope_petition_restore_succession_vassal = { var:petition_restore_succession_type = flag:petition_restore_succession_submission }
+				}
+				desc = petition_restore_succession_submission_desc
+			}
+			triggered_desc = { #牵制的文本描述
+				trigger = {
+					scope:scope_petition_restore_succession_vassal = { var:petition_restore_succession_type = flag:petition_restore_succession_hook }
+				}
+				desc = petition_restore_succession_hook_desc
+			}
+			triggered_desc = { #礼物的文本描述
+				trigger = {
+					scope:scope_petition_restore_succession_vassal = { var:petition_restore_succession_type = flag:petition_restore_succession_gift }
+				}
+				desc = petition_restore_succession_gift_desc
+			}
+		}
+	}
+	theme = vassal
+	left_portrait = {
+		character = scope:scope_petition_restore_succession_vassal
+		animation = beg
+	}
+	right_portrait = {
+		character = THIS
+		animation = thinking
+	}
+
+	option = { #同意
+		name = petition_restore_succession_agree
+
+		scope:scope_petition_restore_succession_vassal = {
+			#结算效果
+			if = { #忠顺效果
+				limit = { var:petition_restore_succession_type = flag:petition_restore_succession_submission }
+				#夸夸而谈，啥也没有。
+			}
+			else_if = { #牵制效果
+				limit = { var:petition_restore_succession_type = flag:petition_restore_succession_hook }
+				scope:scope_petition_restore_succession_liege = {
+					add_hook = {
+						type = indebted_hook
+						target = scope:scope_petition_restore_succession_vassal
+					}
+				}
+			}
+			else_if = { #礼物效果
+				limit = { var:petition_restore_succession_type = flag:petition_restore_succession_gift }
+
+				pay_short_term_gold = {
+					target = scope:scope_petition_restore_succession_liege
+					gold = var:petition_restore_succession_gift_value
+				}
+			}
+			else = {}
+			
+			custom_tooltip = {
+				text = restore_all_title_succession
+				every_held_title = { #给封臣：移除被否认头衔继承变量
+					limit = {
+						has_variable = is_denied_title_succession
+					}
+					remove_variable = is_denied_title_succession 
+					set_variable = { #给封臣：标记为被多次否认
+						name = is_restored_title_succession 
+						value = yes
+					}
+				}
+			}
+			
+			add_opinion = { #给封臣：添加“头衔继承被恢复”好感修正
+				modifier = opinion_restored_title_succession
+				target = scope:scope_petition_restore_succession_liege
+			}
+			if = { #给封臣：如果有“头衔继承被否决”好感修正就移除
+				limit = {
+					has_opinion_modifier = {
+						modifier = opinion_denied_title_succession
+						target = scope:scope_petition_restore_succession_liege
+					}
+				}
+				remove_opinion = {
+					modifier = opinion_denied_title_succession
+					target = scope:scope_petition_restore_succession_liege
+				}
+			}
+			else_if = { #给封臣：如果有“同一头衔继承被多次否决”好感修正就移除
+				limit = {
+					has_opinion_modifier = {
+						modifier = opinion_denied_title_succession_again
+						target = scope:scope_petition_restore_succession_liege
+					}
+				}
+				remove_opinion = {
+					modifier = opinion_denied_title_succession_again
+					target = scope:scope_petition_restore_succession_liege
+				}
+			}
+			else = {}
+
+			trigger_event = { #给封臣：触发通知事件
+				id = petition_restore_succession.2
+				days = 3
+				delayed = yes
+			}
+		}
+
+		ai_chance = {
+			base = 50
+		}
+	}
+
+	option = { #拒绝
+		name = petition_restore_succession_disagree
+
+		scope:scope_petition_restore_succession_vassal = {
+			trigger_event = { #给封臣：触发通知事件
+				id = petition_restore_succession.3
+				days = 3
+				delayed = yes
+			}
+		}
+
+		ai_chance = {
+			base = 5
+		}
+	}
+}
+
+# 封臣收到：领主同意
+petition_restore_succession.2 = {
+	type = letter_event
+	opening = {
+		desc = petition_restore_succession_agree_reply_vassal_opening
+	}
+	desc = petition_restore_succession_agree_reply_vassal_desc
+	sender = scope:scope_petition_restore_succession_liege
+
+	option = {
+		name = petition_restore_succession_agree_reply_vassal_desc.1
+
+		show_as_tooltip = {
+			scope:scope_petition_restore_succession_vassal = {
+				#结算效果
+				if = { #忠顺效果
+					limit = { var:petition_restore_succession_type = flag:petition_restore_succession_submission }
+					#夸夸而谈，啥也没有。
+				}
+				else_if = { #牵制效果
+					limit = { var:petition_restore_succession_type = flag:petition_restore_succession_hook }
+					scope:scope_petition_restore_succession_liege = {
+						add_hook = {
+							type = indebted_hook
+							target = scope:scope_petition_restore_succession_vassal
+						}
+					}
+				}
+				else_if = { #礼物效果
+					limit = { var:petition_restore_succession_type = flag:petition_restore_succession_gift }
+
+					pay_short_term_gold = {
+						target = scope:scope_petition_restore_succession_liege
+						gold = var:petition_restore_succession_gift_value
+					}
+				}
+				else = {}
+				
+				custom_tooltip = {
+					text = restore_all_title_succession
+					every_held_title = { #给封臣：移除被否认头衔继承变量
+						limit = {
+							has_variable = is_denied_title_succession
+						}
+						remove_variable = is_denied_title_succession 
+						set_variable = { #给封臣：标记为被多次否认
+							name = is_restored_title_succession 
+							value = yes
+						}
+					}
+				}
+				
+				if = { #给封臣：如果有“头衔继承被否决”好感修正就移除
+					limit = {
+						has_opinion_modifier = {
+							modifier = opinion_denied_title_succession
+							target = scope:scope_petition_restore_succession_liege
+						}
+					}
+					remove_opinion = {
+						modifier = opinion_denied_title_succession
+						target = scope:scope_petition_restore_succession_liege
+					}
+				}
+				else_if = { #给封臣：如果有“同一头衔继承被多次否决”好感修正就移除
+					limit = {
+						has_opinion_modifier = {
+							modifier = opinion_denied_title_succession_again
+							target = scope:scope_petition_restore_succession_liege
+						}
+					}
+					remove_opinion = {
+						modifier = opinion_denied_title_succession_again
+						target = scope:scope_petition_restore_succession_liege
+					}
+				}
+				else = {}
+			}
+		}
+	}	
+}
+
+# 封臣收到：领主拒绝
+petition_restore_succession.3 = {
+	type = letter_event
+	opening = {
+		desc = petition_restore_succession_disagree_reply_vassal_opening
+	}
+	desc = petition_restore_succession_disagree_reply_vassal_desc
+	sender = scope:scope_petition_restore_succession_liege
+
+	option = {
+		name = petition_restore_succession_disagree_reply_vassal_desc.1
+	}		
+}

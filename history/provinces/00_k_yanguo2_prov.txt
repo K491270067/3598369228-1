@@ -1,0 +1,135 @@
+﻿##### d_yanshi2 ############################
+
+### c_yan8
+# 
+2095 = {
+	holding = none
+}
+
+
+### c_yanling2
+# 
+2104 = {
+	holding = none
+}
+
+
+### c_jiyang1
+# 
+2105 = {
+	holding = none
+}
+
+
+### c_lou1
+# 
+2106 = {
+	holding = none
+}
+
+
+### c_nanwucheng
+# 
+2107 = {
+	holding = none
+}
+
+
+### c_nansha
+# 
+2108 = {
+	holding = none
+}
+
+
+### c_mei5
+# 
+2109 = {
+	holding = none
+}
+
+
+### c_gusu
+# 
+2110 = {
+	holding = none
+}
+
+
+### c_wuxi1
+# 
+2111 = {
+	holding = none
+}
+
+
+### c_helvcheng
+# 
+2112 = {
+	holding = none
+}
+
+
+### c_hongshang
+# 
+2113 = {
+	holding = none
+}
+
+
+### c_gansui
+# 
+2114 = {
+	holding = none
+}
+
+
+### c_yu10
+# 
+2115 = {
+	holding = none
+}
+
+
+### c_mi7
+# 
+2116 = {
+	holding = none
+}
+
+
+### c_xicen
+# 
+2117 = {
+	holding = none
+}
+
+
+### c_yufu
+# 
+2118 = {
+	holding = none
+}
+
+
+### c_fujiao
+# 
+2119 = {
+	holding = none
+}
+
+
+### c_jingyao
+# 
+2120 = {
+	holding = none
+}
+
+
+### c_xumu
+# 
+2121 = {
+	holding = none
+}
+
+

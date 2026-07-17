@@ -1,0 +1,2642 @@
+﻿### 继承顺位法 ### ============================================================================================================================================
+succession_order_laws = {
+	flag = succession_order_laws
+
+	can_change_law_group = {
+		custom_tooltip = {
+			text = CANT_CHANGE_LAW_TOOLTIP
+			NOR = {
+				has_realm_law = mandala_succession_law
+				government_has_flag = government_is_japan_administrative
+				subject_contract_has_flag = succession_rights_governor_appointment #COPF
+				subject_contract_has_flag = candidate_preference_bureaucrat_promotion #COPF
+			}
+		}
+	}
+
+	# 联盟分割制 # ————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+	confederate_partition_succession_law = {
+		can_keep = {
+			custom_tooltip = { #COPF
+				text = tt_succession_laws_must_not_be_locked_by_contracts
+				NOR = {
+					subject_contract_has_flag = succession_rights_governor_appointment
+					subject_contract_has_flag = candidate_preference_bureaucrat_promotion
+				}
+			}
+			trigger_if = {
+				limit = {
+					government_has_flag = government_is_japan_feudal
+					tgp_realm_has_ceremonial_liege_trigger = yes
+				}
+				is_independent_ruler = no
+			}
+			trigger_else = { always = yes } # for readability
+		}
+		can_pass = {
+			can_change_partition_succession_law_trigger = yes
+			trigger_if = {
+				limit = {
+					exists = primary_title
+				}
+				is_confederation_member = no
+			}
+		}
+		can_have = {
+			can_have_confederate_partition_succession_law_trigger = yes
+			trigger_if = {
+				limit = {
+					exists = primary_title
+				}
+				is_confederation_member = no
+			}
+		}
+		should_start_with = {
+			NOR = {
+				historical_succession_access_single_heir_succession_law_trigger = yes
+				historical_succession_access_single_heir_succession_law_youngest_trigger = yes
+				historical_succession_access_single_heir_dynasty_house_trigger = yes
+			}
+			OR = {
+				AND = {
+					government_has_flag = government_is_feudal
+					culture = {
+						NOR = {
+							has_innovation = innovation_hereditary_rule
+							has_innovation = innovation_heraldry
+						}
+					}
+				}
+				government_has_flag = government_is_tribal
+			}
+		}
+		succession = {
+			order_of_succession = inheritance
+			traversal_order = children
+			rank = oldest
+			title_division = partition
+			create_primary_tier_titles = yes
+		}
+		flag = partition_succession_law
+		modifier = {
+			glory_hound_opinion = 10
+			parochial_opinion = 5
+			belligerent_opinion = -10
+			dynasty_house_opinion = 5
+			eligible_child_opinion = 10
+		}
+		pass_cost = {
+			prestige = change_succession_law_prestige_cost
+		}
+		potential = {
+			NOR = {
+				government_has_flag = government_is_nomadic
+				government_has_flag = government_is_clan
+				government_has_flag = government_is_administrative
+				government_has_flag = government_is_mandala
+				government_has_flag = government_is_celestial
+				government_has_flag = government_is_meritocratic
+				government_has_flag = government_is_steppe_admin
+				has_realm_law = feudal_governor_appointment_succession_law
+				subject_contract_has_flag = succession_rights_governor_appointment
+			}
+		}
+	}
+	# 分割制 # ————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+	partition_succession_law = {
+		can_keep = {
+			custom_tooltip = { #COPF
+				text = tt_succession_laws_must_not_be_locked_by_contracts
+				NOR = {
+					subject_contract_has_flag = succession_rights_governor_appointment
+					subject_contract_has_flag = candidate_preference_bureaucrat_promotion
+				}
+			}
+			OR = {
+				can_keep_partition_succession_law_trigger = yes
+				trigger_if = {
+					limit = {
+						exists = primary_title
+					}
+					is_confederation_member = yes
+				}
+			}
+		}
+		can_pass = {
+			OR = {
+				can_change_partition_succession_law_trigger = yes
+				trigger_if = {
+					limit = {
+						exists = primary_title
+					}
+					is_confederation_member = yes
+				}
+			}
+		}
+		can_have = {
+			OR = {
+				can_have_partition_succession_law_trigger = yes
+				trigger_if = {
+					limit = {
+						exists = primary_title
+					}
+					is_confederation_member = yes
+				}
+			}
+		}
+		should_start_with = {
+			NOR = {
+				historical_succession_access_single_heir_succession_law_trigger = yes
+				historical_succession_access_single_heir_succession_law_youngest_trigger = yes
+				historical_succession_access_single_heir_dynasty_house_trigger = yes
+			}
+			government_has_flag = government_is_feudal
+			culture = {
+				has_innovation = innovation_hereditary_rule
+				NOT = {
+					has_innovation = innovation_heraldry
+				}
+			}
+			NOT = { government_allows = administrative }
+		}
+		succession = {
+			order_of_succession = inheritance
+			traversal_order = children
+			rank = oldest
+			title_division = partition
+		}
+		flag = partition_succession_law
+		modifier = {
+			glory_hound_opinion = 10
+			parochial_opinion = 5
+			belligerent_opinion = -10
+			player_heir_opinion = 10
+			eligible_child_except_player_heir_opinion = 5
+		}
+		pass_cost = {
+			prestige = change_succession_law_prestige_cost
+		}
+
+		ai_will_do = {
+			if = {
+				limit = { has_realm_law = confederate_partition_succession_law }
+				value = 1
+			}
+		}
+
+		potential = {
+			NOR = {
+				government_has_flag = government_is_nomadic
+				government_has_flag = government_is_clan
+				government_has_flag = government_is_administrative
+				government_has_flag = government_is_mandala
+				government_has_flag = government_is_celestial
+				government_has_flag = government_is_meritocratic
+				government_has_flag = government_is_steppe_admin
+				has_realm_law = feudal_governor_appointment_succession_law
+				subject_contract_has_flag = succession_rights_governor_appointment
+			}
+		}
+	}
+	# 高等分割制 # ————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+	high_partition_succession_law = {
+		can_keep = {
+			can_keep_high_partition_succession_law_trigger = yes
+			custom_tooltip = { #COPF
+				text = tt_succession_laws_must_not_be_locked_by_contracts
+				NOR = {
+					subject_contract_has_flag = succession_rights_governor_appointment
+					subject_contract_has_flag = candidate_preference_bureaucrat_promotion
+				}
+			}
+		}
+		can_pass = {
+			can_change_partition_succession_law_trigger = yes
+		}
+		can_have = {
+			NOT = { government_has_flag = government_is_nomadic }
+			can_have_high_partition_succession_law_trigger = yes
+		}
+		should_start_with = {
+			NOR = {
+				historical_succession_access_single_heir_succession_law_trigger = yes
+				historical_succession_access_single_heir_succession_law_youngest_trigger = yes
+				historical_succession_access_single_heir_dynasty_house_trigger = yes
+			}
+			government_has_flag = government_is_feudal
+			culture = {
+				has_innovation = innovation_heraldry
+			}
+			NOT = { government_allows = administrative }
+		}
+		succession = {
+			order_of_succession = inheritance
+			traversal_order = children
+			rank = oldest
+			title_division = partition
+			primary_heir_minimum_share = 0.5
+		}
+		flag = partition_succession_law
+		modifier = {
+			glory_hound_opinion = 5
+			belligerent_opinion = -10
+			player_heir_opinion = 15
+		}
+		pass_cost = {
+			prestige = change_succession_law_prestige_cost
+		}
+
+		ai_will_do = {
+			if = {
+				limit = {
+					OR = {
+						has_realm_law = confederate_partition_succession_law
+						has_realm_law = partition_succession_law
+					}
+				}
+				value = 2
+			}
+		}
+
+		potential = {
+			NOR = {
+				government_has_flag = government_is_nomadic
+				government_has_flag = government_is_clan
+				government_has_flag = government_is_administrative
+				government_has_flag = government_is_mandala
+				government_has_flag = government_is_celestial
+				government_has_flag = government_is_meritocratic
+				government_has_flag = government_is_steppe_admin
+				has_realm_law = feudal_governor_appointment_succession_law
+				subject_contract_has_flag = succession_rights_governor_appointment
+			}
+		}
+	}
+	# 长子继承制 # ————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+	single_heir_succession_law = {
+		can_keep = {
+			can_keep_single_heir_succession_law_trigger = yes
+			custom_description = {
+				text = succession_laws_must_not_be_forced_partition
+				NAND = {
+					top_liege != this
+					vassal_contract_has_flag = locked_to_partition
+				}
+			}
+			custom_description = { #COPF
+				text = tt_succession_laws_must_not_be_locked_by_contracts
+				NOR = {
+					subject_contract_has_flag = succession_rights_governor_appointment
+					subject_contract_has_flag = candidate_preference_bureaucrat_promotion
+				}
+			}
+		}
+		can_title_have = {
+			# Ceremonial Regent
+			NOT = { exists = var:administrative_ui_special_title.holder }
+			trigger_if = { #COPF
+				limit = {
+					holder = {
+						OR = {
+							government_has_flag = government_is_feudal
+							government_has_flag = government_is_feudal_admin
+						}
+					}
+				}
+				is_noble_family_title = no
+			}
+		}
+		can_have = {
+			NOT = { government_has_flag = government_is_nomadic }
+			can_have_single_heir_succession_law_trigger = yes
+		}
+		can_pass = {
+			can_change_succession_law_trigger = yes
+			trigger_if = {
+				limit = {
+					government_has_flag = government_is_clan
+				}
+				piety_level >= 3
+			}
+			trigger_if = {
+				limit = {
+					government_allows = administrative
+				}
+				OR = {
+					government_has_flag = government_is_feudal_admin
+					AND = {
+						influence_level >= 4
+						has_active_diarchy = no
+						primary_title = { title_held_years >= 10 }
+					}
+				}	
+			}
+		}
+		should_start_with = {
+			historical_succession_access_single_heir_succession_law_trigger = yes
+		}
+		succession = {
+			order_of_succession = inheritance
+			traversal_order = children
+			rank = oldest
+			title_division = single_heir
+		}
+		flag = advanced_succession_law
+		modifier = {
+			glory_hound_opinion = -10
+			parochial_opinion = -5
+			player_heir_opinion = 20
+			eligible_child_except_player_heir_opinion = -5
+		}
+		pass_cost = {
+			prestige = change_succession_law_prestige_cost
+			piety = {
+				value = 0
+				if = {
+					limit = {
+						government_has_flag = government_is_clan
+					}
+					add = {
+						desc = "clan_government_cost_tooltip"
+						value = 1500
+					}
+				}
+			}
+		}
+		revoke_cost = {
+			prestige = change_succession_law_prestige_cost
+		}
+
+		ai_will_do = {
+			value = 3
+		}
+
+		potential = {
+			NOR = { 
+				government_has_flag = government_is_nomadic
+				government_has_flag = government_is_mandala
+				has_realm_law = feudal_governor_appointment_succession_law
+				subject_contract_has_flag = succession_rights_governor_appointment
+			}
+			trigger_if = {
+				limit = {
+					government_allows = administrative
+				}
+				OR = {
+					government_has_flag = government_is_feudal_admin #COPF
+					is_independent_ruler = yes
+					tgp_is_ceremonial_liege_trigger = yes
+				}
+			}
+		}
+	}
+	# 忽里勒台继承制 # ————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+	single_heir_succession_kurultai_law = {
+		can_keep = {
+			government_has_flag = government_is_nomadic
+		}
+		can_have = {
+			government_has_flag = government_is_nomadic
+		}
+		can_pass = {
+			government_has_flag = government_is_nomadic
+		}
+		should_start_with = {
+			government_has_flag = government_is_nomadic
+		}
+		succession = {
+			order_of_succession = inheritance
+			traversal_order = children
+			rank = oldest
+			title_division = single_heir
+		}
+		flag = advanced_succession_law
+		flag = can_designate_heirs
+		modifier = {
+			belligerent_opinion = 10
+			glory_hound_opinion = 5
+			player_heir_opinion = 20
+			eligible_child_except_player_heir_opinion = -20
+		}
+		pass_cost = {
+		}
+		revoke_cost = {
+			prestige = change_succession_law_prestige_cost
+		}
+
+		ai_will_do = {
+			value = 3
+		}
+
+		potential = {
+			government_has_flag = government_is_nomadic
+		}
+	}
+	# 幼子继承制 # ————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+	single_heir_succession_law_youngest = {
+		can_keep = {
+			can_keep_single_heir_youngest_succession_law_trigger = yes
+			custom_description = {
+				text = succession_laws_must_not_be_forced_partition
+				NAND = {
+					top_liege != this
+					vassal_contract_has_flag = locked_to_partition
+				}
+			}
+			custom_description = { #COPF
+				text = tt_succession_laws_must_not_be_locked_by_contracts
+				NOR = {
+					subject_contract_has_flag = succession_rights_governor_appointment
+					subject_contract_has_flag = candidate_preference_bureaucrat_promotion
+				}
+			}
+		}
+		can_have = {
+			NOT = { government_has_flag = government_is_nomadic }
+			can_have_single_heir_youngest_succession_law_trigger = yes
+		}
+		can_pass = {
+			can_change_succession_law_trigger = yes
+			trigger_if = {
+				limit = {
+					government_has_flag = government_is_clan
+				}
+				piety_level >= 3
+			}
+			trigger_if = {
+				limit = {
+					government_allows = administrative
+				}
+				OR = {
+					government_has_flag = government_is_feudal_admin
+					AND = {
+						influence_level >= 4
+						has_active_diarchy = no
+						primary_title = { title_held_years >= 10 }
+					}
+				}
+			}
+		}
+		succession = {
+			order_of_succession = inheritance
+			traversal_order = children
+			rank = youngest
+			title_division = single_heir
+		}
+
+		flag = advanced_succession_law
+		modifier = {
+			glory_hound_opinion = -10
+			parochial_opinion = -5
+			player_heir_opinion = 20
+			eligible_child_except_player_heir_opinion = -5
+		}
+		pass_cost = {
+			prestige = change_succession_law_prestige_cost
+			piety = {
+				value = 0
+				if = {
+					limit = {
+						government_has_flag = government_is_clan
+					}
+					add = {
+						desc = "clan_government_cost_tooltip"
+						value = 1500
+					}
+				}
+			}
+		}
+		revoke_cost = {
+			prestige = change_succession_law_prestige_cost
+		}
+
+		potential = {
+			trigger_if = {
+				limit = {
+					government_has_flag = government_is_administrative
+				}
+				is_independent_ruler = yes
+			}
+			NOR = { 
+				government_has_flag = government_is_nomadic
+				government_has_flag = government_is_mandala
+				has_realm_law = feudal_governor_appointment_succession_law
+				subject_contract_has_flag = succession_rights_governor_appointment
+			}
+		}
+	}
+	# 年长者继承制 # ————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+	single_heir_dynasty_house = { # LAST CALL
+		can_keep = {
+			can_keep_single_heir_dynasty_house_trigger = yes
+			custom_description = {
+				text = succession_laws_must_not_be_forced_partition
+				NAND = {
+					top_liege != this
+					vassal_contract_has_flag = locked_to_partition
+				}
+			}
+			custom_description = { #COPF
+				text = tt_succession_laws_must_not_be_locked_by_contracts
+				NOR = {
+					subject_contract_has_flag = succession_rights_governor_appointment
+					subject_contract_has_flag = candidate_preference_bureaucrat_promotion
+				}
+			}
+		}
+		can_have = {
+			NOT = { government_has_flag = government_is_nomadic }
+			can_have_single_heir_dynasty_house_trigger = yes
+		}
+		can_pass = {
+			can_change_single_heir_dynasty_house_succession_law_trigger = yes
+			trigger_if = {
+				limit = {
+					government_has_flag = government_is_clan
+				}
+				piety_level >= 3
+			}
+		}
+		should_start_with = {
+			historical_succession_access_single_heir_dynasty_house_trigger = yes
+			NOT = { government_allows = administrative }
+		}
+		succession = {
+			order_of_succession = inheritance
+			traversal_order = dynasty_house
+			rank = oldest
+			title_division = single_heir
+		}
+
+		flag = advanced_succession_law
+		modifier = {
+			glory_hound_opinion = -5
+			eligible_child_except_player_heir_opinion = -15
+			dynasty_house_opinion = 5
+		}
+		pass_cost = {
+			prestige = change_succession_law_prestige_cost
+			piety = {
+				value = 0
+				if = {
+					limit = {
+						government_has_flag = government_is_clan
+					}
+					add = {
+						desc = "clan_government_cost_tooltip"
+						value = 1500
+					}
+				}
+			}
+		}
+		revoke_cost = {
+			prestige = change_succession_law_prestige_cost
+		}
+
+		ai_will_do = {
+			if = {
+				limit = {
+					exists = primary_title
+					primary_title.tier > tier_county
+					OR = {
+						#West Slavic
+						culture = { has_cultural_pillar = heritage_west_slavic }
+					}
+				}
+				value = 2
+			}
+		}
+
+		potential = {
+			NOR = { 
+				government_has_flag = government_is_administrative 
+				government_has_flag = government_is_nomadic
+				government_has_flag = government_is_mandala
+				has_realm_law = feudal_governor_appointment_succession_law
+				subject_contract_has_flag = succession_rights_governor_appointment
+			}
+		}
+	}
+	# 欢呼继承制 # ————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+	acclamation_succession_law = {
+		can_keep = {
+			can_keep_acclamation_succession_law_trigger = yes
+			NOT = {
+				government_has_flag = government_is_feudal
+			}
+		}
+		can_pass = {
+			can_change_acclamation_succession_law_trigger = yes
+		}
+		can_have = {
+			NOT = { government_has_flag = government_is_nomadic }
+			can_have_acclamation_succession_law_trigger = yes
+		}
+		should_start_with = {
+			has_ep3_dlc_trigger = yes
+			has_title = title:e_byzantium
+			government_allows = administrative
+		}
+		succession = {
+			order_of_succession = appointment
+			appointment_type = admin_emperor
+		}
+		flag = advanced_succession_law
+		flag = can_designate_heirs
+		flag = appointment_type_succession
+		pass_cost = {
+			prestige = {
+				value = change_succession_law_prestige_cost
+				multiply = {
+					value = 0.5 # We reduce the cost to ensure that going back to acclamation is easy
+					desc = "[administrative_government|E]"
+				}
+			}
+		}
+		ai_will_do = {
+			if = {
+				limit = { has_realm_law = confederate_partition_succession_law }
+				value = 1
+			}
+		}
+		potential = {
+			government_allows = administrative
+			is_independent_ruler = yes
+			NOR = {
+				government_has_flag = government_is_feudal
+				government_has_flag = government_is_celestial
+				government_has_flag = government_is_japan_administrative
+				government_has_flag = government_is_meritocratic
+				government_has_flag = government_is_steppe_admin
+			}
+		}
+	}
+	# 任命继承制 # ————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+	appointment_succession_law = {
+		can_keep = {
+			can_keep_appointment_succession_law_trigger = yes
+			# Vassal Contract allows it
+			custom_description = {
+				text = succession_laws_must_not_be_forced_partition
+				NAND = {
+					top_liege != this
+					vassal_contract_has_flag = locked_to_partition
+				}
+			}
+			custom_description = {
+				text = tt_succession_laws_must_not_be_locked_by_contracts
+				NOR = {
+					government_has_flag = government_is_feudal
+					subject_contract_has_flag = succession_rights_governor_appointment
+					subject_contract_has_flag = candidate_preference_bureaucrat_promotion
+				}
+			}
+		}
+		can_have = {
+			NOT = { government_has_flag = government_is_nomadic }
+			can_have_appointment_succession_law_trigger = yes
+		}
+		can_pass = {
+			can_change_appointment_succession_law_trigger = yes
+		}
+		should_start_with = {
+			government_allows = administrative
+			NOR = {
+				government_has_flag = government_is_celestial
+				government_has_flag = government_is_japan_administrative
+				government_has_flag = government_is_meritocratic
+				government_has_flag = government_is_steppe_admin
+			}
+			is_independent_ruler = no
+		}
+		succession = {
+			order_of_succession = appointment
+			appointment_type = admin_governor
+		}
+		flag = advanced_succession_law
+		flag = appointment_type_succession
+		modifier = {
+			glory_hound_opinion = -10
+			parochial_opinion = -5
+			player_heir_opinion = 20
+			eligible_child_except_player_heir_opinion = -5
+		}
+		pass_cost = {
+			prestige = change_succession_law_prestige_cost
+		}
+		revoke_cost = {
+			prestige = change_succession_law_prestige_cost
+		}
+
+		ai_will_do = {
+			if = {
+				limit = {
+					OR = {
+						has_realm_law = confederate_partition_succession_law
+						has_realm_law = partition_succession_law
+						has_realm_law = high_partition_succession_law
+					}
+				}
+				value = 3
+			}
+		}
+
+		potential = {
+			government_allows = administrative # Default succession law for all admin types...
+			NOR = { # ... Unless you have a unique succession available
+				government_has_flag = government_is_feudal
+				government_has_flag = government_is_celestial
+				government_has_flag = government_is_japan_administrative
+				government_has_flag = government_is_meritocratic
+				has_realm_law = feudal_governor_appointment_succession_law
+			}
+			is_independent_ruler = no
+		}
+	}
+	# 流浪者继承制 # ————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+	#The prowess succession of LAAMPs is determined in code
+	landless_adventurer_succession_law = {
+		can_keep = {
+			government_has_flag = government_is_landless_adventurer
+		}
+		can_have = {
+			government_has_flag = government_is_landless_adventurer
+		}
+		can_pass = {
+			government_has_flag = government_is_landless_adventurer
+		}
+		should_start_with = {
+			government_has_flag = government_is_landless_adventurer
+		}
+		should_show_for_title = { # Never show this in the UI, just apply it through script
+			always = no
+		}
+		can_remove_from_title = {
+			always = no
+		}
+		succession = {
+			order_of_succession = inheritance
+			traversal_order = children
+			rank = oldest
+			title_division = single_heir
+			exclude_rulers = yes
+			limit_to_courtiers = yes
+		}
+		flag = can_designate_heirs
+
+		potential = {
+			government_has_flag = government_is_landless_adventurer
+		}
+	}
+	# 神权继承制 # ————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+	bishop_theocratic_succession_law = {
+		can_keep = {
+			can_have_bishop_theocratic_succession_law_trigger = yes # same as can_have
+		}
+		can_have = {
+			can_have_bishop_theocratic_succession_law_trigger = yes
+		}
+		should_start_with = {
+			always = yes
+		}
+		succession = {
+			order_of_succession = theocratic
+			faith = same_faith
+			pool_character_config = pool_theocratic_succession
+		}
+
+		potential = {
+			can_have_bishop_theocratic_succession_law_trigger = yes
+		}
+	}
+	# 骑士团继承制 # ————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+	holy_order_succession_law = {
+		can_keep = {
+			can_have_holy_order_succession_law_trigger = yes # same as can_have
+		}
+		can_have = {
+			can_have_holy_order_succession_law_trigger = yes
+		}
+		should_start_with = {
+			government_has_flag = government_is_holy_order
+		}
+		succession = {
+			order_of_succession = theocratic
+			faith = same_faith
+			pool_character_config = pool_holy_order_succession
+		}
+
+		potential = {
+			can_have_holy_order_succession_law_trigger = yes
+		}
+	}
+	# 雇佣兵团继承制 # ————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+	mercenary_company_succession_law = {
+		can_keep = {
+			can_have_mercenary_succession_law_trigger = yes
+		}
+		can_have = {
+			can_have_mercenary_succession_law_trigger = yes
+		}
+		should_start_with = {
+			government_has_flag = government_is_mercenary
+		}
+		succession = {
+			order_of_succession = company
+			pool_character_config = pool_mercenary_succession
+		}
+
+		potential = {
+			can_have_mercenary_succession_law_trigger = yes
+		}
+	}
+	# 城市继承制 # ————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+	city_succession_law = {
+		can_keep = {
+			can_have_city_succession_law_trigger = yes
+		}
+		can_have = {
+			can_have_city_succession_law_trigger = yes
+		}
+		should_start_with = {
+			government_has_flag = government_is_republic
+		}
+		succession = {
+			order_of_succession = generate
+			pool_character_config = pool_city_succession
+		}
+
+		potential = {
+			can_have_city_succession_law_trigger = yes
+		}
+	}
+	# 氏族制：冲突继承制 # ————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+	clan_antagonistic_partition_succession_law = {
+		can_keep = {
+			government_has_flag = government_is_clan
+			house ?= {
+				has_house_unity_stage = antagonistic
+			}
+			custom_description = {
+				text = tt_succession_laws_must_not_be_locked_by_contracts
+				NOR = {
+					vassal_contract_has_flag = succession_rights_grant_appointment
+					subject_contract_has_flag = succession_rights_governor_appointment
+				}
+			}
+		}
+		can_pass = {
+			government_has_flag = government_is_clan
+			house ?= {
+				has_house_unity_stage = antagonistic
+			}
+		}
+		can_have = {
+			government_has_flag = government_is_clan
+			house ?= {
+				has_house_unity_stage = antagonistic
+			}
+		}
+
+		should_start_with = {
+			government_has_flag = government_is_clan
+			house ?= { has_house_unity_stage = antagonistic }
+		}
+
+		potential = {
+			government_has_flag = government_is_clan
+		}
+
+		requires_approve = {
+			NOT = {
+				government_has_flag = government_is_clan
+			}
+		}
+
+		succession = {
+			order_of_succession = inheritance
+			traversal_order = children
+			rank = oldest
+			title_division = partition
+		}
+
+		flag = same_house_vassals_gain_claim_on_primary_title
+		flag = house_unity_stage_antagonistic
+
+		modifier = {
+			dynasty_house_opinion = -10
+			glory_hound_opinion = 15
+			zealot_opinion = 10
+			belligerent_opinion = -10
+			player_heir_opinion = 10
+			eligible_child_except_player_heir_opinion = 5
+		}
+
+		widget_name = "widget_clan_law"
+	}
+	# 氏族制：竞争继承制 # ————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+	clan_competitive_partition_succession_law = {
+		can_keep = {
+			government_has_flag = government_is_clan
+			house ?= {
+				has_house_unity_stage = competitive
+			}
+			custom_description = {
+				text = tt_succession_laws_must_not_be_locked_by_contracts
+				NOR = {
+					vassal_contract_has_flag = succession_rights_grant_appointment
+					subject_contract_has_flag = succession_rights_governor_appointment
+				}
+			}
+		}
+		can_pass = {
+			government_has_flag = government_is_clan
+			house ?= {
+				has_house_unity_stage = competitive
+			}
+		}
+		can_have = {
+			government_has_flag = government_is_clan
+			house ?= {
+				has_house_unity_stage = competitive
+			}
+		}
+		should_start_with = {
+			government_has_flag = government_is_clan
+			house ?= { has_house_unity_stage = competitive }
+		}
+
+		potential = {
+			government_has_flag = government_is_clan
+		}
+
+		requires_approve = {
+			NOT = {
+				government_has_flag = government_is_clan
+			}
+		}
+
+		succession = {
+			order_of_succession = inheritance
+			traversal_order = children
+			rank = oldest
+			title_division = partition
+		}
+
+		flag = same_house_vassals_gain_claim_on_primary_title
+		flag = house_unity_stage_competitive
+
+		modifier = {
+			glory_hound_opinion = 10
+			zealot_opinion = 5
+			belligerent_opinion = -5
+			player_heir_opinion = 10
+			eligible_child_except_player_heir_opinion = 5
+		}
+
+		widget_name = "widget_clan_law"
+	}
+	# 氏族制：冷漠继承制 # ————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+	clan_impassive_partition_succession_law = {
+		can_keep = {
+			government_has_flag = government_is_clan
+			house ?= {
+				OR = {
+					has_house_unity_stage = impassive
+					# In case the house is fully unlanded
+					has_house_unity = no
+				}
+			}
+			custom_description = {
+				text = tt_succession_laws_must_not_be_locked_by_contracts
+				NOR = {
+					vassal_contract_has_flag = succession_rights_grant_appointment
+					subject_contract_has_flag = succession_rights_governor_appointment
+				}
+			}
+		}
+		can_pass = {
+			government_has_flag = government_is_clan
+			house ?= {
+				has_house_unity_stage = impassive
+			}
+		}
+		can_have = {
+			government_has_flag = government_is_clan
+			house ?= {
+				has_house_unity_stage = impassive
+			}
+		}
+		should_start_with = {
+			government_has_flag = government_is_clan
+			house ?= {
+				OR = {
+					has_house_unity_stage = impassive
+					# In case the house is fully unlanded
+					has_house_unity = no
+				}
+			}
+		}
+
+		potential = {
+			government_has_flag = government_is_clan
+		}
+
+		requires_approve = {
+			NOT = {
+				government_has_flag = government_is_clan
+			}
+		}
+
+		flag = house_unity_stage_impassive
+
+		succession = {
+			order_of_succession = inheritance
+			traversal_order = children
+			rank = oldest
+			title_division = partition
+			primary_heir_minimum_share = 0.25
+		}
+		modifier = {
+			glory_hound_opinion = 5
+			parochial_opinion = 5
+			player_heir_opinion = 15
+		}
+
+		widget_name = "widget_clan_law"
+	}
+	# 氏族制：友善继承制 # ————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+	clan_friendly_partition_succession_law = {
+		can_keep = {
+			government_has_flag = government_is_clan
+			house ?= {
+				has_house_unity_stage = friendly
+			}
+			custom_description = {
+				text = tt_succession_laws_must_not_be_locked_by_contracts
+				NOR = {
+					vassal_contract_has_flag = succession_rights_grant_appointment
+					subject_contract_has_flag = succession_rights_governor_appointment
+				}
+			}
+		}
+		can_pass = {
+			government_has_flag = government_is_clan
+			house ?= {
+				has_house_unity_stage = friendly
+			}
+		}
+		can_have = {
+			government_has_flag = government_is_clan
+			house ?= {
+				has_house_unity_stage = friendly
+			}
+		}
+		should_start_with = {
+			government_has_flag = government_is_clan
+			house ?= { has_house_unity_stage = friendly }
+		}
+
+		potential = {
+			government_has_flag = government_is_clan
+		}
+
+		requires_approve = {
+			NOT = {
+				government_has_flag = government_is_clan
+			}
+		}
+
+		flag = house_unity_stage_friendly
+
+		succession = {
+			order_of_succession = inheritance
+			traversal_order = children
+			rank = oldest
+			title_division = partition
+			primary_heir_minimum_share = 0.5
+		}
+		modifier = {
+			parochial_opinion = 10
+			courtly_opinion = 5
+			player_heir_opinion = 25
+		}
+
+		widget_name = "widget_clan_law"
+	}
+	# 氏族制：和谐继承制 # ————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+	clan_harmonious_partition_succession_law = {
+		can_keep = {
+			government_has_flag = government_is_clan
+			house ?= {
+				has_house_unity_stage = harmonious
+			}
+			custom_description = {
+				text = tt_succession_laws_must_not_be_locked_by_contracts
+				NOR = {
+					vassal_contract_has_flag = succession_rights_grant_appointment
+					subject_contract_has_flag = succession_rights_governor_appointment
+				}
+			}
+		}
+		can_pass = {
+			government_has_flag = government_is_clan
+			house ?= {
+				has_house_unity_stage = harmonious
+			}
+		}
+		can_have = {
+			government_has_flag = government_is_clan
+			house ?= {
+				has_house_unity_stage = harmonious
+			}
+		}
+		should_start_with = {
+			government_has_flag = government_is_clan
+			house ?= {
+				has_house_unity_stage = harmonious
+			}
+		}
+		potential = {
+			government_has_flag = government_is_clan
+		}
+
+		requires_approve = {
+			NOT = {
+				government_has_flag = government_is_clan
+			}
+		}
+
+		flag = house_unity_stage_harmonious
+
+		succession = {
+			order_of_succession = inheritance
+			traversal_order = children
+			rank = oldest
+			title_division = partition
+			primary_heir_minimum_share = 0.75
+		}
+		modifier = {
+			parochial_opinion = 15
+			courtly_opinion = 10
+			player_heir_opinion = 40
+		}
+
+		widget_name = "widget_clan_law"
+	}
+	# 牧民继承制 # ————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+	herder_succession_law = {
+		can_keep = {
+			can_have_herder_succession_law_trigger = yes
+		}
+		can_have = {
+			can_have_herder_succession_law_trigger = yes
+		}
+		should_start_with = {
+			government_has_flag = government_is_herder
+		}
+		can_remove_from_title = {
+			always = no
+		}
+		succession = {
+			order_of_succession = generate
+			pool_character_config = pool_herder_succession
+		}
+
+		potential = {
+			can_have_herder_succession_law_trigger = yes
+		}
+	}
+	# 天朝制：任命继承制 # ————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+	celestial_appointment_succession_law = {
+		can_keep = {
+			government_allows = administrative
+			government_has_flag = government_is_celestial #COPF
+			is_independent_ruler = no
+			custom_tooltip = {
+				text = celestial_appointment_allowed_desc
+				NOT = { vassal_contract_has_flag = celestial_military_appointment }
+			}
+			# Vassal Contract allows it
+			custom_description = {
+				text = succession_laws_must_not_be_forced_partition
+				NAND = {
+					is_independent_ruler = no
+					vassal_contract_has_flag = locked_to_partition
+				}
+			}
+			custom_tooltip = { #COPF
+				text = tt_succession_laws_must_not_be_locked_by_contracts
+				NOR = {
+					subject_contract_has_flag = succession_rights_governor_appointment
+					subject_contract_has_flag = candidate_preference_bureaucrat_promotion
+				}
+			}
+		}
+		can_have = {
+			government_allows = administrative
+			is_independent_ruler = no
+		}
+		can_pass = {
+			government_allows = administrative
+			is_independent_ruler = no
+		}
+		should_start_with = {
+			government_has_flag = government_is_celestial
+			is_independent_ruler = no
+			custom_tooltip = {
+				text = celestial_appointment_allowed_desc
+				NOT = { vassal_contract_has_flag = celestial_military_appointment }
+			}
+		}
+		succession = {
+			order_of_succession = appointment
+			appointment_type = celestial_civic_governor
+		}
+		flag = advanced_succession_law
+		flag = appointment_type_succession
+		modifier = {
+			glory_hound_opinion = -10
+			courtly_opinion = 5
+			player_heir_opinion = 20
+			eligible_child_except_player_heir_opinion = -5
+		}
+		pass_cost = {
+			prestige = change_succession_law_prestige_cost
+		}
+		revoke_cost = {
+			prestige = change_succession_law_prestige_cost
+		}
+
+		ai_will_do = {
+			if = {
+				limit = {
+					OR = {
+						has_realm_law = confederate_partition_succession_law
+						has_realm_law = partition_succession_law
+						has_realm_law = high_partition_succession_law
+					}
+				}
+				value = 3
+			}
+		}
+
+		potential = {
+			government_has_flag = government_is_celestial
+			is_independent_ruler = no
+		}
+	}
+	# 天朝制：军事任命继承制 # ————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+	celestial_military_appointment_succession_law = {
+		can_keep = {
+			government_allows = administrative
+			government_has_flag = government_is_celestial #COPF
+			is_independent_ruler = no
+			custom_tooltip = {
+				text = celestial_military_appointment_allowed_desc
+				vassal_contract_has_flag = celestial_military_appointment
+			}
+			# Vassal Contract allows it
+			custom_description = {
+				NAND = {
+					is_independent_ruler = no
+					vassal_contract_has_flag = locked_to_partition
+				}
+			}
+			custom_tooltip = { #COPF
+				text = tt_succession_laws_must_not_be_locked_by_contracts
+				NOR = {
+					subject_contract_has_flag = succession_rights_governor_appointment
+					subject_contract_has_flag = candidate_preference_bureaucrat_promotion
+				}
+			}
+		}
+		can_have = {
+			government_allows = administrative
+			is_independent_ruler = no
+		}
+		can_pass = {
+			can_change_succession_law_trigger = yes
+			government_allows = administrative
+			is_independent_ruler = no
+		}
+		should_start_with = {
+			government_has_flag = government_is_celestial
+			is_independent_ruler = no
+			custom_tooltip = {
+				text = celestial_military_appointment_allowed_desc
+				vassal_contract_has_flag = celestial_military_appointment
+			}
+		}
+		succession = {
+			order_of_succession = appointment
+			appointment_type = celestial_military_governor
+		}
+		flag = advanced_succession_law
+		flag = appointment_type_succession
+		modifier = {
+			glory_hound_opinion = 5
+			courtly_opinion = -10
+			player_heir_opinion = 20
+			eligible_child_except_player_heir_opinion = -5
+		}
+		pass_cost = {
+			prestige = change_succession_law_prestige_cost
+		}
+		revoke_cost = {
+			prestige = change_succession_law_prestige_cost
+		}
+
+		ai_will_do = {
+			if = {
+				limit = {
+					OR = {
+						has_realm_law = confederate_partition_succession_law
+						has_realm_law = partition_succession_law
+						has_realm_law = high_partition_succession_law
+					}
+				}
+				value = 3
+			}
+		}
+
+		potential = {
+			government_has_flag = government_is_celestial
+			is_independent_ruler = no
+		}
+	}
+	# 律令制：摄政继承制 # ————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+	japanese_regency_succession_law = {
+		can_keep = {
+			can_have_japanese_regency_succession_law_trigger = yes
+			government_has_flag = government_is_japan_administrative #COPF
+			custom_tooltip = { #COPF
+				text = tt_succession_laws_must_not_be_locked_by_contracts
+				NOR = {
+					subject_contract_has_flag = succession_rights_governor_appointment
+					subject_contract_has_flag = candidate_preference_bureaucrat_promotion
+				}
+			}
+		}
+		can_pass = {
+			can_have_japanese_regency_succession_law_trigger = yes
+		}
+		can_have = {
+			can_have_japanese_regency_succession_law_trigger = yes
+		}
+		can_title_have = {
+			exists = var:administrative_ui_special_title
+		}
+		should_show_for_title = { # Never show this in the UI, just apply it through script
+			always = no
+		}
+		can_remove_from_title = {
+			always = no
+		}
+		should_start_with = {
+			always = no
+		}
+		succession = {
+			order_of_succession = appointment
+			appointment_type = japanese_regent
+		}
+		flag = advanced_succession_law
+		flag = can_designate_heirs
+		flag = appointment_type_succession
+		pass_cost = {
+			prestige = change_succession_law_prestige_cost
+		}
+		ai_will_do = {
+			if = {
+				limit = { has_realm_law = confederate_partition_succession_law }
+				value = 1
+			}
+		}
+		potential = {
+			government_has_flag = government_is_japan_administrative
+		}
+	}
+	# 律令制：任命继承制 # ————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+	japanese_appointment_succession_law = {
+		can_keep = {
+			can_keep_japanese_appointment_succession_law_trigger = yes
+			government_has_flag = government_is_japan_administrative #COPF
+			custom_description = {
+				text = tt_succession_laws_must_not_be_locked_by_contracts
+				NOR = {
+					vassal_contract_has_flag = succession_rights_grant_appointment
+					subject_contract_has_flag = succession_rights_governor_appointment
+				}
+			}
+			custom_tooltip = { #COPF
+				text = tt_succession_laws_must_not_be_locked_by_contracts
+				NOR = {
+					subject_contract_has_flag = succession_rights_governor_appointment
+					subject_contract_has_flag = candidate_preference_bureaucrat_promotion
+				}
+			}
+		}
+		can_pass = {
+			can_change_japanese_appointment_succession_law_trigger = yes
+		}
+		can_have = {
+			can_have_japanese_appointment_succession_law_trigger = yes
+		}
+		should_start_with = {
+			government_has_flag = government_is_japan_administrative
+			is_independent_ruler = no
+			NOT = { has_title = title:k_chrysanthemum_throne }
+		}
+		succession = {
+			order_of_succession = appointment
+			appointment_type = japanese_governor
+		}
+		flag = advanced_succession_law
+		flag = appointment_type_succession
+		modifier = {
+			glory_hound_opinion = -10
+			parochial_opinion = -5
+			player_heir_opinion = 20
+			eligible_child_except_player_heir_opinion = -5
+		}
+		pass_cost = {
+			prestige = change_succession_law_prestige_cost
+		}
+		revoke_cost = {
+			prestige = change_succession_law_prestige_cost
+		}
+
+		ai_will_do = {
+			if = {
+				limit = {
+					OR = {
+						has_realm_law = confederate_partition_succession_law
+						has_realm_law = partition_succession_law
+						has_realm_law = high_partition_succession_law
+					}
+				}
+				value = 3
+			}
+		}
+
+		potential = {
+			government_has_flag = government_is_japan_administrative
+			is_independent_ruler = no
+		}
+	}
+	# 律令制：军事任命继承制 # ————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+	japanese_military_appointment_succession_law = {
+		can_keep = {
+			government_allows = administrative
+			government_has_flag = government_is_japan_administrative #COPF
+			is_independent_ruler = no
+			custom_tooltip = {
+				text = celestial_military_appointment_allowed_desc
+				vassal_contract_has_flag = japan_administrative_military_appointment
+			}
+			# Vassal Contract allows it
+			custom_description = {
+				NAND = {
+					is_independent_ruler = no
+					vassal_contract_has_flag = locked_to_partition
+				}
+			}
+			custom_tooltip = { #COPF
+				text = tt_succession_laws_must_not_be_locked_by_contracts
+				NOR = {
+					subject_contract_has_flag = succession_rights_governor_appointment
+					subject_contract_has_flag = candidate_preference_bureaucrat_promotion
+				}
+			}
+		}
+		can_have = {
+			government_allows = administrative
+			is_independent_ruler = no
+		}
+		can_pass = {
+			can_change_succession_law_trigger = yes
+			government_allows = administrative
+			is_independent_ruler = no
+		}
+		should_start_with = {
+			government_has_flag = government_is_japan_administrative
+			is_independent_ruler = no
+			custom_tooltip = {
+				text = celestial_military_appointment_allowed_desc
+				vassal_contract_has_flag = japan_administrative_military_appointment
+			}
+		}
+		succession = {
+			order_of_succession = appointment
+			appointment_type = japanese_military_governor
+		}
+		flag = advanced_succession_law
+		flag = appointment_type_succession
+		modifier = {
+			glory_hound_opinion = 5
+			courtly_opinion = -10
+			player_heir_opinion = 20
+			eligible_child_except_player_heir_opinion = -5
+		}
+		pass_cost = {
+			prestige = change_succession_law_prestige_cost
+		}
+		revoke_cost = {
+			prestige = change_succession_law_prestige_cost
+		}
+
+		ai_will_do = {
+			if = {
+				limit = {
+					OR = {
+						has_realm_law = confederate_partition_succession_law
+						has_realm_law = partition_succession_law
+						has_realm_law = high_partition_succession_law
+					}
+				}
+				value = 3
+			}
+		}
+
+		potential = {
+			government_has_flag = government_is_japan_administrative
+			is_independent_ruler = no
+		}
+	}
+	# 曼陀罗继承制 # ————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+	mandala_succession_law = {
+		can_keep = {
+			realm_law_is_mandala = yes
+		}
+		can_have = {
+			realm_law_is_mandala = yes
+		}
+		can_pass = {
+			realm_law_is_mandala = yes
+		}
+		should_start_with = {
+			realm_law_is_mandala = yes
+		}
+		should_show_for_title = { # Never show this in the UI, just apply it through script
+			always = no
+		}
+		can_remove_from_title = {
+			always = no
+		}
+		succession = {
+			order_of_succession = inheritance
+			traversal_order = children
+			rank = oldest
+			title_division = single_heir
+		}
+		flag = can_designate_heirs
+		
+		potential = {
+			realm_law_is_mandala = yes
+		}
+	}
+	# 贤能制：任命继承制 # ————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+	meritocratic_appointment_succession_law = {
+		can_keep = {
+			government_allows = administrative
+			government_has_flag = government_is_meritocratic #COPF
+			is_independent_ruler = no
+			custom_tooltip = {
+				text = celestial_military_appointment_allowed_desc
+				NOT = { vassal_contract_has_flag = meritocratic_military_appointment }
+			}
+			# Vassal Contract allows it
+			custom_description = {
+				text = succession_laws_must_not_be_forced_partition
+				NAND = {
+					is_independent_ruler = no
+					vassal_contract_has_flag = locked_to_partition
+				}
+			}
+			custom_tooltip = { #COPF
+				text = tt_succession_laws_must_not_be_locked_by_contracts
+				NOR = {
+					subject_contract_has_flag = succession_rights_governor_appointment
+					subject_contract_has_flag = candidate_preference_bureaucrat_promotion
+				}
+			}
+		}
+		can_have = {
+			government_allows = administrative
+			is_independent_ruler = no
+		}
+		can_pass = {
+			government_allows = administrative
+			is_independent_ruler = no
+		}
+		should_start_with = {
+			OR = {
+				government_has_flag = government_is_meritocratic
+				government_has_flag = government_is_steppe_admin
+			}
+			is_independent_ruler = no
+			custom_tooltip = {
+				text = celestial_military_appointment_allowed_desc
+				NOT = { vassal_contract_has_flag = meritocratic_military_appointment }
+			}
+		}
+		succession = {
+			order_of_succession = appointment
+			appointment_type = meritocratic_civic_governor
+		}
+		flag = advanced_succession_law
+		flag = appointment_type_succession
+		modifier = {
+			glory_hound_opinion = -10
+			courtly_opinion = 5
+			player_heir_opinion = 20
+			eligible_child_except_player_heir_opinion = -5
+		}
+		pass_cost = {
+			prestige = change_succession_law_prestige_cost
+		}
+		revoke_cost = {
+			prestige = change_succession_law_prestige_cost
+		}
+
+		ai_will_do = {
+			if = {
+				limit = {
+					OR = {
+						has_realm_law = confederate_partition_succession_law
+						has_realm_law = partition_succession_law
+						has_realm_law = high_partition_succession_law
+					}
+				}
+				value = 3
+			}
+		}
+
+		potential = {
+			government_has_flag = government_is_meritocratic
+			is_independent_ruler = no
+		}
+	}
+	# 贤能制：军镇继承制 # ————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+	meritocratic_military_appointment_succession_law = {
+		can_keep = {
+			government_allows = administrative
+			government_has_flag = government_is_meritocratic #COPF
+			is_independent_ruler = no
+			custom_tooltip = {
+				text = celestial_military_appointment_allowed_desc
+				vassal_contract_has_flag = meritocratic_military_appointment
+			}
+			# Vassal Contract allows it
+			custom_description = {
+				text = succession_laws_must_not_be_forced_partition
+				NAND = {
+					is_independent_ruler = no
+					vassal_contract_has_flag = locked_to_partition
+				}
+			}
+			custom_tooltip = { #COPF
+				text = tt_succession_laws_must_not_be_locked_by_contracts
+				NOR = {
+					subject_contract_has_flag = succession_rights_governor_appointment
+					subject_contract_has_flag = candidate_preference_bureaucrat_promotion
+				}
+			}
+		}
+		can_have = {
+			government_allows = administrative
+			is_independent_ruler = no
+		}
+		can_pass = {
+			government_allows = administrative
+			is_independent_ruler = no
+		}
+		should_start_with = {
+			OR = {
+				government_has_flag = government_is_meritocratic
+				government_has_flag = government_is_steppe_admin
+			}
+			is_independent_ruler = no
+			custom_tooltip = {
+				text = celestial_military_appointment_allowed_desc
+				vassal_contract_has_flag = meritocratic_military_appointment
+			}
+		}
+		succession = {
+			order_of_succession = appointment
+			appointment_type = meritocratic_military_governor
+		}
+		flag = advanced_succession_law
+		flag = appointment_type_succession
+		modifier = {
+			glory_hound_opinion = -10
+			courtly_opinion = 5
+			player_heir_opinion = 20
+			eligible_child_except_player_heir_opinion = -5
+		}
+		pass_cost = {
+			prestige = change_succession_law_prestige_cost
+		}
+		revoke_cost = {
+			prestige = change_succession_law_prestige_cost
+		}
+
+		ai_will_do = {
+			if = {
+				limit = {
+					OR = {
+						has_realm_law = confederate_partition_succession_law
+						has_realm_law = partition_succession_law
+						has_realm_law = high_partition_succession_law
+					}
+				}
+				value = 3
+			}
+		}
+
+		potential = {
+			government_has_flag = government_is_meritocratic
+			is_independent_ruler = no
+		}
+	}
+	# 贤能制：摄政继承制 # ————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+	meritocratic_regency_succession_law = {
+		can_keep = {
+			can_have_meritocratic_regency_succession_law_trigger = yes
+			government_has_flag = government_is_meritocratic #COPF
+			custom_tooltip = { #COPF
+				text = tt_succession_laws_must_not_be_locked_by_contracts
+				NOR = {
+					subject_contract_has_flag = succession_rights_governor_appointment
+					subject_contract_has_flag = candidate_preference_bureaucrat_promotion
+				}
+			}
+		}
+		can_pass = {
+			can_have_meritocratic_regency_succession_law_trigger = yes
+		}
+		can_have = {
+			can_have_meritocratic_regency_succession_law_trigger = yes
+		}
+		can_title_have = {
+			exists = var:administrative_ui_special_title
+		}
+		should_show_for_title = { # Never show this in the UI, just apply it through script
+			always = no
+		}
+		can_remove_from_title = {
+			always = no
+		}
+		should_start_with = {
+			always = no
+		}
+		succession = {
+			order_of_succession = appointment
+			appointment_type = meritocratic_regent
+		}
+		flag = advanced_succession_law
+		flag = can_designate_heirs
+		flag = appointment_type_succession
+		pass_cost = {
+			prestige = change_succession_law_prestige_cost
+		}
+		ai_will_do = {
+			if = {
+				limit = { has_realm_law = confederate_partition_succession_law }
+				value = 1
+			}
+		}
+		potential = {
+			government_allows = administrative
+			government_allows = merit
+			tgp_realm_has_ceremonial_liege_trigger = yes
+		}
+	}
+
+	# 封建行政制：总督委任继承制 # ————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+	feudal_governor_appointment_succession_law = {
+		can_keep = {
+			is_independent_ruler = no
+			custom_tooltip = {
+				text = tt_succession_laws_must_not_be_locked_by_contracts
+				subject_contract_has_flag = succession_rights_governor_appointment
+				NOT = { subject_contract_has_flag = candidate_preference_bureaucrat_promotion }
+			}
+		}
+
+		succession = {
+			order_of_succession = appointment
+			appointment_type = feudal_governor_appointment
+		}
+
+		flag = advanced_succession_law
+		flag = appointment_type_succession
+		flag = succession_feudal_governor_appointment
+
+		potential = {
+			is_independent_ruler = no
+			OR = {
+				government_has_flag = government_is_feudal
+				government_has_flag = government_is_feudal_admin
+			}
+			subject_contract_has_flag = succession_rights_governor_appointment
+		}
+		ai_will_do = 100
+	}
+	# 封建行政制：总督选拔继承制 # ————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+	feudal_governor_promotion_succession_law = {
+		can_keep = {
+			is_independent_ruler = no
+			custom_tooltip = {
+				text = tt_succession_laws_must_not_be_locked_by_contracts
+				subject_contract_has_flag = succession_rights_governor_appointment
+				subject_contract_has_flag = candidate_preference_bureaucrat_promotion
+			}
+		}
+
+		succession = {
+			order_of_succession = generate
+			pool_character_config = pool_feudal_governor_promotion_succession
+		}
+
+		flag = advanced_succession_law
+		flag = appointment_type_succession
+		flag = succession_feudal_governor_promotion
+
+		potential = {
+			is_independent_ruler = no
+			OR = {
+				government_has_flag = government_is_feudal
+				government_has_flag = government_is_feudal_admin
+			}
+			subject_contract_has_flag = succession_rights_governor_appointment
+			subject_contract_has_flag = candidate_preference_bureaucrat_promotion
+		}
+		ai_will_do = 100
+	}
+
+	# 兼容其它MOD的继承法：
+	# Last Will Mod # ————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+	last_will_succession_law = {
+		can_keep = {
+			global_var:lwxxx_is_loaded ?= yes
+			lwxxx_last_will_succession_law_can_keep_trigger = yes
+		}
+
+		can_have = {
+			global_var:lwxxx_is_loaded ?= yes
+			lwxxx_last_will_succession_law_can_have_trigger = yes
+		}
+
+		can_pass = {
+			global_var:lwxxx_is_loaded ?= yes
+			lwxxx_last_will_succession_law_can_pass_trigger = yes
+		}
+
+		should_start_with = {
+			always = no
+		}
+
+		succession = {
+			order_of_succession = inheritance
+			traversal_order = children
+			rank = oldest
+			title_division = single_heir
+		}
+
+		flag = advanced_succession_law
+		flag = can_designate_heirs
+
+		modifier = {
+			courtly_opinion = 5
+			glory_hound_opinion = -10
+			parochial_opinion = 5
+			belligerent_opinion = 5
+			player_heir_opinion = 15
+			eligible_child_except_player_heir_opinion = 10
+			dynasty_house_opinion = 10
+		}
+
+		pass_cost = {
+			prestige = {
+				if = {
+					limit = {
+						not = { has_variable = lwxxx_had_last_will_succession_law }
+					}
+					add = change_succession_law_prestige_cost
+					multiply = 1.5
+				}
+			}
+		}
+
+		revoke_cost = {
+			prestige = change_succession_law_prestige_cost
+		}
+
+		on_pass = {
+			set_variable = lwxxx_had_last_will_succession_law
+		}
+		
+		potential = {
+			global_var:lwxxx_is_loaded ?= yes
+		}
+
+		ai_will_do = { value = 0 }
+	}
+	# Diwan Government Mod # ————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+	diwan_top_liege_succession_law = {
+		can_keep = {
+			is_independent_ruler = yes
+			government_has_flag = government_is_diwan
+			}
+		can_pass = {
+			top_liege = this
+			government_has_flag = government_is_diwan
+			}
+		can_have = {
+			government_has_flag = government_is_diwan
+		}
+		should_start_with = {
+			government_has_flag = government_is_diwan
+			is_independent_ruler = yes
+		}
+
+		succession = {
+			order_of_succession = appointment
+			appointment_type = diwan_top_liege_appointment 
+		}
+		flag = advanced_succession_law
+		flag = can_designate_heirs
+		flag = appointment_type_succession
+		pass_cost = {
+			prestige = {
+				value = change_succession_law_prestige_cost
+				multiply = {
+					value = 0.5
+					desc = "[administrative_government|E]"
+				}
+			}
+		}
+		ai_will_do = {
+			if = {
+				limit = { government_has_flag = government_is_diwan }
+				value = 30
+			}
+		}
+		potential = {
+			government_has_flag = government_is_diwan
+			is_independent_ruler = yes
+			NOR = {
+				government_has_flag = government_is_celestial
+				government_has_flag = government_is_japan_administrative
+				government_has_flag = government_is_meritocratic
+				government_has_flag = government_is_steppe_admin
+			}
+		}
+	}
+	diwan_governor_succession_law = {
+		can_keep = {
+			NOT = { government_has_flag = government_is_dawla }
+			is_independent_ruler = no
+			government_has_flag = government_is_diwan
+			NOR = {
+				government_has_flag = government_is_feudal
+				government_has_flag = government_is_republic
+				government_has_flag = government_is_tribal
+				government_has_flag = government_is_celestial
+				government_has_flag = government_is_japan_administrative
+				government_has_flag = government_is_meritocratic
+				government_has_flag = government_is_steppe_admin
+			}
+		}
+		can_have = {
+			NOT = { government_has_flag = government_is_dawla }
+			is_independent_ruler = no
+			government_has_flag = government_is_diwan
+			NOR = {
+				government_has_flag = government_is_feudal
+				government_has_flag = government_is_republic
+				government_has_flag = government_is_tribal
+				government_has_flag = government_is_celestial
+				government_has_flag = government_is_japan_administrative
+				government_has_flag = government_is_meritocratic
+				government_has_flag = government_is_steppe_admin
+			}
+		}
+		can_pass = {
+			NOT = { government_has_flag = government_is_dawla }
+			is_independent_ruler = no
+			government_has_flag = government_is_diwan
+			NOR = {
+				government_has_flag = government_is_feudal
+				government_has_flag = government_is_republic
+				government_has_flag = government_is_tribal
+				government_has_flag = government_is_celestial
+				government_has_flag = government_is_japan_administrative
+				government_has_flag = government_is_meritocratic
+				government_has_flag = government_is_steppe_admin
+			}
+		}
+		should_start_with = {
+			NOT = { government_has_flag = government_is_dawla }
+			government_has_flag = government_is_diwan
+			NOR = {
+				government_has_flag = government_is_feudal
+				government_has_flag = government_is_republic
+				government_has_flag = government_is_tribal
+				government_has_flag = government_is_celestial
+				government_has_flag = government_is_japan_administrative
+				government_has_flag = government_is_meritocratic
+				government_has_flag = government_is_steppe_admin
+			}
+			is_independent_ruler = no
+		}
+		succession = {
+			order_of_succession = appointment
+			appointment_type = diwan_governor_appointment
+		}
+		flag = advanced_succession_law
+		flag = appointment_type_succession
+		pass_cost = {
+			prestige = change_succession_law_prestige_cost
+		}
+		revoke_cost = {
+			prestige = change_succession_law_prestige_cost
+		}
+
+		ai_will_do = {
+			value = 0
+		}
+
+		potential = {
+			government_has_flag = government_is_diwan
+			NOT = { government_has_flag = government_is_dawla }
+			NOR = {
+				government_has_flag = government_is_feudal
+				government_has_flag = government_is_republic
+				government_has_flag = government_is_tribal
+				government_has_flag = government_is_celestial
+				government_has_flag = government_is_japan_administrative
+				government_has_flag = government_is_meritocratic
+				government_has_flag = government_is_steppe_admin
+			}
+			is_independent_ruler = no
+		}
+	}	
+	dawla_vassal_succession_law = {
+		can_keep = {
+			is_landed = yes
+			government_has_flag = government_is_dawla
+			is_independent_ruler = no
+			NOR = {
+				government_has_flag = government_is_feudal
+				government_has_flag = government_is_republic
+				government_has_flag = government_is_tribal
+				government_has_flag = government_is_celestial
+				government_has_flag = government_is_japan_administrative
+				government_has_flag = government_is_meritocratic
+				government_has_flag = government_is_steppe_admin
+			}
+		}
+		can_pass = {
+			is_landed = yes
+			top_liege != this
+			government_has_flag = government_is_dawla
+			NOR = {
+				government_has_flag = government_is_feudal
+				government_has_flag = government_is_republic
+				government_has_flag = government_is_tribal
+				government_has_flag = government_is_celestial
+				government_has_flag = government_is_japan_administrative
+				government_has_flag = government_is_meritocratic
+				government_has_flag = government_is_steppe_admin
+			}
+		}
+		can_have = {
+			is_landed = yes
+			government_has_flag = government_is_dawla
+			is_independent_ruler = no
+			NOR = {
+				government_has_flag = government_is_feudal
+				government_has_flag = government_is_republic
+				government_has_flag = government_is_tribal
+				government_has_flag = government_is_celestial
+				government_has_flag = government_is_japan_administrative
+				government_has_flag = government_is_meritocratic
+				government_has_flag = government_is_steppe_admin
+			}
+		}
+		should_start_with = {
+			government_has_flag = government_is_dawla
+			is_independent_ruler = no
+		}
+
+		succession = {
+			order_of_succession = appointment
+			appointment_type = dawla_vassal_succession_appointment
+		}
+		flag = advanced_succession_law
+		flag = can_designate_heirs
+		flag = appointment_type_succession
+		pass_cost = {
+			prestige = {
+				value = change_succession_law_prestige_cost
+				multiply = {
+					value = 0.5
+					desc = "[administrative_government|E]"
+				}
+			}
+		}
+		ai_will_do = {
+			if = {
+				limit = { government_has_flag = government_is_diwan }
+				value = 1
+			}
+			if = {
+    				limit = {    
+						is_independent_ruler = no
+    				}
+    				value = 4
+			}
+		}
+		potential = {
+			government_has_flag = government_is_dawla
+			is_independent_ruler = no
+			NOR = {
+				government_has_flag = government_is_feudal
+				government_has_flag = government_is_republic
+				government_has_flag = government_is_tribal
+				government_has_flag = government_is_celestial
+				government_has_flag = government_is_japan_administrative
+				government_has_flag = government_is_meritocratic
+				government_has_flag = government_is_steppe_admin
+			}
+		}
+	}
+	diwan_vassal_illegal_succession_law = {
+		can_keep = {
+			always =no	
+		}
+		can_pass = {
+			always =no		
+		}
+		can_have = {
+			always =no	
+		}
+		should_start_with = {
+			always =no		
+		}
+		modifier = { 
+			opinion_of_liege = -50 
+		}
+		
+		succession = {
+			order_of_succession = appointment
+			appointment_type = diwan_vassal_house_appointment
+		}
+		
+		flag = advanced_succession_law
+		flag = can_designate_heirs
+		flag = appointment_type_succession
+		pass_cost = {
+			prestige = {
+				value = change_succession_law_prestige_cost
+				multiply = {
+					value = 0.5
+					desc = "[administrative_government|E]"
+				}
+			}
+		}
+		ai_will_do = {
+			if = {
+				limit = { government_has_flag = government_is_diwan }
+				value = 1
+			}
+			if = {
+				limit = {    
+					is_independent_ruler = no
+				}
+				value = 4
+			}
+		}
+		potential = {
+			always =no			
+		}
+	}
+}
+### 继承性别法 ### ============================================================================================================================================
+# succession_gender_laws = {
+# 	default = male_preference_law
+# 	flag = succession_gender_laws
+
+# 	male_only_law = {
+# 		can_title_have = {
+# 			can_title_have_law_general_trigger = yes
+# 		}
+# 		should_show_for_title = { # Never show this in the UI, just apply it through script
+# 			always = no
+# 		}
+# 		can_keep = {
+# 			trigger_if = {
+# 				limit = {
+# 					top_liege != this
+# 					government_allows = administrative
+# 				}
+# 				top_liege = { has_realm_law = male_only_law }
+# 			}
+# 			trigger_else = {
+# 				custom_tooltip = {
+# 					text = culture_not_male_only_tt
+# 					OR = {
+# 						faith = { has_doctrine = doctrine_gender_male_dominated }
+# 						NOT = {
+# 							culture = { has_cultural_parameter = female_only_inheritance }
+# 						}
+# 					}
+# 				}
+# 			}
+# 		}
+# 		can_pass = {
+# 			can_change_succession_law_trigger = yes
+# 		}
+# 		should_start_with = {
+# 			trigger_if = {
+# 				limit = {
+# 					government_has_flag = government_has_merit
+# 				}
+# 				faith = {
+# 					has_doctrine = doctrine_gender_male_dominated
+# 				}
+# 			}
+# 			trigger_else_if = {
+# 				limit = {
+# 					top_liege != this
+# 					government_allows = administrative
+# 				}
+# 				top_liege = { has_realm_law = male_only_law }
+# 			}
+# 			trigger_else = {
+# 				faith = {
+# 					has_doctrine = doctrine_gender_male_dominated
+# 					religion_tag = islam_religion
+# 				}
+# 			}
+# 		}
+# 		succession = {
+# 			gender_law = male_only
+# 		}
+# 		flag = men_can_have_multiple_spouses
+# 		flag = men_can_have_consorts
+# 		flag = no_female_commanders
+
+# 		pass_cost = {
+# 			prestige = change_succession_law_prestige_cost
+# 		}
+# 		revoke_cost = {
+# 			prestige = change_succession_law_prestige_cost
+# 		}
+# 	}
+
+# 	male_preference_law = {
+# 		can_title_have = {
+# 			can_title_have_law_general_trigger = yes
+# 		}
+# 		should_show_for_title = { # Never show this in the UI, just apply it through script
+# 			always = no
+# 		}
+# 		can_keep = {
+# 			trigger_if = {
+# 				limit = {
+# 					top_liege != this
+# 					government_allows = administrative
+# 				}
+# 				top_liege = { has_realm_law = male_preference_law }
+# 			}
+# 			trigger_else = {
+# 				custom_description = {
+# 					text = change_law_male_preference_faith_requirement
+# 					faith = {
+# 						NOT = { has_doctrine = doctrine_gender_female_dominated }
+# 					}
+# 				}
+# 				custom_tooltip = {
+# 					text = culture_not_female_only_tt
+# 					OR = {
+# 						faith = { has_doctrine = doctrine_gender_male_dominated }
+# 						NOT = {
+# 							culture = { has_cultural_parameter = female_only_inheritance }
+# 						}
+# 					}
+# 				}
+# 			}
+# 		}
+# 		can_pass = {
+# 			can_change_succession_law_trigger = yes
+# 		}
+# 		should_start_with = {
+# 			trigger_if = {
+# 				limit = {
+# 					top_liege != this
+# 					government_allows = administrative
+# 				}
+# 				top_liege = { has_realm_law = male_preference_law }
+# 			}
+# 			trigger_else = {
+# 				NOT = {
+# 					culture = { has_cultural_parameter = female_preference_inheritance }
+# 				}
+# 				OR = {
+# 					faith = {
+# 						NOR = {
+# 							religion_tag = islam_religion
+# 							AND = {
+# 								root = {
+# 									government_has_flag = government_has_merit
+# 								}
+# 								has_doctrine = doctrine_gender_male_dominated
+# 							}
+# 						}
+# 						has_doctrine = doctrine_gender_male_dominated
+# 					}
+# 					AND = {
+# 						has_realm_law = male_only_law # For when male_only_law ceases to be a legal option
+# 						trigger_if = {
+# 							limit = {
+# 								is_independent_ruler = no
+# 								government_allows = administrative
+# 							}
+# 							NOT = {
+# 								top_liege = { has_realm_law = male_only_law }
+# 							}
+# 						}
+# 						trigger_else = {
+# 							custom_tooltip = {
+# 								text = culture_not_female_only_tt
+# 								NOR = {
+# 									faith = { has_doctrine = doctrine_gender_male_dominated }
+# 									NOT = {
+# 										culture = { has_cultural_parameter = female_only_inheritance }
+# 									}
+# 								}
+# 							}
+# 						}
+# 					}
+# 				}
+# 			}
+# 		}
+# 		succession = {
+# 			gender_law = male_preference
+# 		}
+# 		flag = men_can_have_multiple_spouses
+# 		flag = men_can_have_consorts
+# 		flag = no_female_commanders
+
+# 		pass_cost = {
+# 			prestige = change_succession_law_prestige_cost
+# 		}
+# 		revoke_cost = {
+# 			prestige = change_succession_law_prestige_cost
+# 		}
+# 	}
+
+# 	equal_law = {
+# 		can_title_have = {
+# 			can_title_have_law_general_trigger = yes
+# 		}
+# 		should_show_for_title = { # Never show this in the UI, just apply it through script
+# 			always = no
+# 		}
+# 		can_keep = {
+# 			trigger_if = {
+# 				limit = {
+# 					top_liege != this
+# 					government_allows = administrative
+# 				}
+# 				top_liege = { has_realm_law = equal_law }
+# 			}
+# 			trigger_else = {
+# 				custom_tooltip = {
+# 					text = equal_law_culture_faith_or_innovation_trigger
+# 					OR = {
+# 						culture = { has_cultural_parameter = gender_equal_inheritance }
+# 						#culture = { has_innovation = innovation_visigothic_codes }
+# 						faith = { has_doctrine = doctrine_gender_equal }
+# 						AND = { #Culture is female dominated but religion is male dominated
+# 							faith = { has_doctrine = doctrine_gender_male_dominated }
+# 							culture = { has_cultural_parameter = female_only_inheritance }
+# 						}
+# 						AND = { #Culture is male dominated but faith is female dominated
+# 							faith = { has_doctrine = doctrine_gender_female_dominated }
+# 							NOT = { culture = { has_cultural_parameter = female_only_inheritance } }
+# 						}
+# 						primary_title.var:can_keep_realm_law ?= flag:equal_law
+# 					}
+# 				}
+# 			}
+# 		}
+# 		can_pass = {
+# 			#can_change_to_equal_succession_law_trigger = yes
+# 			can_change_succession_law_trigger = yes
+# 		}
+# 		should_start_with = {
+# 			trigger_if = {
+# 				limit = {
+# 					top_liege != this
+# 					government_allows = administrative
+# 				}
+# 				top_liege = { has_realm_law = equal_law }
+# 			}
+# 			trigger_else = {
+# 				NOR = {
+# 					culture = { has_cultural_parameter = female_preference_inheritance }
+# 					culture = { has_cultural_tradition = tradition_nubian_warrior_queens }
+# 				}
+# 				faith = {
+# 					has_doctrine = doctrine_gender_equal
+# 				}
+# 				NOT = { has_realm_law = female_only_law } # For when female_only_law ceases to be valid
+# 			}
+# 		}
+# 		succession = {
+# 			gender_law = equal
+# 		}
+# 		flag = men_can_have_multiple_spouses
+# 		flag = men_can_have_consorts
+# 		flag = women_can_have_multiple_spouses
+# 		flag = women_can_have_consorts
+
+# 		pass_cost = {
+# 			prestige = change_succession_law_prestige_cost
+# 		}
+# 		revoke_cost = {
+# 			prestige = change_succession_law_prestige_cost
+# 		}
+
+# 		ai_will_do = {
+# 			if = {
+# 				limit = {
+# 					exists = primary_title
+# 					primary_title.tier > tier_county
+# 					faith = {
+# 						NOT = {
+# 							has_dominant_ruling_gender = prev
+# 						}
+# 					}
+# 				}
+# 				value = 2
+# 			}
+# 		}
+# 	}
+
+# 	female_preference_law = {
+# 		can_title_have = {
+# 			can_title_have_law_general_trigger = yes
+# 		}
+# 		should_show_for_title = { # Never show this in the UI, just apply it through script
+# 			always = no
+# 		}
+# 		can_keep = {
+# 			trigger_if = {
+# 				limit = {
+# 					top_liege != this
+# 					government_allows = administrative
+# 				}
+# 				top_liege = { has_realm_law = female_preference_law }
+# 			}
+# 			trigger_else_if = {
+# 				limit = {
+# 					culture = { has_cultural_parameter = female_preference_inheritance }
+# 				}
+# 				culture = { has_cultural_parameter = female_preference_inheritance }
+# 			}
+# 			trigger_else = {
+# 				custom_description = {
+# 					text = change_law_female_preference_faith_requirement
+# 					faith = {
+# 						NOT = { has_doctrine = doctrine_gender_male_dominated }
+# 					}
+# 				}
+# 				custom_tooltip = {
+# 					text = female_preference_law_faith_or_culture_trigger
+# 					OR = {
+# 						faith = { has_doctrine = doctrine_gender_female_dominated }
+# 						NOT = {
+# 							culture = { has_cultural_parameter = male_only_inheritance }
+# 						}
+# 					}
+# 				}
+# 			}
+# 		}
+# 		should_start_with = {
+# 			trigger_if = {
+# 				limit = {
+# 					top_liege != this
+# 					government_allows = administrative
+# 				}
+# 				top_liege = { has_realm_law = female_preference_law }
+# 			}
+# 			trigger_else = {
+# 				OR = {
+# 					culture = { has_cultural_parameter = female_preference_inheritance }
+# 					faith = {
+# 						has_doctrine = doctrine_gender_female_dominated
+# 					}
+# 					has_realm_law = female_only_law # For when male_only_law ceases to be a legal option
+# 				}
+# 			}
+# 		}
+# 		can_pass = {
+# 			can_change_succession_law_trigger = yes
+# 		}
+# 		succession = {
+# 			gender_law = female_preference
+# 		}
+# 		flag = women_can_have_multiple_spouses
+# 		flag = women_can_have_consorts
+
+# 		pass_cost = {
+# 			prestige = change_succession_law_prestige_cost
+# 		}
+# 		revoke_cost = {
+# 			prestige = change_succession_law_prestige_cost
+# 		}
+# 	}
+
+# 	female_only_law = {
+# 		can_title_have = {
+# 			can_title_have_law_general_trigger = yes
+# 		}
+# 		should_show_for_title = { # Never show this in the UI, just apply it through script
+# 			always = no
+# 		}
+# 		can_keep = {
+# 			trigger_if = {
+# 				limit = {
+# 					top_liege != this
+# 					government_allows = administrative
+# 				}
+# 				top_liege = { has_realm_law = female_only_law }
+# 			}
+# 			trigger_else_if = {
+# 				limit = {
+# 					culture = { has_cultural_parameter = female_only_inheritance }
+# 				}
+# 				culture = { has_cultural_parameter = female_only_inheritance }
+# 			}
+# 			trigger_else = {
+# 				custom_tooltip = {
+# 					text = culture_not_female_only_tt
+# 					faith = { has_doctrine = doctrine_gender_female_dominated }
+# 					NOT = {
+# 						culture = { has_cultural_parameter = male_only_inheritance }
+# 					}
+# 				}
+# 			}
+# 		}
+# 		can_pass = {
+# 			can_change_succession_law_trigger = yes
+# 		}
+# 		succession = {
+# 			gender_law = female_only
+# 		}
+# 		flag = women_can_have_multiple_spouses
+# 		flag = women_can_have_consorts
+
+# 		pass_cost = {
+# 			prestige = change_succession_law_prestige_cost
+# 		}
+# 		revoke_cost = {
+# 			prestige = change_succession_law_prestige_cost
+# 		}
+
+# 		should_start_with = {
+# 			trigger_if = {
+# 				limit = {
+# 					top_liege != this
+# 					government_allows = administrative
+# 				}
+# 				top_liege = { has_realm_law = female_only_law }
+# 			}
+# 			trigger_else = {
+# 				culture = { has_cultural_parameter = female_only_inheritance }
+# 			}
+# 		}
+# 	}
+# }
+### 继承信仰法 ### ============================================================================================================================================
+# succession_faith = {
+# 	same_faith_only_law = {
+# 		can_keep = {
+# 			should_have_same_faith_succession_trigger = yes
+# 		}
+# 		can_pass = {
+# 			should_have_same_faith_succession_trigger = yes
+# 		}
+# 		should_start_with = {
+# 			should_have_same_faith_succession_trigger = yes
+# 		}
+# 		succession = {
+# 			faith = same_faith
+# 		}
+# 	}
+# }

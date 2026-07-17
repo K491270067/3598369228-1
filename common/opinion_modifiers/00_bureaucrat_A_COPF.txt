@@ -1,0 +1,6 @@
+﻿# 被任命为监察官
+opinion_promoted_new_bureaucrat = {
+	opinion = 25
+	years = 25
+	decaying = yes
+}

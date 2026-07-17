@@ -1,0 +1,1488 @@
+﻿### 效果：将目标角色转换成【封建行政制】 ### ————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+effect_change_to_feudal_admin = {
+	hidden_effect = {
+		# 1.记录领地法律与封臣契约
+		effect_record_realm_laws = {
+			RECORD_SOURCE = this
+			RECORD_TARGET = this
+		}
+		# 2.转换政府
+		change_government = feudal_admin_government
+		# 3.恢复领地法律与封臣契约
+		effect_restore_realm_laws = yes
+		# 4.生成世族
+		effect_create_feudal_admin_noble_family_title = yes
+		# 5.如果有国库则给点钱
+		if = {
+			limit = {
+				has_treasury = yes
+			}
+			add_treasury = {
+				value = gold
+				min = 100
+			}
+		}
+	}
+	show_as_tooltip = {
+		change_government = feudal_admin_government
+		if = {
+			limit = { NOT = { exists = domicile } }
+			custom_tooltip = { text = tt_build_domicile }
+		}
+		if = {
+			limit = {
+				NOT = { any_held_title = { is_noble_family_title = yes } }
+			}
+			custom_tooltip = { text = create_noble_family_tt }
+		}
+	}
+}
+
+### 效果：将目标角色从【封建行政制】转换成【封建制】 ### ————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+effect_change_to_feudal_from_feudal_admin = {
+	# 1.记录领地法律与封臣契约
+	effect_record_realm_laws = {
+		RECORD_SOURCE = this
+		RECORD_TARGET = this
+	}
+	# 2.转换政府
+	change_government = feudal_admin_government
+	# 3.恢复领地法律与封臣契约
+	effect_restore_realm_laws = yes
+	# 4.销毁世族
+	if = {
+		limit = {
+			any_held_title = { is_noble_family_title = yes }
+		}
+		every_held_title = {
+			limit = { is_noble_family_title = yes }
+			save_temporary_scope_as = family_title
+			prev = { destroy_title = scope:family_title }
+		}
+	}
+}
+
+### 效果：创建【封建行政制】世族头衔 ### ————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+effect_create_feudal_admin_noble_family_title = {
+	hidden_effect = {
+		if = {
+			limit = {
+				NOT = { any_held_title = { is_noble_family_title = yes } }
+				trigger_if = {
+					limit = { is_landed = yes }
+					primary_title.tier >= tier_duchy # 尽管封建行政制世族是伯爵级，但是为了性能优化，限制只有公爵才能自动生成世族
+				}
+				trigger_if = {
+					limit = { is_ai = yes }
+					is_lowborn = no
+					OR = {
+						dynasty = { dynasty_prestige_level >= 2 }
+						is_landed = no
+					}
+				}
+			}
+			# 如果并非家主：
+			if = {
+				limit = {
+					exists = house.house_head
+					NOT = { house.house_head = this }
+				}
+				if = { # If not, let's see if it would be reasonable to become house head...
+					limit = {
+						house.house_head ?= {
+							is_ai = yes # Don't steal house head from a player
+							OR = {
+								# Within same realm but less important
+								AND = {
+									top_liege = this.top_liege
+									OR = {
+										is_ruler = no
+										highest_held_title_tier < root.highest_held_title_tier
+									}
+								}
+								# Wanderer
+								NOT = { exists = liege }
+							}
+						}
+					}
+					house = { set_house_head = this }
+				}
+				else_if = { # ... Otherwise, we create a cadet branch
+					limit = { is_ai = no }
+					create_cadet_branch = {}
+				}
+			}
+			# 创建世族头衔
+			give_noble_family_title = {
+				name = noble_family_name
+				tier = county
+				article = DEFAULT_TITLE_NAME_ARTICLE
+				government = feudal_admin_government
+				save_scope_as = new_title
+			}
+			scope:new_title.holder ?= {
+				save_scope_as = noble_family_head
+				scope:new_title = { set_coa = scope:noble_family_head.house }
+			}
+			domicile = {
+				move_domicile = root.capital_province
+			}
+		}
+	}
+	show_as_tooltip = {
+		if = {
+			limit = {
+				NOT = { any_held_title = { is_noble_family_title = yes } }
+			}
+			custom_tooltip = { text = create_noble_family_tt }
+		}
+	}
+}
+
+### 效果：根据领主的【封臣继承权政策】设定新封臣的封臣契约 ### ————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+effect_setup_new_vassals_contracts = {
+	## 继承权 ##
+	# 【世袭继承】
+	if = {
+		limit = {
+			liege = { has_realm_law_flag = law_vassal_succession_rights_policy_hereditary }
+		}
+		vassal_contract_set_obligation_level = {
+			type = feudal_government_succession_rights
+			level = feudal_succession_rights_hereditary
+		}
+		add_realm_law = law_vassal_succession_rights_policy_hereditary
+	}
+	# 【强制分割】
+	else_if = {
+		limit = {
+			liege = { has_realm_law_flag = law_vassal_succession_rights_policy_forced_partition }
+		}
+		vassal_contract_set_obligation_level = {
+			type = feudal_government_succession_rights
+			level = feudal_succession_rights_forced_partition
+		}
+		add_realm_law = law_vassal_succession_rights_policy_forced_partition
+	}
+	# 【御赐承认】
+	else_if = {
+		limit = {
+			liege = { has_realm_law_flag = law_vassal_succession_rights_policy_grant_recognition }
+		}
+		vassal_contract_set_obligation_level = {
+			type = feudal_government_succession_rights
+			level = feudal_succession_rights_grant_recognition
+		}
+		add_realm_law = law_vassal_succession_rights_policy_grant_recognition
+	}
+	# 【宫廷监察】
+	else_if = {
+		limit = {
+			liege = { has_realm_law_flag = law_vassal_succession_rights_policy_court_supervision }
+		}
+		vassal_contract_set_obligation_level = {
+			type = feudal_government_succession_rights
+			level = feudal_succession_rights_court_supervision
+		}
+		add_realm_law = law_vassal_succession_rights_policy_court_supervision
+		effect_establish_feudal_subject_supervisor = {
+			TARGET_SUBJECT = this
+		}
+	}
+	# 【总督委任】
+	else_if = {
+		limit = {
+			liege = { has_realm_law_flag = law_vassal_succession_rights_policy_governor_appointment }
+		}
+		effect_change_to_feudal_admin = yes
+		vassal_contract_set_obligation_level = {
+			type = feudal_government_succession_rights
+			level = feudal_succession_rights_governor_appointment
+		}
+		add_realm_law = law_vassal_succession_rights_policy_governor_appointment
+	}
+
+	## 候选人偏好 ##
+	# 【本地乡绅】
+	if = {
+		limit = {
+			liege = { has_realm_law_flag = law_candidate_preference_policy_powerful_gentry }
+		}
+		vassal_contract_set_obligation_level = {
+			type = feudal_admin_government_candidate_preference
+			level = candidate_preference_powerful_gentry
+		}
+		add_realm_law = law_candidate_preference_policy_powerful_gentry
+	}
+	# 【宫廷贤能】
+	else_if = {
+		limit = {
+			liege = { has_realm_law_flag = law_candidate_preference_policy_local_talent }
+		}
+		vassal_contract_set_obligation_level = {
+			type = feudal_admin_government_candidate_preference
+			level = candidate_preference_local_talent
+		}
+		add_realm_law = law_candidate_preference_policy_local_talent
+	}
+	# 【任人唯亲】
+	else_if = {
+		limit = {
+			liege = { has_realm_law_flag = law_candidate_preference_policy_favor_nepotism }
+		}
+		vassal_contract_set_obligation_level = {
+			type = feudal_admin_government_candidate_preference
+			level = candidate_preference_favor_nepotism
+		}
+		add_realm_law = law_candidate_preference_policy_favor_nepotism
+	}
+	# 【唯才是举】
+	else_if = {
+		limit = {
+			liege = { has_realm_law_flag = law_candidate_preference_policy_talent_only }
+		}
+		vassal_contract_set_obligation_level = {
+			type = feudal_admin_government_candidate_preference
+			level = candidate_preference_talent_only
+		}
+		add_realm_law = law_candidate_preference_policy_talent_only
+	}
+	# 【官僚选拔】
+	else_if = {
+		limit = {
+			liege = { has_realm_law_flag = law_candidate_preference_policy_bureaucrat_promotion }
+		}
+		vassal_contract_set_obligation_level = {
+			type = feudal_admin_government_candidate_preference
+			level = candidate_preference_bureaucrat_promotion
+		}
+		add_realm_law = law_candidate_preference_policy_bureaucrat_promotion
+	}
+}
+
+### 效果：记录当前领地法律 ### ————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+effect_record_realm_laws = {
+	$RECORD_SOURCE$ = { save_scope_as = record_source }
+	$RECORD_TARGET$ = { save_scope_as = record_target }
+
+	scope:record_target = {
+		# 1.记录：封臣契约
+		if = {
+			limit = { scope:record_source = { is_independent_ruler = no } }
+			set_variable = {
+				name = feudal_government_succession_rights_previous
+				value = scope:record_source.vassal_contract_obligation_level:feudal_government_succession_rights
+			}
+			set_variable = {
+				name = feudal_admin_government_candidate_preference_previous
+				value = scope:record_source.vassal_contract_obligation_level:feudal_admin_government_candidate_preference
+			}
+			set_variable = { 
+				name = feudal_government_taxes_previous
+				value = scope:record_source.vassal_contract_obligation_level:feudal_government_taxes
+			}
+			set_variable = { 
+				name = feudal_government_levies_previous
+				value = scope:record_source.vassal_contract_obligation_level:feudal_government_levies
+			}
+			set_variable = { 
+				name = special_contract_previous
+				value = scope:record_source.vassal_contract_obligation_level:special_contract
+			}
+			set_variable = { 
+				name = religious_rights_previous
+				value = scope:record_source.vassal_contract_obligation_level:religious_rights
+			}
+			set_variable = { 
+				name = fortification_rights_previous
+				value = scope:record_source.vassal_contract_obligation_level:fortification_rights
+			}
+			set_variable = { 
+				name = coinage_rights_previous
+				value = scope:record_source.vassal_contract_obligation_level:coinage_rights
+			}
+			set_variable = { 
+				name = war_declaration_rights_previous
+				value = scope:record_source.vassal_contract_obligation_level:war_declaration_rights
+			}
+			set_variable = { 
+				name = council_rights_previous
+				value = scope:record_source.vassal_contract_obligation_level:council_rights
+			}
+			set_variable = { 
+				name = title_revocation_rights_previous
+				value = scope:record_source.vassal_contract_obligation_level:title_revocation_rights
+			}
+		}
+		# 2.记录：君权
+		if = {
+			limit = {
+				scope:record_source = {
+					OR = {
+						realm_law_use_crown_authority = yes
+						government_has_flag = government_is_feudal
+						government_has_flag = government_is_feudal_admin
+					}
+				}
+			}
+			if = {
+				limit = { scope:record_source = { has_realm_law = crown_authority_legacy_head } }
+				set_variable = {
+					name = crown_authority_previous
+					value = -2
+				}
+			}
+			else_if = {
+				limit = { scope:record_source = { has_realm_law = crown_authority_titular_liege } }
+				set_variable = {
+					name = crown_authority_previous
+					value = -1
+				}
+			}
+			else_if = {
+				limit = {
+					scope:record_source = {
+						OR = {
+							has_realm_law = crown_authority_0
+							has_realm_law = crown_authority_extended_0
+						}
+					}
+				}
+				set_variable = {
+					name = crown_authority_previous
+					value = 0
+				}
+			}
+			else_if = {
+				limit = {
+					scope:record_source = {
+						OR = {
+							has_realm_law = crown_authority_1
+							has_realm_law = crown_authority_extended_1
+						}
+					}
+				}
+				set_variable = {
+					name = crown_authority_previous
+					value = 1
+				}
+			}
+			else_if = {
+				limit = {
+					scope:record_source = {
+						OR = {
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_extended_2
+						}
+					}
+				}
+				set_variable = {
+					name = crown_authority_previous
+					value = 2
+				}
+			}
+			else_if = {
+				limit = {
+					scope:record_source = {
+						OR = {
+							has_realm_law = crown_authority_3
+							has_realm_law = crown_authority_extended_3
+						}
+					}
+				}
+				set_variable = {
+					name = crown_authority_previous
+					value = 3
+				}
+			}
+		}
+		# 3.记录：加冕法
+		if = {
+			limit = {
+				scope:record_source = {
+					OR = {
+						government_has_flag = government_is_feudal
+						government_has_flag = government_is_feudal_admin
+					}
+				}
+			}
+			if = {
+				limit = { scope:record_source = { has_realm_law = uncrowned } }
+				set_variable = {
+					name = crowned_laws_previous
+					value = 0
+				}
+			}
+			else_if = {
+				limit = { scope:record_source = { has_realm_law = crowned_king } }
+				set_variable = {
+					name = crowned_laws_previous
+					value = 1
+				}
+			}
+			else_if = {
+				limit = { scope:record_source = { has_realm_law = crowned_emperor } }
+				set_variable = {
+					name = crowned_laws_previous
+					value = 2
+				}
+			}
+		}
+		# 4.记录：继承法
+		if = {
+			limit = { always = yes }
+			if = {
+				limit = { scope:record_source = { has_realm_law = feudal_governor_appointment_succession_law } }
+				set_variable = {
+					name = succession_order_laws_previous
+					value = flag:feudal_governor_appointment_succession_law
+				}
+			}
+			else_if = {
+				limit = { scope:record_source = { has_realm_law = feudal_governor_promotion_succession_law } }
+				set_variable = {
+					name = succession_order_laws_previous
+					value = flag:feudal_governor_promotion_succession_law
+				}
+			}
+			else_if = {
+				limit = { scope:record_source = { has_realm_law = confederate_partition_succession_law } }
+				set_variable = {
+					name = succession_order_laws_previous
+					value = flag:confederate_partition_succession_law
+				}
+			}
+			else_if = {
+				limit = { scope:record_source = { has_realm_law = partition_succession_law } }
+				set_variable = {
+					name = succession_order_laws_previous
+					value = flag:partition_succession_law
+				}
+			}
+			else_if = {
+				limit = { scope:record_source = { has_realm_law = high_partition_succession_law } }
+				set_variable = {
+					name = succession_order_laws_previous
+					value = flag:high_partition_succession_law
+				}
+			}
+			else_if = {
+				limit = { scope:record_source = { has_realm_law = single_heir_succession_law } }
+				set_variable = {
+					name = succession_order_laws_previous
+					value = flag:single_heir_succession_law
+				}
+			}
+			else_if = {
+				limit = { scope:record_source = { has_realm_law = single_heir_succession_law_youngest } }
+				set_variable = {
+					name = succession_order_laws_previous
+					value = flag:single_heir_succession_law_youngest
+				}
+			}
+			else_if = {
+				limit = { scope:record_source = { has_realm_law = single_heir_dynasty_house } }
+				set_variable = {
+					name = succession_order_laws_previous
+					value = flag:single_heir_dynasty_house
+				}
+			}
+			else_if = {
+				limit = { scope:record_source = { has_realm_law = acclamation_succession_law } }
+				set_variable = {
+					name = succession_order_laws_previous
+					value = flag:acclamation_succession_law
+				}
+			}
+			else_if = {
+				limit = { scope:record_source = { has_realm_law = appointment_succession_law } }
+				set_variable = {
+					name = succession_order_laws_previous
+					value = flag:appointment_succession_law
+				}
+			}
+		}
+		# 5.记录：继承权政策
+		if = {
+			limit = {
+				scope:record_source = { has_realm_law_flag = law_vassal_succession_rights_policy }
+			}
+			if = {
+				limit = { scope:record_source = { has_realm_law = law_vassal_succession_rights_policy_hereditary } }
+				set_variable = {
+					name = vassal_succession_rights_policy_previous
+					value = 0
+				}
+			}
+			else_if = {
+				limit = { scope:record_source = { has_realm_law = law_vassal_succession_rights_policy_forced_partition } }
+				set_variable = {
+					name = vassal_succession_rights_policy_previous
+					value = 1
+				}
+			}
+			else_if = {
+				limit = { scope:record_source = { has_realm_law = law_vassal_succession_rights_policy_grant_recognition } }
+				set_variable = {
+					name = vassal_succession_rights_policy_previous
+					value = 2
+				}
+			}
+			else_if = {
+				limit = { scope:record_source = { has_realm_law = law_vassal_succession_rights_policy_court_supervision } }
+				set_variable = {
+					name = vassal_succession_rights_policy_previous
+					value = 3
+				}
+			}
+			else_if = {
+				limit = { scope:record_source = { has_realm_law = law_vassal_succession_rights_policy_governor_appointment } }
+				set_variable = {
+					name = vassal_succession_rights_policy_previous
+					value = 4
+				}
+			}
+		}
+		# 6.记录：总督候选人偏好政策
+		if = {
+			limit = {
+				scope:record_source = { has_realm_law_flag = law_candidate_preference_policy }
+			}
+			if = {
+				limit = { scope:record_source = { has_realm_law = law_candidate_preference_policy_powerful_gentry } }
+				set_variable = {
+					name = vassal_candidate_preference_policy_feudal_governor_previous
+					value = 0
+				}
+			}
+			else_if = {
+				limit = { scope:record_source = { has_realm_law = law_candidate_preference_policy_local_talent } }
+				set_variable = {
+					name = vassal_candidate_preference_policy_feudal_governor_previous
+					value = 1
+				}
+			}
+			else_if = {
+				limit = { scope:record_source = { has_realm_law = law_candidate_preference_policy_favor_nepotism } }
+				set_variable = {
+					name = vassal_candidate_preference_policy_feudal_governor_previous
+					value = 2
+				}
+			}
+			else_if = {
+				limit = { scope:record_source = { has_realm_law = law_candidate_preference_policy_talent_only } }
+				set_variable = {
+					name = vassal_candidate_preference_policy_feudal_governor_previous
+					value = 3
+				}
+			}
+			else_if = {
+				limit = { scope:record_source = { has_realm_law = law_candidate_preference_policy_bureaucrat_promotion } }
+				set_variable = {
+					name = vassal_candidate_preference_policy_feudal_governor_previous
+					value = 4
+				}
+			}
+		}
+		# 7.记录：封臣头衔领地外继承政策
+		if = {
+			limit = {
+				scope:record_source = { has_realm_law_flag = law_vassal_title_leave_realm_policy }
+			}
+			if = {
+				limit = { scope:record_source = { has_realm_law = law_vassal_title_leave_realm_policy_allowed } }
+				set_variable = {
+					name = vassal_title_leave_realm_policy_previous
+					value = 0
+				}
+			}
+			else_if = {
+				limit = { scope:record_source = { has_realm_law = law_vassal_title_leave_realm_policy_restricted } }
+				set_variable = {
+					name = vassal_title_leave_realm_policy_previous
+					value = 1
+				}
+			}
+		}
+		# 8.记录：封臣头衔剥夺政策
+		if = {
+			limit = {
+				scope:record_source = { has_realm_law_flag = law_vassal_revoke_title_policy }
+			}
+			if = {
+				limit = { scope:record_source = { has_realm_law = law_vassal_revoke_title_policy_prohibit_revoke } }
+				set_variable = {
+					name = vassal_revoke_title_policy_previous
+					value = 0
+				}
+			}
+			else_if = {
+				limit = { scope:record_source = { has_realm_law = law_vassal_revoke_title_policy_allow_revoke } }
+				set_variable = {
+					name = vassal_revoke_title_policy_previous
+					value = 1
+				}
+			}
+		}
+		# 9.记录：封臣战争政策
+		if = {
+			limit = {
+				scope:record_source = { has_realm_law_flag = law_vassal_war_policy }
+			}
+			if = {
+				limit = { scope:record_source = { has_realm_law = law_vassal_war_policy_no_restriction } }
+				set_variable = {
+					name = vassal_war_policy_previous
+					value = 0
+				}
+			}
+			else_if = {
+				limit = { scope:record_source = { has_realm_law = law_vassal_war_policy_prohibit_internal_wars } }
+				set_variable = {
+					name = vassal_war_policy_previous
+					value = 1
+				}
+			}
+			else_if = {
+				limit = { scope:record_source = { has_realm_law = law_vassal_war_policy_prohibit_all_wars } }
+				set_variable = {
+					name = vassal_war_policy_previous
+					value = 2
+				}
+			}
+		}
+	}	
+}
+
+### 效果：恢复记录的领地法律 ### ————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+effect_restore_realm_laws = {
+	# 1.恢复：封臣契约
+	if = {
+		limit = { is_independent_ruler = no }
+		if = { # 继承权
+			limit = {
+				has_variable = feudal_government_succession_rights_previous
+				NOT = { vassal_contract_obligation_level:feudal_government_succession_rights = var:feudal_government_succession_rights_previous }
+			}
+			vassal_contract_set_obligation_level = {
+				type = feudal_government_succession_rights
+				level = var:feudal_government_succession_rights_previous
+			}
+			remove_variable = feudal_government_succession_rights_previous
+		}
+		if = { # 总督候选人偏好
+			limit = {
+				has_variable = feudal_admin_government_candidate_preference_previous
+				NOT = { vassal_contract_obligation_level:feudal_admin_government_candidate_preference = var:feudal_admin_government_candidate_preference_previous }
+			}
+			vassal_contract_set_obligation_level = {
+				type = feudal_admin_government_candidate_preference
+				level = var:feudal_admin_government_candidate_preference_previous
+			}
+			remove_variable = feudal_admin_government_candidate_preference_previous
+		}
+		if = { # 税收
+			limit = {
+				has_variable = feudal_government_taxes_previous
+				NOT = { vassal_contract_obligation_level:feudal_government_taxes = var:feudal_government_taxes_previous }
+			}
+			vassal_contract_set_obligation_level = {
+				type = feudal_government_taxes
+				level = var:feudal_government_taxes_previous
+			}
+			remove_variable = feudal_government_taxes_previous
+		}
+		if = { # 征召兵
+			limit = {
+				has_variable = feudal_government_levies_previous
+				NOT = { vassal_contract_obligation_level:feudal_government_levies = var:feudal_government_levies_previous }
+			}
+			vassal_contract_set_obligation_level = {
+				type = feudal_government_levies
+				level = var:feudal_government_levies_previous
+			}
+			remove_variable = feudal_government_levies_previous
+		}
+		if = { # 特殊契约
+			limit = {
+				has_variable = special_contract_previous
+				NOT = { vassal_contract_obligation_level:special_contract = var:special_contract_previous }
+			}
+			vassal_contract_set_obligation_level = {
+				type = special_contract
+				level = var:special_contract_previous
+			}
+			remove_variable = special_contract_previous
+		}
+		if = { # 宗教特权
+			limit = {
+				has_variable = religious_rights_previous
+				NOT = { vassal_contract_obligation_level:religious_rights = var:religious_rights_previous }
+			}
+			vassal_contract_set_obligation_level = {
+				type = religious_rights
+				level = var:religious_rights_previous
+			}
+			remove_variable = religious_rights_previous
+		}
+		if = { # 筑城权
+			limit = {
+				has_variable = fortification_rights_previous
+				NOT = { vassal_contract_obligation_level:fortification_rights = var:fortification_rights_previous }
+			}
+			vassal_contract_set_obligation_level = {
+				type = fortification_rights
+				level = var:fortification_rights_previous
+			}
+			remove_variable = fortification_rights_previous
+		}
+		if = { # 铸币权
+			limit = {
+				has_variable = coinage_rights_previous
+				NOT = { vassal_contract_obligation_level:coinage_rights = var:coinage_rights_previous }
+			}
+			vassal_contract_set_obligation_level = {
+				type = coinage_rights
+				level = var:coinage_rights_previous
+			}
+			remove_variable = coinage_rights_previous
+		}
+		if = { # 宣战权
+			limit = {
+				has_variable = war_declaration_rights_previous
+				NOT = { vassal_contract_obligation_level:war_declaration_rights = var:war_declaration_rights_previous }
+			}
+			vassal_contract_set_obligation_level = {
+				type = war_declaration_rights
+				level = var:war_declaration_rights_previous
+			}
+			remove_variable = war_declaration_rights_previous
+		}
+		if = { # 内阁权
+			limit = {
+				has_variable = council_rights_previous
+				NOT = { vassal_contract_obligation_level:council_rights = var:council_rights_previous }
+			}
+			vassal_contract_set_obligation_level = {
+				type = council_rights
+				level = var:council_rights_previous
+			}
+			remove_variable = council_rights_previous
+		}
+		if = { # 头衔剥夺权
+			limit = {
+				has_variable = title_revocation_rights_previous
+				NOT = { vassal_contract_obligation_level:title_revocation_rights = var:title_revocation_rights_previous }
+			}
+			vassal_contract_set_obligation_level = {
+				type = title_revocation_rights
+				level = var:title_revocation_rights_previous
+			}
+			remove_variable = title_revocation_rights_previous
+		}
+	}
+	# 2.恢复：君权
+	if = {
+		limit = {
+			has_variable = crown_authority_previous
+		}
+		if = {
+			limit = { 
+				var:crown_authority_previous = -2
+				NOT = { has_realm_law = crown_authority_legacy_head }
+			}
+			add_realm_law = crown_authority_legacy_head
+		}
+		else_if = {
+			limit = { 
+				var:crown_authority_previous = -1
+				NOT = { has_realm_law = crown_authority_titular_liege }
+			}
+			add_realm_law = crown_authority_titular_liege
+		}
+		else_if = {
+			limit = { 
+				var:crown_authority_previous = 0
+				NOR = {
+					has_realm_law = crown_authority_0
+					has_realm_law = crown_authority_extended_0
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						government_has_flag = government_is_feudal
+						government_has_flag = government_is_feudal_admin
+					}
+				}
+				add_realm_law = crown_authority_extended_0
+			}
+			else = {
+				add_realm_law = crown_authority_0
+			}
+		}
+		else_if = {
+			limit = { 
+				var:crown_authority_previous = 1
+				NOR = {
+					has_realm_law = crown_authority_1
+					has_realm_law = crown_authority_extended_1
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						government_has_flag = government_is_feudal
+						government_has_flag = government_is_feudal_admin
+					}
+				}
+				add_realm_law = crown_authority_extended_1
+			}
+			else = {
+				add_realm_law = crown_authority_1
+			}
+		}
+		else_if = {
+			limit = { 
+				var:crown_authority_previous = 2
+				NOR = {
+					has_realm_law = crown_authority_2
+					has_realm_law = crown_authority_extended_2
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						government_has_flag = government_is_feudal
+						government_has_flag = government_is_feudal_admin
+					}
+				}
+				add_realm_law = crown_authority_extended_2
+			}
+			else = {
+				add_realm_law = crown_authority_2
+			}
+		}
+		else_if = {
+			limit = { 
+				var:crown_authority_previous = 3
+				NOR = {
+					has_realm_law = crown_authority_3
+					has_realm_law = crown_authority_extended_3
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						government_has_flag = government_is_feudal
+						government_has_flag = government_is_feudal_admin
+					}
+				}
+				add_realm_law = crown_authority_extended_3
+			}
+			else = {
+				add_realm_law = crown_authority_3
+			}
+		}
+		remove_variable = crown_authority_previous
+	}
+	# 3.恢复：加冕法
+	if = {
+		limit = {
+			has_variable = crowned_laws_previous
+		}
+		if = {
+			limit = { 
+				var:crowned_laws_previous = 0
+				NOT = { has_realm_law = uncrowned }
+			}
+			add_realm_law = uncrowned
+		}
+		else_if = {
+			limit = { 
+				var:crowned_laws_previous = 1
+				NOT = { has_realm_law = crowned_king }
+			}
+			add_realm_law = crowned_king
+		}
+		else_if = {
+			limit = { 
+				var:crowned_laws_previous = 2
+				NOT = { has_realm_law = crowned_emperor }
+			}
+			add_realm_law = crowned_emperor
+		}
+		remove_variable = crowned_laws_previous
+	}
+	# 4.恢复：继承法
+	if = {
+		limit = {
+			has_variable = succession_order_laws_previous
+		}
+		if = {
+			limit = {
+				var:succession_order_laws_previous = flag:feudal_governor_appointment_succession_law
+				NOT = { has_realm_law = feudal_governor_appointment_succession_law }
+			}
+			add_realm_law = feudal_governor_appointment_succession_law
+		}
+		else_if = {
+			limit = {
+				var:succession_order_laws_previous = flag:feudal_governor_promotion_succession_law
+				NOT = { has_realm_law = feudal_governor_promotion_succession_law }
+			}
+			add_realm_law = feudal_governor_promotion_succession_law
+		}
+		else_if = {
+			limit = {
+				var:succession_order_laws_previous = flag:confederate_partition_succession_law
+				NOT = { has_realm_law = confederate_partition_succession_law }
+			}
+			add_realm_law = confederate_partition_succession_law
+		}
+		else_if = {
+			limit = {
+				var:succession_order_laws_previous = flag:partition_succession_law
+				NOT = { has_realm_law = partition_succession_law }
+			}
+			add_realm_law = partition_succession_law
+		}
+		else_if = {
+			limit = {
+				var:succession_order_laws_previous = flag:high_partition_succession_law
+				NOT = { has_realm_law = high_partition_succession_law }
+			}
+			add_realm_law = high_partition_succession_law
+		}
+		else_if = {
+			limit = {
+				var:succession_order_laws_previous = flag:single_heir_succession_law
+				NOT = { has_realm_law = single_heir_succession_law }
+			}
+			add_realm_law = single_heir_succession_law
+		}
+		else_if = {
+			limit = {
+				var:succession_order_laws_previous = flag:single_heir_succession_law_youngest
+				NOT = { has_realm_law = single_heir_succession_law_youngest }
+			}
+			add_realm_law = single_heir_succession_law_youngest
+		}
+
+		else_if = {
+			limit = {
+				var:succession_order_laws_previous = flag:single_heir_dynasty_house
+				NOT = { has_realm_law = single_heir_dynasty_house }
+			}
+			add_realm_law = single_heir_dynasty_house
+		}
+		else_if = {
+			limit = {
+				var:succession_order_laws_previous = flag:acclamation_succession_law
+				NOT = { has_realm_law = acclamation_succession_law }
+			}
+			add_realm_law = acclamation_succession_law
+		}
+		else_if = {
+			limit = {
+				var:succession_order_laws_previous = flag:appointment_succession_law
+				NOT = { has_realm_law = appointment_succession_law }
+			}
+			add_realm_law = appointment_succession_law
+		}
+		remove_variable = succession_order_laws_previous
+	}
+	# 5.恢复：继承权政策
+	if = {
+		limit = {
+			has_variable = vassal_succession_rights_policy_previous
+		}
+		if = {
+			limit = {
+				var:vassal_succession_rights_policy_previous = 0
+				NOT = { has_realm_law = law_vassal_succession_rights_policy_hereditary }
+			}
+			add_realm_law = law_vassal_succession_rights_policy_hereditary
+		}
+		else_if = {
+			limit = {
+				var:vassal_succession_rights_policy_previous = 1
+				NOT = { has_realm_law = law_vassal_succession_rights_policy_forced_partition }
+			}
+			add_realm_law = law_vassal_succession_rights_policy_forced_partition
+		}
+		else_if = {
+			limit = {
+				var:vassal_succession_rights_policy_previous = 2
+				NOT = { has_realm_law = law_vassal_succession_rights_policy_grant_recognition }
+			}
+			add_realm_law = law_vassal_succession_rights_policy_grant_recognition
+		}
+		else_if = {
+			limit = {
+				var:vassal_succession_rights_policy_previous = 3
+				NOT = { has_realm_law = law_vassal_succession_rights_policy_court_supervision }
+			}
+			add_realm_law = law_vassal_succession_rights_policy_court_supervision
+		}
+		else_if = {
+			limit = {
+				var:vassal_succession_rights_policy_previous = 4
+				NOT = { has_realm_law = law_vassal_succession_rights_policy_governor_appointment }
+			}
+			add_realm_law = law_vassal_succession_rights_policy_governor_appointment
+		}
+		remove_variable = vassal_succession_rights_policy_previous
+	}
+	# 6.恢复：总督候选人偏好政策
+	if = {
+		limit = {
+			has_variable = vassal_candidate_preference_policy_feudal_governor_previous
+		}
+		if = {
+			limit = {
+				var:vassal_candidate_preference_policy_feudal_governor_previous = 0
+				NOT = { has_realm_law = law_candidate_preference_policy_powerful_gentry }
+			}
+			add_realm_law = law_candidate_preference_policy_powerful_gentry
+		}
+		else_if = {
+			limit = {
+				var:vassal_candidate_preference_policy_feudal_governor_previous = 1
+				NOT = { has_realm_law = law_candidate_preference_policy_local_talent }
+			}
+			add_realm_law = law_candidate_preference_policy_local_talent
+		}
+		else_if = {
+			limit = {
+				var:vassal_candidate_preference_policy_feudal_governor_previous = 2
+				NOT = { has_realm_law = law_candidate_preference_policy_favor_nepotism }
+			}
+			add_realm_law = law_candidate_preference_policy_favor_nepotism
+		}
+		else_if = {
+			limit = {
+				var:vassal_candidate_preference_policy_feudal_governor_previous = 3
+				NOT = { has_realm_law = law_candidate_preference_policy_talent_only }
+			}
+			add_realm_law = law_candidate_preference_policy_talent_only
+		}
+		else_if = {
+			limit = {
+				var:vassal_candidate_preference_policy_feudal_governor_previous = 4
+				NOT = { has_realm_law = law_candidate_preference_policy_bureaucrat_promotion }
+			}
+			add_realm_law = law_candidate_preference_policy_bureaucrat_promotion
+		}
+		remove_variable = vassal_candidate_preference_policy_feudal_governor_previous
+	}
+	# 7.恢复：封臣头衔领地外继承政策
+	if = {
+		limit = {
+			has_variable = vassal_title_leave_realm_policy_previous
+		}
+		if = {
+			limit = { 
+				var:vassal_title_leave_realm_policy_previous = 0
+				NOT = { has_realm_law = law_vassal_title_leave_realm_policy_allowed }
+			}
+			add_realm_law = law_vassal_title_leave_realm_policy_allowed
+		}
+		else_if = {
+			limit = { 
+				var:vassal_title_leave_realm_policy_previous = 1
+				NOT = { has_realm_law = law_vassal_title_leave_realm_policy_restricted }
+			}
+			add_realm_law = law_vassal_title_leave_realm_policy_restricted
+		}
+		remove_variable = vassal_title_leave_realm_policy_previous
+	}
+	# 8.恢复：封臣头衔剥夺政策
+	if = {
+		limit = {
+			has_variable = vassal_revoke_title_policy_previous
+		}
+		if = {
+			limit = { 
+				var:vassal_revoke_title_policy_previous = 0
+				NOT = { has_realm_law = law_vassal_revoke_title_policy_prohibit_revoke }
+			}
+			add_realm_law = law_vassal_revoke_title_policy_prohibit_revoke
+		}
+		else_if = {
+			limit = { 
+				var:vassal_revoke_title_policy_previous = 1
+				NOT = { has_realm_law = law_vassal_revoke_title_policy_allow_revoke }
+			}
+			add_realm_law = law_vassal_revoke_title_policy_allow_revoke
+		}
+		remove_variable = vassal_revoke_title_policy_previous
+	}
+	# 9.恢复：封臣战争政策
+	if = {
+		limit = {
+			has_variable = vassal_war_policy_previous
+		}
+		if = {
+			limit = { 
+				var:vassal_war_policy_previous = 0
+				NOT = { has_realm_law = law_vassal_war_policy_no_restriction }
+			}
+			add_realm_law = law_vassal_war_policy_no_restriction
+		}
+		else_if = {
+			limit = { 
+				var:vassal_war_policy_previous = 1
+				NOT = { has_realm_law = law_vassal_war_policy_prohibit_internal_wars }
+			}
+			add_realm_law = law_vassal_war_policy_prohibit_internal_wars
+		}
+		else_if = {
+			limit = { 
+				var:vassal_war_policy_previous = 2
+				NOT = { has_realm_law = law_vassal_war_policy_prohibit_all_wars }
+			}
+			add_realm_law = law_vassal_war_policy_prohibit_all_wars
+		}
+		remove_variable = vassal_war_policy_previous
+	}
+}
+
+### 效果：将目标的政体根据地产类型从【封建行政制】切换回合适的政体 ### ————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+effect_change_government_from_feudal_admin_based_on_holding_type = {
+	if = {
+		limit = { capital_province = { has_holding_type = castle_holding } }
+		effect_change_to_feudal_from_feudal_admin = yes
+	}
+	else_if = {
+		limit = { capital_province = { has_holding_type = city_holding } }
+		change_government = republic_government
+	}
+	else_if = {
+		limit = { capital_province = { has_holding_type = church_holding } }
+		change_government = theocracy_government
+	}
+	else_if = {
+		limit = { capital_province = { has_holding_type = tribal_holding } }
+		change_government = tribal_government
+	}
+}
+
+### 效果：君权降低至【遗留首领】后封臣变成自治状态 ### ————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+effect_lower_crown_authority_to_legacy_head = {
+	hidden_effect = {
+		save_scope_as = now_legacy_head
+		# 处理封臣
+		create_title_and_vassal_change = {
+			type = independency
+			save_scope_as = change_independent
+			add_claim_on_loss = no
+		}
+		create_title_and_vassal_change = {
+			type = granted
+			save_scope_as = change_transfer_to_liege
+			add_claim_on_loss = no
+		}
+		every_vassal = {
+			# 如果是总督或者被监察：调整契约到御赐承认
+			if = {
+				limit = {
+					OR = {
+						subject_contract_has_flag = succession_rights_court_supervision
+						subject_contract_has_flag = succession_rights_governor_appointment
+					}
+				}
+				vassal_contract_set_obligation_level = {
+					type = feudal_government_succession_rights
+					level = 2
+				}
+				if = {
+					limit = {
+						NOT = { has_realm_law = law_vassal_succession_rights_policy_grant_recognition }
+					}
+					add_realm_law = law_vassal_succession_rights_policy_grant_recognition
+				}
+			}
+			# 如果已经是世袭领主：
+			else = {
+				# 如果领主是独立统治者：则变成自治封臣
+				if = {
+					limit = { prev = { is_independent_ruler = yes } }
+					becomes_independent = {
+						change = scope:change_independent
+					}
+					add_to_temporary_list = new_autonomous_vassals
+				}
+				# 如果领主也是封臣：则将所有下属封臣转移给领主的领主
+				else = {
+					change_liege = {
+						liege = prev.liege
+						change = scope:change_transfer_to_liege
+					}
+				}
+			}
+		}
+		resolve_title_and_vassal_change = scope:change_independent
+		resolve_title_and_vassal_change = scope:change_transfer_to_liege
+		# 设定自治封臣的契约
+		if = {
+			limit = { is_independent_ruler = yes }
+			every_in_local_list = {
+				list = new_autonomous_vassals
+				start_tributary = {
+					contract_group = feudal_autonomous_vassal
+					suzerain = scope:now_legacy_head
+				}
+				if = {
+					limit = { has_subject_contract_group = feudal_autonomous_vassal }
+					tributary_contract_set_obligation_level = {
+						type = contract_feudal_autonomous_taxes
+						level = 1
+					}
+					tributary_contract_set_obligation_level = {
+						type = contract_feudal_liege_offer_protection
+						level = 1
+					}
+					tributary_contract_set_obligation_level = {
+						type = contract_feudal_vassal_support_war
+						level = 0
+					}
+				}
+			}
+		}
+		# 创建世族
+		if = {
+			limit = {
+				is_independent_ruler = yes
+				NOT = { any_held_title = { is_noble_family_title = yes } }
+			}
+			give_noble_family_title = {
+				name = noble_family_name
+				tier = county
+				article = DEFAULT_TITLE_NAME_ARTICLE
+				government = feudal_admin_government
+				save_scope_as = new_title
+			}
+			scope:new_title.holder ?= {
+				save_scope_as = noble_family_head
+				scope:new_title = { set_coa = scope:noble_family_head.house }
+			}
+			domicile ?= {
+				move_domicile = root.capital_province
+			}
+		}
+		# 把除首都外（无实地头衔的朝贡会失效）所有直辖头衔转移给摄政
+		if = {
+			limit = { has_variable = target_diarch }
+			var:target_diarch = { save_scope_as = target_diarch }
+		}
+		else_if = {
+			limit = { exists = diarch }
+			diarch = { save_scope_as = target_diarch }
+		}
+		create_title_and_vassal_change = {
+			type = usurped
+			save_scope_as = change
+			add_claim_on_loss = no
+		}
+		every_held_title = {
+			limit = {
+				is_noble_family_title = no
+				NOR = {
+					prev.capital_county = this
+					prev.capital_county.de_jure_liege = this
+					prev.primary_title = this
+					prev.primary_title.tier = this.tier
+				}
+			}
+			change_title_holder = {
+				holder = scope:target_diarch
+				change = scope:change
+			}
+		}
+		resolve_title_and_vassal_change = scope:change
+	}
+}
+
+### 效果：建立监察官制度 ### ————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+effect_establish_feudal_subject_supervisor = {
+	$TARGET_SUBJECT$ = { save_scope_as = scope_target_subject }
+
+	hidden_effect = {
+		if = {
+			limit = { exists = scope:scope_target_subject }
+			create_character = {
+				save_scope_as = subject_supervisor
+				gender = male
+				age = { 20 40 }
+				employer = scope:scope_target_subject
+				location = scope:scope_target_subject.location
+				dynasty = none
+				random_traits = yes
+				faith = scope:scope_target_subject.liege.faith
+				culture = scope:scope_target_subject.liege.culture
+				stewardship = { 8 15 }
+				learning = { 8 15 }
+				after_creation = {
+					set_variable = is_feudal_supervisor
+					add_opinion = {
+						target = scope:scope_target_subject.liege
+						modifier = opinion_appointed_subject_supervisor
+					}
+				}
+			}
+			scope:scope_target_subject = {
+				if = {
+					limit = {
+						exists = diarch
+						NOT = { has_diarchy_type = feudal_subject_supervisor }
+					}
+					end_diarchy = yes
+				}
+				try_start_diarchy = feudal_subject_supervisor
+				set_diarch = scope:subject_supervisor
+				if = {
+					limit = { has_variable = current_diarchy_swing }
+					set_diarchy_swing = var:current_diarchy_swing
+				}
+				else = {
+					set_diarchy_swing = 75
+				}
+			}
+		}
+	}
+}
+
+### 效果：将封臣权力移交给即将成为新总督的监察官 ### ————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+effect_transfer_subject_power_to_supervisor = {
+	$TARGET_DIARCH$ = { save_scope_as = target_supervisor }
+	this = { save_scope_as = target_subject }
+	
+	effect_record_realm_laws = {
+		RECORD_SOURCE = scope:target_subject
+		RECORD_TARGET = scope:target_supervisor
+	}
+	# 把所有直辖头衔和封臣转移给摄政
+	scope:target_subject = {
+		create_title_and_vassal_change = {
+			type = appointment
+			save_scope_as = change
+			add_claim_on_loss = no
+		}
+		every_held_title = {
+			limit = {
+				NOT = { is_noble_family_title = yes }
+			}
+			change_title_holder = {
+				holder = scope:target_supervisor
+				change = scope:change
+			}
+		}
+		every_vassal = {
+			change_liege = {
+				liege = scope:target_supervisor
+				change = scope:change
+			}
+		}
+		resolve_title_and_vassal_change = scope:change
+	}
+	# 移交完成：将新总督的政府类型更改为封建行政制
+	scope:target_supervisor = {
+		if = {
+			limit = { NOT = { government_has_flag = government_is_feudal_admin } }
+			change_government = feudal_admin_government
+		}
+		effect_restore_realm_laws = yes
+		# 继承法改成总督任命制
+		if = {
+			limit = {
+				NOT = { has_realm_law = feudal_governor_appointment_succession_law }
+			}
+			add_realm_law = feudal_governor_appointment_succession_law
+		}
+		# 新的总督不应该再有监察官
+		if = {
+			limit = {
+				exists = diarch
+				has_diarchy_type = feudal_subject_supervisor 
+			}
+			end_diarchy = yes
+		}
+	}
+	# 给原封臣创建世族头衔
+	scope:target_subject = {
+		set_employer = scope:target_supervisor
+		effect_create_feudal_admin_noble_family_title = yes
+		domicile = {
+			move_domicile = scope:target_supervisor.capital_province
+		}
+		if = {
+			limit = { liege != scope:target_supervisor }
+			create_title_and_vassal_change = {
+				type = appointment
+				save_scope_as = change_old_subject
+				add_claim_on_loss = no
+			}
+			change_liege = {
+				liege = scope:target_supervisor
+				change = scope:change_old_subject
+			}
+			resolve_title_and_vassal_change = scope:change_old_subject
+		}
+	}
+}
+
+### 效果：生成新的官僚并继承死亡封臣头衔 ### ————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+effect_promote_new_bureaucrat = {
+	save_scope_as = target_subject
+	create_character = {
+		save_scope_as = new_bureaucrat
+		gender = male
+		age = { 30 50 }
+		employer = scope:target_subject
+		location = scope:target_subject.location
+		dynasty = generate
+		random_traits = yes
+		faith = scope:target_subject.liege.faith
+		culture = scope:target_subject.liege.culture
+		diplomacy = { 8 15 }
+		stewardship = { 8 15 }
+		intrigue = { 10 15 }
+		learning = { 6 15 }
+		after_creation = {
+			set_variable = is_feudal_bureaucrat
+			add_opinion = {
+				target = scope:target_subject.liege
+				modifier = opinion_promoted_new_bureaucrat
+			}
+		}
+	}
+	effect_record_realm_laws = {
+		RECORD_SOURCE = scope:target_subject
+		RECORD_TARGET = scope:new_bureaucrat
+	}
+	create_title_and_vassal_change = {
+		type = appointment
+		save_scope_as = change
+		add_claim_on_loss = no
+	}
+	every_held_title = {
+		limit = {
+			NOT = { is_noble_family_title = yes }
+		}
+		change_title_holder = {
+			holder = scope:new_bureaucrat
+			change = scope:change
+		}
+	}
+	every_vassal = {
+		change_liege = {
+			liege = scope:new_bureaucrat
+			change = scope:change
+		}
+	}
+	resolve_title_and_vassal_change = scope:change
+	scope:new_bureaucrat = {
+		effect_restore_realm_laws = yes
+	}
+}

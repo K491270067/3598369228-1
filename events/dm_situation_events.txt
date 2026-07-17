@@ -1,0 +1,139 @@
+﻿
+namespace = fallen_of_zhou_dynasty_struggle
+
+
+	#################鍔犲叆灞€鍔匡細閫夋嫨鍙備笌缁?
+
+fallen_of_zhou_dynasty_struggle.1004 = {
+	type = character_event
+	window = big_event_window
+	hidden = no 
+	major = yes
+	title = fallen_of_zhou_dynasty_struggle.1004.t
+	desc = fallen_of_zhou_dynasty_struggle.1004.desc
+	theme = realm
+	immediate = {
+	}
+	left_portrait = {
+		character = root
+		animation = council
+	}
+	### 閫夐」涓€锛氱帇閬?鈥?鎴愪负鍛ㄧぜ鏀寔鑰?
+	option = {
+		name = fallen_of_zhou_dynasty_struggle.1004.a
+		add_trait = character_involve_supporters_of_zhou_dynasty
+		remove_trait = character_involve_opponents_of_zhou_dynasty
+		remove_trait = character_involve_neutral_of_zhou_dynasty
+		remove_trait = character_interloper_of_zhou_dynasty
+
+		ai_chance = {
+			base = 25
+			modifier = {
+				add = 30
+				has_government = feudal_admin_government
+			}
+			modifier = {
+				add = 20
+				religion = religion:lijiao_religion
+			}
+		}
+	}
+	### 閫夐」浜岋細闇搁亾 鈥?鎴愪负鍛ㄧぜ瀵规姉鑰?
+	option = {
+		name = fallen_of_zhou_dynasty_struggle.1004.b
+		add_trait = character_involve_opponents_of_zhou_dynasty
+		remove_trait = character_involve_supporters_of_zhou_dynasty
+		remove_trait = character_involve_neutral_of_zhou_dynasty
+		remove_trait = character_interloper_of_zhou_dynasty
+
+		ai_chance = {
+			base = 25
+			modifier = {
+				add = 30
+				has_government = feudal_admin_government
+			}
+			modifier = {
+				add = 20
+				NOR = {
+					religion = religion:lijiao_religion
+				}
+			}
+		}
+	}
+	### 閫夐」涓夛細涓珛 鈥?鎴愪负涓珛娲?
+	option = {
+		name = fallen_of_zhou_dynasty_struggle.1004.c
+		add_trait = character_involve_neutral_of_zhou_dynasty
+		remove_trait = character_involve_supporters_of_zhou_dynasty
+		remove_trait = character_involve_opponents_of_zhou_dynasty
+		remove_trait = character_interloper_of_zhou_dynasty
+
+		ai_chance = {
+			base = 25
+			modifier = {
+				add = 15
+				has_trait = calm
+			}
+			modifier = {
+				add = 15
+				has_trait = patient
+			}
+		}
+	}
+	### 閫夐」鍥涳細鍥涘し 鈥?鎴愪负鍩熷鎼呭眬鑰?
+	option = {
+		name = fallen_of_zhou_dynasty_struggle.1004.d
+		add_trait = character_interloper_of_zhou_dynasty
+		remove_trait = character_involve_supporters_of_zhou_dynasty
+		remove_trait = character_involve_opponents_of_zhou_dynasty
+		remove_trait = character_involve_neutral_of_zhou_dynasty
+
+		ai_chance = {
+			base = 25
+			modifier = {
+				add = 30
+				NOR = {
+					has_cultural_pillar = heritage_zhouren
+					has_cultural_pillar = heritage_shangren
+					has_cultural_pillar = heritage_xiaren
+				}
+			}
+			modifier = {
+				add = 20
+				has_trait = ambitious
+			}
+		}
+	}
+}
+
+
+
+
+	#################寮€灞€鍒嗗彂锛氬悜灞€鍔胯寖鍥村唴鎵€鏈夌鍚堟潯浠剁殑瑙掕壊鎺ㄩ€佸姞鍏ラ€夋嫨浜嬩欢
+fallen_of_zhou_dynasty_struggle.1003 = {
+
+	hidden = yes
+	scope = none
+
+	immediate = {
+		any_character_situation = {
+			type = spring_and_autumn_situation
+			involvement = involved
+			saved_scope_as = saa_participant
+		}
+		scope:saa_participant = {
+			if = {
+				limit = { 
+				OR = {
+					highest_held_title_tier >= tier_kingdom
+					is_independent_ruler = yes
+				}
+			}
+			trigger_event = fallen_of_zhou_dynasty_struggle.1004
+			}
+		}
+
+	}
+}
+
+

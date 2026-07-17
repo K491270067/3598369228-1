@@ -1,0 +1,58 @@
+﻿##### d_mishi2 ############################
+
+### c_ziwugu
+# ZIWUGU
+3121 = {
+	holding = none
+}
+
+
+### c_xunyang1
+# XUNYANG1
+3115 = {
+	holding = none
+}
+
+
+### c_yuyang2
+# YUYANG2
+3116 = {
+	holding = none
+}
+
+
+### c_fengli1
+# FENGLI1
+3117 = {
+	holding = none
+}
+
+
+### c_aoshan
+# AOSHAN
+3644 = {
+	holding = none
+}
+
+
+### c_xuandi
+# XUANDI
+3645 = {
+	holding = none
+}
+
+
+### c_shangjin
+# SHANGJIN
+3646 = {
+	holding = none
+}
+
+
+### c_jiaojing
+# JIAOXING
+3647 = {
+	holding = none
+}
+
+

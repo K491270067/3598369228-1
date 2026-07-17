@@ -1,0 +1,277 @@
+#############  奉国--奉姓 #############
+han5251={
+  name="baiyuenan220"
+  dynasty=xin268
+	religion="guiwu" 
+	culture="xiqiang"
+
+  3562.1.1 = {
+		birth = yes
+	}
+  3603.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han4757={
+  name="baiyuenan234"
+  dynasty=xin268
+	religion="guiwu" 
+	culture="xiqiang"
+  father=han5251
+
+  3601.1.1 = {
+		birth = yes
+	}
+  3666.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han4758={
+  name="baiyuenan274"
+  dynasty=xin268
+	religion="guiwu" 
+	culture="xiqiang"
+  father=han4757
+
+  3643.1.1 = {
+		birth = yes
+	}
+  3704.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han4759={
+  name="baiyuenan276"
+  dynasty=xin268
+	religion="guiwu" 
+	culture="xiqiang"
+  father=han4758
+
+  3688.1.1 = {
+		birth = yes
+	}
+  3750.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han4760={
+  name="baiyuenan218"
+  dynasty=xin268
+	religion="guiwu" 
+	culture="xiqiang"
+  father=han4759
+
+  3722.1.1 = {
+		birth = yes
+	}
+  3774.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han4761={
+  name="baiyuenan288"
+  dynasty=xin268
+	religion="guiwu" 
+	culture="xiqiang"
+  father=han4760
+
+  3769.1.1 = {
+		birth = yes
+	}
+  3811.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han4762={
+  name="baiyuenan290"#平王东迁时奉国国君
+  dynasty=xin268
+	religion="guiwu" 
+	culture="xiqiang"
+  father=han4761
+
+  3794.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han4763={
+  name="baiyuenan154"#储君一号
+  dynasty=xin268
+	religion="guiwu" 
+	culture="xiqiang"
+  father=han4762
+
+  3815.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han4764={
+  name="baiyuenan157"#储君二号
+  dynasty=xin268
+	religion="guiwu" 
+	culture="xiqiang"
+  father=han4762
+
+  3822.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han4766={
+  name="nanming425"
+  dynasty=xin268
+	religion="guiwu" 
+	culture="xiqiang"
+  father=han4762
+
+  3826.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han4767={
+  name="nvming74"
+  dynasty=xin268
+	religion="guiwu" 
+	culture="xiqiang"
+  father=han4762
+  female=yes
+
+  3828.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han4768={
+  name="nvming80"
+  dynasty=xin268
+	religion="guiwu" 
+	culture="xiqiang"
+  father=han4762
+  female=yes
+
+  3830.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+##############
+han4765={
+  name="baiyuenan162"
+  dynasty=xin882
+	religion="guiwu" 
+	culture="xiqiang"
+  father=han4762
+
+  3824.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+fengguo1={
+  name="bfyznan368"
+  dynasty=xin882
+	religion="guiwu" 
+	culture="xiqiang"
+  father=han4765
+
+  3842.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+fengguo2={
+  name="bfyznan391"
+  dynasty=xin882
+	religion="guiwu" 
+	culture="xiqiang"
+  father=han4765
+
+  3843.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+fengguo3={
+  name="bfyznv168"
+  dynasty=xin882
+	religion="guiwu" 
+	culture="xiqiang"
+  father=han4765
+  female=yes
+
+  3844.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+fengguo4={
+  name="bfyznv176"
+  dynasty=xin882
+	religion="guiwu" 
+	culture="xiqiang"
+  father=han4765
+  female=yes
+
+  3845.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}

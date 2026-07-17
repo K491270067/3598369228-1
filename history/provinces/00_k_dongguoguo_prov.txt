@@ -1,0 +1,52 @@
+﻿##### d_guoshi3 ############################
+
+### c_zhi1
+# ZHI1
+758 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+# SHEN1
+757 = {
+	holding = none
+}
+
+
+### c_dongguo
+# DONGGUO
+756 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+# GUANGWU2
+2434 = {
+	holding = none
+}
+
+
+##### d_guojishi ############################
+
+### c_feng1
+# FENG1
+760 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+# WU7
+2445 = {
+	holding = none
+}
+
+
+### c_suoshi
+# SUOSHI
+759 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+

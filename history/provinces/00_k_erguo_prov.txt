@@ -1,0 +1,44 @@
+﻿##### d_ershi ############################
+
+### c_minge
+# 
+1901 = {
+	holding = none
+}
+
+
+### c_zhiyuan
+# 
+1902 = {
+	holding = none
+}
+
+
+### c_dasui
+# 
+1903 = {
+	holding = none
+}
+
+
+### c_er
+# 
+1906 = {
+	holding = none
+}
+
+
+### c_yongyang
+# 
+1909 = {
+	holding = none
+}
+
+
+### c_dachengguan
+# 
+1927 = {
+	holding = none
+}
+
+

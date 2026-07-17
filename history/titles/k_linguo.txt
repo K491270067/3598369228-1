@@ -1,0 +1,56 @@
+﻿d_bishi5 = {
+	3574.1.1 = {
+		liege = "k_linguo"
+		holder = zixinglinshi1
+	}
+	3625.1.1 = {
+		holder = zixinglinshi2
+	}
+	3657.1.1 = {
+		holder = zixinglinshi3
+	}
+	3708.1.1 = {
+		holder = zixinglinshi4
+	}
+	3744.1.1 = {
+		holder = zixinglinshi5
+	}
+	3782.1.1 = {
+		holder = zixinglinshi6
+	}
+	3817.1.1 = {
+		holder = zixinglinshi13
+	}
+	3849.1.1 = {
+		government = feudal_admin_government
+		change_development_level = 25
+	}
+}
+k_linguo = {
+	3574.1.1 = {
+		liege = "e_zhoutianzi"
+		holder = zixinglinshi1
+	}
+	3625.1.1 = {
+		holder = zixinglinshi2
+	}
+	3657.1.1 = {
+		holder = zixinglinshi3
+	}
+	3708.1.1 = {
+		holder = zixinglinshi4
+	}
+	3744.1.1 = {
+		holder = zixinglinshi5
+	}
+	3782.1.1 = {
+		holder = zixinglinshi6
+	}
+	3817.1.1 = {
+		holder = zixinglinshi7
+	}
+	3849.1.1 = {
+		government = feudal_admin_government
+		change_development_level = 27
+	}
+}

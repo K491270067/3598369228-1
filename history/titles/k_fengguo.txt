@@ -1,0 +1,843 @@
+﻿c_ban = {
+	1920.1.1 = {
+		liege = "d_fenggongshi"
+		holder = feng4
+	}
+	1974.1.1 = {
+		holder = feng5
+	}
+	2023.1.1 = {
+		holder = feng6
+	}
+	2077.1.1 = {
+		holder = feng7
+	}
+	2140.1.1 = {
+		holder = feng8
+	}
+	2200.1.1 = {
+		holder = feng9
+	}
+	2264.1.1 = {
+		holder = feng10
+	}
+	2304.1.1 = {
+		holder = feng11
+	}
+	2367.1.1 = {
+		holder = feng12
+	}
+	2411.1.1 = {
+		holder = feng13
+	}
+	2477.1.1 = {
+		holder = feng14
+	}
+	2514.1.1 = {
+		holder = feng15
+	}
+	2577.1.1 = {
+		holder = feng16
+	}
+	2611.1.1 = {
+		holder = feng17
+	}
+	2671.1.1 = {
+		holder = feng18
+	}
+	2715.1.1 = {
+		holder = feng19
+	}
+	2800.1.1 = {
+		holder = feng20
+	}
+	2857.1.1 = {
+		holder = feng21
+	}
+	2917.1.1 = {
+		holder = feng22
+	}
+	3000.1.1 = {
+		holder = feng23
+	}
+	3043.1.1 = {
+		holder = feng24
+	}
+	3103.1.1 = {
+		holder = feng25
+	}
+	3163.1.1 = {
+		holder = feng26
+	}
+	3223.1.1 = {
+		holder = feng27
+	}
+	3283.1.1 = {
+		holder = feng28
+	}
+	3343.1.1 = {
+		holder = feng29
+	}
+	3403.1.1 = {
+		holder = feng30
+	}
+	3473.1.1 = {
+		holder = feng31
+	}
+	3493.1.1 = {
+		holder = feng32
+	}
+	3533.1.1 = {
+		holder = feng33
+	}
+	3603.1.1 = {
+		holder = feng34
+	}
+	3655.1.1 = {
+		holder = feng35
+	}
+	3688.1.1 = {
+		holder = feng36
+	}
+	3741.1.1 = {
+		holder = feng37
+	}
+	3752.1.1 = {
+		holder = feng38
+	}
+	3795.1.1 = {
+		holder = feng39
+	}
+	3805.1.1 = {
+		holder = feng56
+	}
+	3816.1.1 = {
+		holder = feng57
+	}
+	3843.1.1 = {
+		holder = feng58
+		government = feudal_admin_government
+	}
+}
+c_feng4 = {
+	1920.1.1 = {
+		liege = "d_fengshi3"
+		holder = feng4
+	}
+	1974.1.1 = {
+		holder = feng5
+	}
+	2023.1.1 = {
+		holder = feng6
+	}
+	2077.1.1 = {
+		holder = feng7
+	}
+	2140.1.1 = {
+		holder = feng8
+	}
+	2200.1.1 = {
+		holder = feng9
+	}
+	2264.1.1 = {
+		holder = feng10
+	}
+	2304.1.1 = {
+		holder = feng11
+	}
+	2367.1.1 = {
+		holder = feng12
+	}
+	2411.1.1 = {
+		holder = feng13
+	}
+	2477.1.1 = {
+		holder = feng14
+	}
+	2514.1.1 = {
+		holder = feng15
+	}
+	2577.1.1 = {
+		holder = feng16
+	}
+	2611.1.1 = {
+		holder = feng17
+	}
+	2671.1.1 = {
+		holder = feng18
+	}
+	2715.1.1 = {
+		holder = feng19
+	}
+	2800.1.1 = {
+		holder = feng20
+	}
+	2857.1.1 = {
+		holder = feng21
+	}
+	2917.1.1 = {
+		holder = feng22
+	}
+	3000.1.1 = {
+		holder = feng23
+	}
+	3043.1.1 = {
+		holder = feng24
+	}
+	3103.1.1 = {
+		holder = feng25
+	}
+	3163.1.1 = {
+		holder = feng26
+	}
+	3223.1.1 = {
+		holder = feng27
+	}
+	3283.1.1 = {
+		holder = feng28
+	}
+	3343.1.1 = {
+		holder = feng29
+	}
+	3403.1.1 = {
+		holder = feng30
+	}
+	3473.1.1 = {
+		holder = feng31
+	}
+	3493.1.1 = {
+		holder = feng32
+	}
+	3533.1.1 = {
+		holder = feng33
+	}
+	3603.1.1 = {
+		holder = feng34
+	}
+	3655.1.1 = {
+		holder = feng35
+	}
+	3688.1.1 = {
+		holder = feng36
+	}
+	3741.1.1 = {
+		holder = feng37
+	}
+	3752.1.1 = {
+		holder = feng38
+	}
+	3795.1.1 = {
+		holder = feng39
+	}
+	3805.1.1 = {
+		holder = feng40
+	}
+	3816.1.1 = {
+		holder = feng41
+	}
+	3843.1.1 = {
+		holder = feng42
+	}
+}
+c_li2 = {
+	1920.1.1 = {
+		liege = "d_fengshi3"
+		holder = feng4
+	}
+	1974.1.1 = {
+		holder = feng5
+	}
+	2023.1.1 = {
+		holder = feng6
+	}
+	2077.1.1 = {
+		holder = feng7
+	}
+	2140.1.1 = {
+		holder = feng8
+	}
+	2200.1.1 = {
+		holder = feng9
+	}
+	2264.1.1 = {
+		holder = feng10
+	}
+	2304.1.1 = {
+		holder = feng11
+	}
+	2367.1.1 = {
+		holder = feng12
+	}
+	2411.1.1 = {
+		holder = feng13
+	}
+	2477.1.1 = {
+		holder = feng14
+	}
+	2514.1.1 = {
+		holder = feng15
+	}
+	2577.1.1 = {
+		holder = feng16
+	}
+	2611.1.1 = {
+		holder = feng17
+	}
+	2671.1.1 = {
+		holder = feng18
+	}
+	2715.1.1 = {
+		holder = feng19
+	}
+	2800.1.1 = {
+		holder = feng20
+	}
+	2857.1.1 = {
+		holder = feng21
+	}
+	2917.1.1 = {
+		holder = feng22
+	}
+	3000.1.1 = {
+		holder = feng23
+	}
+	3043.1.1 = {
+		holder = feng24
+	}
+	3103.1.1 = {
+		holder = feng25
+	}
+	3163.1.1 = {
+		holder = feng26
+	}
+	3223.1.1 = {
+		holder = feng27
+	}
+	3283.1.1 = {
+		holder = feng28
+	}
+	3343.1.1 = {
+		holder = feng29
+	}
+	3403.1.1 = {
+		holder = feng30
+	}
+	3473.1.1 = {
+		holder = feng31
+	}
+	3493.1.1 = {
+		holder = feng32
+	}
+	3533.1.1 = {
+		holder = feng33
+	}
+	3603.1.1 = {
+		holder = feng63
+	}
+	3655.1.1 = {
+		holder = feng64
+	}
+	3688.1.1 = {
+		holder = feng65
+	}
+	3741.1.1 = {
+		holder = feng66
+	}
+	3752.1.1 = {
+		holder = feng67
+	}
+	3795.1.1 = {
+		holder = feng68
+	}
+	3805.1.1 = {
+		holder = feng69
+	}
+	3816.1.1 = {
+		holder = feng70
+	}
+	3843.1.1 = {
+		holder = feng71
+		government = feudal_admin_government
+	}
+}
+c_maiqiu = {
+	1920.1.1 = {
+		liege = "d_fenggongshi"
+		holder = feng4
+	}
+	1974.1.1 = {
+		holder = feng5
+	}
+	2023.1.1 = {
+		holder = feng6
+	}
+	2077.1.1 = {
+		holder = feng7
+	}
+	2140.1.1 = {
+		holder = feng8
+	}
+	2200.1.1 = {
+		holder = feng9
+	}
+	2264.1.1 = {
+		holder = feng10
+	}
+	2304.1.1 = {
+		holder = feng11
+	}
+	2367.1.1 = {
+		holder = feng12
+	}
+	2411.1.1 = {
+		holder = feng13
+	}
+	2477.1.1 = {
+		holder = feng14
+	}
+	2514.1.1 = {
+		holder = feng15
+	}
+	2577.1.1 = {
+		holder = feng16
+	}
+	2611.1.1 = {
+		holder = feng17
+	}
+	2671.1.1 = {
+		holder = feng18
+	}
+	2715.1.1 = {
+		holder = feng19
+	}
+	2800.1.1 = {
+		holder = feng20
+	}
+	2857.1.1 = {
+		holder = feng21
+	}
+	2917.1.1 = {
+		holder = feng22
+	}
+	3000.1.1 = {
+		holder = feng23
+	}
+	3043.1.1 = {
+		holder = feng24
+	}
+	3103.1.1 = {
+		holder = feng25
+	}
+	3163.1.1 = {
+		holder = feng26
+	}
+	3223.1.1 = {
+		holder = feng27
+	}
+	3283.1.1 = {
+		holder = feng28
+	}
+	3343.1.1 = {
+		holder = feng29
+	}
+	3403.1.1 = {
+		holder = feng30
+	}
+	3473.1.1 = {
+		holder = feng31
+	}
+	3493.1.1 = {
+		holder = feng32
+	}
+	3533.1.1 = {
+		holder = feng33
+	}
+	3603.1.1 = {
+		holder = feng34
+	}
+	3655.1.1 = {
+		holder = feng35
+	}
+	3688.1.1 = {
+		holder = feng36
+	}
+	3741.1.1 = {
+		holder = feng37
+	}
+	3752.1.1 = {
+		holder = feng47
+	}
+	3795.1.1 = {
+		holder = feng48
+	}
+	3805.1.1 = {
+		holder = feng49
+	}
+	3816.1.1 = {
+		holder = feng50
+	}
+	3843.1.1 = {
+		holder = feng51
+	}
+}
+d_fenggongshi = {
+	1920.1.1 = {
+		liege = "k_fengguo"
+		holder = feng4
+	}
+	1974.1.1 = {
+		holder = feng5
+	}
+	2023.1.1 = {
+		holder = feng6
+	}
+	2077.1.1 = {
+		holder = feng7
+	}
+	2140.1.1 = {
+		holder = feng8
+	}
+	2200.1.1 = {
+		holder = feng9
+	}
+	2264.1.1 = {
+		holder = feng10
+	}
+	2304.1.1 = {
+		holder = feng11
+	}
+	2367.1.1 = {
+		holder = feng12
+	}
+	2411.1.1 = {
+		holder = feng13
+	}
+	2477.1.1 = {
+		holder = feng14
+	}
+	2514.1.1 = {
+		holder = feng15
+	}
+	2577.1.1 = {
+		holder = feng16
+	}
+	2611.1.1 = {
+		holder = feng17
+	}
+	2671.1.1 = {
+		holder = feng18
+	}
+	2715.1.1 = {
+		holder = feng19
+	}
+	2800.1.1 = {
+		holder = feng20
+	}
+	2857.1.1 = {
+		holder = feng21
+	}
+	2917.1.1 = {
+		holder = feng22
+	}
+	3000.1.1 = {
+		holder = feng23
+	}
+	3043.1.1 = {
+		holder = feng24
+	}
+	3103.1.1 = {
+		holder = feng25
+	}
+	3163.1.1 = {
+		holder = feng26
+	}
+	3223.1.1 = {
+		holder = feng27
+	}
+	3283.1.1 = {
+		holder = feng28
+	}
+	3343.1.1 = {
+		holder = feng29
+	}
+	3403.1.1 = {
+		holder = feng30
+	}
+	3473.1.1 = {
+		holder = feng31
+	}
+	3493.1.1 = {
+		holder = feng32
+	}
+	3533.1.1 = {
+		holder = feng33
+	}
+	3603.1.1 = {
+		holder = feng34
+	}
+	3655.1.1 = {
+		holder = feng35
+	}
+	3688.1.1 = {
+		holder = feng36
+	}
+	3741.1.1 = {
+		holder = feng37
+	}
+	3752.1.1 = {
+		holder = feng47
+	}
+	3795.1.1 = {
+		holder = feng48
+	}
+	3805.1.1 = {
+		holder = feng49
+	}
+	3816.1.1 = {
+		holder = feng50
+	}
+	3843.1.1 = {
+		holder = feng51
+		government = feudal_admin_government
+	}
+}
+d_fengshi3 = {
+	1920.1.1 = {
+		liege = "k_fengguo"
+		holder = feng4
+	}
+	1974.1.1 = {
+		holder = feng5
+	}
+	2023.1.1 = {
+		holder = feng6
+	}
+	2077.1.1 = {
+		holder = feng7
+	}
+	2140.1.1 = {
+		holder = feng8
+	}
+	2200.1.1 = {
+		holder = feng9
+	}
+	2264.1.1 = {
+		holder = feng10
+	}
+	2304.1.1 = {
+		holder = feng11
+	}
+	2367.1.1 = {
+		holder = feng12
+	}
+	2411.1.1 = {
+		holder = feng13
+	}
+	2477.1.1 = {
+		holder = feng14
+	}
+	2514.1.1 = {
+		holder = feng15
+	}
+	2577.1.1 = {
+		holder = feng16
+	}
+	2611.1.1 = {
+		holder = feng17
+	}
+	2671.1.1 = {
+		holder = feng18
+	}
+	2715.1.1 = {
+		holder = feng19
+	}
+	2800.1.1 = {
+		holder = feng20
+	}
+	2857.1.1 = {
+		holder = feng21
+	}
+	2917.1.1 = {
+		holder = feng22
+	}
+	3000.1.1 = {
+		holder = feng23
+	}
+	3043.1.1 = {
+		holder = feng24
+	}
+	3103.1.1 = {
+		holder = feng25
+	}
+	3163.1.1 = {
+		holder = feng26
+	}
+	3223.1.1 = {
+		holder = feng27
+	}
+	3283.1.1 = {
+		holder = feng28
+	}
+	3343.1.1 = {
+		holder = feng29
+	}
+	3403.1.1 = {
+		holder = feng30
+	}
+	3473.1.1 = {
+		holder = feng31
+	}
+	3493.1.1 = {
+		holder = feng32
+	}
+	3533.1.1 = {
+		holder = feng33
+	}
+	3603.1.1 = {
+		holder = feng34
+	}
+	3655.1.1 = {
+		holder = feng35
+	}
+	3688.1.1 = {
+		holder = feng36
+	}
+	3741.1.1 = {
+		holder = feng37
+	}
+	3752.1.1 = {
+		holder = feng38
+	}
+	3795.1.1 = {
+		holder = feng39
+	}
+	3805.1.1 = {
+		holder = feng40
+	}
+	3816.1.1 = {
+		holder = feng41
+	}
+	3843.1.1 = {
+		holder = feng42
+	}
+}
+k_fengguo = {
+	1920.1.1 = {
+		holder = feng4
+	}
+	1974.1.1 = {
+		holder = feng5
+	}
+	2023.1.1 = {
+		holder = feng6
+	}
+	2077.1.1 = {
+		holder = feng7
+	}
+	2140.1.1 = {
+		holder = feng8
+	}
+	2200.1.1 = {
+		holder = feng9
+	}
+	2264.1.1 = {
+		holder = feng10
+	}
+	2304.1.1 = {
+		holder = feng11
+	}
+	2367.1.1 = {
+		holder = feng12
+	}
+	2411.1.1 = {
+		holder = feng13
+	}
+	2477.1.1 = {
+		holder = feng14
+	}
+	2514.1.1 = {
+		holder = feng15
+	}
+	2577.1.1 = {
+		holder = feng16
+	}
+	2611.1.1 = {
+		holder = feng17
+	}
+	2671.1.1 = {
+		holder = feng18
+	}
+	2715.1.1 = {
+		holder = feng19
+	}
+	2800.1.1 = {
+		holder = feng20
+	}
+	2857.1.1 = {
+		holder = feng21
+	}
+	2917.1.1 = {
+		holder = feng22
+	}
+	3000.1.1 = {
+		holder = feng23
+	}
+	3043.1.1 = {
+		holder = feng24
+	}
+	3103.1.1 = {
+		holder = feng25
+	}
+	3163.1.1 = {
+		holder = feng26
+	}
+	3223.1.1 = {
+		holder = feng27
+	}
+	3283.1.1 = {
+		holder = feng28
+	}
+	3343.1.1 = {
+		holder = feng29
+	}
+	3403.1.1 = {
+		holder = feng30
+	}
+	3473.1.1 = {
+		holder = feng31
+	}
+	3493.1.1 = {
+		holder = feng32
+	}
+	3533.1.1 = {
+		holder = feng33
+	}
+	3603.1.1 = {
+		holder = feng34
+	}
+	3655.1.1 = {
+		holder = feng35
+	}
+	3688.1.1 = {
+		holder = feng36
+	}
+	3741.1.1 = {
+		holder = feng37
+	}
+	3752.1.1 = {
+		holder = feng38
+	}
+	3795.1.1 = {
+		holder = feng39
+	}
+	3805.1.1 = {
+		holder = feng40
+	}
+	3816.1.1 = {
+		holder = feng41
+	}
+	3843.1.1 = {
+		holder = feng42
+		government = feudal_admin_government
+	}
+}

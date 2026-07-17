@@ -1,0 +1,44 @@
+﻿##### d_youshenshi ############################
+
+### c_shen3
+# SHEN3
+986 = {
+	culture = xiaren
+	religion = xiali
+	holding = castle_holding
+}
+# YUAN1
+961 = {
+	holding = none
+}
+
+
+### c_beizheng
+# BEIZHENG
+960 = {
+	culture = xiaren
+	religion = xiali
+	holding = castle_holding
+}
+
+
+##### d_shenshi ############################
+
+### c_fushi
+# FUSHI
+958 = {
+	culture = xiaren
+	religion = xiali
+	holding = castle_holding
+}
+
+
+### c_yuanli
+# YUANLI
+962 = {
+	culture = xiaren
+	religion = xiali
+	holding = castle_holding
+}
+
+

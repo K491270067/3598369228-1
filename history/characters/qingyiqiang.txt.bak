@@ -1,0 +1,200 @@
+#############  青衣羌国--姓安阳 #############
+qingyiqiang1={
+  name="baiyuenan241"#平王东迁时青衣羌国国君
+  dynasty=xin264
+	religion="xirongfangling" 
+	culture="xiqiang"
+
+  3779.1.1 = {
+		birth = yes
+	}
+  3821.1.1 = {
+    death = yes
+  }
+}
+han4729={
+  name="baiyuenan241"#平王东迁时青衣羌国国君
+  dynasty=xin264
+	religion="xirongfangling" 
+	culture="xiqiang"
+	father=qingyiqiang1
+
+  3802.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han4730={
+  name="baiyuenan243"#储君一号
+  dynasty=xin264
+	religion="xirongfangling" 
+	culture="xiqiang"
+  father=han4729
+
+  3820.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han4731={
+  name="baiyuenan245"#储君二号
+  dynasty=xin264
+	religion="xirongfangling" 
+	culture="xiqiang"
+  father=han4729
+
+  3823.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han4732={
+  name="baiyuenan250"#储君三号
+  dynasty=xin264
+	religion="xirongfangling" 
+	culture="xiqiang"
+  father=han4729
+
+  3826.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han4733={
+  name="baiyuenan251"#储君四号
+  dynasty=xin264
+	religion="xirongfangling" 
+	culture="xiqiang"
+  father=han4729
+
+  3830.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han4734={
+  name="nvming162"#女一号
+  dynasty=xin264
+	religion="xirongfangling" 
+	culture="xiqiang"
+  father=han4729
+  female=yes
+
+  3828.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han4735={
+  name="nvming170"#女二号
+  dynasty=xin264
+	religion="xirongfangling" 
+	culture="xiqiang"
+  father=han4729
+  female=yes
+
+  3832.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+###############
+qingyiqiang2={
+  name="baiyuenan428"
+  dynasty=xin903
+	religion="xirongfangling" 
+	culture="xiqiang"
+
+  3781.1.1 = {
+		birth = yes
+	}
+  3823.1.1 = {
+    death = yes
+  }
+}
+qingyiqiang3={
+  name="baiyuenan465"
+  dynasty=xin903
+	religion="xirongfangling" 
+	culture="xiqiang"
+	father=qingyiqiang2
+
+  3807.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+qingyiqiang4={
+  name="baiyuenan526"
+  dynasty=xin903
+	religion="xirongfangling" 
+	culture="xiqiang"
+	father=qingyiqiang3
+
+  3825.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+qingyiqiang5={
+  name="baiyuenv59"
+  dynasty=xin903
+	religion="xirongfangling" 
+	culture="xiqiang"
+	father=qingyiqiang3
+	female=yes
+
+  3826.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+qingyiqiang6={
+  name="baiyuenv73"
+  dynasty=xin903
+	religion="xirongfangling" 
+	culture="xiqiang"
+	father=qingyiqiang3
+	female=yes
+
+  3828.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+qingyiqiang7={
+  name="baiyuenan542"
+  dynasty=xin903
+	religion="xirongfangling" 
+	culture="xiqiang"
+	father=qingyiqiang3
+
+  3829.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}

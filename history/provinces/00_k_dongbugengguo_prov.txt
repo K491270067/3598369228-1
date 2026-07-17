@@ -1,0 +1,37 @@
+﻿##### d_dongbugengshi ############################
+
+### c_dongbugeng
+# DONGBUGENG
+1648 = {
+	holding = none
+}
+
+
+### c_gaoling1
+# GAOLING1
+1649 = {
+	holding = none
+}
+
+
+### c_yan4
+# YAN4
+1650 = {
+	holding = none
+}
+
+
+### c_hu4
+# HU4
+1651 = {
+	holding = none
+}
+
+
+### c_yulin1
+# YULIN1
+1652 = {
+	holding = none
+}
+
+

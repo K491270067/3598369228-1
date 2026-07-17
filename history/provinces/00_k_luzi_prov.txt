@@ -1,0 +1,99 @@
+﻿##### d_lushi2 ############################
+
+### c_lushi
+# LUSHI
+1163 = {
+	culture = chidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+# HUKOUGUAN
+1135 = {
+	holding = none
+}
+
+
+### c_yu12
+# YU12
+2511 = {
+	culture = chidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+
+
+### c_luxingsai
+# LUXINGSAI
+2514 = {
+	culture = chidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+
+
+##### d_zongshi1 ############################
+
+### c_liqiu1
+# LIQIU1
+2510 = {
+	culture = chidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+# DAYULIN
+2509 = {
+	holding = none
+}
+
+
+### c_zha1
+# ZHA1
+2512 = {
+	culture = chidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+
+
+### c_li22
+# LI22
+2515 = {
+	culture = chidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+
+
+##### d_fengshi6 ############################
+
+### c_changping
+# CHANGPING
+1129 = {
+	culture = chidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+
+
+### c_litin
+# LITIN
+1134 = {
+	culture = chidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+
+
+### c_feng5
+# FENG5
+2507 = {
+	culture = chidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+# WEI6
+2508 = {
+	holding = none
+}
+
+

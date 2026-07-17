@@ -1,0 +1,163 @@
+﻿##### d_jiaolushi ############################
+
+### c_jiaolu
+
+
+### c_dansheng
+# AIFAGUAN
+2898 = {
+	holding = none
+}
+
+
+### c_zuyu
+
+
+### c_yueqian
+# YUEQIAN
+2875 = {
+	holding = none
+}
+# SANYEHOU
+2959 = {
+	holding = none
+}
+# WUYI
+3549 = {
+	holding = none
+}
+
+
+### c_sanguo
+
+
+##### d_daxiongyanshi ############################
+
+### c_jiangzhao
+# SANGUO
+2956 = {
+	holding = none
+}
+
+
+### c_jiahe
+# JIAHE
+2825 = {
+	holding = none
+}
+# YIMITOU
+2957 = {
+	holding = none
+}
+
+
+##### d_nengdengshi ############################
+
+### c_nengdeng
+
+
+### c_zhuzhou
+
+
+### c_fengzhi
+# NENGDENG
+2884 = {
+	holding = none
+}
+
+
+### c_yucang
+
+
+##### d_yimitoushi ############################
+
+### c_yimitou
+
+
+### c_dibo
+
+
+##### d_maibishi ############################
+
+### c_yuezhong
+# YUEZHONG
+2827 = {
+	holding = none
+}
+# JIUBIQI
+2964 = {
+	holding = none
+}
+
+
+### c_maibi
+
+
+##### d_jiubiqishi ############################
+
+### c_jiubiqi
+
+
+### c_gaozhi
+# GAOZHI
+2967 = {
+	holding = none
+}
+
+
+### c_zuodu
+
+
+##### d_gaozhishenjiangshi ############################
+
+### c_gaozhishenjiang
+# GAOZHISHENJIANG
+2968 = {
+	holding = none
+}
+# ZUODU
+2966 = {
+	holding = none
+}
+
+
+### c_yuehou
+# YUEHOU
+2854 = {
+	holding = none
+}
+
+
+### c_puyuan
+# PUYUAN
+2995 = {
+	holding = none
+}
+
+
+### c_yanzhou
+# YANZHOU
+2994 = {
+	holding = none
+}
+
+
+##### d_feituoshi ############################
+
+### c_feiyi
+# FEIYI
+2832 = {
+	holding = none
+}
+# FEITUO
+2958 = {
+	holding = none
+}
+
+
+### c_feituo
+
+
+### c_yitian
+
+

@@ -1,0 +1,311 @@
+﻿################## 灏瑰浗涓栫郴 ########################
+han1909={
+  name="nanming390"
+  dynasty=xin746
+	religion="xizhouli" 
+	culture="zhou"
+  father=han1095
+  
+  3729.1.1 = {
+		birth = yes
+	}
+  3774.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1910={
+  name="nanming391"
+  dynasty_house=house_xin76
+	religion="xizhouli" 
+	culture="zhou"
+  father=han1909
+  
+  3749.1.1 = {
+		birth = yes
+	}
+  3813.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1911={
+  name="jia3"#灏瑰悏鐢紝灏瑰浗濮嬪皝鍚?
+  dynasty_house=house_baijia100
+	religion="xizhouli" 
+	culture="zhou"
+  father=han1910
+  
+  3768.1.1 = {
+		birth = yes
+	}
+  3845.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1912={
+  name="nanming392"#骞崇帇涓滆縼鏃跺肮鍥藉浗鍚涳紝娓告垙寮€灞€鏃?7宀?
+  dynasty_house=house_baijia100
+	religion="xizhouli" 
+	culture="zhou"
+  father=han1911
+  
+  3803.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han1913={
+  name="nanming393"#鍚夊绁栧厛
+  dynasty_house=house_baijia190
+	religion="xizhouli" 
+	culture="zhou"
+  father=han1911
+  
+  3802.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han1914={
+  name="nanming394"#鍌ㄥ悰1鍙凤紝娓告垙寮€灞€鏃?7宀?
+  dynasty_house=house_baijia100
+	religion="xizhouli" 
+	culture="zhou"
+  father=han1912
+  
+  3830.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han1915={
+  name="nanming157"#鍌ㄥ悰2鍙凤紝娓告垙寮€灞€鏃?3宀?
+  dynasty_house=house_baijia100
+	religion="xizhouli" 
+	culture="zhou"
+  father=han1912
+  
+  3831.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han1916={
+  name="nanming173"#鍌ㄥ悰3鍙凤紝娓告垙寮€灞€鏃?0宀?
+  dynasty_house=house_baijia100
+	religion="xizhouli" 
+	culture="zhou"
+  father=han1912
+  
+  3832.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han1917={
+  name="nvming91"#濂?鍙凤紝娓告垙寮€灞€鏃?8宀?
+  dynasty_house=house_baijia100
+	religion="xizhouli" 
+	culture="zhou"
+  father=han1912
+  female=yes
+  
+  3833.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han1918={
+  name="nvming92"#濂?鍙凤紝娓告垙寮€灞€鏃?4宀?
+  dynasty_house=house_baijia100
+	religion="xizhouli" 
+	culture="zhou"
+  father=han1912
+  female=yes
+  
+  3834.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+#########鍚夋皬###################
+han1919={
+  name="xi3"
+  dynasty_house=house_baijia190
+	religion="xizhouli" 
+	culture="zhou"
+  father=han1913
+  
+  3830.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han1920={
+  name="chen1"
+  dynasty_house=house_baijia190
+	religion="xizhouli" 
+	culture="zhou"
+  father=han1913
+  
+  3831.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han1921={
+  name="shi"
+  dynasty_house=house_baijia190
+	religion="xizhouli" 
+	culture="zhou"
+  father=han1913
+  
+  3832.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han1922={
+  name="nvming93"
+  dynasty_house=house_baijia190
+	religion="xizhouli" 
+	culture="zhou"
+  father=han1913
+  female=yes
+  
+  3833.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han1923={
+  name="nvming94"
+  dynasty_house=house_baijia190
+	religion="xizhouli" 
+	culture="zhou"
+  father=han1913
+  female=yes
+  
+  3834.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+#######鍏皬#############
+han1924={
+  name="jiao1"
+  dynasty_house=house_xin76
+	religion="xizhouli" 
+	culture="zhou"
+  father=han1910
+  
+  3769.1.1 = {
+		birth = yes
+	}
+  3845.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1925={
+  name="nanming395"#绗笁浠?
+  dynasty_house=house_xin76
+	religion="xizhouli" 
+	culture="zhou"
+  father=han1924
+  
+  3803.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han1926={
+  name="ao"
+  dynasty_house=house_xin76
+	religion="xizhouli" 
+	culture="zhou"
+  father=han1925
+  
+  3831.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han1927={
+  name="hao"
+  dynasty_house=house_xin76
+	religion="xizhouli" 
+	culture="zhou"
+  father=han1925
+  
+  3832.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han1928={
+  name="nvming95"
+  dynasty_house=house_xin76
+	religion="xizhouli" 
+	culture="zhou"
+  father=han1925
+  female=yes
+  
+  3833.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han1929={
+  name="nvming96"
+  dynasty_house=house_xin76
+	religion="xizhouli" 
+	culture="zhou"
+  father=han1925
+  female=yes
+  
+  3834.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}

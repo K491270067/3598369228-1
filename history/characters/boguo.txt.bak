@@ -1,0 +1,392 @@
+### 僰国补充部分--桑丘姓 ###
+#《先秦巴蜀地区百濮和氐羌的来源》
+#川滇之间今四川宜宾与云南昭通即汉代朱提郡的僰人，是濮的一个支系，至少在商代即在当地定居
+han4697={
+  name="baiyuenan176"
+  dynasty=xin262
+	religion="guiwu" 
+	culture="boren"
+	
+  3429.1.1 = {
+		birth = yes
+	}
+  3482.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han4698={
+  name="baiyuenan180"
+  dynasty=xin262
+	religion="guiwu" 
+	culture="boren"
+  father=han4697
+
+  3458.1.1 = {
+		birth = yes
+	}
+  3509.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han4699={
+  name="baiyuenan189"
+  dynasty=xin262
+	religion="guiwu" 
+	culture="boren"
+  father=han4698
+
+  3497.1.1 = {
+		birth = yes
+	}
+  3556.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han4700={
+  name="baiyuenan193"
+  dynasty=xin262
+	religion="guiwu" 
+	culture="boren"
+  father=han4699
+
+  3543.1.1 = {
+		birth = yes
+	}
+  3602.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han4701={
+  name="baiyuenan199"
+  dynasty=xin262
+	religion="guiwu" 
+	culture="boren"
+  father=han4700
+
+  3579.1.1 = {
+		birth = yes
+	}
+  3638.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han4702={
+  name="baiyuenan201"
+  dynasty=xin262
+	religion="guiwu" 
+	culture="boren"
+  father=han4701
+
+  3615.1.1 = {
+		birth = yes
+	}
+  3680.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han4703={
+  name="baiyuenan205"
+  dynasty=xin262
+	religion="guiwu" 
+	culture="boren"
+  father=han4702
+
+  3661.1.1 = {
+		birth = yes
+	}
+  3718.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han4704={
+  name="baiyuenan210"
+  dynasty=xin262
+	religion="guiwu" 
+	culture="boren"
+  father=han4703
+
+  3697.1.1 = {
+		birth = yes
+	}
+  3756.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han4705={
+  name="baiyuenan214"
+  dynasty=xin262
+	religion="guiwu" 
+	culture="boren"
+  father=han4704
+
+  3724.1.1 = {
+		birth = yes
+	}
+  3793.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han4706={
+  name="baiyuenan218"
+  dynasty=xin262
+	religion="guiwu" 
+	culture="boren"
+  father=han4705
+
+  3767.1.1 = {
+		birth = yes
+	}
+  3825.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han4707={
+  name="baiyuenan217"#平王东迁时僰国国君
+  dynasty=xin262
+	religion="guiwu" 
+	culture="boren"
+  father=han4706
+
+  3800.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han4708={
+  name="baiyuenan220"#储君一号
+  dynasty=xin262
+	religion="guiwu" 
+	culture="boren"
+  father=han4707
+
+  3821.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han4709={
+  name="baiyuenan222"#储君二号
+  dynasty=xin262
+	religion="guiwu" 
+	culture="boren"
+  father=han4707
+
+  3823.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han4710={
+  name="baiyuenan228"#储君三号
+  dynasty=xin262
+	religion="guiwu" 
+	culture="boren"
+  father=han4707
+
+  3825.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han4711={
+  name="baiyuenan232"#储君四号
+  dynasty=xin262
+	religion="guiwu" 
+	culture="boren"
+  father=han4707
+
+  3827.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han4712={
+  name="nvming66"#女一号
+  dynasty=xin262
+	religion="guiwu" 
+	culture="boren"
+  father=han4707
+  female=yes
+
+  3829.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han4713={
+  name="nvming84"#女二号
+  dynasty=xin262
+	religion="guiwu" 
+	culture="boren"
+  father=han4707
+  female=yes
+
+  3831.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+###############
+boren1={
+  name="baiyuenan488"
+  dynasty=xin907
+	religion="guiwu" 
+	culture="boren"
+
+  3737.1.1 = {
+		birth = yes
+	}
+  3789.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+boren2={
+  name="baiyuenan489"
+  dynasty=xin907
+	religion="guiwu" 
+	culture="boren"
+  father=boren1
+
+  3761.1.1 = {
+		birth = yes
+	}
+  3808.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+boren3={
+  name="baiyuenan490"
+  dynasty=xin907
+	religion="guiwu" 
+	culture="boren"
+  father=boren2
+
+  3791.1.1 = {
+		birth = yes
+	}
+  3843.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+boren4={
+  name="baiyuenan558"
+  dynasty=xin907
+	religion="guiwu" 
+	culture="boren"
+  father=boren3
+
+  3811.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+boren5={
+  name="baiyuenan560"
+  dynasty=xin907
+	religion="guiwu" 
+	culture="boren"
+  father=boren4
+
+  3829.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+boren6={
+  name="baiyuenan563"
+  dynasty=xin907
+	religion="guiwu" 
+	culture="boren"
+  father=boren4
+
+  3830.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+boren7={
+  name="baiyuenv67"
+  dynasty=xin907
+	religion="guiwu" 
+	culture="boren"
+  father=boren4
+  female=yes
+
+  3831.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+boren8={
+  name="baiyuenv91"
+  dynasty=xin907
+	religion="guiwu" 
+	culture="boren"
+  father=boren4
+  female=yes
+
+  3832.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}

@@ -1,0 +1,188 @@
+﻿zhou = {
+	color = { 0.45 0.0 0.0 }
+
+	name_order_convention = dynasty_always_first
+	ethos = ethos_courtly
+	heritage = heritage_zhouren
+	language = language_chinese
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+
+	traditions = {
+		    tradition_cultural_primacy
+        tradition_tgp_court_machinations
+        tradition_mystical_ancestors
+        tradition_intensive_farming
+        tradition_scholar_officials
+        tradition_talent_acquisition
+	}
+
+	name_list = name_list_han
+
+	coa_gfx = { chinese_group_coa_gfx }
+	building_gfx = { chinese_building_gfx }
+	clothing_gfx = {  chinese_clothing_gfx }
+	unit_gfx = { chinese_unit_gfx }
+	house_coa_frame = house_china
+
+
+	ethnicities = {
+		10 = asian_han_chinese
+	}
+}
+lu = {
+	color = { 60 90 180 }
+
+	name_order_convention = dynasty_always_first
+	ethos = ethos_bureaucratic
+	heritage = heritage_zhouren
+	language = language_chinese
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+
+	traditions = {
+        tradition_agrarian
+		    tradition_cultural_primacy
+        tradition_staunch_traditionalists
+        tradition_stalwart_defenders
+        tradition_philosopher_culture
+        tradition_scholar_officials
+	}
+
+	name_list = name_list_han
+
+	coa_gfx = { chinese_group_coa_gfx }
+	building_gfx = { chinese_building_gfx }
+	clothing_gfx = { chinese_clothing_gfx }
+	unit_gfx = { chinese_unit_gfx }
+	house_coa_frame = house_china
+
+	ethnicities = {
+		10 = asian_han_chinese
+	}
+}
+jin = {
+	color = { 180 60 30 }
+
+	name_order_convention = dynasty_always_first
+	ethos = ethos_bureaucratic
+	heritage = heritage_zhouren
+	language = language_chinese
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+   
+	traditions = {
+        tradition_quarrelsome
+		    tradition_eye_for_an_eye
+        tradition_loyal_soldiers
+        tradition_mountain_homes
+        tradition_culture_blending
+        tradition_tgp_court_machinations
+	}
+	
+	name_list = name_list_han
+
+	coa_gfx = { chinese_group_coa_gfx }
+	building_gfx = { chinese_building_gfx }
+	clothing_gfx = {  chinese_clothing_gfx }
+	unit_gfx = { chinese_unit_gfx }
+	house_coa_frame = house_china
+
+	ethnicities = {
+		10 = asian_han_chinese
+	}
+}
+qi = {
+	color = { 140 80 180 }
+
+	name_order_convention = dynasty_always_first
+	ethos = ethos_bellicose
+	heritage = heritage_zhouren
+	language = language_chinese
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+   
+	traditions = {
+        tradition_seafaring
+		    tradition_fishermen
+        tradition_maritime_mercantilism
+        tradition_tgp_art_of_war
+        tradition_only_the_strong
+        tradition_wetlanders
+	}
+
+	name_list = name_list_han
+
+	coa_gfx = { chinese_group_coa_gfx }
+	building_gfx = { chinese_building_gfx }
+	clothing_gfx = { chinese_clothing_gfx }
+	unit_gfx = { chinese_unit_gfx }
+	house_coa_frame = house_china
+
+	ethnicities = {
+		10 = asian_han_chinese
+	}
+}
+yan = {
+	color = { 160 140 80 }
+
+	name_order_convention = dynasty_always_first
+	ethos = ethos_stoic
+	heritage = heritage_zhouren
+	language = language_chinese
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+   
+	traditions = {
+        tradition_agrarian
+		    tradition_winter_warriors
+        tradition_forest_fighters
+        tradition_tgp_imperial_peace
+        tradition_stalwart_defenders
+        tradition_debug
+	}
+
+	name_list = name_list_han
+
+	coa_gfx = { chinese_group_coa_gfx }
+	building_gfx = { chinese_building_gfx }
+	clothing_gfx = { chinese_clothing_gfx }
+	unit_gfx = { chinese_unit_gfx }
+	house_coa_frame = house_china
+
+	ethnicities = {
+		10 = asian_han_chinese
+	}
+}
+
+wu = {
+	color = { 20 130 110 }
+
+	name_order_convention = dynasty_always_first
+	ethos = ethos_bellicose
+	heritage = heritage_zhouren
+	language = language_chinese
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+   
+	traditions = {
+        tradition_fp1_coastal_warriors
+		    tradition_seafaring
+        tradition_martial_admiration
+        tradition_eye_for_an_eye
+        tradition_quarrelsome
+        tradition_fishermen
+	}
+
+	name_list = name_list_han
+
+	coa_gfx = { chinese_group_coa_gfx }
+	building_gfx = { chinese_building_gfx }
+	clothing_gfx = { chinese_clothing_gfx }
+	unit_gfx = { chinese_unit_gfx }
+	house_coa_frame = house_china
+
+	ethnicities = {
+		10 = asian_han_chinese
+	}
+}

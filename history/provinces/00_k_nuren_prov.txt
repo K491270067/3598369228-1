@@ -1,0 +1,103 @@
+﻿##### d_nushi ############################
+
+### c_nuren
+# NUREN
+3707 = {
+	culture = baipu
+	religion = guiwu
+	holding = tribal_holding
+}
+
+
+### c_zhiyi
+# ZHIYI
+3708 = {
+	culture = baipu
+	religion = guiwu
+	holding = tribal_holding
+}
+
+
+### c_fengdu
+# FENGDU
+3213 = {
+	culture = baipu
+	religion = guiwu
+	holding = tribal_holding
+}
+
+
+### c_guixi
+# GUIXI
+3214 = {
+	holding = none
+}
+
+
+### c_wenshan
+# WENSHAN
+3216 = {
+	holding = none
+}
+
+
+### c_binhua
+# BINHUA
+3218 = {
+	culture = baipu
+	religion = guiwu
+	holding = tribal_holding
+}
+
+
+### c_wulong
+# WULONG
+3219 = {
+	holding = none
+}
+
+
+### c_jiangjin1
+# JIANGJIN1
+3220 = {
+	holding = none
+}
+
+
+### c_nanping
+# NANPING
+3221 = {
+	holding = none
+}
+
+
+### c_peizhou
+# PEIZHOU
+3107 = {
+	culture = baipu
+	religion = guiwu
+	holding = tribal_holding
+}
+
+
+### c_wuning
+# WNING
+3206 = {
+	holding = none
+}
+
+
+### c_zhongchou
+# ZHONGCHOU
+3108 = {
+	holding = none
+}
+
+
+### c_nanbin
+# NANBIN
+3212 = {
+	holding = none
+}
+
+

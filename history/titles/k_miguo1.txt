@@ -1,0 +1,19 @@
+﻿k_miguo1 = {
+	3716.1.1 = {
+		liege = "e_zhoutianzi"
+		holder = han3448
+	}
+	3791.12.31 = {
+		holder = han3449
+	}
+	3837.12.31 = {
+		holder = han3450
+	}
+	3849.1.1 = {
+		change_development_level = 30
+		government = feudal_admin_government
+	}
+	3849.12.31 = {
+		holder = han3451
+	}
+}

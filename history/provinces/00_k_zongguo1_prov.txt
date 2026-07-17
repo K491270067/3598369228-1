@@ -1,0 +1,99 @@
+﻿##### d_zhaibushi ############################
+
+### c_anfang
+# ANFANG
+2878 = {
+	holding = none
+}
+# SHANGZONG
+2853 = {
+	holding = none
+}
+# JUGONG
+2979 = {
+	holding = none
+}
+
+
+### c_abo
+
+
+### c_zhangma
+
+
+### c_amobo
+
+
+### c_malaitian1
+
+
+### c_xiabuzuo
+# SHANGHAI
+2978 = {
+	holding = none
+}
+# WUSHE
+2982 = {
+	holding = none
+}
+# MA4
+2980 = {
+	holding = none
+}
+
+
+### c_yinbo
+
+
+### c_xiangma
+
+
+### c_zuodao
+
+
+### c_kedousijia
+# MALAITIAN
+2977 = {
+	holding = none
+}
+# YISHEN
+2981 = {
+	holding = none
+}
+
+
+### c_xiazong
+
+
+### c_shangzong
+
+
+### c_xuhui
+# XUHUI
+2975 = {
+	holding = none
+}
+# ABO
+2976 = {
+	holding = none
+}
+
+
+### c_malaitian
+
+
+### c_shanghai
+
+
+### c_jugong
+
+
+### c_ma4
+
+
+### c_yishen
+
+
+### c_wushe
+
+

@@ -1,0 +1,334 @@
+﻿#閭垮浗 濡婂閭挎皬
+shiguo1={
+  name="nanming337"
+  dynasty=xin445
+	religion="xizhouli" 
+	culture="lu"
+	father=han2157
+  
+  3550.1.1 = {
+		birth = yes
+	}
+  3596.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+shiguo2={
+  name="nanming354"
+  dynasty_house=house_xin446
+	religion="xizhouli" 
+	culture="lu"
+  father=shiguo1
+  
+  3577.1.1 = {
+		birth = yes
+	}
+  3621.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+shiguo3={
+  name="nanming259"
+  dynasty_house=house_xin446
+	religion="xizhouli" 
+	culture="lu"
+  father=shiguo2
+  
+  3601.1.1 = {
+		birth = yes
+	}
+  3658.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+shiguo4={
+  name="nanming264"
+  dynasty_house=house_xin446
+	religion="xizhouli" 
+	culture="lu"
+  father=shiguo3
+  
+  3629.1.1 = {
+		birth = yes
+	}
+  3680.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+shiguo5={
+  name="nanming272"
+  dynasty_house=house_xin446
+	religion="xizhouli" 
+	culture="lu"
+  father=shiguo4
+  
+  3666.1.1 = {
+		birth = yes
+	}
+  3709.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+shiguo6={
+  name="nanming275"
+  dynasty_house=house_xin446
+	religion="xizhouli" 
+	culture="lu"
+  father=shiguo5
+  
+  3697.1.1 = {
+		birth = yes
+	}
+  3748.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+shiguo7={
+  name="nanming281"
+  dynasty_house=house_xin446
+	religion="xizhouli" 
+	culture="lu"
+  father=shiguo6
+  
+  3723.1.1 = {
+		birth = yes
+	}
+  3781.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+shiguo8={
+  name="nanming287"
+  dynasty_house=house_xin446
+	religion="xizhouli" 
+	culture="lu"
+  father=shiguo7
+  
+  3754.1.1 = {
+		birth = yes
+	}
+  3800.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+shiguo9={
+  name="nanming293"
+  dynasty_house=house_xin446
+	religion="xizhouli" 
+	culture="lu"
+  father=shiguo8
+  
+  3787.1.1 = {
+		birth = yes
+	}
+  3821.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+shiguo10={
+  name="nanming299"#骞崇帇涓滆縼鏃?
+  dynasty_house=house_xin446
+	religion="xizhouli" 
+	culture="lu"
+  father=shiguo9
+  
+  3808.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+shiguo11={
+  name="nanming253"
+  dynasty_house=house_xin446
+	religion="xizhouli" 
+	culture="lu"
+  father=shiguo10
+  
+  3828.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+shiguo12={
+  name="nanming308"
+  dynasty_house=house_xin446
+	religion="xizhouli" 
+	culture="lu"
+  father=shiguo10
+  
+  3830.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+shiguo13={
+  name="nanming313"
+  dynasty_house=house_xin446
+	religion="xizhouli" 
+	culture="lu"
+  father=shiguo10
+  
+  3831.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+shiguo14={
+  name="nvming50"
+  dynasty_house=house_xin446
+	religion="xizhouli" 
+	culture="lu"
+  father=shiguo10
+  female=yes
+  
+  3832.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+shiguo15={
+  name="nvming55"
+  dynasty_house=house_xin446
+	religion="xizhouli" 
+	culture="lu"
+  father=shiguo10
+  female=yes
+  
+  3833.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+######娓呮皬
+shiguo16={
+  name="nanming289"
+  dynasty_house=house_xin447
+	religion="xizhouli" 
+	culture="lu"
+  father=shiguo8
+  
+  3790.1.1 = {
+		birth = yes
+	}
+  3831.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+shiguo17={
+  name="nanming295"#骞崇帇涓滆縼鏃?
+  dynasty_house=house_xin447
+	religion="xizhouli" 
+	culture="lu"
+  father=shiguo16
+  
+  3814.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+shiguo18={
+  name="nanming303"
+  dynasty_house=house_xin447
+	religion="xizhouli" 
+	culture="lu"
+  father=shiguo17
+  
+  3832.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+shiguo19={
+  name="nanming317"
+  dynasty_house=house_xin447
+	religion="xizhouli" 
+	culture="lu"
+  father=shiguo17
+  
+  3833.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+shiguo20={
+  name="nanming330"
+  dynasty_house=house_xin447
+	religion="xizhouli" 
+	culture="lu"
+  father=shiguo17
+  
+  3834.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+shiguo21={
+  name="nvming22"
+  dynasty_house=house_xin447
+	religion="xizhouli" 
+	culture="lu"
+  father=shiguo17
+  female=yes
+  
+  3835.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+shiguo22={
+  name="nvming29"
+  dynasty_house=house_xin447
+	religion="xizhouli" 
+	culture="lu"
+  father=shiguo17
+  female=yes
+  
+  3836.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}

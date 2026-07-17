@@ -1,0 +1,467 @@
+﻿### 继承权 ### ————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+
+# 多数封臣拥有【传统世袭】
+most_vassals_have_hereditary_or_above = {
+	custom_tooltip = {
+		text = tt_most_vassals_have_hereditary_or_above
+		OR = {
+			any_in_list = {
+				variable = list_valid_vassal
+				OR = {
+					subject_contract_has_flag = succession_rights_hereditary
+					subject_contract_has_flag = locked_to_partition
+					subject_contract_has_flag = succession_rights_grant_recognition
+					subject_contract_has_flag = succession_rights_court_supervision
+					subject_contract_has_flag = succession_rights_governor_appointment
+					trigger_if = {
+						limit = { NOT = { government_has_flag = government_is_feudal_admin } }
+						government_allows = administrative
+					}
+				}
+				count >= 15
+			}
+			any_in_list = {
+				variable = list_valid_vassal
+				OR = {
+					subject_contract_has_flag = succession_rights_hereditary
+					subject_contract_has_flag = locked_to_partition
+					subject_contract_has_flag = succession_rights_grant_recognition
+					subject_contract_has_flag = succession_rights_court_supervision
+					subject_contract_has_flag = succession_rights_governor_appointment
+					trigger_if = {
+						limit = { NOT = { government_has_flag = government_is_feudal_admin } }
+						government_allows = administrative
+					}
+				}
+				percent >= 0.5
+			}
+		}
+	}
+}
+# 任何封臣拥有【传统世袭】
+any_vassals_have_hereditary_or_above = {
+	custom_tooltip = {
+		text = tt_any_vassals_have_hereditary_or_above
+		any_in_list = {
+			variable = list_valid_vassal
+			OR = {
+				subject_contract_has_flag = succession_rights_hereditary
+				subject_contract_has_flag = locked_to_partition
+				subject_contract_has_flag = succession_rights_grant_recognition
+				subject_contract_has_flag = succession_rights_court_supervision
+				subject_contract_has_flag = succession_rights_governor_appointment
+				trigger_if = {
+					limit = { NOT = { government_has_flag = government_is_feudal_admin } }
+					government_allows = administrative
+				}
+			}
+		}
+	}
+}
+
+# 多数封臣拥有【强制分割】
+most_vassals_have_forced_partition_or_above = {
+	custom_tooltip = {
+		text = tt_most_vassals_have_forced_partition_or_above
+		OR = {
+			any_in_list = {
+				variable = list_valid_vassal
+				OR = {
+					subject_contract_has_flag = locked_to_partition
+					subject_contract_has_flag = succession_rights_grant_recognition
+					subject_contract_has_flag = succession_rights_court_supervision
+					subject_contract_has_flag = succession_rights_governor_appointment
+					trigger_if = {
+						limit = { NOT = { government_has_flag = government_is_feudal_admin } }
+						government_allows = administrative
+					}
+				}
+				count >= 15
+			}
+			any_in_list = {
+				variable = list_valid_vassal
+				OR = {
+					subject_contract_has_flag = locked_to_partition
+					subject_contract_has_flag = succession_rights_grant_recognition
+					subject_contract_has_flag = succession_rights_court_supervision
+					subject_contract_has_flag = succession_rights_governor_appointment
+					trigger_if = {
+						limit = { NOT = { government_has_flag = government_is_feudal_admin } }
+						government_allows = administrative
+					}
+				}
+				percent >= 0.5
+			}
+		}
+	}
+}
+# 任何封臣拥有【强制分割】
+any_vassals_have_forced_partition_or_above = {
+	custom_tooltip = {
+		text = tt_any_vassals_have_forced_partition_or_above
+		any_in_list = {
+			variable = list_valid_vassal
+			OR = {
+				subject_contract_has_flag = locked_to_partition
+				subject_contract_has_flag = succession_rights_grant_recognition
+				subject_contract_has_flag = succession_rights_court_supervision
+				subject_contract_has_flag = succession_rights_governor_appointment
+				trigger_if = {
+					limit = { NOT = { government_has_flag = government_is_feudal_admin } }
+					government_allows = administrative
+				}
+			}
+		}
+	}
+}
+
+# 多数封臣拥有【御赐承认】
+most_vassals_have_grant_recognition_or_above = {
+	custom_tooltip = {
+		text = tt_most_vassals_have_grant_recognition_or_above
+		OR = {
+			any_in_list = {
+				variable = list_valid_vassal
+				OR = {
+					subject_contract_has_flag = succession_rights_grant_recognition
+					subject_contract_has_flag = succession_rights_court_supervision
+					subject_contract_has_flag = succession_rights_governor_appointment
+					trigger_if = {
+						limit = { NOT = { government_has_flag = government_is_feudal_admin } }
+						government_allows = administrative
+					}
+				}
+				count >= 15
+			}
+			any_in_list = {
+				variable = list_valid_vassal
+				OR = {
+					subject_contract_has_flag = succession_rights_grant_recognition
+					subject_contract_has_flag = succession_rights_court_supervision
+					subject_contract_has_flag = succession_rights_governor_appointment
+					trigger_if = {
+						limit = { NOT = { government_has_flag = government_is_feudal_admin } }
+						government_allows = administrative
+					}
+				}
+				percent >= 0.5
+			}
+		}
+	}
+}
+# 任何封臣拥有【御赐承认】
+any_vassals_have_grant_recognition_or_above = {
+	custom_tooltip = {
+		text = tt_any_vassals_have_grant_recognition_or_above
+		any_in_list = {
+			variable = list_valid_vassal
+			OR = {
+				subject_contract_has_flag = succession_rights_grant_recognition
+				subject_contract_has_flag = succession_rights_court_supervision
+				subject_contract_has_flag = succession_rights_governor_appointment
+				trigger_if = {
+					limit = { NOT = { government_has_flag = government_is_feudal_admin } }
+					government_allows = administrative
+				}
+			}
+		}
+	}
+}
+
+# 多数封臣拥有【宫廷监察】
+most_vassals_have_court_supervision_or_above = {
+	custom_tooltip = {
+		text = tt_most_vassals_have_court_supervision_or_above
+		OR = {
+			any_in_list = {
+				variable = list_valid_vassal
+				OR = {
+					subject_contract_has_flag = succession_rights_court_supervision
+					subject_contract_has_flag = succession_rights_governor_appointment
+					trigger_if = {
+						limit = { NOT = { government_has_flag = government_is_feudal_admin } }
+						government_allows = administrative
+					}
+				}
+				count >= 15
+			}
+			any_in_list = {
+				variable = list_valid_vassal
+				OR = {
+					subject_contract_has_flag = succession_rights_court_supervision
+					subject_contract_has_flag = succession_rights_governor_appointment
+					trigger_if = {
+						limit = { NOT = { government_has_flag = government_is_feudal_admin } }
+						government_allows = administrative
+					}
+				}
+				percent >= 0.5
+			}
+		}
+	}
+}
+# 任何封臣拥有【宫廷监察】
+any_vassals_have_court_supervision_or_above = {
+	custom_tooltip = {
+		text = tt_any_vassals_have_court_supervision_or_above
+		any_in_list = {
+			variable = list_valid_vassal
+			OR = {
+				subject_contract_has_flag = succession_rights_court_supervision
+				subject_contract_has_flag = succession_rights_governor_appointment
+				trigger_if = {
+					limit = { NOT = { government_has_flag = government_is_feudal_admin } }
+					government_allows = administrative
+				}
+			}
+		}
+	}
+}
+
+# 多数封臣拥有【总督委任】
+most_vassals_are_governor_or_admin = {
+	custom_tooltip = {
+		text = tt_most_vassals_are_governor_or_admin
+		OR = {
+			any_in_list = {
+				variable = list_valid_vassal
+				OR = {
+					subject_contract_has_flag = succession_rights_governor_appointment
+					trigger_if = {
+						limit = { NOT = { government_has_flag = government_is_feudal_admin } }
+						government_allows = administrative
+					}
+				}
+				count >= 15
+			}
+			any_in_list = {
+				variable = list_valid_vassal
+				OR = {
+					subject_contract_has_flag = succession_rights_governor_appointment
+					trigger_if = {
+						limit = { NOT = { government_has_flag = government_is_feudal_admin } }
+						government_allows = administrative
+					}
+				}
+				percent >= 0.5
+			}
+		}
+	}
+}
+# 任何封臣拥有【总督委任】
+any_vassals_are_governor_or_admin = {
+	custom_tooltip = {
+		text = tt_any_vassals_are_governor_or_admin
+		any_in_list = {
+			variable = list_valid_vassal
+			OR = {
+				subject_contract_has_flag = succession_rights_governor_appointment
+				trigger_if = {
+					limit = { NOT = { government_has_flag = government_is_feudal_admin } }
+					government_allows = administrative
+				}
+			}
+		}
+	}
+}
+
+### 候选人偏好 ### ————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+
+# 多数封臣拥有【士绅豪强】
+most_vassals_have_powerful_gentry_or_above = {
+	custom_tooltip = {
+		text = tt_most_vassals_have_powerful_gentry_or_above
+		OR = {
+			any_in_list = {
+				variable = list_valid_vassal
+				OR = {
+					subject_contract_has_flag = candidate_preference_powerful_gentry
+					subject_contract_has_flag = candidate_preference_local_talent
+					subject_contract_has_flag = candidate_preference_favor_nepotism
+					subject_contract_has_flag = candidate_preference_talent_only
+					subject_contract_has_flag = candidate_preference_bureaucrat_promotion
+				}
+				count >= 15
+			}
+			any_in_list = {
+				variable = list_valid_vassal
+				OR = {
+					subject_contract_has_flag = candidate_preference_powerful_gentry
+					subject_contract_has_flag = candidate_preference_local_talent
+					subject_contract_has_flag = candidate_preference_favor_nepotism
+					subject_contract_has_flag = candidate_preference_talent_only
+					subject_contract_has_flag = candidate_preference_bureaucrat_promotion
+				}
+				percent >= 0.5
+			}
+		}
+	}
+}
+# 任何封臣拥有【士绅豪强】
+any_vassals_have_powerful_gentry_or_above = {
+	custom_tooltip = {
+		text = tt_any_vassals_have_powerful_gentry_or_above
+		any_in_list = {
+			variable = list_valid_vassal
+			OR = {
+				subject_contract_has_flag = candidate_preference_powerful_gentry
+				subject_contract_has_flag = candidate_preference_local_talent
+				subject_contract_has_flag = candidate_preference_favor_nepotism
+				subject_contract_has_flag = candidate_preference_talent_only
+				subject_contract_has_flag = candidate_preference_bureaucrat_promotion
+			}
+		}
+	}
+}
+
+# 多数封臣拥有【本地贤能】
+most_vassals_have_local_talent_or_above = {
+	custom_tooltip = {
+		text = tt_most_vassals_have_local_talent_or_above
+		OR = {
+			any_in_list = {
+				variable = list_valid_vassal
+				OR = {
+					subject_contract_has_flag = candidate_preference_local_talent
+					subject_contract_has_flag = candidate_preference_favor_nepotism
+					subject_contract_has_flag = candidate_preference_talent_only
+					subject_contract_has_flag = candidate_preference_bureaucrat_promotion
+				}
+				count >= 15
+			}
+			any_in_list = {
+				variable = list_valid_vassal
+				OR = {
+					subject_contract_has_flag = candidate_preference_local_talent
+					subject_contract_has_flag = candidate_preference_favor_nepotism
+					subject_contract_has_flag = candidate_preference_talent_only
+					subject_contract_has_flag = candidate_preference_bureaucrat_promotion
+				}
+				percent >= 0.5
+			}
+		}
+	}
+}
+# 任何封臣拥有【本地贤能】
+any_vassals_have_local_talent_or_above = {
+	custom_tooltip = {
+		text = tt_any_vassals_have_local_talent_or_above
+		any_in_list = {
+			variable = list_valid_vassal
+			OR = {
+				subject_contract_has_flag = candidate_preference_local_talent
+				subject_contract_has_flag = candidate_preference_favor_nepotism
+				subject_contract_has_flag = candidate_preference_talent_only
+				subject_contract_has_flag = candidate_preference_bureaucrat_promotion
+			}
+		}
+	}
+}
+
+# 多数封臣拥有【任人唯亲】
+most_vassals_have_favor_nepotism_or_above = {
+	custom_tooltip = {
+		text = tt_most_vassals_have_favor_nepotism_or_above
+		OR = {
+			any_in_list = {
+				variable = list_valid_vassal
+				OR = {
+					subject_contract_has_flag = candidate_preference_favor_nepotism
+					subject_contract_has_flag = candidate_preference_talent_only
+					subject_contract_has_flag = candidate_preference_bureaucrat_promotion
+				}
+				count >= 15
+			}
+			any_in_list = {
+				variable = list_valid_vassal
+				OR = {
+					subject_contract_has_flag = candidate_preference_favor_nepotism
+					subject_contract_has_flag = candidate_preference_talent_only
+					subject_contract_has_flag = candidate_preference_bureaucrat_promotion
+				}
+				percent >= 0.5
+			}
+		}
+	}
+}
+# 任何封臣拥有【任人唯亲】
+any_vassals_have_favor_nepotism_or_above = {
+	custom_tooltip = {
+		text = tt_any_vassals_have_favor_nepotism_or_above
+		any_in_list = {
+			variable = list_valid_vassal
+			OR = {
+				subject_contract_has_flag = candidate_preference_favor_nepotism
+				subject_contract_has_flag = candidate_preference_talent_only
+				subject_contract_has_flag = candidate_preference_bureaucrat_promotion
+			}
+		}
+	}
+}
+
+# 多数封臣拥有【唯才是举】
+most_vassals_have_talent_only_or_above = {
+	custom_tooltip = {
+		text = tt_most_vassals_have_talent_only_or_above
+		OR = {
+			any_in_list = {
+				variable = list_valid_vassal
+				OR = {
+					subject_contract_has_flag = candidate_preference_talent_only
+					subject_contract_has_flag = candidate_preference_bureaucrat_promotion
+				}
+				count >= 15
+			}
+			any_in_list = {
+				variable = list_valid_vassal
+				OR = {
+					subject_contract_has_flag = candidate_preference_talent_only
+					subject_contract_has_flag = candidate_preference_bureaucrat_promotion
+				}
+				percent >= 0.5
+			}
+		}
+	}
+}
+# 任何封臣拥有【唯才是举】
+any_vassals_have_talent_only_or_above = {
+	custom_tooltip = {
+		text = tt_any_vassals_have_talent_only_or_above
+		any_in_list = {
+			variable = list_valid_vassal
+			OR = {
+				subject_contract_has_flag = candidate_preference_talent_only
+				subject_contract_has_flag = candidate_preference_bureaucrat_promotion
+			}
+		}
+	}
+}
+
+# 多数封臣拥有【官僚选拔】
+most_vassals_have_bureaucrat_promotion = {
+	custom_tooltip = {
+		text = tt_most_vassals_have_bureaucrat_promotion
+		OR = {
+			any_in_list = {
+				variable = list_valid_vassal
+				subject_contract_has_flag = candidate_preference_bureaucrat_promotion
+				count >= 15
+			}
+			any_in_list = {
+				variable = list_valid_vassal
+				subject_contract_has_flag = candidate_preference_bureaucrat_promotion
+				percent >= 0.5
+			}
+		}
+	}
+}
+# 任何封臣拥有【官僚选拔】
+any_vassals_have_bureaucrat_promotion = {
+	custom_tooltip = {
+		text = tt_any_vassals_have_bureaucrat_promotion
+		any_in_list = {
+			variable = list_valid_vassal
+			subject_contract_has_flag = candidate_preference_bureaucrat_promotion
+		}
+	}
+}

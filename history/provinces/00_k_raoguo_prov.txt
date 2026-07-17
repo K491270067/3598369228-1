@@ -1,0 +1,85 @@
+﻿##### d_raoshi ############################
+
+### c_rao
+# RAO
+1214 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+# WUSUI4
+1213 = {
+	holding = none
+}
+
+
+### c_wuyuan
+# WUYUAN
+1215 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_awu
+# AWU
+1218 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+# ZHOUXIANG
+1221 = {
+	holding = none
+}
+
+
+##### d_shunshi ############################
+
+### c_houjing
+# HOUJING
+151 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_jiancheng1
+# JIANGCHENG1
+152 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+# JINGCHENG
+1219 = {
+	holding = none
+}
+
+
+##### d_fudengshi ############################
+
+### c_gonggao
+# GONGGAO
+146 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_yuecheng
+# YUECHENG
+148 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+# DONGCHANG
+147 = {
+	holding = none
+}
+
+

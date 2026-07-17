@@ -1,0 +1,30 @@
+﻿##### d_yinshi2 ############################
+
+### c_kuiying
+# KUIYING
+1760 = {
+	holding = none
+}
+
+
+### c_luyang1
+# LUYANG1
+1763 = {
+	holding = none
+}
+
+
+### c_xiayin
+# XIAYIN
+1771 = {
+	holding = none
+}
+
+
+### c_lecheng
+# LECHENG
+1772 = {
+	holding = none
+}
+
+

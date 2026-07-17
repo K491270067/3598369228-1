@@ -1,0 +1,33 @@
+﻿##### d_liushi ############################
+
+### c_zi3
+# ZI3
+778 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+### c_liu3
+# LIU3
+781 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+# JIULI
+779 = {
+	holding = none
+}
+
+
+### c_wu4
+# WU4
+782 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+

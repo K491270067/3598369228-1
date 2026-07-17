@@ -1,0 +1,101 @@
+﻿##### d_lintunshi ############################
+
+### c_dongyi
+# DONGYI
+3432 = {
+	holding = none
+}
+# CANTAI
+3433 = {
+	holding = none
+}
+# SANZHI
+3440 = {
+	holding = none
+}
+# QIANMO
+3434 = {
+	holding = none
+}
+# WEIZHEN
+3438 = {
+	holding = none
+}
+
+
+### c_cantai
+
+
+### c_qianmo
+
+
+### c_xietouwei
+# XIETOUWEI
+3435 = {
+	holding = none
+}
+# BUNAI
+3436 = {
+	holding = none
+}
+
+
+### c_bunai
+
+
+### c_shafeiqinyi
+
+
+### c_shouyitun
+
+
+### c_sanzhi
+
+
+### c_dayang
+
+
+### c_qicheng
+# QICHENG
+3443 = {
+	holding = none
+}
+# YICHENG3
+3444 = {
+	holding = none
+}
+# DAYANG
+3442 = {
+	holding = none
+}
+
+
+### c_yicheng3
+
+
+### c_langchuan
+
+
+### c_yanglu
+# YANGLU
+3446 = {
+	holding = none
+}
+# LANGCHUAN
+3445 = {
+	holding = none
+}
+
+
+### c_falichuan
+
+
+### c_yiwenjian
+
+
+### c_yulingdao
+
+
+### c_sanfengdao
+
+

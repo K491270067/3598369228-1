@@ -1,0 +1,44 @@
+﻿##### d_genmoushi ############################
+
+### c_genmou
+# GENMOU
+250 = {
+	culture = dongyi
+	religion = yili
+	holding = castle_holding
+}
+# DUPING1
+2243 = {
+	holding = none
+}
+
+
+### c_weiqi
+# WEIQI
+2242 = {
+	culture = dongyi
+	religion = yili
+	holding = castle_holding
+}
+
+
+##### d_genshi ############################
+
+### c_zhongqiu2
+# ZHONGQIU2
+244 = {
+	culture = dongyi
+	religion = yili
+	holding = castle_holding
+}
+
+
+### c_wucheng7
+# WUYANG
+2244 = {
+	culture = dongyi
+	religion = yili
+	holding = castle_holding
+}
+
+

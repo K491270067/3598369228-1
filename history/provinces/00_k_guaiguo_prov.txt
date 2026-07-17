@@ -1,0 +1,37 @@
+﻿##### d_guaishi ############################
+
+### c_mixu
+# MIXU
+1482 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+# BAISHI1
+2813 = {
+	holding = none
+}
+
+
+### c_guai
+# GUAI
+1490 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+# BAILI
+1488 = {
+	holding = none
+}
+
+
+### c_mao6
+# MAO6
+2810 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+

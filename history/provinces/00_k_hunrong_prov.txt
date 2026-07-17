@@ -1,0 +1,123 @@
+﻿##### d_hunshi ############################
+
+### c_feitin
+# FEITIN
+3048 = {
+	culture = xirong
+	religion = xirongfangling
+	holding = nomad_holding
+}
+# YUEQIN
+3044 = {
+	holding = none
+}
+
+
+### c_zuli
+# ZULI
+3053 = {
+	culture = xirong
+	religion = xirongfangling
+	holding = nomad_holding
+}
+# JUANLING
+3071 = {
+	holding = none
+}
+
+
+### c_diefu
+# DIEFU
+3072 = {
+	culture = xirong
+	religion = xirongfangling
+	holding = nomad_holding
+}
+# MINUO
+3073 = {
+	holding = none
+}
+
+
+##### d_dangyushi ############################
+
+### c_manggu
+# MANGGU
+3077 = {
+	culture = xirong
+	religion = xirongfangling
+	holding = nomad_holding
+}
+# NAER
+3079 = {
+	holding = none
+}
+
+
+### c_mozang
+# MOZANG
+3080 = {
+	culture = xirong
+	religion = xirongfangling
+	holding = nomad_holding
+}
+# GUQIN
+3081 = {
+	holding = none
+}
+
+
+### c_weiming
+# WEIMING
+3082 = {
+	culture = xirong
+	religion = xirongfangling
+	holding = nomad_holding
+}
+# LIANDU
+3083 = {
+	holding = none
+}
+
+
+##### d_rongzhoushi ############################
+
+### c_wulan
+# WULAN
+1571 = {
+	culture = xirong
+	religion = xirongfangling
+	holding = nomad_holding
+}
+# MIEBU
+3084 = {
+	holding = none
+}
+
+
+### c_hanjing
+# HANJING
+3074 = {
+	culture = xirong
+	religion = xirongfangling
+	holding = nomad_holding
+}
+# JUDI
+3075 = {
+	holding = none
+}
+
+
+### c_weiyi
+# WEIYI
+3078 = {
+	culture = xirong
+	religion = xirongfangling
+	holding = nomad_holding
+}
+# MEIHE
+3076 = {
+	holding = none
+}
+
+

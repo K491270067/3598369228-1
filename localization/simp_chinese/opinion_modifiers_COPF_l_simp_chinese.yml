@@ -1,0 +1,26 @@
+﻿l_simp_chinese:
+ opinion_denied_title_succession: "继承人头衔继承被否决"
+ opinion_denied_title_succession_again: "继承人头衔继承被再次否决！"
+
+ opinion_denied_title_succession_primary_heir: "头衔继承被否决"
+ opinion_denied_title_succession_again_primary_heir: "头衔继承被再次否决！"
+
+ opinion_denied_title_succession_heir: "潜在头衔继承被否决"
+ opinion_denied_title_succession_again_heir: "潜在头衔继承被再次否决！"
+
+ opinion_restored_title_succession: "头衔继承被恢复"
+
+ opinion_agree_to_return_title: "同意归还头衔"
+ opinion_refuse_to_return_title: "拒绝归还头衔"
+ opinion_refuse_to_return_title_show: "拒绝归还头衔"
+
+ opinion_forced_to_return_title_heir: "被强迫归还头衔"
+
+ opinion_granted_autonomy: "被授予自治"
+ opinion_granted_full_autonomy: "被授予完全自治"
+ opinion_unauthorized_declaring_autonomy: "擅自宣布自治"
+
+ opinion_appointed_subject_supervisor: "被任命为监察官员"
+ opinion_unauthorized_subject_supervisor_dismissal: "擅自撤销了监察官！"
+
+ opinion_promoted_new_bureaucrat: "感激晋升"

@@ -1,0 +1,1332 @@
+﻿k_shuguo2 = {
+1820.1.1 = {
+		holder = gushuguo1
+	}
+1893.1.1 = {
+		holder = gushuguo2
+	}
+1909.1.1 = {
+		holder = gushuguo3
+	}
+1931.1.1 = {
+		holder = gushuguo4
+	}
+1954.1.1 = {
+		holder = gushuguo5
+	}
+1977.1.1 = {
+		holder = gushuguo6
+	}
+1999.1.1 = {
+		holder = gushuguo7
+	}
+2022.1.1 = {
+		holder = gushuguo8
+	}
+2044.1.1 = {
+		holder = gushuguo9
+	}
+2067.1.1 = {
+		holder = gushuguo10
+	}
+2089.1.1 = {
+		holder = gushuguo11
+	}
+2112.1.1 = {
+		holder = gushuguo12
+	}
+2134.1.1 = {
+		holder = gushuguo13
+	}
+2157.1.1 = {
+		holder = gushuguo14
+	}
+2179.1.1 = {
+		holder = gushuguo15
+	}
+2202.1.1 = {
+		holder = gushuguo16
+	}
+2224.1.1 = {
+		holder = gushuguo17
+	}
+2247.1.1 = {
+		holder = gushuguo18
+	}
+2269.1.1 = {
+		holder = gushuguo19
+	}
+2292.1.1 = {
+		holder = gushuguo20
+	}
+2314.1.1 = {
+		holder = gushuguo21
+	}
+2337.1.1 = {
+		holder = gushuguo22
+	}
+2359.1.1 = {
+		holder = gushuguo23
+	}
+2382.1.1 = {
+		holder = gushuguo24
+	}
+2404.1.1 = {
+		holder = gushuguo25
+	}
+2427.1.1 = {
+		holder = gushuguo26
+	}
+2449.1.1 = {
+		holder = gushuguo27
+	}
+2472.1.1 = {
+		holder = gushuguo28
+	}
+2494.1.1 = {
+		holder = gushuguo29
+	}
+2517.1.1 = {
+		holder = gushuguo30
+	}
+2539.1.1 = {
+		holder = gushuguo31
+	}
+2562.1.1 = {
+		holder = gushuguo32
+	}
+2584.1.1 = {
+		holder = gushuguo33
+	}
+2607.1.1 = {
+		holder = gushuguo34
+	}
+2629.1.1 = {
+		holder = gushuguo94
+	}
+2630.1.1 = {
+		holder = gushuguo95
+	}
+2658.1.1 = {
+		holder = gushuguo96
+	}
+2684.1.1 = {
+		holder = gushuguo97
+	}
+2709.1.1 = {
+		holder = gushuguo98
+	}
+2736.1.1 = {
+		holder = gushuguo99
+	}
+2761.1.1 = {
+		holder = gushuguo100
+	}
+2787.1.1 = {
+		holder = gushuguo101
+	}
+2812.1.1 = {
+		holder = gushuguo102
+	}
+2838.1.1 = {
+		holder = gushuguo103
+	}
+2863.1.1 = {
+		holder = gushuguo104
+	}
+2889.1.1 = {
+		holder = gushuguo106
+	}
+2920.1.1 = {
+		holder = gushuguo107
+	}
+2944.1.1 = {
+		holder = gushuguo108
+	}
+2968.1.1 = {
+		holder = gushuguo109
+	}
+2992.1.1 = {
+		holder = gushuguo110
+	}
+3016.1.1 = {
+		holder = gushuguo111
+	}
+3040.1.1 = {
+		holder = han5314
+	}
+3042.1.1 = {
+		holder = han5315
+	}
+3059.12.31 = {
+		holder = gushuguo150
+	}
+3093.12.31 = {
+		holder = gushuguo151
+	}
+3121.12.31 = {
+		holder = gushuguo152
+	}
+3147.12.31 = {
+		holder = gushuguo153
+	}
+3175.12.31 = {
+		holder = gushuguo154
+	}
+3192.12.31 = {
+		holder = gushuguo155
+	}
+3228.12.31 = {
+		holder = gushuguo156
+	}
+3243.12.31 = {
+		holder = gushuguo157
+	}
+3277.12.31 = {
+		holder = gushuguo158
+	}
+3291.12.31 = {
+		holder = gushuguo159
+	}
+3325.12.31 = {
+		holder = gushuguo160
+	}
+3340.12.31 = {
+		holder = gushuguo161
+	}
+3372.12.31 = {
+		holder = gushuguo162
+	}
+3389.12.31 = {
+		holder = gushuguo163
+	}
+3420.12.31 = {
+		holder = gushuguo164
+	}
+3435.12.31 = {
+		holder = gushuguo165
+	}
+3468.12.31 = {
+		holder = gushuguo166
+	}
+3483.12.31 = {
+		holder = gushuguo167
+	}
+3514.12.31 = {
+		holder = gushuguo168
+	}
+3529.12.31 = {
+		holder = gushuguo169
+	}
+3561.12.31 = {
+		holder = gushuguo170
+	}
+3576.12.31 = {
+		holder = gushuguo171
+	}
+3608.12.31 = {
+		holder = gushuguo172
+	}
+3623.12.31 = {
+		holder = han5316
+	}
+3635.12.31 = {
+		holder = han5317
+	}
+3669.12.31 = {
+		holder = han5318
+	}
+3696.12.31 = {
+		holder = han5319
+	}
+3724.12.31 = {
+		holder = han5320
+	}
+3751.12.31 = {
+		holder = han5321
+	}
+3792.12.31 = {
+		holder = han5322
+	}
+3837.12.31 = {
+		holder = han5323
+	}
+3849.12.31 = {
+		holder = han5324
+	}
+3849.12.31 = {
+		government = tribal_government
+		change_development_level = 30
+	}
+}
+
+d_kaimingshi = {
+1820.1.1 = {
+liege = "k_shuguo2"
+		holder = gushuguo1
+	}
+1893.1.1 = {
+		holder = gushuguo2
+	}
+1909.1.1 = {
+		holder = gushuguo3
+	}
+1931.1.1 = {
+		holder = gushuguo4
+	}
+1954.1.1 = {
+		holder = gushuguo5
+	}
+1977.1.1 = {
+		holder = gushuguo6
+	}
+1999.1.1 = {
+		holder = gushuguo7
+	}
+2022.1.1 = {
+		holder = gushuguo8
+	}
+2044.1.1 = {
+		holder = gushuguo9
+	}
+2067.1.1 = {
+		holder = gushuguo10
+	}
+2089.1.1 = {
+		holder = gushuguo11
+	}
+2112.1.1 = {
+		holder = gushuguo12
+	}
+2134.1.1 = {
+		holder = gushuguo13
+	}
+2157.1.1 = {
+		holder = gushuguo14
+	}
+2179.1.1 = {
+		holder = gushuguo15
+	}
+2202.1.1 = {
+		holder = gushuguo16
+	}
+2224.1.1 = {
+		holder = gushuguo17
+	}
+2247.1.1 = {
+		holder = gushuguo18
+	}
+2269.1.1 = {
+		holder = gushuguo19
+	}
+2292.1.1 = {
+		holder = gushuguo20
+	}
+2314.1.1 = {
+		holder = gushuguo21
+	}
+2337.1.1 = {
+		holder = gushuguo22
+	}
+2359.1.1 = {
+		holder = gushuguo23
+	}
+2382.1.1 = {
+		holder = gushuguo24
+	}
+2404.1.1 = {
+		holder = gushuguo25
+	}
+2427.1.1 = {
+		holder = gushuguo26
+	}
+2449.1.1 = {
+		holder = gushuguo27
+	}
+2472.1.1 = {
+		holder = gushuguo28
+	}
+2494.1.1 = {
+		holder = gushuguo29
+	}
+2517.1.1 = {
+		holder = gushuguo30
+	}
+2539.1.1 = {
+		holder = gushuguo31
+	}
+2562.1.1 = {
+		holder = gushuguo32
+	}
+2584.1.1 = {
+		holder = gushuguo33
+	}
+2607.1.1 = {
+		holder = gushuguo34
+	}
+2629.1.1 = {
+		holder = gushuguo94
+	}
+2630.1.1 = {
+		holder = gushuguo95
+	}
+2658.1.1 = {
+		holder = gushuguo96
+	}
+2684.1.1 = {
+		holder = gushuguo97
+	}
+2709.1.1 = {
+		holder = gushuguo98
+	}
+2736.1.1 = {
+		holder = gushuguo99
+	}
+2761.1.1 = {
+		holder = gushuguo100
+	}
+2787.1.1 = {
+		holder = gushuguo101
+	}
+2812.1.1 = {
+		holder = gushuguo102
+	}
+2838.1.1 = {
+		holder = gushuguo103
+	}
+2863.1.1 = {
+		holder = gushuguo104
+	}
+2889.1.1 = {
+		holder = gushuguo106
+	}
+2920.1.1 = {
+		holder = gushuguo107
+	}
+2944.1.1 = {
+		holder = gushuguo108
+	}
+2968.1.1 = {
+		holder = gushuguo109
+	}
+2992.1.1 = {
+		holder = gushuguo110
+	}
+3016.1.1 = {
+		holder = gushuguo111
+	}
+3040.1.1 = {
+		holder = han5314
+	}
+3042.1.1 = {
+		holder = han5315
+	}
+3059.12.31 = {
+		holder = gushuguo150
+	}
+3093.12.31 = {
+		holder = gushuguo151
+	}
+3121.12.31 = {
+		holder = gushuguo152
+	}
+3147.12.31 = {
+		holder = gushuguo153
+	}
+3175.12.31 = {
+		holder = gushuguo154
+	}
+3192.12.31 = {
+		holder = gushuguo155
+	}
+3228.12.31 = {
+		holder = gushuguo156
+	}
+3243.12.31 = {
+		holder = gushuguo157
+	}
+3277.12.31 = {
+		holder = gushuguo158
+	}
+3291.12.31 = {
+		holder = gushuguo159
+	}
+3325.12.31 = {
+		holder = gushuguo160
+	}
+3340.12.31 = {
+		holder = gushuguo161
+	}
+3372.12.31 = {
+		holder = gushuguo162
+	}
+3389.12.31 = {
+		holder = gushuguo163
+	}
+3420.12.31 = {
+		holder = gushuguo164
+	}
+3435.12.31 = {
+		holder = gushuguo165
+	}
+3468.12.31 = {
+		holder = gushuguo166
+	}
+3483.12.31 = {
+		holder = gushuguo167
+	}
+3514.12.31 = {
+		holder = gushuguo168
+	}
+3529.12.31 = {
+		holder = gushuguo169
+	}
+3561.12.31 = {
+		holder = gushuguo170
+	}
+3576.12.31 = {
+		holder = gushuguo171
+	}
+3608.12.31 = {
+		holder = gushuguo172
+	}
+3623.12.31 = {
+		holder = han5316
+	}
+3635.12.31 = {
+		holder = han5317
+	}
+3669.12.31 = {
+		holder = han5318
+	}
+3696.12.31 = {
+		holder = han5319
+	}
+3724.12.31 = {
+		holder = han5320
+	}
+3751.12.31 = {
+		holder = han5321
+	}
+3792.12.31 = {
+		holder = han5322
+	}
+3837.12.31 = {
+		holder = han5323
+	}
+3849.12.31 = {
+		holder = han5324
+	}
+}
+
+d_cancongshi = {
+1820.1.1 = {
+liege = "k_shuguo2"
+		holder = gushuguo1
+	}
+1893.1.1 = {
+		holder = gushuguo2
+	}
+1909.1.1 = {
+		holder = gushuguo3
+	}
+1931.1.1 = {
+		holder = gushuguo4
+	}
+1954.1.1 = {
+		holder = gushuguo5
+	}
+1977.1.1 = {
+		holder = gushuguo6
+	}
+1999.1.1 = {
+		holder = gushuguo7
+	}
+2022.1.1 = {
+		holder = gushuguo8
+	}
+2044.1.1 = {
+		holder = gushuguo9
+	}
+2067.1.1 = {
+		holder = gushuguo10
+	}
+2089.1.1 = {
+		holder = gushuguo11
+	}
+2112.1.1 = {
+		holder = gushuguo12
+	}
+2134.1.1 = {
+		holder = gushuguo13
+	}
+2157.1.1 = {
+		holder = gushuguo14
+	}
+2179.1.1 = {
+		holder = gushuguo15
+	}
+2202.1.1 = {
+		holder = gushuguo16
+	}
+2224.1.1 = {
+		holder = gushuguo17
+	}
+2247.1.1 = {
+		holder = gushuguo18
+	}
+2269.1.1 = {
+		holder = gushuguo19
+	}
+2292.1.1 = {
+		holder = gushuguo20
+	}
+2314.1.1 = {
+		holder = gushuguo21
+	}
+2337.1.1 = {
+		holder = gushuguo22
+	}
+2359.1.1 = {
+		holder = gushuguo23
+	}
+2382.1.1 = {
+		holder = gushuguo24
+	}
+2404.1.1 = {
+		holder = gushuguo25
+	}
+2427.1.1 = {
+		holder = gushuguo26
+	}
+2449.1.1 = {
+		holder = gushuguo27
+	}
+2472.1.1 = {
+		holder = gushuguo28
+	}
+2494.1.1 = {
+		holder = gushuguo29
+	}
+2517.1.1 = {
+		holder = gushuguo30
+	}
+2539.1.1 = {
+		holder = gushuguo31
+	}
+2562.1.1 = {
+		holder = gushuguo32
+	}
+2584.1.1 = {
+		holder = gushuguo33
+	}
+2607.1.1 = {
+		holder = gushuguo34
+	}
+2629.1.1 = {
+		holder = gushuguo35
+	}
+2652.1.1 = {
+		holder = gushuguo36
+	}
+2674.1.1 = {
+		holder = gushuguo37
+	}
+2697.1.1 = {
+		holder = gushuguo38
+	}
+2719.1.1 = {
+		holder = gushuguo39
+	}
+2742.1.1 = {
+		holder = gushuguo40
+	}
+2764.1.1 = {
+		holder = gushuguo41
+	}
+2787.1.1 = {
+		holder = gushuguo42
+	}
+2809.1.1 = {
+		holder = gushuguo43
+	}
+2832.1.1 = {
+		holder = gushuguo44
+	}
+2854.1.1 = {
+		holder = gushuguo45
+	}
+2877.1.1 = {
+		holder = gushuguo46
+	}
+2899.1.1 = {
+		holder = gushuguo47
+	}
+2922.1.1 = {
+		holder = gushuguo48
+	}
+2944.1.1 = {
+		holder = gushuguo49
+	}
+2967.1.1 = {
+		holder = gushuguo50
+	}
+2989.1.1 = {
+		holder = gushuguo51
+	}
+3012.1.1 = {
+		holder = gushuguo52
+	}
+3034.1.1 = {
+		holder = gushuguo53
+	}
+3057.1.1 = {
+		holder = gushuguo54
+	}
+3079.1.1 = {
+		holder = gushuguo55
+	}
+3102.1.1 = {
+		holder = gushuguo56
+	}
+3124.1.1 = {
+		holder = gushuguo57
+	}
+3147.1.1 = {
+		holder = gushuguo58
+	}
+3169.1.1 = {
+		holder = gushuguo59
+	}
+3192.1.1 = {
+		holder = gushuguo60
+	}
+3214.1.1 = {
+		holder = gushuguo61
+	}
+3237.1.1 = {
+		holder = gushuguo62
+	}
+3259.1.1 = {
+		holder = gushuguo63
+	}
+3282.1.1 = {
+		holder = gushuguo64
+	}
+3304.1.1 = {
+		holder = gushuguo65
+	}
+3327.1.1 = {
+		holder = gushuguo66
+	}
+3349.1.1 = {
+		holder = gushuguo67
+	}
+3372.1.1 = {
+		holder = gushuguo68
+	}
+3394.1.1 = {
+		holder = gushuguo69
+	}
+3417.1.1 = {
+		holder = gushuguo70
+	}
+3439.1.1 = {
+		holder = gushuguo71
+	}
+3462.1.1 = {
+		holder = gushuguo72
+	}
+3484.1.1 = {
+		holder = gushuguo73
+	}
+3507.1.1 = {
+		holder = gushuguo74
+	}
+3529.1.1 = {
+		holder = gushuguo75
+	}
+3552.1.1 = {
+		holder = gushuguo76
+	}
+3574.1.1 = {
+		holder = gushuguo77
+	}
+3597.1.1 = {
+		holder = gushuguo78
+	}
+3619.1.1 = {
+		holder = gushuguo79
+	}
+3642.1.1 = {
+		holder = gushuguo80
+	}
+3664.1.1 = {
+		holder = gushuguo81
+	}
+3687.1.1 = {
+		holder = gushuguo82
+	}
+3709.1.1 = {
+		holder = gushuguo83
+	}
+3732.1.1 = {
+		holder = gushuguo84
+	}
+3754.1.1 = {
+		holder = gushuguo85
+	}
+3777.1.1 = {
+		holder = gushuguo86
+	}
+3799.1.1 = {
+		holder = gushuguo87
+	}
+3822.1.1 = {
+		holder = gushuguo88
+	}
+3844.1.1 = {
+		holder = gushuguo89
+	}
+3849.1.1 = {
+		change_development_level = 26
+		government = tribal_government
+	}
+}
+
+d_boguanshi = {
+2629.1.1 = {
+liege = "k_shuguo2"
+		holder = gushuguo94
+	}
+2630.1.1 = {
+		holder = gushuguo95
+	}
+2658.1.1 = {
+		holder = gushuguo96
+	}
+2684.1.1 = {
+		holder = gushuguo97
+	}
+2709.1.1 = {
+		holder = gushuguo98
+	}
+2736.1.1 = {
+		holder = gushuguo99
+	}
+2761.1.1 = {
+		holder = gushuguo100
+	}
+2787.1.1 = {
+		holder = gushuguo101
+	}
+2812.1.1 = {
+		holder = gushuguo102
+	}
+2838.1.1 = {
+		holder = gushuguo103
+	}
+2863.1.1 = {
+		holder = gushuguo104
+	}
+2889.1.1 = {
+		holder = gushuguo106
+	}
+2920.1.1 = {
+		holder = gushuguo107
+	}
+2944.1.1 = {
+		holder = gushuguo108
+	}
+2968.1.1 = {
+		holder = gushuguo109
+	}
+2992.1.1 = {
+		holder = gushuguo110
+	}
+3016.1.1 = {
+		holder = gushuguo111
+	}
+3040.1.1 = {
+		holder = gushuguo112
+	}
+3064.1.1 = {
+		holder = gushuguo113
+	}
+3088.1.1 = {
+		holder = gushuguo114
+	}
+3112.1.1 = {
+		holder = gushuguo115
+	}
+3136.1.1 = {
+		holder = gushuguo116
+	}
+3160.1.1 = {
+		holder = gushuguo117
+	}
+3184.1.1 = {
+		holder = gushuguo118
+	}
+3208.1.1 = {
+		holder = gushuguo119
+	}
+3232.1.1 = {
+		holder = gushuguo120
+	}
+3256.1.1 = {
+		holder = gushuguo121
+	}
+3280.1.1 = {
+		holder = gushuguo122
+	}
+3304.1.1 = {
+		holder = gushuguo123
+	}
+3328.1.1 = {
+		holder = gushuguo124
+	}
+3352.1.1 = {
+		holder = gushuguo125
+	}
+3376.1.1 = {
+		holder = gushuguo126
+	}
+3400.1.1 = {
+		holder = gushuguo127
+	}
+3424.1.1 = {
+		holder = gushuguo128
+	}
+3448.1.1 = {
+		holder = gushuguo129
+	}
+3472.1.1 = {
+		holder = gushuguo130
+	}
+3496.1.1 = {
+		holder = gushuguo131
+	}
+3520.1.1 = {
+		holder = gushuguo132
+	}
+3544.1.1 = {
+		holder = gushuguo133
+	}
+3568.1.1 = {
+		holder = gushuguo134
+	}
+3592.1.1 = {
+		holder = gushuguo135
+	}
+3616.1.1 = {
+		holder = gushuguo136
+	}
+3640.1.1 = {
+		holder = gushuguo137
+	}
+3664.1.1 = {
+		holder = gushuguo138
+	}
+3688.1.1 = {
+		holder = gushuguo139
+	}
+3712.1.1 = {
+		holder = gushuguo140
+	}
+3736.1.1 = {
+		holder = gushuguo141
+	}
+3760.1.1 = {
+		holder = gushuguo142
+	}
+3784.1.1 = {
+		holder = gushuguo143
+	}
+3808.1.1 = {
+		holder = gushuguo144
+	}
+3832.1.1 = {
+		holder = gushuguo145
+	}
+3849.1.1 = {
+		change_development_level = 27
+		government = tribal_government
+	}
+}
+
+d_yufushi = {
+3040.1.1 = {
+liege = "k_shuguo2"
+		holder = han5314
+	}
+3042.1.1 = {
+		holder = han5315
+	}
+3059.12.31 = {
+		holder = gushuguo150
+	}
+3093.12.31 = {
+		holder = gushuguo151
+	}
+3121.12.31 = {
+		holder = gushuguo152
+	}
+3147.12.31 = {
+		holder = gushuguo153
+	}
+3175.12.31 = {
+		holder = gushuguo154
+	}
+3192.12.31 = {
+		holder = gushuguo155
+	}
+3228.12.31 = {
+		holder = gushuguo156
+	}
+3243.12.31 = {
+		holder = gushuguo157
+	}
+3277.12.31 = {
+		holder = gushuguo158
+	}
+3291.12.31 = {
+		holder = gushuguo159
+	}
+3325.12.31 = {
+		holder = gushuguo160
+	}
+3340.12.31 = {
+		holder = gushuguo161
+	}
+3372.12.31 = {
+		holder = gushuguo162
+	}
+3389.12.31 = {
+		holder = gushuguo163
+	}
+3420.12.31 = {
+		holder = gushuguo164
+	}
+3435.12.31 = {
+		holder = gushuguo165
+	}
+3468.12.31 = {
+		holder = gushuguo166
+	}
+3483.12.31 = {
+		holder = gushuguo167
+	}
+3514.12.31 = {
+		holder = gushuguo168
+	}
+3529.12.31 = {
+		holder = gushuguo169
+	}
+3561.12.31 = {
+		holder = gushuguo170
+	}
+3576.12.31 = {
+		holder = gushuguo171
+	}
+3608.12.31 = {
+		holder = gushuguo172
+	}
+3623.12.31 = {
+		holder = gushuguo173
+	}	
+3654.12.31 = {
+		holder = gushuguo174
+	}
+3670.12.31 = {
+		holder = gushuguo175
+	}
+3702.12.31 = {
+		holder = gushuguo176
+	}
+3716.12.31 = {
+		holder = gushuguo177
+	}
+3749.12.31 = {
+		holder = gushuguo178
+	}
+3767.12.31 = {
+		holder = gushuguo179
+	}
+3798.12.31 = {
+		holder = gushuguo180
+	}
+3813.12.31 = {
+		holder = gushuguo181
+	}
+3845.12.31 = {
+		holder = gushuguo182
+	}
+3849.1.1 = {
+		change_development_level = 28
+		government = tribal_government
+	}
+}
+
+c_niubei = {
+1820.1.1 = {
+liege = "k_shuguo2"
+		holder = gushuguo1
+	}
+1893.1.1 = {
+		holder = gushuguo2
+	}
+1909.1.1 = {
+		holder = gushuguo3
+	}
+1931.1.1 = {
+		holder = gushuguo4
+	}
+1954.1.1 = {
+		holder = gushuguo5
+	}
+1977.1.1 = {
+		holder = gushuguo6
+	}
+1999.1.1 = {
+		holder = gushuguo7
+	}
+2022.1.1 = {
+		holder = gushuguo8
+	}
+2044.1.1 = {
+		holder = gushuguo9
+	}
+2067.1.1 = {
+		holder = gushuguo10
+	}
+2089.1.1 = {
+		holder = gushuguo11
+	}
+2112.1.1 = {
+		holder = gushuguo12
+	}
+2134.1.1 = {
+		holder = gushuguo13
+	}
+2157.1.1 = {
+		holder = gushuguo14
+	}
+2179.1.1 = {
+		holder = gushuguo15
+	}
+2202.1.1 = {
+		holder = gushuguo16
+	}
+2224.1.1 = {
+		holder = gushuguo17
+	}
+2247.1.1 = {
+		holder = gushuguo18
+	}
+2269.1.1 = {
+		holder = gushuguo19
+	}
+2292.1.1 = {
+		holder = gushuguo20
+	}
+2314.1.1 = {
+		holder = gushuguo21
+	}
+2337.1.1 = {
+		holder = gushuguo22
+	}
+2359.1.1 = {
+		holder = gushuguo23
+	}
+2382.1.1 = {
+		holder = gushuguo24
+	}
+2404.1.1 = {
+		holder = gushuguo25
+	}
+2427.1.1 = {
+		holder = gushuguo26
+	}
+2449.1.1 = {
+		holder = gushuguo27
+	}
+2472.1.1 = {
+		holder = gushuguo28
+	}
+2494.1.1 = {
+		holder = gushuguo29
+	}
+2517.1.1 = {
+		holder = gushuguo30
+	}
+2539.1.1 = {
+		holder = gushuguo31
+	}
+2562.1.1 = {
+		holder = gushuguo32
+	}
+2584.1.1 = {
+		holder = gushuguo33
+	}
+2607.1.1 = {
+		holder = gushuguo34
+	}
+2629.1.1 = {
+		holder = gushuguo94
+	}
+2630.1.1 = {
+		holder = gushuguo95
+	}
+2658.1.1 = {
+		holder = gushuguo96
+	}
+2684.1.1 = {
+		holder = gushuguo97
+	}
+2709.1.1 = {
+		holder = gushuguo98
+	}
+2736.1.1 = {
+		holder = gushuguo99
+	}
+2761.1.1 = {
+		holder = gushuguo100
+	}
+2787.1.1 = {
+		holder = gushuguo101
+	}
+2812.1.1 = {
+		holder = gushuguo102
+	}
+2838.1.1 = {
+		holder = gushuguo103
+	}
+2863.1.1 = {
+		holder = gushuguo104
+	}
+2889.1.1 = {
+		holder = gushuguo106
+	}
+2920.1.1 = {
+		holder = gushuguo107
+	}
+2944.1.1 = {
+		holder = gushuguo108
+	}
+2968.1.1 = {
+		holder = gushuguo109
+	}
+2992.1.1 = {
+		holder = gushuguo110
+	}
+3016.1.1 = {
+		holder = gushuguo111
+	}
+3040.1.1 = {
+		holder = han5314
+	}
+3042.1.1 = {
+		holder = han5315
+	}
+3059.12.31 = {
+		holder = gushuguo150
+	}
+3093.12.31 = {
+		holder = gushuguo151
+	}
+3121.12.31 = {
+		holder = gushuguo152
+	}
+3147.12.31 = {
+		holder = gushuguo153
+	}
+3175.12.31 = {
+		holder = gushuguo154
+	}
+3192.12.31 = {
+		holder = gushuguo155
+	}
+3228.12.31 = {
+		holder = gushuguo156
+	}
+3243.12.31 = {
+		holder = gushuguo157
+	}
+3277.12.31 = {
+		holder = gushuguo158
+	}
+3291.12.31 = {
+		holder = gushuguo159
+	}
+3325.12.31 = {
+		holder = gushuguo160
+	}
+3340.12.31 = {
+		holder = gushuguo161
+	}
+3372.12.31 = {
+		holder = gushuguo162
+	}
+3389.12.31 = {
+		holder = gushuguo163
+	}
+3420.12.31 = {
+		holder = gushuguo164
+	}
+3435.12.31 = {
+		holder = gushuguo165
+	}
+3468.12.31 = {
+		holder = gushuguo166
+	}
+3483.12.31 = {
+		holder = gushuguo167
+	}
+3514.12.31 = {
+		holder = gushuguo168
+	}
+3529.12.31 = {
+		holder = gushuguo169
+	}
+3561.12.31 = {
+		holder = gushuguo170
+	}
+3576.12.31 = {
+		holder = gushuguo171
+	}
+3608.12.31 = {
+		holder = gushuguo172
+	}
+3623.12.31 = {
+		holder = han5316
+	}
+3635.12.31 = {
+		holder = han5317
+	}
+3669.12.31 = {
+		holder = han5318
+	}
+3696.12.31 = {
+		holder = han5319
+	}
+3724.12.31 = {
+		holder = han5320
+	}
+3751.12.31 = {
+		holder = han5321
+	}
+3792.12.31 = {
+		holder = han5322
+	}
+3837.12.31 = {
+		holder = han5323
+	}
+3849.12.31 = {
+		holder = han5329
+	}
+3849.1.1 = {
+		change_development_level = 26
+		government = tribal_government
+	}
+}

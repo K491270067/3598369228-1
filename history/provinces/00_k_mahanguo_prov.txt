@@ -1,0 +1,403 @@
+﻿##### d_muzhishi ############################
+
+### c_chenfengu
+
+
+### c_sulubusi
+
+
+### c_nulan
+
+
+### c_gudanzhe
+# GUDANZHE
+3359 = {
+	holding = none
+}
+
+
+### c_yuezhi
+
+
+### c_rihua
+
+
+### c_zhiqin
+
+
+### c_jianxibeili
+
+
+### c_chenxin
+
+
+### c_shareyi
+# NULAN
+3358 = {
+	holding = none
+}
+
+
+### c_chishan
+
+
+### c_hengchuan
+
+
+### c_hanshan1
+
+
+### c_shafuhu
+
+
+### c_shuchuan
+
+
+### c_nuyinzhu
+
+
+### c_shesan
+# RIHUA
+3361 = {
+	holding = none
+}
+
+
+### c_rendainu
+# CHENFENGU
+3355 = {
+	holding = none
+}
+# SULUBUSI
+3356 = {
+	holding = none
+}
+
+
+### c_fashouzhi
+# CEHNXIAN
+3368 = {
+	holding = none
+}
+# ZHIQIN
+3362 = {
+	holding = none
+}
+# ZHANBEILI
+3363 = {
+	holding = none
+}
+
+
+### c_chuli1
+
+
+### c_chenyunxin
+
+
+### c_jiusiwudan
+# JIUSIWUDAN
+3346 = {
+	holding = none
+}
+# BUMI
+3341 = {
+	holding = none
+}
+
+
+### c_daoxi
+
+
+### c_shangmao
+
+
+### c_changfeng
+
+
+### c_dourenzhi
+# ERLIN
+3375 = {
+	holding = none
+}
+# GUPU
+3378 = {
+	holding = none
+}
+
+
+### c_qingtang
+
+
+### c_zhanbeili
+
+
+### c_beili
+
+
+### c_wanlu
+# WANLU
+3365 = {
+	holding = none
+}
+# GOULU
+3369 = {
+	holding = none
+}
+# BEILI
+3364 = {
+	holding = none
+}
+
+
+### c_pibeili
+
+
+### c_goulu
+
+
+### c_zhilijun
+
+
+### c_zilimoulu
+
+
+### c_suweigan
+
+
+### c_ganxi
+
+
+### c_ranlu
+# RANLU
+3374 = {
+	holding = none
+}
+# ZILIMOULU
+3371 = {
+	holding = none
+}
+# SUWEIGAN
+3372 = {
+	holding = none
+}
+# YUEZHI
+3360 = {
+	holding = none
+}
+
+
+### c_erlin
+
+
+### c_molu
+
+
+### c_sielu
+
+
+### c_gupu
+
+
+### c_beimi
+# BEIMI
+3379 = {
+	holding = none
+}
+# XUANPU
+3381 = {
+	holding = none
+}
+# JIANXIBEILI
+3366 = {
+	holding = none
+}
+
+
+### c_neibeili
+# NEIBEILI
+3380 = {
+	holding = none
+}
+# GANXI
+3373 = {
+	holding = none
+}
+# SIELU
+3377 = {
+	holding = none
+}
+# ZHILIJUN
+3370 = {
+	holding = none
+}
+
+
+### c_xuanpu
+
+
+### c_renshi
+
+
+### c_tuping
+
+
+### c_matu
+# QIANMA
+3342 = {
+	holding = none
+}
+# CHULI1
+3343 = {
+	holding = none
+}
+# GUAI1
+3347 = {
+	holding = none
+}
+
+
+### c_kangjin
+# GOUXI
+3330 = {
+	holding = none
+}
+
+
+### c_daokang
+
+
+### c_tushan1
+
+
+### c_maichouli
+# YINAN
+3328 = {
+	holding = none
+}
+# CHENSUTU
+3329 = {
+	holding = none
+}
+
+
+### c_alao
+
+
+### c_guluzhi
+# JIELU
+3382 = {
+	holding = none
+}
+
+
+### c_beilubeigao
+# BEILUBEIGAO
+3335 = {
+	holding = none
+}
+# CHUSHANTULI
+3333 = {
+	holding = none
+}
+
+
+### c_gula
+# GULA
+3336 = {
+	holding = none
+}
+# LINSUBAN
+3337 = {
+	holding = none
+}
+# ZHIBAN
+3338 = {
+	holding = none
+}
+
+
+### c_linsuban
+
+
+### c_zhiban
+
+
+### c_gousu
+# GOUSU
+3339 = {
+	holding = none
+}
+# YILI
+3340 = {
+	holding = none
+}
+# PIBEILI
+3367 = {
+	holding = none
+}
+# MOLU
+3376 = {
+	holding = none
+}
+
+
+### c_yili
+
+
+### c_bumi
+
+
+### c_yinan
+
+
+### c_chensutu
+
+
+### c_gouxi
+
+
+### c_busifenxie
+# BUSIFENXIE
+3331 = {
+	holding = none
+}
+# AICHI
+3332 = {
+	holding = none
+}
+
+
+### c_aichi
+
+
+### c_chushantuli
+
+
+### c_luyun
+
+
+### c_qianma
+
+
+### c_rulaibeili
+# RULAIBEILI
+3344 = {
+	holding = none
+}
+# CHENYUNXIN
+3345 = {
+	holding = none
+}
+# LUYUN
+3334 = {
+	holding = none
+}
+
+
+### c_guai1
+
+
+### c_jielu
+
+

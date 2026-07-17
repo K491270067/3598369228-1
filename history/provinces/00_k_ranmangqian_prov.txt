@@ -1,0 +1,185 @@
+﻿##### d_ranshi ############################
+
+### c_miansi
+# MIANSI
+3164 = {
+	culture = dizu
+	religion = xirongfangling
+	holding = tribal_holding
+}
+
+
+### c_guangrou
+# GUANGROU
+3167 = {
+	holding = none
+}
+
+
+### c_luoxian
+# LUOXIAN
+3168 = {
+	culture = dizu
+	religion = xirongfangling
+	holding = tribal_holding
+}
+
+
+### c_mengyang
+# MENGYANG
+3288 = {
+	holding = none
+}
+
+
+### c_jiulong
+# JIULONG
+3289 = {
+	culture = dizu
+	religion = xirongfangling
+	holding = tribal_holding
+}
+
+
+### c_daojiang
+# DAOJIANG
+3290 = {
+	holding = none
+}
+
+
+### c_jintang
+# JINTANG
+3291 = {
+	holding = none
+}
+
+
+### c_deyang
+# DEYANG
+3292 = {
+	holding = none
+}
+
+
+### c_shifang
+# SHIFANG
+3293 = {
+	culture = dizu
+	religion = xirongfangling
+	holding = tribal_holding
+}
+
+
+### c_mianzhu1
+# MIANZHU1
+3294 = {
+	culture = xiqiang
+	religion = xirongfangling
+	holding = tribal_holding
+}
+
+
+### c_xichang
+# XICHANG
+3299 = {
+	holding = none
+}
+
+
+### c_shenquan
+# SHENQUAN
+3300 = {
+	holding = none
+}
+
+
+### c_luojiang
+# LUOJIANG
+3301 = {
+	culture = dizu
+	religion = xirongfangling
+	holding = tribal_holding
+}
+
+
+### c_wenshan1
+# WENSHAN1
+3712 = {
+	culture = xiqiang
+	religion = xirongfangling
+	holding = tribal_holding
+}
+
+
+### c_shiquan2
+# SHIQUAN2
+3713 = {
+	culture = xiqiang
+	religion = xirongfangling
+	holding = tribal_holding
+}
+
+
+### c_jizongguan
+# JIZONGGUAN
+3714 = {
+	holding = none
+}
+
+
+### c_jinshan
+# JINSHAN
+3715 = {
+	holding = none
+}
+
+
+### c_songlingguan
+# SONGLINGGUAN
+3716 = {
+	culture = xiqiang
+	religion = xirongfangling
+	holding = tribal_holding
+}
+
+
+### c_zhangshan
+# ZHANGSHAN
+3717 = {
+	holding = none
+}
+
+
+### c_baiancheng
+# BAIANCHENG
+3718 = {
+	holding = none
+}
+
+
+### c_ehecheng
+# EHECHENG
+3719 = {
+	culture = xiqiang
+	religion = xirongfangling
+	holding = tribal_holding
+}
+
+
+### c_shijiu
+# SHIJIU
+3720 = {
+	holding = none
+}
+
+
+### c_cangling
+# CANGLING
+3721 = {
+	culture = xiqiang
+	religion = xirongfangling
+	holding = tribal_holding
+}
+
+

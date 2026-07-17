@@ -1,0 +1,560 @@
+﻿baijia297 = {
+	pattern= "pattern_solid.dds"
+	color1 = red
+	color2 = white
+	#color3=white
+	colored_emblem={
+		color1=black
+		color2=rgb { 169 49 33 }
+		color3=white
+		texture="acb_rand_13.dds"
+		instance={
+			position={ 0.510000 0.500000 }
+		}
+
+	}
+
+	colored_emblem={
+		color1=orange
+		color3=red
+		texture="ce_cloud_swirl_nestorian.dds"
+		instance={
+			position={ 0.860000 0.500000 }
+			depth=2.010000
+			rotation=273
+		}
+
+	}
+
+	colored_emblem={
+		color1=rgb { 138 39 25 }
+		texture="ce_fleur.dds"
+		instance={
+			depth=1.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=orange
+		color2=rgb { 41 66 90 }
+		color3=white
+		texture="ce_cloud_swirl_nestorian.dds"
+		instance={
+			position={ 0.170000 0.480000 }
+			depth=3.010000
+			rotation=88
+		}
+
+	}
+
+}
+
+
+
+e_zhoutianzi={
+	custom=yes
+	pattern="pattern__solid_designer.dds"
+	color1=black
+	color2=black
+	color3=red
+	colored_emblem={
+		color1=white
+		texture="ce_block_02.dds"
+		instance={
+			scale={ 0.740000 0.760000 }
+			depth=1.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=white
+		color2=white
+		color3=black
+		texture="zhou.dds"
+		instance={
+			position={ 0.500000 0.490000 }
+			scale={ 0.990000 0.910000 }
+		}
+
+	}
+
+}
+
+e_zhoutianzi1 ={
+	custom=yes
+	pattern="pattern__solid_designer.dds"
+	color1=rgb { 67 64 61 }
+	color2=black
+	color3=red
+	colored_emblem={
+		color1=rgb { 40 31 25 }
+		color3=rgb { 72 53 50 }
+		texture="ce_block_02.dds"
+		instance={
+			scale={ 0.740000 0.760000 }
+			depth=1.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=rgb { 147 140 135 }
+		color2=white
+		color3=rgb { 235 229 223 }
+		texture="zhou.dds"
+		instance={
+			position={ 0.500000 0.490000 }
+			scale={ 0.990000 0.910000 }
+		}
+
+	}
+
+}
+
+e_ceremonial_huaxia ={
+	custom=yes
+	pattern="pattern__solid_designer.dds"
+	color1=black
+	color2=black
+	color3=red
+	colored_emblem={
+		color1=white
+		texture="ce_block_02.dds"
+		instance={
+			scale={ 0.740000 0.760000 }
+			depth=1.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=white
+		color2=white
+		color3=black
+		texture="zhou.dds"
+		instance={
+			position={ 0.500000 0.490000 }
+			scale={ 0.990000 0.910000 }
+		}
+
+	}
+
+}
+
+house_baijia22={
+	custom=yes
+	pattern="pattern_stepped_pyramid.dds"
+	color1=brown
+	color2=rgb { 46 51 46 }
+	color3=blue
+	colored_emblem={
+		color1=rgb { 163 141 129 }
+		texture="ce_wolf_passant_lamb.dds"
+		instance={
+			position={ 0.500000 0.550000 }
+			scale={ -0.810000 1.000000 }
+		}
+
+	}
+	colored_emblem={
+		color1=brown
+		texture="ce_barbels_addorsed.dds"
+		instance={
+			position={ 0.250000 0.250000 }
+			scale={ 0.300000 0.300000 }
+			depth=2.010000
+		}
+
+	}	
+	colored_emblem={
+		color1=brown
+		texture="ce_celestial_body.dds"
+		instance={
+			position={ 0.500000 0.380000 }
+			depth=1.010000
+			rotation=180
+		}
+
+	}
+
+}
+
+xin221={
+	custom=yes
+	pattern="pattern_waves_01.dds"
+	color1=rgb { 39 118 191 }
+	color2=rgb { 75 114 150 }
+	color3=black
+	colored_emblem={
+		color1=rgb { 221 221 221 }
+		texture="ce_wolf_passant_lamb.dds"
+		instance={
+			position={ 0.430000 0.560000 }
+			scale={ -0.850000 0.850000 }
+		}
+
+	}
+
+	colored_emblem={
+		color1=rgb { 236 182 103 }
+		color2=rgb { 55 130 201 }
+		texture="ce_celestial_body.dds"
+		instance={
+			position={ 0.450000 0.500000 }
+			depth=1.010000
+			rotation=167
+		}
+
+	}
+
+}
+k_quanrong1={
+	custom=yes
+	pattern="pattern_waves_01.dds"
+	color1=rgb { 39 118 191 }
+	color2=rgb { 75 114 150 }
+	color3=black
+	colored_emblem={
+		color1=rgb { 221 221 221 }
+		texture="ce_wolf_passant_lamb.dds"
+		instance={
+			position={ 0.430000 0.560000 }
+			scale={ -0.850000 0.850000 }
+		}
+
+	}
+
+	colored_emblem={
+		color1=rgb { 236 182 103 }
+		color2=rgb { 55 130 201 }
+		texture="ce_celestial_body.dds"
+		instance={
+			position={ 0.450000 0.500000 }
+			depth=1.010000
+			rotation=167
+		}
+
+	}
+
+}
+
+k_qinguo1 ={
+	custom=yes
+	pattern="pattern__solid_designer.dds"
+	color1=black
+	color2=yellow
+	color3=black
+	colored_emblem={
+		color1=yellow
+		color3=red
+		texture="qin.dds"
+	}
+
+}
+xin51 = {
+	custom=yes
+	pattern="pattern_solid.dds"
+	color1=rgb { 0 0 0 }
+	color2=white
+	color3=red
+	colored_emblem={
+		color1=rgb { 0 0 0 }
+		color3=white
+		texture="ying.dds"
+		instance={
+			position={ 0.500000 0.470000 }
+			scale={ 0.880000 0.880000 }
+		}
+
+	}
+
+	colored_emblem={
+		color1=rgb { 29 27 24 }
+		color2=rgb { 122 32 16 }
+		texture="ce_polylobe_circle_frame.dds"
+		instance={
+			depth=1.010000
+		}
+
+	}
+
+}
+
+house_baijia18 ={
+	custom=yes
+	pattern="pattern__solid_designer.dds"
+	color1=black
+	color2=yellow
+	color3=black
+	colored_emblem={
+		color1=yellow
+		color3=red
+		texture="qin.dds"
+	}
+
+}
+house_baijia458={
+	custom=yes
+	pattern="pattern__solid_designer.dds"
+	color1=grey
+	color2=white
+	color3=red
+	colored_emblem={
+		color1=white
+		texture="jin.dds"
+		instance={
+			position={ 0.520000 0.500000 }
+		}
+
+	}
+
+}
+k_jinguo1={
+	custom=yes
+	pattern="pattern__solid_designer.dds"
+	color1=grey
+	color2=white
+	color3=red
+	colored_emblem={
+		color1=white
+		texture="jin.dds"
+		instance={
+			position={ 0.520000 0.500000 }
+		}
+
+	}
+
+}
+xin645={
+	custom=yes
+	pattern="pattern__solid_designer.dds"
+	color1=grey
+	color2=white
+	color3=red
+	colored_emblem={
+		color1=white
+		texture="jin.dds"
+		instance={
+			position={ 0.520000 0.500000 }
+		}
+
+	}
+
+}
+house_baijia7={
+	custom=yes
+	pattern="pattern_solid.dds"
+	color1=blue
+	color2=white
+	color3=blue
+	colored_emblem={
+		color1=white
+		color3=rgb { 14 10 10 }
+		texture="zheng4.dds"
+	}
+
+}
+
+k_zhengguo = {
+	custom=yes
+	pattern="pattern__solid_designer.dds"
+	color1=rgb { 2 56 108 }
+	color2=yellow
+	color3=blue
+	colored_emblem={
+		color1=yellow
+		color3=rgb { 255 255 255 }
+		texture="zheng4.dds"
+		instance={
+			scale={ 0.790000 0.790000 }
+		}
+
+	}
+
+	colored_emblem={
+		color1=rgb { 11 63 113 }
+		color2=rgb { 0 0 0 }
+		color3=rgb { 34 91 143 }
+		texture="ce_seal_frame_full.dds"
+		instance={
+			scale={ 0.610000 0.610000 }
+			depth=1.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=rgb { 37 107 172 }
+		texture="ce_seal_pictorial_frame_flower_full.dds"
+		instance={
+			scale={ 0.830000 0.830000 }
+			depth=2.010000
+		}
+
+	}
+
+}
+xin531 = {
+	custom=yes
+	pattern="pattern__solid_designer.dds"
+	color1=rgb { 2 56 108 }
+	color2=yellow
+	color3=blue
+	colored_emblem={
+		color1=yellow
+		color3=rgb { 255 255 255 }
+		texture="zheng4.dds"
+		instance={
+			scale={ 0.790000 0.790000 }
+		}
+
+	}
+
+	colored_emblem={
+		color1=rgb { 11 63 113 }
+		color2=rgb { 0 0 0 }
+		color3=rgb { 34 91 143 }
+		texture="ce_seal_frame_full.dds"
+		instance={
+			scale={ 0.610000 0.610000 }
+			depth=1.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=rgb { 37 107 172 }
+		texture="ce_seal_pictorial_frame_flower_full.dds"
+		instance={
+			scale={ 0.830000 0.830000 }
+			depth=2.010000
+		}
+
+	}
+
+}
+
+xin47={
+	custom=yes
+	pattern="pattern_solid.dds"
+	color1=rgb { 112 44 3 }
+	color2=white
+	color3=black
+	colored_emblem={
+		color1=white
+		color3=white
+		texture="song.dds"
+	}
+
+	colored_emblem={
+		color1=yellow
+		color3=rgb { 71 0 0 }
+		texture="acb_rand_42.dds"
+		instance={
+			depth=1.010000
+		}
+
+	}
+
+}
+k_songguo={
+	custom=yes
+	pattern="pattern_solid.dds"
+	color1=rgb { 112 44 3 }
+	color2=white
+	color3=black
+	colored_emblem={
+		color1=white
+		color3=white
+		texture="song.dds"
+	}
+
+	colored_emblem={
+		color1=yellow
+		color3=rgb { 71 0 0 }
+		texture="acb_rand_42.dds"
+		instance={
+			depth=1.010000
+		}
+
+	}
+
+}
+house_baijia22={
+	pattern="pattern_solid.dds"
+	color1=red
+	color2=white
+	color3=yellow
+	colored_emblem={
+		color1=white
+		texture="ce_seal_frame_full.dds"
+		instance={
+			scale={ 0.700000 0.700000 }
+			depth=1.010000
+			rotation=108
+		}
+
+	}
+
+	colored_emblem={
+		color1=red
+		texture="ce_seal_name_lu_5442.dds"
+	}
+
+}
+
+k_qiguo={
+	pattern="pattern_solid.dds"
+	color1=red
+	color2=yellow
+	color3=yellow
+	colored_emblem={
+		color1=red
+		color3=rgb { 0 0 0 }
+		texture="qi.dds"
+		instance={
+			scale={ -1.000000 1.000000 }
+		}
+
+	}
+
+	colored_emblem={
+		color1=rgb { 144 74 64 }
+		texture="ce_african_ram_horns.dds"
+		instance={
+			position={ 0.500000 0.510000 }
+			depth=1.010000
+		}
+
+	}
+
+}
+
+xin328={
+	pattern="pattern_solid.dds"
+	color1=red
+	color2=yellow
+	color3=yellow
+	colored_emblem={
+		color1=rgb { 0 0 0 }
+		color3=rgb { 0 0 0 }
+		texture="ce_seal_name_jiang_59dc.dds"
+		instance={
+			scale={ -1.000000 1.000000 }
+		}
+
+	}
+
+	colored_emblem={
+		color1=rgb { 144 74 64 }
+		texture="ce_african_ram_horns.dds"
+		instance={
+			position={ 0.500000 0.510000 }
+			depth=1.010000
+		}
+
+	}
+
+}

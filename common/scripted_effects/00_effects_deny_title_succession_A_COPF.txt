@@ -1,0 +1,159 @@
+﻿# 目标封臣：会被保存为名叫scope_forced_title_return_vassal的scope
+# 目标领主：会被保存为名叫scope_forced_title_return_liege的scope
+# 所有被否认继承的头衔：效果触发后，会被记录在名叫list_target_titles的list里
+
+effect_forced_title_return_agree = {
+	$TARGET_VASSAL$ = { save_scope_as = scope_forced_title_return_vassal }
+	$TARGET_LIEGE$ = { save_scope_as = scope_forced_title_return_liege }
+
+	hidden_effect = { 
+		scope:scope_forced_title_return_liege = {				
+			add_prestige = 100 # 领主+100威望
+			add_legitimacy = 10 # 领主+10正统性
+			add_opinion = {
+				target = scope:scope_forced_title_return_vassal
+				modifier = opinion_agree_to_return_title
+			}
+		}
+		scope:scope_forced_title_return_vassal = {
+			add_prestige = -100 # 封臣-100威望
+			if ={
+				limit = {
+					NOT = { dynasty = scope:scope_forced_title_return_liege.dynasty }
+				}
+				dynasty = { add_dynasty_prestige = 100 } # 封臣+100宗族威望
+			}
+			add_opinion = {
+				target = scope:scope_forced_title_return_liege
+				modifier = opinion_forced_to_return_title_heir
+			}
+
+			create_title_and_vassal_change = {
+				type = returned
+				save_scope_as = change
+				add_claim_on_loss = yes
+			}
+			every_held_title = {
+				limit = { has_variable = is_denied_title_succession }
+				change_title_holder = {
+					holder = scope:scope_forced_title_return_liege
+					change = scope:change
+				}
+				add_to_list = list_target_titles
+				
+				remove_variable = is_denied_title_succession
+				remove_variable = is_restored_title_succession
+			}
+			resolve_title_and_vassal_change = scope:change
+		}
+	}
+
+	show_as_tooltip = {
+		scope:scope_forced_title_return_vassal = {
+			if = { #如果封臣是玩家则优先显示
+				limit = { is_ai = no }
+				add_prestige = -100
+				if ={
+					limit = {
+						NOT = { dynasty = scope:scope_forced_title_return_liege.dynasty }
+					}
+					dynasty = { add_dynasty_prestige = 100 }
+				}
+			}
+		}
+		scope:scope_forced_title_return_liege = {				
+			add_prestige = 100
+			add_legitimacy = 10
+			if = { #只有当领主是AI，封臣是玩家时，才需要显示领主对封臣的好感度修正影响
+				limit = { is_ai = yes }
+				add_opinion = {
+					target = scope:scope_forced_title_return_vassal
+					modifier = opinion_agree_to_return_title
+				}
+			}
+		}
+		scope:scope_forced_title_return_vassal = {
+			every_in_list = {
+				list = list_target_titles
+				limit = { NOT = { tier = tier_barony } }
+				change_title_holder = {
+					holder = scope:scope_forced_title_return_liege
+					change = scope:change
+				}
+			}
+			resolve_title_and_vassal_change = scope:change
+
+			if = { #如果封臣是AI则滞后显示
+				limit = { is_ai = yes }
+				add_prestige = -100
+				if ={
+					limit = {
+						NOT = { dynasty = scope:scope_forced_title_return_liege.dynasty }
+					}
+					dynasty = { add_dynasty_prestige = 100 }
+				}
+			}
+
+			if = { #只有当领主是玩家，封臣是AI时，才需要显示封臣对领主的好感度修正影响
+				limit = { is_ai = yes }
+				show_as_tooltip = {
+					add_opinion = {
+						target = scope:scope_forced_title_return_liege
+						modifier = opinion_forced_to_return_title_heir
+					}
+				}
+			}
+		}
+	}
+}
+
+effect_forced_title_return_disagree = {
+	$TARGET_VASSAL$ = { save_scope_as = scope_forced_title_return_vassal }
+	$TARGET_LIEGE$ = { save_scope_as = scope_forced_title_return_liege }
+	
+	hidden_effect = {
+		scope:scope_forced_title_return_vassal = {
+			add_prestige = -200 # 封臣-200威望
+			add_legitimacy = -500 # 封臣-500正统性
+			every_held_title = {
+				limit = {
+					has_variable = is_denied_title_succession
+				}
+				scope:scope_forced_title_return_liege = { add_pressed_claim = PREV }
+				add_to_list = list_target_titles
+
+				remove_variable = is_denied_title_succession
+				remove_variable = is_restored_title_succession
+			}
+		}
+	}
+
+	show_as_tooltip = {
+		scope:scope_forced_title_return_vassal = {
+			if = {
+				limit = { is_ai = no } # 如果封臣是玩家则优先显示
+				add_prestige = -200
+				add_legitimacy = -500
+			}
+		 
+			every_in_list = {
+				list = list_target_titles
+				limit = { NOT = { tier = tier_barony } }
+				scope:scope_forced_title_return_liege = { add_pressed_claim = PREV }
+			}
+		
+			if = {
+				limit = { is_ai = yes } # 如果封臣是AI则滞后显示
+				add_prestige = -200
+				add_legitimacy = -500
+			}
+		}
+	}
+
+	scope:scope_forced_title_return_liege = {	#无论如何都显示这一好感修正，因为其包含一个逮捕理由
+		add_opinion = {
+			target = scope:scope_forced_title_return_vassal
+			modifier = opinion_refuse_to_return_title
+		}
+	}
+}

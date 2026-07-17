@@ -1,0 +1,319 @@
+﻿########## 绁濆浗-浼婄濮撶姘?##########
+han835={
+  name="xing5"#鍛ㄦ鐜嬫椂浠?
+  dynasty=xin443
+	religion="xizhouli" 
+	culture="qi"
+  father=han2279
+
+  3541.1.1 = {
+		birth = yes
+	}
+  3575.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han836={
+  name="bai2"
+  dynasty_house=house_baijia126
+	religion="xizhouli" 
+	culture="qi"
+  father=han835
+
+  3560.1.1 = {
+		birth = yes
+	}
+  3603.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han837={
+  name="qiu5"
+  dynasty_house=house_baijia126
+	religion="xizhouli" 
+	culture="qi"
+  father=han836
+
+  3592.1.1 = {
+		birth = yes
+	}
+  3635.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han838={
+  name="chen3"
+  dynasty_house=house_baijia126
+	religion="xizhouli" 
+	culture="qi"
+  father=han837
+
+  3621.1.1 = {
+		birth = yes
+	}
+  3657.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han839={
+  name="wei7"
+  dynasty_house=house_baijia126
+	religion="xizhouli" 
+	culture="qi"
+  father=han838
+
+  3650.1.1 = {
+		birth = yes
+	}
+  3682.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han840={
+  name="sui3"
+  dynasty_house=house_baijia126
+	religion="xizhouli" 
+	culture="qi"
+  father=han839
+
+  3669.1.1 = {
+		birth = yes
+	}
+  3690.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han841={
+  name="xian4"
+  dynasty_house=house_baijia126
+	religion="xizhouli" 
+	culture="qi"
+  father=han840
+
+  3689.1.1 = {
+		birth = yes
+	}
+  3726.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han842={
+  name="ye2"
+  dynasty_house=house_baijia126
+	religion="xizhouli" 
+	culture="qi"
+  father=han841
+
+  3710.1.1 = {
+		birth = yes
+	}
+  3769.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han843={
+  name="fei3"
+  dynasty_house=house_baijia126
+	religion="xizhouli" 
+	culture="qi"
+  father=han842
+
+  3748.1.1 = {
+		birth = yes
+	}
+  3800.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han844={
+  name="mo2"
+  dynasty_house=house_baijia126
+	religion="xizhouli" 
+	culture="qi"
+  father=han843
+
+  3769.1.1 = {
+		birth = yes
+	}
+  3813.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han845={
+  name="kun3"#骞崇帇涓滆縼鏃剁鍥藉浗鍚?
+  dynasty_house=house_baijia126
+	religion="xizhouli" 
+	culture="qi"
+  father=han844
+
+  3801.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han846={
+  name="ou1"
+  dynasty_house=house_baijia126
+	religion="xizhouli" 
+	culture="qi"
+  father=han845
+
+  3820.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han847={
+  name="zhu5"#鍌ㄥ悰1鍙凤紝娓告垙寮€灞€鏃?宀?
+  dynasty_house=house_baijia126
+	religion="xizhouli" 
+	culture="qi"
+  father=han846
+
+  3840.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han848={
+  name="luan3"#鍌ㄥ悰2鍙凤紝娓告垙寮€灞€鏃?宀?
+  dynasty_house=house_baijia126
+	religion="xizhouli" 
+	culture="qi"
+  father=han846
+
+  3841.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han849={
+  name="nan2"#濂?鍙?
+  dynasty_house=house_baijia126
+	religion="xizhouli" 
+	culture="qi"
+  father=han846
+  female=yes
+
+  3842.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han850={
+  name="yun6"#濂?鍙?
+  dynasty_house=house_baijia126
+	religion="xizhouli" 
+	culture="qi"
+  father=han845
+  female=yes
+
+  3821.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+########绁濇煰姘?
+han851={
+  name="dai4"#寮?鍙?
+  dynasty_house=house_xin444
+	religion="xizhouli" 
+	culture="qi"
+  father=han845
+
+  3822.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han852={
+  name="chang3"#寮?鍙?
+  dynasty_house=house_xin444
+	religion="xizhouli" 
+	culture="qi"
+  father=han851
+
+  3840.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han853={
+  name="cong1"#寮?鍙?
+  dynasty_house=house_xin444
+	religion="xizhouli" 
+	culture="qi"
+  father=han851
+
+  3841.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han854={
+  name="miyong"#寮?鍙?
+  dynasty_house=house_xin444
+	religion="xizhouli" 
+	culture="qi"
+  father=han851
+
+  3842.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han855={
+  name="shao1"#寮?鍙?
+  dynasty_house=house_xin444
+	religion="xizhouli" 
+	culture="qi"
+  father=han851
+  female=yes
+
+  3842.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}

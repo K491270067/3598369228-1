@@ -1,0 +1,45 @@
+﻿c_qishi2 = {
+	3849.12.31 = {
+		liege = k_jiguo4
+		holder = han2301
+		government = feudal_admin_government
+		succession_laws = { noble_family_succession_law }
+	}
+	5000.10.1 = {
+		effect = {
+			destroy_landless_title_no_tgp_dlc_effect = {
+				DATE = 5000.10.1
+			}
+		}
+	}
+}
+c_zhukeshi = {
+	3849.12.31 = {
+		liege = k_zhuguo
+		holder = han851
+		government = feudal_admin_government
+		succession_laws = { noble_family_succession_law }
+	}
+	5000.10.1 = {
+		effect = {
+			destroy_landless_title_no_tgp_dlc_effect = {
+				DATE = 5000.10.1
+			}
+		}
+	}
+}
+c_zhushi2 = {
+	3849.12.31 = {
+		liege = k_zhuguo
+		holder = han845
+		government = feudal_admin_government
+		succession_laws = { noble_family_succession_law }
+	}
+	5000.10.1 = {
+		effect = {
+			destroy_landless_title_no_tgp_dlc_effect = {
+				DATE = 5000.10.1
+			}
+		}
+	}
+}

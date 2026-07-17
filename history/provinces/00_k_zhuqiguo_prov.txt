@@ -1,0 +1,57 @@
+﻿##### d_zhuqishi ############################
+
+### c_zhuqi
+# ZHUQI
+258 = {
+	culture = dongyi
+	religion = yili
+	holding = castle_holding
+}
+# LICHENG
+249 = {
+	holding = none
+}
+
+
+### c_donghai
+# DONGHAI
+259 = {
+	culture = dongyi
+	religion = yili
+	holding = castle_holding
+}
+
+
+### c_qu
+# QU
+260 = {
+	culture = dongyi
+	religion = yili
+	holding = castle_holding
+}
+
+
+##### d_gongloushi ############################
+
+### c_ganyu
+# GANYU
+219 = {
+	culture = dongyi
+	religion = yili
+	holding = castle_holding
+}
+
+
+### c_jizhang
+# JIZHANG
+218 = {
+	culture = dongyi
+	religion = yili
+	holding = castle_holding
+}
+# HAIQU
+217 = {
+	holding = none
+}
+
+

@@ -1,0 +1,37 @@
+﻿##### d_xunshi2 ############################
+
+### c_xun4
+# XUN4
+1354 = {
+	culture = jin
+	religion = dongzhouli
+	holding = castle_holding
+}
+# CHANGXIU
+1353 = {
+	holding = none
+}
+
+
+### c_liang1
+# LIANG1
+1355 = {
+	culture = jin
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+### c_linfen
+# LINFEN
+1356 = {
+	culture = jin
+	religion = dongzhouli
+	holding = castle_holding
+}
+# FENCHENG
+1357 = {
+	holding = none
+}
+
+

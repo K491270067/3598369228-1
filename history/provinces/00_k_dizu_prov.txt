@@ -1,0 +1,57 @@
+﻿##### d_dishi1 ############################
+
+### c_zufu
+# ZUFU
+2468 = {
+	culture = chidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+
+
+### c_jiong
+# JIONG
+2469 = {
+	culture = chidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+
+
+### c_dizu
+# DIZU
+1018 = {
+	culture = chidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+# JIAGU
+1031 = {
+	holding = none
+}
+
+
+##### d_huoshi2 ############################
+
+### c_huoze
+# HUOZE
+1114 = {
+	culture = chidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+
+
+### c_yingting
+# YINGTING
+1115 = {
+	culture = chidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+# LAI3
+2491 = {
+	holding = none
+}
+
+

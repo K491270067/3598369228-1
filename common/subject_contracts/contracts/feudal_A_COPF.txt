@@ -1,0 +1,272 @@
+﻿# 继承权等级 # ————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+feudal_government_succession_rights = {
+	display_mode = tree
+	icon = law_icon
+
+	obligation_levels = {
+		# 传统世袭
+		feudal_succession_rights_hereditary = {
+			position = { 0 0 }
+			default = yes
+			
+			subject_opinion = 0
+			flag = succession_rights_hereditary
+
+			ai_liege_desire = 0
+			ai_subject_desire = 100
+			score = 0
+		}
+		# 强制分割
+		feudal_succession_rights_forced_partition = {
+			position = { 1 0 }
+			parent = feudal_succession_rights_hereditary
+	
+			is_valid = {
+				scope:subject = { can_have_confederate_partition_succession_law_trigger = yes }
+			}
+			
+			subject_opinion = 0
+			flag = locked_to_partition
+
+			# 领主意向
+			ai_liege_desire = {
+				value = 2
+				if = {
+					limit = { scope:subject = { subject_contract_has_flag = feudal_succession_rights_hereditary } }
+					add = {
+						value = 5
+						if = {
+							limit = { scope:liege = { has_cultural_pillar = ethos_bureaucratic } }
+							add = 100
+						}
+					}
+				}	
+			}
+			# 封臣意向
+			ai_subject_desire = {
+				value = 2
+				if = {
+					limit = {
+						scope:subject = {
+							subject_contract_has_flag = succession_rights_grant_recognition
+						}
+					}
+					add = 100
+				}
+			}
+			score = -1
+		}
+		# 御赐承认
+		feudal_succession_rights_grant_recognition = {
+			flag = succession_rights_grant_recognition
+			position = { 2 0 }
+			parent = feudal_succession_rights_hereditary
+			parent = feudal_succession_rights_forced_partition
+		
+			is_valid = {
+				scope:liege.culture = {
+					#has_innovation = innovation_baliffs
+				}
+			}
+
+			subject_opinion = 10
+			flag = can_deny_title_succession
+
+			# 领主意向
+			ai_liege_desire = {
+				value = 3
+				if = {
+					limit = { scope:subject = { subject_contract_has_flag = feudal_succession_rights_forced_partition } }
+					add = {
+						value = 5
+						if = {
+							limit = { scope:liege = { has_cultural_pillar = ethos_bureaucratic } }
+							add = 100
+						}
+					}
+				}	
+			}
+			# 封臣意向
+			ai_subject_desire = {
+				value = 2
+				if = {
+					limit = {
+						scope:subject = {
+							subject_contract_has_flag = feudal_succession_rights_court_supervision
+						}
+					}
+					add = 100
+				}
+			}
+			score = -2
+		}
+		# 委任总督
+		feudal_succession_rights_governor_appointment = {
+			flag = succession_rights_governor_appointment
+			position = { 4 0 }
+			parent = feudal_succession_rights_hereditary
+			parent = feudal_succession_rights_forced_partition
+			parent = feudal_succession_rights_grant_recognition
+			parent = feudal_succession_rights_court_supervision
+			
+			is_valid = {
+				scope:liege.culture = {
+					has_innovation = innovation_baliffs
+					#has_innovation = innovation_divine_right
+				}
+			}
+			
+			subject_opinion = 20
+			enable_title_maa = yes
+
+			liege_modifier = {
+				vassal_limit = -1
+			}
+
+			# 领主意向
+			ai_liege_desire = {
+				value = 5
+				if = {
+					limit = { scope:subject = { subject_contract_has_flag = feudal_succession_rights_court_supervision } }
+					add = {
+						value = 5
+						if = {
+							limit = { scope:liege = { has_cultural_pillar = ethos_bureaucratic } }
+							add = 100
+						}
+					}
+				}	
+			}
+			# 封臣意向
+			ai_subject_desire = 0
+			score = -4
+		}
+		# 宫廷监察（为了兼容之前的存档，暂时放在委任总督后面）
+		feudal_succession_rights_court_supervision = {
+			flag = succession_rights_court_supervision
+			position = { 3 0 }
+			parent = feudal_succession_rights_hereditary
+			parent = feudal_succession_rights_forced_partition
+			parent = feudal_succession_rights_grant_recognition
+		
+			is_valid = {
+				scope:liege.culture = {
+					has_innovation = innovation_baliffs
+				}
+			}
+
+			subject_opinion = 15
+			flag = can_deny_title_succession
+
+			# 领主意向
+			ai_liege_desire = {
+				value = 4
+				if = {
+					limit = { scope:subject = { subject_contract_has_flag = succession_rights_grant_recognition } }
+					add = {
+						value = 5
+						if = {
+							limit = { scope:liege = { has_cultural_pillar = ethos_bureaucratic } }
+							add = 100
+						}
+					}
+				}	
+			}
+			# 封臣意向
+			ai_subject_desire = {
+				value = 2
+				if = {
+					limit = {
+						scope:subject = {
+							subject_contract_has_flag = succession_rights_governor_appointment
+						}
+					}
+					add = 100
+				}
+			}
+			score = -3
+		}
+	}
+}
+# 候选人偏好 # ————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+feudal_admin_government_candidate_preference = {
+	display_mode = tree
+	icon = appointment_score
+
+	is_shown = {
+		scope:subject = { subject_contract_has_flag = succession_rights_governor_appointment }
+	}
+
+	obligation_levels = {
+		# 本地士绅：偏好拥有者的家族，以及下属封建制封臣
+		candidate_preference_powerful_gentry = {
+			flag = candidate_preference_powerful_gentry
+			position = { 0 0 }
+			default = yes
+			
+			subject_opinion = 0
+
+			ai_liege_desire = 0
+			ai_subject_desire = 6
+			score = 0
+		}
+		# 宫廷贤能：偏好持有者的内阁与宫廷职位
+		candidate_preference_local_talent = {
+			flag = candidate_preference_local_talent
+			position = { 1 0 }
+			parent = candidate_preference_powerful_gentry
+			
+			subject_opinion = 0
+
+			subject_modifier = {
+				councillor_opinion = 10
+			}
+
+			ai_liege_desire = 2
+			ai_subject_desire = 4
+			score = -1
+		}
+		# 任人唯亲：偏好领主的家族与朋友
+		candidate_preference_favor_nepotism = {
+			flag = candidate_preference_favor_nepotism
+			position = { 2 0 }
+			parent = candidate_preference_powerful_gentry
+			parent = candidate_preference_local_talent
+			
+			subject_opinion = 0
+			
+			ai_liege_desire = 6
+			ai_subject_desire = 2
+			score = -2
+		}
+		# 唯才是举：偏好能力出众者
+		candidate_preference_talent_only = {
+			flag = candidate_preference_talent_only
+			position = { 3 0 }
+			parent = candidate_preference_powerful_gentry
+			parent = candidate_preference_local_talent
+			parent = candidate_preference_favor_nepotism
+			
+			subject_opinion = 0
+			
+			ai_liege_desire = 6
+			ai_subject_desire = 0
+			score = -3
+		}
+		# 官僚选拔：偏好在官僚系统内升任者
+		candidate_preference_bureaucrat_promotion = {
+			flag = candidate_preference_bureaucrat_promotion
+			position = { 4 0 }
+			parent = candidate_preference_powerful_gentry
+			parent = candidate_preference_local_talent
+			parent = candidate_preference_favor_nepotism
+			parent = candidate_preference_talent_only
+			
+			subject_opinion = 10
+			
+			ai_liege_desire = 8
+			ai_subject_desire = -2
+			score = -4
+		}
+	}
+}

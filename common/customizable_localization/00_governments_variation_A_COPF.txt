@@ -1,0 +1,44 @@
+﻿# 风味化：封建制
+GetFeudalGovName = {
+	type = character
+
+	text = {
+		trigger = {
+			government_has_flag = government_is_feudal
+			OR = {
+				culture = { has_cultural_pillar = heritage_frankish }
+				liege ?= { culture = { has_cultural_pillar = heritage_frankish } }
+			}
+		}
+		localization_key = FEUDAL_GOV_FRANCE
+	}
+	text = {
+		trigger = {
+			government_has_flag = government_is_feudal
+		}
+		localization_key = FEUDAL_GOV_DEFAULT
+		fallback = yes
+	}
+}
+# 风味化：封建行政制
+GetFeudalAdminGovName = {
+	type = character
+
+	text = {
+		trigger = {
+			government_has_flag = government_is_feudal_admin
+			OR = {
+				culture = { has_cultural_pillar = heritage_frankish }
+				liege ?= { culture = { has_cultural_pillar = heritage_frankish } }
+			}
+		}
+		localization_key = FEUDAL_ADMIN_GOV_FRANCE
+	}
+	text = {
+		trigger = {
+			government_has_flag = government_is_feudal_admin
+		}
+		localization_key = FEUDAL_ADMIN_GOV_DEFAULT
+		fallback = yes
+	}
+}

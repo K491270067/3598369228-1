@@ -1,0 +1,230 @@
+﻿### 涓嶅仛鐨勬互鍥斤紝灞变笢婊曞窞甯傜緤搴勯晣涓€甯︼紝鍙互鎶婂湴鍧楃粰浠?###
+languo1={
+  name="xu6"#鍙旀湳涓庡Κ鐩堝コ涔嬪瓙
+  dynasty_house=house_xin433 
+	religion="xizhouli" 
+	culture="lu"
+  father=han993
+
+  3799.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+languo2={
+  name="nanming1097"#瀛?鍙?
+  dynasty_house=house_xin433 
+	religion="xizhouli" 
+	culture="lu"
+  father=languo1
+
+  3820.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+languo3={
+  name="xi5"#瀛?鍙?
+  dynasty_house=house_xin433 
+	religion="xizhouli" 
+	culture="lu"
+  father=languo1
+
+  3821.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+languo4={
+  name="gui3"#瀛?鍙?
+  dynasty_house=house_xin433 
+	religion="xizhouli" 
+	culture="lu"
+  father=languo1
+
+  3822.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+languo5={
+  name="fa1"#瀛?鍙?
+  dynasty_house=house_xin433 
+	religion="xizhouli" 
+	culture="lu"
+  father=languo1
+
+  3823.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+languo6={
+  name="shu2"#濂?鍙?鍋囪涓哄Κ鐩堝コ涔嬪コ
+  dynasty_house=house_xin433 
+	religion="xizhouli" 
+	culture="lu"
+  father=languo1
+  female=yes
+
+  3824.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+languo7={
+  name="jing3"#濂?鍙?
+  dynasty_house=house_xin433 
+	religion="xizhouli" 
+	culture="lu"
+  father=languo1
+  female=yes
+
+  3825.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+##########閭惧▌姘?
+languo8={
+  name="nanming128"
+  dynasty_house=house_xin434 
+	religion="xizhouli" 
+	culture="lu"
+  father=han993
+
+  3810.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+languo9={
+  name="nanming137"#瀛?鍙?
+  dynasty_house=house_xin434
+	religion="xizhouli" 
+	culture="lu"
+  father=languo8
+
+  3830.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+languo10={
+  name="nanming157"#瀛?鍙?
+  dynasty_house=house_xin434
+	religion="xizhouli" 
+	culture="lu"
+  father=languo8
+
+  3831.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+languo11={
+  name="nanming165"#瀛?鍙?
+  dynasty_house=house_xin434
+	religion="xizhouli" 
+	culture="lu"
+  father=languo8
+
+  3832.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+languo12={
+  name="nanming181"#瀛?鍙?
+  dynasty_house=house_xin434
+	religion="xizhouli" 
+	culture="lu"
+  father=languo8
+
+  3833.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+languo13={
+  name="sui2"#濂?鍙?鍋囪涓哄Κ鐩堝コ涔嬪コ
+  dynasty_house=house_xin434
+	religion="xizhouli" 
+	culture="lu"
+  father=languo8
+  female=yes
+
+  3834.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+languo14={
+  name="xuan4"#濂?鍙?
+  dynasty_house=house_xin434
+	religion="xizhouli" 
+	culture="lu"
+  father=languo8
+  female=yes
+
+  3835.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}

@@ -1,0 +1,57 @@
+﻿##### d_weishi1 ############################
+
+### c_jima
+# JIMA
+978 = {
+	culture = jin
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+### c_wei2
+# WEI2
+982 = {
+	culture = jin
+	religion = dongzhouli
+	holding = castle_holding
+}
+# FENGLING
+979 = {
+	holding = none
+}
+
+
+### c_doujin
+# DOUJIN
+983 = {
+	culture = jin
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+##### d_lishi7 ############################
+
+### c_zhi2
+# ZHI2
+985 = {
+	culture = jin
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+### c_puban
+# PUBAN
+980 = {
+	culture = jin
+	religion = dongzhouli
+	holding = castle_holding
+}
+# YANGJING
+976 = {
+	holding = none
+}
+
+

@@ -1,0 +1,687 @@
+﻿### 政策：封臣继承权 ### ============================================================================================================================================
+law_group_vassal_succession_rights_policy = {
+	default = law_vassal_succession_rights_policy_hereditary
+	cumulative = no
+	flag = imperial_policy
+	flag = law_group_vassal_succession_rights_policy
+
+	can_change_law_group = {}
+
+	# 传统世袭 # ————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+	law_vassal_succession_rights_policy_hereditary = {
+		flag = law_vassal_succession_rights_policy_hereditary
+		flag = law_vassal_succession_rights_policy
+
+		should_start_with = {
+			OR = {
+				government_has_flag = government_is_feudal
+				government_has_flag = government_is_feudal_admin
+			}
+			highest_held_title_tier >= tier_duchy
+			NOR = {
+				most_vassals_have_forced_partition_or_above = yes
+				most_vassals_have_grant_recognition_or_above = yes
+				most_vassals_have_court_supervision_or_above = yes
+				most_vassals_are_governor_or_admin = yes
+			}
+		}
+		can_keep = {
+			OR = {
+				government_has_flag = government_is_feudal
+				government_has_flag = government_is_feudal_admin
+			}
+			highest_held_title_tier >= tier_duchy
+		}
+		can_pass = {
+			custom_description = {
+				text = "no_powerful_vassal_with_negative_opinion"
+				NOT = {
+					any_vassal = {
+						is_powerful_vassal = yes
+						opposes_succession_law_change_trigger = yes
+					}
+				}
+			}
+		}
+
+		pass_cost = {
+			prestige = change_succession_law_prestige_cost
+		}
+		revoke_cost = {
+			prestige = change_succession_law_prestige_cost
+		}
+
+		ai_will_do = {
+			value = 0
+		}
+	}
+	# 强制分割 # ————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+	law_vassal_succession_rights_policy_forced_partition = {
+		flag = law_vassal_succession_rights_policy_forced_partition
+		flag = law_vassal_succession_rights_policy
+
+		should_start_with = {
+			most_vassals_have_forced_partition_or_above = yes
+			NOR = {
+				most_vassals_have_grant_recognition_or_above = yes
+				most_vassals_have_court_supervision_or_above = yes
+				most_vassals_are_governor_or_admin = yes
+			}
+		}
+		can_keep = {
+			OR = {
+				government_has_flag = government_is_feudal
+				government_has_flag = government_is_feudal_admin
+			}
+			highest_held_title_tier >= tier_duchy
+			trigger_if = {
+				limit = { has_realm_law_flag = law_vassal_succession_rights_policy_forced_partition }
+				OR = {
+					any_vassals_have_forced_partition_or_above = yes
+					subject_contract_has_flag = locked_to_partition
+					liege ?= {
+						OR = {
+							has_realm_law_flag = law_vassal_succession_rights_policy_forced_partition
+							has_realm_law_flag = law_vassal_succession_rights_policy_grant_recognition
+							has_realm_law_flag = law_vassal_succession_rights_policy_court_supervision
+							has_realm_law_flag = law_vassal_succession_rights_policy_governor_appointment
+						}
+					}
+				}
+			}
+		}
+		can_have = {
+			OR = {
+				government_has_flag = government_is_feudal
+				government_has_flag = government_is_feudal_admin
+			}
+			highest_held_title_tier >= tier_duchy
+		}
+		can_pass = {
+			custom_description = {
+				text = "no_powerful_vassal_with_negative_opinion"
+				NOT = {
+					any_vassal = {
+						is_powerful_vassal = yes
+						opposes_succession_law_change_trigger = yes
+					}
+				}
+			}
+			trigger_if = {
+				limit = { NOT = { subject_contract_has_flag = locked_to_partition } }
+				most_vassals_have_forced_partition_or_above = yes
+			}
+		}
+
+		pass_cost = {
+			prestige = change_succession_law_prestige_cost
+		}
+		revoke_cost = {
+			prestige = change_succession_law_prestige_cost
+		}
+
+		ai_will_do = {
+			value = 10
+		}
+	}
+	# 御赐承认 # ————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+	law_vassal_succession_rights_policy_grant_recognition = {
+		flag = law_vassal_succession_rights_policy_grant_recognition
+		flag = law_vassal_succession_rights_policy
+
+		should_start_with = {
+			most_vassals_have_grant_recognition_or_above = yes
+			NOR = {
+				most_vassals_have_court_supervision_or_above = yes
+				most_vassals_are_governor_or_admin = yes
+			}
+		}
+		can_keep = {
+			OR = {
+				government_has_flag = government_is_feudal
+				government_has_flag = government_is_feudal_admin
+			}
+			highest_held_title_tier >= tier_duchy
+			NOR = {
+				has_realm_law = crown_authority_titular_liege
+				has_realm_law = crown_authority_legacy_head
+			}
+			trigger_if = {
+				limit = { has_realm_law_flag = law_vassal_succession_rights_policy_grant_recognition }
+				OR = {
+					any_vassals_have_grant_recognition_or_above = yes
+					subject_contract_has_flag = succession_rights_grant_recognition
+					liege ?= {
+						OR = {
+							has_realm_law_flag = law_vassal_succession_rights_policy_grant_recognition
+							has_realm_law_flag = law_vassal_succession_rights_policy_court_supervision
+							has_realm_law_flag = law_vassal_succession_rights_policy_governor_appointment
+						}
+					}
+				}
+			}
+		}
+		can_have = {
+			OR = {
+				government_has_flag = government_is_feudal
+				government_has_flag = government_is_feudal_admin
+			}
+			highest_held_title_tier >= tier_duchy
+		}
+		can_pass = {
+			custom_description = {
+				text = "no_powerful_vassal_with_negative_opinion"
+				NOT = {
+					any_vassal = {
+						is_powerful_vassal = yes
+						opposes_succession_law_change_trigger = yes
+					}
+				}
+			}
+			trigger_if = {
+				limit = { NOT = { subject_contract_has_flag = succession_rights_grant_recognition } }
+				most_vassals_have_grant_recognition_or_above = yes
+			}
+		}
+
+		pass_cost = {
+			prestige = change_succession_law_prestige_cost
+		}
+		revoke_cost = {
+			prestige = change_succession_law_prestige_cost
+		}
+
+		ai_will_do = {
+			value = 15
+		}
+	}
+	# 宫廷监察 # ————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+	law_vassal_succession_rights_policy_court_supervision = {
+		flag = law_vassal_succession_rights_policy_court_supervision
+		flag = law_vassal_succession_rights_policy
+
+		should_start_with = {
+			most_vassals_have_court_supervision_or_above = yes
+			NOT = { most_vassals_are_governor_or_admin = yes }
+		}
+		can_keep = {
+			OR = {
+				government_has_flag = government_is_feudal
+				government_has_flag = government_is_feudal_admin
+			}
+			highest_held_title_tier >= tier_duchy
+			NOR = {
+				has_realm_law = crown_authority_titular_liege
+				has_realm_law = crown_authority_legacy_head
+			}
+			trigger_if = {
+				limit = { has_realm_law_flag = law_vassal_succession_rights_policy_court_supervision }
+				OR = {
+					any_vassals_have_court_supervision_or_above = yes
+					subject_contract_has_flag = succession_rights_court_supervision
+					liege ?= {
+						OR = {
+							has_realm_law_flag = law_vassal_succession_rights_policy_court_supervision
+							has_realm_law_flag = law_vassal_succession_rights_policy_governor_appointment
+						}
+					}
+				}
+			}
+		}
+		can_have = {
+			OR = {
+				government_has_flag = government_is_feudal
+				government_has_flag = government_is_feudal_admin
+			}
+			highest_held_title_tier >= tier_duchy
+		}
+		can_pass = {
+			custom_description = {
+				text = "no_powerful_vassal_with_negative_opinion"
+				NOT = {
+					any_vassal = {
+						is_powerful_vassal = yes
+						opposes_succession_law_change_trigger = yes
+					}
+				}
+			}
+			trigger_if = {
+				limit = { NOT = { subject_contract_has_flag = succession_rights_court_supervision } }
+				most_vassals_have_court_supervision_or_above = yes
+			}
+		}
+
+		pass_cost = {
+			prestige = change_succession_law_prestige_cost
+		}
+		revoke_cost = {
+			prestige = change_succession_law_prestige_cost
+		}
+
+		ai_will_do = {
+			value = 20
+		}
+	}
+	# 委任总督 # ————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+	law_vassal_succession_rights_policy_governor_appointment = {
+		flag = law_vassal_succession_rights_policy_governor_appointment
+		flag = law_vassal_succession_rights_policy
+		flag = titles_cannot_leave_realm_on_succession # 此Flag为代码功能
+
+		should_start_with = {
+			most_vassals_are_governor_or_admin = yes
+		}
+		can_keep = {
+			OR = {
+				government_has_flag = government_is_feudal
+				government_has_flag = government_is_feudal_admin
+			}
+			highest_held_title_tier >= tier_duchy
+			NOR = {
+				has_realm_law = crown_authority_titular_liege
+				has_realm_law = crown_authority_legacy_head
+			}
+			# trigger_if = {
+			# 	limit = { has_realm_law_flag = law_vassal_succession_rights_policy_governor_appointment }
+			# 	OR = {
+			# 		any_vassals_are_governor_or_admin = yes
+			# 		subject_contract_has_flag = succession_rights_governor_appointment
+			#		liege ?= { has_realm_law_flag = law_vassal_succession_rights_policy_governor_appointment }
+			# 	}
+			# }
+		}
+		can_have = {
+			OR = {
+				government_has_flag = government_is_feudal
+				government_has_flag = government_is_feudal_admin
+			}
+			highest_held_title_tier >= tier_duchy
+		}
+		can_pass = {
+			custom_description = {
+				text = "no_powerful_vassal_with_negative_opinion"
+				NOT = {
+					any_vassal = {
+						is_powerful_vassal = yes
+						opposes_succession_law_change_trigger = yes
+					}
+				}
+			}
+			trigger_if = {
+				limit = { NOT = { subject_contract_has_flag = succession_rights_governor_appointment } }
+				most_vassals_are_governor_or_admin = yes
+			}
+		}
+
+		pass_cost = {
+			prestige = change_succession_law_prestige_cost
+		}
+		revoke_cost = {
+			prestige = change_succession_law_prestige_cost
+		}
+
+		ai_will_do = {
+			value = 25
+		}
+	}
+}
+
+### 政策：总督候选人偏好 ### ============================================================================================================================================
+@admin_law_cooldown_value = 5
+law_group_candidate_preference_policy_feudal_governor = {
+	default = law_candidate_preference_policy_powerful_gentry
+	cumulative = no
+	flag = imperial_policy
+	flag = law_group_feudal_governor_candidate_preference_policy
+
+	can_change_law_group = {}
+
+	# 士绅豪强 # ————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+	law_candidate_preference_policy_powerful_gentry = {
+		flag = law_candidate_preference_policy_powerful_gentry
+		flag = law_candidate_preference_policy
+
+		should_start_with = {
+			OR = {
+				government_has_flag = government_is_feudal
+				government_has_flag = government_is_feudal_admin
+			}
+			highest_held_title_tier >= tier_duchy
+			any_vassal = {
+				subject_contract_has_flag = succession_rights_governor_appointment
+			}
+			NOR = {
+				most_vassals_have_local_talent_or_above = yes
+				most_vassals_have_favor_nepotism_or_above = yes
+				most_vassals_have_talent_only_or_above = yes
+			}
+		}
+		can_keep = {
+			OR = {
+				government_has_flag = government_is_feudal
+				government_has_flag = government_is_feudal_admin
+			}
+			highest_held_title_tier >= tier_duchy
+			any_vassal = {
+				subject_contract_has_flag = succession_rights_governor_appointment
+			}
+		}
+		can_have = {
+			OR = {
+				government_has_flag = government_is_feudal
+				government_has_flag = government_is_feudal_admin
+			}
+			highest_held_title_tier >= tier_duchy
+			any_vassal = {
+				subject_contract_has_flag = succession_rights_governor_appointment
+			}
+		}
+		can_pass = {
+			custom_description = {
+				text = "no_powerful_vassal_with_negative_opinion"
+				NOT = {
+					any_vassal = {
+						is_powerful_vassal = yes
+						opposes_succession_law_change_trigger = yes
+					}
+				}
+			}
+			custom_tooltip = {
+				text = admin_law_cooldown_desc
+				NOT = { has_variable = admin_law_cooldown }
+			}
+		}
+
+		pass_cost = {
+			prestige = change_succession_law_prestige_cost
+		}
+
+		on_pass = {
+			set_variable = { # 设置冷却时间
+				name = admin_law_cooldown
+				years = @admin_law_cooldown_value
+			}
+		}
+
+		ai_will_do = {
+			value = 0
+		}
+	}
+	# 本地贤能 # ————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+	law_candidate_preference_policy_local_talent = {
+		flag = law_candidate_preference_policy_local_talent
+		flag = law_candidate_preference_policy
+
+		should_start_with = {
+			most_vassals_have_local_talent_or_above = yes
+			NOR = {
+				most_vassals_have_favor_nepotism_or_above = yes
+				most_vassals_have_talent_only_or_above = yes
+			}
+		}
+		can_keep = {
+			OR = {
+				government_has_flag = government_is_feudal
+				government_has_flag = government_is_feudal_admin
+			}
+			highest_held_title_tier >= tier_duchy
+			trigger_if = {
+				limit = { has_realm_law_flag = law_candidate_preference_policy_local_talent }
+				OR = {
+					any_vassals_have_local_talent_or_above = yes
+					subject_contract_has_flag = candidate_preference_local_talent
+				}
+			}
+		}
+		can_have = {
+			OR = {
+				government_has_flag = government_is_feudal
+				government_has_flag = government_is_feudal_admin
+			}
+			highest_held_title_tier >= tier_duchy
+			any_vassal = {
+				subject_contract_has_flag = succession_rights_governor_appointment
+			}
+		}
+		can_pass = {
+			custom_description = {
+				text = "no_powerful_vassal_with_negative_opinion"
+				NOT = {
+					any_vassal = {
+						is_powerful_vassal = yes
+						opposes_succession_law_change_trigger = yes
+					}
+				}
+			}
+			custom_tooltip = {
+				text = admin_law_cooldown_desc
+				NOT = { has_variable = admin_law_cooldown }
+			}
+			trigger_if = {
+				limit = { NOT = { subject_contract_has_flag = candidate_preference_local_talent } }
+				most_vassals_have_local_talent_or_above = yes
+			}
+		}
+
+		pass_cost = {
+			prestige = change_succession_law_prestige_cost
+		}
+
+		on_pass = {
+			set_variable = { # 设置冷却时间
+				name = admin_law_cooldown
+				years = @admin_law_cooldown_value
+			}
+		}
+
+		ai_will_do = {
+			value = 15
+		}
+	}
+	# 任人唯亲 # ————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+	law_candidate_preference_policy_favor_nepotism = {
+		flag = law_candidate_preference_policy_favor_nepotism
+		flag = law_candidate_preference_policy
+
+		should_start_with = {
+			most_vassals_have_favor_nepotism_or_above = yes
+			NOT = {	most_vassals_have_talent_only_or_above = yes }
+		}
+		can_keep = {
+			OR = {
+				government_has_flag = government_is_feudal
+				government_has_flag = government_is_feudal_admin
+			}
+			highest_held_title_tier >= tier_duchy
+			trigger_if = {
+				limit = { has_realm_law_flag = law_candidate_preference_policy_favor_nepotism }
+				OR = {
+					any_vassals_have_favor_nepotism_or_above = yes
+					subject_contract_has_flag = candidate_preference_favor_nepotism
+				}
+			}
+		}
+		can_have = {
+			OR = {
+				government_has_flag = government_is_feudal
+				government_has_flag = government_is_feudal_admin
+			}
+			highest_held_title_tier >= tier_duchy
+			any_vassal = {
+				subject_contract_has_flag = succession_rights_governor_appointment
+			}
+		}
+		can_pass = {
+			custom_description = {
+				text = "no_powerful_vassal_with_negative_opinion"
+				NOT = {
+					any_vassal = {
+						is_powerful_vassal = yes
+						opposes_succession_law_change_trigger = yes
+					}
+				}
+			}
+			custom_tooltip = {
+				text = admin_law_cooldown_desc
+				NOT = { has_variable = admin_law_cooldown }
+			}
+			trigger_if = {
+				limit = { NOT = { subject_contract_has_flag = candidate_preference_favor_nepotism } }
+				most_vassals_have_favor_nepotism_or_above = yes
+			}
+		}
+
+		pass_cost = {
+			prestige = change_succession_law_prestige_cost
+		}
+
+		on_pass = {
+			set_variable = { # 设置冷却时间
+				name = admin_law_cooldown
+				years = @admin_law_cooldown_value
+			}
+		}
+
+		ai_will_do = {
+			value = 20
+		}
+	}
+	# 唯才是举 # ————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+	law_candidate_preference_policy_talent_only = {
+		flag = law_candidate_preference_policy_talent_only
+		flag = law_candidate_preference_policy
+
+		should_start_with = {
+			most_vassals_have_talent_only_or_above = yes
+			NOT = {	most_vassals_have_bureaucrat_promotion = yes }
+		}
+		can_keep = {
+			OR = {
+				government_has_flag = government_is_feudal
+				government_has_flag = government_is_feudal_admin
+			}
+			highest_held_title_tier >= tier_duchy
+			trigger_if = {
+				limit = { has_realm_law_flag = law_candidate_preference_policy_talent_only }
+				OR = {
+					any_vassals_have_talent_only_or_above = yes
+					subject_contract_has_flag = candidate_preference_talent_only
+				}
+			}
+		}
+		can_have = {
+			OR = {
+				government_has_flag = government_is_feudal
+				government_has_flag = government_is_feudal_admin
+			}
+			highest_held_title_tier >= tier_duchy
+			any_vassal = {
+				subject_contract_has_flag = succession_rights_governor_appointment
+			}
+		}
+		can_pass = {
+			custom_description = {
+				text = "no_powerful_vassal_with_negative_opinion"
+				NOT = {
+					any_vassal = {
+						is_powerful_vassal = yes
+						opposes_succession_law_change_trigger = yes
+					}
+				}
+			}
+			custom_tooltip = {
+				text = admin_law_cooldown_desc
+				NOT = { has_variable = admin_law_cooldown }
+			}
+			trigger_if = {
+				limit = { NOT = { subject_contract_has_flag = candidate_preference_talent_only } }
+				most_vassals_have_talent_only_or_above = yes
+			}
+		}
+
+		pass_cost = {
+			prestige = change_succession_law_prestige_cost
+		}
+
+		on_pass = {
+			set_variable = { # 设置冷却时间
+				name = admin_law_cooldown
+				years = @admin_law_cooldown_value
+			}
+		}
+
+		ai_will_do = {
+			value = 25
+		}
+	}
+	# 官僚选拔 # ————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+	law_candidate_preference_policy_bureaucrat_promotion = {
+		flag = law_candidate_preference_policy_bureaucrat_promotion
+		flag = law_candidate_preference_policy
+
+		should_start_with = {
+			most_vassals_have_bureaucrat_promotion = yes
+		}
+		can_keep = {
+			OR = {
+				government_has_flag = government_is_feudal
+				government_has_flag = government_is_feudal_admin
+			}
+			highest_held_title_tier >= tier_duchy
+			trigger_if = {
+				limit = { has_realm_law_flag = law_candidate_preference_policy_bureaucrat_promotion }
+				OR = {
+					any_vassals_have_bureaucrat_promotion = yes
+					trigger_if = {
+						limit = { is_independent_ruler = yes }
+						subject_contract_has_flag = candidate_preference_bureaucrat_promotion
+					}
+				}
+			}
+		}
+		can_have = {
+			OR = {
+				government_has_flag = government_is_feudal
+				government_has_flag = government_is_feudal_admin
+			}
+			highest_held_title_tier >= tier_duchy
+			any_vassal = {
+				subject_contract_has_flag = succession_rights_governor_appointment
+			}
+		}
+		can_pass = {
+			custom_description = {
+				text = "no_powerful_vassal_with_negative_opinion"
+				NOT = {
+					any_vassal = {
+						is_powerful_vassal = yes
+						opposes_succession_law_change_trigger = yes
+					}
+				}
+			}
+			custom_tooltip = {
+				text = admin_law_cooldown_desc
+				NOT = { has_variable = admin_law_cooldown }
+			}
+			trigger_if = {
+				limit = { NOT = { subject_contract_has_flag = candidate_preference_bureaucrat_promotion } }
+				any_vassals_have_bureaucrat_promotion = yes
+			}
+		}
+
+		pass_cost = {
+			prestige = change_succession_law_prestige_cost
+		}
+
+		on_pass = {
+			set_variable = { # 设置冷却时间
+				name = admin_law_cooldown
+				years = @admin_law_cooldown_value
+			}
+		}
+
+		ai_will_do = {
+			value = 30
+		}
+	}
+}

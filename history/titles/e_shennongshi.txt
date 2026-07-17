@@ -1,0 +1,44 @@
+﻿e_shennongshi = {
+	1403.4.26 = {
+		holder = han3177
+	}
+	1553.5.1 = {
+		holder = han3178
+	}
+	1633.4.1 = {
+		holder = han3179
+	}
+	1693.1.1 = {
+		holder = han3180
+	}
+	1742.1.1 = {
+		holder = han3181
+	}
+	1787.1.1 = {
+		holder = han3182
+	}
+	1835.1.1 = {
+		holder = han3183
+	}
+	1858.1.1 = {
+		holder = han3184
+	}
+	1868.1.1 = {
+		holder = han3185
+	}
+	1903.1.1 = {
+		holder = feng1
+	}
+	1911.1.1 = {
+		holder = feng2
+	}
+	1923.1.1 = {
+		holder = feng3
+	}
+	1923.6.1 = {
+		holder = han3186
+	}
+	1949.1.1 = {
+		holder = 0
+	}
+}

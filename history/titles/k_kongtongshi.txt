@@ -1,0 +1,151 @@
+﻿d_kongshi1 = {
+	3456.1.1 = {
+		liege = "k_kongtongshi"
+		holder = kongtongshi1
+	}
+	3501.1.1 = {
+		holder = kongtongshi2
+	}
+	3543.1.1 = {
+		holder = kongtongshi3
+	}
+	3570.1.1 = {
+		holder = kongtongshi4
+	}
+	3595.1.1 = {
+		holder = kongtongshi5
+	}
+	3619.1.1 = {
+		holder = kongtongshi6
+	}
+	3644.1.1 = {
+		holder = kongtongshi7
+	}
+	3666.1.1 = {
+		holder = kongtongshi8
+	}
+	3691.1.1 = {
+		holder = kongtongshi9
+	}
+	3715.1.1 = {
+		holder = kongtongshi10
+	}
+	3737.1.1 = {
+		holder = kongtongshi11
+	}
+	3762.1.1 = {
+		holder = kongtongshi12
+	}
+	3786.1.1 = {
+		holder = kongtongshi13
+	}
+	3811.1.1 = {
+		holder = kongtongshi14
+	}
+	3834.1.1 = {
+		holder = kongtongshi21
+	}
+	3849.12.31 = {
+		government = tribal_government
+		change_development_level = 25
+	}
+}
+d_kongtongshi = {
+	3456.1.1 = {
+		liege = "k_kongtongshi"
+		holder = kongtongshi1
+	}
+	3501.1.1 = {
+		holder = kongtongshi2
+	}
+	3543.1.1 = {
+		holder = kongtongshi3
+	}
+	3570.1.1 = {
+		holder = kongtongshi4
+	}
+	3595.1.1 = {
+		holder = kongtongshi5
+	}
+	3619.1.1 = {
+		holder = kongtongshi6
+	}
+	3644.1.1 = {
+		holder = kongtongshi7
+	}
+	3666.1.1 = {
+		holder = kongtongshi8
+	}
+	3691.1.1 = {
+		holder = kongtongshi9
+	}
+	3715.1.1 = {
+		holder = kongtongshi10
+	}
+	3737.1.1 = {
+		holder = kongtongshi11
+	}
+	3762.1.1 = {
+		holder = kongtongshi12
+	}
+	3786.1.1 = {
+		holder = kongtongshi13
+	}
+	3811.1.1 = {
+		holder = kongtongshi14
+	}
+	3834.1.1 = {
+		holder = kongtongshi15
+	}
+}
+k_kongtongshi = {
+	3456.1.1 = {
+		holder = kongtongshi1
+	}
+	3501.1.1 = {
+		holder = kongtongshi2
+	}
+	3543.1.1 = {
+		holder = kongtongshi3
+	}
+	3570.1.1 = {
+		holder = kongtongshi4
+	}
+	3595.1.1 = {
+		holder = kongtongshi5
+	}
+	3619.1.1 = {
+		holder = kongtongshi6
+	}
+	3644.1.1 = {
+		holder = kongtongshi7
+	}
+	3666.1.1 = {
+		holder = kongtongshi8
+	}
+	3691.1.1 = {
+		holder = kongtongshi9
+	}
+	3715.1.1 = {
+		holder = kongtongshi10
+	}
+	3737.1.1 = {
+		holder = kongtongshi11
+	}
+	3762.1.1 = {
+		holder = kongtongshi12
+	}
+	3786.1.1 = {
+		holder = kongtongshi13
+	}
+	3811.1.1 = {
+		holder = kongtongshi14
+	}
+	3834.1.1 = {
+		holder = kongtongshi15
+	}
+	3849.12.31 = {
+		government = tribal_government
+		change_development_level = 27
+	}
+}

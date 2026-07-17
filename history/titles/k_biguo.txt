@@ -1,0 +1,142 @@
+﻿c_haozhi = {
+	3574.1.1 = {
+		liege = "d_bishi"
+		holder = han491
+	}
+	3627.12.31 = {
+		holder = han492
+	}
+	3633.12.31 = {
+		holder = han493
+	}
+	3663.12.31 = {
+		holder = han494
+	}
+	3680.1.1 = {
+		holder = jixingbishi1
+	}
+	3703.1.1 = {
+		holder = jixingbishi2
+	}
+	3729.1.1 = {
+		holder = jixingbishi3
+	}
+	3761.1.1 = {
+		holder = jixingbishi4
+	}
+	3794.1.1 = {
+		holder = han495
+	}
+	3849.12.31 = {
+		liege = "k_jiangshizhirong"
+		holder = jiangshirong15
+		change_development_level = 31
+		government = tribal_government
+	}
+}
+c_quanqiu1 = {
+	3574.1.1 = {
+		liege = "d_bishi"
+		holder = han491
+	}
+	3627.12.31 = {
+		holder = han492
+	}
+	3633.12.31 = {
+		holder = han493
+	}
+	3663.12.31 = {
+		holder = han494
+	}
+	3680.1.1 = {
+		holder = jixingbishi1
+	}
+	3703.1.1 = {
+		holder = jixingbishi2
+	}
+	3729.1.1 = {
+		holder = jixingbishi3
+	}
+	3761.1.1 = {
+		holder = jixingbishi4
+	}
+	3794.1.1 = {
+		holder = han495
+	}
+	3849.12.31 = {
+		liege = "k_jiangshizhirong"
+		holder = jiangshirong15
+		change_development_level = 33
+		government = tribal_government
+	}
+}
+d_bishi = {
+	3574.1.1 = {
+		liege = "k_biguo"
+		holder = han491
+	}
+	3627.12.31 = {
+		holder = han492
+	}
+	3633.12.31 = {
+		holder = han493
+	}
+	3663.12.31 = {
+		holder = han494
+	}
+	3680.1.1 = {
+		holder = jixingbishi1
+	}
+	3703.1.1 = {
+		holder = jixingbishi2
+	}
+	3729.1.1 = {
+		holder = jixingbishi3
+	}
+	3761.1.1 = {
+		holder = jixingbishi4
+	}
+	3794.1.1 = {
+		holder = han495
+	}
+	3849.12.31 = {
+		holder = han496
+	}
+}
+k_biguo = {
+	3574.1.1 = {
+		liege = "e_zhoutianzi"
+		holder = han491
+	}
+	3627.12.31 = {
+		holder = han492
+	}
+	3633.12.31 = {
+		holder = han493
+	}
+	3663.12.31 = {
+		holder = han494
+	}
+	3680.1.1 = {
+		holder = jixingbishi1
+	}
+	3703.1.1 = {
+		holder = jixingbishi2
+	}
+	3729.1.1 = {
+		holder = jixingbishi3
+	}
+	3761.1.1 = {
+		holder = jixingbishi4
+	}
+	3794.1.1 = {
+		holder = han495
+	}
+	3849.1.1 = {
+		change_development_level = 35
+		government = feudal_admin_government
+	}
+	3849.12.31 = {
+		holder = han496
+	}
+}

@@ -1,0 +1,70 @@
+﻿##### d_moushi ############################
+
+### c_gai
+# GAI
+232 = {
+	culture = dongyi
+	religion = yili
+	holding = castle_holding
+}
+
+
+### c_ai2
+# AI2
+233 = {
+	culture = dongyi
+	religion = yili
+	holding = castle_holding
+}
+
+
+### c_mou
+# MOU
+326 = {
+	culture = dongyi
+	religion = yili
+	holding = castle_holding
+}
+# PINGZHOU
+327 = {
+	holding = none
+}
+# FENGGAO
+2284 = {
+	holding = none
+}
+
+
+##### d_xianmoushi ############################
+
+### c_changshao
+# CHANGSHAO
+332 = {
+	culture = dongyi
+	religion = yili
+	holding = castle_holding
+}
+
+
+### c_ying
+# YING
+330 = {
+	culture = dongyi
+	religion = yili
+	holding = castle_holding
+}
+# HONG
+329 = {
+	holding = none
+}
+
+
+### c_guiyin
+# GUIYIN
+334 = {
+	culture = dongyi
+	religion = yili
+	holding = castle_holding
+}
+
+

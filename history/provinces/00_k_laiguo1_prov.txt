@@ -1,0 +1,44 @@
+﻿##### d_laishi1 ############################
+
+### c_lai2
+# 
+1843 = {
+	holding = none
+}
+
+
+### c_dingyang1
+# 
+1844 = {
+	holding = none
+}
+
+
+### c_longchao
+# 
+1845 = {
+	holding = none
+}
+
+
+### c_duansheqiu
+# 
+1848 = {
+	holding = none
+}
+
+
+### c_pinglin
+# 
+1849 = {
+	holding = none
+}
+
+
+### c_shunyi
+# 
+1850 = {
+	holding = none
+}
+
+

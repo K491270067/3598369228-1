@@ -1,0 +1,825 @@
+﻿#############  商朝--子姓 #############
+han1960={
+  name="nanming402"#阏伯
+  dynasty=xin47
+	religion="yinli" 
+	culture="yinshang"
+	father=han1315
+	mother=yousongshi2
+  
+  2442.1.1 = {
+		birth = yes
+	}
+  2553.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+    give_nickname=nick_qixuanwang
+  }
+}
+han1961={
+  name="nanming403"
+  dynasty=xin47
+	religion="yinli" 
+	culture="yinshang"
+	father=han1960
+
+  2500.1.1 = {
+		birth = yes
+	}
+  2572.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1962={
+  name="nanming404"
+  dynasty=xin47
+	religion="yinli" 
+	culture="yinshang"
+	father=han1961
+
+  2570.1.1 = {
+		birth = yes
+	}
+  2651.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1963={
+  name="nanming405"
+  dynasty=xin47
+	religion="yinli" 
+	culture="yinshang"
+	father=han1962
+
+  2592.1.1 = {
+		birth = yes
+	}
+  2666.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1964={
+  name="nanming406"
+  dynasty=xin47
+	religion="yinli" 
+	culture="yinshang"
+	father=han1963
+
+  2643.1.1 = {
+		birth = yes
+	}
+  2711.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1965={
+  name="ming1"
+  dynasty=xin47
+	religion="yinli" 
+	culture="yinshang"
+	father=han1964
+
+  2682.1.1 = {
+		birth = yes
+	}
+  2745.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1966={
+  name="nanming335"
+  dynasty=xin47
+	religion="yinli" 
+	culture="yinshang"
+	father=han1965
+
+  2744.1.1 = {
+		birth = yes
+	}
+  2863.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1967={
+  name="heng"
+  dynasty=xin47
+	religion="yinli" 
+	culture="yinshang"
+	father=han1965
+
+  2744.1.1 = {
+		birth = yes
+	}
+  2867.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1968={
+  name="nanming136"
+  dynasty=xin47
+	religion="yinli" 
+	culture="yinshang"
+	father=han1966
+
+  2840.1.1 = {
+		birth = yes
+	}
+  2900.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1969={
+  name="nanming407"
+  dynasty=xin47
+	religion="yinli" 
+	culture="yinshang"
+	father=han1968
+
+  2862.1.1 = {
+		birth = yes
+	}
+  2910.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1970={
+  name="nanming408"
+  dynasty=xin47
+	religion="yinli" 
+	culture="yinshang"
+	father=han1969
+
+  2883.1.1 = {
+		birth = yes
+	}
+  2926.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1971={
+  name="nanming409"
+  dynasty=xin47
+	religion="yinli" 
+	culture="yinshang"
+	father=han1970
+
+  2914.1.1 = {
+		birth = yes
+	}
+  2937.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1972={
+  name="nanming410"
+  dynasty=xin47
+	religion="yinli" 
+	culture="yinshang"
+	father=han1971
+
+  2934.1.1 = {
+		birth = yes
+	}
+  2955.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1973={
+  name="nanming411"
+  dynasty=xin47
+	religion="yinli" 
+	culture="yinshang"
+	father=han1972
+
+  2954.1.1 = {
+		birth = yes
+	}
+  2975.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+########## 商朝帝系 ##########
+han1974={  #第1任商帝
+  name="nanming137"
+  dynasty=xin47
+	religion="yinli" 
+	culture="yinshang"
+	father=han1973
+
+  2972.1.1 = {
+		birth = yes
+	}
+	3012.3.15={
+		add_spouse=han5877
+	}	
+  3032.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1975={
+  name="nanming413" #早亡
+  dynasty=xin47
+	religion="yinli" 
+	culture="yinshang"
+	father=han1974
+
+  2993.1.1 = {
+		birth = yes
+	}
+  3030.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+    give_nickname=nick_taiding
+  }
+}
+han1976={ #第2任商帝
+  name="sheng2"
+  dynasty=xin47
+	religion="yinli" 
+	culture="yinshang"
+	father=han1974
+	mother=han5877
+
+  2994.1.1 = {
+		birth = yes
+	}
+  3034.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+    give_nickname=nick_waibing
+  }
+}
+han1977={ #第3任商帝
+  name="nanming138"
+  dynasty=xin47
+	religion="yinli" 
+	culture="yinshang"
+	father=han1974
+	mother=han5877
+
+  2995.1.1 = {
+		birth = yes
+	}
+  3038.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+    give_nickname=nick_zhongren
+  }
+}
+han1978={ #第4任商帝
+  name="zhi13"
+  dynasty=xin47
+	religion="yinli" 
+	culture="yinshang"
+	father=han1975
+
+  3025.1.1 = {
+		birth = yes
+	}
+  3070.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+    give_nickname=nick_taijia
+  }
+}
+han1979={ #第5任商帝
+  name="nanming412"
+  dynasty=xin47
+	religion="yinli" 
+	culture="yinshang"
+	father=han1978
+
+  3046.1.1 = {
+		birth = yes
+	}
+  3090.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+    give_nickname=nick_woding
+  }
+}
+han1216={ #第6任商帝
+  name="nanming118"
+  dynasty=xin47
+	religion="yinli" 
+	culture="yinshang"
+	father=han1978
+
+  3047.1.1 = {
+		birth = yes
+	}
+  3115.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+    give_nickname=nick_taigen
+  }
+}
+han1217={ #第7任商帝
+  name="gao"
+  dynasty=xin47
+	religion="yinli" 
+	culture="yinshang"
+  father=han1216
+
+  3099.1.1 = {
+		birth = yes
+	}
+  3132.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+    give_nickname=nick_xiaojia
+  }
+}
+han1218={ #第8任商帝
+  name="mi"
+  dynasty=xin47
+	religion="yinli" 
+	culture="yinshang"
+  father=han1216
+
+  3099.11.1 = {
+		birth = yes
+	}
+  3144.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+    give_nickname=nick_yongji
+  }
+}
+han1219={ #第9任商帝
+  name="nanming119"
+  dynasty=xin47
+	religion="yinli" 
+	culture="yinshang"
+  father=han1216
+
+  3100.1.1 = {
+		birth = yes
+	}
+  3201.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+    give_nickname=nick_taimao
+  }
+}
+han1220={ #第10任商帝
+  name="zhuang1"
+  dynasty=xin47
+	religion="yinli" 
+	culture="yinshang"
+  father=han1219
+
+  3180.1.1 = {
+		birth = yes
+	}
+  3212.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+    give_nickname=nick_zhongding
+  }
+}
+han1221={ #第11任商帝
+  name="fa"
+  dynasty=xin47
+	religion="yinli" 
+	culture="yinshang"
+  father=han1219
+
+  3181.1.1 = {
+		birth = yes
+	}
+  3222.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+    give_nickname=nick_wairen
+  }
+}
+han1222={ #第12任商帝
+  name="zheng3"
+  dynasty=xin47
+	religion="yinli" 
+	culture="yinshang"
+  father=han1219
+
+  3182.1.1 = {
+		birth = yes
+	}
+  3231.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+    give_nickname=nick_hedanjia
+  }
+}
+han1223={ #第13任商帝
+  name="teng"
+  dynasty=xin47
+	religion="yinli" 
+	culture="yinshang"
+  father=han1220
+
+  3200.1.1 = {
+		birth = yes
+	}
+  3250.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+    give_nickname=nick_zuyi
+  }
+}
+han1224={ #第14任商帝
+  name="dan1"
+  dynasty=xin47
+	religion="yinli" 
+	culture="yinshang"
+  father=han1223
+
+  3225.1.1 = {
+		birth = yes
+	}
+  3264.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+    give_nickname=nick_zuxin
+  }
+}
+han1225={ #第15任商帝
+  name="nanming120"
+  dynasty=xin47
+	religion="yinli" 
+	culture="yinshang"
+  father=han1223
+
+  3230.1.1 = {
+		birth = yes
+	}
+  3284.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+    give_nickname=nick_wojia
+  }
+}
+han1226={ #第16任商帝
+  name="nanming121"
+  dynasty=xin47
+	religion="yinli" 
+	culture="yinshang"
+  father=han1223
+
+  3240.1.1 = {
+		birth = yes
+	}
+  3293.12.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+    give_nickname=nick_zudin
+  }
+}
+han1227={ #第17任商帝
+  name="nanming122"
+  dynasty=xin47
+	religion="yinli" 
+	culture="yinshang"
+  father=han1225
+
+  3250.1.1 = {
+		birth = yes
+	}
+  3299.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+    give_nickname=nick_nangen
+  }
+}
+han1228={ #第18任商帝
+  name="he"
+  dynasty=xin47
+	religion="yinli" 
+	culture="yinshang"
+  father=han1226
+
+  3258.1.1 = {
+		birth = yes
+	}
+  3306.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+    give_nickname=nick_yanjia
+  }
+}
+han1229={ #第19任商帝
+  name="nanming123"
+  dynasty=xin47
+	religion="yinli" 
+	culture="yinshang"
+  father=han1226
+
+  3260.1.1 = {
+		birth = yes
+	}
+  3334.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+    give_nickname=nick_pangeng
+  }
+}
+han1230={ #第20任商帝
+  name="nanming124"
+  dynasty=xin47
+	religion="yinli" 
+	culture="yinshang"
+  father=han1226
+
+  3270.1.1 = {
+		birth = yes
+	}
+  3348.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+    give_nickname=nick_xiaoxin
+  }
+}
+han1231={ #第20任商帝
+  name="nanming125"
+  dynasty=xin47
+	religion="yinli" 
+	culture="yinshang"
+  father=han1226
+
+  3279.1.1 = {
+		birth = yes
+	}
+  3369.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+    give_nickname=nick_xiaoyi
+  }
+}
+han1232={ #第21任商帝
+  name="zhao1"
+  dynasty=xin47
+	religion="yinli" 
+	culture="yinshang"
+  father=han1231
+
+  3360.1.1 = {
+		birth = yes
+	}
+  3428.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+    give_nickname=nick_wuding
+  }
+}
+han1233={ #未即位
+  name="nanming126"
+  dynasty=xin47
+	religion="yinli" 
+	culture="yinshang"
+  father=han1232
+
+  3380.1.1 = {
+		birth = yes
+	}
+  3420.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+    give_nickname=nick_zuyi
+  }
+}
+han1234={ #第22任商帝
+  name="nanming127"
+  dynasty=xin47
+	religion="yinli" 
+	culture="yinshang"
+  father=han1232
+
+  3381.1.1 = {
+		birth = yes
+	}
+  3435.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+    give_nickname=nick_zugen
+  }
+}
+han1235={ #第23任商帝
+  name="zai3"
+  dynasty=xin47
+	religion="yinli" 
+	culture="yinshang"
+  father=han1232
+
+  3400.1.1 = {
+		birth = yes
+	}
+  3468.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+    give_nickname=nick_zujia
+  }
+}
+han1236={ #第24任商帝
+  name="nanming128"
+  dynasty=xin47
+	religion="yinli" 
+	culture="yinshang"
+  father=han1235
+
+  3420.1.1 = {
+		birth = yes
+	}
+  3474.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+    give_nickname=nick_binxian
+  }
+}
+han1237={ #第25任商帝
+  name="nanming129"
+  dynasty=xin47
+	religion="yinli" 
+	culture="yinshang"
+  father=han1235
+
+  3430.1.1 = {
+		birth = yes
+	}
+  3480.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+    give_nickname=nick_gendin
+  }
+}
+han1238={ #第26任商帝
+  name="nanming130"
+  dynasty=xin47
+	religion="yinli" 
+	culture="yinshang"
+  father=han1235
+
+  3460.1.1 = {
+		birth = yes
+	}
+  3515.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+    give_nickname=nick_wuyi
+  }
+}
+han1239={ #第27任商帝
+  name="nanming131"
+  dynasty=xin47
+	religion="yinli" 
+	culture="yinshang"
+  father=han1238
+
+  3480.1.1 = {
+		birth = yes
+	}
+  3518.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+    give_nickname=nick_wendin
+  }
+}
+han1240={ #第28任商帝
+  name="nanming132"
+  dynasty=xin47
+	religion="yinli" 
+	culture="yinshang"
+  father=han1239
+
+  3501.1.1 = {
+		birth = yes
+	}
+  3544.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+    give_nickname=nick_diyi
+  }
+}
+han1241={
+  name="nanming133"#箕子
+  dynasty=xin47
+	religion="yinli" 
+	culture="yinshang"
+  father=han1239
+
+  3514.1.1 = {
+		birth = yes
+	}
+  3608.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+    give_nickname=nick_wenshengwang
+  }
+}
+han1242={
+  name="nanming134"#比干
+  dynasty=xin47
+	religion="yinli" 
+	culture="yinshang"
+  father=han1239
+
+  3515.1.1 = {
+		birth = yes
+	}
+  3573.1.2 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1243={ #第29任商帝
+  name="nanming135"
+  dynasty=xin47
+	religion="yinli" 
+	culture="yinshang"
+  father=han1240
+
+  3523.1.1 = {
+		birth = yes
+	}
+  3574.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+    give_nickname=nick_dixin
+  }
+}
+han1244={
+  name="nanming100"
+  dynasty=xin47
+	religion="yinli" 
+	culture="yinshang"
+  father=han1243
+
+  3542.1.1 = {
+		birth = yes
+	}
+  3580.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}

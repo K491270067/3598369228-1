@@ -1,0 +1,37 @@
+﻿##### d_jiangshi1 ############################
+
+### c_yi7
+# YI7
+1690 = {
+	holding = none
+}
+
+
+### c_jiang1
+# JIANG1
+1691 = {
+	holding = none
+}
+
+
+### c_ancheng1
+# ANCHENG1
+1693 = {
+	holding = none
+}
+
+
+### c_baigou
+# BAIGOU
+1694 = {
+	holding = none
+}
+
+
+### c_shenyang
+# SHENYANG
+1695 = {
+	holding = none
+}
+
+

@@ -1,0 +1,31 @@
+﻿object={
+	name="tree_pine_01_a_generator_1_0"
+	render_pass=Map
+	clamp_to_water_level=no
+	generated_content=yes
+	layer="tree_high_layer"
+	pdxmesh="tree_pine_single_01_a_mesh"
+	count=1
+	transform="7262.327148 0.000000 4071.371094 0.000000 0.825790 0.000000 0.563978 1.000000 1.000000 1.000000
+"}
+object={
+	name="tree_pine_01_a_generator_1_1"
+	render_pass=Map
+	clamp_to_water_level=no
+	generated_content=yes
+	layer="tree_high_layer"
+	pdxmesh="tree_pine_single_01_b_mesh"
+	count=1
+	transform="7262.005371 0.000000 4073.111084 0.000000 0.967196 0.000000 0.254029 1.000000 1.000000 1.000000
+"}
+object={
+	name="tree_pine_01_a_generator_1_2"
+	render_pass=Map
+	clamp_to_water_level=no
+	generated_content=yes
+	layer="tree_high_layer"
+	pdxmesh="tree_pine_single_01_c_mesh"
+	count=2
+	transform="7260.718750 0.000000 4074.491943 0.000000 0.645595 0.000000 -0.763680 1.000000 1.000000 1.000000
+7263.708008 0.000000 4073.973389 0.000000 0.634232 0.000000 -0.773143 1.000000 1.000000 1.000000
+"}

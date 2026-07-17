@@ -1,0 +1,44 @@
+﻿##### d_yuanshi ############################
+
+### c_changge
+# CHANGGE
+742 = {
+	holding = none
+}
+
+
+### c_changshe
+# CHANGSHE
+744 = {
+	holding = none
+}
+
+
+### c_wan
+# WAN
+745 = {
+	holding = none
+}
+
+
+### c_huren
+# HUREN
+747 = {
+	holding = none
+}
+
+
+### c_yangling
+# YANGLING
+746 = {
+	holding = none
+}
+
+
+### c_anmen
+# ANMEN
+748 = {
+	holding = none
+}
+
+

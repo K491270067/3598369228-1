@@ -1,0 +1,390 @@
+﻿### 决议：转换为【封建行政制】 ### ————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+decision_convert_to_feudal_admin = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_knight_kneeling.dds"
+		#reference = "gfx/interface/illustrations/decisions/decision_recruitment.dds"
+	}
+	title = {
+		desc = decision_convert_to_feudal_admin
+	}
+	desc = {
+		desc = decision_convert_to_feudal_admin_desc
+	}
+	confirm_text = {
+		desc = decision_convert_to_feudal_admin_confirm
+	}
+	decision_group_type = major
+	sort_order = 100
+
+	# 是否显示：
+	is_shown = {
+		OR = {
+			has_ep3_dlc_trigger = yes
+			has_tgp_dlc_trigger = yes
+		}
+		government_has_flag = government_is_feudal
+		NOT = { government_has_flag = government_is_feudal_admin }
+	}
+	# 是否可用：
+	is_valid = {
+		has_crown_authority_2_or_above = yes
+		OR = {
+			most_vassals_are_governor_or_admin = yes # 至少15个或者至少50%以上的封臣有【总督委任】或者是行政体制
+			has_realm_law = law_vassal_succession_rights_policy_governor_appointment # 拥有【委任总督】政策法律
+		}
+	}
+	# 是否可用（仅在不可用时显示）：
+	is_valid_showing_failures_only = {
+		has_ep3_dlc_trigger = yes
+		is_at_war = no
+	}
+	# 选择花费：
+	cost = {
+		prestige = {
+			value = 500
+			# 如果领主已经是某种行政制，就减少【威望】花费
+			if = {
+				limit = {
+					is_independent_ruler = no
+					liege = {
+						OR = {
+							government_has_flag = government_is_feudal_admin
+							government_allows = administrative
+							has_realm_law = law_vassal_succession_rights_policy_governor_appointment
+						}
+					}
+				}
+				multiply = 0.5
+			}
+		}
+		gold = {
+			value = 250
+			# 最高1000
+			max = 1000
+			# 领地国模
+			if = {
+				limit = { is_ai = no }
+				if = {
+					limit = { root.realm_size >= 300 }
+					multiply = 3.5
+				}
+				else_if = {
+					limit = { root.realm_size >= 250 }
+					multiply = 3
+				}
+				else_if = {
+					limit = { root.realm_size >= 200 }
+					multiply = 2.5
+				}
+				else_if = {
+					limit = { root.realm_size >= 150 }
+					multiply = 2
+				}
+				else_if = {
+					limit = { root.realm_size >= 100 }
+					multiply = 1.5
+				}
+			}
+			# 时代
+			culture = {
+				if = {
+					limit = { has_cultural_era_or_later = culture_era_late_medieval }
+					multiply = 1
+				}
+				else_if = {
+					limit = { has_cultural_era_or_later = culture_era_high_medieval }
+					multiply = 1.25
+				}
+				else_if = {
+					limit = { has_cultural_era_or_later = culture_era_early_medieval }
+					multiply = 1.5
+				}
+				else = {
+					multiply = 1.75
+				}
+			}
+			# 收入
+			if = {
+				limit = { root.monthly_character_income >= 100 }
+				multiply = 1.5
+			}
+			else_if = {
+				limit = { root.monthly_character_income >= 80 }
+				multiply = 1.4
+			}
+			else_if = {
+				limit = { root.monthly_character_income >= 60 }
+				multiply = 1.3
+			}
+			else_if = {
+				limit = { root.monthly_character_income >= 40 }
+				multiply = 1.2
+			}
+			else_if = {
+				limit = { root.monthly_character_income >= 20 }
+				multiply = 1.1
+			}
+			# 如果领主已经是某种行政制，就减少【金钱】花费
+			if = {
+				limit = {
+					is_independent_ruler = no
+					liege = {
+						OR = {
+							government_has_flag = government_is_feudal_admin
+							government_allows = administrative
+							has_realm_law = law_vassal_succession_rights_policy_governor_appointment
+						}
+					}
+				}
+				multiply = 0.5
+			}
+		}
+	}
+	# 选择后效果：
+	effect = {
+		effect_change_to_feudal_admin = yes
+		change_influence = 250
+		trigger_event = {
+			id = feudal_admin.1
+		}
+	}
+	
+	# AI考虑频率（月）：按头衔等级区分
+	ai_check_interval_by_tier = {
+		barony = 0
+		county = 0
+		duchy = 45
+		kingdom = 45
+		empire = 45
+		hegemony = 0
+	}
+	# AI考虑可能
+	ai_potential = {
+		government_has_flag = government_is_feudal
+	}
+	# AI考虑因素（最高100）
+	ai_will_do = {
+		base = 0
+		modifier = {
+			OR = {
+				is_roman_emperor_primary_title_trigger = yes
+			}
+			add = 100
+		}
+		modifier = {
+			culture = {
+				OR = {
+					has_cultural_pillar = ethos_bureaucratic 
+					has_cultural_pillar = ethos_courtly 
+					has_cultural_pillar = ethos_egalitarian 
+				}
+			}
+			add = 50
+		}
+		modifier = {
+			culture = {
+				has_cultural_tradition = tradition_legalistic
+			}
+			add = 50
+		}
+		modifier = {
+			culture = {
+				OR = {
+					has_cultural_tradition = tradition_fp3_enlightened_magnates 
+					has_cultural_tradition = tradition_loyal_soldiers 
+				}
+			}
+			add = 20
+		}
+		modifier = {
+			culture = {
+				OR = {
+					has_cultural_tradition = tradition_staunch_traditionalists
+					has_cultural_tradition = tradition_ep3_audacious_cadets
+				}
+			}
+			add = -20
+		}
+		modifier = {
+			culture = {
+				has_cultural_tradition = tradition_hereditary_hierarchy
+			}
+			add = -20
+		}
+		modifier = {
+			culture = {
+				OR = {
+					has_cultural_tradition = tradition_ep3_indomitable_azatani
+					has_cultural_tradition = tradition_quarrelsome
+					has_cultural_tradition = tradition_warrior_culture
+					has_cultural_tradition = tradition_fp3_fierce_independence
+				}
+			}
+			add = -50
+		}
+		modifier = {
+			culture = {
+				OR = {
+					has_cultural_pillar = ethos_stoic
+					has_cultural_pillar = ethos_bellicose 
+					has_cultural_pillar = ethos_communal 
+				}
+			}
+			add = -50
+		}
+		modifier = {
+			culture = {
+				any_parent_culture_or_above = {
+					OR = {
+						this = culture:han
+						this = culture:greek
+					}
+				}
+			}
+			add = 100
+		}
+	}
+}
+
+### 决议：修建庄园 ### ————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+decision_build_domicile = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/ep3_decision_estate.dds"
+	}
+	title = {
+		desc = decision_build_domicile
+	}
+	desc = {
+		desc = decision_build_domicile_desc
+	}
+	confirm_text = {
+		desc = decision_build_domicile_confirm
+	}
+	decision_group_type = major
+	sort_order = 80
+
+	# 是否显示：
+	is_shown = {
+		OR = {
+			has_ep3_dlc_trigger = yes
+			has_tgp_dlc_trigger = yes
+		}
+		OR = {
+			government_has_flag = government_is_feudal
+			government_has_flag = government_is_feudal_admin
+		}
+		NOT = { any_held_title = { is_noble_family_title = yes } }
+	}
+	# 是否可用：
+	is_valid = {
+		is_house_head = yes
+		culture ?= { has_innovation = innovation_manorialism }
+		has_crown_authority_2_or_above = yes
+		custom_tooltip = {
+			text = tt_capital_county_has_high_control
+			capital_county = { county_control >= 75 }
+		}
+	}
+	# 是否可用（仅提示不可用原因）：
+	is_valid_showing_failures_only = {
+		has_ep3_dlc_trigger = yes
+		is_at_war = no
+	}
+	# 选择花费：
+	cost = {
+		gold = {
+			value = 250
+			# 最高1000
+			max = 1000
+			# 时代
+			culture = {
+				if = {
+					limit = { has_cultural_era_or_later = culture_era_late_medieval }
+					multiply = 1
+				}
+				else_if = {
+					limit = { has_cultural_era_or_later = culture_era_high_medieval }
+					multiply = 1.25
+				}
+				else_if = {
+					limit = { has_cultural_era_or_later = culture_era_early_medieval }
+					multiply = 1.5
+				}
+				else = {
+					multiply = 1.75
+				}
+			}
+			# 收入
+			if = {
+				limit = { root.monthly_character_income >= 100 }
+				multiply = 1.5
+			}
+			else_if = {
+				limit = { root.monthly_character_income >= 80 }
+				multiply = 1.4
+			}
+			else_if = {
+				limit = { root.monthly_character_income >= 60 }
+				multiply = 1.3
+			}
+			else_if = {
+				limit = { root.monthly_character_income >= 40 }
+				multiply = 1.2
+			}
+			else_if = {
+				limit = { root.monthly_character_income >= 20 }
+				multiply = 1.1
+			}
+			# 如果领主已经是某种行政制，就减少【金钱】花费
+			if = {
+				limit = {
+					is_independent_ruler = no
+					liege = {
+						OR = {
+							government_has_flag = government_is_feudal_admin
+							government_allows = administrative
+							has_realm_law = law_vassal_succession_rights_policy_governor_appointment
+						}
+					}
+				}
+				multiply = 0.5
+			}
+		}
+	}
+	# 选择后效果：
+	effect = {
+		give_noble_family_title = {
+			name = noble_family_name
+			tier = county
+			article = DEFAULT_TITLE_NAME_ARTICLE
+			government = feudal_admin_government
+			save_scope_as = new_title
+		}
+		scope:new_title.holder ?= {
+			save_scope_as = noble_family_head
+			scope:new_title = { set_coa = scope:noble_family_head.house }
+		}
+		domicile ?= {
+			move_domicile = root.capital_province
+		}
+		custom_tooltip = { text = tt_build_domicile }
+		if = {
+			limit = {
+				NOT = { any_held_title = { is_noble_family_title = yes } }
+			}
+			custom_tooltip = { text = create_noble_family_tt }
+		}
+		add_prestige = 100
+	}
+	
+	# AI考虑频率（月）
+	ai_check_interval = 0	
+	# AI考虑可能
+	ai_potential = {
+		is_ai = no # 为了性能考虑，禁止AI自己创建世族和庄园
+		OR = {
+			government_has_flag = government_is_feudal
+			government_has_flag = government_is_feudal_admin
+		}
+	}
+}

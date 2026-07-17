@@ -1,0 +1,390 @@
+﻿#############  郕国--姬姓郕氏（修改） #############
+han355={
+  name="yuan"#郕代伯
+  dynasty_house=house_xin24#郕
+	religion="xizhouli" 
+	culture="lu"
+  father=han14
+
+  3568.1.1 = {
+		birth = yes
+	}
+  3616.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+    give_nickname=nick_shengdaibo
+  }
+}
+han356={
+  name="yao3"#郕伯药
+  dynasty_house=house_xin24#郕
+	religion="xizhouli" 
+	culture="lu"
+  father=han355
+
+  3586.1.1 = {
+		birth = yes
+	}
+  3624.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+		give_nickname=nick_bo
+  }
+}
+han357={
+  name="heijiang"#郕伯黑肩
+  dynasty_house=house_xin24#郕
+	religion="xizhouli" 
+	culture="lu"
+  father=han356
+
+  3608.1.1 = {
+		birth = yes
+	}
+  3663.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+		give_nickname=nick_bo
+  }
+}
+han358={
+  name="qiao"#郕应伯
+  dynasty_house=house_xin24#郕
+	religion="xizhouli" 
+	culture="lu"
+  father=han357
+
+  3629.1.1 = {
+		birth = yes
+	}
+  3680.11.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+    give_nickname=nick_shengyingbo
+  }
+}
+han359={
+  name="ti1"#未在位
+  dynasty_house=house_xin24#郕
+	religion="xizhouli" 
+	culture="lu"
+  father=han358
+
+  3645.1.1 = {
+		birth = yes
+	}
+  3670.11.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han360={
+  name="denei"#未在位
+  dynasty_house=house_xin24#郕
+	religion="xizhouli" 
+	culture="lu"
+  father=han359
+
+  3662.1.1 = {
+		birth = yes
+	}
+  3678.11.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han361={
+  name="liao1"#郕简伯
+  dynasty_house=house_xin24#郕
+	religion="xizhouli" 
+	culture="lu"
+  father=han360
+
+  3678.1.11 = {
+		birth = yes
+	}
+  3729.11.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+    give_nickname=nick_jianbo
+  }
+}
+han362={
+  name="ke3"#郕渊伯
+  dynasty_house=house_xin24#郕
+	religion="xizhouli" 
+	culture="lu"
+  father=han361
+
+  3698.6.6 = {
+		birth = yes
+	}
+  3763.1.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+    give_nickname=nick_yuanbo1
+  }
+}
+han363={
+  name="hen1"
+  dynasty_house=house_xin24#郕
+	religion="xizhouli" 
+	culture="lu"
+  father=han362
+
+  3718.6.6 = {
+		birth = yes
+	}
+  3760.1.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han364={
+  name="fa1"#郕肃伯
+  dynasty_house=house_xin24#郕
+	religion="xizhouli" 
+	culture="lu"
+  father=han363
+
+  3758.11.11 = {
+		birth = yes
+	}
+  3822.11.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+    give_nickname=nick_subo
+  }
+}
+han365={
+  name="guo1"#郕出伯
+  dynasty_house=house_xin24#郕
+	religion="xizhouli" 
+	culture="lu"
+  father=han364
+
+  3780.1.1 = {
+		birth = yes
+	}
+  3823.11.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+    give_nickname=nick_shengchungbo
+  }
+}
+han366={
+  name="cun"#失考，平王东迁时盛(郕)国国君
+  dynasty_house=house_xin24#郕
+	religion="xizhouli" 
+	culture="lu"
+  father=han365
+
+  3816.3.1 = {
+		birth = yes
+	}
+  3860.11.1 = {
+    death = yes
+  }
+}
+han367={
+  name="jia3"#郕简伯，储君1号
+  dynasty_house=house_xin24#郕
+	religion="xizhouli" 
+	culture="lu"
+  father=han366
+
+  3835.8.1 = {
+		birth = yes
+	}
+  3901.11.1 = {
+    death = yes
+  }
+}
+han368={
+  name="shen"#储君2号
+  dynasty_house=house_xin24#郕
+	religion="xizhouli" 
+	culture="lu"
+  father=han366
+
+  3836.1.1 = {
+		birth = yes
+	}
+  3901.11.1 = {
+    death = yes
+  }
+}
+han369={
+  name="you3"#储君3号
+  dynasty_house=house_xin24#郕
+	religion="xizhouli" 
+	culture="lu"
+  father=han366
+
+  3837.10.1 = {
+		birth = yes
+	}
+  3901.11.1 = {
+    death = yes
+  }
+}
+han370={
+  name="xu2"#储君4号
+  dynasty_house=house_xin24#郕
+	religion="xizhouli" 
+	culture="lu"
+  father=han366
+
+  3838.8.1 = {
+		birth = yes
+	}
+  3901.11.1 = {
+    death = yes
+  }
+}
+han371={
+  name="mei2"#女1
+  dynasty_house=house_xin24#郕
+	religion="xizhouli" 
+	culture="lu"
+  father=han366
+  female=yes
+
+  3839.8.1 = {
+		birth = yes
+	}
+  3901.11.1 = {
+    death = yes
+  }
+}
+han372={
+  name="xiaowan"#女2
+  dynasty_house=house_xin24#郕
+	religion="xizhouli" 
+	culture="lu"
+  father=han366
+  female=yes
+
+  3840.11.1 = {
+		birth = yes
+	}
+  3901.11.1 = {
+    death = yes
+  }
+}
+#######瑕丘氏
+chengguo1={
+  name="nanming1000"#郕肃伯
+  dynasty_house=house_xin412
+	religion="xizhouli" 
+	culture="lu"
+  father=han363
+
+  3759.11.11 = {
+		birth = yes
+	}
+  3822.11.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+chengguo2={
+  name="nanming1009"
+  dynasty_house=house_xin412
+	religion="xizhouli" 
+	culture="lu"
+  father=chengguo1
+
+  3780.1.1 = {
+		birth = yes
+	}
+  3843.11.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+chengguo3={
+  name="nanming1018"#失考，平王东迁时盛(郕)国国君
+  dynasty_house=house_xin412
+	religion="xizhouli" 
+	culture="lu"
+  father=chengguo2
+
+  3820.3.1 = {
+		birth = yes
+	}
+  3880.11.1 = {
+    death = yes
+  }
+}
+chengguo4={
+  name="nanming1032"
+  dynasty_house=house_xin412
+	religion="xizhouli" 
+	culture="lu"
+  father=chengguo3
+
+  3838.8.1 = {
+		birth = yes
+	}
+  3901.11.1 = {
+    death = yes
+  }
+}
+chengguo5={
+  name="nanming1051"#储君2号
+  dynasty_house=house_xin412
+	religion="xizhouli" 
+	culture="lu"
+  father=chengguo3
+
+  3839.1.1 = {
+		birth = yes
+	}
+  3901.11.1 = {
+    death = yes
+  }
+}
+chengguo6={
+  name="nvming256"#女1
+  dynasty_house=house_xin412
+	religion="xizhouli" 
+	culture="lu"
+  father=chengguo3
+  female=yes
+
+  3839.8.1 = {
+		birth = yes
+	}
+  3901.11.1 = {
+    death = yes
+  }
+}
+chengguo7={
+  name="nvming310"#女2
+  dynasty_house=house_xin412
+	religion="xizhouli" 
+	culture="lu"
+  father=chengguo3
+  female=yes
+
+  3840.11.1 = {
+		birth = yes
+	}
+  3901.11.1 = {
+    death = yes
+  }
+}

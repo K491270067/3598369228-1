@@ -1,0 +1,16 @@
+﻿# bm_group_867 = {
+# 	default_start_date = 867.1.1
+# }
+
+bm_group_pmrta770 = {
+	default_start_date = 3850.1.1
+}
+
+
+bm_group_pmrta450 = {
+	default_start_date = 4170.1.1
+}
+
+bm_group_pmrta210 = {
+	default_start_date = 4410.1.1
+}

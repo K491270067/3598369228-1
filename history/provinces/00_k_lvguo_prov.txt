@@ -1,0 +1,41 @@
+﻿##### d_lvshi1 ############################
+
+### c_lv2
+# LV2
+1481 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+# WU9
+2811 = {
+	holding = none
+}
+
+
+### c_qi9
+# QI9
+1487 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+# MING2
+2808 = {
+	holding = none
+}
+
+
+### c_pang2
+# PANG2
+2809 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+# YI10
+2807 = {
+	holding = none
+}
+
+

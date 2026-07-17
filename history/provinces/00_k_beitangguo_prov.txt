@@ -1,0 +1,115 @@
+﻿##### d_beitangshi ############################
+
+### c_yu7
+# YU7
+358 = {
+	culture = beirong
+	religion = saman
+	holding = tribal_holding
+}
+
+
+### c_beitang
+# BEITAN
+2598 = {
+	culture = beirong
+	religion = saman
+	holding = tribal_holding
+}
+# YANGQU
+1261 = {
+	holding = none
+}
+
+
+### c_lusi
+# LUSI
+1262 = {
+	culture = beirong
+	religion = saman
+	holding = tribal_holding
+}
+# YUANPING
+1263 = {
+	holding = none
+}
+
+
+##### d_wujiushi ############################
+
+### c_chizhisai
+# CHIZHISAI
+514 = {
+	culture = beirong
+	religion = saman
+	holding = tribal_holding
+}
+# HUAYANG
+513 = {
+	holding = none
+}
+
+
+### c_lucheng1
+# LUCHENG1
+1268 = {
+	culture = beirong
+	religion = saman
+	holding = tribal_holding
+}
+# LINGQIU
+522 = {
+	holding = none
+}
+
+
+### c_wuruanguan
+# WURUANGUAN
+568 = {
+	culture = beirong
+	religion = saman
+	holding = tribal_holding
+}
+# GUANGCHANG
+1281 = {
+	holding = none
+}
+
+
+##### d_lishi6 ############################
+
+### c_juzhusai
+# JUZHUSAI
+1264 = {
+	culture = beirong
+	religion = saman
+	holding = tribal_holding
+}
+
+
+### c_xianyu1
+# XIANYU1
+1266 = {
+	culture = beirong
+	religion = saman
+	holding = tribal_holding
+}
+# HUOREN
+1267 = {
+	holding = none
+}
+
+
+### c_huchi
+# HUCHI
+2599 = {
+	culture = beirong
+	religion = saman
+	holding = tribal_holding
+}
+# GUANGWU
+1265 = {
+	holding = none
+}
+
+

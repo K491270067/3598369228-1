@@ -1,0 +1,494 @@
+﻿### 政策：封臣头衔领地外继承 ### ============================================================================================================================================
+law_group_vassal_title_leave_realm_policy = {
+	default = law_vassal_title_leave_realm_policy_allowed
+	cumulative = no
+	flag = imperial_policy
+	flag = law_group_vassal_title_leave_realm_policy
+
+	can_change_law_group = {}
+
+	# 允许领地外继承 # ————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+	law_vassal_title_leave_realm_policy_allowed = {
+		flag = law_vassal_title_leave_realm_policy_allowed
+		flag = law_vassal_title_leave_realm_policy
+
+		modifier = {
+			belligerent_opinion = -10
+			courtly_opinion = 5
+			minority_opinion = 10
+			zealot_opinion = -5
+		}
+
+		should_start_with = {
+			OR = {
+				government_has_flag = government_is_feudal
+				government_has_flag = government_is_feudal_admin
+			}
+			NOT = { has_crown_authority_2_or_above = yes }
+		}
+		can_keep = {
+			OR = {
+				government_has_flag = government_is_feudal
+				government_has_flag = government_is_feudal_admin
+			}
+			highest_held_title_tier >= tier_duchy
+			trigger_if = {
+				limit = { is_independent_ruler = no }
+				liege ?= { NOT = { has_realm_law = law_vassal_title_leave_realm_policy_restricted } }
+			}
+		}
+
+		pass_cost = {
+			prestige = 100
+		}
+		revoke_cost = {
+			prestige = change_succession_law_prestige_cost
+		}
+	}
+	# 禁止领地外继承 # ————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+	law_vassal_title_leave_realm_policy_restricted = {
+		flag = law_vassal_title_leave_realm_policy_restricted
+		flag = law_vassal_title_leave_realm_policy
+		# 实际作用Flag：
+		flag = titles_cannot_leave_realm_on_succession
+
+		modifier = {
+			belligerent_opinion = 10
+			courtly_opinion = -5
+			minority_opinion = -10
+			zealot_opinion = 5
+		}
+		
+		should_start_with = {
+			OR = {
+				government_has_flag = government_is_feudal
+				government_has_flag = government_is_feudal_admin
+			}
+			has_crown_authority_2_or_above = yes
+		}
+		can_keep = {
+			OR = {
+				government_has_flag = government_is_feudal
+				government_has_flag = government_is_feudal_admin
+			}
+			highest_held_title_tier >= tier_duchy
+			trigger_if = {
+				limit = {
+					OR = {
+						is_independent_ruler = yes
+						liege ?= { NOT = { has_realm_law = law_vassal_title_leave_realm_policy_restricted } }
+					}
+				}
+				has_crown_authority_2_or_above = yes
+			}
+		}
+
+		pass_cost = {
+			prestige = 200
+		}
+		revoke_cost = {
+			prestige = change_succession_law_prestige_cost
+		}
+
+		ai_will_do = {
+			value = 20
+		}
+	}
+}
+
+### 政策：封臣头衔剥夺 ### ============================================================================================================================================
+law_group_vassal_revoke_title_policy = {
+	default = law_vassal_revoke_title_policy_prohibit_revoke
+	cumulative = no
+	flag = imperial_policy
+	flag = law_group_vassal_revoke_title_policy
+
+	can_change_law_group = {}
+
+	# 禁止剥夺 # ————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+	law_vassal_revoke_title_policy_prohibit_revoke = {
+		flag = law_vassal_revoke_title_policy_prohibit_revoke
+		flag = law_vassal_revoke_title_policy
+
+		modifier = {
+			barons_and_minor_landholders_opinion = 15
+			glory_hound_opinion = 5
+			parochial_opinion = 10
+			courtly_opinion = 15
+			minority_opinion = 10
+		}
+
+		should_start_with = {
+			OR = {
+				government_has_flag = government_is_feudal
+				government_has_flag = government_is_feudal_admin
+			}
+			NOT = { has_crown_authority_1_or_above = yes }
+		}
+		can_keep = {
+			OR = {
+				government_has_flag = government_is_feudal
+				government_has_flag = government_is_feudal_admin
+			}
+		}
+
+		pass_cost = {
+			prestige = 100
+		}
+		revoke_cost = {
+			prestige = change_succession_law_prestige_cost
+		}
+	}
+	# 允许剥夺 # ————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+	law_vassal_revoke_title_policy_allow_revoke = {
+		flag = law_vassal_revoke_title_policy_allow_revoke
+		flag = law_vassal_revoke_title_policy
+		# 实际作用Flag：
+		flag = title_revocation_allowed
+		flag = vassal_retraction_allowed
+
+		modifier = {
+			barons_and_minor_landholders_opinion = -10
+			parochial_opinion = -5
+			courtly_opinion = -10
+			minority_opinion = -5
+		}
+
+		should_start_with = {
+			OR = {
+				government_has_flag = government_is_feudal
+				government_has_flag = government_is_feudal_admin
+			}
+			has_crown_authority_1_or_above = yes
+		}
+		can_keep = {
+			OR = {
+				government_has_flag = government_is_feudal
+				government_has_flag = government_is_feudal_admin
+			}
+			has_crown_authority_1_or_above = yes
+		}
+
+		pass_cost = {
+			prestige = 200
+		}
+		revoke_cost = {
+			prestige = change_succession_law_prestige_cost
+		}
+
+		ai_will_do = {
+			value = 20
+		}
+	}
+}
+
+### 政策：封臣战争 ### ============================================================================================================================================
+law_group_vassal_war_policy = {
+	default = law_vassal_war_policy_no_restriction
+	cumulative = no
+	flag = imperial_policy
+	flag = law_group_vassal_war_policy
+
+	can_change_law_group = {}
+
+	# 无限制战争 # ————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+	law_vassal_war_policy_no_restriction = {
+		flag = law_vassal_war_policy_no_restriction
+		flag = law_vassal_war_policy
+
+		modifier = {
+			belligerent_opinion = 15
+			glory_hound_opinion = 10
+			parochial_opinion = -5
+			courtly_opinion = 5
+			minority_opinion = -5
+			zealot_opinion = 5
+		}
+
+		should_start_with = {
+			OR = {
+				government_has_flag = government_is_feudal
+				government_has_flag = government_is_feudal_admin
+			}
+			NOT = { has_crown_authority_2_or_above = yes }
+		}
+		can_keep = {
+			OR = {
+				government_has_flag = government_is_feudal
+				government_has_flag = government_is_feudal_admin
+			}
+			highest_held_title_tier >= tier_duchy
+			trigger_if = {
+				limit = { is_independent_ruler = no }
+				liege ?= {
+					NOR = {
+						has_realm_law = law_vassal_war_policy_prohibit_internal_wars
+						has_realm_law = law_vassal_war_policy_prohibit_all_wars
+						has_realm_law = law_vassal_war_policy_permanent_prohibit_all_wars
+					}
+				}
+			}
+		}
+		can_have = {
+			OR = {
+				government_has_flag = government_is_feudal
+				government_has_flag = government_is_feudal_admin
+			}
+			highest_held_title_tier >= tier_duchy
+		}
+
+		pass_cost = {
+			prestige = 100
+		}
+		revoke_cost = {
+			prestige = change_succession_law_prestige_cost
+		}
+	}
+	# 禁止内部战争 # ————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+	law_vassal_war_policy_prohibit_internal_wars = {
+		flag = law_vassal_war_policy_prohibit_internal_wars
+		flag = law_vassal_war_policy
+		# 实际作用Flag：
+		flag = vassal_internal_wars_banned
+
+		modifier = {
+			belligerent_opinion = -5
+			parochial_opinion = 5
+			minority_opinion = 5
+		}
+		
+		should_start_with = {
+			OR = {
+				government_has_flag = government_is_feudal
+				government_has_flag = government_is_feudal_admin
+			}
+			has_crown_authority_2_or_above = yes
+		}
+		can_keep = {
+			OR = {
+				government_has_flag = government_is_feudal
+				government_has_flag = government_is_feudal_admin
+			}
+			highest_held_title_tier >= tier_duchy
+			trigger_if = {
+				limit = { is_independent_ruler = no }
+				liege ?= {
+					NOR = {
+						has_realm_law = law_vassal_war_policy_prohibit_all_wars
+						has_realm_law = law_vassal_war_policy_permanent_prohibit_all_wars
+					}
+				}
+			}
+			trigger_if = {
+				limit = {
+					OR = {
+						is_independent_ruler = yes
+						liege ?= {
+							NOR = {
+								has_realm_law = law_vassal_war_policy_prohibit_internal_wars
+								has_realm_law = law_vassal_war_policy_prohibit_all_wars
+								has_realm_law = law_vassal_war_policy_permanent_prohibit_all_wars
+							}
+						}
+					}
+				}
+				has_crown_authority_2_or_above = yes
+			}
+		}
+		can_have = {
+			OR = {
+				government_has_flag = government_is_feudal
+				government_has_flag = government_is_feudal_admin
+			}
+			highest_held_title_tier >= tier_duchy
+		}
+		can_pass = {
+			trigger_if = {
+				limit = {
+					liege ?= {
+						NOR = {
+							has_realm_law = law_vassal_war_policy_prohibit_all_wars
+							has_realm_law = law_vassal_war_policy_permanent_prohibit_all_wars
+						}
+					}
+				}
+				custom_description = {
+					text = "no_powerful_vassal_with_negative_opinion"
+					NOT = {
+						any_vassal = {
+							is_powerful_vassal = yes
+							opposes_succession_law_change_trigger = yes
+						}
+					}
+				}
+			}
+		}
+
+		pass_cost = {
+			prestige = 200
+		}
+		revoke_cost = {
+			prestige = change_succession_law_prestige_cost
+		}
+
+		ai_will_do = {
+			value = 5
+		}
+	}
+	# 禁止所有战争 # ————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+	law_vassal_war_policy_prohibit_all_wars = {
+		flag = law_vassal_war_policy_prohibit_all_wars
+		flag = law_vassal_war_policy
+		# 实际作用Flag：
+		flag = vassal_internal_wars_banned
+		flag = vassal_all_wars_banned
+
+		modifier = {
+			belligerent_opinion = -10
+			glory_hound_opinion = -5
+			parochial_opinion = 10
+			courtly_opinion = -5
+			minority_opinion = 10
+			zealot_opinion = -5
+		}
+		
+		should_start_with = {
+			OR = {
+				government_has_flag = government_is_feudal
+				government_has_flag = government_is_feudal_admin
+			}
+			has_crown_authority_3 = yes
+		}
+		can_keep = {
+			OR = {
+				government_has_flag = government_is_feudal
+				government_has_flag = government_is_feudal_admin
+			}
+			highest_held_title_tier >= tier_duchy
+			trigger_if = {
+				limit = { is_independent_ruler = no }
+				liege ?= { NOT = { has_realm_law = law_vassal_war_policy_permanent_prohibit_all_wars } }
+			}
+			trigger_if = {
+				limit = {
+					OR = {
+						is_independent_ruler = yes
+						liege ?= {
+							NOR = {
+								has_realm_law = law_vassal_war_policy_prohibit_all_wars
+								has_realm_law = law_vassal_war_policy_permanent_prohibit_all_wars
+							}
+						}
+					}
+				}
+				has_crown_authority_3 = yes
+			}
+		}
+		can_have = {
+			OR = {
+				government_has_flag = government_is_feudal
+				government_has_flag = government_is_feudal_admin
+			}
+			highest_held_title_tier >= tier_duchy
+		}
+		can_pass = {
+			trigger_if = {
+				limit = { liege ?= { NOT = { has_realm_law = law_vassal_war_policy_permanent_prohibit_all_wars } } }
+				custom_description = {
+					text = "no_powerful_vassal_with_negative_opinion"
+					NOT = {
+						any_vassal = {
+							is_powerful_vassal = yes
+							opposes_succession_law_change_trigger = yes
+						}
+					}
+				}
+			}
+		}
+
+		pass_cost = {
+			prestige = 200
+		}
+		revoke_cost = {
+			prestige = change_succession_law_prestige_cost
+		}
+
+		ai_will_do = {
+			value = 10
+		}
+	}
+	# 永久禁止战争 # ————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+	law_vassal_war_policy_permanent_prohibit_all_wars = {
+		flag = law_vassal_war_policy_prohibit_all_wars
+		flag = law_vassal_war_policy
+		# 实际作用Flag：
+		flag = vassal_internal_wars_banned
+		flag = vassal_all_wars_banned
+		flag = vassal_all_wars_banned_permanent
+
+		modifier = {
+			belligerent_opinion = -20
+			glory_hound_opinion = -15
+			parochial_opinion = 15
+			courtly_opinion = -10
+			minority_opinion = 20
+			zealot_opinion = -10
+		}
+		
+		should_start_with = {
+			always = no
+		}
+		can_keep = {
+			OR = {
+				government_has_flag = government_is_feudal
+				government_has_flag = government_is_feudal_admin
+			}
+			highest_held_title_tier >= tier_duchy
+			trigger_if = {
+				limit = {
+					OR = {
+						is_independent_ruler = yes
+						liege ?= { NOT = { has_realm_law = law_vassal_war_policy_permanent_prohibit_all_wars } }
+					}
+				}
+				has_crown_authority_3 = yes
+			}
+		}
+		can_have = {
+			OR = {
+				government_has_flag = government_is_feudal
+				government_has_flag = government_is_feudal_admin
+			}
+			highest_held_title_tier >= tier_duchy
+		}
+		can_pass = {
+			custom_description = {
+				text = "no_powerful_vassal_with_negative_opinion"
+				NOT = {
+					any_vassal = {
+						is_powerful_vassal = yes
+						opposes_succession_law_change_trigger = yes
+					}
+				}
+			}
+		}
+
+		on_pass = {
+			if = {
+				limit = { is_independent_ruler = yes }
+				add_tyranny = 10
+			}
+		}
+
+		pass_cost = {
+			prestige = 200
+		}
+		revoke_cost = {
+			prestige = change_succession_law_prestige_cost
+		}
+
+		ai_will_do = {
+			value = 0
+		}
+	}
+}

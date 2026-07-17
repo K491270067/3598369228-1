@@ -1,0 +1,39 @@
+﻿has_crown_authority_0_or_above = {
+	custom_tooltip = {
+		text = tt_has_crown_authority_0_or_above
+		OR = {
+			has_realm_law = crown_authority_0
+			has_realm_law = crown_authority_1
+			has_realm_law = crown_authority_2
+			has_realm_law = crown_authority_3
+		}
+	}
+}
+
+has_crown_authority_1_or_above = {
+	custom_tooltip = {
+		text = tt_has_crown_authority_1_or_above
+		OR = {
+			has_realm_law = crown_authority_1
+			has_realm_law = crown_authority_2
+			has_realm_law = crown_authority_3
+		}
+	}
+}
+
+has_crown_authority_2_or_above = {
+	custom_tooltip = {
+		text = tt_has_crown_authority_2_or_above
+		OR = {
+			has_realm_law = crown_authority_2
+			has_realm_law = crown_authority_3
+		}
+	}
+}
+
+has_crown_authority_3 = {
+	custom_tooltip = {
+		text = tt_has_crown_authority_3
+		has_realm_law = crown_authority_3
+	}
+}

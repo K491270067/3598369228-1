@@ -1,0 +1,291 @@
+﻿############
+zixingbinguo1={ 
+  name="xie"
+  dynasty=xin834
+	religion="yinli" 
+	culture="yinshang"
+  father=han1238
+
+  3485.1.1 = {
+		birth = yes
+	}
+  3536.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+zixingbinguo2={ 
+  name="shou"
+  dynasty_house=house_xin835
+	religion="yinli" 
+	culture="yinshang"
+  father=zixingbinguo1
+
+  3509.1.1 = {
+		birth = yes
+	}
+  3574.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+zixingbinguo3={ 
+  name="boyu"
+  dynasty_house=house_xin835
+	religion="yinli" 
+	culture="yinshang"
+  father=zixingbinguo2
+
+  3533.1.1 = {
+		birth = yes
+	}
+  3590.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+zixingbinguo4={ 
+  name="da"
+  dynasty_house=house_xin835
+	religion="yinli" 
+	culture="yinshang"
+  father=zixingbinguo3
+
+  3556.1.1 = {
+		birth = yes
+	}
+  3615.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+zixingbinguo5={ 
+  name="mubo"
+  dynasty_house=house_xin835
+	religion="yinli" 
+	culture="yinshang"
+  father=zixingbinguo4
+
+  3582.1.1 = {
+		birth = yes
+	}
+  3637.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+zixingbinguo6={ 
+  name="jia"
+  dynasty_house=house_xin835
+	religion="yinli" 
+	culture="yinshang"
+  father=zixingbinguo5
+
+  3603.1.1 = {
+		birth = yes
+	}
+  3663.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+zixingbinguo7={ 
+  name="tun"
+  dynasty_house=house_xin835
+	religion="yinli" 
+	culture="yinshang"
+  father=zixingbinguo6
+
+  3628.1.1 = {
+		birth = yes
+	}
+  3686.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+zixingbinguo8={ 
+  name="ming"
+  dynasty_house=house_xin835
+	religion="yinli" 
+	culture="yinshang"
+  father=zixingbinguo7
+
+  3650.1.1 = {
+		birth = yes
+	}
+  3706.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+zixingbinguo9={ 
+  name="ren"
+  dynasty_house=house_xin835
+	religion="yinli" 
+	culture="yinshang"
+  father=zixingbinguo8
+
+  3677.1.1 = {
+		birth = yes
+	}
+  3738.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+zixingbinguo10={ 
+  name="yinqi"
+  dynasty_house=house_xin835
+	religion="yinli" 
+	culture="yinshang"
+  father=zixingbinguo9
+
+  3697.1.1 = {
+		birth = yes
+	}
+  3756.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+zixingbinguo11={ 
+  name="bi1"
+  dynasty_house=house_xin835
+	religion="yinli" 
+	culture="yinshang"
+  father=zixingbinguo10
+
+  3726.1.1 = {
+		birth = yes
+	}
+  3783.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+zixingbinguo12={ 
+  name="qingjie"
+  dynasty_house=house_xin835
+	religion="yinli" 
+	culture="yinshang"
+  father=zixingbinguo11
+
+  3754.1.1 = {
+		birth = yes
+	}
+  3809.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+zixingbinguo13={ 
+  name="yu3"
+  dynasty_house=house_xin835
+	religion="yinli" 
+	culture="yinshang"
+  father=zixingbinguo12
+
+  3788.1.1 = {
+		birth = yes
+	}
+  3832.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+zixingbinguo14={ 
+  name="su1"
+  dynasty_house=house_xin835
+	religion="yinli" 
+	culture="yinshang"
+  father=zixingbinguo13
+
+  3813.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+zixingbinguo15={ 
+  name="qiji"
+  dynasty_house=house_xin835
+	religion="yinli" 
+	culture="yinshang"
+  father=zixingbinguo14
+
+  3831.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+zixingbinguo16={ 
+  name="sheng1"
+  dynasty_house=house_xin835
+	religion="yinli" 
+	culture="yinshang"
+  father=zixingbinguo14
+
+  3832.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+zixingbinguo17={ 
+  name="nvming103"
+  dynasty_house=house_xin835
+	religion="yinli" 
+	culture="yinshang"
+  father=zixingbinguo14
+  female=yes
+
+  3833.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+zixingbinguo18={ 
+  name="nvming126"
+  dynasty_house=house_xin835
+	religion="yinli" 
+	culture="yinshang"
+  father=zixingbinguo14
+  female=yes
+
+  3834.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}

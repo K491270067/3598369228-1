@@ -1,0 +1,46 @@
+﻿##### d_dahushi ############################
+
+### c_yangcheng3
+# YANGCHENG3
+2703 = {
+	culture = xirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+# LIUBI
+2712 = {
+	holding = none
+}
+
+
+### c_huqi
+# HUQI
+2713 = {
+	culture = xirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+# ZHEN2
+2714 = {
+	holding = none
+}
+
+
+### c_huxing
+# HUXING
+2723 = {
+	culture = xirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+
+
+### c_lishi
+# LISHI
+1387 = {
+	culture = xirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+
+

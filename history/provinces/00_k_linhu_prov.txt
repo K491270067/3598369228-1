@@ -1,0 +1,177 @@
+﻿##### d_linhushi ############################
+
+### c_heyin
+# HEYIN
+1581 = {
+	culture = hehuangzhirong
+	religion = xirongfangling
+	holding = nomad_holding
+}
+# MANBAI
+1584 = {
+	holding = none
+}
+# MEIJI
+1587 = {
+	holding = none
+}
+
+
+### c_wudu
+# WUDU
+1583 = {
+	culture = hehuangzhirong
+	religion = xirongfangling
+	holding = nomad_holding
+}
+# SHANAN
+1582 = {
+	holding = none
+}
+
+
+### c_nanxing
+# NANXING
+1585 = {
+	culture = hehuangzhirong
+	religion = xirongfangling
+	holding = nomad_holding
+}
+# FUCHANG
+1586 = {
+	holding = none
+}
+
+
+### c_huanyang
+# HUANYANG
+1435 = {
+	culture = hehuangzhirong
+	religion = xirongfangling
+	holding = nomad_holding
+}
+
+
+##### d_linqiushi1 ############################
+
+### c_xuanlei
+# XUANLEI
+1598 = {
+	culture = hehuangzhirong
+	religion = xirongfangling
+	holding = nomad_holding
+}
+# DACENG
+1600 = {
+	holding = none
+}
+
+
+### c_pishi1
+# PISHI1
+1602 = {
+	culture = hehuangzhirong
+	religion = xirongfangling
+	holding = nomad_holding
+}
+# XIUDU
+1599 = {
+	holding = none
+}
+
+
+### c_gaowang
+# GAOWANG
+1603 = {
+	culture = hehuangzhirong
+	religion = xirongfangling
+	holding = nomad_holding
+}
+# ZHILU1
+1604 = {
+	holding = none
+}
+
+
+##### d_qiumulinshi ############################
+
+### c_guangyan
+# GUANGYAN
+1595 = {
+	culture = hehuangzhirong
+	religion = xirongfangling
+	holding = nomad_holding
+}
+# ZENGSHAN
+1597 = {
+	holding = none
+}
+
+
+### c_humeng
+# HUMENG
+1596 = {
+	culture = hehuangzhirong
+	religion = xirongfangling
+	holding = nomad_holding
+}
+# WENGLONG
+1601 = {
+	holding = none
+}
+
+
+### c_dabaiyou
+# DABAIYOU
+2771 = {
+	culture = hehuangzhirong
+	religion = xirongfangling
+	holding = nomad_holding
+}
+# DUOLAN
+3581 = {
+	holding = none
+}
+
+
+##### d_qiulinshi ############################
+
+### c_guluo
+# GULUO
+1589 = {
+	culture = hehuangzhirong
+	religion = xirongfangling
+	holding = nomad_holding
+}
+# PINGDING
+1588 = {
+	holding = none
+}
+
+
+### c_zhenlin
+# ZHENLIN
+1591 = {
+	culture = hehuangzhirong
+	religion = xirongfangling
+	holding = nomad_holding
+}
+# LIANGU
+1594 = {
+	holding = none
+}
+
+
+### c_baitu
+# BAITU
+1592 = {
+	culture = hehuangzhirong
+	religion = xirongfangling
+	holding = nomad_holding
+}
+# SHICHENG
+1593 = {
+	holding = none
+}
+
+

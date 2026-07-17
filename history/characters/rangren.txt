@@ -1,0 +1,212 @@
+#############  奴人 #############
+rangren1={
+  name="baiyuenan356"
+  dynasty=xin911
+	religion="guiwu" 
+	culture="baipu"
+
+  3759.1.1 = {
+		birth = yes
+	}
+  3812.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+rangren2={
+  name="baiyuenan368"
+  dynasty=xin911
+	religion="guiwu" 
+	culture="baipu"
+	father=rangren1
+
+  3790.1.1 = {
+		birth = yes
+	}
+  3835.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+rangren3={
+  name="baiyuenan376"
+  dynasty=xin911
+	religion="guiwu" 
+	culture="baipu"
+	father=rangren2
+
+  3812.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+rangren4={
+  name="baiyuenan381"
+  dynasty=xin911
+	religion="guiwu" 
+	culture="baipu"
+	father=rangren3
+
+  3830.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+rangren5={
+  name="baiyuenan387"
+  dynasty=xin911
+	religion="guiwu" 
+	culture="baipu"
+	father=rangren3
+
+  3831.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+rangren6={
+  name="baiyuenv84"#女一号
+  dynasty=xin911
+	religion="guiwu" 
+	culture="baipu"
+	father=rangren3
+  female=yes
+
+  3832.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+rangren7={
+  name="baiyuenv99"#女二号
+  dynasty=xin911
+	religion="guiwu" 
+	culture="baipu"
+	father=rangren3
+  female=yes
+
+  3833.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+####################
+rangren8={
+  name="baiyuenan396"
+  dynasty=xin912
+	religion="guiwu" 
+	culture="baipu"
+
+  3772.1.1 = {
+		birth = yes
+	}
+  3819.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+rangren9={
+  name="baiyuenan405"
+  dynasty=xin912
+	religion="guiwu" 
+	culture="baipu"
+	father=rangren8
+
+  3798.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+rangren10={
+  name="baiyuenan411"
+  dynasty=xin912
+	religion="guiwu" 
+	culture="baipu"
+	father=rangren9
+
+  3818.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+rangren11={
+  name="baiyuenan420"
+  dynasty=xin912
+	religion="guiwu" 
+	culture="baipu"
+	father=rangren9
+
+  3824.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+rangren12={
+  name="baiyuenv151"
+  dynasty=xin912
+	religion="guiwu" 
+	culture="baipu"
+	father=rangren9
+	female=yes
+
+  3829.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+rangren13={
+  name="baiyuenv156"
+  dynasty=xin912
+	religion="guiwu" 
+	culture="baipu"
+	father=rangren9
+	female=yes
+
+  3827.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}

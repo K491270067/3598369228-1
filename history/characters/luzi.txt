@@ -1,0 +1,405 @@
+﻿######################################## 潞氏国世系 ######################################
+han2075={
+  name="ying6"#
+  dynasty=xin536
+  culture="chidi"
+  religion="beidifangling"
+  father=han2043
+
+  3524.1.1 = {
+		birth = yes
+	}
+  3570.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han2076={
+  name="qi"
+  dynasty_house=house_xin80
+  culture="chidi"
+  religion="beidifangling"
+  father=han2075
+
+  3566.1.1 = {
+		birth = yes
+	}
+  3609.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han2077={
+  name="nanming435"
+  dynasty_house=house_xin80
+  culture="chidi"
+  religion="beidifangling"
+  father=han2076
+
+  3588.1.1 = {
+		birth = yes
+	}
+  3645.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han2078={
+  name="nanming416"
+  dynasty_house=house_xin80
+  culture="chidi"
+  religion="beidifangling"
+  father=han2077
+
+  3615.1.1 = {
+		birth = yes
+	}
+  3678.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han2079={
+  name="suan"
+  dynasty_house=house_xin80
+  culture="chidi"
+  religion="beidifangling"
+  father=han2078
+
+  3659.1.1 = {
+		birth = yes
+	}
+  3719.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han2080={
+  name="nanming436"
+  dynasty_house=house_xin80
+  culture="chidi"
+  religion="beidifangling"
+  father=han2079
+
+  3699.1.1 = {
+		birth = yes
+	}
+  3742.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han2081={
+  name="chen"
+  dynasty_house=house_xin80
+  culture="chidi"
+  religion="beidifangling"
+  father=han2080
+
+  3731.1.1 = {
+		birth = yes
+	}
+  3792.12.31 = {
+		death = {
+			death_reason = death_siege
+		}
+  }
+}
+han2082={
+  name="ju4"
+  dynasty_house=house_xin80
+  culture="chidi"
+  religion="beidifangling"
+  father=han2081
+
+  3767.1.1 = {
+		birth = yes
+	}
+  3830.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han2083={
+  name="zhou2"
+  dynasty_house=house_xin80
+  culture="chidi"
+  religion="beidifangling"
+  father=han2082
+
+  3790.1.1 = {
+		birth = yes
+	}
+  3849.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han2084={
+  name="ping1"
+  dynasty_house=house_xin80
+  culture="chidi"
+  religion="beidifangling"
+  father=han2083
+
+  3820.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+    death = yes
+  }
+}
+han2085={
+  name="ke1"
+  dynasty_house=house_xin80
+  culture="chidi"
+  religion="beidifangling"
+  father=han2084
+
+  3840.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+    death = yes
+  }
+}
+han2086={
+  name="ding1"
+  dynasty_house=house_xin80
+  culture="chidi"
+  religion="beidifangling"
+  father=han2084
+
+  3841.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+    death = yes
+  }
+}
+han2087={
+  name="meng2"
+  dynasty_house=house_xin80
+  culture="chidi"
+  religion="beidifangling"
+  father=han2084
+
+  3842.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+    death = yes
+  }
+}
+han2088={
+  name="biao"
+  dynasty_house=house_xin80
+  culture="chidi"
+  religion="beidifangling"
+  father=han2084
+
+  3843.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+    death = yes
+  }
+}
+han2089={
+  name="nanming437"
+  dynasty_house=house_xin80
+  culture="chidi"
+  religion="beidifangling"
+  father=han2084
+
+  3844.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+    death = yes
+  }
+}
+han2090={
+  name="nvming64"
+  dynasty_house=house_xin80
+  culture="chidi"
+  religion="beidifangling"
+  father=han2084
+  female=yes
+
+  3845.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+    death = yes
+  }
+}
+han2092={
+  name="nvming103"
+  dynasty_house=house_xin80
+  culture="chidi"
+  religion="beidifangling"
+  father=han2084
+  female=yes
+
+  3846.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+    death = yes
+  }
+}
+################酆氏
+luziyinger1={
+  name="nanming874"
+  dynasty_house=house_xin537
+  culture="chidi"
+  religion="beidifangling"
+  father=han2083
+
+  3825.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+    death = yes
+  }
+}
+luziyinger2={
+  name="nanming893"
+  dynasty_house=house_xin537
+  culture="chidi"
+  religion="beidifangling"
+  father=luziyinger1
+
+  3843.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+    death = yes
+  }
+}
+luziyinger3={
+  name="nanming931"
+  dynasty_house=house_xin537
+  culture="chidi"
+  religion="beidifangling"
+  father=luziyinger1
+
+  3844.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+    death = yes
+  }
+}
+luziyinger4={
+  name="nvming201"
+  dynasty_house=house_xin537
+  culture="chidi"
+  religion="beidifangling"
+  father=luziyinger1
+  female=yes
+
+  3845.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+    death = yes
+  }
+}
+luziyinger5={
+  name="nvming204"
+  dynasty_house=house_xin537
+  culture="chidi"
+  religion="beidifangling"
+  father=luziyinger1
+  female=yes
+
+  3845.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+    death = yes
+  }
+}
+################酆氏
+luziyinger6={
+  name="nanming511"
+  dynasty_house=house_xin538
+  culture="chidi"
+  religion="beidifangling"
+  father=han2083
+
+  3826.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+    death = yes
+  }
+}
+luziyinger7={
+  name="nanming532"
+  dynasty_house=house_xin538
+  culture="chidi"
+  religion="beidifangling"
+  father=luziyinger6
+
+  3844.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+    death = yes
+  }
+}
+luziyinger8={
+  name="nanming713"
+  dynasty_house=house_xin538
+  culture="chidi"
+  religion="beidifangling"
+  father=luziyinger6
+
+  3845.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+    death = yes
+  }
+}
+luziyinger9={
+  name="nvming236"
+  dynasty_house=house_xin538
+  culture="chidi"
+  religion="beidifangling"
+  father=luziyinger6
+  female=yes
+
+  3846.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+    death = yes
+  }
+}
+luziyinger10={
+  name="nvming239"
+  dynasty_house=house_xin538
+  culture="chidi"
+  religion="beidifangling"
+  father=luziyinger6
+  female=yes
+
+  3847.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+    death = yes
+  }
+}

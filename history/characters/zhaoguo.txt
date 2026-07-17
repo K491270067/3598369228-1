@@ -1,0 +1,272 @@
+﻿############# 鍙浗 鍙叕涓€鑴?-濮 #############
+#鍙傝€冦€婅タ鍛ㄦ棭鏈熼噾鏂囦腑鐨勫彫鍏鏃忎笌鐕曞悰涓栫郴銆嬨€婅タ鍛ㄦ棭鏈熺殑鍙叕瀹舵棌涓栫郴鈥斺€斾互闈掗摐鍣ㄩ摥鏂囦负涓績鐨勮€冨療銆?
+#鍙傝€冦€婂緪涔夊崕锛氭柊鍑哄湡銆婁簲骞寸惐鐢熷皧銆嬩笌鐞辩敓鍣ㄩ摥璇曟瀽銆嬨€娿€婂彫鐕曚笘绯汇€?棣鑷ㄣ€婃枃鐛婚€氳€冦€?銆?
+#浠ュ弬鑰冩枃鐚负涓伙紝鍙傝€冨璋变负琛ョ殑鎬濊矾鏁寸悊
+han405={
+  name="xin1"#鍙叕濂瀛?
+  dynasty=xin816
+	religion="xizhouli" 
+	culture="zhou"
+  father=han298
+
+  3583.1.1 = {
+		birth = yes
+	}
+  3632.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+		give_nickname=nick_wengong
+  }
+}
+han406={
+  name="xian3"
+  dynasty_house=house_xin25
+	religion="xizhouli" 
+	culture="zhou"
+  father=han405
+
+  3613.1.1 = {
+		birth = yes
+	}
+  3643.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+		give_nickname=nick_zhaoyingong
+  }
+}
+han407={#浠庢澶勮捣鍙傝€冦€娿€婂彫鐕曚笘绯汇€?棣鑷ㄣ€婃枃鐛婚€氳€冦€?銆嬭ˉ涓栫郴
+  name="liao"
+  dynasty_house=house_xin25#濮?
+	religion="xizhouli" 
+	culture="zhou"
+  father=han406
+
+  3640.1.1 = {
+		birth = yes
+	}
+  3663.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han408={
+  name="zheng2"#鍙鍏?
+  dynasty_house=house_xin25#濮?
+	religion="xizhouli" 
+	culture="zhou"
+  father=han407
+
+  3660.1.1 = {
+		birth = yes
+	}
+  3694.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+		give_nickname=nick_wugong
+  }
+}
+han409={
+  name="cheng2"#鍙垚鍏紝鍚嶆湭瑙?
+  dynasty_house=house_xin25#濮?
+	religion="xizhouli" 
+	culture="zhou"
+  father=han408
+
+  3688.1.1 = {
+		birth = yes
+	}
+  3718.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+		give_nickname=nick_chenggong
+  }
+}
+han410={
+  name="wei2"#鍙▉鍏紝鍚嶆湭瑙?
+  dynasty_house=house_xin25#濮?
+	religion="xizhouli" 
+	culture="zhou"
+  father=han409
+
+  3704.1.1 = {
+		birth = yes
+	}
+  3768.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+		give_nickname=nick_weigong
+  }
+}
+han411={
+  name="ning"#鍙菇浼紝鏈夌О鍛间负鍚涙皬锛屽懡鍚嶄负鍚?
+  dynasty_house=house_xin25#濮?
+	religion="xizhouli" 
+	culture="zhou"
+  father=han410
+
+  3723.1.1 = {
+		birth = yes
+	}
+  3778.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+		give_nickname=nick_youbo
+  }
+}
+han412={
+  name="hu1"#鍙﹩鍏?
+  dynasty_house=house_xin25#鍙?
+	religion="xizhouli" 
+	culture="zhou"
+  father=han411
+
+  3746.1.1 = {
+		birth = yes
+	}
+  3813.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+		give_nickname=nick_mugong
+  }
+}
+han413={
+  name="shuang1"#澶辫€?
+  dynasty_house=house_xin25#鍙?
+	religion="xizhouli" 
+	culture="zhou"
+  father=han412
+
+  3764.1.1 = {
+		birth = yes
+	}
+  3814.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han414={
+  name="pu"#鍙鍏紝鍚嶆湭瑙?
+  dynasty_house=house_xin25#鍙?
+	religion="xizhouli" 
+	culture="zhou"
+  father=han413
+
+  3784.1.1 = {
+		birth = yes
+	}
+  3829.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+		give_nickname=nick_xuanngong
+  }
+}
+han415={
+  name="de"#鍙枃鍏紝鍛ㄥ钩鐜嬩笢杩佹礇閭戯紝鏂囧叕鎼烘棌涓庤縼锛岄閭戦亗閲囨柤鐜嬪眿锛堜粖娌冲崡娴庢簮锛夛紝娓告垙寮€灞€鏃?7宀?
+  dynasty_house=house_xin25
+	religion="xizhouli" 
+	culture="zhou"
+  father=han414
+
+  3814.1.1 = {
+		birth = yes
+	}
+  3880.11.1 = {
+    death = yes
+  }
+}
+han416={
+  name="heng1"
+  dynasty_house=house_xin25
+	religion="xizhouli" 
+	culture="zhou"
+  father=han415
+
+  3832.1.1 = {
+		birth = yes
+	}
+  3880.11.1 = {
+    death = yes
+  }
+}
+han417={
+  name="gui1"
+  dynasty_house=house_xin25
+	religion="xizhouli" 
+	culture="zhou"
+  father=han415
+
+  3833.1.1 = {
+		birth = yes
+	}
+  3880.11.1 = {
+    death = yes
+  }
+}
+han418={
+  name="fang2"
+  dynasty_house=house_xin25
+	religion="xizhouli" 
+	culture="zhou"
+  father=han415
+
+  3834.1.1 = {
+		birth = yes
+	}
+  3880.11.1 = {
+    death = yes
+  }
+}
+han419={
+  name="shuo"
+  dynasty_house=house_xin25
+	religion="xizhouli" 
+	culture="zhou"
+  father=han415
+
+  3835.1.1 = {
+		birth = yes
+	}
+  3880.11.1 = {
+    death = yes
+  }
+}
+han420={
+  name="zhu1"
+  dynasty_house=house_xin25
+	religion="xizhouli" 
+	culture="zhou"
+  father=han415
+  female=yes
+
+  3836.2.1 = {
+		birth = yes
+	}
+  3880.11.1 = {
+    death = yes
+  }
+}
+han421={
+  name="yu8"
+  dynasty_house=house_xin25
+	religion="xizhouli" 
+	culture="zhou"
+  father=han415
+  female=yes
+
+  3837.1.1 = {
+		birth = yes
+	}
+  3880.11.1 = {
+    death = yes
+  }
+}

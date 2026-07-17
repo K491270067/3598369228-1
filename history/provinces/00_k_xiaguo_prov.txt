@@ -1,0 +1,44 @@
+﻿##### d_xiashi ############################
+
+### c_xia4
+# XIA4
+2473 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+# SANGYE
+2478 = {
+	holding = none
+}
+
+
+### c_wude
+# WUDE
+1100 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+##### d_xiagongshi1 ############################
+
+### c_ning
+# NING
+1105 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+### c_min1
+# MIN1
+2479 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+

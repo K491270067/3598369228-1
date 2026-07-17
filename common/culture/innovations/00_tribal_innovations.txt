@@ -1,0 +1,346 @@
+﻿#### Local Types ####
+@JianZhuZhuangShi = "gfx/interface/icons/culture_innovations/innovation_JIANZHUZHUANGSHI.png"
+@innovation_JINGTIAN = "gfx/interface/icons/culture_innovations/innovation_JINGTIAN.png"
+@innovation_TIANGANDIZHI = "gfx/interface/icons/culture_innovations/innovation_TIANGANDIZHI.png"
+@innovation_TIANXINGGUANCE = "gfx/interface/icons/culture_innovations/innovation_TIANXIANGGUANCE.png"
+@innovation_LIFA = "gfx/interface/icons/culture_innovations/innovation_LIFA.png"
+@innovation_QINGTONGZHUZAO = "gfx/interface/icons/culture_innovations/innovation_LIANTONG.png"
+@innovation_JIAGUWEN = "gfx/interface/icons/culture_innovations/innovation_JIAGUWEN.png"
+@innovation_SUANCHOU = "gfx/interface/icons/culture_innovations/innovation_SUANCHOU.png"
+@innovation_ZAZHONGYOUSHI = "gfx/interface/icons/culture_innovations/innovation_ZAZHONGYOUSHI.png"
+@innovation_YINLV = "gfx/interface/icons/culture_innovations/innovation_YINLV.png"
+@innovation_YINGGUOZHI = "gfx/interface/icons/culture_innovations/innovation_YINGGUOZHI.png"
+@innovation_GONGSHANGSHIGUAN = "gfx/interface/icons/culture_innovations/innovation_GONGSHANGSHIGUAN.png"
+@innovation_QINZHANZHU = "gfx/interface/icons/culture_innovations/innovation_QINGYANZHU.png"
+@innovation_MUMOBAN = "gfx/interface/icons/culture_innovations/innovation_MUMOBAN.png"
+@innovation_FAJIAOJISHU = "gfx/interface/icons/culture_innovations/innovation_FAJIAOJISHU.png"
+@innovation_ZHANCHE = "gfx/interface/icons/culture_innovations/innovation_ZHANCHE.png"
+@innovation_PIJIA = "gfx/interface/icons/culture_innovations/innovation_PIJIA.png"
+@innovation_GONGSHI = "gfx/interface/icons/culture_innovations/innovation_GONGSHI.png"
+@innovation_JUNSHIZHENGZHAO = "gfx/interface/icons/culture_innovations/innovation_JUNSHIZHENGZHAO.png"
+#culture_group_civic
+#建筑装饰
+innovation_JianZhuZhuangShi = { # Earthworks in-game
+	skill = stewardship
+	group = culture_group_civic
+	culture_era =  culture_era_tribal
+	icon = @JianZhuZhuangShi
+
+	asset = {
+
+	}
+	custom = unlock_tribal_fortification_buildings
+	parameters = {
+	
+	}
+	flag = global_regular
+	flag = tribal_era_regular
+}
+#井田制度
+innovation_JINGTIAN = { # Earthworks in-game
+	skill = stewardship
+	group = culture_group_civic
+	culture_era =  culture_era_tribal
+	icon = @innovation_JINGTIAN
+
+	asset = {
+
+	}
+	custom = unlock_tribal_fortification_buildings
+	parameters = {
+	
+	}
+	flag = global_regular
+	flag = tribal_era_regular
+}
+#天干地支
+innovation_TIANGANDIZHI = { # Earthworks in-game
+	skill = learning
+	group = culture_group_civic
+	culture_era =  culture_era_tribal
+	icon = @innovation_TIANGANDIZHI 
+
+	asset = {
+
+	}
+	custom = unlock_tribal_fortification_buildings
+	parameters = {
+	
+	}
+	flag = global_regular
+	flag = tribal_era_regular
+}
+#天象观测
+innovation_TIANXINGGUANCE = { # Earthworks in-game
+	skill = learning
+	group = culture_group_civic
+	culture_era =  culture_era_tribal
+	icon = @innovation_TIANXINGGUANCE
+
+	asset = {
+
+	}
+	custom = unlock_tribal_fortification_buildings
+	parameters = {
+	
+	}
+	flag = global_regular
+	flag = tribal_era_regular
+}
+#历法
+innovation_LIFA = { # Earthworks in-game
+	skill = learning
+	group = culture_group_civic
+	culture_era =  culture_era_tribal
+	icon = @innovation_LIFA
+
+	asset = {
+
+	}
+	custom = unlock_tribal_fortification_buildings
+	parameters = {
+	
+	}
+	flag = global_regular
+	flag = tribal_era_regular
+}
+#青铜铸造
+innovation_QINGTONGZHUZAO = { # Earthworks in-game
+	skill = stewardship
+	group = culture_group_civic
+	culture_era =  culture_era_tribal
+	icon = @innovation_QINGTONGZHUZAO
+
+	asset = {
+
+	}
+	custom = unlock_tribal_fortification_buildings
+	parameters = {
+	
+	}
+	flag = global_regular
+	flag = tribal_era_regular
+}
+#甲骨文
+innovation_JIAGUWEN = { # Earthworks in-game
+	skill = learning
+	group = culture_group_civic
+	culture_era =  culture_era_tribal
+	icon = @innovation_JIAGUWEN
+
+	asset = {
+
+	}
+	custom = unlock_tribal_fortification_buildings
+	parameters = {
+	
+	}
+	flag = global_regular
+	flag = tribal_era_regular
+}
+#算筹
+innovation_SUANCHOU = { # Earthworks in-game
+	skill = stewardship
+	group = culture_group_civic
+	culture_era =  culture_era_tribal
+	icon = @innovation_SUANCHOU
+
+	asset = {
+
+	}
+	custom = unlock_tribal_fortification_buildings
+	parameters = {
+	
+	}
+	flag = global_regular
+	flag = tribal_era_regular
+}
+#杂种优势
+innovation_ZAZHONGYOUSHI = { # Earthworks in-game
+	skill = stewardship
+	group = culture_group_civic
+	culture_era =  culture_era_tribal
+	icon = @innovation_ZAZHONGYOUSHI
+
+	asset = {
+
+	}
+	custom = unlock_tribal_fortification_buildings
+	parameters = {
+	
+	}
+	flag = global_regular
+	flag = tribal_era_regular
+}
+#音律
+innovation_YINLV = { # Earthworks in-game
+	skill = stewardship
+	group = culture_group_civic
+	culture_era =  culture_era_tribal
+	icon = @innovation_YINLV
+
+	asset = {
+
+	}
+	custom = unlock_tribal_fortification_buildings
+	parameters = {
+	
+	}
+	flag = global_regular
+	flag = tribal_era_regular
+}
+#营国制
+innovation_YINGGUOZHI = { # Earthworks in-game
+	skill = diplomacy
+	group = culture_group_civic
+	culture_era =  culture_era_tribal
+	icon = @innovation_YINGGUOZHI
+
+	asset = {
+
+	}
+	custom = unlock_tribal_fortification_buildings
+	parameters = {
+	
+	}
+	flag = global_regular
+	flag = tribal_era_regular
+}
+#工商食官
+innovation_GONGSHANGSHIGUAN = { # Earthworks in-game
+	skill = diplomacy
+	group = culture_group_civic
+	culture_era =  culture_era_tribal
+	icon = @innovation_GONGSHANGSHIGUAN
+
+	asset = {
+
+	}
+	custom = unlock_tribal_fortification_buildings
+	parameters = {
+	
+	}
+	flag = global_regular
+	flag = tribal_era_regular
+}
+#擎檐柱
+innovation_QINZHANZHU = { # Earthworks in-game
+	skill = stewardship
+	group = culture_group_civic
+	culture_era =  culture_era_tribal
+	icon = @innovation_QINZHANZHU
+
+	asset = {
+
+	}
+	custom = unlock_tribal_fortification_buildings
+	parameters = {
+	
+	}
+	flag = global_regular
+	flag = tribal_era_regular
+}
+#木模板
+innovation_MUMOBAN = { # Earthworks in-game
+	skill = stewardship
+	group = culture_group_civic
+	culture_era =  culture_era_tribal
+	icon = @innovation_MUMOBAN
+
+	asset = {
+
+	}
+	custom = unlock_tribal_fortification_buildings
+	parameters = {
+	
+	}
+	flag = global_regular
+	flag = tribal_era_regular
+}
+#发酵技术
+innovation_FAJIAOJISHU = { # Earthworks in-game
+	skill = stewardship
+	group = culture_group_civic
+	culture_era =  culture_era_tribal
+	icon = @innovation_FAJIAOJISHU
+
+	asset = {
+
+	}
+	custom = unlock_tribal_fortification_buildings
+	parameters = {
+	
+	}
+	flag = global_regular
+	flag = tribal_era_regular
+}
+
+#culture_group_milltary
+#战车
+innovation_ZHANCHE = { # Earthworks in-game
+	skill = martial
+	group = culture_group_military
+	culture_era =  culture_era_tribal
+	icon = @innovation_ZHANCHE
+
+	asset = {
+
+	}
+	custom = unlock_tribal_fortification_buildings
+	parameters = {
+	
+	}
+	flag = global_regular
+	flag = tribal_era_regular
+}
+#皮甲
+innovation_PIJIA = { # Earthworks in-game
+	skill = martial
+	group = culture_group_military
+	culture_era =  culture_era_tribal
+	icon = @innovation_PIJIA
+
+	asset = {
+
+	}
+	custom = unlock_tribal_fortification_buildings
+	parameters = {
+	
+	}
+	flag = global_regular
+	flag = tribal_era_regular
+}
+#弓矢
+innovation_GONGSHI = { # Earthworks in-game
+	skill = martial
+	group = culture_group_military
+	culture_era =  culture_era_tribal
+	icon = @innovation_GONGSHI
+
+	asset = {
+
+	}
+	custom = unlock_tribal_fortification_buildings
+	parameters = {
+	
+	}
+	flag = global_regular
+	flag = tribal_era_regular
+}
+#军事征召
+innovation_JUNSHIZHENGZHAO = { # Earthworks in-game
+	skill = martial
+	group = culture_group_military
+	culture_era =  culture_era_tribal
+	icon = @innovation_JUNSHIZHENGZHAO
+
+	asset = {
+
+	}
+	custom = unlock_tribal_fortification_buildings
+	parameters = {
+	
+	}
+	flag = global_regular
+	flag = tribal_era_regular
+}

@@ -1,0 +1,762 @@
+﻿# 领地界面：页眉
+types MyRealmWindow_Header_COPF
+{	
+	# 权威图标
+	type authority_icon = vbox {
+		# 游牧权威
+		hbox = {
+			visible = "[IsNomad( Character )]"
+
+			icon = {
+				visible = "[EqualTo_int32( Law.GetIndexInLawGroup, '(int32)0')]"
+				size = { 30 30 }
+				texture = "gfx/interface/icons/dominance_01.dds"
+
+				tooltipwidget = {
+					general_law_tooltip = {}
+				}
+			}
+
+			icon = {
+				visible = "[EqualTo_int32( Law.GetIndexInLawGroup, '(int32)1')]"
+				size = { 30 30 }
+				texture = "gfx/interface/icons/dominance_02.dds"
+
+				tooltipwidget = {
+					general_law_tooltip = {}
+				}
+			}
+
+			icon = {
+				visible = "[EqualTo_int32( Law.GetIndexInLawGroup, '(int32)2')]"
+				size = { 30 30 }
+				texture = "gfx/interface/icons/dominance_03.dds"
+
+				tooltipwidget = {
+					general_law_tooltip = {}
+				}
+			}
+
+			icon = {
+				visible = "[EqualTo_int32( Law.GetIndexInLawGroup, '(int32)3')]"
+				size = { 30 30 }
+				texture = "gfx/interface/icons/dominance_04.dds"
+
+				tooltipwidget = {
+					general_law_tooltip = {}
+				}
+			}
+
+			icon = {
+				visible = "[EqualTo_int32( Law.GetIndexInLawGroup, '(int32)4')]"
+				size = { 30 30 }
+				texture = "gfx/interface/icons/dominance_05.dds"
+
+				tooltipwidget = {
+					general_law_tooltip = {}
+				}
+			}
+		}
+		# 君权
+		hbox = {
+			visible = "[And(And(Not(IsNomad( Character )),Not(Character.GetGovernment.HasGovernmentFlag( 'government_is_tribal' ))),Character.GetActiveLawInGroupWithFlag( 'law_group_crown_authority' ).GetLawGroup.HasFlag( 'law_group_crown_authority' ))]"
+			datacontext = "[Character.GetActiveLawInGroupWithFlag( 'law_group_crown_authority' )]" #COPF
+
+			button_icon = { #COPF
+				visible = "[EqualTo_int32( Law.GetIndexInLawGroup, '(int32)0')]"
+				size = { 30 30 }
+				texture = "gfx/interface/icons/laws/crown_authority_legacy_head.dds"
+
+				tooltipwidget = {
+					general_law_tooltip = {}
+					#copf_crown_authority_legacy_head_law_tooltip = {}
+				}
+			}
+
+			button_icon = { #COPF
+				visible = "[EqualTo_int32( Law.GetIndexInLawGroup, '(int32)1')]"
+				size = { 30 30 }
+				texture = "gfx/interface/icons/laws/crown_authority_titular_liege.dds"
+
+				tooltipwidget = {
+					general_law_tooltip = {}
+					#copf_crown_authority_titular_liege_law_tooltip = {}
+				}
+			}
+
+			button_icon = {
+				visible = "[EqualTo_int32( Law.GetIndexInLawGroup, '(int32)2')]"
+				size = { 30 30 }
+				texture = "gfx/interface/icons/laws/crown_authority_extended_0.dds"
+
+				tooltipwidget = {
+					general_law_tooltip = {}
+				}
+			}
+
+			button_icon = {
+				visible = "[EqualTo_int32( Law.GetIndexInLawGroup, '(int32)3')]"
+				size = { 30 30 }
+				texture = "gfx/interface/icons/laws/crown_authority_extended_1.dds"
+
+				tooltipwidget = {
+					general_law_tooltip = {}
+				}
+			}
+
+			button_icon = {
+				visible = "[EqualTo_int32( Law.GetIndexInLawGroup, '(int32)4')]"
+				size = { 30 30 }
+				texture = "gfx/interface/icons/laws/crown_authority_extended_2.dds"
+
+				tooltipwidget = {
+					general_law_tooltip = {}
+				}
+			}
+
+			button_icon = {
+				visible = "[EqualTo_int32( Law.GetIndexInLawGroup, '(int32)5')]"
+				size = { 30 30 }
+				texture = "gfx/interface/icons/laws/crown_authority_extended_3.dds"
+
+				tooltipwidget = {
+					general_law_tooltip = {}
+				}
+			}
+		}
+		# 非君权
+		hbox = {
+			visible = "[And(And(And( Not(IsNomad( Character )),Not(Character.GetGovernment.HasGovernmentFlag( 'government_is_tribal' )) ), Not(Character.GetActiveLawInGroupWithFlag( 'law_group_crown_authority' ).GetLawGroup.HasFlag( 'law_group_crown_authority' )) ), Not(Character.GetActiveLawInGroupWithFlag( 'law_group_crown_authority_extended' ).GetLawGroup.HasFlag( 'law_group_crown_authority_extended' )) )]"
+			datacontext = "[Character.GetActiveLawInGroupWithFlag( 'realm_law' )]" #COPF
+
+			button_icon = {
+				visible = "[EqualTo_int32( Law.GetIndexInLawGroup, '(int32)0')]"
+				size = { 30 30 }
+				texture = "gfx/interface/icons/laws/crown_authority_0.dds"
+
+				tooltipwidget = {
+					general_law_tooltip = {}
+				}
+			}
+
+			button_icon = {
+				visible = "[EqualTo_int32( Law.GetIndexInLawGroup, '(int32)1')]"
+				size = { 30 30 }
+				texture = "gfx/interface/icons/laws/crown_authority_1.dds"
+
+				tooltipwidget = {
+					general_law_tooltip = {}
+				}
+			}
+
+			button_icon = {
+				visible = "[EqualTo_int32( Law.GetIndexInLawGroup, '(int32)2')]"
+				size = { 30 30 }
+				texture = "gfx/interface/icons/laws/crown_authority_2.dds"
+
+				tooltipwidget = {
+					general_law_tooltip = {}
+				}
+			}
+
+			button_icon = {
+				visible = "[EqualTo_int32( Law.GetIndexInLawGroup, '(int32)3')]"
+				size = { 30 30 }
+				texture = "gfx/interface/icons/laws/crown_authority_3.dds"
+
+				tooltipwidget = {
+					general_law_tooltip = {}
+				}
+			}
+		}
+		# 部落权威
+		hbox = {
+			visible = "[Character.GetGovernment.HasGovernmentFlag( 'government_is_tribal' )]"
+
+			button_icon = {
+				visible = "[EqualTo_int32( Law.GetIndexInLawGroup, '(int32)0')]"
+				size = { 30 30 }
+				texture = "gfx/interface/icons/laws/tribal_authority_0.dds"
+
+				tooltipwidget = {
+					general_law_tooltip = {}
+				}
+			}
+
+			button_icon = {
+				visible = "[EqualTo_int32( Law.GetIndexInLawGroup, '(int32)1')]"
+				size = { 30 30 }
+				texture = "gfx/interface/icons/laws/tribal_authority_1.dds"
+
+				tooltipwidget = {
+					general_law_tooltip = {}
+				}
+			}
+
+			button_icon = {
+				visible = "[EqualTo_int32( Law.GetIndexInLawGroup, '(int32)2')]"
+				size = { 30 30 }
+				texture = "gfx/interface/icons/laws/tribal_authority_2.dds"
+
+				tooltipwidget = {
+					general_law_tooltip = {}
+				}
+			}
+
+			button_icon = {
+				visible = "[EqualTo_int32( Law.GetIndexInLawGroup, '(int32)3')]"
+				size = { 30 30 }
+				texture = "gfx/interface/icons/laws/tribal_authority_3.dds"
+
+				tooltipwidget = {
+					general_law_tooltip = {}
+				}
+			}
+		}
+	}
+	# 领地界面页眉
+	type widget_my_realm_header = widget_header_with_picture {
+		layoutpolicy_horizontal = expanding
+
+		blockoverride "header_text" {
+			text = "[GetPlayer.GetPrimaryTitle.GetNameNoTooltip|U]"
+		}
+
+		blockoverride "size" {
+			size = { 100% 130 }
+		}
+
+		blockoverride "header_size"
+		{
+			size = { 100% 40 }
+		}
+
+		blockoverride "header_position" {
+			position = { 0 -12 }
+		}
+
+		blockoverride "header_background_visibility" {
+			visible = no
+		}
+
+		blockoverride header_pattern_visibility {
+			visible = no
+		}
+
+		blockoverride header_label_visibility {
+			visible = yes
+		}
+
+		blockoverride "illustration_texture" {
+			texture = "gfx/interface/skinned/illustrations/header_illustrations/header_my_realm.dds"
+
+			modify_texture = {
+				texture = "gfx/interface/component_masks/mask_fade_vertical_up.dds"
+				blend_mode = alphamultiply
+			}
+		}
+
+		blockoverride "button_close"
+		{
+			visible = no
+		}
+
+		vbox = {
+			parentanchor = center
+			margin_top = 36
+			max_width = 350
+
+			### MY_REALM HEADER CENTER
+			vbox = {
+				layoutpolicy_horizontal = expanding
+				layoutpolicy_vertical = expanding
+
+				### SUBTITLE
+				vbox = {
+					block "header_subtitle"
+					{
+						hbox = {
+							datacontext = "[GetPlayer.GetActiveLawInGroupWithFlag( 'realm_law' )]"
+
+							### AUTHORITY ICON
+							authority_icon = {}
+
+							hbox = {
+								margin_left = 5
+								spacing = 15
+
+								text_single = {
+									name = "realm_type"
+									text = "MY_REALM_WINDOW_TYPE"
+									max_width = 160
+									align = nobaseline
+								}
+
+								text_single = {
+									text = "REALM_WINDOW_SIZE"
+									align = nobaseline
+									max_width = 140
+									tooltip = "REALM_WINDOW_SIZE_TT"
+								}
+							}
+						}
+
+						vbox = {
+							spacing = -8
+							margin_bottom = 12
+
+							## OVERLORD INFO
+							vbox = {
+								name = "overlord"
+								margin_top = -8
+
+								block "show_overlord"
+								{
+									visible = no
+								}
+
+								hbox = {
+									datacontext = "[MyRealmWindow.GetCharacter.GetOverlord]"
+									spacing = 4
+
+									button_icon_highlight = { #领主君权：封建 #COPF
+										visible = "[And(And( Not(IsNomad( Character )), Character.GetActiveLawInGroupWithFlag( 'law_group_crown_authority' ).GetLawGroup.HasFlag( 'law_group_crown_authority' )),Not(Character.GetActiveLawInGroupWithFlag( 'law_group_crown_authority_extended' ).GetLawGroup.HasFlag( 'law_group_crown_authority_extended' )))]"
+										datacontext = "[Character.GetActiveLawInGroupWithFlag( 'law_group_crown_authority' )]"
+										size = { 32 32 }
+										texture = "[Law.GetIcon]"
+										tooltipwidget = { general_law_tooltip = {} }
+										using = tooltip_ws
+									}
+
+									button_icon_highlight = { #领主君权：非君权 #COPF
+										visible = "[And(And( Not(IsNomad( Character )), Not(Character.GetActiveLawInGroupWithFlag( 'law_group_crown_authority' ).GetLawGroup.HasFlag( 'law_group_crown_authority' )) ),Not(Character.GetActiveLawInGroupWithFlag( 'law_group_crown_authority_extended' ).GetLawGroup.HasFlag( 'law_group_crown_authority_extended' )))]"
+										datacontext = "[Character.GetActiveLawInGroupWithFlag( 'realm_law' )]"
+										size = { 32 32 }
+										texture = "[Law.GetIcon]"
+										tooltipwidget = { general_law_tooltip = {} }
+										using = tooltip_ws
+									}	
+
+									icon = {
+										visible = "[IsNomad( Character )]"
+										datacontext = "[Character.GetActiveLawInGroupWithFlag( 'realm_law' )]"
+										size = { 32 32 }
+										texture = "[Law.GetIcon]"
+										tooltipwidget = { general_law_tooltip = {} }
+										using = tooltip_ws
+									}
+
+									text_single = {
+										visible = "[GetPlayer.HasSuzerain]"
+										text = "MY_REALM_WINDOW_SUZERAIN_NAME"
+										align = nobaseline
+										max_width = 280
+									}
+
+									text_single = {
+										visible = "[GetPlayer.HasLiege]"
+										text = "MY_REALM_WINDOW_LIEGE_NAME"
+										align = nobaseline
+										max_width = 280
+									}
+
+									coa_realm_tiny_crown = {}
+								}
+							}
+
+							## REGENCY / DIARCHY
+							hbox = {
+								datacontext = "[MyRealmWindow.GetCharacter]"
+								layoutpolicy_horizontal = expanding
+
+								background = {
+									texture = "gfx/interface/component_tiles/tile_title_bg_01.dds"
+									spriteType = Corneredtiled
+									spriteborder = { 40 8 }
+									texture_density = 2
+
+									margin = { 40 -3 }
+									margin_left = 10
+
+									modify_texture = {
+										name = "mask"
+										texture = "gfx/interface/component_masks/mask_fade_horizontal_middle_thick.dds"
+										spriteType = Corneredstretched
+										spriteborder = { 0 0 }
+										blend_mode = alphamultiply
+										mirror = horizontal
+									}
+								}
+
+								block "show_diarchy"
+								{
+									visible = no
+								}
+
+								spacing = 10
+
+								expand = {}
+
+								button_round = {
+									name = "open_future_diarchy_tutorial_uses_this"
+									widgetid = "open_future_diarchy_tutorial_uses_this"
+									size = { 32 32 }
+
+									onclick = "[ToggleGameViewData( 'diarchy', Character.GetID )]"
+									tooltip = "DIARCHY_WINDOW_OPEN_TOOLTIP"
+
+									button_icon = {
+										parentanchor = center
+										position = { 0 -1 }
+										size = { 24 24 }
+										alwaystransparent = yes
+										texture = "gfx/interface/window_regency/scale_of_power.dds"
+									}
+								}
+
+								hbox = {
+									datacontext = "[Character.GetDiarchy]"
+
+									text_single = {
+										visible = "[Diarchy.IsValid]"
+
+										text = "DIARCHY_WINDOW_STATUS_ACTIVE_DIARCHY"
+										align = nobaseline
+										max_width = 400
+									}
+
+									text_single = {
+										visible = "[Not( Diarchy.IsValid )]"
+
+										text = "DIARCHY_WINDOW_STATUS_INACTIVE_DIARCHY"
+										align = nobaseline
+										margin_right = 10
+									}
+								}
+
+								expand = {}
+
+							}
+						}
+					}
+				}
+
+				### BELOW SUBTITLE
+
+				expand = {}
+			}
+		}
+
+		### HEADER LEFT WIDGET
+		widget = {
+			size = { 64 99 }
+			allow_outside = yes
+
+			### COAT OF ARMS
+			coa_realm_medium_crown = {
+				position = { 30 0 }
+			}
+		}
+
+		### HEADER RIGHT WIDGET
+		widget = {
+			datacontext = "[MyRealmWindow.GetKurultaiSuccession]"
+			visible = "[KurultaiSuccession.IsValid]"
+			parentanchor = right|vcenter
+			position = { -25 0 }
+			size = { 84 84 }
+			allow_outside = yes
+			name = "kurultai_succession_stability"
+
+			tooltipwidget = {
+				widget_kurultai_succession_tooltip = {}
+			}
+
+			### KURULTAI SUCCESSION ICON PEACEFUL
+			widget = {
+				visible = "[KurultaiSuccession.IsStable]"
+				parentanchor = center
+				size = { 84 84 }
+
+				icon = {
+					parentanchor = center
+					size = { 84 84 }
+					texture = "gfx/interface/window_realm/succession_icon_background_peaceful.dds"
+				}
+
+				icon_flat_standard = {
+					parentanchor = center
+					size = { 60 60 }
+					texture = "gfx/interface/icons/flat_icons/succession_peaceful.dds"
+				}
+			}
+
+			### KURULTAI SUCCESSION ICON CHAOTIC
+			widget = {
+				visible = "[Not( KurultaiSuccession.IsStable )]"
+				parentanchor = center
+				size = { 84 84 }
+
+				icon = {
+					parentanchor = center
+					size = { 84 84 }
+					texture = "gfx/interface/window_realm/succession_icon_background_chaotic.dds"
+				}
+
+				icon_flat_standard_red = {
+					parentanchor = center
+					size = { 60 60 }
+					texture = "gfx/interface/icons/flat_icons/succession_chaotic.dds"
+				}
+			}
+		}
+	}
+}
+# 领地界面：法律
+types MyRealmWindow_Laws_COPF
+{
+	type vbox_my_realm_laws_body = vbox {
+		using = Animation_Tab_Switch
+
+		### LAWS TOP AND PROGRESS BAR
+		vbox = {
+			visible = "[And( And( GreaterThan_int32( MyRealmWindow.GetPowerfulVassalLawVoteCount, '(int32)0' ), Not( IsNomad( GetPlayer ) ) ), Not( GetPlayer.GetGovernment.HasRule( 'deny_powerful_vassal' )))]"
+			margin_top = 15
+			spacing = 5
+
+			text_multi = {
+				text = "MY_REALM_WINDOW_LAWS_PROGRESS_BAR_DESC"
+				align = center|nobaseline
+				autoresize = yes
+				default_format = "#I"
+				max_width = 500
+			}
+
+			text_single = {
+				text = "MY_REALM_WINDOW_LAWS_PROGRESS_BAR_TITLE"
+				align = nobaseline
+				max_width = 500
+			}
+
+			### POWERFUL VASSALS PROGRESS BAR
+			vbox = {
+				layoutpolicy_horizontal = expanding
+				margin = { 20 0 }
+
+				hbox = {
+					layoutpolicy_horizontal = expanding
+					spacing = 10
+
+					text_single = {
+						text = "MY_REALM_WINDOW_LAWS_PROGRESS_BAR_APPROVES"
+						align = nobaseline
+						max_width = 150
+					}
+
+					progressbar_standard = {
+						layoutpolicy_horizontal = expanding
+						size = { 140 20 }
+
+						using = Animation_ShowHide_Standard
+
+						max = "[IntToFloat( MyRealmWindow.GetPowerfulVassalLawVoteCount )]"
+						value = "[IntToFloat( MyRealmWindow.GetPowerfulVassalLawApproves )]"
+					}
+
+					text_single = {
+						text = "MY_REALM_WINDOW_LAWS_PROGRESS_BAR_OPPOSES"
+						align = nobaseline
+						max_width = 150
+					}
+				}
+			}
+		}
+
+		### KURULTAI PROGRESS BAR
+		vbox = {
+			datacontext = "[MyRealmWindow.GetKurultaiSuccession]"
+			visible = "[And( GreaterThan_int32( KurultaiSuccession.GetVoteCount, '(int32)0' ), IsNomad( GetPlayer ) )]"
+			layoutpolicy_horizontal = expanding
+
+			margin_top = 15
+
+			hbox = {
+				layoutpolicy_horizontal = expanding
+				spacing = 10
+
+				text_single = {
+					text = "MY_REALM_WINDOW_KURULTAI_APPROVES"
+					align = nobaseline
+					max_width = 150
+				}
+
+				progressbar_standard = {
+					name = "kurultai_votes"
+					layoutpolicy_horizontal = expanding
+					size = { 200 20 }
+
+					using = Animation_ShowHide_Standard
+
+					max = "[IntToFloat( KurultaiSuccession.GetVoteCount )]"
+					value = "[IntToFloat( KurultaiSuccession.GetObedientCount )]"
+				}
+
+				text_single = {
+					text = "MY_REALM_WINDOW_KURULTAI_OPPOSES"
+					align = nobaseline
+					max_width = 150
+				}
+			}
+
+			text_multi = {
+				text = "MY_REALM_WINDOW_KURULTAI_OBEDIENT"
+				autoresize = yes
+				default_format = "#italic"
+				align = center
+				max_width = 500
+				margin = { 0 5 }
+			}
+		}
+
+		vbox = {
+			layoutpolicy_horizontal = expanding
+			margin_top = 10
+			spacing = 18
+
+			### REALM LAWS (except the flag 'realm_law' as those are reserved for Crown Authority)
+			vbox_law_item = {
+				blockoverride "item_title"
+				{
+					visible = no
+				}
+
+				blockoverride "show_law"
+				{
+					visible = "[And( GuiLawGroup.IsAvailable, Or( GuiLawGroup.GetLawGroup.HasFlag( 'succession_order_laws' ), Or( GuiLawGroup.GetLawGroup.HasFlag( 'succession_gender_laws' ), GuiLawGroup.GetLawGroup.HasFlag( 'imperial_policy' ) ) ) )]"
+				}
+			}
+
+			### PRIMARY TITLE ELECTION (if exists)
+			flowcontainer = {
+				name = "primary_title_election"
+				datacontext = "[GetPlayer]"
+				datamodel = "[MyRealmWindow.GetTitlesCanVote]"
+				visible = "[MyRealmWindow.CanVote]"
+
+				ignoreinvisible = yes
+
+				item = {
+					button_standard = {
+						datacontext = "[TitleItem.GetTitle]"
+						visible = "[ObjectsEqual( Title.Self, Character.GetPrimaryTitle.Self )]"
+						text = "MY_REALM_WINDOW_VOTE"
+
+						onclick = "[OpenSuccessionElectionWindowForTitle(Title.Self)]"
+
+						tooltip = "MY_REALM_WINDOW_VOTE_TOOLTIP"
+					}
+				}
+			}
+
+			#### ELECTIONS BUTTON
+			vbox = {
+				visible = "[MyRealmWindow.CanVote]"
+				layoutpolicy_horizontal = expanding
+
+				text_label_left = {
+					layoutpolicy_horizontal = expanding
+					text = "MY_REALM_WINDOW_LAWS_SPECIFIC_SUCCESSION_LAWS"
+				}
+
+				vbox = {
+					name = "elections"
+					datacontext = "[GetPlayer]"
+					datamodel = "[MyRealmWindow.GetTitlesCanVote]"
+					layoutpolicy_horizontal = expanding
+					ignoreinvisible = yes
+
+					margin_top = 5
+
+					item = {
+						vbox_election_title_law_item = {
+							visible = "[Not( ObjectsEqual( Title.Self, Character.GetPrimaryTitle.Self ) )]"
+						}
+					}
+				}
+			}
+
+			### PROVINCIAL LAWS
+			vbox_law_item = {
+				datacontext = "[GetPlayer]"
+				visible = "[ProvincialLawCharacter( Character )]"
+
+				blockoverride "item_title"
+				{
+					text = "MY_REALM_WINDOW_LAWS_PROVINCIAL_LAWS"
+				}
+
+				blockoverride "item_desc"
+				{
+					visible = "[GetScriptedGui('top_liege_only_province_law_trigger').IsShown(GuiScope.SetRoot(Character.MakeScope).End)]" #COPF
+					
+					text = "MY_REALM_WINDOW_LAWS_PROVINCIAL_LAWS_DESC"
+				}
+
+				blockoverride "show_law"
+				{
+					visible = "[And( GuiLawGroup.IsAvailable, GuiLawGroup.GetLawGroup.HasFlag( 'admin_law' ) )]"
+
+					enabled = "[Or( Not(Character.HasOverlord), Not(GetScriptedGui('top_liege_only_province_law_trigger').IsShown(GuiScope.SetRoot(Character.MakeScope).End)) )]" #COPF
+
+					tooltip_when_disabled = "MY_REALM_WINDOW_LAWS_PROVINCIAL_LAWS_DESC_DISABLED"
+				}
+			}
+
+			### TREASURY BUDGET LAWS
+			vbox_law_item = {
+				datacontext = "[GetPlayer]"
+				visible = "[And( Character.IsIndependentRuler, Character.HasTreasury )]"
+
+				blockoverride "item_title"
+				{
+					text = "MY_REALM_WINDOW_LAWS_TREASURY_BUDGET_LAWS"
+				}
+
+				blockoverride "show_law"
+				{
+					visible = "[And( GuiLawGroup.IsAvailable, GuiLawGroup.GetLawGroup.HasFlag( 'treasury_budget_law' ) )]"
+
+					enabled = "[Not( Character.HasOverlord )]"
+
+					tooltip_when_disabled = "MY_REALM_WINDOW_LAWS_TREASURY_BUDGET_LAWS_DESC_DISABLED"
+				}
+			}
+
+			button_standard = {
+				visible = "[And( Character.IsIndependentRuler, Character.HasTreasury )]"
+				size = { 320 44 }
+
+				onclick = "[OpenGameViewData( 'treasury_budget_change', GetPlayer.Self )]"
+
+				hbox = {
+					layoutpolicy_horizontal = expanding
+					spacing = 12
+
+					expand = {}
+
+					icon = {
+						size = { 32 32 }
+						texture = "gfx/interface/icons/icon_imperial_treasury.dds"
+					}
+
+					text_single = {
+						text = "MY_REALM_WINDOW_MANAGE_TREASURY_BUDGET"
+						align = nobaseline
+						default_format = "#clickable"
+					}
+					expand = {}
+				}
+			}
+		}
+	}
+}

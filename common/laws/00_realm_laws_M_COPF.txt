@@ -1,0 +1,638 @@
+﻿### 君权 ### ============================================================================================================================================
+@crown_authority_cooldown_years = 20
+
+crown_authority = {
+	default = crown_authority_1
+	cumulative = yes
+	flag = realm_law
+	flag = law_group_crown_authority #COPF
+	
+	# 遗存首领 # ————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+	crown_authority_legacy_head = {
+		modifier = {
+			belligerent_opinion = -30
+			barons_and_minor_landholders_opinion = 40
+			glory_hound_opinion = 30
+			parochial_opinion = 30
+			courtly_opinion = 20
+			minority_opinion = 20
+			tributary_opinion = 20
+		}
+		flag = uses_crown_authority
+
+		should_start_with = {
+			always = no
+		}
+		can_keep = {
+			realm_law_use_crown_authority = yes
+			highest_held_title_tier >= tier_duchy
+			trigger_if = {
+				limit = { has_realm_law = crown_authority_legacy_head }
+				NOT = { subject_contract_has_flag = succession_rights_governor_appointment }
+			}
+			custom_tooltip = {
+				text = tt_only_feudal_can_have_this
+				OR = {
+					government_has_flag = government_is_feudal
+					government_has_flag = government_is_feudal_admin
+				}
+			}
+			NOT = { has_realm_law = crown_authority_1 } # 防止君权在开局时回退到此
+		}
+		can_pass = {
+			# 禁止主动切换到此等级
+			custom_tooltip = {
+				text = tt_cannot_actively_lower_crown_authority_to_this_level
+				always = no
+			}
+		}	
+
+		on_pass = {
+			# 所有封臣变自治
+			effect_lower_crown_authority_to_legacy_head = yes
+			# Increment cooldown breaker tally, if appropriate.
+			calculate_authority_cooldown_break_effect = yes
+			# Set regular cooldown.
+			set_variable = {
+				name = crown_authority_cooldown
+				years = @crown_authority_cooldown_years
+			}
+			# Remove modifiers.
+			remove_law_related_modifiers_effect = yes
+		}
+	}
+	# 名义君主 # ————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+	crown_authority_titular_liege = {
+		modifier = {
+			belligerent_opinion = 10
+			barons_and_minor_landholders_opinion = -10
+			glory_hound_opinion = -10
+			parochial_opinion = -10
+			courtly_opinion = -10
+			minority_opinion = -10
+			tributary_opinion = -10
+		}
+		triggered_flag = {
+			trigger = { has_realm_law = crown_authority_titular_liege }
+			flag = vassals_can_declare_autonomy
+		}
+
+		should_start_with = {
+			always = no
+		}
+		can_keep = {
+			realm_law_use_crown_authority = yes
+			highest_held_title_tier >= tier_duchy
+			trigger_if = {
+				limit = { has_realm_law = crown_authority_titular_liege }
+				NOT = { subject_contract_has_flag = succession_rights_governor_appointment }
+			}
+			custom_tooltip = {
+				text = tt_only_feudal_can_have_this
+				OR = {
+					government_has_flag = government_is_feudal
+					government_has_flag = government_is_feudal_admin
+				}
+			}
+			NOT = { has_realm_law = crown_authority_1 } # 防止君权在开局时回退到此
+		}
+		can_pass = {
+			trigger_if = {
+				limit = {
+					NOT = { has_realm_law = crown_authority_0 }
+					NAND = {
+						government_allows = administrative
+						top_liege != this
+					}
+				}
+				custom_description = {
+					subject = root
+					text = "has_crown_authority_cooldown"
+					NAND = {
+						has_variable = crown_authority_cooldown
+						NOT = {
+							culture = { has_innovation = innovation_all_things }
+						}
+					}
+				}
+				trigger_if = {
+					limit = { has_realm_law = crown_authority_legacy_head }
+					has_realm_law = crown_authority_legacy_head
+				}
+			}
+			# 禁止主动切换到此等级
+			custom_tooltip = {
+				text = tt_cannot_actively_lower_crown_authority_to_this_level
+				has_realm_law = crown_authority_legacy_head
+			}
+		}
+		on_pass = {
+			if = {
+				limit = { NOT = { has_realm_law = crown_authority_legacy_head } }
+				hidden_effect = {
+					if = {
+						limit = { NOT = { has_diarchy_type = feudal_titular_liege_regency } }
+						end_diarchy = yes
+					}
+				}
+				try_start_diarchy = feudal_titular_liege_regency
+				if = {
+					limit = { has_variable = potential_diarch }
+					set_diarch = var:potential_diarch
+				}
+				set_diarchy_swing = 75
+			}
+
+			# Increment cooldown breaker tally, if appropriate.
+			calculate_authority_cooldown_break_effect = yes
+			# Set regular cooldown.
+			set_variable = {
+				name = crown_authority_cooldown
+				years = @crown_authority_cooldown_years
+			}
+			# Remove modifiers.
+			remove_law_related_modifiers_effect = yes
+		}
+		
+		pass_cost = {
+			prestige = {
+				if = {
+					limit = {
+						NOR = {
+							has_realm_law = crown_authority_0
+							has_realm_law = crown_authority_1
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+					add = increase_crown_authority_prestige_cost
+					if = {
+						limit = { NOT = { any_tributary = { count <= 0 } } }
+						add = {
+							every_tributary = {
+								limit = { has_subject_contract_group = feudal_autonomous_vassal }
+								add = 100
+							}
+							desc = feudal_autonomous_vassals_amount
+						}					
+					}
+				}
+			}
+		}
+
+		ai_will_do = {
+			if = {
+				limit = { has_realm_law = crown_authority_legacy_head }
+				value = 5
+			}
+		}
+	}
+	# 封臣自治 # ————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+	crown_authority_0 = {
+		modifier = {
+			belligerent_opinion = 10
+			barons_and_minor_landholders_opinion = -10
+			glory_hound_opinion = -10
+			parochial_opinion = -10
+			courtly_opinion = -5
+			minority_opinion = -10
+			tributary_opinion = -10
+		}
+
+		should_start_with = {
+			NOR = {
+				has_realm_law = law_vassal_revoke_title_policy_allow_revoke
+				has_realm_law = law_vassal_war_policy_prohibit_internal_wars
+				has_realm_law = law_vassal_title_leave_realm_policy_restricted
+				has_realm_law = law_vassal_war_policy_prohibit_all_wars
+			}
+		}
+		can_keep = {
+			realm_law_use_crown_authority = yes
+			trigger_if = {
+				limit = {
+					government_allows = administrative
+					NOT = { government_has_flag = government_is_feudal_admin } #COPF
+					top_liege != this
+				}
+				liege = { has_realm_law = crown_authority_0 }
+			}
+		}
+		can_pass = {
+			trigger_if = {
+				limit = {
+					NOT = { has_realm_law = crown_authority_1 }
+					NAND = {
+						government_allows = administrative
+						top_liege != this
+					}
+				}
+				custom_description = {
+					subject = root
+					text = "has_crown_authority_cooldown"
+					NAND = {
+						has_variable = crown_authority_cooldown
+						NOT = {
+							culture = { has_innovation = innovation_all_things }
+						}
+					}
+				}
+				has_realm_law = crown_authority_titular_liege
+				custom_tooltip = {
+					text = tt_cannot_have_diarch
+					NOT = { exists = diarch }
+				}
+			}
+		}
+
+		pass_cost = {
+			prestige = {
+				if = {
+					limit = {
+						NOR = {
+							has_realm_law = crown_authority_1
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+					add = increase_crown_authority_prestige_cost
+					if = {
+						limit = { NOT = { any_tributary = { count <= 0 } } }
+						add = {
+							every_tributary = {
+								limit = { has_subject_contract_group = feudal_autonomous_vassal }
+								add = 100
+							}
+							desc = feudal_autonomous_vassals_amount
+						}					
+					}
+				}
+			}
+		}
+
+		on_pass = {
+			# Remove modifiers.
+			remove_law_related_modifiers_effect = yes
+		}
+
+		ai_will_do = {
+			if = { #COPF
+				limit = { has_realm_law = crown_authority_titular_liege }
+				value = 10
+			}
+		}
+	}
+	# 有限君权 # ————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+	crown_authority_1 = {
+		modifier = {
+			belligerent_opinion = 5
+			barons_and_minor_landholders_opinion = -20
+			glory_hound_opinion = -15
+			parochial_opinion = -10
+			courtly_opinion = -5
+			minority_opinion = -5
+		}
+		flag = can_have_tributaries
+		flag = can_change_partition_succession_laws
+		flag = diarchs_want_to_subsidise_without_this_flag
+		triggered_flag = {
+			trigger = {
+				NOR = {
+					government_has_flag = government_is_feudal
+					government_has_flag = government_is_feudal_admin
+				}
+			}
+			flag = title_revocation_allowed
+		}
+		triggered_flag = {
+			trigger = {
+				NOR = {
+					government_has_flag = government_is_feudal
+					government_has_flag = government_is_feudal_admin
+				}
+			}
+			flag = vassal_retraction_allowed
+		}
+
+		should_start_with = {
+			has_realm_law = law_vassal_revoke_title_policy_allow_revoke
+			NOR = {
+				has_realm_law = law_vassal_war_policy_prohibit_internal_wars
+				has_realm_law = law_vassal_title_leave_realm_policy_restricted
+				has_realm_law = law_vassal_war_policy_prohibit_all_wars
+			}
+		}
+		can_keep = {
+			realm_law_use_crown_authority = yes
+			trigger_if = {
+				limit = {
+					government_allows = administrative
+					NOT = { government_has_flag = government_is_feudal_admin } #COPF
+					top_liege != this
+				}
+				liege = { has_realm_law = crown_authority_1 }
+			}
+		}
+
+		can_pass = {
+			trigger_if = {
+				limit = {
+					NOT = { has_realm_law = crown_authority_2 }
+					NAND = {
+						government_allows = administrative
+						top_liege != this
+					}
+				}
+				custom_description = {
+					subject = root
+					text = "has_crown_authority_cooldown"
+					NAND = {
+						has_variable = crown_authority_cooldown
+						NOT = {
+							culture = { has_innovation = innovation_all_things }
+						}
+					}
+				}
+				has_realm_law = crown_authority_0
+			}
+			can_pass_law_ca1_trigger = yes
+		}
+		
+		pass_cost = {
+			prestige = {
+				if = {
+					limit = {
+						NOR = {
+							has_realm_law = crown_authority_2
+							has_realm_law = crown_authority_3
+						}
+					}
+					add = increase_crown_authority_prestige_cost
+				}
+			}
+		}
+		
+		on_pass = {
+			# Increment cooldown breaker tally, if appropriate.
+			calculate_authority_cooldown_break_effect = yes
+			# Set regular cooldown.
+			set_variable = {
+				name = crown_authority_cooldown
+				years = @crown_authority_cooldown_years
+			}
+			# Remove modifiers.
+			remove_law_related_modifiers_effect = yes
+		}
+
+		ai_will_do = {
+			value = 15
+		}
+	}
+	# 高君权 # ————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+	crown_authority_2 = {
+		modifier = {
+			belligerent_opinion = 10
+			barons_and_minor_landholders_opinion = -10
+			glory_hound_opinion = -10
+			parochial_opinion = -10
+			courtly_opinion = -5
+			zealot_opinion = -10
+			vassal_tax_contribution_mult = 0.1
+			vassal_levy_contribution_mult = 0.1
+		}
+		flag = vassal_refusal_is_treason
+		flag = can_change_succession_laws
+		triggered_flag = {
+			trigger = {
+				NOR = {
+					government_has_flag = government_is_feudal
+					government_has_flag = government_is_feudal_admin
+				}
+			}
+			flag = title_revocation_allowed
+		}
+		triggered_flag = {
+			trigger = {
+				NOR = {
+					government_has_flag = government_is_feudal
+					government_has_flag = government_is_feudal_admin
+				}
+			}
+			flag = vassal_retraction_allowed
+		}
+		triggered_flag = {
+			trigger = {
+				NOR = {
+					government_has_flag = government_is_feudal
+					government_has_flag = government_is_feudal_admin
+				}
+			}
+			flag = vassal_internal_wars_banned
+		}
+		triggered_flag = {
+			trigger = {
+				NOR = {
+					government_has_flag = government_is_feudal
+					government_has_flag = government_is_feudal_admin
+				}
+			}
+			flag = titles_cannot_leave_realm_on_succession
+		}
+		
+		should_start_with = {
+			OR = {
+				has_realm_law = law_vassal_war_policy_prohibit_internal_wars
+				has_realm_law = law_vassal_title_leave_realm_policy_restricted
+			}
+			NOT = { has_realm_law = law_vassal_war_policy_prohibit_all_wars }
+		}
+		can_keep = {
+			realm_law_use_crown_authority = yes
+			trigger_if = {
+				limit = {
+					government_allows = administrative
+					NOT = { government_has_flag = government_is_feudal_admin } #COPF
+					top_liege != this
+				}
+				liege = { has_realm_law = crown_authority_2 }
+			}
+		}
+
+		can_pass = {
+			trigger_if = {
+				limit = {
+					NOT = { has_realm_law = crown_authority_3 }
+					NAND = {
+						government_allows = administrative
+						top_liege != this
+					}
+				}
+				custom_description = {
+					subject = root
+					text = "has_crown_authority_cooldown"
+					NAND = {
+						has_variable = crown_authority_cooldown
+						NOT = {
+							culture = { has_innovation = innovation_all_things }
+						}
+					}
+				}
+				has_realm_law = crown_authority_1
+			}
+			can_pass_law_ca2_trigger = yes
+		}
+
+		pass_cost = {
+			prestige = {
+				if = {
+					limit = {
+						NOT = { has_realm_law = crown_authority_3 }
+					}
+					add = increase_crown_authority_prestige_cost
+				}
+			}
+		}
+		
+		on_pass = {
+			# Increment cooldown breaker tally, if appropriate.
+			calculate_authority_cooldown_break_effect = yes
+			# Set regular cooldown.
+			set_variable = {
+				name = crown_authority_cooldown
+				years = @crown_authority_cooldown_years
+			}
+			# Remove modifiers.
+			remove_law_related_modifiers_effect = yes
+		}
+
+		ai_will_do = {
+			value = 20
+		}
+	}
+	# 绝对君权 # ————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+	crown_authority_3 = {
+		modifier = {
+			belligerent_opinion = 15
+			barons_and_minor_landholders_opinion = -20
+			glory_hound_opinion = -20
+			parochial_opinion = -25
+			courtly_opinion = -10
+			zealot_opinion = -20
+			minority_opinion = -30
+			vassal_tax_contribution_mult = 0.25
+			vassal_levy_contribution_mult = 0.25
+		}
+		flag = can_designate_heirs
+		flag = max_authority_level
+		triggered_flag = {
+			trigger = {
+				NOR = {
+					government_has_flag = government_is_feudal
+					government_has_flag = government_is_feudal_admin
+				}
+			}
+			flag = title_revocation_allowed
+		}
+		triggered_flag = {
+			trigger = {
+				NOR = {
+					government_has_flag = government_is_feudal
+					government_has_flag = government_is_feudal_admin
+				}
+			}
+			flag = vassal_retraction_allowed
+		}
+		triggered_flag = {
+			trigger = {
+				NOR = {
+					government_has_flag = government_is_feudal
+					government_has_flag = government_is_feudal_admin
+				}
+			}
+			flag = vassal_internal_wars_banned
+		}
+		triggered_flag = {
+			trigger = {
+				NOR = {
+					government_has_flag = government_is_feudal
+					government_has_flag = government_is_feudal_admin
+				}
+			}
+			flag = titles_cannot_leave_realm_on_succession
+		}
+		triggered_flag = {
+			trigger = {
+				NOR = {
+					government_has_flag = government_is_feudal
+					government_has_flag = government_is_feudal_admin
+				}
+			}
+			flag = vassal_all_wars_banned
+		}
+		
+		should_start_with = {
+			has_realm_law = law_vassal_war_policy_prohibit_all_wars
+		}
+		can_keep = {
+			realm_law_use_crown_authority = yes
+			trigger_if = {
+				limit = {
+					government_allows = administrative
+					NOT = { government_has_flag = government_is_feudal_admin } #COPF
+					top_liege != this
+				}
+				liege = { has_realm_law = crown_authority_3 }
+			}
+		}
+
+		can_pass = {
+			trigger_if = {
+				limit = {
+					NAND = {
+						government_allows = administrative
+						top_liege != this
+					}
+				}
+				custom_description = {
+					subject = root
+					text = "has_crown_authority_cooldown"
+					NAND = {
+						has_variable = crown_authority_cooldown
+						NOT = {
+							culture = { has_innovation = innovation_all_things }
+						}
+					}
+				}
+				has_realm_law = crown_authority_2
+			}
+			can_pass_law_ca3_trigger = yes
+		}
+		
+		pass_cost = {
+			prestige = {
+				if = {
+					limit = {
+						NOT = { has_realm_law = crown_authority_3 }
+					}
+					add = increase_crown_authority_prestige_cost
+				}
+			}
+		}
+		
+		on_pass = {
+			# Increment cooldown breaker tally, if appropriate.
+			calculate_authority_cooldown_break_effect = yes
+			# Set regular cooldown.
+			set_variable = {
+				name = crown_authority_cooldown
+				years = @crown_authority_cooldown_years
+			}
+			# Remove modifiers.
+			remove_law_related_modifiers_effect = yes
+		}
+
+		ai_will_do = {
+			value = 25
+		}
+	}
+}

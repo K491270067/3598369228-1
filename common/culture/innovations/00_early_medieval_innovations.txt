@@ -1,0 +1,366 @@
+﻿#### Local Types ####
+@innovation_SHUILIGONGCHENG = "gfx/interface/icons/culture_innovations/innovation_SHUILIGONGCHENG.png"
+@innovation_NIUGENG = "gfx/interface/icons/culture_innovations/innovation_NIUGENG.png"
+@innovation_ERSHISIJIEQI = "gfx/interface/icons/culture_innovations/innovation_ERSHISIJIEQI.png"
+@innovation_JINGMAIXUESHUO = "gfx/interface/icons/culture_innovations/innovation_JINGMAIXUESHUO.png"
+@innovation_ZHITUSHU = "gfx/interface/icons/culture_innovations/innovation_ZHITUSHU.png"
+@innovation_YUGONG = "gfx/interface/icons/culture_innovations/innovation_YUGONG.png"
+@innovation_KAOGONGJI = "gfx/interface/icons/culture_innovations/innovation_KAOGONGJI.png"
+@innovation_CHENGYUANGONGCHENG = "gfx/interface/icons/culture_innovations/innovation_CHENGYUANGONGCHENG.png"
+@innovation_GONGCHENGGUANLI = "gfx/interface/icons/culture_innovations/innovation_GONGCHENGGUANLI.png"
+@innovation_GONGDIANYISHU = "gfx/interface/icons/culture_innovations/innovation_GONGDIANYISHU.png"
+@innovation_FENGJIANZHI = "gfx/interface/icons/culture_innovations/innovation_FENGJIANZHI.png"
+@innovation_JUNSHITIXI = "gfx/interface/icons/culture_innovations/innovation_JUNSHITIXI.png"
+@innovation_JUNLI = "gfx/interface/icons/culture_innovations/innovation_JUNLI.png"
+@innovation_NU = "gfx/interface/icons/culture_innovations/innovation_NU.png"
+@innovation_JIAN = "gfx/interface/icons/culture_innovations/innovation_JIAN.png"
+@innovation_HUFUQISHE = "gfx/interface/icons/culture_innovations/innovation_HUFUQISHE.png"
+@innovation_ZHOUSHI = "gfx/interface/icons/culture_innovations/innovation_ZHOUSHI.png"
+@innovation_GANGTIEGONGYI = "gfx/interface/icons/culture_innovations/innovation_GANGTIEGONGYI.png"
+@innovation_ZHAJIA = "gfx/interface/icons/culture_innovations/innovation_ZHAJIA.png"
+@innovation_NUPAO = "gfx/interface/icons/culture_innovations/innovation_NUPAO.png"
+@innovation_JUNGONGJUEZHI = "gfx/interface/icons/culture_innovations/innovation_JUNGONGJUEZHI.png"
+#culture_group_civic
+#水利工程
+innovation_SHUILIGONGCHENG = {
+	skill = stewardship
+	group = culture_group_civic
+	culture_era = culture_era_early_medieval
+	icon = @innovation_SHUILIGONGCHENG
+
+	custom = unlock_early_medieval_fortification_buildings
+
+	character_modifier = {
+		
+	}
+
+	flag = global_regular
+	flag = early_medieval_era_regular
+}
+#牛耕
+innovation_NIUGENG = {
+	skill = stewardship
+	group = culture_group_civic
+	culture_era = culture_era_early_medieval
+	icon = @innovation_NIUGENG
+
+	custom = unlock_early_medieval_fortification_buildings
+
+	character_modifier = {
+		
+	}
+
+	flag = global_regular
+	flag = early_medieval_era_regular
+}
+#二十四节气
+innovation_ERSHISIJIEQI = {
+	skill = learning
+	group = culture_group_civic
+	culture_era = culture_era_early_medieval
+	icon = @innovation_ERSHISIJIEQI
+
+	custom = unlock_early_medieval_fortification_buildings
+
+	character_modifier = {
+		
+	}
+
+	flag = global_regular
+	flag = early_medieval_era_regular
+}
+#经脉学说 
+innovation_JINGMAIXUESHUO = {
+	skill = learning
+	group = culture_group_civic
+	culture_era = culture_era_early_medieval
+	icon = @innovation_JINGMAIXUESHUO
+
+	custom = unlock_early_medieval_fortification_buildings
+
+	character_modifier = {
+		
+	}
+
+	flag = global_regular
+	flag = early_medieval_era_regular
+}
+
+#制图术  
+innovation_ZHITUSHU = {
+	skill = learning
+	group = culture_group_civic
+	culture_era = culture_era_early_medieval
+	icon = @innovation_ZHITUSHU
+
+	custom = unlock_early_medieval_fortification_buildings
+
+	character_modifier = {
+		
+	}
+
+	flag = global_regular
+	flag = early_medieval_era_regular
+}
+#禹贡  
+innovation_YUGONG = {
+	skill = learning
+	group = culture_group_civic
+	culture_era = culture_era_early_medieval
+	icon = @innovation_YUGONG
+
+	custom = unlock_early_medieval_fortification_buildings
+
+	character_modifier = {
+		
+	}
+
+	flag = global_regular
+	flag = early_medieval_era_regular
+}
+#考工记  
+innovation_KAOGONGJI = {
+	skill = learning
+	group = culture_group_civic
+	culture_era = culture_era_early_medieval
+	icon = @innovation_KAOGONGJI
+
+	custom = unlock_early_medieval_fortification_buildings
+
+	character_modifier = {
+		
+	}
+
+	flag = global_regular
+	flag = early_medieval_era_regular
+}
+
+#城垣工程
+innovation_CHENGYUANGONGCHENG = {
+	skill = stewardship
+	group = culture_group_civic
+	culture_era = culture_era_early_medieval
+	icon = @innovation_CHENGYUANGONGCHENG
+
+	custom = unlock_early_medieval_fortification_buildings
+
+	character_modifier = {
+		
+	}
+
+	flag = global_regular
+	flag = early_medieval_era_regular
+}
+#工程管理
+innovation_GONGCHENGGUANLI = {
+	skill = stewardship
+	group = culture_group_civic
+	culture_era = culture_era_early_medieval
+	icon = @innovation_GONGCHENGGUANLI
+
+	custom = unlock_early_medieval_fortification_buildings
+
+	character_modifier = {
+		
+	}
+
+	flag = global_regular
+	flag = early_medieval_era_regular
+}
+#宫殿艺术 
+innovation_GONGDIANYISHU = {
+	skill = stewardship
+	group = culture_group_civic
+	culture_era = culture_era_early_medieval
+	icon = @innovation_GONGDIANYISHU
+
+	custom = unlock_early_medieval_fortification_buildings
+
+	character_modifier = {
+		
+	}
+
+	flag = global_regular
+	flag = early_medieval_era_regular
+}
+#封建制 
+innovation_FENGJIANZHI = {
+	skill = stewardship
+	group = culture_group_civic
+	culture_era = culture_era_early_medieval
+	icon = @innovation_FENGJIANZHI
+
+	custom = unlock_early_medieval_fortification_buildings
+
+	character_modifier = {
+		
+	}
+
+	flag = global_regular
+	flag = early_medieval_era_regular
+}
+
+
+
+#culture_group_military
+#军队体系
+innovation_JUNSHITIXI = {
+	skill = martial
+	group = culture_group_military
+	culture_era = culture_era_early_medieval
+	icon = @innovation_JUNSHITIXI
+
+	custom = unlock_early_medieval_fortification_buildings
+
+	character_modifier = {
+		
+	}
+
+	flag = global_regular
+	flag = early_medieval_era_regular
+}
+#军礼
+innovation_JUNLI = {
+	skill = martial
+	group = culture_group_military
+	culture_era = culture_era_early_medieval
+	icon = @innovation_JUNLI
+
+	custom = unlock_early_medieval_fortification_buildings
+
+	character_modifier = {
+		
+	}
+
+	flag = global_regular
+	flag = early_medieval_era_regular
+}
+#弩
+innovation_NU = {
+	skill = martial
+	group = culture_group_military
+	culture_era = culture_era_early_medieval
+	icon = @innovation_NU
+
+	custom = unlock_early_medieval_fortification_buildings
+
+	character_modifier = {
+		
+	}
+
+	flag = global_regular
+	flag = early_medieval_era_regular
+}
+#剑
+innovation_JIAN = {
+	skill = martial
+	group = culture_group_military
+	culture_era = culture_era_early_medieval
+	icon = @innovation_JIAN
+
+	custom = unlock_early_medieval_fortification_buildings
+
+	character_modifier = {
+		
+	}
+
+	flag = global_regular
+	flag = early_medieval_era_regular
+}
+#胡服骑射
+innovation_HUFUQISHE = {
+	skill = martial
+	group = culture_group_military
+	culture_era = culture_era_early_medieval
+	icon = @innovation_HUFUQISHE
+
+	custom = unlock_early_medieval_fortification_buildings
+
+	character_modifier = {
+		
+	}
+
+	flag = global_regular
+	flag = early_medieval_era_regular
+}
+#舟师
+innovation_ZHOUSHI = {
+	skill = martial
+	group = culture_group_military
+	culture_era = culture_era_early_medieval
+	icon = @innovation_ZHOUSHI
+
+	custom = unlock_early_medieval_fortification_buildings
+
+	character_modifier = {
+		
+	}
+
+	flag = global_regular
+	flag = early_medieval_era_regular
+}
+#钢铁工艺
+innovation_GANGTIEGONGYI = {
+	skill = martial
+	group = culture_group_military
+	culture_era = culture_era_early_medieval
+	icon = @innovation_GANGTIEGONGYI
+
+	custom = unlock_early_medieval_fortification_buildings
+
+	character_modifier = {
+		
+	}
+
+	flag = global_regular
+	flag = early_medieval_era_regular
+}
+#札甲
+innovation_ZHAJIA = {
+	skill = martial
+	group = culture_group_military
+	culture_era = culture_era_early_medieval
+	icon = @innovation_ZHAJIA
+
+	custom = unlock_early_medieval_fortification_buildings
+
+	character_modifier = {
+		
+	}
+
+	flag = global_regular
+	flag = early_medieval_era_regular
+}
+
+#弩炮
+innovation_NUPAO = {
+	skill = martial
+	group = culture_group_military
+	culture_era = culture_era_early_medieval
+	icon = @innovation_NUPAO
+
+	custom = unlock_early_medieval_fortification_buildings
+
+	character_modifier = {
+		
+	}
+
+	flag = global_regular
+	flag = early_medieval_era_regular
+}
+#军功爵制
+innovation_JUNGONGJUEZHI = {
+	skill = martial
+	group = culture_group_military
+	culture_era = culture_era_early_medieval
+	icon = @innovation_JUNGONGJUEZHI
+
+	custom = unlock_early_medieval_fortification_buildings
+
+	character_modifier = {
+		
+	}
+
+	flag = global_regular
+	flag = early_medieval_era_regular
+}

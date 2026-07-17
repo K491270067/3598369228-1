@@ -1,0 +1,168 @@
+﻿#############  鑺浗--濮皬 #############
+han1980={
+  name="nanming414"
+  dynasty=xin672
+	religion="xizhouli" 
+	culture="zhou"
+  father=han7
+
+  3560.1.1 = {
+		birth = yes
+	}
+  3617.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1981={
+  name="ding"
+  dynasty_house=house_baijia209#鑺?
+	religion="xizhouli" 
+	culture="zhou"
+  father=han1980
+
+  3581.1.1 = {
+		birth = yes
+	}
+  3646.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1982={
+  name="yiwu"
+  dynasty_house=house_baijia209#鑺?
+	religion="xizhouli" 
+	culture="zhou"
+  father=han1981
+
+  3612.1.1 = {
+		birth = yes
+	}
+  3677.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1983={
+  name="bing"
+  dynasty_house=house_baijia209#鑺?
+	religion="xizhouli" 
+	culture="zhou"
+  father=han1982
+
+  3640.1.1 = {
+		birth = yes
+	}
+  3708.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1984={
+  name="nanming415"
+  dynasty_house=house_baijia209#鑺?
+	religion="xizhouli" 
+	culture="zhou"
+  father=han1983
+
+  3682.1.1 = {
+		birth = yes
+	}
+  3743.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1985={
+  name="nanming417"
+  dynasty_house=house_baijia209#鑺?
+	religion="dongzhouli" 
+	culture="zhou"
+  father=han1984
+
+  3736.1.1 = {
+		birth = yes
+	}
+  3800.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1986={
+  name="chong"
+  dynasty_house=house_baijia209#鑺?
+	religion="dongzhouli" 
+	culture="zhou"
+  father=han1985
+
+  3793.6.2 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han1987={
+  name="jiao"
+  dynasty_house=house_baijia209#鑺?
+	religion="dongzhouli" 
+	culture="zhou"
+  father=han1986
+
+  3824.2.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han1988={
+  name="nvming100"#濂?
+  dynasty_house=house_baijia209#鑺?
+	religion="dongzhouli" 
+	culture="zhou"
+  father=han1986
+  female=yes
+
+  3825.2.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han1989={
+  name="xiu2"
+  dynasty_house=house_baijia209#鑺?
+	religion="dongzhouli" 
+	culture="zhou"
+  father=han1987
+
+  3842.2.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han1990={
+  name="wan2"
+  dynasty_house=house_baijia209#鑺?
+	religion="dongzhouli" 
+	culture="zhou"
+  father=han1987
+
+  3843.5.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}

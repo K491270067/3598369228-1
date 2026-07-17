@@ -1,0 +1,95 @@
+﻿e_shangdi = {
+	3020.1.1 = {
+		holder = han1974
+	}
+	3032.12.31 = {
+		holder = han1976
+	}
+	3034.12.31 = {
+		holder = han1977
+	}
+	3038.1.1 = {
+		holder = han1978
+	}
+	3070.1.1 = {
+		holder = han1979
+	}
+	3090.1.1 = {
+		holder = han1216
+	}
+	3115.12.31 = {
+		holder = han1217
+	}
+	3132.1.1 = {
+		holder = han1218
+	}
+	3144.1.1 = {
+		holder = han1219
+	}
+	3201.1.1 = {
+		holder = han1220
+	}
+	3212.1.1 = {
+		holder = han1221
+	}
+	3222.1.1 = {
+		holder = han1222
+	}
+	3231.1.1 = {
+		holder = han1223
+	}
+	3250.1.1 = {
+		holder = han1224
+	}
+	3264.1.1 = {
+		holder = han1225
+	}
+	3284.1.1 = {
+		holder = han1226
+	}
+	3293.12.1 = {
+		holder = han1227
+	}
+	3299.1.1 = {
+		holder = han1228
+	}
+	3306.1.1 = {
+		holder = han1229
+	}
+	3334.1.1 = {
+		holder = han1230
+	}
+	3348.1.1 = {
+		holder = han1231
+	}
+	3369.1.1 = {
+		holder = han1232
+	}
+	3428.1.1 = {
+		holder = han1234
+	}
+	3435.1.1 = {
+		holder = han1235
+	}
+	3468.1.1 = {
+		holder = han1236
+	}
+	3474.1.1 = {
+		holder = han1237
+	}
+	3480.1.1 = {
+		holder = han1238
+	}
+	3515.1.1 = {
+		holder = han1239
+	}
+	3518.1.1 = {
+		holder = han1240
+	}
+	3544.1.1 = {
+		holder = han1243
+	}
+	3574.1.1 = {
+		holder = 0
+	}
+}

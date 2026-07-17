@@ -1,0 +1,2573 @@
+﻿namespace = rp_merit
+
+rp_merit.0001 = {
+	scope = combat_side
+	hidden = yes
+
+	immediate = {
+		if = {
+			limit = {
+				combat.combat_war = {
+					primary_attacker = { rp_is_merit_system_enabled_trigger = yes }
+				}
+				side_primary_participant = { is_attacker_in_war = root.combat.combat_war }
+			}
+			combat.combat_war.primary_attacker = { save_scope_as = rp_merit_liege }
+		}
+		else_if = {
+			limit = {
+				combat.combat_war = {
+					primary_defender = { rp_is_merit_system_enabled_trigger = yes }
+				}
+				side_primary_participant = { is_defender_in_war = root.combat.combat_war }
+			}
+			combat.combat_war.primary_defender = { save_scope_as = rp_merit_liege }
+		}
+
+		side_commander ?= {
+			save_scope_as = rp_primary_commander
+			if = {
+				limit = { rp_can_receive_merit_from_liege_trigger = { LIEGE = scope:rp_merit_liege } }
+				if = {
+					limit = { scope:wipe = yes }
+					rp_add_merit_effect = { LIEGE = scope:rp_merit_liege VALUE = 24 }
+					rp_check_major_battle_petition_effect = { LIEGE = scope:rp_merit_liege VALUE = 24 }
+				}
+				else = {
+					rp_add_merit_effect = { LIEGE = scope:rp_merit_liege VALUE = 12 }
+				}
+				if = {
+					limit = {
+						OR = {
+							martial >= 20
+							has_trait = education_martial_4
+						}
+					}
+					rp_add_merit_effect = { LIEGE = scope:rp_merit_liege VALUE = 3 }
+				}
+				rp_mark_war_service_participant_effect = yes
+				rp_record_battle_stat_effect = yes
+			}
+		}
+
+		every_side_commander = {
+			limit = {
+				rp_can_receive_merit_from_liege_trigger = { LIEGE = scope:rp_merit_liege }
+				NOT = { this = scope:rp_primary_commander }
+			}
+			if = {
+				limit = { scope:wipe = yes }
+				rp_add_merit_effect = { LIEGE = scope:rp_merit_liege VALUE = 12 }
+			}
+			else = {
+				rp_add_merit_effect = { LIEGE = scope:rp_merit_liege VALUE = 7 }
+			}
+			rp_mark_war_service_participant_effect = yes
+			rp_record_battle_stat_effect = yes
+		}
+
+		every_side_knight = {
+			limit = { rp_can_receive_merit_from_liege_trigger = { LIEGE = scope:rp_merit_liege } }
+			if = {
+				limit = { scope:wipe = yes }
+				rp_add_merit_effect = { LIEGE = scope:rp_merit_liege VALUE = 6 }
+			}
+			else = {
+				rp_add_merit_effect = { LIEGE = scope:rp_merit_liege VALUE = 3 }
+			}
+			rp_mark_war_service_participant_effect = yes
+			rp_record_battle_stat_effect = yes
+		}
+
+		random_side_knight = {
+			limit = { rp_can_receive_merit_from_liege_trigger = { LIEGE = scope:rp_merit_liege } }
+			random = {
+				chance = 35
+				rp_add_merit_effect = { LIEGE = scope:rp_merit_liege VALUE = 8 }
+				if = {
+					limit = {
+						OR = {
+							prowess >= 18
+							martial >= 16
+							has_trait = brave
+						}
+					}
+					rp_add_merit_effect = { LIEGE = scope:rp_merit_liege VALUE = 5 }
+				}
+				if = {
+					limit = { scope:wipe = yes }
+					rp_add_merit_effect = { LIEGE = scope:rp_merit_liege VALUE = 7 }
+				}
+				if = {
+					limit = {
+						root = {
+							scope:rp_merit_liege = { is_attacker_in_war = root.combat.combat_war }
+							combat.combat_war.primary_defender = { highest_held_title_tier >= tier_kingdom }
+						}
+					}
+					rp_add_merit_effect = { LIEGE = scope:rp_merit_liege VALUE = 8 }
+				}
+				else_if = {
+					limit = {
+						root = {
+							scope:rp_merit_liege = { is_defender_in_war = root.combat.combat_war }
+							combat.combat_war.primary_attacker = { highest_held_title_tier >= tier_kingdom }
+						}
+					}
+					rp_add_merit_effect = { LIEGE = scope:rp_merit_liege VALUE = 8 }
+				}
+				rp_record_capture_stat_effect = yes
+				rp_check_major_battle_petition_effect = { LIEGE = scope:rp_merit_liege VALUE = 20 }
+			}
+		}
+	}
+}
+
+rp_merit.1300 = {
+	scope = combat_side
+	hidden = yes
+
+	immediate = {
+		side_primary_participant = { save_scope_as = rp_merit_liege }
+		side_commander ?= {
+			if = {
+				limit = {
+					is_ai = no
+					NOT = { this = scope:rp_merit_liege }
+				}
+				if = {
+					limit = { scope:wipe = yes }
+					rp_add_merit_effect = { LIEGE = scope:rp_merit_liege VALUE = 18 }
+				}
+				else = {
+					rp_add_merit_effect = { LIEGE = scope:rp_merit_liege VALUE = 12 }
+				}
+				rp_mark_war_service_participant_effect = yes
+				rp_record_battle_stat_effect = yes
+			}
+		}
+		every_side_knight = {
+			limit = {
+				is_ai = no
+				NOT = { this = scope:rp_merit_liege }
+			}
+			if = {
+				limit = { scope:wipe = yes }
+				rp_add_merit_effect = { LIEGE = scope:rp_merit_liege VALUE = 6 }
+			}
+			else = {
+				rp_add_merit_effect = { LIEGE = scope:rp_merit_liege VALUE = 4 }
+			}
+			rp_mark_war_service_participant_effect = yes
+			rp_record_battle_stat_effect = yes
+		}
+	}
+}
+
+rp_merit.1302 = {
+	scope = combat_side
+	hidden = yes
+
+	immediate = {
+		side_primary_participant = { save_scope_as = rp_merit_liege }
+		side_commander ?= {
+			if = {
+				limit = {
+					is_ai = no
+					NOT = { this = scope:rp_merit_liege }
+				}
+				if = {
+					limit = { scope:wipe = yes }
+					rp_add_merit_effect = { LIEGE = scope:rp_merit_liege VALUE = -10 }
+				}
+				else = {
+					rp_add_merit_effect = { LIEGE = scope:rp_merit_liege VALUE = -6 }
+				}
+				rp_mark_war_service_participant_effect = yes
+				rp_record_battle_stat_effect = yes
+			}
+		}
+		every_side_knight = {
+			limit = {
+				is_ai = no
+				NOT = { this = scope:rp_merit_liege }
+			}
+			if = {
+				limit = { scope:wipe = yes }
+				rp_add_merit_effect = { LIEGE = scope:rp_merit_liege VALUE = -4 }
+			}
+			else = {
+				rp_add_merit_effect = { LIEGE = scope:rp_merit_liege VALUE = -2 }
+			}
+			rp_mark_war_service_participant_effect = yes
+			rp_record_battle_stat_effect = yes
+		}
+	}
+}
+
+rp_merit.1301 = {
+	type = character_event
+	title = rp_merit.1301.t
+	theme = diplomacy
+	override_background = { reference = throne_room_east }
+	desc = rp_merit.1301.desc
+	right_portrait = scope:rp_petition_liege
+
+	trigger = {
+		exists = scope:rp_petition_liege
+		has_variable = rp_merit_score
+		var:rp_merit_score >= 30
+	}
+
+	option = {
+		name = rp_merit.1301.a
+		trigger = {
+			scope:rp_petition_liege = { gold >= 40 }
+		}
+		scope:rp_petition_liege = { remove_short_term_gold = 40 }
+		add_gold = 40
+		rp_consume_merit_effect = { VALUE = 10 }
+		add_character_flag = {
+			flag = rp_petition_recently_handled
+			days = 180
+		}
+		scope:rp_petition_liege = {
+			add_opinion = {
+				target = root
+				modifier = rp_merit_reward_gold_opinion
+			}
+		}
+	}
+
+	option = {
+		name = rp_merit.1301.b
+		if = {
+			limit = { NOT = { has_trait = rp_merit_honor_1 } }
+			add_trait = rp_merit_honor_1
+		}
+		add_character_modifier = {
+			modifier = rp_merit_honored_modifier
+			years = 10
+		}
+		rp_consume_merit_effect = { VALUE = 10 }
+		add_character_flag = {
+			flag = rp_petition_recently_handled
+			days = 180
+		}
+		scope:rp_petition_liege = {
+			add_opinion = {
+				target = root
+				modifier = rp_merit_reward_honor_opinion
+			}
+		}
+	}
+
+	option = {
+		name = rp_merit.1301.c
+		trigger = {
+			var:rp_merit_score >= 60
+			highest_held_title_tier >= tier_county
+			highest_held_title_tier < tier_kingdom
+			scope:rp_petition_liege = { rp_has_grantable_duchy_trigger = yes }
+		}
+		scope:rp_petition_liege = {
+			random_held_title = {
+				limit = {
+					tier = tier_duchy
+					is_landless_type_title = no
+					NOT = { this = scope:rp_petition_liege.primary_title }
+					NOT = { this = scope:rp_petition_liege.capital_county.de_jure_liege }
+					any_de_jure_county = {
+						holder = scope:rp_petition_liege
+						NOT = { this = scope:rp_petition_liege.capital_county }
+					}
+				}
+				create_title_and_vassal_change = {
+					type = granted
+					save_scope_as = change
+					add_claim_on_loss = no
+				}
+				random_de_jure_county = {
+					limit = {
+						holder = scope:rp_petition_liege
+						NOT = { this = scope:rp_petition_liege.capital_county }
+					}
+					change_title_holder = {
+						holder = root
+						change = scope:change
+						take_baronies = no
+					}
+				}
+				change_title_holder = {
+					holder = root
+					change = scope:change
+				}
+				resolve_title_and_vassal_change = scope:change
+			}
+			root = { rp_correct_reward_government_effect = yes }
+		}
+		set_variable = { name = rp_merit_score value = 0 }
+		add_character_flag = {
+			flag = rp_petition_recently_handled
+			days = 365
+		}
+	}
+
+	option = {
+		name = rp_merit.1301.e
+		trigger = {
+			var:rp_merit_score >= 30
+			can_add_hook = {
+				target = scope:rp_petition_liege
+				type = favor_hook
+			}
+		}
+		add_hook = {
+			target = scope:rp_petition_liege
+			type = favor_hook
+		}
+		rp_consume_merit_effect = { VALUE = 8 }
+		add_character_flag = {
+			flag = rp_petition_recently_handled
+			days = 180
+		}
+	}
+
+	option = {
+		name = rp_merit.1301.f
+		trigger = {
+			var:rp_merit_score >= 90
+			can_add_hook = {
+				target = scope:rp_petition_liege
+				type = strong_obligation_hook
+			}
+		}
+		add_hook = {
+			target = scope:rp_petition_liege
+			type = strong_obligation_hook
+		}
+		rp_consume_merit_effect = { VALUE = 25 }
+		add_character_flag = {
+			flag = rp_petition_recently_handled
+			days = 180
+		}
+	}
+
+	option = {
+		name = rp_merit.1301.d
+		add_character_modifier = {
+			modifier = rp_merit_resentful_modifier
+			years = 3
+		}
+		add_character_flag = {
+			flag = rp_petition_recently_handled
+			days = 90
+		}
+	}
+}
+
+rp_merit.0003 = {
+	scope = combat_side
+	hidden = yes
+
+	immediate = {
+		if = {
+			limit = {
+				combat.combat_war = {
+					primary_attacker = { rp_is_merit_system_enabled_trigger = yes }
+				}
+				side_primary_participant = { is_attacker_in_war = root.combat.combat_war }
+			}
+			combat.combat_war.primary_attacker = { save_scope_as = rp_merit_liege }
+		}
+		else_if = {
+			limit = {
+				combat.combat_war = {
+					primary_defender = { rp_is_merit_system_enabled_trigger = yes }
+				}
+				side_primary_participant = { is_defender_in_war = root.combat.combat_war }
+			}
+			combat.combat_war.primary_defender = { save_scope_as = rp_merit_liege }
+		}
+
+		side_commander ?= {
+			save_scope_as = rp_primary_commander
+			if = {
+				limit = { rp_can_receive_merit_from_liege_trigger = { LIEGE = scope:rp_merit_liege } }
+				if = {
+					limit = { scope:wipe = yes }
+					rp_add_merit_effect = { LIEGE = scope:rp_merit_liege VALUE = -15 }
+					rp_check_major_penalty_effect = { LIEGE = scope:rp_merit_liege VALUE = -15 }
+				}
+				else = {
+					rp_add_merit_effect = { LIEGE = scope:rp_merit_liege VALUE = -5 }
+				}
+				rp_mark_war_service_participant_effect = yes
+				rp_record_battle_stat_effect = yes
+			}
+		}
+
+		every_side_commander = {
+			limit = {
+				rp_can_receive_merit_from_liege_trigger = { LIEGE = scope:rp_merit_liege }
+				NOT = { this = scope:rp_primary_commander }
+			}
+			if = {
+				limit = { scope:wipe = yes }
+				rp_add_merit_effect = { LIEGE = scope:rp_merit_liege VALUE = -9 }
+				rp_check_major_penalty_effect = { LIEGE = scope:rp_merit_liege VALUE = -9 }
+			}
+			else = {
+				rp_add_merit_effect = { LIEGE = scope:rp_merit_liege VALUE = -3 }
+			}
+			rp_mark_war_service_participant_effect = yes
+			rp_record_battle_stat_effect = yes
+		}
+
+		every_side_knight = {
+			limit = { rp_can_receive_merit_from_liege_trigger = { LIEGE = scope:rp_merit_liege } }
+			if = {
+				limit = { scope:wipe = yes }
+				rp_add_merit_effect = { LIEGE = scope:rp_merit_liege VALUE = -4 }
+			}
+			else = {
+				rp_add_merit_effect = { LIEGE = scope:rp_merit_liege VALUE = -1 }
+			}
+			rp_mark_war_service_participant_effect = yes
+			rp_record_battle_stat_effect = yes
+		}
+	}
+}
+rp_merit.0002 = {
+	type = character_event
+	hidden = yes
+
+	immediate = {
+		if = {
+			limit = {
+				scope:war = {
+					primary_attacker = {
+						rp_is_merit_system_enabled_trigger = yes
+						OR = {
+							this = root
+							this = root.top_liege
+						}
+					}
+				}
+			}
+			scope:war.primary_attacker = { save_scope_as = rp_merit_liege }
+		}
+		else_if = {
+			limit = {
+				scope:war = {
+					primary_defender = {
+						rp_is_merit_system_enabled_trigger = yes
+						OR = {
+							this = root
+							this = root.top_liege
+						}
+					}
+				}
+			}
+			scope:war.primary_defender = { save_scope_as = rp_merit_liege }
+		}
+		if = {
+			limit = {
+				exists = scope:war
+				exists = scope:rp_merit_liege
+				scope:rp_merit_liege = { rp_is_merit_system_enabled_trigger = yes }
+			}
+			if = {
+				limit = { rp_can_receive_merit_from_liege_trigger = { LIEGE = scope:rp_merit_liege } }
+				rp_add_merit_effect = { LIEGE = scope:rp_merit_liege VALUE = 10 }
+				rp_record_siege_stat_effect = yes
+				rp_mark_war_service_participant_effect = yes
+			}
+			else_if = {
+				limit = { this = scope:rp_merit_liege }
+				every_knight = {
+					limit = {
+						rp_can_receive_merit_from_liege_trigger = { LIEGE = root }
+						has_character_flag = rp_war_service_participant
+					}
+					rp_add_merit_effect = { LIEGE = root VALUE = 2 }
+					rp_record_siege_stat_effect = yes
+				}
+				every_vassal_or_below = {
+					limit = {
+						rp_can_receive_merit_from_liege_trigger = { LIEGE = root }
+						has_character_flag = rp_war_service_participant
+					}
+					rp_add_merit_effect = { LIEGE = root VALUE = 2 }
+					rp_record_siege_stat_effect = yes
+				}
+			}
+		}
+
+		if = {
+			limit = {
+				exists = scope:previous_controller
+				scope:previous_controller = {
+					OR = {
+						rp_can_receive_merit_from_liege_trigger = { LIEGE = scope:war.primary_attacker }
+						rp_can_receive_merit_from_liege_trigger = { LIEGE = scope:war.primary_defender }
+					}
+				}
+			}
+			if = {
+				limit = {
+					scope:war.primary_attacker = { rp_is_merit_system_enabled_trigger = yes }
+					scope:previous_controller = { rp_can_receive_merit_from_liege_trigger = { LIEGE = scope:war.primary_attacker } }
+				}
+				scope:previous_controller = {
+					rp_add_merit_effect = { LIEGE = scope:war.primary_attacker VALUE = -10 }
+					rp_record_siege_stat_effect = yes
+					rp_check_major_penalty_effect = { LIEGE = scope:war.primary_attacker VALUE = -10 }
+				}
+			}
+			else_if = {
+				limit = {
+					scope:war.primary_defender = { rp_is_merit_system_enabled_trigger = yes }
+					scope:previous_controller = { rp_can_receive_merit_from_liege_trigger = { LIEGE = scope:war.primary_defender } }
+				}
+				scope:previous_controller = {
+					rp_add_merit_effect = { LIEGE = scope:war.primary_defender VALUE = -10 }
+					rp_record_siege_stat_effect = yes
+					rp_check_major_penalty_effect = { LIEGE = scope:war.primary_defender VALUE = -10 }
+				}
+			}
+		}
+	}
+}
+
+rp_merit.0200 = {
+	type = character_event
+	title = rp_merit.0200.t
+	theme = diplomacy
+	override_background = { reference = throne_room_east }
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { exists = scope:rp_roster_100 }
+				desc = rp_merit.0200.desc.100
+			}
+			triggered_desc = {
+				trigger = { exists = scope:rp_roster_99 }
+				desc = rp_merit.0200.desc.99
+			}
+			triggered_desc = {
+				trigger = { exists = scope:rp_roster_98 }
+				desc = rp_merit.0200.desc.98
+			}
+			triggered_desc = {
+				trigger = { exists = scope:rp_roster_97 }
+				desc = rp_merit.0200.desc.97
+			}
+			triggered_desc = {
+				trigger = { exists = scope:rp_roster_96 }
+				desc = rp_merit.0200.desc.96
+			}
+			triggered_desc = {
+				trigger = { exists = scope:rp_roster_95 }
+				desc = rp_merit.0200.desc.95
+			}
+			triggered_desc = {
+				trigger = { exists = scope:rp_roster_94 }
+				desc = rp_merit.0200.desc.94
+			}
+			triggered_desc = {
+				trigger = { exists = scope:rp_roster_93 }
+				desc = rp_merit.0200.desc.93
+			}
+			triggered_desc = {
+				trigger = { exists = scope:rp_roster_92 }
+				desc = rp_merit.0200.desc.92
+			}
+			triggered_desc = {
+				trigger = { exists = scope:rp_roster_91 }
+				desc = rp_merit.0200.desc.91
+			}
+			triggered_desc = {
+				trigger = { exists = scope:rp_roster_90 }
+				desc = rp_merit.0200.desc.90
+			}
+			triggered_desc = {
+				trigger = { exists = scope:rp_roster_89 }
+				desc = rp_merit.0200.desc.89
+			}
+			triggered_desc = {
+				trigger = { exists = scope:rp_roster_88 }
+				desc = rp_merit.0200.desc.88
+			}
+			triggered_desc = {
+				trigger = { exists = scope:rp_roster_87 }
+				desc = rp_merit.0200.desc.87
+			}
+			triggered_desc = {
+				trigger = { exists = scope:rp_roster_86 }
+				desc = rp_merit.0200.desc.86
+			}
+			triggered_desc = {
+				trigger = { exists = scope:rp_roster_85 }
+				desc = rp_merit.0200.desc.85
+			}
+			triggered_desc = {
+				trigger = { exists = scope:rp_roster_84 }
+				desc = rp_merit.0200.desc.84
+			}
+			triggered_desc = {
+				trigger = { exists = scope:rp_roster_83 }
+				desc = rp_merit.0200.desc.83
+			}
+			triggered_desc = {
+				trigger = { exists = scope:rp_roster_82 }
+				desc = rp_merit.0200.desc.82
+			}
+			triggered_desc = {
+				trigger = { exists = scope:rp_roster_81 }
+				desc = rp_merit.0200.desc.81
+			}
+			triggered_desc = {
+				trigger = { exists = scope:rp_roster_80 }
+				desc = rp_merit.0200.desc.80
+			}
+			triggered_desc = {
+				trigger = { exists = scope:rp_roster_79 }
+				desc = rp_merit.0200.desc.79
+			}
+			triggered_desc = {
+				trigger = { exists = scope:rp_roster_78 }
+				desc = rp_merit.0200.desc.78
+			}
+			triggered_desc = {
+				trigger = { exists = scope:rp_roster_77 }
+				desc = rp_merit.0200.desc.77
+			}
+			triggered_desc = {
+				trigger = { exists = scope:rp_roster_76 }
+				desc = rp_merit.0200.desc.76
+			}
+			triggered_desc = {
+				trigger = { exists = scope:rp_roster_75 }
+				desc = rp_merit.0200.desc.75
+			}
+			triggered_desc = {
+				trigger = { exists = scope:rp_roster_74 }
+				desc = rp_merit.0200.desc.74
+			}
+			triggered_desc = {
+				trigger = { exists = scope:rp_roster_73 }
+				desc = rp_merit.0200.desc.73
+			}
+			triggered_desc = {
+				trigger = { exists = scope:rp_roster_72 }
+				desc = rp_merit.0200.desc.72
+			}
+			triggered_desc = {
+				trigger = { exists = scope:rp_roster_71 }
+				desc = rp_merit.0200.desc.71
+			}
+			triggered_desc = {
+				trigger = { exists = scope:rp_roster_70 }
+				desc = rp_merit.0200.desc.70
+			}
+			triggered_desc = {
+				trigger = { exists = scope:rp_roster_69 }
+				desc = rp_merit.0200.desc.69
+			}
+			triggered_desc = {
+				trigger = { exists = scope:rp_roster_68 }
+				desc = rp_merit.0200.desc.68
+			}
+			triggered_desc = {
+				trigger = { exists = scope:rp_roster_67 }
+				desc = rp_merit.0200.desc.67
+			}
+			triggered_desc = {
+				trigger = { exists = scope:rp_roster_66 }
+				desc = rp_merit.0200.desc.66
+			}
+			triggered_desc = {
+				trigger = { exists = scope:rp_roster_65 }
+				desc = rp_merit.0200.desc.65
+			}
+			triggered_desc = {
+				trigger = { exists = scope:rp_roster_64 }
+				desc = rp_merit.0200.desc.64
+			}
+			triggered_desc = {
+				trigger = { exists = scope:rp_roster_63 }
+				desc = rp_merit.0200.desc.63
+			}
+			triggered_desc = {
+				trigger = { exists = scope:rp_roster_62 }
+				desc = rp_merit.0200.desc.62
+			}
+			triggered_desc = {
+				trigger = { exists = scope:rp_roster_61 }
+				desc = rp_merit.0200.desc.61
+			}
+			triggered_desc = {
+				trigger = { exists = scope:rp_roster_60 }
+				desc = rp_merit.0200.desc.60
+			}
+			triggered_desc = {
+				trigger = { exists = scope:rp_roster_59 }
+				desc = rp_merit.0200.desc.59
+			}
+			triggered_desc = {
+				trigger = { exists = scope:rp_roster_58 }
+				desc = rp_merit.0200.desc.58
+			}
+			triggered_desc = {
+				trigger = { exists = scope:rp_roster_57 }
+				desc = rp_merit.0200.desc.57
+			}
+			triggered_desc = {
+				trigger = { exists = scope:rp_roster_56 }
+				desc = rp_merit.0200.desc.56
+			}
+			triggered_desc = {
+				trigger = { exists = scope:rp_roster_55 }
+				desc = rp_merit.0200.desc.55
+			}
+			triggered_desc = {
+				trigger = { exists = scope:rp_roster_54 }
+				desc = rp_merit.0200.desc.54
+			}
+			triggered_desc = {
+				trigger = { exists = scope:rp_roster_53 }
+				desc = rp_merit.0200.desc.53
+			}
+			triggered_desc = {
+				trigger = { exists = scope:rp_roster_52 }
+				desc = rp_merit.0200.desc.52
+			}
+			triggered_desc = {
+				trigger = { exists = scope:rp_roster_51 }
+				desc = rp_merit.0200.desc.51
+			}
+			triggered_desc = {
+				trigger = { exists = scope:rp_roster_50 }
+				desc = rp_merit.0200.desc.50
+			}
+			triggered_desc = {
+				trigger = { exists = scope:rp_roster_49 }
+				desc = rp_merit.0200.desc.49
+			}
+			triggered_desc = {
+				trigger = { exists = scope:rp_roster_48 }
+				desc = rp_merit.0200.desc.48
+			}
+			triggered_desc = {
+				trigger = { exists = scope:rp_roster_47 }
+				desc = rp_merit.0200.desc.47
+			}
+			triggered_desc = {
+				trigger = { exists = scope:rp_roster_46 }
+				desc = rp_merit.0200.desc.46
+			}
+			triggered_desc = {
+				trigger = { exists = scope:rp_roster_45 }
+				desc = rp_merit.0200.desc.45
+			}
+			triggered_desc = {
+				trigger = { exists = scope:rp_roster_44 }
+				desc = rp_merit.0200.desc.44
+			}
+			triggered_desc = {
+				trigger = { exists = scope:rp_roster_43 }
+				desc = rp_merit.0200.desc.43
+			}
+			triggered_desc = {
+				trigger = { exists = scope:rp_roster_42 }
+				desc = rp_merit.0200.desc.42
+			}
+			triggered_desc = {
+				trigger = { exists = scope:rp_roster_41 }
+				desc = rp_merit.0200.desc.41
+			}
+			triggered_desc = {
+				trigger = { exists = scope:rp_roster_40 }
+				desc = rp_merit.0200.desc.40
+			}
+			triggered_desc = {
+				trigger = { exists = scope:rp_roster_39 }
+				desc = rp_merit.0200.desc.39
+			}
+			triggered_desc = {
+				trigger = { exists = scope:rp_roster_38 }
+				desc = rp_merit.0200.desc.38
+			}
+			triggered_desc = {
+				trigger = { exists = scope:rp_roster_37 }
+				desc = rp_merit.0200.desc.37
+			}
+			triggered_desc = {
+				trigger = { exists = scope:rp_roster_36 }
+				desc = rp_merit.0200.desc.36
+			}
+			triggered_desc = {
+				trigger = { exists = scope:rp_roster_35 }
+				desc = rp_merit.0200.desc.35
+			}
+			triggered_desc = {
+				trigger = { exists = scope:rp_roster_34 }
+				desc = rp_merit.0200.desc.34
+			}
+			triggered_desc = {
+				trigger = { exists = scope:rp_roster_33 }
+				desc = rp_merit.0200.desc.33
+			}
+			triggered_desc = {
+				trigger = { exists = scope:rp_roster_32 }
+				desc = rp_merit.0200.desc.32
+			}
+			triggered_desc = {
+				trigger = { exists = scope:rp_roster_31 }
+				desc = rp_merit.0200.desc.31
+			}
+			triggered_desc = {
+				trigger = { exists = scope:rp_roster_30 }
+				desc = rp_merit.0200.desc.30
+			}
+			triggered_desc = {
+				trigger = { exists = scope:rp_roster_29 }
+				desc = rp_merit.0200.desc.29
+			}
+			triggered_desc = {
+				trigger = { exists = scope:rp_roster_28 }
+				desc = rp_merit.0200.desc.28
+			}
+			triggered_desc = {
+				trigger = { exists = scope:rp_roster_27 }
+				desc = rp_merit.0200.desc.27
+			}
+			triggered_desc = {
+				trigger = { exists = scope:rp_roster_26 }
+				desc = rp_merit.0200.desc.26
+			}
+			triggered_desc = {
+				trigger = { exists = scope:rp_roster_25 }
+				desc = rp_merit.0200.desc.25
+			}
+			triggered_desc = {
+				trigger = { exists = scope:rp_roster_24 }
+				desc = rp_merit.0200.desc.24
+			}
+			triggered_desc = {
+				trigger = { exists = scope:rp_roster_23 }
+				desc = rp_merit.0200.desc.23
+			}
+			triggered_desc = {
+				trigger = { exists = scope:rp_roster_22 }
+				desc = rp_merit.0200.desc.22
+			}
+			triggered_desc = {
+				trigger = { exists = scope:rp_roster_21 }
+				desc = rp_merit.0200.desc.21
+			}
+			triggered_desc = {
+				trigger = { exists = scope:rp_roster_20 }
+				desc = rp_merit.0200.desc.20
+			}
+			triggered_desc = {
+				trigger = { exists = scope:rp_roster_19 }
+				desc = rp_merit.0200.desc.19
+			}
+			triggered_desc = {
+				trigger = { exists = scope:rp_roster_18 }
+				desc = rp_merit.0200.desc.18
+			}
+			triggered_desc = {
+				trigger = { exists = scope:rp_roster_17 }
+				desc = rp_merit.0200.desc.17
+			}
+			triggered_desc = {
+				trigger = { exists = scope:rp_roster_16 }
+				desc = rp_merit.0200.desc.16
+			}
+			triggered_desc = {
+				trigger = { exists = scope:rp_roster_15 }
+				desc = rp_merit.0200.desc.15
+			}
+			triggered_desc = {
+				trigger = { exists = scope:rp_roster_14 }
+				desc = rp_merit.0200.desc.14
+			}
+			triggered_desc = {
+				trigger = { exists = scope:rp_roster_13 }
+				desc = rp_merit.0200.desc.13
+			}
+			triggered_desc = {
+				trigger = { exists = scope:rp_roster_12 }
+				desc = rp_merit.0200.desc.12
+			}
+			triggered_desc = {
+				trigger = { exists = scope:rp_roster_11 }
+				desc = rp_merit.0200.desc.11
+			}
+			triggered_desc = {
+				trigger = { exists = scope:rp_roster_10 }
+				desc = rp_merit.0200.desc.10
+			}
+			triggered_desc = {
+				trigger = { exists = scope:rp_roster_9 }
+				desc = rp_merit.0200.desc.9
+			}
+			triggered_desc = {
+				trigger = { exists = scope:rp_roster_8 }
+				desc = rp_merit.0200.desc.8
+			}
+			triggered_desc = {
+				trigger = { exists = scope:rp_roster_7 }
+				desc = rp_merit.0200.desc.7
+			}
+			triggered_desc = {
+				trigger = { exists = scope:rp_roster_6 }
+				desc = rp_merit.0200.desc.6
+			}
+			triggered_desc = {
+				trigger = { exists = scope:rp_roster_5 }
+				desc = rp_merit.0200.desc.5
+			}
+			triggered_desc = {
+				trigger = { exists = scope:rp_roster_4 }
+				desc = rp_merit.0200.desc.4
+			}
+			triggered_desc = {
+				trigger = { exists = scope:rp_roster_3 }
+				desc = rp_merit.0200.desc.3
+			}
+			triggered_desc = {
+				trigger = { exists = scope:rp_roster_2 }
+				desc = rp_merit.0200.desc.2
+			}
+			triggered_desc = {
+				trigger = { exists = scope:rp_roster_1 }
+				desc = rp_merit.0200.desc.1
+			}
+			desc = rp_merit.0200.desc.none
+		}
+	}
+
+	immediate = {
+		rp_collect_merit_candidates_effect = yes
+		ordered_in_list = {
+			list = rp_merit_candidates
+			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_1
+			remove_from_list = rp_merit_candidates
+		}
+		ordered_in_list = {
+			list = rp_merit_candidates
+			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_2
+			remove_from_list = rp_merit_candidates
+		}
+		ordered_in_list = {
+			list = rp_merit_candidates
+			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_3
+			remove_from_list = rp_merit_candidates
+		}
+		ordered_in_list = {
+			list = rp_merit_candidates
+			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_4
+			remove_from_list = rp_merit_candidates
+		}
+		ordered_in_list = {
+			list = rp_merit_candidates
+			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_5
+			remove_from_list = rp_merit_candidates
+		}
+		ordered_in_list = {
+			list = rp_merit_candidates
+			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_6
+			remove_from_list = rp_merit_candidates
+		}
+		ordered_in_list = {
+			list = rp_merit_candidates
+			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_7
+			remove_from_list = rp_merit_candidates
+		}
+		ordered_in_list = {
+			list = rp_merit_candidates
+			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_8
+			remove_from_list = rp_merit_candidates
+		}
+		ordered_in_list = {
+			list = rp_merit_candidates
+			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_9
+			remove_from_list = rp_merit_candidates
+		}
+		ordered_in_list = {
+			list = rp_merit_candidates
+			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_10
+			remove_from_list = rp_merit_candidates
+		}
+		ordered_in_list = {
+			list = rp_merit_candidates
+			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_11
+			remove_from_list = rp_merit_candidates
+		}
+		ordered_in_list = {
+			list = rp_merit_candidates
+			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_12
+			remove_from_list = rp_merit_candidates
+		}
+		ordered_in_list = {
+			list = rp_merit_candidates
+			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_13
+			remove_from_list = rp_merit_candidates
+		}
+		ordered_in_list = {
+			list = rp_merit_candidates
+			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_14
+			remove_from_list = rp_merit_candidates
+		}
+		ordered_in_list = {
+			list = rp_merit_candidates
+			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_15
+			remove_from_list = rp_merit_candidates
+		}
+		ordered_in_list = {
+			list = rp_merit_candidates
+			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_16
+			remove_from_list = rp_merit_candidates
+		}
+		ordered_in_list = {
+			list = rp_merit_candidates
+			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_17
+			remove_from_list = rp_merit_candidates
+		}
+		ordered_in_list = {
+			list = rp_merit_candidates
+			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_18
+			remove_from_list = rp_merit_candidates
+		}
+		ordered_in_list = {
+			list = rp_merit_candidates
+			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_19
+			remove_from_list = rp_merit_candidates
+		}
+		ordered_in_list = {
+			list = rp_merit_candidates
+			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_20
+			remove_from_list = rp_merit_candidates
+		}
+		ordered_in_list = {
+			list = rp_merit_candidates
+			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_21
+			remove_from_list = rp_merit_candidates
+		}
+		ordered_in_list = {
+			list = rp_merit_candidates
+			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_22
+			remove_from_list = rp_merit_candidates
+		}
+		ordered_in_list = {
+			list = rp_merit_candidates
+			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_23
+			remove_from_list = rp_merit_candidates
+		}
+		ordered_in_list = {
+			list = rp_merit_candidates
+			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_24
+			remove_from_list = rp_merit_candidates
+		}
+		ordered_in_list = {
+			list = rp_merit_candidates
+			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_25
+			remove_from_list = rp_merit_candidates
+		}
+		ordered_in_list = {
+			list = rp_merit_candidates
+			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_26
+			remove_from_list = rp_merit_candidates
+		}
+		ordered_in_list = {
+			list = rp_merit_candidates
+			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_27
+			remove_from_list = rp_merit_candidates
+		}
+		ordered_in_list = {
+			list = rp_merit_candidates
+			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_28
+			remove_from_list = rp_merit_candidates
+		}
+		ordered_in_list = {
+			list = rp_merit_candidates
+			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_29
+			remove_from_list = rp_merit_candidates
+		}
+		ordered_in_list = {
+			list = rp_merit_candidates
+			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_30
+			remove_from_list = rp_merit_candidates
+		}
+		ordered_in_list = {
+			list = rp_merit_candidates
+			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_31
+			remove_from_list = rp_merit_candidates
+		}
+		ordered_in_list = {
+			list = rp_merit_candidates
+			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_32
+			remove_from_list = rp_merit_candidates
+		}
+		ordered_in_list = {
+			list = rp_merit_candidates
+			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_33
+			remove_from_list = rp_merit_candidates
+		}
+		ordered_in_list = {
+			list = rp_merit_candidates
+			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_34
+			remove_from_list = rp_merit_candidates
+		}
+		ordered_in_list = {
+			list = rp_merit_candidates
+			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_35
+			remove_from_list = rp_merit_candidates
+		}
+		ordered_in_list = {
+			list = rp_merit_candidates
+			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_36
+			remove_from_list = rp_merit_candidates
+		}
+		ordered_in_list = {
+			list = rp_merit_candidates
+			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_37
+			remove_from_list = rp_merit_candidates
+		}
+		ordered_in_list = {
+			list = rp_merit_candidates
+			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_38
+			remove_from_list = rp_merit_candidates
+		}
+		ordered_in_list = {
+			list = rp_merit_candidates
+			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_39
+			remove_from_list = rp_merit_candidates
+		}
+		ordered_in_list = {
+			list = rp_merit_candidates
+			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_40
+			remove_from_list = rp_merit_candidates
+		}
+		ordered_in_list = {
+			list = rp_merit_candidates
+			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_41
+			remove_from_list = rp_merit_candidates
+		}
+		ordered_in_list = {
+			list = rp_merit_candidates
+			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_42
+			remove_from_list = rp_merit_candidates
+		}
+		ordered_in_list = {
+			list = rp_merit_candidates
+			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_43
+			remove_from_list = rp_merit_candidates
+		}
+		ordered_in_list = {
+			list = rp_merit_candidates
+			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_44
+			remove_from_list = rp_merit_candidates
+		}
+		ordered_in_list = {
+			list = rp_merit_candidates
+			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_45
+			remove_from_list = rp_merit_candidates
+		}
+		ordered_in_list = {
+			list = rp_merit_candidates
+			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_46
+			remove_from_list = rp_merit_candidates
+		}
+		ordered_in_list = {
+			list = rp_merit_candidates
+			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_47
+			remove_from_list = rp_merit_candidates
+		}
+		ordered_in_list = {
+			list = rp_merit_candidates
+			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_48
+			remove_from_list = rp_merit_candidates
+		}
+		ordered_in_list = {
+			list = rp_merit_candidates
+			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_49
+			remove_from_list = rp_merit_candidates
+		}
+		ordered_in_list = {
+			list = rp_merit_candidates
+			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_50
+			remove_from_list = rp_merit_candidates
+		}
+		ordered_in_list = {
+			list = rp_merit_candidates
+			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_51
+			remove_from_list = rp_merit_candidates
+		}
+		ordered_in_list = {
+			list = rp_merit_candidates
+			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_52
+			remove_from_list = rp_merit_candidates
+		}
+		ordered_in_list = {
+			list = rp_merit_candidates
+			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_53
+			remove_from_list = rp_merit_candidates
+		}
+		ordered_in_list = {
+			list = rp_merit_candidates
+			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_54
+			remove_from_list = rp_merit_candidates
+		}
+		ordered_in_list = {
+			list = rp_merit_candidates
+			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_55
+			remove_from_list = rp_merit_candidates
+		}
+		ordered_in_list = {
+			list = rp_merit_candidates
+			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_56
+			remove_from_list = rp_merit_candidates
+		}
+		ordered_in_list = {
+			list = rp_merit_candidates
+			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_57
+			remove_from_list = rp_merit_candidates
+		}
+		ordered_in_list = {
+			list = rp_merit_candidates
+			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_58
+			remove_from_list = rp_merit_candidates
+		}
+		ordered_in_list = {
+			list = rp_merit_candidates
+			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_59
+			remove_from_list = rp_merit_candidates
+		}
+		ordered_in_list = {
+			list = rp_merit_candidates
+			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_60
+			remove_from_list = rp_merit_candidates
+		}
+		ordered_in_list = {
+			list = rp_merit_candidates
+			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_61
+			remove_from_list = rp_merit_candidates
+		}
+		ordered_in_list = {
+			list = rp_merit_candidates
+			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_62
+			remove_from_list = rp_merit_candidates
+		}
+		ordered_in_list = {
+			list = rp_merit_candidates
+			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_63
+			remove_from_list = rp_merit_candidates
+		}
+		ordered_in_list = {
+			list = rp_merit_candidates
+			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_64
+			remove_from_list = rp_merit_candidates
+		}
+		ordered_in_list = {
+			list = rp_merit_candidates
+			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_65
+			remove_from_list = rp_merit_candidates
+		}
+		ordered_in_list = {
+			list = rp_merit_candidates
+			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_66
+			remove_from_list = rp_merit_candidates
+		}
+		ordered_in_list = {
+			list = rp_merit_candidates
+			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_67
+			remove_from_list = rp_merit_candidates
+		}
+		ordered_in_list = {
+			list = rp_merit_candidates
+			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_68
+			remove_from_list = rp_merit_candidates
+		}
+		ordered_in_list = {
+			list = rp_merit_candidates
+			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_69
+			remove_from_list = rp_merit_candidates
+		}
+		ordered_in_list = {
+			list = rp_merit_candidates
+			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_70
+			remove_from_list = rp_merit_candidates
+		}
+		ordered_in_list = {
+			list = rp_merit_candidates
+			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_71
+			remove_from_list = rp_merit_candidates
+		}
+		ordered_in_list = {
+			list = rp_merit_candidates
+			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_72
+			remove_from_list = rp_merit_candidates
+		}
+		ordered_in_list = {
+			list = rp_merit_candidates
+			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_73
+			remove_from_list = rp_merit_candidates
+		}
+		ordered_in_list = {
+			list = rp_merit_candidates
+			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_74
+			remove_from_list = rp_merit_candidates
+		}
+		ordered_in_list = {
+			list = rp_merit_candidates
+			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_75
+			remove_from_list = rp_merit_candidates
+		}
+		ordered_in_list = {
+			list = rp_merit_candidates
+			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_76
+			remove_from_list = rp_merit_candidates
+		}
+		ordered_in_list = {
+			list = rp_merit_candidates
+			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_77
+			remove_from_list = rp_merit_candidates
+		}
+		ordered_in_list = {
+			list = rp_merit_candidates
+			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_78
+			remove_from_list = rp_merit_candidates
+		}
+		ordered_in_list = {
+			list = rp_merit_candidates
+			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_79
+			remove_from_list = rp_merit_candidates
+		}
+		ordered_in_list = {
+			list = rp_merit_candidates
+			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_80
+			remove_from_list = rp_merit_candidates
+		}
+		ordered_in_list = {
+			list = rp_merit_candidates
+			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_81
+			remove_from_list = rp_merit_candidates
+		}
+		ordered_in_list = {
+			list = rp_merit_candidates
+			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_82
+			remove_from_list = rp_merit_candidates
+		}
+		ordered_in_list = {
+			list = rp_merit_candidates
+			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_83
+			remove_from_list = rp_merit_candidates
+		}
+		ordered_in_list = {
+			list = rp_merit_candidates
+			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_84
+			remove_from_list = rp_merit_candidates
+		}
+		ordered_in_list = {
+			list = rp_merit_candidates
+			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_85
+			remove_from_list = rp_merit_candidates
+		}
+		ordered_in_list = {
+			list = rp_merit_candidates
+			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_86
+			remove_from_list = rp_merit_candidates
+		}
+		ordered_in_list = {
+			list = rp_merit_candidates
+			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_87
+			remove_from_list = rp_merit_candidates
+		}
+		ordered_in_list = {
+			list = rp_merit_candidates
+			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_88
+			remove_from_list = rp_merit_candidates
+		}
+		ordered_in_list = {
+			list = rp_merit_candidates
+			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_89
+			remove_from_list = rp_merit_candidates
+		}
+		ordered_in_list = {
+			list = rp_merit_candidates
+			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_90
+			remove_from_list = rp_merit_candidates
+		}
+		ordered_in_list = {
+			list = rp_merit_candidates
+			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_91
+			remove_from_list = rp_merit_candidates
+		}
+		ordered_in_list = {
+			list = rp_merit_candidates
+			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_92
+			remove_from_list = rp_merit_candidates
+		}
+		ordered_in_list = {
+			list = rp_merit_candidates
+			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_93
+			remove_from_list = rp_merit_candidates
+		}
+		ordered_in_list = {
+			list = rp_merit_candidates
+			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_94
+			remove_from_list = rp_merit_candidates
+		}
+		ordered_in_list = {
+			list = rp_merit_candidates
+			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_95
+			remove_from_list = rp_merit_candidates
+		}
+		ordered_in_list = {
+			list = rp_merit_candidates
+			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_96
+			remove_from_list = rp_merit_candidates
+		}
+		ordered_in_list = {
+			list = rp_merit_candidates
+			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_97
+			remove_from_list = rp_merit_candidates
+		}
+		ordered_in_list = {
+			list = rp_merit_candidates
+			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_98
+			remove_from_list = rp_merit_candidates
+		}
+		ordered_in_list = {
+			list = rp_merit_candidates
+			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_99
+			remove_from_list = rp_merit_candidates
+		}
+		ordered_in_list = {
+			list = rp_merit_candidates
+			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_100
+			remove_from_list = rp_merit_candidates
+		}
+	}
+
+	option = {
+		name = rp_merit.0200.a
+	}
+}
+rp_merit.1000 = {
+	type = character_event
+	title = rp_merit.1000.t
+	theme = diplomacy
+	override_background = { reference = throne_room_east }
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					exists = scope:rp_major_battle_petitioner
+					scope:rp_major_battle_petitioner = {
+						rp_is_valid_merit_subject_trigger = { LIEGE = root }
+					}
+				}
+				desc = rp_merit.1000.desc.major
+			}
+			triggered_desc = {
+				trigger = {
+					scope:rp_petitioner = {
+						is_powerful_vassal = yes
+						var:rp_merit_score >= 80
+					}
+				}
+				desc = rp_merit.1000.desc.coercive
+			}
+			triggered_desc = {
+				trigger = {
+					scope:rp_petitioner = {
+						OR = {
+							has_trait = ambitious
+							has_trait = greedy
+							opinion = {
+								target = root
+								value < 0
+							}
+						}
+					}
+				}
+				desc = rp_merit.1000.desc.demanding
+			}
+			desc = rp_merit.1000.desc.humble
+		}
+	}
+	right_portrait = scope:rp_petitioner
+
+	trigger = {
+		rp_is_merit_system_enabled_trigger = yes
+		rp_has_rewardable_merit_subject_trigger = yes
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				exists = scope:rp_major_battle_petitioner
+				scope:rp_major_battle_petitioner = {
+					rp_is_valid_merit_subject_trigger = { LIEGE = root }
+					rp_has_rewardable_merit_trigger = yes
+					NOT = { has_character_flag = rp_petition_recently_handled }
+				}
+			}
+			scope:rp_major_battle_petitioner = { save_scope_as = rp_petitioner }
+		}
+		else = {
+			rp_select_petitioner_effect = yes
+		}
+		rp_set_petition_gold_amount_effect = yes
+		scope:rp_petitioner = {
+			add_character_flag = rp_pending_petition
+		}
+	}
+
+	option = {
+		name = rp_merit.1000.e
+		trigger = {
+			learning >= 5
+			scope:rp_petitioner = {
+				var:rp_merit_score >= 30
+				OR = {
+					has_trait = humble
+					has_trait = content
+					has_trait = trusting
+				}
+			}
+		}
+		scope:rp_petitioner = {
+			add_opinion = {
+				target = root
+				modifier = rp_merit_persuaded_opinion
+			}
+			rp_consume_merit_effect = { VALUE = 15 }
+		}
+		rp_mark_petition_handled_effect = yes
+	}
+
+	option = {
+		name = rp_merit.1000.f
+		trigger = {
+			scope:rp_petitioner = {
+				var:rp_merit_score >= 40
+				OR = {
+					has_trait = calm
+					has_trait = patient
+					has_trait = just
+				}
+			}
+		}
+		scope:rp_petitioner = {
+			add_character_modifier = {
+				modifier = rp_merit_honored_modifier
+				years = 5
+			}
+			add_opinion = {
+				target = root
+				modifier = rp_merit_promised_office_opinion
+			}
+			rp_consume_merit_effect = { VALUE = 12 }
+		}
+		rp_mark_petition_handled_effect = yes
+	}
+
+	option = {
+		name = rp_merit.1000.i
+		trigger = {
+			scope:rp_petitioner = {
+				var:rp_merit_score >= 35
+				OR = {
+					has_trait = brave
+					has_trait = diligent
+				}
+			}
+		}
+		scope:rp_petitioner = {
+			add_prestige = 150
+			add_opinion = {
+				target = root
+				modifier = rp_merit_recorded_opinion
+			}
+			rp_consume_merit_effect = { VALUE = 10 }
+		}
+		rp_mark_petition_handled_effect = yes
+	}
+
+	option = {
+		name = rp_merit.1000.j
+		trigger = {
+			gold >= 25
+			scope:rp_petitioner = {
+				var:rp_merit_score >= 30
+				OR = {
+					has_trait = generous
+					has_trait = compassionate
+				}
+			}
+		}
+		remove_short_term_gold = 25
+		scope:rp_petitioner = {
+			add_gold = 25
+			add_opinion = {
+				target = root
+				modifier = rp_merit_troops_rewarded_opinion
+			}
+			rp_consume_merit_effect = { VALUE = 10 }
+		}
+		rp_mark_petition_handled_effect = yes
+	}
+
+	option = {
+		name = rp_merit.1000.k
+		trigger = {
+			martial >= 8
+			scope:rp_petitioner = {
+				var:rp_merit_score >= 30
+				OR = {
+					has_trait = greedy
+					has_trait = arrogant
+					has_trait = ambitious
+				}
+			}
+		}
+		add_dread = 10
+		scope:rp_petitioner = {
+			add_opinion = {
+				target = root
+				modifier = rp_merit_legal_rebuff_opinion
+			}
+			add_character_modifier = {
+				modifier = rp_merit_resentful_modifier
+				years = 3
+			}
+			rp_consume_merit_effect = { VALUE = 10 }
+		}
+		rp_mark_petition_handled_effect = yes
+	}
+
+	option = {
+		name = rp_merit.1000.l
+		trigger = {
+			scope:rp_petitioner = {
+				is_powerful_vassal = yes
+				var:rp_merit_score >= 50
+			}
+		}
+		scope:rp_petitioner = {
+			add_opinion = {
+				target = root
+				modifier = rp_merit_hostage_office_opinion
+			}
+			add_character_modifier = {
+				modifier = rp_merit_honored_modifier
+				years = 3
+			}
+			rp_consume_merit_effect = { VALUE = 12 }
+		}
+		rp_mark_petition_handled_effect = yes
+	}
+
+	option = {
+		name = rp_merit.1000.m
+		trigger = {
+			gold >= 30
+			scope:rp_petitioner = {
+				var:rp_merit_score >= 25
+				OR = {
+					has_trait = forgiving
+					has_trait = content
+					has_trait = calm
+				}
+			}
+		}
+		remove_short_term_gold = 30
+		scope:rp_petitioner = {
+			add_gold = 30
+			add_opinion = {
+				target = root
+				modifier = rp_merit_feast_reward_opinion
+			}
+			rp_consume_merit_effect = { VALUE = 8 }
+		}
+		rp_mark_petition_handled_effect = yes
+	}
+
+	option = {
+		name = rp_merit.1000.n
+		trigger = {
+			scope:rp_petitioner = {
+				var:rp_merit_score >= 45
+				OR = {
+					has_trait = zealous
+					has_trait = just
+					has_trait = stubborn
+				}
+			}
+		}
+		scope:rp_petitioner = {
+			add_prestige = 75
+			add_character_modifier = {
+				modifier = rp_merit_honored_modifier
+				years = 5
+			}
+			add_opinion = {
+				target = root
+				modifier = rp_merit_recorded_opinion
+			}
+			rp_consume_merit_effect = { VALUE = 12 }
+		}
+		rp_mark_petition_handled_effect = yes
+	}
+
+	option = {
+		name = rp_merit.1000.a
+		trigger = {
+			gold >= var:rp_petition_gold_amount
+			scope:rp_petitioner = { var:rp_merit_score >= 30 }
+		}
+		remove_short_term_gold = {
+			value = var:rp_petition_gold_amount
+		}
+		scope:rp_petitioner = {
+			add_gold = {
+				value = root.var:rp_petition_gold_amount
+			}
+			add_opinion = {
+				target = root
+				modifier = rp_merit_reward_gold_opinion
+			}
+			rp_consume_merit_effect = { VALUE = 10 }
+		}
+		rp_mark_petition_handled_effect = yes
+	}
+
+	option = {
+		name = rp_merit.1000.b
+		trigger = {
+			scope:rp_petitioner = {
+				var:rp_merit_score >= 30
+				NOT = { has_trait = rp_merit_honor_1 }
+			}
+		}
+		scope:rp_petitioner = {
+			add_trait = rp_merit_honor_1
+			add_character_modifier = {
+				modifier = rp_merit_honored_modifier
+				years = 10
+			}
+			add_opinion = {
+				target = root
+				modifier = rp_merit_reward_honor_opinion
+			}
+			rp_consume_merit_effect = { VALUE = 10 }
+		}
+		rp_mark_petition_handled_effect = yes
+	}
+
+	option = {
+		name = rp_merit.1000.u
+		trigger = {
+			scope:rp_petitioner = {
+				var:rp_merit_score >= 30
+				can_add_hook = {
+					target = root
+					type = favor_hook
+				}
+			}
+		}
+		scope:rp_petitioner = {
+			add_hook = {
+				target = root
+				type = favor_hook
+			}
+			add_opinion = {
+				target = root
+				modifier = rp_merit_reward_honor_opinion
+			}
+			rp_consume_merit_effect = { VALUE = 8 }
+		}
+		rp_mark_petition_handled_effect = yes
+	}
+
+	option = {
+		name = rp_merit.1000.v
+		trigger = {
+			scope:rp_petitioner = {
+				var:rp_merit_score >= 90
+				can_add_hook = {
+					target = root
+					type = strong_obligation_hook
+				}
+			}
+		}
+		scope:rp_petitioner = {
+			add_hook = {
+				target = root
+				type = strong_obligation_hook
+			}
+			add_opinion = {
+				target = root
+				modifier = rp_merit_reward_honor_opinion
+			}
+			rp_consume_merit_effect = { VALUE = 25 }
+		}
+		rp_mark_petition_handled_effect = yes
+	}
+
+	option = {
+		name = rp_merit.1000.s
+		trigger = {
+			scope:rp_petitioner = { var:rp_merit_score >= 200 }
+			rp_has_grantable_multiple_empires_trigger = yes
+			OR = {
+				scope:rp_petitioner = { highest_held_title_tier >= tier_county }
+				rp_has_grantable_county_trigger = yes
+			}
+		}
+		create_title_and_vassal_change = {
+			type = granted
+			save_scope_as = rp_title_change
+		}
+		random_held_title = {
+			limit = {
+				tier = tier_empire
+				is_landless_type_title = no
+				NOT = { this = root.primary_title }
+				any_de_jure_county = {
+					holder = root
+					NOT = { this = root.capital_county }
+					NOT = { this = root.primary_title }
+				}
+			}
+			save_scope_as = rp_first_land_reward_title
+			root = { rp_grant_de_jure_county_for_reward_title_effect = { TITLE = scope:rp_first_land_reward_title } }
+			change_title_holder = {
+				holder = scope:rp_petitioner
+				change = scope:rp_title_change
+				take_baronies = no
+			}
+		}
+		random_held_title = {
+			limit = {
+				tier = tier_empire
+				is_landless_type_title = no
+				NOT = { this = root.primary_title }
+				NOT = { this = scope:rp_first_land_reward_title }
+				any_de_jure_county = {
+					holder = root
+					NOT = { this = root.capital_county }
+					NOT = { this = root.primary_title }
+				}
+			}
+			save_scope_as = rp_second_land_reward_title
+			root = { rp_grant_de_jure_county_for_reward_title_effect = { TITLE = scope:rp_second_land_reward_title } }
+			change_title_holder = {
+				holder = scope:rp_petitioner
+				change = scope:rp_title_change
+				take_baronies = no
+			}
+		}
+		resolve_title_and_vassal_change = scope:rp_title_change
+		rp_correct_reward_government_effect = yes
+		scope:rp_petitioner = {
+			add_opinion = {
+				target = root
+				modifier = rp_merit_reward_land_opinion
+			}
+			set_variable = { name = rp_merit_score value = 0 }
+		}
+		rp_mark_petition_handled_effect = yes
+	}
+
+	option = {
+		name = rp_merit.1000.r
+		trigger = {
+			scope:rp_petitioner = {
+				var:rp_merit_score >= 180
+				var:rp_merit_score < 200
+			}
+			rp_has_grantable_empire_trigger = yes
+			OR = {
+				scope:rp_petitioner = { highest_held_title_tier >= tier_county }
+				rp_has_grantable_county_trigger = yes
+			}
+		}
+		create_title_and_vassal_change = {
+			type = granted
+			save_scope_as = rp_title_change
+		}
+		random_held_title = {
+			limit = {
+				tier = tier_empire
+				is_landless_type_title = no
+				NOT = { this = root.primary_title }
+				any_de_jure_county = {
+					holder = root
+					NOT = { this = root.capital_county }
+					NOT = { this = root.primary_title }
+				}
+			}
+			save_scope_as = rp_land_reward_title
+			root = { rp_grant_de_jure_county_for_reward_title_effect = { TITLE = scope:rp_land_reward_title } }
+			change_title_holder = {
+				holder = scope:rp_petitioner
+				change = scope:rp_title_change
+				take_baronies = no
+			}
+		}
+		resolve_title_and_vassal_change = scope:rp_title_change
+		rp_correct_reward_government_effect = yes
+		scope:rp_petitioner = {
+			add_opinion = {
+				target = root
+				modifier = rp_merit_reward_land_opinion
+			}
+			set_variable = { name = rp_merit_score value = 0 }
+		}
+		rp_mark_petition_handled_effect = yes
+	}
+
+	option = {
+		name = rp_merit.1000.q
+		trigger = {
+			scope:rp_petitioner = {
+				var:rp_merit_score >= 150
+				var:rp_merit_score < 180
+				highest_held_title_tier < tier_empire
+			}
+			rp_has_grantable_multiple_kingdoms_trigger = yes
+			OR = {
+				scope:rp_petitioner = { highest_held_title_tier >= tier_county }
+				rp_has_grantable_county_trigger = yes
+			}
+		}
+		create_title_and_vassal_change = {
+			type = granted
+			save_scope_as = rp_title_change
+		}
+		random_held_title = {
+			limit = {
+				tier = tier_kingdom
+				is_landless_type_title = no
+				NOT = { this = root.primary_title }
+				any_de_jure_county = {
+					holder = root
+					NOT = { this = root.capital_county }
+					NOT = { this = root.primary_title }
+				}
+			}
+			save_scope_as = rp_first_land_reward_title
+			root = { rp_grant_de_jure_county_for_reward_title_effect = { TITLE = scope:rp_first_land_reward_title } }
+			change_title_holder = {
+				holder = scope:rp_petitioner
+				change = scope:rp_title_change
+				take_baronies = no
+			}
+		}
+		random_held_title = {
+			limit = {
+				tier = tier_kingdom
+				is_landless_type_title = no
+				NOT = { this = root.primary_title }
+				NOT = { this = scope:rp_first_land_reward_title }
+				any_de_jure_county = {
+					holder = root
+					NOT = { this = root.capital_county }
+					NOT = { this = root.primary_title }
+				}
+			}
+			save_scope_as = rp_second_land_reward_title
+			root = { rp_grant_de_jure_county_for_reward_title_effect = { TITLE = scope:rp_second_land_reward_title } }
+			change_title_holder = {
+				holder = scope:rp_petitioner
+				change = scope:rp_title_change
+				take_baronies = no
+			}
+		}
+		resolve_title_and_vassal_change = scope:rp_title_change
+		rp_correct_reward_government_effect = yes
+		scope:rp_petitioner = {
+			add_opinion = {
+				target = root
+				modifier = rp_merit_reward_land_opinion
+			}
+			set_variable = { name = rp_merit_score value = 0 }
+		}
+		rp_mark_petition_handled_effect = yes
+	}
+
+	option = {
+		name = rp_merit.1000.p
+		trigger = {
+			scope:rp_petitioner = {
+				var:rp_merit_score >= 120
+				var:rp_merit_score < 150
+				highest_held_title_tier < tier_empire
+			}
+			rp_has_grantable_kingdom_trigger = yes
+			OR = {
+				scope:rp_petitioner = { highest_held_title_tier >= tier_county }
+				rp_has_grantable_county_trigger = yes
+			}
+		}
+		create_title_and_vassal_change = {
+			type = granted
+			save_scope_as = rp_title_change
+		}
+		random_held_title = {
+			limit = {
+				tier = tier_kingdom
+				is_landless_type_title = no
+				NOT = { this = root.primary_title }
+				any_de_jure_county = {
+					holder = root
+					NOT = { this = root.capital_county }
+					NOT = { this = root.primary_title }
+				}
+			}
+			save_scope_as = rp_land_reward_title
+			root = { rp_grant_de_jure_county_for_reward_title_effect = { TITLE = scope:rp_land_reward_title } }
+			change_title_holder = {
+				holder = scope:rp_petitioner
+				change = scope:rp_title_change
+				take_baronies = no
+			}
+		}
+		resolve_title_and_vassal_change = scope:rp_title_change
+		rp_correct_reward_government_effect = yes
+		scope:rp_petitioner = {
+			add_opinion = {
+				target = root
+				modifier = rp_merit_reward_land_opinion
+			}
+			set_variable = { name = rp_merit_score value = 0 }
+		}
+		rp_mark_petition_handled_effect = yes
+	}
+
+	option = {
+		name = rp_merit.1000.o
+		trigger = {
+			scope:rp_petitioner = {
+				var:rp_merit_score >= 90
+				var:rp_merit_score < 120
+				highest_held_title_tier < tier_kingdom
+			}
+			rp_has_grantable_multiple_duchies_trigger = yes
+			OR = {
+				scope:rp_petitioner = { highest_held_title_tier >= tier_county }
+				rp_has_grantable_county_trigger = yes
+			}
+		}
+		create_title_and_vassal_change = {
+			type = granted
+			save_scope_as = rp_title_change
+		}
+		random_held_title = {
+			limit = {
+				tier = tier_duchy
+				is_landless_type_title = no
+				NOT = { this = root.primary_title }
+				any_de_jure_county = {
+					holder = root
+					NOT = { this = root.capital_county }
+					NOT = { this = root.primary_title }
+				}
+			}
+			save_scope_as = rp_first_land_reward_title
+			root = { rp_grant_de_jure_county_for_reward_title_effect = { TITLE = scope:rp_first_land_reward_title } }
+			change_title_holder = {
+				holder = scope:rp_petitioner
+				change = scope:rp_title_change
+				take_baronies = no
+			}
+		}
+		random_held_title = {
+			limit = {
+				tier = tier_duchy
+				is_landless_type_title = no
+				NOT = { this = root.primary_title }
+				NOT = { this = scope:rp_first_land_reward_title }
+				any_de_jure_county = {
+					holder = root
+					NOT = { this = root.capital_county }
+					NOT = { this = root.primary_title }
+				}
+			}
+			save_scope_as = rp_second_land_reward_title
+			root = { rp_grant_de_jure_county_for_reward_title_effect = { TITLE = scope:rp_second_land_reward_title } }
+			change_title_holder = {
+				holder = scope:rp_petitioner
+				change = scope:rp_title_change
+				take_baronies = no
+			}
+		}
+		resolve_title_and_vassal_change = scope:rp_title_change
+		rp_correct_reward_government_effect = yes
+		scope:rp_petitioner = {
+			add_opinion = {
+				target = root
+				modifier = rp_merit_reward_land_opinion
+			}
+			set_variable = { name = rp_merit_score value = 0 }
+		}
+		rp_mark_petition_handled_effect = yes
+	}
+
+	option = {
+		name = rp_merit.1000.g
+		trigger = {
+			scope:rp_petitioner = {
+				var:rp_merit_score >= 60
+				var:rp_merit_score < 90
+				highest_held_title_tier < tier_kingdom
+			}
+			rp_has_grantable_duchy_trigger = yes
+			OR = {
+				scope:rp_petitioner = { highest_held_title_tier >= tier_county }
+				rp_has_grantable_county_trigger = yes
+			}
+		}
+		create_title_and_vassal_change = {
+			type = granted
+			save_scope_as = rp_title_change
+		}
+		random_held_title = {
+			limit = {
+				tier = tier_duchy
+				is_landless_type_title = no
+				NOT = { this = root.primary_title }
+				any_de_jure_county = {
+					holder = root
+					NOT = { this = root.capital_county }
+					NOT = { this = root.primary_title }
+				}
+			}
+			save_scope_as = rp_land_reward_title
+			root = { rp_grant_de_jure_county_for_reward_title_effect = { TITLE = scope:rp_land_reward_title } }
+			change_title_holder = {
+				holder = scope:rp_petitioner
+				change = scope:rp_title_change
+				take_baronies = no
+			}
+		}
+		resolve_title_and_vassal_change = scope:rp_title_change
+		rp_correct_reward_government_effect = yes
+		scope:rp_petitioner = {
+			add_opinion = {
+				target = root
+				modifier = rp_merit_reward_land_opinion
+			}
+			set_variable = { name = rp_merit_score value = 0 }
+		}
+		rp_mark_petition_handled_effect = yes
+	}
+
+	option = {
+		name = rp_merit.1000.h
+		trigger = {
+			scope:rp_petitioner = {
+				var:rp_merit_score >= 60
+				var:rp_merit_score < 90
+				highest_held_title_tier < tier_kingdom
+			}
+			rp_has_creatable_duchy_from_county_trigger = yes
+		}
+		remove_short_term_gold = 250
+		create_title_and_vassal_change = {
+			type = granted
+			save_scope_as = rp_title_change
+		}
+		random_held_title = {
+			limit = {
+				tier = tier_county
+				is_landless_type_title = no
+				NOT = { this = root.capital_county }
+				NOT = { this = root.primary_title }
+				de_jure_liege = {
+					tier = tier_duchy
+					is_title_created = no
+					NOT = { this = root.capital_county.de_jure_liege }
+				}
+			}
+			change_title_holder = {
+				holder = scope:rp_petitioner
+				change = scope:rp_title_change
+				take_baronies = no
+			}
+			de_jure_liege = {
+				change_title_holder = {
+					holder = scope:rp_petitioner
+					change = scope:rp_title_change
+					take_baronies = no
+				}
+			}
+		}
+		resolve_title_and_vassal_change = scope:rp_title_change
+		rp_correct_reward_government_effect = yes
+		scope:rp_petitioner = {
+			add_opinion = {
+				target = root
+				modifier = rp_merit_reward_land_opinion
+			}
+			set_variable = { name = rp_merit_score value = 0 }
+		}
+		rp_mark_petition_handled_effect = yes
+	}
+
+	option = {
+		name = rp_merit.1000.d
+		scope:rp_petitioner = {
+			if = {
+				limit = {
+					OR = {
+						is_powerful_vassal = yes
+						has_trait = ambitious
+						has_trait = greedy
+						opinion = {
+							target = root
+							value < 0
+						}
+					}
+				}
+				add_opinion = {
+					target = root
+					modifier = rp_merit_refused_harsh_opinion
+				}
+			}
+			else = {
+				add_opinion = {
+					target = root
+					modifier = rp_merit_refused_humble_opinion
+				}
+			}
+			add_character_flag = rp_resentful_mark
+			add_character_modifier = {
+				modifier = rp_merit_resentful_modifier
+				years = 5
+			}
+		}
+		random = {
+			chance = 35
+			modifier = {
+				add = 25
+				scope:rp_petitioner = { is_powerful_vassal = yes }
+			}
+			modifier = {
+				add = 20
+				scope:rp_petitioner = {
+					OR = {
+						has_trait = ambitious
+						has_trait = greedy
+					}
+				}
+			}
+			add_character_modifier = {
+				modifier = rp_merit_noble_resistance_modifier
+				years = 5
+			}
+			trigger_event = {
+				id = rp_merit.1100
+				days = 3
+			}
+		}
+		rp_mark_petition_handled_effect = yes
+	}
+}
+
+rp_merit.1100 = {
+	type = character_event
+	title = rp_merit.1100.t
+	theme = stewardship
+	override_background = { reference = throne_room_east }
+	desc = rp_merit.1100.desc
+	right_portrait = scope:rp_petitioner
+
+	option = {
+		name = rp_merit.1100.a
+	}
+}
+
+rp_merit.1200 = {
+	type = character_event
+	title = rp_merit.1200.t
+	theme = martial
+	override_background = { reference = throne_room_east }
+	desc = rp_merit.1200.desc
+	right_portrait = scope:rp_penalty_target
+
+	trigger = {
+		exists = scope:rp_penalty_target
+		scope:rp_penalty_target = {
+			is_alive = yes
+			rp_can_receive_merit_from_liege_trigger = { LIEGE = root }
+			has_variable = rp_merit_recent_major_loss
+		}
+	}
+
+	option = {
+		name = rp_merit.1200.a
+		scope:rp_penalty_target = {
+			add_opinion = {
+				target = root
+				modifier = rp_merit_refused_humble_opinion
+			}
+			add_character_modifier = {
+				modifier = rp_merit_resentful_modifier
+				years = 3
+			}
+		}
+	}
+
+	option = {
+		name = rp_merit.1200.b
+		trigger = {
+			scope:rp_penalty_target = { gold >= 25 }
+		}
+		scope:rp_penalty_target = {
+			remove_short_term_gold = 25
+			add_opinion = {
+				target = root
+				modifier = rp_merit_refused_harsh_opinion
+			}
+		}
+	}
+
+	option = {
+		name = rp_merit.1200.c
+		trigger = {
+			scope:rp_penalty_target = { rp_is_great_house_trigger = yes }
+			prestige >= 100
+		}
+		add_prestige = -100
+		scope:rp_penalty_target = {
+			add_opinion = {
+				target = root
+				modifier = rp_merit_refused_humble_opinion
+			}
+		}
+	}
+
+	option = {
+		name = rp_merit.1200.d
+		trigger = {
+			scope:rp_penalty_target = {
+				gold >= 60
+				rp_is_great_house_trigger = yes
+			}
+		}
+		add_gold = 50
+		scope:rp_penalty_target = {
+			remove_short_term_gold = 60
+			add_character_modifier = {
+				modifier = rp_merit_grain_redemption_modifier
+				years = 2
+			}
+			add_opinion = {
+				target = root
+				modifier = rp_merit_refused_humble_opinion
+			}
+		}
+	}
+
+	option = {
+		name = rp_merit.1200.e
+		trigger = {
+			scope:rp_penalty_target = {
+				has_variable = rp_merit_score
+				var:rp_merit_recent_major_loss <= -15
+			}
+		}
+		scope:rp_penalty_target = {
+			set_variable = {
+				name = rp_merit_score
+				value = 0
+			}
+			remove_variable = rp_merit_recent_major_loss
+			add_character_modifier = {
+				modifier = rp_merit_disgraced_officer_modifier
+				years = 3
+			}
+			add_opinion = {
+				target = root
+				modifier = rp_merit_refused_harsh_opinion
+			}
+		}
+	}
+
+	option = {
+		name = rp_merit.1200.f
+		trigger = {
+			scope:rp_penalty_target = { has_trait = rp_merit_honor_1 }
+		}
+		scope:rp_penalty_target = {
+			remove_trait = rp_merit_honor_1
+			add_character_modifier = {
+				modifier = rp_merit_disgraced_officer_modifier
+				years = 5
+			}
+			add_opinion = {
+				target = root
+				modifier = rp_merit_refused_harsh_opinion
+			}
+		}
+	}
+
+	option = {
+		name = rp_merit.1200.g
+		trigger = {
+			scope:rp_penalty_target = {
+				is_imprisoned = no
+				var:rp_merit_recent_major_loss <= -20
+				NOT = { is_close_family_of = root }
+			}
+		}
+		imprison = {
+			target = scope:rp_penalty_target
+			type = house_arrest
+		}
+		scope:rp_penalty_target = {
+			add_character_flag = rp_resentful_mark
+			add_opinion = {
+				target = root
+				modifier = rp_merit_refused_harsh_opinion
+			}
+		}
+	}
+
+	option = {
+		name = rp_merit.1200.h
+		trigger = {
+			scope:rp_penalty_target = {
+				var:rp_merit_recent_major_loss <= -25
+				NOT = { is_close_family_of = root }
+				NOT = { rp_is_great_house_trigger = yes }
+				highest_held_title_tier < tier_duchy
+			}
+		}
+		scope:rp_penalty_target = {
+			rp_clear_merit_effect = yes
+			death = {
+				death_reason = death_execution
+				killer = root
+			}
+		}
+		add_prestige = -100
+		add_character_modifier = {
+			modifier = rp_campaign_discipline_modifier
+			years = 2
+		}
+	}
+}
+
+
+
+

@@ -1,0 +1,288 @@
+﻿beifangzongjiao_religion = {
+	family = rf_pagan
+
+	pagan_roots = yes
+
+	doctrine = pagan_hostility_doctrine
+
+	#Main Group
+	doctrine = doctrine_no_head
+	doctrine = doctrine_gender_male_dominated
+	doctrine = doctrine_pluralism_pluralistic
+	doctrine = doctrine_theocracy_temporal
+
+	#Marriage
+	doctrine = doctrine_concubines
+	doctrine = doctrine_divorce_allowed
+	doctrine = doctrine_bastardry_legitimization
+	doctrine = doctrine_consanguinity_cousins
+
+	#Crimes
+	doctrine = doctrine_homosexuality_crime
+	doctrine = doctrine_adultery_men_crime
+	doctrine = doctrine_adultery_women_crime
+	doctrine = doctrine_kinslaying_close_kin_crime
+	doctrine = doctrine_deviancy_crime
+	doctrine = doctrine_witchcraft_crime
+
+	#Clerical Functions
+	doctrine = doctrine_clerical_function_recruitment
+	doctrine = doctrine_clerical_gender_either
+	doctrine = doctrine_clerical_marriage_allowed
+	doctrine = doctrine_clerical_succession_temporal_appointment
+
+
+	#Allow pilgrimages
+	doctrine = doctrine_pilgrimage_encouraged
+
+	#Funeral tradition
+	doctrine = doctrine_funeral_bewailment
+
+	#Coronation tradition
+	doctrine = doctrine_no_anointment
+
+
+	traits = {
+		virtues = { brave just honest }
+		sins = { craven arbitrary deceitful }
+	}
+
+	custom_faith_icons = {
+		custom_faith_1 custom_faith_2 custom_faith_3 custom_faith_4 custom_faith_5 custom_faith_6 custom_faith_7 custom_faith_8 custom_faith_9 custom_faith_10 dualism_custom_1 zoroastrian_custom_1 zoroastrian_custom_2 buddhism_custom_1 buddhism_custom_2 buddhism_custom_3 buddhism_custom_4 taoism_custom_1 yazidi_custom_1 sunni_custom_2 sunni_custom_3 sunni_custom_4 ibadi_custom muhakkima_1 muhakkima_2 muhakkima_4 muhakkima_5 muhakkima_6 judaism_custom_1
+	}
+
+	holy_order_names = {
+		{ name = "holy_order_lords_of_the_sky" }
+		{ name = "holy_order_guardians_of_divinerealm" }
+		{ name = "holy_order_faithful_of_highgod" }
+		{ name = "holy_order_warriors_of_the_symbol" }
+	}
+
+	holy_order_maa = { horse_archers }
+
+	localization = {
+		HighGodName = beifangzongjiao_high_god_name
+		HighGodNamePossessive = beifangzongjiao_high_god_name_possessive
+		HighGodNameSheHe = CHARACTER_SHEHE_HE
+		HighGodHerselfHimself = CHARACTER_HIMSELF
+		HighGodHerHis = CHARACTER_HERHIS_HIS
+		HighGodNameAlternate = beifangzongjiao_high_god_name_alternate
+		HighGodNameAlternatePossessive = beifangzongjiao_high_god_name_alternate_possessive
+
+		#Creator
+		CreatorName = beifangzongjiao_creator_god_name
+		CreatorNamePossessive = beifangzongjiao_creator_god_name_possessive
+		CreatorSheHe = CHARACTER_SHEHE_HE
+		CreatorHerHis = CHARACTER_HERHIS_HIS
+		CreatorHerHim = CHARACTER_HERHIM_HIM
+
+		#HealthGod
+		HealthGodName = beifangzongjiao_health_god_name
+		HealthGodNamePossessive = beifangzongjiao_health_god_name_possessive
+		HealthGodSheHe = CHARACTER_SHEHE_HE
+		HealthGodHerHis = CHARACTER_HERHIS_HIS
+		HealthGodHerHim = CHARACTER_HERHIM_HIM
+		
+		#FertilityGod
+		FertilityGodName = beifangzongjiao_fertility_god_name
+		FertilityGodNamePossessive = beifangzongjiao_fertility_god_name_possessive
+		FertilityGodSheHe = CHARACTER_SHEHE_HE
+		FertilityGodHerHis = CHARACTER_HERHIS_HIS
+		FertilityGodHerHim = CHARACTER_HERHIM_HIM
+
+		#WealthGod
+		WealthGodName = beifangzongjiao_wealth_god_name
+		WealthGodNamePossessive = beifangzongjiao_wealth_god_name_possessive
+		WealthGodSheHe = CHARACTER_SHEHE_HE
+		WealthGodHerHis = CHARACTER_HERHIS_HIS
+		WealthGodHerHim = CHARACTER_HERHIM_HIM
+
+		#HouseholdGod
+		HouseholdGodName = beifangzongjiao_household_god_name
+		HouseholdGodNamePossessive = beifangzongjiao_household_god_name_possessive
+		HouseholdGodSheHe = CHARACTER_SHEHE_HE
+		HouseholdGodHerHis = CHARACTER_HERHIS_HIS
+		HouseholdGodHerHim = CHARACTER_HERHIM_HIM
+
+		#FateGod
+		FateGodName = beifangzongjiao_fate_god_name
+		FateGodNamePossessive = beifangzongjiao_fate_god_name_possessive
+		FateGodSheHe = CHARACTER_SHEHE_IT
+		FateGodHerHis = CHARACTER_HERHIS_ITS
+		FateGodHerHim = CHARACTER_HERHIM_IT
+
+		#KnowledgeGod
+		KnowledgeGodName = beifangzongjiao_knowledge_god_name
+		KnowledgeGodNamePossessive = beifangzongjiao_knowledge_god_name_possessive
+		KnowledgeGodSheHe = CHARACTER_SHEHE_HE
+		KnowledgeGodHerHis = CHARACTER_HERHIS_HIS
+		KnowledgeGodHerHim = CHARACTER_HERHIM_HIM
+
+		#WarGod
+		WarGodName = beifangzongjiao_war_god_name
+		WarGodNamePossessive = beifangzongjiao_war_god_name_possessive
+		WarGodSheHe = CHARACTER_SHEHE_HE
+		WarGodHerHis = CHARACTER_HERHIS_HIS
+		WarGodHerHim = CHARACTER_HERHIM_HIM
+
+		#TricksterGod
+		TricksterGodName = beifangzongjiao_trickster_god_name
+		TricksterGodNamePossessive = beifangzongjiao_trickster_god_name_possessive
+		TricksterGodSheHe = CHARACTER_SHEHE_HE
+		TricksterGodHerHis = CHARACTER_HERHIS_HIS
+		TricksterGodHerHim = CHARACTER_HERHIM_HIM
+
+		#NightGod
+		NightGodName = beifangzongjiao_night_god_name
+		NightGodNamePossessive = beifangzongjiao_night_god_name_possessive
+		NightGodSheHe = CHARACTER_SHEHE_HE
+		NightGodHerHis = CHARACTER_HERHIS_HIS
+		NightGodHerHim = CHARACTER_HERHIM_HIM
+
+		#WaterGod
+		WaterGodName = beifangzongjiao_water_god_name
+		WaterGodNamePossessive = beifangzongjiao_water_god_name_possessive
+		WaterGodSheHe = CHARACTER_SHEHE_HE
+		WaterGodHerHis = CHARACTER_HERHIS_HIS
+		WaterGodHerHim = CHARACTER_HERHIM_HIM
+
+
+
+		PantheonTerm = beifangzongjiao_high_god_name
+		PantheonTermHasHave = pantheon_term_has
+		GoodGodNames = { beifangzongjiao_good_god_eje beifangzongjiao_good_god_ulgen beifangzongjiao_high_god_name }
+		DevilName = beifangzongjiao_devil_name
+		DevilNamePossessive = beifangzongjiao_devil_name_possessive
+		DevilSheHe = CHARACTER_SHEHE_HE
+		DevilHerHis = CHARACTER_HERHIS_HIS
+		DevilHerselfHimself = CHARACTER_HIMSELF
+		EvilGodNames = { beifangzongjiao_evil_god_karash beifangzongjiao_evil_god_shyngay beifangzongjiao_evil_god_komur beifangzongjiao_evil_god_badysh beifangzongjiao_evil_god_yabash beifangzongjiao_evil_god_kerey }
+		HouseOfWorship = paganism_house_of_worship
+		HouseOfWorshipPlural = paganism_house_of_worship_plural
+		ReligiousSymbol = beifangzongjiao_religious_symbol
+		ReligiousText = beifangzongjiao_religious_text
+		ReligiousHeadName = paganism_religious_head_title
+		ReligiousHeadTitleName = paganism_religious_head_title_name
+		DevoteeMale = paganism_devotee
+		DevoteeMalePlural = paganism_devoteeplural
+		DevoteeFemale = paganism_devotee
+		DevoteeFemalePlural = paganism_devoteeplural
+		DevoteeNeuter = paganism_devotee
+		DevoteeNeuterPlural = paganism_devoteeplural
+		PriestMale = paganism_priest
+		PriestMalePlural = paganism_priest_plural
+		PriestFemale = paganism_priest
+		PriestFemalePlural = paganism_priest_plural
+		PriestNeuter = paganism_priest
+		PriestNeuterPlural = paganism_priest_plural
+		AltPriestTermPlural = paganism_priest_alternate_plural
+		BishopMale = paganism_priest
+		BishopMalePlural = paganism_priest_plural
+		BishopFemale = paganism_priest
+		BishopFemalePlural = paganism_priest_plural
+		BishopNeuter = paganism_priest
+		BishopNeuterPlural = paganism_priest_plural
+		DivineRealm = beifangzongjiao_divine_realm
+		PositiveAfterLife = beifangzongjiao_divine_realm
+		NegativeAfterLife = beifangzongjiao_afterlife_negative
+		DeathDeityName = beifangzongjiao_devil_name
+		DeathDeityNamePossessive = beifangzongjiao_devil_name_possessive
+		DeathDeitySheHe = CHARACTER_SHEHE_HE
+		DeathDeityHerHis = CHARACTER_HERSHIS_HIS
+		WitchGodName = witchgodname_beifangzongjiao_the_irshi
+		WitchGodSheHe = CHARACTER_SHEHE_HE
+		WitchGodHerHim = CHARACTER_HERHIM_HER
+		WitchGodMistressMaster = mistress
+		WitchGodMotherFather = mother
+
+		WitchGodHerHis = CHARACTER_HERHIS_HER
+
+		GHWName = ghw_great_holy_war
+		GHWNamePlural = ghw_great_holy_wars
+	}	
+
+	faiths = {
+		yili = {
+			color = { 0.2 0.8 0.0 }
+			icon = tengri
+			reformed_icon = yili_reformed
+
+			holy_site = linzi
+			holy_site = qufu
+			holy_site = xu
+			holy_site = liu
+			holy_site = lai
+
+			doctrine = unreformed_faith_doctrine
+
+			doctrine = tenet_astrology
+			doctrine = tenet_warmonger
+			doctrine = tenet_divine_marriage
+		}
+		#yili_reformed = {
+		#	color = { 0.1 0.3 0.85 }
+		#	icon = yili
+		#}
+		
+		beidifangling = {
+			color = { 99 64 108 }
+			icon = yumaism
+			reformed_icon = beidifangling_reformed
+			
+			holy_site = lushi
+			holy_site = lingshou
+			holy_site = fushi
+			holy_site = luo1
+			holy_site = gaowang
+			
+			doctrine = unreformed_faith_doctrine
+			
+			doctrine = doctrine_gender_equal
+
+			doctrine = tenet_unrelenting_faith
+			doctrine = tenet_ancestor_worship
+			doctrine = tenet_adorcism
+
+		}
+		xirongfangling = {
+			color = { 172 131 64 }
+			icon = yumaism
+			reformed_icon = xirongfangling_reformed
+			
+			holy_site = xiquanqiu
+			holy_site = yiqu
+			holy_site = zhangye
+			holy_site = bajiao
+			holy_site = xaunwei
+			
+			doctrine = unreformed_faith_doctrine
+			
+			doctrine = doctrine_gender_equal
+
+			doctrine = tenet_warmonger
+			doctrine = tenet_human_sacrifice
+			doctrine = tenet_sky_burials
+
+		}
+		saman = {
+			color = { 137 86 191 }
+			icon = yumaism
+			reformed_icon = saman_reformed
+			
+			holy_site = yiwulv
+			holy_site = tuhe
+			holy_site = bailang
+			holy_site = gangcheng
+			holy_site = yilou
+			
+			doctrine = unreformed_faith_doctrine
+			
+			doctrine = doctrine_gender_equal
+
+			doctrine = tenet_warmonger
+			doctrine = tenet_gruesome_festivals_blot
+			doctrine = tenet_sanctity_of_nature
+
+		}
+	}
+}

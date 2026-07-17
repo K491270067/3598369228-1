@@ -1,0 +1,69 @@
+﻿##### d_wuluoshi ############################
+
+### c_xiabo
+# XIABO
+107 = {
+	culture = dongyi
+	religion = xiali
+	holding = castle_holding
+}
+# CHANGZHUAN
+106 = {
+	holding = none
+}
+
+
+### c_wuqiang
+# WUQIANG
+113 = {
+	culture = dongyi
+	religion = xiali
+	holding = castle_holding
+}
+# LEXIANG1
+155 = {
+	holding = none
+}
+
+
+### c_guanjin
+# GUANJIN
+115 = {
+	culture = dongyi
+	religion = xiali
+	holding = castle_holding
+}
+# PINGDI
+116 = {
+	holding = none
+}
+
+
+##### d_wushi1 ############################
+
+### c_fuliu1
+# FULIU1
+98 = {
+	culture = dongyi
+	religion = xiali
+	holding = castle_holding
+}
+# BIYANG1
+128 = {
+	holding = none
+}
+
+
+### c_wu6
+# WU6
+108 = {
+	culture = dongyi
+	religion = xiali
+	holding = castle_holding
+}
+# GAODI
+133 = {
+	holding = none
+}
+
+

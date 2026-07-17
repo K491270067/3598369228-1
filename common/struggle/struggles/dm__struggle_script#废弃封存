@@ -1,0 +1,61 @@
+fallen_of_zhou_dynasty_struggle = {
+	##################################################
+	# S参与者条件
+	##################################################
+	cultures = {
+		# 文化
+
+	}
+	faiths = {
+		# 信仰
+
+	}
+	regions = { 
+		world_huaxia_qingzhou
+		world_huaxia_yangzhou
+		world_huaxia_yuzhou
+		world_huaxia_sili
+		world_huaxia_jizhou
+		world_huaxia_yongzhou
+		world_huaxia_bingzhou
+		world_huaxia_youzhou
+		world_huaxia_jingzhou
+		world_huaxia_yizhou
+	 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

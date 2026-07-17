@@ -1,0 +1,107 @@
+﻿##### d_congshi ############################
+
+### c_quzhou
+# QUZHOU
+3109 = {
+	holding = none
+}
+
+
+### c_bazhou
+# BAZHOU
+3172 = {
+	holding = none
+}
+
+
+### c_pengzhou
+# PENGZHOUZ
+3173 = {
+	holding = none
+}
+
+
+### c_tongzhou
+# TONGZHOU
+3174 = {
+	holding = none
+}
+
+
+### c_shixing
+# SHIXING
+3695 = {
+	holding = none
+}
+
+
+### c_cong1
+# CONG1
+3696 = {
+	holding = none
+}
+
+
+### c_langchi
+# LANGCHI
+3701 = {
+	holding = none
+}
+
+
+### c_dazhu
+# DAZHU
+3702 = {
+	holding = none
+}
+
+
+### c_xinmin
+# XINMIN
+3703 = {
+	holding = none
+}
+
+
+### c_yongmu
+# YONGMU
+3199 = {
+	holding = none
+}
+
+
+### c_yuechi
+# YUECHI
+3320 = {
+	holding = none
+}
+
+
+### c_liujang
+# LIUJIANG
+3324 = {
+	holding = none
+}
+
+
+### c_qujiang
+# QUJIANG
+3325 = {
+	holding = none
+}
+
+
+### c_xinning
+# XINNING
+3202 = {
+	holding = none
+}
+
+
+### c_yingshan
+# GUOZHOU
+3166 = {
+	holding = none
+}
+
+

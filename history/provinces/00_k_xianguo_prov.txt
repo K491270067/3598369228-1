@@ -1,0 +1,44 @@
+﻿##### d_xianshi ############################
+
+### c_doumulingguan
+# 
+1926 = {
+	holding = none
+}
+
+
+### c_luoshan
+# 
+1932 = {
+	holding = none
+}
+
+
+### c_lean1
+# 
+1933 = {
+	holding = none
+}
+
+
+### c_xian3
+# 
+1934 = {
+	holding = none
+}
+
+
+### c_gong3
+# 
+1936 = {
+	holding = none
+}
+
+
+### c_xianting
+# 
+1939 = {
+	holding = none
+}
+
+

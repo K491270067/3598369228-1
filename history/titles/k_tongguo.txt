@@ -1,0 +1,197 @@
+﻿d_tongchengshi = {
+	2558.2.2 = {
+		liege = "k_tongguo"
+		holder = sixingtongchengshi1
+	}
+	2611.1.1 = {
+		holder = sixingtongchengshi2
+	}
+	2640.12.31 = {
+		holder = sixingtongchengshi3
+	}
+	2707.12.31 = {
+		holder = sixingtongchengshi4
+	}
+	2751.12.31 = {
+		holder = sixingtongchengshi5
+	}
+	2801.12.31 = {
+		holder = sixingtongchengshi6
+	}
+	2847.12.31 = {
+		holder = sixingtongchengshi7
+	}
+	2900.12.31 = {
+		holder = sixingtongchengshi8
+	}
+	2954.12.31 = {
+		holder = sixingtongchengshi9
+	}
+	2978.12.31 = {
+		holder = sixingtongchengshi10
+	}
+	3014.12.31 = {
+		holder = sixingtongchengshi11
+	}
+	3069.12.31 = {
+		holder = sixingtongchengshi12
+	}
+	3111.12.31 = {
+		holder = sixingtongchengshi13
+	}
+	3154.12.31 = {
+		holder = sixingtongchengshi14
+	}
+	3193.12.31 = {
+		holder = sixingtongchengshi15
+	}
+	3244.12.31 = {
+		holder = sixingtongchengshi16
+	}
+	3300.12.31 = {
+		holder = sixingtongchengshi17
+	}
+	3344.12.31 = {
+		holder = sixingtongchengshi18
+	}
+	3390.12.31 = {
+		holder = sixingtongchengshi19
+	}
+	3434.12.31 = {
+		holder = sixingtongchengshi20
+	}
+	3489.12.31 = {
+		holder = sixingtongchengshi21
+	}
+	3511.12.31 = {
+		holder = sixingtongchengshi22
+	}
+	3533.12.31 = {
+		holder = sixingtongchengshi23
+	}
+	3570.12.31 = {
+		holder = sixingtongchengshi24
+	}
+	3603.1.1 = {
+		holder = sixingtongchengshi25
+	}
+	3680.1.1 = {
+		holder = sixingtongchengshi26
+	}
+	3760.1.1 = {
+		holder = sixingtongchengshi27
+	}
+	3830.1.1 = {
+		holder = jixingtongguo14
+	}
+	3849.1.1 = {
+		change_development_level = 30
+		government = feudal_admin_government
+	}
+}
+k_tongguo = {
+	2558.2.2 = {
+		holder = sixingtongchengshi1
+	}
+	2611.1.1 = {
+		holder = sixingtongchengshi2
+	}
+	2640.12.31 = {
+		holder = sixingtongchengshi3
+	}
+	2707.12.31 = {
+		holder = sixingtongchengshi4
+	}
+	2751.12.31 = {
+		holder = sixingtongchengshi5
+	}
+	2801.12.31 = {
+		holder = sixingtongchengshi6
+	}
+	2847.12.31 = {
+		holder = sixingtongchengshi7
+	}
+	2900.12.31 = {
+		holder = sixingtongchengshi8
+	}
+	2954.12.31 = {
+		holder = sixingtongchengshi9
+	}
+	2978.12.31 = {
+		holder = sixingtongchengshi10
+	}
+	3014.12.31 = {
+		holder = sixingtongchengshi11
+	}
+	3069.12.31 = {
+		holder = sixingtongchengshi12
+	}
+	3111.12.31 = {
+		holder = sixingtongchengshi13
+	}
+	3154.12.31 = {
+		holder = sixingtongchengshi14
+	}
+	3193.12.31 = {
+		holder = sixingtongchengshi15
+	}
+	3244.12.31 = {
+		holder = sixingtongchengshi16
+	}
+	3300.12.31 = {
+		holder = sixingtongchengshi17
+	}
+	3344.12.31 = {
+		holder = sixingtongchengshi18
+	}
+	3390.12.31 = {
+		holder = sixingtongchengshi19
+	}
+	3434.12.31 = {
+		holder = sixingtongchengshi20
+	}
+	3489.12.31 = {
+		holder = sixingtongchengshi21
+	}
+	3511.12.31 = {
+		holder = sixingtongchengshi22
+	}
+	3533.12.31 = {
+		holder = sixingtongchengshi23
+	}
+	3570.12.31 = {
+		liege = "e_zhoutianzi"
+		holder = sixingtongchengshi24
+	}
+	3603.1.1 = {
+		holder = jixingtongguo1
+	}
+	3642.12.31 = {
+		holder = jixingtongguo2
+	}
+	3661.12.31 = {
+		holder = jixingtongguo3
+	}
+	3700.12.31 = {
+		holder = jixingtongguo4
+	}
+	3715.12.31 = {
+		holder = jixingtongguo5
+	}
+	3741.12.31 = {
+		holder = jixingtongguo6
+	}
+	3780.12.31 = {
+		holder = jixingtongguo7
+	}
+	3809.12.31 = {
+		holder = jixingtongguo8
+	}
+	3849.1.1 = {
+		change_development_level = 32
+		government = feudal_admin_government
+	}
+	3849.1.31 = {
+		holder = jixingtongguo9
+	}
+}

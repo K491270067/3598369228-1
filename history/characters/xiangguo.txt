@@ -1,0 +1,351 @@
+﻿#############  向国--姜姓向氏 #############
+xiangguo1={
+  name="nanming688"
+  dynasty=xin420
+	religion="yinli" 
+	culture="shennongshi"
+  father=han3247
+
+  3467.1.1 = {
+		birth = yes
+	}
+  3533.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+xiangguo2={
+  name="nanming695"#周武王为奖赏吕人的功劳，建立周朝后续封吕他为吕侯。
+  dynasty_house=house_xin421
+	religion="xizhouli" 
+	culture="qi"
+  father=xiangguo1
+
+  3531.1.1 = {
+		birth = yes
+	}
+  3600.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+xiangguo3={
+  name="nanming707"
+  dynasty_house=house_xin421
+	religion="xizhouli" 
+	culture="qi"
+  father=xiangguo2
+
+  3555.7.1 = {
+		birth = yes
+	}
+  3621.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+xiangguo4={
+  name="nanming717"
+  dynasty_house=house_xin421
+	religion="xizhouli" 
+	culture="qi"
+  father=xiangguo3
+
+  3580.1.1 = {
+		birth = yes
+	}
+  3651.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+xiangguo5={
+  name="nanming726"
+  dynasty_house=house_xin421
+	religion="xizhouli" 
+	culture="qi"
+  father=xiangguo4
+
+  3640.1.1 = {
+		birth = yes
+	}
+  3702.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+xiangguo6={
+  name="nanming739"
+  dynasty_house=house_xin421
+	religion="xizhouli" 
+	culture="qi"
+  father=xiangguo5
+
+  3700.1.1 = {
+		birth = yes
+	}
+  3752.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+xiangguo7={
+  name="nanming748"
+  dynasty_house=house_xin421
+	religion="xizhouli" 
+	culture="qi"
+  father=xiangguo6
+
+  3751.1.1 = {
+		birth = yes
+	}
+  3795.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+xiangguo8={
+  name="nanming757"
+  dynasty_house=house_xin421
+	religion="xizhouli" 
+	culture="qi"
+  father=xiangguo7
+
+  3777.1.1 = {
+		birth = yes
+	}
+  3805.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+xiangguo9={
+  name="nanming773"
+  dynasty_house=house_xin421
+	religion="xizhouli" 
+	culture="qi"
+  father=xiangguo8
+
+  3799.1.1 = {
+		birth = yes
+	}
+  3836.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+xiangguo10={
+  name="nanming777"#平王东迁时期向国君主
+  dynasty_house=house_xin421
+	religion="dongzhouli" 
+	culture="qi"
+  father=xiangguo9
+
+  3820.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+xiangguo11={
+  name="nanming566"
+  dynasty_house=house_xin421
+	religion="dongzhouli" 
+	culture="qi"
+  father=xiangguo10
+
+  3838.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+xiangguo12={
+  name="nanming583"#储君1号
+  dynasty_house=house_xin421
+	religion="dongzhouli" 
+	culture="qi"
+  father=xiangguo10
+
+  3839.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+xiangguo13={
+  name="nanming601"#储君2号
+  dynasty_house=house_xin421
+	religion="dongzhouli" 
+	culture="qi"
+  father=xiangguo10
+
+  3840.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+xiangguo14={
+  name="nanming614"#储君3号
+  dynasty_house=house_xin421
+	religion="dongzhouli" 
+	culture="qi"
+  father=xiangguo10
+
+  3841.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+xiangguo15={
+  name="nvming241"
+  dynasty_house=house_xin421
+	religion="dongzhouli" 
+	culture="qi"
+  father=xiangguo10
+  female=yes
+
+  3843.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+xiangguo16={
+  name="nvming250"
+  dynasty_house=house_xin421
+	religion="dongzhouli" 
+	culture="qi"
+  father=xiangguo10
+  female=yes
+
+  3844.6.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+xiangguo17={
+  name="nvming256"
+  dynasty_house=house_xin421
+	religion="dongzhouli" 
+	culture="qi"
+  father=xiangguo10
+  female=yes
+
+  3845.7.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+#########辟氏
+xiangguo18={
+  name="nanming989"
+  dynasty_house=house_xin422
+	religion="xizhouli" 
+	culture="qi"
+  father=xiangguo7
+
+  3788.1.1 = {
+		birth = yes
+	}
+  3815.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+xiangguo19={
+  name="nanming1012"#平王
+  dynasty_house=house_xin422
+	religion="dongzhouli" 
+	culture="qi"
+  father=xiangguo18
+
+  3809.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+xiangguo20={
+  name="nanming1051"
+  dynasty_house=house_xin421
+	religion="dongzhouli" 
+	culture="qi"
+  father=xiangguo19
+
+  3828.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+xiangguo21={
+  name="nanming1061"
+  dynasty_house=house_xin421
+	religion="dongzhouli" 
+	culture="qi"
+  father=xiangguo19
+
+  3829.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+xiangguo22={
+  name="nvming253"#储君2号
+  dynasty_house=house_xin421
+	religion="dongzhouli" 
+	culture="qi"
+  father=xiangguo19
+  female=yes
+
+  3830.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+xiangguo23={
+  name="nvming262"#储君3号
+  dynasty_house=house_xin421
+	religion="dongzhouli" 
+	culture="qi"
+  father=xiangguo19
+  female=yes
+
+  3832.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}

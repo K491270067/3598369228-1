@@ -1,0 +1,50 @@
+﻿k_zuoduguo = {
+3745.1.1 = {
+		holder = zuoduguo13
+	}
+3800.1.1 = {
+		holder = han5526
+	}
+3849.12.31 = {
+		government = tribal_government
+		change_development_level = 24
+	}
+}
+
+d_zuoshi1 = {
+3745.1.1 = {
+		liege = "k_zuoduguo"
+		holder = zuoduguo13
+	}
+3800.1.1 = {
+		holder = han5526
+	}
+}
+
+d_dingzuoshi = {
+3762.1.1 = {
+		liege = "k_zuoduguo"
+		holder = zuoduguo1
+	}
+3804.1.1 = {
+		holder = zuoduguo2
+	}
+3849.1.1 = {
+		change_development_level = 23
+		government = tribal_government
+	}
+}
+
+d_dazuoshi = {
+3789.1.1 = {
+		liege = "k_zuoduguo"
+		holder = zuoduguo7
+	}
+3834.1.1 = {
+		holder = zuoduguo8
+	}
+3849.1.1 = {
+		change_development_level = 21
+		government = tribal_government
+	}
+}

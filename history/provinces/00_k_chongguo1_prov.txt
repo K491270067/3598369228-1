@@ -1,0 +1,135 @@
+﻿##### d_chongshi1 ############################
+
+### c_xinjing
+# XINJING
+3192 = {
+	culture = congren
+	religion = guiwu
+	holding = tribal_holding
+}
+
+
+### c_nanbu
+# NANBU
+3193 = {
+	holding = none
+}
+
+
+### c_qingshi
+# QINGSHI
+3315 = {
+	holding = none
+}
+
+
+### c_pengxi
+# PENGXI
+3316 = {
+	holding = none
+}
+
+
+### c_changjiang
+# CHANGJIANG
+3317 = {
+	culture = congren
+	religion = guiwu
+	holding = tribal_holding
+}
+
+
+### c_liuxi
+# LIUXI
+3319 = {
+	holding = none
+}
+
+
+### c_xiangru
+# XIANGRU
+3321 = {
+	holding = none
+}
+
+
+### c_xichong
+# XICHONG
+3322 = {
+	culture = congren
+	religion = guiwu
+	holding = tribal_holding
+}
+
+
+### c_nanchong
+# NANCHONG
+3323 = {
+	holding = none
+}
+
+
+### c_chishui
+# CHISHUI
+3704 = {
+	culture = congren
+	religion = guiwu
+	holding = tribal_holding
+}
+
+
+### c_hanchu
+# HANCHU
+3705 = {
+	holding = none
+}
+
+
+### c_fangyi
+# FANGYI
+3318 = {
+	holding = none
+}
+
+
+### c_chongkan
+# CHONGKAN
+3304 = {
+	culture = congren
+	religion = guiwu
+	holding = tribal_holding
+}
+
+
+### c_anju
+# ANJU
+3305 = {
+	culture = congren
+	religion = guiwu
+	holding = tribal_holding
+}
+
+
+### c_suining
+# SUINING
+3165 = {
+	holding = none
+}
+
+
+### c_tongliang
+# TONGLIANG
+3722 = {
+	culture = congren
+	religion = guiwu
+	holding = tribal_holding
+}
+
+
+### c_pukang
+# PUKANG
+3302 = {
+	holding = none
+}
+
+

@@ -1,0 +1,170 @@
+﻿bm_pmrta770 = {
+	start_date = 3850.1.1
+	is_playable = yes
+	group = bm_group_pmrta770
+	recommended = yes
+	weight = {
+		value = 20
+	}
+	##############平王
+	character = {
+		name = "yijiu"
+		dynasty = baijia297
+		dynasty_splendor_level = 2
+		type = male
+		birth = 3827.1.1
+		title = e_zhoutianzi1
+		government = feudal_admin_government
+		culture = zhou
+		religion = dongzhouli 
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
+		history_id = han32
+		position = { 730 400 }
+		
+		animation = frontend_left_idle
+	}
+	###################携王
+	character = {
+		name = "wang"
+		dynasty = baijia297
+		dynasty_splendor_level = 2
+		type = male
+		birth = 3810.1.1
+		title = e_zhoutianzi
+		government = feudal_admin_government
+		culture = zhou
+		religion = xizhouli 
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
+		history_id = han31
+		position = { 330 500 }
+		
+		animation = frontend_right_idle
+	}
+
+}
+
+bm770_rise_from_end = {
+	start_date = 3850.1.1
+	is_playable = yes
+	group = bm_group_pmrta770
+	recommended = yes
+	weight = {
+		value = 10
+	}
+	##############秦襄公，平王东迁时秦国君主
+	character = {
+		name = "kai"
+		dynasty = xin51
+		dynasty_splendor_level = 2
+		type = male
+		birth = 3803.1.1 
+		title = k_qinguo1
+		government = feudal_admin_government
+		culture = qin
+		religion = dongzhouli 
+		difficulty ="BOOKMARK_CHARACTER_DIFFICULTY_HARD"
+		history_id = han2871
+		position = { 130 600 }
+		
+		animation = marshal
+	}
+	####################郑武公，郑桓公之子，平王东迁时郑国君主
+	character = {
+		name = "juetu"
+		dynasty = xin531
+		dynasty_splendor_level = 2
+		type = male
+		birth = 3810.1.1
+		title = k_zhengguo
+		government = feudal_admin_government
+		culture = zhou
+		religion = dongzhouli 
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
+		history_id = han212
+		position = { 830 700 }
+		
+		animation = anger
+	}
+	###################晋文侯，平王东迁时晋国君主
+	character = {
+		name = "chou1"
+		dynasty = xin645
+		dynasty_splendor_level = 2
+		type = male
+		birth = 3820.1.1
+		title = k_jinguo1
+		government = feudal_admin_government
+		culture = jin
+		religion = dongzhouli 
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		history_id = han132
+		position = { 530 650 }
+		
+		animation = aggressive_mace
+	}
+	####################齐庄公，平王东迁时期齐国君主
+	character = {
+		name = "gou"
+		dynasty = xin328
+		dynasty_splendor_level = 2
+		type = male
+		birth = 3819.1.1
+		title = k_qiguo
+		government = feudal_admin_government
+		culture = qi
+		religion = xizhouli 
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		history_id = han52
+		position = { 1330 350 }
+		
+		animation = thinking
+	}
+	####################宋戴公
+	character = {
+		name = "nanming157"
+		dynasty=xin47
+		dynasty_splendor_level = 2
+		type = male
+		birth = 3810.1.1
+		title = k_songguo
+		government = feudal_admin_government
+		culture = song
+		religion = yinli
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		history_id = han1259
+		position = { 1150 600 }
+		
+		animation = prayer
+	}	
+	####################犬戎
+	character = {
+		name = "bfyznan362"
+		dynasty = xin221
+		#dynasty_house = house_baijia22
+		dynasty_splendor_level = 2
+		type = male
+		birth = 3810.6.2
+		title = k_quanrong1
+		government = feudal_admin_government
+		culture = quanrong
+		religion = xirongfangling 
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
+		history_id = han2982
+		position = { 300 290 }
+		
+		animation = marshal_axe
+	}
+
+
+}
+
+###################BC450
+bm_group_pmrta450 = {
+	default_start_date = 4170.1.1
+	is_playable = no
+	group = bm_group_pmrta450
+	recommended = no
+	weight = {
+		value = 10
+	}
+}

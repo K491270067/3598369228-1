@@ -1,0 +1,57 @@
+﻿##### d_mishi ############################
+
+### c_yangcheng1
+# YANGCHENG
+765 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+# MI3
+764 = {
+	holding = none
+}
+
+
+### c_ying1
+# YING1
+755 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+# LI13
+1610 = {
+	holding = none
+}
+
+
+### c_juntai
+# JUNTAI
+1611 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+##### d_jiashi1 ############################
+
+### c_jia1
+# JIA1
+1608 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+### c_xiangcheng
+# XIANGCHENG
+1615 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+

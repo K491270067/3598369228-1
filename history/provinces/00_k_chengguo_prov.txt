@@ -1,0 +1,48 @@
+﻿##### d_chengshi ############################
+
+### c_cheng1
+# CHENG1
+356 = {
+	culture = lu
+	religion = xizhouli
+	holding = castle_holding
+}
+# TAO2
+2278 = {
+	holding = none
+}
+
+
+### c_fuzhong
+# FUZHONG
+359 = {
+	culture = lu
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+##### d_xiagongshi ############################
+
+### c_ba
+# BA
+446 = {
+	culture = lu
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_fuxia
+# FUXIA
+447 = {
+	culture = lu
+	religion = xizhouli
+	holding = castle_holding
+}
+# SHI8
+2279 = {
+	holding = none
+}
+
+

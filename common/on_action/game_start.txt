@@ -1,0 +1,22 @@
+﻿on_game_start = {
+	 on_actions = {
+        dm_situation_start_situation
+    }
+
+}
+
+dm_situation_start_situation = {
+	events = {
+		fallen_of_zhou_dynasty_struggle.1003
+	}	
+	effect = {
+		start_situation = {
+			situation = {
+				type = spring_and_autumn_situation
+				start_phase = spring_and_autumn_phase
+				save_scope_as = spring_and_autumn_situation
+			}
+		}
+
+	}
+}

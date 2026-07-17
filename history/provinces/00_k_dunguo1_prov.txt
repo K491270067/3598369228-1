@@ -1,0 +1,37 @@
+﻿##### d_dunshi1 ############################
+
+### c_zhaoling
+# ZHAOLING
+1623 = {
+	holding = none
+}
+
+
+### c_yangcheng2
+# YANGCHENG2
+1624 = {
+	holding = none
+}
+
+
+### c_anling2
+# ANLING2
+1625 = {
+	holding = none
+}
+
+
+### c_dun
+# DUN
+1627 = {
+	holding = none
+}
+
+
+### c_caiyang
+# CAIYANG
+1628 = {
+	holding = none
+}
+
+

@@ -1,0 +1,455 @@
+﻿
+
+#############
+# 周礼  #
+#############
+
+feng = {
+	county = c_feng2
+	barony = b_870_0
+	
+	character_modifier = {
+		monthly_piety_gain_mult = 0.2
+	}
+}
+
+hao = {
+	county = c_gao3
+	barony = b_868_0
+	
+	character_modifier = {
+		name = holy_site_rome_effect_name
+		monthly_prestige = 0.1
+		monthly_dread = 0.01
+	}
+}
+
+luo = {
+	county = c_chengzhou
+	barony = b_786_0
+	
+	character_modifier = {
+		name = holy_site_cologne_effect_name
+		monthly_tyranny = 0.01
+		monthly_county_control_change_factor = 0.05
+	}
+}
+
+bin = {
+	county = c_bin
+	barony = b_952_0
+	
+	character_modifier = {
+		name = holy_site_santiago_effect_name
+		supply_duration = 0.2
+		holy_order_hire_cost_mult = -0.1
+	}
+}
+
+quanqiu = {
+	county = c_qi6
+	barony = b_895_0
+	
+	character_modifier = {
+		name = holy_site_kent_effect_name
+		stewardship = 1
+		martial = 1
+	}
+}
+
+#############
+# 殷礼  #
+#############
+
+# Zhengyi
+
+shangqiu = { #商丘
+	county = c_shangqiu
+	barony = b_533_0
+	
+	character_modifier = {
+		monthly_piety_gain_mult = 0.2
+	}
+	
+}
+
+chaoge = { #朝歌
+	county = c_zhaoge
+	barony = b_1109_0
+	
+	character_modifier = {
+		name = holy_site_rome_effect_name
+		development_growth_factor = 0.1
+		stewardship = 1
+	}
+}
+
+xing = { #邢
+	county = c_xing4
+	barony = b_1202_0
+	
+	character_modifier = {
+		name = holy_site_cologne_effect_name
+		cultural_head_fascination_mult = 0.05
+		monthly_county_control_change_factor = 0.05
+	}
+}
+
+bo = { #亳
+	county = c_bo
+	barony = b_536_0
+	
+	character_modifier = {
+		name = holy_site_cologne_effect_name
+		cultural_head_fascination_mult = 0.05
+		monthly_county_control_change_factor = 0.05
+	}
+}
+
+guzhu = { #孤竹
+	county = c_lulong
+	barony = b_3493_0
+	
+	character_modifier = {
+		name = holy_site_kent_effect_name
+		religious_vassal_opinion = 5
+		monthly_lifestyle_xp_gain_mult = 0.1
+	}
+}
+
+#############
+# 楼观派  #
+#############
+
+
+diqiu = { #帝丘
+	county = c_diqiu
+	barony = b_686_0
+	
+	character_modifier = {
+		monthly_piety_gain_mult = 0.1
+		health = 3
+	}
+	
+}
+
+yuan = { #原
+	county = c_yuan2
+	barony = b_1084_0
+	
+	character_modifier = {
+		name = holy_site_rome_effect_name
+		development_growth_factor = 0.1
+		diplomacy = 1
+	}
+}
+
+pingyang = { #阳城
+	county = c_yangcheng3
+	barony = b_2703_0
+	
+	character_modifier = {
+		name = holy_site_cologne_effect_name
+		domain_limit = 2
+		build_gold_cost = -0.1
+	}
+}
+
+an = { #老丘
+	county = c_laoqiu
+	barony = b_577_0
+	
+	character_modifier = {
+		name = holy_site_cologne_effect_name
+		cultural_head_fascination_mult = 0.05
+		monthly_county_control_change_factor = 0.05
+	}
+}
+
+#############
+# 茅山道  #
+#############
+
+# Shangqing
+
+linzi = { #临淄
+	county = c_linzi
+	barony = b_8_0
+	
+	character_modifier = {
+		monthly_piety_gain_mult = 0.2
+	}
+	flag = jerusalem_conversion_bonus # +20% County Conversion
+}
+
+qufu = { #曲阜
+	county = c_qufu
+	barony = b_444_0
+	
+	character_modifier = {
+		name = holy_site_rome_effect_name
+		development_growth_factor = 0.1
+		knight_limit = 2
+	}
+}
+
+xu = { #徐
+	county = c_xu
+	barony = b_292_0
+	
+	character_modifier = {
+		name = holy_site_cologne_effect_name
+		cultural_head_fascination_mult = 0.05
+		stress_loss_mult = -0.05
+	}
+}
+
+liu = { #六
+	county = c_lu4
+	barony = b_1967_0
+	
+	character_modifier = {
+		name = holy_site_santiago_effect_name
+		learning = 2
+		holy_order_hire_cost_mult = -0.1
+	}
+}
+
+lai = { #莱
+	county = c_lai1
+	barony = b_171_0
+	
+	character_modifier = {
+		name = holy_site_kent_effect_name
+		religious_vassal_opinion = 5
+		monthly_lifestyle_xp_gain_mult = 0.1
+	}
+}
+
+
+lushi = {
+	county = c_lushi
+	barony = b_1163_0
+	
+	character_modifier = {
+		name = holy_site_rome_effect_name
+		development_growth_factor = 0.1
+		stewardship = 1
+	}
+}
+
+lingshou = {
+	county = c_lingshou
+	barony = b_361_0
+	
+	character_modifier = {
+		name = holy_site_cologne_effect_name
+		cultural_head_fascination_mult = 0.05
+		monthly_county_control_change_factor = 0.05
+	}
+}
+
+fushi = {
+	county = c_fushi1
+	barony = b_1434_0
+	
+	character_modifier = {
+		name = holy_site_santiago_effect_name
+		supply_duration = 0.2
+		holy_order_hire_cost_mult = -0.1
+	}
+}
+
+luo1 = {
+	county = c_gaoluo
+	barony = b_1062_0
+	
+	character_modifier = {
+		name = holy_site_kent_effect_name
+		religious_vassal_opinion = 5
+		sway_scheme_power_mult = 0.1
+	}
+}
+
+gaowang = {
+	county = c_gaowang
+	barony = b_1603_0
+	
+	character_modifier = {
+		name = holy_site_dwin_effect_name
+		monthly_piety_gain_mult = 0.05
+		learning = 1
+	}
+}
+
+xiquanqiu = {
+	county = c_xichui
+	barony = b_1523_0
+
+	character_modifier = {
+		name = holy_site_koloneia_effect_name
+		direct_vassal_opinion = 5
+	}
+}
+
+yiqu = {
+	county = c_yiqu
+	barony = b_1478_0
+
+	character_modifier = {
+		name = holy_site_beirut_effect_name
+		councillor_opinion = 5
+	}
+}
+
+zhangye = {
+	county = c_zhangye
+	barony = b_1566_0
+
+	character_modifier = {
+		name = holy_site_baghdad_effect_name
+		development_growth_factor = 0.1
+		church_holding_build_gold_cost = -0.1
+	}
+}
+bajiao = {
+	county = c_bajiao
+	barony = b_1445_0
+
+	character_modifier = {
+		name = holy_site_farz_effect_name
+		diplomacy_per_piety_level = 1
+	}
+}
+xaunwei = {
+	county = c_xuanwei
+	barony = b_1561_0
+
+	character_modifier = {
+		name = holy_site_mecca_effect_name
+		monthly_piety_gain_per_knight_mult = 0.02
+		knight_effectiveness_mult = 0.1
+	}
+}
+
+yiwulv = {	#The ecclesiastic capital of Ireland, and site of St. Patrick's primary church.
+	county = c_wulu1
+	barony = b_3475_0
+
+	character_modifier = {
+		name = holy_site_armagh_effect_name
+		monthly_piety_gain_mult = 0.05
+		learning_per_piety_level = 1
+	}
+}
+
+tuhe = {	#Monastery of Colm Cille, directly responsible for converting Scotland (then Pictland) & Northumbria. Still operating today, actually.
+	county = c_tuhe
+	barony = b_3488_0
+
+	character_modifier = {
+		name = holy_site_medina_effect_name
+		diplomacy_per_piety_level = 1
+	}
+}
+
+# Bosnian Church
+
+bailang = {	#The heart of rural Bosnia, and so of the faith.
+	county = c_bailang
+	barony = b_3491_0
+
+	character_modifier = {
+		name = holy_site_sinai_effect_name
+		desert_mountains_advantage = 5
+		learning = 1
+	}
+}
+
+gangcheng = {	#Seat of the Archbishop of Ragusa, the diocese under which the Bishopric of Bosnia fell, and whose political support allowed them to stay largely independent of Rome.
+	county = c_gangcheng1
+	barony = b_2652_0
+
+	character_modifier = {
+		name = holy_site_ragusa_effect_name
+		diplomacy = 1
+	}
+}
+
+yilou = {	#The Hungarian capital for their conversion to Christianity. As one of the primary powers that persecuted the Bosnian Church in later centuries, controlling it gives some popular authority to the faith.
+	county = c_yaoyang
+	barony = b_2616_0
+
+	character_modifier = {
+		name = holy_site_esztergom_effect_name
+		county_opinion_add = 10
+	}
+}
+
+
+ying = {
+	county = c_dan3
+	barony = b_1756_0
+
+	character_modifier = {
+		name = holy_site_kufa_effect_name
+		intrigue_per_piety_level = 1
+	}
+}
+
+# Ibadi ( Omani Muhakkima )
+
+e = { # Location where the Ibadi school of thought originated.
+	county = c_qiaoduo
+	barony = b_1819_0
+
+	character_modifier = {
+		name = holy_site_basra_effect_name
+		learning = 2
+	}
+}
+
+kui = { # Where the Ibadi took refuge after being exiled.
+	county = c_jiangling
+	barony = b_1811_0
+
+	character_modifier = {
+		name = holy_site_nizwa_effect_name
+		stewardship_per_piety_level = 1
+	}
+}
+
+# Sufri ( Moroccan Muhakkima )
+
+zhi = {
+	county = c_zhiyi
+	barony = b_3708_0
+
+	character_modifier = {
+		name = holy_site_sijilmasa_effect_name
+		diplomacy = 1
+		stewardship = 1
+	}
+}
+
+# Nadjat ( Bahrain Muhakkima )
+
+chengdu = {
+	county = c_chengdu
+	barony = b_3158_0
+
+	character_modifier = {
+		name = holy_site_bahrein_effect_name
+		stewardship = 1
+	}
+}
+
+tufei = {
+	county = c_tufei
+	barony = b_3170_0
+
+	character_modifier = {
+		name = holy_site_yamama_effect_name
+		desert_advantage = 5
+	}
+}

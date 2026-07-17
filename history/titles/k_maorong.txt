@@ -1,0 +1,75 @@
+﻿d_miaoshi = {
+	3574.12.12 = {
+		liege = "k_maorong"
+		holder = maorong1
+	}
+	3621.1.1 = {
+		holder = maorong2
+	}
+	3647.1.1 = {
+		holder = maorong3
+	}
+	3688.1.1 = {
+		holder = maorong4
+	}
+	3712.1.1 = {
+		holder = maorong5
+	}
+	3731.1.1 = {
+		holder = maorong6
+	}
+	3769.1.1 = {
+		holder = maorong7
+	}
+	3780.1.1 = {
+		holder = maorong8
+	}
+	3804.1.1 = {
+		holder = maorong9
+	}
+	3835.1.1 = {
+		holder = maorong15
+	}
+	3849.1.1 = {
+		change_development_level = 27
+	}
+	3849.12.31 = {
+		government = tribal_government
+	}
+}
+k_maorong = {
+	3574.12.12 = {
+		holder = maorong1
+	}
+	3621.1.1 = {
+		holder = maorong2
+	}
+	3647.1.1 = {
+		holder = maorong3
+	}
+	3688.1.1 = {
+		holder = maorong4
+	}
+	3712.1.1 = {
+		holder = maorong5
+	}
+	3731.1.1 = {
+		holder = maorong6
+	}
+	3769.1.1 = {
+		holder = maorong7
+	}
+	3780.1.1 = {
+		holder = maorong8
+	}
+	3804.1.1 = {
+		holder = maorong9
+	}
+	3835.1.1 = {
+		holder = maorong10
+	}
+	3849.12.31 = {
+		government = tribal_government
+		change_development_level = 28
+	}
+}

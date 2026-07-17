@@ -1,0 +1,72 @@
+﻿##### d_zhoulaishi ############################
+
+### c_fangzhong
+# FANGZHONG
+613 = {
+	holding = none
+}
+
+
+### c_shen
+# SHEN
+614 = {
+	holding = none
+}
+
+
+### c_qie
+# QIE
+615 = {
+	holding = none
+}
+
+
+### c_zhoulai
+# ZHOULAI
+616 = {
+	holding = none
+}
+
+
+### c_yingwei
+# YINGWEI
+617 = {
+	holding = none
+}
+
+
+### c_xiachengfu
+# XIACHENGFU
+2355 = {
+	holding = none
+}
+
+
+### c_sharui
+# SHARUI
+2356 = {
+	holding = none
+}
+
+
+### c_pinga
+# PINGA
+2357 = {
+	holding = none
+}
+
+
+### c_ciyang
+# CIYANG
+2361 = {
+	holding = none
+}
+
+
+### c_jiaoqiu
+# JIAOQIU
+2362 = {
+	holding = none
+}
+
+

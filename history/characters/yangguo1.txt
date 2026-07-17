@@ -1,0 +1,218 @@
+﻿#############  鏉ㄥ浗--濮鏉ㄦ皬 #############
+han34={
+  name="shangfu"##鏉ㄤ警
+  dynasty=xin329
+	religion="xizhouli" 
+	culture="jin"
+  father=han28
+
+  3811.1.1 = {
+		birth = yes
+	}
+  3847.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+    give_nickname=nick_yanghou
+  }
+}
+han35={
+  name="renchen"#浜屼唬鏉ㄤ警锛岃€佹潹涔嬪彅鐖?
+  dynasty_house=house_baijia16
+	religion="xizhouli" 
+	culture="jin"
+  father=han34
+
+  3829.1.1 = {
+		birth = yes
+	}
+  3903.1.1 = {
+    death = yes
+  }
+}
+han36={
+  name="pijiang"#浜屼唬鏉ㄤ警涔嬪紵锛岃€佹潹涔嬬埗
+  dynasty_house=house_baijia16
+	religion="xizhouli" 
+	culture="jin"
+  father=han34
+
+  3831.1.1 = {
+		birth = yes
+	}
+  3903.1.1 = {
+    death = yes
+  }
+}
+han37={
+  name="qian"
+  dynasty_house=house_baijia16
+	religion="xizhouli" 
+	culture="jin"
+  father=han36
+
+  3849.1.6 = {
+		birth = yes
+	}
+  3903.1.1 = {
+    death = yes
+  }
+}
+han38={
+  name="ning"
+  dynasty_house=house_baijia16
+	religion="xizhouli" 
+	culture="jin"
+  father=han36
+
+  3849.6.6 = {
+		birth = yes
+	}
+  3903.1.1 = {
+    death = yes
+  }
+}
+han39={
+  name="lin"
+  dynasty_house=house_baijia16
+	religion="xizhouli" 
+	culture="jin"
+  father=han35
+
+  3848.6.6 = {
+		birth = yes
+	}
+  3903.1.1 = {
+    death = yes
+  }
+}
+han40={
+  name="gai"
+  dynasty_house=house_baijia16
+	religion="xizhouli" 
+	culture="jin"
+  father=han35
+
+  3848.9.6 = {
+		birth = yes
+	}
+  3903.1.1 = {
+    death = yes
+  }
+}
+shanqiu7={
+  name="nvming103"
+  dynasty_house=house_baijia16
+	religion="xizhouli" 
+	culture="jin"
+  father=han35
+  female=yes
+
+  3849.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+#################閫戞皬
+shanqiu1={
+  name="nanming499"#鍗曢€?
+  dynasty_house=house_baijia182
+	religion="xizhouli" 
+	culture="jin"
+  father=han630
+
+  3788.1.1 = {
+		birth = yes
+	}
+  3844.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+shanqiu2={
+  name="pan"
+  dynasty_house=house_xin570
+	religion="xizhouli" 
+	culture="jin"
+  father=shanqiu1
+
+  3810.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+shanqiu3={
+  name="meng"
+  dynasty_house=house_xin570
+	religion="xizhouli" 
+	culture="jin"
+  father=shanqiu2
+  
+  3828.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+shanqiu4={
+  name="chao"
+  dynasty_house=house_xin570
+	religion="xizhouli" 
+	culture="jin"
+  father=shanqiu2
+
+  3829.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+shanqiu5={
+  name="nvming104"
+  dynasty_house=house_xin570
+	religion="xizhouli" 
+	culture="jin"
+  father=shanqiu2
+  female=yes
+
+  3830.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+shanqiu6={
+  name="nvming117"
+  dynasty_house=house_xin570
+	religion="xizhouli" 
+	culture="jin"
+  father=shanqiu2
+  female=yes
+
+  3831.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}

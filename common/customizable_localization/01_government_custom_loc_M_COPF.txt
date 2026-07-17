@@ -1,0 +1,245 @@
+﻿GetRealmOrDomicileTooltip = { #包含COPF改动
+	type = character
+	
+	text = {
+		trigger = {
+			trigger_if = {
+				limit = { is_ruler = yes }
+				is_nomad = yes
+			}
+			trigger_else = {
+				liege ?= { is_nomad = yes }
+			}
+		}
+		localization_key = NOMAD
+	}
+	text = {
+		trigger = {
+			trigger_if = {
+				limit = { is_ruler = yes }
+				has_government = landless_adventurer_government
+			}
+			trigger_else = {
+				liege ?= { has_government = landless_adventurer_government }
+			}
+		}
+		localization_key = ADVENTURER
+	}
+	text = {
+		trigger = {
+			trigger_if = {
+				limit = { is_ruler = yes }
+				is_landless_administrative = yes
+			}
+			trigger_else = {
+				liege ?= { is_landless_administrative = yes }
+			}
+		}
+		localization_key = NOBLE_FAMILY
+	}
+	text = {
+		trigger = {
+			trigger_if = {
+				limit = { is_ruler = yes }
+				primary_title = { is_holy_order = yes }
+			}
+			trigger_else = {
+				liege.primary_title ?= { is_holy_order = yes }
+			}
+		}
+		localization_key = CV_REALM_TYPE_HOLY_ORDER
+	}
+	text = {
+		trigger = {
+			trigger_if = {
+				limit = { is_ruler = yes }
+				primary_title = { is_mercenary_company = yes }
+			}
+			trigger_else = {
+				liege.primary_title ?= { is_mercenary_company = yes }
+			}
+		}
+		localization_key = CV_REALM_TYPE_MERCENARY
+	}
+	text = {
+		trigger = {
+			trigger_if = {
+				limit = { is_ruler = yes }
+				this = faith.religious_head
+				is_landed = no
+			}
+			trigger_else = { liege ?= faith.religious_head }
+		}
+		localization_key = CV_REALM_TYPE_HOF
+	}
+	text = {
+		trigger = {
+			trigger_if = {
+				limit = { is_ruler = yes }
+				this = faith.religious_head
+				is_landed = yes
+			}
+			trigger_else = { liege ?= faith.religious_head }
+		}
+		localization_key = CV_REALM_TYPE_HOF_LANDED
+	}
+	text = { #包含COPF改动
+		trigger = {
+			trigger_if = {
+				limit = { is_ruler = yes }
+				is_governor = yes
+				NOT = { government_has_flag = government_is_feudal_admin } #COPF
+			}
+			trigger_else = {
+				liege ?= { is_governor = yes }
+			}
+		}
+		localization_key = GOVERNORSHIP_TOOLTIP
+	}
+	# 封建行政制总督封臣 #COPF
+	text = {
+		trigger = {
+			trigger_if = {
+				limit = { is_ruler = yes }
+				is_governor = yes
+				is_independent_ruler = no
+				government_has_flag = government_is_feudal_admin
+				subject_contract_has_flag = succession_rights_governor_appointment
+			}
+			trigger_else = {
+				liege ?= {
+					government_has_flag = government_is_feudal_admin
+				}
+			}
+		}
+		localization_key = FEUDAL_ADMIN_GOVERNORSHIP_TOOLTIP
+	}
+	# 非总督封建行政制封臣 #COPF
+	text = {
+		trigger = {
+			trigger_if = {
+				limit = { is_ruler = yes }
+				is_governor = yes
+				is_independent_ruler = no
+				government_has_flag = government_is_feudal_admin
+				NOT = { subject_contract_has_flag = succession_rights_governor_appointment }
+			}
+			trigger_else = {
+				liege ?= {
+					government_has_flag = government_is_feudal_admin
+				}
+			}
+		}
+		localization_key = FEUDAL_ADMIN_VASSAL_TOOLTIP
+	}
+	# 自治封臣：联盟成员
+	text = {
+		trigger = {
+			is_ruler = yes
+			has_subject_contract_group = feudal_autonomous_vassal
+			suzerain = { has_realm_law = crown_authority_legacy_head }
+		}
+		localization_key = FEUDAL_AUTONOMOUS_VASSAL_NOMINAL_TOOLTIP
+	}
+	# 自治封臣：仆役领地
+	text = {
+		trigger = {
+			is_ruler = yes
+			has_subject_contract_group = feudal_autonomous_vassal
+			OR = {
+				subject_contract_has_flag = feudal_autonomous_tax_extortionate
+				subject_contract_has_flag = feudal_autonomous_tax_high
+			}
+			subject_contract_has_flag = obligation_feudal_liege_offer_protection_forced
+			subject_contract_has_flag = obligation_contract_feudal_vassal_support_war_forced
+		}
+		localization_key = FEUDAL_AUTONOMOUS_VASSAL_TOTAL_SUBORDINATE_TOOLTIP
+	}
+	# 自治封臣：边防区
+	text = {
+		trigger = {
+			is_ruler = yes
+			has_subject_contract_group = feudal_autonomous_vassal
+			subject_contract_has_flag = obligation_feudal_liege_offer_protection_forced
+			subject_contract_has_flag = obligation_contract_feudal_vassal_support_war_forced
+		}
+		localization_key = FEUDAL_AUTONOMOUS_VASSAL_MARCH_TOOLTIP
+	}
+	# 自治封臣：包税区
+	text = {
+		trigger = {
+			is_ruler = yes
+			has_subject_contract_group = feudal_autonomous_vassal
+			OR = {
+				subject_contract_has_flag = feudal_autonomous_tax_high
+				subject_contract_has_flag = feudal_autonomous_tax_extortionate
+			}
+			subject_contract_has_flag = obligation_feudal_liege_offer_protection_forced
+			NOT = { subject_contract_has_flag = obligation_contract_feudal_vassal_support_war_forced }
+		}
+		localization_key = FEUDAL_AUTONOMOUS_VASSAL_TAX_FARM_TOOLTIP
+	}
+	# 自治封臣：军事仆从
+	text = {
+		trigger = {
+			is_ruler = yes
+			has_subject_contract_group = feudal_autonomous_vassal
+			NOT = { subject_contract_has_flag = obligation_feudal_liege_offer_protection_forced }
+			subject_contract_has_flag = obligation_contract_feudal_vassal_support_war_forced
+		}
+		localization_key = FEUDAL_AUTONOMOUS_VASSAL_MILITARY_SUBORDINATE_TOOLTIP
+	}
+	# 自治封臣：客属领地
+	text = {
+		trigger = {
+			is_ruler = yes
+			has_subject_contract_group = feudal_autonomous_vassal
+			NOR = {
+				subject_contract_has_flag = feudal_autonomous_tax_extortionate
+				subject_contract_has_flag = feudal_autonomous_tax_high
+			}
+			subject_contract_has_flag = obligation_feudal_liege_offer_protection_forced
+			NOT = { subject_contract_has_flag = obligation_contract_feudal_vassal_support_war_forced }
+		}
+		localization_key = FEUDAL_AUTONOMOUS_VASSAL_CLIENTELA_TOOLTIP
+	}
+	# 自治封臣：名义封臣
+	text = {
+		trigger = {
+			is_ruler = yes
+			has_subject_contract_group = feudal_autonomous_vassal
+			OR = {
+				subject_contract_has_flag = feudal_autonomous_tax_low
+				subject_contract_has_flag = feudal_autonomous_tax_exempt
+			}
+			NOT = { subject_contract_has_flag = obligation_feudal_liege_offer_protection_forced }
+			NOT = { subject_contract_has_flag = obligation_contract_feudal_vassal_support_war_forced }
+		}
+		localization_key = FEUDAL_AUTONOMOUS_VASSAL_NOMINAL_TOOLTIP
+	}
+	# 自治封臣
+	text = {
+		trigger = {
+			is_ruler = yes
+			has_subject_contract_group = feudal_autonomous_vassal
+		}
+		localization_key = FEUDAL_AUTONOMOUS_VASSAL_TOOLTIP
+	}
+	text = {
+		trigger = {
+			trigger_if = {
+				limit = { is_ruler = yes }
+				top_liege != this
+			}
+			trigger_else = {
+				liege ?= { top_liege != this }
+			}
+		}
+		localization_key = VASSAL_TOOLTIP
+	}
+	text = {
+		trigger = { always = no }
+		localization_key = REALM_TOOLTIP
+		fallback = yes
+	}
+}

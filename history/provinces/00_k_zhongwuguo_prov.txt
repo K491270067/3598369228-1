@@ -1,0 +1,81 @@
+﻿##### d_zhongwushi ############################
+
+### c_zhongwu
+# ZHONGWU
+277 = {
+	culture = xu
+	religion = yili
+	holding = castle_holding
+}
+# SHUYANG
+279 = {
+	holding = none
+}
+
+
+### c_xiaxiang
+# XIAXIANG
+278 = {
+	culture = xu
+	religion = yili
+	holding = castle_holding
+}
+
+
+### c_lin
+# LIN
+280 = {
+	culture = xu
+	religion = yili
+	holding = castle_holding
+}
+
+
+##### d_houqiushi ############################
+
+### c_quyang
+# QUYANG
+269 = {
+	culture = xu
+	religion = yili
+	holding = castle_holding
+}
+# LIANSHUI
+2250 = {
+	holding = none
+}
+
+
+### c_houqiu
+# HOUQIU
+271 = {
+	culture = xu
+	religion = yili
+	holding = castle_holding
+}
+
+
+##### d_liangshishi ############################
+
+### c_haixi
+# HAIXI
+276 = {
+	culture = xu
+	religion = yili
+	holding = castle_holding
+}
+# HAIYAO
+2248 = {
+	holding = none
+}
+
+
+### c_gui
+# GUI
+257 = {
+	culture = xu
+	religion = yili
+	holding = castle_holding
+}
+
+

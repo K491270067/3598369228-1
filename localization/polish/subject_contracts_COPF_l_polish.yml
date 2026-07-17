@@ -1,0 +1,85 @@
+﻿l_polish:
+ # 封臣契约：封臣继承权 # ————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+ feudal_government_succession_rights: "Feudal Succession Rights"
+
+ feudal_succession_rights_hereditary: "Traditional Hereditary"
+ feudal_succession_rights_hereditary_short: "Hereditary"
+ feudal_succession_rights_hereditary_desc: "#flavor [vassal] may use any hereditary succession law within the [realm|E], as their ancestors once did."
+
+ feudal_succession_rights_forced_partition: "Forced Partition"
+ feudal_succession_rights_forced_partition_short: "Partition"
+ feudal_succession_rights_forced_partition_desc: "#emphasis #bold [vassal|E] Restrictions:#!#!\n$EFFECT_LIST_BULLET$[vassal|E] may not have any [succession_law|E] other than Partition\n$EFFECT_LIST_BULLET$[vassal|E] switches their [succession_law|E] to Partition\n\n#flavor [vassal] is forced to use Partition as their sole succession law within the [realm|E].#!"
+
+ feudal_succession_rights_grant_recognition: "Granted Recognition"
+ feudal_succession_rights_grant_recognition_short: "Recognition"
+ feudal_succession_rights_grant_recognition_desc: "#emphasis #bold [liege|E]:#!#!\n$EFFECT_LIST_BULLET$Allows the use of #high Deny Title Succession#! [interaction|E] on [vassal|E]\n\n#emphasis #bold [vassal|E]:#!#!\n$EFFECT_LIST_BULLET$A [title|E] whose succession is denied must be returned to the [liege|E] upon inheritance. Refusal to return it is considered rebellion, granting the [liege|E] a [pressed_claim|E] to the target [title|E] and a valid reason to arrest the [vassal|E]\n\n#flavor Succession within the [realm|E] requires the [liege|E]'s recognition. Unrecognized succession will be contested.#!"
+
+ feudal_succession_rights_court_supervision: "Court Supervision"
+ feudal_succession_rights_court_supervision_short: "Supervision"
+ feudal_succession_rights_court_supervision_desc: "#emphasis #bold [vassal|E] Restrictions: #!#!\n$EFFECT_LIST_BULLET$An official from the [liege|E]'s court will serve as the [vassal|E]'s [diarch|E] to supervise their administration\n$EFFECT_LIST_BULLET$If the [vassal|E] attempts to dismiss the [diarch|E], it will be considered [revolting|E]\n\n#emphasis #bold From the previous tier:#!#!\n$EFFECT_LIST_BULLET$The [liege|E] may use the Deny Title Succession interaction on [vassal|E]\n\n#flavor All decrees issued by the [vassal] must pass the review of supervisory officials to ensure that governance within the [realm|E] follows the policies of the [liege|E]."
+
+ feudal_succession_rights_governor_appointment: "Governor Appointment"
+ feudal_succession_rights_governor_appointment_short: "Governor"
+ feudal_succession_rights_governor_appointment_desc: "#emphasis #bold [vassal|E] Restrictions:#!#!\n$EFFECT_LIST_BULLET$[vassal|E]'s [titles|E]' succession is no longer hereditary, and the [realm|E] is instead governed by an appointed [governor|E]\n$EFFECT_LIST_BULLET$[vassal|E] may not have any [succession_law|E] other than the [GetLaw('feudal_governor_appointment_succession_law').GetName]\n$EFFECT_LIST_BULLET$If [vassal|E] has a Supervisor, the Supervisor will replace the [vassal|E] and become the [governor|E]\n\n#flavor Appointment of [vassal] has been institutionalized. An official deemed suitable will assume the [titles], without needing interventions from the [liege|E].#!"
+
+ succession_rights_cannot_be_player: "A player who is a non-administrative vassal cannot enact this succession right, as death would end the game!"
+ crown_authority_at_least_1: "Requires at least Limited Crown Authority [crown_authority]"
+ crown_authority_at_least_2: "Requires at least High Crown Authority [crown_authority]"
+
+ # 封臣契约：总督候选人偏好 # ————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+ feudal_admin_government_candidate_preference: "[governor] Candidate Preference"
+
+ candidate_preference_powerful_gentry: "Powerful Gentry"
+ candidate_preference_powerful_gentry_short: "Gentry"
+ candidate_preference_powerful_gentry_desc: "$EFFECT_LIST_BULLET$[family|E] of local [noble_family|E] gain additional [candidate_score|E]\n$EFFECT_LIST_BULLET$[family|E] of the [governor] gain additional [candidate_score|E]\n$EFFECT_LIST_BULLET$Subordinate [feudal|E] [vassals|E] of the [governor] gain additional [candidate_score|E]\n$EFFECT_LIST_BULLET$[lowborn|E] candidates suffer more [candidate_score|E] penalty\n\n#flavor Local hereditary rulers still exert influence over the politics of this land.#!"
+
+ candidate_preference_local_talent: "Local Talent"
+ candidate_preference_local_talent_short: "Local"
+ candidate_preference_local_talent_desc: "$EFFECT_LIST_BULLET$Members of [governor]'s [councillors|E] and [court_positions|E] gain additional [candidate_score|E]\n$EFFECT_LIST_BULLET$Subordinate [feudal|E] [vassals|E] of the [governor] gain additional [candidate_score|E]\n\n#flavor Only experienced professional officials familiar with local conditions can govern effectively.#!"
+
+ candidate_preference_favor_nepotism: "Favor Nepotism"
+ candidate_preference_favor_nepotism_short: "Nepotism"
+ candidate_preference_favor_nepotism_desc: "$EFFECT_LIST_BULLET$[family|E] and [friends|E] of the [governor]'s [liege|E] gain additional [candidate_score|E]\n\n#flavor To strengthen our influence, land must be granted to trusted kin and close confidants.#!"
+
+ candidate_preference_talent_only: "Meritocracy"
+ candidate_preference_talent_only_short: "Meritocracy"
+ candidate_preference_talent_only_desc: "$EFFECT_LIST_BULLET$Candidates with higher [skills|E] gain additional [candidate_score|E]\n$EFFECT_LIST_BULLET$[lowborn|E] candidates suffer less [candidate_score|E] penalty\n\n#flavor Governing a realm requires true talent, not flattery.#!"
+
+ candidate_preference_bureaucrat_promotion: "Bureaucrat Promotion"
+ candidate_preference_bureaucrat_promotion_short: "Bureaucrat"
+ candidate_preference_bureaucrat_promotion_desc: "$EFFECT_LIST_BULLET$[governor] appointments are no longer based on [candidate_score|E], instead candidate is promoted from within the bureaucratic system\n\n#flavor Diligent service, extensive experience, and absolute loyalty outweigh all superficial appearances.#!"
+
+ # 封臣契约：自治封臣 # ————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+ contract_feudal_autonomous_taxes: "Autonomous Vassal Tax"
+ feudal_autonomous_tax_exempt: "Exempt [tax|E]"
+ feudal_autonomous_tax_exempt_short: "Exempt"
+ feudal_autonomous_tax_low: "Low [tax|E]"
+ feudal_autonomous_tax_low_short: "Low"
+ feudal_autonomous_tax_normal: "Normal [tax|E]"
+ feudal_autonomous_tax_normal_short: "Normal"
+ feudal_autonomous_tax_high: "High [tax|E]"
+ feudal_autonomous_tax_high_short: "High"
+ feudal_autonomous_tax_extortionate: "Extortionate [tax|E]"
+ feudal_autonomous_tax_extortionate_short: "Extortionate"
+
+ contract_feudal_liege_offer_protection: "Liege Guarantee"
+ obligation_feudal_liege_offer_protection_none: "Liege Provides No Guarantee"
+ obligation_feudal_liege_offer_protection_none_short: "Not Guaranteed"
+ obligation_feudal_liege_offer_protection_none_desc: "$EFFECT_LIST_BULLET$[liege|E] will not join [vassal|E]'s [wars|E]\n\n#flavor The [liege|E] has no obligation to defend the [vassal|E] even if they are invaded.#!"
+ obligation_feudal_liege_offer_protection_forced: "Liege Provides Guarantee"
+ obligation_feudal_liege_offer_protection_forced_short: "Guaranteed"
+ obligation_feudal_liege_offer_protection_forced_desc: "$EFFECT_LIST_BULLET$[vassal|E] can call their [liege|E] to join their defensive [wars|E]\n\n#flavor The [liege|E] is obligated to defend the [vassal|E] if they are invaded.#!"
+
+ contract_feudal_vassal_support_war: "Vassal Support Wars"
+ obligation_contract_feudal_vassal_support_war_none: "Vassal Provides No Support"
+ obligation_contract_feudal_vassal_support_war_none_short: "No Support"
+ obligation_contract_feudal_vassal_support_war_none_desc: "$EFFECT_LIST_BULLET$[vassal|E] will not join [liege|E]'s [wars|E]\n\n#flavor The [vassal|E] is not obligated to provide any support to [liege|E]'s wars.#!"
+ obligation_contract_feudal_vassal_support_war_forced: "Vassal Joins Wars"
+ obligation_contract_feudal_vassal_support_war_forced_short: "Obligated"
+ obligation_contract_feudal_vassal_support_war_forced_desc: "$EFFECT_LIST_BULLET$[liege|E] can call the [vassal|E] to join their [wars|E]\n\n#flavor The [vassal|E] is obligated to join all [liege|E]'s wars.#!"
+
+ tt_autonomous_vassal_support_war_forced: "[vassal|E] has obligation to join your war : $VALUE|=+0$"
+ tt_autonomous_vassal_no_war_obligation: "[vassal|E] has no obligation to join your war : $VALUE|=+0$"
+
+ # 封臣契约：其他 # ————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+ tt_liege_permanently_prohibit_all_wars: "[liege|E] has [GetLaw('law_vassal_war_policy_permanent_prohibit_all_wars').GetName] [law|E]"

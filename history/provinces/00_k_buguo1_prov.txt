@@ -1,0 +1,44 @@
+﻿##### d_bushi1 ############################
+
+### c_daling
+# DALING
+737 = {
+	holding = none
+}
+
+
+### c_yongliang
+# YONGLIANG
+750 = {
+	holding = none
+}
+
+
+### c_shuhuang
+# SHUHUANG
+752 = {
+	holding = none
+}
+
+
+### c_yinban
+# YINBAN
+753 = {
+	holding = none
+}
+
+
+### c_xing1
+# XING1
+754 = {
+	holding = none
+}
+
+
+### c_shangji
+# SHANGJI
+749 = {
+	holding = none
+}
+
+

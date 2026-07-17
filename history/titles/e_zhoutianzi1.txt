@@ -1,0 +1,42 @@
+﻿e_zhoutianzi1 = {
+	3574.1.1 = {
+		holder = han9
+	}
+	3577.12.31 = {
+		holder = han17
+	}
+	3599.12.31 = {
+		holder = han20
+	}
+	3624.12.31 = {
+		holder = han21
+	}
+	3643.1.1 = {
+		holder = han22
+	}
+	3698.12.31 = {
+		holder = han23
+	}
+	3720.12.31 = {
+		holder = han24
+	}
+	3728.12.31 = {
+		holder = han25
+	}
+	3734.12.31 = {
+		holder = han26
+	}
+	3742.12.31 = {
+		holder = han27
+	}
+	3792.12.31 = {
+		holder = han28
+	}
+	3837.12.31 = {
+		holder = han30
+	}
+	3849.12.31 = {
+		holder = han32
+		government = feudal_admin_government
+	}
+}

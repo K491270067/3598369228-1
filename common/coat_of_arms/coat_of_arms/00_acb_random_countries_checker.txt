@@ -1,0 +1,260 @@
+﻿template = {
+	#鏈夎竟妗?	acb_flag_type_01 = {
+		#棰滆壊鏍峰紡
+		pattern = "pattern_chinese.tga"
+		color1 = list "triggered_colors_list1"
+		color2 = list "triggered_colors_list3"
+		color3 = list "triggered_colors_list2"
+		
+		#绗﹀彿
+		colored_emblem = {
+			texture = list "acb_symbols"
+			color1 = list "triggered_colors_list2"
+			color2 = list "triggered_colors_list3"
+			instance = { position = { 0.5 0.5 } scale = { 0.8 0.8 }  }
+		}
+	}
+	#鏃犺竟妗?	acb_flag_type_02 = {
+		#棰滆壊鏍峰紡
+		pattern = "pattern_solid.tga"
+		color1 = list "triggered_colors_list1"
+		color2 = list "triggered_colors_list3"
+		color3 = list "triggered_colors_list2"
+		
+		#绗﹀彿
+		colored_emblem = {
+			texture = list "acb_symbols"
+			color1 = list "triggered_colors_list2"
+			color2 = list "triggered_colors_list3"
+			instance = { position = { 0.5 0.5 } scale = { 0.8 0.8 }  }
+		}
+	}
+	acb_flag_type_03 = {
+		pattern = "pattern_solid.tga"
+		color1 = list "triggered_colors_list1"
+		color2 = list "triggered_colors_list2"
+		color3 = list "triggered_colors_list3"
+		
+		colored_emblem = {
+			texture = list "acb_symbols"
+			color1 = list "triggered_colors_list2"
+			color2 = list "triggered_colors_list3"
+			instance = { scale = { 0.75 0.75 }  }
+		}
+		colored_emblem = {
+			texture = list "borders"
+			color1 = list "triggered_colors_list2"
+			color2 = list "triggered_colors_list3"
+			instance = { rotation = 90 scale = { -1 1 }  }
+			instance = { rotation = 270 scale = { -1 1 }   }
+			instance = { rotation = 0  }
+			instance = { rotation = 180  }
+		}
+	}
+	acb_flag_type_04 = {
+		pattern = "pattern_solid.tga"
+		color1 = list "triggered_colors_list1"
+		color2 = list "triggered_colors_list2"
+		color3 = list "triggered_colors_list3"
+		
+		colored_emblem = {
+			texture = list "acb_symbols"
+			color1 = list "triggered_colors_list2"
+			color2 = list "triggered_colors_list3"
+			instance = { scale = { -0.75 0.75 }  }
+		}
+		colored_emblem = {
+			texture = list "borders"
+			color1 = list "triggered_colors_list2"
+			color2 = list "triggered_colors_list3"
+			instance = { rotation = 90 scale = { -1 1 }  }
+			instance = { rotation = 270 scale = { -1 1 }   }
+			instance = { rotation = 0  }
+			instance = { rotation = 180  }
+		}
+	}
+	
+	acb_flag_type_05 = {
+		pattern = "pattern_solid.tga"
+		color1 = list "triggered_colors_list1"
+		color2 = list "triggered_colors_list2"
+		color3 = list "triggered_colors_list3"
+		
+		colored_emblem = {
+			texture = list "acb_symbols"
+			color1 = list "triggered_colors_list2"
+			color2 = list "triggered_colors_list3"
+			instance = { scale = { 0.75 0.75 }  }
+		}
+		colored_emblem = {
+			texture = list "borders"
+			color1 = list "triggered_colors_list2"
+			color2 = list "triggered_colors_list3"
+			#instance = { rotation = 0  }
+			#instance = { rotation = 180  }
+			instance = { rotation = 90  }
+			instance = { rotation = 270  }
+		}
+	}
+	
+	acb_flag_type_06 = {
+		pattern = "pattern_solid.tga"
+		color1 = list "triggered_colors_list1"
+		color2 = list "triggered_colors_list2"
+		color3 = list "triggered_colors_list3"
+		
+		colored_emblem = {
+			texture = list "acb_symbols"
+			color1 = list "triggered_colors_list2"
+			color2 = list "triggered_colors_list3"
+			instance = { scale = { -0.75 0.75 }  }
+		}
+		colored_emblem = {
+			texture = list "borders"
+			color1 = list "triggered_colors_list2"
+			color2 = list "triggered_colors_list3"
+			#instance = { rotation = 0  }
+			#instance = { rotation = 180  }
+			instance = { rotation = 90  }
+			instance = { rotation = 270  }
+		}
+	}
+	
+	acb_flag_type_07 = {
+		pattern = "pattern_solid.tga"
+		color1 = list "triggered_colors_list1"
+		color2 = list "triggered_colors_list2"
+		color3 = list "triggered_colors_list3"
+		
+		colored_emblem = {
+			texture = list "acb_symbols"
+			color1 = list "triggered_colors_list2"
+			color2 = list "triggered_colors_list3"
+			instance = { scale = { 0.75 0.75 }  }
+		}
+		colored_emblem = {
+			texture = list "borders"
+			color1 = list "triggered_colors_list2"
+			color2 = list "triggered_colors_list3"
+			instance = { rotation = 0  }
+			instance = { rotation = 180  }
+			#instance = { rotation = 90  }
+			#instance = { rotation = 270  }
+		}
+	}
+	
+	acb_flag_type_08 = {
+		pattern = "pattern_solid.tga"
+		color1 = list "triggered_colors_list1"
+		color2 = list "triggered_colors_list2"
+		color3 = list "triggered_colors_list3"
+		
+		colored_emblem = {
+			texture = list "acb_symbols"
+			color1 = list "triggered_colors_list2"
+			color2 = list "triggered_colors_list3"
+			instance = { scale = { -0.75 0.75 }  }
+		}
+		colored_emblem = {
+			texture = list "borders"
+			color1 = list "triggered_colors_list2"
+			color2 = list "triggered_colors_list3"
+			instance = { rotation = 0  }
+			instance = { rotation = 180  }
+			#instance = { rotation = 90  }
+			#instance = { rotation = 270  }
+		}
+	}
+	
+	acb_flag_type_09 = {
+		pattern = "pattern_solid.tga"
+		color1 = list "triggered_colors_list1"
+		color2 = list "triggered_colors_list2"
+		color3 = list "triggered_colors_list3"
+		
+		colored_emblem = {
+			texture = list "acb_symbols"
+			color1 = list "triggered_colors_list2"
+			color2 = list "triggered_colors_list3"
+			instance = { scale = { 0.75 0.75 }  }
+		}
+		colored_emblem = {
+			texture = list "borders"
+			color1 = list "triggered_colors_list2"
+			color2 = list "triggered_colors_list3"
+			instance = { rotation = 0  }
+			#instance = { rotation = 180  }
+			#instance = { rotation = 90  }
+			#instance = { rotation = 270  }
+		}
+	}
+	
+	acb_flag_type_10 = {
+		pattern = "pattern_solid.tga"
+		color1 = list "triggered_colors_list1"
+		color2 = list "triggered_colors_list2"
+		color3 = list "triggered_colors_list3"
+		
+		colored_emblem = {
+			texture = list "acb_symbols"
+			color1 = list "triggered_colors_list2"
+			color2 = list "triggered_colors_list3"
+			instance = { scale = { -0.75 0.75 }  }
+		}
+		colored_emblem = {
+			texture = list "borders"
+			color1 = list "triggered_colors_list2"
+			color2 = list "triggered_colors_list3"
+			instance = { rotation = 0  }
+			#instance = { rotation = 180  }
+			#instance = { rotation = 90  }
+			#instance = { rotation = 270  }
+		}
+	}
+	
+	acb_flag_type_11 = {
+		pattern = "pattern_solid.tga"
+		color1 = list "triggered_colors_list1"
+		color2 = list "triggered_colors_list2"
+		color3 = list "triggered_colors_list3"
+		
+		colored_emblem = {
+			texture = list "acb_symbols"
+			color1 = list "triggered_colors_list2"
+			color2 = list "triggered_colors_list3"
+			instance = { scale = { 0.75 0.75 }  }
+		}
+		colored_emblem = {
+			texture = list "borders"
+			color1 = list "triggered_colors_list2"
+			color2 = list "triggered_colors_list3"
+			#instance = { rotation = 0  }
+			instance = { rotation = 180  }
+			#instance = { rotation = 90  }
+			#instance = { rotation = 270  }
+		}
+	}
+	
+	acb_flag_type_12 = {
+		pattern = "pattern_solid.tga"
+		color1 = list "triggered_colors_list1"
+		color2 = list "triggered_colors_list2"
+		color3 = list "triggered_colors_list3"
+		
+		colored_emblem = {
+			texture = list "acb_symbols"
+			color1 = list "triggered_colors_list2"
+			color2 = list "triggered_colors_list3"
+			instance = { scale = { -0.75 0.75 }  }
+		}
+		colored_emblem = {
+			texture = list "borders"
+			color1 = list "triggered_colors_list2"
+			color2 = list "triggered_colors_list3"
+			#instance = { rotation = 0  }
+			instance = { rotation = 180  }
+			#instance = { rotation = 90  }
+			#instance = { rotation = 270  }
+		}
+	}
+}

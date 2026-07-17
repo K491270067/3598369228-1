@@ -1,0 +1,51 @@
+﻿d_bishi4 = {
+	3574.1.1 = {
+		liege = "k_baoguo"
+		holder = baosuishi1
+	}
+	3700.12.31 = {
+		holder = baosuishi2
+	}
+	3742.12.31 = {
+		holder = baosuishi3
+	}
+	3781.12.31 = {
+		holder = baosuishi4
+	}
+	3800.12.31 = {
+		holder = baosuishi5
+	}
+	3841.12.31 = {
+		holder = baosuishi12
+	}
+	3849.1.1 = {
+		change_development_level = 27
+		government = feudal_admin_government
+	}
+}
+k_baoguo = {
+	3641.1.1 = {
+		liege = "e_zhoutianzi"
+		holder = baosuishi1
+	}
+	3700.12.31 = {
+		holder = baosuishi2
+	}
+	3742.12.31 = {
+		holder = baosuishi3
+	}
+	3781.12.31 = {
+		holder = baosuishi4
+	}
+	3800.12.31 = {
+		holder = baosuishi5
+	}
+	3841.12.31 = {
+		holder = baosuishi6
+	}
+	3849.1.1 = {
+		change_development_level = 30
+		liege = "e_zhoutianzi1"
+		government = feudal_admin_government
+	}
+}

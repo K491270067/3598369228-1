@@ -1,0 +1,98 @@
+﻿##### d_zhuyushi ############################
+
+### c_yingli
+# YINGLI
+1573 = {
+	culture = xirong
+	religion = xirongfangling
+	holding = nomad_holding
+}
+# SHATUO
+1572 = {
+	holding = none
+}
+# MUNA
+3096 = {
+	holding = none
+}
+
+
+### c_zhuyushi
+# ZHUYUSHI
+3085 = {
+	culture = xirong
+	religion = xirongfangling
+	holding = nomad_holding
+}
+# LANGETE
+3091 = {
+	holding = none
+}
+# ZHETONG
+3093 = {
+	holding = none
+}
+
+
+### c_aowei
+# AOWEI
+1557 = {
+	culture = xirong
+	religion = xirongfangling
+	holding = nomad_holding
+}
+# YASU
+3086 = {
+	holding = none
+}
+
+
+##### d_mishi3 ############################
+
+### c_baishan
+# BAISHAN
+1569 = {
+	culture = xirong
+	religion = xirongfangling
+	holding = nomad_holding
+}
+# BALI
+3087 = {
+	holding = none
+}
+# NIUE
+3090 = {
+	holding = none
+}
+
+
+### c_elu
+# ELU
+3089 = {
+	culture = xirong
+	religion = xirongfangling
+	holding = nomad_holding
+}
+# ZHEYI
+3094 = {
+	holding = none
+}
+
+
+### c_weiniu
+# WEINIU
+3092 = {
+	culture = xirong
+	religion = xirongfangling
+	holding = nomad_holding
+}
+# CHALA
+3088 = {
+	holding = none
+}
+# LUOYI
+3095 = {
+	holding = none
+}
+
+

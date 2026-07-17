@@ -1,0 +1,40 @@
+﻿definitions = "definition.csv"
+provinces = "provinces.png"
+rivers = "rivers.png"
+topology = "heightmap.heightmap"
+continent = "continent.txt"
+adjacencies = "adjacencies.csv"
+island_region = "island_region.txt"
+geographical_region = "geographical_region.txt"
+seasons = "seasons.txt"
+
+
+
+sea_zones = LIST { 589 }
+sea_zones = RANGE { 4554 4556 }	#渤海
+sea_zones = RANGE { 4555 4731 }	#渤海
+
+
+river_provinces = LIST { 724 741 743 2187 2188 2335 2336 2338 2431 2432 2439 2444 2452 2483 }
+river_provinces = RANGE { 4739 4741 }
+
+lakes = RANGE { 1326 1330 }
+lakes = LIST { 1006 1007 1008 2171 2172 2224 2286 2317 2318 2337 2436 2462 3586 }
+
+impassable_mountains = RANGE { 2401 2430 }
+impassable_mountains = RANGE { 2447 2450 }
+impassable_mountains = RANGE { 2523 2530 }
+impassable_mountains = RANGE { 2584 2597 }
+impassable_mountains = RANGE { 2622 2630 }
+impassable_mountains = RANGE { 2641 2650 }
+impassable_mountains = RANGE { 2682 2685 }
+impassable_mountains = RANGE { 2694 2700 }
+impassable_mountains = RANGE { 2725 2740 }
+impassable_mountains = RANGE { 2781 2786 }
+impassable_mountains = RANGE { 3582 3585 }
+impassable_mountains = RANGE { 3587 3590 }
+impassable_mountains = RANGE { 3592 3610 }
+impassable_mountains = RANGE { 3626 3635 }
+impassable_mountains = LIST { 751 766 767 796 797 834 835 846 918 919 925 941 975 1019 1020 1122 1123 1124 2287 2292 2295 2296 2300 2303 2304 2369 2453 2454 2492 2493 2575 2576 2577 2600 2635 2636 2637 2668 2669 2670 }
+impassable_mountains = RANGE { 4737 4738 }
+impassable_mountains = RANGE { 4745 4755 }

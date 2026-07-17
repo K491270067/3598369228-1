@@ -1,0 +1,69 @@
+﻿##### d_sanyishi ############################
+
+### c_xing2
+# XING2
+878 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+# GUDAO
+879 = {
+	holding = none
+}
+
+
+### c_sanguan
+# SANGUAN
+880 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+# CHENCANG1
+3141 = {
+	holding = none
+}
+
+
+### c_hechi
+# HECHI
+3140 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+# DONGLANGGU
+3621 = {
+	holding = none
+}
+
+
+##### d_sanshi ############################
+
+### c_xiucheng
+# XIUCHENGDAO
+3612 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+# WUXING1
+3139 = {
+	holding = none
+}
+
+
+### c_shimen2
+# SHIMEN2
+3623 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+# MINGSHUI2
+3622 = {
+	holding = none
+}
+
+

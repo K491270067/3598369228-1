@@ -1,0 +1,29 @@
+﻿l_simp_chinese:
+ feudal_governor_appointment_succession_law: "总督委任继承制"
+ feudal_governor_appointment_succession_law_subname: "拥有最高分数的候选人继承"
+ feudal_governor_appointment_succession_law_effects: "\n#V [feudal]下[appointment_succession_law|E]的一种。在$feudal_governor_appointment_succession_law$下，[title|E]和相关[holdings|E]会由[candidate_score|E]最高的候选人接任。\n\n#!"
+
+ feudal_governor_promotion_succession_law: "总督选拔继承制"
+ feudal_governor_promotion_succession_law_subname: "官僚系统内部升任的人选继承"
+ feudal_governor_promotion_succession_law_effects: "\n#V [feudal]下[appointment_succession_law|E]的一种。在$feudal_governor_promotion_succession_law$下，[title|E]和相关[holdings|E]会由官僚系统认定合适的官员接任。\n\n#!"
+
+ tt_succession_laws_must_be_governor_appointment: "你的继承制必须是总督委任继承"
+ tt_succession_laws_must_not_be_locked_by_contracts: "你的继承制不能被[vassal_contract|E]锁定"
+
+ tt_is_landed_other_ruler: "辖区外有地[ruler|E]"
+ tt_is_landed_direct_vassal: "下属非法理[vassal|E]"
+ tt_is_landed_dejure_direct_vassal: "下属法理[vassal|E]"
+ tt_is_hereditary: "是世袭制"
+ tt_is_clergy: "是[clergy|E]"
+ tt_is_local_gentry: "是本地[noble_family|E]"
+
+ tt_is_liege_close_family: "[holder][liege|E]的[close_family|E]"
+ tt_is_liege_spouse_close_family: "[holder][liege|E][spouse]的[close_family|E]"
+ tt_is_liege_extended_family: "[holder][liege|E]的[extended_family|E]"
+ tt_is_liege_friend: "[holder][liege|E]的[friend|E]"
+ tt_is_liege_best_friend: "[holder][liege|E]的[best_friend|E]"
+
+ tt_is_liege_culture: "是[holder][liege|E]的[culture|E]"
+ tt_is_foreign_culture: "是异族[culture|E]"
+ tt_is_child: "是个[child|E]"
+ tt_is_liege: "是[holder]的[liege|E]"

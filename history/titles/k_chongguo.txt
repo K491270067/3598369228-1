@@ -1,0 +1,66 @@
+﻿c_wangcheng1 = {
+	3617.1.1 = {
+		liege = "k_chongguo"
+		holder = sixingchongshi1
+	}
+	3671.1.1 = {
+		holder = sixingchongshi2
+	}
+	3703.1.1 = {
+		holder = sixingchongshi3
+	}
+	3728.1.1 = {
+		holder = sixingchongshi4
+	}
+	3753.1.1 = {
+		holder = sixingchongshi5
+	}
+	3775.1.1 = {
+		holder = sixingchongshi6
+	}
+	3798.1.1 = {
+		holder = sixingchongshi7
+	}
+	3821.1.1 = {
+		holder = sixingchongshi8
+	}
+	3849.1.1 = {
+		change_development_level = 36
+		government = feudal_admin_government
+	}
+	3849.12.31 = {
+		liege = "e_zhoutianzi"
+		holder = han31
+	}
+}
+k_chongguo = {
+	3617.1.1 = {
+		liege = "e_zhoutianzi"
+		holder = sixingchongshi1
+	}
+	3671.1.1 = {
+		holder = sixingchongshi2
+	}
+	3703.1.1 = {
+		holder = sixingchongshi3
+	}
+	3728.1.1 = {
+		holder = sixingchongshi4
+	}
+	3753.1.1 = {
+		holder = sixingchongshi5
+	}
+	3775.1.1 = {
+		holder = sixingchongshi6
+	}
+	3798.1.1 = {
+		holder = sixingchongshi7
+	}
+	3821.1.1 = {
+		holder = sixingchongshi8
+	}
+	3849.1.1 = {
+		change_development_level = 31
+		government = feudal_admin_government
+	}
+}

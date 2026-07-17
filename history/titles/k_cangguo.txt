@@ -1,0 +1,409 @@
+﻿d_cangshi = {
+	1903.3.28 = {
+		liege = "k_cangguo"
+		holder = cangshi1
+	}
+	1974.12.31 = {
+		holder = cangshi2
+	}
+	2014.12.31 = {
+		holder = cangshi3
+	}
+	2053.12.31 = {
+		holder = cangshi4
+	}
+	2089.12.31 = {
+		holder = cangshi5
+	}
+	2155.12.31 = {
+		holder = cangshi6
+	}
+	2200.1.1 = {
+		holder = cangshi7
+	}
+	2255.1.1 = {
+		holder = cangshi8
+	}
+	2305.1.1 = {
+		holder = cangshi9
+	}
+	2361.1.1 = {
+		holder = cangshi10
+	}
+	2405.1.1 = {
+		holder = cangshi11
+	}
+	2469.1.1 = {
+		holder = cangshi12
+	}
+	2511.1.1 = {
+		holder = cangshi13
+	}
+	2584.1.1 = {
+		holder = cangshi14
+	}
+	2611.1.1 = {
+		holder = cangshi15
+	}
+	2674.1.1 = {
+		holder = cangshi16
+	}
+	2719.1.1 = {
+		holder = cangshi17
+	}
+	2770.1.1 = {
+		holder = cangshi18
+	}
+	2809.1.1 = {
+		holder = cangshi19
+	}
+	2848.1.1 = {
+		holder = cangshi20
+	}
+	2901.1.1 = {
+		holder = cangshi21
+	}
+	2966.1.1 = {
+		holder = cangshi22
+	}
+	3011.1.1 = {
+		holder = cangshi23
+	}
+	3068.1.1 = {
+		holder = cangshi24
+	}
+	3111.1.1 = {
+		holder = cangshi25
+	}
+	3149.1.1 = {
+		holder = cangshi26
+	}
+	3200.1.1 = {
+		holder = cangshi27
+	}
+	3229.1.1 = {
+		holder = cangshi28
+	}
+	3280.1.1 = {
+		holder = cangshi29
+	}
+	3311.1.1 = {
+		holder = cangshi30
+	}
+	3377.12.31 = {
+		holder = cangshi31
+	}
+	3451.12.31 = {
+		holder = cangshi32
+	}
+	3478.12.31 = {
+		holder = cangshi33
+	}
+	3503.12.31 = {
+		holder = cangshi34
+	}
+	3528.12.31 = {
+		holder = cangshi35
+	}
+	3573.12.31 = {
+		holder = cangshi36
+	}
+	3600.12.31 = {
+		holder = cangshi37
+	}
+	3654.12.31 = {
+		holder = cangshi38
+	}
+	3680.12.31 = {
+		holder = cangshi39
+	}
+	3710.12.31 = {
+		holder = cangshi40
+	}
+	3754.12.31 = {
+		holder = cangshi41
+	}
+	3781.12.31 = {
+		holder = cangshi42
+	}
+	3813.12.31 = {
+		holder = cangshi59
+	}
+	3849.1.1 = {
+		change_development_level = 19
+		government = feudal_admin_government
+	}
+}
+d_yimenshi = {
+	1903.3.28 = {
+		liege = "k_cangguo"
+		holder = cangshi1
+	}
+	1974.12.31 = {
+		holder = cangshi2
+	}
+	2014.12.31 = {
+		holder = cangshi3
+	}
+	2053.12.31 = {
+		holder = cangshi4
+	}
+	2089.12.31 = {
+		holder = cangshi5
+	}
+	2155.12.31 = {
+		holder = cangshi6
+	}
+	2200.1.1 = {
+		holder = cangshi7
+	}
+	2255.1.1 = {
+		holder = cangshi8
+	}
+	2305.1.1 = {
+		holder = cangshi9
+	}
+	2361.1.1 = {
+		holder = cangshi10
+	}
+	2405.1.1 = {
+		holder = cangshi11
+	}
+	2469.1.1 = {
+		holder = cangshi12
+	}
+	2511.1.1 = {
+		holder = cangshi13
+	}
+	2584.1.1 = {
+		holder = cangshi14
+	}
+	2611.1.1 = {
+		holder = cangshi15
+	}
+	2674.1.1 = {
+		holder = cangshi16
+	}
+	2719.1.1 = {
+		holder = cangshi17
+	}
+	2770.1.1 = {
+		holder = cangshi18
+	}
+	2809.1.1 = {
+		holder = cangshi19
+	}
+	2848.1.1 = {
+		holder = cangshi20
+	}
+	2901.1.1 = {
+		holder = cangshi21
+	}
+	2966.1.1 = {
+		holder = cangshi22
+	}
+	3011.1.1 = {
+		holder = cangshi23
+	}
+	3068.1.1 = {
+		holder = cangshi24
+	}
+	3111.1.1 = {
+		holder = cangshi25
+	}
+	3149.1.1 = {
+		holder = cangshi26
+	}
+	3200.1.1 = {
+		holder = cangshi27
+	}
+	3229.1.1 = {
+		holder = cangshi28
+	}
+	3280.1.1 = {
+		holder = cangshi29
+	}
+	3311.1.1 = {
+		holder = cangshi30
+	}
+	3377.12.31 = {
+		holder = cangshi31
+	}
+	3451.12.31 = {
+		holder = cangshi32
+	}
+	3478.12.31 = {
+		holder = cangshi33
+	}
+	3503.12.31 = {
+		holder = cangshi34
+	}
+	3528.12.31 = {
+		holder = cangshi35
+	}
+	3573.12.31 = {
+		holder = cangshi36
+	}
+	3600.12.31 = {
+		holder = cangshi37
+	}
+	3654.12.31 = {
+		holder = cangshi38
+	}
+	3680.12.31 = {
+		holder = cangshi39
+	}
+	3710.12.31 = {
+		holder = cangshi40
+	}
+	3754.12.31 = {
+		holder = cangshi50
+	}
+	3761.12.31 = {
+		holder = cangshi51
+	}
+	3789.12.31 = {
+		holder = cangshi52
+	}
+	3849.1.1 = {
+		change_development_level = 20
+		government = feudal_admin_government
+	}
+}
+k_cangguo = {
+	1903.3.28 = {
+		holder = cangshi1
+	}
+	1974.12.31 = {
+		holder = cangshi2
+	}
+	2014.12.31 = {
+		holder = cangshi3
+	}
+	2053.12.31 = {
+		holder = cangshi4
+	}
+	2089.12.31 = {
+		holder = cangshi5
+	}
+	2155.12.31 = {
+		holder = cangshi6
+	}
+	2200.1.1 = {
+		holder = cangshi7
+	}
+	2255.1.1 = {
+		holder = cangshi8
+	}
+	2305.1.1 = {
+		holder = cangshi9
+	}
+	2361.1.1 = {
+		holder = cangshi10
+	}
+	2405.1.1 = {
+		holder = cangshi11
+	}
+	2469.1.1 = {
+		holder = cangshi12
+	}
+	2511.1.1 = {
+		holder = cangshi13
+	}
+	2584.1.1 = {
+		holder = cangshi14
+	}
+	2611.1.1 = {
+		holder = cangshi15
+	}
+	2674.1.1 = {
+		holder = cangshi16
+	}
+	2719.1.1 = {
+		holder = cangshi17
+	}
+	2770.1.1 = {
+		holder = cangshi18
+	}
+	2809.1.1 = {
+		holder = cangshi19
+	}
+	2848.1.1 = {
+		holder = cangshi20
+	}
+	2901.1.1 = {
+		holder = cangshi21
+	}
+	2966.1.1 = {
+		holder = cangshi22
+	}
+	3011.1.1 = {
+		holder = cangshi23
+	}
+	3068.1.1 = {
+		holder = cangshi24
+	}
+	3111.1.1 = {
+		holder = cangshi25
+	}
+	3149.1.1 = {
+		holder = cangshi26
+	}
+	3200.1.1 = {
+		holder = cangshi27
+	}
+	3229.1.1 = {
+		holder = cangshi28
+	}
+	3280.1.1 = {
+		holder = cangshi29
+	}
+	3311.1.1 = {
+		holder = cangshi30
+	}
+	3377.12.31 = {
+		holder = cangshi31
+	}
+	3451.12.31 = {
+		holder = cangshi32
+	}
+	3478.12.31 = {
+		holder = cangshi33
+	}
+	3503.12.31 = {
+		holder = cangshi34
+	}
+	3528.12.31 = {
+		holder = cangshi35
+	}
+	3573.12.31 = {
+		holder = cangshi36
+	}
+	3600.12.31 = {
+		liege = "e_zhoutianzi"
+		holder = cangshi37
+	}
+	3654.12.31 = {
+		holder = cangshi38
+	}
+	3680.12.31 = {
+		holder = cangshi39
+	}
+	3710.12.31 = {
+		holder = cangshi40
+	}
+	3754.12.31 = {
+		holder = cangshi41
+	}
+	3781.12.31 = {
+		holder = cangshi42
+	}
+	3813.12.31 = {
+		holder = cangshi43
+	}
+	3849.1.1 = {
+		change_development_level = 23
+		liege = "e_zhoutianzi1"
+		government = feudal_admin_government
+	}
+}

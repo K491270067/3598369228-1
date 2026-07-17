@@ -1,0 +1,276 @@
+﻿yunxingyanshi1={
+  name="min1"
+  dynasty=xin722
+	religion="xizhouli" 
+	culture="zhou"
+  father=han1462
+
+  3523.1.1 = {
+		birth = yes
+	}
+  3589.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+yunxingyanshi2={
+  name="pijiang"
+  dynasty_house=house_baijia463
+	religion="xizhouli" 
+	culture="zhou"
+  father=yunxingyanshi1
+
+  3558.1.1 = {
+		birth = yes
+	}
+  3601.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+yunxingyanshi3={
+  name="zhuo"
+  dynasty_house=house_baijia463
+	religion="xizhouli" 
+	culture="zhou"
+  father=yunxingyanshi2
+
+  3593.1.1 = {
+		birth = yes
+	}
+  3650.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+yunxingyanshi4={
+  name="e"
+  dynasty_house=house_baijia463
+	religion="xizhouli" 
+	culture="zhou"
+  father=yunxingyanshi3
+
+  3623.1.1 = {
+		birth = yes
+	}
+  3679.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+yunxingyanshi5={
+  name="hu1"
+  dynasty_house=house_baijia463
+	religion="xizhouli" 
+	culture="zhou"
+  father=yunxingyanshi4
+
+  3661.1.1 = {
+		birth = yes
+	}
+  3715.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+yunxingyanshi6={
+  name="xun"
+  dynasty_house=house_baijia463
+	religion="xizhouli" 
+	culture="zhou"
+  father=yunxingyanshi5
+
+  3693.1.1 = {
+		birth = yes
+	}
+  3752.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+yunxingyanshi7={
+  name="jia"
+  dynasty_house=house_baijia463
+	religion="xizhouli" 
+	culture="zhou"
+  father=yunxingyanshi6
+
+  3729.1.1 = {
+		birth = yes
+	}
+  3783.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+yunxingyanshi8={
+  name="chou"
+  dynasty_house=house_baijia463
+	religion="xizhouli" 
+	culture="zhou"
+  father=yunxingyanshi7
+
+  3767.1.1 = {
+		birth = yes
+	}
+  3806.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+yunxingyanshi9={
+  name="yiru"
+  dynasty_house=house_baijia463
+	religion="xizhouli" 
+	culture="zhou"
+  father=yunxingyanshi8
+
+  3791.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+yunxingyanshi10={
+  name="huan"
+  dynasty_house=house_baijia463
+	religion="xizhouli" 
+	culture="zhou"
+  father=yunxingyanshi9
+
+  3816.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+yunxingyanshi11={
+  name="heng"
+  dynasty_house=house_baijia463
+	religion="xizhouli" 
+	culture="zhou"
+  father=yunxingyanshi10
+
+  3834.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+yunxingyanshi12={
+  name="du1"
+  dynasty_house=house_baijia463
+	religion="xizhouli" 
+	culture="zhou"
+  father=yunxingyanshi10
+
+  3835.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+yunxingyanshi13={
+  name="nvming59"
+  dynasty_house=house_baijia463
+	religion="xizhouli" 
+	culture="zhou"
+  father=yunxingyanshi10
+  female=yes
+
+  3835.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+yunxingyanshi14={
+  name="nvming80"
+  dynasty_house=house_baijia463
+	religion="xizhouli" 
+	culture="zhou"
+  father=yunxingyanshi10
+  female=yes
+
+  3835.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+########
+yunxingyanshi15={
+  name="qi2"
+  dynasty_house=house_xin723
+	religion="xizhouli" 
+	culture="zhou"
+  father=yunxingyanshi9
+
+  3820.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+yunxingyanshi16={
+  name="que"
+  dynasty_house=house_xin723
+	religion="xizhouli" 
+	culture="zhou"
+  father=yunxingyanshi15
+
+  3838.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+yunxingyanshi17={
+  name="nvming99"
+  dynasty_house=house_xin723
+	religion="xizhouli" 
+	culture="zhou"
+  father=yunxingyanshi15
+  female=yes
+
+  3839.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}

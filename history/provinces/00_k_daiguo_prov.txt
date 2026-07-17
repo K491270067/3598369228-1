@@ -1,0 +1,66 @@
+﻿##### d_daishi ############################
+
+### c_dai
+# DAI
+545 = {
+	culture = song
+	religion = yinli
+	holding = castle_holding
+}
+# AN3
+551 = {
+	holding = none
+}
+
+
+### c_quji
+# QUJI
+553 = {
+	culture = song
+	religion = yinli
+	holding = castle_holding
+}
+
+
+### c_chengan
+# CHENGAN
+2325 = {
+	culture = song
+	religion = yinli
+	holding = castle_holding
+}
+
+
+##### d_zaishi ############################
+
+### c_mingyan
+# MINGYAN
+579 = {
+	culture = song
+	religion = yinli
+	holding = castle_holding
+}
+
+
+### c_waihuang
+# WAIHUANG
+2328 = {
+	culture = song
+	religion = yinli
+	holding = castle_holding
+}
+
+
+### c_zai
+# ZAI
+2330 = {
+	culture = song
+	religion = yinli
+	holding = castle_holding
+}
+# CHENG5
+2331 = {
+	holding = none
+}
+
+

@@ -1,0 +1,30 @@
+﻿c_mengshi = {
+	3849.12.31 = {
+		liege = k_zhuanyuguo
+		holder = han943
+		government = feudal_admin_government
+		succession_laws = { noble_family_succession_law }
+	}
+	5000.10.1 = {
+		effect = {
+			destroy_landless_title_no_tgp_dlc_effect = {
+				DATE = 5000.10.1
+			}
+		}
+	}
+}
+c_zhuanyushi = {
+	3849.12.31 = {
+		liege = k_zhuanyuguo
+		holder = han940
+		government = feudal_admin_government
+		succession_laws = { noble_family_succession_law }
+	}
+	5000.10.1 = {
+		effect = {
+			destroy_landless_title_no_tgp_dlc_effect = {
+				DATE = 5000.10.1
+			}
+		}
+	}
+}

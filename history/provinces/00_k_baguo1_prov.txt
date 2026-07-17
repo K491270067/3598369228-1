@@ -1,0 +1,156 @@
+﻿##### d_bashi1 ############################
+
+### c_shiquan1
+# CSHIQUAN1
+3111 = {
+	culture = baren
+	religion = guiwu
+	holding = tribal_holding
+}
+
+
+### c_ankan
+# ANKAN
+3112 = {
+	holding = none
+}
+
+
+### c_hanyin
+# HANYIN
+3120 = {
+	culture = baren
+	religion = guiwu
+	holding = tribal_holding
+}
+
+
+### c_yunwushan
+# YUNWUSHAN
+3122 = {
+	holding = none
+}
+
+
+### c_ba2
+# BA2
+3642 = {
+	culture = baren
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_fangshanguan
+# FANGSHANGUAN
+3643 = {
+	culture = baren
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_xixiang1
+# AVRANCHES
+2167 = {
+	culture = baren
+	religion = guiwu
+	holding = tribal_holding
+}
+
+
+### c_mianyin
+# CHERBOURG
+2169 = {
+	holding = none
+}
+
+
+### c_dangqushui
+# DANGQUSHUI
+3131 = {
+	holding = none
+}
+
+
+### c_micang
+# MICANG
+3132 = {
+	culture = baren
+	religion = guiwu
+	holding = tribal_holding
+}
+
+
+### c_pandao
+# PANDAO
+3134 = {
+	culture = baren
+	religion = guiwu
+	holding = tribal_holding
+}
+
+
+### c_hanchang
+# HANCHANG
+3686 = {
+	culture = baren
+	religion = guiwu
+	holding = tribal_holding
+}
+
+
+### c_qizhang
+# QIZHANG
+3687 = {
+	holding = none
+}
+
+
+### c_fuyang5
+# FUYANG5
+3688 = {
+	culture = baren
+	religion = guiwu
+	holding = tribal_holding
+}
+
+
+### c_nuoshui
+# NUOSHUI
+3689 = {
+	holding = none
+}
+
+
+### c_zengkou
+# ZENGKOU
+3690 = {
+	culture = baren
+	religion = guiwu
+	holding = tribal_holding
+}
+
+
+### c_shining
+# SHINING
+3691 = {
+	culture = baren
+	religion = guiwu
+	holding = tribal_holding
+}
+
+4756 = {
+	culture = baren
+	religion = guiwu
+	holding = tribal_holding
+}
+
+4757 = {
+	holding = none
+}
+
+4758 = {
+	holding = none
+}
+

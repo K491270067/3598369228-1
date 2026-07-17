@@ -1,0 +1,53 @@
+﻿##### d_zhuanyushi ############################
+
+### c_zhuanyu
+# ZHUANYU
+383 = {
+	culture = dongyi
+	religion = yili
+	holding = castle_holding
+}
+# WUYANG1
+382 = {
+	holding = none
+}
+
+
+### c_fei1
+# FEI1
+384 = {
+	culture = dongyi
+	religion = yili
+	holding = castle_holding
+}
+
+
+### c_hua3
+# HUA3
+2270 = {
+	culture = dongyi
+	religion = yili
+	holding = castle_holding
+}
+
+
+##### d_mengshi ############################
+
+### c_meng
+# MENG1
+370 = {
+	culture = dongyi
+	religion = yili
+	holding = castle_holding
+}
+
+
+### c_fenquan
+# FENQUAN
+372 = {
+	culture = dongyi
+	religion = yili
+	holding = castle_holding
+}
+
+

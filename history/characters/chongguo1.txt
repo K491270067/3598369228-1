@@ -1,0 +1,372 @@
+#############  充国  #############
+congrenchong1={
+  name="baiyuenan492"
+  dynasty=baijia328
+  religion="guiwu"
+  culture="congren"
+
+  3724.1.1 = {
+		birth = yes
+	}
+  3773.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+congrenchong2={
+  name="baiyuenan493"
+  dynasty=baijia328
+  religion="guiwu"
+  culture="congren"
+  father=congrenchong1
+
+  3759.1.1 = {
+		birth = yes
+	}
+  3802.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+congrenchong3={
+  name="baiyuenan494"
+  dynasty=baijia328
+  religion="guiwu"
+  culture="congren"
+  father=congrenchong2
+
+  3789.1.1 = {
+		birth = yes
+	}
+  3824.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+congrenchong4={
+  name="baiyuenan495"
+  dynasty=baijia328
+  religion="guiwu"
+  culture="congren"
+  father=congrenchong3
+
+  3811.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+congrenchong5={
+  name="baiyuenan496"#储君一号
+  dynasty=baijia328
+  religion="guiwu"
+  culture="congren"
+  father=congrenchong4
+
+  3829.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+congrenchong6={
+  name="baiyuenan497"#储君二号
+  dynasty=baijia328
+  religion="guiwu"
+  culture="congren"
+  father=congrenchong4
+
+  3830.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+congrenchong7={
+  name="baiyuenv182"
+  dynasty=baijia328
+  religion="guiwu"
+  culture="congren"
+  father=congrenchong4
+  female=yes
+
+  3831.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+congrenchong8={
+  name="baiyuenv201"
+  dynasty=baijia328
+  religion="guiwu"
+  culture="congren"
+  father=congrenchong4
+  female=yes
+
+  3832.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+#############罗
+congrenchong9={
+  name="baiyuenan498"
+  dynasty=baijia165
+  religion="guiwu"
+  culture="congren"
+
+  3737.1.1 = {
+		birth = yes
+	}
+  3781.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+congrenchong10={
+  name="baiyuenan499"
+  dynasty=baijia165
+  religion="guiwu"
+  culture="congren"
+  father=congrenchong9
+
+  3761.1.1 = {
+		birth = yes
+	}
+  3805.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+congrenchong11={
+  name="baiyuenan500"
+  dynasty=baijia165
+  religion="guiwu"
+  culture="congren"
+  father=congrenchong10
+
+  3787.1.1 = {
+		birth = yes
+	}
+  3821.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+congrenchong12={
+  name="baiyuenan461"
+  dynasty=baijia165
+  religion="guiwu"
+  culture="congren"
+  father=congrenchong11
+
+  3808.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+congrenchong13={
+  name="baiyuenan462"
+  dynasty=baijia165
+  religion="guiwu"
+  culture="congren"
+  father=congrenchong12
+
+  3826.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+congrenchong14={
+  name="baiyuenan463"
+  dynasty=baijia165
+  religion="guiwu"
+  culture="congren"
+  father=congrenchong12
+
+  3828.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+congrenchong15={
+  name="baiyuenv213"
+  dynasty=baijia165
+  religion="guiwu"
+  culture="congren"
+  father=congrenchong12
+  female=yes
+
+  3831.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+#############朴
+congrencongguo16={
+  name="baiyuenan464"
+  dynasty=baijia272
+  religion="guiwu"
+  culture="congren"
+
+  3701.1.1 = {
+		birth = yes
+	}
+  3752.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+congrencongguo17={
+  name="baiyuenan465"
+  dynasty=baijia272
+  religion="guiwu"
+  culture="congren"
+  father=congrencongguo16
+
+  3733.1.1 = {
+		birth = yes
+	}
+  3789.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+congrencongguo18={
+  name="baiyuenan475"
+  dynasty=baijia272
+  religion="guiwu"
+  culture="congren"
+  father=congrencongguo17
+
+  3761.1.1 = {
+		birth = yes
+	}
+  3806.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+congrencongguo19={
+  name="baiyuenan481"
+  dynasty=baijia272
+  religion="guiwu"
+  culture="congren"
+  father=congrencongguo18
+
+  3789.1.1 = {
+		birth = yes
+	}
+  3846.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+congrencongguo20={
+  name="baiyuenan441"
+  dynasty=baijia272
+  religion="guiwu"
+  culture="congren"
+  father=congrencongguo19
+
+  3810.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+congrencongguo21={
+  name="baiyuenan456"
+  dynasty=baijia272
+  religion="guiwu"
+  culture="congren"
+  father=congrencongguo20
+
+  3828.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+congrencongguo22={
+  name="baiyuenan459"
+  dynasty=baijia272
+  religion="guiwu"
+  culture="congren"
+  father=congrencongguo20
+
+  3830.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+congrencongguo23={
+  name="baiyuenv231"
+  dynasty=baijia272
+  religion="guiwu"
+  culture="congren"
+  father=congrencongguo20
+  female=yes
+
+  3831.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}

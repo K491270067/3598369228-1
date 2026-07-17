@@ -1,0 +1,74 @@
+﻿##### d_yeshi ############################
+
+### c_boyang
+# BOYANG
+1171 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+### c_ye1
+# YE1
+1172 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+# JIUWU
+2532 = {
+	holding = none
+}
+# SHOU1
+2533 = {
+	holding = none
+}
+
+
+### c_wucheng2
+# WUCHENG2
+1179 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+##### d_beiqiushi ############################
+
+### c_linzhang
+# LINZHANG
+1181 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+### c_tutai
+# TUTAI
+1182 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+# PINGYANG3
+1180 = {
+	holding = none
+}
+
+
+### c_qianhou
+# QIANHOU
+1183 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+# QI14
+2534 = {
+	holding = none
+}
+
+

@@ -1,0 +1,23 @@
+﻿l_simp_chinese:
+ law_group_candidate_preference_policy_feudal_governor: "[governor|E]候选人偏好政策"
+ law_group_candidate_preference_policy_feudal_governor_singular: "[governor|E]候选人偏好政策"
+
+ law_candidate_preference_policy_powerful_gentry: "士绅豪强"
+ law_candidate_preference_policy_powerful_gentry_subname: "偏好任命当地[noble_family]和当前[governor]的亲属"
+ law_candidate_preference_policy_powerful_gentry_effects: "$EFFECT_LIST_BULLET$通过#high 授予头衔#!任命的新[governor|E]将使用#high [GetSubjectContractType( 'feudal_admin_government_candidate_preference' ).GetObligationName( 'candidate_preference_powerful_gentry' )]#![vassal_contract|E]\n\n#flavor 本地的世袭统治者们依然影响着这片土地上的政治。#!"
+
+ law_candidate_preference_policy_local_talent: "本地贤能"
+ law_candidate_preference_policy_local_talent_subname: "偏好任命当前[governor]的内阁成员以及宫廷官员"
+ law_candidate_preference_policy_local_talent_effects: "$EFFECT_LIST_BULLET$通过#high 授予头衔#!任命的新[governor|E]将使用#high [GetSubjectContractType( 'feudal_admin_government_candidate_preference' ).GetObligationName( 'candidate_preference_local_talent' )]#![vassal_contract|E]\n\n#flavor 经验丰富且熟悉本地情况的专业官员才能有效地进行管理。#!"
+
+ law_candidate_preference_policy_favor_nepotism: "任人唯亲"
+ law_candidate_preference_policy_favor_nepotism_subname: "偏好任命你自己的亲属以及朋友"
+ law_candidate_preference_policy_favor_nepotism_effects: "$EFFECT_LIST_BULLET$通过#high 授予头衔#!任命的新[governor|E]将使用#high [GetSubjectContractType( 'feudal_admin_government_candidate_preference' ).GetObligationName( 'candidate_preference_favor_nepotism' )]#![vassal_contract|E]\n\n#flavor 要增强我们的影响力，就需要将土地分给可以信任的同姓亲族与亲信。#!"
+
+ law_candidate_preference_policy_talent_only: "唯才是举"
+ law_candidate_preference_policy_talent_only_subname: "偏好任命能力出众之人"
+ law_candidate_preference_policy_talent_only_effects: "$EFFECT_LIST_BULLET$通过#high 授予头衔#!任命的新[governor|E]将使用#high [GetSubjectContractType( 'feudal_admin_government_candidate_preference' ).GetObligationName( 'candidate_preference_talent_only' )]#![vassal_contract|E]\n\n#flavor 领地的管理需要真正的才能而非阿谀奉承。#!"
+
+ law_candidate_preference_policy_bureaucrat_promotion: "官僚选拔"
+ law_candidate_preference_policy_bureaucrat_promotion_subname: "偏好任命内部晋升的官僚"
+ law_candidate_preference_policy_bureaucrat_promotion_effects: "$EFFECT_LIST_BULLET$通过#high 授予头衔#!任命的新[governor|E]将使用#high [GetSubjectContractType( 'feudal_admin_government_candidate_preference' ).GetObligationName( 'candidate_preference_bureaucrat_promotion' )]#![vassal_contract|E]\n\n#flavor 勤恳的工作，过人的经验，绝对的忠诚，胜过一切虚浮表面。#!"

@@ -1,0 +1,285 @@
+﻿#############  鏈愯鍥?-鏈愯濮? #############
+han3001={
+  name="bfyznan71"
+  dynasty=xin223
+  culture="xirong"
+  religion="xirongfangling"
+
+  3567.1.1 = {
+		birth = yes
+	}
+  3620.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han3002={
+  name="bfyznan86"
+  dynasty=xin223
+  culture="xirong"
+  religion="xirongfangling"
+  father=han3001
+
+  3590.1.1 = {
+		birth = yes
+	}
+  3649.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han3003={
+  name="bfyznan101"
+  dynasty=xin223
+  culture="xirong"
+  religion="xirongfangling"
+  father=han3002
+
+  3640.1.1 = {
+		birth = yes
+	}
+  3701.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han3004={
+  name="bfyznan116"
+  dynasty=xin223
+  culture="xirong"
+  religion="xirongfangling"
+  father=han3003
+
+  3700.5.1 = {
+		birth = yes
+	}
+  3747.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han3005={
+  name="bfyznan131"
+  dynasty=xin223
+  culture="xirong"
+  religion="xirongfangling"
+  father=han3004
+
+  3724.5.1 = {
+		birth = yes
+	}
+  3777.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han3006={
+  name="bfyznan149"
+  dynasty=xin223
+  culture="xirong"
+  religion="xirongfangling"
+  father=han3005
+
+  3749.5.1 = {
+		birth = yes
+	}
+  3807.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han3007={
+  name="bfyznan167"
+  dynasty=xin223
+  culture="xirong"
+  religion="xirongfangling"
+  father=han3006
+
+  3777.6.2 = {
+		birth = yes
+	}
+  3820.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han3008={
+  name="bfyznan183"
+  dynasty=xin223
+  culture="xirong"
+  religion="xirongfangling"
+  father=han3007
+
+  3807.6.2 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han3009={
+  name="bfyznan200"
+  dynasty=xin223
+  culture="xirong"
+  religion="xirongfangling"
+  father=han3008
+
+  3827.2.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han3010={
+  name="bfyznan220"
+  dynasty=xin223
+  culture="xirong"
+  religion="xirongfangling"
+  father=han3008
+
+  3828.2.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han3011={
+  name="bfyznan239"
+  dynasty=xin223
+  culture="xirong"
+  religion="xirongfangling"
+  father=han3008
+
+  3829.2.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han3012={
+  name="bfyznan242"
+  dynasty=xin223
+  culture="xirong"
+  religion="xirongfangling"
+  father=han3008
+
+  3830.2.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han3013={
+  name="bfyznv107"
+  dynasty=xin223
+  culture="xirong"
+  religion="xirongfangling"
+  father=han3008
+  female=yes
+
+  3831.2.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han3014={
+  name="bfyznv138"
+  dynasty=xin223
+  culture="xirong"
+  religion="xirongfangling"
+  father=han3008
+  female=yes
+
+  3832.2.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+############
+xuyanrong1={
+  name="bfyznan275"
+  dynasty=xin793
+  culture="xirong"
+  religion="xirongfangling"
+  father=han3007
+
+  3809.6.2 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+xuyanrong2={
+  name="bfyznan290"
+  dynasty=xin793
+  culture="xirong"
+  religion="xirongfangling"
+  father=xuyanrong1
+
+  3827.6.2 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+xuyanrong3={
+  name="bfyznv21"
+  dynasty=xin793
+  culture="xirong"
+  religion="xirongfangling"
+  father=xuyanrong1
+  female=yes
+
+  3828.6.2 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+xuyanrong4={
+  name="bfyznan310"
+  dynasty=xin793
+  culture="xirong"
+  religion="xirongfangling"
+  father=xuyanrong1
+
+  3830.6.2 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+xuyanrong5={
+  name="bfyznv43"
+  dynasty=xin793
+  culture="xirong"
+  religion="xirongfangling"
+  father=xuyanrong1
+  female=yes
+
+  3831.6.2 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}

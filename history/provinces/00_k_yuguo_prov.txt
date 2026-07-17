@@ -1,0 +1,44 @@
+﻿##### d_yushi ############################
+
+### c_qi1
+# QI1
+245 = {
+	culture = dongyi
+	religion = yili
+	holding = castle_holding
+}
+
+
+### c_yu
+# YU
+248 = {
+	culture = dongyi
+	religion = yili
+	holding = castle_holding
+}
+# LINYI
+247 = {
+	holding = none
+}
+
+
+##### d_bengshi ############################
+
+### c_beng
+# BENG
+374 = {
+	culture = dongyi
+	religion = yili
+	holding = castle_holding
+}
+
+
+### c_tai
+# TAI
+375 = {
+	culture = dongyi
+	religion = yili
+	holding = castle_holding
+}
+
+

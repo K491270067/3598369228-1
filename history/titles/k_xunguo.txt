@@ -1,0 +1,374 @@
+﻿c_han4 = {
+	2568.1.1 = {
+		liege = "d_zhenxunshi"
+		holder = zhenxun1
+	}
+	2600.1.1 = {
+		holder = zhenxun2
+	}
+	2640.1.1 = {
+		holder = zhenxun3
+	}
+	2700.1.1 = {
+		holder = zhenxun4
+	}
+	2783.1.1 = {
+		holder = zhenxun5
+	}
+	2812.1.1 = {
+		holder = zhenxun6
+	}
+	2847.1.1 = {
+		holder = zhenxun7
+	}
+	2900.1.1 = {
+		holder = zhenxun8
+	}
+	2957.1.1 = {
+		holder = zhenxun9
+	}
+	3004.1.1 = {
+		holder = zhenxun10
+	}
+	3066.1.1 = {
+		holder = zhenxun11
+	}
+	3123.1.1 = {
+		holder = zhenxun12
+	}
+	3189.1.1 = {
+		holder = zhenxun13
+	}
+	3222.1.1 = {
+		holder = zhenxun14
+	}
+	3260.1.1 = {
+		holder = zhenxun15
+	}
+	3333.1.1 = {
+		holder = zhenxun16
+	}
+	3400.1.1 = {
+		holder = zhenxun17
+	}
+	3488.1.1 = {
+		holder = zhenxun18
+	}
+	3555.1.1 = {
+		holder = zhenxun19
+	}
+	3621.1.1 = {
+		holder = zhenxun20
+	}
+	3700.1.1 = {
+		holder = zhenxun30
+	}
+	3753.1.1 = {
+		holder = zhenxun39
+	}
+	3800.1.1 = {
+		holder = zhenxun40
+		government = feudal_admin_government
+	}
+}
+c_pingshou = {
+	2568.1.1 = {
+		liege = "d_zhenxunshi"
+		holder = zhenxun1
+	}
+	2600.1.1 = {
+		holder = zhenxun2
+	}
+	2640.1.1 = {
+		holder = zhenxun3
+	}
+	2700.1.1 = {
+		holder = zhenxun4
+	}
+	2783.1.1 = {
+		holder = zhenxun5
+	}
+	2812.1.1 = {
+		holder = zhenxun6
+	}
+	2847.1.1 = {
+		holder = zhenxun7
+	}
+	2900.1.1 = {
+		holder = zhenxun8
+	}
+	2957.1.1 = {
+		holder = zhenxun9
+	}
+	3004.1.1 = {
+		holder = zhenxun10
+	}
+	3066.1.1 = {
+		holder = zhenxun11
+	}
+	3123.1.1 = {
+		holder = zhenxun12
+	}
+	3189.1.1 = {
+		holder = zhenxun13
+	}
+	3222.1.1 = {
+		holder = zhenxun14
+	}
+	3260.1.1 = {
+		holder = zhenxun15
+	}
+	3333.1.1 = {
+		holder = zhenxun16
+	}
+	3400.1.1 = {
+		holder = zhenxun17
+	}
+	3488.1.1 = {
+		holder = zhenxun18
+	}
+	3555.1.1 = {
+		holder = zhenxun19
+	}
+	3621.1.1 = {
+		holder = zhenxun20
+	}
+	3700.1.1 = {
+		holder = zhenxun30
+	}
+	3753.1.1 = {
+		holder = zhenxun31
+	}
+	3800.1.1 = {
+		holder = zhenxun32
+	}
+	3848.1.1 = {
+		holder = zhenxun33
+		government = feudal_admin_government
+	}
+}
+c_zhen = {
+	2568.1.1 = {
+		liege = "d_zhenxunshi"
+		holder = zhenxun1
+	}
+	2600.1.1 = {
+		holder = zhenxun2
+	}
+	2640.1.1 = {
+		holder = zhenxun3
+	}
+	2700.1.1 = {
+		holder = zhenxun4
+	}
+	2783.1.1 = {
+		holder = zhenxun5
+	}
+	2812.1.1 = {
+		holder = zhenxun6
+	}
+	2847.1.1 = {
+		holder = zhenxun7
+	}
+	2900.1.1 = {
+		holder = zhenxun8
+	}
+	2957.1.1 = {
+		holder = zhenxun9
+	}
+	3004.1.1 = {
+		holder = zhenxun10
+	}
+	3066.1.1 = {
+		holder = zhenxun11
+	}
+	3123.1.1 = {
+		holder = zhenxun12
+	}
+	3189.1.1 = {
+		holder = zhenxun13
+	}
+	3222.1.1 = {
+		holder = zhenxun14
+	}
+	3260.1.1 = {
+		holder = zhenxun15
+	}
+	3333.1.1 = {
+		holder = zhenxun16
+	}
+	3400.1.1 = {
+		holder = zhenxun17
+	}
+	3488.1.1 = {
+		holder = zhenxun18
+	}
+	3555.1.1 = {
+		holder = zhenxun19
+	}
+	3621.1.1 = {
+		holder = zhenxun20
+	}
+	3700.1.1 = {
+		holder = zhenxun21
+	}
+	3753.1.1 = {
+		holder = zhenxun22
+	}
+	3800.1.1 = {
+		holder = zhenxun23
+	}
+	3848.1.1 = {
+		holder = zhenxun24
+	}
+}
+d_zhenxunshi = {
+	2568.1.1 = {
+		liege = "k_xunguo"
+		holder = zhenxun1
+	}
+	2600.1.1 = {
+		holder = zhenxun2
+	}
+	2640.1.1 = {
+		holder = zhenxun3
+	}
+	2700.1.1 = {
+		holder = zhenxun4
+	}
+	2783.1.1 = {
+		holder = zhenxun5
+	}
+	2812.1.1 = {
+		holder = zhenxun6
+	}
+	2847.1.1 = {
+		holder = zhenxun7
+	}
+	2900.1.1 = {
+		holder = zhenxun8
+	}
+	2957.1.1 = {
+		holder = zhenxun9
+	}
+	3004.1.1 = {
+		holder = zhenxun10
+	}
+	3066.1.1 = {
+		holder = zhenxun11
+	}
+	3123.1.1 = {
+		holder = zhenxun12
+	}
+	3189.1.1 = {
+		holder = zhenxun13
+	}
+	3222.1.1 = {
+		holder = zhenxun14
+	}
+	3260.1.1 = {
+		holder = zhenxun15
+	}
+	3333.1.1 = {
+		holder = zhenxun16
+	}
+	3400.1.1 = {
+		holder = zhenxun17
+	}
+	3488.1.1 = {
+		holder = zhenxun18
+	}
+	3555.1.1 = {
+		holder = zhenxun19
+	}
+	3621.1.1 = {
+		holder = zhenxun20
+	}
+	3700.1.1 = {
+		holder = zhenxun21
+	}
+	3753.1.1 = {
+		holder = zhenxun22
+	}
+	3800.1.1 = {
+		holder = zhenxun23
+	}
+	3848.1.1 = {
+		holder = zhenxun24
+	}
+}
+k_xunguo = {
+	2568.1.1 = {
+		holder = zhenxun1
+	}
+	2600.1.1 = {
+		holder = zhenxun2
+	}
+	2640.1.1 = {
+		holder = zhenxun3
+	}
+	2700.1.1 = {
+		holder = zhenxun4
+	}
+	2783.1.1 = {
+		holder = zhenxun5
+	}
+	2812.1.1 = {
+		holder = zhenxun6
+	}
+	2847.1.1 = {
+		holder = zhenxun7
+	}
+	2900.1.1 = {
+		holder = zhenxun8
+	}
+	2957.1.1 = {
+		holder = zhenxun9
+	}
+	3004.1.1 = {
+		holder = zhenxun10
+	}
+	3066.1.1 = {
+		holder = zhenxun11
+	}
+	3123.1.1 = {
+		holder = zhenxun12
+	}
+	3189.1.1 = {
+		holder = zhenxun13
+	}
+	3222.1.1 = {
+		holder = zhenxun14
+	}
+	3260.1.1 = {
+		holder = zhenxun15
+	}
+	3333.1.1 = {
+		holder = zhenxun16
+	}
+	3400.1.1 = {
+		holder = zhenxun17
+	}
+	3488.1.1 = {
+		holder = zhenxun18
+	}
+	3555.1.1 = {
+		holder = zhenxun19
+	}
+	3621.1.1 = {
+		holder = zhenxun20
+	}
+	3700.1.1 = {
+		holder = zhenxun21
+	}
+	3753.1.1 = {
+		holder = zhenxun22
+	}
+	3800.1.1 = {
+		holder = zhenxun23
+	}
+	3848.1.1 = {
+		holder = zhenxun24
+		government = feudal_admin_government
+	}
+}

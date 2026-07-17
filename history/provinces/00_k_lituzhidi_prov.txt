@@ -1,0 +1,62 @@
+﻿##### d_lishi2 ############################
+
+### c_yanga
+# YANGA
+1113 = {
+	culture = chidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+
+
+### c_li21
+# LI21
+2472 = {
+	culture = chidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+
+
+### c_xuan1
+# XUAN1
+2484 = {
+	culture = chidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+
+
+##### d_duanshi1 ############################
+
+### c_duanshi
+# DUANSHI
+1112 = {
+	culture = chidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+
+
+### c_rong4
+# RONG4
+2485 = {
+	culture = chidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+
+
+### c_qie1
+# QIE1
+2486 = {
+	culture = chidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+# WO1
+2487 = {
+	holding = none
+}
+
+

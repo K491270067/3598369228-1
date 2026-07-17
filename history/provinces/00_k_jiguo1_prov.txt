@@ -1,0 +1,48 @@
+﻿##### d_jishi1 ############################
+
+### c_ji5
+# JI5
+516 = {
+	culture = song
+	religion = yinli
+	holding = castle_holding
+}
+# CHONGGUAN
+519 = {
+	holding = none
+}
+
+
+### c_fang3
+# FANG3
+528 = {
+	culture = song
+	religion = yinli
+	holding = castle_holding
+}
+
+
+##### d_shanfushi ############################
+
+### c_danfu
+# DANFU
+525 = {
+	culture = song
+	religion = yinli
+	holding = castle_holding
+}
+# ZHUWANG
+2393 = {
+	holding = none
+}
+
+
+### c_jian
+# JIAN
+527 = {
+	culture = song
+	religion = yinli
+	holding = castle_holding
+}
+
+

@@ -1,0 +1,98 @@
+﻿is_feudal_appointment_valid_trigger = {
+	$TITLE$ = { save_temporary_scope_as = title_temp }			# 【目标头衔】
+	$CANDIDATE$ = { save_temporary_scope_as = candidate_temp }	# 【受影响者】
+	$TOP_LIEGE$ = { save_temporary_scope_as = top_liege_temp }	# 【最高领主】
+
+	custom_tooltip = {
+		text = not_top_liege_capital_county_tt
+		# 1.【目标头衔】不能是【最高领主】的首都伯爵领
+		NOT = { scope:title_temp ?= scope:candidate_temp.top_liege.capital_county }
+	}
+	scope:candidate_temp = {
+		# 2.如果：存在可选的【目标头衔】
+		trigger_if = {
+			limit = { exists = scope:title_temp }
+			# 2-1.【目标头衔】必须是任意任命继承制
+			custom_tooltip = {
+				text = has_appointment_succession_tt
+				$TITLE$ = {
+					OR = {
+						has_title_law_flag = appointment_type_succession
+						holder ?= {
+							has_realm_law_flag = appointment_type_succession
+						}
+					}
+				}
+			}
+			# 2-2.如果：【受影响者】已经有任何头衔
+			trigger_if = {
+				limit = {
+					any_held_title = { count >= 1 }
+				}
+				# 2-2-1a.再如果：是天朝制
+				trigger_if = {
+					limit = { government_has_flag = government_is_celestial }
+					# 那么：【受影响者】不能争夺其更低等级的头衔
+					custom_tooltip = {
+						text = cannot_compete_for_lower_rank_titles_tt
+						NOT = {
+							any_held_title = {
+								tier > scope:title_temp.tier
+								is_landless_type_title = no
+								is_noble_family_title = no
+							}
+						}
+					}
+				}
+				# 2-2-1b.再如果：是封建行政制
+				trigger_else_if = {
+					limit = { government_has_flag = government_is_feudal_admin }
+					# 那么：【受影响者】不能争夺其同级或者更低等级的头衔
+					custom_tooltip = {
+						text = tt_cannot_compete_for_same_or_lower_rank_titles
+						NOT = {
+							any_held_title = {
+								tier >= scope:title_temp.tier
+								is_landless_type_title = no
+								is_noble_family_title = no
+							}
+						}
+					}
+				}
+				# 2-2-1c.是其他情况（其他政体）：
+				trigger_else = {
+					# 那么：【受影响者】不能争夺其同等级的头衔
+					custom_tooltip = {
+						text = only_one_province_of_highest_rank_tt
+						NOT = {
+							any_held_title = {
+								tier = scope:title_temp.tier
+								is_landless_type_title = no
+								is_noble_family_title = no
+							}
+						}
+					}
+				}
+				# 2-2-2.【受影响者】不能已经是【目标头衔】的拥有者
+				custom_tooltip = {
+					text = promote_candidate_interaction_existing_holder_tt
+					this != scope:title_temp.holder
+				}
+			}
+		}
+		# 3.检查【受影响者】是否可以被【最高领主】授予头衔
+		custom_tooltip = {
+			text = can_be_appointed_interaction_tt
+			OR = {
+				can_be_granted_titles_by = { RULER = scope:top_liege_temp }
+				can_be_granted_theocratic_titles_by = { RULER = scope:top_liege_temp }
+				AND = {
+					is_diarch_of_target = scope:top_liege_temp
+					scope:top_liege_temp = { has_diarchy_active_parameter = diarchy_is_co_rulership }
+				}
+			}
+		}
+		# 4.【受影响者】不能是教士
+		is_clergy = no
+	}
+}

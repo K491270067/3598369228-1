@@ -1,0 +1,132 @@
+﻿##### d_xixiashi ############################
+
+### c_lingwu
+# LINGWU
+1422 = {
+	culture = hehuangzhirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+# XUANQIU
+2747 = {
+	holding = none
+}
+
+
+### c_xixia
+# XIXIA
+2751 = {
+	culture = hehuangzhirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+# LIAN1
+1423 = {
+	holding = none
+}
+# HEQI
+1424 = {
+	holding = none
+}
+
+
+### c_yinhancheng
+# YINHANCHENG
+1426 = {
+	culture = hehuangzhirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+# HAOFEI
+1425 = {
+	holding = none
+}
+
+
+### c_beiyi
+# BEIYI
+2753 = {
+	culture = hehuangzhirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+# BAIFU
+2754 = {
+	holding = none
+}
+
+
+##### d_quanwushi ############################
+
+### c_yimen
+# YIMEN
+2746 = {
+	culture = hehuangzhirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+
+
+### c_wenchi
+# WENCHI
+2749 = {
+	culture = hehuangzhirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+# LUOBAO
+2750 = {
+	holding = none
+}
+
+
+### c_mogexiqi
+# MOGEXIQI
+2752 = {
+	culture = hehuangzhirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+# LOUBOBEI
+2748 = {
+	holding = none
+}
+
+
+##### d_duomashi ############################
+
+### c_hunhuaizhang
+# HUNHUAIZHANG
+1421 = {
+	culture = hehuangzhirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+
+
+### c_yushui
+# YUSHUI
+2755 = {
+	culture = hehuangzhirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+# HENG3
+2756 = {
+	holding = none
+}
+
+
+### c_fuping2
+# FUPING2
+1428 = {
+	culture = hehuangzhirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+# DINGXI
+1427 = {
+	holding = none
+}
+
+

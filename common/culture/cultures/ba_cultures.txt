@@ -1,0 +1,59 @@
+﻿baren = {
+	color = { 210 150 255 }
+
+	name_order_convention = dynasty_always_first
+	ethos = ethos_bellicose
+	heritage = heritage_ba
+	language = language_baipu
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+   
+	traditions = {
+		tradition_ruling_caste
+		tradition_ancient_miners
+		tradition_strength_in_numbers
+		tradition_highland_warriors
+	}
+
+	name_list = name_list_han
+
+	coa_gfx = { chinese_group_coa_gfx }
+	building_gfx = { chinese_building_gfx }
+	clothing_gfx = { chinese_clothing_gfx }
+	unit_gfx = { chinese_unit_gfx }
+	house_coa_frame = house_china
+
+	ethnicities = {
+		10 = asian_han_chinese
+	}
+}
+
+congren = {
+	color = { 115 50 55 }
+
+	name_order_convention = dynasty_always_first
+	ethos = ethos_stoic
+	heritage = heritage_ba
+	language = language_baipu
+	martial_custom = martial_custom_equal
+	head_determination = head_determination_domain
+   
+	traditions = {
+		tradition_martial_admiration
+		tradition_quarrelsome
+		tradition_stalwart_defenders
+		tradition_ruling_caste
+	}
+
+	name_list = name_list_han
+
+	coa_gfx = { chinese_group_coa_gfx }
+	building_gfx = { chinese_building_gfx }
+	clothing_gfx = { chinese_clothing_gfx }
+	unit_gfx = { chinese_unit_gfx }
+	house_coa_frame = house_china
+
+	ethnicities = {
+		10 = asian_han_chinese
+	}
+}

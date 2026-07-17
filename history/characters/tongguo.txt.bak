@@ -1,0 +1,268 @@
+﻿##### 褰ゅ浗--濮褰ゆ皬 #####
+## 閮ㄥ垎涓栫郴澶辫€?##
+jixingtongguo1={
+  name="miao"#鍛ㄦ垚鐜嬩箣瀛愶紝鍚嶅瓧鏈煡
+  dynasty=xin755#濮?
+	religion="xizhouli" 
+	culture="zhou"
+  father=han17
+
+  3581.1.1 = {
+		birth = yes
+	}
+  3642.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jixingtongguo2={
+  name="pang1"
+  dynasty_house=house_xin756
+	religion="xizhouli" 
+	culture="zhou"
+  father=jixingtongguo1
+
+  3612.1.1 = {
+		birth = yes
+	}
+  3661.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jixingtongguo3={
+  name="liang2"
+  dynasty_house=house_xin756
+	religion="xizhouli" 
+	culture="zhou"
+  father=jixingtongguo2
+
+  3638.1.1 = {
+		birth = yes
+	}
+  3700.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jixingtongguo4={
+  name="zhang1"
+  dynasty_house=house_xin756
+	religion="xizhouli" 
+	culture="zhou"
+  father=jixingtongguo3
+
+  3663.1.1 = {
+		birth = yes
+	}
+  3715.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jixingtongguo5={
+  name="hou1"
+  dynasty_house=house_xin756
+	religion="xizhouli" 
+	culture="zhou"
+  father=jixingtongguo4
+
+  3694.1.1 = {
+		birth = yes
+	}
+  3741.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jixingtongguo6={
+  name="fuchu"
+  dynasty_house=house_xin756
+	religion="xizhouli" 
+	culture="zhou"
+  father=jixingtongguo5
+
+  3721.1.1 = {
+		birth = yes
+	}
+  3780.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jixingtongguo7={
+  name="meibi"
+  dynasty_house=house_xin756
+	religion="xizhouli" 
+	culture="zhou"
+  father=jixingtongguo6
+
+  3752.1.1 = {
+		birth = yes
+	}
+  3809.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jixingtongguo8={
+  name="sheng2"
+  dynasty_house=house_xin756
+	religion="xizhouli" 
+	culture="zhou"
+  father=jixingtongguo7
+
+  3788.1.1 = {
+		birth = yes
+	}
+  3849.1.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jixingtongguo9={
+  name="dai3"
+  dynasty_house=house_xin756
+	religion="xizhouli" 
+	culture="zhou"
+  father=jixingtongguo8
+
+  3809.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+    death = yes
+  }
+}
+jixingtongguo10={
+  name="gu1"
+  dynasty_house=house_xin756
+	religion="xizhouli" 
+	culture="zhou"
+  father=jixingtongguo9
+
+  3827.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+    death = yes
+  }
+}
+jixingtongguo11={
+  name="ke3"
+  dynasty_house=house_xin756
+	religion="xizhouli" 
+	culture="zhou"
+  father=jixingtongguo9
+
+  3828.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+    death = yes
+  }
+}
+jixingtongguo12={
+  name="fu3"
+  dynasty_house=house_xin756
+	religion="xizhouli" 
+	culture="zhou"
+  father=jixingtongguo9
+  female=yes
+
+  3830.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+    death = yes
+  }
+}
+jixingtongguo13={
+  name="rong3"
+  dynasty_house=house_xin756
+	religion="xizhouli" 
+	culture="zhou"
+  father=jixingtongguo9
+  female=yes
+
+  3832.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+    death = yes
+  }
+}
+##################
+jixingtongguo14={
+  name="jiu1"
+  dynasty_house=house_xin757
+	religion="xizhouli" 
+	culture="zhou"
+  father=jixingtongguo8
+
+  3810.1.1 = {
+		birth = yes
+	}
+  3880.1.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jixingtongguo15={
+  name="chu3"
+  dynasty_house=house_xin757
+	religion="xizhouli" 
+	culture="zhou"
+  father=jixingtongguo14
+
+  3828.1.1 = {
+		birth = yes
+	}
+  3880.1.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jixingtongguo16={
+  name="shuang1"
+  dynasty_house=house_xin757
+	religion="xizhouli" 
+	culture="zhou"
+  father=jixingtongguo14
+
+  3829.1.1 = {
+		birth = yes
+	}
+  3880.1.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jixingtongguo17={
+  name="yan11"
+  dynasty_house=house_xin757
+	religion="xizhouli" 
+	culture="zhou"
+  father=jixingtongguo14
+  female=yes
+
+  3830.1.1 = {
+		birth = yes
+	}
+  3880.1.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}

@@ -1,0 +1,24 @@
+﻿l_simp_chinese:
+ denied_title_succession_vassal_receive: "敬启，[scope_deny_title_succession_vassal.GetFullNameNoTooltip]"
+ denied_title_succession_vassal_receive_desc: "基于上天赋予我的权利，我宣布[target.GetName]将不被允许继续在你的家族中传承。我的决定出自充分的考虑。希望你能遵守我们之间的[vassal_contract]，继续给[realm]带来繁荣。"
+
+ denied_title_succession_vassal_receive.a: "这太不公平了......"
+ denied_title_succession_vassal_receive.a_effect: "你的[heir|E]对[target.GetName]的继承已被[liege|E]否决。你死亡时此[title|E]将被勒令归还给你的[liege|E]"
+
+ denied_title_succession_title: "被否决的继承权"
+ denied_title_succession_desc: "\n权力并非天生。\n\n正如我们的[vassal_contract|E]上所书，[realm|E]继承的合法性来自于[liege|E]的特许。而现在我的[liege|E]已经决定不再继续授予我这项特权。\n\n无论这项决定是出于什么原因，[liege|E]的特使已经到达，勒令我交出这些[title|E]。"
+ denied_title_succession_agree: "我不得不接受"
+ denied_title_succession_disagree: "没人能夺走我应得的权利！"
+
+ denied_title_succession_agree_liege: "敬启，[scope_deny_title_succession_liege.GetFullNameNoTooltip]"
+ denied_title_succession_agree_liege_desc: "我获知父辈的某些头衔将不会由我继承，尽管我难以认同您的决定，但是我不会因此违抗您神圣的权利。"
+ denied_title_succession_agree_liege.a: "我不会忘记你的忠心"
+
+ denied_title_succession_disagree_liege: "敬启，[scope_deny_title_succession_liege.GetFullNameNoTooltip]"
+ denied_title_succession_disagree_liege_desc: "继承祖辈的[title]是上天赐予的权利，请恕我坚持这一传统。"
+ denied_title_succession_disagree_liege.a: "你竟敢违抗我！"
+
+ restored_title_succession_vassal_receive: "敬启，[scope_restore_title_succession_vassal.GetFullNameNoTooltip]"
+ restored_title_succession_vassal_receive_desc: "鉴于你的忠顺和美好品德，我宣布[target.GetName]将如常继续在你的家族中传承。我相信你的家族能够遵守我们之间的[vassal_contract]，世代给[realm]带来繁荣。"
+ restored_title_succession_vassal_receive.a: "希望这会持续下去"
+ restored_title_succession_vassal_receive.a_effect: "你的[liege|E]将重新支持你的[heir|E]对[target.GetName]的继承"

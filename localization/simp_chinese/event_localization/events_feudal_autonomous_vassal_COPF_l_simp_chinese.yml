@@ -1,0 +1,17 @@
+﻿l_simp_chinese:
+ called_autonomous_vassal_opening: "敬启，[target_vassal.GetFullNameNoTooltip]"
+ called_autonomous_vassal_desc: "领地正蒙受战火，现在正是你能为你的家族带来荣耀的时刻。立即集结你的军队和我会合，我们将击退敌人，而你的忠心不会被遗忘。"
+ called_autonomous_vassal_agree: "我当然会尽我的义务"
+ called_autonomous_vassal_disagree: "局势发展还有待考证......"
+
+ called_autonomous_vassal_agree_liege: "敬启，[target_liege.GetFullNameNoTooltip]
+ called_autonomous_vassal_agree_liege_desc: "我当然会尽我的义务，一同保卫您的领地。让我们的敌人在我们的军队面前颤抖吧！"
+ called_autonomous_vassal_agree_liege.a: "很好"
+
+ called_autonomous_vassal_disagree_liege: "敬启，[target_liege.GetFullNameNoTooltip]
+ called_autonomous_vassal_disagree_liege_desc: "请原谅我无法立刻加入您的战事，我确信眼下一定有其他方式能让我为领地的繁盛添砖加瓦。我由衷期盼您的胜利归来。"
+ called_autonomous_vassal_disagree_liege.a: "我等会儿再来收拾你"
+
+ called_autonomous_vassal_revolt_liege: "敬启，[target_liege.GetFullNameNoTooltip]
+ called_autonomous_vassal_revolt_liege_desc: "看来你已经陷入了战争的泥潭，而我等待这个机会已经很久了。你不义的统治对我们的压迫到此结束了！"
+ called_autonomous_vassal_revolt_liege.a: "你这个叛徒！"

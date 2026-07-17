@@ -1,0 +1,44 @@
+﻿##### d_fengshi4 ############################
+
+### c_chong
+# CHONG
+429 = {
+	culture = dongyi
+	religion = yili
+	holding = castle_holding
+}
+
+
+### c_ren
+# REN
+436 = {
+	culture = dongyi
+	religion = yili
+	holding = castle_holding
+}
+# SHI1
+434 = {
+	holding = none
+}
+
+
+##### d_renshi ############################
+
+### c_zhuxia
+# ZHUXIA
+451 = {
+	culture = dongyi
+	religion = yili
+	holding = castle_holding
+}
+
+
+### c_qian
+# QIAN
+454 = {
+	culture = dongyi
+	religion = yili
+	holding = castle_holding
+}
+
+

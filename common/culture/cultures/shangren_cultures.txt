@@ -1,0 +1,127 @@
+﻿yinshang = {
+	color = { 160 40 20 }
+
+	name_order_convention = dynasty_always_first
+	ethos = ethos_bellicose
+	heritage = heritage_shangren
+	language = language_chinese
+	martial_custom = martial_custom_equal
+	head_determination = head_determination_domain
+   
+	traditions = {
+        tradition_ruling_caste
+		    tradition_quarrelsome
+        tradition_mystical_ancestors
+        tradition_polygamous
+        tradition_martial_admiration
+        tradition_life_is_just_a_joke
+	}
+
+	name_list = name_list_han
+
+	coa_gfx = { chinese_group_coa_gfx }
+	building_gfx = { chinese_building_gfx }
+	clothing_gfx = { chinese_clothing_gfx }
+	unit_gfx = { chinese_unit_gfx }
+	house_coa_frame = house_china
+
+	ethnicities = {
+		10 = asian_han_chinese
+	}
+}
+
+song = {
+	color = { 140 80 20 }
+
+	name_order_convention = dynasty_always_first
+	ethos = ethos_courtly
+	heritage = heritage_shangren
+	language = language_chinese
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+   
+	traditions = {
+        tradition_ruling_caste
+		    tradition_equitable
+        tradition_mystical_ancestors
+        tradition_religion_blending
+        tradition_castle_keepers
+        tradition_agrarian
+	}
+
+	name_list = name_list_han
+
+	coa_gfx = { chinese_group_coa_gfx }
+	building_gfx = { chinese_building_gfx }
+	clothing_gfx = { chinese_clothing_gfx }
+	unit_gfx = { chinese_unit_gfx }
+	house_coa_frame = house_china
+
+	ethnicities = {
+		10 = asian_han_chinese
+	}
+}
+
+guzhu = {
+	color = { 80 100 140 }
+
+	name_order_convention = dynasty_always_first
+	ethos = ethos_stoic
+	heritage = heritage_shangren
+	language = language_chinese
+	martial_custom = martial_custom_equal
+	head_determination = head_determination_domain
+   
+	traditions = {
+        tradition_fp1_coastal_warriors
+		    tradition_strong_kinship
+        tradition_mystical_ancestors
+        tradition_winter_warriors
+        tradition_stalwart_defenders
+        tradition_strength_in_numbers
+	}
+
+	name_list = name_list_han
+
+	coa_gfx = { chinese_group_coa_gfx }
+	building_gfx = { chinese_building_gfx }
+	clothing_gfx = { chinese_clothing_gfx }
+	unit_gfx = { chinese_unit_gfx }
+	house_coa_frame = house_china
+
+	ethnicities = {
+		10 = asian_han_chinese
+	}
+}
+
+chaoxian = {
+	color = { 40 180 120 }
+
+	name_order_convention = dynasty_always_first
+	ethos = ethos_communal
+	heritage = heritage_shangren
+	language = language_chinese
+	martial_custom = martial_custom_equal
+	head_determination = head_determination_domain
+   
+	traditions = {
+        tradition_malleable_invaders
+		    tradition_stalwart_defenders
+        tradition_mystical_ancestors
+        tradition_isolationist
+        tradition_forest_fighters
+        tradition_culture_blending
+	}
+
+	name_list = name_list_han
+
+	coa_gfx = { chinese_group_coa_gfx }
+	building_gfx = { chinese_building_gfx }
+	clothing_gfx = { chinese_clothing_gfx }
+	unit_gfx = { chinese_unit_gfx }
+	house_coa_frame = house_china
+
+	ethnicities = {
+		10 = asian_han_chinese
+	}
+}

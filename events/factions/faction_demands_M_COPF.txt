@@ -1,0 +1,221 @@
+﻿namespace = faction_demand
+
+# Liberty Faction Demand
+# by Henrik Fåhraeus
+faction_demand.0101 = { #包括COPF改动
+	type = letter_event
+	sender = scope:faction_leader
+	opening = {
+		desc = "FACTION_DEMAND_LIBERTY"
+	}
+	desc = "FACTION_DEMAND_LIBERTY_DESC"
+	
+	trigger = {
+		# May have ceased to exist by the time this triggers
+		exists = scope:faction
+	}
+
+	immediate = {
+		# Grab our scope for loc.
+		save_scope_as = faction_target
+		set_variable = { #COPF
+			name = potential_diarch
+			value = scope:faction_leader
+		}
+		if = { #COPF
+			limit = { exists = diarch }
+			diarch = { save_scope_as = target_diarch }
+			set_variable = {
+				name = target_diarch
+				value = scope:target_diarch
+			}
+		}
+	}
+
+	option = {
+		name = "FACTION_DEMAND_ACCEPT"
+
+		# This effect should always be placed here, _before_ all the other effects in the block.
+		trigger_event = { on_action = on_faction_demand_accepted }
+
+		add_dread = medium_dread_loss
+
+		# LEGITIMACY LOSS FOR ACCEPTING FACTION DEMANDS
+		faction_accept_demand_legitimacy_effect = yes
+		switch = {
+			trigger = has_realm_law_in_group
+			celestial_bureaucracy = {
+				change_realm_law_level = {
+					law_group = celestial_bureaucracy
+					change = -1
+				}
+			}
+			imperial_bureaucracy = {
+				change_realm_law_level = {
+					law_group = imperial_bureaucracy
+					change = -1
+				}
+			}
+			japanese_bureaucracy = {
+				change_realm_law_level = {
+					law_group = japanese_bureaucracy
+					change = -1
+				}
+			}
+			meritocratic_bureaucracy = {
+				change_realm_law_level = {
+					law_group = meritocratic_bureaucracy
+					change = -1
+				}
+			}
+			crown_authority = {
+				change_realm_law_level = {
+					law_group = crown_authority
+					change = -1
+				}
+			}
+			crown_authority_extended = { #COPF
+				change_realm_law_level = {
+					law_group = crown_authority_extended
+					change = -1
+				}
+			}
+			tribal_authority = {
+				change_realm_law_level = {
+					law_group = tribal_authority
+					change = -1
+				}
+			}
+		}
+
+		add_prestige = -200
+
+		add_character_flag = {
+			flag = recent_liberty_faction_war
+			years = 10
+		}
+
+		scope:faction_leader = {
+			trigger_event = {
+				id = faction_demand.0102
+			}
+		}
+
+		scope:faction = {
+			destroy_faction = yes
+		}
+
+		# MERITOCRATIC EMPIRE CEREMONIAL MONARCH/REGENCY CREATION
+		tgp_create_meritocratic_ruling_regent_title_effect = yes
+
+		# This effect should always be placed here, _after_ everything except the ai_chance.
+		trigger_event = { on_action = on_faction_demand_accepted }
+
+		ai_chance = {
+			base = 10
+			modifier = {
+				add = 90
+				scope:faction = { faction_power >= 100 }
+			}
+			modifier = {
+				add = 50
+				scope:faction = { faction_power >= 125 }
+			}
+			modifier = {
+				add = 50
+				scope:faction = { faction_power >= 150 }
+			}
+			modifier = {
+				add = 50
+				scope:faction = { faction_power >= 200 }
+			}
+			modifier = {
+				add = 50
+				any_character_war = {
+					is_war_leader = root
+					is_defender = root
+				}
+			}
+			modifier = {
+				factor = 0.1
+				any_ally = {
+					NOR = {
+						target_is_liege_or_above = root
+						target_is_vassal_or_below = root
+					}
+					max_military_strength > root.max_military_strength
+				}
+			}
+			modifier = {
+				add = 10000
+				scope:faction_leader = { is_yes_men_enabled = yes }
+			}
+		}
+	}
+
+	option = {
+		name = "FACTION_DEMAND_BRIBE_CO_EMPEROR"
+		show_as_unavailable = { has_active_diarchy = yes }
+		trigger = { faction_target_can_attempt_to_bribe_with_co_emperorship_trigger = yes }
+
+		# Ping-pong the choice back to the target.
+		## Laying out the consequences.
+		show_as_tooltip = {
+			random_list = {
+				# They accept!
+				100 = {
+					desc = faction_demand.0000.faction_leader_accepts
+					show_chance = no
+					faction_demand_counter_offer_co_rule_start_diarchy_effect = yes
+					faction_demand_liberty_counter_offer_corule_accepted_effect = yes
+				}
+				# They decline.
+				100 = {
+					desc = faction_demand.0000.faction_leader_rejects
+					show_chance = no
+					faction_demand_liberty_rejected_effect = yes
+				}
+			}
+		}
+		## And sorting the actual flow.
+		scope:faction_leader = { trigger_event = faction_demand.0106 }
+
+		ai_chance = { liege_offer_co_emperorship_to_faction_leader_modifier = yes }
+	}
+
+	option = {
+		name = "FACTION_DEMAND_REFUSE"
+
+		faction_demand_liberty_rejected_effect = yes
+
+		scope:faction_leader = {
+			trigger_event = {
+				id = faction_demand.0103
+				days = 1
+			}
+		}
+
+		ai_chance = {
+			base = 100
+			ai_value_modifier = {
+				ai_boldness = 4.0
+			}
+			modifier = {
+				add = 50
+				scope:faction = { faction_power < 80 }
+			}
+			modifier = {
+				add = 100
+				scope:faction = { faction_power < 60 }
+			}
+			modifier = {
+				add = 1000
+				scope:faction = { faction_power < 40 }
+			}
+			modifier = {
+				add = 10000
+				scope:faction_leader = { is_no_men_enabled = yes }
+			}
+		}
+	}
+}

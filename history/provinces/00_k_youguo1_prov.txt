@@ -1,0 +1,44 @@
+﻿##### d_youshi1 ############################
+
+### c_zhengye
+# ZHENGYE
+1723 = {
+	holding = none
+}
+
+
+### c_chaoyang
+# CHAOYANG
+1765 = {
+	holding = none
+}
+
+
+### c_you3
+# YOU3
+1768 = {
+	holding = none
+}
+
+
+### c_xiling
+# 
+1800 = {
+	holding = none
+}
+
+
+### c_liqiu
+# 
+1836 = {
+	holding = none
+}
+
+
+### c_dengqiu
+# DENGQIU
+1764 = {
+	holding = none
+}
+
+

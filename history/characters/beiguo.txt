@@ -1,0 +1,296 @@
+﻿#############  贝国--姬姓 #############
+#周文王的庶子姬奭在辅佐周武王灭商后被封于燕国。至召公康时，赐封其支庶子孙食邑于巨鹿甘泉浿水流域，建立了郥国
+#查阅文献未见召公康此人，疑是召康公姬奭之庶子康封于贝国
+jixingbeiguo1={
+  name="kang1"#召公奭子，起名为康
+  dynasty=xin587
+	religion="xizhouli" 
+	culture="zhou"
+  father=han298
+
+  3586.1.1 = {
+		birth = yes
+	}
+  3650.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jixingbeiguo2={
+  name="nanming416"
+  dynasty_house=house_baijia110
+	religion="xizhouli" 
+	culture="zhou"
+  father=jixingbeiguo1
+
+  3609.1.1 = {
+		birth = yes
+	}
+  3671.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jixingbeiguo3={
+  name="nanming665"
+  dynasty_house=house_baijia110
+	religion="xizhouli" 
+	culture="zhou"
+  father=jixingbeiguo2
+
+  3638.1.1 = {
+		birth = yes
+	}
+  3697.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jixingbeiguo4={
+  name="tui1"
+  dynasty_house=house_baijia110
+	religion="xizhouli" 
+	culture="zhou"
+  father=jixingbeiguo3
+
+  3677.1.1 = {
+		birth = yes
+	}
+  3723.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jixingbeiguo5={
+  name="chao"
+  dynasty_house=house_baijia110
+	religion="xizhouli" 
+	culture="zhou"
+  father=jixingbeiguo4
+
+  3704.1.1 = {
+		birth = yes
+	}
+  3761.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jixingbeiguo6={
+  name="ningzu"
+  dynasty_house=house_baijia110
+	religion="xizhouli" 
+	culture="zhou"
+  father=jixingbeiguo5
+
+  3738.1.1 = {
+		birth = yes
+	}
+  3793.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jixingbeiguo7={
+  name="ba"
+  dynasty_house=house_baijia110
+	religion="xizhouli" 
+	culture="zhou"
+  father=jixingbeiguo6
+
+  3765.1.1 = {
+		birth = yes
+	}
+  3811.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jixingbeiguo8={
+  name="guizhu"
+  dynasty_house=house_baijia110
+	religion="xizhouli" 
+	culture="zhou"
+  father=jixingbeiguo7
+
+  3793.1.1 = {
+		birth = yes
+	}
+  3827.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jixingbeiguo9={
+  name="biao"#平王东迁时贝国国君，游戏开局时24岁
+  dynasty_house=house_baijia110
+	religion="xizhouli" 
+	culture="zhou"
+  father=jixingbeiguo8
+
+  3814.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jixingbeiguo10={
+  name="cheng"#储君1号
+  dynasty_house=house_baijia110
+	religion="xizhouli" 
+	culture="zhou"
+  father=jixingbeiguo9
+
+  3832.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jixingbeiguo11={
+  name="an"#储君2号
+  dynasty_house=house_baijia110
+	religion="xizhouli" 
+	culture="zhou"
+  father=jixingbeiguo9
+
+  3833.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jixingbeiguo12={
+  name="nvming72"#女1号
+  dynasty_house=house_baijia110
+	religion="xizhouli" 
+	culture="zhou"
+  father=jixingbeiguo9
+  female=yes
+
+  3834.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jixingbeiguo13={
+  name="nvming88"#女2号
+  dynasty_house=house_baijia110
+	religion="xizhouli" 
+	culture="zhou"
+  father=jixingbeiguo9
+  female=yes
+
+  3835.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+#######################屯氏
+jixingbeiguo14={
+  name="li1"
+  dynasty_house=house_xin588
+	religion="xizhouli" 
+	culture="zhou"
+  father=jixingbeiguo8
+
+  3816.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jixingbeiguo15={
+  name="xuan"
+  dynasty_house=house_xin588
+	religion="xizhouli" 
+	culture="zhou"
+  father=jixingbeiguo14
+
+  3834.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jixingbeiguo16={
+  name="luo"
+  dynasty_house=house_xin588
+	religion="xizhouli" 
+	culture="zhou"
+  father=jixingbeiguo14
+
+  3835.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jixingbeiguo17={
+  name="nvming121"
+  dynasty_house=house_xin588
+	religion="xizhouli" 
+	culture="zhou"
+  father=jixingbeiguo14
+  female=yes
+
+  3835.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jixingbeiguo18={
+  name="nvming126"
+  dynasty_house=house_xin588
+	religion="xizhouli" 
+	culture="zhou"
+  father=jixingbeiguo14
+  female=yes
+
+  3835.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}

@@ -1,0 +1,86 @@
+﻿##### d_beishi1 ############################
+
+### c_lexiang
+# 
+1879 = {
+	holding = none
+}
+
+
+### c_songzi1
+# 
+1880 = {
+	holding = none
+}
+
+
+### c_gaocheng1
+# 
+1881 = {
+	holding = none
+}
+
+
+### c_xuan
+# 
+1882 = {
+	holding = none
+}
+
+
+### c_chanling
+# ZHANLING
+3754 = {
+	holding = none
+}
+
+
+### c_jiangan1
+# JIANGAN1
+3755 = {
+	holding = none
+}
+
+
+### c_cenyang
+# CENYANG
+3756 = {
+	holding = none
+}
+
+
+### c_shishou1
+# SHISHOU1
+3757 = {
+	holding = none
+}
+
+
+### c_weishan
+# WEISHAN
+3758 = {
+	holding = none
+}
+
+
+### c_gaocheng2
+# GAOCHENG2
+3759 = {
+	holding = none
+}
+
+
+### c_liyang3
+# LIYANG3
+3760 = {
+	holding = none
+}
+
+
+### c_shimen1
+# SHIMEN1
+3761 = {
+	holding = none
+}
+
+

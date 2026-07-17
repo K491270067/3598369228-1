@@ -1,0 +1,1487 @@
+﻿QIN = {
+	pattern = "pattern_chinese.tga"
+	color1 = "ck2_black"
+	color2 = "ck2_black"
+	colored_emblem = {
+		texture = "qin.dds"
+		color1 = "bone_white"
+	}
+}
+
+CHU = {
+	pattern = "pattern_chinese.tga"
+	color1 = {
+		0
+		0
+		0
+	}
+	color2 = {
+		175
+		171
+		143
+	}
+	colored_emblem = {
+		color1 = "ck2_black"
+		texture = "chu.dds"
+	}
+}
+
+YUE = {
+	pattern = "pattern_chinese.tga"
+	color1 = {
+		0
+		0
+		0
+	}
+	color2 = {
+		170
+		100
+		0
+	}
+	colored_emblem = {
+		color1 = "ck2_black"
+		texture = "yue.dds"
+	}
+}
+
+NYE = {
+	pattern = "pattern_chinese.tga"
+	color1 = {
+		0
+		0
+		0
+	}
+	color2 = {
+		255
+		248
+		220
+	}
+	colored_emblem = {
+		color1 = "ck2_black"
+		texture = "yue.dds"
+	}
+}
+
+ZHA = {
+	pattern = "pattern_chinese.tga"
+	color1 = {
+		139
+		35
+		35
+	}
+	color2 = {
+		255
+		248
+		220
+	}
+	colored_emblem = {
+		color1 = "ck2_black"
+		texture = "zhao.dds"
+	}
+}
+
+ZHO = {
+	pattern = "pattern_chinese.tga"
+	color1 = {
+		186
+		166
+		123
+	}
+	color2 = {
+		225
+		209
+		208
+	}
+	colored_emblem = {
+		color1 = "ck2_black"
+		texture = "zhou.dds"
+	}
+}
+
+WEI = {
+	pattern = "pattern_chinese.tga"
+	color1 = {
+		0
+		115
+		184
+	}
+	color2 = {
+		156
+		170
+		170
+	}
+	colored_emblem = {
+		color1 = "ck2_black"
+		texture = "wei.dds"
+	}
+}
+
+HAN = {
+	pattern = "pattern_chinese.tga"
+	color1 = {
+		68
+		81
+		104
+	}
+	color2 = {
+		68
+		81
+		104
+	}
+	colored_emblem = {
+		color1 = "ck2_black"
+		texture = "han.dds"
+	}
+}
+
+YAN = {
+	pattern = "pattern_chinese.tga"
+	color1 = "bone_white"
+	color2 = {
+		0
+		115
+		184
+	}
+	colored_emblem = {
+		color1 = "bone_white"
+		texture = "yan.dds"
+	}
+}
+
+QII = {
+	pattern = "pattern_chinese.tga"
+	color1 = {
+		129
+		54
+		123
+	}
+	color2 = {
+		165
+		165
+		165
+	}
+	colored_emblem = {
+		color1 = "ck2_black"
+		texture = "qi.dds"
+	}
+}
+
+ZOU = {
+	pattern = "pattern_chinese.tga"
+	color1 = {
+		173
+		98
+		0
+	}
+	color2 = {
+		49
+		78
+		123
+	}
+	colored_emblem = {
+		color1 = "ck2_black"
+		texture = "zou.dds"
+	}
+}
+
+NII = {
+	pattern = "pattern_chinese.tga"
+	color1 = {
+		178
+		174
+		0
+	}
+	color2 = {
+		74
+		123
+		49
+	}
+	colored_emblem = {
+		color1 = "ck2_black"
+		texture = "ni.dds"
+	}
+}
+
+LUU = {
+	pattern = "pattern_chinese.tga"
+	color1 = {
+		173
+		125
+		0
+	}
+	color2 = {
+		173
+		125
+		0
+	}
+	colored_emblem = {
+		color1 = "ck2_black"
+		texture = "lu.dds"
+	}
+}
+
+WII = {
+	pattern = "pattern_chinese.tga"
+	color1 = {
+		49
+		98
+		123
+	}
+	color2 = {
+		49
+		98
+		123
+	}
+	colored_emblem = {
+		color1 = "ck2_black"
+		texture = "wey.dds"
+	}
+}
+
+ZHS = {
+	pattern = "pattern_chinese.tga"
+	color1 = {
+		132
+		69
+		44
+	}
+	color2 = {
+		0
+		117
+		170
+	}
+	colored_emblem = {
+		color1 = "ck2_black"
+		texture = "zhongshan.dds"
+	}
+}
+
+SNG = {
+	pattern = "pattern_chinese.tga"
+	color1 = {
+		165
+		175
+		129
+	}
+	color2 = {
+		208
+		224
+		219
+	}
+	colored_emblem = {
+		color1 = "ck2_black"
+		texture = "song.dds"
+	}
+}
+
+TNG = {
+	pattern = "pattern_chinese.tga"
+	color1 = "ck2_black"
+	color2 = {
+		145
+		215
+		134
+	}
+	colored_emblem = {
+		color1 = "ck2_black"
+		texture = "teng.dds"
+	}
+}
+
+EZO = {
+	pattern = "pattern_chinese.tga"
+	color1 = {
+		140
+		30
+		94
+	}
+	color2 = {
+		225
+		209
+		208
+	}
+	colored_emblem = {
+		color1 = "ck2_black"
+		texture = "zhou.dds"
+	}
+}
+
+WZO = {
+	pattern = "pattern_chinese.tga"
+	color1 = {
+		0
+		133
+		61
+	}
+	color2 = {
+		225
+		209
+		208
+	}
+	colored_emblem = {
+		color1 = "ck2_black"
+		texture = "zhou.dds"
+	}
+}
+
+JIN = {
+	pattern = "pattern_chinese.tga"
+	color1 = "ck2_black"
+	color2 = {
+		225
+		209
+		208
+	}
+	colored_emblem = {
+		color1 = "ck2_black"
+		texture = "jin.dds"
+	}
+}
+
+BII = {
+	pattern = "pattern_chinese.tga"
+	color1 = "ck2_black"
+	color2 = {
+		225
+		209
+		208
+	}
+	colored_emblem = {
+		color1 = "ck2_black"
+		texture = "bii.dds"
+	}
+}
+
+LIA = {
+	pattern = "pattern_chinese.tga"
+	color1 = "roman_red"
+	color2 = {
+		0
+		216
+		255
+	}
+	colored_emblem = {
+		color1 = "ck2_black"
+		texture = "liao.dds"
+	}
+}
+
+CHA = {
+	pattern = "pattern_chinese.tga"
+	color1 = "maurya_brown"
+	color2 = {
+		30
+		255
+		0
+	}
+	colored_emblem = {
+		color1 = "ck2_black"
+		texture = "chang.dds"
+	}
+}
+
+LUW = {
+	pattern = "pattern_chinese.tga"
+	color1 = "ck2_green"
+	color2 = {
+		252
+		0
+		255
+	}
+	colored_emblem = {
+		color1 = "ck2_black"
+		texture = "lu4.dds"
+	}
+}
+
+NIN = {
+	pattern = "pattern_chinese.tga"
+	color1 = "ck2_blue"
+	color2 = {
+		152
+		41
+		104
+	}
+	colored_emblem = {
+		color1 = "ck2_black"
+		texture = "ning.dds"
+	}
+}
+
+DAI = {
+	pattern = "pattern_chinese.tga"
+	color1 = "navy_blue"
+	color2 = {
+		148
+		100
+		100
+	}
+	colored_emblem = {
+		color1 = "ck2_black"
+		texture = "dai4.dds"
+	}
+}
+
+RAO = {
+	pattern = "pattern_chinese.tga"
+	color1 = {
+		0
+		96
+		167
+	}
+	color2 = {
+		106
+		144
+		179
+	}
+	colored_emblem = {
+		color1 = "ck2_black"
+		texture = "rao2.dds"
+	}
+}
+
+LUA = {
+	pattern = "pattern_chinese.tga"
+	color1 = "pitch_black"
+	color2 = {
+		25
+		154
+		92
+	}
+	colored_emblem = {
+		color1 = "ck2_black"
+		texture = "luan.dds"
+	}
+}
+
+WUU = {
+	pattern = "pattern_chinese.tga"
+	color1 = "purple"
+	color2 = {
+		170
+		202
+		22
+	}
+	colored_emblem = {
+		color1 = "ck2_black"
+		texture = "wu1.dds"
+	}
+}
+
+LIN = {
+	pattern = "pattern_chinese.tga"
+	color1 = "pitch_black"
+	color2 = {
+		27
+		175
+		65
+	}
+	colored_emblem = {
+		color1 = "ck2_black"
+		texture = "lin4.dds"
+	}
+}
+
+SHN = {
+	pattern = "pattern_chinese.tga"
+	color1 = {
+		115
+		29
+		184
+	}
+	color2 = {
+		114
+		147
+		36
+	}
+	colored_emblem = {
+		color1 = "ck2_black"
+		texture = "shen.dds"
+	}
+}
+
+LON = {
+	pattern = "pattern_chinese.tga"
+	color1 = pitch_black
+	color2 = {
+		173
+		211
+		152
+	}
+	colored_emblem = {
+		color1 = "ck2_black"
+		texture = "long.dds"
+	}
+}
+
+TAO = {
+	pattern = "pattern_chinese.tga"
+	color1 = pitch_black
+	color2 = {
+		216
+		152
+		28
+	}
+	colored_emblem = {
+		color1 = "ck2_black"
+		texture = "tao2.dds"
+	}
+}
+
+liang = {
+	pattern = "pattern_chinese.tga"
+	color1 = "purple"
+	color2 = {
+		184
+		58
+		29
+	}
+	colored_emblem = {
+		color1 = "ck2_black"
+		texture = "liang2.dds"
+	}
+}
+
+BAO = {
+	pattern = "pattern_chinese.tga"
+	color1 = "navy_blue"
+	color2 = {
+		29
+		153
+		184
+	}
+	colored_emblem = {
+		color1 = "ck2_black"
+		texture = "bao1.dds"
+	}
+}
+
+XNG = {
+	pattern = "pattern_chinese.tga"
+	color1 = "navy_blue"
+	color2 = {
+		21
+		203
+		81
+	}
+	colored_emblem = {
+		color1 = "ck2_black"
+		texture = "xing2.dds"
+	}
+}
+
+LAA = {
+	pattern = "pattern_chinese.tga"
+	color1 = "navy_blue"
+	color2 = {
+		29
+		184
+		175
+	}
+	colored_emblem = {
+		color1 = "ck2_black"
+		texture = "liao2.dds"
+	}
+}
+
+YEE = {
+	pattern = "pattern_chinese.tga"
+	color1 = "navy_blue"
+	color2 = {
+		244
+		10
+		164
+	}
+	colored_emblem = {
+		color1 = "ck2_black"
+		texture = "ye4.dds"
+	}
+}
+
+GOG = {
+	pattern = "pattern_chinese.tga"
+	color1 = "navy_blue"
+	color2 = {
+		156
+		98
+		204
+	}
+	colored_emblem = {
+		color1 = "ck2_black"
+		texture = "gog.dds"
+	}
+}
+
+LUS = {
+	pattern = "pattern_chinese.tga"
+	color1 = "navy_blue"
+	color2 = {
+		141
+		80
+		27
+	}
+	colored_emblem = {
+		color1 = "ck2_black"
+		texture = "luu4.dds"
+	}
+}
+
+JAN = {
+	pattern = "pattern_chinese.tga"
+	color1 = "navy_blue"
+	color2 = {
+		20
+		132
+		107
+	}
+	colored_emblem = {
+		color1 = "ck2_black"
+		texture = "jiang4.dds"
+	}
+}
+
+ZHG = {
+	pattern = "pattern_chinese.tga"
+	color1 = "navy_blue"
+	color2 = {
+		240
+		221
+		13
+	}
+	colored_emblem = {
+		color1 = "ck2_black"
+		texture = "zheng4.dds"
+	}
+}
+
+XUU = {
+	pattern = "pattern_chinese.tga"
+	color1 = {
+		208
+		224
+		219
+	}
+	color2 = {
+		32
+		231
+		219
+	}
+	colored_emblem = {
+		color1 = "ck2_black"
+		texture = "xu3.dds"
+	}
+}
+
+GUA = {
+	pattern = "pattern_chinese.tga"
+	color1 = {
+		136
+		0
+		21
+	}
+	color2 = {
+		235
+		104
+		119
+	}
+	colored_emblem = {
+		color1 = "ck2_black"
+		texture = "guan3.dds"
+	}
+}
+
+CAO = {
+	pattern = "pattern_chinese.tga"
+	color1 = "maurya_brown"
+	color2 = {
+		255
+		183
+		0
+	}
+	colored_emblem = {
+		color1 = "ck2_black"
+		texture = "cao2.dds"
+	}
+}
+
+FAN = {
+	pattern = "pattern_chinese.tga"
+	color1 = "maurya_brown"
+	color2 = {
+		209
+		192
+		165
+	}
+	colored_emblem = {
+		color1 = "ck2_black"
+		texture = "fan4.dds"
+	}
+}
+
+QQI = {
+	pattern = "pattern_chinese.tga"
+	color1 = "ck2_green"
+	color2 = {
+		179
+		212
+		101
+	}
+	colored_emblem = {
+		color1 = "ck2_black"
+		texture = "qi3.dds"
+	}
+}
+
+QIT = {
+	pattern = "pattern_chinese.tga"
+	color1 = "ck2_green"
+	color2 = {
+		209
+		192
+		165
+	}
+	colored_emblem = {
+		color1 = "ck2_black"
+		texture = "qi2.dds"
+	}
+}
+
+TNN = {
+	pattern = "pattern_chinese.tga"
+	color1 = {
+		29
+		32
+		136
+	}
+	color2 = {
+		209
+		192
+		165
+	}
+	colored_emblem = {
+		color1 = "ck2_black"
+		texture = "tan2.dds"
+	}
+}
+
+LIO = {
+	pattern = "pattern_chinese.tga"
+	color1 = {
+		236
+		105
+		65
+	}
+	color2 = {
+		209
+		192
+		165
+	}
+	colored_emblem = {
+		color1 = "ck2_black"
+		texture = "liaoo2.dds"
+	}
+}
+
+YNG = {
+	pattern = "pattern_chinese.tga"
+	color1 = {
+		106
+		0
+		95
+	}
+	color2 = {
+		209
+		192
+		165
+	}
+	colored_emblem = {
+		color1 = "ck2_black"
+		texture = "yong4.dds"
+	}
+}
+
+JII = {
+	pattern = "pattern_chinese.tga"
+	color1 = {
+		0
+		53
+		103
+	}
+	color2 = {
+		132
+		204
+		201
+	}
+	colored_emblem = {
+		color1 = "ck2_black"
+		texture = "ji4.dds"
+	}
+}
+
+LAI = {
+	pattern = "pattern_chinese.tga"
+	color1 = {
+		0
+		53
+		103
+	}
+	color2 = {
+		173
+		211
+		152
+	}
+	colored_emblem = {
+		color1 = "ck2_black"
+		texture = "lai2.dds"
+	}
+}
+
+TBG = {
+	pattern = "pattern_chinese.tga"
+	color1 = {
+		32
+		68
+		102
+	}
+	color2 = {
+		173
+		211
+		152
+	}
+	colored_emblem = {
+		color1 = "ck2_black"
+		texture = "tann.dds"
+	}
+}
+
+XXU = {
+	pattern = "pattern_chinese.tga"
+	color1 = {
+		124
+		27
+		89
+	}
+	color2 = {
+		210
+		199
+		182
+	}
+	colored_emblem = {
+		color1 = "ck2_black"
+		texture = "xu2.dds"
+	}
+}
+
+XAO = {
+	pattern = "pattern_chinese.tga"
+	color1 = {
+		32
+		71
+		35
+	}
+	color2 = {
+		210
+		199
+		182
+	}
+	colored_emblem = {
+		color1 = "ck2_black"
+		texture = "xiao.dds"
+	}
+}
+
+CEN = {
+	pattern = "pattern_chinese.tga"
+	color1 = {
+		37
+		90
+		114
+	}
+	color2 = {
+		210
+		199
+		182
+	}
+	colored_emblem = {
+		color1 = "ck2_black"
+		texture = "chen.dds"
+	}
+}
+
+HUA = {
+	pattern = "pattern_chinese.tga"
+	color1 = {
+		231
+		17
+		88
+	}
+	color2 = {
+		210
+		199
+		182
+	}
+	colored_emblem = {
+		color1 = "ck2_black"
+		texture = "hua2.dds"
+	}
+}
+
+ZNG = {
+	pattern = "pattern_chinese.tga"
+	color1 = {
+		96
+		27
+		140
+	}
+	color2 = {
+		210
+		199
+		182
+	}
+	colored_emblem = {
+		color1 = "ck2_black"
+		texture = "zeng.dds"
+	}
+}
+
+DEG = {
+	pattern = "pattern_chinese.tga"
+	color1 = {
+		113
+		26
+		59
+	}
+	color2 = {
+		210
+		199
+		182
+	}
+	colored_emblem = {
+		color1 = "ck2_black"
+		texture = "deng.dds"
+	}
+}
+
+IAC = {
+	pattern = "pattern_chinese.tga"
+	color1 = {
+		29
+		108
+		113
+	}
+	color2 = {
+		210
+		199
+		182
+	}
+	colored_emblem = {
+		color1 = "ck2_black"
+		texture = "cai4.dds"
+	}
+}
+
+IUH = {
+	pattern = "pattern_chinese.tga"
+	color1 = {
+		13
+		49
+		83
+	}
+	color2 = {
+		210
+		199
+		182
+	}
+	colored_emblem = {
+		color1 = "ck2_black"
+		texture = "huai2.dds"
+	}
+}
+
+UHS = {
+	pattern = "pattern_chinese.tga"
+	color1 = {
+		140
+		40
+		57
+	}
+	color2 = {
+		210
+		199
+		182
+	}
+	colored_emblem = {
+		color1 = "ck2_black"
+		texture = "shu1.dds"
+	}
+}
+
+LUO = {
+	pattern = "pattern_chinese.tga"
+	color1 = {
+		71
+		12
+		130
+	}
+	color2 = {
+		210
+		199
+		182
+	}
+	colored_emblem = {
+		color1 = "ck2_black"
+		texture = "luo2.dds"
+	}
+}
+
+ZHAI = {
+	pattern = "pattern_chinese.tga"
+	color1 = {
+		210
+		199
+		182
+	}
+	color2 = {
+		210
+		199
+		182
+	}
+	colored_emblem = {
+		color1 = "ck2_black"
+		texture = "zhai.dds"
+	}
+}
+
+#夏
+XIA = {
+	pattern = "pattern_chinese.tga"
+	color1 = "Xia_Dynasty_green"
+	color2 = {
+		210
+		199
+		182
+	}
+	colored_emblem = {
+		color1 = "ck2_black"
+		texture = "xia.dds"
+	}
+}
+
+#商
+SHANG = {
+	pattern = "pattern_chinese.tga"
+	color1 = {
+		210
+		199
+		182
+	}
+	color2 = {
+		210
+		199
+		182
+	}
+	colored_emblem = {
+		color1 = "ck2_black"
+		texture = "shang.dds"
+	}
+}
+
+#蜀
+SHU_GUO = {
+	pattern = "pattern_chinese.tga"
+	color1 = {
+		106
+		192
+		85
+	}
+	color2 = {
+		106
+		192
+		85
+	}
+	colored_emblem = {
+		color1 = "ck2_black"
+		texture = "shu.dds"
+	}
+}
+
+#巴
+BA = {
+	pattern = "pattern_chinese.tga"
+	color1 = {
+		106
+		192
+		85
+	}
+	color2 = {
+		106
+		192
+		85
+	}
+	colored_emblem = {
+		color1 = "ck2_black"
+		texture = "ba.dds"
+	}
+}
+
+HNN = {
+	pattern = "pattern_chinese.tga"
+	color1 = {
+		136
+		0
+		21
+	}
+	color2 = {
+		196
+		0
+		0
+	}
+	colored_emblem = {
+		color1 = "ck2_black"
+		texture = "hann.dds"
+	}
+}
+
+#西域都护
+XIYUDUHU = {
+	pattern = "pattern_chinese.tga"
+	color1 = {
+		136
+		0
+		21
+	}
+	color2 = {
+		196
+		0
+		0
+	}
+	colored_emblem = {
+		color1 = "ck2_black"
+		texture = "xiyuduhu.dds"
+	}
+}
+
+#邪马台
+YMT = {
+	pattern = "pattern_solid.tga"
+	color1 = {
+		238
+		44
+		44
+	}
+	colored_emblem = {
+		color1 = "roman_gold"
+		texture = "ce_circle_01.dds"
+	}
+}
+
+#高句丽
+GAY = {
+	pattern = "pattern_solid.tga"
+	color1 = {
+		255
+		250
+		240
+	}
+	colored_emblem = {
+		color1 = {
+			30
+			144
+			255
+		}
+		texture = "acb_rand_48.dds"
+		instance = {
+			scale = {
+				0.9
+				0.9
+			}
+		}
+	}
+	colored_emblem = {
+		color1 = {
+			30
+			144
+			255
+		}
+		color2 = {
+			255
+			250
+			240
+		}
+		texture = "ce_border_meander_01.tga"
+	}
+}
+
+#斯卢
+SRO = {
+	pattern = "pattern_chinese.tga"
+	color1 = {
+		137
+		104
+		205
+	}
+	color2 = {
+		255
+		222
+		173
+	}
+	colored_emblem = {
+		color1 = {
+			137
+			104
+			205
+		}
+		texture = "ce_hellenic_1.dds"
+	}
+}
+
+#佰济
+BAE = {
+	pattern = "pattern_solid.tga"
+	color1 = {
+		238
+		220
+		130
+	}
+	colored_emblem = {
+		color1 = {
+			0
+			0
+			128
+		}
+		texture = "ce_27.dds"
+	}
+	colored_emblem = {
+		color1 = {
+			0
+			0
+			128
+		}
+		color2 = {
+			238
+			220
+			130
+		}
+		texture = "ce_border_zigzag_02.dds"
+	}
+}
+
+#狗邪
+GYA = {
+	pattern = "pattern_solid.tga"
+	color1 = {
+		176
+		176
+		176
+	}
+	colored_emblem = {
+		color1 = {
+			18
+			18
+			18
+		}
+		texture = "acb_rand_55.dds"
+	}
+}
+
+#巽伽印度
+xunqie_dynasty = {
+	pattern = "pattern_solid.tga"
+	color1 = {
+		214
+		25
+		33
+	}
+	#旗子背景颜色
+	colored_emblem = {
+		#旗子图案颜色
+		color1 = {
+			255
+			247
+			50
+		}
+		texture = "xunqie_dynasty.dds"
+	}
+}
+
+#甘婆印度
+ganpo_dynasty = {
+	pattern = "pattern_solid.tga"
+	color1 = {
+		241
+		194
+		47
+	}
+	#旗子背景颜色
+	colored_emblem = {
+		#旗子图案颜色
+		color1 = {
+			233
+			60
+			45
+		}
+		texture = "ganpo_dynasty.dds"
+	}
+}
+
+#百乘印度
+baicheng_dynasty = {
+	pattern = "pattern_solid.tga"
+	color1 = {
+		214
+		25
+		33
+	}
+	#旗子背景颜色
+	colored_emblem = {
+		#旗子图案颜色
+		color1 = {
+			255
+			247
+			50
+		}
+		texture = "baicheng_dynasty.dds"
+	}
+}
+
+#贵霜帝国
+Kushan_Empire = {
+	pattern = "pattern_chinese.tga"
+	color1 = {
+		84
+		126
+		86
+	}
+	color2 = {
+		255
+		255
+		255
+	}
+	colored_emblem = {
+		color1 = {
+			190
+			185
+			75
+		}
+		texture = "Kushan_Empire.dds"
+	}
+}
+
+#吴国
+WWU = {
+	pattern = "pattern_chinese.tga"
+	color1 = {
+		0
+		0
+		0
+	}
+	color2 = {
+		255
+		248
+		220
+	}
+	colored_emblem = {
+		color1 = "ck2_black"
+		texture = "wu2.dds"
+	}
+}
+
+WUZHONG = {
+	pattern = "pattern_chinese.tga"
+	color1 = {
+		#外
+		0
+		47
+		72
+	}
+	color2 = {
+		#内
+		0
+		92
+		145
+	}
+	colored_emblem = {
+		color1 = "ck2_black"
+		texture = "wuzhong.dds"
+	}
+}
+
+HEJIAN = {
+	pattern = "pattern_chinese.tga"
+	color1 = {
+		#外
+		14
+		127
+		59
+	}
+	color2 = {
+		#内
+		124
+		192
+		96
+	}
+	colored_emblem = {
+		color1 = "ck2_black"
+		texture = "hejian.dds"
+	}
+}
+
+HUAIYANG = {
+	pattern = "pattern_chinese.tga"
+	color1 = {
+		#外
+		177
+		144
+		31
+	}
+	color2 = {
+		#内
+		193
+		181
+		0
+	}
+	colored_emblem = {
+		color1 = "ck2_black"
+		texture = "huaiyang.dds"
+	}
+}
+
+GUANGLING = {
+	pattern = "pattern_chinese.tga"
+	color1 = {
+		#外
+		135
+		194
+		63
+	}
+	color2 = {
+		#内
+		178
+		215
+		156
+	}
+	colored_emblem = {
+		color1 = "ck2_black"
+		texture = "guangling.dds"
+	}
+}
+
+CHANGSHA = {
+	pattern = "pattern_chinese.tga"
+	color1 = {
+		#外
+		146
+		205
+		164
+	}
+	color2 = {
+		#内
+		146
+		205
+		164
+	}
+	colored_emblem = {
+		color1 = "ck2_black"
+		texture = "changsha.dds"
+	}
+}

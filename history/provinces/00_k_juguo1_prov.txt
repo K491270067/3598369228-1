@@ -1,0 +1,97 @@
+﻿3170 = {
+	culture = dizu
+	religion = guiwu
+	holding = tribal_holding
+}
+
+3130 = {
+	holding = none
+}
+
+3639 = {
+	holding = none
+}
+
+3171 = {
+	culture = dizu
+	religion = guiwu
+	holding = tribal_holding
+}
+
+3187 = {
+	holding = none
+}
+
+3124 = {
+	culture = dizu
+	religion = guiwu
+	holding = tribal_holding
+}
+
+3180 = {
+	holding = none
+}
+
+3181 = {
+	culture = dizu
+	religion = guiwu
+	holding = tribal_holding
+}
+
+3182 = {
+	holding = none
+}
+
+3127 = {
+	culture = dizu
+	religion = guiwu
+	holding = tribal_holding
+}
+
+3128 = {
+	culture = dizu
+	religion = guiwu
+	holding = tribal_holding
+}
+
+3147 = {
+	holding = none
+}
+
+3146 = {
+	culture = dizu
+	religion = guiwu
+	holding = tribal_holding
+}
+
+3145 = {
+	holding = none
+}
+
+3126 = {
+	culture = dizu
+	religion = guiwu
+	holding = tribal_holding
+}
+
+3624 = {
+	holding = none
+}
+
+3625 = {
+	holding = none
+}
+
+3129 = {
+	culture = dizu
+	religion = guiwu
+	holding = tribal_holding
+}
+
+3138 = {
+	holding = none
+}
+
+3152 = {
+	holding = none
+}

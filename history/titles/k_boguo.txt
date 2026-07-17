@@ -1,0 +1,110 @@
+﻿k_boguo = {
+3429.1.1 = {
+		holder = han4697
+	}
+3482.1.1 = {
+		holder = han4698
+	}
+3509.1.1 = {
+		holder = han4699
+	}
+3556.1.1 = {
+		holder = han4700
+	}
+3602.1.1 = {
+		holder = han4701
+	}
+3638.1.1 = {
+		holder = han4702
+	}
+3680.1.1 = {
+		holder = han4703
+	}
+3718.1.1 = {
+		holder = han4704
+	}
+3756.1.1 = {
+		holder = han4705
+	}
+3793.1.1 = {
+		holder = han4706
+	}
+3825.1.1 = {
+		holder = han4707
+	}
+3849.12.31 = {
+		government = tribal_government
+		change_development_level = 26
+	}
+}
+
+d_boshi1 = {
+3429.1.1 = {
+		liege = "k_boguo"
+		holder = han4697
+	}
+3482.1.1 = {
+		holder = han4698
+	}
+3509.1.1 = {
+		holder = han4699
+	}
+3556.1.1 = {
+		holder = han4700
+	}
+3602.1.1 = {
+		holder = han4701
+	}
+3638.1.1 = {
+		holder = han4702
+	}
+3680.1.1 = {
+		holder = han4703
+	}
+3718.1.1 = {
+		holder = han4704
+	}
+3756.1.1 = {
+		holder = han4705
+	}
+3793.1.1 = {
+		holder = han4706
+	}
+3825.1.1 = {
+		holder = han4707
+	}
+}
+
+d_ashi = {
+3737.1.1 = {
+		liege = "k_boguo"
+		holder = boren1
+	}
+3789.1.1 = {
+		holder = boren2
+	}
+3808.1.1 = {
+		holder = boren3
+	}	
+3843.1.1 = {
+		holder = boren4
+	}	
+3849.1.1 = {
+		change_development_level = 25
+		government = tribal_government
+	}
+}
+
+d_hongtashi = {
+3784.1.1 = {
+		liege = "k_boguo"
+		holder = boren9
+	}
+3829.1.1 = {
+		holder = boren10
+	}
+3849.1.1 = {
+		change_development_level = 23
+		government = tribal_government
+	}
+}

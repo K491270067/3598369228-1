@@ -1,0 +1,224 @@
+﻿d_renshi = {
+	2787.1.1 = {
+		liege = "k_renguo"
+		holder = han5773
+	}
+	2829.12.31 = {
+		holder = han5774
+	}
+	2863.12.31 = {
+		holder = han5775
+	}
+	2907.12.31 = {
+		holder = han5776
+	}
+	2945.12.31 = {
+		holder = han5777
+	}
+	2972.12.31 = {
+		holder = han5778
+	}
+	3000.12.31 = {
+		holder = han5779
+	}
+	3035.12.31 = {
+		holder = han5780
+	}
+	3088.12.31 = {
+		holder = han5781
+	}
+	3107.12.31 = {
+		holder = han5782
+	}
+	3144.12.31 = {
+		holder = han856
+	}
+	3180.12.31 = {
+		holder = han857
+	}
+	3206.12.31 = {
+		holder = han858
+	}
+	3248.12.31 = {
+		holder = han859
+	}
+	3285.12.31 = {
+		holder = han860
+	}
+	3324.12.31 = {
+		holder = han861
+	}
+	3358.12.31 = {
+		holder = han862
+	}
+	3392.12.31 = {
+		holder = han863
+	}
+	3443.12.31 = {
+		holder = han864
+	}
+	3468.12.31 = {
+		holder = han865
+	}
+	3503.12.31 = {
+		holder = han866
+	}
+	3528.12.31 = {
+		holder = han867
+	}
+	3543.12.31 = {
+		holder = han868
+	}
+	3562.12.31 = {
+		holder = han869
+	}
+	3579.12.31 = {
+		holder = han870
+	}
+	3593.12.31 = {
+		holder = han871
+	}
+	3639.12.31 = {
+		holder = han872
+	}
+	3664.12.31 = {
+		holder = han873
+	}
+	3688.12.31 = {
+		holder = han874
+	}
+	3709.12.31 = {
+		holder = han875
+	}
+	3733.12.31 = {
+		holder = han876
+	}
+	3760.12.31 = {
+		holder = han877
+	}
+	3787.12.31 = {
+		holder = han878
+	}
+	3814.12.31 = {
+		holder = han879
+	}
+	3832.12.31 = {
+		holder = han886
+	}
+	3849.1.1 = {
+		change_development_level = 23
+		government = feudal_admin_government
+	}
+}
+k_renguo = {
+	2787.1.1 = {
+		liege = "e_zhoutianzi"
+		holder = han5773
+	}
+	2829.12.31 = {
+		holder = han5774
+	}
+	2863.12.31 = {
+		holder = han5775
+	}
+	2907.12.31 = {
+		holder = han5776
+	}
+	2945.12.31 = {
+		holder = han5777
+	}
+	2972.12.31 = {
+		holder = han5778
+	}
+	3000.12.31 = {
+		holder = han5779
+	}
+	3035.12.31 = {
+		holder = han5780
+	}
+	3088.12.31 = {
+		holder = han5781
+	}
+	3107.12.31 = {
+		holder = han5782
+	}
+	3144.12.31 = {
+		holder = han856
+	}
+	3180.12.31 = {
+		holder = han857
+	}
+	3206.12.31 = {
+		holder = han858
+	}
+	3248.12.31 = {
+		holder = han859
+	}
+	3285.12.31 = {
+		holder = han860
+	}
+	3324.12.31 = {
+		holder = han861
+	}
+	3358.12.31 = {
+		holder = han862
+	}
+	3392.12.31 = {
+		holder = han863
+	}
+	3443.12.31 = {
+		holder = han864
+	}
+	3468.12.31 = {
+		holder = han865
+	}
+	3503.12.31 = {
+		holder = han866
+	}
+	3528.12.31 = {
+		holder = han867
+	}
+	3543.12.31 = {
+		holder = han868
+	}
+	3562.12.31 = {
+		holder = han869
+	}
+	3579.12.31 = {
+		holder = han870
+	}
+	3593.12.31 = {
+		holder = han871
+	}
+	3639.12.31 = {
+		holder = han872
+	}
+	3664.12.31 = {
+		holder = han873
+	}
+	3688.12.31 = {
+		holder = han874
+	}
+	3709.12.31 = {
+		holder = han875
+	}
+	3733.12.31 = {
+		holder = han876
+	}
+	3760.12.31 = {
+		holder = han877
+	}
+	3787.12.31 = {
+		holder = han878
+	}
+	3814.12.31 = {
+		holder = han879
+	}
+	3832.12.31 = {
+		holder = han880
+	}
+	3849.1.1 = {
+		change_development_level = 27
+		government = feudal_admin_government
+	}
+}

@@ -1,0 +1,30 @@
+﻿##### d_shulongshi ############################
+
+### c_bian1
+# 
+1966 = {
+	holding = none
+}
+
+
+### c_qian3
+# 
+1969 = {
+	holding = none
+}
+
+
+### c_shulong
+# 
+1970 = {
+	holding = none
+}
+
+
+### c_huangpu
+# 
+1971 = {
+	holding = none
+}
+
+

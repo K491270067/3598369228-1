@@ -1,0 +1,243 @@
+﻿xilvguo3250={
+  name="nanming451"#鍛ㄦ鐜嬩负濂栬祻鍚曚汉鐨勫姛鍔筹紝寤虹珛鍛ㄦ湞鍚庣画灏佸悤浠栦负鍚曚警銆?
+  dynasty=xin820
+	religion="xizhouli" 
+	culture="zhou"
+  father=han3249
+
+  3531.1.1 = {
+		birth = yes
+	}
+  3600.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+xilvguo3251={
+  name="nanming469"
+  dynasty_house=house_xin821
+	religion="xizhouli" 
+	culture="zhou"
+  father=xilvguo3250
+
+  3555.7.1 = {
+		birth = yes
+	}
+  3621.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+xilvguo3252={
+  name="nanming481"
+  dynasty_house=house_xin821
+	religion="xizhouli" 
+	culture="zhou"
+  father=xilvguo3251
+
+  3580.1.1 = {
+		birth = yes
+	}
+  3651.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+xilvguo3253={
+  name="nanming495"
+  dynasty_house=house_xin821
+	religion="xizhouli" 
+	culture="zhou"
+  father=xilvguo3252
+
+  3640.1.1 = {
+		birth = yes
+	}
+  3702.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+xilvguo3254={
+  name="nanming507"
+  dynasty_house=house_xin821
+	religion="xizhouli" 
+	culture="zhou"
+  father=xilvguo3253
+
+  3700.1.1 = {
+		birth = yes
+	}
+  3752.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+xilvguo3255={
+  name="nanming519"
+  dynasty_house=house_xin821
+	religion="xizhouli" 
+	culture="zhou"
+  father=xilvguo3254
+
+  3751.1.1 = {
+		birth = yes
+	}
+  3795.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+xilvguo3256={
+  name="nanming531"
+  dynasty_house=house_xin821
+	religion="xizhouli" 
+	culture="zhou"
+  father=xilvguo3255
+
+  3777.1.1 = {
+		birth = yes
+	}
+  3805.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+xilvguo3257={
+  name="nanming540"
+  dynasty_house=house_xin821
+	religion="xizhouli" 
+	culture="zhou"
+  father=xilvguo3256
+
+  3799.1.1 = {
+		birth = yes
+	}
+  3832.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+xilvguo3258={
+  name="nanming553"#骞崇帇涓滆縼鏃舵湡鍚曞浗鍚涗富
+  dynasty_house=house_xin821
+	religion="dongzhouli" 
+	culture="zhou"
+  father=xilvguo3257
+
+  3821.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+xilvguo3259={
+  name="nanming566"
+  dynasty_house=house_xin821
+	religion="dongzhouli" 
+	culture="zhou"
+  father=xilvguo3258
+
+  3839.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+xilvguo3260={
+  name="nanming580"#鍌ㄥ悰1鍙?
+  dynasty_house=house_xin821
+	religion="dongzhouli" 
+	culture="zhou"
+  father=xilvguo3258
+
+  3840.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+xilvguo3261={
+  name="nanming596"#鍌ㄥ悰2鍙?
+  dynasty_house=house_xin821
+	religion="dongzhouli" 
+	culture="zhou"
+  father=xilvguo3258
+
+  3841.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+xilvguo3262={
+  name="nanming611"#鍌ㄥ悰3鍙?
+  dynasty_house=house_xin821
+	religion="dongzhouli" 
+	culture="zhou"
+  father=xilvguo3258
+
+  3842.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+xilvguo3263={
+  name="nvming12"
+  dynasty_house=house_xin821
+	religion="dongzhouli" 
+	culture="zhou"
+  father=xilvguo3258
+  female=yes
+
+  3843.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+xilvguo3264={
+  name="nvming19"
+  dynasty_house=house_xin821
+	religion="dongzhouli" 
+	culture="zhou"
+  father=xilvguo3258
+  female=yes
+
+  3839.6.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+xilvguo3265={
+  name="nvming23"
+  dynasty_house=house_xin821
+	religion="dongzhouli" 
+	culture="zhou"
+  father=xilvguo3258
+  female=yes
+
+  3839.7.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}

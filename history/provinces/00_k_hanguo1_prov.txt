@@ -1,0 +1,93 @@
+﻿##### d_hanshi1 ############################
+
+### c_feigou
+# FEIGOU
+2541 = {
+	culture = yan
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_chaifu
+# CHAIFU
+2542 = {
+	culture = yan
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_han5
+# HAN5
+2543 = {
+	culture = yan
+	religion = xizhouli
+	holding = castle_holding
+}
+# YICHANG
+1230 = {
+	holding = none
+}
+# QUANZHOU
+1229 = {
+	holding = none
+}
+
+
+##### d_hanhoushi ############################
+
+### c_hangao
+# HANGAO
+1238 = {
+	culture = yan
+	religion = xizhouli
+	holding = castle_holding
+}
+# YINXIANG
+1240 = {
+	holding = none
+}
+
+
+### c_anci
+# ANCI
+1239 = {
+	culture = yan
+	religion = xizhouli
+	holding = castle_holding
+}
+# YU14
+2548 = {
+	holding = none
+}
+
+
+##### d_dushi1 ############################
+
+### c_wuping
+# WUPING
+2544 = {
+	culture = yan
+	religion = xizhouli
+	holding = castle_holding
+}
+# XINCHANG
+1233 = {
+	holding = none
+}
+
+
+### c_fangcheng
+# FANGCHENG
+1236 = {
+	culture = yan
+	religion = xizhouli
+	holding = castle_holding
+}
+# LINLE1
+1237 = {
+	holding = none
+}
+
+

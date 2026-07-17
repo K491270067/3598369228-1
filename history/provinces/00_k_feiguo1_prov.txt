@@ -1,0 +1,80 @@
+﻿##### d_feishi1 ############################
+
+### c_fei5
+# FEI5
+188 = {
+	culture = baidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+# YIAN
+307 = {
+	holding = none
+}
+
+
+### c_chili
+# CHILI
+261 = {
+	culture = baidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+# DONGHUAN
+256 = {
+	holding = none
+}
+
+
+##### d_chisongshi ############################
+
+### c_manjia
+# MANJIA
+243 = {
+	culture = baidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+# LEYANG
+246 = {
+	holding = none
+}
+
+
+### c_shi4
+# SHI4
+322 = {
+	culture = baidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+# JUYANG
+313 = {
+	holding = none
+}
+
+
+##### d_fanwushi ############################
+
+### c_pingshan
+# PINGSHAN
+238 = {
+	culture = baidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+
+
+### c_fanwu1
+# FANWU1
+239 = {
+	culture = baidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+# SANGZHONG
+240 = {
+	holding = none
+}
+
+

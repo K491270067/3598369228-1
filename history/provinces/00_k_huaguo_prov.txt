@@ -1,0 +1,44 @@
+﻿##### d_huashi ############################
+
+### c_hua1
+# HUA1
+627 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+# GUAN
+626 = {
+	holding = none
+}
+
+
+### c_han1
+# HAN1
+630 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+##### d_suoshi ############################
+
+### c_huangya
+# HUUANGYA
+628 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+### c_suo
+# SUO
+629 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+

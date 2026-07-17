@@ -1,0 +1,14 @@
+﻿opinion_granted_autonomy = { #封臣对领主：被授予自治权
+	opinion = 20
+	years = 10
+}
+
+opinion_granted_full_autonomy = { #封臣对领主：被授予完全自治权
+	opinion = 30
+	years = 15
+}
+
+opinion_unauthorized_declaring_autonomy = { #领主对封臣：擅自宣布自治
+	opinion = -40
+	years = 10
+}

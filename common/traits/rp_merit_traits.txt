@@ -1,0 +1,43 @@
+﻿rp_merit_honor_1 = {
+	icon = gallant.dds
+	diplomacy = 1
+	monthly_prestige = 0.5
+	same_opinion = 5
+	ruler_designer_cost = 0
+	desc = rp_merit_honor_1_desc
+}
+
+rp_founding_follower_trait = {
+	icon = gallant.dds
+	group = rp_founding_follower_group
+	level = 1
+	diplomacy = 1
+	martial = 1
+	same_opinion = 5
+	ruler_designer_cost = 0
+	desc = rp_founding_follower_trait_desc
+}
+
+rp_core_follower_trait = {
+	icon = overseer.dds
+	group = rp_founding_follower_group
+	level = 2
+	diplomacy = 1
+	martial = 1
+	monthly_prestige = 0.3
+	same_opinion = 8
+	ruler_designer_cost = 0
+	desc = rp_core_follower_trait_desc
+}
+
+rp_pillar_follower_trait = {
+	icon = strategist.dds
+	group = rp_founding_follower_group
+	level = 3
+	diplomacy = 2
+	martial = 2
+	monthly_prestige = 0.6
+	same_opinion = 12
+	ruler_designer_cost = 0
+	desc = rp_pillar_follower_trait_desc
+}

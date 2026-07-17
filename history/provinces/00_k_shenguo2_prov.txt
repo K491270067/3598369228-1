@@ -1,0 +1,70 @@
+﻿##### d_shenshi2 ############################
+
+### c_jingyang1
+# JINGYANG1
+3005 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+# ANWU1
+3004 = {
+	holding = none
+}
+
+
+### c_shen9
+# SHEN9
+3014 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+# BEIBIN
+3013 = {
+	holding = none
+}
+
+
+### c_linjing
+# LINJING
+3006 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+##### d_shentushi ############################
+
+### c_gongliu
+# GONGLIU
+3000 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+# DINGAN
+1477 = {
+	holding = none
+}
+
+
+### c_anding1
+# ANDING1
+3001 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+### c_pengyang
+# PENGYANG
+3002 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+

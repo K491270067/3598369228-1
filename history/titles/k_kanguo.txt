@@ -1,0 +1,140 @@
+﻿d_chengqiushi = {
+	3327.1.1 = {
+		liege = "k_kanguo"
+		holder = kanguo1079
+	}
+	3380.12.31 = {
+		holder = kanguo1080
+	}
+	3433.12.31 = {
+		holder = kanguo1081
+	}
+	3458.12.31 = {
+		holder = kanguo1082
+	}
+	3463.12.31 = {
+		holder = kanguo1083
+	}
+	3480.12.31 = {
+		holder = kanguo1084
+	}
+	3503.12.31 = {
+		holder = kanguo1085
+	}
+	3529.12.31 = {
+		holder = kanguo1086
+	}
+	3543.12.31 = {
+		holder = kanguo1087
+	}
+	3563.12.31 = {
+		holder = kanguo1088
+	}
+	3573.12.31 = {
+		holder = kanguo1089
+	}
+	3603.12.31 = {
+		holder = kanguo1090
+	}
+	3647.12.31 = {
+		holder = kanguo1091
+	}
+	3680.12.31 = {
+		holder = kanguo1092
+	}
+	3701.12.31 = {
+		holder = kanguo1093
+	}
+	3722.12.31 = {
+		holder = kanguo1094
+	}
+	3750.12.31 = {
+		holder = kanguo1095
+	}
+	3754.12.31 = {
+		holder = kanguo1096
+	}
+	3784.12.31 = {
+		holder = kanguo1097
+	}
+	3792.12.31 = {
+		holder = kanguo1098
+	}
+	3825.12.31 = {
+		holder = kanguo1
+	}
+	3849.1.1 = {
+		change_development_level = 20
+		government = feudal_admin_government
+	}
+}
+k_kanguo = {
+	3327.1.1 = {
+		holder = kanguo1079
+	}
+	3380.12.31 = {
+		holder = kanguo1080
+	}
+	3433.12.31 = {
+		holder = kanguo1081
+	}
+	3458.12.31 = {
+		holder = kanguo1082
+	}
+	3463.12.31 = {
+		holder = kanguo1083
+	}
+	3480.12.31 = {
+		holder = kanguo1084
+	}
+	3503.12.31 = {
+		holder = kanguo1085
+	}
+	3529.12.31 = {
+		holder = kanguo1086
+	}
+	3543.12.31 = {
+		holder = kanguo1087
+	}
+	3563.12.31 = {
+		holder = kanguo1088
+	}
+	3573.12.31 = {
+		holder = kanguo1089
+	}
+	3603.12.31 = {
+		liege = "e_zhoutianzi"
+		holder = kanguo1090
+	}
+	3647.12.31 = {
+		holder = kanguo1091
+	}
+	3680.12.31 = {
+		holder = kanguo1092
+	}
+	3701.12.31 = {
+		holder = kanguo1093
+	}
+	3722.12.31 = {
+		holder = kanguo1094
+	}
+	3750.12.31 = {
+		holder = kanguo1095
+	}
+	3754.12.31 = {
+		holder = kanguo1096
+	}
+	3784.12.31 = {
+		holder = kanguo1097
+	}
+	3792.12.31 = {
+		holder = kanguo1098
+	}
+	3825.12.31 = {
+		holder = kanguo1099
+	}
+	3849.1.1 = {
+		change_development_level = 25
+		government = feudal_admin_government
+	}
+}

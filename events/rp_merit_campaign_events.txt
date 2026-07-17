@@ -1,0 +1,1623 @@
+﻿namespace = rp_merit
+
+rp_merit.2000 = {
+	scope = combat_side
+	hidden = yes
+
+	immediate = {
+		combat.combat_war = { save_scope_as = rp_current_war }
+
+		if = {
+			limit = {
+				combat.combat_war = {
+					primary_attacker = { rp_is_merit_system_enabled_trigger = yes }
+				}
+				side_primary_participant = { is_attacker_in_war = root.combat.combat_war }
+			}
+			combat.combat_war.primary_attacker = { save_scope_as = rp_merit_liege }
+		}
+		else_if = {
+			limit = {
+				combat.combat_war = {
+					primary_defender = { rp_is_merit_system_enabled_trigger = yes }
+				}
+				side_primary_participant = { is_defender_in_war = root.combat.combat_war }
+			}
+			combat.combat_war.primary_defender = { save_scope_as = rp_merit_liege }
+		}
+
+		side_commander ?= {
+			if = {
+				limit = { rp_is_high_merit_campaign_actor_trigger = { LIEGE = scope:rp_merit_liege VALUE = 30 } }
+				save_scope_as = rp_campaign_actor
+			}
+		}
+		if = {
+			limit = { NOT = { exists = scope:rp_campaign_actor } }
+			random_side_knight = {
+				limit = { rp_is_high_merit_campaign_actor_trigger = { LIEGE = scope:rp_merit_liege VALUE = 30 } }
+				save_scope_as = rp_campaign_actor
+			}
+		}
+
+		if = {
+			limit = {
+				exists = scope:rp_merit_liege
+				exists = scope:rp_campaign_actor
+				scope:rp_merit_liege = {
+					rp_can_fire_campaign_incident_trigger = yes
+					NOT = { has_character_flag = rp_yang_zhen_chain_cooldown }
+				}
+				scope:rp_campaign_actor = {
+					OR = {
+						has_trait = vengeful
+						has_trait = greedy
+						has_trait = arrogant
+					}
+				}
+			}
+			random = {
+				chance = 6
+				scope:rp_merit_liege = {
+					rp_mark_campaign_incident_cooldown_effect = { DAYS = 180 }
+					add_character_flag = {
+						flag = rp_yang_zhen_chain_cooldown
+						days = 365
+					}
+					trigger_event = rp_merit.2010
+				}
+			}
+		}
+
+		if = {
+			limit = {
+				exists = scope:rp_merit_liege
+				exists = scope:rp_campaign_actor
+				scope:rp_merit_liege = {
+					rp_can_fire_campaign_incident_trigger = yes
+					NOT = { has_character_flag = rp_pursuit_chain_cooldown }
+					rp_has_another_high_merit_actor_trigger = { VALUE = 40 ACTOR = scope:rp_campaign_actor }
+				}
+				scope:rp_campaign_actor = {
+					has_variable = rp_merit_score
+					var:rp_merit_score >= 50
+					OR = {
+						has_trait = ambitious
+						has_trait = arrogant
+						has_trait = brave
+					}
+				}
+			}
+			random = {
+				chance = 5
+				scope:rp_merit_liege = {
+					rp_mark_campaign_incident_cooldown_effect = { DAYS = 180 }
+					add_character_flag = {
+						flag = rp_pursuit_chain_cooldown
+						days = 365
+					}
+					trigger_event = rp_merit.2020
+				}
+			}
+		}
+
+		if = {
+			limit = {
+				exists = scope:rp_merit_liege
+				exists = scope:rp_campaign_actor
+				scope:rp_merit_liege = { rp_can_fire_campaign_incident_trigger = yes }
+				scope:rp_campaign_actor = {
+					has_variable = rp_merit_score
+					var:rp_merit_score >= 60
+					OR = {
+						has_trait = brave
+						has_trait = deceitful
+					}
+				}
+			}
+			random = {
+				chance = 3
+				scope:rp_merit_liege = {
+					rp_mark_campaign_incident_cooldown_effect = { DAYS = 180 }
+					trigger_event = rp_merit.2030
+				}
+			}
+		}
+
+		if = {
+			limit = {
+				exists = scope:rp_merit_liege
+				exists = scope:rp_campaign_actor
+				scope:rp_merit_liege = { rp_can_fire_campaign_incident_trigger = yes }
+				scope:rp_campaign_actor = {
+					has_variable = rp_merit_score
+					var:rp_merit_score >= 80
+					OR = {
+						has_trait = arrogant
+						has_trait = ambitious
+						has_trait = stubborn
+					}
+				}
+			}
+			random = {
+				chance = 4
+				scope:rp_merit_liege = {
+					rp_mark_campaign_incident_cooldown_effect = { DAYS = 180 }
+					trigger_event = rp_merit.2040
+				}
+			}
+		}
+
+		if = {
+			limit = {
+				exists = scope:rp_merit_liege
+				exists = scope:rp_campaign_actor
+				scope:rp_merit_liege = { rp_can_fire_campaign_incident_trigger = yes }
+				scope:rp_campaign_actor = {
+					has_variable = rp_merit_score
+					var:rp_merit_score >= 45
+					OR = {
+						has_trait = just
+						has_trait = diligent
+						has_trait = stubborn
+					}
+				}
+			}
+			random = {
+				chance = 2
+				scope:rp_merit_liege = {
+					rp_mark_campaign_incident_cooldown_effect = { DAYS = 180 }
+					trigger_event = rp_merit.2080
+				}
+			}
+		}
+
+		if = {
+			limit = {
+				exists = scope:rp_merit_liege
+				exists = scope:rp_campaign_actor
+				scope:rp_merit_liege = { rp_can_fire_campaign_incident_trigger = yes }
+				scope:rp_campaign_actor = {
+					has_variable = rp_merit_score
+					var:rp_merit_score >= 40
+					OR = {
+						has_trait = patient
+						has_trait = calm
+						martial >= 14
+						learning >= 10
+					}
+				}
+			}
+			random = {
+				chance = 5
+				scope:rp_merit_liege = {
+					rp_mark_campaign_incident_cooldown_effect = { DAYS = 180 }
+					trigger_event = rp_merit.2095
+				}
+			}
+		}
+
+		if = {
+			limit = {
+				exists = scope:rp_merit_liege
+				exists = scope:rp_campaign_actor
+				scope:rp_merit_liege = { rp_can_fire_campaign_incident_trigger = yes }
+				scope:rp_campaign_actor = {
+					has_variable = rp_merit_score
+					var:rp_merit_score >= 50
+					OR = {
+						has_trait = brave
+						has_trait = stubborn
+						has_trait = zealous
+						has_character_flag = rp_publicly_shamed
+					}
+				}
+			}
+			random = {
+				chance = 3
+				scope:rp_merit_liege = {
+					rp_mark_campaign_incident_cooldown_effect = { DAYS = 180 }
+					trigger_event = rp_merit.2050
+				}
+			}
+		}
+
+		if = {
+			limit = {
+				exists = scope:rp_merit_liege
+				exists = scope:rp_campaign_actor
+				scope:rp_merit_liege = { rp_can_fire_campaign_incident_trigger = yes }
+				scope:rp_campaign_actor = {
+					OR = {
+						has_trait = brave
+						has_trait = compassionate
+						has_trait = honest
+					}
+					opinion = {
+						target = scope:rp_merit_liege
+						value >= 60
+					}
+				}
+			}
+			random = {
+				chance = 8
+				scope:rp_merit_liege = {
+					rp_mark_campaign_incident_cooldown_effect = { DAYS = 180 }
+					trigger_event = rp_merit.2060
+				}
+			}
+		}
+
+		if = {
+			limit = {
+				exists = scope:rp_merit_liege
+				exists = scope:rp_campaign_actor
+				scope:rp_merit_liege = { rp_can_fire_minor_campaign_incident_trigger = yes }
+			}
+			random = {
+				chance = 7
+				scope:rp_merit_liege = {
+					add_character_flag = {
+						flag = rp_minor_campaign_incident_cooldown
+						days = 45
+					}
+					trigger_event = rp_merit.2100
+				}
+			}
+		}
+
+		if = {
+			limit = {
+				exists = scope:rp_merit_liege
+				exists = scope:rp_campaign_actor
+				scope:rp_merit_liege = { rp_can_fire_minor_campaign_incident_trigger = yes }
+			}
+			random = {
+				chance = 6
+				scope:rp_merit_liege = {
+					add_character_flag = {
+						flag = rp_minor_campaign_incident_cooldown
+						days = 45
+					}
+					trigger_event = rp_merit.2101
+				}
+			}
+		}
+
+		if = {
+			limit = {
+				exists = scope:rp_merit_liege
+				exists = scope:rp_campaign_actor
+				scope:rp_merit_liege = { rp_can_fire_minor_campaign_incident_trigger = yes }
+			}
+			random = {
+				chance = 6
+				scope:rp_merit_liege = {
+					add_character_flag = {
+						flag = rp_minor_campaign_incident_cooldown
+						days = 45
+					}
+					trigger_event = rp_merit.2102
+				}
+			}
+		}
+	}
+}
+
+rp_merit.2001 = {
+	scope = combat_side
+	hidden = yes
+
+	immediate = {
+		combat.combat_war = { save_scope_as = rp_current_war }
+
+		if = {
+			limit = {
+				combat.combat_war = {
+					primary_attacker = { rp_is_merit_system_enabled_trigger = yes }
+				}
+				side_primary_participant = { is_attacker_in_war = root.combat.combat_war }
+			}
+			combat.combat_war.primary_attacker = { save_scope_as = rp_merit_liege }
+		}
+		else_if = {
+			limit = {
+				combat.combat_war = {
+					primary_defender = { rp_is_merit_system_enabled_trigger = yes }
+				}
+				side_primary_participant = { is_defender_in_war = root.combat.combat_war }
+			}
+			combat.combat_war.primary_defender = { save_scope_as = rp_merit_liege }
+		}
+
+		side_commander ?= {
+			if = {
+				limit = { rp_is_high_merit_campaign_actor_trigger = { LIEGE = scope:rp_merit_liege VALUE = 30 } }
+				save_scope_as = rp_campaign_actor
+			}
+		}
+
+		if = {
+			limit = {
+				exists = scope:rp_merit_liege
+				exists = scope:rp_campaign_actor
+				scope:rp_merit_liege = {
+					rp_can_fire_campaign_incident_trigger = yes
+					NOT = { has_character_flag = rp_yang_zhen_chain_cooldown }
+				}
+				scope:rp_campaign_actor = {
+					OR = {
+						has_trait = vengeful
+						has_trait = greedy
+						has_trait = arrogant
+					}
+				}
+			}
+			random = {
+				chance = 4
+				scope:rp_merit_liege = {
+					rp_mark_campaign_incident_cooldown_effect = { DAYS = 180 }
+					add_character_flag = {
+						flag = rp_yang_zhen_chain_cooldown
+						days = 365
+					}
+					trigger_event = rp_merit.2010
+				}
+			}
+		}
+
+		if = {
+			limit = {
+				exists = scope:rp_merit_liege
+				exists = scope:rp_campaign_actor
+				scope:rp_merit_liege = { rp_can_fire_campaign_incident_trigger = yes }
+				OR = {
+					scope:rp_merit_liege = { gold < 0 }
+					scope:rp_campaign_actor = { has_variable = rp_merit_recent_major_loss }
+				}
+			}
+			random = {
+				chance = 6
+				scope:rp_merit_liege = {
+					rp_mark_campaign_incident_cooldown_effect = { DAYS = 180 }
+					trigger_event = rp_merit.2070
+				}
+			}
+		}
+
+		if = {
+			limit = {
+				exists = scope:rp_merit_liege
+				exists = scope:rp_campaign_actor
+				scope:rp_merit_liege = { rp_can_fire_campaign_incident_trigger = yes }
+				scope:rp_campaign_actor = {
+					has_variable = rp_merit_score
+					var:rp_merit_score >= 40
+					OR = {
+						has_trait = deceitful
+						has_trait = ambitious
+						has_trait = brave
+					}
+				}
+			}
+			random = {
+				chance = 4
+				scope:rp_merit_liege = {
+					rp_mark_campaign_incident_cooldown_effect = { DAYS = 180 }
+					trigger_event = rp_merit.2090
+				}
+			}
+		}
+
+		if = {
+			limit = {
+				exists = scope:rp_merit_liege
+				exists = scope:rp_campaign_actor
+				scope:rp_merit_liege = { rp_can_fire_minor_campaign_incident_trigger = yes }
+			}
+			random = {
+				chance = 7
+				scope:rp_merit_liege = {
+					add_character_flag = {
+						flag = rp_minor_campaign_incident_cooldown
+						days = 45
+					}
+					trigger_event = rp_merit.2103
+				}
+			}
+		}
+
+		if = {
+			limit = {
+				exists = scope:rp_merit_liege
+				exists = scope:rp_campaign_actor
+				scope:rp_merit_liege = { rp_can_fire_minor_campaign_incident_trigger = yes }
+			}
+			random = {
+				chance = 6
+				scope:rp_merit_liege = {
+					add_character_flag = {
+						flag = rp_minor_campaign_incident_cooldown
+						days = 45
+					}
+					trigger_event = rp_merit.2104
+				}
+			}
+		}
+
+		if = {
+			limit = {
+				exists = scope:rp_merit_liege
+				exists = scope:rp_campaign_actor
+				scope:rp_merit_liege = { rp_can_fire_minor_campaign_incident_trigger = yes }
+			}
+			random = {
+				chance = 6
+				scope:rp_merit_liege = {
+					add_character_flag = {
+						flag = rp_minor_campaign_incident_cooldown
+						days = 45
+					}
+					trigger_event = rp_merit.2105
+				}
+			}
+		}
+	}
+}
+
+rp_merit.2002 = {
+	type = character_event
+	hidden = yes
+
+	immediate = {
+		scope:war = { save_scope_as = rp_current_war }
+
+		if = {
+			limit = {
+				scope:war = {
+					primary_attacker = {
+						rp_is_merit_system_enabled_trigger = yes
+						OR = {
+							this = root
+							this = root.top_liege
+						}
+					}
+				}
+			}
+			scope:war.primary_attacker = { save_scope_as = rp_merit_liege }
+		}
+		else_if = {
+			limit = {
+				scope:war = {
+					primary_defender = {
+						rp_is_merit_system_enabled_trigger = yes
+						OR = {
+							this = root
+							this = root.top_liege
+						}
+					}
+				}
+			}
+			scope:war.primary_defender = { save_scope_as = rp_merit_liege }
+		}
+
+		if = {
+			limit = {
+				exists = scope:rp_merit_liege
+				root = { rp_is_high_merit_campaign_actor_trigger = { LIEGE = scope:rp_merit_liege VALUE = 30 } }
+			}
+			root = { save_scope_as = rp_campaign_actor }
+		}
+		else_if = {
+			limit = { exists = scope:rp_merit_liege }
+			scope:rp_merit_liege = { rp_select_high_merit_campaign_actor_effect = { VALUE = 30 } }
+		}
+
+		if = {
+			limit = {
+				exists = scope:rp_merit_liege
+				exists = scope:rp_campaign_actor
+				scope:rp_merit_liege = {
+					rp_can_fire_campaign_incident_trigger = yes
+					NOT = { has_character_flag = rp_yang_zhen_chain_cooldown }
+				}
+				scope:rp_campaign_actor = {
+					OR = {
+						has_trait = vengeful
+						has_trait = greedy
+						has_trait = arrogant
+					}
+				}
+			}
+			random = {
+				chance = 3
+				scope:rp_merit_liege = {
+					rp_mark_campaign_incident_cooldown_effect = { DAYS = 180 }
+					add_character_flag = {
+						flag = rp_yang_zhen_chain_cooldown
+						days = 365
+					}
+					trigger_event = rp_merit.2010
+				}
+			}
+		}
+	}
+}
+
+rp_merit.2003 = {
+	type = character_event
+	hidden = yes
+
+	immediate = {
+		rp_select_high_merit_campaign_actor_effect = { VALUE = 30 }
+		if = {
+			limit = {
+				exists = scope:rp_campaign_actor
+				rp_can_fire_campaign_incident_trigger = yes
+				NOT = { has_character_flag = rp_yang_zhen_chain_cooldown }
+				scope:rp_campaign_actor = {
+					OR = {
+						has_trait = vengeful
+						has_trait = greedy
+						has_trait = arrogant
+					}
+				}
+			}
+			random = {
+				chance = 4
+				rp_mark_campaign_incident_cooldown_effect = { DAYS = 180 }
+				add_character_flag = {
+					flag = rp_yang_zhen_chain_cooldown
+					days = 365
+				}
+				trigger_event = rp_merit.2010
+			}
+		}
+		if = {
+			limit = {
+				exists = scope:rp_campaign_actor
+				rp_can_fire_campaign_incident_trigger = yes
+				OR = {
+					gold < 0
+					scope:rp_campaign_actor = { has_variable = rp_merit_recent_major_loss }
+				}
+			}
+			random = {
+				chance = 5
+				rp_mark_campaign_incident_cooldown_effect = { DAYS = 180 }
+				trigger_event = rp_merit.2070
+			}
+		}
+	}
+}
+
+rp_merit.2010 = {
+	type = character_event
+	title = rp_merit.2010.t
+	theme = martial
+	override_background = { reference = throne_room_east }
+	desc = rp_merit.2010.desc
+	right_portrait = scope:rp_campaign_actor
+
+	trigger = {
+		exists = scope:rp_campaign_actor
+		scope:rp_campaign_actor = {
+			rp_is_high_merit_campaign_actor_trigger = { LIEGE = root VALUE = 30 }
+		}
+	}
+
+	option = {
+		name = rp_merit.2010.a
+		trigger = { gold >= 40 }
+		remove_short_term_gold = 40
+		scope:rp_campaign_actor = {
+			add_gold = 40
+			add_opinion = {
+				target = root
+				modifier = rp_campaign_incident_grateful_opinion
+			}
+			rp_consume_merit_effect = { VALUE = 10 }
+		}
+		rp_mark_campaign_actor_used_effect = yes
+	}
+
+	option = {
+		name = rp_merit.2010.b
+		scope:rp_campaign_actor = {
+			add_character_flag = {
+				flag = rp_yang_zhen_resentment
+				days = 120
+			}
+			add_opinion = {
+				target = root
+				modifier = rp_campaign_incident_risk_opinion
+			}
+		}
+		rp_mark_campaign_actor_used_effect = yes
+	}
+
+	option = {
+		name = rp_merit.2010.c
+		scope:rp_campaign_actor = {
+			add_character_flag = {
+				flag = rp_yang_zhen_resentment
+				days = 120
+			}
+			add_opinion = {
+				target = root
+				modifier = rp_merit_refused_harsh_opinion
+			}
+		}
+		rp_mark_campaign_actor_used_effect = yes
+		trigger_event = {
+			id = rp_merit.2011
+			days = 3
+		}
+	}
+}
+
+rp_merit.2011 = {
+	type = character_event
+	title = rp_merit.2011.t
+	theme = martial
+	override_background = { reference = throne_room_east }
+	desc = rp_merit.2011.desc
+	right_portrait = scope:rp_campaign_actor
+
+	immediate = {
+		if = {
+			limit = { NOT = { exists = scope:rp_campaign_actor } }
+			rp_collect_merit_candidates_effect = yes
+			ordered_in_list = {
+				list = rp_merit_candidates
+				limit = {
+					has_character_flag = rp_yang_zhen_resentment
+					rp_is_valid_merit_subject_trigger = { LIEGE = root }
+				}
+				order_by = { value = var:rp_merit_score }
+				save_scope_as = rp_campaign_actor
+			}
+		}
+	}
+
+	trigger = {
+		exists = scope:rp_campaign_actor
+	}
+
+	option = {
+		name = rp_merit.2011.a
+		add_dread = 10
+		add_character_modifier = {
+			modifier = rp_campaign_discipline_modifier
+			years = 2
+		}
+		scope:rp_campaign_actor = {
+			rp_add_merit_effect = { LIEGE = root VALUE = -25 }
+			add_opinion = {
+				target = root
+				modifier = rp_campaign_incident_rebuked_opinion
+			}
+			remove_character_flag = rp_yang_zhen_resentment
+		}
+	}
+
+	option = {
+		name = rp_merit.2011.b
+		add_prestige = 60
+		scope:rp_campaign_actor = {
+			rp_add_merit_effect = { LIEGE = root VALUE = -10 }
+			add_opinion = {
+				target = root
+				modifier = rp_campaign_incident_risk_opinion
+			}
+			remove_character_flag = rp_yang_zhen_resentment
+		}
+	}
+
+	option = {
+		name = rp_merit.2011.c
+		add_prestige = -75
+		add_character_modifier = {
+			modifier = rp_campaign_disorder_modifier
+			years = 2
+		}
+		scope:rp_campaign_actor = { remove_character_flag = rp_yang_zhen_resentment }
+		rp_apply_defection_effect = { WAR = scope:rp_current_war }
+	}
+}
+
+rp_merit.2020 = {
+	type = character_event
+	title = rp_merit.2020.t
+	theme = martial
+	override_background = { reference = throne_room_east }
+	desc = rp_merit.2020.desc
+	right_portrait = scope:rp_campaign_actor
+
+	trigger = {
+		exists = scope:rp_campaign_actor
+		scope:rp_campaign_actor = {
+			rp_is_high_merit_campaign_actor_trigger = { LIEGE = root VALUE = 50 }
+		}
+	}
+
+	option = {
+		name = rp_merit.2020.a
+		scope:rp_campaign_actor = {
+			add_character_flag = {
+				flag = rp_pursuit_vanguard
+				days = 120
+			}
+			add_character_modifier = {
+				modifier = rp_campaign_vanguard_modifier
+				years = 2
+			}
+			add_opinion = {
+				target = root
+				modifier = rp_campaign_incident_grateful_opinion
+			}
+			rp_add_merit_effect = { LIEGE = root VALUE = 8 }
+		}
+		trigger_event = {
+			id = rp_merit.2021
+			days = 5
+		}
+	}
+
+	option = {
+		name = rp_merit.2020.b
+		add_prestige = 25
+		scope:rp_campaign_actor = {
+			add_character_flag = {
+				flag = rp_pursuit_vanguard
+				days = 120
+			}
+			add_character_modifier = {
+				modifier = rp_campaign_vanguard_modifier
+				years = 2
+			}
+			rp_add_merit_effect = { LIEGE = root VALUE = 12 }
+		}
+		trigger_event = {
+			id = rp_merit.2021
+			days = 3
+		}
+	}
+
+	option = {
+		name = rp_merit.2020.c
+		scope:rp_campaign_actor = {
+			add_opinion = {
+				target = root
+				modifier = rp_campaign_incident_rebuked_opinion
+			}
+			rp_add_merit_effect = { LIEGE = root VALUE = -5 }
+		}
+		add_character_modifier = {
+			modifier = rp_campaign_discipline_modifier
+			years = 2
+		}
+	}
+}
+
+rp_merit.2021 = {
+	type = character_event
+	title = rp_merit.2021.t
+	theme = martial
+	override_background = { reference = throne_room_east }
+	desc = rp_merit.2021.desc
+	right_portrait = scope:rp_campaign_actor
+
+	immediate = {
+		if = {
+			limit = { NOT = { exists = scope:rp_campaign_actor } }
+			rp_collect_merit_candidates_effect = yes
+			ordered_in_list = {
+				list = rp_merit_candidates
+				limit = {
+					has_character_flag = rp_pursuit_vanguard
+					rp_is_valid_merit_subject_trigger = { LIEGE = root }
+				}
+				order_by = { value = var:rp_merit_score }
+				save_scope_as = rp_campaign_actor
+			}
+		}
+	}
+
+	trigger = {
+		exists = scope:rp_campaign_actor
+	}
+
+	option = {
+		name = rp_merit.2021.a
+		add_prestige = 80
+		add_character_modifier = {
+			modifier = rp_campaign_disorder_modifier
+			years = 1
+		}
+		scope:rp_campaign_actor = {
+			rp_add_merit_effect = { LIEGE = root VALUE = 10 }
+			add_opinion = {
+				target = root
+				modifier = rp_campaign_incident_grateful_opinion
+			}
+			remove_character_flag = rp_pursuit_vanguard
+		}
+	}
+
+	option = {
+		name = rp_merit.2021.b
+		add_prestige = 20
+		scope:rp_campaign_actor = {
+			rp_add_merit_effect = { LIEGE = root VALUE = -15 }
+			add_opinion = {
+				target = root
+				modifier = rp_campaign_incident_risk_opinion
+			}
+			remove_character_flag = rp_pursuit_vanguard
+		}
+	}
+
+	option = {
+		name = rp_merit.2021.c
+		add_prestige = -50
+		add_character_modifier = {
+			modifier = rp_campaign_disorder_modifier
+			years = 2
+		}
+		scope:rp_campaign_actor = {
+			rp_add_merit_effect = { LIEGE = root VALUE = -25 }
+			add_character_modifier = {
+				modifier = rp_merit_resentful_modifier
+				years = 5
+			}
+			add_opinion = {
+				target = root
+				modifier = rp_campaign_incident_rebuked_opinion
+			}
+			add_character_flag = rp_resentful_mark
+			remove_character_flag = rp_pursuit_vanguard
+		}
+	}
+}
+
+rp_merit.2030 = {
+	type = character_event
+	title = rp_merit.2030.t
+	theme = diplomacy
+	override_background = { reference = throne_room_east }
+	desc = rp_merit.2030.desc
+	right_portrait = scope:rp_campaign_actor
+
+	trigger = {
+		exists = scope:rp_campaign_actor
+		scope:rp_campaign_actor = { rp_can_receive_merit_from_liege_trigger = { LIEGE = root } }
+	}
+
+	option = {
+		name = rp_merit.2030.a
+		add_prestige = 80
+		scope:rp_campaign_actor = {
+			rp_add_merit_effect = { LIEGE = root VALUE = 15 }
+			rp_add_founding_seniority_effect = { VALUE = 5 }
+			add_opinion = {
+				target = root
+				modifier = rp_campaign_incident_grateful_opinion
+			}
+		}
+		rp_mark_campaign_actor_used_effect = yes
+	}
+
+	option = {
+		name = rp_merit.2030.b
+		add_dread = 5
+		scope:rp_campaign_actor = {
+			rp_add_merit_effect = { LIEGE = root VALUE = -20 }
+			add_opinion = {
+				target = root
+				modifier = rp_campaign_incident_rebuked_opinion
+			}
+			add_character_flag = rp_resentful_mark
+		}
+		rp_mark_campaign_actor_used_effect = yes
+	}
+
+	option = {
+		name = rp_merit.2030.c
+		add_prestige = -10
+		scope:rp_campaign_actor = {
+			rp_add_merit_effect = { LIEGE = root VALUE = 5 }
+			add_opinion = {
+				target = root
+				modifier = rp_campaign_incident_risk_opinion
+			}
+		}
+		rp_mark_campaign_actor_used_effect = yes
+	}
+}
+
+rp_merit.2040 = {
+	type = character_event
+	title = rp_merit.2040.t
+	theme = martial
+	override_background = { reference = throne_room_east }
+	desc = rp_merit.2040.desc
+	right_portrait = scope:rp_campaign_actor
+
+	trigger = {
+		exists = scope:rp_campaign_actor
+		scope:rp_campaign_actor = { rp_can_receive_merit_from_liege_trigger = { LIEGE = root } }
+	}
+
+	option = {
+		name = rp_merit.2040.a
+		scope:rp_campaign_actor = {
+			add_character_modifier = {
+				modifier = rp_campaign_vanguard_modifier
+				years = 2
+			}
+			rp_add_merit_effect = { LIEGE = root VALUE = 10 }
+			add_opinion = {
+				target = root
+				modifier = rp_campaign_incident_grateful_opinion
+			}
+		}
+		rp_mark_campaign_actor_used_effect = yes
+	}
+
+	option = {
+		name = rp_merit.2040.b
+		scope:rp_campaign_actor = {
+			add_opinion = {
+				target = root
+				modifier = rp_campaign_incident_risk_opinion
+			}
+		}
+		add_prestige = 20
+		rp_mark_campaign_actor_used_effect = yes
+	}
+
+	option = {
+		name = rp_merit.2040.c
+		add_dread = 5
+		scope:rp_campaign_actor = {
+			rp_add_merit_effect = { LIEGE = root VALUE = -15 }
+			add_opinion = {
+				target = root
+				modifier = rp_campaign_incident_rebuked_opinion
+			}
+			add_character_flag = rp_resentful_mark
+		}
+		rp_mark_campaign_actor_used_effect = yes
+	}
+}
+
+rp_merit.2050 = {
+	type = character_event
+	title = rp_merit.2050.t
+	theme = martial
+	override_background = { reference = throne_room_east }
+	desc = rp_merit.2050.desc
+	right_portrait = scope:rp_campaign_actor
+
+	trigger = {
+		exists = scope:rp_campaign_actor
+		scope:rp_campaign_actor = { rp_can_receive_merit_from_liege_trigger = { LIEGE = root } }
+	}
+
+	option = {
+		name = rp_merit.2050.a
+		add_prestige = 20
+		scope:rp_campaign_actor = {
+			rp_add_merit_effect = { LIEGE = root VALUE = -5 }
+			add_character_modifier = {
+				modifier = rp_campaign_shamed_modifier
+				years = 2
+			}
+		}
+		rp_mark_campaign_actor_used_effect = yes
+	}
+
+	option = {
+		name = rp_merit.2050.b
+		add_prestige = 60
+		add_character_modifier = {
+			modifier = rp_campaign_disorder_modifier
+			years = 1
+		}
+		scope:rp_campaign_actor = {
+			rp_add_merit_effect = { LIEGE = root VALUE = 12 }
+			rp_add_founding_seniority_effect = { VALUE = 4 }
+			add_opinion = {
+				target = root
+				modifier = rp_campaign_incident_grateful_opinion
+			}
+		}
+		rp_mark_campaign_actor_used_effect = yes
+	}
+
+	option = {
+		name = rp_merit.2050.c
+		add_prestige = -30
+		scope:rp_campaign_actor = {
+			rp_add_merit_effect = { LIEGE = root VALUE = -20 }
+			add_character_modifier = {
+				modifier = rp_campaign_shamed_modifier
+				years = 5
+			}
+			add_character_flag = rp_resentful_mark
+		}
+		rp_mark_campaign_actor_used_effect = yes
+	}
+}
+
+rp_merit.2060 = {
+	type = character_event
+	title = rp_merit.2060.t
+	theme = martial
+	override_background = { reference = throne_room_east }
+	desc = rp_merit.2060.desc
+	right_portrait = scope:rp_campaign_actor
+
+	trigger = {
+		exists = scope:rp_campaign_actor
+		scope:rp_campaign_actor = { rp_can_receive_merit_from_liege_trigger = { LIEGE = root } }
+	}
+
+	option = {
+		name = rp_merit.2060.a
+		add_prestige = 50
+		scope:rp_campaign_actor = {
+			rp_add_merit_effect = { LIEGE = root VALUE = 20 }
+			rp_add_founding_seniority_effect = { VALUE = 10 }
+			add_character_modifier = {
+				modifier = rp_campaign_loyal_guard_modifier
+				years = 5
+			}
+			add_opinion = {
+				target = root
+				modifier = rp_campaign_life_saved_opinion
+			}
+		}
+		rp_mark_campaign_actor_used_effect = yes
+	}
+
+	option = {
+		name = rp_merit.2060.b
+		add_prestige = 25
+		add_character_modifier = {
+			modifier = rp_campaign_disorder_modifier
+			years = 1
+		}
+		scope:rp_campaign_actor = {
+			rp_add_merit_effect = { LIEGE = root VALUE = 10 }
+			rp_add_founding_seniority_effect = { VALUE = 5 }
+			add_opinion = {
+				target = root
+				modifier = rp_campaign_incident_grateful_opinion
+			}
+		}
+		rp_mark_campaign_actor_used_effect = yes
+	}
+
+	option = {
+		name = rp_merit.2060.c
+		add_prestige = -10
+		scope:rp_campaign_actor = {
+			rp_add_merit_effect = { LIEGE = root VALUE = 5 }
+			add_character_modifier = {
+				modifier = rp_campaign_loyal_guard_modifier
+				years = 3
+			}
+		}
+		rp_mark_campaign_actor_used_effect = yes
+	}
+}
+
+rp_merit.2070 = {
+	type = character_event
+	title = rp_merit.2070.t
+	theme = stewardship
+	override_background = { reference = throne_room_east }
+	desc = rp_merit.2070.desc
+	right_portrait = scope:rp_campaign_actor
+
+	trigger = {
+		exists = scope:rp_campaign_actor
+		scope:rp_campaign_actor = { rp_can_receive_merit_from_liege_trigger = { LIEGE = root } }
+	}
+
+	option = {
+		name = rp_merit.2070.a
+		add_dread = 10
+		add_character_modifier = {
+			modifier = rp_campaign_discipline_modifier
+			years = 2
+		}
+		scope:rp_campaign_actor = {
+			add_opinion = {
+				target = root
+				modifier = rp_campaign_incident_rebuked_opinion
+			}
+		}
+		rp_mark_campaign_actor_used_effect = yes
+	}
+
+	option = {
+		name = rp_merit.2070.b
+		trigger = { gold >= 50 }
+		remove_short_term_gold = 50
+		add_character_modifier = {
+			modifier = rp_campaign_relief_modifier
+			years = 2
+		}
+		scope:rp_campaign_actor = {
+			add_opinion = {
+				target = root
+				modifier = rp_campaign_incident_grateful_opinion
+			}
+			rp_add_merit_effect = { LIEGE = root VALUE = 5 }
+		}
+		rp_mark_campaign_actor_used_effect = yes
+	}
+
+	option = {
+		name = rp_merit.2070.c
+		add_character_modifier = {
+			modifier = rp_campaign_hunger_modifier
+			years = 2
+		}
+		scope:rp_campaign_actor = {
+			add_opinion = {
+				target = root
+				modifier = rp_campaign_incident_risk_opinion
+			}
+			add_character_flag = rp_pending_petition
+		}
+		rp_mark_campaign_actor_used_effect = yes
+	}
+}
+
+rp_merit.2090 = {
+	type = character_event
+	title = rp_merit.2090.t
+	theme = intrigue
+	override_background = { reference = throne_room_east }
+	desc = rp_merit.2090.desc
+	right_portrait = scope:rp_campaign_actor
+
+	trigger = {
+		exists = scope:rp_campaign_actor
+		scope:rp_campaign_actor = { rp_can_receive_merit_from_liege_trigger = { LIEGE = root } }
+	}
+
+	option = {
+		name = rp_merit.2090.a
+		add_prestige = 20
+		add_character_modifier = {
+			modifier = rp_campaign_discipline_modifier
+			years = 1
+		}
+		scope:rp_campaign_actor = {
+			rp_add_merit_effect = { LIEGE = root VALUE = -5 }
+		}
+		rp_mark_campaign_actor_used_effect = yes
+	}
+
+	option = {
+		name = rp_merit.2090.b
+		trigger = { gold >= 15 }
+		remove_short_term_gold = 15
+		scope:rp_campaign_actor = {
+			rp_add_merit_effect = { LIEGE = root VALUE = 5 }
+			add_opinion = {
+				target = root
+				modifier = rp_campaign_incident_risk_opinion
+			}
+		}
+		rp_mark_campaign_actor_used_effect = yes
+	}
+
+	option = {
+		name = rp_merit.2090.c
+		add_dread = 15
+		add_character_modifier = {
+			modifier = rp_campaign_disorder_modifier
+			years = 2
+		}
+		scope:rp_campaign_actor = {
+			rp_add_merit_effect = { LIEGE = root VALUE = -20 }
+			add_opinion = {
+				target = root
+				modifier = rp_campaign_incident_rebuked_opinion
+			}
+			add_character_flag = rp_resentful_mark
+		}
+		random = {
+			chance = 35
+			rp_apply_defection_effect = { WAR = scope:rp_current_war }
+		}
+		rp_mark_campaign_actor_used_effect = yes
+	}
+}
+
+rp_merit.2080 = {
+	type = character_event
+	title = rp_merit.2080.t
+	theme = martial
+	override_background = { reference = throne_room_east }
+	desc = rp_merit.2080.desc
+	right_portrait = scope:rp_campaign_actor
+
+	trigger = {
+		exists = scope:rp_campaign_actor
+		scope:rp_campaign_actor = { rp_can_receive_merit_from_liege_trigger = { LIEGE = root } }
+	}
+
+	option = {
+		name = rp_merit.2080.a
+		add_dread = 5
+		add_character_modifier = {
+			modifier = rp_campaign_discipline_modifier
+			years = 3
+		}
+		scope:rp_campaign_actor = {
+			rp_add_merit_effect = { LIEGE = root VALUE = 12 }
+			add_opinion = {
+				target = root
+				modifier = rp_campaign_incident_grateful_opinion
+			}
+		}
+		rp_mark_campaign_actor_used_effect = yes
+	}
+
+	option = {
+		name = rp_merit.2080.b
+		add_character_modifier = {
+			modifier = rp_campaign_disorder_modifier
+			years = 2
+		}
+		scope:rp_campaign_actor = {
+			add_opinion = {
+				target = root
+				modifier = rp_campaign_incident_rebuked_opinion
+			}
+		}
+		rp_mark_campaign_actor_used_effect = yes
+	}
+
+	option = {
+		name = rp_merit.2080.c
+		add_prestige = -40
+		scope:rp_campaign_actor = {
+			rp_add_merit_effect = { LIEGE = root VALUE = -20 }
+			add_character_modifier = {
+				modifier = rp_merit_resentful_modifier
+				years = 5
+			}
+			add_character_flag = rp_resentful_mark
+		}
+		rp_mark_campaign_actor_used_effect = yes
+	}
+}
+
+rp_merit.2095 = {
+	type = character_event
+	title = rp_merit.2095.t
+	theme = martial
+	override_background = { reference = throne_room_east }
+	desc = rp_merit.2095.desc
+	right_portrait = scope:rp_campaign_actor
+
+	trigger = {
+		exists = scope:rp_campaign_actor
+		scope:rp_campaign_actor = { rp_can_receive_merit_from_liege_trigger = { LIEGE = root } }
+	}
+
+	option = {
+		name = rp_merit.2095.a
+		add_prestige = 100
+		scope:rp_campaign_actor = {
+			rp_add_merit_effect = { LIEGE = root VALUE = 15 }
+			rp_add_founding_seniority_effect = { VALUE = 5 }
+			add_opinion = {
+				target = root
+				modifier = rp_campaign_incident_grateful_opinion
+			}
+		}
+		rp_mark_campaign_actor_used_effect = yes
+	}
+
+	option = {
+		name = rp_merit.2095.b
+		add_dread = 5
+		scope:rp_campaign_actor = {
+			rp_add_merit_effect = { LIEGE = root VALUE = -20 }
+			add_opinion = {
+				target = root
+				modifier = rp_campaign_incident_rebuked_opinion
+			}
+			add_character_flag = rp_resentful_mark
+		}
+		rp_mark_campaign_actor_used_effect = yes
+	}
+
+	option = {
+		name = rp_merit.2095.c
+		add_prestige = 50
+		scope:rp_campaign_actor = {
+			rp_add_merit_effect = { LIEGE = root VALUE = 8 }
+			rp_add_founding_seniority_effect = { VALUE = 3 }
+			add_opinion = {
+				target = root
+				modifier = rp_campaign_incident_risk_opinion
+			}
+		}
+		rp_mark_campaign_actor_used_effect = yes
+	}
+}
+
+rp_merit.2100 = {
+	type = character_event
+	title = rp_merit.2100.t
+	theme = martial
+	override_background = { reference = throne_room_east }
+	desc = rp_merit.2100.desc
+	right_portrait = scope:rp_campaign_actor
+
+	trigger = {
+		exists = scope:rp_campaign_actor
+		scope:rp_campaign_actor = { rp_can_receive_merit_from_liege_trigger = { LIEGE = root } }
+	}
+
+	option = {
+		name = rp_merit.2100.a
+		add_character_modifier = {
+			modifier = rp_campaign_discipline_modifier
+			years = 1
+		}
+		scope:rp_campaign_actor = {
+			rp_add_merit_effect = { LIEGE = root VALUE = 5 }
+			add_opinion = {
+				target = root
+				modifier = rp_campaign_incident_grateful_opinion
+			}
+		}
+		rp_mark_campaign_actor_used_effect = yes
+	}
+
+	option = {
+		name = rp_merit.2100.b
+		add_dread = 3
+		scope:rp_campaign_actor = {
+			rp_add_merit_effect = { LIEGE = root VALUE = -3 }
+			add_opinion = {
+				target = root
+				modifier = rp_campaign_incident_risk_opinion
+			}
+		}
+		rp_mark_campaign_actor_used_effect = yes
+	}
+}
+
+rp_merit.2101 = {
+	type = character_event
+	title = rp_merit.2101.t
+	theme = martial
+	override_background = { reference = throne_room_east }
+	desc = rp_merit.2101.desc
+	right_portrait = scope:rp_campaign_actor
+
+	trigger = {
+		exists = scope:rp_campaign_actor
+		scope:rp_campaign_actor = { rp_can_receive_merit_from_liege_trigger = { LIEGE = root } }
+	}
+
+	option = {
+		name = rp_merit.2101.a
+		add_prestige = 20
+		scope:rp_campaign_actor = {
+			rp_add_merit_effect = { LIEGE = root VALUE = 4 }
+		}
+		rp_mark_campaign_actor_used_effect = yes
+	}
+
+	option = {
+		name = rp_merit.2101.b
+		add_prestige = -10
+		add_character_modifier = {
+			modifier = rp_campaign_disorder_modifier
+			years = 1
+		}
+		scope:rp_campaign_actor = {
+			rp_add_merit_effect = { LIEGE = root VALUE = 2 }
+			add_opinion = {
+				target = root
+				modifier = rp_campaign_incident_risk_opinion
+			}
+		}
+		rp_mark_campaign_actor_used_effect = yes
+	}
+}
+
+rp_merit.2102 = {
+	type = character_event
+	title = rp_merit.2102.t
+	theme = martial
+	override_background = { reference = throne_room_east }
+	desc = rp_merit.2102.desc
+	right_portrait = scope:rp_campaign_actor
+
+	trigger = {
+		exists = scope:rp_campaign_actor
+		scope:rp_campaign_actor = { rp_can_receive_merit_from_liege_trigger = { LIEGE = root } }
+	}
+
+	option = {
+		name = rp_merit.2102.a
+		trigger = { gold >= 15 }
+		remove_short_term_gold = 15
+		scope:rp_campaign_actor = {
+			add_gold = 15
+			rp_add_merit_effect = { LIEGE = root VALUE = 6 }
+			add_opinion = {
+				target = root
+				modifier = rp_campaign_incident_grateful_opinion
+			}
+		}
+		rp_mark_campaign_actor_used_effect = yes
+	}
+
+	option = {
+		name = rp_merit.2102.b
+		scope:rp_campaign_actor = {
+			rp_add_merit_effect = { LIEGE = root VALUE = 3 }
+		}
+		add_prestige = 10
+		rp_mark_campaign_actor_used_effect = yes
+	}
+
+	option = {
+		name = rp_merit.2102.c
+		add_dread = 3
+		scope:rp_campaign_actor = {
+			add_opinion = {
+				target = root
+				modifier = rp_campaign_incident_rebuked_opinion
+			}
+		}
+		rp_mark_campaign_actor_used_effect = yes
+	}
+}
+
+rp_merit.2103 = {
+	type = character_event
+	title = rp_merit.2103.t
+	theme = martial
+	override_background = { reference = throne_room_east }
+	desc = rp_merit.2103.desc
+	right_portrait = scope:rp_campaign_actor
+
+	trigger = {
+		exists = scope:rp_campaign_actor
+		scope:rp_campaign_actor = { rp_can_receive_merit_from_liege_trigger = { LIEGE = root } }
+	}
+
+	option = {
+		name = rp_merit.2103.a
+		add_prestige = 15
+		scope:rp_campaign_actor = {
+			rp_add_merit_effect = { LIEGE = root VALUE = 6 }
+			add_opinion = {
+				target = root
+				modifier = rp_campaign_incident_grateful_opinion
+			}
+		}
+		rp_mark_campaign_actor_used_effect = yes
+	}
+
+	option = {
+		name = rp_merit.2103.b
+		add_dread = 3
+		scope:rp_campaign_actor = {
+			rp_add_merit_effect = { LIEGE = root VALUE = -5 }
+			add_opinion = {
+				target = root
+				modifier = rp_campaign_incident_rebuked_opinion
+			}
+		}
+		rp_mark_campaign_actor_used_effect = yes
+	}
+}
+
+rp_merit.2104 = {
+	type = character_event
+	title = rp_merit.2104.t
+	theme = martial
+	override_background = { reference = throne_room_east }
+	desc = rp_merit.2104.desc
+	right_portrait = scope:rp_campaign_actor
+
+	trigger = {
+		exists = scope:rp_campaign_actor
+		scope:rp_campaign_actor = { rp_can_receive_merit_from_liege_trigger = { LIEGE = root } }
+	}
+
+	option = {
+		name = rp_merit.2104.a
+		trigger = { gold >= 10 }
+		remove_short_term_gold = 10
+		add_character_modifier = {
+			modifier = rp_campaign_discipline_modifier
+			years = 1
+		}
+		scope:rp_campaign_actor = {
+			rp_add_merit_effect = { LIEGE = root VALUE = 4 }
+		}
+		rp_mark_campaign_actor_used_effect = yes
+	}
+
+	option = {
+		name = rp_merit.2104.b
+		add_dread = 5
+		scope:rp_campaign_actor = {
+			rp_add_merit_effect = { LIEGE = root VALUE = -4 }
+			add_opinion = {
+				target = root
+				modifier = rp_campaign_incident_risk_opinion
+			}
+		}
+		rp_mark_campaign_actor_used_effect = yes
+	}
+}
+
+rp_merit.2105 = {
+	type = character_event
+	title = rp_merit.2105.t
+	theme = martial
+	override_background = { reference = throne_room_east }
+	desc = rp_merit.2105.desc
+	right_portrait = scope:rp_campaign_actor
+
+	trigger = {
+		exists = scope:rp_campaign_actor
+		scope:rp_campaign_actor = { rp_can_receive_merit_from_liege_trigger = { LIEGE = root } }
+	}
+
+	option = {
+		name = rp_merit.2105.a
+		add_prestige = 15
+		scope:rp_campaign_actor = {
+			rp_add_merit_effect = { LIEGE = root VALUE = 7 }
+			rp_add_founding_seniority_effect = { VALUE = 3 }
+			add_opinion = {
+				target = root
+				modifier = rp_campaign_incident_grateful_opinion
+			}
+		}
+		rp_mark_campaign_actor_used_effect = yes
+	}
+
+	option = {
+		name = rp_merit.2105.b
+		trigger = { gold >= 20 }
+		remove_short_term_gold = 20
+		scope:rp_campaign_actor = {
+			add_gold = 20
+			rp_add_merit_effect = { LIEGE = root VALUE = 4 }
+		}
+		rp_mark_campaign_actor_used_effect = yes
+	}
+
+	option = {
+		name = rp_merit.2105.c
+		add_dread = 3
+		scope:rp_campaign_actor = {
+			add_opinion = {
+				target = root
+				modifier = rp_campaign_incident_risk_opinion
+			}
+		}
+		rp_mark_campaign_actor_used_effect = yes
+	}
+}

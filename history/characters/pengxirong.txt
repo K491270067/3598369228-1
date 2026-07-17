@@ -1,0 +1,159 @@
+﻿#############  褰垙姘忓浗--褰垙姘?#############
+han2001={
+  name="bfyznan425"
+  dynasty=xin78
+  culture="xirong"
+  religion="xirongfangling"
+
+  3796.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han2002={
+  name="bfyznan430"
+  dynasty=xin78
+  culture="xirong"
+  religion="xirongfangling"
+  father=han2001
+
+  3816.5.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han2003={
+  name="bfyznan458" 
+  dynasty=xin78
+  culture="xirong"
+  religion="xirongfangling"
+  father=han2001
+
+  3817.5.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han2004={
+  name="bfyznan475"
+  dynasty=xin78
+  culture="xirong"
+  religion="xirongfangling"
+  father=han2001
+
+  3818.5.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han2005={
+  name="nvming102"
+  dynasty=xin78
+  culture="xirong"
+  religion="xirongfangling"
+  father=han2001
+  female=yes
+
+  3819.5.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han2006={
+  name="lan1"
+  dynasty=xin78
+  culture="xirong"
+  religion="xirongfangling"
+  father=han2001
+  female=yes
+
+  3820.5.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+##########
+han2007={
+  name="bfyznan515" 
+  dynasty=xin806
+  culture="xirong"
+  religion="xirongfangling"
+  father=han2001
+
+  3821.5.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+pengxishi1={
+  name="bfyznan534" 
+  dynasty=xin806
+  culture="xirong"
+  religion="xirongfangling"
+  father=han2007
+
+  3839.5.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+pengxishi2={
+  name="bfyznan556" 
+  dynasty=xin806
+  culture="xirong"
+  religion="xirongfangling"
+  father=han2007
+
+  3840.5.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+pengxishi3={
+  name="bfyznv20" 
+  dynasty=xin806
+  culture="xirong"
+  religion="xirongfangling"
+  father=han2007
+  female=yes
+
+  3841.5.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+pengxishi4={
+  name="bfyznv44" 
+  dynasty=xin806
+  culture="xirong"
+  religion="xirongfangling"
+  father=han2007
+  female=yes
+
+  3842.5.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}

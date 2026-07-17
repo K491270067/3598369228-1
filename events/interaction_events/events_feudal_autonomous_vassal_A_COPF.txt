@@ -1,0 +1,107 @@
+﻿namespace = feudal_autonomous_vassal
+
+# 通知自治封臣加入战争
+feudal_autonomous_vassal.1 = {
+	type = letter_event
+	opening = { desc = called_autonomous_vassal_opening }
+	desc = called_autonomous_vassal_desc
+	sender = scope:target_liege
+
+	# 封臣同意
+	option = {
+		name = called_autonomous_vassal_agree
+
+		scope:target_liege = {
+			every_character_war = {
+				if = {
+					limit = { scope:target_vassal = { NOT = { is_participant_in_war = prev } } }
+					if = {
+						limit = { scope:target_liege = primary_attacker }
+						add_attacker = scope:target_vassal
+					}
+					else_if = {
+						limit = { scope:target_liege = primary_defender }
+						add_defender = scope:target_vassal
+					}
+				}
+			}
+		}
+
+		# 封臣同意：AI考虑因素（最高100）
+		ai_chance = {
+			base = 25
+			# 如果和对方有亲近关系，则非常愿意（+50）
+			modifier = {
+				OR = {
+					has_relation_friend = scope:target_liege
+					has_relation_best_friend = scope:target_liege
+					has_relation_lover = scope:target_liege
+					has_relation_soulmate = scope:target_liege
+				}
+				add = 50
+			}
+			# 如果对方是直系长辈，则较为愿意（+25）
+			modifier = {
+				OR = {
+					is_parent_of = scope:target_liege
+					is_grandparent_of = scope:target_liege
+					is_great_grandparent_of = scope:target_liege
+				}
+				add = 25
+			}
+			# 如果领主实力雄厚
+			modifier = {
+				add = {
+					value = scope:target_liege.max_military_strength
+					divide = max_military_strength
+					multiply = 25
+				}
+			}
+		}
+	}
+	# 封臣拒绝
+	option = {
+		name = called_autonomous_vassal_disagree
+		
+		scope:target_liege = { #封臣拒绝：事件通知领主
+			trigger_event = {
+				id = feudal_autonomous_vassal.3
+				delayed = yes
+			}
+		}
+		# 封臣拒绝：AI考虑因素（最高100）
+		ai_chance = {
+			base = 0
+			# 如果封臣实力雄厚
+			modifier = {
+				add = {
+					value = max_military_strength
+					divide = scope:target_liege.max_military_strength
+					multiply = 25
+				}
+			}
+		}
+	}
+}
+# 通知领主：自治封臣同意加入战争
+feudal_autonomous_vassal.2 = {
+	type = letter_event
+	opening = { desc = called_autonomous_vassal_agree_liege }
+	desc = called_autonomous_vassal_agree_liege_desc	
+	sender = scope:target_vassal
+	
+	option = {
+		name = called_autonomous_vassal_agree_liege.a
+	}
+}
+# 通知领主：自治封臣拒绝加入战争
+feudal_autonomous_vassal.3 = {
+	type = letter_event
+	opening = { desc = called_autonomous_vassal_disagree_liege }
+	desc = called_autonomous_vassal_disagree_liege_desc	
+	sender = scope:target_vassal
+	
+	option = {
+		name = called_autonomous_vassal_disagree_liege.a
+	}
+}

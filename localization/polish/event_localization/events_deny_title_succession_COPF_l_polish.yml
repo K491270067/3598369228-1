@@ -1,0 +1,23 @@
+﻿l_polish:
+ denied_title_succession_vassal_receive: "To [scope_deny_title_succession_vassal.GetFullNameNoTooltip]"
+ denied_title_succession_vassal_receive_desc: "By the rights granted to me by [ROOT.Char.GetFaith.HighGodName], I declare that [target.GetName] shall no longer be permitted to pass within your family. My decision has been made with due consideration. I trust that you will honor our [vassal_contract] and continue to bring prosperity to the [realm]."
+ denied_title_succession_vassal_receive.a: "This is terribly unfair..."
+ denied_title_succession_vassal_receive.a_effect: "Your [heir|E]'s succession to [target.GetName] has been denied by your [liege|E]. Upon your death, this [title|E] will be ordered to be returned to your [liege|E]"
+
+ denied_title_succession_title: "Denied Succession"
+ denied_title_succession_desc: "\nPower is not borned with\n\nAs written in my [vassal_contract|E], the legitimacy of succession within the [realm|E] derives from the sanction of the [liege|E]. Now my [liege|E] has decided to withdraw this privilege.\n\nWhatever the reason for this decision, the [liege|E]'s envoy has arrived to order me to relinquish these [title|E]."
+ denied_title_succession_agree: "I have no choice but to accept"
+ denied_title_succession_disagree: "No one can take away what is rightfully mine!"
+
+ denied_title_succession_agree_liege: "To [scope_deny_title_succession_liege.GetFullNameNoTooltip]"
+ denied_title_succession_agree_liege_desc: "I have learned that some of my forebears' titles will not be passed to me. Although I find your decision difficult to accept, I will not defy your sacred authority."
+ denied_title_succession_agree_liege.a: "I will not forget your loyalty"
+
+ denied_title_succession_disagree_liege: "To [scope_deny_title_succession_liege.GetFullNameNoTooltip]"
+ denied_title_succession_disagree_liege_desc: "To inherit ancestral [title]s is a right granted by [ROOT.Char.GetFaith.HighGodName]. Please forgive me for upholding this tradition."
+ denied_title_succession_disagree_liege.a: "You dare defy me!"
+
+ restored_title_succession_vassal_receive: "To [scope_deny_title_succession_vassal.GetFullNameNoTooltip]"
+ restored_title_succession_vassal_receive_desc: "In light of your loyalty and fine character, I declare that [target.GetName] shall continue to pass within your family as before. I trust that your house will honor our [vassal_contract] and bring prosperity to the [realm] for generations to come."
+ restored_title_succession_vassal_receive.a: "May this last"
+ restored_title_succession_vassal_receive.a_effect: "Your [liege|E] will once again support your [heir|E]'s succession to [target.GetName]"

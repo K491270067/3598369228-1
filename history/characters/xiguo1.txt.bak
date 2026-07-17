@@ -1,0 +1,242 @@
+#############  昔国--符氏 #############
+han5106={
+  name="xiao"
+  dynasty=xin884
+  religion="guiwu"
+  culture="dizu"
+
+  3530.1.1 = {
+		birth = yes
+	}
+  3583.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han5107={
+  name="tong"
+  dynasty=xin884
+  religion="guiwu"
+  culture="dizu"
+  father=han5106
+
+  3576.1.1 = {
+		birth = yes
+	}
+  3631.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han5108={
+  name="yan1"
+  dynasty=xin884
+  religion="guiwu"
+  culture="dizu"
+  father=han5107
+
+  3609.1.1 = {
+		birth = yes
+	}
+  3673.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han5109={
+  name="wuzhi"
+  dynasty=xin884
+  religion="guiwu"
+  culture="dizu"
+  father=han5108
+
+  3641.1.1 = {
+		birth = yes
+	}
+  3701.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han5110={
+  name="ren"
+  dynasty=xin884
+  religion="guiwu"
+  culture="dizu"
+  father=han5109
+
+  3682.1.1 = {
+		birth = yes
+	}
+  3740.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han5111={
+  name="shi"
+  dynasty=xin884
+  religion="guiwu"
+  culture="dizu"
+  father=han5110
+
+  3706.1.1 = {
+		birth = yes
+	}
+  3767.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han5112={
+  name="chen2"
+  dynasty=xin884
+  religion="guiwu"
+  culture="dizu"
+  father=han5111
+
+  3734.1.1 = {
+		birth = yes
+	}
+  3800.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han5113={
+  name="ji2"
+  dynasty=xin884
+  religion="guiwu"
+  culture="dizu"
+  father=han5112
+
+  3760.1.1 = {
+		birth = yes
+	}
+  3818.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han5114={
+  name="ji3"
+  dynasty=xin884
+  religion="guiwu"
+  culture="dizu"
+  father=han5113
+
+  3795.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han5115={
+  name="zhuo1"#储君一号
+  dynasty=xin884
+  religion="guiwu"
+  culture="dizu"
+  father=han5114
+
+  3813.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han5116={
+  name="zao"#储君二号
+  dynasty=xin884
+  religion="guiwu"
+  culture="dizu"
+  father=han5114
+
+  3816.5.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han5117={
+  name="liao"#储君三号
+  dynasty=xin884
+  religion="guiwu"
+  culture="dizu"
+  father=han5114
+
+  3817.5.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han5118={
+  name="yu5"#储君四号
+  dynasty=xin884
+  religion="guiwu"
+  culture="dizu"
+  father=han5114
+
+  3818.5.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han5119={
+  name="lang1"#女一号
+  dynasty=xin884
+  religion="guiwu"
+  culture="dizu"
+  father=han5114
+  female=yes
+
+  3829.5.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han5120={
+  name="tengyu"#女二号
+  dynasty=xin884
+  religion="guiwu"
+  culture="dizu"
+  father=han5114
+  female=yes
+
+  3830.5.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}

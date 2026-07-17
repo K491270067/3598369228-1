@@ -1,0 +1,91 @@
+﻿# @leadership_1 = "gfx/interface/icons/culture_innovations/innovation_leadership_01.dds"
+# @majesty_01 = "gfx/interface/icons/culture_innovations/innovation_majesty_01.dds"
+
+# innovation_baliffs = { #执达吏
+# 	skill = stewardship
+# 	group = culture_group_civic
+# 	culture_era = culture_era_early_medieval
+# 	icon = @leadership_1
+
+# 	asset = {
+# 		trigger = {
+# 			OR = {
+# 				has_cultural_pillar = heritage_frankish
+# 				has_cultural_pillar = heritage_central_germanic
+# 				has_cultural_pillar = heritage_west_germanic
+# 				has_cultural_pillar = heritage_iberian
+# 				has_cultural_pillar = heritage_brythonic
+# 				has_cultural_pillar = heritage_goidelic
+# 			}
+# 		}
+# 		icon = @leadership_1
+# 		name = innovation_baliffs_bailiffs
+# 	}
+
+# 	asset = {
+# 		trigger = {
+# 			OR = {
+# 				has_cultural_pillar = heritage_latin
+# 				has_cultural_pillar = heritage_byzantine
+# 			}
+# 		}
+# 		icon = @leadership_1
+# 		name = innovation_baliffs_latin
+# 	}
+
+# 	county_modifier = {
+# 		building_slot_add = 1
+# 	}
+
+# 	character_modifier = {
+# 		tax_slot_add  = 1
+# 	}
+# 	custom = more_glory_hounds
+
+# 	#custom = unlock_succession_rights_grant_recognition
+# 	#custom = unlock_succession_rights_grant_appointment
+# 	#custom = unlock_succession_rights_governor_appointment
+# 	custom = unlock_advanced_succession_rights
+
+# 	flag = global_regular
+# 	flag = early_medieval_era_regular
+	
+# 	ai_weight_for_fascination = {
+# 		value = 100
+# 		if = {
+# 			limit = {
+# 				NOT = {
+# 					has_cultural_era_or_later = culture_era_early_medieval
+# 				}
+# 			}
+# 			multiply = 0
+# 		}
+# 	}
+# }
+
+#innovation_royal_prerogative = { #宗室特权
+#	skill = diplomacy
+#	group = culture_group_civic
+#	culture_era = culture_era_early_medieval
+#	icon = @majesty_01
+
+#	unlock_law = crown_authority_2
+#	unlock_law = crown_authority_3
+#	custom = more_courtly
+#	custom = unlock_succession_rights_grant_recognition
+
+#	flag = global_regular
+#	flag = early_medieval_era_regular
+	
+#	ai_weight_for_fascination = {
+#		value = 100
+#		if = {
+#			limit = {
+#				NOT = {
+#					has_cultural_era_or_later = culture_era_early_medieval
+#				}
+#			}
+#			multiply = 0
+#		}
+#	}
+#}

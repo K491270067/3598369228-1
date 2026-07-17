@@ -1,0 +1,26 @@
+﻿l_russian:
+ opinion_denied_title_succession: "Heir's Title Succession Denied"
+ opinion_denied_title_succession_again: "Heir's Title Succession Denied Again!"
+
+ opinion_denied_title_succession_primary_heir: "Title Succession Denied"
+ opinion_denied_title_succession_again_primary_heir: "Title Succession Denied Again!"
+
+ opinion_denied_title_succession_heir: "Potential Title Succession Denied"
+ opinion_denied_title_succession_again_heir: "Potential Title Succession Denied Again!"
+
+ opinion_restored_title_succession: "Title Succession Restored"
+
+ opinion_agree_to_return_title: "Agreed to Return Title"
+ opinion_refuse_to_return_title: "Refused to Return Title"
+ opinion_refuse_to_return_title_show: "Refused to Return Title"
+
+ opinion_forced_to_return_title_heir: "Forced to Return Title"
+
+ opinion_granted_autonomy: "Granted Autonomy"
+ opinion_granted_full_autonomy: "Granted Full Autonomy"
+ opinion_unauthorized_declaring_autonomy: "Declared Autonomy without Authorization"
+
+ opinion_appointed_subject_supervisor: "Appointed Supervisor"
+ opinion_unauthorized_subject_supervisor_dismissal: "Dismissed Supervisor without Authorization"
+
+ opinion_promoted_new_bureaucrat: "Thanksful for Promotion"

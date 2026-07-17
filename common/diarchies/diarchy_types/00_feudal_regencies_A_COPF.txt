@@ -1,0 +1,181 @@
+﻿### 实权摄政 ###
+feudal_titular_liege_regency = {
+	start = { always = yes }
+	end = { always = no }
+
+	# 摄政指令
+	mandate = fill_coffers
+	mandate = swell_armies
+	mandate = promote_authority
+	## Aptitudes.
+	aptitude_score = {
+		add = mandate_type_qualification:fill_coffers
+		add = mandate_type_qualification:swell_armies
+		add = mandate_type_qualification:promote_authority
+	}
+	
+	# 权力分享
+	power_level = {
+		swing = 0
+		hidden_parameter = diarchy_type_is_entrenched_regency
+		hidden_parameter = diarchy_is_primeministership
+		hidden_parameter = mandate_tempo_slow
+	}
+	power_level = {
+		swing = 0
+		hidden_parameter = vizier_cannot_be_snaked
+		parameter = primeminister_dismissal_will_upset_administration
+		parameter = regency_free_end_below_this_point
+		parameter = dismissal_requires_gift
+		parameter = unlock_syphon_treasury_interaction
+		parameter = diarch_gets_a_free_change_on_vassal_contract
+	}
+	power_level = {
+		swing = 15	
+		parameter = unlock_shift_privileges_interaction
+		parameter = unlock_legal_meddling_interaction
+		parameter = regency_cant_be_ended_above_this_point
+	}
+	power_level = {
+		swing = 35
+		parameter = unlock_diarch_revoke_title_interaction
+		parameter = unlock_diarch_retract_vassal_interaction
+		parameter = unlock_diarch_imprison_interaction
+		parameter = liege_pays_currency_surcharge_for_mundane_interactions_mild
+	}
+	power_level = {
+		swing = 60
+		parameter = liege_pays_currency_surcharge_for_mundane_interactions_major
+	}
+	power_level = {
+		swing = 95
+		parameter = liege_pays_currency_surcharge_for_mundane_interactions_massive
+		parameter = regents_can_try_to_overthrow_present_lieges
+		parameter = regents_can_try_to_overthrow_present_lieges_help
+	}
+
+	# Trend towards an even balance of power.
+	swing_balance = {
+		value = 75
+	}
+
+	succession = yes
+	# Candidate scoring for succession.
+	candidate_score = {
+		add = diarchy_titular_liege_regent_succession_score_value
+	}
+
+	loyalty_score = {
+		add = {
+			value = -50
+			desc = tt_liege_is_titular
+		}
+		add = diarch_loyalty_score_type_regency_value
+	}
+
+	end_interaction = interaction_liege_dismiss_titular_liege_regent
+
+	liege_modifier = {
+		name = from_diarch_domain_limit_bonus
+		domain_limit = 1
+		scale = {
+			add = stewardship
+			divide = 6
+		}
+	}
+
+	diarch_modifier = {
+		name = to_diarch_stress_gain
+		stress_gain_mult = 0.3
+	}
+}
+### 监察官 ###
+feudal_subject_supervisor = {
+	start = { always = yes }
+	end = {
+		liege = {
+			OR = {
+				is_independent_ruler = yes
+				is_tributary = yes
+				has_variable = is_feudal_bureaucrat
+				NOR = {
+					subject_contract_has_flag = succession_rights_court_supervision
+					subject_contract_has_flag = succession_rights_governor_appointment
+				}
+			}
+		}
+	}
+
+	# 摄政指令
+	mandate = fill_coffers
+	mandate = swell_armies
+	mandate = promote_authority
+	## Aptitudes.
+	aptitude_score = {
+		add = mandate_type_qualification:fill_coffers
+		add = mandate_type_qualification:swell_armies
+		add = mandate_type_qualification:promote_authority
+	}
+	
+	# 权力分享
+	power_level = {
+		swing = 0
+		hidden_parameter = diarchy_type_is_entrenched_regency
+		hidden_parameter = diarchy_is_primeministership
+		hidden_parameter = mandate_tempo_slow
+	}
+	power_level = {
+		swing = 0
+		parameter = primeminister_dismissal_will_upset_administration
+		parameter = dismissal_requires_gift
+		parameter = unlock_syphon_treasury_interaction
+	}
+	power_level = {
+		swing = 15	
+		parameter = unlock_shift_privileges_interaction
+		parameter = unlock_legal_meddling_interaction
+		parameter = regency_cant_be_ended_above_this_point
+	}
+	power_level = {
+		swing = 35
+		parameter = unlock_diarch_revoke_title_interaction
+		parameter = unlock_diarch_retract_vassal_interaction
+		parameter = unlock_diarch_imprison_interaction
+		parameter = liege_pays_currency_surcharge_for_mundane_interactions_mild
+	}
+	power_level = {
+		swing = 60
+		parameter = liege_pays_currency_surcharge_for_mundane_interactions_major
+	}
+	power_level = {
+		swing = 95
+		parameter = liege_pays_currency_surcharge_for_mundane_interactions_massive
+	}
+
+	# Trend towards an even balance of power.
+	swing_balance = {
+		value = 75
+	}
+
+	succession = no
+	# Candidate scoring for succession.
+	#candidate_score = { add = diarchy_regent_succession_score_value }
+
+	loyalty_score = { add = diarch_loyalty_score_type_regency_value }
+
+	end_interaction = interaction_liege_dismiss_supervisor
+
+	liege_modifier = {
+		name = from_diarch_domain_limit_bonus
+		domain_limit = 1
+		scale = {
+			add = stewardship
+			divide = 6
+		}
+	}
+
+	diarch_modifier = {
+		name = to_diarch_stress_gain
+		stress_gain_mult = 0.1
+	}
+}

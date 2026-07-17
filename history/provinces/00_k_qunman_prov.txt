@@ -1,0 +1,51 @@
+﻿##### d_manshi1 ############################
+
+### c_changwei
+# CHANGWEI
+3661 = {
+	holding = none
+}
+
+
+### c_suiyang
+# SUIYANG
+3663 = {
+	holding = none
+}
+
+
+### c_jingfu
+# JINGFU
+3665 = {
+	holding = none
+}
+
+
+### c_bianli
+# BIANLI
+3666 = {
+	holding = none
+}
+
+
+### c_juyuan
+# JUYUAN
+3667 = {
+	holding = none
+}
+
+
+### c_yixiang
+# YIXIANG
+3668 = {
+	holding = none
+}
+
+
+### c_gaoyang3
+# GAOYANGCHENG3
+3670 = {
+	holding = none
+}
+
+

@@ -1,0 +1,274 @@
+﻿################閾庤景姘?
+duochenshi1={
+  name="nanming433"
+  dynasty=xin539
+  culture="chidi"
+  religion="beidifangling"
+  father=han2044
+
+  3570.1.1 = {
+		birth = yes
+	}
+  3629.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+duochenshi2={
+  name="nanming469"
+  dynasty_house=house_xin540
+  culture="chidi"
+  religion="beidifangling"
+  father=duochenshi1
+
+  3597.1.1 = {
+		birth = yes
+	}
+  3648.12.31 = {
+    death = yes
+  }
+}
+duochenshi3={
+  name="nanming500"
+  dynasty_house=house_xin540
+  culture="chidi"
+  religion="beidifangling"
+  father=duochenshi2
+
+  3628.1.1 = {
+		birth = yes
+	}
+  3681.12.31 = {
+    death = yes
+  }
+}
+duochenshi4={
+  name="nanming106"
+  dynasty_house=house_xin540
+  culture="chidi"
+  religion="beidifangling"
+  father=duochenshi3
+
+  3663.1.1 = {
+		birth = yes
+	}
+  3710.12.31 = {
+    death = yes
+  }
+}
+duochenshi5={
+  name="nanming110"
+  dynasty_house=house_xin540
+  culture="chidi"
+  religion="beidifangling"
+  father=duochenshi4
+
+  3695.1.1 = {
+		birth = yes
+	}
+  3757.12.31 = {
+    death = yes
+  }
+}
+duochenshi6={
+  name="nanming120"
+  dynasty_house=house_xin540
+  culture="chidi"
+  religion="beidifangling"
+  father=duochenshi5
+
+  3734.1.1 = {
+		birth = yes
+	}
+  3791.12.31 = {
+    death = yes
+  }
+}
+duochenshi7={
+  name="nanming126"
+  dynasty_house=house_xin540
+  culture="chidi"
+  religion="beidifangling"
+  father=duochenshi6
+
+  3781.1.1 = {
+		birth = yes
+	}
+  3814.12.31 = {
+    death = yes
+  }
+}
+duochenshi8={#########寮€灞€
+  name="nanming135"
+  dynasty_house=house_xin540
+  culture="chidi"
+  religion="beidifangling"
+  father=duochenshi7
+
+  3809.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+    death = yes
+  }
+}
+duochenshi9={
+  name="nanming168"
+  dynasty_house=house_xin540
+  culture="chidi"
+  religion="beidifangling"
+  father=duochenshi8
+
+  3827.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+    death = yes
+  }
+}
+duochenshi10={
+  name="nanming180"
+  dynasty_house=house_xin540
+  culture="chidi"
+  religion="beidifangling"
+  father=duochenshi8
+
+  3828.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+    death = yes
+  }
+}
+duochenshi11={
+  name="nanming192"
+  dynasty_house=house_xin540
+  culture="chidi"
+  religion="beidifangling"
+  father=duochenshi8
+
+  3830.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+    death = yes
+  }
+}
+duochenshi12={
+  name="nvming25"
+  dynasty_house=house_xin540
+  culture="chidi"
+  religion="beidifangling"
+  father=duochenshi8
+  female=yes
+
+  3830.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+    death = yes
+  }
+}
+duochenshi13={
+  name="nvming31"
+  dynasty_house=house_xin540
+  culture="chidi"
+  religion="beidifangling"
+  father=duochenshi8
+  female=yes
+
+  3832.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+    death = yes
+  }
+}
+
+duochenshi14={#########寮€灞€
+  name="nanming205"
+  dynasty_house=house_xin541
+  culture="chidi"
+  religion="beidifangling"
+  father=duochenshi7
+
+  3813.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+    death = yes
+  }
+}
+duochenshi15={
+  name="nanming330"
+  dynasty_house=house_xin541
+  culture="chidi"
+  religion="beidifangling"
+  father=duochenshi14
+
+  3831.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+    death = yes
+  }
+}
+duochenshi16={
+  name="nanming342"
+  dynasty_house=house_xin541
+  culture="chidi"
+  religion="beidifangling"
+  father=duochenshi14
+
+  3832.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+    death = yes
+  }
+}
+duochenshi17={
+  name="nanming354"
+  dynasty_house=house_xin541
+  culture="chidi"
+  religion="beidifangling"
+  father=duochenshi14
+
+  3833.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+    death = yes
+  }
+}
+duochenshi18={
+  name="nvming46"
+  dynasty_house=house_xin541
+  culture="chidi"
+  religion="beidifangling"
+  father=duochenshi14
+  female=yes
+
+  3834.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+    death = yes
+  }
+}
+duochenshi19={
+  name="nvming61"
+  dynasty_house=house_xin541
+  culture="chidi"
+  religion="beidifangling"
+  father=duochenshi14
+  female=yes
+
+  3835.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+    death = yes
+  }
+}

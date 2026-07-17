@@ -1,0 +1,36 @@
+﻿##### d_erfangshi ############################
+
+### c_erfang
+# ERFANG
+2946 = {
+	holding = none
+}
+# DANMA
+2830 = {
+	holding = none
+}
+
+
+### c_mijiaduo
+
+
+### c_zhinaizuomu
+
+
+### c_danma
+
+
+##### d_danmashi ############################
+
+### c_qiduo1
+
+
+### c_balu
+
+
+### c_chaolai
+
+
+### c_ciyu
+
+

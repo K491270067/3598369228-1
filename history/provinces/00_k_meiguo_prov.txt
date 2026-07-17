@@ -1,0 +1,70 @@
+﻿##### d_meiboshi ############################
+
+### c_jianping
+# JIANPING
+507 = {
+	culture = song
+	religion = yinli
+	holding = castle_holding
+}
+
+
+### c_guide1
+# GUIDE1
+2373 = {
+	culture = song
+	religion = yinli
+	holding = castle_holding
+}
+# NING1
+2375 = {
+	holding = none
+}
+
+
+### c_mei6
+# MEI6
+2374 = {
+	culture = song
+	religion = yinli
+	holding = castle_holding
+}
+# JI17
+2376 = {
+	holding = none
+}
+
+
+##### d_meishi ############################
+
+### c_wei5
+# WEI5
+2377 = {
+	culture = song
+	religion = yinli
+	holding = castle_holding
+}
+# YOU5
+2378 = {
+	holding = none
+}
+
+
+### c_yuan3
+# YUAN3
+2379 = {
+	culture = song
+	religion = yinli
+	holding = castle_holding
+}
+
+
+### c_dan
+# DAN
+503 = {
+	culture = song
+	religion = yinli
+	holding = castle_holding
+}
+
+

@@ -1,0 +1,59 @@
+﻿pool_feudal_governor_promotion_succession = {
+	valid_character = {
+		is_courtier_of = scope:base
+		is_claimant = no
+		is_imprisoned = no
+		is_betrothed = no
+		has_variable = is_feudal_bureaucrat
+	}
+	
+	character_score = {
+		base = 1
+		
+		modifier = {
+			has_variable = is_feudal_bureaucrat
+			add = 5000
+		}
+		compare_modifier = {
+			value = stewardship
+		}
+		modifier = {
+			add = 10
+			age >= 35
+		}
+		modifier = {
+			add = {
+				value = age
+				max = 50
+			}
+		}
+		modifier = {
+			add = 20
+			has_education_stewardship_trigger = yes
+		}
+		modifier = {
+			factor = 5
+			is_female = yes
+			scope:base.faith = {
+				has_doctrine = doctrine_gender_female_dominated
+			}
+		}
+		modifier = {
+			factor = 5
+			is_male = yes
+			scope:base.faith = {
+				has_doctrine = doctrine_gender_male_dominated
+			}
+		}
+	}
+	
+	config = {
+		age = { 25 80 }
+	}
+	
+	selection_count = 1
+	
+	pool = faith
+	court = yes
+	gender = gender_law
+}

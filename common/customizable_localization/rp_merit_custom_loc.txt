@@ -1,0 +1,57 @@
+﻿RPMeritStatus = {
+	type = character
+
+	text = {
+		trigger = { has_character_flag = rp_pending_petition }
+		localization_key = rp_merit_status_pending
+	}
+
+	text = {
+		trigger = { has_character_flag = rp_resentful_mark }
+		localization_key = rp_merit_status_resentful
+	}
+
+	text = {
+		trigger = { has_trait = rp_merit_honor_1 }
+		localization_key = rp_merit_status_honored
+	}
+
+	text = {
+		trigger = { rp_has_rewardable_merit_trigger = yes }
+		localization_key = rp_merit_status_can_petition
+	}
+
+	text = {
+		localization_key = rp_merit_status_quiet
+	}
+}
+
+RPMeritAttitude = {
+	type = character
+
+	text = {
+		trigger = {
+			is_powerful_vassal = yes
+			var:rp_merit_score >= 80
+		}
+		localization_key = rp_merit_attitude_coercive
+	}
+
+	text = {
+		trigger = {
+			OR = {
+				has_trait = ambitious
+				has_trait = greedy
+				opinion = {
+					target = root
+					value < 0
+				}
+			}
+		}
+		localization_key = rp_merit_attitude_demanding
+	}
+
+	text = {
+		localization_key = rp_merit_attitude_humble
+	}
+}

@@ -1,0 +1,407 @@
+﻿
+
+# This window is just for testing. You can spawn it from the console menu.
+window = {
+	name = "test_window"
+	parentanchor = center
+	size = { 1000 800 }
+	layer = top
+	filter_mouse = all
+	alwaystransparent = no
+
+	datacontext = "[SituationWindow.GetSituation]"
+	datacontext = "[GetVariableSystem]"
+	datacontext = "[GetPlayer]"
+
+	using = Window_Background
+	using = Window_Decoration
+	using = Window_Movable
+
+	vbox = {
+		using = Window_Margins
+
+		header_pattern = {
+			layoutpolicy_horizontal = expanding
+
+			blockoverride "header_text"
+			{
+				raw_text = "Participant Groups - Test Window"
+			}
+
+			blockoverride "button_close"
+			{
+				onclick = "[ExecuteConsoleCommand( 'gui.clearwidgets test_window')]"
+			}
+		}
+
+		hbox = {
+			layoutpolicy_horizontal = expanding
+			layoutpolicy_vertical = expanding
+			spacing = 10
+
+			### LEFT SIDE: Participant Group Buttons ###
+			vbox = {
+				layoutpolicy_vertical = expanding
+				max_width = 350
+
+				datacontext = "[SituationWindow.GetSelectedSubRegion]"
+
+				text_label_center = {
+					layoutpolicy_horizontal = expanding
+					margin_bottom = 5
+					raw_text = "Participant Groups"
+					using = Font_Size_Medium
+				}
+
+				spacing = 5
+
+				### Button 1: 鐜嬮亾 (involve_supporters_of_zhou_dynasty) ###
+				button_standard = {
+					layoutpolicy_horizontal = expanding
+					minimumsize = { 0 55 }
+					margin = { 2 2 }
+
+					datacontext_from_model = {
+						datamodel = "[SituationSubRegion.GetParticipantGroups]"
+						index = "0"
+					}
+
+					down = "[ObjectsEqual( SituationSubRegion.GetCharacterParticipantGroup( GetPlayer ).Self, SituationParticipantGroup.Self )]"
+
+					onclick = "[GetVariableSystem.Clear('pg_supporters')]"
+					onclick = "[GetVariableSystem.Clear('pg_opponents')]"
+					onclick = "[GetVariableSystem.Clear('pg_neutral')]"
+					onclick = "[GetVariableSystem.Clear('pg_interloper')]"
+					onclick = "[GetVariableSystem.Toggle('pg_supporters')]"
+
+					hbox = {
+						layoutpolicy_horizontal = expanding
+						layoutpolicy_vertical = expanding
+						spacing = 8
+						margin = { 10 5 }
+
+						background = {
+							using = Background_Area_Dark
+						}
+
+						icon = {
+							size = { 40 40 }
+							texture = "gfx/interface/icons/dynastic_cycle/dynastic_cycle_group_pro.dds"
+
+							background = {
+								texture = "gfx/interface/buttons/button_lifestyles_base.dds"
+								margin = { 5 5 }
+							}
+						}
+
+						text_single = {
+							layoutpolicy_horizontal = expanding
+							layoutpolicy_vertical = expanding
+							text = "involve_supporters_of_zhou_dynasty"
+							align = nobaseline
+							default_format = "#high"
+						}
+
+						expand = {}
+					}
+				}
+
+				### Button 2: 闇搁亾 (involve_opponents_of_zhou_dynasty) ###
+				button_standard = {
+					layoutpolicy_horizontal = expanding
+					minimumsize = { 0 55 }
+					margin = { 2 2 }
+
+					datacontext_from_model = {
+						datamodel = "[SituationSubRegion.GetParticipantGroups]"
+						index = "1"
+					}
+
+					down = "[ObjectsEqual( SituationSubRegion.GetCharacterParticipantGroup( GetPlayer ).Self, SituationParticipantGroup.Self )]"
+
+					onclick = "[GetVariableSystem.Clear('pg_supporters')]"
+					onclick = "[GetVariableSystem.Clear('pg_opponents')]"
+					onclick = "[GetVariableSystem.Clear('pg_neutral')]"
+					onclick = "[GetVariableSystem.Clear('pg_interloper')]"
+					onclick = "[GetVariableSystem.Toggle('pg_opponents')]"
+
+					hbox = {
+						layoutpolicy_horizontal = expanding
+						layoutpolicy_vertical = expanding
+						spacing = 8
+						margin = { 10 5 }
+
+						background = {
+							using = Background_Area_Dark
+						}
+
+						icon = {
+							size = { 40 40 }
+							texture = "gfx/interface/icons/dynastic_cycle/dynastic_cycle_group_expand.dds"
+
+							background = {
+								texture = "gfx/interface/buttons/button_lifestyles_base.dds"
+								margin = { 5 5 }
+							}
+						}
+
+						text_single = {
+							layoutpolicy_horizontal = expanding
+							layoutpolicy_vertical = expanding
+							text = "involve_opponents_of_zhou_dynasty"
+							align = nobaseline
+							default_format = "#high"
+						}
+
+						expand = {}
+					}
+				}
+
+				### Button 3: 涓珛 (involve_neutral_of_zhou_dynasty) ###
+				button_standard = {
+					layoutpolicy_horizontal = expanding
+					minimumsize = { 0 55 }
+					margin = { 2 2 }
+
+					datacontext_from_model = {
+						datamodel = "[SituationSubRegion.GetParticipantGroups]"
+						index = "2"
+					}
+
+					down = "[ObjectsEqual( SituationSubRegion.GetCharacterParticipantGroup( GetPlayer ).Self, SituationParticipantGroup.Self )]"
+
+					onclick = "[GetVariableSystem.Clear('pg_supporters')]"
+					onclick = "[GetVariableSystem.Clear('pg_opponents')]"
+					onclick = "[GetVariableSystem.Clear('pg_neutral')]"
+					onclick = "[GetVariableSystem.Clear('pg_interloper')]"
+					onclick = "[GetVariableSystem.Toggle('pg_neutral')]"
+
+					hbox = {
+						layoutpolicy_horizontal = expanding
+						layoutpolicy_vertical = expanding
+						spacing = 8
+						margin = { 10 5 }
+
+						background = {
+							using = Background_Area_Dark
+						}
+
+						icon = {
+							size = { 40 40 }
+							texture = "gfx/interface/icons/dynastic_cycle/dynastic_cycle_group_advance.dds"
+
+							background = {
+								texture = "gfx/interface/buttons/button_lifestyles_base.dds"
+								margin = { 5 5 }
+							}
+						}
+
+						text_single = {
+							layoutpolicy_horizontal = expanding
+							layoutpolicy_vertical = expanding
+							text = "involve_neutral_of_zhou_dynasty"
+							align = nobaseline
+							default_format = "#high"
+						}
+
+						expand = {}
+					}
+				}
+
+				### Button 4: 鍥涘し (interloper_of_zhou_dynasty) ###
+				button_standard = {
+					layoutpolicy_horizontal = expanding
+					minimumsize = { 0 55 }
+					margin = { 2 2 }
+
+					datacontext_from_model = {
+						datamodel = "[SituationSubRegion.GetParticipantGroups]"
+						index = "3"
+					}
+
+					down = "[ObjectsEqual( SituationSubRegion.GetCharacterParticipantGroup( GetPlayer ).Self, SituationParticipantGroup.Self )]"
+
+					onclick = "[GetVariableSystem.Clear('pg_supporters')]"
+					onclick = "[GetVariableSystem.Clear('pg_opponents')]"
+					onclick = "[GetVariableSystem.Clear('pg_neutral')]"
+					onclick = "[GetVariableSystem.Clear('pg_interloper')]"
+					onclick = "[GetVariableSystem.Toggle('pg_interloper')]"
+
+					hbox = {
+						layoutpolicy_horizontal = expanding
+						layoutpolicy_vertical = expanding
+						spacing = 8
+						margin = { 10 5 }
+
+						background = {
+							using = Background_Area_Dark
+						}
+
+						icon = {
+							size = { 40 40 }
+							texture = "gfx/interface/icons/dynastic_cycle/dynastic_cycle_group_independent.dds"
+
+							background = {
+								texture = "gfx/interface/buttons/button_lifestyles_base.dds"
+								margin = { 5 5 }
+							}
+						}
+
+						text_single = {
+							layoutpolicy_horizontal = expanding
+							layoutpolicy_vertical = expanding
+							text = "interloper_of_zhou_dynasty"
+							align = nobaseline
+							default_format = "#high"
+						}
+
+						expand = {}
+					}
+				}
+
+				expand = {}
+			}
+
+			### RIGHT SIDE: Description Area ###
+			vbox = {
+				layoutpolicy_horizontal = expanding
+				layoutpolicy_vertical = expanding
+
+				background = {
+					using = Background_Area
+				}
+
+				scrollbox = {
+					layoutpolicy_horizontal = expanding
+					layoutpolicy_vertical = expanding
+
+					blockoverride "scrollbox_content"
+					{
+						vbox = {
+							layoutpolicy_horizontal = expanding
+							layoutpolicy_vertical = expanding
+							margin = { 15 15 }
+							spacing = 10
+
+							text_label_center = {
+								layoutpolicy_horizontal = expanding
+								margin_bottom = 10
+								raw_text = "Group Description"
+								using = Font_Size_Medium
+							}
+
+							### DEFAULT: No group selected ###
+							text_multi = {
+								visible = "[Not( Or( VariableSystem.Exists('pg_supporters'), VariableSystem.Exists('pg_opponents'), VariableSystem.Exists('pg_neutral'), VariableSystem.Exists('pg_interloper') ) )]"
+								layoutpolicy_horizontal = expanding
+								margin = { 10 10 }
+								raw_text = "Click a group button on the left to view its description here."
+								default_format = "#Weak"
+								align = left|nobaseline
+								autoresize = yes
+							}
+
+							### 鐜嬮亾 Description ###
+							vbox = {
+								visible = "[VariableSystem.Exists('pg_supporters')]"
+								layoutpolicy_horizontal = expanding
+								spacing = 8
+
+								text_single = {
+									layoutpolicy_horizontal = expanding
+									raw_text = "involve_supporters_of_zhou_dynasty"
+									using = Font_Size_Big
+									default_format = "#high"
+									align = nobaseline
+								}
+
+								text_multi = {
+									layoutpolicy_horizontal = expanding
+									margin = { 10 5 }
+									raw_text = "involve_supporters_of_zhou_dynasty_description"
+									default_format = "#Weak"
+									align = left|nobaseline
+									autoresize = yes
+								}
+							}
+
+							### 闇搁亾 Description ###
+							vbox = {
+								visible = "[VariableSystem.Exists('pg_opponents')]"
+								layoutpolicy_horizontal = expanding
+								spacing = 8
+
+								text_single = {
+									layoutpolicy_horizontal = expanding
+									raw_text = "involve_opponents_of_zhou_dynasty"
+									using = Font_Size_Big
+									default_format = "#high"
+									align = nobaseline
+								}
+
+								text_multi = {
+									layoutpolicy_horizontal = expanding
+									margin = { 10 5 }
+									raw_text = "involve_opponents_of_zhou_dynasty_description"
+									default_format = "#Weak"
+									align = left|nobaseline
+									autoresize = yes
+								}
+							}
+
+							### 涓珛 Description ###
+							vbox = {
+								visible = "[VariableSystem.Exists('pg_neutral')]"
+								layoutpolicy_horizontal = expanding
+								spacing = 8
+
+								text_single = {
+									layoutpolicy_horizontal = expanding
+									raw_text = "involve_neutral_of_zhou_dynasty"
+									using = Font_Size_Big
+									default_format = "#high"
+									align = nobaseline
+								}
+
+								text_multi = {
+									layoutpolicy_horizontal = expanding
+									margin = { 10 5 }
+									raw_text = "involve_neutral_of_zhou_dynasty_description"
+									default_format = "#Weak"
+									align = left|nobaseline
+									autoresize = yes
+								}
+							}
+
+							### 鍥涘し Description ###
+							vbox = {
+								visible = "[VariableSystem.Exists('pg_interloper')]"
+								layoutpolicy_horizontal = expanding
+								spacing = 8
+
+								text_single = {
+									layoutpolicy_horizontal = expanding
+									raw_text = "interloper_of_zhou_dynasty"
+									using = Font_Size_Big
+									default_format = "#high"
+									align = nobaseline
+								}
+
+								text_multi = {
+									layoutpolicy_horizontal = expanding
+									margin = { 10 5 }
+									raw_text = "interloper_of_zhou_dynasty_description"
+									default_format = "#Weak"
+									align = left|nobaseline
+									autoresize = yes
+								}
+							}
+
+							expand = {}
+						}
+					}
+				}
+			}
+		}
+	}
+}

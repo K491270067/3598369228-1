@@ -1,0 +1,52 @@
+﻿##### d_diaoshi ############################
+
+### c_diao
+# DIAO
+1464 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+# QIANSHUI
+1461 = {
+	holding = none
+}
+
+
+### c_diaoyin
+# DIAOYIN
+1460 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+# XIENA
+2803 = {
+	holding = none
+}
+
+
+##### d_diaoqishi ############################
+
+### c_xiangluo
+# XIANGLUO
+1462 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+### c_zhilu
+# ZHILU
+1463 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+# DIAOQI
+2805 = {
+	holding = none
+}
+
+

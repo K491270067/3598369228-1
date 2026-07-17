@@ -1,0 +1,17 @@
+﻿l_spanish:
+called_autonomous_vassal_opening: "To [target_vassal.GetFullNameNoTooltip]"
+called_autonomous_vassal_desc: "The realm is under the scourge of war. Now is the time for you to bring honor to your house. Muster your armies at once. We shall drive back the enemy together. Your loyalty will not be forgotten."
+called_autonomous_vassal_agree: "I shall fulfill my obligation"
+called_autonomous_vassal_disagree: "The situation still requires observation..."
+
+called_autonomous_vassal_agree_liege: "To [target_liege.GetFullNameNoTooltip]"
+called_autonomous_vassal_agree_liege_desc: "I shall fulfill my obligation and defend the realm alongside you. Let our enemies tremble before our armies!"
+called_autonomous_vassal_agree_liege.a: "Good"
+
+called_autonomous_vassal_disagree_liege: "To [target_liege.GetFullNameNoTooltip]"
+called_autonomous_vassal_disagree_liege_desc: "Forgive me for not joining your war at once. I am certain there are other ways for me to contribute to the prosperity of the realm at this moment. I sincerely wish for your victorious return."
+called_autonomous_vassal_disagree_liege.a: "I will deal with you later"
+
+called_autonomous_vassal_revolt_liege: "To [target_liege.GetFullNameNoTooltip]"
+called_autonomous_vassal_revolt_liege_desc: "It seems you are mired in war, and I have long awaited this opportunity. Your unjust rule and oppression over us end here!"
+called_autonomous_vassal_revolt_liege.a: "You traitor!"

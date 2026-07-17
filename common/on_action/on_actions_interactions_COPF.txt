@@ -1,0 +1,31 @@
+﻿# 连接到原版触发器 # ============================================================================================================================================
+
+# 任何角色死亡时（ROOT：死亡者）# 此事件在死亡前触发 # ————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+on_death = {
+	on_actions = {
+		denied_title_succession_handle
+	}
+}
+
+# 自定义触发器 # ============================================================================================================================================
+
+# 被否认头衔继承：给所有继承人触发 # ————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+denied_title_succession_handle = {
+	trigger = {
+		subject_contract_has_flag = can_deny_title_succession
+	}
+	effect = {
+		liege = { save_scope_as = scope_deny_title_succession_liege }
+		every_held_title = {
+			limit = { has_variable = is_restored_title_succession }
+			remove_variable = is_restored_title_succession
+		}
+		every_heir = {
+			limit = { is_independent_ruler = no }
+			trigger_event = {
+				id = deny_succession.3
+				delayed = yes
+			}
+		}
+	}
+}

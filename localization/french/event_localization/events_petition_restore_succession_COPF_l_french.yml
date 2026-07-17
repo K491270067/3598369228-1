@@ -1,0 +1,17 @@
+﻿l_french:
+ petition_restore_succession_title: "Petition to Restore Title Succession"
+ petition_restore_succession_desc: "\n“Previously, you declared that certain titles would no longer be inherited by my family, which has deeply unsettled my heir. They are uncertain of what will happen next.”\n\n#flavor Your vassal stands in the great hall, presenting what he believes to be a reasonable request.#!"
+ petition_restore_succession_submission_desc: "\n\n“I hope you will reconsider this decision. To that end, I wish to reaffirm my loyalty to you!”\n\n#flavor He drops to one knee and begins to swear his fealty to you.#!"
+ petition_restore_succession_hook_desc: "\n\n“I hope you will reconsider this decision. In return, I am willing to meet any demand you may have!”\n\n#flavor He drops to one knee, speaking at length of favors between liege and vassal, and begins to swear his fealty to you.#!"
+ petition_restore_succession_gift_desc: "\n\n“I hope you will reconsider this decision. In return, please accept this gift!”\n\n#flavor He drops to one knee, presenting a gift that is clearly carefully chosen, and begins to swear his fealty to you.#!"
+ petition_restore_succession_agree: "That suits me well!"
+ petition_restore_succession_disagree: "Dismiss"
+
+ restore_all_title_succession: "Succession to All Titles Is No Longer Denied"
+
+ petition_restore_succession_agree_reply_vassal_opening: "To [scope_petition_restore_succession_vassal.GetFullNameNoTooltip]"
+ petition_restore_succession_disagree_reply_vassal_opening: "To [scope_petition_restore_succession_vassal.GetFullNameNoTooltip]"
+ petition_restore_succession_agree_reply_vassal_desc: "Your loyalty is beyond doubt, and I would never trouble a faithful vassal. My decisions are always guided by the needs of the [realm], and it is clear that circumstances have now changed."
+ petition_restore_succession_agree_reply_vassal_desc.1: "This is wonderful"
+ petition_restore_succession_disagree_reply_vassal_desc: "My decision was made in accordance with the needs of the [realm], and personal appeals cannot outweigh the common good. I hope you can understand."
+ petition_restore_succession_disagree_reply_vassal_desc.1: "Perhaps there is another way..."

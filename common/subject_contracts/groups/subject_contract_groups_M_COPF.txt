@@ -1,0 +1,52 @@
+﻿# 封建制封臣契约组
+feudal_vassal = {
+	contracts = {
+		feudal_government_succession_rights
+		feudal_admin_government_candidate_preference
+		feudal_government_taxes
+		feudal_government_levies
+		special_contract
+		religious_rights
+		fortification_rights
+		coinage_rights
+		war_declaration_rights
+		council_rights
+		title_revocation_rights
+		jizya_special_rights
+	}
+}
+# 封建制自主封臣契约组
+feudal_autonomous_vassal = {
+	is_tributary = yes
+	suzerain_line_type = line_suzerain
+	tributary_line_type = line_tributary
+	tributary_heir_succession = yes
+	suzerain_heir_succession = yes
+	should_show_as_suzerain_realm_name = yes
+	should_show_as_suzerain_realm_color = yes
+
+	contracts = {
+		contract_feudal_autonomous_taxes
+		contract_feudal_liege_offer_protection
+		contract_feudal_vassal_support_war
+	}
+}
+
+# 以下是为了Mod兼容性
+# AGOT
+lp_feudal_vassal = {
+	contracts = {
+		feudal_government_succession_rights
+		feudal_admin_government_candidate_preference
+		feudal_government_taxes
+		feudal_government_levies
+		special_contract
+		religious_rights
+		fortification_rights
+		coinage_rights
+		war_declaration_rights
+		council_rights
+		title_revocation_rights
+		marriage_favor_rights
+	}
+}

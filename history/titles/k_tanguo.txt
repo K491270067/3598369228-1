@@ -1,0 +1,44 @@
+﻿d_gongdushi = {
+	3664.1.1 = {
+		liege = "k_tanguo"
+		holder = han806
+	}
+	3698.1.1 = {
+		holder = han807
+	}
+	3735.1.1 = {
+		holder = gongdu1
+	}
+	3761.1.1 = {
+		holder = gongdu2
+	}
+	3806.1.1 = {
+		holder = gongdu3
+	}
+	3849.1.1 = {
+		change_development_level = 17
+		government = feudal_admin_government
+	}
+}
+k_tanguo = {
+	3664.1.1 = {
+		liege = "e_zhoutianzi"
+		holder = han806
+	}
+	3698.1.1 = {
+		holder = han807
+	}
+	3735.1.1 = {
+		holder = han808
+	}
+	3761.1.1 = {
+		holder = han809
+	}
+	3806.1.1 = {
+		holder = han810
+	}
+	3849.1.1 = {
+		change_development_level = 22
+		government = feudal_admin_government
+	}
+}

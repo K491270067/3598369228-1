@@ -1,0 +1,68 @@
+﻿d_mengshi = {
+	3574.1.1 = {
+		liege = "k_zhuanyuguo"
+		holder = han932
+	}
+	3624.12.31 = {
+		holder = han933
+	}
+	3660.12.31 = {
+		holder = han934
+	}
+	3684.12.31 = {
+		holder = han935
+	}
+	3737.12.31 = {
+		holder = han936
+	}
+	3754.12.31 = {
+		holder = han937
+	}
+	3797.12.31 = {
+		holder = han938
+	}
+	3805.12.31 = {
+		holder = han939
+	}
+	3830.12.31 = {
+		holder = han943
+	}
+	3849.1.1 = {
+		change_development_level = 20
+		government = feudal_admin_government
+	}
+}
+k_zhuanyuguo = {
+	3574.1.1 = {
+		liege = "e_zhoutianzi"
+		holder = han932
+	}
+	3624.12.31 = {
+		holder = han933
+	}
+	3660.12.31 = {
+		holder = han934
+	}
+	3684.12.31 = {
+		holder = han935
+	}
+	3737.12.31 = {
+		holder = han936
+	}
+	3754.12.31 = {
+		holder = han937
+	}
+	3797.12.31 = {
+		holder = han938
+	}
+	3805.12.31 = {
+		holder = han939
+	}
+	3830.12.31 = {
+		holder = han940
+	}
+	3849.1.1 = {
+		change_development_level = 22
+		government = feudal_admin_government
+	}
+}

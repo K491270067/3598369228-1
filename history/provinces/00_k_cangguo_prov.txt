@@ -1,0 +1,62 @@
+﻿##### d_hougangshi ############################
+
+### c_ping2
+# PING2
+727 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+# JI7
+728 = {
+	holding = none
+}
+
+
+### c_wulu
+# WULU
+723 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+##### d_cangshi ############################
+
+### c_nie
+# NIE
+725 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+### c_chaocheng
+
+
+##### d_yimenshi ############################
+
+### c_huang2
+# HUANG2
+729 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+# YUANCHENG
+730 = {
+	holding = none
+}
+
+
+### c_suo1
+# SUO1
+731 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+

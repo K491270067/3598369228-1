@@ -1,0 +1,196 @@
+﻿##### d_weishi ############################
+
+### c_cao1
+# CAO1
+681 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+### c_chuqiu1
+# CHUQIU1
+683 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+### c_diqiu
+# DIQIU
+686 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+# CHENGCHU
+684 = {
+	holding = none
+}
+# XUN
+685 = {
+	holding = none
+}
+
+
+##### d_changshi1 ############################
+
+### c_qian1
+# QIAN1
+1152 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+### c_bei
+# BEI
+1177 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+# DANGYIN
+1159 = {
+	holding = none
+}
+
+
+### c_guijing
+# GUIJING
+671 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+##### d_ningshi ############################
+
+### c_yin6
+# YIN6
+1176 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+### c_neihuang
+# NEIHUANG
+1178 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+# XIYANG
+1175 = {
+	holding = none
+}
+
+
+### c_yishi1
+# YISHI1
+1160 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+##### d_sunshi ############################
+
+### c_yongyu
+# YONGYU
+1151 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+### c_dunqiu1
+# DUNQIU1
+1153 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+### c_mei4
+# ZHAOGE
+1109 = {
+	holding = none
+}
+
+
+##### d_kangshi ############################
+
+### c_kangqiu
+# KANGQIU
+1174 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+# FANGLING
+1157 = {
+	holding = none
+}
+
+
+### c_ningxinzhong
+# NINGXINZHONG
+1156 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+### c_you2
+# YOU2
+1158 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+##### d_shishi1 ############################
+
+### c_zhongmou1
+# ZHONGMOU1
+1154 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+### c_linlv
+# LINLV
+1155 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+### c_shi2
+# SHI2
+1173 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+# WU8
+2531 = {
+	holding = none
+}
+
+

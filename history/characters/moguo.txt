@@ -1,0 +1,117 @@
+﻿###########閯氬浗
+jixingmoshi1={
+  name="nanming1128"
+  dynasty=baijia297
+	religion="xizhouli" 
+	culture="zhou"
+  father=han31
+
+  3828.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+    death = yes
+  }
+}
+jixingmoshi2={
+  name="lu5"
+  dynasty=baijia297
+	religion="xizhouli" 
+	culture="zhou"
+  father=jixingmoshi1
+
+  3846.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+    death = yes
+  }
+}
+jixingmoshi3={
+  name="zang"
+  dynasty=baijia297
+	religion="xizhouli" 
+	culture="zhou"
+  father=jixingmoshi1
+
+  3847.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+    death = yes
+  }
+}
+jixingmoshi4={
+  name="nvming126"
+  dynasty=baijia297
+	religion="xizhouli" 
+	culture="zhou"
+  father=jixingmoshi1
+  female=yes
+
+  3848.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+    death = yes
+  }
+}
+#########閯氭皬
+jixingmoshi5={
+  name="jiang2"
+  dynasty_house=house_xin320
+	religion="xizhouli" 
+	culture="zhou"
+  father=han31
+
+  3829.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+    death = yes
+  }
+}
+jixingmoshi6={
+  name="hui1"
+  dynasty_house=house_xin320
+	religion="xizhouli" 
+	culture="zhou"
+  father=jixingmoshi5
+
+  3847.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+    death = yes
+  }
+}
+jixingmoshi7={
+  name="nvming172"
+  dynasty_house=house_xin320
+	religion="xizhouli" 
+	culture="zhou"
+  father=jixingmoshi5
+  female=yes
+
+  3848.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+    death = yes
+  }
+}
+#########铏㈡皬
+jixingmoshi8={
+  name="ao1"
+  dynasty_house=house_xin625
+	religion="xizhouli" 
+	culture="zhou"
+  father=han31
+
+  3830.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+    death = yes
+  }
+}

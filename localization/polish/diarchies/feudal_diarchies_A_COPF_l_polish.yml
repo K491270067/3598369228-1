@@ -1,0 +1,22 @@
+﻿l_polish:
+# feudal_titular_liege_regency: "[Character.Custom('GetFeudalTitularLiegeRegencyTypeName')]"
+# feudal_titular_liege_regency_diarchy_type: "[GuiScope.SetRoot(Character.MakeScope).Custom('GetFeudalTitularLiegeRegencyTypeName')]"
+# feudal_titular_liege_regency_diarch_title: "[GuiScope.SetRoot(Character.MakeScope).Custom('GetFeudalTitularLiegeRegencyTypeName')]"
+ feudal_titular_liege_regency: "Mayor of the Palace"
+ feudal_titular_liege_regency_diarchy_type: "Mayor of the Palace"
+ feudal_titular_liege_regency_diarch_title: "Mayor of the Palace"
+
+ FEUDAL_TITULAR_LIEGE_REGENCY_DEFAULT: "De Facto Power Regent"
+ FEUDAL_TITULAR_LIEGE_REGENCY_FRANKISH: "Mayor of the Palace"
+
+# feudal_subject_supervisor: "[Character.Custom('GetFeudalSubjectSupervisorTypeName')]"
+# feudal_subject_supervisor_diarchy_type: "[GuiScope.SetRoot(Character.MakeScope).Custom('GetFeudalSubjectSupervisorTypeName')]"
+# feudal_subject_supervisor_diarch_title: "[GuiScope.SetRoot(Character.MakeScope).Custom('GetFeudalSubjectSupervisorTypeName')]"
+ feudal_subject_supervisor: "Supervisor"
+ feudal_subject_supervisor_diarchy_type: "Supervisor"
+ feudal_subject_supervisor_diarch_title: "Supervisor"
+
+ FEUDAL_SUBJECT_SUPERVISOR_DEFAULT: "Supervisor"
+ FEUDAL_SUBJECT_SUPERVISOR_FRANKISH: "Supervisor"
+
+ tt_liege_is_titular: "[liege|E] is merely a Titular Liege"

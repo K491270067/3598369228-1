@@ -1,0 +1,40 @@
+﻿##### d_jinyunshi ############################
+
+### c_zhongdu
+# ZHONGDU
+452 = {
+	culture = qi
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_zi7
+# ZI7
+2276 = {
+	culture = qi
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+##### d_yunshi2 ############################
+
+### c_ningyang
+# NINGYANG
+2277 = {
+	culture = qi
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_sangqiu
+# SANGQIU
+449 = {
+	culture = qi
+	religion = xizhouli
+	holding = castle_holding
+}
+
+

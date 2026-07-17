@@ -1,0 +1,169 @@
+﻿##### d_loufanshi ############################
+
+### c_ma1
+# MA1
+1301 = {
+	culture = beirong
+	religion = saman
+	holding = nomad_holding
+}
+# LAHEGU
+1322 = {
+	holding = none
+}
+
+
+### c_loufan
+# LOUFAN
+1302 = {
+	culture = beirong
+	religion = saman
+	holding = nomad_holding
+}
+# XINCHENG4
+1303 = {
+	holding = none
+}
+
+
+### c_shangwu
+# SHANGWU
+1320 = {
+	culture = beirong
+	religion = saman
+	holding = nomad_holding
+}
+# LIEYANG
+1319 = {
+	holding = none
+}
+
+
+### c_xingfen
+# XINGFEN
+1269 = {
+	culture = beirong
+	religion = saman
+	holding = nomad_holding
+}
+
+
+##### d_luoleishi ############################
+
+### c_luo
+# LUO
+1343 = {
+	culture = beirong
+	religion = saman
+	holding = nomad_holding
+}
+# TONGGUO
+1341 = {
+	holding = none
+}
+
+
+### c_wucheng4
+# WUCHENG4
+1342 = {
+	culture = beirong
+	religion = saman
+	holding = nomad_holding
+}
+# ZHONGLING
+1344 = {
+	holding = none
+}
+
+
+### c_yunping
+# YUNPING
+2667 = {
+	culture = beirong
+	religion = saman
+	holding = nomad_holding
+}
+# KUNXIN
+2672 = {
+	holding = none
+}
+
+
+##### d_huyanshi ############################
+
+### c_qijie
+# QIJIE
+2671 = {
+	culture = beirong
+	religion = saman
+	holding = nomad_holding
+}
+# QI15
+2673 = {
+	holding = none
+}
+
+
+### c_pinglu1
+# PINGLU1
+2674 = {
+	culture = beirong
+	religion = saman
+	holding = nomad_holding
+}
+# XIFANG
+2675 = {
+	holding = none
+}
+
+
+### c_jingpin
+# JINGPIN
+2676 = {
+	culture = beirong
+	religion = saman
+	holding = nomad_holding
+}
+# NAIHE
+2677 = {
+	holding = none
+}
+
+
+##### d_hutushi ############################
+
+### c_lie
+# LIE
+1304 = {
+	culture = beirong
+	religion = saman
+	holding = nomad_holding
+}
+# LANGU
+1347 = {
+	holding = none
+}
+
+
+### c_xuanwu
+# XUANWU
+1345 = {
+	culture = beirong
+	religion = saman
+	holding = nomad_holding
+}
+
+
+### c_xian4
+# XIAN4
+2678 = {
+	culture = beirong
+	religion = saman
+	holding = nomad_holding
+}
+# RANG1
+2679 = {
+	holding = none
+}
+
+

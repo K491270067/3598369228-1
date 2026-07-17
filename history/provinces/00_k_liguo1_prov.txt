@@ -1,0 +1,53 @@
+﻿##### d_lishi3 ############################
+
+### c_li10
+# LI10
+1164 = {
+	culture = jin
+	religion = xizhouli
+	holding = castle_holding
+}
+# CHU2
+2522 = {
+	holding = none
+}
+
+
+### c_wo2
+# WO2
+2535 = {
+	culture = jin
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_she1
+# SHE1
+1166 = {
+	culture = jin
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+##### d_hushi1 ############################
+
+### c_hukou1
+# HUKOU1
+1165 = {
+	culture = jin
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_lixing
+# LIXING
+2536 = {
+	culture = jin
+	religion = xizhouli
+	holding = castle_holding
+}
+
+

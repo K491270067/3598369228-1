@@ -1,0 +1,204 @@
+﻿namespace = deny_succession
+
+deny_succession.1 = { # 封臣收到：领主否决继承了一个头衔
+	type = letter_event
+	opening = {
+		desc = denied_title_succession_vassal_receive	
+	}
+	desc = denied_title_succession_vassal_receive_desc
+	sender = scope:actor
+	
+	option = {
+		name = denied_title_succession_vassal_receive.a
+		show_as_tooltip = {
+			custom_tooltip = {
+				text = denied_title_succession_vassal_receive.a_effect
+			}
+		}
+	}
+}
+
+deny_succession.2 = { # 封臣收到：领主恢复继承了一个头衔
+	type = letter_event
+	opening = {
+		desc = restored_title_succession_vassal_receive
+	}
+	desc = restored_title_succession_vassal_receive_desc
+		
+	sender = scope:actor
+	
+	option = {
+		name = restored_title_succession_vassal_receive.a
+		show_as_tooltip = {
+			custom_tooltip = {
+				text = restored_title_succession_vassal_receive.a_effect
+			}
+		}
+	}
+}
+
+deny_succession.3 = { # 封臣继承人收到：否认继承生效，勒令所有继承人将被否认继承的头衔还给领主
+	type = character_event
+	title = denied_title_succession_title
+	desc = denied_title_succession_desc
+	theme = crown
+	left_portrait = {
+		character = root
+		animation = crowning
+	}
+	right_portrait = {
+		character = scope:scope_deny_title_succession_liege
+		animation = thinking
+	}
+	trigger = {
+		any_held_title = {
+			has_variable = is_denied_title_succession
+		}
+		this != scope:scope_deny_title_succession_liege
+	}
+
+	immediate = {
+		this = { save_scope_as = scope_deny_title_succession_vassal_heir }
+	}
+	# 封臣同意
+	option = {
+		name = denied_title_succession_agree
+		
+		effect_forced_title_return_agree = {
+			TARGET_VASSAL = scope:scope_deny_title_succession_vassal_heir
+			TARGET_LIEGE = scope:scope_deny_title_succession_liege
+		}
+
+		scope:scope_deny_title_succession_liege = { #封臣同意：事件通知领主
+			trigger_event = {
+				id = deny_succession.4
+				delayed = yes
+			}
+		}
+		# 封臣同意：AI考虑因素（最高100）
+		ai_chance = {
+			base = 5
+			# 如果和对方有亲近关系，则非常愿意（+50）
+			modifier = {
+				OR = {
+					has_relation_friend = scope:scope_deny_title_succession_liege
+					has_relation_best_friend = scope:scope_deny_title_succession_liege
+					has_relation_lover = scope:scope_deny_title_succession_liege
+					has_relation_soulmate = scope:scope_deny_title_succession_liege
+				}
+				add = 50
+			}
+			# 如果对方是直系长辈，则较为愿意（+25）
+			modifier = {
+				OR = {
+					is_parent_of = scope:scope_deny_title_succession_liege
+					is_grandparent_of = scope:scope_deny_title_succession_liege
+					is_great_grandparent_of = scope:scope_deny_title_succession_liege
+				}
+				add = 25
+			}
+			# 如果领主实力雄厚
+			modifier = {
+				add = {
+					value = scope:scope_deny_title_succession_liege.max_military_strength
+					divide = max_military_strength
+					multiply = 25
+				}
+			}
+		}
+	}
+	# 封臣拒绝
+	option = {
+		name = denied_title_succession_disagree
+
+		effect_forced_title_return_disagree = {
+			TARGET_VASSAL = scope:scope_deny_title_succession_vassal_heir
+			TARGET_LIEGE = scope:scope_deny_title_succession_liege
+		}
+		
+		scope:scope_deny_title_succession_liege = { #封臣拒绝：事件通知领主
+			trigger_event = {
+				id = deny_succession.5
+				delayed = yes
+			}
+		}
+		# 封臣拒绝：AI考虑因素（最高100）
+		ai_chance = {
+			base = 0
+			# 如果封臣实力雄厚
+			modifier = {
+				add = {
+					value = max_military_strength
+					divide = scope:scope_deny_title_succession_liege.max_military_strength
+					multiply = 25
+				}
+			}
+		}
+	}
+	on_trigger_fail = {
+		every_held_title = {
+			if = {
+				limit = { has_variable = is_denied_title_succession }
+				remove_variable = is_denied_title_succession
+			}
+			if = {
+				limit = { has_variable = is_restored_title_succession }
+				remove_variable = is_restored_title_succession
+			}
+		}
+	}
+}
+
+deny_succession.4 = { # 领主收到：同意归还被否认继承的头衔
+	type = letter_event
+	opening = {
+		desc = denied_title_succession_agree_liege
+	}
+	desc = denied_title_succession_agree_liege_desc
+		
+	sender = scope:scope_deny_title_succession_vassal_heir
+	
+	option = {
+		name = denied_title_succession_agree_liege.a
+		
+		show_as_tooltip = {
+			effect_forced_title_return_agree = {
+				TARGET_VASSAL = scope:scope_deny_title_succession_vassal_heir
+				TARGET_LIEGE = scope:scope_deny_title_succession_liege
+			}
+		}
+	}
+}
+
+deny_succession.5 = { # 领主收到：拒绝归还被否认继承的头衔
+	type = letter_event
+	opening = {
+		desc = denied_title_succession_disagree_liege
+	}
+	desc = denied_title_succession_disagree_liege_desc
+		
+	sender = scope:scope_deny_title_succession_vassal_heir
+
+	option = {
+		name = denied_title_succession_disagree_liege.a
+		
+		show_as_tooltip = {		
+			effect_forced_title_return_disagree = {
+				TARGET_VASSAL = scope:scope_deny_title_succession_vassal_heir
+				TARGET_LIEGE = scope:scope_deny_title_succession_liege
+			}
+		}
+	}
+}
+
+deny_succession.6 = { # 清除多次否认头衔继承的标记变量
+	type = character_event
+	hidden = yes
+
+	immediate = {
+		every_held_title = {
+			limit = { has_variable = is_restored_title_succession }
+			remove_variable = is_restored_title_succession
+		}
+	}
+}

@@ -1,0 +1,52 @@
+﻿county_realm_tax_level_icon = {
+	if = {
+		limit = { has_realm_law = government_tax_1 }
+		add = 2
+	}
+	else_if = {
+		limit = { has_realm_law = government_tax_2 }
+		add = 3
+	}
+	else_if = {
+		limit = { has_realm_law = government_tax_3 }
+		add = 4
+	}
+	else_if = {
+		limit = { has_realm_law = government_tax_4 }
+		add = 5
+	}
+	else_if = {
+		limit = { has_realm_law = government_tax_5 }
+		add = 6
+	}
+	else_if = {
+		limit = { has_realm_law = government_tax_6 }
+		add = 7
+	}
+}
+county_realm_expenditure_level_icon = {
+	if = {
+		limit = { has_realm_law = government_expenditure_1 }
+		add = 2
+	}
+	else_if = {
+		limit = { has_realm_law = government_expenditure_2 }
+		add = 3
+	}
+	else_if = {
+		limit = { has_realm_law = government_expenditure_3 }
+		add = 4
+	}
+	else_if = {
+		limit = { has_realm_law = government_expenditure_4 }
+		add = 5
+	}
+	else_if = {
+		limit = { has_realm_law = government_expenditure_5 }
+		add = 6
+	}
+	else_if = {
+		limit = { has_realm_law = government_expenditure_6 }
+		add = 7
+	}
+}

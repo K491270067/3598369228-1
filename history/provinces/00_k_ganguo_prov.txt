@@ -1,0 +1,44 @@
+﻿##### d_ganshi ############################
+
+### c_quesai
+# QUESAI
+774 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_gan2
+# GAN2
+795 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+# JIE1
+794 = {
+	holding = none
+}
+
+
+##### d_shenshi5 ############################
+
+### c_shenchui
+# SHENCHUI
+798 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_gantang
+# GANTANG
+799 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+

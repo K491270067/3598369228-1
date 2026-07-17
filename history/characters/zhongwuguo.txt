@@ -1,0 +1,313 @@
+﻿### 钟吾国--嬴姓 ###
+#参考《春秋古国——钟吾国,早前族人跟“鐘”有关,吴国灭楚因为它》
+han1771={
+  name="yan1"
+  dynasty=xin459#钟离
+	religion="yili" 
+	culture="xu"
+  father=han1607
+
+  3779.1.1 = {
+		birth = yes
+	}
+  3837.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1772={
+  name="guang"
+  dynasty_house=house_xin71#钟离
+	religion="yili" 
+	culture="xu"
+  father=han1771
+
+  3803.1.1 = {
+		birth = yes
+	}
+  3849.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1773={
+  name="bai"#平王东迁时钟吾国国君
+  dynasty_house=house_xin71#钟离
+	religion="yili" 
+	culture="xu"
+  father=han1772
+
+  3828.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han1774={
+  name="nanming362"#储君1号
+  dynasty_house=house_xin71#钟离
+	religion="yili" 
+	culture="xu"
+  father=han1773
+
+  3847.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han1775={
+  name="nanming363"#储君2号
+  dynasty_house=house_xin71#钟离
+	religion="yili" 
+	culture="xu"
+  father=han1773
+
+  3848.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han1776={
+  name="nvming79"#女
+  dynasty_house=house_xin71#钟离
+	religion="yili" 
+	culture="xu"
+  father=han1773
+  female=yes
+
+  3849.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han1777={
+  name="gao"#钟吾国国君弟1
+  dynasty_house=house_xin71#钟离
+	religion="yili" 
+	culture="xu"
+  father=han1772
+
+  3830.3.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han1778={
+  name="ke1"#钟吾国国君弟2
+  dynasty_house=house_xin71#钟离
+	religion="yili" 
+	culture="xu"
+  father=han1772
+
+  3834.3.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han1779={
+  name="nanming364"#钟吾国国君弟3
+  dynasty_house=house_xin71#钟离
+	religion="yili" 
+	culture="xu"
+  father=han1772
+
+  3835.3.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han1780={
+  name="nvming80"#钟吾国国君弟3
+  dynasty_house=house_xin71#钟离
+	religion="yili" 
+	culture="xu"
+  father=han1772
+
+  3836.3.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+########良時氏
+zhongwu1={
+  name="nanming72"
+  dynasty_house=house_xin460
+	religion="yili" 
+	culture="xu"
+  father=han1771
+
+  3820.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+zhongwu2={
+  name="nanming97"
+  dynasty_house=house_xin460
+	religion="yili" 
+	culture="xu"
+  father=zhongwu1
+
+  3838.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+zhongwu3={
+  name="nanming139"
+  dynasty_house=house_xin460
+	religion="yili" 
+	culture="xu"
+  father=zhongwu1
+
+  3839.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+zhongwu4={
+  name="nvming241"
+  dynasty_house=house_xin460
+	religion="yili" 
+	culture="xu"
+  father=zhongwu1
+  female=yes
+
+  3840.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+zhongwu5={
+  name="nvming246"
+  dynasty_house=house_xin460
+	religion="yili" 
+	culture="xu"
+  father=zhongwu1
+  female=yes
+
+  3841.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+########厚丘氏
+zhongwu6={
+  name="nanming447"
+  dynasty_house=house_xin461
+	religion="yili" 
+	culture="xu"
+  father=han1771
+
+  3825.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+zhongwu7={
+  name="nanming452"
+  dynasty_house=house_xin461
+	religion="yili" 
+	culture="xu"
+  father=zhongwu6
+
+  3843.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+zhongwu8={
+  name="nanming466"
+  dynasty_house=house_xin461
+	religion="yili" 
+	culture="xu"
+  father=zhongwu6
+
+  3844.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+zhongwu9={
+  name="nvming214"
+  dynasty_house=house_xin461
+	religion="yili" 
+	culture="xu"
+  father=zhongwu6
+  female=yes
+
+  3845.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+zhongwu10={
+  name="nvming224"
+  dynasty_house=house_xin461
+	religion="yili" 
+	culture="xu"
+  father=zhongwu6
+  female=yes
+
+  3846.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}

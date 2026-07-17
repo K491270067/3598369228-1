@@ -1,0 +1,5 @@
+﻿l_simp_chinese:
+ unlock_succession_rights_grant_recognition: "解锁#high [GetSubjectContractType( 'feudal_government_succession_rights' ).GetObligationName( 'feudal_succession_rights_grant_recognition' )]#![vassal_contract|E]"
+ unlock_succession_rights_grant_appointment: "解锁#high [GetSubjectContractType( 'feudal_government_succession_rights' ).GetObligationName( 'feudal_succession_rights_grant_appointment' )]#![vassal_contract|E]"
+ unlock_succession_rights_governor_appointment: "解锁#high [GetSubjectContractType( 'feudal_government_succession_rights' ).GetObligationName( 'feudal_succession_rights_governor_appointment' )]#![vassal_contract|E]"
+ unlock_advanced_succession_rights: "解锁更加集权化的#high 封建继承权#![vassal_contract|E]"

@@ -1,0 +1,23 @@
+﻿l_polish:
+ law_group_candidate_preference_policy_feudal_governor: "[governor|E] Preference Policy"
+ law_group_candidate_preference_policy_feudal_governor_singular: "[governor|E] Preference Policy"
+
+ law_candidate_preference_policy_powerful_gentry: "Powerful Gentry"
+ law_candidate_preference_policy_powerful_gentry_subname: "Local [noble_families] and [governor]'s relatives"
+ law_candidate_preference_policy_powerful_gentry_effects: "$EFFECT_LIST_BULLET$[governors|E] who are newly appointed by #high Grant Titles#! will use #high [GetSubjectContractType( 'feudal_admin_government_candidate_preference' ).GetObligationName( 'candidate_preference_powerful_gentry' )]#! [vassal_contract|E]\n\n#flavor Local hereditary rulers still exert influence over the politics of this land.#!"
+
+ law_candidate_preference_policy_local_talent: "Local Talent"
+ law_candidate_preference_policy_local_talent_subname: "Current [governor]'s council and court officials"
+ law_candidate_preference_policy_local_talent_effects: "$EFFECT_LIST_BULLET$[governors|E] who are newly appointed by #high Grant Titles#! will use #high [GetSubjectContractType( 'feudal_admin_government_candidate_preference' ).GetObligationName( 'candidate_preference_local_talent' )]#! [vassal_contract|E]\n\n#flavor Only experienced professional officials familiar with local conditions can govern effectively.#!"
+
+ law_candidate_preference_policy_favor_nepotism: "Favor Nepotism"
+ law_candidate_preference_policy_favor_nepotism_subname: "Your own relatives and friends"
+ law_candidate_preference_policy_favor_nepotism_effects: "$EFFECT_LIST_BULLET$[governors|E] who are newly appointed by #high Grant Titles#! will use #high [GetSubjectContractType( 'feudal_admin_government_candidate_preference' ).GetObligationName( 'candidate_preference_favor_nepotism' )]#! [vassal_contract|E]\n\n#flavor To strengthen our influence, land must be granted to trusted kin and close confidants.#!"
+
+ law_candidate_preference_policy_talent_only: "Meritocracy"
+ law_candidate_preference_policy_talent_only_subname: "Individuals of exceptional ability"
+ law_candidate_preference_policy_talent_only_effects: "$EFFECT_LIST_BULLET$[governors|E] who are newly appointed by #high Grant Titles#! will use #high [GetSubjectContractType( 'feudal_admin_government_candidate_preference' ).GetObligationName( 'candidate_preference_talent_only' )]#! [vassal_contract|E]\n\n#flavor Governing a realm requires true talent, not flattery.#!"
+
+ law_candidate_preference_policy_bureaucrat_promotion: "Bureaucrat Promotion"
+ law_candidate_preference_policy_bureaucrat_promotion_subname: "Internally promoted bureaucrats"
+ law_candidate_preference_policy_bureaucrat_promotion_effects: "$EFFECT_LIST_BULLET$[governors|E] who are newly appointed by #high Grant Titles#! will use #high [GetSubjectContractType( 'feudal_admin_government_candidate_preference' ).GetObligationName( 'candidate_preference_bureaucrat_promotion' )]#! [vassal_contract|E]\n\n#flavor Diligent service, extensive experience, and absolute loyalty outweigh all superficial appearances.#!"

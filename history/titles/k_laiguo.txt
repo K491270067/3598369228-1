@@ -1,0 +1,1662 @@
+﻿c_lai1 = {
+	2502.1.1 = {
+		liege = "d_laishi"
+		holder = lai1
+	}
+	2533.1.1 = {
+		holder = lai2
+	}
+	2543.1.1 = {
+		holder = lai3
+	}
+	2583.1.1 = {
+		holder = lai4
+	}
+	2611.1.1 = {
+		holder = lai5
+	}
+	2666.1.1 = {
+		holder = lai6
+	}
+	2700.1.1 = {
+		holder = lai7
+	}
+	2732.1.1 = {
+		holder = lai8
+	}
+	2765.1.1 = {
+		holder = lai9
+	}
+	2804.1.1 = {
+		holder = lai10
+	}
+	2865.1.1 = {
+		holder = lai11
+	}
+	2900.1.1 = {
+		holder = lai12
+	}
+	2929.1.1 = {
+		holder = lai13
+	}
+	2967.1.1 = {
+		holder = lai14
+	}
+	2999.1.1 = {
+		holder = lai15
+	}
+	3023.1.1 = {
+		holder = lai16
+	}
+	3070.1.1 = {
+		holder = lai17
+	}
+	3134.1.1 = {
+		holder = lai18
+	}
+	3164.1.1 = {
+		holder = lai19
+	}
+	3200.1.1 = {
+		holder = lai20
+	}
+	3276.1.1 = {
+		holder = lai21
+	}
+	3311.1.1 = {
+		holder = lai22
+	}
+	3370.1.1 = {
+		holder = lai23
+	}
+	3401.1.1 = {
+		holder = lai24
+	}
+	3473.1.1 = {
+		holder = lai25
+	}
+	3513.1.1 = {
+		holder = lai26
+	}
+	3520.1.1 = {
+		holder = lai27
+	}
+	3553.1.1 = {
+		holder = lai28
+	}
+	3578.1.1 = {
+		holder = lai29
+	}
+	3621.1.1 = {
+		holder = lai30
+	}
+	3647.1.1 = {
+		holder = lai31
+	}
+	3663.1.1 = {
+		holder = lai32
+	}
+	3690.1.1 = {
+		holder = lai33
+	}
+	3734.1.1 = {
+		holder = lai34
+	}
+	3741.1.1 = {
+		holder = lai35
+	}
+	3770.1.1 = {
+		holder = lai36
+	}
+	3792.1.1 = {
+		holder = lai37
+	}
+	3820.1.1 = {
+		holder = lai38
+	}
+}
+c_mi = {
+	2502.1.1 = {
+		liege = "d_qiushi1"
+		holder = lai1
+	}
+	2533.1.1 = {
+		holder = lai2
+	}
+	2543.1.1 = {
+		holder = lai3
+	}
+	2583.1.1 = {
+		holder = lai4
+	}
+	2611.1.1 = {
+		holder = lai5
+	}
+	2666.1.1 = {
+		holder = lai6
+	}
+	2700.1.1 = {
+		holder = lai7
+	}
+	2732.1.1 = {
+		holder = lai8
+	}
+	2765.1.1 = {
+		holder = lai9
+	}
+	2804.1.1 = {
+		holder = lai10
+	}
+	2865.1.1 = {
+		holder = lai11
+	}
+	2900.1.1 = {
+		holder = lai12
+	}
+	2929.1.1 = {
+		holder = lai13
+	}
+	2967.1.1 = {
+		holder = lai14
+	}
+	2999.1.1 = {
+		holder = lai15
+	}
+	3023.1.1 = {
+		holder = lai16
+	}
+	3070.1.1 = {
+		holder = lai17
+	}
+	3134.1.1 = {
+		holder = lai18
+	}
+	3164.1.1 = {
+		holder = lai19
+	}
+	3200.1.1 = {
+		holder = lai20
+	}
+	3276.1.1 = {
+		holder = lai21
+	}
+	3311.1.1 = {
+		holder = lai22
+	}
+	3370.1.1 = {
+		holder = lai23
+	}
+	3401.1.1 = {
+		holder = lai24
+	}
+	3473.1.1 = {
+		holder = lai25
+	}
+	3513.1.1 = {
+		holder = lai26
+	}
+	3520.1.1 = {
+		holder = lai27
+	}
+	3553.1.1 = {
+		holder = lai28
+	}
+	3578.1.1 = {
+		holder = lai29
+	}
+	3621.1.1 = {
+		holder = lai30
+	}
+	3647.1.1 = {
+		holder = lai31
+	}
+	3663.1.1 = {
+		holder = lai32
+	}
+	3690.1.1 = {
+		holder = lai33
+	}
+	3734.1.1 = {
+		holder = lai98
+	}
+	3741.1.1 = {
+		holder = lai99
+	}
+	3770.1.1 = {
+		holder = lai100
+	}
+	3792.1.1 = {
+		holder = lai101
+	}
+	3820.1.1 = {
+		holder = lai102
+	}
+}
+c_nanchangshan = {
+	2502.1.1 = {
+		liege = "d_laishi"
+		holder = lai1
+	}
+	2533.1.1 = {
+		holder = lai46
+	}
+	2543.1.1 = {
+		holder = lai47
+	}
+	2583.1.1 = {
+		holder = lai48
+	}
+	2611.1.1 = {
+		holder = lai49
+	}
+	2666.1.1 = {
+		holder = lai50
+	}
+	2700.1.1 = {
+		holder = lai51
+	}
+	2732.1.1 = {
+		holder = lai52
+	}
+	2765.1.1 = {
+		holder = lai53
+	}
+	2804.1.1 = {
+		holder = lai54
+	}
+	2865.1.1 = {
+		holder = lai55
+	}
+	2900.1.1 = {
+		holder = lai56
+	}
+	2929.1.1 = {
+		holder = lai57
+	}
+	2967.1.1 = {
+		holder = lai58
+	}
+	2999.1.1 = {
+		holder = lai59
+	}
+	3023.1.1 = {
+		holder = lai60
+	}
+	3070.1.1 = {
+		holder = lai61
+	}
+	3134.1.1 = {
+		holder = lai62
+	}
+	3164.1.1 = {
+		holder = lai63
+	}
+	3200.1.1 = {
+		holder = lai64
+	}
+	3276.1.1 = {
+		holder = lai65
+	}
+	3311.1.1 = {
+		holder = lai66
+	}
+	3370.1.1 = {
+		holder = lai67
+	}
+	3401.1.1 = {
+		holder = lai68
+	}
+	3473.1.1 = {
+		holder = lai69
+	}
+	3513.1.1 = {
+		holder = lai70
+	}
+	3520.1.1 = {
+		holder = lai71
+	}
+	3553.1.1 = {
+		holder = lai72
+	}
+	3578.1.1 = {
+		holder = lai73
+	}
+	3621.1.1 = {
+		holder = lai74
+	}
+	3647.1.1 = {
+		holder = lai75
+	}
+	3663.1.1 = {
+		holder = lai76
+	}
+	3690.1.1 = {
+		holder = lai77
+	}
+	3734.1.1 = {
+		holder = lai78
+	}
+	3741.1.1 = {
+		holder = lai79
+	}
+	3770.1.1 = {
+		holder = lai80
+	}
+	3792.1.1 = {
+		holder = lai81
+	}
+	3820.1.1 = {
+		holder = lai82
+		government = feudal_admin_government
+	}
+}
+c_tang1 = {
+	2502.1.1 = {
+		liege = "d_tangshi1"
+		holder = lai1
+	}
+	2533.1.1 = {
+		holder = lai2
+	}
+	2543.1.1 = {
+		holder = lai3
+	}
+	2583.1.1 = {
+		holder = lai4
+	}
+	2611.1.1 = {
+		holder = lai5
+	}
+	2666.1.1 = {
+		holder = lai6
+	}
+	2700.1.1 = {
+		holder = lai7
+	}
+	2732.1.1 = {
+		holder = lai8
+	}
+	2765.1.1 = {
+		holder = lai9
+	}
+	2804.1.1 = {
+		holder = lai10
+	}
+	2865.1.1 = {
+		holder = lai11
+	}
+	2900.1.1 = {
+		holder = lai12
+	}
+	2929.1.1 = {
+		holder = lai13
+	}
+	2967.1.1 = {
+		holder = lai14
+	}
+	2999.1.1 = {
+		holder = lai15
+	}
+	3023.1.1 = {
+		holder = lai16
+	}
+	3070.1.1 = {
+		holder = lai17
+	}
+	3134.1.1 = {
+		holder = lai18
+	}
+	3164.1.1 = {
+		holder = lai19
+	}
+	3200.1.1 = {
+		holder = lai20
+	}
+	3276.1.1 = {
+		holder = lai21
+	}
+	3311.1.1 = {
+		holder = lai22
+	}
+	3370.1.1 = {
+		holder = lai23
+	}
+	3401.1.1 = {
+		holder = lai24
+	}
+	3473.1.1 = {
+		holder = lai25
+	}
+	3513.1.1 = {
+		holder = lai26
+	}
+	3520.1.1 = {
+		holder = lai27
+	}
+	3553.1.1 = {
+		holder = lai28
+	}
+	3578.1.1 = {
+		holder = lai29
+	}
+	3621.1.1 = {
+		holder = lai30
+	}
+	3647.1.1 = {
+		holder = lai31
+	}
+	3663.1.1 = {
+		holder = lai32
+	}
+	3690.1.1 = {
+		holder = lai33
+	}
+	3734.1.1 = {
+		holder = lai34
+	}
+	3741.1.1 = {
+		holder = lai35
+	}
+	3770.1.1 = {
+		holder = lai36
+	}
+	3792.1.1 = {
+		holder = lai37
+	}
+	3820.1.1 = {
+		holder = han709
+	}
+}
+c_xian = {
+	2502.1.1 = {
+		liege = "d_huishi1"
+		holder = lai1
+	}
+	2533.1.1 = {
+		holder = lai2
+	}
+	2543.1.1 = {
+		holder = lai3
+	}
+	2583.1.1 = {
+		holder = lai4
+	}
+	2611.1.1 = {
+		holder = lai5
+	}
+	2666.1.1 = {
+		holder = lai6
+	}
+	2700.1.1 = {
+		holder = lai7
+	}
+	2732.1.1 = {
+		holder = lai8
+	}
+	2765.1.1 = {
+		holder = lai9
+	}
+	2804.1.1 = {
+		holder = lai10
+	}
+	2865.1.1 = {
+		holder = lai11
+	}
+	2900.1.1 = {
+		holder = lai12
+	}
+	2929.1.1 = {
+		holder = lai13
+	}
+	2967.1.1 = {
+		holder = lai14
+	}
+	2999.1.1 = {
+		holder = lai15
+	}
+	3023.1.1 = {
+		holder = lai16
+	}
+	3070.1.1 = {
+		holder = lai17
+	}
+	3134.1.1 = {
+		holder = lai18
+	}
+	3164.1.1 = {
+		holder = lai19
+	}
+	3200.1.1 = {
+		holder = lai20
+	}
+	3276.1.1 = {
+		holder = lai21
+	}
+	3311.1.1 = {
+		holder = lai22
+	}
+	3370.1.1 = {
+		holder = lai23
+	}
+	3401.1.1 = {
+		holder = lai24
+	}
+	3473.1.1 = {
+		holder = lai25
+	}
+	3513.1.1 = {
+		holder = lai26
+	}
+	3520.1.1 = {
+		holder = lai27
+	}
+	3553.1.1 = {
+		holder = lai28
+	}
+	3578.1.1 = {
+		holder = lai29
+	}
+	3621.1.1 = {
+		holder = lai30
+	}
+	3647.1.1 = {
+		holder = lai31
+	}
+	3663.1.1 = {
+		holder = lai32
+	}
+	3690.1.1 = {
+		holder = lai33
+	}
+	3734.1.1 = {
+		holder = lai34
+	}
+	3741.1.1 = {
+		holder = lai108
+	}
+	3770.1.1 = {
+		holder = lai109
+	}
+	3792.1.1 = {
+		holder = lai110
+	}
+	3820.1.1 = {
+		holder = lai111
+	}
+}
+c_ye = {
+	2502.1.1 = {
+		liege = "d_shuangjiushi1"
+		holder = lai1
+	}
+	2533.1.1 = {
+		holder = lai2
+	}
+	2543.1.1 = {
+		holder = lai3
+	}
+	2583.1.1 = {
+		holder = lai4
+	}
+	2611.1.1 = {
+		holder = lai5
+	}
+	2666.1.1 = {
+		holder = lai6
+	}
+	2700.1.1 = {
+		holder = lai7
+	}
+	2732.1.1 = {
+		holder = lai8
+	}
+	2765.1.1 = {
+		holder = lai9
+	}
+	2804.1.1 = {
+		holder = lai10
+	}
+	2865.1.1 = {
+		holder = lai11
+	}
+	2900.1.1 = {
+		holder = lai12
+	}
+	2929.1.1 = {
+		holder = lai13
+	}
+	2967.1.1 = {
+		holder = lai14
+	}
+	2999.1.1 = {
+		holder = lai15
+	}
+	3023.1.1 = {
+		holder = lai16
+	}
+	3070.1.1 = {
+		holder = lai17
+	}
+	3134.1.1 = {
+		holder = lai18
+	}
+	3164.1.1 = {
+		holder = lai19
+	}
+	3200.1.1 = {
+		holder = han679
+	}
+	3204.1.1 = {
+		holder = han680
+	}
+	3260.1.1 = {
+		holder = han681
+	}
+	3330.1.1 = {
+		holder = han682
+	}
+	3373.1.1 = {
+		holder = han683
+	}
+	3400.1.1 = {
+		holder = han684
+	}
+	3454.1.1 = {
+		holder = han685
+	}
+	3503.1.1 = {
+		holder = han686
+	}
+	3513.1.1 = {
+		holder = han687
+	}
+	3520.1.1 = {
+		holder = han688
+	}
+	3553.1.1 = {
+		holder = han689
+	}
+	3578.1.1 = {
+		holder = han690
+	}
+	3630.1.1 = {
+		holder = han691
+	}
+	3647.1.1 = {
+		holder = han692
+	}
+	3663.1.1 = {
+		holder = han693
+	}
+	3693.1.1 = {
+		holder = han694
+	}
+	3734.1.1 = {
+		holder = han695
+	}
+	3746.1.1 = {
+		holder = han696
+	}
+	3770.1.1 = {
+		holder = han697
+	}
+	3792.1.1 = {
+		holder = han698
+	}
+	3820.1.1 = {
+		holder = han699
+	}
+	3843.1.1 = {
+		holder = han700
+	}
+}
+c_yiwei = {
+	2502.1.1 = {
+		liege = "d_zhengyushi"
+		holder = lai1
+	}
+	2533.1.1 = {
+		holder = lai2
+	}
+	2543.1.1 = {
+		holder = lai3
+	}
+	2583.1.1 = {
+		holder = lai4
+	}
+	2611.1.1 = {
+		holder = lai5
+	}
+	2666.1.1 = {
+		holder = lai6
+	}
+	2700.1.1 = {
+		holder = lai7
+	}
+	2732.1.1 = {
+		holder = lai8
+	}
+	2765.1.1 = {
+		holder = lai9
+	}
+	2804.1.1 = {
+		holder = lai10
+	}
+	2865.1.1 = {
+		holder = lai11
+	}
+	2900.1.1 = {
+		holder = lai12
+	}
+	2929.1.1 = {
+		holder = lai13
+	}
+	2967.1.1 = {
+		holder = lai14
+	}
+	2999.1.1 = {
+		holder = lai15
+	}
+	3023.1.1 = {
+		holder = lai16
+	}
+	3070.1.1 = {
+		holder = lai17
+	}
+	3134.1.1 = {
+		holder = lai18
+	}
+	3164.1.1 = {
+		holder = lai19
+	}
+	3200.1.1 = {
+		holder = lai20
+	}
+	3276.1.1 = {
+		holder = lai21
+	}
+	3311.1.1 = {
+		holder = lai22
+	}
+	3370.1.1 = {
+		holder = lai23
+	}
+	3401.1.1 = {
+		holder = lai24
+	}
+	3473.1.1 = {
+		holder = lai25
+	}
+	3513.1.1 = {
+		holder = lai26
+	}
+	3520.1.1 = {
+		holder = lai27
+	}
+	3553.1.1 = {
+		holder = lai28
+	}
+	3578.1.1 = {
+		holder = lai29
+	}
+	3621.1.1 = {
+		holder = lai30
+	}
+	3647.1.1 = {
+		holder = lai31
+	}
+	3663.1.1 = {
+		holder = lai32
+	}
+	3690.1.1 = {
+		holder = lai88
+	}
+	3734.1.1 = {
+		holder = lai89
+	}
+	3741.1.1 = {
+		holder = lai90
+	}
+	3770.1.1 = {
+		holder = lai91
+	}
+	3792.1.1 = {
+		holder = lai92
+	}
+	3820.1.1 = {
+		holder = lai93
+	}
+}
+d_huishi1 = {
+	2502.1.1 = {
+		liege = "k_laiguo"
+		holder = lai1
+	}
+	2533.1.1 = {
+		holder = lai2
+	}
+	2543.1.1 = {
+		holder = lai3
+	}
+	2583.1.1 = {
+		holder = lai4
+	}
+	2611.1.1 = {
+		holder = lai5
+	}
+	2666.1.1 = {
+		holder = lai6
+	}
+	2700.1.1 = {
+		holder = lai7
+	}
+	2732.1.1 = {
+		holder = lai8
+	}
+	2765.1.1 = {
+		holder = lai9
+	}
+	2804.1.1 = {
+		holder = lai10
+	}
+	2865.1.1 = {
+		holder = lai11
+	}
+	2900.1.1 = {
+		holder = lai12
+	}
+	2929.1.1 = {
+		holder = lai13
+	}
+	2967.1.1 = {
+		holder = lai14
+	}
+	2999.1.1 = {
+		holder = lai15
+	}
+	3023.1.1 = {
+		holder = lai16
+	}
+	3070.1.1 = {
+		holder = lai17
+	}
+	3134.1.1 = {
+		holder = lai18
+	}
+	3164.1.1 = {
+		holder = lai19
+	}
+	3200.1.1 = {
+		holder = lai20
+	}
+	3276.1.1 = {
+		holder = lai21
+	}
+	3311.1.1 = {
+		holder = lai22
+	}
+	3370.1.1 = {
+		holder = lai23
+	}
+	3401.1.1 = {
+		holder = lai24
+	}
+	3473.1.1 = {
+		holder = lai25
+	}
+	3513.1.1 = {
+		holder = lai26
+	}
+	3520.1.1 = {
+		holder = lai27
+	}
+	3553.1.1 = {
+		holder = lai28
+	}
+	3578.1.1 = {
+		holder = lai29
+	}
+	3621.1.1 = {
+		holder = lai30
+	}
+	3647.1.1 = {
+		holder = lai31
+	}
+	3663.1.1 = {
+		holder = lai32
+	}
+	3690.1.1 = {
+		holder = lai33
+	}
+	3734.1.1 = {
+		holder = lai34
+	}
+	3741.1.1 = {
+		holder = lai108
+	}
+	3770.1.1 = {
+		holder = lai109
+	}
+	3792.1.1 = {
+		holder = lai110
+	}
+	3820.1.1 = {
+		holder = lai111
+		government = feudal_admin_government
+	}
+}
+d_laishi = {
+	2502.1.1 = {
+		liege = "k_laiguo"
+		holder = lai1
+	}
+	2533.1.1 = {
+		holder = lai2
+	}
+	2543.1.1 = {
+		holder = lai3
+	}
+	2583.1.1 = {
+		holder = lai4
+	}
+	2611.1.1 = {
+		holder = lai5
+	}
+	2666.1.1 = {
+		holder = lai6
+	}
+	2700.1.1 = {
+		holder = lai7
+	}
+	2732.1.1 = {
+		holder = lai8
+	}
+	2765.1.1 = {
+		holder = lai9
+	}
+	2804.1.1 = {
+		holder = lai10
+	}
+	2865.1.1 = {
+		holder = lai11
+	}
+	2900.1.1 = {
+		holder = lai12
+	}
+	2929.1.1 = {
+		holder = lai13
+	}
+	2967.1.1 = {
+		holder = lai14
+	}
+	2999.1.1 = {
+		holder = lai15
+	}
+	3023.1.1 = {
+		holder = lai16
+	}
+	3070.1.1 = {
+		holder = lai17
+	}
+	3134.1.1 = {
+		holder = lai18
+	}
+	3164.1.1 = {
+		holder = lai19
+	}
+	3200.1.1 = {
+		holder = lai20
+	}
+	3276.1.1 = {
+		holder = lai21
+	}
+	3311.1.1 = {
+		holder = lai22
+	}
+	3370.1.1 = {
+		holder = lai23
+	}
+	3401.1.1 = {
+		holder = lai24
+	}
+	3473.1.1 = {
+		holder = lai25
+	}
+	3513.1.1 = {
+		holder = lai26
+	}
+	3520.1.1 = {
+		holder = lai27
+	}
+	3553.1.1 = {
+		holder = lai28
+	}
+	3578.1.1 = {
+		holder = lai29
+	}
+	3621.1.1 = {
+		holder = lai30
+	}
+	3647.1.1 = {
+		holder = lai31
+	}
+	3663.1.1 = {
+		holder = lai32
+	}
+	3690.1.1 = {
+		holder = lai33
+	}
+	3734.1.1 = {
+		holder = lai34
+	}
+	3741.1.1 = {
+		holder = lai35
+	}
+	3770.1.1 = {
+		holder = lai36
+	}
+	3792.1.1 = {
+		holder = lai37
+	}
+	3820.1.1 = {
+		holder = lai38
+	}
+}
+d_qiushi1 = {
+	2502.1.1 = {
+		liege = "k_laiguo"
+		holder = lai1
+	}
+	2533.1.1 = {
+		holder = lai2
+	}
+	2543.1.1 = {
+		holder = lai3
+	}
+	2583.1.1 = {
+		holder = lai4
+	}
+	2611.1.1 = {
+		holder = lai5
+	}
+	2666.1.1 = {
+		holder = lai6
+	}
+	2700.1.1 = {
+		holder = lai7
+	}
+	2732.1.1 = {
+		holder = lai8
+	}
+	2765.1.1 = {
+		holder = lai9
+	}
+	2804.1.1 = {
+		holder = lai10
+	}
+	2865.1.1 = {
+		holder = lai11
+	}
+	2900.1.1 = {
+		holder = lai12
+	}
+	2929.1.1 = {
+		holder = lai13
+	}
+	2967.1.1 = {
+		holder = lai14
+	}
+	2999.1.1 = {
+		holder = lai15
+	}
+	3023.1.1 = {
+		holder = lai16
+	}
+	3070.1.1 = {
+		holder = lai17
+	}
+	3134.1.1 = {
+		holder = lai18
+	}
+	3164.1.1 = {
+		holder = lai19
+	}
+	3200.1.1 = {
+		holder = lai20
+	}
+	3276.1.1 = {
+		holder = lai21
+	}
+	3311.1.1 = {
+		holder = lai22
+	}
+	3370.1.1 = {
+		holder = lai23
+	}
+	3401.1.1 = {
+		holder = lai24
+	}
+	3473.1.1 = {
+		holder = lai25
+	}
+	3513.1.1 = {
+		holder = lai26
+	}
+	3520.1.1 = {
+		holder = lai27
+	}
+	3553.1.1 = {
+		holder = lai28
+	}
+	3578.1.1 = {
+		holder = lai29
+	}
+	3621.1.1 = {
+		holder = lai30
+	}
+	3647.1.1 = {
+		holder = lai31
+	}
+	3663.1.1 = {
+		holder = lai32
+	}
+	3690.1.1 = {
+		holder = lai33
+	}
+	3734.1.1 = {
+		holder = lai98
+	}
+	3741.1.1 = {
+		holder = lai99
+	}
+	3770.1.1 = {
+		holder = lai100
+	}
+	3792.1.1 = {
+		holder = lai101
+	}
+	3820.1.1 = {
+		holder = lai102
+		government = feudal_admin_government
+	}
+}
+d_shuangjiushi1 = {
+	2502.1.1 = {
+		liege = "k_laiguo"
+		holder = lai1
+	}
+	2533.1.1 = {
+		holder = lai2
+	}
+	2543.1.1 = {
+		holder = lai3
+	}
+	2583.1.1 = {
+		holder = lai4
+	}
+	2611.1.1 = {
+		holder = lai5
+	}
+	2666.1.1 = {
+		holder = lai6
+	}
+	2700.1.1 = {
+		holder = lai7
+	}
+	2732.1.1 = {
+		holder = lai8
+	}
+	2765.1.1 = {
+		holder = lai9
+	}
+	2804.1.1 = {
+		holder = lai10
+	}
+	2865.1.1 = {
+		holder = lai11
+	}
+	2900.1.1 = {
+		holder = lai12
+	}
+	2929.1.1 = {
+		holder = lai13
+	}
+	2967.1.1 = {
+		holder = lai14
+	}
+	2999.1.1 = {
+		holder = lai15
+	}
+	3023.1.1 = {
+		holder = lai16
+	}
+	3070.1.1 = {
+		holder = lai17
+	}
+	3134.1.1 = {
+		holder = lai18
+	}
+	3164.1.1 = {
+		holder = lai19
+	}
+	3200.1.1 = {
+		holder = han679
+	}
+	3204.1.1 = {
+		holder = han680
+	}
+	3260.1.1 = {
+		holder = han681
+	}
+	3330.1.1 = {
+		holder = han682
+	}
+	3373.1.1 = {
+		holder = han683
+	}
+	3400.1.1 = {
+		holder = han684
+	}
+	3454.1.1 = {
+		holder = han685
+	}
+	3503.1.1 = {
+		holder = han686
+	}
+	3513.1.1 = {
+		holder = han687
+	}
+	3520.1.1 = {
+		holder = han688
+	}
+	3553.1.1 = {
+		holder = han689
+	}
+	3578.1.1 = {
+		holder = han690
+	}
+	3630.1.1 = {
+		holder = han691
+	}
+	3647.1.1 = {
+		holder = han692
+	}
+	3663.1.1 = {
+		holder = han693
+	}
+	3693.1.1 = {
+		holder = han694
+	}
+	3734.1.1 = {
+		holder = han695
+	}
+	3746.1.1 = {
+		holder = han696
+	}
+	3770.1.1 = {
+		holder = han697
+	}
+	3792.1.1 = {
+		holder = han698
+	}
+	3820.1.1 = {
+		holder = han699
+	}
+	3843.1.1 = {
+		holder = han700
+		government = feudal_admin_government
+	}
+}
+d_tangshi1 = {
+	2502.1.1 = {
+		liege = "k_laiguo"
+		holder = lai1
+	}
+	2533.1.1 = {
+		holder = lai2
+	}
+	2543.1.1 = {
+		holder = lai3
+	}
+	2583.1.1 = {
+		holder = lai4
+	}
+	2611.1.1 = {
+		holder = lai5
+	}
+	2666.1.1 = {
+		holder = lai6
+	}
+	2700.1.1 = {
+		holder = lai7
+	}
+	2732.1.1 = {
+		holder = lai8
+	}
+	2765.1.1 = {
+		holder = lai9
+	}
+	2804.1.1 = {
+		holder = lai10
+	}
+	2865.1.1 = {
+		holder = lai11
+	}
+	2900.1.1 = {
+		holder = lai12
+	}
+	2929.1.1 = {
+		holder = lai13
+	}
+	2967.1.1 = {
+		holder = lai14
+	}
+	2999.1.1 = {
+		holder = lai15
+	}
+	3023.1.1 = {
+		holder = lai16
+	}
+	3070.1.1 = {
+		holder = lai17
+	}
+	3134.1.1 = {
+		holder = lai18
+	}
+	3164.1.1 = {
+		holder = lai19
+	}
+	3200.1.1 = {
+		holder = lai20
+	}
+	3276.1.1 = {
+		holder = lai21
+	}
+	3311.1.1 = {
+		holder = lai22
+	}
+	3370.1.1 = {
+		holder = lai23
+	}
+	3401.1.1 = {
+		holder = lai24
+	}
+	3473.1.1 = {
+		holder = lai25
+	}
+	3513.1.1 = {
+		holder = lai26
+	}
+	3520.1.1 = {
+		holder = lai27
+	}
+	3553.1.1 = {
+		holder = lai28
+	}
+	3578.1.1 = {
+		holder = lai29
+	}
+	3621.1.1 = {
+		holder = lai30
+	}
+	3647.1.1 = {
+		holder = lai31
+	}
+	3663.1.1 = {
+		holder = lai32
+	}
+	3690.1.1 = {
+		holder = lai33
+	}
+	3734.1.1 = {
+		holder = lai34
+	}
+	3741.1.1 = {
+		holder = lai35
+	}
+	3770.1.1 = {
+		holder = lai36
+	}
+	3792.1.1 = {
+		holder = lai37
+	}
+	3820.1.1 = {
+		holder = han709
+		government = feudal_admin_government
+	}
+}
+d_zhengyushi = {
+	2502.1.1 = {
+		liege = "k_laiguo"
+		holder = lai1
+	}
+	2533.1.1 = {
+		holder = lai2
+	}
+	2543.1.1 = {
+		holder = lai3
+	}
+	2583.1.1 = {
+		holder = lai4
+	}
+	2611.1.1 = {
+		holder = lai5
+	}
+	2666.1.1 = {
+		holder = lai6
+	}
+	2700.1.1 = {
+		holder = lai7
+	}
+	2732.1.1 = {
+		holder = lai8
+	}
+	2765.1.1 = {
+		holder = lai9
+	}
+	2804.1.1 = {
+		holder = lai10
+	}
+	2865.1.1 = {
+		holder = lai11
+	}
+	2900.1.1 = {
+		holder = lai12
+	}
+	2929.1.1 = {
+		holder = lai13
+	}
+	2967.1.1 = {
+		holder = lai14
+	}
+	2999.1.1 = {
+		holder = lai15
+	}
+	3023.1.1 = {
+		holder = lai16
+	}
+	3070.1.1 = {
+		holder = lai17
+	}
+	3134.1.1 = {
+		holder = lai18
+	}
+	3164.1.1 = {
+		holder = lai19
+	}
+	3200.1.1 = {
+		holder = lai20
+	}
+	3276.1.1 = {
+		holder = lai21
+	}
+	3311.1.1 = {
+		holder = lai22
+	}
+	3370.1.1 = {
+		holder = lai23
+	}
+	3401.1.1 = {
+		holder = lai24
+	}
+	3473.1.1 = {
+		holder = lai25
+	}
+	3513.1.1 = {
+		holder = lai26
+	}
+	3520.1.1 = {
+		holder = lai27
+	}
+	3553.1.1 = {
+		holder = lai28
+	}
+	3578.1.1 = {
+		holder = lai29
+	}
+	3621.1.1 = {
+		holder = lai30
+	}
+	3647.1.1 = {
+		holder = lai31
+	}
+	3663.1.1 = {
+		holder = lai32
+	}
+	3690.1.1 = {
+		holder = lai88
+	}
+	3734.1.1 = {
+		holder = lai89
+	}
+	3741.1.1 = {
+		holder = lai90
+	}
+	3770.1.1 = {
+		holder = lai91
+	}
+	3792.1.1 = {
+		holder = lai92
+	}
+	3820.1.1 = {
+		holder = lai93
+		government = feudal_admin_government
+	}
+}
+k_laiguo = {
+	2502.1.1 = {
+		holder = lai1
+	}
+	2533.1.1 = {
+		holder = lai2
+	}
+	2543.1.1 = {
+		holder = lai3
+	}
+	2583.1.1 = {
+		holder = lai4
+	}
+	2611.1.1 = {
+		holder = lai5
+	}
+	2666.1.1 = {
+		holder = lai6
+	}
+	2700.1.1 = {
+		holder = lai7
+	}
+	2732.1.1 = {
+		holder = lai8
+	}
+	2765.1.1 = {
+		holder = lai9
+	}
+	2804.1.1 = {
+		holder = lai10
+	}
+	2865.1.1 = {
+		holder = lai11
+	}
+	2900.1.1 = {
+		holder = lai12
+	}
+	2929.1.1 = {
+		holder = lai13
+	}
+	2967.1.1 = {
+		holder = lai14
+	}
+	2999.1.1 = {
+		holder = lai15
+	}
+	3023.1.1 = {
+		holder = lai16
+	}
+	3070.1.1 = {
+		holder = lai17
+	}
+	3134.1.1 = {
+		holder = lai18
+	}
+	3164.1.1 = {
+		holder = lai19
+	}
+	3200.1.1 = {
+		holder = lai20
+	}
+	3276.1.1 = {
+		holder = lai21
+	}
+	3311.1.1 = {
+		holder = lai22
+	}
+	3370.1.1 = {
+		holder = lai23
+	}
+	3401.1.1 = {
+		holder = lai24
+	}
+	3473.1.1 = {
+		holder = lai25
+	}
+	3513.1.1 = {
+		holder = lai26
+	}
+	3520.1.1 = {
+		holder = lai27
+	}
+	3553.1.1 = {
+		holder = lai28
+	}
+	3578.1.1 = {
+		holder = lai29
+	}
+	3621.1.1 = {
+		holder = lai30
+	}
+	3647.1.1 = {
+		holder = lai31
+	}
+	3663.1.1 = {
+		holder = lai32
+	}
+	3690.1.1 = {
+		holder = lai33
+	}
+	3734.1.1 = {
+		holder = lai34
+	}
+	3741.1.1 = {
+		holder = lai35
+	}
+	3770.1.1 = {
+		holder = lai36
+	}
+	3792.1.1 = {
+		holder = lai37
+	}
+	3820.1.1 = {
+		holder = lai38
+		government = feudal_admin_government
+	}
+}

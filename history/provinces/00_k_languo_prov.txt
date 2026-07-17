@@ -1,0 +1,40 @@
+﻿##### d_lanshi ############################
+
+### c_lan
+# LAN
+406 = {
+	culture = lu
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_hutai
+# HUTAI
+408 = {
+	culture = lu
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+##### d_zhuloushi ############################
+
+### c_xi1
+# XI1
+401 = {
+	culture = lu
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_juling
+# JULING
+409 = {
+	culture = lu
+	religion = xizhouli
+	holding = castle_holding
+}
+
+

@@ -1,0 +1,143 @@
+﻿c_shilai = {
+	3225.1.1 = {
+		liege = "k_aoguo"
+		holder = zixingaoshi1
+	}
+	3276.1.1 = {
+		holder = zixingaoshi2
+	}
+	3303.1.1 = {
+		holder = zixingaoshi3
+	}
+	3344.1.1 = {
+		holder = zixingaoshi4
+	}
+	3368.1.1 = {
+		holder = zixingaoshi5
+	}
+	3409.1.1 = {
+		holder = zixingaoshi6
+	}
+	3426.1.1 = {
+		holder = zixingaoshi7
+	}
+	3459.1.1 = {
+		holder = zixingaoshi8
+	}
+	3482.1.1 = {
+		holder = zixingaoshi9
+	}
+	3513.1.1 = {
+		holder = zixingaoshi10
+	}
+	3539.1.1 = {
+		holder = zixingaoshi11
+	}
+	3561.1.1 = {
+		holder = zixingaoshi12
+	}
+	3580.1.1 = {
+		holder = zixingaoshi13
+	}
+	3607.1.1 = {
+		holder = zixingaoshi14
+	}
+	3639.1.1 = {
+		holder = zixingaoshi15
+	}
+	3668.1.1 = {
+		holder = zixingaoshi16
+	}
+	3700.1.1 = {
+		holder = zixingaoshi17
+	}
+	3731.1.1 = {
+		holder = zixingaoshi18
+	}
+	3762.1.1 = {
+		holder = zixingaoshi19
+	}
+	3793.1.1 = {
+		holder = zixingaoshi20
+	}
+	3821.1.1 = {
+		holder = zixingaoshi21
+	}
+	3849.1.1 = {
+		holder = zixingaoshi22
+		change_development_level = 29
+		government = feudal_admin_government
+	}
+}
+k_aoguo = {
+	3225.1.1 = {
+		holder = zixingaoshi1
+	}
+	3276.1.1 = {
+		holder = zixingaoshi2
+	}
+	3303.1.1 = {
+		holder = zixingaoshi3
+	}
+	3344.1.1 = {
+		holder = zixingaoshi4
+	}
+	3368.1.1 = {
+		holder = zixingaoshi5
+	}
+	3409.1.1 = {
+		holder = zixingaoshi6
+	}
+	3426.1.1 = {
+		holder = zixingaoshi7
+	}
+	3459.1.1 = {
+		holder = zixingaoshi8
+	}
+	3482.1.1 = {
+		holder = zixingaoshi9
+	}
+	3513.1.1 = {
+		holder = zixingaoshi10
+	}
+	3539.1.1 = {
+		holder = zixingaoshi11
+	}
+	3561.1.1 = {
+		holder = zixingaoshi12
+	}
+	3580.1.1 = {
+		holder = zixingaoshi13
+		liege = "e_zhoutianzi"
+	}
+	3607.1.1 = {
+		holder = zixingaoshi14
+	}
+	3639.1.1 = {
+		holder = zixingaoshi15
+	}
+	3668.1.1 = {
+		holder = zixingaoshi16
+	}
+	3700.1.1 = {
+		holder = zixingaoshi17
+	}
+	3731.1.1 = {
+		holder = zixingaoshi18
+	}
+	3762.1.1 = {
+		holder = zixingaoshi19
+	}
+	3793.1.1 = {
+		holder = zixingaoshi20
+	}
+	3821.1.1 = {
+		holder = zixingaoshi21
+	}
+	3849.1.1 = {
+		holder = zixingaoshi22
+		change_development_level = 33
+		government = feudal_admin_government
+		liege = "e_zhoutianzi1"
+	}
+}

@@ -1,0 +1,145 @@
+﻿xuanyuanshi = {
+	color = { 0.63 0.74 0.58 }
+
+	name_order_convention = dynasty_always_first
+	ethos = ethos_communal
+	heritage = heritage_huaxiaxianmin
+	language = language_chinese
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+   
+	traditions = {
+        tradition_mystical_ancestors
+		    tradition_agrarian
+        tradition_artisans
+	}
+
+	name_list = name_list_han
+
+	coa_gfx = { chinese_group_coa_gfx }
+	building_gfx = { chinese_building_gfx }
+	clothing_gfx = { chinese_clothing_gfx }
+	unit_gfx = { chinese_unit_gfx }
+	house_coa_frame = house_china
+
+	ethnicities = {
+		10 = asian_han_chinese
+	}
+}
+shennongshi = {
+	color = { 200 160 0 }
+
+	name_order_convention = dynasty_always_first
+	ethos = ethos_bureaucratic
+	heritage = heritage_huaxiaxianmin
+	language = language_chinese
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+   
+	traditions = {
+        tradition_loyal_soldiers
+		    tradition_agrarian
+        tradition_medicinal_plants
+	}
+
+	name_list = name_list_han
+
+	coa_gfx = { chinese_group_coa_gfx }
+	building_gfx = { chinese_building_gfx }
+	clothing_gfx = { chinese_clothing_gfx }
+	unit_gfx = { chinese_unit_gfx }
+	house_coa_frame = house_china
+
+	ethnicities = {
+		10 = asian_han_chinese
+	}
+}
+gutangren = {
+	color = { 0.35 0.3 0.1 }
+
+	name_order_convention = dynasty_always_first
+	ethos = ethos_courtly
+	heritage = heritage_huaxiaxianmin
+	language = language_chinese
+	martial_custom = martial_custom_equal
+	head_determination = head_determination_domain
+   
+	traditions = {
+        tradition_modest
+		    tradition_tribe_unity
+        tradition_agrarian
+        tradition_hard_working
+	}
+
+	name_list = name_list_han
+
+	coa_gfx = { chinese_group_coa_gfx }
+	building_gfx = { chinese_building_gfx }
+	clothing_gfx = { chinese_clothing_gfx }
+	unit_gfx = { chinese_unit_gfx }
+	house_coa_frame = house_china
+
+	ethnicities = {
+		10 = asian_han_chinese
+	}
+}
+
+taihaoshi = {
+	color = { 100 80 30 }
+
+	name_order_convention = dynasty_always_first
+	ethos = ethos_spiritual
+	heritage = heritage_huaxiaxianmin
+	language = language_chinese
+	martial_custom = martial_custom_equal
+	head_determination = head_determination_domain
+   
+	traditions = {
+        tradition_faith_bound
+		    tradition_tribe_unity
+        tradition_religious_festivities
+        tradition_agrarian
+	}
+
+	name_list = name_list_han
+
+	coa_gfx = { chinese_group_coa_gfx }
+	building_gfx = { chinese_building_gfx }
+	clothing_gfx = { chinese_clothing_gfx }
+	unit_gfx = { chinese_unit_gfx }
+	house_coa_frame = house_china
+
+	ethnicities = {
+		10 = asian_han_chinese
+	}
+}
+
+shaohaoshi = {
+	color = { 70 120 90 }
+
+	name_order_convention = dynasty_always_first
+	ethos = ethos_spiritual
+	heritage = heritage_huaxiaxianmin
+	language = language_chinese
+	martial_custom = martial_custom_equal
+	head_determination = head_determination_domain
+   
+	traditions = {
+        tradition_legendary_noble_families
+		    tradition_tribe_unity
+        tradition_staunch_traditionalists
+        tradition_fishermen
+	}
+
+	name_list = name_list_han
+
+	coa_gfx = { chinese_group_coa_gfx }
+	building_gfx = { chinese_building_gfx }
+	clothing_gfx = { chinese_clothing_gfx }
+	unit_gfx = { chinese_unit_gfx }
+	house_coa_frame = house_china
+
+	ethnicities = {
+		10 = asian_han_chinese
+	}
+}

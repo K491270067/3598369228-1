@@ -1,0 +1,30 @@
+﻿##### d_fanshi ############################
+
+### c_yangfang
+# XIULIANG
+1071 = {
+	holding = none
+}
+
+
+### c_mao5
+
+
+##### d_xinyuanshi ############################
+
+### c_zhi4
+# ZHI4
+1121 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+### c_xinyuan
+# SHAN2
+1070 = {
+	holding = none
+}
+
+

@@ -1,0 +1,53 @@
+﻿##### d_guoshi1 ############################
+
+### c_pingling
+# PINGLING
+36 = {
+	culture = xiaren
+	religion = xiali
+	holding = castle_holding
+}
+
+
+### c_guo2
+# GUO2
+2178 = {
+	culture = xiaren
+	religion = xiali
+	holding = castle_holding
+}
+# TUGU
+2179 = {
+	holding = none
+}
+
+
+### c_yangqiu1
+# YANGQIU1
+2180 = {
+	culture = xiaren
+	religion = xiali
+	holding = castle_holding
+}
+
+
+##### d_zhenguanshi ############################
+
+### c_shi
+# SHI
+59 = {
+	culture = xiaren
+	religion = xiali
+	holding = castle_holding
+}
+
+
+### c_li1
+# LI1
+60 = {
+	culture = xiaren
+	religion = xiali
+	holding = castle_holding
+}
+
+

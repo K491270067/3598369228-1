@@ -1,0 +1,825 @@
+#############  巴国--姬姓 #############
+han5067={
+  name="can1"#假设其为公叔祖类之子
+  dynasty=baijia297
+	religion="xizhouli" 
+	culture="zhou"
+	father=han1361
+
+  3313.11.11 = {
+		birth = yes
+	}
+  3369.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han5068={
+  name="si3"
+  dynasty=baijia297
+	religion="xizhouli" 
+	culture="zhou"
+	father=han5067
+
+  3360.1.1 = {
+		birth = yes
+	}
+  3425.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han5069={
+  name="liang1"
+  dynasty=baijia297
+	religion="xizhouli" 
+	culture="zhou"
+	father=han5068
+
+  3411.1.1 = {
+		birth = yes
+	}
+  3477.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han5070={
+  name="hui2"
+  dynasty=baijia297
+	religion="xizhouli" 
+	culture="zhou"
+	father=han5069
+
+  3469.1.1 = {
+		birth = yes
+	}
+  3520.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han5071={
+  name="sheng3"
+  dynasty=xin885
+	religion="xizhouli" 
+	culture="baren"
+	father=han5070
+
+  3516.1.1 = {
+		birth = yes
+	}
+  3582.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han5072={
+  name="hun1"
+  dynasty_house=house_baijia223
+	religion="xizhouli" 
+	culture="baren"
+	father=han5071
+
+  3539.1.1 = {
+		birth = yes
+	}
+  3600.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han5073={
+  name="cun"
+  dynasty_house=house_baijia223
+	religion="xizhouli" 
+	culture="baren"
+	father=han5072
+
+  3581.1.1 = {
+		birth = yes
+	}
+  3648.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han5074={
+  name="junwen"
+  dynasty_house=house_baijia223
+	religion="xizhouli" 
+	culture="baren"
+	father=han5073
+
+  3616.1.1 = {
+		birth = yes
+	}
+  3680.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han5075={
+  name="zheng2"
+  dynasty_house=house_baijia223
+	religion="xizhouli" 
+	culture="baren"
+	father=han5074
+
+  3647.1.1 = {
+		birth = yes
+	}
+  3704.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han5076={
+  name="yang3"
+  dynasty_house=house_baijia223
+	religion="xizhouli" 
+	culture="baren"
+	father=han5075
+
+  3684.1.1 = {
+		birth = yes
+	}
+  3737.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han5077={
+  name="xin2"
+  dynasty_house=house_baijia223
+	religion="xizhouli" 
+	culture="baren"
+	father=han5076
+
+  3719.1.1 = {
+		birth = yes
+	}
+  3770.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han5078={
+  name="jiao3"
+  dynasty_house=house_baijia223
+	religion="xizhouli" 
+	culture="baren"
+	father=han5077
+
+  3754.1.1 = {
+		birth = yes
+	}
+  3803.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han5079={
+  name="shi6"
+  dynasty_house=house_baijia223
+	religion="xizhouli" 
+	culture="baren"
+	father=han5078
+
+  3796.1.1 = {
+		birth = yes
+	}
+  3844.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han5080={
+  name="mang1"##平王东迁时巴国君主，游戏开局时23岁
+  dynasty_house=house_baijia223
+	religion="xizhouli" 
+	culture="baren"
+	father=han5079
+
+  3817.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han5081={
+  name="nanming270"#游戏开局时未成年
+  dynasty_house=house_baijia223
+	religion="xizhouli" 
+	culture="baren"
+	father=han5080
+
+  3835.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han5082={
+  name="nanming281"#游戏开局时未成年
+  dynasty_house=house_baijia223
+	religion="xizhouli" 
+	culture="baren"
+	father=han5080
+
+  3836.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han5083={
+  name="nvming224"#游戏开局时未成年，女
+  dynasty_house=house_baijia223
+	religion="xizhouli" 
+	culture="baren"
+	father=han5080
+  female=yes
+
+  3837.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han5084={
+  name="nvming226"#游戏开局时未成年，女
+  dynasty_house=house_baijia223
+	religion="xizhouli" 
+	culture="baren"
+	father=han5080
+  female=yes
+
+  3838.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+#############  巴国氏族--瞫姓  #############
+han5085={
+  name="nanming296"
+  dynasty=xin282
+	religion="guiwu" 
+	culture="baren"
+
+  3723.1.1 = {
+		birth = yes
+	}
+  3770.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han5086={
+  name="wu2"
+  dynasty=xin282
+	religion="guiwu" 
+	culture="baren"
+	father=han5085
+
+  3758.1.1 = {
+		birth = yes
+	}
+  3811.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han5087={
+  name="qiushou"
+  dynasty=xin282
+	religion="guiwu" 
+	culture="baren"
+	father=han5086
+
+  3789.5.1 = {
+		birth = yes
+	}
+  3842.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han5088={
+  name="ke3"
+  dynasty=xin282
+	religion="guiwu" 
+	culture="baren"
+	father=han5087
+
+  3817.5.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han5089={
+  name="qiu4"
+  dynasty=xin282
+	religion="guiwu" 
+	culture="baren"
+	father=han5088
+
+  3835.5.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han5090={
+  name="hai1"
+  dynasty=xin282
+	religion="guiwu" 
+	culture="baren"
+	father=han5088
+
+  3836.5.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han5091={
+  name="ze1"
+  dynasty=xin282
+	religion="guiwu" 
+	culture="baren"
+	father=han5088
+
+  3837.5.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han5092={
+  name="yun6"
+  dynasty=xin282
+	religion="guiwu" 
+	culture="baren"
+	father=han5088
+  female=yes
+
+  3838.5.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han5093={
+  name="xian5"
+  dynasty=xin282
+	religion="guiwu" 
+	culture="baren"
+	father=han5088
+  female=yes
+
+  3839.5.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+#############  巴国氏族--巴姓  #############
+han5094={
+  name="bao3"
+  dynasty=xin886
+	religion="guiwu" 
+	culture="baren"
+
+  3555.1.1 = {
+		birth = yes
+	}
+  3605.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han5095={
+  name="yin2"
+  dynasty=xin886
+	religion="guiwu" 
+	culture="baren"
+	father=han5094
+
+  3589.1.1 = {
+		birth = yes
+	}
+  3637.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han5096={
+  name="jiangxin"
+  dynasty=xin886
+	religion="guiwu" 
+	culture="baren"
+	father=han5095
+
+  3612.5.1 = {
+		birth = yes
+	}
+  3669.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han5097={
+  name="nanming1"
+  dynasty=xin886
+	religion="guiwu" 
+	culture="baren"
+	father=han5096
+
+  3662.5.1 = {
+		birth = yes
+	}
+  3715.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han5098={
+  name="nanming14"
+  dynasty=xin886
+	religion="guiwu" 
+	culture="baren"
+	father=han5097
+
+  3694.5.1 = {
+		birth = yes
+	}
+  3753.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han5099={
+  name="nanming22"
+  dynasty=xin886
+	religion="guiwu" 
+	culture="baren"
+	father=han5098
+
+  3737.5.1 = {
+		birth = yes
+	}
+  3791.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han5100={
+  name="nanming34"
+  dynasty=xin886
+	religion="guiwu" 
+	culture="baren"
+	father=han5099
+
+  3784.5.1 = {
+		birth = yes
+	}
+  3833.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han5101={
+  name="nanming54"
+  dynasty=xin886
+	religion="guiwu" 
+	culture="baren"
+	father=han5100
+
+  3814.6.2 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han5102={
+  name="nanming73"
+  dynasty=xin886
+	religion="guiwu" 
+	culture="baren"
+	father=han5101
+
+  3832.6.2 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han5103={
+  name="nanming89"
+  dynasty=xin886
+	religion="guiwu" 
+	culture="baren"
+	father=han5101
+
+  3833.6.2 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han5104={
+  name="feiyan"
+  dynasty=xin886
+	religion="guiwu" 
+	culture="baren"
+	father=han5101
+  female=yes
+
+  3834.6.2 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han5105={
+  name="piao"
+  dynasty=xin886
+	religion="guiwu" 
+	culture="baren"
+	father=han5101
+  female=yes
+
+  3835.6.2 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+#################樊
+barenbaguo1={
+  name="nanming277"
+  dynasty=xin887
+	religion="guiwu" 
+	culture="baren"
+
+  3789.1.1 = {
+		birth = yes
+	}
+  3828.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+barenbaguo2={
+  name="nanming288"
+  dynasty=xin887
+	religion="guiwu" 
+	culture="baren"
+	father=barenbaguo1
+
+  3811.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+barenbaguo3={
+  name="nanming295"
+  dynasty=xin887
+	religion="guiwu" 
+	culture="baren"
+	father=barenbaguo2
+
+  3829.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+barenbaguo4={
+  name="nanming318"
+  dynasty=xin887
+	religion="guiwu" 
+	culture="baren"
+	father=barenbaguo2
+
+  3830.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+barenbaguo5={
+  name="nvming236"
+  dynasty=xin887
+	religion="guiwu" 
+	culture="baren"
+	father=barenbaguo2
+	female=yes
+
+  3831.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+#################樊
+barenbaguo6={
+  name="nanming333"
+  dynasty=xin888
+	religion="guiwu" 
+	culture="baren"
+
+  3724.1.1 = {
+		birth = yes
+	}
+  3781.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+barenbaguo7={
+  name="nanming348"
+  dynasty=xin888
+	religion="guiwu" 
+	culture="baren"
+	father=barenbaguo6
+
+  3751.1.1 = {
+		birth = yes
+	}
+  3807.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+barenbaguo8={
+  name="nanming363"
+  dynasty=xin888
+	religion="guiwu" 
+	culture="baren"
+	father=barenbaguo7
+
+  3785.1.1 = {
+		birth = yes
+	}
+  3839.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+barenbaguo9={
+  name="nanming375"
+  dynasty=xin888
+	religion="guiwu" 
+	culture="baren"
+	father=barenbaguo8
+
+  3806.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+barenbaguo10={
+  name="nanming398"
+  dynasty=xin888
+	religion="guiwu" 
+	culture="baren"
+	father=barenbaguo9
+
+  3824.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+barenbaguo11={
+  name="nanming438"
+  dynasty=xin888
+	religion="guiwu" 
+	culture="baren"
+	father=barenbaguo9
+
+  3826.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+barenbaguo12={
+  name="nvming306"
+  dynasty=xin888
+	religion="guiwu" 
+	culture="baren"
+	father=barenbaguo9
+	female=yes
+
+  3829.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}

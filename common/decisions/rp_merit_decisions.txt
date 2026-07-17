@@ -1,0 +1,55 @@
+﻿rp_merit_roster_decision = {
+	decision_group_type = rp_merit
+
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/tgp_decision_mandala.dds"
+	}
+	desc = rp_merit_roster_decision_desc
+	selection_tooltip = rp_merit_roster_decision_tooltip
+
+	is_shown = {
+		rp_is_merit_system_enabled_trigger = yes
+	}
+
+	is_valid = {
+		always = yes
+	}
+
+	effect = {
+		trigger_event = rp_merit.0200
+	}
+
+	ai_check_interval = 0
+}
+
+rp_petition_liege_for_merit_decision = {
+	decision_group_type = rp_merit
+
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/tgp_decision_mandala.dds"
+	}
+	desc = rp_petition_liege_for_merit_decision_desc
+	selection_tooltip = rp_petition_liege_for_merit_decision_tooltip
+
+	is_shown = {
+		is_ai = no
+		has_variable = rp_merit_owner
+		has_variable = rp_merit_score
+		var:rp_merit_score >= 30
+		var:rp_merit_owner ?= {
+			is_alive = yes
+			NOT = { this = root }
+		}
+	}
+
+	is_valid = {
+		NOT = { has_character_flag = rp_petition_recently_handled }
+	}
+
+	effect = {
+		var:rp_merit_owner = { save_scope_as = rp_petition_liege }
+		trigger_event = rp_merit.1301
+	}
+
+	ai_check_interval = 0
+}

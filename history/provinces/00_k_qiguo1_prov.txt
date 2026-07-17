@@ -1,0 +1,68 @@
+﻿##### d_qishi ############################
+
+### c_qi
+# QI
+236 = {
+	culture = xiaren
+	religion = xiali
+	holding = castle_holding
+}
+# PINGYANG
+234 = {
+	holding = none
+}
+
+
+### c_tangao
+# TANGAO
+369 = {
+	culture = xiaren
+	religion = xiali
+	holding = castle_holding
+}
+
+
+##### d_dongloushi ############################
+
+### c_liangfu
+# LIANGFU
+235 = {
+	culture = xiaren
+	religion = xiali
+	holding = castle_holding
+}
+
+
+### c_jiagu1
+# JIAGU1
+2268 = {
+	culture = xiaren
+	religion = xiali
+	holding = castle_holding
+}
+
+
+##### d_xiloushi ############################
+
+### c_cheng
+# CHENG
+237 = {
+	culture = xiaren
+	religion = xiali
+	holding = castle_holding
+}
+# YANGGUAN
+2240 = {
+	holding = none
+}
+
+
+### c_tuqiu
+# TUQIU
+437 = {
+	culture = xiaren
+	religion = xiali
+	holding = castle_holding
+}
+
+

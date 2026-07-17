@@ -1,0 +1,4 @@
+﻿l_simp_chinese:
+ event_convert_to_feudal_admin_title: "制定法律并规范制度"
+ event_convert_to_feudal_admin_desc: "\n我的[court]从未如此繁忙。\n\n#flavor 特使与行政官遵从我的号令来来去去，带来来自最遥远边境的最新状况。领地里最杰出学者和德高望重的宗族首领们在一起，讨论法律实行的可行性。#!\n\n我的权力已达到了我的祖辈们难以想象的高度，而我只需静静享受这一切，仅在关键的问题上做出决定......\n\n然而这并不意味着万事大吉，魔鬼从未离去。将军们蠢蠢欲动，而每一位忠心臣子的笑容背后，又有多少欺诈和阴谋诡计？\n[court]中的杀机，似乎一点也不比战场上少。\n\n而若想长治久安，我必须有所准备。"
+ event_option_convert_to_feudal_admin_finish: "还有很多工作要做"

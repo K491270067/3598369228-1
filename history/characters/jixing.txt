@@ -1,0 +1,467 @@
+﻿########## 五帝时代 ##########
+han1310={
+  name="nanming185"#黄帝
+  dynasty=baijia297#姬
+	religion="xiali" 
+	culture="xuanyuanshi"
+
+  1903.3.3 = {
+		birth = yes
+	}
+  2225.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1311={ #第1代
+  name="nanming186"#青阳
+  dynasty=baijia297#姬
+	religion="xiali" 
+	culture="xuanyuanshi"
+  father=han1310
+  
+  2200.1.1 = {
+		birth = yes
+	}
+  2298.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+    give_nickname=nick_shaohao
+  }
+}
+han1312={ #第1代
+  name="nanming187"
+  dynasty=baijia297#姬
+	religion="xiali" 
+	culture="xuanyuanshi"
+  father=han1310
+  
+  2201.1.1 = {
+		birth = yes
+	}
+  2290.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1313={ #第2代
+  name="nanming188"
+  dynasty=baijia297#姬
+	religion="xiali" 
+	culture="xuanyuanshi"
+  father=han1311
+  
+  2276.1.1 = {
+		birth = yes
+	}
+  2355.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1314={ #第2代
+  name="nanming189"#帝颛顼，高阳氏
+  dynasty=baijia297
+	religion="xiali" 
+	culture="xuanyuanshi"
+  father=han1312
+
+  2277.1.1 = {
+		birth = yes
+	}
+  2375.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+    give_nickname=nick_dizhuangyu    
+  }
+}
+han1315={ #第3代
+  name="nanming190"#帝喾
+  dynasty=baijia297#姬
+	religion="xiali" 
+	culture="xuanyuanshi"
+  father=han1313
+  
+  2345.1.1 = {
+		birth = yes
+	}
+  2437.1.1={
+	add_spouse=yousongshi2
+  }
+  2438.1.1={
+	add_spouse=yousongshi3
+  }
+  2444.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+    give_nickname=nick_diku
+  }
+}
+han1317={ #第3代
+  name="nanming192" #史记未载，为使年代和人物代数合理选取其他版本
+  dynasty_house=house_xin237
+	religion="xiali" 
+	culture="xuanyuanshi"
+  father=han1314
+  
+  2302.1.1 = {
+		birth = yes
+	}
+  2380.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1318={ #第3代
+  name="nanming193" #《史记》记载赵、秦之先祖
+  dynasty=baijia297
+	religion="xiali" 
+	culture="xuanyuanshi"
+  father=han1314
+  
+  2374.1.1 = {
+		birth = yes
+	}
+  2460.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1319={ #第3代
+  name="chen" #《史记》记载楚之先祖
+  dynasty=baijia297
+	religion="xiali" 
+	culture="xuanyuanshi"
+  father=han1314
+  
+  2300.1.1 = {
+		birth = yes
+	}
+  2375.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1320={ #第4代
+  name="nanming194"#帝挚，帝喾之后，帝尧之前的帝
+  dynasty=baijia297#姬
+	religion="xiali" 
+	culture="xuanyuanshi"
+  father=han1315
+  
+  2399.1.1 = {
+		birth = yes
+	}
+  2452.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+    give_nickname=nick_dizhe
+  }
+}
+han1321={ #第4代
+  name="nanming195"#帝尧
+  dynasty=xin32
+	religion="xiali" 
+	culture="xuanyuanshi"
+  father=han1315
+  
+  2441.1.1 = {
+		birth = yes
+	}
+  2525.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+    give_nickname=nick_diyao
+  }
+}
+han1323={ #第4代
+  name="nanming197"
+  dynasty_house=house_xin237
+	religion="xiali" 
+	culture="xuanyuanshi"
+  father=han1317
+  
+  2382.1.1 = {
+		birth = yes
+	}
+  2420.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1324={ #第4代
+  name="nvming43"
+  dynasty=baijia297
+	religion="xiali" 
+	culture="xuanyuanshi"
+  father=han1318
+  female=yes
+  
+  2450.1.1 = {
+		birth = yes
+	}
+  2520.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1325={ #第4代
+  name="nanming198"
+  dynasty=baijia297
+	religion="xiali" 
+	culture="xuanyuanshi"
+  father=han1319
+  
+  2320.1.1 = {
+		birth = yes
+	}
+  2396.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1327={ #第5代
+  name="nanming200"
+  dynasty_house=house_xin237
+	religion="xiali" 
+	culture="xuanyuanshi"
+  father=han1323
+  
+  2402.1.1 = {
+		birth = yes
+	}
+  2461.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1328={ #第5代
+  name="nanming201"
+  dynasty=xin51#赢
+	religion="xiali" 
+	culture="xuanyuanshi"
+  mother=han1324
+  
+  2470.1.1 = {
+		birth = yes
+	}
+  2524.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1329={ #第5代
+  name="nanming202"#祝融，为帝喾所诛杀，传位其弟吴回
+  dynasty_house=baijia297
+	religion="xiali" 
+	culture="xuanyuanshi"
+  father=han1325
+  
+  2382.1.1 = {
+		birth = yes
+	}
+  2430.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1330={ #第5代
+  name="nanming203"#祝融
+  dynasty=baijia297
+	religion="xiali" 
+	culture="xuanyuanshi"
+  father=han1325
+  
+  2383.1.1 = {
+		birth = yes
+	}
+  2464.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+
+han1332={ #第6代
+  name="nanming205"
+  dynasty_house=house_xin237
+	religion="xiali" 
+	culture="xuanyuanshi"
+  father=han1333
+  
+  2474.1.1 = {
+		birth = yes
+	}
+  2512.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1333={ #第5代
+  name="nanming206"
+  dynasty_house=house_xin237
+	religion="xiali" 
+	culture="xuanyuanshi"
+  father=han1327
+  
+  2452.1.1 = {
+		birth = yes
+	}
+  2481.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1334={ #第6代
+  name="nanming207"#嬴姓始祖，一作伯翳、柏益，又称大费
+  dynasty=xin51#赢
+	religion="xiali" 
+	culture="xuanyuanshi"
+  father=han1328
+  
+  2521.1.1 = {
+		birth = yes
+	}
+  2600.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1335={ #第6代
+  name="nanming208"
+  dynasty=baijia297
+	religion="xiali" 
+	culture="xuanyuanshi"
+  father=han1330
+  
+  2403.1.1 = {
+		birth = yes
+	}
+  2470.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+
+han1337={ #第7代
+  name="nanming210"#大禹大禹大禹
+  dynasty=xin17#姒
+	religion="xiali" 
+	culture="xiaren"
+  father=han1332
+  
+  2493.1.1 = {
+		birth = yes
+	}
+	2513.1.1  = {
+		add_spouse = tushanshi3
+	}	
+  2559.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+    give_nickname=nick_diyu
+  }
+}
+han1338={ #第7代
+  name="nanming211"#昆吾，昆吾氏，己姓祖先，周时苏国苏忿生祖先。苏忿生：西周开国功臣之一，与周公、召公齐名。为王族，因封于苏，故称苏忿生。
+  dynasty=xin52#己
+	religion="xiali" 
+	culture="xuanyuanshi"
+  father=han1335
+  
+  2433.1.1 = {
+		birth = yes
+	}
+  2510.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1340={ #第7代
+  name="keng1"#彭祖，彭姓祖先，名籛字铿，又称彭铿
+  dynasty=baijia47#彭
+	religion="xiali" 
+	culture="xiaren"
+  father=han1335
+  
+  2435.1.1 = {
+		birth = yes
+	}
+  2520.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+    give_nickname=nick_pengzu
+  }
+}
+han1341={ #第7代
+  name="nanming213"#会人，吴回第四子莱言妘姓为莱国始祖，莱言之后有西迁帝喾封藜〔莱〕的郐墟〔祝融之墟〕西周的郐国是也
+  dynasty=xin53
+	religion="xiali" 
+	culture="xuanyuanshi"
+  father=han1335
+  
+  2436.1.1 = {
+		birth = yes
+	}
+  2515.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1342={ #第7代
+  name="yang3"#曹安(或书作"晏"，二字古通用)，因协助大禹治水有功被封为曹官，后以官为姓，是为曹姓始祖。
+  dynasty=xin55#曹
+	religion="xiali" 
+	culture="xuanyuanshi"
+  father=han1335
+  
+  2466.1.1 = {
+		birth = yes
+	}
+  2555.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1343={ #第7代
+  name="nanming214"#芈姓始祖
+  dynasty=xin56#芈
+	religion="xiali" 
+	culture="xuanyuanshi"
+  father=han1335
+  
+  2467.1.1 = {
+		birth = yes
+	}
+  2560.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}

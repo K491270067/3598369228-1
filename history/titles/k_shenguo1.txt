@@ -1,0 +1,290 @@
+﻿d_zhangshi1 = {
+	2367.1.1 = {
+		liege = "k_shenguo1"
+		holder = taidaishenshi2
+	}
+	2411.1.1 = {
+		holder = taidaishenshi3
+	}
+	2455.1.1 = {
+		holder = taidaishenshi4
+	}
+	2483.1.1 = {
+		holder = taidaishenshi5
+	}
+	2515.1.1 = {
+		holder = taidaishenshi6
+	}
+	2547.1.1 = {
+		holder = taidaishenshi7
+	}
+	2579.1.1 = {
+		holder = taidaishenshi8
+	}
+	2611.1.1 = {
+		holder = taidaishenshi9
+	}
+	2643.1.1 = {
+		holder = taidaishenshi10
+	}
+	2675.1.1 = {
+		holder = taidaishenshi11
+	}
+	2707.1.1 = {
+		holder = taidaishenshi12
+	}
+	2739.1.1 = {
+		holder = taidaishenshi13
+	}
+	2771.1.1 = {
+		holder = taidaishenshi14
+	}
+	2803.1.1 = {
+		holder = taidaishenshi15
+	}
+	2835.1.1 = {
+		holder = taidaishenshi16
+	}
+	2867.1.1 = {
+		holder = taidaishenshi17
+	}
+	2899.1.1 = {
+		holder = taidaishenshi18
+	}
+	2931.1.1 = {
+		holder = taidaishenshi19
+	}
+	2963.1.1 = {
+		holder = taidaishenshi20
+	}
+	2995.1.1 = {
+		holder = taidaishenshi21
+	}
+	3026.1.1 = {
+		holder = taidaishenshi22
+	}
+	3066.1.1 = {
+		holder = taidaishenshi23
+	}
+	3093.1.1 = {
+		holder = taidaishenshi24
+	}
+	3120.1.1 = {
+		holder = taidaishenshi25
+	}
+	3158.1.1 = {
+		holder = taidaishenshi26
+	}
+	3182.1.1 = {
+		holder = taidaishenshi27
+	}
+	3221.1.1 = {
+		holder = taidaishenshi28
+	}
+	3256.1.1 = {
+		holder = taidaishenshi29
+	}
+	3278.1.1 = {
+		holder = taidaishenshi30
+	}
+	3323.1.1 = {
+		holder = taidaishenshi31
+	}
+	3344.1.1 = {
+		holder = taidaishenshi32
+	}
+	3385.1.1 = {
+		holder = taidaishenshi33
+	}
+	3412.1.1 = {
+		holder = taidaishenshi34
+	}
+	3440.1.1 = {
+		holder = taidaishenshi35
+	}
+	3479.1.1 = {
+		holder = taidaishenshi36
+	}
+	3501.1.1 = {
+		holder = taidaishenshi37
+	}
+	3543.1.1 = {
+		holder = taidaishenshi38
+	}
+	3572.1.1 = {
+		holder = taidaishenshi39
+	}
+	3605.1.1 = {
+		holder = taidaishenshi40
+	}
+	3631.1.1 = {
+		holder = taidaishenshi41
+	}
+	3668.1.1 = {
+		holder = taidaishenshi42
+	}
+	3704.1.1 = {
+		holder = taidaishenshi43
+	}
+	3728.1.1 = {
+		holder = taidaishenshi44
+	}
+	3764.1.1 = {
+		holder = taidaishenshi45
+	}
+	3790.1.1 = {
+		holder = taidaishenshi46
+	}
+	3826.1.1 = {
+		holder = taidaishenshi51
+	}
+	3849.1.1 = {
+		change_development_level = 29
+		government = feudal_admin_government
+	}
+}
+k_shenguo1 = {
+	2367.1.1 = {
+		holder = taidaishenshi2
+	}
+	2411.1.1 = {
+		holder = taidaishenshi3
+	}
+	2455.1.1 = {
+		holder = taidaishenshi4
+	}
+	2483.1.1 = {
+		holder = taidaishenshi5
+	}
+	2515.1.1 = {
+		holder = taidaishenshi6
+	}
+	2547.1.1 = {
+		holder = taidaishenshi7
+	}
+	2579.1.1 = {
+		holder = taidaishenshi8
+	}
+	2611.1.1 = {
+		holder = taidaishenshi9
+	}
+	2643.1.1 = {
+		holder = taidaishenshi10
+	}
+	2675.1.1 = {
+		holder = taidaishenshi11
+	}
+	2707.1.1 = {
+		holder = taidaishenshi12
+	}
+	2739.1.1 = {
+		holder = taidaishenshi13
+	}
+	2771.1.1 = {
+		holder = taidaishenshi14
+	}
+	2803.1.1 = {
+		holder = taidaishenshi15
+	}
+	2835.1.1 = {
+		holder = taidaishenshi16
+	}
+	2867.1.1 = {
+		holder = taidaishenshi17
+	}
+	2899.1.1 = {
+		holder = taidaishenshi18
+	}
+	2931.1.1 = {
+		holder = taidaishenshi19
+	}
+	2963.1.1 = {
+		holder = taidaishenshi20
+	}
+	2995.1.1 = {
+		holder = taidaishenshi21
+	}
+	3026.1.1 = {
+		holder = taidaishenshi22
+	}
+	3066.1.1 = {
+		holder = taidaishenshi23
+	}
+	3093.1.1 = {
+		holder = taidaishenshi24
+	}
+	3120.1.1 = {
+		holder = taidaishenshi25
+	}
+	3158.1.1 = {
+		holder = taidaishenshi26
+	}
+	3182.1.1 = {
+		holder = taidaishenshi27
+	}
+	3221.1.1 = {
+		holder = taidaishenshi28
+	}
+	3256.1.1 = {
+		holder = taidaishenshi29
+	}
+	3278.1.1 = {
+		holder = taidaishenshi30
+	}
+	3323.1.1 = {
+		holder = taidaishenshi31
+	}
+	3344.1.1 = {
+		holder = taidaishenshi32
+	}
+	3385.1.1 = {
+		holder = taidaishenshi33
+	}
+	3412.1.1 = {
+		holder = taidaishenshi34
+	}
+	3440.1.1 = {
+		holder = taidaishenshi35
+	}
+	3479.1.1 = {
+		holder = taidaishenshi36
+	}
+	3501.1.1 = {
+		holder = taidaishenshi37
+	}
+	3543.1.1 = {
+		holder = taidaishenshi38
+	}
+	3572.1.1 = {
+		holder = taidaishenshi39
+	}
+	3605.1.1 = {
+		liege = "e_zhoutianzi"
+		holder = taidaishenshi40
+	}
+	3631.1.1 = {
+		holder = taidaishenshi41
+	}
+	3668.1.1 = {
+		holder = taidaishenshi42
+	}
+	3704.1.1 = {
+		holder = taidaishenshi43
+	}
+	3728.1.1 = {
+		holder = taidaishenshi44
+	}
+	3764.1.1 = {
+		holder = taidaishenshi45
+	}
+	3790.1.1 = {
+		holder = taidaishenshi46
+	}
+	3826.1.1 = {
+		holder = taidaishenshi47
+	}
+	3849.1.1 = {
+		change_development_level = 32
+		government = feudal_admin_government
+	}
+}

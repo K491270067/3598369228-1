@@ -1,0 +1,51 @@
+﻿##### d_yushi1 ############################
+
+### c_kucheng
+
+
+### c_dianling
+# DIANLING
+1013 = {
+	culture = jin
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+### c_yu5
+# YU5
+1015 = {
+	culture = jin
+	religion = dongzhouli
+	holding = castle_holding
+}
+# XINGONGLI
+1017 = {
+	holding = none
+}
+
+
+##### d_jingshi ############################
+
+### c_xiayang
+# XIAYANG
+1012 = {
+	culture = jin
+	religion = dongzhouli
+	holding = castle_holding
+}
+# GONGCHI
+1009 = {
+	holding = none
+}
+
+
+### c_ming
+# MING
+1014 = {
+	culture = jin
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+

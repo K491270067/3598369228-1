@@ -1,0 +1,4 @@
+﻿l_spanish:
+ event_convert_to_feudal_admin_title: "Formalize Laws and Institutions"
+ event_convert_to_feudal_admin_desc: "\nMy [court] has never been so busy.\n\n#flavor Envoys and administrators come and go at my command, bringing the latest reports from the most distant frontiers. The finest scholars of the realm and venerable noble elders gather together, debating the feasibility of implementing new laws.#!\n\nMy authority has reached heights that my ancestors could never imagined, and I only need sit back and savor it all, intervening only on matters of true importance......\n\nYet this does not mean all is well, the devil has never left. Generals grow restless, and behind the smile of every loyal servant, how much deceit and intrigue lie hidden?\nThe [court] harbors as much peril as any battlefield.\n\nIf I am to secure a lasting stability, I must be prepared."
+ event_option_convert_to_feudal_admin_finish: "There is much work to be done"

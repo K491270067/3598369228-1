@@ -1,0 +1,196 @@
+﻿##########缈熸煠###########
+dizushi1={
+  name="xun"
+  dynasty=xin566
+  culture="chidi"
+  religion="beidifangling"
+  father=han2065
+
+  3722.1.1 = {
+		birth = yes
+	}
+  3780.12.31 = {
+		death = {
+			death_reason = death_siege
+		}
+  }
+}
+dizushi2={
+  name="ruoshan"
+  dynasty_house=house_xin567
+  culture="chidi"
+  religion="beidifangling"
+  father=dizushi1
+
+  3764.1.1 = {
+		birth = yes
+	}
+  3817.12.31 = {
+		death = {
+			death_reason = death_siege
+		}
+  }
+}
+dizushi3={
+  name="wu1"
+  dynasty_house=house_xin567
+  culture="chidi"
+  religion="beidifangling"
+  father=dizushi2
+
+  3794.1.1 = {
+		birth = yes
+	}
+  3838.12.31 = {
+		death = {
+			death_reason = death_siege
+		}
+  }
+}
+dizushi4={#######寮€灞€
+  name="su"
+  dynasty_house=house_xin567
+  culture="chidi"
+  religion="beidifangling"
+  father=dizushi3
+
+  3826.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_siege
+		}
+  }
+}
+dizushi5={
+  name="ming"
+  dynasty_house=house_xin567
+  culture="chidi"
+  religion="beidifangling"
+  father=dizushi4
+
+  3844.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_siege
+		}
+  }
+}
+dizushi6={
+  name="wuye"
+  dynasty_house=house_xin567
+  culture="chidi"
+  religion="beidifangling"
+  father=dizushi4
+
+  3845.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_siege
+		}
+  }
+}
+dizushi7={
+  name="zhi"
+  dynasty_house=house_xin567
+  culture="chidi"
+  religion="beidifangling"
+  father=dizushi4
+
+  3846.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_siege
+		}
+  }
+}
+dizushi8={
+  name="nanming433"
+  dynasty_house=house_xin567
+  culture="chidi"
+  religion="beidifangling"
+  father=dizushi4
+  female=yes
+
+  3847.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_siege
+		}
+  }
+}
+dizushi9={
+  name="nanming433"
+  dynasty_house=house_xin567
+  culture="chidi"
+  religion="beidifangling"
+  father=dizushi4
+  female=yes
+
+  3848.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_siege
+		}
+  }
+}
+##############
+dizushi10={#######寮€灞€
+  name="yayu"
+  dynasty_house=house_xin568
+  culture="chidi"
+  religion="beidifangling"
+  father=dizushi3
+
+  3830.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_siege
+		}
+  }
+}
+dizushi11={
+  name="wei1"
+  dynasty_house=house_xin568
+  culture="chidi"
+  religion="beidifangling"
+  father=dizushi10
+
+  3848.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_siege
+		}
+  }
+}
+dizushi12={
+  name="yigao"
+  dynasty_house=house_xin568
+  culture="chidi"
+  religion="beidifangling"
+  father=dizushi10
+
+  3849.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_siege
+		}
+  }
+}

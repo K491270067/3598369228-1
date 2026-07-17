@@ -1,0 +1,74 @@
+﻿##### d_wuzhishi ############################
+
+### c_wushi1
+# WUSHI1
+3007 = {
+	culture = xirong
+	religion = xirongfangling
+	holding = nomad_holding
+}
+# WUSHISAI1
+3008 = {
+	holding = none
+}
+
+
+### c_xiaoguan
+# XIAOGUAN
+3009 = {
+	culture = xirong
+	religion = xirongfangling
+	holding = nomad_holding
+}
+
+
+### c_chaona
+# CHAONA
+3010 = {
+	culture = xirong
+	religion = xirongfangling
+	holding = nomad_holding
+}
+# GAOPING2
+3011 = {
+	holding = none
+}
+
+
+##### d_wushi2 ############################
+
+### c_zhou7
+# ZHOU7
+3032 = {
+	culture = xirong
+	religion = xirongfangling
+	holding = nomad_holding
+}
+# FUSHENG
+3031 = {
+	holding = none
+}
+
+
+### c_bobei
+# BOBEI
+3039 = {
+	culture = xirong
+	religion = xirongfangling
+	holding = nomad_holding
+}
+# MIEQU
+3040 = {
+	holding = none
+}
+
+
+### c_jieniao
+# JIENIAO
+3041 = {
+	culture = xirong
+	religion = xirongfangling
+	holding = nomad_holding
+}
+
+

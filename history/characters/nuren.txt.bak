@@ -1,0 +1,310 @@
+#############  奴人 #############
+nuren1={
+  name="baiyuenan328"
+  dynasty=xin909
+	religion="guiwu" 
+	culture="baipu"
+
+  3749.1.1 = {
+		birth = yes
+	}
+  3802.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+nuren2={
+  name="baiyuenan367"
+  dynasty=xin909
+	religion="guiwu" 
+	culture="baipu"
+	father=nuren1
+
+  3795.1.1 = {
+		birth = yes
+	}
+  3842.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+nuren3={
+  name="baiyuenan384"
+  dynasty=xin909
+	religion="guiwu" 
+	culture="baipu"
+	father=nuren2
+
+  3818.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+nuren4={
+  name="baiyuenan385"
+  dynasty=xin909
+	religion="guiwu" 
+	culture="baipu"
+	father=nuren3
+
+  3836.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+nuren5={
+  name="baiyuenan386"
+  dynasty=xin909
+	religion="guiwu" 
+	culture="baipu"
+	father=nuren3
+
+  3837.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+nuren6={
+  name="baiyuenv173"#女一号
+  dynasty=xin909
+	religion="guiwu" 
+	culture="baipu"
+	father=nuren3
+  female=yes
+
+  3838.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+nuren7={
+  name="baiyuenv178"#女二号
+  dynasty=xin909
+	religion="guiwu" 
+	culture="baipu"
+	father=nuren3
+  female=yes
+
+  3840.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+####################
+zuoduguo1={
+  name="baiyuenan507"
+  dynasty=xin905
+	religion="xirongfangling" 
+	culture="xiqiang"
+
+  3762.1.1 = {
+		birth = yes
+	}
+  3804.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+zuoduguo2={
+  name="baiyuenan516"
+  dynasty=xin905
+	religion="xirongfangling" 
+	culture="xiqiang"
+	father=zuoduguo1
+
+  3788.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+zuoduguo3={
+  name="baiyuenan524"
+  dynasty=xin905
+	religion="xirongfangling" 
+	culture="xiqiang"
+	father=zuoduguo2
+
+  3816.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+zuoduguo4={
+  name="baiyuenan537"
+  dynasty=xin905
+	religion="xirongfangling" 
+	culture="xiqiang"
+	father=zuoduguo2
+
+  3818.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+zuoduguo5={
+  name="baiyuenv136"
+  dynasty=xin905
+	religion="xirongfangling" 
+	culture="xiqiang"
+	father=zuoduguo2
+	female=yes
+
+  3824.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+zuoduguo6={
+  name="baiyuenv138"
+  dynasty=xin905
+	religion="xirongfangling" 
+	culture="xiqiang"
+	father=zuoduguo2
+	female=yes
+
+  3827.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+#########
+zuoduguo7={
+  name="baiyuenan541"
+  dynasty=xin905
+	religion="xirongfangling" 
+	culture="xiqiang"
+
+  3789.1.1 = {
+		birth = yes
+	}
+  3834.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+zuoduguo8={
+  name="baiyuenan462"
+  dynasty=xin905
+	religion="xirongfangling" 
+	culture="xiqiang"
+	father=zuoduguo7
+
+  3817.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+zuoduguo9={
+  name="baiyuenan491"
+  dynasty=xin905
+	religion="xirongfangling" 
+	culture="xiqiang"
+	father=zuoduguo8
+
+  3835.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+zuoduguo10={
+  name="baiyuenan500"
+  dynasty=xin905
+	religion="xirongfangling" 
+	culture="xiqiang"
+	father=zuoduguo8
+
+  3836.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+zuoduguo11={
+  name="baiyuenv168"
+  dynasty=xin905
+	religion="xirongfangling" 
+	culture="xiqiang"
+	father=zuoduguo8
+	female=yes
+
+  3837.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+zuoduguo12={
+  name="baiyuenv177"
+  dynasty=xin905
+	religion="xirongfangling" 
+	culture="xiqiang"
+	father=zuoduguo8
+	female=yes
+
+  3838.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}

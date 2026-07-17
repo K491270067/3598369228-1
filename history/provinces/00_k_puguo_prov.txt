@@ -1,0 +1,57 @@
+﻿##### d_pushi ############################
+
+### c_pu2
+# PU2
+1384 = {
+	culture = chidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+# PUZI
+1382 = {
+	holding = none
+}
+
+
+### c_puxing
+# PUXING
+2724 = {
+	culture = chidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+
+
+### c_jiaogang
+# JIAOGANG
+1381 = {
+	culture = chidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+
+
+##### d_puyushi ############################
+
+### c_hunie
+# HUNIE
+1379 = {
+	culture = chidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+# ZHIFANG
+2705 = {
+	holding = none
+}
+
+
+### c_lou
+# LOU
+1380 = {
+	culture = chidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+
+

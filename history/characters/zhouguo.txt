@@ -1,0 +1,360 @@
+﻿### 州国--州氏 ###
+zhou1={
+  name="wushang"
+  dynasty=xin354
+	religion="yinli" 
+	culture="shennongshi"
+  father=han3245
+
+  3449.1.1 = {
+		birth = yes
+	}
+  3517.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han650={
+  name="mu2"
+  dynasty_house=house_xin355
+	religion="xizhouli" 
+	culture="qi"
+	father=zhou1
+
+  3511.10.1 = {
+		birth = yes
+	}
+  3575.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+} 
+han651={
+  name="can1"
+  dynasty_house=house_xin355
+	religion="xizhouli" 
+	culture="qi"
+  father=han650
+
+  3550.1.1 = {
+		birth = yes
+	}
+  3590.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+} 
+han652={
+  name="bo2"
+  dynasty_house=house_xin355
+	religion="xizhouli" 
+	culture="qi"
+  father=han651
+
+  3585.1.1 = {
+		birth = yes
+	}
+  3649.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+} 
+han653={
+  name="ying6"
+  dynasty_house=house_xin355
+	religion="xizhouli" 
+	culture="qi"
+  father=han652
+
+  3630.1.1 = {
+		birth = yes
+	}
+  3703.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+} 
+han654={
+  name="bu1"
+  dynasty_house=house_xin355
+	religion="xizhouli" 
+	culture="qi"
+  father=han653
+
+  3680.1.1 = {
+		birth = yes
+	}
+  3751.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+} 
+han655={
+  name="han3"
+  dynasty_house=house_xin355
+	religion="xizhouli" 
+	culture="qi"
+  father=han654
+
+  3746.1.1 = {
+		birth = yes
+	}
+  3805.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+} 
+han656={
+  name="shi9"
+  dynasty_house=house_xin355
+	religion="xizhouli" 
+	culture="qi"
+  father=han655
+
+  3780.1.1 = {
+		birth = yes
+	}
+  3838.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+} 
+han657={
+  name="ce2"#平王东迁时淳于国国君
+  dynasty_house=house_xin355
+	religion="dongzhouli"
+	culture="qi"
+  father=han656
+
+  3820.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han658={
+  name="qi3"#储君1号，游戏开局时22岁
+  dynasty_house=house_xin355
+	religion="dongzhouli"
+	culture="qi"
+  father=han657
+
+  3840.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han659={
+  name="zhe1"#储君1号子
+  dynasty_house=house_xin355
+	religion="dongzhouli"
+	culture="qi"
+  father=han657
+
+  3841.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han660={
+  name="qin2"#储君1号女
+  dynasty_house=house_xin355
+	religion="dongzhouli"
+	culture="qi"
+  father=han657
+  female=yes
+
+  3842.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han661={
+  name="bao1"#储君2号，游戏开局时17岁
+  dynasty_house=house_xin355
+	religion="dongzhouli"
+	culture="qi"
+  father=han657
+
+  3843.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han662={
+  name="luo1"#储君2号子
+  dynasty_house=house_xin355
+	religion="dongzhouli"
+	culture="qi"
+  father=han657
+  female=yes
+
+  3844.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han663={
+  name="xu4"#储君3号
+  dynasty_house=house_xin355
+	religion="dongzhouli"
+	culture="qi"
+  father=han657
+
+  3845.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han664={
+  name="xi7"#女1号
+  dynasty_house=house_xin355
+	religion="dongzhouli"
+	culture="qi"
+  father=han657
+  female=yes
+
+  3846.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+### 州国--淳于氏 ###
+zhou2={
+  name="tuo1"#平王东迁时淳于国国君
+  dynasty_house=house_baijia425
+	religion="dongzhouli"
+	culture="qi"
+  father=han656
+
+  3822.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+zhou3={
+  name="yun"#储君1号，游戏开局时22岁
+  dynasty_house=house_baijia425
+	religion="dongzhouli"
+	culture="qi"
+  father=zhou2
+
+  3840.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+zhou4={
+  name="jiu"#储君1号子
+  dynasty_house=house_baijia425
+	religion="dongzhouli"
+	culture="qi"
+  father=zhou2
+
+  3841.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+zhou5={
+  name="die1"#储君1号女
+  dynasty_house=house_baijia425
+	religion="dongzhouli"
+	culture="qi"
+  father=zhou2
+  female=yes
+
+  3842.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+zhou6={
+  name="qitao"#储君2号，游戏开局时17岁
+  dynasty_house=house_baijia425
+	religion="dongzhouli"
+	culture="qi"
+  father=zhou2
+
+  3843.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+zhou7={
+  name="xing4"#储君2号子
+  dynasty_house=house_baijia425
+	religion="dongzhouli"
+	culture="qi"
+  father=zhou2
+  female=yes
+
+  3844.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+zhou8={
+  name="hu2"#储君3号
+  dynasty_house=house_baijia425
+	religion="dongzhouli"
+	culture="qi"
+  father=zhou2
+
+  3845.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+zhou9={
+  name="li6"#女1号
+  dynasty_house=house_baijia425
+	religion="dongzhouli"
+	culture="qi"
+  father=zhou2
+  female=yes
+
+  3846.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}

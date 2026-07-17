@@ -1,0 +1,42 @@
+﻿##### d_jushi1 ############################
+
+### c_jinmen
+# JINMEN
+800 = {
+	culture = yiluozhirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+
+
+### c_ju1
+# JU1
+812 = {
+	culture = yiluozhirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+# SONGYANGGUAN
+811 = {
+	holding = none
+}
+
+
+### c_longxiang
+# LONGXIANG
+813 = {
+	culture = yiluozhirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+
+
+### c_gaomenguan
+# GAOMENGUAN
+833 = {
+	culture = yiluozhirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+
+

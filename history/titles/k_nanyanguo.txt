@@ -1,0 +1,171 @@
+﻿d_yanshi5 = {
+	3083.1.1 = {
+		liege = "k_nanyanguo"
+		holder = han1074
+	}
+	3153.12.31 = {
+		holder = han1075
+	}
+	3203.12.31 = {
+		holder = han1076
+	}
+	3280.12.31 = {
+		holder = han1077
+	}
+	3293.12.31 = {
+		holder = han1078
+	}
+	3328.12.31 = {
+		holder = han1079
+	}
+	3380.12.31 = {
+		holder = han1080
+	}
+	3433.12.31 = {
+		holder = han1081
+	}
+	3458.12.31 = {
+		holder = han1082
+	}
+	3463.12.31 = {
+		holder = han1083
+	}
+	3480.12.31 = {
+		holder = han1084
+	}
+	3503.12.31 = {
+		holder = han1085
+	}
+	3529.12.31 = {
+		holder = han1086
+	}
+	3543.12.31 = {
+		holder = han1087
+	}
+	3563.12.31 = {
+		holder = han1088
+	}
+	3573.12.31 = {
+		holder = han1089
+	}
+	3603.12.31 = {
+		holder = han1090
+	}
+	3647.12.31 = {
+		holder = han1091
+	}
+	3680.12.31 = {
+		holder = han1092
+	}
+	3701.12.31 = {
+		holder = han1093
+	}
+	3722.12.31 = {
+		holder = han1094
+	}
+	3750.12.31 = {
+		holder = han1095
+	}
+	3754.12.31 = {
+		holder = han1096
+	}
+	3784.12.31 = {
+		holder = han1097
+	}
+	3792.12.31 = {
+		holder = han1098
+	}
+	3823.12.31 = {
+		holder = han1104
+	}
+	3849.1.1 = {
+		change_development_level = 23
+		government = feudal_admin_government
+	}
+}
+k_nanyanguo = {
+	3083.1.1 = {
+		holder = han1074
+	}
+	3153.12.31 = {
+		holder = han1075
+	}
+	3203.12.31 = {
+		holder = han1076
+	}
+	3280.12.31 = {
+		holder = han1077
+	}
+	3293.12.31 = {
+		holder = han1078
+	}
+	3328.12.31 = {
+		holder = han1079
+	}
+	3380.12.31 = {
+		holder = han1080
+	}
+	3433.12.31 = {
+		holder = han1081
+	}
+	3458.12.31 = {
+		holder = han1082
+	}
+	3463.12.31 = {
+		holder = han1083
+	}
+	3480.12.31 = {
+		holder = han1084
+	}
+	3503.12.31 = {
+		holder = han1085
+	}
+	3529.12.31 = {
+		holder = han1086
+	}
+	3543.12.31 = {
+		holder = han1087
+	}
+	3563.12.31 = {
+		holder = han1088
+	}
+	3573.12.31 = {
+		holder = han1089
+	}
+	3603.12.31 = {
+		liege = "e_zhoutianzi"
+		holder = han1090
+	}
+	3647.12.31 = {
+		holder = han1091
+	}
+	3680.12.31 = {
+		holder = han1092
+	}
+	3701.12.31 = {
+		holder = han1093
+	}
+	3722.12.31 = {
+		holder = han1094
+	}
+	3750.12.31 = {
+		holder = han1095
+	}
+	3754.12.31 = {
+		holder = han1096
+	}
+	3784.12.31 = {
+		holder = han1097
+	}
+	3792.12.31 = {
+		holder = han1098
+	}
+	3823.12.31 = {
+		holder = han1099
+	}
+	3849.1.1 = {
+		change_development_level = 27
+		liege = "e_zhoutianzi1"
+		government = feudal_admin_government
+	}
+}

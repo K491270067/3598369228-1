@@ -1,0 +1,44 @@
+﻿##### d_nishi ############################
+
+### c_ni
+# NI
+418 = {
+	culture = lu
+	religion = xizhouli
+	holding = castle_holding
+}
+# XIU
+2272 = {
+	holding = none
+}
+
+
+### c_jiao
+# JIAO
+424 = {
+	culture = lu
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+##### d_xiashi1 ############################
+
+### c_he
+# HE
+419 = {
+	culture = lu
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_juyi
+# JUYI
+421 = {
+	culture = lu
+	religion = xizhouli
+	holding = castle_holding
+}
+
+

@@ -1,0 +1,99 @@
+﻿##### d_jiashi ############################
+
+### c_mangcheguan
+# MANGCHEGUAN
+1145 = {
+	culture = chidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+
+
+### c_liaoyang
+# LIAOYANG
+1167 = {
+	culture = chidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+
+
+### c_jiashi1
+# JIASHI1
+2494 = {
+	culture = chidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+# DING1
+2496 = {
+	holding = none
+}
+
+
+##### d_tongtishi ############################
+
+### c_tongdi
+# TONGDI
+1143 = {
+	culture = chidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+# WUXIANG
+1144 = {
+	holding = none
+}
+
+
+### c_yushe
+# YUSHE
+1148 = {
+	culture = chidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+
+
+### c_chui2
+# CHUI2
+2495 = {
+	culture = chidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+
+
+##### d_chidinieshi ############################
+
+### c_maling2
+# MALING2
+1149 = {
+	culture = chidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+# CAO
+2497 = {
+	holding = none
+}
+
+
+### c_queyu1
+# QUEYU1
+1141 = {
+	culture = chidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+
+
+### c_nie1
+# NIE1
+1142 = {
+	culture = chidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+
+

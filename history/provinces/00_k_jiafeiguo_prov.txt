@@ -1,0 +1,26 @@
+﻿##### d_jiafeishi ############################
+
+### c_douliu
+
+
+### c_shanli
+
+
+### c_jiafei
+
+
+### c_badai
+# BADAI
+3555 = {
+	holding = none
+}
+# SHANLI
+3554 = {
+	holding = none
+}
+# DOULIU
+3553 = {
+	holding = none
+}
+
+

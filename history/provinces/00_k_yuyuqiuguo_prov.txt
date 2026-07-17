@@ -1,0 +1,48 @@
+﻿##### d_yuqiushi ############################
+
+### c_yuyuqiu
+# YUYUQIU
+262 = {
+	culture = dongyi
+	religion = yili
+	holding = castle_holding
+}
+# HAO2
+2247 = {
+	holding = none
+}
+
+
+### c_gan
+# GAN
+275 = {
+	culture = dongyi
+	religion = yili
+	holding = castle_holding
+}
+
+
+##### d_yushi6 ############################
+
+### c_zhuqiu
+# ZHUQIU
+268 = {
+	culture = dongyi
+	religion = yili
+	holding = castle_holding
+}
+
+
+### c_ganxian
+# GANXIAN
+274 = {
+	culture = dongyi
+	religion = yili
+	holding = castle_holding
+}
+# PINGQU
+263 = {
+	holding = none
+}
+
+

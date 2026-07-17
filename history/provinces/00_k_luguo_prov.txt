@@ -1,0 +1,133 @@
+﻿##### d_lushi1 ############################
+
+### c_xucheng
+# XUCHENG
+443 = {
+	culture = lu
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_qufu
+# QUFU
+444 = {
+	culture = lu
+	religion = xizhouli
+	holding = castle_holding
+}
+# FANG2
+442 = {
+	holding = none
+}
+# LVQIU
+426 = {
+	holding = none
+}
+
+
+### c_shasheng
+# SHASHENG
+448 = {
+	culture = lu
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+##### d_dongyeshi ############################
+
+### c_chai
+# CHAI
+439 = {
+	culture = lu
+	religion = xizhouli
+	holding = castle_holding
+}
+# WU1
+441 = {
+	holding = none
+}
+
+
+### c_bian
+# BIAN
+440 = {
+	culture = lu
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+##### d_zhongshi ############################
+
+### c_changyan
+# CHANGYAN
+2281 = {
+	culture = lu
+	religion = xizhouli
+	holding = castle_holding
+}
+# GENGZONG
+2283 = {
+	holding = none
+}
+
+
+### c_mie
+# MIE
+2282 = {
+	culture = lu
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+##### d_zangsunshi ############################
+
+### c_wuwu
+# WUWU
+385 = {
+	culture = lu
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_qiuyu1
+# QIUYU1
+386 = {
+	culture = lu
+	religion = xizhouli
+	holding = castle_holding
+}
+# WUCHENG
+387 = {
+	holding = none
+}
+
+
+##### d_feishi3 ############################
+
+### c_yan1
+# YAN1
+390 = {
+	culture = lu
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_ligu
+# LIGU
+391 = {
+	culture = lu
+	religion = xizhouli
+	holding = castle_holding
+}
+# YI1
+389 = {
+	holding = none
+}
+
+

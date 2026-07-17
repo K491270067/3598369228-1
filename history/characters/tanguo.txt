@@ -1,0 +1,298 @@
+﻿#############  谭国--姬姓谭氏 #############
+han806={
+  name="yuan6"
+  dynasty=xin331
+	religion="xizhouli" 
+	culture="lu"
+	father=han598
+
+  3664.1.1 = {
+		birth = yes
+	}
+  3698.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han807={
+  name="long1"
+  dynasty_house=house_baijia293
+	religion="xizhouli" 
+	culture="lu"
+  father=han806
+
+  3684.1.1 = {
+		birth = yes
+	}
+  3735.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han808={
+  name="ke4"
+  dynasty_house=house_baijia293
+	religion="xizhouli" 
+	culture="lu"
+  father=han807
+
+  3713.1.1 = {
+		birth = yes
+	}
+  3761.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han809={
+  name="li5"
+  dynasty_house=house_baijia293
+	religion="xizhouli" 
+	culture="lu"
+  father=han808
+
+  3760.1.1 = {
+		birth = yes
+	}
+  3806.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han810={
+  name="wei6"#平王东迁时谭国君主
+  dynasty_house=house_baijia293
+	religion="xizhouli" 
+	culture="lu"
+  father=han809
+
+  3805.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han811={
+  name="jing7"#储君1号
+  dynasty_house=house_baijia293
+	religion="xizhouli" 
+	culture="lu"
+  father=han810
+
+  3825.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han812={
+  name="ku2"#储君2号
+  dynasty_house=house_baijia293
+	religion="xizhouli" 
+	culture="lu"
+  father=han810
+
+  3826.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han813={
+  name="pan2"#储君3号
+  dynasty_house=house_baijia293
+	religion="xizhouli" 
+	culture="lu"
+  father=han810
+
+  3827.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han814={
+  name="ying8"#女1
+  dynasty_house=house_baijia293
+	religion="xizhouli" 
+	culture="lu"
+  father=han810
+  female=yes
+
+  3828.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han815={
+  name="xing4"#女2
+  dynasty_house=house_baijia293
+	religion="xizhouli" 
+	culture="lu"
+  father=han810
+  female=yes
+
+  3829.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han816={
+  name="lun1"#弟1
+  dynasty_house=house_baijia293
+	religion="xizhouli" 
+	culture="lu"
+  father=han809
+
+  3805.12.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han817={
+  name="gan1"#弟2
+  dynasty_house=house_baijia293
+	religion="xizhouli" 
+	culture="lu"
+  father=han816
+
+  3827.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+########公堵氏
+gongdu1={
+  name="nanming1094"
+  dynasty_house=house_baijia293
+	religion="xizhouli" 
+	culture="lu"
+  father=han807
+
+  3725.1.1 = {
+		birth = yes
+	}
+  3761.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+gongdu2={
+  name="nanming922"
+  dynasty_house=house_xin413
+	religion="xizhouli" 
+	culture="lu"
+  father=gongdu1
+
+  3750.1.1 = {
+		birth = yes
+	}
+  3806.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+gongdu3={
+  name="nanming934"#平王东迁时谭国君主
+  dynasty_house=house_xin413
+	religion="xizhouli" 
+	culture="lu"
+  father=gongdu2
+
+  3783.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+gongdu4={
+  name="nanming955"#储君1号
+  dynasty_house=house_xin413
+	religion="xizhouli" 
+	culture="lu"
+  father=gongdu3
+
+  3803.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+gongdu5={
+  name="nanming999"#储君2号
+  dynasty_house=house_xin413
+	religion="xizhouli" 
+	culture="lu"
+  father=gongdu4
+
+  3826.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+gongdu6={
+  name="nanming1016"#储君3号
+  dynasty_house=house_xin413
+	religion="xizhouli" 
+	culture="lu"
+  father=gongdu4
+
+  3827.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+gongdu7={
+  name="suo1"#女1
+  dynasty_house=house_xin413
+	religion="xizhouli" 
+	culture="lu"
+  father=gongdu4
+  female=yes
+
+  3828.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+gongdu8={
+  name="zier"#女2
+  dynasty_house=house_xin413
+	religion="xizhouli" 
+	culture="lu"
+  father=gongdu4
+  female=yes
+
+  3829.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}

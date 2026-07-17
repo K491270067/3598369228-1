@@ -1,0 +1,963 @@
+﻿d_juqushi = {
+	2100.1.1 = {
+		liege = "k_qusou"
+		holder = jusoushi1
+	}
+	2155.1.1 = {
+		holder = jusoushi2
+	}
+	2176.1.1 = {
+		holder = jusoushi3
+	}
+	2199.1.1 = {
+		holder = jusoushi4
+	}
+	2224.1.1 = {
+		holder = jusoushi5
+	}
+	2247.1.1 = {
+		holder = jusoushi6
+	}
+	2271.1.1 = {
+		holder = jusoushi7
+	}
+	2295.1.1 = {
+		holder = jusoushi8
+	}
+	2319.1.1 = {
+		holder = jusoushi9
+	}
+	2342.1.1 = {
+		holder = jusoushi10
+	}
+	2365.1.1 = {
+		holder = jusoushi11
+	}
+	2388.1.1 = {
+		holder = jusoushi12
+	}
+	2410.1.1 = {
+		holder = jusoushi13
+	}
+	2433.1.1 = {
+		holder = jusoushi14
+	}
+	2455.1.1 = {
+		holder = jusoushi15
+	}
+	2478.1.1 = {
+		holder = jusoushi16
+	}
+	2501.1.1 = {
+		holder = jusoushi17
+	}
+	2523.1.1 = {
+		holder = jusoushi18
+	}
+	2545.1.1 = {
+		holder = jusoushi19
+	}
+	2567.1.1 = {
+		holder = jusoushi20
+	}
+	2589.1.1 = {
+		holder = jusoushi21
+	}
+	2612.1.1 = {
+		holder = jusoushi22
+	}
+	2634.1.1 = {
+		holder = jusoushi23
+	}
+	2657.1.1 = {
+		holder = jusoushi24
+	}
+	2679.1.1 = {
+		holder = jusoushi25
+	}
+	2701.1.1 = {
+		holder = jusoushi26
+	}
+	2724.1.1 = {
+		holder = jusoushi27
+	}
+	2746.1.1 = {
+		holder = jusoushi28
+	}
+	2768.1.1 = {
+		holder = jusoushi29
+	}
+	2790.1.1 = {
+		holder = jusoushi30
+	}
+	2812.1.1 = {
+		holder = jusoushi31
+	}
+	2834.1.1 = {
+		holder = jusoushi32
+	}
+	2856.1.1 = {
+		holder = jusoushi33
+	}
+	2878.1.1 = {
+		holder = jusoushi34
+	}
+	2900.1.1 = {
+		holder = jusoushi35
+	}
+	2922.1.1 = {
+		holder = jusoushi36
+	}
+	2944.1.1 = {
+		holder = jusoushi37
+	}
+	2966.1.1 = {
+		holder = jusoushi38
+	}
+	2988.1.1 = {
+		holder = jusoushi39
+	}
+	3010.1.1 = {
+		holder = jusoushi40
+	}
+	3032.1.1 = {
+		holder = jusoushi41
+	}
+	3054.1.1 = {
+		holder = jusoushi42
+	}
+	3076.1.1 = {
+		holder = jusoushi43
+	}
+	3098.1.1 = {
+		holder = jusoushi44
+	}
+	3120.1.1 = {
+		holder = jusoushi45
+	}
+	3142.1.1 = {
+		holder = jusoushi46
+	}
+	3164.1.1 = {
+		holder = jusoushi47
+	}
+	3186.1.1 = {
+		holder = jusoushi48
+	}
+	3208.1.1 = {
+		holder = jusoushi49
+	}
+	3230.1.1 = {
+		holder = jusoushi50
+	}
+	3252.1.1 = {
+		holder = jusoushi51
+	}
+	3274.1.1 = {
+		holder = jusoushi52
+	}
+	3296.1.1 = {
+		holder = jusoushi53
+	}
+	3318.1.1 = {
+		holder = jusoushi54
+	}
+	3340.1.1 = {
+		holder = jusoushi55
+	}
+	3362.1.1 = {
+		holder = jusoushi56
+	}
+	3384.1.1 = {
+		holder = jusoushi57
+	}
+	3406.1.1 = {
+		holder = jusoushi58
+	}
+	3428.1.1 = {
+		holder = jusoushi59
+	}
+	3450.1.1 = {
+		holder = jusoushi60
+	}
+	3472.1.1 = {
+		holder = jusoushi61
+	}
+	3494.1.1 = {
+		holder = jusoushi62
+	}
+	3516.1.1 = {
+		holder = jusoushi63
+	}
+	3538.1.1 = {
+		holder = jusoushi64
+	}
+	3560.1.1 = {
+		holder = jusoushi65
+	}
+	3582.1.1 = {
+		holder = jusoushi66
+	}
+	3604.1.1 = {
+		holder = jusoushi67
+	}
+	3626.1.1 = {
+		holder = jusoushi68
+	}
+	3648.1.1 = {
+		holder = jusoushi69
+	}
+	3670.1.1 = {
+		holder = jusoushi70
+	}
+	3692.1.1 = {
+		holder = jusoushi71
+	}
+	3714.1.1 = {
+		holder = jusoushi72
+	}
+	3736.1.1 = {
+		holder = jusoushi73
+	}
+	3758.1.1 = {
+		holder = jusoushi74
+	}
+	3780.1.1 = {
+		holder = jusoushi75
+	}
+	3802.1.1 = {
+		holder = jusoushi76
+	}
+	3824.1.1 = {
+		holder = jusoushi77
+	}
+	3826.1.1 = {
+		holder = jusoushi95
+	}
+	3849.1.1 = {
+		change_development_level = 28
+		government = nomad_government
+	}
+}
+d_qufushi = {
+	2100.1.1 = {
+		liege = "k_qusou"
+		holder = jusoushi1
+	}
+	2155.1.1 = {
+		holder = jusoushi2
+	}
+	2176.1.1 = {
+		holder = jusoushi3
+	}
+	2199.1.1 = {
+		holder = jusoushi4
+	}
+	2224.1.1 = {
+		holder = jusoushi5
+	}
+	2247.1.1 = {
+		holder = jusoushi6
+	}
+	2271.1.1 = {
+		holder = jusoushi7
+	}
+	2295.1.1 = {
+		holder = jusoushi8
+	}
+	2319.1.1 = {
+		holder = jusoushi9
+	}
+	2342.1.1 = {
+		holder = jusoushi10
+	}
+	2365.1.1 = {
+		holder = jusoushi11
+	}
+	2388.1.1 = {
+		holder = jusoushi12
+	}
+	2410.1.1 = {
+		holder = jusoushi13
+	}
+	2433.1.1 = {
+		holder = jusoushi14
+	}
+	2455.1.1 = {
+		holder = jusoushi15
+	}
+	2478.1.1 = {
+		holder = jusoushi16
+	}
+	2501.1.1 = {
+		holder = jusoushi17
+	}
+	2523.1.1 = {
+		holder = jusoushi18
+	}
+	2545.1.1 = {
+		holder = jusoushi19
+	}
+	2567.1.1 = {
+		holder = jusoushi20
+	}
+	2589.1.1 = {
+		holder = jusoushi21
+	}
+	2612.1.1 = {
+		holder = jusoushi22
+	}
+	2634.1.1 = {
+		holder = jusoushi23
+	}
+	2657.1.1 = {
+		holder = jusoushi24
+	}
+	2679.1.1 = {
+		holder = jusoushi25
+	}
+	2701.1.1 = {
+		holder = jusoushi26
+	}
+	2724.1.1 = {
+		holder = jusoushi27
+	}
+	2746.1.1 = {
+		holder = jusoushi28
+	}
+	2768.1.1 = {
+		holder = jusoushi29
+	}
+	2790.1.1 = {
+		holder = jusoushi30
+	}
+	2812.1.1 = {
+		holder = jusoushi31
+	}
+	2834.1.1 = {
+		holder = jusoushi32
+	}
+	2856.1.1 = {
+		holder = jusoushi33
+	}
+	2878.1.1 = {
+		holder = jusoushi34
+	}
+	2900.1.1 = {
+		holder = jusoushi35
+	}
+	2922.1.1 = {
+		holder = jusoushi36
+	}
+	2944.1.1 = {
+		holder = jusoushi37
+	}
+	2966.1.1 = {
+		holder = jusoushi38
+	}
+	2988.1.1 = {
+		holder = jusoushi39
+	}
+	3010.1.1 = {
+		holder = jusoushi40
+	}
+	3032.1.1 = {
+		holder = jusoushi41
+	}
+	3054.1.1 = {
+		holder = jusoushi42
+	}
+	3076.1.1 = {
+		holder = jusoushi43
+	}
+	3098.1.1 = {
+		holder = jusoushi44
+	}
+	3120.1.1 = {
+		holder = jusoushi45
+	}
+	3142.1.1 = {
+		holder = jusoushi46
+	}
+	3164.1.1 = {
+		holder = jusoushi47
+	}
+	3186.1.1 = {
+		holder = jusoushi48
+	}
+	3208.1.1 = {
+		holder = jusoushi49
+	}
+	3230.1.1 = {
+		holder = jusoushi50
+	}
+	3252.1.1 = {
+		holder = jusoushi51
+	}
+	3274.1.1 = {
+		holder = jusoushi52
+	}
+	3296.1.1 = {
+		holder = jusoushi53
+	}
+	3318.1.1 = {
+		holder = jusoushi54
+	}
+	3340.1.1 = {
+		holder = jusoushi55
+	}
+	3362.1.1 = {
+		holder = jusoushi56
+	}
+	3384.1.1 = {
+		holder = jusoushi57
+	}
+	3406.1.1 = {
+		holder = jusoushi58
+	}
+	3428.1.1 = {
+		holder = jusoushi59
+	}
+	3450.1.1 = {
+		holder = jusoushi60
+	}
+	3472.1.1 = {
+		holder = jusoushi61
+	}
+	3494.1.1 = {
+		holder = jusoushi62
+	}
+	3516.1.1 = {
+		holder = jusoushi63
+	}
+	3538.1.1 = {
+		holder = jusoushi64
+	}
+	3560.1.1 = {
+		holder = jusoushi65
+	}
+	3582.1.1 = {
+		holder = jusoushi66
+	}
+	3604.1.1 = {
+		holder = jusoushi67
+	}
+	3626.1.1 = {
+		holder = jusoushi68
+	}
+	3648.1.1 = {
+		holder = jusoushi69
+	}
+	3670.1.1 = {
+		holder = jusoushi70
+	}
+	3692.1.1 = {
+		holder = jusoushi71
+	}
+	3714.1.1 = {
+		holder = jusoushi72
+	}
+	3736.1.1 = {
+		holder = jusoushi73
+	}
+	3758.1.1 = {
+		holder = jusoushi74
+	}
+	3780.1.1 = {
+		holder = jusoushi75
+	}
+	3802.1.1 = {
+		holder = jusoushi76
+	}
+	3824.1.1 = {
+		holder = jusoushi77
+	}
+	3826.1.1 = {
+		holder = jusoushi82
+	}
+	3849.1.1 = {
+		change_development_level = 26
+		government = nomad_government
+	}
+}
+d_qujinshi = {
+	2100.1.1 = {
+		liege = "k_qusou"
+		holder = jusoushi1
+	}
+	2155.1.1 = {
+		holder = jusoushi2
+	}
+	2176.1.1 = {
+		holder = jusoushi3
+	}
+	2199.1.1 = {
+		holder = jusoushi4
+	}
+	2224.1.1 = {
+		holder = jusoushi5
+	}
+	2247.1.1 = {
+		holder = jusoushi6
+	}
+	2271.1.1 = {
+		holder = jusoushi7
+	}
+	2295.1.1 = {
+		holder = jusoushi8
+	}
+	2319.1.1 = {
+		holder = jusoushi9
+	}
+	2342.1.1 = {
+		holder = jusoushi10
+	}
+	2365.1.1 = {
+		holder = jusoushi11
+	}
+	2388.1.1 = {
+		holder = jusoushi12
+	}
+	2410.1.1 = {
+		holder = jusoushi13
+	}
+	2433.1.1 = {
+		holder = jusoushi14
+	}
+	2455.1.1 = {
+		holder = jusoushi15
+	}
+	2478.1.1 = {
+		holder = jusoushi16
+	}
+	2501.1.1 = {
+		holder = jusoushi17
+	}
+	2523.1.1 = {
+		holder = jusoushi18
+	}
+	2545.1.1 = {
+		holder = jusoushi19
+	}
+	2567.1.1 = {
+		holder = jusoushi20
+	}
+	2589.1.1 = {
+		holder = jusoushi21
+	}
+	2612.1.1 = {
+		holder = jusoushi22
+	}
+	2634.1.1 = {
+		holder = jusoushi23
+	}
+	2657.1.1 = {
+		holder = jusoushi24
+	}
+	2679.1.1 = {
+		holder = jusoushi25
+	}
+	2701.1.1 = {
+		holder = jusoushi26
+	}
+	2724.1.1 = {
+		holder = jusoushi27
+	}
+	2746.1.1 = {
+		holder = jusoushi28
+	}
+	2768.1.1 = {
+		holder = jusoushi29
+	}
+	2790.1.1 = {
+		holder = jusoushi30
+	}
+	2812.1.1 = {
+		holder = jusoushi31
+	}
+	2834.1.1 = {
+		holder = jusoushi32
+	}
+	2856.1.1 = {
+		holder = jusoushi33
+	}
+	2878.1.1 = {
+		holder = jusoushi34
+	}
+	2900.1.1 = {
+		holder = jusoushi35
+	}
+	2922.1.1 = {
+		holder = jusoushi36
+	}
+	2944.1.1 = {
+		holder = jusoushi37
+	}
+	2966.1.1 = {
+		holder = jusoushi38
+	}
+	2988.1.1 = {
+		holder = jusoushi39
+	}
+	3010.1.1 = {
+		holder = jusoushi40
+	}
+	3032.1.1 = {
+		holder = jusoushi41
+	}
+	3054.1.1 = {
+		holder = jusoushi42
+	}
+	3076.1.1 = {
+		holder = jusoushi43
+	}
+	3098.1.1 = {
+		holder = jusoushi44
+	}
+	3120.1.1 = {
+		holder = jusoushi45
+	}
+	3142.1.1 = {
+		holder = jusoushi46
+	}
+	3164.1.1 = {
+		holder = jusoushi47
+	}
+	3186.1.1 = {
+		holder = jusoushi48
+	}
+	3208.1.1 = {
+		holder = jusoushi49
+	}
+	3230.1.1 = {
+		holder = jusoushi50
+	}
+	3252.1.1 = {
+		holder = jusoushi51
+	}
+	3274.1.1 = {
+		holder = jusoushi52
+	}
+	3296.1.1 = {
+		holder = jusoushi53
+	}
+	3318.1.1 = {
+		holder = jusoushi54
+	}
+	3340.1.1 = {
+		holder = jusoushi55
+	}
+	3362.1.1 = {
+		holder = jusoushi56
+	}
+	3384.1.1 = {
+		holder = jusoushi57
+	}
+	3406.1.1 = {
+		holder = jusoushi58
+	}
+	3428.1.1 = {
+		holder = jusoushi59
+	}
+	3450.1.1 = {
+		holder = jusoushi60
+	}
+	3472.1.1 = {
+		holder = jusoushi61
+	}
+	3494.1.1 = {
+		holder = jusoushi62
+	}
+	3516.1.1 = {
+		holder = jusoushi63
+	}
+	3538.1.1 = {
+		holder = jusoushi64
+	}
+	3560.1.1 = {
+		holder = jusoushi65
+	}
+	3582.1.1 = {
+		holder = jusoushi66
+	}
+	3604.1.1 = {
+		holder = jusoushi67
+	}
+	3626.1.1 = {
+		holder = jusoushi68
+	}
+	3648.1.1 = {
+		holder = jusoushi69
+	}
+	3670.1.1 = {
+		holder = jusoushi70
+	}
+	3692.1.1 = {
+		holder = jusoushi71
+	}
+	3714.1.1 = {
+		holder = jusoushi72
+	}
+	3736.1.1 = {
+		holder = jusoushi73
+	}
+	3758.1.1 = {
+		holder = jusoushi74
+	}
+	3780.1.1 = {
+		holder = jusoushi75
+	}
+	3802.1.1 = {
+		holder = jusoushi76
+	}
+	3824.1.1 = {
+		holder = jusoushi77
+	}
+	3826.1.1 = {
+		holder = jusoushi88
+	}
+	3849.1.1 = {
+		change_development_level = 25
+		government = nomad_government
+	}
+}
+k_qusou = {
+	2100.1.1 = {
+		holder = jusoushi1
+	}
+	2155.1.1 = {
+		holder = jusoushi2
+	}
+	2176.1.1 = {
+		holder = jusoushi3
+	}
+	2199.1.1 = {
+		holder = jusoushi4
+	}
+	2224.1.1 = {
+		holder = jusoushi5
+	}
+	2247.1.1 = {
+		holder = jusoushi6
+	}
+	2271.1.1 = {
+		holder = jusoushi7
+	}
+	2295.1.1 = {
+		holder = jusoushi8
+	}
+	2319.1.1 = {
+		holder = jusoushi9
+	}
+	2342.1.1 = {
+		holder = jusoushi10
+	}
+	2365.1.1 = {
+		holder = jusoushi11
+	}
+	2388.1.1 = {
+		holder = jusoushi12
+	}
+	2410.1.1 = {
+		holder = jusoushi13
+	}
+	2433.1.1 = {
+		holder = jusoushi14
+	}
+	2455.1.1 = {
+		holder = jusoushi15
+	}
+	2478.1.1 = {
+		holder = jusoushi16
+	}
+	2501.1.1 = {
+		holder = jusoushi17
+	}
+	2523.1.1 = {
+		holder = jusoushi18
+	}
+	2545.1.1 = {
+		holder = jusoushi19
+	}
+	2567.1.1 = {
+		holder = jusoushi20
+	}
+	2589.1.1 = {
+		holder = jusoushi21
+	}
+	2612.1.1 = {
+		holder = jusoushi22
+	}
+	2634.1.1 = {
+		holder = jusoushi23
+	}
+	2657.1.1 = {
+		holder = jusoushi24
+	}
+	2679.1.1 = {
+		holder = jusoushi25
+	}
+	2701.1.1 = {
+		holder = jusoushi26
+	}
+	2724.1.1 = {
+		holder = jusoushi27
+	}
+	2746.1.1 = {
+		holder = jusoushi28
+	}
+	2768.1.1 = {
+		holder = jusoushi29
+	}
+	2790.1.1 = {
+		holder = jusoushi30
+	}
+	2812.1.1 = {
+		holder = jusoushi31
+	}
+	2834.1.1 = {
+		holder = jusoushi32
+	}
+	2856.1.1 = {
+		holder = jusoushi33
+	}
+	2878.1.1 = {
+		holder = jusoushi34
+	}
+	2900.1.1 = {
+		holder = jusoushi35
+	}
+	2922.1.1 = {
+		holder = jusoushi36
+	}
+	2944.1.1 = {
+		holder = jusoushi37
+	}
+	2966.1.1 = {
+		holder = jusoushi38
+	}
+	2988.1.1 = {
+		holder = jusoushi39
+	}
+	3010.1.1 = {
+		holder = jusoushi40
+	}
+	3032.1.1 = {
+		holder = jusoushi41
+	}
+	3054.1.1 = {
+		holder = jusoushi42
+	}
+	3076.1.1 = {
+		holder = jusoushi43
+	}
+	3098.1.1 = {
+		holder = jusoushi44
+	}
+	3120.1.1 = {
+		holder = jusoushi45
+	}
+	3142.1.1 = {
+		holder = jusoushi46
+	}
+	3164.1.1 = {
+		holder = jusoushi47
+	}
+	3186.1.1 = {
+		holder = jusoushi48
+	}
+	3208.1.1 = {
+		holder = jusoushi49
+	}
+	3230.1.1 = {
+		holder = jusoushi50
+	}
+	3252.1.1 = {
+		holder = jusoushi51
+	}
+	3274.1.1 = {
+		holder = jusoushi52
+	}
+	3296.1.1 = {
+		holder = jusoushi53
+	}
+	3318.1.1 = {
+		holder = jusoushi54
+	}
+	3340.1.1 = {
+		holder = jusoushi55
+	}
+	3362.1.1 = {
+		holder = jusoushi56
+	}
+	3384.1.1 = {
+		holder = jusoushi57
+	}
+	3406.1.1 = {
+		holder = jusoushi58
+	}
+	3428.1.1 = {
+		holder = jusoushi59
+	}
+	3450.1.1 = {
+		holder = jusoushi60
+	}
+	3472.1.1 = {
+		holder = jusoushi61
+	}
+	3494.1.1 = {
+		holder = jusoushi62
+	}
+	3516.1.1 = {
+		holder = jusoushi63
+	}
+	3538.1.1 = {
+		holder = jusoushi64
+	}
+	3560.1.1 = {
+		holder = jusoushi65
+	}
+	3582.1.1 = {
+		holder = jusoushi66
+	}
+	3604.1.1 = {
+		holder = jusoushi67
+	}
+	3626.1.1 = {
+		holder = jusoushi68
+	}
+	3648.1.1 = {
+		holder = jusoushi69
+	}
+	3670.1.1 = {
+		holder = jusoushi70
+	}
+	3692.1.1 = {
+		holder = jusoushi71
+	}
+	3714.1.1 = {
+		holder = jusoushi72
+	}
+	3736.1.1 = {
+		holder = jusoushi73
+	}
+	3758.1.1 = {
+		holder = jusoushi74
+	}
+	3780.1.1 = {
+		holder = jusoushi75
+	}
+	3802.1.1 = {
+		holder = jusoushi76
+	}
+	3824.1.1 = {
+		holder = jusoushi77
+	}
+	3826.1.1 = {
+		holder = jusoushi78
+	}
+	3849.12.31 = {
+		government = nomad_government
+		change_development_level = 29
+	}
+}

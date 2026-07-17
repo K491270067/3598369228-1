@@ -1,0 +1,44 @@
+﻿##### d_hushi ############################
+
+### c_yingshang
+# YINGSHANG
+1621 = {
+	holding = none
+}
+
+
+### c_nvyin
+# NVYIN
+1622 = {
+	holding = none
+}
+
+
+### c_hu3
+# HU3
+1666 = {
+	holding = none
+}
+
+
+### c_fubo
+# FUBO
+1667 = {
+	holding = none
+}
+
+
+### c_lushang1
+# LUSHANG1
+1668 = {
+	holding = none
+}
+
+
+### c_ruqing
+# RUQING
+1683 = {
+	holding = none
+}
+
+

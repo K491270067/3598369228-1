@@ -1,0 +1,44 @@
+﻿##### d_maoshi2 ############################
+
+### c_quyang1
+# QUYANG1
+1074 = {
+	culture = guazhouzhirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+# WANGWU
+1068 = {
+	holding = none
+}
+
+
+### c_maorong
+# MAORONG
+2467 = {
+	culture = guazhouzhirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+
+
+##### d_miaoshi ############################
+
+### c_zhao1
+# ZHAO1
+1066 = {
+	culture = guazhouzhirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+
+
+### c_miao
+# MIAO
+1067 = {
+	culture = guazhouzhirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+
+

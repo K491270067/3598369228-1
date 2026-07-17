@@ -1,0 +1,168 @@
+﻿### 决议：宣布自治 ### ————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+decision_declare_autonomy = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_knight_kneeling.dds"
+	}
+	title = {
+		desc = decision_declare_autonomy_title
+	}
+	desc = {
+		desc = decision_declare_autonomy_desc
+	}
+	confirm_text = {
+		desc = decision_declare_autonomy_confirm
+	}
+	decision_group_type = major
+	sort_order = 90
+
+	# 是否显示：
+	is_shown = {
+		OR = {
+			government_has_flag = government_is_feudal
+			government_has_flag = government_is_feudal_admin
+		}
+		is_independent_ruler = no
+		highest_held_title_tier >= tier_duchy
+		liege ?= {
+			is_independent_ruler = yes
+			trigger_if = {
+				limit = {
+					OR = {
+						government_has_flag = government_is_feudal
+						government_has_flag = government_is_feudal_admin
+					}
+				}
+				OR = {
+					has_realm_law = crown_authority_legacy_head
+					has_realm_law = crown_authority_titular_liege
+				}
+			}
+			trigger_else = {
+				has_realm_law = crown_authority_0
+			}
+		}
+	}
+	# 是否可用：
+	is_valid = {
+		liege ?= {
+			is_independent_ruler = yes
+			trigger_if = {
+				limit = {
+					OR = {
+						government_has_flag = government_is_feudal
+						government_has_flag = government_is_feudal_admin
+					}
+				}
+				OR = {
+					has_realm_law = crown_authority_legacy_head
+					has_realm_law = crown_authority_titular_liege
+				}
+			}
+			trigger_else = {
+				has_realm_law = crown_authority_0
+			}
+		}
+	}
+	# 是否可用（仅提示不可用原因）：
+	is_valid_showing_failures_only = {
+		is_at_war = no
+		NOR = {
+			has_realm_law = crown_authority_legacy_head
+			has_realm_law = crown_authority_titular_liege
+		}
+	}
+	# 选择花费：
+	cost = {
+		prestige = {
+			value = 500
+			add = {
+				every_vassal = {
+					add = 10
+				}
+				desc = tt_vassal_amount
+			}
+		}
+	}
+	# 选择后效果：
+	effect = {
+		liege = { save_scope_as = target_liege }
+		hidden_effect = {
+			create_title_and_vassal_change = {
+				type = independency
+				save_scope_as = change_independent
+				add_claim_on_loss = no
+			}
+			becomes_independent = {
+				change = scope:change_independent
+			}
+			resolve_title_and_vassal_change = scope:change_independent
+		}
+		start_tributary = {
+			contract_group = feudal_autonomous_vassal
+			suzerain = scope:target_liege
+		}
+		if = {
+			limit = { has_subject_contract_group = feudal_autonomous_vassal }
+			tributary_contract_set_obligation_level = {
+				type = contract_feudal_autonomous_taxes
+				level = 2
+			}
+			tributary_contract_set_obligation_level = {
+				type = contract_feudal_liege_offer_protection
+				level = 1
+			}
+			tributary_contract_set_obligation_level = {
+				type = contract_feudal_vassal_support_war
+				level = 0
+			}
+		}
+		scope:target_liege = {
+			add_opinion = {
+				target = prev
+				modifier = opinion_unauthorized_declaring_autonomy
+			}
+		}
+	}
+	
+	# AI考虑频率（月）：按头衔等级区分
+	ai_check_interval_by_tier = {
+		barony = 0
+		county = 0
+		duchy = 45
+		kingdom = 45
+		empire = 45
+		hegemony = 0
+	}
+	# AI考虑可能
+	ai_potential = {
+		opinion = {
+			value <= 0
+			target = liege
+		}
+	}
+	# AI考虑意愿
+	ai_will_do = {
+		base = -10
+		
+		# 好感度影响
+		opinion_modifier = {
+			who = this
+			opinion_target = liege
+			multiplier = -0.8
+			desc = AI_OPINION_REASON
+		}
+		# 不会试图从关系亲密者处谋求自治
+		modifier = {
+			OR = {
+				has_relation_friend = liege
+				has_relation_best_friend = liege
+				has_relation_lover = liege
+				has_relation_soulmate = liege
+				is_parent_of = liege
+				is_grandparent_of = liege
+				is_great_grandparent_of = liege
+			}
+			add = -5000
+		}
+	}
+}

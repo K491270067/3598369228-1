@@ -1,0 +1,44 @@
+﻿##### d_shubaoshi ############################
+
+### c_shubao
+# 
+2012 = {
+	holding = none
+}
+
+
+### c_mu1
+# 
+2014 = {
+	holding = none
+}
+
+
+### c_shi6
+# 
+2015 = {
+	holding = none
+}
+
+
+### c_hui
+# 
+2053 = {
+	holding = none
+}
+
+
+### c_lengshuiguan
+# 
+2054 = {
+	holding = none
+}
+
+
+### c_zi5
+# 
+2055 = {
+	holding = none
+}
+
+

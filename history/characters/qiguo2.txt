@@ -1,0 +1,210 @@
+direnqiguo1={
+  name="baiyuenan506"
+  dynasty=xin895
+  religion="guiwu"
+  culture="dizu"
+
+  3751.1.1 = {
+		birth = yes
+	}
+  3800.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+direnqiguo2={
+  name="baiyuenan513"
+  dynasty=xin895
+  religion="guiwu"
+  culture="dizu"
+  father=direnqiguo1
+
+  3783.1.1 = {
+		birth = yes
+	}
+  3824.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+direnqiguo3={
+  name="baiyuenan519"
+  dynasty=xin895
+  religion="guiwu"
+  culture="dizu"
+  father=direnqiguo2
+
+  3806.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+direnqiguo4={
+  name="baiyuenan525"
+  dynasty=xin895
+  religion="guiwu"
+  culture="dizu"
+  father=direnqiguo3
+
+  3824.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+direnqiguo5={
+  name="baiyuenan531"
+  dynasty=xin895
+  religion="guiwu"
+  culture="dizu"
+  father=direnqiguo3
+
+  3826.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+direnqiguo6={
+  name="baiyuenv13"
+  dynasty=xin895
+  religion="guiwu"
+  culture="dizu"
+  father=direnqiguo3
+  female=yes
+
+  3829.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+direnqiguo7={
+  name="baiyuenv141"
+  dynasty=xin895
+  religion="guiwu"
+  culture="dizu"
+  father=direnqiguo3
+  female=yes
+
+  3831.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+################
+direnqiguo8={
+  name="baiyuenan535"
+  dynasty=xin896
+  religion="guiwu"
+  culture="dizu"
+
+  3747.1.1 = {
+		birth = yes
+	}
+  3789.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+direnqiguo9={
+  name="baiyuenan538"
+  dynasty=xin895
+  religion="guiwu"
+  culture="dizu"
+  father=direnqiguo8
+
+  3773.1.1 = {
+		birth = yes
+	}
+  3816.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+direnqiguo10={
+  name="baiyuenan540"
+  dynasty=xin895
+  religion="guiwu"
+  culture="dizu"
+  father=direnqiguo9
+
+  3799.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+direnqiguo11={
+  name="baiyuenan543"
+  dynasty=xin895
+  religion="guiwu"
+  culture="dizu"
+  father=direnqiguo10
+
+  3821.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+direnqiguo12={
+  name="baiyuenan550"
+  dynasty=xin895
+  religion="guiwu"
+  culture="dizu"
+  father=direnqiguo10
+
+  3826.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+direnqiguo13={
+  name="baiyuenv207"
+  dynasty=xin895
+  religion="guiwu"
+  culture="dizu"
+  father=direnqiguo10
+  female=yes
+
+  3827.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}

@@ -1,0 +1,35 @@
+﻿############### 绀煎穿涔愬潖 - 娲剧郴鐗硅川 ###############
+
+# 鐜嬮亾娲剧郴 鈥?鎴愪负鍛ㄧぜ鏀寔鑰?
+character_involve_supporters_of_zhou_dynasty = {
+	category = lifestyle
+
+	ruler_designer_cost = 0
+
+	desc = trait_character_involve_supporters_of_zhou_dynasty_desc
+}
+
+# 闇搁亾娲剧郴 鈥?鎴愪负鍛ㄧぜ瀵规姉鑰?
+character_involve_opponents_of_zhou_dynasty = {
+	category = lifestyle
+
+	ruler_designer_cost = 0
+
+	desc = trait_character_involve_opponents_of_zhou_dynasty_desc
+}
+
+# 涓珛娲剧郴 鈥?鎴愪负涓珛娲?
+character_involve_neutral_of_zhou_dynasty = {
+	category = lifestyle
+
+	ruler_designer_cost = 0
+
+	desc = trait_character_involve_neutral_of_zhou_dynasty_desc
+}
+
+# 鍥涘し娲剧郴 鈥?鎴愪负鍩熷鎼呭眬鑰?
+character_interloper_of_zhou_dynasty = {
+	category = lifestyle
+	ruler_designer_cost = 0
+	desc = trait_character_interloper_of_zhou_dynasty_desc
+}

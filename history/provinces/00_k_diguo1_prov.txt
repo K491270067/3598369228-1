@@ -1,0 +1,74 @@
+﻿##### d_dishi2 ############################
+
+### c_yuanshi
+# YUANSHI
+295 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+# FENGSI
+287 = {
+	holding = none
+}
+
+
+### c_fenglong
+# FENGLONG
+316 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_di2
+# DI2
+2539 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+# LUAN
+282 = {
+	holding = none
+}
+
+
+##### d_haoshi ############################
+
+### c_songzi
+# SONGZI
+264 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+# JINGWU
+265 = {
+	holding = none
+}
+
+
+### c_hao1
+# HAO1
+266 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+# JIPU1
+281 = {
+	holding = none
+}
+
+
+### c_yangshi1
+# YANGSHI1
+273 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+

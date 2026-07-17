@@ -1,0 +1,404 @@
+﻿zhuyushi1={
+  name="bfyznan133"
+  dynasty=xin856
+  culture="xirong"
+  religion="xirongfangling"
+
+  3429.1.1 = {
+		birth = yes
+	}
+  3491.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+zhuyushi2={
+  name="bfyznan170"
+  dynasty=xin856
+  culture="xirong"
+  religion="xirongfangling"
+  father=zhuyushi1
+
+  3454.1.1 = {
+		birth = yes
+	}
+  3516.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+zhuyushi3={
+  name="bfyznan182"
+  dynasty=xin856
+  culture="xirong"
+  religion="xirongfangling"
+  father=zhuyushi2
+
+  3477.1.1 = {
+		birth = yes
+	}
+  3539.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+zhuyushi4={
+  name="bfyznan191"
+  dynasty=xin856
+  culture="xirong"
+  religion="xirongfangling"
+  father=zhuyushi3
+
+  3501.1.1 = {
+		birth = yes
+	}
+  3564.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+zhuyushi5={
+  name="bfyznan200"
+  dynasty=xin856
+  culture="xirong"
+  religion="xirongfangling"
+  father=zhuyushi4
+
+  3525.1.1 = {
+		birth = yes
+	}
+  3588.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+zhuyushi6={
+  name="bfyznan209"
+  dynasty=xin856
+  culture="xirong"
+  religion="xirongfangling"
+  father=zhuyushi5
+
+  3549.1.1 = {
+		birth = yes
+	}
+  3612.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+zhuyushi7={
+  name="bfyznan221"
+  dynasty=xin856
+  culture="xirong"
+  religion="xirongfangling"
+  father=zhuyushi6
+
+  3573.1.1 = {
+		birth = yes
+	}
+  3636.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+zhuyushi8={
+  name="bfyznan231"
+  dynasty=xin856
+  culture="xirong"
+  religion="xirongfangling"
+  father=zhuyushi7
+
+  3597.1.1 = {
+		birth = yes
+	}
+  3660.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+zhuyushi9={
+  name="bfyznan243"
+  dynasty=xin856
+  culture="xirong"
+  religion="xirongfangling"
+  father=zhuyushi8
+
+  3621.1.1 = {
+		birth = yes
+	}
+  3684.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+zhuyushi10={
+  name="bfyznan255"
+  dynasty=xin856
+  culture="xirong"
+  religion="xirongfangling"
+  father=zhuyushi9
+
+  3645.1.1 = {
+		birth = yes
+	}
+  3708.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+zhuyushi11={
+  name="bfyznan264"
+  dynasty=xin856
+  culture="xirong"
+  religion="xirongfangling"
+  father=zhuyushi10
+
+  3669.1.1 = {
+		birth = yes
+	}
+  3732.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+zhuyushi12={
+  name="bfyznan278"
+  dynasty=xin856
+  culture="xirong"
+  religion="xirongfangling"
+  father=zhuyushi11
+
+  3693.1.1 = {
+		birth = yes
+	}
+  3756.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+zhuyushi13={
+  name="bfyznan292"
+  dynasty=xin856
+  culture="xirong"
+  religion="xirongfangling"
+  father=zhuyushi12
+
+  3717.1.1 = {
+		birth = yes
+	}
+  3780.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+zhuyushi14={
+  name="bfyznan304"
+  dynasty=xin856
+  culture="xirong"
+  religion="xirongfangling"
+  father=zhuyushi13
+
+  3741.1.1 = {
+		birth = yes
+	}
+  3804.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+zhuyushi15={
+  name="bfyznan319"
+  dynasty=xin856
+  culture="xirong"
+  religion="xirongfangling"
+  father=zhuyushi14
+
+  3765.1.1 = {
+		birth = yes
+	}
+  3828.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+zhuyushi16={
+  name="bfyznan331"
+  dynasty=xin856
+  culture="xirong"
+  religion="xirongfangling"
+  father=zhuyushi15
+
+  3800.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+zhuyushi17={
+  name="bfyznan340"
+  dynasty=xin856
+  culture="xirong"
+  religion="xirongfangling"
+  father=zhuyushi16
+
+  3818.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+zhuyushi18={
+  name="bfyznan356"
+  dynasty=xin856
+  culture="xirong"
+  religion="xirongfangling"
+  father=zhuyushi16
+
+  3821.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+zhuyushi19={
+  name="bfyznv48"
+  dynasty=xin856
+  culture="xirong"
+  religion="xirongfangling"
+  father=zhuyushi16
+  female=yes
+
+  3823.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+zhuyushi20={
+  name="bfyznv57"
+  dynasty=xin856
+  culture="xirong"
+  religion="xirongfangling"
+  father=zhuyushi16
+  female=yes
+
+  3827.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+##########
+zhuyushi21={
+  name="bfyznan88"
+  dynasty=xin857
+  culture="xirong"
+  religion="xirongfangling"
+  father=zhuyushi15
+
+  3803.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+zhuyushi22={
+  name="bfyznan103"
+  dynasty=xin857
+  culture="xirong"
+  religion="xirongfangling"
+  father=zhuyushi21
+
+  3823.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+zhuyushi23={
+  name="bfyznv86"
+  dynasty=xin857
+  culture="xirong"
+  religion="xirongfangling"
+  father=zhuyushi21
+  female=yes
+
+  3827.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+zhuyushi24={
+  name="bfyznv100"
+  dynasty=xin857
+  culture="xirong"
+  religion="xirongfangling"
+  father=zhuyushi21
+  female=yes
+
+  3829.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+zhuyushi25={
+  name="bfyznan119"
+  dynasty=xin857
+  culture="xirong"
+  religion="xirongfangling"
+  father=zhuyushi21
+
+  3831.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}

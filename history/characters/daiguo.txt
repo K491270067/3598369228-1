@@ -1,0 +1,227 @@
+﻿#############  鎴村浗--瀛愬 #############
+zidai1={
+  name="nanming131"
+  dynasty=xin508
+	religion="yinli" 
+	culture="song"
+  father=song1238
+
+  3514.1.1 = {
+		birth = yes
+	}
+  3588.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+song1276={
+  name="heng1"#鎴村钩鍏?
+  dynasty_house=house_baijia116
+	religion="yinli" 
+	culture="song"
+  father=zidai1
+
+  3587.11.1 = {
+		birth = yes
+	}
+  3638.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+song1277={
+  name="nanming177"#鎴村彅鏈?
+  dynasty_house=house_baijia116
+	religion="yinli" 
+	culture="song"
+  father=song1276
+
+  3613.1.1 = {
+		birth = yes
+	}
+  3670.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+song1278={
+  name="nanming178"#鎴村彅搴嗙埗
+  dynasty_house=house_baijia116
+	religion="yinli" 
+	culture="song"
+  father=song1277
+
+  3662.1.1 = {
+		birth = yes
+	}
+  3743.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+song1279={
+  name="mao"
+  dynasty_house=house_baijia116
+	religion="yinli" 
+	culture="song"
+  father=song1278
+
+  3700.1.1 = {
+		birth = yes
+	}
+  3767.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+song1280={
+  name="dan4"
+  dynasty_house=house_baijia116
+	religion="yinli" 
+	culture="song"
+  father=song1279
+
+  3760.1.1 = {
+		birth = yes
+	}
+  3821.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+song1281={
+  name="yiru"#骞崇帇涓滆縼鏃舵埓鍥藉浗鍚?
+  dynasty_house=house_baijia116
+	religion="yinli"
+	culture="song"
+  father=song1280
+
+  3820.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+song1282={
+  name="nanming179"#鍌ㄥ悰1鍙?
+  dynasty_house=house_baijia116
+	religion="yinli"
+	culture="song"
+  father=song1281
+
+  3841.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+song1283={
+  name="nanming180"#鍌ㄥ悰2鍙?
+  dynasty_house=house_baijia116
+	religion="yinli"
+	culture="song"
+  father=song1281
+
+  3842.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+song1284={
+  name="nvming37"#濂?鍙?
+  dynasty_house=house_baijia116
+	religion="yinli"
+	culture="song"
+  father=song1281
+  female=yes
+
+  3843.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+song1285={
+  name="nvming38"#濂?鍙?
+  dynasty_house=house_baijia116
+	religion="yinli"
+	culture="song"
+  father=song1281
+  female=yes
+
+  3845.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+#######杞芥皬
+song1286={
+  name="zuo1"#鎴村浗鍥藉悰涔嬪紵
+  dynasty_house=house_xin511
+	religion="yinli"
+	culture="song"
+  father=song1280
+
+  3820.12.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+song1287={
+  name="buxin"#鍌ㄥ悰1鍙?
+  dynasty_house=house_xin511
+	religion="yinli"
+	culture="song"
+  father=song1286
+
+  3842.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+song1288={
+  name="yi6"#鍌ㄥ悰1鍙?
+  dynasty_house=house_xin511
+	religion="yinli"
+	culture="song"
+  father=song1286
+
+  3843.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+song1289={
+  name="nvming39"#鍌ㄥ悰1鍙?
+  dynasty_house=house_xin511
+	religion="yinli"
+	culture="song"
+  father=song1286
+  female=yes
+
+  3844.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}

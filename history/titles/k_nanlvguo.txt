@@ -1,0 +1,183 @@
+﻿k_nanlvguo = {
+	2520.1.1 = {
+		holder = han3197
+	}
+	2600.1.1 = {
+		holder = han3198
+	}
+	2640.1.1 = {
+		holder = han3199
+	}
+	2674.1.1 = {
+		holder = han3200
+	}
+	2684.1.1 = {
+		holder = han3201
+	}
+	2710.1.1 = {
+		holder = han3202
+	}
+	2730.1.1 = {
+		holder = han3203
+	}
+	2747.1.1 = {
+		holder = han3204
+	}
+	2777.1.1 = {
+		holder = han3205
+	}
+	2809.1.1 = {
+		holder = han3206
+	}
+	2830.1.1 = {
+		holder = han3207
+	}
+	2840.1.1 = {
+		holder = han3208
+	}
+	2855.1.1 = {
+		holder = han3209
+	}
+	2897.1.1 = {
+		holder = han3210
+	}
+	3000.1.1 = {
+		holder = han3211
+	}
+	3010.1.1 = {
+		holder = han3212
+	}
+	3020.1.1 = {
+		holder = han3213
+	}
+	3033.1.1 = {
+		holder = han3214
+	}
+	3044.1.1 = {
+		holder = han3215
+	}
+	3066.1.1 = {
+		holder = han3216
+	}
+	3075.1.1 = {
+		holder = han3217
+	}
+	3077.1.1 = {
+		holder = han3218
+	}
+	3097.1.1 = {
+		holder = han3219
+	}
+	3117.1.1 = {
+		holder = han3220
+	}
+	3119.1.1 = {
+		holder = han3221
+	}
+	3136.1.1 = {
+		holder = han3222
+	}
+	3157.1.1 = {
+		holder = han3223
+	}
+	3159.1.1 = {
+		holder = han3327
+	}
+	3161.1.1 = {
+		holder = han3224
+	}
+	3164.1.1 = {
+		holder = han3225
+	}
+	3177.1.1 = {
+		holder = han3226
+	}
+	3198.1.1 = {
+		holder = han3227
+	}
+	3219.1.1 = {
+		holder = han3228
+	}
+	3240.1.1 = {
+		holder = han3229
+	}
+	3260.1.1 = {
+		holder = han3230
+	}
+	3262.1.1 = {
+		holder = han3231
+	}
+	3279.1.1 = {
+		holder = han3232
+	}
+	3283.1.1 = {
+		holder = han3233
+	}
+	3300.1.1 = {
+		holder = han3234
+	}
+	3305.1.1 = {
+		holder = han3236
+	}
+	3322.1.1 = {
+		holder = han3237
+	}
+	3327.1.1 = {
+		holder = han3238
+	}
+	3341.1.1 = {
+		holder = han3239
+	}
+	3368.1.1 = {
+		holder = han3240
+	}
+	3382.1.1 = {
+		holder = han3243
+	}
+	3415.1.1 = {
+		holder = han3244
+	}
+	3430.1.1 = {
+		holder = han3245
+	}
+	3450.1.1 = {
+		holder = han3246
+	}
+	3467.1.1 = {
+		holder = han3247
+	}
+	3470.1.1 = {
+		holder = han3248
+	}
+	3500.1.1 = {
+		holder = han3249
+	}
+	3600.1.1 = {
+		holder = han3251
+	}
+	3621.1.1 = {
+		holder = han3252
+	}
+	3651.1.1 = {
+		holder = han3253
+	}
+	3702.1.1 = {
+		holder = han3254
+	}
+	3752.1.1 = {
+		holder = han3255
+	}
+	3795.1.1 = {
+		holder = han3256
+	}
+	3805.1.1 = {
+		holder = han3257
+	}
+	3836.1.1 = {
+		holder = han3258
+	}
+	3836.12.31 = {
+		government = feudal_admin_government
+		change_development_level = 25
+	}
+}

@@ -1,0 +1,57 @@
+﻿##### d_fengshi3 ############################
+
+### c_feng4
+# FENG4
+2197 = {
+	culture = qi
+	religion = xizhouli
+	holding = castle_holding
+}
+# CHAOYANG1
+2196 = {
+	holding = none
+}
+
+
+### c_yicheng
+# YICHENG
+90 = {
+	culture = qi
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_li2
+# LI2
+91 = {
+	culture = qi
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+##### d_fenggongshi ############################
+
+### c_maiqiu
+# MAIQIU
+85 = {
+	culture = qi
+	religion = xizhouli
+	holding = castle_holding
+}
+# PINGCHANG
+92 = {
+	holding = none
+}
+
+
+### c_ban
+# BAN
+93 = {
+	culture = qi
+	religion = xizhouli
+	holding = castle_holding
+}
+
+

@@ -1,0 +1,147 @@
+﻿rp_merit_resentful_modifier = {
+	diplomacy = -1
+	monthly_prestige = -0.2
+}
+
+rp_merit_noble_resistance_modifier = {
+	direct_vassal_opinion = -10
+}
+
+rp_merit_honored_modifier = {
+	monthly_prestige = 0.5
+	diplomacy = 1
+}
+
+rp_great_house_modifier = {
+	monthly_prestige = 0.3
+	diplomacy = 1
+}
+
+rp_founding_house_modifier = {
+	monthly_prestige = 0.4
+	diplomacy = 1
+	fertility = 0.05
+	general_opinion = 5
+}
+
+rp_founding_dynasty_modifier = {
+	monthly_dynasty_prestige_mult = 0.1
+	fertility = 0.05
+}
+
+rp_merit_grain_redemption_modifier = {
+	domain_tax_mult = -0.05
+	monthly_prestige = -0.1
+}
+
+rp_merit_disgraced_officer_modifier = {
+	martial = -2
+	prowess = -2
+	monthly_prestige = -0.3
+}
+
+rp_traitor_modifier = {
+	diplomacy = -2
+	martial = -1
+	general_opinion = -25
+	monthly_prestige = -0.5
+}
+
+rp_campaign_discipline_modifier = {
+	martial = 1
+	direct_vassal_opinion = 5
+}
+
+rp_campaign_disorder_modifier = {
+	martial = -1
+	direct_vassal_opinion = -5
+	monthly_prestige = -0.3
+}
+
+rp_campaign_vanguard_modifier = {
+	martial = 1
+	prowess = 2
+}
+
+rp_campaign_shamed_modifier = {
+	martial = -1
+	prowess = -1
+}
+
+rp_campaign_loyal_guard_modifier = {
+	prowess = 2
+	monthly_prestige = 0.2
+}
+
+rp_campaign_hunger_modifier = {
+	martial = -1
+	direct_vassal_opinion = -5
+	monthly_prestige = -0.2
+}
+
+rp_campaign_relief_modifier = {
+	direct_vassal_opinion = 5
+	monthly_prestige = 0.2
+}
+
+rp_danshu_tiequan_modifier = {
+	monthly_prestige = 0.6
+	general_opinion = 5
+	dread_gain_mult = 0.05
+}
+
+rp_hereditary_office_modifier = {
+	monthly_prestige = 0.4
+	diplomacy = 1
+	stewardship = 1
+}
+
+rp_banner_drums_privilege_modifier = {
+	martial = 1
+	prowess = 2
+	monthly_prestige = 0.3
+}
+
+rp_fortification_privilege_modifier = {
+	fort_level = 1
+	garrison_size = 0.1
+	monthly_prestige = 0.2
+}
+
+rp_oath_tablets_modifier = {
+	direct_vassal_opinion = 5
+	monthly_prestige = 0.3
+}
+
+rp_clan_grievance_modifier = {
+	diplomacy = -1
+	direct_vassal_opinion = -5
+}
+
+rp_merit_descendant_modifier = {
+	monthly_prestige = 0.2
+	diplomacy = 1
+}
+
+rp_power_under_suspicion_modifier = {
+	diplomacy = -1
+	martial = -1
+	monthly_prestige = -0.2
+}
+
+rp_power_stripped_modifier = {
+	martial = -2
+	prowess = -1
+	monthly_prestige = -0.4
+}
+
+rp_power_retired_modifier = {
+	monthly_prestige = 0.6
+	general_opinion = 5
+}
+
+rp_power_rebel_pressure_modifier = {
+	martial = 1
+	dread_gain_mult = 0.05
+	monthly_prestige = 0.4
+}

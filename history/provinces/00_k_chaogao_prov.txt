@@ -1,0 +1,86 @@
+﻿##### d_chaoshi ############################
+
+### c_fugao
+# 
+1982 = {
+	holding = none
+}
+
+
+### c_jiangpu
+# 
+1983 = {
+	holding = none
+}
+
+
+### c_wujiang
+# 
+1984 = {
+	holding = none
+}
+
+
+### c_zhaoguan
+# 
+1987 = {
+	holding = none
+}
+
+
+### c_fuyang3
+# 
+1988 = {
+	holding = none
+}
+
+
+### c_tuogao
+# 
+1990 = {
+	holding = none
+}
+
+
+### c_ruqing1
+# 
+1991 = {
+	holding = none
+}
+
+
+### c_chao2
+# 
+1992 = {
+	holding = none
+}
+
+
+### c_huoli
+# 
+1993 = {
+	holding = none
+}
+
+
+### c_fucha
+# 
+1996 = {
+	holding = none
+}
+
+
+### c_hanshan
+# 
+1997 = {
+	holding = none
+}
+
+
+### c_lin3
+# 
+1998 = {
+	holding = none
+}
+
+

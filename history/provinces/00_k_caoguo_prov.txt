@@ -1,0 +1,134 @@
+﻿##### d_caoshi ############################
+
+### c_tao3
+# TAO3
+539 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+# JIAO1
+541 = {
+	holding = none
+}
+
+
+### c_zuoshi
+# ZUOSHI
+692 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+### c_yuanju
+# YUANJU
+2435 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+##### d_hanshi4 ############################
+
+### c_chengpu
+# CHENGPU
+695 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+### c_juyang4
+# JUYANG4
+2437 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+##### d_yuanshi2 ############################
+
+### c_xu2
+# XU2
+693 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+### c_zhuzao
+# ZHUZAO
+694 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+# XIANGQIU
+680 = {
+	holding = none
+}
+
+
+##### d_mengshi1 ############################
+
+### c_meng2
+# MENG2
+697 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+# JIAMI
+696 = {
+	holding = none
+}
+
+
+### c_shengdou
+# SHENGDOU
+698 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+##### d_youshi2 ############################
+
+### c_you1
+# YOU1
+676 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+# JIYANG
+691 = {
+	holding = none
+}
+
+
+### c_qi4
+# QI4
+677 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+### c_shouyuan
+# SHOUYUAN
+678 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+

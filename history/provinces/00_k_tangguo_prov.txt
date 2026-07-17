@@ -1,0 +1,65 @@
+﻿##### d_tangshi ############################
+
+### c_caiyang1
+# 
+1833 = {
+	holding = none
+}
+
+
+### c_xiangxiang
+# 
+1834 = {
+	holding = none
+}
+
+
+### c_zaoyang1
+# 
+1835 = {
+	holding = none
+}
+
+
+### c_chongling
+# 
+1837 = {
+	holding = none
+}
+
+
+### c_yingyuan
+# 
+1838 = {
+	holding = none
+}
+
+
+### c_jin3
+# 
+1839 = {
+	holding = none
+}
+
+
+### c_shanghong
+# 
+1840 = {
+	holding = none
+}
+
+
+### c_tang5
+# 
+1841 = {
+	holding = none
+}
+
+
+### c_baiju
+# 
+1846 = {
+	holding = none
+}
+
+

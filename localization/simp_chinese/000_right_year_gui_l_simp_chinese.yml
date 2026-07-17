@@ -1,0 +1,23 @@
+﻿l_simp_chinese:
+ #宗族
+ HOUSE_VIEW_FOUNDED:0 "由[DynastyHouse.GetFounder.GetName]，于公元$RIGHT_FOUNATION_YEAR$年创建"
+ HOUSE_LIST_FOUNDATION:0 "成立于公元$RIGHT_FOUNATION_YEAR$年"
+ #角色死亡
+ LEGACY_REIGN:0 "扮演时长：$RIGHT_START_DATE_YEAR$年—$RIGHT_END_DATE_YEAR$年（[LegacyItem.GetReignLength]）"
+ LEGACY_REIGN_CURRENT:0 "$RIGHT_START_DATE_YEAR$年——"
+ #游戏结束
+ SUCCESSION_DYNASTY_INFO:0 "[Dynasty.GetName]\n$RIGHT_SUCCESSION_START_DATE_YEAR$年－$RIGHT_SUCCESSION_END_DATE_YEAR$年\n[Dynasty.GetNumberOfMembers]个成员（扮演过[SuccessionEventWindow.GetNumberOfPlayed]）\n[Dynasty.GetPrestigeLevelName]\n[GetDataModelSize( Dynasty.GetDynastyHouses )]个[Select_CString( EqualTo_int32( GetDataModelSize( Dynasty.GetDynastyHouses ), '(int32)1' ), '家族', '家族' )]"
+ #捏人
+ RULER_DESIGNER_BIRTH_YEAR:043 "出生年份：公元$RIGHT_RULER_DESIGNER_BIRTH_YEAR$年"
+ #选人
+ PICK_ANY_CHARACTER:0 "扮演#light_background;bold $RIGHT_PICK_ANY_CHARACTER_YEAR$年#!剧本的任一统治者，或#bold 自建一名统治者！#!"
+ #文化
+ CULTURE_WINDOW_ERA_JOINED:0 "$RIGHT_JOINED_YEAR$–"
+ CULTURE_WINDOW_ERA_JOINED_LEFT:0 "$RIGHT_JOINED_YEAR$–$RIGHT_LEFTED_YEAR$"
+ INNOVATION_ERA_NOT_IN_YEAR:0 "#N 这个时代在公元$RIGHT_YEAR$年之前不可用#!" 
+ CULTURE_CREATION_DATE:0 "建立于公元$RIGHT_DATE_YEAR$年"
+ CULTURE_CREATION_DATE_DIVERGED:0 "于公元$RIGHT_DATE_YEAR$年分离自[CULTURE.GetName]文化"
+ CULTURE_CREATION_DATE_HYBRID:0 "于公元$RIGHT_DATE_YEAR$年融合自[CULTURE.GetName]文化和[TARGET_CULTURE.GetName]文化"
+ 
+ 
+ 

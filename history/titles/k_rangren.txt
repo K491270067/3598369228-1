@@ -1,0 +1,42 @@
+﻿k_rangren = {
+3759.1.1 = {
+		holder = rangren1
+	}
+3812.1.1 = {
+		holder = rangren2
+	}
+3835.1.1 = {
+		holder = rangren3
+	}
+3849.12.31 = {
+		government = tribal_government
+		change_development_level = 24
+	}
+}
+
+d_rangshi = {
+3759.1.1 = {
+		liege = "k_rangren"
+		holder = rangren1
+	}
+3812.1.1 = {
+		holder = rangren2
+	}
+3835.1.1 = {
+		holder = rangren3
+	}
+}
+
+d_rangtushi = {
+3772.1.1 = {
+		liege = "k_rangren"
+		holder = rangren8
+	}
+3819.1.1 = {
+		holder = rangren9
+	}
+3849.1.1 = {
+		change_development_level = 23
+		government = tribal_government
+	}
+}

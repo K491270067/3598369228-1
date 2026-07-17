@@ -1,0 +1,38 @@
+﻿war_declarer_needs_hook_on_liege = {
+	scope:actor = {
+		top_liege != this
+		liege != scope:recipient
+		NAND = {
+			trigger_if = { #COPF
+				limit = { government_has_flag = government_is_feudal_admin }
+				subject_contract_has_flag = succession_rights_governor_appointment
+			}
+			trigger_else = {
+				government_allows = administrative
+			}
+			liege = {
+				trigger_if = { #COPF
+					limit = { government_has_flag = government_is_feudal_admin }
+					subject_contract_has_flag = succession_rights_governor_appointment
+				}
+				trigger_else = {
+					government_allows = administrative
+				}
+			}
+		}
+		NOT = {
+			vassal_contract_has_flag = vassal_contract_war_override
+		}
+		OR = {
+			AND = {
+				liege = scope:recipient.liege
+				liege = { has_realm_law_flag = vassal_internal_wars_banned }
+			}
+			liege = { has_realm_law_flag = vassal_all_wars_banned }
+			AND = {
+				has_realm_law = japanese_bureaucracy_2
+				NOT = { government_allows = administrative }
+			}
+		}
+	}
+}

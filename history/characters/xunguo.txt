@@ -1,0 +1,729 @@
+﻿### 鄩国--姒姓 ###
+zhenxun1={
+  name="nanming1081"
+  dynasty=xin368
+	religion="xiali" 
+	culture="xiaren"
+  father=zhenguan1
+
+  2568.1.1 = {
+		birth = yes
+	}
+  2600.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+zhenxun2={
+  name="yi4"
+  dynasty_house=house_xin369
+	religion="xiali" 
+	culture="xiaren"
+  father=zhenxun1
+
+  2598.1.1 = {
+		birth = yes
+	}
+  2640.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+zhenxun3={
+  name="nanming181"
+  dynasty_house=house_xin369
+	religion="xiali" 
+	culture="xiaren"
+  father=zhenxun2
+
+  2631.1.1 = {
+		birth = yes
+	}
+  2700.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+zhenxun4={
+  name="nanming78"
+  dynasty_house=house_xin369
+	religion="xiali" 
+	culture="xiaren"
+  father=zhenxun3
+
+  2693.1.1 = {
+		birth = yes
+	}
+  2783.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+zhenxun5={
+  name="yu9"
+  dynasty_house=house_xin369
+	religion="xiali" 
+	culture="xiaren"
+  father=zhenxun4
+
+  2743.1.1 = {
+		birth = yes
+	}
+  2812.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+zhenxun6={
+  name="can2"
+  dynasty_house=house_xin369
+	religion="xiali" 
+	culture="xiaren"
+  father=zhenxun5
+
+  2784.1.1 = {
+		birth = yes
+	}
+  2847.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+zhenxun7={
+  name="jie3"
+  dynasty_house=house_xin369
+	religion="xiali" 
+	culture="xiaren"
+  father=zhenxun6
+
+  2831.1.1 = {
+		birth = yes
+	}
+  2900.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+zhenxun8={
+  name="liu2"
+  dynasty_house=house_xin369
+	religion="xiali" 
+	culture="xiaren"
+  father=zhenxun7
+
+  2884.1.1 = {
+		birth = yes
+	}
+  2957.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+zhenxun9={
+  name="ying5"
+  dynasty_house=house_xin369
+	religion="xiali" 
+	culture="xiaren"
+  father=zhenxun8
+
+  2937.1.1 = {
+		birth = yes
+	}
+  3004.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+zhenxun10={
+  name="shuxia"
+  dynasty_house=house_xin369
+	religion="xiali" 
+	culture="xiaren"
+  father=zhenxun9
+
+  3003.1.1 = {
+		birth = yes
+	}
+  3066.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+zhenxun11={
+  name="bo1"
+  dynasty_house=house_xin369
+	religion="xiali" 
+	culture="xiaren"
+  father=zhenxun10
+
+  3044.1.1 = {
+		birth = yes
+	}
+  3123.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+zhenxun12={
+  name="xu4"
+  dynasty_house=house_xin369
+	religion="xiali" 
+	culture="xiaren"
+  father=zhenxun11
+
+  3121.1.1 = {
+		birth = yes
+	}
+  3189.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+zhenxun13={
+  name="shu4"
+  dynasty_house=house_xin369
+	religion="xiali" 
+	culture="xiaren"
+  father=zhenxun12
+
+  3183.1.1 = {
+		birth = yes
+	}
+  3222.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+zhenxun14={
+  name="boche"
+  dynasty_house=house_xin369
+	religion="xiali" 
+	culture="xiaren"
+  father=zhenxun13
+
+  3210.1.1 = {
+		birth = yes
+	}
+  3260.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+zhenxun15={
+  name="wei3"
+  dynasty_house=house_xin369
+	religion="xiali" 
+	culture="xiaren"
+  father=zhenxun14
+
+  3256.1.1 = {
+		birth = yes
+	}
+  3333.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+zhenxun16={
+  name="ci1"
+  dynasty_house=house_xin369
+	religion="xiali" 
+	culture="xiaren"
+  father=zhenxun15
+
+  3322.1.1 = {
+		birth = yes
+	}
+  3400.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+zhenxun17={
+  name="quan1"
+  dynasty_house=house_xin369
+	religion="xiali" 
+	culture="xiaren"
+  father=zhenxun16
+
+  3395.1.1 = {
+		birth = yes
+	}
+  3488.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+zhenxun18={
+  name="mang1"
+  dynasty_house=house_xin369
+	religion="xiali" 
+	culture="xiaren"
+  father=zhenxun17
+
+  3479.1.1 = {
+		birth = yes
+	}
+  3555.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+zhenxun19={
+  name="mian"
+  dynasty_house=house_xin369
+	religion="xiali" 
+	culture="xiaren"
+  father=zhenxun18
+
+  3552.1.1 = {
+		birth = yes
+	}
+  3621.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+zhenxun20={
+  name="genxiang"
+  dynasty_house=house_xin369
+	religion="xiali" 
+	culture="xiaren"
+  father=zhenxun19
+
+  3617.1.1 = {
+		birth = yes
+	}
+  3700.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+zhenxun21={
+  name="quqi"
+  dynasty_house=house_xin369
+	religion="xiali" 
+	culture="xiaren"
+  father=zhenxun20
+
+  3693.1.1 = {
+		birth = yes
+	}
+  3753.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+zhenxun22={
+  name="yi8"
+  dynasty_house=house_xin369
+	religion="xiali" 
+	culture="xiaren"
+  father=zhenxun21
+
+  3744.1.1 = {
+		birth = yes
+	}
+  3800.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+zhenxun23={
+  name="xu5"
+  dynasty_house=house_xin369
+	religion="xiali" 
+	culture="xiaren"
+  father=zhenxun22
+
+  3790.1.1 = {
+		birth = yes
+	}
+  3848.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+zhenxun24={
+  name="tian1"#平王东迁时过国国君，游戏开局时33岁
+  dynasty_house=house_xin369
+	religion="xiali" 
+	culture="xiaren"
+  father=zhenxun23
+
+  3817.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+zhenxun25={
+  name="nie1"#储君1号，游戏开局时14岁
+  dynasty_house=house_xin369
+	religion="xiali" 
+	culture="xiaren"
+  father=zhenxun24
+
+  3836.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+zhenxun26={
+  name="shi10"#储君2号，游戏开局时13岁
+  dynasty_house=house_xin369
+	religion="xiali" 
+	culture="xiaren"
+  father=zhenxun24
+
+  3837.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+zhenxun27={
+  name="xin3"#储君3号，游戏开局时9岁
+  dynasty_house=house_xin369
+	religion="xiali" 
+	culture="xiaren"
+  father=zhenxun24
+
+  3838.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+zhenxun28={
+  name="rong1"#女1号，游戏开局时17岁
+  dynasty_house=house_xin369
+	religion="xiali" 
+	culture="xiaren"
+  father=zhenxun24
+  female=yes
+
+  3839.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+zhenxun29={
+  name="xingnv"#女2号，游戏开局时12岁
+  dynasty_house=house_xin369
+	religion="xiali" 
+	culture="xiaren"
+  father=zhenxun24
+  female=yes
+
+  3840.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+#########戈氏
+zhenxun30={
+  name="nanming902"
+  dynasty_house=house_xin370
+	religion="xiali" 
+	culture="xiaren"
+  father=zhenxun20
+
+  3694.1.1 = {
+		birth = yes
+	}
+  3753.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+zhenxun31={
+  name="nanming921"
+  dynasty_house=house_xin370
+	religion="xiali" 
+	culture="xiaren"
+  father=zhenxun30
+
+  3744.1.1 = {
+		birth = yes
+	}
+  3800.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+zhenxun32={
+  name="nanming946"
+  dynasty_house=house_xin370
+	religion="xiali" 
+	culture="xiaren"
+  father=zhenxun31
+
+  3790.1.1 = {
+		birth = yes
+	}
+  3848.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+zhenxun33={
+  name="nanming962"#平王东迁时过国国君，游戏开局时33岁
+  dynasty_house=house_xin370
+	religion="xiali" 
+	culture="xiaren"
+  father=zhenxun32
+
+  3818.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+zhenxun34={
+  name="nanming1014"#储君1号，游戏开局时14岁
+  dynasty_house=house_xin370
+	religion="xiali" 
+	culture="xiaren"
+  father=zhenxun33
+
+  3836.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+zhenxun35={
+  name="nanming1027"#储君2号，游戏开局时13岁
+  dynasty_house=house_xin370
+	religion="xiali" 
+	culture="xiaren"
+  father=zhenxun33
+
+  3837.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+zhenxun36={
+  name="nanming1047"#储君3号，游戏开局时9岁
+  dynasty_house=house_xin370
+	religion="xiali" 
+	culture="xiaren"
+  father=zhenxun33
+
+  3838.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+zhenxun37={
+  name="ying2"#女1号，游戏开局时17岁
+  dynasty_house=house_xin370
+	religion="xiali" 
+	culture="xiaren"
+  father=zhenxun33
+  female=yes
+
+  3839.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+zhenxun38={
+  name="sai1"#女2号，游戏开局时12岁
+  dynasty_house=house_xin370
+	religion="xiali" 
+	culture="xiaren"
+  father=zhenxun33
+  female=yes
+
+  3840.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+#########鄩氏
+zhenxun39={
+  name="nanming897"
+  dynasty_house=house_xin371
+	religion="xiali" 
+	culture="xiaren"
+  father=zhenxun21
+
+  3745.1.1 = {
+		birth = yes
+	}
+  3800.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+zhenxun40={
+  name="nanming909"#平王东迁时过国国君，游戏开局时33岁
+  dynasty_house=house_xin371
+	religion="xiali" 
+	culture="xiaren"
+  father=zhenxun39
+
+  3797.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+zhenxun41={
+  name="nanming927"#储君1号，游戏开局时14岁
+  dynasty_house=house_xin371
+	religion="xiali" 
+	culture="xiaren"
+  father=zhenxun40
+
+  3826.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+zhenxun42={
+  name="nanming955"#储君2号，游戏开局时13岁
+  dynasty_house=house_xin371
+	religion="xiali" 
+	culture="xiaren"
+  father=zhenxun40
+
+  3827.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+zhenxun43={
+  name="nanming991"#储君3号，游戏开局时9岁
+  dynasty_house=house_xin371
+	religion="xiali" 
+	culture="xiaren"
+  father=zhenxun40
+
+  3828.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+zhenxun44={
+  name="nvming8"#女1号，游戏开局时17岁
+  dynasty_house=house_xin371
+	religion="xiali" 
+	culture="xiaren"
+  father=zhenxun40
+  female=yes
+
+  3829.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+zhenxun45={
+  name="nvming11"#女2号，游戏开局时12岁
+  dynasty_house=house_xin371
+	religion="xiali" 
+	culture="xiaren"
+  father=zhenxun40
+  female=yes
+
+  3830.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}

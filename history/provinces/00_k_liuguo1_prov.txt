@@ -1,0 +1,72 @@
+﻿##### d_liushi1 ############################
+
+### c_lu4
+# 
+1967 = {
+	holding = none
+}
+
+
+### c_nangang
+# 
+1968 = {
+	holding = none
+}
+
+
+### c_lin4
+# 
+2005 = {
+	holding = none
+}
+
+
+### c_dilu
+# 
+2009 = {
+	holding = none
+}
+
+
+### c_chiji
+# 
+2010 = {
+	holding = none
+}
+
+
+### c_xifeng
+# 
+2020 = {
+	holding = none
+}
+
+
+### c_zhuye
+# 
+2021 = {
+	holding = none
+}
+
+
+### c_e2
+# 
+2022 = {
+	holding = none
+}
+
+
+### c_chengde
+# 
+2003 = {
+	holding = none
+}
+
+
+### c_beng1
+# 
+2024 = {
+	holding = none
+}
+
+

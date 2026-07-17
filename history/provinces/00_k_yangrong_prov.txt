@@ -1,0 +1,33 @@
+﻿##### d_yangshi1 ############################
+
+### c_xumi
+# XUMI
+780 = {
+	culture = yiluozhirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+
+
+### c_shishi
+# SHISHI
+785 = {
+	culture = yiluozhirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+
+
+### c_yang1
+# YANG1
+789 = {
+	culture = yiluozhirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+# DONGYU
+788 = {
+	holding = none
+}
+
+

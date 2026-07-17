@@ -1,0 +1,35 @@
+﻿@ai_standard_liege_desire = 2
+@ai_standard_vassal_desire = 1
+# Everything below this line is 'Fine Print'
+
+war_declaration_rights = {
+	display_mode = checkbox
+	obligation_levels = {
+		war_declaration_rights_default = {
+			default = yes
+			position = { 0 0 }
+
+			ai_liege_desire = @ai_standard_liege_desire
+			ai_subject_desire = 0
+		}
+		war_declaration_rights_allowed = {
+			parent = war_declaration_rights_default
+			position = { 1 0 }
+
+			subject_opinion = 5
+
+			flag = vassal_contract_war_override
+
+			is_valid = {
+				custom_tooltip = {
+					text = tt_liege_permanently_prohibit_all_wars
+					scope:liege = { NOT = { has_realm_law_flag = vassal_all_wars_banned_permanent } } #COPF
+				}
+			}
+
+			ai_liege_desire = 0
+			ai_subject_desire = @ai_standard_vassal_desire
+		}
+	}
+}
+

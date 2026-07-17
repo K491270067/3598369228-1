@@ -1,0 +1,101 @@
+﻿###閮冲浗灏忛偩鍥?閮虫皬###
+niguo1={
+  name="you"#澶忕埗涔嬪紵锛岃偉鍜屽弸涓ょ璇存硶涓轰竴浜猴紝灏佷簬澶风埗棰滄涔嬪墠
+  dynasty=xin428 
+	religion="xizhouli" 
+	culture="lu"
+  father=han992
+
+  3818.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+niguo2={
+  name="zhi5"#瀛?鍙凤紝鍙傝€冦€婅帓銆侀偩銆侀兂涓栫郴銆?
+  dynasty_house=house_xin429 
+	religion="xizhouli" 
+	culture="lu"
+  father=niguo1
+
+  3836.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+niguo3={
+  name="nanming349"#瀛?鍙?
+  dynasty_house=house_xin430 
+	religion="xizhouli" 
+	culture="lu"
+  father=niguo1
+
+  3837.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+niguo4={
+  name="nanming1096"#瀛?鍙?
+  dynasty_house=house_xin431 
+	religion="xizhouli" 
+	culture="lu"
+  father=niguo1
+
+  3838.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+niguo5={
+  name="hui2"#瀛?鍙?
+  dynasty_house=house_baijia143 
+	religion="xizhouli" 
+	culture="lu"
+  father=niguo1
+
+  3839.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+niguo6={
+  name="nvming315"#濂?鍙?
+  dynasty_house=house_xin429 
+	religion="xizhouli" 
+	culture="lu"
+  father=niguo1
+  female=yes
+
+  3840.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+niguo7={
+  name="nvming310"#濂?鍙?
+  dynasty_house=house_xin429 
+	religion="xizhouli" 
+	culture="lu"
+  father=niguo1
+  female=yes
+
+  3841.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}

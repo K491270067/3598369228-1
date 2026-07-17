@@ -1,0 +1,57 @@
+﻿##### d_nieshi ############################
+
+### c_yiyi
+# YIYI
+82 = {
+	culture = qi
+	religion = xizhouli
+	holding = castle_holding
+}
+# QING1
+81 = {
+	holding = none
+}
+
+
+### c_she
+# SHE
+79 = {
+	culture = qi
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_liao
+# LIAO
+80 = {
+	culture = qi
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+##### d_boshi ############################
+
+### c_boling
+# BOLING
+84 = {
+	culture = qi
+	religion = xizhouli
+	holding = castle_holding
+}
+# BOWANG
+78 = {
+	holding = none
+}
+
+
+### c_tang
+# TANG
+83 = {
+	culture = qi
+	religion = xizhouli
+	holding = castle_holding
+}
+
+

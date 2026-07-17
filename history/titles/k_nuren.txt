@@ -1,0 +1,42 @@
+﻿k_nuren = {
+3749.1.1 = {
+		holder = nuren1
+	}
+3802.1.1 = {
+		holder = nuren2
+	}
+3842.1.1 = {
+		holder = nuren3
+	}
+3849.12.31 = {
+		government = tribal_government
+		change_development_level = 24
+	}
+}
+
+d_nushi = {
+3749.1.1 = {
+		liege = "k_nuren"
+		holder = nuren1
+	}
+3802.1.1 = {
+		holder = nuren2
+	}
+3842.1.1 = {
+		holder = nuren3
+	}
+}
+
+d_hageishi = {
+3768.1.1 = {
+		liege = "k_nuren"
+		holder = nuren8
+	}
+3809.1.1 = {
+		holder = nuren9
+	}
+3849.1.1 = {
+		change_development_level = 22
+		government = tribal_government
+	}
+}

@@ -1,0 +1,6499 @@
+﻿house_baijia1 = {
+	name = "dynn_baijia1"
+	dynasty = xin571
+}
+house_baijia2 = {
+	name = "dynn_baijia2"
+	dynasty = baijia47
+}
+house_baijia3 = {
+	name = "dynn_baijia3"
+	dynasty = xin507
+}
+house_baijia4 = {
+	name = "dynn_baijia4"
+	dynasty = xin51
+}
+house_baijia5 = {
+	name = "dynn_baijia5"
+	dynasty = baijia297
+}
+house_baijia6 = {
+	name = "dynn_baijia6"
+	dynasty = baijia297
+}
+house_baijia7 = {
+	name = "dynn_baijia7"
+	dynasty = xin531
+}
+house_baijia8 = {
+	name = "dynn_baijia8"
+	dynasty = baijia297
+}
+house_baijia9 = {
+	name = "dynn_baijia9"
+	dynasty = baijia471
+}
+house_baijia10 = {
+	name = "dynn_baijia10"
+	dynasty = xin44
+}
+house_baijia11 = {
+	name = "dynn_baijia11"
+	dynasty = baijia297
+}
+house_baijia12 = {
+	name = "dynn_baijia12"
+	dynasty = xin507
+}
+house_baijia13 = {
+	name = "dynn_baijia13"
+	dynasty = baijia297
+}
+house_baijia14 = {
+	name = "dynn_baijia14"
+	dynasty = baijia297
+}
+house_baijia15 = {
+	name = "dynn_baijia15"
+	dynasty = xin645
+}
+house_baijia16 = {
+	name = "dynn_baijia16"
+	dynasty = xin329
+}
+house_baijia17 = {
+	name = "dynn_baijia17"
+	dynasty = baijia297
+}
+house_baijia18 = {
+	name = "dynn_baijia18"
+	dynasty = xin51
+}
+house_baijia19 = {
+	name = "dynn_baijia19"
+	dynasty = baijia297
+}
+house_baijia20 = {
+	name = "dynn_baijia20"
+	dynasty = xin728
+}
+house_baijia21 = {
+	name = "dynn_baijia21"
+	dynasty = baijia471
+}
+house_baijia22 = {
+	name = "dynn_baijia22"
+	dynasty = xin328
+}
+house_baijia23 = {
+	name = "dynn_baijia23"
+	dynasty = xin389
+}
+house_baijia24 = {
+	name = "dynn_baijia24"
+	dynasty = xin651
+}
+house_baijia25 = {
+	name = "dynn_baijia25"
+	dynasty = xin47
+}
+house_baijia26 = {
+	name = "dynn_baijia26"
+	dynasty = xin493
+}
+house_baijia27 = {
+	name = "dynn_baijia27"
+	dynasty = baijia27
+}
+house_baijia28 = {
+	name = "dynn_baijia28"
+	dynasty = xin47
+}
+house_baijia29 = {
+	name = "dynn_baijia29"
+	dynasty = baijia297
+}
+house_baijia30 = {
+	name = "dynn_baijia30"
+	dynasty = xin673
+}
+house_baijia31 = {
+	name = "dynn_baijia31"
+	dynasty = baijia297
+}
+house_baijia32 = {
+	name = "dynn_baijia32"
+	dynasty = baijia297
+}
+house_baijia33 = {
+	name = "dynn_baijia33"
+	dynasty = baijia297
+}
+house_baijia34 = {
+	name = "dynn_baijia34"
+	dynasty = baijia32
+}
+house_baijia35 = {
+	name = "dynn_baijia35"
+	dynasty = xin55
+}
+house_baijia36 = {
+	name = "dynn_baijia36"
+	dynasty = baijia297
+}
+house_baijia37 = {
+	name = "dynn_baijia37"
+	dynasty = baijia297
+}
+house_baijia38 = {
+	name = "dynn_baijia38"
+	dynasty = baijia297
+}
+house_baijia39 = {
+	name = "dynn_baijia39"
+	dynasty = baijia297
+}
+house_baijia40 = {
+	name = "dynn_baijia40"
+	dynasty = baijia297
+}
+house_baijia41 = {
+	name = "dynn_baijia41"
+	dynasty = xin485
+}
+house_baijia42 = {
+	name = "dynn_baijia42"
+	dynasty = xin52
+}
+house_baijia43 = {
+	name = "dynn_baijia43"
+	dynasty = baijia297
+}
+house_baijia44 = {
+	name = "dynn_baijia44"
+	dynasty = xin503
+}
+house_baijia45 = {
+	name = "dynn_baijia45"
+	dynasty = xin471
+}
+house_baijia46 = {
+	name = "dynn_baijia46"
+	dynasty = baijia297
+}
+house_baijia47 = {
+	name = "dynn_baijia47"
+	dynasty = baijia47
+}
+house_baijia48 = {
+	name = "dynn_baijia48"
+	dynasty = baijia297
+}
+house_baijia49 = {
+	name = "dynn_baijia49"
+	dynasty = xin389
+}
+house_baijia50 = {
+	name = "dynn_baijia50"
+	dynasty = baijia297
+}
+house_baijia51 = {
+	name = "dynn_baijia51"
+	dynasty = baijia297
+}
+house_baijia52 = {
+	name = "dynn_baijia52"
+	dynasty = baijia297
+}
+house_baijia53 = {
+	name = "dynn_baijia53"
+	dynasty = xin700
+}
+house_baijia54 = {
+	name = "dynn_baijia54"
+	dynasty = baijia297
+}
+house_baijia55 = {
+	name = "dynn_baijia55"
+	dynasty = baijia297
+}
+house_baijia56 = {
+	name = "dynn_baijia56"
+	dynasty = baijia297
+}
+house_baijia57 = {
+	name = "dynn_baijia57"
+	dynasty = baijia297
+}
+house_baijia58 = {
+	name = "dynn_baijia58"
+	dynasty = baijia58
+}
+house_baijia59 = {
+	name = "dynn_baijia59"
+	dynasty = xin44
+}
+house_baijia60 = {
+	name = "dynn_baijia60"
+	dynasty = baijia297
+}
+house_baijia61 = {
+	name = "dynn_baijia61"
+	dynasty = baijia297
+}
+house_baijia62 = {
+	name = "dynn_baijia62"
+	dynasty = baijia297
+}
+house_baijia63 = {
+	name = "dynn_baijia63"
+	dynasty = baijia297
+}
+house_baijia64 = {
+	name = "dynn_baijia64"
+	dynasty = xin32
+}
+house_baijia65 = {
+	name = "dynn_baijia65"
+	dynasty = xin478
+}
+house_baijia66 = {
+	name = "dynn_baijia66"
+	dynasty = baijia297
+}
+house_baijia67 = {
+	name = "dynn_baijia67"
+	dynasty = baijia297
+}
+house_baijia68 = {
+	name = "dynn_baijia68"
+	dynasty = baijia58
+}
+house_baijia69 = {
+	name = "dynn_baijia69"
+	dynasty = baijia32
+}
+house_baijia70 = {
+	name = "dynn_baijia70"
+	dynasty = baijia297
+}
+house_baijia71 = {
+	name = "dynn_baijia71"
+	dynasty = baijia297
+}
+house_baijia72 = {
+	name = "dynn_baijia72"
+	dynasty = baijia297
+}
+house_baijia73 = {
+	name = "dynn_baijia73"
+	dynasty = xin330
+}
+house_baijia74 = {
+	name = "dynn_baijia74"
+	dynasty = baijia297
+}
+house_baijia75 = {
+	name = "dynn_baijia75"
+	dynasty = xin56
+}
+house_baijia76 = {
+	name = "dynn_baijia76"
+	dynasty = xin815
+}
+house_baijia77 = {
+	name = "dynn_baijia77"
+	dynasty = baijia297
+}
+house_baijia78 = {
+	name = "dynn_baijia78"
+	dynasty = baijia297
+}
+house_baijia79 = {
+	name = "dynn_baijia79"
+	dynasty = baijia297
+}
+house_baijia80 = {
+	name = "dynn_baijia80"
+	dynasty = xin507
+}
+house_baijia81 = {
+	name = "dynn_baijia81"
+	dynasty = xin47
+}
+house_baijia82 = {
+	name = "dynn_baijia82"
+	dynasty = baijia297
+}
+house_baijia83 = {
+	name = "dynn_baijia83"
+	dynasty = baijia297
+}
+house_baijia84 = {
+	name = "dynn_baijia84"
+	dynasty = baijia297
+}
+house_baijia85 = {
+	name = "dynn_baijia85"
+	dynasty = xin664
+}
+house_baijia86 = {
+	name = "dynn_baijia86"
+	dynasty = baijia297
+}
+house_baijia87 = {
+	name = "dynn_baijia87"
+	dynasty = baijia297
+}
+house_baijia88 = {
+	name = "dynn_baijia88"
+	dynasty = xin507
+}
+house_baijia89 = {
+	name = "dynn_baijia89"
+	dynasty = baijia297
+}
+house_baijia90 = {
+	name = "dynn_baijia90"
+	dynasty = xin17
+}
+house_baijia91 = {
+	name = "dynn_baijia91"
+	dynasty = baijia297
+}
+house_baijia92 = {
+	name = "dynn_baijia92"
+	dynasty = baijia297
+}
+house_baijia93 = {
+	name = "dynn_baijia93"
+	dynasty = baijia297
+}
+house_baijia94 = {
+	name = "dynn_baijia94"
+	dynasty = baijia297
+}
+house_baijia95 = {
+	name = "dynn_baijia95"
+	dynasty = baijia297
+}
+house_baijia96 = {
+	name = "dynn_baijia96"
+	dynasty = xin51
+}
+house_baijia97 = {
+	name = "dynn_baijia97"
+	dynasty = baijia297
+}
+house_baijia98 = {
+	name = "dynn_baijia98"
+	dynasty = baijia297
+}
+house_baijia99 = {
+	name = "dynn_baijia99"
+	dynasty = xin51
+}
+house_baijia100 = {
+	name = "dynn_baijia100"
+	dynasty = xin746
+}
+house_baijia101 = {
+	name = "dynn_baijia101"
+	dynasty = baijia297
+}
+house_baijia102 = {
+	name = "dynn_baijia102"
+	dynasty = baijia297
+}
+house_baijia103 = {
+	name = "dynn_baijia103"
+	dynasty = baijia297
+}
+house_baijia104 = {
+	name = "dynn_baijia104"
+	dynasty = baijia297
+}
+house_baijia105 = {
+	name = "dynn_baijia105"
+	dynasty = xin32
+}
+house_baijia106 = {
+	name = "dynn_baijia106"
+	dynasty = xin747
+}
+house_baijia107 = {
+	name = "dynn_baijia107"
+	dynasty = baijia297
+}
+house_baijia108 = {
+	name = "dynn_baijia108"
+	dynasty = baijia297
+}
+house_baijia109 = {
+	name = "dynn_baijia109"
+	dynasty = baijia297
+}
+house_baijia110 = {
+	name = "dynn_baijia110"
+	dynasty = xin587
+}
+house_baijia111 = {
+	name = "dynn_baijia111"
+	dynasty = baijia297
+}
+house_baijia112 = {
+	name = "dynn_baijia112"
+	dynasty = xin389
+}
+house_baijia113 = {
+	name = "dynn_baijia113"
+	dynasty = xin404
+}
+house_baijia114 = {
+	name = "dynn_baijia114"
+	dynasty = xin455
+}
+house_baijia115 = {
+	name = "dynn_baijia115"
+	dynasty = baijia297
+}
+house_baijia116 = {
+	name = "dynn_baijia116"
+	dynasty = xin508
+}
+house_baijia117 = {
+	name = "dynn_baijia117"
+	dynasty = baijia297
+}
+house_baijia118 = {
+	name = "dynn_baijia118"
+	dynasty = xin47
+}
+house_baijia119 = {
+	name = "dynn_baijia119"
+	dynasty = xin476
+}
+house_baijia120 = {
+	name = "dynn_baijia120"
+	dynasty = xin672
+}
+house_baijia121 = {
+	name = "dynn_baijia121"
+	dynasty = xin56
+}
+house_baijia122 = {
+	name = "dynn_baijia122"
+	dynasty = xin338
+}
+house_baijia123 = {
+	name = "dynn_baijia123"
+	dynasty = xin57
+}
+house_baijia124 = {
+	name = "dynn_baijia124"
+	dynasty = xin660
+}
+house_baijia125 = {
+	name = "dynn_baijia125"
+	dynasty = baijia297
+}
+house_baijia126 = {
+	name = "dynn_baijia126"
+	dynasty = xin443
+}
+house_baijia127 = {
+	name = "dynn_baijia127"
+	dynasty = baijia127
+}
+house_baijia128 = {
+	name = "dynn_baijia128"
+	dynasty = xin797
+}
+house_baijia129 = {
+	name = "dynn_baijia129"
+	dynasty = xin817
+}
+house_baijia130 = {
+	name = "dynn_baijia130"
+	dynasty = xin838
+}
+house_baijia131 = {
+	name = "dynn_baijia131"
+	dynasty = baijia297
+}
+house_baijia132 = {
+	name = "dynn_baijia132"
+	dynasty = baijia297
+}
+house_baijia133 = {
+	name = "dynn_baijia133"
+	dynasty = baijia297
+}
+house_baijia134 = {
+	name = "dynn_baijia134"
+	dynasty = baijia297
+}
+house_baijia135 = {
+	name = "dynn_baijia135"
+	dynasty = baijia297
+}
+house_baijia136 = {
+	name = "dynn_baijia136"
+	dynasty = baijia297
+}
+house_baijia137 = {
+	name = "dynn_baijia137"
+	dynasty = xin647
+}
+house_baijia138 = {
+	name = "dynn_baijia138"
+	dynasty = baijia297
+}
+house_baijia139 = {
+	name = "dynn_baijia139"
+	dynasty = xin397
+}
+house_baijia140 = {
+	name = "dynn_baijia140"
+	dynasty = baijia297
+}
+house_baijia141 = {
+	name = "dynn_baijia141"
+	dynasty = xin51
+}
+house_baijia142 = {
+	name = "dynn_baijia142"
+	dynasty = baijia297
+}
+house_baijia143 = {
+	name = "dynn_baijia143"
+	dynasty = xin428
+}
+house_baijia144 = {
+	name = "dynn_baijia144"
+	dynasty = xin448
+}
+house_baijia145 = {
+	name = "dynn_baijia145"
+	dynasty = xin386
+}
+house_baijia146 = {
+	name = "dynn_baijia146"
+	dynasty = baijia297
+}
+house_baijia147 = {
+	name = "dynn_baijia147"
+	dynasty = xin621
+}
+house_baijia148 = {
+	name = "dynn_baijia148"
+	dynasty = baijia297
+}
+house_baijia149 = {
+	name = "dynn_baijia149"
+	dynasty = baijia297
+}
+house_baijia150 = {
+	name = "dynn_baijia150"
+	dynasty = xin378
+}
+house_baijia151 = {
+	name = "dynn_baijia151"
+	dynasty = xin328
+}
+house_baijia152 = {
+	name = "dynn_baijia152"
+	dynasty = baijia297
+}
+house_baijia153 = {
+	name = "dynn_baijia153"
+	dynasty = xin328
+}
+house_baijia154 = {
+	name = "dynn_baijia154"
+	dynasty = baijia297
+}
+house_baijia155 = {
+	name = "dynn_baijia155"
+	dynasty = baijia297
+}
+house_baijia156 = {
+	name = "dynn_baijia156"
+	dynasty = xin44
+}
+house_baijia157 = {
+	name = "dynn_baijia157"
+	dynasty = xin697
+}
+house_baijia158 = {
+	name = "dynn_baijia158"
+	dynasty = baijia297
+}
+house_baijia159 = {
+	name = "dynn_baijia159"
+	dynasty = baijia297
+}
+house_baijia160 = {
+	name = "dynn_baijia160"
+	dynasty = xin563
+}
+house_baijia161 = {
+	name = "dynn_baijia161"
+	dynasty = xin668
+}
+house_baijia162 = {
+	name = "dynn_baijia162"
+	dynasty = baijia297
+}
+house_baijia163 = {
+	name = "dynn_baijia163"
+	dynasty = baijia297
+}
+house_baijia164 = {
+	name = "dynn_baijia164"
+	dynasty = baijia297
+}
+house_baijia165 = {
+	name = "dynn_baijia165"
+	dynasty = baijia165
+}
+house_baijia166 = {
+	name = "dynn_baijia166"
+	dynasty = baijia297
+}
+house_baijia167 = {
+	name = "dynn_baijia167"
+	dynasty = baijia297
+}
+house_baijia168 = {
+	name = "dynn_baijia168"
+	dynasty = baijia297
+}
+house_baijia169 = {
+	name = "dynn_baijia169"
+	dynasty = baijia297
+}
+house_baijia170 = {
+	name = "dynn_baijia170"
+	dynasty = xin32
+}
+house_baijia171 = {
+	name = "dynn_baijia171"
+	dynasty = baijia297
+}
+house_baijia172 = {
+	name = "dynn_baijia172"
+	dynasty = baijia297
+}
+house_baijia173 = {
+	name = "dynn_baijia173"
+	dynasty = baijia297
+}
+house_baijia174 = {
+	name = "dynn_baijia174"
+	dynasty = baijia297
+}
+house_baijia175 = {
+	name = "dynn_baijia175"
+	dynasty = baijia297
+}
+house_baijia176 = {
+	name = "dynn_baijia176"
+	dynasty = xin57
+}
+house_baijia177 = {
+	name = "dynn_baijia177"
+	dynasty = xin328
+}
+house_baijia178 = {
+	name = "dynn_baijia178"
+	dynasty = baijia297
+}
+house_baijia179 = {
+	name = "dynn_baijia179"
+	dynasty = baijia297
+}
+house_baijia180 = {
+	name = "dynn_baijia180"
+	dynasty = xin47
+}
+house_baijia181 = {
+	name = "dynn_baijia181"
+	dynasty = xin442
+}
+house_baijia182 = {
+	name = "dynn_baijia182"
+	dynasty = xin569
+}
+house_baijia183 = {
+	name = "dynn_baijia183"
+	dynasty = xin17
+}
+house_baijia184 = {
+	name = "dynn_baijia184"
+	dynasty = baijia297
+}
+house_baijia185 = {
+	name = "dynn_baijia185"
+	dynasty = baijia297
+}
+house_baijia186 = {
+	name = "dynn_baijia186"
+	dynasty = xin410
+}
+house_baijia187 = {
+	name = "dynn_baijia187"
+	dynasty = baijia297
+}
+house_baijia188 = {
+	name = "dynn_baijia188"
+	dynasty = xin507
+}
+house_baijia189 = {
+	name = "dynn_baijia189"
+	dynasty = xin328
+}
+house_baijia190 = {
+	name = "dynn_baijia190"
+	dynasty = xin746
+}
+house_baijia191 = {
+	name = "dynn_baijia191"
+	dynasty = baijia297
+}
+house_baijia192 = {
+	name = "dynn_baijia192"
+	dynasty = baijia192
+}
+house_baijia193 = {
+	name = "dynn_baijia193"
+	dynasty = xin813
+}
+house_baijia194 = {
+	name = "dynn_baijia194"
+	dynasty = baijia297
+}
+house_baijia195 = {
+	name = "dynn_baijia195"
+	dynasty = xin584
+}
+house_baijia196 = {
+	name = "dynn_baijia196"
+	dynasty = xin731
+}
+house_baijia197 = {
+	name = "dynn_baijia197"
+	dynasty = baijia297
+}
+house_baijia198 = {
+	name = "dynn_baijia198"
+	dynasty = xin44
+}
+house_baijia199 = {
+	name = "dynn_baijia199"
+	dynasty = xin826
+}
+house_baijia200 = {
+	name = "dynn_baijia200"
+	dynasty = baijia297
+}
+house_baijia201 = {
+	name = "dynn_baijia201"
+	dynasty = baijia297
+}
+house_baijia202 = {
+	name = "dynn_baijia202"
+	dynasty = baijia297
+}
+house_baijia203 = {
+	name = "dynn_baijia203"
+	dynasty = baijia297
+}
+house_baijia204 = {
+	name = "dynn_baijia204"
+	dynasty = baijia297
+}
+house_baijia205 = {
+	name = "dynn_baijia205"
+	dynasty = baijia297
+}
+house_baijia206 = {
+	name = "dynn_baijia206"
+	dynasty = baijia297
+}
+house_baijia207 = {
+	name = "dynn_baijia207"
+	dynasty = baijia297
+}
+house_baijia208 = {
+	name = "dynn_baijia208"
+	dynasty = xin534
+}
+house_baijia209 = {
+	name = "dynn_baijia209"
+	dynasty = xin672
+}
+house_baijia210 = {
+	name = "dynn_baijia210"
+	dynasty = baijia297
+}
+house_baijia211 = {
+	name = "dynn_baijia211"
+	dynasty = xin483
+}
+house_baijia212 = {
+	name = "dynn_baijia212"
+	dynasty = baijia297
+}
+house_baijia213 = {
+	name = "dynn_baijia213"
+	dynasty = xin691
+}
+house_baijia214 = {
+	name = "dynn_baijia214"
+	dynasty = baijia297
+}
+house_baijia215 = {
+	name = "dynn_baijia215"
+	dynasty = xin51
+}
+house_baijia216 = {
+	name = "dynn_baijia216"
+	dynasty = baijia297
+}
+house_baijia217 = {
+	name = "dynn_baijia217"
+	dynasty = xin668
+}
+house_baijia218 = {
+	name = "dynn_baijia218"
+	dynasty = baijia297
+}
+house_baijia219 = {
+	name = "dynn_baijia219"
+	dynasty = baijia297
+}
+house_baijia220 = {
+	name = "dynn_baijia220"
+	dynasty = baijia297
+}
+house_baijia221 = {
+	name = "dynn_baijia221"
+	dynasty = baijia221
+}
+house_baijia222 = {
+	name = "dynn_baijia222"
+	dynasty = xin749
+}
+house_baijia223 = {
+	name = "dynn_baijia223"
+	dynasty = xin885
+}
+house_baijia224 = {
+	name = "dynn_baijia224"
+	dynasty = baijia297
+}
+house_baijia225 = {
+	name = "dynn_baijia225"
+	dynasty = baijia297
+}
+house_baijia226 = {
+	name = "dynn_baijia226"
+	dynasty = baijia226
+}
+house_baijia227 = {
+	name = "dynn_baijia227"
+	dynasty = baijia297
+}
+house_baijia228 = {
+	name = "dynn_baijia228"
+	dynasty = xin51
+}
+house_baijia229 = {
+	name = "dynn_baijia229"
+	dynasty = xin44
+}
+house_baijia230 = {
+	name = "dynn_baijia230"
+	dynasty = baijia297
+}
+house_baijia231 = {
+	name = "dynn_baijia231"
+	dynasty = baijia297
+}
+house_baijia232 = {
+	name = "dynn_baijia232"
+	dynasty = baijia297
+}
+house_baijia233 = {
+	name = "dynn_baijia233"
+	dynasty = baijia297
+}
+house_baijia234 = {
+	name = "dynn_baijia234"
+	dynasty = baijia297
+}
+house_baijia235 = {
+	name = "dynn_baijia235"
+	dynasty = baijia297
+}
+house_baijia236 = {
+	name = "dynn_baijia236"
+	dynasty = baijia297
+}
+house_baijia237 = {
+	name = "dynn_baijia237"
+	dynasty = baijia297
+}
+house_baijia238 = {
+	name = "dynn_baijia238"
+	dynasty = baijia297
+}
+house_baijia239 = {
+	name = "dynn_baijia239"
+	dynasty = xin801
+}
+house_baijia240 = {
+	name = "dynn_baijia240"
+	dynasty = xin668
+}
+house_baijia241 = {
+	name = "dynn_baijia241"
+	dynasty = baijia297
+}
+house_baijia242 = {
+	name = "dynn_baijia242"
+	dynasty = baijia297
+}
+house_baijia243 = {
+	name = "dynn_baijia243"
+	dynasty = xin645
+}
+house_baijia244 = {
+	name = "dynn_baijia244"
+	dynasty = baijia297
+}
+house_baijia245 = {
+	name = "dynn_baijia245"
+	dynasty = xin742
+}
+house_baijia246 = {
+	name = "dynn_baijia246"
+	dynasty = baijia297
+}
+house_baijia247 = {
+	name = "dynn_baijia247"
+	dynasty = baijia32
+}
+house_baijia248 = {
+	name = "dynn_baijia248"
+	dynasty = baijia248
+}
+house_baijia249 = {
+	name = "dynn_baijia249"
+	dynasty = baijia297
+}
+house_baijia250 = {
+	name = "dynn_baijia250"
+	dynasty = baijia297
+}
+house_baijia251 = {
+	name = "dynn_baijia251"
+	dynasty = baijia297
+}
+house_baijia252 = {
+	name = "dynn_baijia252"
+	dynasty = xin32
+}
+house_baijia253 = {
+	name = "dynn_baijia253"
+	dynasty = baijia297
+}
+house_baijia254 = {
+	name = "dynn_baijia254"
+	dynasty = xin497
+}
+house_baijia255 = {
+	name = "dynn_baijia255"
+	dynasty = baijia297
+}
+house_baijia256 = {
+	name = "dynn_baijia256"
+	dynasty = xin456
+}
+house_baijia257 = {
+	name = "dynn_baijia257"
+	dynasty = baijia297
+}
+house_baijia258 = {
+	name = "dynn_baijia258"
+	dynasty = baijia297
+}
+house_baijia259 = {
+	name = "dynn_baijia259"
+	dynasty = baijia297
+}
+house_baijia260 = {
+	name = "dynn_baijia260"
+	dynasty = baijia297
+}
+house_baijia261 = {
+	name = "dynn_baijia261"
+	dynasty = xin483
+}
+house_baijia262 = {
+	name = "dynn_baijia262"
+	dynasty = xin574
+}
+house_baijia263 = {
+	name = "dynn_baijia263"
+	dynasty = xin32
+}
+house_baijia264 = {
+	name = "dynn_baijia264"
+	dynasty = baijia297
+}
+house_baijia265 = {
+	name = "dynn_baijia265"
+	dynasty = baijia297
+}
+house_baijia266 = {
+	name = "dynn_baijia266"
+	dynasty = xin455
+}
+house_baijia267 = {
+	name = "dynn_baijia267"
+	dynasty = baijia297
+}
+house_baijia268 = {
+	name = "dynn_baijia268"
+	dynasty = baijia297
+}
+house_baijia269 = {
+	name = "dynn_baijia269"
+	dynasty = baijia297
+}
+house_baijia270 = {
+	name = "dynn_baijia270"
+	dynasty = baijia297
+}
+house_baijia271 = {
+	name = "dynn_baijia271"
+	dynasty = baijia297
+}
+house_baijia272 = {
+	name = "dynn_baijia272"
+	dynasty = baijia272
+}
+house_baijia273 = {
+	name = "dynn_baijia273"
+	dynasty = baijia297
+}
+house_baijia274 = {
+	name = "dynn_baijia274"
+	dynasty = baijia297
+}
+house_baijia275 = {
+	name = "dynn_baijia275"
+	dynasty = baijia297
+}
+house_baijia276 = {
+	name = "dynn_baijia276"
+	dynasty = baijia297
+}
+house_baijia277 = {
+	name = "dynn_baijia277"
+	dynasty = baijia297
+}
+house_baijia278 = {
+	name = "dynn_baijia278"
+	dynasty = baijia297
+}
+house_baijia279 = {
+	name = "dynn_baijia279"
+	dynasty = baijia297
+}
+house_baijia280 = {
+	name = "dynn_baijia280"
+	dynasty = xin454
+}
+house_baijia281 = {
+	name = "dynn_baijia281"
+	dynasty = baijia297
+}
+house_baijia282 = {
+	name = "dynn_baijia282"
+	dynasty = baijia297
+}
+house_baijia283 = {
+	name = "dynn_baijia283"
+	dynasty = xin32
+}
+house_baijia284 = {
+	name = "dynn_baijia284"
+	dynasty = baijia297
+}
+house_baijia285 = {
+	name = "dynn_baijia285"
+	dynasty = baijia297
+}
+house_baijia286 = {
+	name = "dynn_baijia286"
+	dynasty = baijia297
+}
+house_baijia287 = {
+	name = "dynn_baijia287"
+	dynasty = baijia297
+}
+house_baijia288 = {
+	name = "dynn_baijia288"
+	dynasty = baijia297
+}
+house_baijia289 = {
+	name = "dynn_baijia289"
+	dynasty = baijia297
+}
+house_baijia290 = {
+	name = "dynn_baijia290"
+	dynasty = xin801
+}
+house_baijia291 = {
+	name = "dynn_baijia291"
+	dynasty = baijia297
+}
+house_baijia292 = {
+	name = "dynn_baijia292"
+	dynasty = xin872
+}
+house_baijia293 = {
+	name = "dynn_baijia293"
+	dynasty = xin331
+}
+house_baijia294 = {
+	name = "dynn_baijia294"
+	dynasty = baijia297
+}
+house_baijia295 = {
+	name = "dynn_baijia295"
+	dynasty = baijia297
+}
+house_baijia296 = {
+	name = "dynn_baijia296"
+	dynasty = baijia297
+}
+house_baijia297 = {
+	name = "dynn_baijia297"
+	dynasty = baijia297
+}
+house_baijia298 = {
+	name = "dynn_baijia298"
+	dynasty = xin833
+}
+house_baijia299 = {
+	name = "dynn_baijia299"
+	dynasty = baijia297
+}
+house_baijia300 = {
+	name = "dynn_baijia300"
+	dynasty = baijia297
+}
+house_baijia301 = {
+	name = "dynn_baijia301"
+	dynasty = baijia301
+}
+house_baijia302 = {
+	name = "dynn_baijia302"
+	dynasty = baijia297
+}
+house_baijia303 = {
+	name = "dynn_baijia303"
+	dynasty = baijia297
+}
+house_baijia304 = {
+	name = "dynn_baijia304"
+	dynasty = xin687
+}
+house_baijia305 = {
+	name = "dynn_baijia305"
+	dynasty = baijia297
+}
+house_baijia306 = {
+	name = "dynn_baijia306"
+	dynasty = baijia297
+}
+house_baijia307 = {
+	name = "dynn_baijia307"
+	dynasty = baijia297
+}
+house_baijia308 = {
+	name = "dynn_baijia308"
+	dynasty = baijia297
+}
+house_baijia309 = {
+	name = "dynn_baijia309"
+	dynasty = baijia297
+}
+house_baijia310 = {
+	name = "dynn_baijia310"
+	dynasty = baijia297
+}
+house_baijia311 = {
+	name = "dynn_baijia311"
+	dynasty = baijia297
+}
+house_baijia312 = {
+	name = "dynn_baijia312"
+	dynasty = baijia297
+}
+house_baijia313 = {
+	name = "dynn_baijia313"
+	dynasty = baijia297
+}
+house_baijia314 = {
+	name = "dynn_baijia314"
+	dynasty = baijia297
+}
+house_baijia315 = {
+	name = "dynn_baijia315"
+	dynasty = xin381
+}
+house_baijia316 = {
+	name = "dynn_baijia316"
+	dynasty = xin662
+}
+house_baijia317 = {
+	name = "dynn_baijia317"
+	dynasty = xin724
+}
+house_baijia318 = {
+	name = "dynn_baijia318"
+	dynasty = baijia297
+}
+house_baijia319 = {
+	name = "dynn_baijia319"
+	dynasty = baijia297
+}
+house_baijia320 = {
+	name = "dynn_baijia320"
+	dynasty = baijia297
+}
+house_baijia321 = {
+	name = "dynn_baijia321"
+	dynasty = xin52
+}
+house_baijia322 = {
+	name = "dynn_baijia322"
+	dynasty = baijia297
+}
+house_baijia323 = {
+	name = "dynn_baijia323"
+	dynasty = baijia297
+}
+house_baijia324 = {
+	name = "dynn_baijia324"
+	dynasty = baijia297
+}
+house_baijia325 = {
+	name = "dynn_baijia325"
+	dynasty = baijia297
+}
+house_baijia326 = {
+	name = "dynn_baijia326"
+	dynasty = baijia297
+}
+house_baijia327 = {
+	name = "dynn_baijia327"
+	dynasty = baijia297
+}
+house_baijia328 = {
+	name = "dynn_baijia328"
+	dynasty = baijia328
+}
+house_baijia329 = {
+	name = "dynn_baijia329"
+	dynasty = baijia297
+}
+house_baijia330 = {
+	name = "dynn_baijia330"
+	dynasty = baijia297
+}
+house_baijia331 = {
+	name = "dynn_baijia331"
+	dynasty = baijia297
+}
+house_baijia332 = {
+	name = "dynn_baijia332"
+	dynasty = baijia297
+}
+house_baijia333 = {
+	name = "dynn_baijia333"
+	dynasty = baijia297
+}
+house_baijia334 = {
+	name = "dynn_baijia334"
+	dynasty = baijia334
+}
+house_baijia335 = {
+	name = "dynn_baijia335"
+	dynasty = baijia297
+}
+house_baijia336 = {
+	name = "dynn_baijia336"
+	dynasty = baijia297
+}
+house_baijia337 = {
+	name = "dynn_baijia337"
+	dynasty = baijia297
+}
+house_baijia338 = {
+	name = "dynn_baijia338"
+	dynasty = baijia297
+}
+house_baijia339 = {
+	name = "dynn_baijia339"
+	dynasty = baijia297
+}
+house_baijia340 = {
+	name = "dynn_baijia340"
+	dynasty = baijia297
+}
+house_baijia341 = {
+	name = "dynn_baijia341"
+	dynasty = baijia297
+}
+house_baijia342 = {
+	name = "dynn_baijia342"
+	dynasty = baijia297
+}
+house_baijia343 = {
+	name = "dynn_baijia343"
+	dynasty = baijia297
+}
+house_baijia344 = {
+	name = "dynn_baijia344"
+	dynasty = baijia297
+}
+house_baijia345 = {
+	name = "dynn_baijia345"
+	dynasty = baijia297
+}
+house_baijia346 = {
+	name = "dynn_baijia346"
+	dynasty = baijia297
+}
+house_baijia347 = {
+	name = "dynn_baijia347"
+	dynasty = baijia297
+}
+house_baijia348 = {
+	name = "dynn_baijia348"
+	dynasty = baijia297
+}
+house_baijia349 = {
+	name = "dynn_baijia349"
+	dynasty = baijia297
+}
+house_baijia350 = {
+	name = "dynn_baijia350"
+	dynasty = baijia297
+}
+house_baijia351 = {
+	name = "dynn_baijia351"
+	dynasty = xin44
+}
+house_baijia352 = {
+	name = "dynn_baijia352"
+	dynasty = baijia297
+}
+house_baijia353 = {
+	name = "dynn_baijia353"
+	dynasty = baijia297
+}
+house_baijia354 = {
+	name = "dynn_baijia354"
+	dynasty = xin328
+}
+house_baijia355 = {
+	name = "dynn_baijia355"
+	dynasty = baijia297
+}
+house_baijia356 = {
+	name = "dynn_baijia356"
+	dynasty = baijia297
+}
+house_baijia357 = {
+	name = "dynn_baijia357"
+	dynasty = baijia297
+}
+house_baijia358 = {
+	name = "dynn_baijia358"
+	dynasty = baijia297
+}
+house_baijia359 = {
+	name = "dynn_baijia359"
+	dynasty = baijia297
+}
+house_baijia360 = {
+	name = "dynn_baijia360"
+	dynasty = baijia297
+}
+house_baijia361 = {
+	name = "dynn_baijia361"
+	dynasty = baijia297
+}
+house_baijia362 = {
+	name = "dynn_baijia362"
+	dynasty = baijia297
+}
+house_baijia363 = {
+	name = "dynn_baijia363"
+	dynasty = baijia297
+}
+house_baijia364 = {
+	name = "dynn_baijia364"
+	dynasty = baijia297
+}
+house_baijia365 = {
+	name = "dynn_baijia365"
+	dynasty = baijia297
+}
+house_baijia366 = {
+	name = "dynn_baijia366"
+	dynasty = baijia297
+}
+house_baijia367 = {
+	name = "dynn_baijia367"
+	dynasty = xin56
+}
+house_baijia368 = {
+	name = "dynn_baijia368"
+	dynasty = baijia297
+}
+house_baijia369 = {
+	name = "dynn_baijia369"
+	dynasty = baijia297
+}
+house_baijia370 = {
+	name = "dynn_baijia370"
+	dynasty = baijia297
+}
+house_baijia371 = {
+	name = "dynn_baijia371"
+	dynasty = baijia297
+}
+house_baijia372 = {
+	name = "dynn_baijia372"
+	dynasty = xin487
+}
+house_baijia373 = {
+	name = "dynn_baijia373"
+	dynasty = baijia297
+}
+house_baijia374 = {
+	name = "dynn_baijia374"
+	dynasty = baijia297
+}
+house_baijia375 = {
+	name = "dynn_baijia375"
+	dynasty = xin715
+}
+house_baijia376 = {
+	name = "dynn_baijia376"
+	dynasty = baijia297
+}
+house_baijia377 = {
+	name = "dynn_baijia377"
+	dynasty = baijia297
+}
+house_baijia378 = {
+	name = "dynn_baijia378"
+	dynasty = xin53
+}
+house_baijia379 = {
+	name = "dynn_baijia379"
+	dynasty = baijia297
+}
+house_baijia380 = {
+	name = "dynn_baijia380"
+	dynasty = xin518
+}
+house_baijia381 = {
+	name = "dynn_baijia381"
+	dynasty = baijia297
+}
+house_baijia382 = {
+	name = "dynn_baijia382"
+	dynasty = baijia297
+}
+house_baijia383 = {
+	name = "dynn_baijia383"
+	dynasty = xin606
+}
+house_baijia384 = {
+	name = "dynn_baijia384"
+	dynasty = baijia384
+}
+house_baijia385 = {
+	name = "dynn_baijia385"
+	dynasty = xin17
+}
+house_baijia386 = {
+	name = "dynn_baijia386"
+	dynasty = baijia297
+}
+house_baijia387 = {
+	name = "dynn_baijia387"
+	dynasty = baijia297
+}
+house_baijia388 = {
+	name = "dynn_baijia388"
+	dynasty = baijia297
+}
+house_baijia389 = {
+	name = "dynn_baijia389"
+	dynasty = xin51
+}
+house_baijia390 = {
+	name = "dynn_baijia390"
+	dynasty = xin381
+}
+house_baijia391 = {
+	name = "dynn_baijia391"
+	dynasty = baijia297
+}
+house_baijia392 = {
+	name = "dynn_baijia392"
+	dynasty = baijia297
+}
+house_baijia393 = {
+	name = "dynn_baijia393"
+	dynasty = baijia393
+}
+house_baijia394 = {
+	name = "dynn_baijia394"
+	dynasty = baijia394
+}
+house_baijia395 = {
+	name = "dynn_baijia395"
+	dynasty = baijia297
+}
+house_baijia396 = {
+	name = "dynn_baijia396"
+	dynasty = xin505
+}
+house_baijia397 = {
+	name = "dynn_baijia397"
+	dynasty = baijia297
+}
+house_baijia398 = {
+	name = "dynn_baijia398"
+	dynasty = baijia297
+}
+house_baijia399 = {
+	name = "dynn_baijia399"
+	dynasty = baijia297
+}
+house_baijia400 = {
+	name = "dynn_baijia400"
+	dynasty = baijia297
+}
+house_baijia401 = {
+	name = "dynn_baijia401"
+	dynasty = baijia297
+}
+house_baijia402 = {
+	name = "dynn_baijia402"
+	dynasty = baijia297
+}
+house_baijia403 = {
+	name = "dynn_baijia403"
+	dynasty = xin47
+}
+house_baijia404 = {
+	name = "dynn_baijia404"
+	dynasty = baijia297
+}
+house_baijia405 = {
+	name = "dynn_baijia405"
+	dynasty = baijia297
+}
+house_baijia406 = {
+	name = "dynn_baijia406"
+	dynasty = baijia297
+}
+house_baijia407 = {
+	name = "dynn_baijia407"
+	dynasty = baijia297
+}
+house_baijia408 = {
+	name = "dynn_baijia408"
+	dynasty = baijia297
+}
+house_baijia409 = {
+	name = "dynn_baijia409"
+	dynasty = baijia297
+}
+house_baijia410 = {
+	name = "dynn_baijia410"
+	dynasty = xin813
+}
+house_baijia411 = {
+	name = "dynn_baijia411"
+	dynasty = baijia297
+}
+house_baijia412 = {
+	name = "dynn_baijia412"
+	dynasty = baijia297
+}
+house_baijia413 = {
+	name = "dynn_baijia413"
+	dynasty = baijia297
+}
+house_baijia414 = {
+	name = "dynn_baijia414"
+	dynasty = xin503
+}
+house_baijia415 = {
+	name = "dynn_baijia415"
+	dynasty = baijia297
+}
+house_baijia416 = {
+	name = "dynn_baijia416"
+	dynasty = baijia297
+}
+house_baijia417 = {
+	name = "dynn_baijia417"
+	dynasty = baijia297
+}
+house_baijia418 = {
+	name = "dynn_baijia418"
+	dynasty = baijia297
+}
+house_baijia419 = {
+	name = "dynn_baijia419"
+	dynasty = baijia297
+}
+house_baijia420 = {
+	name = "dynn_baijia420"
+	dynasty = baijia297
+}
+house_baijia421 = {
+	name = "dynn_baijia421"
+	dynasty = baijia297
+}
+house_baijia422 = {
+	name = "dynn_baijia422"
+	dynasty = baijia297
+}
+house_baijia423 = {
+	name = "dynn_baijia423"
+	dynasty = baijia297
+}
+house_baijia424 = {
+	name = "dynn_baijia424"
+	dynasty = baijia297
+}
+house_baijia425 = {
+	name = "dynn_baijia425"
+	dynasty = xin354
+}
+house_baijia426 = {
+	name = "dynn_baijia426"
+	dynasty = baijia297
+}
+house_baijia427 = {
+	name = "dynn_baijia427"
+	dynasty = baijia297
+}
+house_baijia428 = {
+	name = "dynn_baijia428"
+	dynasty = xin833
+}
+house_baijia429 = {
+	name = "dynn_baijia429"
+	dynasty = baijia297
+}
+house_baijia430 = {
+	name = "dynn_baijia430"
+	dynasty = baijia297
+}
+house_baijia431 = {
+	name = "dynn_baijia431"
+	dynasty = baijia297
+}
+house_baijia432 = {
+	name = "dynn_baijia432"
+	dynasty = xin670
+}
+house_baijia433 = {
+	name = "dynn_baijia433"
+	dynasty = baijia297
+}
+house_baijia434 = {
+	name = "dynn_baijia434"
+	dynasty = baijia297
+}
+house_baijia435 = {
+	name = "dynn_baijia435"
+	dynasty = baijia297
+}
+house_baijia436 = {
+	name = "dynn_baijia436"
+	dynasty = baijia297
+}
+house_baijia437 = {
+	name = "dynn_baijia437"
+	dynasty = baijia297
+}
+house_baijia438 = {
+	name = "dynn_baijia438"
+	dynasty = baijia297
+}
+house_baijia439 = {
+	name = "dynn_baijia439"
+	dynasty = baijia297
+}
+house_baijia440 = {
+	name = "dynn_baijia440"
+	dynasty = baijia297
+}
+house_baijia441 = {
+	name = "dynn_baijia441"
+	dynasty = baijia297
+}
+house_baijia442 = {
+	name = "dynn_baijia442"
+	dynasty = baijia297
+}
+house_baijia443 = {
+	name = "dynn_baijia443"
+	dynasty = baijia297
+}
+house_baijia444 = {
+	name = "dynn_baijia444"
+	dynasty = xin629
+}
+house_baijia445 = {
+	name = "dynn_baijia445"
+	dynasty = baijia297
+}
+house_baijia446 = {
+	name = "dynn_baijia446"
+	dynasty = baijia297
+}
+house_baijia447 = {
+	name = "dynn_baijia447"
+	dynasty = baijia297
+}
+house_baijia448 = {
+	name = "dynn_baijia448"
+	dynasty = baijia297
+}
+house_baijia449 = {
+	name = "dynn_baijia449"
+	dynasty = baijia297
+}
+house_baijia450 = {
+	name = "dynn_baijia450"
+	dynasty = xin810
+}
+house_baijia451 = {
+	name = "dynn_baijia451"
+	dynasty = baijia297
+}
+house_baijia452 = {
+	name = "dynn_baijia452"
+	dynasty = baijia297
+}
+house_baijia453 = {
+	name = "dynn_baijia453"
+	dynasty = xin44
+}
+house_baijia454 = {
+	name = "dynn_baijia454"
+	dynasty = baijia297
+}
+house_baijia455 = {
+	name = "dynn_baijia455"
+	dynasty = baijia297
+}
+house_baijia456 = {
+	name = "dynn_baijia456"
+	dynasty = baijia297
+}
+house_baijia457 = {
+	name = "dynn_baijia457"
+	dynasty = baijia297
+}
+house_baijia458 = {
+	name = "dynn_baijia458"
+	dynasty = xin645
+}
+house_baijia459 = {
+	name = "dynn_baijia459"
+	dynasty = baijia297
+}
+house_baijia460 = {
+	name = "dynn_baijia460"
+	dynasty = xin381
+}
+house_baijia461 = {
+	name = "dynn_baijia461"
+	dynasty = baijia297
+}
+house_baijia462 = {
+	name = "dynn_baijia462"
+	dynasty = baijia297
+}
+house_baijia463 = {
+	name = "dynn_baijia463"
+	dynasty = xin722
+}
+house_baijia464 = {
+	name = "dynn_baijia464"
+	dynasty = xin462
+}
+house_baijia465 = {
+	name = "dynn_baijia465"
+	dynasty = baijia297
+}
+house_baijia466 = {
+	name = "dynn_baijia466"
+	dynasty = baijia297
+}
+house_baijia467 = {
+	name = "dynn_baijia467"
+	dynasty = baijia297
+}
+house_baijia468 = {
+	name = "dynn_baijia468"
+	dynasty = baijia297
+}
+house_baijia469 = {
+	name = "dynn_baijia469"
+	dynasty = xin877
+}
+house_baijia470 = {
+	name = "dynn_baijia470"
+	dynasty = baijia297
+}
+house_baijia471 = {
+	name = "dynn_baijia471"
+	dynasty = baijia471
+}
+house_baijia472 = {
+	name = "dynn_baijia472"
+	dynasty = baijia297
+}
+house_baijia473 = {
+	name = "dynn_baijia473"
+	dynasty = baijia297
+}
+house_baijia474 = {
+	name = "dynn_baijia474"
+	dynasty = baijia297
+}
+house_baijia475 = {
+	name = "dynn_baijia475"
+	dynasty = baijia297
+}
+house_baijia476 = {
+	name = "dynn_baijia476"
+	dynasty = baijia297
+}
+house_baijia477 = {
+	name = "dynn_baijia477"
+	dynasty = baijia297
+}
+house_baijia478 = {
+	name = "dynn_baijia478"
+	dynasty = xin476
+}
+house_baijia479 = {
+	name = "dynn_baijia479"
+	dynasty = baijia297
+}
+house_baijia480 = {
+	name = "dynn_baijia480"
+	dynasty = baijia297
+}
+house_baijia481 = {
+	name = "dynn_baijia481"
+	dynasty = baijia297
+}
+house_baijia482 = {
+	name = "dynn_baijia482"
+	dynasty = baijia297
+}
+house_baijia483 = {
+	name = "dynn_baijia483"
+	dynasty = baijia297
+}
+house_baijia484 = {
+	name = "dynn_baijia484"
+	dynasty = baijia297
+}
+house_baijia485 = {
+	name = "dynn_baijia485"
+	dynasty = baijia297
+}
+house_baijia486 = {
+	name = "dynn_baijia486"
+	dynasty = baijia297
+}
+house_baijia487 = {
+	name = "dynn_baijia487"
+	dynasty = baijia297
+}
+house_baijia488 = {
+	name = "dynn_baijia488"
+	dynasty = xin396
+}
+house_baijia489 = {
+	name = "dynn_baijia489"
+	dynasty = baijia297
+}
+house_baijia490 = {
+	name = "dynn_baijia490"
+	dynasty = baijia297
+}
+house_baijia491 = {
+	name = "dynn_baijia491"
+	dynasty = baijia297
+}
+house_baijia492 = {
+	name = "dynn_baijia492"
+	dynasty = baijia297
+}
+house_baijia493 = {
+	name = "dynn_baijia493"
+	dynasty = xin584
+}
+house_baijia494 = {
+	name = "dynn_baijia494"
+	dynasty = xin47
+}
+house_baijia495 = {
+	name = "dynn_baijia495"
+	dynasty = baijia297
+}
+house_baijia496 = {
+	name = "dynn_baijia496"
+	dynasty = baijia297
+}
+house_baijia497 = {
+	name = "dynn_baijia497"
+	dynasty = baijia297
+}
+house_baijia498 = {
+	name = "dynn_baijia498"
+	dynasty = baijia297
+}
+house_baijia499 = {
+	name = "dynn_baijia499"
+	dynasty = baijia297
+}
+house_baijia500 = {
+	name = "dynn_baijia500"
+	dynasty = xin414
+}
+house_baijia501 = {
+	name = "dynn_baijia501"
+	dynasty = baijia297
+}
+house_baijia502 = {
+	name = "dynn_baijia502"
+	dynasty = baijia297
+}
+house_baijia503 = {
+	name = "dynn_baijia503"
+	dynasty = baijia297
+}
+house_baijia504 = {
+	name = "dynn_baijia504"
+	dynasty = baijia297
+}
+house_xin1 = {
+	name = "dynn_xin1"
+	dynasty = xin582
+}
+house_xin2 = {
+	name = "dynn_xin2"
+	dynasty = xin389
+}
+house_xin3 = {
+	name = "dynn_xin3"
+	dynasty = xin507
+}
+house_xin4 = {
+	name = "dynn_xin4"
+	dynasty = xin681
+}
+house_xin5 = {
+	name = "dynn_xin5"
+	dynasty = baijia297
+}
+house_xin6 = {
+	name = "dynn_xin6"
+	dynasty = baijia297
+}
+house_xin7 = {
+	name = "dynn_xin7"
+	dynasty = baijia297
+}
+house_xin8 = {
+	name = "dynn_xin8"
+	dynasty = baijia297
+}
+house_xin9 = {
+	name = "dynn_xin9"
+	dynasty = baijia297
+}
+house_xin10 = {
+	name = "dynn_xin10"
+	dynasty = baijia297
+}
+house_xin11 = {
+	name = "dynn_xin11"
+	dynasty = baijia297
+}
+house_xin12 = {
+	name = "dynn_xin12"
+	dynasty = baijia297
+}
+house_xin13 = {
+	name = "dynn_xin13"
+	dynasty = baijia297
+}
+house_xin14 = {
+	name = "dynn_xin14"
+	dynasty = baijia297
+}
+house_xin15 = {
+	name = "dynn_xin15"
+	dynasty = baijia297
+}
+house_xin16 = {
+	name = "dynn_xin16"
+	dynasty = xin493
+}
+house_xin17 = {
+	name = "dynn_xin17"
+	dynasty = xin17
+}
+house_xin18 = {
+	name = "dynn_xin18"
+	dynasty = xin17
+}
+house_xin19 = {
+	name = "dynn_xin19"
+	dynasty = xin397
+}
+house_xin20 = {
+	name = "dynn_xin20"
+	dynasty = xin338
+}
+house_xin21 = {
+	name = "dynn_xin21"
+	dynasty = xin381
+}
+house_xin22 = {
+	name = "dynn_xin22"
+	dynasty = baijia297
+}
+house_xin23 = {
+	name = "dynn_xin23"
+	dynasty = baijia297
+}
+house_xin24 = {
+	name = "dynn_xin24"
+	dynasty = xin408
+}
+house_xin25 = {
+	name = "dynn_xin25"
+	dynasty = xin816
+}
+house_xin26 = {
+	name = "dynn_xin26"
+	dynasty = xin648
+}
+house_xin27 = {
+	name = "dynn_xin27"
+	dynasty = xin348
+}
+house_xin28 = {
+	name = "dynn_xin28"
+	dynasty = xin348
+}
+house_xin29 = {
+	name = "dynn_xin29"
+	dynasty = xin356
+}
+
+house_xin30 = {
+	name = "dynn_xin30"
+	dynasty = xin390
+}
+
+house_xin31 = {
+	name = "dynn_xin31"
+	dynasty = xin404
+}
+
+house_xin32 = {
+	name = "dynn_xin32"
+	dynasty = baijia297
+}
+
+house_xin33 = {
+	name = "dynn_xin33"
+	dynasty = xin33
+}
+
+house_xin34 = {
+	name = "dynn_xin34"
+	dynasty = xin452
+}
+
+house_xin35 = {
+	name = "dynn_xin35"
+	dynasty = xin454
+}
+
+house_xin36 = {
+	name = "dynn_xin36"
+	dynasty = xin388
+}
+
+house_xin37 = {
+	name = "dynn_xin37"
+	dynasty = xin55
+}
+
+house_xin38 = {
+	name = "dynn_xin38"
+	dynasty = xin435
+}
+
+house_xin39 = {
+	name = "dynn_xin39"
+	dynasty = xin425
+}
+
+house_xin40 = {
+	name = "dynn_xin40"
+	dynasty = xin40
+}
+
+house_xin41 = {
+	name = "dynn_xin41"
+	dynasty = xin526
+}
+
+house_xin42 = {
+	name = "dynn_xin42"
+	dynasty = xin708
+}
+
+house_xin43 = {
+	name = "dynn_xin43"
+	dynasty = xin724
+}
+
+house_xin44 = {
+	name = "dynn_xin44"
+	dynasty = xin44
+}
+
+house_xin45 = {
+	name = "dynn_xin45"
+	dynasty = xin44
+}
+
+house_xin46 = {
+	name = "dynn_xin46"
+	dynasty = xin44
+}
+
+house_xin47 = {
+	name = "dynn_xin47"
+	dynasty = baijia297
+}
+
+house_xin48 = {
+	name = "dynn_xin48"
+	dynasty = xin47
+}
+
+house_xin49 = {
+	name = "dynn_xin49"
+	dynasty = xin47
+}
+
+house_xin50 = {
+	name = "dynn_xin50"
+	dynasty = xin480
+}
+
+house_xin51 = {
+	name = "dynn_xin51"
+	dynasty = xin51
+}
+
+house_xin52 = {
+	name = "dynn_xin52"
+	dynasty = baijia297
+}
+
+house_xin53 = {
+	name = "dynn_xin53"
+	dynasty = xin53
+}
+
+house_xin54 = {
+	name = "dynn_xin54"
+	dynasty = xin53
+}
+
+house_xin55 = {
+	name = "dynn_xin55"
+	dynasty = xin55
+}
+
+house_xin56 = {
+	name = "dynn_xin56"
+	dynasty = baijia297
+}
+
+house_xin57 = {
+	name = "dynn_xin57"
+	dynasty = xin57
+}
+
+house_xin58 = {
+	name = "dynn_xin58"
+	dynasty = xin17
+}
+
+house_xin59 = {
+	name = "dynn_xin59"
+	dynasty = xin603
+}
+
+house_xin60 = {
+	name = "dynn_xin60"
+	dynasty = xin60
+}
+
+house_xin61 = {
+	name = "dynn_xin61"
+	dynasty = xin410
+}
+
+house_xin62 = {
+	name = "dynn_xin62"
+	dynasty = xin423
+}
+
+house_xin63 = {
+	name = "dynn_xin63"
+	dynasty = xin378
+}
+
+house_xin64 = {
+	name = "dynn_xin64"
+	dynasty = xin378
+}
+
+house_xin65 = {
+	name = "dynn_xin65"
+	dynasty = baijia297
+}
+
+house_xin66 = {
+	name = "dynn_xin66"
+	dynasty = xin458
+}
+
+house_xin67 = {
+	name = "dynn_xin67"
+	dynasty = baijia297
+}
+
+house_xin68 = {
+	name = "dynn_xin68"
+	dynasty = xin401
+}
+
+house_xin69 = {
+	name = "dynn_xin69"
+	dynasty = xin442
+}
+
+house_xin70 = {
+	name = "dynn_xin70"
+	dynasty = xin437
+}
+
+house_xin71 = {
+	name = "dynn_xin71"
+	dynasty = xin459
+}
+
+house_xin72 = {
+	name = "dynn_xin72"
+	dynasty = xin685
+}
+
+house_xin73 = {
+	name = "dynn_xin73"
+	dynasty = xin53
+}
+
+house_xin74 = {
+	name = "dynn_xin74"
+	dynasty = xin52
+}
+
+house_xin75 = {
+	name = "dynn_xin75"
+	dynasty = xin689
+}
+
+house_xin76 = {
+	name = "dynn_xin76"
+	dynasty = xin746
+}
+
+house_xin77 = {
+	name = "dynn_xin77"
+	dynasty = xin810
+}
+
+house_xin78 = {
+	name = "dynn_xin78"
+	dynasty = xin78
+}
+
+house_xin79 = {
+	name = "dynn_xin79"
+	dynasty = xin565
+}
+
+house_xin80 = {
+	name = "dynn_xin80"
+	dynasty = xin536
+}
+
+house_xin81 = {
+	name = "dynn_xin81"
+	dynasty = xin546
+}
+
+house_xin82 = {
+	name = "dynn_xin82"
+	dynasty = xin550
+}
+
+house_xin83 = {
+	name = "dynn_xin83"
+	dynasty = xin83
+}
+
+house_xin84 = {
+	name = "dynn_xin84"
+	dynasty = xin83
+}
+
+house_xin85 = {
+	name = "dynn_xin85"
+	dynasty = xin612
+}
+
+house_xin86 = {
+	name = "dynn_xin86"
+	dynasty = xin613
+}
+
+house_xin87 = {
+	name = "dynn_xin87"
+	dynasty = baijia248
+}
+
+house_xin88 = {
+	name = "dynn_xin88"
+	dynasty = baijia248
+}
+
+house_xin89 = {
+	name = "dynn_xin89"
+	dynasty = baijia248
+}
+
+house_xin90 = {
+	name = "dynn_xin90"
+	dynasty = xin47
+}
+
+house_xin91 = {
+	name = "dynn_xin91"
+	dynasty = baijia297
+}
+
+house_xin92 = {
+	name = "dynn_xin92"
+	dynasty = baijia297
+}
+
+house_xin93 = {
+	name = "dynn_xin93"
+	dynasty = baijia297
+}
+
+house_xin94 = {
+	name = "dynn_xin94"
+	dynasty = baijia297
+}
+
+house_xin95 = {
+	name = "dynn_xin95"
+	dynasty = baijia297
+}
+
+house_xin96 = {
+	name = "dynn_xin96"
+	dynasty = baijia297
+}
+
+house_xin97 = {
+	name = "dynn_xin97"
+	dynasty = baijia297
+}
+
+house_xin98 = {
+	name = "dynn_xin98"
+	dynasty = baijia297
+}
+
+house_xin99 = {
+	name = "dynn_xin99"
+	dynasty = baijia297
+}
+
+house_xin100 = {
+	name = "dynn_xin100"
+	dynasty = baijia297
+}
+
+house_xin101 = {
+	name = "dynn_xin101"
+	dynasty = baijia297
+}
+
+house_xin102 = {
+	name = "dynn_xin102"
+	dynasty = baijia297
+}
+
+house_xin103 = {
+	name = "dynn_xin103"
+	dynasty = baijia297
+}
+
+house_xin104 = {
+	name = "dynn_xin104"
+	dynasty = baijia297
+}
+
+house_xin105 = {
+	name = "dynn_xin105"
+	dynasty = baijia297
+}
+
+house_xin106 = {
+	name = "dynn_xin106"
+	dynasty = baijia297
+}
+
+house_xin107 = {
+	name = "dynn_xin107"
+	dynasty = baijia297
+}
+
+house_xin108 = {
+	name = "dynn_xin108"
+	dynasty = baijia297
+}
+
+house_xin109 = {
+	name = "dynn_xin109"
+	dynasty = baijia297
+}
+
+house_xin110 = {
+	name = "dynn_xin110"
+	dynasty = xin644
+}
+
+house_xin111 = {
+	name = "dynn_xin111"
+	dynasty = baijia297
+}
+
+house_xin112 = {
+	name = "dynn_xin112"
+	dynasty = baijia297
+}
+
+house_xin113 = {
+	name = "dynn_xin113"
+	dynasty = baijia297
+}
+
+house_xin114 = {
+	name = "dynn_xin114"
+	dynasty = baijia297
+}
+
+house_xin115 = {
+	name = "dynn_xin115"
+	dynasty = baijia297
+}
+
+house_xin116 = {
+	name = "dynn_xin116"
+	dynasty = baijia297
+}
+
+house_xin117 = {
+	name = "dynn_xin117"
+	dynasty = xin644
+}
+
+house_xin118 = {
+	name = "dynn_xin118"
+	dynasty = baijia297
+}
+
+house_xin119 = {
+	name = "dynn_xin119"
+	dynasty = baijia297
+}
+
+house_xin120 = {
+	name = "dynn_xin120"
+	dynasty = baijia297
+}
+
+house_xin121 = {
+	name = "dynn_xin121"
+	dynasty = baijia297
+}
+
+house_xin122 = {
+	name = "dynn_xin122"
+	dynasty = baijia297
+}
+
+house_xin123 = {
+	name = "dynn_xin123"
+	dynasty = baijia297
+}
+
+house_xin124 = {
+	name = "dynn_xin124"
+	dynasty = baijia297
+}
+
+house_xin125 = {
+	name = "dynn_xin125"
+	dynasty = baijia297
+}
+
+house_xin126 = {
+	name = "dynn_xin126"
+	dynasty = baijia297
+}
+
+house_xin127 = {
+	name = "dynn_xin127"
+	dynasty = xin127
+}
+
+house_xin128 = {
+	name = "dynn_xin128"
+	dynasty = baijia297
+}
+
+house_xin129 = {
+	name = "dynn_xin129"
+	dynasty = baijia297
+}
+
+house_xin130 = {
+	name = "dynn_xin130"
+	dynasty = baijia297
+}
+
+house_xin131 = {
+	name = "dynn_xin131"
+	dynasty = baijia297
+}
+
+house_xin132 = {
+	name = "dynn_xin132"
+	dynasty = baijia297
+}
+
+house_xin133 = {
+	name = "dynn_xin133"
+	dynasty = baijia297
+}
+
+house_xin134 = {
+	name = "dynn_xin134"
+	dynasty = baijia297
+}
+
+house_xin135 = {
+	name = "dynn_xin135"
+	dynasty = baijia297
+}
+
+house_xin136 = {
+	name = "dynn_xin136"
+	dynasty = baijia297
+}
+
+house_xin137 = {
+	name = "dynn_xin137"
+	dynasty = baijia297
+}
+
+house_xin138 = {
+	name = "dynn_xin138"
+	dynasty = baijia297
+}
+
+house_xin139 = {
+	name = "dynn_xin139"
+	dynasty = baijia297
+}
+
+house_xin140 = {
+	name = "dynn_xin140"
+	dynasty = baijia297
+}
+
+house_xin141 = {
+	name = "dynn_xin141"
+	dynasty = baijia297
+}
+
+house_xin142 = {
+	name = "dynn_xin142"
+	dynasty = baijia297
+}
+
+house_xin143 = {
+	name = "dynn_xin143"
+	dynasty = baijia297
+}
+
+house_xin144 = {
+	name = "dynn_xin144"
+	dynasty = baijia297
+}
+
+house_xin145 = {
+	name = "dynn_xin145"
+	dynasty = baijia297
+}
+
+house_xin146 = {
+	name = "dynn_xin146"
+	dynasty = baijia297
+}
+
+house_xin147 = {
+	name = "dynn_xin147"
+	dynasty = baijia297
+}
+
+house_xin148 = {
+	name = "dynn_xin148"
+	dynasty = baijia297
+}
+
+house_xin149 = {
+	name = "dynn_xin149"
+	dynasty = baijia297
+}
+
+house_xin150 = {
+	name = "dynn_xin150"
+	dynasty = xin47
+}
+
+house_xin151 = {
+	name = "dynn_xin151"
+	dynasty = baijia297
+}
+
+house_xin152 = {
+	name = "dynn_xin152"
+	dynasty = baijia297
+}
+
+house_xin153 = {
+	name = "dynn_xin153"
+	dynasty = baijia297
+}
+
+house_xin154 = {
+	name = "dynn_xin154"
+	dynasty = baijia297
+}
+
+house_xin155 = {
+	name = "dynn_xin155"
+	dynasty = baijia297
+}
+
+house_xin156 = {
+	name = "dynn_xin156"
+	dynasty = baijia297
+}
+
+house_xin157 = {
+	name = "dynn_xin157"
+	dynasty = baijia297
+}
+
+house_xin158 = {
+	name = "dynn_xin158"
+	dynasty = baijia297
+}
+
+house_xin159 = {
+	name = "dynn_xin159"
+	dynasty = baijia297
+}
+
+house_xin160 = {
+	name = "dynn_xin160"
+	dynasty = baijia297
+}
+
+house_xin161 = {
+	name = "dynn_xin161"
+	dynasty = baijia297
+}
+
+house_xin162 = {
+	name = "dynn_xin162"
+	dynasty = baijia297
+}
+
+house_xin163 = {
+	name = "dynn_xin163"
+	dynasty = baijia297
+}
+
+house_xin164 = {
+	name = "dynn_xin164"
+	dynasty = baijia297
+}
+
+house_xin165 = {
+	name = "dynn_xin165"
+	dynasty = baijia297
+}
+
+house_xin166 = {
+	name = "dynn_xin166"
+	dynasty = baijia297
+}
+
+house_xin167 = {
+	name = "dynn_xin167"
+	dynasty = baijia297
+}
+
+house_xin168 = {
+	name = "dynn_xin168"
+	dynasty = baijia297
+}
+
+house_xin169 = {
+	name = "dynn_xin169"
+	dynasty = baijia297
+}
+
+house_xin170 = {
+	name = "dynn_xin170"
+	dynasty = baijia297
+}
+house_xin171 = {
+	name = "dynn_xin171"
+	dynasty = baijia297
+}
+
+house_xin172 = {
+	name = "dynn_xin172"
+	dynasty = xin871
+}
+
+house_xin173 = {
+	name = "dynn_xin173"
+	dynasty = baijia297
+}
+
+house_xin174 = {
+	name = "dynn_xin174"
+	dynasty = baijia297
+}
+
+house_xin175 = {
+	name = "dynn_xin175"
+	dynasty = baijia297
+}
+
+house_xin176 = {
+	name = "dynn_xin176"
+	dynasty = baijia297
+}
+
+house_xin177 = {
+	name = "dynn_xin177"
+	dynasty = baijia297
+}
+
+house_xin178 = {
+	name = "dynn_xin178"
+	dynasty = baijia297
+}
+
+house_xin179 = {
+	name = "dynn_xin179"
+	dynasty = baijia297
+}
+
+house_xin180 = {
+	name = "dynn_xin180"
+	dynasty = baijia297
+}
+
+house_xin181 = {
+	name = "dynn_xin181"
+	dynasty = baijia297
+}
+
+house_xin182 = {
+	name = "dynn_xin182"
+	dynasty = xin182
+}
+
+house_xin183 = {
+	name = "dynn_xin183"
+	dynasty = baijia297
+}
+
+house_xin184 = {
+	name = "dynn_xin184"
+	dynasty = baijia297
+}
+
+house_xin185 = {
+	name = "dynn_xin185"
+	dynasty = baijia297
+}
+
+house_xin186 = {
+	name = "dynn_xin186"
+	dynasty = baijia297
+}
+
+house_xin187 = {
+	name = "dynn_xin187"
+	dynasty = baijia297
+}
+
+house_xin188 = {
+	name = "dynn_xin188"
+	dynasty = baijia297
+}
+
+house_xin189 = {
+	name = "dynn_xin189"
+	dynasty = baijia297
+}
+
+house_xin190 = {
+	name = "dynn_xin190"
+	dynasty = baijia297
+}
+house_xin191 = {
+	name = "dynn_xin191"
+	dynasty = baijia297
+}
+
+house_xin192 = {
+	name = "dynn_xin192"
+	dynasty = baijia297
+}
+
+house_xin193 = {
+	name = "dynn_xin193"
+	dynasty = baijia297
+}
+
+house_xin194 = {
+	name = "dynn_xin194"
+	dynasty = baijia297
+}
+
+house_xin195 = {
+	name = "dynn_xin195"
+	dynasty = baijia297
+}
+
+house_xin196 = {
+	name = "dynn_xin196"
+	dynasty = baijia297
+}
+
+house_xin197 = {
+	name = "dynn_xin197"
+	dynasty = baijia297
+}
+
+house_xin198 = {
+	name = "dynn_xin198"
+	dynasty = baijia297
+}
+
+house_xin199 = {
+	name = "dynn_xin199"
+	dynasty = baijia297
+}
+
+house_xin200 = {
+	name = "dynn_xin200"
+	dynasty = baijia297
+}
+house_xin201 = {
+	name = "dynn_xin201"
+	dynasty = baijia297
+}
+
+house_xin202 = {
+	name = "dynn_xin202"
+	dynasty = baijia297
+}
+
+house_xin203 = {
+	name = "dynn_xin203"
+	dynasty = baijia297
+}
+
+house_xin204 = {
+	name = "dynn_xin204"
+	dynasty = baijia297
+}
+
+house_xin205 = {
+	name = "dynn_xin205"
+	dynasty = xin775
+}
+
+house_xin206 = {
+	name = "dynn_xin206"
+	dynasty = baijia297
+}
+
+house_xin207 = {
+	name = "dynn_xin207"
+	dynasty = baijia297
+}
+
+house_xin208 = {
+	name = "dynn_xin208"
+	dynasty = baijia297
+}
+
+house_xin209 = {
+	name = "dynn_xin209"
+	dynasty = baijia297
+}
+
+house_xin210 = {
+	name = "dynn_xin210"
+	dynasty = baijia297
+}
+
+house_xin211 = {
+	name = "dynn_xin211"
+	dynasty = xin644
+}
+
+house_xin212 = {
+	name = "dynn_xin212"
+	dynasty = xin640
+}
+
+house_xin213 = {
+	name = "dynn_xin213"
+	dynasty = xin775
+}
+
+house_xin214 = {
+	name = "dynn_xin214"
+	dynasty = xin778
+}
+
+house_xin215 = {
+	name = "dynn_xin215"
+	dynasty = xin631
+}
+
+house_xin216 = {
+	name = "dynn_xin216"
+	dynasty = xin817
+}
+
+house_xin217 = {
+	name = "dynn_xin217"
+	dynasty = xin456
+}
+
+house_xin218 = {
+	name = "dynn_xin218"
+	dynasty = xin218
+}
+
+house_xin219 = {
+	name = "dynn_xin219"
+	dynasty = xin219
+}
+
+house_xin220 = {
+	name = "dynn_xin220"
+	dynasty = xin799
+}
+
+house_xin221 = {
+	name = "dynn_xin221"
+	dynasty = xin221
+}
+
+house_xin222 = {
+	name = "dynn_xin222"
+	dynasty = baijia297
+}
+
+house_xin223 = {
+	name = "dynn_xin223"
+	dynasty = xin223
+}
+
+house_xin224 = {
+	name = "dynn_baijia15"
+	dynasty = xin629
+}
+
+house_xin225 = {
+	name = "dynn_xin225"
+	dynasty = xin225
+}
+
+house_xin226 = {
+	name = "dynn_xin226"
+	dynasty = xin809
+}
+
+house_xin227 = {
+	name = "dynn_xin227"
+	dynasty = xin823
+}
+
+house_xin228 = {
+	name = "dynn_xin228"
+	dynasty = xin822
+}
+
+house_xin229 = {
+	name = "dynn_xin229"
+	dynasty = baijia297
+}
+
+house_xin230 = {
+	name = "dynn_xin230"
+	dynasty = xin230
+}
+
+house_xin231 = {
+	name = "dynn_xin231"
+	dynasty = baijia297
+}
+
+house_xin232 = {
+	name = "dynn_xin232"
+	dynasty = baijia297
+}
+
+house_xin233 = {
+	name = "dynn_xin233"
+	dynasty = xin877
+}
+
+house_xin234 = {
+	name = "dynn_xin234"
+	dynasty = xin235
+}
+
+house_xin235 = {
+	name = "dynn_xin235"
+	dynasty = xin235
+}
+
+house_xin236 = {
+	name = "dynn_xin236"
+	dynasty = baijia297
+}
+
+house_xin237 = {
+	name = "dynn_xin237"
+	dynasty = xin883
+}
+
+house_xin238 = {
+	name = "dynn_xin238"
+	dynasty = xin819
+}
+
+house_xin239 = {
+	name = "dynn_xin239"
+	dynasty = xin57
+}
+
+house_xin240 = {
+	name = "dynn_xin240"
+	dynasty = xin52
+}
+
+house_xin241 = {
+	name = "dynn_xin241"
+	dynasty = xin401
+}
+
+house_xin242 = {
+	name = "dynn_xin242"
+	dynasty = baijia297
+}
+
+house_xin243 = {
+	name = "dynn_xin243"
+	dynasty = baijia297
+}
+
+house_xin244 = {
+	name = "dynn_xin244"
+	dynasty = baijia297
+}
+
+house_xin245 = {
+	name = "dynn_xin245"
+	dynasty = baijia297
+}
+
+house_xin246 = {
+	name = "dynn_xin246"
+	dynasty = xin51
+}
+
+house_xin247 = {
+	name = "dynn_xin247"
+	dynasty = baijia297
+}
+
+house_xin248 = {
+	name = "dynn_xin248"
+	dynasty = xin57
+}
+
+house_xin249 = {
+	name = "dynn_xin249"
+	dynasty = xin40
+}
+
+house_xin250 = {
+	name = "dynn_xin250"
+	dynasty = xin56
+}
+
+house_xin251 = {
+	name = "dynn_xin251"
+	dynasty = xin428
+}
+
+house_xin252 = {
+	name = "dynn_xin252"
+	dynasty = xin56
+}
+
+house_xin253 = {
+	name = "dynn_xin253"
+	dynasty = xin57
+}
+
+house_xin254 = {
+	name = "dynn_xin254"
+	dynasty = xin57
+}
+
+house_xin255 = {
+	name = "dynn_xin255"
+	dynasty = xin57
+}
+
+house_xin256 = {
+	name = "dynn_xin256"
+	dynasty = xin57
+}
+
+house_xin257 = {
+	name = "dynn_xin257"
+	dynasty = xin57
+}
+
+house_xin258 = {
+	name = "dynn_xin258"
+	dynasty = xin57
+}
+
+house_xin259 = {
+	name = "dynn_xin259"
+	dynasty = xin57
+}
+
+house_xin260 = {
+	name = "dynn_xin260"
+	dynasty = xin53
+}
+
+house_xin261 = {
+	name = "dynn_xin261"
+	dynasty = baijia226
+}
+
+house_xin262 = {
+	name = "dynn_xin262"
+	dynasty = xin262
+}
+
+house_xin263 = {
+	name = "dynn_xin263"
+	dynasty = xin47
+}
+
+house_xin264 = {
+	name = "dynn_xin264"
+	dynasty = xin264
+}
+
+house_xin265 = {
+	name = "dynn_xin265"
+	dynasty = xin265
+}
+
+house_xin266 = {
+	name = "dynn_xin266"
+	dynasty = xin266
+}
+
+house_xin267 = {
+	name = "dynn_xin267"
+	dynasty = xin267
+}
+
+house_xin268 = {
+	name = "dynn_xin268"
+	dynasty = xin268
+}
+
+house_xin269 = {
+	name = "dynn_xin269"
+	dynasty = xin269
+}
+
+house_xin270 = {
+	name = "dynn_xin270"
+	dynasty = xin270
+}
+
+house_xin271 = {
+	name = "dynn_xin271"
+	dynasty = xin271
+}
+
+house_xin272 = {
+	name = "dynn_xin272"
+	dynasty = xin272
+}
+
+house_xin273 = {
+	name = "dynn_xin273"
+	dynasty = xin235
+}
+
+house_xin274 = {
+	name = "dynn_xin274"
+	dynasty = xin47
+}
+
+house_xin275 = {
+	name = "dynn_xin275"
+	dynasty = baijia297
+}
+
+house_xin276 = {
+	name = "dynn_xin276"
+	dynasty = xin47
+}
+
+house_xin277 = {
+	name = "dynn_xin277"
+	dynasty = xin277
+}
+
+house_xin278 = {
+	name = "dynn_xin278"
+	dynasty = xin278
+}
+
+house_xin279 = {
+	name = "dynn_xin279"
+	dynasty = xin279
+}
+
+house_xin280 = {
+	name = "dynn_xin280"
+	dynasty = xin280
+}
+
+house_xin281 = {
+	name = "dynn_xin281"
+	dynasty = xin281
+}
+
+house_xin282 = {
+	name = "dynn_xin282"
+	dynasty = xin282
+}
+
+house_xin283 = {
+	name = "dynn_xin283"
+	dynasty = xin283
+}
+
+house_xin284 = {
+	name = "dynn_xin284"
+	dynasty = xin284
+}
+
+house_xin285 = {
+	name = "dynn_xin285"
+	dynasty = xin285
+}
+
+house_xin286 = {
+	name = "dynn_xin286"
+	dynasty = xin286
+}
+
+house_xin287 = {
+	name = "dynn_xin287"
+	dynasty = xin287
+}
+
+house_xin288 = {
+	name = "dynn_xin288"
+	dynasty = xin288
+}
+
+house_xin289 = {
+	name = "dynn_xin289"
+	dynasty = xin289
+}
+
+house_xin290 = {
+	name = "dynn_xin290"
+	dynasty = xin290
+}
+
+house_xin291 = {
+	name = "dynn_xin291"
+	dynasty = xin291
+}
+
+house_xin292 = {
+	name = "dynn_xin292"
+	dynasty = xin292
+}
+
+house_xin293 = {
+	name = "dynn_xin293"
+	dynasty = xin293
+}
+
+house_xin294 = {
+	name = "dynn_xin294"
+	dynasty = xin47
+}
+
+house_xin295 = {
+	name = "dynn_xin295"
+	dynasty = baijia47
+}
+
+house_xin296 = {
+	name = "dynn_xin296"
+	dynasty = baijia47
+}
+
+house_xin297 = {
+	name = "dynn_xin297"
+	dynasty = xin297
+}
+
+house_xin298 = {
+	name = "dynn_xin298"
+	dynasty = xin47
+}
+
+house_xin299 = {
+	name = "dynn_xin299"
+	dynasty = xin299
+}
+
+house_xin300 = {
+	name = "dynn_xin300"
+	dynasty = xin299
+}
+
+house_xin301 = {
+	name = "dynn_xin301"
+	dynasty = baijia58
+}
+
+house_xin302 = {
+	name = "dynn_xin302"
+	dynasty = xin302
+}
+
+house_xin303 = {
+	name = "dynn_xin303"
+	dynasty = xin303
+}
+
+house_xin304 = {
+	name = "dynn_xin304"
+	dynasty = xin304
+}
+
+house_xin305 = {
+	name = "dynn_xin305"
+	dynasty = xin305
+}
+
+house_xin306 = {
+	name = "dynn_xin306"
+	dynasty = xin306
+}
+
+house_xin307 = {
+	name = "dynn_xin307"
+	dynasty = xin307
+}
+
+house_xin308 = {
+	name = "dynn_xin308"
+	dynasty = xin308
+}
+
+house_xin309 = {
+	name = "dynn_xin309"
+	dynasty = xin309
+}
+
+house_xin310 = {
+	name = "dynn_xin310"
+	dynasty = xin310
+}
+
+house_xin311 = {
+	name = "dynn_xin311"
+	dynasty = xin311
+}
+
+house_xin312 = {
+	name = "dynn_xin312"
+	dynasty = xin332
+}
+
+house_xin313 = {
+	name = "dynn_xin313"
+	dynasty = xin592
+}
+
+house_xin314 = {
+	name = "dynn_xin314"
+	dynasty = xin592
+}
+
+house_xin315 = {
+	name = "dynn_xin315"
+	dynasty = xin592
+}
+
+house_xin316 = {
+	name = "dynn_xin316"
+	dynasty = xin553
+}
+
+house_xin317 = {
+	name = "dynn_xin317"
+	dynasty = baijia32
+}
+
+house_xin318 = {
+	name = "dynn_xin318"
+	dynasty = xin710
+}
+
+house_xin319 = {
+	name = "dynn_xin319"
+	dynasty = baijia297
+}
+
+house_xin320 = {
+	name = "dynn_xin320"
+	dynasty = baijia297
+}
+
+house_xin321 = {
+	name = "dynn_xin321"
+	dynasty = xin57
+}
+
+house_xin322 = {
+	name = "dynn_xin322"
+	dynasty = xin47
+}
+
+house_xin323 = {
+	name = "dynn_xin323"
+	dynasty = xin323
+}
+
+house_xin324 = {
+	name = "dynn_xin324"
+	dynasty = xin324
+}
+
+house_xin325 = {
+	name = "dynn_xin325"
+	dynasty = xin325
+}
+
+house_xin326 = {
+	name = "dynn_xin326"
+	dynasty = xin396
+}
+
+house_xin327 = {
+	name = "dynn_xin327"
+	dynasty = xin44
+}
+
+house_xin332 = {
+	name = "dynn_xin332"
+	dynasty = xin332
+}
+
+house_xin335 = {
+	name = "dynn_xin335"
+	dynasty = xin389
+}
+
+house_xin336 = {
+	name = "dynn_xin336"
+	dynasty = xin328
+}
+
+house_xin337 = {
+	name = "dynn_xin337"
+	dynasty = xin337
+}
+
+house_xin338 = {
+	name = "dynn_xin338"
+	dynasty = xin338
+}
+
+house_xin339 = {
+	name = "dynn_xin339"
+	dynasty = xin338
+}
+
+house_xin340 = {
+	name = "dynn_xin340"
+	dynasty = xin340
+}
+
+house_xin341 = {
+	name = "dynn_xin341"
+	dynasty = xin340
+}
+
+house_xin342 = {
+	name = "dynn_xin342"
+	dynasty = xin338
+}
+
+house_xin343 = {
+	name = "dynn_xin343"
+	dynasty = xin338
+}
+
+house_xin344 = {
+	name = "dynn_xin344"
+	dynasty = xin338
+}
+
+house_xin345 = {
+	name = "dynn_xin345"
+	dynasty = xin338
+}
+
+house_xin346 = {
+	name = "dynn_xin346"
+	dynasty = xin346
+}
+
+house_xin347 = {
+	name = "dynn_xin347"
+	dynasty = xin346
+}
+
+house_xin348 = {
+	name = "dynn_xin348"
+	dynasty = xin348
+}
+
+house_xin349 = {
+	name = "dynn_xin349"
+	dynasty = xin348
+}
+
+house_xin350 = {
+	name = "dynn_xin350"
+	dynasty = xin348
+}
+
+house_xin351 = {
+	name = "dynn_xin351"
+	dynasty = xin348
+}
+
+house_xin352 = {
+	name = "dynn_xin352"
+	dynasty = xin348
+}
+
+house_xin353 = {
+	name = "dynn_xin353"
+	dynasty = xin348
+}
+
+house_xin354 = {
+	name = "dynn_xin354"
+	dynasty = xin354
+}
+
+house_xin355 = {
+	name = "dynn_xin355"
+	dynasty = xin354
+}
+
+house_xin356 = {
+	name = "dynn_xin356"
+	dynasty = xin356
+}
+
+house_xin357 = {
+	name = "dynn_xin357"
+	dynasty = xin356
+}
+
+house_xin358 = {
+	name = "dynn_xin358"
+	dynasty = xin358
+}
+
+house_xin359 = {
+	name = "dynn_xin359"
+	dynasty = xin358
+}
+
+house_xin360 = {
+	name = "dynn_xin360"
+	dynasty = xin360
+}
+
+house_xin361 = {
+	name = "dynn_xin361"
+	dynasty = xin360
+}
+
+house_xin362 = {
+	name = "dynn_xin362"
+	dynasty = xin360
+}
+
+house_xin363 = {
+	name = "dynn_xin363"
+	dynasty = xin360
+}
+
+house_xin364 = {
+	name = "dynn_xin364"
+	dynasty = xin360
+}
+
+house_xin365 = {
+	name = "dynn_xin365"
+	dynasty = xin365
+}
+
+house_xin366 = {
+	name = "dynn_xin366"
+	dynasty = xin365
+}
+
+house_xin367 = {
+	name = "dynn_xin367"
+	dynasty = xin365
+}
+
+house_xin368 = {
+	name = "dynn_xin368"
+	dynasty = xin368
+}
+
+house_xin369 = {
+	name = "dynn_xin369"
+	dynasty = xin368
+}
+
+house_xin370 = {
+	name = "dynn_xin370"
+	dynasty = xin368
+}
+
+house_xin371 = {
+	name = "dynn_xin371"
+	dynasty = xin368
+}
+
+house_xin372 = {
+	name = "dynn_xin372"
+	dynasty = xin372
+}
+
+house_xin373 = {
+	name = "dynn_xin373"
+	dynasty = xin372
+}
+
+house_xin374 = {
+	name = "dynn_xin374"
+	dynasty = xin374
+}
+
+house_xin375 = {
+	name = "dynn_xin375"
+	dynasty = xin374
+}
+
+house_xin376 = {
+	name = "dynn_xin376"
+	dynasty = xin376
+}
+
+house_xin377 = {
+	name = "dynn_xin377"
+	dynasty = xin376
+}
+
+house_xin378 = {
+	name = "dynn_xin378"
+	dynasty = xin378
+}
+
+house_xin379 = {
+	name = "dynn_xin379"
+	dynasty = xin378
+}
+
+house_xin380 = {
+	name = "dynn_xin380"
+	dynasty = xin378
+}
+
+house_xin381 = {
+	name = "dynn_xin381"
+	dynasty = xin381
+}
+
+house_xin382 = {
+	name = "dynn_xin382"
+	dynasty = xin383
+}
+
+house_xin383 = {
+	name = "dynn_xin383"
+	dynasty = xin383
+}
+
+house_xin384 = {
+	name = "dynn_xin384"
+	dynasty = xin383
+}
+
+house_xin385 = {
+	name = "dynn_xin385"
+	dynasty = xin388
+}
+
+house_xin386 = {
+	name = "dynn_xin386"
+	dynasty = xin386
+}
+
+house_xin387 = {
+	name = "dynn_xin387"
+	dynasty = xin386
+}
+
+house_xin388 = {
+	name = "dynn_xin388"
+	dynasty = xin388
+}
+
+house_xin389 = {
+	name = "dynn_xin389"
+	dynasty = xin389
+}
+
+house_xin390 = {
+	name = "dynn_xin390"
+	dynasty = xin390
+}
+
+house_xin391 = {
+	name = "dynn_xin391"
+	dynasty = xin391
+}
+
+house_xin392 = {
+	name = "dynn_xin392"
+	dynasty = xin391
+}
+
+house_xin393 = {
+	name = "dynn_xin393"
+	dynasty = xin390
+}
+
+house_xin394 = {
+	name = "dynn_xin394"
+	dynasty = xin389
+}
+
+house_xin395 = {
+	name = "dynn_xin395"
+	dynasty = xin389
+}
+
+house_xin396 = {
+	name = "dynn_xin396"
+	dynasty = xin396
+}
+
+house_xin397 = {
+	name = "dynn_xin397"
+	dynasty = xin397
+}
+
+house_xin398 = {
+	name = "dynn_xin398"
+	dynasty = xin397
+}
+
+house_xin399 = {
+	name = "dynn_xin399"
+	dynasty = xin397
+}
+
+house_xin400 = {
+	name = "dynn_xin400"
+	dynasty = xin397
+}
+
+house_xin401 = {
+	name = "dynn_xin401"
+	dynasty = xin401
+}
+
+house_xin402 = {
+	name = "dynn_xin402"
+	dynasty = xin401
+}
+
+house_xin403 = {
+	name = "dynn_xin403"
+	dynasty = xin401
+}
+
+house_xin404 = {
+	name = "dynn_xin404"
+	dynasty = xin404
+}
+
+house_xin405 = {
+	name = "dynn_xin405"
+	dynasty = xin404
+}
+
+house_xin406 = {
+	name = "dynn_xin406"
+	dynasty = xin404
+}
+
+house_xin407 = {
+	name = "dynn_xin407"
+	dynasty = xin404
+}
+
+house_xin408 = {
+	name = "dynn_xin408"
+	dynasty = xin408
+}
+
+house_xin409 = {
+	name = "dynn_xin409"
+	dynasty = baijia47
+}
+
+house_xin410 = {
+	name = "dynn_xin410"
+	dynasty = xin410
+}
+
+house_xin411 = {
+	name = "dynn_xin411"
+	dynasty = xin410
+}
+
+house_xin412 = {
+	name = "dynn_xin412"
+	dynasty = xin408
+}
+
+house_xin413 = {
+	name = "dynn_xin413"
+	dynasty = xin331
+}
+
+house_xin414 = {
+	name = "dynn_xin414"
+	dynasty = xin414
+}
+
+house_xin415 = {
+	name = "dynn_xin415"
+	dynasty = xin414
+}
+
+house_xin416 = {
+	name = "dynn_xin416"
+	dynasty = baijia47
+}
+
+house_xin417 = {
+	name = "dynn_xin417"
+	dynasty = baijia47
+}
+
+house_xin418 = {
+	name = "dynn_xin418"
+	dynasty = xin418
+}
+
+house_xin419 = {
+	name = "dynn_xin419"
+	dynasty = xin418
+}
+
+house_xin420 = {
+	name = "dynn_xin420"
+	dynasty = xin420
+}
+
+house_xin421 = {
+	name = "dynn_xin421"
+	dynasty = xin420
+}
+
+house_xin422 = {
+	name = "dynn_xin422"
+	dynasty = xin420
+}
+
+house_xin423 = {
+	name = "dynn_xin423"
+	dynasty = xin423
+}
+
+house_xin424 = {
+	name = "dynn_xin424"
+	dynasty = xin423
+}
+
+house_xin425 = {
+	name = "dynn_xin425"
+	dynasty = xin425
+}
+
+house_xin426 = {
+	name = "dynn_xin426"
+	dynasty = xin425
+}
+
+house_xin427 = {
+	name = "dynn_xin427"
+	dynasty = xin55
+}
+
+house_xin428 = {
+	name = "dynn_xin428"
+	dynasty = xin428
+}
+
+house_xin429 = {
+	name = "dynn_xin429"
+	dynasty = xin428
+}
+
+house_xin430 = {
+	name = "dynn_xin430"
+	dynasty = xin428
+}
+
+house_xin431 = {
+	name = "dynn_xin431"
+	dynasty = xin428
+}
+
+house_xin432 = {
+	name = "dynn_xin432"
+	dynasty = xin432
+}
+
+house_xin433 = {
+	name = "dynn_xin433"
+	dynasty = xin432
+}
+
+house_xin434 = {
+	name = "dynn_xin434"
+	dynasty = xin432
+}
+
+house_xin435 = {
+	name = "dynn_xin435"
+	dynasty = xin435
+}
+
+house_xin436 = {
+	name = "dynn_xin436"
+	dynasty = xin435
+}
+
+house_xin437 = {
+	name = "dynn_xin437"
+	dynasty = xin437
+}
+
+house_xin438 = {
+	name = "dynn_xin438"
+	dynasty = xin437
+}
+
+house_xin439 = {
+	name = "dynn_xin439"
+	dynasty = xin439
+}
+
+house_xin440 = {
+	name = "dynn_xin440"
+	dynasty = xin439
+}
+
+house_xin441 = {
+	name = "dynn_xin441"
+	dynasty = xin439
+}
+
+house_xin442 = {
+	name = "dynn_xin442"
+	dynasty = xin442
+}
+
+house_xin443 = {
+	name = "dynn_xin443"
+	dynasty = xin443
+}
+
+house_xin444 = {
+	name = "dynn_xin444"
+	dynasty = xin443
+}
+
+house_xin445 = {
+	name = "dynn_xin445"
+	dynasty = xin445
+}
+
+house_xin446 = {
+	name = "dynn_xin446"
+	dynasty = xin445
+}
+
+house_xin447 = {
+	name = "dynn_xin447"
+	dynasty = xin445
+}
+
+house_xin448 = {
+	name = "dynn_xin448"
+	dynasty = xin448
+}
+
+house_xin449 = {
+	name = "dynn_xin449"
+	dynasty = xin448
+}
+
+house_xin450 = {
+	name = "dynn_xin450"
+	dynasty = xin448
+}
+
+house_xin451 = {
+	name = "dynn_xin451"
+	dynasty = xin33
+}
+
+house_xin452 = {
+	name = "dynn_xin452"
+	dynasty = xin452
+}
+
+house_xin453 = {
+	name = "dynn_xin453"
+	dynasty = xin452
+}
+
+house_xin454 = {
+	name = "dynn_xin454"
+	dynasty = xin454
+}
+
+house_xin455 = {
+	name = "dynn_xin455"
+	dynasty = xin455
+}
+
+house_xin456 = {
+	name = "dynn_xin456"
+	dynasty = xin456
+}
+
+house_xin457 = {
+	name = "dynn_xin457"
+	dynasty = xin456
+}
+
+house_xin458 = {
+	name = "dynn_xin458"
+	dynasty = xin458
+}
+
+house_xin459 = {
+	name = "dynn_xin459"
+	dynasty = xin459
+}
+
+house_xin460 = {
+	name = "dynn_xin460"
+	dynasty = xin459
+}
+
+house_xin461 = {
+	name = "dynn_xin461"
+	dynasty = xin459
+}
+
+house_xin462 = {
+	name = "dynn_xin462"
+	dynasty = xin462
+}
+
+house_xin463 = {
+	name = "dynn_xin463"
+	dynasty = xin458
+}
+
+house_xin464 = {
+	name = "dynn_xin464"
+	dynasty = xin464
+}
+
+house_xin465 = {
+	name = "dynn_xin465"
+	dynasty = xin464
+}
+
+house_xin466 = {
+	name = "dynn_xin466"
+	dynasty = xin464
+}
+
+house_xin467 = {
+	name = "dynn_xin467"
+	dynasty = xin330
+}
+
+house_xin468 = {
+	name = "dynn_xin468"
+	dynasty = xin468
+}
+
+house_xin469 = {
+	name = "dynn_xin469"
+	dynasty = xin468
+}
+
+house_xin470 = {
+	name = "dynn_xin470"
+	dynasty = xin468
+}
+
+house_xin471 = {
+	name = "dynn_xin471"
+	dynasty = xin471
+}
+
+house_xin472 = {
+	name = "dynn_xin472"
+	dynasty = xin471
+}
+
+house_xin473 = {
+	name = "dynn_xin473"
+	dynasty = xin473
+}
+
+house_xin474 = {
+	name = "dynn_xin474"
+	dynasty = xin473
+}
+
+house_xin475 = {
+	name = "dynn_xin475"
+	dynasty = xin473
+}
+
+house_xin476 = {
+	name = "dynn_xin476"
+	dynasty = xin476
+}
+
+house_xin477 = {
+	name = "dynn_xin477"
+	dynasty = xin476
+}
+
+house_xin478 = {
+	name = "dynn_xin478"
+	dynasty = xin478
+}
+
+house_xin479 = {
+	name = "dynn_xin479"
+	dynasty = xin478
+}
+
+house_xin480 = {
+	name = "dynn_xin480"
+	dynasty = xin480
+}
+
+house_xin481 = {
+	name = "dynn_xin481"
+	dynasty = xin480
+}
+
+house_xin482 = {
+	name = "dynn_xin482"
+	dynasty = xin480
+}
+
+house_xin483 = {
+	name = "dynn_xin483"
+	dynasty = xin483
+}
+
+house_xin484 = {
+	name = "dynn_xin484"
+	dynasty = xin483
+}
+
+house_xin485 = {
+	name = "dynn_xin485"
+	dynasty = xin485
+}
+
+house_xin486 = {
+	name = "dynn_xin486"
+	dynasty = xin485
+}
+
+house_xin487 = {
+	name = "dynn_xin487"
+	dynasty = xin487
+}
+
+house_xin488 = {
+	name = "dynn_xin488"
+	dynasty = xin487
+}
+
+house_xin489 = {
+	name = "dynn_xin489"
+	dynasty = xin487
+}
+
+house_xin490 = {
+	name = "dynn_xin490"
+	dynasty = xin490
+}
+
+house_xin491 = {
+	name = "dynn_xin491"
+	dynasty = xin490
+}
+
+house_xin492 = {
+	name = "dynn_xin492"
+	dynasty = xin490
+}
+
+house_xin493 = {
+	name = "dynn_xin493"
+	dynasty = xin493
+}
+
+house_xin494 = {
+	name = "dynn_xin494"
+	dynasty = xin493
+}
+
+house_xin495 = {
+	name = "dynn_xin495"
+	dynasty = xin493
+}
+
+house_xin496 = {
+	name = "dynn_xin496"
+	dynasty = xin493
+}
+
+house_xin497 = {
+	name = "dynn_xin497"
+	dynasty = xin497
+}
+
+house_xin498 = {
+	name = "dynn_xin498"
+	dynasty = xin497
+}
+
+house_xin499 = {
+	name = "dynn_xin499"
+	dynasty = xin499
+}
+
+house_xin500 = {
+	name = "dynn_xin500"
+	dynasty = xin499
+}
+
+house_xin501 = {
+	name = "dynn_xin501"
+	dynasty = xin499
+}
+
+house_xin502 = {
+	name = "dynn_xin502"
+	dynasty = xin499
+}
+
+house_xin503 = {
+	name = "dynn_xin503"
+	dynasty = xin503
+}
+
+house_xin504 = {
+	name = "dynn_xin504"
+	dynasty = xin503
+}
+
+house_xin505 = {
+	name = "dynn_xin505"
+	dynasty = xin505
+}
+
+house_xin506 = {
+	name = "dynn_xin506"
+	dynasty = xin505
+}
+
+house_xin507 = {
+	name = "dynn_xin507"
+	dynasty = xin507
+}
+
+house_xin508 = {
+	name = "dynn_xin508"
+	dynasty = xin508
+}
+
+house_xin509 = {
+	name = "dynn_xin509"
+	dynasty = xin509
+}
+
+house_xin510 = {
+	name = "dynn_xin510"
+	dynasty = xin509
+}
+
+house_xin511 = {
+	name = "dynn_xin511"
+	dynasty = xin508
+}
+
+house_xin512 = {
+	name = "dynn_xin512"
+	dynasty = xin509
+}
+
+house_xin513 = {
+	name = "dynn_xin513"
+	dynasty = xin509
+}
+
+house_xin514 = {
+	name = "dynn_xin514"
+	dynasty = xin514
+}
+
+house_xin515 = {
+	name = "dynn_xin515"
+	dynasty = xin514
+}
+
+house_xin516 = {
+	name = "dynn_xin516"
+	dynasty = xin514
+}
+
+house_xin517 = {
+	name = "dynn_xin517"
+	dynasty = xin40
+}
+
+house_xin518 = {
+	name = "dynn_xin518"
+	dynasty = xin518
+}
+
+house_xin519 = {
+	name = "dynn_xin519"
+	dynasty = xin518
+}
+
+house_xin520 = {
+	name = "dynn_xin520"
+	dynasty = xin520
+}
+
+house_xin521 = {
+	name = "dynn_xin521"
+	dynasty = xin520
+}
+
+house_xin522 = {
+	name = "dynn_xin522"
+	dynasty = xin520
+}
+
+house_xin523 = {
+	name = "dynn_xin523"
+	dynasty = xin520
+}
+
+house_xin524 = {
+	name = "dynn_xin524"
+	dynasty = xin520
+}
+
+house_xin525 = {
+	name = "dynn_xin525"
+	dynasty = xin520
+}
+
+house_xin526 = {
+	name = "dynn_xin526"
+	dynasty = xin526
+}
+
+house_xin527 = {
+	name = "dynn_xin527"
+	dynasty = xin526
+}
+
+house_xin528 = {
+	name = "dynn_xin528"
+	dynasty = xin528
+}
+
+house_xin529 = {
+	name = "dynn_xin529"
+	dynasty = xin528
+}
+
+house_xin530 = {
+	name = "dynn_xin530"
+	dynasty = xin528
+}
+
+house_xin531 = {
+	name = "dynn_xin531"
+	dynasty = xin531
+}
+
+house_xin532 = {
+	name = "dynn_xin532"
+	dynasty = xin531
+}
+
+house_xin533 = {
+	name = "dynn_xin533"
+	dynasty = xin531
+}
+
+house_xin534 = {
+	name = "dynn_xin534"
+	dynasty = xin534
+}
+
+house_xin535 = {
+	name = "dynn_xin535"
+	dynasty = xin534
+}
+
+house_xin536 = {
+	name = "dynn_xin536"
+	dynasty = xin536
+}
+
+house_xin537 = {
+	name = "dynn_xin537"
+	dynasty = xin536
+}
+
+house_xin538 = {
+	name = "dynn_xin538"
+	dynasty = xin536
+}
+
+house_xin539 = {
+	name = "dynn_xin539"
+	dynasty = xin539
+}
+
+house_xin540 = {
+	name = "dynn_xin540"
+	dynasty = xin539
+}
+
+house_xin541 = {
+	name = "dynn_xin541"
+	dynasty = xin539
+}
+
+house_xin542 = {
+	name = "dynn_xin542"
+	dynasty = xin542
+}
+
+house_xin543 = {
+	name = "dynn_xin543"
+	dynasty = xin542
+}
+
+house_xin544 = {
+	name = "dynn_xin544"
+	dynasty = xin542
+}
+
+house_xin545 = {
+	name = "dynn_xin545"
+	dynasty = xin545
+}
+
+house_xin546 = {
+	name = "dynn_xin546"
+	dynasty = xin545
+}
+
+house_xin547 = {
+	name = "dynn_xin547"
+	dynasty = xin547
+}
+
+house_xin548 = {
+	name = "dynn_xin548"
+	dynasty = xin547
+}
+
+house_xin549 = {
+	name = "dynn_xin549"
+	dynasty = xin547
+}
+
+house_xin550 = {
+	name = "dynn_xin550"
+	dynasty = xin550
+}
+
+house_xin551 = {
+	name = "dynn_xin551"
+	dynasty = xin550
+}
+
+house_xin552 = {
+	name = "dynn_xin552"
+	dynasty = xin550
+}
+
+house_xin553 = {
+	name = "dynn_xin553"
+	dynasty = xin553
+}
+
+house_xin554 = {
+	name = "dynn_xin554"
+	dynasty = xin553
+}
+
+house_xin555 = {
+	name = "dynn_xin555"
+	dynasty = xin553
+}
+
+house_xin556 = {
+	name = "dynn_xin556"
+	dynasty = xin556
+}
+
+house_xin557 = {
+	name = "dynn_xin557"
+	dynasty = xin557
+}
+
+house_xin558 = {
+	name = "dynn_xin558"
+	dynasty = xin557
+}
+
+house_xin559 = {
+	name = "dynn_xin559"
+	dynasty = xin557
+}
+
+house_xin560 = {
+	name = "dynn_xin560"
+	dynasty = xin560
+}
+
+house_xin561 = {
+	name = "dynn_xin561"
+	dynasty = xin560
+}
+
+house_xin562 = {
+	name = "dynn_xin562"
+	dynasty = xin560
+}
+
+house_xin563 = {
+	name = "dynn_xin563"
+	dynasty = xin563
+}
+
+house_xin564 = {
+	name = "dynn_xin564"
+	dynasty = xin563
+}
+
+house_xin565 = {
+	name = "dynn_xin565"
+	dynasty = xin565
+}
+
+house_xin566 = {
+	name = "dynn_xin566"
+	dynasty = xin566
+}
+
+house_xin567 = {
+	name = "dynn_xin567"
+	dynasty = xin566
+}
+
+house_xin568 = {
+	name = "dynn_xin568"
+	dynasty = xin566
+}
+
+house_xin569 = {
+	name = "dynn_xin569"
+	dynasty = xin569
+}
+
+house_xin570 = {
+	name = "dynn_xin570"
+	dynasty = xin569
+}
+
+house_xin571 = {
+	name = "dynn_xin571"
+	dynasty = xin571
+}
+
+house_xin572 = {
+	name = "dynn_xin572"
+	dynasty = xin572
+}
+
+house_xin573 = {
+	name = "dynn_xin573"
+	dynasty = xin572
+}
+
+house_xin574 = {
+	name = "dynn_xin574"
+	dynasty = xin574
+}
+
+house_xin575 = {
+	name = "dynn_xin575"
+	dynasty = xin574
+}
+
+house_xin576 = {
+	name = "dynn_xin576"
+	dynasty = xin576
+}
+
+house_xin577 = {
+	name = "dynn_xin577"
+	dynasty = xin576
+}
+
+house_xin578 = {
+	name = "dynn_xin578"
+	dynasty = xin576
+}
+
+house_xin579 = {
+	name = "dynn_xin579"
+	dynasty = xin579
+}
+
+house_xin580 = {
+	name = "dynn_xin580"
+	dynasty = xin579
+}
+
+house_xin581 = {
+	name = "dynn_xin581"
+	dynasty = xin579
+}
+
+house_xin582 = {
+	name = "dynn_xin582"
+	dynasty = xin582
+}
+
+house_xin583 = {
+	name = "dynn_xin583"
+	dynasty = xin582
+}
+
+house_xin584 = {
+	name = "dynn_xin584"
+	dynasty = xin584
+}
+
+house_xin585 = {
+	name = "dynn_xin585"
+	dynasty = xin584
+}
+
+house_xin586 = {
+	name = "dynn_xin586"
+	dynasty = xin584
+}
+
+house_xin587 = {
+	name = "dynn_xin587"
+	dynasty = xin587
+}
+
+house_xin588 = {
+	name = "dynn_xin588"
+	dynasty = xin587
+}
+
+house_xin589 = {
+	name = "dynn_xin589"
+	dynasty = xin589
+}
+
+house_xin590 = {
+	name = "dynn_xin590"
+	dynasty = xin589
+}
+
+house_xin591 = {
+	name = "dynn_xin591"
+	dynasty = xin589
+}
+
+house_xin592 = {
+	name = "dynn_xin592"
+	dynasty = xin592
+}
+
+house_xin593 = {
+	name = "dynn_xin593"
+	dynasty = xin592
+}
+
+house_xin594 = {
+	name = "dynn_xin594"
+	dynasty = xin592
+}
+
+house_xin595 = {
+	name = "dynn_xin595"
+	dynasty = xin592
+}
+
+house_xin596 = {
+	name = "dynn_xin596"
+	dynasty = xin592
+}
+
+house_xin597 = {
+	name = "dynn_xin597"
+	dynasty = xin597
+}
+
+house_xin598 = {
+	name = "dynn_xin598"
+	dynasty = xin597
+}
+
+house_xin599 = {
+	name = "dynn_xin599"
+	dynasty = xin57
+}
+
+house_xin600 = {
+	name = "dynn_xin600"
+	dynasty = xin57
+}
+
+house_xin601 = {
+	name = "dynn_xin601"
+	dynasty = xin57
+}
+
+house_xin602 = {
+	name = "dynn_xin602"
+	dynasty = xin57
+}
+
+house_xin603 = {
+	name = "dynn_xin603"
+	dynasty = xin603
+}
+
+house_xin604 = {
+	name = "dynn_xin604"
+	dynasty = xin603
+}
+
+house_xin605 = {
+	name = "dynn_xin605"
+	dynasty = xin603
+}
+
+house_xin606 = {
+	name = "dynn_xin606"
+	dynasty = xin606
+}
+
+house_xin607 = {
+	name = "dynn_xin607"
+	dynasty = xin606
+}
+
+house_xin608 = {
+	name = "dynn_xin608"
+	dynasty = xin606
+}
+
+house_xin609 = {
+	name = "dynn_xin609"
+	dynasty = xin609
+}
+
+house_xin610 = {
+	name = "dynn_xin610"
+	dynasty = xin609
+}
+
+house_xin611 = {
+	name = "dynn_xin611"
+	dynasty = xin609
+}
+
+house_xin612 = {
+	name = "dynn_xin612"
+	dynasty = xin612
+}
+
+house_xin613 = {
+	name = "dynn_xin613"
+	dynasty = xin613
+}
+
+house_xin614 = {
+	name = "dynn_xin614"
+	dynasty = xin83
+}
+
+house_xin615 = {
+	name = "dynn_xin615"
+	dynasty = xin83
+}
+
+house_xin616 = {
+	name = "dynn_xin616"
+	dynasty = xin83
+}
+
+house_xin617 = {
+	name = "dynn_xin617"
+	dynasty = xin612
+}
+
+house_xin618 = {
+	name = "dynn_xin618"
+	dynasty = xin612
+}
+
+house_xin619 = {
+	name = "dynn_xin619"
+	dynasty = xin613
+}
+
+house_xin620 = {
+	name = "dynn_xin620"
+	dynasty = xin613
+}
+
+house_xin621 = {
+	name = "dynn_xin621"
+	dynasty = xin621
+}
+
+house_xin622 = {
+	name = "dynn_xin622"
+	dynasty = xin621
+}
+
+house_xin623 = {
+	name = "dynn_xin623"
+	dynasty = xin623
+}
+
+house_xin624 = {
+	name = "dynn_xin624"
+	dynasty = xin623
+}
+
+house_xin625 = {
+	name = "dynn_xin625"
+	dynasty = baijia297
+}
+
+house_xin626 = {
+	name = "dynn_xin626"
+	dynasty = xin626
+}
+
+house_xin627 = {
+	name = "dynn_xin627"
+	dynasty = xin626
+}
+
+house_xin628 = {
+	name = "dynn_xin628"
+	dynasty = xin626
+}
+
+house_xin629 = {
+	name = "dynn_xin629"
+	dynasty = xin629
+}
+
+house_xin630 = {
+	name = "dynn_xin630"
+	dynasty = xin629
+}
+
+house_xin631 = {
+	name = "dynn_xin631"
+	dynasty = xin631
+}
+
+house_xin632 = {
+	name = "dynn_xin632"
+	dynasty = xin631
+}
+
+house_xin633 = {
+	name = "dynn_xin633"
+	dynasty = xin631
+}
+
+house_xin634 = {
+	name = "dynn_xin634"
+	dynasty = xin634
+}
+
+house_xin635 = {
+	name = "dynn_xin635"
+	dynasty = xin634
+}
+
+house_xin636 = {
+	name = "dynn_xin636"
+	dynasty = xin634
+}
+
+house_xin637 = {
+	name = "dynn_xin637"
+	dynasty = xin637
+}
+
+house_xin638 = {
+	name = "dynn_xin638"
+	dynasty = xin637
+}
+
+house_xin639 = {
+	name = "dynn_xin639"
+	dynasty = xin637
+}
+
+house_xin640 = {
+	name = "dynn_xin640"
+	dynasty = xin640
+}
+
+house_xin641 = {
+	name = "dynn_xin641"
+	dynasty = xin640
+}
+
+house_xin642 = {
+	name = "dynn_xin642"
+	dynasty = xin640
+}
+
+house_xin643 = {
+	name = "dynn_xin643"
+	dynasty = xin640
+}
+
+house_xin644 = {
+	name = "dynn_xin644"
+	dynasty = xin644
+}
+
+house_xin645 = {
+	name = "dynn_xin645"
+	dynasty = xin645
+}
+
+house_xin646 = {
+	name = "dynn_xin646"
+	dynasty = xin645
+}
+
+house_xin647 = {
+	name = "dynn_xin647"
+	dynasty = xin647
+}
+
+house_xin648 = {
+	name = "dynn_xin648"
+	dynasty = xin648
+}
+
+house_xin649 = {
+	name = "dynn_xin649"
+	dynasty = xin648
+}
+
+house_xin650 = {
+	name = "dynn_xin650"
+	dynasty = xin565
+}
+
+house_xin651 = {
+	name = "dynn_xin651"
+	dynasty = xin651
+}
+
+house_xin652 = {
+	name = "dynn_xin652"
+	dynasty = xin651
+}
+
+house_xin653 = {
+	name = "dynn_xin653"
+	dynasty = xin653
+}
+
+house_xin654 = {
+	name = "dynn_xin654"
+	dynasty = xin653
+}
+
+house_xin655 = {
+	name = "dynn_xin655"
+	dynasty = xin655
+}
+
+house_xin656 = {
+	name = "dynn_xin656"
+	dynasty = xin655
+}
+
+house_xin657 = {
+	name = "dynn_xin657"
+	dynasty = xin657
+}
+
+house_xin658 = {
+	name = "dynn_xin658"
+	dynasty = xin657
+}
+
+house_xin659 = {
+	name = "dynn_xin659"
+	dynasty = xin657
+}
+
+house_xin660 = {
+	name = "dynn_xin660"
+	dynasty = xin660
+}
+
+house_xin661 = {
+	name = "dynn_xin661"
+	dynasty = xin660
+}
+
+house_xin662 = {
+	name = "dynn_xin662"
+	dynasty = xin662
+}
+
+house_xin663 = {
+	name = "dynn_xin663"
+	dynasty = xin662
+}
+
+house_xin664 = {
+	name = "dynn_xin664"
+	dynasty = xin664
+}
+
+house_xin665 = {
+	name = "dynn_xin665"
+	dynasty = xin664
+}
+
+house_xin666 = {
+	name = "dynn_xin666"
+	dynasty = xin666
+}
+
+house_xin667 = {
+	name = "dynn_xin667"
+	dynasty = xin666
+}
+
+house_xin668 = {
+	name = "dynn_xin668"
+	dynasty = xin668
+}
+
+house_xin669 = {
+	name = "dynn_xin669"
+	dynasty = xin668
+}
+
+house_xin670 = {
+	name = "dynn_xin670"
+	dynasty = xin670
+}
+
+house_xin671 = {
+	name = "dynn_xin671"
+	dynasty = xin670
+}
+
+house_xin672 = {
+	name = "dynn_xin672"
+	dynasty = xin672
+}
+
+house_xin673 = {
+	name = "dynn_xin673"
+	dynasty = xin673
+}
+
+house_xin674 = {
+	name = "dynn_xin674"
+	dynasty = xin673
+}
+
+house_xin675 = {
+	name = "dynn_xin675"
+	dynasty = xin675
+}
+
+house_xin676 = {
+	name = "dynn_xin676"
+	dynasty = xin675
+}
+
+house_xin677 = {
+	name = "dynn_xin677"
+	dynasty = xin675
+}
+
+house_xin678 = {
+	name = "dynn_xin678"
+	dynasty = xin678
+}
+
+house_xin679 = {
+	name = "dynn_xin679"
+	dynasty = xin678
+}
+
+house_xin680 = {
+	name = "dynn_xin680"
+	dynasty = xin678
+}
+
+house_xin681 = {
+	name = "dynn_xin681"
+	dynasty = xin681
+}
+
+house_xin682 = {
+	name = "dynn_xin682"
+	dynasty = xin681
+}
+
+house_xin683 = {
+	name = "dynn_xin683"
+	dynasty = baijia127
+}
+
+house_xin684 = {
+	name = "dynn_xin684"
+	dynasty = baijia127
+}
+
+house_xin685 = {
+	name = "dynn_xin685"
+	dynasty = xin685
+}
+
+house_xin686 = {
+	name = "dynn_xin686"
+	dynasty = xin685
+}
+
+house_xin687 = {
+	name = "dynn_xin687"
+	dynasty = xin687
+}
+
+house_xin688 = {
+	name = "dynn_xin688"
+	dynasty = xin687
+}
+
+house_xin689 = {
+	name = "dynn_xin689"
+	dynasty = xin689
+}
+
+house_xin690 = {
+	name = "dynn_xin690"
+	dynasty = xin689
+}
+
+house_xin691 = {
+	name = "dynn_xin691"
+	dynasty = xin691
+}
+
+house_xin692 = {
+	name = "dynn_xin692"
+	dynasty = xin691
+}
+
+house_xin693 = {
+	name = "dynn_xin693"
+	dynasty = xin691
+}
+
+house_xin694 = {
+	name = "dynn_xin694"
+	dynasty = xin569
+}
+
+house_xin695 = {
+	name = "dynn_xin695"
+	dynasty = xin52
+}
+
+house_xin696 = {
+	name = "dynn_xin696"
+	dynasty = xin52
+}
+
+house_xin697 = {
+	name = "dynn_xin697"
+	dynasty = xin697
+}
+
+house_xin698 = {
+	name = "dynn_xin698"
+	dynasty = xin697
+}
+
+house_xin699 = {
+	name = "dynn_xin699"
+	dynasty = xin697
+}
+
+house_xin700 = {
+	name = "dynn_xin700"
+	dynasty = xin700
+}
+
+house_xin701 = {
+	name = "dynn_xin701"
+	dynasty = xin700
+}
+
+house_xin702 = {
+	name = "dynn_xin702"
+	dynasty = xin702
+}
+
+house_xin703 = {
+	name = "dynn_xin703"
+	dynasty = xin702
+}
+
+house_xin704 = {
+	name = "dynn_xin704"
+	dynasty = xin702
+}
+
+house_xin705 = {
+	name = "dynn_xin705"
+	dynasty = xin705
+}
+
+house_xin706 = {
+	name = "dynn_xin706"
+	dynasty = xin705
+}
+
+house_xin707 = {
+	name = "dynn_xin707"
+	dynasty = xin705
+}
+
+house_xin708 = {
+	name = "dynn_xin708"
+	dynasty = xin708
+}
+
+house_xin709 = {
+	name = "dynn_xin709"
+	dynasty = xin708
+}
+
+house_xin710 = {
+	name = "dynn_xin710"
+	dynasty = xin710
+}
+
+house_xin711 = {
+	name = "dynn_xin711"
+	dynasty = xin710
+}
+
+house_xin712 = {
+	name = "dynn_xin712"
+	dynasty = xin712
+}
+
+house_xin713 = {
+	name = "dynn_xin713"
+	dynasty = xin712
+}
+
+house_xin714 = {
+	name = "dynn_xin714"
+	dynasty = xin712
+}
+
+house_xin715 = {
+	name = "dynn_xin715"
+	dynasty = xin715
+}
+
+house_xin716 = {
+	name = "dynn_xin716"
+	dynasty = xin715
+}
+
+house_xin717 = {
+	name = "dynn_xin717"
+	dynasty = xin717
+}
+
+house_xin718 = {
+	name = "dynn_xin718"
+	dynasty = xin717
+}
+
+house_xin719 = {
+	name = "dynn_xin719"
+	dynasty = xin719
+}
+
+house_xin720 = {
+	name = "dynn_xin720"
+	dynasty = xin719
+}
+
+house_xin721 = {
+	name = "dynn_xin721"
+	dynasty = xin719
+}
+
+house_xin722 = {
+	name = "dynn_xin722"
+	dynasty = xin722
+}
+
+house_xin723 = {
+	name = "dynn_xin723"
+	dynasty = xin722
+}
+
+house_xin724 = {
+	name = "dynn_xin724"
+	dynasty = xin724
+}
+
+house_xin725 = {
+	name = "dynn_xin725"
+	dynasty = xin724
+}
+
+house_xin726 = {
+	name = "dynn_xin726"
+	dynasty = xin726
+}
+
+house_xin727 = {
+	name = "dynn_xin727"
+	dynasty = xin726
+}
+
+house_xin728 = {
+	name = "dynn_xin728"
+	dynasty = xin728
+}
+
+house_xin729 = {
+	name = "dynn_xin729"
+	dynasty = xin728
+}
+
+house_xin730 = {
+	name = "dynn_xin730"
+	dynasty = xin726
+}
+
+house_xin731 = {
+	name = "dynn_xin731"
+	dynasty = xin731
+}
+
+house_xin732 = {
+	name = "dynn_xin732"
+	dynasty = xin732
+}
+
+house_xin733 = {
+	name = "dynn_xin733"
+	dynasty = xin732
+}
+
+house_xin734 = {
+	name = "dynn_xin734"
+	dynasty = xin734
+}
+
+house_xin735 = {
+	name = "dynn_xin735"
+	dynasty = xin734
+}
+
+house_xin736 = {
+	name = "dynn_xin736"
+	dynasty = xin736
+}
+
+house_xin737 = {
+	name = "dynn_xin737"
+	dynasty = xin736
+}
+
+house_xin738 = {
+	name = "dynn_xin738"
+	dynasty = xin738
+}
+
+house_xin739 = {
+	name = "dynn_xin739"
+	dynasty = xin738
+}
+
+house_xin740 = {
+	name = "dynn_xin740"
+	dynasty = xin740
+}
+
+house_xin741 = {
+	name = "dynn_xin741"
+	dynasty = xin740
+}
+
+house_xin742 = {
+	name = "dynn_xin742"
+	dynasty = xin742
+}
+
+house_xin743 = {
+	name = "dynn_xin743"
+	dynasty = xin742
+}
+
+house_xin744 = {
+	name = "dynn_xin744"
+	dynasty = xin332
+}
+
+house_xin745 = {
+	name = "dynn_xin745"
+	dynasty = xin332
+}
+
+house_xin746 = {
+	name = "dynn_xin746"
+	dynasty = xin746
+}
+
+house_xin747 = {
+	name = "dynn_xin747"
+	dynasty = xin747
+}
+
+house_xin748 = {
+	name = "dynn_xin748"
+	dynasty = xin747
+}
+
+house_xin749 = {
+	name = "dynn_xin749"
+	dynasty = xin749
+}
+
+house_xin750 = {
+	name = "dynn_xin750"
+	dynasty = xin749
+}
+
+house_xin751 = {
+	name = "dynn_xin751"
+	dynasty = xin751
+}
+
+house_xin752 = {
+	name = "dynn_xin752"
+	dynasty = xin751
+}
+
+house_xin753 = {
+	name = "dynn_xin753"
+	dynasty = xin753
+}
+
+house_xin754 = {
+	name = "dynn_xin754"
+	dynasty = xin753
+}
+
+house_xin755 = {
+	name = "dynn_xin755"
+	dynasty = xin755
+}
+
+house_xin756 = {
+	name = "dynn_xin756"
+	dynasty = xin755
+}
+
+house_xin757 = {
+	name = "dynn_xin757"
+	dynasty = xin758
+}
+
+house_xin758 = {
+	name = "dynn_xin758"
+	dynasty = xin758
+}
+
+house_xin759 = {
+	name = "dynn_xin759"
+	dynasty = xin759
+}
+
+house_xin760 = {
+	name = "dynn_xin760"
+	dynasty = xin759
+}
+
+house_xin761 = {
+	name = "dynn_xin761"
+	dynasty = xin759
+}
+
+house_xin762 = {
+	name = "dynn_xin762"
+	dynasty = xin759
+}
+
+house_xin763 = {
+	name = "dynn_xin763"
+	dynasty = xin763
+}
+
+house_xin764 = {
+	name = "dynn_xin764"
+	dynasty = xin763
+}
+
+house_xin765 = {
+	name = "dynn_xin765"
+	dynasty = xin765
+}
+
+house_xin766 = {
+	name = "dynn_xin766"
+	dynasty = xin765
+}
+
+house_xin767 = {
+	name = "dynn_xin767"
+	dynasty = xin767
+}
+
+house_xin768 = {
+	name = "dynn_xin768"
+	dynasty = xin767
+}
+
+house_xin769 = {
+	name = "dynn_xin769"
+	dynasty = baijia226
+}
+
+house_xin770 = {
+	name = "dynn_xin770"
+	dynasty = baijia226
+}
+
+house_xin771 = {
+	name = "dynn_xin771"
+	dynasty = xin771
+}
+
+house_xin772 = {
+	name = "dynn_xin772"
+	dynasty = xin771
+}
+
+house_xin773 = {
+	name = "dynn_xin773"
+	dynasty = xin771
+}
+
+house_xin774 = {
+	name = "dynn_xin774"
+	dynasty = xin771
+}
+
+house_xin775 = {
+	name = "dynn_xin775"
+	dynasty = xin775
+}
+
+house_xin776 = {
+	name = "dynn_xin776"
+	dynasty = xin775
+}
+
+house_xin777 = {
+	name = "dynn_xin777"
+	dynasty = xin775
+}
+
+house_xin778 = {
+	name = "dynn_xin778"
+	dynasty = xin778
+}
+
+house_xin779 = {
+	name = "dynn_xin779"
+	dynasty = xin778
+}
+
+house_xin780 = {
+	name = "dynn_xin780"
+	dynasty = xin778
+}
+
+house_xin781 = {
+	name = "dynn_xin781"
+	dynasty = xin781
+}
+
+house_xin782 = {
+	name = "dynn_xin782"
+	dynasty = xin782
+}
+
+house_xin783 = {
+	name = "dynn_xin783"
+	dynasty = xin783
+}
+
+house_xin784 = {
+	name = "dynn_xin784"
+	dynasty = xin784
+}
+
+house_xin785 = {
+	name = "dynn_xin785"
+	dynasty = xin785
+}
+
+house_xin786 = {
+	name = "dynn_xin786"
+	dynasty = xin786
+}
+
+house_xin787 = {
+	name = "dynn_xin787"
+	dynasty = xin787
+}
+
+house_xin788 = {
+	name = "dynn_xin788"
+	dynasty = xin788
+}
+
+house_xin789 = {
+	name = "dynn_xin789"
+	dynasty = xin789
+}
+
+house_xin790 = {
+	name = "dynn_xin790"
+	dynasty = xin790
+}
+
+house_xin791 = {
+	name = "dynn_xin791"
+	dynasty = xin791
+}
+
+house_xin792 = {
+	name = "dynn_xin792"
+	dynasty = xin792
+}
+
+house_xin793 = {
+	name = "dynn_xin793"
+	dynasty = xin793
+}
+
+house_xin794 = {
+	name = "dynn_xin794"
+	dynasty = xin794
+}
+
+house_xin795 = {
+	name = "dynn_xin795"
+	dynasty = xin795
+}
+
+house_xin796 = {
+	name = "dynn_xin796"
+	dynasty = xin796
+}
+
+house_xin797 = {
+	name = "dynn_xin797"
+	dynasty = xin797
+}
+
+house_xin798 = {
+	name = "dynn_xin798"
+	dynasty = xin797
+}
+
+house_xin799 = {
+	name = "dynn_xin799"
+	dynasty = xin799
+}
+
+house_xin800 = {
+	name = "dynn_xin800"
+	dynasty = xin799
+}
+
+house_xin801 = {
+	name = "dynn_xin801"
+	dynasty = xin801
+}
+
+house_xin802 = {
+	name = "dynn_xin802"
+	dynasty = xin801
+}
+
+house_xin803 = {
+	name = "dynn_xin803"
+	dynasty = xin803
+}
+
+house_xin804 = {
+	name = "dynn_xin804"
+	dynasty = xin804
+}
+
+house_xin805 = {
+	name = "dynn_xin805"
+	dynasty = xin805
+}
+
+house_xin806 = {
+	name = "dynn_xin806"
+	dynasty = xin806
+}
+
+house_xin807 = {
+	name = "dynn_xin807"
+	dynasty = xin807
+}
+
+house_xin808 = {
+	name = "dynn_xin808"
+	dynasty = xin807
+}
+
+house_xin809 = {
+	name = "dynn_xin809"
+	dynasty = xin809
+}
+
+house_xin810 = {
+	name = "dynn_xin810"
+	dynasty = xin810
+}
+
+house_xin811 = {
+	name = "dynn_xin811"
+	dynasty = xin811
+}
+
+house_xin812 = {
+	name = "dynn_xin812"
+	dynasty = xin812
+}
+
+house_xin813 = {
+	name = "dynn_xin813"
+	dynasty = xin813
+}
+
+house_xin814 = {
+	name = "dynn_xin814"
+	dynasty = xin813
+}
+
+house_xin815 = {
+	name = "dynn_xin815"
+	dynasty = xin815
+}
+
+house_xin816 = {
+	name = "dynn_xin816"
+	dynasty = xin816
+}
+
+house_xin817 = {
+	name = "dynn_xin817"
+	dynasty = xin817
+}
+
+house_xin818 = {
+	name = "dynn_xin818"
+	dynasty = xin817
+}
+
+house_xin819 = {
+	name = "dynn_xin819"
+	dynasty = xin819
+}
+
+house_xin820 = {
+	name = "dynn_xin820"
+	dynasty = xin820
+}
+
+house_xin821 = {
+	name = "dynn_xin821"
+	dynasty = xin820
+}
+
+house_xin822 = {
+	name = "dynn_xin822"
+	dynasty = xin822
+}
+
+house_xin823 = {
+	name = "dynn_xin823"
+	dynasty = xin823
+}
+
+house_xin824 = {
+	name = "dynn_xin824"
+	dynasty = xin822
+}
+
+house_xin825 = {
+	name = "dynn_xin825"
+	dynasty = xin823
+}
+
+house_xin826 = {
+	name = "dynn_xin826"
+	dynasty = xin826
+}
+
+house_xin827 = {
+	name = "dynn_xin827"
+	dynasty = xin826
+}
+
+house_xin828 = {
+	name = "dynn_xin828"
+	dynasty = xin828
+}
+
+house_xin829 = {
+	name = "dynn_xin829"
+	dynasty = xin828
+}
+
+house_xin830 = {
+	name = "dynn_xin830"
+	dynasty = xin830
+}
+
+house_xin831 = {
+	name = "dynn_xin831"
+	dynasty = xin830
+}
+
+house_xin832 = {
+	name = "dynn_xin832"
+	dynasty = xin830
+}
+
+house_xin833 = {
+	name = "dynn_xin833"
+	dynasty = xin833
+}
+
+house_xin834 = {
+	name = "dynn_xin834"
+	dynasty = xin834
+}
+
+house_xin835 = {
+	name = "dynn_xin835"
+	dynasty = xin834
+}
+
+house_xin836 = {
+	name = "dynn_xin836"
+	dynasty = xin836
+}
+
+house_xin837 = {
+	name = "dynn_xin837"
+	dynasty = xin836
+}
+
+house_xin838 = {
+	name = "dynn_xin838"
+	dynasty = xin838
+}
+
+house_xin839 = {
+	name = "dynn_xin839"
+	dynasty = xin839
+}
+
+house_xin840 = {
+	name = "dynn_xin840"
+	dynasty = xin840
+}
+
+house_xin842 = {
+	name = "dynn_xin842"
+	dynasty = xin840
+}
+
+house_xin843 = {
+	name = "dynn_xin843"
+	dynasty = xin843
+}
+
+house_xin844 = {
+	name = "dynn_xin844"
+	dynasty = xin843
+}
+
+house_xin845 = {
+	name = "dynn_xin845"
+	dynasty = xin51
+}
+
+house_xin846 = {
+	name = "dynn_xin846"
+	dynasty = xin51
+}
+
+house_xin847 = {
+	name = "dynn_xin847"
+	dynasty = xin51
+}
+
+house_xin848 = {
+	name = "dynn_xin848"
+	dynasty = xin51
+}
+
+house_xin849 = {
+	name = "dynn_xin849"
+	dynasty = xin849
+}
+
+house_xin850 = {
+	name = "dynn_xin850"
+	dynasty = xin849
+}
+
+house_xin851 = {
+	name = "dynn_xin851"
+	dynasty = xin849
+}
+
+house_xin852 = {
+	name = "dynn_xin852"
+	dynasty = xin852
+}
+
+house_xin853 = {
+	name = "dynn_xin853"
+	dynasty = xin852
+}
+
+house_xin854 = {
+	name = "dynn_xin854"
+	dynasty = xin854
+}
+
+house_xin855 = {
+	name = "dynn_xin855"
+	dynasty = xin854
+}
+
+house_xin856 = {
+	name = "dynn_xin856"
+	dynasty = xin856
+}
+
+house_xin857 = {
+	name = "dynn_xin857"
+	dynasty = xin857
+}
+
+house_xin858 = {
+	name = "dynn_xin858"
+	dynasty = xin854
+}
+
+house_xin859 = {
+	name = "dynn_xin859"
+	dynasty = xin854
+}
+
+house_xin860 = {
+	name = "dynn_xin860"
+	dynasty = xin860
+}
+
+house_xin861 = {
+	name = "dynn_xin861"
+	dynasty = xin861
+}
+
+house_xin862 = {
+	name = "dynn_xin862"
+	dynasty = xin862
+}
+
+house_xin863 = {
+	name = "dynn_xin863"
+	dynasty = xin863
+}
+
+house_xin864 = {
+	name = "dynn_xin864"
+	dynasty = xin872
+}
+
+house_xin865 = {
+	name = "dynn_xin865"
+	dynasty = xin872
+}
+
+house_xin866 = {
+	name = "dynn_xin866"
+	dynasty = xin871
+}
+
+house_xin867 = {
+	name = "dynn_xin867"
+	dynasty = xin871
+}
+
+house_xin868 = {
+	name = "dynn_xin868"
+	dynasty = xin868
+}
+
+house_xin869 = {
+	name = "dynn_xin869"
+	dynasty = xin868
+}
+
+house_xin870 = {
+	name = "dynn_xin870"
+	dynasty = xin868
+}
+
+house_xin871 = {
+	name = "dynn_xin871"
+	dynasty = xin871
+}
+
+house_xin872 = {
+	name = "dynn_xin872"
+	dynasty = xin872
+}
+
+house_xin873 = {
+	name = "dynn_xin873"
+	dynasty = xin873
+}
+
+house_xin874 = {
+	name = "dynn_xin874"
+	dynasty = xin873
+}
+
+house_xin875 = {
+	name = "dynn_xin875"
+	dynasty = xin873
+}
+
+house_xin876 = {
+	name = "dynn_xin876"
+	dynasty = xin873
+}
+
+house_xin877 = {
+	name = "dynn_xin877"
+	dynasty = xin877
+}
+
+house_xin878 = {
+	name = "dynn_xin878"
+	dynasty = xin877
+}
+
+house_xin879 = {
+	name = "dynn_xin879"
+	dynasty = xin281
+}
+
+house_xin880 = {
+	name = "dynn_xin880"
+	dynasty = xin281
+}
+
+house_xin881 = {
+	name = "dynn_xin881"
+	dynasty = xin281
+}
+
+house_xin882 = {
+	name = "dynn_xin882"
+	dynasty = xin882
+}
+
+house_xin883 = {
+	name = "dynn_xin883"
+	dynasty = xin883
+}
+
+house_xin884 = {
+	name = "dynn_xin884"
+	dynasty = xin884
+}
+
+house_xin885 = {
+	name = "dynn_xin885"
+	dynasty = xin885
+}
+
+house_xin886 = {
+	name = "dynn_xin886"
+	dynasty = xin886
+}
+
+house_xin887 = {
+	name = "dynn_xin887"
+	dynasty = xin887
+}
+
+house_xin888 = {
+	name = "dynn_xin888"
+	dynasty = xin888
+}
+
+house_xin889 = {
+	name = "dynn_xin889"
+	dynasty = xin889
+}
+
+house_xin890 = {
+	name = "dynn_xin890"
+	dynasty = xin890
+}
+
+house_xin891 = {
+	name = "dynn_xin891"
+	dynasty = xin891
+}
+
+house_xin892 = {
+	name = "dynn_xin892"
+	dynasty = xin892
+}
+
+house_xin893 = {
+	name = "dynn_xin893"
+	dynasty = xin893
+}
+
+house_xin894 = {
+	name = "dynn_xin894"
+	dynasty = xin894
+}
+
+house_xin895 = {
+	name = "dynn_xin895"
+	dynasty = xin895
+}
+
+house_xin896 = {
+	name = "dynn_xin896"
+	dynasty = xin896
+}
+
+house_xin897 = {
+	name = "dynn_xin897"
+	dynasty = xin897
+}
+
+house_xin898 = {
+	name = "dynn_xin898"
+	dynasty = xin898
+}
+
+house_xin899 = {
+	name = "dynn_xin899"
+	dynasty = xin899
+}
+
+house_xin900 = {
+	name = "dynn_xin900"
+	dynasty = xin900
+}
+
+house_xin901 = {
+	name = "dynn_xin901"
+	dynasty = xin901
+}
+
+house_xin902 = {
+	name = "dynn_xin902"
+	dynasty = xin902
+}
+
+house_xin903 = {
+	name = "dynn_xin903"
+	dynasty = xin903
+}
+
+house_xin904 = {
+	name = "dynn_xin904"
+	dynasty = xin904
+}
+
+house_xin905 = {
+	name = "dynn_xin905"
+	dynasty = xin905
+}
+
+house_xin906 = {
+	name = "dynn_xin906"
+	dynasty = xin906
+}
+
+house_xin907 = {
+	name = "dynn_xin907"
+	dynasty = xin907
+}
+
+house_xin908 = {
+	name = "dynn_xin908"
+	dynasty = xin908
+}
+
+house_xin909 = {
+	name = "dynn_xin909"
+	dynasty = xin909
+}
+
+house_xin910 = {
+	name = "dynn_xin910"
+	dynasty = xin910
+}

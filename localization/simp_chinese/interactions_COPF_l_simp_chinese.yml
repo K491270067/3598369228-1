@@ -1,0 +1,26 @@
+﻿l_simp_chinese:
+ deny_title_succession_interaction: "否决头衔继承"
+ deny_title_succession_interaction_desc: "拒绝认可[recipient.GetShortUINameNoTooltip]的继承人对其一个[title|E]的继承"
+ has_title_valid_for_deny_title_succession: "对方有可以被否决继承的[title|E]"
+ restore_title_succession_interaction: "恢复头衔继承"
+ restore_title_succession_interaction_desc: "恢复认可[recipient.GetShortUINameNoTooltip]的继承人对其一个[title|E]的继承"
+ has_denied_title_succession: "对方有[title|E]的继承被否决"
+
+ pick_de_jure_above_instead: "此[title|E]会被包括在其法理上级[title|E]中"
+
+ tt_can_only_influence_candidacy_within_same_realm: "[feudal]行政制[ruler|E]只能影响同一领地内的候选资格"
+ tt_target_succession_is_not_bureaucrat_promotion: "目标头衔不能是$feudal_governor_promotion_succession_law$"
+
+ interaction_grant_vassal_autonomy_name: "授予封臣自治"
+ interaction_grant_vassal_autonomy_desc: "授予[recipient.GetShortUINameNoTooltip]自治以换取其忠诚并更好执行特殊职责"
+ autonomy_vassal_military: "边防区"
+ autonomy_vassal_tax: "包税区"
+ autonomy_vassal_tributary: "朝贡"
+ autonomy_vassal_nominal: "名义封臣"
+
+ tt_autonomous_vassal_support_war_forced: "[vassal|E]有义务加入你的[wars] : $VALUE|=+0$"
+ tt_autonomous_vassal_no_war_obligation: "[vassal|E]没有义务加入你的[wars] : $VALUE|=+0$"
+ tt_autonomous_vassal_army_strength_relative_to_liege: "[vassal|E]军力和[liege|E]军力的对比 : $VALUE|=+0$"
+
+ tt_autonomous_vassal_already_in_all_wars: "[vassal|E]已经加入了所有[wars]"
+ tt_join_war_interaction_autonomous_vassal_need_obligation: "需要#high [GetSubjectContractType( 'contract_feudal_vassal_support_war' ).GetObligationName( 'obligation_contract_feudal_vassal_support_war_forced' )]#![vassal_contract|E]才能够主动加入[liege|E]的[wars]"

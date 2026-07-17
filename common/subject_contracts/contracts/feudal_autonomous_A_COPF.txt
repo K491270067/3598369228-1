@@ -1,0 +1,207 @@
+﻿# 自治封臣税
+contract_feudal_autonomous_taxes = {
+	display_mode = tree
+	icon = gold_icon
+	obligation_levels = {
+		feudal_autonomous_tax_exempt = {
+			flag = feudal_autonomous_tax_exempt
+			default = yes
+
+			position = { 0 0 }
+
+			tax = exempt_feudal_tax
+			subject_opinion = 10
+
+			ai_liege_desire = 1
+			ai_subject_desire = 5
+			score = 2
+		}
+		feudal_autonomous_tax_low = {
+			flag = feudal_autonomous_tax_low
+
+			parent = feudal_autonomous_tax_exempt
+			position = { 1 0 }
+
+			tax = 0.05
+			subject_opinion = 5
+
+			ai_liege_desire = {
+				value = 2
+				if = {
+					limit = {
+						scope:liege = {
+							ai_should_focus_on_building_in_their_capital = yes
+						}
+						scope:subject = {
+							AND = {
+								government_has_flag = government_is_feudal
+								vassal_contract_obligation_level:feudal_government_taxes <= feudal_tax_exempt_level
+							}
+						}
+					}
+					add = 8
+				}
+			}
+			ai_subject_desire = 4
+			score = 1
+		}
+		feudal_autonomous_tax_normal = {
+			flag = feudal_autonomous_tax_normal
+
+			parent = feudal_autonomous_tax_low
+			position = { 2 0 }
+
+			tax = 0.075
+
+			ai_liege_desire = {
+				value = 3
+				if = {
+					limit = {
+						scope:liege = {
+							ai_should_focus_on_building_in_their_capital = yes
+						}
+						scope:subject = {
+							AND = {
+								government_has_flag = government_is_feudal
+								vassal_contract_obligation_level:feudal_government_taxes <= feudal_tax_low_level
+							}
+						}
+					}
+					add = 7
+				}
+			}
+			ai_subject_desire = 3
+			score = 0
+		}
+		feudal_autonomous_tax_high = {
+			flag = feudal_autonomous_tax_high
+
+			parent = feudal_autonomous_tax_normal
+			position = { 3 0 }
+			
+			tax = 0.1
+			subject_opinion = -15
+
+			ai_liege_desire = {
+				value = 5
+				if = {
+					limit = {
+						scope:liege = {
+							ai_should_focus_on_building_in_their_capital = yes
+						}
+						scope:subject = {
+							AND = {
+								government_has_flag = government_is_feudal
+								vassal_contract_obligation_level:feudal_government_taxes <= feudal_tax_normal_level
+							}
+						}
+					}
+					add = 6
+				}
+			}
+			ai_subject_desire = 2
+			score = -2
+			flag = obligation_high_taxes
+		}
+		feudal_autonomous_tax_extortionate = {
+			flag = feudal_autonomous_tax_extortionate
+			
+			parent = feudal_autonomous_tax_high
+			position = { 4 0 }
+			
+			tax = 0.125
+			subject_opinion = -25
+
+			ai_liege_desire = {
+				value = 6
+				if = {
+					limit = {
+						scope:liege = {
+							ai_should_focus_on_building_in_their_capital = yes
+						}
+						scope:subject = {
+							AND = {
+								government_has_flag = government_is_feudal
+								vassal_contract_obligation_level:feudal_government_taxes <= feudal_tax_high_level
+							}
+						}
+					}
+					add = 5
+				}
+			}
+			ai_subject_desire = 1
+			score = -3
+			flag = obligation_high_taxes
+		}
+	}
+}
+# 强制领主保护封臣
+contract_feudal_liege_offer_protection = {
+	display_mode = checkbox
+	obligation_levels = {
+		obligation_feudal_liege_offer_protection_none = {
+			position = { 0 0 }
+
+			ai_liege_desire = 1
+			ai_subject_desire = 0
+			score = 0
+		}
+		obligation_feudal_liege_offer_protection_forced = {
+			#flag = tributary_contract_suzerain_guarantee_override
+			flag = obligation_feudal_liege_offer_protection_forced
+
+			parent = obligation_feudal_liege_offer_protection_none
+			position = { 1 0 }
+			default = yes
+
+			subject_opinion = 25
+
+			subject_modifier = {
+				levy_size = -0.2
+				garrison_size = 0.25
+				vassal_levy_contribution_mult = -0.1
+			}
+
+			ai_liege_desire = 1
+			ai_subject_desire = 5
+			score = 2
+		}
+	}
+}
+# 强制封臣加入领主战争
+contract_feudal_vassal_support_war = {
+	display_mode = checkbox
+	obligation_levels = {
+		obligation_contract_feudal_vassal_support_war_none = {
+			position = { 0 0 }
+
+			ai_liege_desire = 1
+			ai_subject_desire = 5
+			score = 0
+		}
+		obligation_contract_feudal_vassal_support_war_forced = {
+			#flag = tributary_contract_tributary_forced_war_override
+			flag = obligation_contract_feudal_vassal_support_war_forced
+			
+			parent = obligation_contract_feudal_vassal_support_war_none
+			position = { 1 0 }
+			default = yes
+			
+			subject_opinion = -25
+			joins_suzerain_wars = yes
+
+			liege_modifier = {
+				vassal_limit = -1
+			}
+			subject_modifier = {
+				army_maintenance_mult = 0.1
+				levy_size = -0.5
+				vassal_levy_contribution_mult = -0.2
+			}
+
+			ai_liege_desire = 5
+			ai_subject_desire = 1
+			score = -2
+		}
+	}
+}

@@ -1,0 +1,437 @@
+﻿namespace = rp_merit
+
+rp_merit.4000 = {
+	type = character_event
+	title = rp_merit.4000.t
+	theme = intrigue
+	override_background = { reference = throne_room_east }
+	desc = rp_merit.4000.desc
+	right_portrait = scope:story.var:rp_power_hero
+
+	immediate = {
+		scope:story.var:rp_power_hero = { save_scope_as = rp_power_hero }
+	}
+
+	trigger = {
+		exists = scope:story
+		scope:story = { rp_power_story_hero_valid_trigger = yes }
+	}
+
+	option = {
+		name = rp_merit.4000.a
+		trigger = { gold >= 80 }
+		remove_short_term_gold = 80
+		add_prestige = 50
+		scope:story.var:rp_power_hero = {
+			add_gold = 80
+			add_opinion = { target = root modifier = rp_merit_reward_gold_opinion }
+		}
+		scope:story = {
+			change_variable = { name = rp_power_suspicion add = 10 }
+			set_variable = { name = rp_power_phase value = 2 }
+		}
+	}
+
+	option = {
+		name = rp_merit.4000.b
+		scope:story.var:rp_power_hero = {
+			add_opinion = { target = root modifier = rp_merit_refused_harsh_opinion }
+			add_character_modifier = { modifier = rp_power_stripped_modifier years = 5 }
+			set_variable = { name = rp_power_awareness value = 25 }
+		}
+		scope:story = {
+			change_variable = { name = rp_power_suspicion add = 30 }
+			set_variable = { name = rp_power_phase value = 2 }
+		}
+	}
+
+	option = {
+		name = rp_merit.4000.c
+		scope:story.var:rp_power_hero = {
+			add_character_modifier = { modifier = rp_power_under_suspicion_modifier years = 5 }
+			set_variable = { name = rp_power_awareness value = 10 }
+		}
+		scope:story = {
+			change_variable = { name = rp_power_suspicion add = 20 }
+			set_variable = { name = rp_power_phase value = 2 }
+		}
+	}
+}
+
+rp_merit.4001 = {
+	hidden = yes
+
+	immediate = {
+		if = {
+			limit = {
+				OR = {
+					NOT = { exists = scope:story }
+					NOT = { scope:story = { rp_power_story_hero_valid_trigger = yes } }
+				}
+			}
+			scope:story ?= { end_story = yes }
+		}
+		else_if = {
+			limit = {
+				scope:story = {
+					has_variable = rp_power_phase
+					var:rp_power_phase >= 3
+				}
+			}
+			trigger_event = rp_merit.4300
+		}
+		else_if = {
+			limit = {
+				scope:story = {
+					has_variable = rp_power_phase
+					var:rp_power_phase = 2
+					OR = {
+						var:rp_power_suspicion >= 60
+						var:rp_power_cycle >= 3
+					}
+				}
+			}
+			scope:story = { set_variable = { name = rp_power_phase value = 3 } }
+			trigger_event = rp_merit.4300
+		}
+		else = {
+			scope:story = { change_variable = { name = rp_power_cycle add = 1 } }
+			random_list = {
+				34 = { trigger_event = rp_merit.4201 }
+				33 = { trigger_event = rp_merit.4202 }
+				33 = { trigger_event = rp_merit.4203 }
+			}
+		}
+	}
+}
+
+rp_merit.4201 = {
+	type = character_event
+	title = rp_merit.4201.t
+	theme = intrigue
+	override_background = { reference = throne_room_east }
+	desc = rp_merit.4201.desc
+	right_portrait = scope:story.var:rp_power_hero
+
+	immediate = {
+		scope:story.var:rp_power_hero = { save_scope_as = rp_power_hero }
+	}
+
+	trigger = {
+		exists = scope:story
+		scope:story = { rp_power_story_hero_valid_trigger = yes }
+	}
+
+	option = {
+		name = rp_merit.4201.a
+		scope:story.var:rp_power_hero = {
+			add_opinion = { target = root modifier = rp_merit_legal_rebuff_opinion }
+		}
+		scope:story = { change_variable = { name = rp_power_suspicion add = 15 } }
+	}
+
+	option = {
+		name = rp_merit.4201.b
+		trigger = { gold >= 50 }
+		remove_short_term_gold = 50
+		random_list = {
+			65 = {
+				add_prestige = 50
+				scope:story = { change_variable = { name = rp_power_suspicion add = 5 } }
+			}
+			35 = {
+				scope:story.var:rp_power_hero = {
+					add_opinion = { target = root modifier = rp_merit_refused_harsh_opinion }
+					change_variable = { name = rp_power_awareness add = 20 }
+				}
+				scope:story = { change_variable = { name = rp_power_suspicion add = 25 } }
+			}
+		}
+	}
+
+	option = {
+		name = rp_merit.4201.c
+		trigger = { gold >= 60 }
+		remove_short_term_gold = 60
+		scope:story.var:rp_power_hero = {
+			add_gold = 60
+			add_opinion = { target = root modifier = rp_merit_feast_reward_opinion }
+		}
+		scope:story = { change_variable = { name = rp_power_suspicion add = 5 } }
+	}
+}
+
+rp_merit.4202 = {
+	type = character_event
+	title = rp_merit.4202.t
+	theme = diplomacy
+	override_background = { reference = throne_room_east }
+	desc = rp_merit.4202.desc
+	right_portrait = scope:story.var:rp_power_hero
+
+	immediate = {
+		scope:story.var:rp_power_hero = { save_scope_as = rp_power_hero }
+	}
+
+	trigger = {
+		exists = scope:story
+		scope:story = { rp_power_story_hero_valid_trigger = yes }
+	}
+
+	option = {
+		name = rp_merit.4202.a
+		add_prestige = -50
+		scope:story = { change_variable = { name = rp_power_suspicion add = 20 } }
+	}
+
+	option = {
+		name = rp_merit.4202.b
+		scope:story.var:rp_power_hero = {
+			add_opinion = { target = root modifier = rp_merit_refused_harsh_opinion }
+			add_character_modifier = { modifier = rp_power_stripped_modifier years = 5 }
+		}
+		scope:story = { change_variable = { name = rp_power_suspicion add = 30 } }
+	}
+
+	option = {
+		name = rp_merit.4202.c
+		trigger = { gold >= 100 }
+		remove_short_term_gold = 100
+		scope:story.var:rp_power_hero = {
+			add_gold = 100
+			add_opinion = { target = root modifier = rp_merit_reward_gold_opinion }
+		}
+		scope:story = { change_variable = { name = rp_power_suspicion add = 10 } }
+	}
+}
+
+rp_merit.4203 = {
+	type = character_event
+	title = rp_merit.4203.t
+	theme = diplomacy
+	override_background = { reference = throne_room_east }
+	desc = rp_merit.4203.desc
+	right_portrait = scope:story.var:rp_power_hero
+
+	immediate = {
+		scope:story.var:rp_power_hero = { save_scope_as = rp_power_hero }
+	}
+
+	trigger = {
+		exists = scope:story
+		scope:story = { rp_power_story_hero_valid_trigger = yes }
+	}
+
+	option = {
+		name = rp_merit.4203.a
+		trigger = { gold >= 80 }
+		remove_short_term_gold = 80
+		scope:story.var:rp_power_hero = {
+			add_gold = 80
+			add_opinion = { target = root modifier = rp_merit_reward_gold_opinion }
+			rp_consume_merit_effect = { VALUE = 10 }
+		}
+		scope:story = { change_variable = { name = rp_power_suspicion add = 8 } }
+	}
+
+	option = {
+		name = rp_merit.4203.b
+		scope:story.var:rp_power_hero = {
+			add_character_modifier = { modifier = rp_hereditary_office_modifier years = 8 }
+			add_opinion = { target = root modifier = rp_privilege_granted_opinion }
+			rp_consume_merit_effect = { VALUE = 15 }
+		}
+		scope:story = { change_variable = { name = rp_power_suspicion add = 5 } }
+	}
+
+	option = {
+		name = rp_merit.4203.c
+		scope:story.var:rp_power_hero = {
+			add_character_flag = rp_unrewarded_land_claim
+			add_opinion = { target = root modifier = rp_privilege_refused_opinion }
+		}
+		scope:story = { change_variable = { name = rp_power_suspicion add = 25 } }
+	}
+}
+
+rp_merit.4300 = {
+	type = character_event
+	title = rp_merit.4300.t
+	theme = intrigue
+	override_background = { reference = throne_room_east }
+	desc = rp_merit.4300.desc
+	right_portrait = scope:story.var:rp_power_hero
+
+	immediate = {
+		scope:story.var:rp_power_hero = { save_scope_as = rp_power_hero }
+	}
+
+	trigger = {
+		exists = scope:story
+		scope:story = { rp_power_story_hero_valid_trigger = yes }
+	}
+
+	option = {
+		name = rp_merit.4300.a
+		trigger = { gold >= 150 }
+		remove_short_term_gold = 150
+		trigger_event = rp_merit.4403
+	}
+
+	option = {
+		name = rp_merit.4300.b
+		random_list = {
+			65 = { trigger_event = rp_merit.4401 }
+			35 = { trigger_event = rp_merit.4404 }
+		}
+	}
+
+	option = {
+		name = rp_merit.4300.c
+		random_list = {
+			50 = { trigger_event = rp_merit.4402 }
+			50 = { trigger_event = rp_merit.4404 }
+		}
+	}
+
+	option = {
+		name = rp_merit.4300.d
+		scope:story.var:rp_power_hero = {
+			add_opinion = { target = root modifier = rp_founding_settled_dispute_opinion }
+			change_variable = { name = rp_power_awareness add = -10 }
+		}
+		scope:story = {
+			change_variable = { name = rp_power_suspicion add = -30 }
+			set_variable = { name = rp_power_phase value = 2 }
+			set_variable = { name = rp_power_cycle value = 0 }
+		}
+	}
+}
+
+rp_merit.4401 = {
+	type = character_event
+	title = rp_merit.4401.t
+	theme = intrigue
+	override_background = { reference = throne_room_east }
+	desc = rp_merit.4401.desc
+	right_portrait = scope:story.var:rp_power_hero
+
+	immediate = {
+		scope:story.var:rp_power_hero = { save_scope_as = rp_power_hero }
+	}
+
+	trigger = {
+		exists = scope:story
+		exists = scope:story.var:rp_power_hero
+		scope:story.var:rp_power_hero = { is_alive = yes }
+	}
+
+	option = {
+		name = rp_merit.4401.a
+		if = {
+			limit = { scope:story.var:rp_power_hero = { is_imprisoned = no } }
+			imprison = {
+				target = scope:story.var:rp_power_hero
+				type = house_arrest
+			}
+		}
+		scope:story.var:rp_power_hero = {
+			death = {
+				death_reason = death_execution
+				killer = root
+			}
+		}
+		add_dread = 30
+		add_prestige = -150
+		scope:story = { end_story = yes }
+	}
+}
+
+rp_merit.4402 = {
+	type = character_event
+	title = rp_merit.4402.t
+	theme = intrigue
+	override_background = { reference = throne_room_east }
+	desc = rp_merit.4402.desc
+	right_portrait = scope:story.var:rp_power_hero
+
+	immediate = {
+		scope:story.var:rp_power_hero = { save_scope_as = rp_power_hero }
+	}
+
+	trigger = {
+		exists = scope:story
+		exists = scope:story.var:rp_power_hero
+		scope:story.var:rp_power_hero = { is_alive = yes }
+	}
+
+	option = {
+		name = rp_merit.4402.a
+		scope:story.var:rp_power_hero = {
+			death = {
+				death_reason = death_suicide
+				killer = root
+			}
+		}
+		add_stress = 30
+		add_prestige = -75
+		scope:story = { end_story = yes }
+	}
+}
+
+rp_merit.4403 = {
+	type = character_event
+	title = rp_merit.4403.t
+	theme = diplomacy
+	override_background = { reference = throne_room_east }
+	desc = rp_merit.4403.desc
+	right_portrait = scope:story.var:rp_power_hero
+
+	immediate = {
+		scope:story.var:rp_power_hero = { save_scope_as = rp_power_hero }
+	}
+
+	trigger = {
+		exists = scope:story
+		scope:story = { rp_power_story_hero_valid_trigger = yes }
+	}
+
+	option = {
+		name = rp_merit.4403.a
+		scope:story.var:rp_power_hero = {
+			add_gold = 150
+			add_character_modifier = { modifier = rp_power_retired_modifier years = 25 }
+			add_character_modifier = { modifier = rp_founding_house_modifier years = 50 }
+			add_opinion = { target = root modifier = rp_privilege_granted_opinion }
+			rp_add_founding_seniority_effect = { VALUE = 5 }
+			set_variable = { name = rp_merit_score value = 0 }
+		}
+		add_prestige = 150
+		scope:story = { end_story = yes }
+	}
+}
+
+rp_merit.4404 = {
+	type = character_event
+	title = rp_merit.4404.t
+	theme = war
+	override_background = { reference = battlefield }
+	desc = rp_merit.4404.desc
+	right_portrait = scope:story.var:rp_power_hero
+
+	immediate = {
+		scope:story.var:rp_power_hero = { save_scope_as = rp_power_hero }
+	}
+
+	trigger = {
+		exists = scope:story
+		scope:story = { rp_power_story_hero_valid_trigger = yes }
+	}
+
+	option = {
+		name = rp_merit.4404.a
+		rp_power_story_rebel_pressure_effect = yes
+		scope:story = { end_story = yes }
+	}
+}
+

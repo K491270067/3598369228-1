@@ -1,0 +1,276 @@
+﻿#############  吕国--姜姓 #############
+han3247={
+  name="xian1"
+  dynasty_house=house_xin382
+	religion="yinli" 
+	culture="shennongshi"
+  father=han3245
+
+  3446.1.1 = {
+		birth = yes
+	}
+  3470.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han3249={
+  name="nanming396"
+  dynasty_house=house_xin382
+	religion="yinli" 
+	culture="shennongshi"
+  father=han3247
+
+  3466.1.1 = {
+		birth = yes
+	}
+  3533.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han3250={
+  name="nanming687"#周武王为奖赏吕人的功劳，建立周朝后续封吕他为吕侯。
+  dynasty_house=house_xin382
+	religion="xizhouli" 
+	culture="zhou"
+  father=han3249
+
+  3531.1.1 = {
+		birth = yes
+	}
+  3600.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han3251={
+  name="nanming688"
+  dynasty_house=house_xin382
+	religion="xizhouli" 
+	culture="zhou"
+  father=han3250
+
+  3555.7.1 = {
+		birth = yes
+	}
+  3621.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han3252={
+  name="mao"
+  dynasty_house=house_xin382
+	religion="xizhouli" 
+	culture="zhou"
+  father=han3251
+
+  3580.1.1 = {
+		birth = yes
+	}
+  3651.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han3253={
+  name="liu1"
+  dynasty_house=house_xin382
+	religion="xizhouli" 
+	culture="zhou"
+  father=han3252
+
+  3640.1.1 = {
+		birth = yes
+	}
+  3702.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han3254={
+  name="yun5"
+  dynasty_house=house_xin382
+	religion="xizhouli" 
+	culture="zhou"
+  father=han3253
+
+  3700.1.1 = {
+		birth = yes
+	}
+  3752.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han3255={
+  name="fang3"
+  dynasty_house=house_xin382
+	religion="xizhouli" 
+	culture="zhou"
+  father=han3254
+
+  3751.1.1 = {
+		birth = yes
+	}
+  3795.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han3256={
+  name="nanming29"
+  dynasty_house=house_xin382
+	religion="xizhouli" 
+	culture="zhou"
+  father=han3255
+
+  3777.1.1 = {
+		birth = yes
+	}
+  3805.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han3257={
+  name="yang5"
+  dynasty_house=house_xin382
+	religion="xizhouli" 
+	culture="zhou"
+  father=han3256
+
+  3799.1.1 = {
+		birth = yes
+	}
+  3836.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han3258={
+  name="tan2"#平王东迁时期吕国君主
+  dynasty_house=house_xin382
+	religion="dongzhouli" 
+	culture="zhou"
+  father=han3257
+
+  3820.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han3259={
+  name="nanming689"
+  dynasty_house=house_xin382
+	religion="dongzhouli" 
+	culture="zhou"
+  father=han3258
+
+  3840.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han3260={
+  name="nanming359"#储君1号
+  dynasty_house=house_xin382
+	religion="dongzhouli" 
+	culture="zhou"
+  father=han3258
+
+  3841.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han3261={
+  name="quan1"#储君2号
+  dynasty_house=house_xin382
+	religion="dongzhouli" 
+	culture="zhou"
+  father=han3258
+
+  3842.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han3262={
+  name="nanming690"#储君3号
+  dynasty_house=house_xin382
+	religion="dongzhouli" 
+	culture="zhou"
+  father=han3258
+
+  3843.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han3263={
+  name="baoer"
+  dynasty_house=house_xin382
+	religion="dongzhouli" 
+	culture="zhou"
+  father=han3258
+  female=yes
+
+  3839.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han3264={
+  name="nai1"
+  dynasty_house=house_xin382
+	religion="dongzhouli" 
+	culture="zhou"
+  father=han3258
+  female=yes
+
+  3839.6.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han3265={
+  name="nvming15"
+  dynasty_house=house_xin382
+	religion="dongzhouli" 
+	culture="zhou"
+  father=han3258
+  female=yes
+
+  3839.7.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}

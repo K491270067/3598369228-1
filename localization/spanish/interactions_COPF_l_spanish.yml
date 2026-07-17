@@ -1,0 +1,26 @@
+﻿l_spanish:
+ deny_title_succession_interaction: "Deny Title Succession"
+ deny_title_succession_interaction_desc: "Refuse to recognize the succession of [recipient.GetShortUINameNoTooltip]'s heir to one of their [title|E]"
+ has_title_valid_for_deny_title_succession: "The target has a [title|E] whose succession can be denied"
+ restore_title_succession_interaction: "Restore Title Succession"
+ restore_title_succession_interaction_desc: "Restore recognition of the succession of [recipient.GetShortUINameNoTooltip]'s heir to one of their [title|E]"
+ has_denied_title_succession: "The target has a denied succession for a [title|E]"
+
+ pick_de_jure_above_instead: "This [title|E] will be included in its De Jure above [title|E]"
+
+ tt_can_only_influence_candidacy_within_same_realm: "[feudal] Administrative [ruler|E] can only influence characters within the same realm"
+ tt_target_succession_is_not_bureaucrat_promotion: "Target title cannot have $feudal_governor_promotion_succession_law$"
+
+ interaction_grant_vassal_autonomy_name: "Grant Vassal Autonomy"
+ interaction_grant_vassal_autonomy_desc: "Grant [recipient.GetShortUINameNoTooltip] autonomy to exchange for their loyalty and achieving special purposes."
+ autonomy_vassal_military: "March"
+ autonomy_vassal_tax: "Tax Farm"
+ autonomy_vassal_tributary: "Tributary"
+ autonomy_vassal_nominal: "Nominal Vassal"
+
+ tt_autonomous_vassal_support_war_forced: "[vassal|E] has obligation to join your [wars] : $VALUE|=+0$"
+ tt_autonomous_vassal_no_war_obligation: "[vassal|E] has no obligation to join your [wars] : $VALUE|=+0$"
+ tt_autonomous_vassal_army_strength_relative_to_liege: "[vassal|E]'s army strength relative to [liege|E]'s : $VALUE|=+0$"
+
+ tt_autonomous_vassal_already_in_all_wars: "[vassal|E] has already joined all [wars]"
+ tt_join_war_interaction_autonomous_vassal_need_obligation: "Needs #high [GetSubjectContractType( 'contract_feudal_vassal_support_war' ).GetObligationName( 'obligation_contract_feudal_vassal_support_war_forced' )]#! [vassal_contract|E] to be able to join [liege|E]'s [wars]"

@@ -1,0 +1,69 @@
+﻿##### d_moshi ############################
+
+### c_mo
+# MO
+1222 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+# WUYANG3
+1226 = {
+	holding = none
+}
+# FENGLI1
+1227 = {
+	holding = none
+}
+
+
+### c_wenan
+# WENAN
+1224 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_canlu
+# CANLU
+1220 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+# DONGPINGSHU
+1225 = {
+	holding = none
+}
+
+
+##### d_guoshi4 ############################
+
+### c_guo1
+# GUO1
+1223 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+# SHUZHOU1
+1228 = {
+	holding = none
+}
+
+
+### c_gaoyang
+# GAOYANG
+1216 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+# A1
+1217 = {
+	holding = none
+}
+
+

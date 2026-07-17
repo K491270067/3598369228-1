@@ -1,0 +1,212 @@
+#############  奴人 #############
+nuren1={
+  name="baiyuenan328"
+  dynasty=xin909
+	religion="guiwu" 
+	culture="baipu"
+
+  3749.1.1 = {
+		birth = yes
+	}
+  3802.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+nuren2={
+  name="baiyuenan367"
+  dynasty=xin909
+	religion="guiwu" 
+	culture="baipu"
+	father=nuren1
+
+  3795.1.1 = {
+		birth = yes
+	}
+  3842.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+nuren3={
+  name="baiyuenan384"
+  dynasty=xin909
+	religion="guiwu" 
+	culture="baipu"
+	father=nuren2
+
+  3818.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+nuren4={
+  name="baiyuenan385"
+  dynasty=xin909
+	religion="guiwu" 
+	culture="baipu"
+	father=nuren3
+
+  3836.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+nuren5={
+  name="baiyuenan386"
+  dynasty=xin909
+	religion="guiwu" 
+	culture="baipu"
+	father=nuren3
+
+  3837.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+nuren6={
+  name="baiyuenv173"#女一号
+  dynasty=xin909
+	religion="guiwu" 
+	culture="baipu"
+	father=nuren3
+  female=yes
+
+  3838.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+nuren7={
+  name="baiyuenv178"#女二号
+  dynasty=xin909
+	religion="guiwu" 
+	culture="baipu"
+	father=nuren3
+  female=yes
+
+  3840.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+####################
+nuren8={
+  name="baiyuenan492"
+  dynasty=xin910
+	religion="guiwu" 
+	culture="baipu"
+
+  3768.1.1 = {
+		birth = yes
+	}
+  3809.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+nuren9={
+  name="baiyuenan570"
+  dynasty=xin910
+	religion="guiwu" 
+	culture="baipu"
+	father=nuren8
+
+  3796.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+nuren10={
+  name="baiyuenan576"
+  dynasty=xin910
+	religion="guiwu" 
+	culture="baipu"
+	father=nuren9
+
+  3818.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+nuren11={
+  name="baiyuenan579"
+  dynasty=xin910
+	religion="guiwu" 
+	culture="baipu"
+	father=nuren9
+
+  3824.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+nuren12={
+  name="baiyuenv214"
+  dynasty=xin910
+	religion="guiwu" 
+	culture="baipu"
+	father=nuren9
+	female=yes
+
+  3829.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+nuren13={
+  name="baiyuenv222"
+  dynasty=xin910
+	religion="guiwu" 
+	culture="baipu"
+	father=nuren9
+	female=yes
+
+  3827.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}

@@ -1,0 +1,51 @@
+﻿##### d_kuangshi ############################
+
+### c_qichun
+# 
+2078 = {
+	holding = none
+}
+
+
+### c_jukou
+# 
+2079 = {
+	holding = none
+}
+
+
+### c_zhu6
+# 
+2080 = {
+	holding = none
+}
+
+
+### c_lanxi
+# 
+2081 = {
+	holding = none
+}
+
+
+### c_luotian
+# 
+2082 = {
+	holding = none
+}
+
+
+### c_qishan
+# 
+2083 = {
+	holding = none
+}
+
+
+### c_qikou
+# 
+2084 = {
+	holding = none
+}
+
+

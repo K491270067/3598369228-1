@@ -1,0 +1,31 @@
+﻿##### d_weizhangshi ############################
+
+### c_weizhang
+# WEIZHANG
+2840 = {
+	holding = none
+}
+
+
+### c_zhiduo
+# ZHIDUO
+3558 = {
+	holding = none
+}
+
+
+### c_zhongdaojun
+
+
+### c_yuli
+
+
+### c_danyu
+
+
+### c_nianyushi
+
+
+### c_chunbu
+
+

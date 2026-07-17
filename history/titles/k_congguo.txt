@@ -1,0 +1,101 @@
+﻿k_congguo = {
+3467.1.1 = {
+		holder = han5053
+	}
+3511.12.31 = {
+		holder = han5054
+	}
+3562.12.31 = {
+		holder = han5055
+	}
+3611.12.31 = {
+		holder = han5056
+	}
+3671.12.31 = {
+		holder = han5057
+	}
+3714.12.31 = {
+		holder = han5058
+	}
+3739.12.31 = {
+		holder = han5059
+	}
+3787.12.31 = {
+		holder = han5060
+	}
+3821.12.31 = {
+		holder = han5061
+	}
+3849.12.31 = {
+		government = tribal_government
+		change_development_level = 27
+	}
+}
+
+d_congshi = {
+3467.1.1 = {
+		liege = "k_congguo"
+		holder = han5053
+	}
+3511.12.31 = {
+		holder = han5054
+	}
+3562.12.31 = {
+		holder = han5055
+	}
+3611.12.31 = {
+		holder = han5056
+	}
+3671.12.31 = {
+		holder = han5057
+	}
+3714.12.31 = {
+		holder = han5058
+	}
+3739.12.31 = {
+		holder = han5059
+	}
+3787.12.31 = {
+		holder = han5060
+	}
+3821.12.31 = {
+		holder = han5061
+	}
+}
+
+d_luoshi1 = {
+3742.1.1 = {
+		liege = "k_congguo"
+		holder = congrencongguo1
+	}
+3796.12.31 = {
+		holder = congrencongguo2
+	}
+3821.12.31 = {
+		holder = congrencongguo3
+	}
+3840.12.31 = {
+		holder = congrencongguo4
+	}
+3849.1.1 = {
+		change_development_level = 26
+		government = tribal_government
+	}
+}
+
+d_pushi1 = {
+3749.1.1 = {
+		liege = "k_congguo"
+		holder = congrencongguo8
+	}
+3792.12.31 = {
+		holder = congrencongguo9
+	}
+3829.12.31 = {
+		holder = congrencongguo10
+	}
+3849.1.1 = {
+		change_development_level = 25
+		government = tribal_government
+	}
+}

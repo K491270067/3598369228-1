@@ -1,0 +1,281 @@
+﻿########################################
+# 绀煎穿涔愬潖 - 浼犺绫诲瀷
+########################################
+
+# 鏂板ぉ鍛?
+saas_new_mandate = {
+	color = hsv{ 0.14 0.8 0.9 }
+
+	is_valid_protagonist = {
+		is_alive = yes
+		is_ruler = yes
+	}
+
+	quality = {
+		famed = {
+			spread_chance = {
+				value = 5
+			}
+			max_provinces = 30
+			owner_cost = {
+				prestige = 1
+			}
+			promoter_cost = {
+				prestige = 0.5
+			}
+			creation_cost = {
+				prestige = 500
+			}
+			upgrade_cost = {
+				prestige = 1000
+			}
+			removal_duration = {
+				years = 25
+			}
+			impact = {
+				owner_modifier = {
+					monthly_prestige_gain_mult = 0.15
+					general_opinion = 10
+				}
+				province_modifier = {
+					popular_opinion = 10
+				}
+				on_complete = {
+					add_legitimacy = massive_legitimacy_gain
+					add_prestige = 1000
+				}
+			}
+			ai_chance = {
+				create = 0
+				promote = 0
+				take_unowned = 0
+				upgrade = 0
+				complete = 1
+			}
+		}
+	}
+}
+
+# 鍛ㄧ帇鏈濅腑鍏?
+saas_zhou_restoration = {
+	color = hsv{ 0.6 0.7 0.9 }
+
+	is_valid_protagonist = {
+		is_alive = yes
+		is_ruler = yes
+	}
+
+	quality = {
+		famed = {
+			spread_chance = {
+				value = 5
+			}
+			max_provinces = 30
+			owner_cost = {
+				prestige = 1
+			}
+			promoter_cost = {
+				prestige = 0.5
+			}
+			creation_cost = {
+				prestige = 500
+			}
+			upgrade_cost = {
+				prestige = 1000
+			}
+			removal_duration = {
+				years = 25
+			}
+			impact = {
+				owner_modifier = {
+					monthly_prestige_gain_mult = 0.15
+					monthly_piety_gain_mult = 0.15
+					general_opinion = 10
+				}
+				province_modifier = {
+					popular_opinion = 10
+					development_growth_factor = 0.1
+				}
+				on_complete = {
+					add_legitimacy = massive_legitimacy_gain
+					add_prestige = 1000
+				}
+			}
+			ai_chance = {
+				create = 0
+				promote = 0
+				take_unowned = 0
+				upgrade = 0
+				complete = 1
+			}
+		}
+	}
+}
+
+# 鍛ㄥ叕鍦ㄤ笘
+saas_duke_of_zhou_reborn = {
+	color = hsv{ 0.55 0.6 0.85 }
+
+	is_valid_protagonist = {
+		is_alive = yes
+		is_ruler = yes
+	}
+
+	quality = {
+		famed = {
+			spread_chance = {
+				value = 5
+			}
+			max_provinces = 25
+			owner_cost = {
+				prestige = 1
+			}
+			promoter_cost = {
+				prestige = 0.5
+			}
+			creation_cost = {
+				prestige = 500
+			}
+			upgrade_cost = {
+				prestige = 1000
+			}
+			removal_duration = {
+				years = 25
+			}
+			impact = {
+				owner_modifier = {
+					monthly_prestige_gain_mult = 0.2
+					monthly_piety_gain_mult = 0.1
+					general_opinion = 15
+					vassal_opinion = 10
+				}
+				province_modifier = {
+					popular_opinion = 15
+				}
+				on_complete = {
+					add_legitimacy = massive_legitimacy_gain
+					add_prestige = 1000
+				}
+			}
+			ai_chance = {
+				create = 0
+				promote = 0
+				take_unowned = 0
+				upgrade = 0
+				complete = 1
+			}
+		}
+	}
+}
+
+# 涓栫晫鎷晳鑰?
+saas_world_savior = {
+	color = hsv{ 0.08 0.9 0.9 }
+
+	is_valid_protagonist = {
+		is_alive = yes
+		is_ruler = yes
+	}
+
+	quality = {
+		famed = {
+			spread_chance = {
+				value = 6
+			}
+			max_provinces = 40
+			owner_cost = {
+				prestige = 1
+			}
+			promoter_cost = {
+				prestige = 0.5
+			}
+			creation_cost = {
+				prestige = 750
+			}
+			upgrade_cost = {
+				prestige = 1500
+			}
+			removal_duration = {
+				years = 30
+			}
+			impact = {
+				owner_modifier = {
+					monthly_prestige_gain_mult = 0.3
+					general_opinion = 15
+					dread_gain_mult = 0.2
+				}
+				province_modifier = {
+					popular_opinion = 5
+				}
+				on_complete = {
+					add_legitimacy = massive_legitimacy_gain
+					add_prestige = 1500
+				}
+			}
+			ai_chance = {
+				create = 0
+				promote = 0
+				take_unowned = 0
+				upgrade = 0
+				complete = 1
+			}
+		}
+	}
+}
+
+# 璇稿寰佹湇鑰?
+saas_huaxia_conqueror = {
+	color = hsv{ 0.0 0.85 0.85 }
+
+	is_valid_protagonist = {
+		is_alive = yes
+		is_ruler = yes
+	}
+
+	quality = {
+		famed = {
+			spread_chance = {
+				value = 5
+			}
+			max_provinces = 35
+			owner_cost = {
+				prestige = 1
+			}
+			promoter_cost = {
+				prestige = 0.5
+			}
+			creation_cost = {
+				prestige = 500
+			}
+			upgrade_cost = {
+				prestige = 1000
+			}
+			removal_duration = {
+				years = 25
+			}
+			impact = {
+				owner_modifier = {
+					monthly_prestige_gain_mult = 0.2
+					dread_gain_mult = 0.1
+					general_opinion = -5
+					opinion_of_different_faith = -15
+				}
+				province_modifier = {
+					popular_opinion = -5
+					levy_reinforcement_rate = 0.15
+				}
+				on_complete = {
+					add_legitimacy = massive_legitimacy_gain
+					add_prestige = 1000
+				}
+			}
+			ai_chance = {
+				create = 0
+				promote = 0
+				take_unowned = 0
+				upgrade = 0
+				complete = 1
+			}
+		}
+	}
+}

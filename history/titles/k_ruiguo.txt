@@ -1,0 +1,59 @@
+﻿d_pangshi = {
+	3574.1.1 = {
+		liege = "k_ruiguo"
+		holder = han1980
+	}
+	3617.12.31 = {
+		holder = han1981
+	}
+	3646.12.31 = {
+		holder = han1982
+	}
+	3677.12.31 = {
+		holder = han1983
+	}
+	3708.12.31 = {
+		holder = han1984
+	}
+	3743.12.31 = {
+		holder = han1985
+	}
+	3800.12.31 = {
+		holder = han1986
+	}
+	3827.2.1 = {
+		holder = jixingruiguo1
+	}
+	3849.1.1 = {
+		change_development_level = 28
+		government = feudal_admin_government
+	}
+}
+k_ruiguo = {
+	3574.1.1 = {
+		liege = "e_zhoutianzi"
+		holder = han1980
+	}
+	3617.12.31 = {
+		holder = han1981
+	}
+	3646.12.31 = {
+		holder = han1982
+	}
+	3677.12.31 = {
+		holder = han1983
+	}
+	3708.12.31 = {
+		holder = han1984
+	}
+	3743.12.31 = {
+		holder = han1985
+	}
+	3800.12.31 = {
+		holder = han1986
+	}
+	3849.1.1 = {
+		change_development_level = 30
+		government = feudal_admin_government
+	}
+}

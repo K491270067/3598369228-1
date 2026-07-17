@@ -1,0 +1,66 @@
+﻿##### d_yuwushi ############################
+
+### c_xuwu
+# XUWU
+1137 = {
+	culture = chidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+# SI
+1139 = {
+	holding = none
+}
+
+
+### c_duandao
+# DUANDAO
+1161 = {
+	culture = chidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+
+
+### c_quegong
+# QUEGONG
+2517 = {
+	culture = chidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+
+
+##### d_wugaoshi ############################
+
+### c_wugao
+# WUGAO
+2520 = {
+	culture = chidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+# KUI1
+2521 = {
+	holding = none
+}
+
+
+### c_xiangyuan
+# XIANGYUAN
+1140 = {
+	culture = chidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+
+
+### c_quliang
+# QULIANG
+1162 = {
+	culture = chidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+
+

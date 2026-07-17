@@ -1,0 +1,12 @@
+﻿# 目标角色是否拥有省份法律？
+macro = {
+	description = "Does the character have provincial laws?"
+	definition = "ProvincialLawCharacter(TargetCharacter)"
+	replace_with = "Or( Or(TargetCharacter.GetGovernment.IsType( 'administrative_government' ),TargetCharacter.GetGovernment.IsType( 'celestial_government' )), GetScriptedGui('province_law_visibility_trigger').IsShown(GuiScope.SetRoot(Character.MakeScope).End) )"
+}
+# 省份法律是否只有最高领主可以改动？ #COPF新增
+macro = {
+	description = "Only top liege can change provincial laws?"
+	definition = "TopLiegeProvincialLawCharacter(TargetCharacter)"
+	replace_with = "GetScriptedGui('top_liege_only_province_law_trigger').IsShown(GuiScope.SetRoot(Character.MakeScope).End)"
+}

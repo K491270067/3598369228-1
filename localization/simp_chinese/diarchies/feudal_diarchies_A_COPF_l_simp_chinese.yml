@@ -1,0 +1,22 @@
+﻿l_simp_chinese:
+# feudal_titular_liege_regency: "[Character.Custom('GetFeudalTitularLiegeRegencyTypeName')]"
+# feudal_titular_liege_regency_diarchy_type: "[GuiScope.SetRoot(Character.MakeScope).Custom('GetFeudalTitularLiegeRegencyTypeName')]"
+# feudal_titular_liege_regency_diarch_title: "[GuiScope.SetRoot(Character.MakeScope).Custom('GetFeudalTitularLiegeRegencyTypeName')]"
+ feudal_titular_liege_regency: "宫相"
+ feudal_titular_liege_regency_diarchy_type: "宫相"
+ feudal_titular_liege_regency_diarch_title: "宫相"
+
+ FEUDAL_TITULAR_LIEGE_REGENCY_DEFAULT: "实权摄政"
+ FEUDAL_TITULAR_LIEGE_REGENCY_FRANKISH: "宫相"
+
+# feudal_subject_supervisor: "[Character.Custom('GetFeudalSubjectSupervisorTypeName')]"
+# feudal_subject_supervisor_diarchy_type: "[GuiScope.SetRoot(Character.MakeScope).Custom('GetFeudalSubjectSupervisorTypeName')]"
+# feudal_subject_supervisor_diarch_title: "[GuiScope.SetRoot(Character.MakeScope).Custom('GetFeudalSubjectSupervisorTypeName')]"
+ feudal_subject_supervisor: "监察官"
+ feudal_subject_supervisor_diarchy_type: "监察官"
+ feudal_subject_supervisor_diarch_title: "监察官"
+
+ FEUDAL_SUBJECT_SUPERVISOR_DEFAULT: "监察官"
+ FEUDAL_SUBJECT_SUPERVISOR_FRANKISH: "监察官"
+
+ tt_liege_is_titular: "[liege|E]是名义君主"

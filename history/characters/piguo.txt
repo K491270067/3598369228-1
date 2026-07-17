@@ -1,0 +1,313 @@
+﻿############閭冲浗 濡婂閭虫皬
+piguo1={
+  name="nanming259"#
+  dynasty=xin471
+	religion="yinli" 
+	culture="yinshang"
+  father=han2156
+  
+  3490.1.1 = {
+		birth = yes
+	}
+  3554.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+piguo2={
+  name="nanming283"
+  dynasty_house=house_xin472
+	religion="xizhouli" 
+	culture="lu"
+	father=piguo1
+  
+  3551.1.1 = {
+		birth = yes
+	}
+  3591.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+piguo3={
+  name="nanming295"
+  dynasty_house=house_xin472
+	religion="xizhouli" 
+	culture="lu"
+	father=piguo2
+  
+  3589.1.1 = {
+		birth = yes
+	}
+  3623.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+piguo4={
+  name="nanming315"
+  dynasty_house=house_xin472
+	religion="xizhouli" 
+	culture="lu"
+	father=piguo3
+  
+  3608.1.1 = {
+		birth = yes
+	}
+  3657.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+piguo5={
+  name="nanming332"
+  dynasty_house=house_xin472
+	religion="xizhouli" 
+	culture="lu"
+	father=piguo4
+  
+  3634.1.1 = {
+		birth = yes
+	}
+  3697.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+piguo6={
+  name="nanming344"
+  dynasty_house=house_xin472
+	religion="xizhouli" 
+	culture="lu"
+	father=piguo5
+  
+  3668.1.1 = {
+		birth = yes
+	}
+  3713.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+piguo7={
+  name="nanming352"
+  dynasty_house=house_xin472
+	religion="xizhouli" 
+	culture="lu"
+	father=piguo6
+  
+  3697.1.1 = {
+		birth = yes
+	}
+  3759.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+piguo8={
+  name="nanming362"
+  dynasty_house=house_xin472
+	religion="xizhouli" 
+	culture="lu"
+	father=piguo7
+  
+  3729.1.1 = {
+		birth = yes
+	}
+  3790.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+piguo9={
+  name="nanming377"
+  dynasty_house=house_xin472
+	religion="xizhouli" 
+	culture="lu"
+	father=piguo8
+  
+  3768.1.1 = {
+		birth = yes
+	}
+  3807.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+piguo10={
+  name="nanming392"#钖涘悍渚紝骞崇帇涓滆縼鏃惰枦鍥藉浗鍚涳紝鐧诲満鏃?0宀?
+  dynasty_house=house_xin472
+	religion="xizhouli" 
+	culture="lu"
+	father=piguo9
+  
+  3790.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+piguo11={
+  name="nanming424"
+  dynasty_house=house_xin472
+	religion="xizhouli" 
+	culture="lu"
+	father=piguo10
+  
+  3825.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+piguo12={
+  name="nanming434"
+  dynasty_house=house_xin472
+	religion="xizhouli" 
+	culture="lu"
+	father=piguo10
+  
+  3827.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+piguo13={
+  name="nanming451"
+  dynasty_house=house_xin472
+	religion="xizhouli" 
+	culture="lu"
+	father=piguo10
+  
+  3829.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+piguo14={
+  name="nvming181"#缂栭€犵殑濂?鍙?
+  dynasty_house=house_xin472
+	religion="xizhouli" 
+	culture="lu"
+	father=piguo10
+  female=yes
+  
+  3830.3.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+piguo15={
+  name="nvming183"#缂栭€犵殑濂?鍙?
+  dynasty_house=house_xin472
+	religion="xizhouli" 
+	culture="lu"
+	father=piguo10
+  female=yes
+  
+  3831.3.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+###########濂氭皬
+piguo16={
+  name="xia3"
+  dynasty_house=house_baijia45
+	religion="xizhouli" 
+	culture="lu"
+	father=piguo8
+  
+  3789.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+piguo17={
+  name="zi1"
+  dynasty_house=house_baijia45
+	religion="xizhouli" 
+	culture="lu"
+	father=piguo16
+  
+  3815.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+piguo18={
+  name="nanming14"
+  dynasty_house=house_baijia45
+	religion="xizhouli" 
+	culture="lu"
+	father=piguo16
+  
+  3816.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+piguo19={
+  name="nanming32"
+  dynasty_house=house_baijia45
+	religion="xizhouli" 
+	culture="lu"
+	father=piguo17
+  
+  3833.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+piguo20={
+  name="nvming175"
+  dynasty_house=house_baijia45
+	religion="xizhouli" 
+	culture="lu"
+	father=piguo18
+	female=yes
+  
+  3834.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+} 

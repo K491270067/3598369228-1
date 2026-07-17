@@ -1,0 +1,246 @@
+﻿##############浣欐棤鎴?
+yuwurong1={
+  name="lian"
+  dynasty=xin547
+  culture="chidi"
+  religion="beidifangling"
+  father=han2079
+
+  3714.1.1 = {
+		birth = yes
+	}
+  3766.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+yuwurong2={
+  name="fen"
+  dynasty_house=house_xin548
+  culture="chidi"
+  religion="beidifangling"
+  father=yuwurong1
+
+  3751.1.1 = {
+		birth = yes
+	}
+  3803.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+yuwurong3={
+  name="mo"
+  dynasty_house=house_xin548
+  culture="chidi"
+  religion="beidifangling"
+  father=yuwurong2
+
+  3789.1.1 = {
+		birth = yes
+	}
+  3834.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+yuwurong4={
+  name="she"#寮€灞€
+  dynasty_house=house_xin548
+  culture="chidi"
+  religion="beidifangling"
+  father=yuwurong3
+
+  3815.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+yuwurong5={
+  name="ren"
+  dynasty_house=house_xin548
+  culture="chidi"
+  religion="beidifangling"
+  father=yuwurong4
+
+  3833.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+yuwurong6={
+  name="qi1"
+  dynasty_house=house_xin548
+  culture="chidi"
+  religion="beidifangling"
+  father=yuwurong4  
+
+  3834.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+yuwurong7={
+  name="nvming100"
+  dynasty_house=house_xin548
+  culture="chidi"
+  religion="beidifangling"
+  father=yuwurong4
+  female=yes
+
+  3835.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+yuwurong8={
+  name="nvming108"
+  dynasty_house=house_xin548
+  culture="chidi"
+  religion="beidifangling"
+  father=yuwurong4
+  female=yes
+
+  3836.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+###########鏃犵殝姘?
+yuwurong9={
+  name="jian1"
+  dynasty_house=house_xin549
+  culture="chidi"
+  religion="beidifangling"
+  father=yuwurong1
+
+  3752.1.1 = {
+		birth = yes
+	}
+  3803.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+yuwurong10={
+  name="heng1"
+  dynasty_house=house_xin549
+  culture="chidi"
+  religion="beidifangling"
+  father=yuwurong9
+
+  3789.1.1 = {
+		birth = yes
+	}
+  3834.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+yuwurong11={
+  name="zaikong"#寮€灞€
+  dynasty_house=house_xin549
+  culture="chidi"
+  religion="beidifangling"
+  father=yuwurong10
+
+  3815.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+yuwurong13={
+  name="gaoyu"
+  dynasty_house=house_xin549
+  culture="chidi"
+  religion="beidifangling"
+  father=yuwurong11
+
+  3833.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+yuwurong14={
+  name="tui1"
+  dynasty_house=house_xin549
+  culture="chidi"
+  religion="beidifangling"
+  father=yuwurong11 
+
+  3834.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+yuwurong15={
+  name="nvming126"
+  dynasty_house=house_xin549
+  culture="chidi"
+  religion="beidifangling"
+  father=yuwurong11
+  female=yes
+
+  3835.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+yuwurong16={
+  name="nvming138"
+  dynasty_house=house_xin549
+  culture="chidi"
+  religion="beidifangling"
+  father=yuwurong13
+  female=yes
+
+  3836.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}

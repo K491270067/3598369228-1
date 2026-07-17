@@ -1,0 +1,33 @@
+﻿##### d_gongshi ############################
+
+### c_kankan
+# KANKAN
+776 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+### c_huang3
+# HUANG3
+777 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+### c_gong
+# GONG
+783 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+# XUN1
+784 = {
+	holding = none
+}
+
+

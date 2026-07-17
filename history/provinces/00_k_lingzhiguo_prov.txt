@@ -1,0 +1,114 @@
+﻿##### d_lingzhishi ############################
+
+### c_yanze
+# YANZE
+2559 = {
+	holding = none
+}
+# PINGYIN2
+2570 = {
+	holding = none
+}
+
+
+### c_lingzhi
+
+
+### c_lingpisai
+# LINGPISAI
+2562 = {
+	holding = none
+}
+# WANQIU1
+2569 = {
+	holding = none
+}
+# LEI
+2572 = {
+	holding = none
+}
+
+
+### c_zhizhong
+
+
+### c_haiyang2
+# HAIYANG2
+2564 = {
+	holding = none
+}
+# ZHIZHONG
+2563 = {
+	holding = none
+}
+# LINGZHI
+2561 = {
+	holding = none
+}
+
+
+### c_lean2
+# LEAN2
+2565 = {
+	holding = none
+}
+# NUANJIN
+2566 = {
+	holding = none
+}
+
+
+### c_nuanjin
+
+
+### c_changcheng1
+# CHANGCHENG1
+2567 = {
+	holding = none
+}
+# RONGJIA
+2568 = {
+	holding = none
+}
+# LI24
+2571 = {
+	holding = none
+}
+
+
+### c_rongjia
+
+
+### c_wanqiu1
+
+
+### c_pingyin2
+
+
+### c_li24
+
+
+### c_lei
+
+
+### c_shicheng2
+# SHICHENG2
+2573 = {
+	holding = none
+}
+# TUYIN
+2574 = {
+	holding = none
+}
+
+
+### c_tuyin
+
+
+### c_hanerzhuang
+# HANERZHUANG
+2634 = {
+	holding = none
+}
+
+

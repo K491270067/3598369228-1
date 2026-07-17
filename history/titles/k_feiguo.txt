@@ -1,0 +1,26 @@
+﻿d_xianqiushi = {
+	3811.10.1 = {
+		liege = "k_feiguo"
+		holder = luguo5
+	}
+	3812.10.1 = {
+		holder = xianqiushi1
+	}
+	3849.1.1 = {
+		change_development_level = 28
+		government = feudal_admin_government
+	}
+}
+k_feiguo = {
+	3811.10.1 = {
+		liege = "e_zhoutianzi"
+		holder = luguo5
+	}
+	3849.1.1 = {
+		change_development_level = 29
+		government = feudal_admin_government
+	}
+	3897.11.1 = {
+		holder = luguo6
+	}
+}

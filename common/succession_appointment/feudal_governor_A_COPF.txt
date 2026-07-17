@@ -1,0 +1,880 @@
+﻿feudal_governor_appointment = {
+	default_candidates = { holder_close_family holder_councilor holder_court_position direct_subject landed_vassal unlanded_noble_close_family }
+
+	allow_children = yes
+	allow_same_tier_candidates = no
+
+	candidate_score = {
+		value = {
+			# 基础 - 基于能力
+			add = {
+				value = martial
+				add = diplomacy
+				add = stewardship
+				add = intrigue
+				add = learning
+				if = {
+					limit = {
+						scope:title.holder = { subject_contract_has_flag = candidate_preference_talent_only }
+					}
+					multiply = 2
+				}
+				else = {
+					multiply = 1
+				}
+				desc = sum_of_skills_desc
+			}
+			
+			# 已经有头衔
+			if = { #是法理下属有地封臣
+				limit = {
+					AND = {
+						is_landed = yes
+						scope:title ?= {
+							is_de_jure_liege_or_above_target = root.primary_title
+						}
+					}	
+				}
+				if = {
+					limit = {
+						scope:title.holder = {
+							OR = {
+								subject_contract_has_flag = candidate_preference_powerful_gentry
+								subject_contract_has_flag = candidate_preference_local_talent
+							}
+							OR = {
+								government_has_flag = government_is_feudal
+								government_has_flag = government_is_feudal_admin
+							}
+						}
+					}
+					add = {
+						value = 20
+						desc = tt_is_landed_dejure_direct_vassal
+					}
+				}
+				else = {
+					add = {
+						value = 10
+						desc = tt_is_landed_dejure_direct_vassal
+					}
+				}
+			}
+			else_if = { #是下属有地封臣
+				limit = {
+					AND = {
+						is_landed = yes
+						scope:title.holder ?= root.liege
+					}
+				}
+				if = {
+					limit = {
+						scope:title.holder = {
+							subject_contract_has_flag = candidate_preference_powerful_gentry
+							OR = {
+								government_has_flag = government_is_feudal
+								government_has_flag = government_is_feudal_admin
+							}
+						}
+					}
+					add = {
+						value = 10
+						desc = tt_is_landed_direct_vassal
+					}
+				}
+				else = {
+					subtract = {
+						value = 5
+						desc = tt_is_landed_direct_vassal
+					}
+				}
+			}
+			else_if = { #是辖区外有地领主
+				limit = { is_landed = yes }
+				if = {
+					limit = { is_governor = yes }
+					multiply = {
+						value = 0
+					}
+					add = {
+						value = -1000
+						desc = already_a_governor_tt
+					}
+				}
+				else = {
+					add = {
+						value = -1000
+						desc = tt_is_landed_other_ruler
+					}
+				}
+				
+			}
+			# 内阁成员
+			if = {
+				limit = {
+					scope:title.holder ?= {
+						any_councillor ?= { this = root }
+					}
+				}
+				if = {
+					limit = {
+						scope:title.holder ?= { subject_contract_has_flag = candidate_preference_local_talent }
+					}
+					add = {
+						value = 50
+						desc = councillor_position_governor_desc
+					}
+				}
+				else = {
+					add = {
+						value = 10
+						desc = councillor_position_governor_desc
+					}
+				}
+			}
+			# 宫廷职位
+			if = {
+				limit = {
+					scope:title.holder ?= {
+						any_court_position_holder ?= {
+							this = root
+						}
+					}
+				}
+				if = {
+					limit = {
+						scope:title.holder = { subject_contract_has_flag = candidate_preference_local_talent }
+					}
+					add = {
+						value = 25
+						desc = court_position_succession_governor_desc
+					}
+				}
+				else = {
+					add = {
+						value = 5
+						desc = court_position_succession_governor_desc
+					}
+				}
+			}
+			# 本地世族
+			if = {
+				limit = {
+					any_held_title = {
+						is_noble_family_title = yes
+					}
+					domicile.domicile_location.county.de_jure_liege ?= scope:title.holder.capital_county.de_jure_liege
+				}
+				add = {
+					value = 20
+					desc = tt_is_local_gentry
+				}
+			}
+			else_if = {
+				limit = {
+					any_close_family_member = {
+						house ?= prev.house
+						any_held_title = {
+							is_noble_family_title = yes
+						}
+						domicile.domicile_location.county.de_jure_liege ?= scope:title.holder.capital_county.de_jure_liege
+					}
+				}
+				add = {
+					value = 10
+					desc = tt_is_local_gentry
+				}
+			}
+			# 信仰敌对程度
+			if = {
+				limit = {
+					scope:title.holder.primary_title.state_faith ?= {
+						faith_hostility_level = {
+							target = root.faith
+							value = faith_astray_level
+						}
+					}
+				} #Change to faith acceptance
+				subtract = {
+					value = 10
+					desc = astray_faith_succession_desc
+				}
+			}
+			if = {
+				limit = {
+					scope:title.holder.primary_title.state_faith ?= {
+						faith_hostility_level = {
+							target = root.faith
+							value = faith_hostile_level
+						}
+					}
+				} #Change to faith acceptance
+				subtract = {
+					value = 25
+					desc = hostile_faith_succession_desc
+				}
+			}
+			if = {
+				limit = {
+					scope:title.holder.primary_title.state_faith ?= {
+						faith_hostility_level = {
+							target = root.faith
+							value >= faith_evil_level
+						}
+					}
+				} #Change to faith acceptance
+				subtract = {
+					value = 50
+					desc = evil_faith_sucession_desc
+				}
+			}
+			# 宣称
+			if = {
+				limit = { has_strong_claim_on = scope:title }
+				add = {
+					value = 10
+					desc = title_claim_desc
+				}
+			}
+			else_if = {
+				limit = { has_weak_claim_on = scope:title }
+				add = {
+					value = 5
+					desc = title_weak_claim_desc
+				}
+			}
+			# 目标首都民众好感度
+			if = {
+				limit = { is_landed = yes }
+				add = {
+					value = {
+						value = capital_county.county_holder_opinion
+						multiply = 0.25
+					}
+					desc = county_holder_opinion_desc
+				}
+			}
+			# 技能
+			if = {
+				limit = { has_perk = ducal_conquest_perk }
+				add = {
+					value = 30
+					desc = ducal_conquest_perk_name_desc
+				}
+			}
+			# 影响力等级
+			if = {
+				limit = {
+					influence_level = 0
+				}
+				subtract = {
+					value = 10
+					desc = "[influence_level|E]"
+				}
+			}
+			if = {
+				limit = {
+					influence_level >= 2
+				}
+				add = {
+					value = 10
+					multiply = {
+						value = influence_level
+						subtract = 1 # Base value should start at 2
+					}
+					desc = "[influence_level|E]"
+				}
+			}		
+			# 虔诚等级 (from admin family attribute)
+			if = {
+				limit = {
+					piety_level >= 1
+					house ?= {
+						OR = {
+							has_house_power_parameter = candidate_score_per_piety_level_1
+							has_house_power_parameter = candidate_score_per_piety_level_2
+							has_house_power_parameter = candidate_score_per_piety_level_3
+						}
+					}
+				}
+				add = {
+					value = 0
+					add = {
+						if = {
+							limit = {
+								house ?= { has_house_power_parameter = candidate_score_per_piety_level_3 }
+							}
+							add = candidate_score_per_piety_level_3_value
+						}
+						else_if = {
+							limit = {
+								house ?= { has_house_power_parameter = candidate_score_per_piety_level_2 }
+							}
+							add = candidate_score_per_piety_level_2_value
+						}
+						else = {
+							add = candidate_score_per_piety_level_1_value
+						}
+					}
+					multiply = piety_level
+					desc = "family_attribute_desc"
+				}
+			}
+			# 文化
+			if = { #是持有者领主的文化
+				limit = { culture ?= scope:title.holder.liege.culture }
+				add = {
+					value = 10
+					desc = tt_is_liege_culture
+				}
+			}
+			else_if = { #是本地文化
+				limit = { culture ?= scope:title.holder.capital_county.culture }
+				add = {
+					value = 5
+					desc = of_local_culture_succession_desc
+				}
+			}
+			else = { #是异族文化
+				add = {
+					value = -10
+					desc = tt_is_foreign_culture
+				}
+			}
+			# 是当前总督的亲属
+			if = { # 是近亲
+				limit = {
+					scope:title.holder ?= { is_close_family_of = root }
+				}
+				if = {
+					limit = {
+						scope:title.holder = { subject_contract_has_flag = candidate_preference_powerful_gentry }
+					}
+					add = {
+						value = 20
+						desc = "close_family_holder_desc"
+					}
+				}
+				else = {
+					add = {
+						value = 10
+						desc = "close_family_holder_desc"
+					}
+				}
+			}
+			else_if = { # 是外戚
+				limit = {
+					scope:title.holder ?= {
+						any_spouse = { is_close_family_of = root }
+						NOT = { is_close_family_of = root }
+					}
+				}
+				if = {
+					limit = {
+						scope:title.holder = { subject_contract_has_flag = candidate_preference_powerful_gentry }
+					}
+					add = {
+						value = 10
+						desc = "close_family_married_to_holder_desc"
+					}
+				}
+				else = {
+					add = {
+						value = 5
+						desc = "close_family_married_to_holder_desc"
+					}
+				}
+			}
+			# 是领主的亲属
+			if = { # 是近亲
+				limit = {
+					scope:title.holder.liege ?= { is_close_family_of = root }
+				}
+				if = {
+					limit = {
+						scope:title.holder = { subject_contract_has_flag = candidate_preference_favor_nepotism }
+					}
+					add = {
+						value = 50
+						desc = tt_is_liege_close_family
+					}
+				}
+				else = {
+					add = {
+						value = 10
+						desc = tt_is_liege_close_family
+					}
+				}
+			}
+			else_if = { # 是远亲
+				limit = {
+					scope:title.holder.liege ?= { is_extended_family_of = root }
+				}
+				if = {
+					limit = {
+						scope:title.holder = { subject_contract_has_flag = candidate_preference_favor_nepotism }
+					}
+					add = {
+						value = 25
+						desc = tt_is_liege_extended_family
+					}
+				}
+				else = {
+					add = {
+						value = 5
+						desc = tt_is_liege_extended_family
+					}
+				}
+			}
+			else_if = { # 是外戚
+				limit = {
+					scope:title.holder.liege ?= {
+						any_spouse = { is_close_family_of = root }
+						NOT = { is_close_family_of = root }
+					}
+				}
+				if = {
+					limit = {
+						scope:title.holder = { subject_contract_has_flag = candidate_preference_favor_nepotism }
+					}
+					add = {
+						value = 10
+						desc = tt_is_liege_spouse_close_family
+					}
+				}
+				else = {
+					add = {
+						value = 5
+						desc = tt_is_liege_spouse_close_family
+					}
+				}
+			}
+			# 是当前总督的朋友
+			if = {
+				limit = {
+					scope:title.holder ?= { has_relation_best_friend = root }
+				}
+				add = {
+					value = 15
+					desc = governor_best_friend_desc
+				}
+			}
+			else_if = {
+				limit = {
+					scope:title.holder ?= { has_relation_friend = root }
+				}
+				add = {
+					value = 10
+					desc = governor_friend_desc
+				}
+			}
+			# 是当前总督领主的朋友
+			if = { # 最好的朋友
+				limit = {
+					scope:title.holder.liege ?= { has_relation_best_friend = root }
+				}
+				if = {
+					limit = {
+						scope:title.holder = { subject_contract_has_flag = candidate_preference_favor_nepotism }
+					}
+					add = {
+						value = 40
+						desc = tt_is_liege_best_friend
+					}
+				}
+				else = {
+					add = {
+						value = 0
+						desc = tt_is_liege_best_friend
+					}
+				}
+			}
+			else_if = { # 普通朋友
+				limit = {
+					scope:title.holder.liege ?= { has_relation_friend = root }
+				}
+				if = {
+					limit = {
+						scope:title.holder = { subject_contract_has_flag = candidate_preference_favor_nepotism }
+					}
+					add = {
+						value = 20
+						desc = tt_is_liege_friend
+					}
+				}
+				else = {
+					add = {
+						value = 0
+						desc = tt_is_liege_friend
+					}
+				}
+			}
+			# 是领主的摄政
+			if = {
+				limit = { scope:title.holder.diarch ?= root }
+				add = {
+					value = scope:title.holder.diarchy_swing
+					desc = governor_diarch_desc
+				}
+			}
+			# 阴谋
+			if = {
+				limit = { has_character_modifier = scheme_slandered_modifier }
+				add = {
+					value = slander_appointment_score_value
+					desc = scheme_slandered_modifier
+				}
+			}
+			if = {
+				limit = { has_character_modifier = scheme_promoted_modifier }
+				add = {
+					value = promote_appointment_score_value	# Keep this balanced if more values are added!
+					desc = scheme_promoted_modifier
+				}
+			}
+			# 决议
+			if = {
+				limit = {
+					has_character_modifier = ep3_integration_promoter_modifier
+					has_variable = integration_promoted_in
+					var:integration_promoted_in.duchy ?= scope:title
+				}
+				add = {
+					value = 30
+					desc = ep3_integration_promoter_modifier
+				}
+			}
+			# 请愿
+			if = {
+				limit = { scope:title.var:petition_house_rights ?= house }
+				add = {
+					value = 250
+					desc = petition_liege_house_province_rights_value_desc
+				}
+			}
+			# 清除篡位者誓言
+			if = {
+				limit = {
+					house ?= {
+						has_house_modifier = oath_of_purge_pretenders_house
+					}
+				}
+				add = {
+					value = 50
+					desc = oath_of_purge_pretenders_house
+				}
+			}
+			# 特质
+			if = {
+				limit = {
+					OR = {
+						has_trait = blind
+						has_trait = incapable
+						has_trait = infirm
+					}
+				}
+				subtract = {
+					value = 50
+					desc = negative_trait_succession
+				}
+			}
+			if = {
+				limit = { has_trait = disinherited }
+				subtract = {
+					value = 200
+					desc = trait_disinherited
+				}
+			}
+			if = {
+				limit = { has_trait = gallivanter }
+				subtract = {
+					value = 200
+					desc = trait_gallivanter
+				}
+			}
+			# 罪犯
+			if = {
+				limit = {
+					has_trait = deviant
+					exists = top_liege.primary_title.state_faith
+					trait_is_criminal_in_faith_trigger = { TRAIT = deviant FAITH = top_liege.primary_title.state_faith GENDER_CHARACTER = root }
+				}
+				add = {
+					value = -30
+					desc = "deviant_and_criminal_desc"
+				}
+			}
+			if = {
+				limit = {
+					has_trait = incestuous
+					exists = top_liege.primary_title.state_faith
+					trait_is_criminal_in_faith_trigger = { TRAIT = incestuous FAITH = top_liege.primary_title.state_faith GENDER_CHARACTER = root }
+				}
+				add = {
+					value = -30
+					desc = "incestuous_and_criminal_desc"
+				}
+			}
+			if = {
+				limit = {
+					has_trait = sodomite
+					exists = top_liege.primary_title.state_faith
+					trait_is_criminal_in_faith_trigger = { TRAIT = sodomite FAITH = top_liege.primary_title.state_faith GENDER_CHARACTER = root }
+				}
+				add = {
+					value = -30
+					desc = "sodomite_and_criminal_desc"
+				}
+			}
+			if = {
+				limit = {
+					has_trait = cannibal
+					exists = top_liege.primary_title.state_faith
+					trait_is_criminal_in_faith_trigger = { TRAIT = cannibal FAITH = top_liege.primary_title.state_faith GENDER_CHARACTER = root }
+				}
+				add = {
+					value = -30
+					desc = "cannibal_and_criminal_desc"
+				}
+			}
+			if = {
+				limit = {
+					has_trait = kinslayer_1
+					exists = top_liege.primary_title.state_faith
+					trait_is_criminal_in_faith_trigger = { TRAIT = kinslayer_1 FAITH = top_liege.primary_title.state_faith GENDER_CHARACTER = root }
+				}
+				add = {
+					value = -30
+					desc = "kinslayer_1_and_criminal_desc"
+				}
+			}
+			if = {
+				limit = {
+					has_trait = kinslayer_2
+					exists = top_liege.primary_title.state_faith
+					trait_is_criminal_in_faith_trigger = { TRAIT = kinslayer_2 FAITH = top_liege.primary_title.state_faith GENDER_CHARACTER = root }
+				}
+				add = {
+					value = -30
+					desc = "kinslayer_2_and_criminal_desc"
+				}
+			}
+			if = {
+				limit = {
+					has_trait = kinslayer_3
+					exists = top_liege.primary_title.state_faith
+					trait_is_criminal_in_faith_trigger = { TRAIT = kinslayer_3 FAITH = top_liege.primary_title.state_faith GENDER_CHARACTER = root }
+				}
+				add = {
+					value = -30
+					desc = "kinslayer_3_and_criminal_desc"
+				}
+			}
+			if = {
+				limit = {
+					has_trait = witch
+					exists = top_liege.primary_title.state_faith
+					trait_is_criminal_in_faith_trigger = { TRAIT = witch FAITH = top_liege.primary_title.state_faith GENDER_CHARACTER = root }
+				}
+				add = {
+					value = -30
+					desc = "witch_and_criminal_desc"
+				}
+			}
+			if = {
+				limit = {
+					has_trait = adulterer
+					exists = top_liege.primary_title.state_faith
+					trait_is_criminal_in_faith_trigger = { TRAIT = adulterer FAITH = top_liege.primary_title.state_faith GENDER_CHARACTER = root }
+				}
+				add = {
+					value = -30
+					desc = "adulterer_and_criminal_desc"
+				}
+			}
+			if = {
+				limit = {
+					has_trait = fornicator
+					exists = top_liege.primary_title.state_faith
+					trait_is_criminal_in_faith_trigger = { TRAIT = fornicator FAITH = top_liege.primary_title.state_faith GENDER_CHARACTER = root }
+				}
+				add = {
+					value = -30
+					desc = "fornicator_and_criminal_desc"
+				}
+			}
+			# 是孩子
+			if = {
+				limit = {
+					age < 16
+				}
+				add = {
+					value = -40
+					desc = tt_is_child
+				}
+			}
+			# 是出身卑微
+			if = {
+				limit = {
+					is_lowborn = yes
+				}
+				if = {
+					limit = { scope:title.holder = { subject_contract_has_flag = candidate_preference_powerful_gentry } }
+					subtract = {
+						value = 50
+						desc = lowborn_desc_succession
+					}
+				}
+				else_if = {
+					limit = { scope:title.holder = { subject_contract_has_flag = candidate_preference_talent_only } }
+					subtract = {
+						value = 10
+						desc = lowborn_desc_succession
+					}
+				}
+				else = {
+					subtract = {
+						value = 30
+						desc = lowborn_desc_succession
+					}
+				}
+			}
+			# 政府制度
+			if = { #是世袭制
+				limit = {
+					root = {
+						AND = {
+							is_landed = yes
+							government_has_flag = government_is_feudal
+						}
+					}
+				}
+				if = {
+					limit = {
+						scope:title.holder = {
+							subject_contract_has_flag = candidate_preference_powerful_gentry
+						}
+					}
+				}
+				else = {
+					add = {
+						value = -5
+						desc = tt_is_hereditary
+					}
+				}
+			}
+			# 性别法调整
+			if = {
+				limit = {
+					scope:title.holder.top_liege ?= { has_realm_law = male_preference_law }
+					is_female = yes
+				}
+				multiply = {
+					value = {
+						value = 1
+						subtract = appointment_non_preferred_gender_penalty_value
+					}
+					desc = appointment_male_preference_desc
+				}
+			}
+			else_if = {
+				limit = {
+					scope:title.holder.top_liege ?= { has_realm_law = male_only_law }
+					is_female = yes
+				}
+				multiply = {
+					value = {
+						value = 1
+						subtract = appointment_opposite_gender_penalty_value
+					}
+					desc = appointment_male_only_desc
+				}
+			}
+			else_if = {
+				limit = {
+					scope:title.holder.top_liege ?= { has_realm_law = female_preference_law }
+					is_female = no
+				}
+				multiply = {
+					value = {
+						value = 1
+						subtract = appointment_non_preferred_gender_penalty_value
+					}
+					desc = appointment_female_preference_desc
+				}
+			}
+			else_if = {
+				limit = {
+					scope:title.holder.top_liege ?= { has_realm_law = female_only_law }
+					is_female = no
+				}
+				multiply = {
+					value = {
+						value = 1
+						subtract = appointment_opposite_gender_penalty_value
+					}
+					desc = appointment_female_only_desc
+				}
+			}
+
+			# 禁止教士参选
+			if = {
+				limit = {
+					is_clergy = yes
+				}
+				multiply = {
+					value = 0
+				}
+				add = {
+					value = -1000
+					desc = tt_is_clergy
+				}
+			}
+			# 禁止【最高领主】及其主要继承人参选
+			if = {
+				limit = { this = top_liege }
+				multiply = {
+					value = 0
+				}
+				add = {
+					value = -1000
+					desc = appointment_is_top_liege
+				}
+			}
+			else_if = {
+				limit = { is_primary_heir_of = top_liege }
+				multiply = {
+					value = 0
+				}
+			}
+			# 禁止【领主】及其主要继承人参选
+			else_if = {
+				limit = { this = scope:title.holder.liege }
+				multiply = {
+					value = 0
+				}
+				add = {
+					value = -1000
+					desc = tt_is_liege
+				}
+			}
+			else_if = {
+				limit = { is_primary_heir_of = scope:title.holder.liege }
+				multiply = {
+					value = 0
+				}
+			}
+		}
+	}
+}
+
+feudal_governor_promotion = {
+	default_candidates = {}
+
+	allow_children = no
+	allow_same_tier_candidates = no
+
+	candidate_score = {
+		value = 0
+	}
+}

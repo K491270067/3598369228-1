@@ -1,0 +1,232 @@
+﻿##########閭樺浗涓栫郴###########
+#鍙傝€冩枃鐚€婃湁鍏抽倶鍥界殑鍑犱釜闂銆?
+han1781={
+  name="jiang1"#閭樺彅
+  dynasty=xin685
+	religion="xizhouli" 
+	culture="zhou"
+  father=han9
+
+  3565.1.1 = {
+		birth = yes
+	}
+  3621.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+    give_nickname=nick_hanshu
+  }
+}
+han1782={
+  name="juan"
+  dynasty_house=house_xin72#閭?
+	religion="xizhouli" 
+	culture="zhou"
+  father=han1781
+
+  3591.1.1 = {
+		birth = yes
+	}
+  3651.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1783={
+  name="xiu4"
+  dynasty_house=house_xin72#閭?
+	religion="xizhouli" 
+	culture="zhou"
+  father=han1782
+
+  3623.1.1 = {
+		birth = yes
+	}
+  3670.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1784={
+  name="cheng"
+  dynasty_house=house_xin72#閭?
+	religion="xizhouli" 
+	culture="zhou"
+  father=han1783
+
+  3644.1.1 = {
+		birth = yes
+	}
+  3698.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1785={
+  name="liao"
+  dynasty_house=house_xin72#閭?
+	religion="xizhouli" 
+	culture="zhou"
+  father=han1784
+
+  3677.1.1 = {
+		birth = yes
+	}
+  3750.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1786={
+  name="hang"
+  dynasty_house=house_xin72#閭?
+	religion="xizhouli" 
+	culture="zhou"
+  father=han1785
+
+  3722.1.1 = {
+		birth = yes
+	}
+  3780.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1787={
+  name="chou3"
+  dynasty_house=house_xin72#閭?
+	religion="xizhouli" 
+	culture="zhou"
+  father=han1786
+
+  3751.1.1 = {
+		birth = yes
+	}
+  3797.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1788={
+  name="nanming180"
+  dynasty_house=house_xin72#閭?
+	religion="xizhouli" 
+	culture="zhou"
+  father=han1787
+
+  3788.1.1 = {
+		birth = yes
+	}
+  3845.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1789={
+  name="nanming149"#骞崇帇涓滆縼鏃堕倶鍥藉浗鍚?
+  dynasty_house=house_xin72#閭?
+	religion="dongzhouli" 
+	culture="zhou"
+  father=han1788
+
+  3816.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han1790={
+  name="furen"#鍌ㄥ悰
+  dynasty_house=house_xin72#閭?
+	religion="dongzhouli" 
+	culture="zhou"
+  father=han1788
+
+  3834.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han1791={
+  name="nvming81"#濂?
+  dynasty_house=house_xin72#閭?
+	religion="dongzhouli" 
+	culture="zhou"
+  father=han1788
+  female=yes
+
+  3834.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+
+han1792={
+  name="jiao"#閭樺浗鍥藉悰寮?鍙?
+  dynasty_house=house_xin72#閭?
+	religion="dongzhouli" 
+	culture="zhou"
+  father=han1788
+
+  3831.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han1793={
+  name="jiang2"#閭樺浗鍥藉悰寮?鍙?
+  dynasty_house=house_xin72#閭?
+	religion="dongzhouli" 
+	culture="zhou"
+  father=han1788
+
+  3832.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han1794={
+  name="yan5"#閭樺浗鍥藉悰寮?鍙?
+  dynasty_house=house_xin72#閭?
+	religion="dongzhouli" 
+	culture="zhou"
+  father=han1788
+
+  3833.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han1795={
+  name="nvming82"#閭樺浗鍥藉悰濡?
+  dynasty_house=house_xin72#閭?
+	religion="dongzhouli" 
+	culture="zhou"
+  father=han1788
+  female=yes
+
+  3834.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}

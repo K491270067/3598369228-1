@@ -1,0 +1,63 @@
+﻿xiaren = {
+	color = { 0.75 0.1 0.6 }
+
+	name_order_convention = dynasty_always_first
+	ethos = ethos_stoic
+	heritage = heritage_xiaren
+	language = language_chinese
+	martial_custom = martial_custom_equal
+	head_determination = head_determination_domain
+   
+	traditions = {
+        tradition_forbearing
+		    tradition_agrarian
+        tradition_hereditary_hierarchy
+        tradition_stalwart_defenders
+        tradition_tgp_imperial_peace
+        tradition_mystical_ancestors
+	}
+
+	name_list = name_list_han
+
+	coa_gfx = { chinese_group_coa_gfx }
+	building_gfx = { chinese_building_gfx }
+	clothing_gfx = { chinese_clothing_gfx }
+	unit_gfx = { chinese_unit_gfx }
+	house_coa_frame = house_china
+
+	ethnicities = {
+		10 = asian_han_chinese
+	}
+}
+
+yue = {
+	color = { 160 80 60 }
+
+	name_order_convention = dynasty_always_first
+	ethos = ethos_stoic
+	heritage = heritage_xiaren
+	language = language_chinese
+	martial_custom = martial_custom_equal
+	head_determination = head_determination_domain
+   
+	traditions = {
+        tradition_warriors_by_merit
+		    tradition_talent_acquisition
+        tradition_forbearing
+        tradition_life_is_just_a_joke
+        tradition_forest_fighters
+        tradition_polders
+	}
+
+	name_list = name_list_han
+
+	coa_gfx = { chinese_group_coa_gfx }
+	building_gfx = { chinese_building_gfx }
+	clothing_gfx = { chinese_clothing_gfx }
+	unit_gfx = { chinese_unit_gfx }
+	house_coa_frame = house_china
+
+	ethnicities = {
+		10 = asian_han_chinese
+	}
+}

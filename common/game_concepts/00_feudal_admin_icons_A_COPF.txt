@@ -1,0 +1,11 @@
+﻿crown_authority_titular_liege = {
+	parent = crown_authority
+	texture = "gfx/interface/icons/laws/crown_authority_titular_liege.dds"
+	parent = law
+}
+
+crown_authority_legacy_head = {
+	parent = crown_authority
+	texture = "gfx/interface/icons/laws/crown_authority_legacy_head.dds"
+	parent = law
+}

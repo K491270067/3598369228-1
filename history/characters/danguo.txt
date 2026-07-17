@@ -1,0 +1,277 @@
+﻿#############  娌堝浗--濮娌堟皬 #############
+### 涓栫郴宸插け鑰冿紝鍏ㄩ潬缂?###
+han534={
+  name="zai3"##鍐夊杞?
+  dynasty=xin705
+	religion="xizhouli" 
+	culture="zhou"
+  father=han5
+  mother=sixingyoushenshitaisi
+
+  3551.2.1 = {
+		birth = yes
+	}
+  3603.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+		give_nickname=nick_ranjizai
+  }
+}
+han535={
+  name="nanming1155"#
+  dynasty_house=house_xin706
+	religion="xizhouli" 
+	culture="zhou"
+  father=han534
+
+  3586.11.1 = {
+		birth = yes
+	}
+  3638.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han536={
+  name="nanming1156"
+  dynasty_house=house_baijia14
+	religion="xizhouli" 
+	culture="zhou"
+  father=han535
+
+  3610.11.1 = {
+		birth = yes
+	}
+  3670.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han537={
+  name="baiyuenan166"
+  dynasty_house=house_xin706
+	religion="xizhouli" 
+	culture="zhou"
+  father=han536
+
+  3637.1.1 = {
+		birth = yes
+	}
+  3708.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han538={
+  name="shuo"
+  dynasty_house=house_xin706
+	religion="xizhouli" 
+	culture="zhou"
+  father=han537
+
+  3660.1.1 = {
+		birth = yes
+	}
+  3735.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han539={
+  name="nanming1157"
+  dynasty_house=house_xin706
+	religion="xizhouli" 
+	culture="zhou"
+  father=han538
+
+  3679.1.1 = {
+		birth = yes
+	}
+  3751.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han540={
+  name="nanming1138"
+  dynasty_house=house_xin706
+	religion="xizhouli" 
+	culture="zhou"
+  father=han538
+
+  3734.1.1 = {
+		birth = yes
+	}
+  3803.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han541={
+  name="nanming355"
+  dynasty_house=house_xin706
+	religion="xizhouli" 
+	culture="zhou"
+  father=han540
+
+  3780.1.1 = {
+		birth = yes
+	}
+  3835.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han542={
+  name="nanming362"
+  dynasty_house=house_xin706
+	religion="dongzhouli" 
+	culture="zhou"
+  father=han541
+
+  3817.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han543={
+  name="nanming374"#鍌ㄥ悰1鍙?
+  dynasty_house=house_xin706
+	religion="dongzhouli" 
+	culture="zhou"
+  father=han542
+
+  3835.10.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han544={
+  name="nanming391"#鍌ㄥ悰2鍙?
+  dynasty_house=house_xin706
+	religion="dongzhouli" 
+	culture="zhou"
+  father=han542
+
+  3836.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han545={
+  name="xiaoxiao"
+  dynasty_house=house_xin706
+	religion="dongzhouli" 
+	culture="zhou"
+  father=han542
+  female=yes
+
+  3837.5.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han546={
+  name="sai1"
+  dynasty_house=house_xin706
+	religion="dongzhouli" 
+	culture="zhou"
+  father=han542
+  female=yes
+
+  3838.6.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+###############
+jixingranguo1={
+  name="cheng3"
+  dynasty_house=house_xin707
+	religion="dongzhouli" 
+	culture="zhou"
+  father=han541
+
+  3820.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+jixingranguo2={
+  name="nanming1062"
+  dynasty_house=house_xin707
+	religion="dongzhouli" 
+	culture="zhou"
+  father=jixingranguo1
+
+  3838.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+jixingranguo3={
+  name="nanming1079"
+  dynasty_house=house_xin707
+	religion="dongzhouli" 
+	culture="zhou"
+  father=jixingranguo1
+
+  3839.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+jixingranguo4={
+  name="hongfu"
+  dynasty_house=house_xin707
+	religion="dongzhouli" 
+	culture="zhou"
+  father=jixingranguo1
+  female=yes
+
+  3840.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+jixingranguo5={
+  name="meng1"
+  dynasty_house=house_xin707
+	religion="dongzhouli" 
+	culture="zhou"
+  father=jixingranguo1
+  female=yes
+
+  3841.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}

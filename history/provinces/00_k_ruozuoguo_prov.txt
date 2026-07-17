@@ -1,0 +1,34 @@
+﻿##### d_shangchengshi ############################
+
+### c_ruoxia
+
+
+### c_etian
+# ETIAN
+2952 = {
+	holding = none
+}
+# JIAOLU
+2955 = {
+	holding = none
+}
+# DANHAI
+2953 = {
+	holding = none
+}
+
+
+### c_danhai
+
+
+### c_chuntiamen
+# CHUNTIANMEN
+2954 = {
+	holding = none
+}
+# RUOXIA
+2834 = {
+	holding = none
+}
+
+

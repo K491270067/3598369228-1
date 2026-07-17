@@ -1,0 +1,345 @@
+﻿d_fudengshi = {
+	2594.1.1 = {
+		liege = "k_raoguo"
+		holder = raoguo1
+	}
+	2653.1.1 = {
+		holder = raoguo2
+	}
+	2704.1.1 = {
+		holder = raoguo3
+	}
+	2753.1.1 = {
+		holder = raoguo4
+	}
+	2781.1.1 = {
+		holder = raoguo5
+	}
+	2818.1.1 = {
+		holder = raoguo6
+	}
+	2861.1.1 = {
+		holder = raoguo7
+	}
+	2907.1.1 = {
+		holder = raoguo8
+	}
+	2954.1.1 = {
+		holder = raoguo9
+	}
+	2992.1.1 = {
+		holder = raoguo10
+	}
+	3020.1.1 = {
+		holder = raoguo11
+	}
+	3055.1.1 = {
+		holder = raoguo12
+	}
+	3091.1.1 = {
+		holder = raoguo13
+	}
+	3110.1.1 = {
+		holder = raoguo14
+	}
+	3153.1.1 = {
+		holder = raoguo15
+	}
+	3200.1.1 = {
+		holder = raoguo16
+	}
+	3231.1.1 = {
+		holder = raoguo17
+	}
+	3252.1.1 = {
+		holder = raoguo18
+	}
+	3284.1.1 = {
+		holder = raoguo19
+	}
+	3311.1.1 = {
+		holder = raoguo20
+	}
+	3355.1.1 = {
+		holder = raoguo21
+	}
+	3386.1.1 = {
+		holder = raoguo22
+	}
+	3405.1.1 = {
+		holder = raoguo23
+	}
+	3451.1.1 = {
+		holder = raoguo24
+	}
+	3473.1.1 = {
+		holder = raoguo25
+	}
+	3507.1.1 = {
+		holder = raoguo26
+	}
+	3531.1.1 = {
+		holder = raoguo27
+	}
+	3577.1.1 = {
+		holder = raoguo28
+	}
+	3607.1.1 = {
+		holder = raoguo29
+	}
+	3644.1.1 = {
+		holder = raoguo30
+	}
+	3670.1.1 = {
+		holder = raoguo31
+	}
+	3708.1.1 = {
+		holder = raoguo32
+	}
+	3749.1.1 = {
+		holder = raoguo33
+	}
+	3771.1.1 = {
+		holder = raoguo34
+	}
+	3808.1.1 = {
+		holder = raoguo35
+	}
+	3825.1.1 = {
+		holder = raoguo46
+	}
+	3849.1.1 = {
+		government = feudal_admin_government
+		change_development_level = 27
+	}
+}
+d_shunshi = {
+	2594.1.1 = {
+		liege = "k_raoguo"
+		holder = raoguo1
+	}
+	2653.1.1 = {
+		holder = raoguo2
+	}
+	2704.1.1 = {
+		holder = raoguo3
+	}
+	2753.1.1 = {
+		holder = raoguo4
+	}
+	2781.1.1 = {
+		holder = raoguo5
+	}
+	2818.1.1 = {
+		holder = raoguo6
+	}
+	2861.1.1 = {
+		holder = raoguo7
+	}
+	2907.1.1 = {
+		holder = raoguo8
+	}
+	2954.1.1 = {
+		holder = raoguo9
+	}
+	2992.1.1 = {
+		holder = raoguo10
+	}
+	3020.1.1 = {
+		holder = raoguo11
+	}
+	3055.1.1 = {
+		holder = raoguo12
+	}
+	3091.1.1 = {
+		holder = raoguo13
+	}
+	3110.1.1 = {
+		holder = raoguo14
+	}
+	3153.1.1 = {
+		holder = raoguo15
+	}
+	3200.1.1 = {
+		holder = raoguo16
+	}
+	3231.1.1 = {
+		holder = raoguo17
+	}
+	3252.1.1 = {
+		holder = raoguo18
+	}
+	3284.1.1 = {
+		holder = raoguo19
+	}
+	3311.1.1 = {
+		holder = raoguo20
+	}
+	3355.1.1 = {
+		holder = raoguo21
+	}
+	3386.1.1 = {
+		holder = raoguo22
+	}
+	3405.1.1 = {
+		holder = raoguo23
+	}
+	3451.1.1 = {
+		holder = raoguo24
+	}
+	3473.1.1 = {
+		holder = raoguo25
+	}
+	3507.1.1 = {
+		holder = raoguo26
+	}
+	3531.1.1 = {
+		holder = raoguo27
+	}
+	3577.1.1 = {
+		holder = raoguo28
+	}
+	3607.1.1 = {
+		holder = raoguo29
+	}
+	3644.1.1 = {
+		holder = raoguo30
+	}
+	3670.1.1 = {
+		holder = raoguo31
+	}
+	3708.1.1 = {
+		holder = raoguo32
+	}
+	3749.1.1 = {
+		holder = raoguo33
+	}
+	3771.1.1 = {
+		holder = raoguo34
+	}
+	3808.1.1 = {
+		holder = raoguo35
+	}
+	3825.1.1 = {
+		holder = raoguo42
+	}
+	3849.1.1 = {
+		government = feudal_admin_government
+		change_development_level = 26
+	}
+}
+k_raoguo = {
+	2594.1.1 = {
+		holder = raoguo1
+	}
+	2653.1.1 = {
+		holder = raoguo2
+	}
+	2704.1.1 = {
+		holder = raoguo3
+	}
+	2753.1.1 = {
+		holder = raoguo4
+	}
+	2781.1.1 = {
+		holder = raoguo5
+	}
+	2818.1.1 = {
+		holder = raoguo6
+	}
+	2861.1.1 = {
+		holder = raoguo7
+	}
+	2907.1.1 = {
+		holder = raoguo8
+	}
+	2954.1.1 = {
+		holder = raoguo9
+	}
+	2992.1.1 = {
+		holder = raoguo10
+	}
+	3020.1.1 = {
+		holder = raoguo11
+	}
+	3055.1.1 = {
+		holder = raoguo12
+	}
+	3091.1.1 = {
+		holder = raoguo13
+	}
+	3110.1.1 = {
+		holder = raoguo14
+	}
+	3153.1.1 = {
+		holder = raoguo15
+	}
+	3200.1.1 = {
+		holder = raoguo16
+	}
+	3231.1.1 = {
+		holder = raoguo17
+	}
+	3252.1.1 = {
+		holder = raoguo18
+	}
+	3284.1.1 = {
+		holder = raoguo19
+	}
+	3311.1.1 = {
+		holder = raoguo20
+	}
+	3355.1.1 = {
+		holder = raoguo21
+	}
+	3386.1.1 = {
+		holder = raoguo22
+	}
+	3405.1.1 = {
+		holder = raoguo23
+	}
+	3451.1.1 = {
+		holder = raoguo24
+	}
+	3473.1.1 = {
+		holder = raoguo25
+	}
+	3507.1.1 = {
+		holder = raoguo26
+	}
+	3531.1.1 = {
+		holder = raoguo27
+	}
+	3577.1.1 = {
+		liege = "e_zhoutianzi"
+		holder = raoguo28
+	}
+	3607.1.1 = {
+		holder = raoguo29
+	}
+	3644.1.1 = {
+		holder = raoguo30
+	}
+	3670.1.1 = {
+		holder = raoguo31
+	}
+	3708.1.1 = {
+		holder = raoguo32
+	}
+	3749.1.1 = {
+		holder = raoguo33
+	}
+	3771.1.1 = {
+		holder = raoguo34
+	}
+	3808.1.1 = {
+		holder = raoguo35
+	}
+	3825.1.1 = {
+		holder = raoguo36
+	}
+	3849.1.1 = {
+		government = feudal_admin_government
+		change_development_level = 29
+	}
+}

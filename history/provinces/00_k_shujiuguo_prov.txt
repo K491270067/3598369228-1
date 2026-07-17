@@ -1,0 +1,37 @@
+﻿##### d_shujiushi ############################
+
+### c_quean
+# 
+2006 = {
+	holding = none
+}
+
+
+### c_zhugao
+# 
+2007 = {
+	holding = none
+}
+
+
+### c_zhegao
+# 
+2008 = {
+	holding = none
+}
+
+
+### c_shujiu
+# 
+2011 = {
+	holding = none
+}
+
+
+### c_yue1
+# 
+2019 = {
+	holding = none
+}
+
+

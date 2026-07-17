@@ -1,0 +1,37 @@
+﻿##### d_heishi ############################
+
+### c_chungu
+# CHUNGU
+1484 = {
+	culture = yinshang
+	religion = yinli
+	holding = castle_holding
+}
+# CHANGWUCHENG
+1485 = {
+	holding = none
+}
+
+
+### c_yilu
+# YILU
+1486 = {
+	culture = yinshang
+	religion = yinli
+	holding = castle_holding
+}
+
+
+### c_hei
+# HEI
+1491 = {
+	culture = yinshang
+	religion = yinli
+	holding = castle_holding
+}
+# YINPAN
+1494 = {
+	holding = none
+}
+
+

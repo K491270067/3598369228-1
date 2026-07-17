@@ -1,0 +1,5 @@
+﻿NCamera = {
+	START_LOOK_AT = { 5560.0 0 3410.0 }					# Initial look at (X/Y)
+	PANNING_WIDTH =  11120
+	PANNING_HEIGHT = 6820
+}

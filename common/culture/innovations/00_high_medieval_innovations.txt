@@ -1,0 +1,208 @@
+﻿#### Local Types ####
+
+@innovation_YIZHAN = "gfx/interface/icons/culture_innovations/innovation_YIZHAN.png"
+@innovation_BENCAOXUE = "gfx/interface/icons/culture_innovations/innovation_BENCAOXUE.png"
+@innovation_YANTIEZHUANYING = "gfx/interface/icons/culture_innovations/innovation_YANTIEZHUANYING.png"
+@innovation_PBANZHUSHU = "gfx/interface/icons/culture_innovations/innovation_PBANZHUSHU.png"
+@innovation_DUOCHENGMUGOUJIANZHU = "gfx/interface/icons/culture_innovations/innovation_DUOCHENGMUGOUJIANZHU.png"
+@innovation_WEIDUO = "gfx/interface/icons/culture_innovations/innovation_WEIDUO.png"
+@innovation_SICHOUZHILU = "gfx/interface/icons/culture_innovations/innovation_SICHOUZHILU.png"
+@innovation_ZAOZHISHU = "gfx/interface/icons/culture_innovations/innovation_ZAOZHISHU.png"
+@innovation_ZHUANSHIJIEGOU = "gfx/interface/icons/culture_innovations/innovation_ZHUANSHIJIEGOU.png"
+@innovation_ZHICI = "gfx/interface/icons/culture_innovations/innovation_ZHICI.png"
+@innovation_PAOSHIJI = "gfx/interface/icons/culture_innovations/innovation_PAOSHIJI.png"
+@innovation_TUNTIANZHI = "gfx/interface/icons/culture_innovations/innovation_TUNTIANZHI.png"
+@innovation_NUGUO = "gfx/interface/icons/culture_innovations/innovation_NUGUO.png"
+@innovation_CHUANGNU = "gfx/interface/icons/culture_innovations/innovation_CHUANGNU.png"
+@innovation_MASHU = "gfx/interface/icons/culture_innovations/innovation_MASHU.png"
+@innovation_WENGCHENG = "gfx/interface/icons/culture_innovations/innovation_WENGCHENG.png"
+
+
+#culture_group_civic
+#驿站
+innovation_YIZHAN = {
+	skill = stewardship
+	group = culture_group_civic
+	culture_era = culture_era_high_medieval
+	icon = @innovation_YIZHAN
+
+	custom = unlock_high_medieval_fortification_buildings
+
+	flag = global_regular
+	flag = high_medieval_era_regular
+}
+#本草学
+innovation_BENCAOXUE = {
+	skill = learning
+	group = culture_group_civic
+	culture_era = culture_era_high_medieval
+	icon = @innovation_BENCAOXUE
+
+	custom = unlock_high_medieval_fortification_buildings
+
+	flag = global_regular
+	flag = high_medieval_era_regular
+}
+#盐铁专营
+innovation_YANTIEZHUANYING = {
+	skill = stewardship
+	group = culture_group_civic
+	culture_era = culture_era_high_medieval
+	icon = @innovation_YANTIEZHUANYING
+
+	custom = unlock_high_medieval_fortification_buildings
+
+	flag = global_regular
+	flag = high_medieval_era_regular
+}
+#板筑术
+innovation_PBANZHUSHU = {
+	skill = stewardship
+	group = culture_group_civic
+	culture_era = culture_era_high_medieval
+	icon = @innovation_PBANZHUSHU
+
+	custom = unlock_high_medieval_fortification_buildings
+
+	flag = global_regular
+	flag = high_medieval_era_regular
+}
+#多层木构建筑 
+innovation_DUOCHENGMUGOUJIANZHU = {
+	skill = stewardship
+	group = culture_group_civic
+	culture_era = culture_era_high_medieval
+	icon = @innovation_DUOCHENGMUGOUJIANZHU
+
+	custom = unlock_high_medieval_fortification_buildings
+
+	flag = global_regular
+	flag = high_medieval_era_regular
+}
+#尾舵
+innovation_WEIDUO = {
+	skill = diplomacy
+	group = culture_group_civic
+	culture_era = culture_era_high_medieval
+	icon = @innovation_WEIDUO
+
+	custom = unlock_high_medieval_fortification_buildings
+
+	flag = global_regular
+	flag = high_medieval_era_regular
+}
+#丝绸之路
+innovation_SICHOUZHILU = {
+	skill = diplomacy
+	group = culture_group_civic
+	culture_era = culture_era_high_medieval
+	icon = @innovation_SICHOUZHILU
+
+	custom = unlock_high_medieval_fortification_buildings
+
+	flag = global_regular
+	flag = high_medieval_era_regular
+}
+
+#造纸术
+innovation_ZAOZHISHU = {
+	skill = learning
+	group = culture_group_civic
+	culture_era = culture_era_high_medieval
+	icon = @innovation_ZAOZHISHU
+
+	custom = unlock_high_medieval_fortification_buildings
+
+	flag = global_regular
+	flag = high_medieval_era_regular
+}
+#砖石结构
+innovation_ZHUANSHIJIEGOU = {
+	skill = stewardship
+	group = culture_group_civic
+	culture_era = culture_era_high_medieval
+	icon = @innovation_ZHUANSHIJIEGOU
+
+	custom = unlock_high_medieval_fortification_buildings
+
+	flag = global_regular
+	flag = high_medieval_era_regular
+}
+#制瓷
+innovation_ZHICI = {
+	skill = stewardship
+	group = culture_group_civic
+	culture_era = culture_era_high_medieval
+	icon = @innovation_ZHICI
+
+	custom = unlock_high_medieval_fortification_buildings
+
+	flag = global_regular
+	flag = high_medieval_era_regular
+}
+
+
+#culture_group_military
+#抛石机
+innovation_PAOSHIJI = {
+	skill = martial
+	group = culture_group_military
+	culture_era = culture_era_high_medieval
+	icon = @innovation_PAOSHIJI
+
+	custom = unlock_high_medieval_fortification_buildings
+
+	flag = global_regular
+	flag = high_medieval_era_regular
+}
+#屯田制
+innovation_TUNTIANZHI = {
+	skill = martial
+	group = culture_group_military
+	culture_era = culture_era_high_medieval
+	icon = @innovation_TUNTIANZHI
+
+	custom = unlock_high_medieval_fortification_buildings
+
+	flag = global_regular
+	flag = high_medieval_era_regular
+}
+
+#弩郭
+innovation_NUGUO = {
+	skill = martial
+	group = culture_group_military
+	culture_era = culture_era_high_medieval
+	icon = @innovation_NUGUO
+
+	custom = unlock_high_medieval_fortification_buildings
+
+	flag = global_regular
+	flag = high_medieval_era_regular
+}
+
+
+#马槊
+innovation_MASHU = {
+	skill = martial
+	group = culture_group_military
+	culture_era = culture_era_high_medieval
+	icon = @innovation_MASHU
+
+	custom = unlock_high_medieval_fortification_buildings
+
+	flag = global_regular
+	flag = high_medieval_era_regular
+}
+#翁城
+innovation_WENGCHENG = {
+	skill = martial
+	group = culture_group_military
+	culture_era = culture_era_high_medieval
+	icon = @innovation_WENGCHENG
+
+	custom = unlock_high_medieval_fortification_buildings
+
+	flag = global_regular
+	flag = high_medieval_era_regular
+}

@@ -1,0 +1,41 @@
+﻿world_huaxia_jingzhou = {
+	kingdoms = {                                         k_baiguo k_xiguo k_jiangguo1 k_daoguo k_fangguo k_fanguo2 k_yangguo2 k_nanzengguo k_naneguo k_nanshenguo k_nanlvguo k_liaoguo k_dengguo k_youguo1 k_liguo2 k_ruoguo k_tangguo k_laiguo1 k_suiguo1 k_erguo k_yunguo k_zhenguo k_guguo2 k_luguo1 k_luoguo k_chuguo1 k_quanguo k_changguo k_fanguo3 k_kuiguo k_xianguo k_guangguo k_huangguo1 k_jiangguo2 k_yinguo1 k_beiziguo k_danren k_jiaoguo3 k_pengguo2 k_qunman }
+}
+world_huaxia_bingzhou = {
+	kingdoms = {                                      k_weiguo1 k_gengguo k_xunguo1 k_tiaorong k_yuguo1 k_dongguo k_pengguo1 k_jinguo1 k_baguo k_yangguo1 k_huoguo k_jiangguo k_qiangjiuru k_gaoluo k_dizu k_lituzhidi k_caozhongzhirong k_jiashi k_quanshi k_duochen k_luzi k_liuyushi k_yuwushi k_liguo1 k_chouyouguo k_darong k_binguo k_huangguo k_puguo k_hanguo2 k_jiguo5 k_shenguo1 k_ruguo k_siguo k_quguo k_xunguo2 k_guguo1 }
+}
+world_huaxia_daidi = {
+	kingdoms = {          k_daiguo1 k_danlan k_dairong k_hezongshi k_loufan k_yanjingrong k_beitangguo k_qusou k_xiuhunzhuhe }
+}
+world_huaxia_chaoxian = {
+	kingdoms = {         k_chaoxianguo k_zhenfanguo k_lintunguo k_wojuguo k_mahanguo k_zhouhuguo k_chenhan k_bianhan }
+}
+world_huaxia_jizhou = {
+	kingdoms = {                              k_baoguo k_zuoguo k_nanyanguo k_caoguo k_fengfuguo k_qinguo k_jishuizhirong k_weiguo k_guanguo k_cangguo k_fanguo1 k_xiaguo k_gongguo1 k_zhanguo1 k_yeguo k_sheguo k_jiguo3 k_xingguo k_diguo1 k_guguo k_feiguo1 k_duanguo k_lingfuguo k_beiguo k_wuluoguo k_moguo k_raoguo k_xianyu k_linguo }
+	provinces = {   379 395 }
+}
+world_huaxia_fusang = {
+	kingdoms = {                                            k_yizhiguo k_duomidao k_xiongxi k_huoguo2 k_fengribie k_zhuziguo k_jianyibie k_aibimai k_aboguo k_dandaoguo k_zanqiguo k_jibeiguo k_xuemenguo k_zhoufangguo k_shijianguo k_aqiguo k_chuyunguo k_yinqiguo k_mulaiguo k_daoyuguo k_duochimaguo k_zhenjianguo k_danboguo k_woguo k_muguo k_xiongyeguo k_daojinguo k_yishiguo k_ruozuoguo k_gaozhiguo k_feituoguo k_sanyeguo k_weizhangguo k_sanchuanguo k_yuandanhaiguo k_zhuliuheguo k_xiangwuguo k_jiafeiguo k_keyeguo k_zongguo1 k_wuxiezhiguo k_maoyeguo k_rigaojian }
+}
+world_huaxia_sili = {
+	kingdoms = {                                       k_yanguo k_zhengguo k_jiguo2 k_huaguo k_xuguo1 k_kuaiguo k_yuanguo k_buguo1 k_dongguoguo k_miguo k_gongguo k_huaguo1 k_liuguo k_quanrong k_aoguo k_yangrong k_ganguo k_luhunrong k_gaorong k_maoguo1 k_yinguo k_xiguoguo k_zhouguo2 k_jurong k_yinrong k_maorong k_fanguo k_shanguo k_suguo1 k_yuanguo1 k_yuguo2 k_yongguo k_xibugengguo k_dongbugengguo k_chouguo k_yingguo k_manshi k_lushirong }
+}
+world_huaxia_qingzhou = {
+	kingdoms = {                                                    k_qiguo k_tanguo k_guoguo k_shiguo k_zhuguo k_xujuguo k_guoguo1 k_nieguo k_soumanguo k_fengguo k_chuguo k_xunguo k_zhouguo k_zhuguo1 k_laiguo k_donglaiguo k_yiguo k_jieguo k_zhuqiguo k_juguo k_xiangguo k_yangguo k_yuguo k_genmouguo k_zhuanguo k_yuyuqiuguo k_tanguo1 k_zengguo k_biyangguo k_mouguo k_qiguo1 k_suiguo k_zhangguo k_zhuguo2 k_suguo k_zhuanyuguo k_chengguo k_jinguo k_languo k_xueguo k_tenguo k_niguo k_zhuguo3 k_renguo k_kanguo k_luguo k_zhongwuguo k_piguo k_xuguo k_jiguo k_geguo }
+}
+world_huaxia_yangzhou = {
+	kingdoms = {                        k_hanguo k_yiguo1 k_liaoguo1 k_yingguo1 k_shulongguo k_shuliaoguo k_shubaoguo k_shujiuguo k_shuyongguo k_zongguo k_liuguo1 k_shuguo k_jiaoguo2 k_tongguo2 k_wanguo k_shugongguo k_luguo2 k_chaogao k_yihu k_kuangguo k_wuguo k_yanguo2 k_yueguo }
+}
+world_huaxia_yizhou = {
+	kingdoms = {                      k_baoguo1 k_juguo1 k_xiguo1 k_baguo1 k_miguo2 k_yongguo1 k_yuguo3 k_biguo1 k_shuguo1 k_naguo k_fengguo2 k_congguo k_rangren k_nuren k_chongguo1 k_qiguo2 k_ranmangqian k_boguo k_shuguo2 k_qingyiqiang k_zuoduguo }
+}
+world_huaxia_yongzhou = {
+	kingdoms = {                                                    k_jiaoguo1 k_tongguo k_lirong k_duguo k_miguo1 k_rongguo1 k_zhouguo3 k_ceguo k_chengguo1 k_biguo k_jiangshizhirong k_zhaoguo k_sanguo k_xiaoguoguo k_pengxirong k_geguo2 k_chongguo k_shenguo k_liangguo k_ruiguo k_zhouguo1 k_xixiashi k_xuyanrong k_xiluoguirong k_dalirong k_tongguo1 k_yuzhirong k_diaoguo k_quanrong1 k_lvguo k_heiguo k_guaiguo k_bingguo k_zengguo1 k_ruanguo k_huoguo1 k_shenguo2 k_yiqu k_kaiguo k_wuzhi k_qinguo1 k_kongtongshi k_hunrong k_mianzhurong k_huanrong k_dirong k_jirong k_guirong k_zhuyushi k_yushi k_linhu }
+}
+world_huaxia_youzhou = {
+	kingdoms = {                  k_nifang k_yanguo1 k_hanguo1 k_jiguo4 k_wuzhongguo k_lingzhiguo k_shanrong k_guzhuguo k_tuheguo k_yuren k_yilv k_donghu k_huiren k_gaoyi k_moren k_qingqiu k_zhoutou }
+}
+world_huaxia_yuzhou = {
+	kingdoms = {                           k_xiaoguo k_feiguo k_jiguo1 k_gaoguo k_rongguo k_daiguo k_danguo k_geguo1 k_songguo k_meiguo k_pengguo k_dunguo k_youguo k_buguo k_fengguo1 k_mangguo k_maoguo k_chenguo k_liguo k_zhoulaiguo k_jiaoguo k_huguo k_dunguo1 k_xiangguo1 k_shenguo3 k_caiguo }
+}
+

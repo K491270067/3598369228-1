@@ -1,0 +1,144 @@
+﻿##### d_yilvshi ############################
+
+### c_shedie
+
+
+### c_zhishidai
+
+
+### c_duwei
+
+
+### c_wuwei2
+
+
+### c_afuyu
+
+
+### c_kexi
+# KEXI
+3826 = {
+	holding = none
+}
+# CHEKUN
+3827 = {
+	holding = none
+}
+# PIBAN
+3825 = {
+	holding = none
+}
+
+
+### c_chekun
+
+
+### c_chiyun
+
+
+### c_shiyun
+
+
+### c_yilv
+
+
+### c_yiyi1
+
+
+### c_hudiyu1
+# HUDIYU1
+3833 = {
+	holding = none
+}
+# CHIYUN
+3828 = {
+	holding = none
+}
+# YILV
+3831 = {
+	holding = none
+}
+# YIYI1
+3832 = {
+	holding = none
+}
+
+
+### c_chixiaodou
+# CHIXIAODOU
+3834 = {
+	holding = none
+}
+# MOYU
+3840 = {
+	holding = none
+}
+# NANQIU
+3843 = {
+	holding = none
+}
+# TUOLUOJI
+3841 = {
+	holding = none
+}
+
+
+### c_yilou
+# YILOU
+3835 = {
+	holding = none
+}
+# WUWEI2
+3823 = {
+	holding = none
+}
+# SHIYUN
+3830 = {
+	holding = none
+}
+# AFUYU
+3824 = {
+	holding = none
+}
+
+
+### c_qiulin
+
+
+### c_xishilu
+# XISHILU
+3837 = {
+	holding = none
+}
+# QIULIN
+3836 = {
+	holding = none
+}
+# DUWEI
+3822 = {
+	holding = none
+}
+# YINIAN
+3842 = {
+	holding = none
+}
+
+
+### c_yinan1
+
+
+### c_yilu2
+
+
+### c_moyu
+
+
+### c_tuoluoji
+
+
+### c_yinian
+
+
+### c_nanqiu
+
+

@@ -1,0 +1,762 @@
+﻿#############  鲁国--姬姓 #############
+han58={
+  name="boqing"#周公旦嫡长子，鲁公伯禽
+  dynasty=xin389
+	religion="xizhouli" 
+	culture="lu"
+  father=han11
+
+  3565.1.5 = {
+		birth = yes
+	}
+  3622.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+    give_nickname=nick_wengong
+  }
+}
+han59={
+  name="qiu"#考公
+  dynasty_house=house_baijia49
+	religion="xizhouli" 
+	culture="lu"
+  father=han58
+
+  3585.1.1 = {
+		birth = yes
+	}
+  3626.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+    give_nickname=nick_kaogong
+  }
+}
+han60={
+  name="xi"#炀公
+  dynasty_house=house_baijia49
+	religion="xizhouli" 
+	culture="lu"
+  father=han58
+
+  3586.1.1 = {
+		birth = yes
+	}
+  3632.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+    give_nickname=nick_yangong
+  }
+}
+han61={
+  name="zai"#幽公
+  dynasty_house=house_baijia49
+	religion="xizhouli" 
+	culture="lu"
+  father=han60
+
+  3605.1.1 = {
+		birth = yes
+	}
+  3646.11.1 = {
+		death = {
+			death_reason = death_murder
+			killer = han62
+		}
+    give_nickname=nick_yougong
+  }
+}
+han62={
+  name="fei"#魏公
+  dynasty_house=house_baijia49
+	religion="xizhouli" 
+	culture="lu"
+  father=han60
+
+  3625.11.11 = {
+		birth = yes
+	}
+  3696.11.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+    give_nickname=nick_weigong1
+  }
+}
+han63={
+  name="zhuo"#厉公
+  dynasty_house=house_baijia49
+	religion="xizhouli" 
+	culture="lu"
+  father=han62
+
+  3653.6.6 = {
+		birth = yes
+	}
+  3733.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+    give_nickname=nick_ligong1
+  }
+}
+han64={
+  name="ju"#献公
+  dynasty_house=house_baijia49
+	religion="xizhouli" 
+	culture="lu"
+  father=han62
+
+  3683.11.11 = {
+		birth = yes
+	}
+  3765.11.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+    give_nickname=nick_xiangong1
+  }
+}
+han65={
+  name="bi"#真公
+  dynasty_house=house_baijia49
+	religion="xizhouli" 
+	culture="lu"
+  father=han64
+
+  3705.1.1 = {
+		birth = yes
+	}
+  3795.11.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+    give_nickname=nick_zhengong
+  }
+}
+han66={
+  name="ao"#武公
+  dynasty_house=house_baijia49
+	religion="xizhouli" 
+	culture="lu"
+  father=han64
+
+  3743.3.1 = {
+		birth = yes
+	}
+  3804.11.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+    give_nickname=nick_wugong
+  }
+}
+han67={
+  name="tuo1"#武公嫡长子，未能继位
+  dynasty_house=house_baijia49
+	religion="xizhouli" 
+	culture="lu"
+  father=han66
+
+  3765.8.1 = {
+		birth = yes
+	}
+  3812.11.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han68={
+  name="boyu"#废公
+  dynasty_house=house_baijia49
+	religion="xizhouli" 
+	culture="lu"
+  father=han67
+
+  3787.7.1 = {
+		birth = yes
+	}
+  3824.11.1 = {
+		death = {
+			death_reason = death_punishment
+			killer = han28
+		}
+    give_nickname=nick_feigong
+  }
+}
+han69={
+  name="xi1"#懿公
+  dynasty_house=house_baijia49
+	religion="xizhouli" 
+	culture="lu"
+  father=han66
+
+  3769.10.1 = {
+		birth = yes
+	}
+  3813.11.1 = {
+		death = {
+			death_reason = death_battle
+			killer = han68
+		}
+    give_nickname=nick_yigong1
+  }
+}
+han70={
+  name="chen"#孝公，平王东迁时鲁国国君
+  dynasty_house=house_baijia49
+	religion="xizhouli" 
+	culture="lu"
+  father=han66
+
+  3795.10.1 = {
+		birth = yes
+	}
+  3851.11.1={
+    death = yes
+  }
+}
+han71={
+  name="fuhuang"#惠公，储君1号
+  dynasty_house=house_baijia49
+	religion="xizhouli" 
+	culture="lu"
+  father=han70
+
+  3817.10.1 = {
+		birth = yes
+	}
+  3897.11.1={
+    death = yes
+  }
+}
+han72={
+  name="xigu"#隐公
+  dynasty_house=house_baijia49
+	religion="xizhouli" 
+	culture="lu"
+  father=han71
+
+  3837.2.1 = {
+		birth = yes
+	}
+  3897.11.1={
+    death = yes
+  }
+}
+han73={
+  name="yun"#桓公
+  dynasty_house=house_baijia49
+	religion="xizhouli" 
+	culture="lu"
+  father=han71
+
+  3838.1.1 = {
+		birth = yes
+	}
+  3897.11.1={
+    death = yes
+  }
+}
+### 鲁国公族--施氏--孝公之子 （改姓氏）###
+han74={
+  name="wei"#施父
+  dynasty_house=house_baijia23#施
+	religion="xizhouli" 
+	culture="lu"
+  father=han71
+
+  3839.1.1 = {
+		birth = yes
+	}
+  3897.11.1={
+    death = yes
+  }
+}
+### 鲁国公族--郈氏--孝公之子 （改姓氏）###
+han75={
+  name="gong"#郈惠伯，封地在今山东东平县东南一带
+  dynasty_house=house_xin2#郈
+	religion="xizhouli" 
+	culture="lu"
+  father=han70
+
+  3818.1.1 = {
+		birth = yes
+	}
+  3912.11.1={
+    death = yes
+  }
+}
+han76={
+  name="e"#储子1号
+  dynasty_house=house_xin2#郈
+	religion="xizhouli" 
+	culture="lu"
+  father=han75
+
+  3839.8.1 = {
+		birth = yes
+	}
+  3912.11.1={
+    death = yes
+  }
+}
+han77={
+  name="heji"#储子2号
+  dynasty_house=house_xin2#郈
+	religion="xizhouli" 
+	culture="lu"
+  father=han75
+
+  3840.8.1 = {
+		birth = yes
+	}
+  3912.11.1={
+    death = yes
+  }
+}
+han78={
+  name="xingfu"#储子3号
+  dynasty_house=house_xin2#郈
+	religion="xizhouli" 
+	culture="lu"
+  father=han75
+
+  3841.8.1 = {
+		birth = yes
+	}
+  3912.11.1={
+    death = yes
+  }
+}
+han79={
+  name="zhongzi"#女1
+  dynasty_house=house_xin2#郈
+	religion="xizhouli" 
+	culture="lu"
+  father=han75
+  female=yes
+
+  3842.8.1 = {
+		birth = yes
+	}
+  3912.11.1={
+    death = yes
+  }
+}
+han80={
+  name="ji1"#女2
+  dynasty_house=house_xin2#郈
+	religion="xizhouli" 
+	culture="lu"
+  father=han75
+  female=yes
+
+  3839.9.1 = {
+		birth = yes
+	}
+  3912.11.1={
+    death = yes
+  }
+}
+### 鲁国公族--臧氏--孝公之子 ###
+han81={
+  name="kou"#臧僖伯，故城在今山东栖霞东北
+  dynasty_house=house_baijia112#臧
+	religion="xizhouli" 
+	culture="lu"
+  father=han70
+
+  3820.10.1 = {
+		birth = yes
+	}
+  3902.11.1={
+    death = yes
+  }
+}
+han82={
+  name="da"#臧哀伯，储子1号
+  dynasty_house=house_baijia112#臧
+	religion="xizhouli" 
+	culture="lu"
+  father=han81
+
+  3839.8.1 = {
+		birth = yes
+	}
+  3912.11.1={
+    death = yes
+  }
+}
+han83={
+  name="qiu"#储子2号
+  dynasty_house=house_baijia112#臧
+	religion="xizhouli" 
+	culture="lu"
+  father=han81
+
+  3840.8.1 = {
+		birth = yes
+	}
+  3912.11.1={
+    death = yes
+  }
+}
+han84={
+  name="jiu"#储子3号
+  dynasty_house=house_baijia112#臧
+	religion="xizhouli" 
+	culture="lu"
+  father=han81
+
+  3841.8.1 = {
+		birth = yes
+	}
+  3912.11.1={
+    death = yes
+  }
+}
+han85={
+  name="sheng"#女1
+  dynasty_house=house_baijia112#臧
+	religion="xizhouli" 
+	culture="lu"
+  father=han81
+  female=yes
+
+  3842.8.1 = {
+		birth = yes
+	}
+  3912.11.1={
+    death = yes
+  }
+}
+han86={
+  name="qingjun"#女2
+  dynasty_house=house_baijia112#臧
+	religion="xizhouli" 
+	culture="lu"
+  father=han81
+  female=yes
+
+  3843.8.1 = {
+		birth = yes
+	}
+  3912.11.1={
+    death = yes
+  }
+}
+### 鲁国公族--众氏--孝公之子 （改姓氏）###
+han6081={
+  name="nanming1071"
+  dynasty_house=house_xin335#众
+	religion="xizhouli" 
+	culture="lu"
+  father=han70
+
+  3819.1.1 = {
+		birth = yes
+	}
+  3912.11.1={
+    death = yes
+  }
+}
+han6082={
+  name="wuzhi"#储子1号
+  dynasty_house=house_xin335
+	religion="xizhouli" 
+	culture="lu"
+  father=han6081
+
+  3839.8.1 = {
+		birth = yes
+	}
+  3912.11.1={
+    death = yes
+  }
+}
+han6083={
+  name="zhong"#储子2号
+  dynasty_house=house_xin335
+	religion="xizhouli" 
+	culture="lu"
+  father=han6081
+
+  3840.8.1 = {
+		birth = yes
+	}
+  3912.11.1={
+    death = yes
+  }
+}
+han6084={
+  name="chao"#储子3号
+  dynasty_house=house_xin335
+	religion="xizhouli" 
+	culture="lu"
+  father=han6081
+
+  3841.8.1 = {
+		birth = yes
+	}
+  3912.11.1={
+    death = yes
+  }
+}
+han6085={
+  name="nvming150"#女1
+  dynasty_house=house_xin335
+	religion="xizhouli" 
+	culture="lu"
+  father=han6081
+  female=yes
+
+  3842.8.1 = {
+		birth = yes
+	}
+  3912.11.1={
+    death = yes
+  }
+}
+han6086={
+  name="nvming175"#女2
+  dynasty_house=house_xin335
+	religion="xizhouli" 
+	culture="lu"
+  father=han6081
+  female=yes
+
+  3839.9.1 = {
+		birth = yes
+	}
+  3912.11.1={
+    death = yes
+  }
+}
+### 鲁国公族--展氏--孝公之子###
+luguo1={
+  name="nanming65"公子展
+  dynasty_house=house_baijia49
+	religion="xizhouli" 
+	culture="lu"
+  father=han70
+
+  3819.8.8 = {
+		birth = yes
+	}
+  3897.11.1={
+    death = yes
+  }
+}
+luguo2={
+  name="nanming1084"公子展之子
+  dynasty_house=house_baijia49
+	religion="xizhouli" 
+	culture="lu"
+  father=luguo1
+
+  3837.10.10 = {
+		birth = yes
+	}
+  3897.11.1={
+    death = yes
+  }
+}
+### 鲁国公族--羽父氏--孝公之子###
+luguo3={
+  name="nanming1085"
+  dynasty_house=house_xin395
+	religion="xizhouli" 
+	culture="lu"
+  father=han71
+
+  3838.6.24 = {
+		birth = yes
+	}
+  3897.11.1={
+    death = yes
+  }
+}
+### 鲁国公族--东野氏###
+luguo10={
+  name="yu5"
+  dynasty_house=house_xin394
+	religion="xizhouli" 
+	culture="lu"
+  father=han58
+
+  3621.1.1 = {
+		birth = yes
+	}
+  3670.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+luguo11={
+  name="ci2"
+  dynasty_house=house_xin394
+	religion="xizhouli" 
+	culture="lu"
+  father=luguo10
+
+  3645.1.1 = {
+		birth = yes
+	}
+  3706.11.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+luguo12={
+  name="ziyu1"
+  dynasty_house=house_xin394
+	religion="xizhouli" 
+	culture="lu"
+  father=luguo11
+
+  3688.1.1 = {
+		birth = yes
+	}
+  3747.11.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+luguo13={
+  name="e1"
+  dynasty_house=house_xin394
+	religion="xizhouli" 
+	culture="lu"
+  father=luguo12
+
+  3713.1.1 = {
+		birth = yes
+	}
+  3770.11.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+luguo14={
+  name="miyong"
+  dynasty_house=house_xin394
+	religion="xizhouli" 
+	culture="lu"
+  father=luguo13
+
+  3747.1.1 = {
+		birth = yes
+	}
+  3800.11.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+luguo15={
+  name="chu4"
+  dynasty_house=house_xin394
+	religion="xizhouli" 
+	culture="lu"
+  father=luguo14
+
+  3780.1.1 = {
+		birth = yes
+	}
+  3821.11.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+luguo16={
+  name="zhe1"#开局
+  dynasty_house=house_xin394
+	religion="xizhouli" 
+	culture="lu"
+  father=luguo15
+
+  3801.1.1 = {
+		birth = yes
+	}
+  3880.11.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+luguo17={
+  name="mang2"
+  dynasty_house=house_xin394
+	religion="xizhouli" 
+	culture="lu"
+  father=luguo15
+
+  3825.1.1 = {
+		birth = yes
+	}
+  3880.11.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+luguo18={
+  name="nvming242"
+  dynasty_house=house_xin394
+	religion="xizhouli" 
+	culture="lu"
+  father=luguo15
+  female=yes
+
+  3826.1.1 = {
+		birth = yes
+	}
+  3880.11.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+luguo19={
+  name="gang1"
+  dynasty_house=house_xin394
+	religion="xizhouli" 
+	culture="lu"
+  father=luguo15
+
+  3827.1.1 = {
+		birth = yes
+	}
+  3880.11.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+luguo20={
+  name="nvming247"
+  dynasty_house=house_xin394
+	religion="xizhouli" 
+	culture="lu"
+  father=luguo15
+  female=yes
+
+  3828.1.1 = {
+		birth = yes
+	}
+  3880.11.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}

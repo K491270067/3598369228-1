@@ -1,0 +1,22 @@
+pdxmesh = {
+	name = "1cn_mesh"
+	file = "1cn_mesh.mesh"
+
+	meshsettings = {
+		name = "1cn_mesh"
+		index = 0
+		texture_diffuse = "damen.png"
+		texture_normal = "3d-model.png"
+		texture_specular = "damende.png"	
+		texture = {file = "damende.png" index = 5 }
+		shader = "snap_to_terrain"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+
+
+}
+
+entity = {
+	name = "1cn_mesh_entity"
+	pdxmesh = "1cn_mesh"
+}

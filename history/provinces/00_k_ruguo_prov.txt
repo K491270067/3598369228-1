@@ -1,0 +1,44 @@
+﻿##### d_rushi ############################
+
+### c_ping3
+# PING3
+2741 = {
+	culture = jin
+	religion = yili
+	holding = castle_holding
+}
+# ZHOU6
+2742 = {
+	holding = none
+}
+
+
+### c_fan9
+# FAN9
+2743 = {
+	culture = jin
+	religion = yili
+	holding = castle_holding
+}
+
+
+##### d_taishi ############################
+
+### c_gao5
+# GAO5
+1377 = {
+	culture = jin
+	religion = yili
+	holding = castle_holding
+}
+
+
+### c_daji1
+# DAJI1
+1378 = {
+	culture = jin
+	religion = yili
+	holding = castle_holding
+}
+
+

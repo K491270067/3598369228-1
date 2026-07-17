@@ -1,0 +1,44 @@
+﻿chinese_legwear = {
+	usage = customization
+	interface_position = 6
+	
+	add_accessory_modifiers = {
+		gene = legwear
+		template = no_legwear
+	}
+
+
+	## TGP chinese ##
+
+	add_accessory_modifiers = {
+		gene = legwear
+		is_valid_custom = {
+			has_tgp_dlc_trigger = yes
+		}
+		template = tgp_chinese_commoner_legwear
+	}
+
+	add_accessory_modifiers = {
+		gene = legwear
+		is_valid_custom = {
+			has_tgp_dlc_trigger = yes
+		}
+		template = tgp_chinese_war_legwear
+	}
+
+	add_accessory_modifiers = {
+		gene = legwear
+		is_valid_custom = {
+			has_tgp_dlc_trigger = yes
+		}
+		template = tgp_chinese_nobility_legwear
+	}
+
+		add_accessory_modifiers = {
+		gene = legwear
+		is_valid_custom = {
+			has_tgp_dlc_trigger = yes
+		}
+		template = tgp_chinese_high_nobility_legwear
+	}
+}

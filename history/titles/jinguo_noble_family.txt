@@ -1,0 +1,30 @@
+﻿c_jinyunshi = {
+	3849.12.31 = {
+		liege = k_jinguo
+		holder = jinyunshi38
+		government = feudal_admin_government
+		succession_laws = { noble_family_succession_law }
+	}
+	5000.10.1 = {
+		effect = {
+			destroy_landless_title_no_tgp_dlc_effect = {
+				DATE = 5000.10.1
+			}
+		}
+	}
+}
+c_yunshi1 = {
+	3849.12.31 = {
+		liege = k_jinguo
+		holder = jinyunshi45
+		government = feudal_admin_government
+		succession_laws = { noble_family_succession_law }
+	}
+	5000.10.1 = {
+		effect = {
+			destroy_landless_title_no_tgp_dlc_effect = {
+				DATE = 5000.10.1
+			}
+		}
+	}
+}

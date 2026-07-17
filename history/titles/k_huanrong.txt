@@ -1,0 +1,105 @@
+﻿d_huanshi = {
+	3676.1.1 = {
+		liege = "k_huanrong"
+		holder = han3051
+	}
+	3723.1.1 = {
+		holder = han3052
+	}
+	3766.1.1 = {
+		holder = han3053
+	}
+	3799.1.1 = {
+		holder = han3054
+	}
+	3835.1.1 = {
+		holder = han3055
+	}
+}
+d_jinchengshi = {
+	3676.1.1 = {
+		liege = "k_huanrong"
+		holder = han3051
+	}
+	3723.1.1 = {
+		holder = han3052
+	}
+	3766.1.1 = {
+		holder = han3053
+	}
+	3799.1.1 = {
+		holder = han3054
+	}
+	3835.1.1 = {
+		holder = huanrong9
+	}
+	3849.12.31 = {
+		government = tribal_government
+		change_development_level = 25
+	}
+}
+d_qianershi = {
+	3676.1.1 = {
+		liege = "k_huanrong"
+		holder = han3051
+	}
+	3723.1.1 = {
+		holder = han3052
+	}
+	3766.1.1 = {
+		holder = han3053
+	}
+	3799.1.1 = {
+		holder = han3054
+	}
+	3835.1.1 = {
+		holder = huanrong1
+	}
+	3849.12.31 = {
+		government = tribal_government
+		change_development_level = 26
+	}
+}
+d_tashi = {
+	3676.1.1 = {
+		liege = "k_huanrong"
+		holder = han3051
+	}
+	3723.1.1 = {
+		holder = han3052
+	}
+	3766.1.1 = {
+		holder = han3053
+	}
+	3799.1.1 = {
+		holder = han3054
+	}
+	3835.1.1 = {
+		holder = huanrong6
+	}
+	3849.12.31 = {
+		government = tribal_government
+		change_development_level = 25
+	}
+}
+k_huanrong = {
+	3676.1.1 = {
+		holder = han3051
+	}
+	3723.1.1 = {
+		holder = han3052
+	}
+	3766.1.1 = {
+		holder = han3053
+	}
+	3799.1.1 = {
+		holder = han3054
+	}
+	3835.1.1 = {
+		holder = han3055
+	}
+	3849.12.31 = {
+		government = tribal_government
+		change_development_level = 27
+	}
+}

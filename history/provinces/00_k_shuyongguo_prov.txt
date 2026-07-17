@@ -1,0 +1,44 @@
+﻿##### d_shuyongshi ############################
+
+### c_diji
+# 
+2044 = {
+	holding = none
+}
+
+
+### c_li18
+# 
+2045 = {
+	holding = none
+}
+
+
+### c_wuwei1
+# 
+2046 = {
+	holding = none
+}
+
+
+### c_fuqiu
+# 
+2047 = {
+	holding = none
+}
+
+
+### c_shuyong
+# 
+2048 = {
+	holding = none
+}
+
+
+### c_xiangan
+# 
+2050 = {
+	holding = none
+}
+
+

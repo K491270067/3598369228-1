@@ -1,0 +1,225 @@
+﻿##### d_pugushi ############################
+
+### c_juding
+# JUDING
+2 = {
+	culture = qi
+	religion = xizhouli
+	holding = castle_holding
+}
+# SHIYIN
+4 = {
+	holding = none
+}
+
+
+### c_pugu
+# PUGU
+9 = {
+	culture = qi
+	religion = xizhouli
+	holding = castle_holding
+}
+# LANGHUAI
+1 = {
+	holding = none
+}
+
+
+##### d_beiguoshi ############################
+
+### c_li19
+# LI19
+3 = {
+	culture = qi
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_beiqiu
+# BEIQIU
+11 = {
+	culture = qi
+	religion = xizhouli
+	holding = castle_holding
+}
+# BOCHANG
+5 = {
+	holding = none
+}
+
+
+##### d_lvshi ############################
+
+### c_yuanlou
+# YUANLOU
+7 = {
+	culture = qi
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_linzi
+# LINZI
+8 = {
+	culture = qi
+	religion = xizhouli
+	holding = castle_holding
+}
+# JIXIA
+2176 = {
+	holding = none
+}
+# HUA2
+2175 = {
+	holding = none
+}
+
+
+### c_quqiu
+# QUQIU
+10 = {
+	culture = qi
+	religion = xizhouli
+	holding = castle_holding
+}
+# JI15
+2174 = {
+	holding = none
+}
+
+
+### c_beiyang
+# BEIYANG
+2173 = {
+	culture = qi
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+##### d_gaoshi ############################
+
+### c_gaoyuan
+# GAOWAN
+12 = {
+	culture = qi
+	religion = xizhouli
+	holding = castle_holding
+}
+# FUYU
+14 = {
+	holding = none
+}
+
+
+### c_liangzou
+# LIANGZOU
+13 = {
+	culture = qi
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_tiantang
+# TIANTANG
+15 = {
+	culture = qi
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+##### d_dongguoshi ############################
+
+### c_huang
+# HUANG
+17 = {
+	culture = qi
+	religion = xizhouli
+	holding = castle_holding
+}
+# MAXING
+18 = {
+	holding = none
+}
+
+
+### c_qiuyu
+# QIUYU
+19 = {
+	culture = qi
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_ailing
+# AILING
+20 = {
+	culture = qi
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+##### d_cuishi ############################
+
+### c_cui
+# CUI
+29 = {
+	culture = qi
+	religion = xizhouli
+	holding = castle_holding
+}
+# ZOUPING
+30 = {
+	holding = none
+}
+
+
+### c_lai
+# LAI
+32 = {
+	culture = qi
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+##### d_guoshi ############################
+
+### c_wuling
+# WULING
+35 = {
+	culture = qi
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_xuguan
+# XUGUAN
+37 = {
+	culture = qi
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_changguo
+# CHANGGUO
+40 = {
+	culture = qi
+	religion = xizhouli
+	holding = castle_holding
+}
+# BANYANG
+2177 = {
+	holding = none
+}
+
+

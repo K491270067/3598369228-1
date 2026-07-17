@@ -1,0 +1,326 @@
+#############  笮都国--暂定姓笮 #############
+zuoduguo13={
+  name="nvming228"
+  dynasty=xin304
+	religion="xirongfangling" 
+	culture="xiqiang"
+
+  3745.1.1 = {
+		birth = yes
+	}
+  3800.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han5526={
+  name="baiyuenan379"
+  dynasty=xin304
+	religion="xirongfangling" 
+	culture="xiqiang"
+	father=zuoduguo13
+
+  3797.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han5527={
+  name="baiyuenan384"
+  dynasty=xin304
+	religion="xirongfangling" 
+	culture="xiqiang"
+  father=han5526
+
+  3817.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han5528={
+  name="baiyuenan387"
+  dynasty=xin304
+	religion="xirongfangling" 
+	culture="xiqiang"
+  father=han5526
+
+  3818.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han5529={
+  name="baiyuenan390"
+  dynasty=xin304
+	religion="xirongfangling" 
+	culture="xiqiang"
+  father=han5526
+
+  3819.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han5530={
+  name="baiyuenan391"
+  dynasty=xin304
+	religion="xirongfangling" 
+	culture="xiqiang"
+  father=han5526
+
+  3820.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han5531={
+  name="nvming222"#女一号
+  dynasty=xin304
+	religion="xirongfangling" 
+	culture="xiqiang"
+  father=han5526
+  female=yes
+
+  3821.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han5532={
+  name="nvming228"#女二号
+  dynasty=xin304
+	religion="xirongfangling" 
+	culture="xiqiang"
+  father=han5526
+  female=yes
+
+  3822.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+####################
+zuoduguo1={
+  name="baiyuenan507"
+  dynasty=xin905
+	religion="xirongfangling" 
+	culture="xiqiang"
+
+  3762.1.1 = {
+		birth = yes
+	}
+  3804.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+zuoduguo2={
+  name="baiyuenan516"
+  dynasty=xin905
+	religion="xirongfangling" 
+	culture="xiqiang"
+	father=zuoduguo1
+
+  3788.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+zuoduguo3={
+  name="baiyuenan524"
+  dynasty=xin905
+	religion="xirongfangling" 
+	culture="xiqiang"
+	father=zuoduguo2
+
+  3816.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+zuoduguo4={
+  name="baiyuenan537"
+  dynasty=xin905
+	religion="xirongfangling" 
+	culture="xiqiang"
+	father=zuoduguo2
+
+  3818.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+zuoduguo5={
+  name="baiyuenv136"
+  dynasty=xin905
+	religion="xirongfangling" 
+	culture="xiqiang"
+	father=zuoduguo2
+	female=yes
+
+  3824.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+zuoduguo6={
+  name="baiyuenv138"
+  dynasty=xin905
+	religion="xirongfangling" 
+	culture="xiqiang"
+	father=zuoduguo2
+	female=yes
+
+  3827.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+#########
+zuoduguo7={
+  name="baiyuenan541"
+  dynasty=xin905
+	religion="xirongfangling" 
+	culture="xiqiang"
+
+  3789.1.1 = {
+		birth = yes
+	}
+  3834.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+zuoduguo8={
+  name="baiyuenan462"
+  dynasty=xin905
+	religion="xirongfangling" 
+	culture="xiqiang"
+	father=zuoduguo7
+
+  3817.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+zuoduguo9={
+  name="baiyuenan491"
+  dynasty=xin905
+	religion="xirongfangling" 
+	culture="xiqiang"
+	father=zuoduguo8
+
+  3835.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+zuoduguo10={
+  name="baiyuenan500"
+  dynasty=xin905
+	religion="xirongfangling" 
+	culture="xiqiang"
+	father=zuoduguo8
+
+  3836.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+zuoduguo11={
+  name="baiyuenv168"
+  dynasty=xin905
+	religion="xirongfangling" 
+	culture="xiqiang"
+	father=zuoduguo8
+	female=yes
+
+  3837.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+zuoduguo12={
+  name="baiyuenv177"
+  dynasty=xin905
+	religion="xirongfangling" 
+	culture="xiqiang"
+	father=zuoduguo8
+	female=yes
+
+  3838.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}

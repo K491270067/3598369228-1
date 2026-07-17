@@ -1,0 +1,33 @@
+﻿##### d_qushi ############################
+
+### c_nanqu1
+# NANQU1
+1372 = {
+	culture = jin
+	religion = dongzhouli
+	holding = castle_holding
+}
+# LONG2
+2706 = {
+	holding = none
+}
+
+
+### c_caisang
+# CAISANG
+1373 = {
+	culture = jin
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+### c_yumendu
+# YUMENDU
+2708 = {
+	culture = jin
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+

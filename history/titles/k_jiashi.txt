@@ -1,0 +1,65 @@
+﻿d_chidinieshi = {
+	3623.1.1 = {
+		liege = "k_jiashi"
+		holder = han2103
+	}
+	3685.1.1 = {
+		holder = han2104
+	}
+	3752.1.1 = {
+		holder = han2105
+	}
+	3809.1.1 = {
+		holder = han2106
+	}
+	3849.1.1 = {
+		holder = han5525
+		change_development_level = 18
+	}
+	3849.12.31 = {
+		government = tribal_government
+	}
+}
+d_tongtishi = {
+	3623.1.1 = {
+		liege = "k_jiashi"
+		holder = han2103
+	}
+	3685.1.1 = {
+		holder = han2104
+	}
+	3752.1.1 = {
+		holder = han2105
+	}
+	3809.1.1 = {
+		holder = han2106
+	}
+	3849.1.1 = {
+		holder = jiashi3
+		change_development_level = 18
+	}
+	3849.12.31 = {
+		government = tribal_government
+	}
+}
+k_jiashi = {
+	3623.1.1 = {
+		holder = han2103
+	}
+	3685.1.1 = {
+		holder = han2104
+	}
+	3752.1.1 = {
+		holder = han2105
+	}
+	3809.1.1 = {
+		holder = han2106
+	}
+	3849.1.1 = {
+		holder = han2107
+	}
+	3849.12.31 = {
+		government = tribal_government
+		change_development_level = 23
+	}
+}

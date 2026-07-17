@@ -1,0 +1,70 @@
+﻿##### d_pishi ############################
+
+### c_pi1
+# PI1
+284 = {
+	culture = lu
+	religion = xizhouli
+	holding = castle_holding
+}
+# YIYANG5
+2290 = {
+	holding = none
+}
+
+
+### c_siqu
+# SIQU
+2308 = {
+	culture = lu
+	religion = xizhouli
+	holding = castle_holding
+}
+# SUIWEI
+2309 = {
+	holding = none
+}
+
+
+### c_wenzhe
+# WENZHE
+2310 = {
+	culture = lu
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+##### d_xishi3 ############################
+
+### c_youqiu
+# YOUQIU
+469 = {
+	culture = lu
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_lv
+# LV
+472 = {
+	culture = lu
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_lindu
+# LINDU
+2311 = {
+	culture = lu
+	religion = xizhouli
+	holding = castle_holding
+}
+# SIJING
+2312 = {
+	holding = none
+}
+
+

@@ -1,0 +1,57 @@
+﻿##### d_rongshi ############################
+
+### c_rong
+# RONG
+548 = {
+	culture = dongyi
+	religion = yili
+	holding = castle_holding
+}
+# HUYOU
+578 = {
+	holding = none
+}
+
+
+### c_fuqiu1
+# FUQIU1
+540 = {
+	culture = dongyi
+	religion = yili
+	holding = castle_holding
+}
+
+
+### c_kuiqiu
+# KUIQIU
+549 = {
+	culture = dongyi
+	religion = yili
+	holding = castle_holding
+}
+
+
+##### d_chuqiushi ############################
+
+### c_chuqiu
+# CHUQIU
+547 = {
+	culture = dongyi
+	religion = yili
+	holding = castle_holding
+}
+# GUAN4
+538 = {
+	holding = none
+}
+
+
+### c_anyang3
+# ANYANG3
+2321 = {
+	culture = dongyi
+	religion = yili
+	holding = castle_holding
+}
+
+

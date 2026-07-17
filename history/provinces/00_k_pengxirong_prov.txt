@@ -1,0 +1,69 @@
+﻿##### d_pengxishi ############################
+
+### c_lianshao
+# LIANSHAO
+935 = {
+	culture = xirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+# XIAGUI
+931 = {
+	holding = none
+}
+
+
+### c_pinyang
+# PINYANG
+938 = {
+	culture = xirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+# NANBAISHUI
+939 = {
+	holding = none
+}
+
+
+### c_huaide1
+# HUAIDE1
+2451 = {
+	culture = xirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+# FUPING1
+936 = {
+	holding = none
+}
+
+
+##### d_xishi5 ############################
+
+### c_qizhi
+# QIZHI
+909 = {
+	culture = xirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+# WANNIAN
+916 = {
+	holding = none
+}
+
+
+### c_yue
+# YUE
+910 = {
+	culture = xirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+# GUIGU
+917 = {
+	holding = none
+}
+
+

@@ -1,0 +1,93 @@
+﻿##### d_qishi2 ############################
+
+### c_tongshan
+# TONGSHAN
+3308 = {
+	holding = none
+}
+
+
+### c_tongquan
+# TONGQUAN
+3309 = {
+	holding = none
+}
+
+
+### c_shehong
+# SHEHONG
+3310 = {
+	holding = none
+}
+
+
+### c_xuanwu1
+# XUANWU1
+3311 = {
+	holding = none
+}
+
+
+### c_fucheng
+# FUCHENG
+3314 = {
+	holding = none
+}
+
+
+### c_jianzhou
+# JIANZHOU
+3159 = {
+	holding = none
+}
+
+
+### c_jinshui
+# JINSHUI
+3253 = {
+	holding = none
+}
+
+
+### c_duoye
+# CHANGJIANG
+3163 = {
+	holding = none
+}
+
+
+### c_qi17
+# QI17
+3640 = {
+	holding = none
+}
+
+
+### c_jinan
+# JINAN
+3189 = {
+	holding = none
+}
+
+
+### c_yanting
+# YANTING
+3312 = {
+	holding = none
+}
+
+
+### c_yongtai
+# YONGTAI
+3313 = {
+	holding = none
+}
+
+
+### c_yanquan
+# YANQUAN
+3295 = {
+	holding = none
+}
+
+

@@ -1,0 +1,163 @@
+﻿########澶ф垘
+jixinghushi1={
+  name="hu3"
+  dynasty=xin763
+	religion="xirongfangling" 
+	culture="xirong"
+  father=han638
+
+  3679.1.1 = {
+		birth = yes
+	}
+  3736.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jixinghushi2={
+  name="ren1"
+  dynasty_house=house_xin764
+	religion="xirongfangling" 
+	culture="xirong"
+  father=jixinghushi1
+
+  3700.1.1 = {
+		birth = yes
+	}
+  3757.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jixinghushi3={
+  name="ji3"
+  dynasty_house=house_xin764
+	religion="xirongfangling" 
+	culture="xirong"
+  father=jixinghushi2
+
+  3724.1.1 = {
+		birth = yes
+	}
+  3781.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jixinghushi4={
+  name="jujiu"
+  dynasty_house=house_xin764
+	religion="xirongfangling" 
+	culture="xirong"
+  father=jixinghushi3
+
+  3747.1.1 = {
+		birth = yes
+	}
+  3804.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jixinghushi5={
+  name="nanming1163"
+  dynasty_house=house_xin764
+	religion="xirongfangling" 
+	culture="xirong"
+  father=jixinghushi4
+
+  3770.1.1 = {
+		birth = yes
+	}
+  3827.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jixinghushi6={
+  name="nvming137"
+  dynasty_house=house_xin764
+	religion="xirongfangling" 
+	culture="xirong"
+  father=jixinghushi5
+
+  3793.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jixinghushi7={
+  name="yu5"
+  dynasty_house=house_xin764
+	religion="xirongfangling" 
+	culture="xirong"
+  father=jixinghushi6
+
+  3811.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jixinghushi8={
+  name="chou2"
+  dynasty_house=house_xin764
+	religion="xirongfangling" 
+	culture="xirong"
+  father=jixinghushi6
+
+  3814.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jixinghushi9={
+  name="jiao4"
+  dynasty_house=house_xin764
+	religion="xirongfangling" 
+	culture="xirong"
+  father=jixinghushi6
+  female=yes
+
+  3818.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jixinghushi10={
+  name="ran2"
+  dynasty_house=house_xin764
+	religion="xirongfangling" 
+	culture="xirong"
+  father=jixinghushi6
+  female=yes
+
+  3823.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}

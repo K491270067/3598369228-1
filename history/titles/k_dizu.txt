@@ -1,0 +1,39 @@
+﻿d_huoshi2 = {
+	3722.1.1 = {
+		liege = "k_dizu"
+		holder = dizushi1
+	}
+	3780.12.31 = {
+		holder = dizushi2
+	}
+	3817.12.31 = {
+		holder = dizushi3
+	}
+	3838.12.31 = {
+		holder = dizushi10
+	}
+	3849.1.1 = {
+		change_development_level = 25
+	}
+	3849.12.31 = {
+		government = tribal_government
+	}
+}
+k_dizu = {
+	3722.1.1 = {
+		holder = dizushi1
+	}
+	3780.12.31 = {
+		holder = dizushi2
+	}
+	3817.12.31 = {
+		holder = dizushi3
+	}
+	3838.12.31 = {
+		holder = dizushi4
+	}
+	3849.12.31 = {
+		government = tribal_government
+		change_development_level = 28
+	}
+}

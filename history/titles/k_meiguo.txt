@@ -1,0 +1,81 @@
+﻿d_meishi = {
+	3442.10.1 = {
+		liege = "k_meiguo"
+		holder = mei1
+	}
+	3514.1.1 = {
+		holder = mei2
+	}
+	3544.1.1 = {
+		holder = mei3
+	}
+	3572.1.1 = {
+		holder = mei4
+	}
+	3607.1.1 = {
+		holder = mei5
+	}
+	3621.1.1 = {
+		holder = mei6
+	}
+	3669.1.1 = {
+		holder = mei17
+	}
+	3720.1.1 = {
+		holder = mei18
+	}
+	3742.1.1 = {
+		holder = mei19
+	}
+	3800.1.1 = {
+		holder = mei20
+	}
+	3830.1.1 = {
+		holder = mei21
+	}
+	3849.1.1 = {
+		change_development_level = 20
+		government = feudal_admin_government
+	}
+}
+k_meiguo = {
+	3442.10.1 = {
+		liege = "e_zhoutianzi"
+		holder = mei1
+	}
+	3514.1.1 = {
+		holder = mei2
+	}
+	3544.1.1 = {
+		holder = mei3
+	}
+	3572.1.1 = {
+		holder = mei4
+	}
+	3607.1.1 = {
+		holder = mei5
+	}
+	3621.1.1 = {
+		holder = mei6
+	}
+	3669.1.1 = {
+		holder = mei7
+	}
+	3720.1.1 = {
+		holder = mei8
+	}
+	3742.1.1 = {
+		holder = mei9
+	}
+	3800.1.1 = {
+		holder = mei10
+	}
+	3830.1.1 = {
+		holder = mei11
+	}
+	3849.1.1 = {
+		liege = "e_zhoutianzi1"
+		change_development_level = 25
+		government = feudal_admin_government
+	}
+}

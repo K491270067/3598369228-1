@@ -1,0 +1,69 @@
+﻿##### d_gushi3 ############################
+
+### c_gaogouli
+# GAOGOULI
+3489 = {
+	holding = none
+}
+# MUDI
+3860 = {
+	holding = none
+}
+# DONGNA
+3865 = {
+	holding = none
+}
+# GAIMOU
+3478 = {
+	holding = none
+}
+# LIANGMO
+3859 = {
+	holding = none
+}
+# YULIN2
+3482 = {
+	holding = none
+}
+
+
+### c_gaizhou
+
+
+### c_yulin2
+
+
+### c_zaona
+
+
+### c_henna
+
+
+### c_bunai1
+
+
+### c_canyan
+# GAIZHOU
+3481 = {
+	holding = none
+}
+
+
+### c_xigaima
+
+
+### c_shangyintai
+
+
+### c_chuanna
+
+
+### c_guanna
+
+
+### c_feiliu
+
+
+### c_shenlu1
+
+

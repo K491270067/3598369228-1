@@ -1,0 +1,14 @@
+﻿########################################
+# 绀煎穿涔愬潖 - 鑴氭湰鍖栦慨姝?
+########################################
+
+# 婊＄骇鎽勬斂鏉冨姏淇锛堝ぇ鏀垮杩橈級
+saas_supreme_regency_power_modifier = {
+	icon = "gfx/interface/icons/modifiers/county_modifier_development_negative.dds"
+	diarchy_power_gain_mult = 0.5
+	monthly_prestige_gain_mult = 0.25
+	monthly_piety_gain_mult = 0.15
+	general_opinion = 10
+	same_opinion = 20
+	vassal_opinion = 10
+}

@@ -1,0 +1,210 @@
+﻿sixingchongshi1={
+  name="nanming861"
+  dynasty=xin803
+	religion="xiali" 
+	culture="xiaren"
+  father=sixingyoushenshi26
+
+  3617.1.1 = {
+		birth = yes
+	}
+  3671.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+sixingchongshi2={
+  name="nanming879"
+  dynasty_house=house_xin237
+	religion="xiali" 
+	culture="xiaren"
+  father=sixingchongshi1
+
+  3648.1.1 = {
+		birth = yes
+	}
+  3703.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+sixingchongshi3={
+  name="nanming897"
+  dynasty_house=house_xin237
+	religion="xiali" 
+	culture="xiaren"
+  father=sixingchongshi2
+
+  3679.1.1 = {
+		birth = yes
+	}
+  3728.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+sixingchongshi4={
+  name="nanming917"
+  dynasty_house=house_xin237
+	religion="xiali" 
+	culture="xiaren"
+  father=sixingchongshi3
+
+  3700.1.1 = {
+		birth = yes
+	}
+  3753.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+sixingchongshi5={
+  name="nanming935"
+  dynasty_house=house_xin237
+	religion="xiali" 
+	culture="xiaren"
+  father=sixingchongshi4
+
+  3722.1.1 = {
+		birth = yes
+	}
+  3775.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+sixingchongshi6={
+  name="nanming1004"
+  dynasty_house=house_xin237
+	religion="xiali" 
+	culture="xiaren"
+  father=sixingchongshi5
+
+  3745.1.1 = {
+		birth = yes
+	}
+  3798.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+sixingchongshi7={
+  name="nanming1024"
+  dynasty_house=house_xin237
+	religion="xiali" 
+	culture="xiaren"
+  father=sixingchongshi6
+
+  3768.1.1 = {
+		birth = yes
+	}
+  3821.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+sixingchongshi8={
+  name="nanming1049"
+  dynasty_house=house_xin237
+	religion="xiali" 
+	culture="xiaren"
+  father=sixingchongshi7
+
+  3793.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+sixingchongshi9={
+  name="nanming1063"
+  dynasty_house=house_xin237
+	religion="xiali" 
+	culture="xiaren"
+  father=sixingchongshi8
+
+  3817.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+sixingchongshi10={
+  name="nanming1080"
+  dynasty_house=house_xin237
+	religion="xiali" 
+	culture="xiaren"
+  father=sixingchongshi9
+
+  3825.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+sixingchongshi11={
+  name="nanming1105"
+  dynasty_house=house_xin237
+	religion="xiali" 
+	culture="xiaren"
+  father=sixingchongshi9
+
+  3827.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+sixingchongshi12={
+  name="hui3"
+  dynasty_house=house_xin237
+	religion="xiali" 
+	culture="xiaren"
+  father=sixingchongshi9
+  female=yes
+
+  3827.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+sixingchongshi13={
+  name="tuo4"
+  dynasty_house=house_xin237
+	religion="xiali" 
+	culture="xiaren"
+  father=sixingchongshi9
+  female=yes
+
+  3827.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}

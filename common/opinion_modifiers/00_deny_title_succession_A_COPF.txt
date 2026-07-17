@@ -1,0 +1,59 @@
+﻿opinion_denied_title_succession = { #封臣对领主：后代头衔继承被否决
+	opinion = -40
+	years = 20
+	stacking = yes
+	decaying = yes
+}
+opinion_denied_title_succession_again = { #封臣对领主：后代头衔继承被再次否决！
+	opinion = -60
+	years = 20
+	stacking = yes
+	decaying = yes
+}
+
+opinion_denied_title_succession_primary_heir = { #封臣主要继承人对领主：头衔继承被否决
+	opinion = -60
+	years = 40
+	stacking = yes
+	decaying = yes
+}
+opinion_denied_title_succession_again_primary_heir = { #封臣主要继承人对领主：头衔继承被再次否决！
+	opinion = -80
+	years = 40
+	stacking = yes
+	decaying = yes
+}
+
+opinion_denied_title_succession_heir = { #封臣其他继承人对领主：潜在头衔继承被否决
+	opinion = -10
+	years = 10
+	decaying = yes
+}
+opinion_denied_title_succession_again_heir = { #封臣其他继承人对领主：潜在头衔继承被再次否决！
+	opinion = -20
+	years = 10
+	decaying = yes
+}
+
+opinion_restored_title_succession = { #封臣对领主：头衔被恢复继承
+	opinion = 10
+	years = 10
+	decaying = yes
+}
+
+opinion_agree_to_return_title = { #领主对封臣：同意归还头衔
+	opinion = 20
+	years = 10
+}
+opinion_refuse_to_return_title = { #领主对封臣：拒绝归还头衔
+	opinion = -60
+	years = 20
+	
+	imprisonment_reason = yes
+}
+
+opinion_forced_to_return_title_heir = { #封臣继承人对领主：被强制要求归还头衔
+	opinion = -60
+	years = 30
+	decaying = yes
+}

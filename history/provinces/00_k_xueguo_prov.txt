@@ -1,0 +1,57 @@
+﻿##### d_xueshi ############################
+
+### c_chang1
+# CHANG1
+404 = {
+	culture = lu
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_xue
+# XUE
+410 = {
+	culture = lu
+	religion = xizhouli
+	holding = castle_holding
+}
+# GUANGQI
+411 = {
+	holding = none
+}
+
+
+### c_qi12
+# QI12
+413 = {
+	culture = lu
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+##### d_zhishi ############################
+
+### c_liu1
+# LIU1
+476 = {
+	culture = lu
+	religion = xizhouli
+	holding = castle_holding
+}
+# PEI
+478 = {
+	holding = none
+}
+
+
+### c_niesang
+# NIESANG
+477 = {
+	culture = lu
+	religion = xizhouli
+	holding = castle_holding
+}
+
+

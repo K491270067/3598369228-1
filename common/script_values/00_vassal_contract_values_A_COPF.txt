@@ -1,0 +1,167 @@
+﻿opinion_succession_rights_hereditary = {
+	if = {
+		limit = {
+			OR = {
+				has_realm_law_flag = vassal_succession_rights_policy_laws_hereditary
+				liege = { has_realm_law_flag = vassal_succession_rights_policy_laws_hereditary }
+			}
+		}
+		value = 0
+	}
+	else_if = {
+		limit = {
+			OR = {
+				has_realm_law_flag = vassal_succession_rights_policy_laws_forced_partition
+				liege = { has_realm_law_flag = vassal_succession_rights_policy_laws_forced_partition }
+			}
+		}
+		value = 5
+	}
+	else_if = {
+		limit = {
+			OR = {
+				scope:subject = { has_realm_law_flag = vassal_succession_rights_policy_laws_grant_recognition }
+				scope:liege = { has_realm_law_flag = vassal_succession_rights_policy_laws_grant_recognition }
+			}
+		}
+		value = 10
+	}
+	else_if = {
+		limit = {
+			OR = {
+				scope:subject = { has_realm_law_flag = vassal_succession_rights_policy_laws_governor_appointment }
+				scope:liege = { has_realm_law_flag = vassal_succession_rights_policy_laws_governor_appointment }
+			}
+		}
+		value = 15
+	}
+	else = {
+		value = 0
+	}
+}
+
+opinion_succession_rights_forced_partition = {
+	if = {
+		limit = {
+			OR = {
+				scope:subject = { has_realm_law_flag = vassal_succession_rights_policy_laws_hereditary }
+				scope:liege = { has_realm_law_flag = vassal_succession_rights_policy_laws_hereditary }
+			}
+		}
+		value = -5
+	}
+	else_if = {
+		limit = {
+			OR = {
+				scope:subject = { has_realm_law_flag = vassal_succession_rights_policy_laws_forced_partition }
+				scope:liege = { has_realm_law_flag = vassal_succession_rights_policy_laws_forced_partition }
+			}
+		}
+		value = 0
+	}
+	else_if = {
+		limit = {
+			OR = {
+				scope:subject = { has_realm_law_flag = vassal_succession_rights_policy_laws_grant_recognition }
+				scope:liege = { has_realm_law_flag = vassal_succession_rights_policy_laws_grant_recognition }
+			}
+		}
+		value = 5
+	}
+	else_if = {
+		limit = {
+			OR = {
+				scope:subject = { has_realm_law_flag = vassal_succession_rights_policy_laws_governor_appointment }
+				scope:liege = { has_realm_law_flag = vassal_succession_rights_policy_laws_governor_appointment }
+			}
+		}
+		value = 10
+	}
+	else = {
+		value = 0
+	}
+}
+
+opinion_succession_rights_grant_recognition = {
+	if = {
+		limit = {
+			OR = {
+				scope:subject = { has_realm_law_flag = vassal_succession_rights_policy_laws_hereditary }
+				scope:liege = { has_realm_law_flag = vassal_succession_rights_policy_laws_hereditary }
+			}
+		}
+		value = -10
+	}
+	else_if = {
+		limit = {
+			OR = {
+				scope:subject = { has_realm_law_flag = vassal_succession_rights_policy_laws_forced_partition }
+				scope:liege = { has_realm_law_flag = vassal_succession_rights_policy_laws_forced_partition }
+			}
+		}
+		value = -5
+	}
+	else_if = {
+		limit = {
+			OR = {
+				scope:subject = { has_realm_law_flag = vassal_succession_rights_policy_laws_grant_recognition }
+				scope:liege = { has_realm_law_flag = vassal_succession_rights_policy_laws_grant_recognition }
+			}
+		}
+		value = 0
+	}
+	else_if = {
+		limit = {
+			OR = {
+				scope:subject = { has_realm_law_flag = vassal_succession_rights_policy_laws_governor_appointment }
+				scope:liege = { has_realm_law_flag = vassal_succession_rights_policy_laws_governor_appointment }
+			}
+		}
+		value = 5
+	}
+	else = {
+		value = 0
+	}
+}
+
+opinion_succession_rights_governor_appointment = {
+	if = {
+		limit = {
+			OR = {
+				scope:subject = { has_realm_law_flag = vassal_succession_rights_policy_laws_hereditary }
+				scope:liege = { has_realm_law_flag = vassal_succession_rights_policy_laws_hereditary }
+			}
+		}
+		value = -15
+	}
+	else_if = {
+		limit = {
+			OR = {
+				scope:subject = { has_realm_law_flag = vassal_succession_rights_policy_laws_forced_partition }
+				scope:liege = { has_realm_law_flag = vassal_succession_rights_policy_laws_forced_partition }
+			}
+		}
+		value = -10
+	}
+	else_if = {
+		limit = {
+			OR = {
+				scope:subject = { has_realm_law_flag = vassal_succession_rights_policy_laws_grant_recognition }
+				scope:liege = { has_realm_law_flag = vassal_succession_rights_policy_laws_grant_recognition }
+			}
+		}
+		value = -5
+	}
+	else_if = {
+		limit = {
+			OR = {
+				scope:subject = { has_realm_law_flag = vassal_succession_rights_policy_laws_governor_appointment }
+				scope:liege = { has_realm_law_flag = vassal_succession_rights_policy_laws_governor_appointment }
+			}
+		}
+		value = 0
+	}
+	else = {
+		value = 0
+	}
+}

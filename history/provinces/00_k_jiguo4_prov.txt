@@ -1,0 +1,100 @@
+﻿##### d_yiqishi2 ############################
+
+### c_youdu
+# YOUDU
+1249 = {
+	culture = yan
+	religion = xizhouli
+	holding = castle_holding
+}
+# CHANGPING1
+1248 = {
+	culture = yan
+	religion = xizhouli
+	holding = castle_holding
+}
+# JUNDU
+1247 = {
+	culture = yan
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_ji11
+# JI11
+1250 = {
+	culture = yan
+	religion = xizhouli
+	holding = castle_holding
+}
+# JU4
+2549 = {
+	holding = none
+}
+# WEI7
+2550 = {
+	holding = none
+}
+
+
+### c_huoyin
+
+
+##### d_jishi5 ############################
+
+### c_yuyang
+# YUYANG
+1245 = {
+	culture = yan
+	religion = xizhouli
+	holding = castle_holding
+}
+# ANLE
+1246 = {
+	holding = none
+}
+# HUNU
+1251 = {
+	culture = yan
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_jundu
+
+
+### c_changping1
+
+
+##### d_qishi3 ############################
+
+### c_guangping
+
+
+### c_hunu
+
+
+### c_pinggu
+
+
+### c_jucheng
+# JUCHENG
+1253 = {
+	culture = yan
+	religion = xizhouli
+	holding = castle_holding
+}
+# LU1
+1255 = {
+	holding = none
+}
+# PINGGU
+1252 = {
+	culture = yan
+	religion = xizhouli
+	holding = castle_holding
+}
+
+

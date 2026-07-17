@@ -1,0 +1,51 @@
+﻿##### d_yishijinyanshi ############################
+
+### c_yishi2
+
+
+### c_lingluguan
+
+
+### c_fangao
+
+
+### c_zhuyi
+# ZHIMO
+2882 = {
+	holding = none
+}
+# DAOJIN
+2924 = {
+	holding = none
+}
+# YISHI2
+2876 = {
+	holding = none
+}
+
+
+### c_yizhi3
+# LINGLUGUAN
+2899 = {
+	holding = none
+}
+
+
+### c_annong
+
+
+### c_hequ
+
+
+### c_sanchong
+
+
+### c_azuojie
+
+
+### c_zhumingbu
+
+
+### c_sanming
+
+

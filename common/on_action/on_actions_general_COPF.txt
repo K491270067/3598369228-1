@@ -1,0 +1,205 @@
+﻿# 连接到原版触发器 # ============================================================================================================================================
+
+# 游戏开始：
+on_game_start = {
+	on_actions = {
+        setup_mod_copf
+		setup_mod_compatibility_copf
+    }
+}
+# 游戏开始：角色选择完毕
+on_game_start_after_lobby = {
+	on_actions = {
+		setup_mod_compatibility_copf
+		count_valid_vassal
+	}
+}
+# 每季度（ROOT：所有可玩角色）
+quarterly_playable_pulse = {
+	on_actions = {
+		count_valid_vassal
+	}
+}
+# 主头衔改变时（ROOT：改变主头衔的角色）
+on_primary_title_change = {
+	on_actions = {
+		count_valid_vassal_from_vassal
+	}
+	# scope:previous_title（之前的主头衔）
+}
+# 获得封臣时（ROOT：获得封臣的领主）
+on_vassal_gained = {
+	on_actions = {
+		count_valid_vassal
+	}
+	# scope:vassal（获得的新封臣）
+	# scope:old_liege（新封臣的旧领主）
+}
+# 封臣领主改变时（ROOT：封臣）
+on_vassal_change = {
+	on_actions = {
+		count_valid_vassal_from_vassal
+	}
+	# scope:old_liege（封臣的旧领主）
+}
+
+# 自定义触发器 # ============================================================================================================================================
+
+# 进行Mod初始设置 # ————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+setup_mod_copf = {
+	effect = {
+		set_global_variable = {
+			name = has_mod_copf
+			value = yes
+		}
+		if = {
+			limit = { global_var:has_mod_copf ?= yes }
+			if = {
+				limit = { has_global_variable = mod_copf_version }
+				set_global_variable = { # 记录之前的版本号
+					name = mod_copf_version_previous
+					value = global_var:mod_copf_version
+				}
+			}
+			set_global_variable = { # 版本号
+				name = mod_copf_version
+				value = 0.5
+			}
+		}
+	}
+}
+# 进行Mod初始设置：旧版本兼容性设置 # ————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+setup_mod_copf_version = {
+	trigger = {
+		global_var:mod_copf_version_previous != global_var:mod_copf_version
+	}
+	effect = {
+		every_ruler = {
+			limit = {
+				is_independent_ruler = no
+				OR = {
+					government_has_flag = government_is_feudal
+					government_has_flag = government_is_feudal_admin
+				}
+			}
+			if = {
+				limit = { subject_contract_has_flag = succession_rights_court_supervision }
+				add_to_temporary_list = change_to_governor
+			}
+			else_if = {
+				limit = { subject_contract_has_flag = succession_rights_governor_appointment }
+				add_to_temporary_list = change_to_supervision
+			}
+		}
+		every_in_local_list = {
+			list = change_to_governor
+			vassal_contract_set_obligation_level = {
+				type = feudal_government_succession_rights
+				level = feudal_succession_rights_governor_appointment
+			}
+		}
+		every_in_local_list = {
+			list = change_to_supervision
+			vassal_contract_set_obligation_level = {
+				type = feudal_government_succession_rights
+				level = feudal_succession_rights_court_supervision
+			}
+		}
+	}
+}
+# 进行Mod初始设置：其它Mod兼容性 # ————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+setup_mod_compatibility_copf = {
+	effect = {
+		if = {
+			limit = { NOT = { has_global_variable = lwxxx_is_loaded } }
+			set_global_variable = {
+				name = lwxxx_is_loaded
+				value = no
+			}
+		}
+	}
+}
+# 计算有效封臣数量：领主触发 # ————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+count_valid_vassal = {
+	trigger = {
+		highest_held_title_tier >= tier_duchy
+		any_vassal = {
+			OR = {
+				subject_contract_has_flag = succession_rights_hereditary
+				subject_contract_has_flag = locked_to_partition
+				subject_contract_has_flag = succession_rights_grant_recognition
+				subject_contract_has_flag = succession_rights_governor_appointment
+				subject_contract_has_flag = candidate_preference_powerful_gentry
+				subject_contract_has_flag = candidate_preference_local_talent
+				subject_contract_has_flag = candidate_preference_favor_nepotism
+				subject_contract_has_flag = candidate_preference_talent_only
+				government_allows = administrative
+			}
+		}
+	}
+	effect = {
+		this = { save_scope_as = target_liege }
+
+		scope:target_liege ?= {
+			clear_variable_list = list_valid_vassal
+			every_vassal = {
+				limit = {
+					primary_title.tier >= tier_county
+					NOT = {
+						any_held_title = {
+							count = all
+							is_noble_family_title = yes
+						}
+					}
+				}
+				scope:target_liege = {
+					add_to_variable_list = {
+						name = list_valid_vassal
+						target = prev
+					}
+				}
+			}
+		}
+	}
+}
+# 计算有效封臣数量：封臣触发 # ————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+count_valid_vassal_from_vassal = {
+	trigger = {
+		highest_held_title_tier >= tier_county
+		OR = {
+			exists = scope:old_liege
+			is_independent_ruler = no
+		}
+	}
+	effect = {
+		if = {
+			limit = { exists = scope:old_liege }
+			scope:old_liege = { save_scope_as = target_liege }
+		}
+		else_if = {
+			limit = { is_independent_ruler = no }
+			liege = { save_scope_as = target_liege }
+		}
+		
+		scope:target_liege ?= {
+			clear_variable_list = list_valid_vassal
+			every_vassal = {
+				limit = {
+					primary_title.tier >= tier_county
+					NOT = {
+						any_held_title = {
+							count = all
+							is_noble_family_title = yes
+						}
+					}
+				}
+				scope:target_liege = {
+					add_to_variable_list = {
+						name = list_valid_vassal
+						target = prev
+					}
+				}
+			}
+		}
+	}
+}

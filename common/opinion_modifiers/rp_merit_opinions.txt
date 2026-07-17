@@ -1,0 +1,104 @@
+﻿rp_merit_reward_gold_opinion = {
+	opinion = 30
+	years = 10
+}
+
+rp_merit_reward_honor_opinion = {
+	opinion = 40
+	years = 12
+}
+
+rp_merit_reward_land_opinion = {
+	opinion = 60
+	years = 20
+}
+
+rp_merit_refused_humble_opinion = {
+	opinion = -15
+	years = 8
+}
+
+rp_merit_refused_harsh_opinion = {
+	opinion = -40
+	years = 12
+}
+
+rp_merit_persuaded_opinion = {
+	opinion = 10
+	years = 5
+}
+
+rp_merit_promised_office_opinion = {
+	opinion = 20
+	years = 8
+}
+
+rp_merit_recorded_opinion = {
+	opinion = 15
+	years = 8
+}
+
+rp_merit_troops_rewarded_opinion = {
+	opinion = 15
+	years = 6
+}
+
+rp_merit_legal_rebuff_opinion = {
+	opinion = -25
+	years = 8
+}
+
+rp_merit_hostage_office_opinion = {
+	opinion = 15
+	years = 8
+}
+
+rp_merit_feast_reward_opinion = {
+	opinion = 15
+	years = 5
+}
+
+rp_campaign_incident_grateful_opinion = {
+	opinion = 20
+	years = 5
+}
+
+rp_campaign_incident_rebuked_opinion = {
+	opinion = -25
+	years = 5
+}
+
+rp_campaign_incident_risk_opinion = {
+	opinion = -10
+	years = 3
+}
+
+rp_campaign_life_saved_opinion = {
+	opinion = 50
+	years = 15
+}
+
+rp_privilege_granted_opinion = {
+	opinion = 35
+	years = 20
+}
+
+rp_privilege_refused_opinion = {
+	opinion = -30
+	years = 12
+}
+
+rp_founding_memory_opinion = {
+	opinion = 20
+	years = 10
+}
+
+rp_founding_settled_dispute_opinion = {
+	opinion = 15
+	years = 8
+}
+
+rp_founding_unsettled_dispute_opinion = {
+	opinion = -20
+	years = 8
+}

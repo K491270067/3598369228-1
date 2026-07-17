@@ -1,0 +1,38 @@
+﻿##### d_qinshi ############################
+
+### c_qin1
+# QIN1
+710 = {
+	culture = lu
+	religion = xizhouli
+	holding = castle_holding
+}
+# XIN2
+713 = {
+	holding = none
+}
+
+
+### c_shangming
+
+
+##### d_linqiushi ############################
+
+### c_linqiu
+# LINQIU
+708 = {
+	culture = lu
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_longze
+# LONGZE
+2443 = {
+	culture = lu
+	religion = xizhouli
+	holding = castle_holding
+}
+
+

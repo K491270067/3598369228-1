@@ -1,0 +1,44 @@
+﻿##### d_bashi ############################
+
+### c_pilao
+# PILAO
+1036 = {
+	culture = chidi
+	religion = dongzhouli
+	holding = castle_holding
+}
+# XIAN2
+1044 = {
+	holding = none
+}
+
+
+### c_ba1
+# BA1
+1117 = {
+	culture = chidi
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+##### d_zhaoshi1 ############################
+
+### c_gao4
+# GAO4
+1043 = {
+	culture = jin
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+### c_zhao2
+# ZHAO2
+2459 = {
+	culture = jin
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+

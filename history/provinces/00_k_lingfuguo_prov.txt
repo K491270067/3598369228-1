@@ -1,0 +1,57 @@
+﻿##### d_lingfushi ############################
+
+### c_lingfu
+# LINGFU
+34 = {
+	culture = dongyi
+	religion = yili
+	holding = castle_holding
+}
+# SHU1
+38 = {
+	holding = none
+}
+
+
+### c_wucheng3
+# WUCHENG3
+45 = {
+	culture = dongyi
+	religion = yili
+	holding = castle_holding
+}
+
+
+### c_dongyang2
+# DONGYANG2
+47 = {
+	culture = dongyi
+	religion = yili
+	holding = castle_holding
+}
+
+
+##### d_yimushi ############################
+
+### c_yimu
+# YIMU
+48 = {
+	culture = dongyi
+	religion = yili
+	holding = castle_holding
+}
+# PINGYUANJIN
+39 = {
+	holding = none
+}
+
+
+### c_xiu2
+# XIU2
+55 = {
+	culture = dongyi
+	religion = yili
+	holding = castle_holding
+}
+
+

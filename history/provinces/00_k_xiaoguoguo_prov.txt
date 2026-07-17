@@ -1,0 +1,57 @@
+﻿##### d_xiaoguoshi ############################
+
+### c_guo
+# GUO
+881 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+# YONG
+888 = {
+	holding = none
+}
+
+
+### c_qianweizhihui
+# QIANWEIZHIHUI
+882 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_qianyang
+# QIANYANG
+1496 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+##### d_xilvshi ############################
+
+### c_chencang
+# CHENCANG
+883 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+# NANYOU
+1506 = {
+	holding = none
+}
+
+
+### c_wuyang4
+# WUYANG4
+1507 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+

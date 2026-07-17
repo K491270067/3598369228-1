@@ -1,0 +1,508 @@
+﻿@saas_cat_significant = 500
+@saas_cat_lot = 300
+@saas_cat_normal = 100
+@saas_cat_half = 50
+@saas_cat_subtle = 25
+@saas_cat_triffling = 10
+
+
+spring_and_autumn_situation = {
+	window = situation
+	is_unique = yes
+	gui_window_name = "window_situation_regional_destiny_situation"
+	#gui_window_name = "window_spring_and_autumn_situation"
+	gui_participation_window_name = "window_situation_participation"
+	illustration = "gfx/interface/illustrations/terrain_types/mpo_season_abudant_grazing.dds"
+	situation_group_type = major
+	map_mode = sub_regions
+	gui_tooltip_group_focused = no
+
+	on_end = {
+
+	}
+
+	#################################鍖哄煙锛岃澶?
+	sub_regions = {
+		#鐩婂窞
+		#world_huaxia_yizhou = {
+		#	map_color = { 172 12 55 }
+		#	icon = "gfx/interface/icons/situations/regional_destiny_situation/steppe_west.dds"
+		#	geographical_regions = { 
+		#		world_huaxia_yizhou
+		#	}
+		#}
+				#鑽嗗窞
+		world_huaxia_jingzhou = {
+			map_color = { 123 3 44 }
+			icon = "gfx/interface/icons/situations/regional_destiny_situation/steppe_west.dds"
+			geographical_regions = { 
+				world_huaxia_jingzhou 
+				world_huaxia_yangzhou
+			}
+		}
+
+		#骞藉窞
+		#world_huaxia_youzhou = {
+		#	map_color = { 1 2 65 }
+		#	icon = "gfx/interface/icons/situations/regional_destiny_situation/steppe_west.dds"
+		#	geographical_regions = { 
+		#		world_huaxia_youzhou
+		#	}
+		#}
+
+		#骞跺窞
+		#world_huaxia_bingzhou = {
+		#	map_color = { 12 212 1 }
+		#	icon = "gfx/interface/icons/situations/regional_destiny_situation/steppe_west.dds"
+		#	geographical_regions = { 
+		#		world_huaxia_bingzhou
+		#	}
+		#}
+
+
+		#闆嶅窞
+		world_huaxia_yongzhou = {
+			map_color = { 172 122 122 }
+			icon = "gfx/interface/icons/situations/regional_destiny_situation/steppe_west.dds"
+			geographical_regions = { 
+				world_huaxia_yongzhou 
+				world_huaxia_bingzhou
+				world_huaxia_yizhou
+			}
+		}
+
+		#鍐€宸?
+		#world_huaxia_jizhou = {
+		#	map_color = { 12 122 22 }
+		#	icon = "gfx/interface/icons/situations/regional_destiny_situation/steppe_west.dds"
+		#	geographical_regions = { 
+		#		world_huaxia_jizhou 
+		#		world_huaxia_youzhou
+		#		world_huaxia_daidi
+		#	}
+		#}
+
+		#鍙搁毝
+		#world_huaxia_sili = {
+		#	map_color = { 172 22 212 }
+		#	icon = "gfx/interface/icons/situations/regional_destiny_situation/steppe_west.dds"
+		#	geographical_regions = { 
+		#		world_huaxia_sili
+		#	}
+		#}
+		
+		#璞窞
+		#world_huaxia_yuzhou = {
+		#	map_color = { 172 12 122 }
+		#	icon = "gfx/interface/icons/situations/regional_destiny_situation/steppe_west.dds"
+		#	geographical_regions = { 
+		#		world_huaxia_yuzhou
+		#	}
+		#}		
+
+		#鎵窞
+		#world_huaxia_yangzhou = {
+		#	map_color = { 172 52 22 }
+		#	icon = "gfx/interface/icons/situations/regional_destiny_situation/steppe_west.dds"
+		#	geographical_regions = { 
+		#		world_huaxia_yangzhou
+		#	}
+		#}
+
+		#闈掑窞
+		world_huaxia_qingzhou = {
+			map_color = { 122 22 32 }
+			icon = "gfx/interface/icons/situations/regional_destiny_situation/steppe_west.dds"
+			geographical_regions = { 
+				world_huaxia_qingzhou
+				world_huaxia_yuzhou
+				world_huaxia_sili		
+				world_huaxia_jizhou		
+			}
+		}
+		}
+#################################鍙備笌鑰呯粍#################
+			participant_groups = { 
+			# 鍙備笌鑰?鍛ㄧぜ鏀寔鑰呮淳绯汇€傛渶浣庡叕鐖电骇, 鍗庡浼犳壙锛屼俊濂夊懆绀笺€?
+			involve_supporters_of_zhou_dynasty = {
+				icon = "gfx/interface/icons/dynastic_cycle/dynastic_cycle_group_pro.dds"
+				map_color = hsv{ 0.8 0.75 0.83 }
+				require_capital_in_sub_region = yes
+				is_character_valid = {
+					# has_government = feudal_admin_government
+					has_trait = character_involve_supporters_of_zhou_dynasty
+					# highest_held_title_tier >= tier_duchy
+					# religion = religion:lijiao_religion
+					# or = {
+					#	has_cultural_pillar = heritage_zhouren
+					#	has_cultural_pillar = heritage_shangren
+					#	has_cultural_pillar = heritage_xiaren
+					# }
+				}
+				on_join = {
+					
+				}
+				on_leave = {
+					
+				}
+			}
+		# 鍙備笌鑰?瀵规姉鑰咃紝浜夐湼娲剧郴銆傛渶浣庡叕鐖电骇, 鍗庡浼犳壙銆?
+			involve_opponents_of_zhou_dynasty = {
+				icon = "gfx/interface/icons/dynastic_cycle/dynastic_cycle_group_expand.dds"
+				map_color = hsv{ 0.8 0.15 0.81 }
+				require_capital_in_sub_region = yes
+				is_character_valid = {
+					has_trait = character_involve_opponents_of_zhou_dynasty
+					# has_government = feudal_admin_government
+					# highest_held_title_tier >= tier_duchy
+				#	 or = {
+				#		has_cultural_pillar = heritage_zhouren
+				#		has_cultural_pillar = heritage_shangren
+				#		has_cultural_pillar = heritage_xiaren
+				#	 }
+				}
+				on_join = {
+			
+				}
+				on_leave = {
+					
+				}
+			}
+		# 鍙備笌鑰?涓珛娲剧郴銆傛渶浣庡叕鐖电骇, 鍗庡浼犳壙銆?
+			involve_neutral_of_zhou_dynasty = {
+				icon = "gfx/interface/icons/dynastic_cycle/dynastic_cycle_group_advance.dds"
+				map_color = hsv{ 0.2 0.3 0.81 }
+				require_capital_in_sub_region = yes
+				is_character_valid = {
+					has_trait = character_involve_neutral_of_zhou_dynasty
+					# has_government = feudal_admin_government
+					 # highest_held_title_tier >= tier_duchy
+				#	 or = {
+				#		has_cultural_pillar = heritage_zhouren
+				#		has_cultural_pillar = heritage_shangren
+				#		has_cultural_pillar = heritage_xiaren
+				#	 }
+				}
+				on_join = {
+	
+				}
+				on_leave = {
+					
+				}
+			}
+		# 鎼呭眬鑰?鍥涘し娲剧郴銆傛渶浣庡叕鐖电骇, 闈炲崕澶忎紶鎵裤€?
+			interloper_of_zhou_dynasty = {
+				icon = "gfx/interface/icons/dynastic_cycle/dynastic_cycle_group_independent.dds"
+				map_color = hsv{ 0.25 0.8 0.81 }
+				require_capital_in_sub_region = yes
+				is_character_valid = {
+					has_trait = character_interloper_of_zhou_dynasty
+					# has_government = feudal_admin_government
+					# highest_held_title_tier >= tier_duchy
+				#	 nor = {
+				#		has_cultural_pillar = heritage_zhouren
+				#		has_cultural_pillar = heritage_shangren
+				#		has_cultural_pillar = heritage_xiaren
+				#	 }
+				}
+				on_join = {
+					
+				}
+				on_leave = {
+					
+				}
+			}
+		}
+
+#################################闃舵#################
+	start_phase = spring_and_autumn_phase
+
+	###########################闃舵涓€锛氭槬绉嬫椂浠ｏ紝绀煎穿涔愬潖
+	phases = {
+		spring_and_autumn_phase = {
+			icon = "gfx/interface/icons/situations/debug_situation/spring_and_autumn_phase.dds"
+			on_start = {
+			}
+			on_end = {
+			}
+
+			modifier_sets = {
+
+				impact_effects_involve_supporters_of_zhou_dynasty_1 = {
+					icon = "gfx/interface/icons/modifiers/county_modifier_development_negative.dds"
+					involve_supporters_of_zhou_dynasty = {
+						same_opinion = 15
+						monthly_piety_gain_mult = 0.15
+					}
+				}
+				impact_effects_involve_opponents_of_zhou_dynasty_1 = {
+					icon = "gfx/interface/icons/modifiers/county_modifier_development_negative.dds"
+					involve_opponents_of_zhou_dynasty = {
+						monthly_prestige_gain_mult = 0.15
+						# Everyone hires soldiers, either to maintain the peace or ready for the next phase of war.
+						men_at_arms_recruitment_cost = -0.5
+						men_at_arms_maintenance = -0.25
+						# This pumps some characters up.
+						glory_hound_ai_energy = very_high_positive_ai_value
+						glory_hound_ai_boldness = very_high_positive_ai_value
+					}
+				}
+				impact_effects_involve_neutral_of_zhou_dynasty_1 = {
+					icon = "gfx/interface/icons/modifiers/county_modifier_development_negative.dds"
+					involve_neutral_of_zhou_dynasty = {
+						general_opinion = 10
+						tax_mult = 0.1
+						monthly_prestige_gain_mult = 0.15
+						ai_war_chance = -1
+					}
+				}
+			impact_effects_interloper_of_zhou_dynasty_1 = {
+					icon = "gfx/interface/icons/modifiers/county_modifier_development_negative.dds"	
+					interloper_of_zhou_dynasty = {
+						men_at_arms_recruitment_cost = -0.25
+						men_at_arms_maintenance = -0.1
+						monthly_prestige_gain_mult = 0.2
+						opinion_of_different_faith = -20
+						ai_war_chance = 0.5
+					}
+				}
+			}
+
+			#####################閫氬悜锛氶樁娈?鎴樺浗鏃朵唬锛屾垨闃舵3鐜嬪澶嶅叴
+			future_phases = {
+				#######鎴樺浗鏃朵唬
+					warring_states_phase = {
+					takeover_type = points
+					takeover_points =  5000
+
+					catalysts = {
+						catalyst_hegemon_murdered = saas_cat_lot
+						catalyst_imperial_family_member_murdered = saas_cat_subtle
+						catalyst_governor_embezzlement = saas_cat_subtle # 鎬荤潱璐薄
+						catalyst_dipped_into_treasury = saas_cat_subtle  # 鎸敤鍥藉簱
+						catalyst_governor_raided_estate = saas_cat_subtle  # 鎬荤潱搴勫洯閬姭鎺?
+						catalyst_governor_slander = saas_cat_triffling  # 鎬荤潱閬璋?
+						catalyst_governor_challenged_status = saas_cat_triffling  # 鎬荤潱鍦颁綅鍙楁寫鎴?
+						catalyst_tyrannical_extinguish_noble_family = saas_cat_normal  # 鏆磋檺鍦扮伃缁濊吹鏃忓鏃?
+						catalyst_ministers_abused_privilege_of_office = saas_cat_subtle  # 澶ц嚕婊ョ敤鑱屾潈
+						catalyst_yearly_influential_house_is_antagonistic = saas_cat_triffling  # 骞村害鏈夊奖鍝嶅姏瀹舵棌澶勪簬瀵圭珛鐘舵€?
+						catalyst_yearly_influential_house_is_antagonistic_major = saas_cat_normal  # 骞村害鏈夊奖鍝嶅姏瀹舵棌澶勪簬瀵圭珛锛堥噸搴︼級
+						catalyst_yearly_influential_house_is_antagonistic_medium = saas_cat_subtle  # 骞村害鏈夊奖鍝嶅姏瀹舵棌澶勪簬瀵圭珛锛堜腑搴︼級
+						catalyst_yearly_influential_house_is_antagonistic_minor = saas_cat_triffling  # 骞村害鏈夊奖鍝嶅姏瀹舵棌澶勪簬瀵圭珛锛堣交搴︼級
+						catalyst_yearly_influential_house_is_antagonistic_minimal = saas_cat_triffling  # 骞村害鏈夊奖鍝嶅姏瀹舵棌澶勪簬瀵圭珛锛堟瀬灏忥級
+						catalyst_usurp_title_fp3 = saas_cat_normal  # 绡″ず鐖典綅
+						catalyst_accepted_independence_faction_demands = saas_cat_significant	# 鎺ュ彈鐙珛娲剧郴瑕佹眰
+						catalyst_interloper_uninvolved_gain_struggle_titles = saas_cat_normal	 # 浠嬪叆鑰?鏈弬涓庢柟鑾峰緱鏂椾簤澶磋
+						catalyst_interloper_uninvolved_gain_struggle_vassals = saas_cat_normal	# 浠嬪叆鑰?鏈弬涓庢柟鑾峰緱鏂椾簤灏佽嚕
+						catalyst_coronation_event_unrest = saas_cat_subtle # 鍔犲啎浜嬩欢寮曞彂鐨勫姩鑽?
+						catalyst_unnatural_death_supporter = saas_cat_subtle
+						catalyst_execute_supporter = saas_cat_subtle
+						catalyst_imprison_supporter = saas_cat_subtle
+						catalyst_forming_alliance_between_detractor_uninvolved_rulers = saas_cat_normal
+
+					}
+				}
+				#######鐜嬪澶嶅叴###############################
+					zhou_reborn_phase = {
+					takeover_type = points
+					takeover_points =  5000
+
+					catalysts = {
+						##########璇卞洜锛屾殏鏈畾
+						catalyst_improve_development_vassal_diff_faith_culture = saas_cat_triffling
+						catalyst_gift_independent_ruler = saas_cat_subtle
+						catalyst_became_friend_lover_with_character = saas_cat_subtle
+						catalyst_learned_new_language_important = saas_cat_subtle
+						catalyst_new_building_in_city = saas_cat_subtle
+						catalyst_sign_truce_outside_war = saas_cat_subtle
+						catalyst_formed_interreligious_alliance_with_important_character = saas_cat_subtle
+						catalyst_ransom_important = saas_cat_half
+						catalyst_grant_privilege_to_diff_faith_culture_vassal = saas_cat_half
+						catalyst_invite_diff_faith_culture_to_feast = saas_cat_half
+						catalyst_independence_from_non_dejure_vassal = saas_cat_normal
+						catalyst_grant_land_local_noble = saas_cat_normal
+						catalyst_became_best_friend_soulmate_with_very_important_character = saas_cat_normal
+						catalyst_convert_local_culture_faith = saas_cat_normal
+						catalyst_release_important = saas_cat_lot
+
+					}
+				}
+			}
+
+		}
+	###########################闃舵浜岋細鎴樺浗鏃朵唬锛岀兢闆勫苟璧?
+		warring_states_phase = {
+			icon = "gfx/interface/icons/situations/debug_situation/warring_states_phase.dds"
+			on_start = {
+				set_global_variable = {
+					name = warring_states_active
+					value = yes
+				}
+				scope:situation_sub_region = {
+					every_situation_sub_region_participant = {
+						##########浠嬬粛浜嬩欢
+						trigger_event = fallen_of_zhou_dynasty_struggle.0006
+					}
+				}
+			}
+			on_end = {
+				remove_global_variable = warring_states_active
+				#############杩欓噷搴旇鏀剧粨绠椾唬鐮侊紝鏁翠釜灞€鍔跨粨鏉?
+
+			}
+				modifier_sets = {
+				impact_effects_set_involve_supporters_of_zhou_dynasty_2 = {
+					icon = "gfx/interface/icons/modifiers/county_modifier_development_negative.dds"
+					involve_supporters_of_zhou_dynasty = {
+						same_opinion = 20
+						monthly_piety_gain_mult = 0.05
+					}
+				}
+				impact_effects_set_involve_opponents_of_zhou_dynasty_2 = {
+					icon = "gfx/interface/icons/modifiers/county_modifier_development_negative.dds"
+					involve_opponents_of_zhou_dynasty = {
+						monthly_prestige_gain_mult = 0.2
+						# Everyone hires soldiers, either to maintain the peace or ready for the next phase of war.
+						men_at_arms_recruitment_cost = -0.5
+						men_at_arms_maintenance = -0.5
+						# This pumps some characters up.
+						glory_hound_ai_energy = very_high_positive_ai_value
+						glory_hound_ai_boldness = very_high_positive_ai_value
+					}
+				}
+				impact_effects_set_involve_neutral_of_zhou_dynasty_2 = {
+					icon = "gfx/interface/icons/modifiers/county_modifier_development_negative.dds"
+					involve_neutral_of_zhou_dynasty = {
+						general_opinion = 10
+						tax_mult = 0.1
+						monthly_prestige_gain_mult = 0.15
+						ai_war_chance = -1
+					}
+				}
+				impact_effects_set_interloper_of_zhou_dynasty_2 = {
+					icon = "gfx/interface/icons/modifiers/county_modifier_development_negative.dds"
+					interloper_of_zhou_dynasty = {
+						men_at_arms_recruitment_cost = -0.25
+						men_at_arms_maintenance = -0.1
+						monthly_prestige_gain_mult = 0.2
+						opinion_of_different_faith = -20
+						ai_war_chance = 0.5
+					}
+				}
+				}
+			}
+			#####################閫氬悜锛氶樁娈?鏄ョ鏃朵唬锛屾垨缁撴潫
+			future_phases = {
+				#######鏄ョ鏃朵唬
+					spring_and_autumn_phase = {
+					takeover_type = points
+					takeover_points =  10000
+
+					catalysts = {
+						##########璇卞洜锛屾殏鏈畾
+						catalyst_improve_development_vassal_diff_faith_culture = saas_cat_triffling
+						catalyst_gift_independent_ruler = saas_cat_subtle
+						catalyst_became_friend_lover_with_character = saas_cat_subtle
+						catalyst_learned_new_language_important = saas_cat_subtle
+						catalyst_new_building_in_city = saas_cat_subtle
+						catalyst_sign_truce_outside_war = saas_cat_subtle
+						catalyst_formed_interreligious_alliance_with_important_character = saas_cat_subtle
+						catalyst_ransom_important = saas_cat_half
+						catalyst_grant_privilege_to_diff_faith_culture_vassal = saas_cat_half
+						catalyst_invite_diff_faith_culture_to_feast = saas_cat_half
+						catalyst_independence_from_non_dejure_vassal = saas_cat_normal
+						catalyst_grant_land_local_noble = saas_cat_normal
+						catalyst_became_best_friend_soulmate_with_very_important_character = saas_cat_normal
+						catalyst_convert_local_culture_faith = saas_cat_normal
+						catalyst_release_important = saas_cat_lot
+						
+					}
+				}
+			}
+		}
+
+		#####################################################闃舵涓夛細鐜嬪澶嶅叴
+		zhou_reborn_phase = {
+			icon = "gfx/interface/icons/situations/debug_situation/warring_states_phase.dds"
+			on_start = {
+				scope:situation_sub_region = {
+					every_situation_sub_region_participant = {
+						##########浠嬬粛浜嬩欢
+						trigger_event = fallen_of_zhou_dynasty_struggle.0007
+					}
+				}
+			}
+			modifier_sets = {
+				impact_effects_set_involve_supporters_of_zhou_dynasty_3 = {
+					icon = "gfx/interface/icons/modifiers/county_modifier_development_negative.dds"
+					involve_supporters_of_zhou_dynasty = {
+						same_opinion = 30
+						monthly_piety_gain_mult = 0.5
+					}
+				}
+				impact_effects_set_involve_opponents_of_zhou_dynasty_3 = {
+					icon = "gfx/interface/icons/modifiers/county_modifier_development_negative.dds"
+					involve_opponents_of_zhou_dynasty = {
+						general_opinion = -20
+						monthly_prestige_gain_mult = -0.1
+						# Everyone hires soldiers, either to maintain the peace or ready for the next phase of war.
+						men_at_arms_recruitment_cost = -0.1
+						men_at_arms_maintenance = -0.15
+						# This pumps some characters up.
+						glory_hound_ai_energy = very_high_positive_ai_value
+						glory_hound_ai_boldness = very_high_positive_ai_value
+					}
+				}
+				impact_effects_set_involve_neutral_of_zhou_dynasty_3 = {
+					icon = "gfx/interface/icons/modifiers/county_modifier_development_negative.dds"
+					involve_neutral_of_zhou_dynasty = {
+						general_opinion = 10
+						tax_mult = 0.1
+						monthly_prestige_gain_mult = 0.15
+						ai_war_chance = -1
+					}
+				}
+				impact_effects_set_interloper_of_zhou_dynasty_3 = {
+					icon = "gfx/interface/icons/modifiers/county_modifier_development_negative.dds"
+					interloper_of_zhou_dynasty = {
+						men_at_arms_recruitment_cost = -0.25
+						men_at_arms_maintenance = -0.1
+						monthly_prestige_gain_mult = 0.2
+						opinion_of_different_faith = -50
+						ai_war_chance = 0.2
+					}
+				}
+			}
+			#####################閫氬悜锛氶樁娈?鏄ョ鏃朵唬锛屾垨缁撴潫
+			future_phases = {
+				#######鏄ョ鏃朵唬
+					spring_and_autumn_phase = {
+					takeover_type = points
+					takeover_points = 5000
+
+					catalysts = {
+						catalyst_hegemon_murdered = saas_cat_significant
+						catalyst_imperial_family_member_murdered = saas_cat_normal
+						catalyst_governor_embezzlement = saas_cat_subtle # 鎬荤潱璐薄
+						catalyst_dipped_into_treasury = saas_cat_subtle  # 鎸敤鍥藉簱
+						catalyst_governor_raided_estate = saas_cat_subtle  # 鎬荤潱搴勫洯閬姭鎺?
+						catalyst_governor_slander = saas_cat_triffling  # 鎬荤潱閬璋?
+						catalyst_governor_challenged_status = saas_cat_triffling  # 鎬荤潱鍦颁綅鍙楁寫鎴?
+						catalyst_tyrannical_extinguish_noble_family = saas_cat_normal  # 鏆磋檺鍦扮伃缁濊吹鏃忓鏃?
+						catalyst_ministers_abused_privilege_of_office = saas_cat_subtle  # 澶ц嚕婊ョ敤鑱屾潈
+						catalyst_yearly_influential_house_is_antagonistic = saas_cat_triffling  # 骞村害鏈夊奖鍝嶅姏瀹舵棌澶勪簬瀵圭珛鐘舵€?
+						catalyst_yearly_influential_house_is_antagonistic_major = saas_cat_normal  # 骞村害鏈夊奖鍝嶅姏瀹舵棌澶勪簬瀵圭珛锛堥噸搴︼級
+						catalyst_yearly_influential_house_is_antagonistic_medium = saas_cat_subtle  # 骞村害鏈夊奖鍝嶅姏瀹舵棌澶勪簬瀵圭珛锛堜腑搴︼級
+						catalyst_yearly_influential_house_is_antagonistic_minor = saas_cat_triffling  # 骞村害鏈夊奖鍝嶅姏瀹舵棌澶勪簬瀵圭珛锛堣交搴︼級
+						catalyst_yearly_influential_house_is_antagonistic_minimal = saas_cat_triffling  # 骞村害鏈夊奖鍝嶅姏瀹舵棌澶勪簬瀵圭珛锛堟瀬灏忥級
+						catalyst_usurp_title_fp3 = saas_cat_normal  # 绡″ず鐖典綅
+						catalyst_accepted_independence_faction_demands = saas_cat_significant	# 鎺ュ彈鐙珛娲剧郴瑕佹眰
+						catalyst_interloper_uninvolved_gain_struggle_titles = saas_cat_normal	 # 浠嬪叆鑰?鏈弬涓庢柟鑾峰緱鏂椾簤澶磋
+						catalyst_interloper_uninvolved_gain_struggle_vassals = saas_cat_normal	# 浠嬪叆鑰?鏈弬涓庢柟鑾峰緱鏂椾簤灏佽嚕
+						catalyst_coronation_event_unrest = saas_cat_normal # 鍔犲啎浜嬩欢寮曞彂鐨勫姩鑽?
+
+					}
+				}
+			}
+		}
+	}

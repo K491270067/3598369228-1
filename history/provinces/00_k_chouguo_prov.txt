@@ -1,0 +1,37 @@
+﻿##### d_choushi ############################
+
+### c_wuyang5
+# WUYANG5
+1638 = {
+	holding = none
+}
+
+
+### c_ye2
+# YE2
+1639 = {
+	holding = none
+}
+
+
+### c_chou1
+# CHOU1
+1645 = {
+	holding = none
+}
+
+
+### c_zhanban
+# ZHANBAN
+1646 = {
+	holding = none
+}
+
+
+### c_kunyang
+# KUNYANG
+1647 = {
+	holding = none
+}
+
+

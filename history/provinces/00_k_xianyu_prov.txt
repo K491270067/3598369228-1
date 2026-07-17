@@ -1,0 +1,171 @@
+﻿##### d_xianyushi ############################
+
+### c_xianyu
+# XIANYU
+2540 = {
+	culture = baidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+# LONG1
+388 = {
+	holding = none
+}
+# XINSHI
+394 = {
+	holding = none
+}
+
+
+### c_shenze
+# SHENZE
+400 = {
+	culture = baidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+# KUXING
+397 = {
+	holding = none
+}
+# WUJI
+395 = {
+	holding = none
+}
+
+
+### c_nanxingtang
+# NANXINGTANG
+381 = {
+	culture = baidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+
+
+##### d_shaoxishi ############################
+
+### c_lingshou
+# LINGSHOU
+361 = {
+	culture = baidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+# QUAN1
+367 = {
+	holding = none
+}
+
+
+### c_jiumen
+# JIUMEN
+364 = {
+	culture = baidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+# YETAI
+376 = {
+	holding = none
+}
+
+
+##### d_shaoliangshi ############################
+
+### c_shaoliang1
+# SHAOLIANG1
+457 = {
+	culture = baidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+# XINCHU
+445 = {
+	holding = none
+}
+
+
+### c_anxian
+# ANXIAN
+459 = {
+	culture = baidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+
+
+##### d_zuorenshi ############################
+
+### c_zuoren
+# ZUOREN
+422 = {
+	culture = baidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+# QINGDU
+430 = {
+	holding = none
+}
+
+
+### c_zhongren
+# ZHONGREN
+431 = {
+	culture = baidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+
+
+### c_gu5
+# GU5
+438 = {
+	culture = baidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+# TANG6
+432 = {
+	holding = none
+}
+
+
+##### d_lunushi ############################
+
+### c_shangquyang
+# SHANGQUYANG
+407 = {
+	culture = baidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+
+
+### c_danqiu
+# DANQIU
+412 = {
+	culture = baidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+
+
+### c_gu4
+# GU4
+414 = {
+	culture = baidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+# LUNU
+415 = {
+	holding = none
+}
+# YIFENG
+420 = {
+	holding = none
+}
+
+

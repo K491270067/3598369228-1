@@ -1,0 +1,100 @@
+﻿##### d_danshi1 ############################
+
+### c_yidao
+# 
+1883 = {
+	holding = none
+}
+
+
+### c_hengshan
+# 
+1884 = {
+	holding = none
+}
+
+
+### c_yicheng1
+# 
+1892 = {
+	holding = none
+}
+
+
+### c_yanshui1
+# 
+1895 = {
+	holding = none
+}
+
+
+### c_yicheng4
+# YICHENG4
+3745 = {
+	holding = none
+}
+
+
+### c_heixue
+# HEIXUE
+3746 = {
+	holding = none
+}
+
+
+### c_chixue
+# CHIXUE
+3747 = {
+	holding = none
+}
+
+
+### c_yanyang
+# YANYANG
+3748 = {
+	holding = none
+}
+
+
+### c_shaqu
+# SHAQU
+3749 = {
+	holding = none
+}
+
+
+### c_jianshi
+# JIANSHI
+3750 = {
+	holding = none
+}
+
+
+### c_yexiangguan
+# YEXIANGGUAN
+3751 = {
+	holding = none
+}
+
+
+### c_muxu
+# MUXU
+3752 = {
+	holding = none
+}
+
+
+### c_liantianguan
+# LIANTIANGUAN
+3753 = {
+	holding = none
+}
+
+
+### c_danxing
+# DANXING
+3762 = {
+	holding = none
+}
+
+

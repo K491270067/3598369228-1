@@ -1,0 +1,243 @@
+﻿##########闄嗘祽鎴?
+yunxingluhunguo1={
+  name="nanming830"
+  dynasty=xin726
+	religion="xirongfangling" 
+	culture="yiluozhirong"
+  father=han3727
+
+  3553.1.1 = {
+		birth = yes
+	}
+  3601.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+yunxingluhunguo2={
+  name="nanming846"
+  dynasty_house=house_xin727
+	religion="xirongfangling" 
+	culture="yiluozhirong"
+  father=yunxingluhunguo1
+
+  3579.1.1 = {
+		birth = yes
+	}
+  3625.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+yunxingluhunguo3={
+  name="nanming859"
+  dynasty_house=house_xin727
+	religion="xirongfangling" 
+	culture="yiluozhirong"
+  father=yunxingluhunguo2
+
+  3604.1.1 = {
+		birth = yes
+	}
+  3659.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+yunxingluhunguo4={
+  name="nanming870"
+  dynasty_house=house_xin727
+	religion="xirongfangling" 
+	culture="yiluozhirong"
+  father=yunxingluhunguo3
+
+  3630.1.1 = {
+		birth = yes
+	}
+  3688.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+yunxingluhunguo5={
+  name="nanming873"
+  dynasty_house=house_xin727
+	religion="xirongfangling" 
+	culture="yiluozhirong"
+  father=yunxingluhunguo4
+
+  3656.1.1 = {
+		birth = yes
+	}
+  3703.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+yunxingluhunguo6={
+  name="nanming885"
+  dynasty_house=house_xin727
+	religion="xirongfangling" 
+	culture="yiluozhirong"
+  father=yunxingluhunguo5
+
+  3689.1.1 = {
+		birth = yes
+	}
+  3747.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+yunxingluhunguo7={
+  name="nanming909"
+  dynasty_house=house_xin727
+	religion="xirongfangling" 
+	culture="yiluozhirong"
+  father=yunxingluhunguo6
+
+  3714.1.1 = {
+		birth = yes
+	}
+  3765.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+yunxingluhunguo8={
+  name="nanming921"
+  dynasty_house=house_xin727
+	religion="xirongfangling" 
+	culture="yiluozhirong"
+  father=yunxingluhunguo7
+
+  3741.1.1 = {
+		birth = yes
+	}
+  3796.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+yunxingluhunguo9={
+  name="nanming954"
+  dynasty_house=house_xin727
+	religion="xirongfangling" 
+	culture="yiluozhirong"
+  father=yunxingluhunguo8
+
+  3775.1.1 = {
+		birth = yes
+	}
+  3821.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+yunxingluhunguo10={
+  name="nanming1030"
+  dynasty_house=house_xin727
+	religion="xirongfangling" 
+	culture="yiluozhirong"
+  father=yunxingluhunguo9
+
+  3796.1.1 = {
+		birth = yes
+	}
+  3840.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+yunxingluhunguo11={
+  name="nanming1077"
+  dynasty_house=house_xin727
+	religion="xirongfangling" 
+	culture="yiluozhirong"
+  father=yunxingluhunguo10
+
+  3815.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+yunxingluhunguo12={
+  name="nanming1085"
+  dynasty_house=house_xin727
+	religion="xirongfangling" 
+	culture="yiluozhirong"
+  father=yunxingluhunguo11
+
+  3833.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+yunxingluhunguo13={
+  name="nanming1125"
+  dynasty_house=house_xin727
+	religion="xirongfangling" 
+	culture="yiluozhirong"
+  father=yunxingluhunguo11
+
+  3835.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+yunxingluhunguo14={
+  name="nvming181"
+  dynasty_house=house_xin727
+	religion="xirongfangling" 
+	culture="yiluozhirong"
+  father=yunxingluhunguo11
+  female=yes
+
+  3836.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+yunxingluhunguo15={
+  name="nvming213"
+  dynasty_house=house_xin727
+	religion="xirongfangling" 
+	culture="yiluozhirong"
+  father=yunxingluhunguo11
+  female=yes
+
+  3838.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}

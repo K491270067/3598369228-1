@@ -1,0 +1,65 @@
+﻿d_lvshi1 = {
+	3574.1.1 = {
+		liege = "k_lvguo"
+		holder = xilvguo3250
+	}
+	3600.1.1 = {
+		holder = xilvguo3251
+	}
+	3621.1.1 = {
+		holder = xilvguo3252
+	}
+	3651.1.1 = {
+		holder = xilvguo3253
+	}
+	3702.1.1 = {
+		holder = xilvguo3254
+	}
+	3752.1.1 = {
+		holder = xilvguo3255
+	}
+	3795.1.1 = {
+		holder = xilvguo3256
+	}
+	3805.1.1 = {
+		holder = xilvguo3257
+	}
+	3832.1.1 = {
+		holder = xilvguo3258
+	}
+}
+k_lvguo = {
+	3574.1.1 = {
+		liege = "e_zhoutianzi"
+		holder = xilvguo3250
+	}
+	3600.1.1 = {
+		holder = xilvguo3251
+	}
+	3621.1.1 = {
+		holder = xilvguo3252
+	}
+	3651.1.1 = {
+		holder = xilvguo3253
+	}
+	3702.1.1 = {
+		holder = xilvguo3254
+	}
+	3752.1.1 = {
+		holder = xilvguo3255
+	}
+	3795.1.1 = {
+		holder = xilvguo3256
+	}
+	3805.1.1 = {
+		holder = xilvguo3257
+	}
+	3832.1.1 = {
+		holder = xilvguo3258
+	}
+	3849.1.1 = {
+		change_development_level = 30
+		government = feudal_admin_government
+		liege = "e_zhoutianzi1"
+	}
+}

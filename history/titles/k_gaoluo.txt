@@ -1,0 +1,69 @@
+﻿d_dongshanshi = {
+	3564.1.1 = {
+		liege = "k_gaoluo"
+		holder = han2061
+	}
+	3600.12.31 = {
+		holder = han2062
+	}
+	3645.12.31 = {
+		holder = han2063
+	}
+	3663.1.1 = {
+		holder = han2064
+	}
+	3700.12.31 = {
+		holder = han2065
+	}
+	3723.12.31 = {
+		holder = han2066
+	}
+	3792.12.31 = {
+		holder = han2067
+	}
+	3837.12.31 = {
+		holder = han2068
+	}
+	3845.12.31 = {
+		holder = weixingdongshanshi1
+	}
+	3849.1.1 = {
+		change_development_level = 29
+	}
+	3849.12.31 = {
+		government = tribal_government
+	}
+}
+k_gaoluo = {
+	3564.1.1 = {
+		holder = han2061
+	}
+	3600.12.31 = {
+		holder = han2062
+	}
+	3645.12.31 = {
+		holder = han2063
+	}
+	3663.1.1 = {
+		holder = han2064
+	}
+	3700.12.31 = {
+		holder = han2065
+	}
+	3723.12.31 = {
+		holder = han2066
+	}
+	3792.12.31 = {
+		holder = han2067
+	}
+	3837.12.31 = {
+		holder = han2068
+	}
+	3845.12.31 = {
+		holder = han2069
+	}
+	3849.12.31 = {
+		government = tribal_government
+		change_development_level = 31
+	}
+}

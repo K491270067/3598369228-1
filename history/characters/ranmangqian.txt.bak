@@ -1,0 +1,424 @@
+############冉駹羌
+ranmangqian1={
+  name="bfyznan286"
+  dynasty=baijia301
+	religion="xirongfangling" 
+	culture="xiqiang"
+
+  3783.1.1 = {
+		birth = yes
+	}
+  3837.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+ranmangqian2={
+  name="bfyznan305"
+  dynasty=baijia301
+	religion="xirongfangling" 
+	culture="xiqiang"
+	father=ranmangqian1
+
+  3807.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+ranmangqian3={
+  name="bfyznan317"
+  dynasty=baijia301
+	religion="xirongfangling" 
+	culture="xiqiang"
+	father=ranmangqian2
+
+  3825.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+ranmangqian4={
+  name="bfyznan335"
+  dynasty=baijia301
+	religion="xirongfangling" 
+	culture="xiqiang"
+	father=ranmangqian2
+
+  3827.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+ranmangqian5={
+  name="bfyznv196"
+  dynasty=baijia301
+	religion="xirongfangling" 
+	culture="xiqiang"
+	father=ranmangqian2
+	female=yes
+
+  3828.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+ranmangqian6={
+  name="bfyznv212"
+  dynasty=baijia301
+	religion="xirongfangling" 
+	culture="xiqiang"
+	father=ranmangqian2
+	female=yes
+
+  3830.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+##########駹部
+ranmangqian7={
+  name="bfyznan350"
+  dynasty=xin897
+	religion="xirongfangling" 
+	culture="diren"
+
+  3789.1.1 = {
+		birth = yes
+	}
+  3841.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+ranmangqian8={
+  name="bfyznan365"
+  dynasty=xin897
+	religion="xirongfangling" 
+	culture="diren"
+	father=ranmangqian7
+
+  3809.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+ranmangqian9={
+  name="bfyznan381"
+  dynasty=xin897
+	religion="xirongfangling" 
+	culture="diren"
+	father=ranmangqian8
+
+  3827.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+ranmangqian10={
+  name="bfyznv231"
+  dynasty=xin897
+	religion="xirongfangling" 
+	culture="diren"
+	father=ranmangqian8
+	female=yes
+
+  3828.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+ranmangqian11={
+  name="bfyznv246"
+  dynasty=xin897
+	religion="xirongfangling" 
+	culture="diren"
+	father=ranmangqian8
+	female=yes
+
+  3831.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+ranmangqian12={
+  name="bfyznan393"
+  dynasty=xin897
+	religion="xirongfangling" 
+	culture="diren"
+	father=ranmangqian8
+
+  3832.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+################白草
+ranmangqian13={
+  name="bfyznan412"
+  dynasty=xin898
+	religion="xirongfangling" 
+	culture="xiqiang"
+
+  3753.1.1 = {
+		birth = yes
+	}
+  3802.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+ranmangqian14={
+  name="bfyznan427"
+  dynasty=xin898
+	religion="xirongfangling" 
+	culture="xiqiang"
+	father=ranmangqian13
+
+  3785.1.1 = {
+		birth = yes
+	}
+  3824.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+ranmangqian15={
+  name="bfyznan430"
+  dynasty=xin898
+	religion="xirongfangling" 
+	culture="xiqiang"
+	father=ranmangqian14
+
+  3809.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+ranmangqian16={
+  name="bfyznv64"
+  dynasty=xin898
+	religion="xirongfangling" 
+	culture="xiqiang"
+	father=ranmangqian15
+	female=yes
+
+  3827.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+ranmangqian17={
+  name="bfyznv211"
+  dynasty=xin898
+	religion="xirongfangling" 
+	culture="xiqiang"
+	father=ranmangqian15
+	female=yes
+
+  3829.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+ranmangqian18={
+  name="bfyznan447"
+  dynasty=xin898
+	religion="xirongfangling" 
+	culture="xiqiang"
+	father=ranmangqian15
+
+  3831.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+ranmangqian19={
+  name="bfyznan460"
+  dynasty=xin898
+	religion="xirongfangling" 
+	culture="xiqiang"
+	father=ranmangqian15
+
+  3832.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+################湔
+ranmangqian20={
+  name="bfyznan529"
+  dynasty=xin899
+	religion="xirongfangling" 
+	culture="diren"
+
+  3770.1.1 = {
+		birth = yes
+	}
+  3811.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+ranmangqian21={
+  name="bfyznan544"
+  dynasty=xin899
+	religion="xirongfangling" 
+	culture="diren"
+	father=ranmangqian20
+
+  3793.1.1 = {
+		birth = yes
+	}
+  3841.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+ranmangqian22={
+  name="bfyznan559"
+  dynasty=xin899
+	religion="xirongfangling" 
+	culture="diren"
+	father=ranmangqian21
+
+  3814.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+ranmangqian23={
+  name="bfyznan575"
+  dynasty=xin899
+	religion="xirongfangling" 
+	culture="diren"
+	father=ranmangqian22
+
+  3832.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+ranmangqian24={
+  name="bfyznan581"
+  dynasty=xin899
+	religion="xirongfangling" 
+	culture="diren"
+	father=ranmangqian22
+
+  3833.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+ranmangqian25={
+  name="bfyznv204"
+  dynasty=xin899
+	religion="xirongfangling" 
+	culture="diren"
+	father=ranmangqian22
+	female=yes
+
+  3835.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+ranmangqian26={
+  name="bfyznv243"
+  dynasty=xin899
+	religion="xirongfangling" 
+	culture="diren"
+	father=ranmangqian22
+	female=yes
+
+  3834.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}

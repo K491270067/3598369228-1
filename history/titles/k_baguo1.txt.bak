@@ -1,0 +1,123 @@
+﻿k_baguo1 = {
+3574.1.1 = {
+		liege = "e_zhoutianzi"
+		holder = han5071
+	}
+3582.12.31 = {
+		holder = han5072
+	}
+3600.12.31 = {
+		holder = han5073
+	}
+3648.12.31 = {
+		holder = han5074
+	}
+3680.12.31 = {
+		holder = han5075
+	}
+3704.12.31 = {
+		holder = han5076
+	}
+3737.12.31 = {
+		holder = han5077
+	}
+3770.12.31 = {
+		holder = han5078
+	}
+3803.12.31 = {
+		holder = han5079
+	}
+3844.12.31 = {
+		holder = han5080
+	}
+3849.1.1 = {
+		change_development_level = 30
+		government = feudal_admin_government
+	}
+}
+
+d_bashi1 = {
+3574.1.1 = {
+		liege = "k_baguo1"
+		holder = han5071
+	}
+3582.12.31 = {
+		holder = han5072
+	}
+3600.12.31 = {
+		holder = han5073
+	}
+3648.12.31 = {
+		holder = han5074
+	}
+3680.12.31 = {
+		holder = han5075
+	}
+3704.12.31 = {
+		holder = han5076
+	}
+3737.12.31 = {
+		holder = han5077
+	}
+3770.12.31 = {
+		holder = han5078
+	}
+3803.12.31 = {
+		holder = han5079
+	}
+3844.12.31 = {
+		holder = han5080
+	}
+}
+
+d_shenshi6 = {
+3723.1.1 = {
+    liege = "k_baguo1"
+		holder = han5085
+	}
+3770.12.31 = {
+		holder = han5086
+	}
+3811.12.31 = {
+		holder = han5087
+	}
+3842.1.1 = {
+		holder = han5088
+	}
+3849.1.1 = {
+		change_development_level = 26
+		government = tribal_government
+	}
+}
+
+d_bashi2 = {
+3555.1.1 = {
+    liege = "k_baguo1"
+		holder = han5094
+	}
+3605.1.1 = {
+		holder = han5095
+	}
+3637.1.1 = {
+		holder = han5096
+	}
+3669.1.1 = {
+		holder = han5097
+	}
+3715.1.1 = {
+		holder = han5098
+	}
+3753.1.1 = {
+		holder = han5099
+	}
+3791.1.1 = {
+		holder = han5100
+	}
+3833.1.1 = {
+		holder = han5101
+	}
+3849.1.1 = {
+		change_development_level = 28
+		government = tribal_government
+	}
+}

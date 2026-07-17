@@ -1,0 +1,53 @@
+﻿c_shanshi = {
+	3790.1.1 = {
+		liege = "k_zhengguo"
+		holder = han29
+	}
+	3849.1.1 = {
+		change_development_level = 25
+	}
+	3849.12.31 = {
+		holder = han220
+		government = feudal_admin_government
+	}
+}
+d_lvshi2 = {
+	3790.1.1 = {
+		liege = "k_zhengguo"
+		holder = han29
+	}
+	3849.1.1 = {
+		change_development_level = 26
+	}
+	3849.12.31 = {
+		holder = zhenglvshi1
+		government = feudal_admin_government
+	}
+}
+d_yuanshi4 = {
+	3790.1.1 = {
+		liege = "k_zhengguo"
+		holder = han29
+	}
+	3849.1.1 = {
+		change_development_level = 24
+	}
+	3849.12.31 = {
+		holder = han217
+		government = feudal_admin_government
+	}
+}
+k_zhengguo = {
+	3790.1.1 = {
+		liege = "e_zhoutianzi"
+		holder = han29
+	}
+	3849.1.1 = {
+		liege = "e_zhoutianzi1"
+	}
+	3849.12.31 = {
+		holder = han212
+		government = feudal_admin_government
+		change_development_level = 45
+	}
+}

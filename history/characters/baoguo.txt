@@ -1,0 +1,245 @@
+﻿#############  暴国--姬姓 #############
+baosuishi1={
+  name="mao2"##懿王庶弟，暴国祖先
+  dynasty=xin528
+	religion="xizhouli" 
+	culture="zhou"
+  father=han21
+
+  3641.1.1 = {
+		birth = yes
+	}
+  3700.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+baosuishi2={
+  name="xun5"
+  dynasty_house=house_xin529
+	religion="xizhouli" 
+	culture="zhou"
+  father=baosuishi1
+
+  3680.1.1 = {
+		birth = yes
+	}
+  3742.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+baosuishi3={
+  name="feng1"
+  dynasty_house=house_xin529
+	religion="xizhouli" 
+	culture="zhou"
+  father=baosuishi2
+
+  3716.1.1 = {
+		birth = yes
+	}
+  3781.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+baosuishi4={
+  name="hu8"
+  dynasty_house=house_xin529
+	religion="xizhouli" 
+	culture="zhou"
+  father=baosuishi3
+
+  3751.1.1 = {
+		birth = yes
+	}
+  3800.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+baosuishi5={
+  name="yi11"
+  dynasty_house=house_xin529
+	religion="xizhouli" 
+	culture="zhou"
+  father=baosuishi4
+
+  3788.1.1 = {
+		birth = yes
+	}
+  3841.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+baosuishi6={
+  name="xin1"##平王东迁时暴国封君，为周平王所封，游戏开局时24岁
+  dynasty_house=house_xin529
+	religion="dongzhouli" 
+	culture="zhou"
+  father=baosuishi5
+
+  3818.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+baosuishi7={
+  name="yi6"
+  dynasty_house=house_xin529
+	religion="dongzhouli" 
+	culture="zhou"
+  father=baosuishi6
+
+  3836.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+baosuishi8={
+  name="xiu4"#储君2号
+  dynasty_house=house_xin529
+	religion="dongzhouli" 
+	culture="zhou"
+  father=baosuishi6
+
+  3837.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+baosuishi9={
+  name="ren2"#储君3号
+  dynasty_house=house_xin529
+	religion="dongzhouli" 
+	culture="zhou"
+  father=baosuishi6
+
+  3838.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+baosuishi10={
+  name="nvming240"#女1号
+  dynasty_house=house_xin529
+	religion="dongzhouli" 
+	culture="zhou"
+  father=baosuishi6
+  female=yes
+
+  3839.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+baosuishi11={
+  name="nvming241"#女2号
+  dynasty_house=house_xin529
+	religion="dongzhouli" 
+	culture="zhou"
+  father=baosuishi6
+  female=yes
+
+  3840.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+##############邲氏
+baosuishi12={
+  name="yan10"
+  dynasty_house=house_xin530
+	religion="dongzhouli" 
+	culture="zhou"
+  father=baosuishi5
+
+  3820.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+baosuishi13={
+  name="shu6"
+  dynasty_house=house_xin530
+	religion="dongzhouli" 
+	culture="zhou"
+  father=baosuishi12
+
+  3838.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+baosuishi14={
+  name="zhu4"
+  dynasty_house=house_xin530
+	religion="dongzhouli" 
+	culture="zhou"
+  father=baosuishi12
+
+  3839.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+baosuishi15={
+  name="nvming59"
+  dynasty_house=house_xin530
+	religion="dongzhouli" 
+	culture="zhou"
+  father=baosuishi12
+  female=yes
+
+  3840.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}

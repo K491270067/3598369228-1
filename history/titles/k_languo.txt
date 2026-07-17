@@ -1,0 +1,26 @@
+﻿d_zhuloushi = {
+	3835.1.1 = {
+		liege = "k_languo"
+		holder = han993
+	}
+	3839.1.1 = {
+		holder = languo8
+	}
+	3849.1.1 = {
+		change_development_level = 21
+		government = feudal_admin_government
+	}
+}
+k_languo = {
+	3835.1.1 = {
+		liege = "e_zhoutianzi"
+		holder = han993
+	}
+	3839.1.1 = {
+		holder = languo1
+	}
+	3849.1.1 = {
+		change_development_level = 25
+		government = feudal_admin_government
+	}
+}

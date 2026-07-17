@@ -1,0 +1,51 @@
+﻿##### d_youshi ############################
+
+### c_fuli
+# FULI
+489 = {
+	holding = none
+}
+
+
+### c_qi3
+# QI3
+582 = {
+	holding = none
+}
+
+
+### c_zhi
+# ZHI
+501 = {
+	holding = none
+}
+
+
+### c_lv5
+# LV5
+2389 = {
+	holding = none
+}
+
+
+### c_lingbi1
+# LINGBI1
+2390 = {
+	holding = none
+}
+
+
+### c_wo
+# WO
+2391 = {
+	holding = none
+}
+
+
+### c_dazexiang
+# DAZEXIANG
+2332 = {
+	holding = none
+}
+
+

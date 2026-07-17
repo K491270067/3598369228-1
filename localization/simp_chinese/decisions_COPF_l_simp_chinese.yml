@@ -1,0 +1,50 @@
+﻿l_simp_chinese:
+ decision_petition_restore_succession: "请求恢复继承认可"
+ decision_petition_restore_succession_tooltip: "请求你的[liege|E]恢复认可[title|E]的继承"
+ decision_petition_restore_succession_desc: "我的[liege]拒绝认可我将[title]传给后代，或许我可以付出一些代价来请求收回这一决定。"
+ decision_petition_restore_succession_effects: "你前往[liege]的宫廷觐见。"
+ decision_petition_restore_succession_confirm: "发出请求"
+ decision_petition_restore_succession_NEXT_STEP_BUTTON: "选择携带的礼物"
+ decision_petition_restore_succession_BUTTON: "选择携带的礼物"
+ i_have_denied_title_succession: "我有[title|E]的继承被否决"
+
+ decision_petition_restore_succession_option_submission: "表示忠顺"
+ petition_restore_succession_submission_tooltip: "[liege|E]将仅获得你忠顺的誓言"
+
+ decision_petition_restore_succession_option_hook: "谈及人情"
+ decision_petition_restore_succession_effects_hook: "[liege|E]将获得你的一个弱[hook|E]"
+ petition_restore_succession_hook_tooltip: "[liege|E]将获得你的一个弱[hook|E]"
+ petition_restore_succession_hook_tt: "[liege|E]已经有你的[hook|E]了"
+
+ decision_petition_restore_succession_option_contract: "调整契约"
+ decision_petition_restore_succession_effects_contract_levies: "[liege|E]将获得更多征召兵的[vassal_contract|E]"
+ decision_petition_restore_succession_effects_contract_gold: "[liege|E]将获得更高税收的[vassal_contract|E]"
+ petition_restore_succession_contract_tooltip: "[liege|E]将获得更高税收或征召兵的[vassal_contract|E]"
+ petition_restore_succession_contract_modifiable_tt: "[vassal_contract|E]可以被更改"
+ petition_restore_succession_contract_increasable_tt: "[vassal_contract|E]可以被提高"
+
+ decision_petition_restore_succession_option_gift: "付出金钱"
+ decision_petition_restore_succession_effects_gift: "[liege|E]将获得你赠送的[gold|E]"
+ petition_restore_succession_gift_tooltip: "[liege|E]将获得你赠送的[gold|E]"
+ 
+ petition_restore_succession_uncrowned_tt: "[liege|E]未加冕"
+
+ decision_convert_to_feudal_admin: "正式化行政事务"
+ decision_convert_to_feudal_admin_desc: "荣耀与誓言渐渐让位于繁复的宫廷政治，税务杂乱的零散农庄也开始被土地广袤的庄园取代。躲在石制的城堡中难以适应领地中愈加复杂的现状。\n\n想要维持统治，仅仅依靠军队已经不再足够，我必须通过法律与制度来更加深入的介入领地内的行政事务。"
+ decision_convert_to_feudal_admin_tooltip: "正式以法律和制度明确[realm|E]内行政事务的实行"
+ decision_convert_to_feudal_admin_confirm: "制定法律并规范制度"
+
+ decision_build_domicile: "修建庄园"
+ decision_build_domicile_desc: "一座环境优美居住舒适的[estate|E]不仅是[house]的荣耀，还是[realm|E]经济的中心。\n即使有一天我们不幸远离了[realm|E]的政治事务，土地上的收成和佃农的地租也将确保[house]数代人的繁荣。"
+ decision_build_domicile_tooltip: "在[realm|E]中水草丰美之地修建一座环境优美舒适的[domicile|E]"
+ decision_build_domicile_confirm: "开始修建庄园"
+ tt_capital_county_has_high_control: "[capital|E][county]的[control|E]高于75"
+
+ decision_declare_autonomy_title: "宣布自治"
+ decision_declare_autonomy_desc: "[liege|E]的权力式微，恐怕无法继续保护我们的利益。国家已在分裂的边缘，是时候开始为家族和[realm|E]的未来图谋打算了。\n\n我可以趁着混乱借机攫取更多的权力，要求废除一些严苛的[vassal_contract|E]义务似乎是一个好的开始。"
+ decision_declare_autonomy_tooltip: "废除一些严苛的[vassal_contract|E]义务以获取更多的权力"
+ decision_declare_autonomy_confirm: "宣布自治"
+
+ tt_culture_is_chinese_or_sinophilic: "[culture|E]拥有[GetCulturePillar('heritage_chinese').GetName][heritage|E]或者[GetCultureTradition('tradition_sinophilic').GetName][tradition|E]"
+ tt_culture_is_byzantine: "[culture|E]拥有[GetCulturePillar('heritage_byzantine').GetName][heritage|E]"
+ tt_convert_to_administrative_copf_desc: "你#bold 不#!满足以下至少一项：\n$EFFECT_LIST_BULLET$$tt_most_vassals_are_governor_or_admin$\n$EFFECT_LIST_BULLET$你拥有[GetLaw('law_vassal_succession_rights_policy_governor_appointment').GetName][law|E]\n$EFFECT_LIST_BULLET$你拥有[GetGovernment( 'feudal_admin_government' ).GetName]"

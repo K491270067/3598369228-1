@@ -1,0 +1,37 @@
+﻿##### d_shugongshi ############################
+
+### c_liyang
+# 
+1985 = {
+	holding = none
+}
+
+
+### c_jia2
+# 
+1986 = {
+	holding = none
+}
+
+
+### c_dongguan
+# 
+1989 = {
+	holding = none
+}
+
+
+### c_ruxukou
+# 
+2001 = {
+	holding = none
+}
+
+
+### c_shugong
+# SHUGONG
+3611 = {
+	holding = none
+}
+
+

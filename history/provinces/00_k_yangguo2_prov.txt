@@ -1,0 +1,37 @@
+﻿##### d_yangshi3 ############################
+
+### c_ji14
+# JI14
+1698 = {
+	holding = none
+}
+
+
+### c_yang5
+# YANG5
+1701 = {
+	holding = none
+}
+
+
+### c_fu2
+# FU2
+1702 = {
+	holding = none
+}
+
+
+### c_xing5
+# XING5
+1726 = {
+	holding = none
+}
+
+
+### c_shangming1
+# 
+1896 = {
+	holding = none
+}
+
+

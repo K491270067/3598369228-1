@@ -1,0 +1,165 @@
+﻿##### d_chenshi ############################
+
+### c_guiyan
+# GUIYAN
+598 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+# KUANG
+597 = {
+	holding = none
+}
+
+
+### c_zheqiu
+# ZHEQIU
+600 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+### c_wanqiu
+# WANQIU
+602 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+# CHENG2
+596 = {
+	holding = none
+}
+# CHANGPING2
+2342 = {
+	holding = none
+}
+
+
+##### d_zhenzishi ############################
+
+### c_fang4
+# FANG4
+599 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+### c_xinping
+# XINPING
+2345 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+### c_yangling1
+# YANGLING1
+2350 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+# YILU1
+2346 = {
+	holding = none
+}
+
+
+##### d_qiuzishi ############################
+
+### c_daji
+# DAJI
+566 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+### c_yangxia
+# YANGXIA
+2343 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+### c_guling
+# GULING
+2344 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+##### d_gongliangshi ############################
+
+### c_chao
+# CHAO
+565 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+### c_zeng1
+# ZENG1
+561 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+### c_zhe
+# ZHE
+601 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+##### d_yuanshi3 ############################
+
+### c_chengkuang
+# CHENGKUANG
+567 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+### c_yu3
+# YU3
+590 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+### c_liu2
+# LIU2
+591 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+# GAOYANG1
+2340 = {
+	holding = none
+}
+
+

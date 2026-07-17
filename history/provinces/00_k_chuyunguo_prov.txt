@@ -1,0 +1,33 @@
+﻿##### d_chuyunshi ############################
+
+### c_shenmen
+
+
+### c_fanshi
+
+
+### c_renduo
+
+
+### c_chuyun1
+# CHUYUN
+2885 = {
+	holding = none
+}
+
+
+### c_dayuan
+
+
+### c_yihui
+
+
+### c_xunfeng
+
+
+### c_qiulu
+
+
+### c_chuyun
+
+

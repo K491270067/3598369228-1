@@ -1,0 +1,11 @@
+﻿l_spanish:
+ deny_titile_succession_cost_no_reason: "#low No Reason#!"
+ deny_titile_succession_again_cost_no_reason: "#low No Reason(Deny Again)#!"
+
+ deny_titile_succession_cost_is_shunned: "#low Recipient is Shunned by [faith]#!"
+ deny_titile_succession_again_cost_is_shunned: "#low Recipient is Shunned by [faith](Deny Again)#!"
+
+ deny_titile_succession_cost_is_criminal: "#low Recipient is Considered Ciminal by [faith]#!"
+ deny_titile_succession_again_cost_is_criminal: "#low Recipient is Considered Ciminal by [faith](Deny Again)#!"
+
+ tt_build_domicile: "Your [house|E] starts to construct an [estate|E]"

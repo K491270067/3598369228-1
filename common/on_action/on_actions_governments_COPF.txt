@@ -1,0 +1,185 @@
+﻿### 连接到原版触发器 ### ============================================================================================================================================
+
+# 每季度（ROOT：所有可玩角色）
+quarterly_playable_pulse = {
+	on_actions = {
+		establish_feudal_subject_supervisor
+		establish_feudal_governor
+	}
+}
+# 任何角色死亡时（ROOT：死亡者）# 此事件在死亡前触发
+on_death = {
+	on_actions = {
+		copf_change_heir_government_to_admin
+		appoint_new_feudal_subject_supervisor
+		promote_new_bureaucrat
+	}
+}
+# 主头衔改变时（ROOT：改变主头衔的角色）
+on_primary_title_change = {
+	on_actions = {
+		change_government_for_new_feudal_admin_vassals
+		setup_new_vassal_succession_rights_contract
+	}
+	# scope:previous_title（之前的主头衔）
+}
+
+### 自定义触发器 ### ============================================================================================================================================
+
+# 设定新任封臣的继承权封臣契约 # ————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+setup_new_vassal_succession_rights_contract = {
+	trigger = {
+		OR = {
+			NOT = { exists = scope:previous_title }
+			scope:previous_title ?= { is_noble_family_title = yes }
+		}
+		OR = {
+			government_has_flag = government_is_feudal
+			government_has_flag = government_is_feudal_admin
+		}
+		primary_title.tier >= tier_county
+		is_independent_ruler = no
+		NOT = { has_variable = is_feudal_supervisor }
+		NOT = { has_variable = is_feudal_bureaucrat }
+	}
+	effect = {
+		effect_setup_new_vassals_contracts = yes
+	}
+}
+# 建立总督制度 # ————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+establish_feudal_governor = {
+	trigger = {
+		is_independent_ruler = no
+		subject_contract_has_flag = succession_rights_governor_appointment
+		OR = {
+			NOT = { government_has_flag = government_is_feudal_admin }
+			trigger_if = {
+				limit = { exists = diarch }
+				has_diarchy_type = feudal_subject_supervisor
+			}
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				exists = diarch
+				has_diarchy_type = feudal_subject_supervisor
+			}
+			effect_transfer_subject_power_to_supervisor = {
+				TARGET_DIARCH = diarch
+			}	
+		}
+		else = {
+			effect_change_to_feudal_admin = yes
+		}
+	}
+}
+# 建立监察官制度 # ————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+establish_feudal_subject_supervisor = {
+	trigger = {
+		subject_contract_has_flag = succession_rights_court_supervision
+		NOT = { has_diarchy_type = feudal_subject_supervisor }
+	}
+	effect = {
+		effect_establish_feudal_subject_supervisor = {
+			TARGET_SUBJECT = this
+		}
+	}
+}
+# 任命新的监察官 # ————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+appoint_new_feudal_subject_supervisor = {
+	trigger = {
+		exists = liege
+		liege ?= {
+			subject_contract_has_flag = succession_rights_court_supervision
+			NOT = { has_variable = actively_dismissed_supervisor }
+		}
+		liege.diarch ?= this
+	}
+	effect = {
+		liege ?= {
+			set_variable = {
+				name = current_diarchy_swing
+				value = diarchy_swing
+			}
+		}
+		effect_establish_feudal_subject_supervisor = {
+			TARGET_SUBJECT = liege
+		}
+	}
+}
+# 晋升新的官僚 # ————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+promote_new_bureaucrat = {
+	trigger = {
+		is_independent_ruler = no
+		subject_contract_has_flag = candidate_preference_bureaucrat_promotion
+	}
+	effect = {
+		effect_promote_new_bureaucrat = yes
+	}
+}
+# 将不是总督的新封臣的政体从【封建行政制】切换回合适的政体 # ————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+change_government_for_new_feudal_admin_vassals = {
+	trigger = {
+		NOT = { exists = scope:previous_title }
+		government_has_flag = government_is_feudal_admin
+		is_independent_ruler = no
+		NOT = { subject_contract_has_flag = succession_rights_governor_appointment }
+		OR = {
+			capital_province = { has_holding_type = city_holding }
+			capital_province = { has_holding_type = church_holding }
+			capital_province = { has_holding_type = tribal_holding }
+		}
+	}
+	effect = {
+		effect_change_government_from_feudal_admin_based_on_holding_type = yes
+	}
+}
+# 如果你是任意【行政制】：继承时将继承人的政府切换为对应的【行政制】，以确保世族头衔不会被销毁 # ————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+copf_change_heir_government_to_admin = {
+	trigger = {
+		government_allows = administrative
+		exists = primary_heir
+	}
+	effect = {
+		save_scope_as = scope_dead_ruler
+		primary_heir = {
+			if = {
+				limit = { is_landed = no }
+				set_employer = scope:scope_dead_ruler
+			}
+			if = {
+				limit = {
+					NOT = { government_type ?= scope:scope_dead_ruler.government_type }
+					trigger_if = {
+						limit = { is_landed = yes }
+						primary_title.tier < scope:scope_dead_ruler.primary_title.tier
+					}
+				}
+				if = {
+					limit = { scope:scope_dead_ruler = { government_has_flag = government_is_feudal_admin } }
+					change_government = feudal_admin_government
+				}
+				else_if = {
+					limit = { scope:scope_dead_ruler = { government_has_flag = government_is_celestial } }
+					change_government = celestial_government
+				}
+				else_if = {
+					limit = { scope:scope_dead_ruler = { government_has_flag = government_is_meritocratic } }
+					change_government = meritocratic_government
+				}
+				else_if = {
+					limit = { scope:scope_dead_ruler = { government_has_flag = government_is_steppe_admin } }
+					change_government = steppe_admin_government
+				}
+				else_if = {
+					limit = { scope:scope_dead_ruler = { government_has_flag = government_is_japan_administrative } }
+					change_government = japan_administrative_government
+				}
+				else = {
+					change_government = administrative_government
+				}
+			}
+		}
+	}
+}

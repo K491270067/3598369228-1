@@ -1,0 +1,51 @@
+﻿##### d_baishi ############################
+
+### c_bai1
+# BAI1
+1653 = {
+	holding = none
+}
+
+
+### c_xiping
+# XIPING
+1654 = {
+	holding = none
+}
+
+
+### c_tangxi
+# TANGXI
+1655 = {
+	holding = none
+}
+
+
+### c_dingying
+# DINGYING
+1656 = {
+	holding = none
+}
+
+
+### c_bifen
+# BIFEN
+1657 = {
+	holding = none
+}
+
+
+### c_xianghe1
+# XIANGHE1
+1663 = {
+	holding = none
+}
+
+
+### c_yelu
+# YELU
+1664 = {
+	holding = none
+}
+
+

@@ -1,0 +1,711 @@
+﻿########################################
+# 绀煎穿涔愬潖 - 灞€鍔挎渶缁堢粨绠楀喅璁?
+########################################
+
+# ========================================================
+# 鍐宠1锛氬鍛婃柊澶╁懡
+# 鏉′欢锛氭垬鍥芥椂浠?+ 鎺у埗h_huaxia 80%娉曠悊棰嗗湡
+# 鏁堟灉锛氳幏寰梙_huaxia锛岀粨鏉熷眬鍔匡紝鑾峰緱浼犲"鏂板ぉ鍛?
+# ========================================================
+declare_new_mandate = {
+	title = declare_new_mandate_title
+	desc = declare_new_mandate_desc
+	confirm_text = declare_new_mandate_confirm
+
+	picture = {
+		reference = "gfx/interface/icons/dynastic_cycle/dynastic_cycle_group_pro.dds"
+	}
+
+	decision_group_type = major
+
+	is_shown = {
+		# 澶勪簬鎴樺浗鏃朵唬
+		any_character_situation = {
+			type = spring_and_autumn_situation
+			involvement = involved
+			situation_current_phase = warring_states_phase
+		}
+		# 鎺у埗h_huaxia 80%娉曠悊棰嗗湡
+		custom_description = {
+			text = saas_controls_80_percent_h_huaxia_tt
+			title:h_huaxia = {
+				any_in_de_jure_hierarchy = {
+					count >= 50
+					tier = tier_county
+					holder = root
+				}
+			}
+		}
+	}
+
+	is_valid = {
+		is_available_adult = yes
+		is_imprisoned = no
+		is_commanding_army = no
+		is_in_prison = no
+		is_traveling = no
+		is_at_war = no
+	}
+
+	is_valid_showing_failures_only = {
+		is_available_adult = yes
+		is_imprisoned = no
+	}
+
+	cost = {
+		prestige = 2000
+		piety = 1000
+	}
+
+	effect = {
+		# 鑾峰緱h_huaxia澶磋
+		if = {
+			limit = {
+				title:h_huaxia = {
+					is_title_created = no
+				}
+			}
+			create_title_and_vassal_change = {
+				type = created
+				save_scope_as = title_change
+				add_claim_on_loss = no
+			}
+			title:h_huaxia = {
+				grant_title = root
+			}
+			resolve_title_and_vassal_change = scope:title_change
+		}
+		else = {
+			title:h_huaxia = {
+				if = {
+					limit = {
+						holder != root
+					}
+					usurp_title = {
+						target = root
+					}
+				}
+			}
+		}
+
+		# 鍒涘缓浼犲"鏂板ぉ鍛?
+		create_legend = {
+			type = saas_new_mandate
+			quality = famed
+			protagonist = root
+		}
+
+		# 鍏ㄥ眬閫氱煡
+		situation:spring_and_autumn_situation = {
+			every_involved_ruler = {
+				send_interface_toast = {
+					type = event_toast_effect_good
+					title = declare_new_mandate_toast_title
+					left_icon = root
+					custom_tooltip = declare_new_mandate_toast_desc
+				}
+			}
+		}
+
+		# 缁撴潫灞€鍔?
+		end_situation = spring_and_autumn_situation
+	}
+
+	ai_potential = {
+		always = no
+	}
+
+	ai_will_do = {
+		base = 0
+	}
+}
+
+
+# ========================================================
+# 鍐宠2a锛氬懆铏芥棫閭︼紝鍏跺懡缁存柊
+# 鏉′欢锛氬懆绀煎鍏撮樁娈?+ e_huaxia鎸佹湁鑰?+ 鎺у埗h_huaxia 60%娉曠悊棰嗗湡
+# 鏁堟灉锛氳幏寰梙_huaxia锛屼紶濂?鍛ㄧ帇鏈濅腑鍏?锛岀粨鏉熷眬鍔?
+# ========================================================
+zhou_old_state_new_mandate = {
+	title = zhou_old_state_new_mandate_title
+	desc = zhou_old_state_new_mandate_desc
+	confirm_text = zhou_old_state_new_mandate_confirm
+
+	picture = {
+		reference = "gfx/interface/icons/dynastic_cycle/dynastic_cycle_group_pro.dds"
+	}
+
+	decision_group_type = major
+
+	is_shown = {
+		# 澶勪簬鍛ㄧぜ澶嶅叴闃舵
+		any_character_situation = {
+			type = spring_and_autumn_situation
+			involvement = involved
+			situation_current_phase = zhou_reborn_phase
+		}
+		# root蹇呴』鏄痚_huaxia鎸佹湁鑰?
+		has_title = title:e_huaxia
+		# 鎺у埗h_huaxia 60%娉曠悊棰嗗湡
+		custom_description = {
+			text = saas_controls_60_percent_h_huaxia_tt
+			title:h_huaxia = {
+				any_in_de_jure_hierarchy = {
+					count >= 37
+					tier = tier_county
+					holder = root
+				}
+			}
+		}
+	}
+
+	is_valid = {
+		is_available_adult = yes
+		is_imprisoned = no
+		is_commanding_army = no
+		is_in_prison = no
+		is_traveling = no
+		is_at_war = no
+	}
+
+	is_valid_showing_failures_only = {
+		is_available_adult = yes
+		is_imprisoned = no
+	}
+
+	cost = {
+		prestige = 2000
+		piety = 1500
+	}
+
+	effect = {
+		# 鑾峰緱h_huaxia澶磋
+		if = {
+			limit = {
+				title:h_huaxia = {
+					is_title_created = no
+				}
+			}
+			create_title_and_vassal_change = {
+				type = created
+				save_scope_as = title_change
+				add_claim_on_loss = no
+			}
+			title:h_huaxia = {
+				grant_title = root
+			}
+			resolve_title_and_vassal_change = scope:title_change
+		}
+		else = {
+			title:h_huaxia = {
+				if = {
+					limit = {
+						holder != root
+					}
+					usurp_title = {
+						target = root
+					}
+				}
+			}
+		}
+
+		# 鍒涘缓浼犲"鍛ㄧ帇鏈濅腑鍏?
+		create_legend = {
+			type = saas_zhou_restoration
+			quality = famed
+			protagonist = root
+		}
+
+		# 鍏ㄥ眬閫氱煡
+		situation:spring_and_autumn_situation = {
+			every_involved_ruler = {
+				send_interface_toast = {
+					type = event_toast_effect_good
+					title = zhou_old_state_new_mandate_toast_title
+					left_icon = root
+					custom_tooltip = zhou_old_state_new_mandate_toast_desc
+				}
+			}
+		}
+
+		# 缁撴潫灞€鍔?
+		end_situation = spring_and_autumn_situation
+	}
+
+	ai_potential = {
+		always = no
+	}
+
+	ai_will_do = {
+		base = 0
+	}
+}
+
+
+# ========================================================
+# 鍐宠2b锛氬懡杩愭鐐?
+# 鏉′欢锛氬懆绀煎鍏撮樁娈?+ 闈瀍_huaxia鎸佹湁鑰?+ 鐜嬮亾娲剧郴 + 鎺у埗h_huaxia 60%
+# 閫夐」1锛氬ぇ鏀垮杩?- 澶╁瓙鑾峰緱h_huaxia锛宺oot鑾峰緱鎽勬斂鍦颁綅
+# 閫夐」2锛氭灦绌哄ぉ瀛?- root鑾峰緱e_huaxia+h_huaxia锛屾棫澶╁瓙鍙樹负鑽ｈ獕闄勫焊
+# ========================================================
+fate_divergence = {
+	title = fate_divergence_title
+	desc = fate_divergence_desc
+
+	picture = {
+		reference = "gfx/interface/icons/dynastic_cycle/dynastic_cycle_group_advance.dds"
+	}
+
+	decision_group_type = major
+
+	is_shown = {
+		# 澶勪簬鍛ㄧぜ澶嶅叴闃舵
+		any_character_situation = {
+			type = spring_and_autumn_situation
+			involvement = involved
+			situation_current_phase = zhou_reborn_phase
+		}
+		# root涓嶆槸e_huaxia鎸佹湁鑰?
+		NOT = { has_title = title:e_huaxia }
+		# root灞炰簬鐜嬮亾娲剧郴
+		has_trait = character_involve_supporters_of_zhou_dynasty
+		# 鎺у埗h_huaxia 60%娉曠悊棰嗗湡
+		custom_description = {
+			text = saas_controls_60_percent_h_huaxia_tt
+			title:h_huaxia = {
+				any_in_de_jure_hierarchy = {
+					count >= 37
+					tier = tier_county
+					holder = root
+				}
+			}
+		}
+	}
+
+	is_valid = {
+		is_available_adult = yes
+		is_imprisoned = no
+		is_commanding_army = no
+		is_in_prison = no
+		is_traveling = no
+		is_at_war = no
+		# e_huaxia蹇呴』瀛樺湪涓旀湁鎸佹湁鑰?
+		title:e_huaxia = {
+			is_title_created = yes
+			exists = holder
+		}
+	}
+
+	is_valid_showing_failures_only = {
+		is_available_adult = yes
+		is_imprisoned = no
+	}
+
+	cost = {
+		prestige = 1500
+	}
+
+	# =============================================
+	# 閫夐」1锛氬ぇ鏀垮杩?
+	# =============================================
+	option = {
+		name = fate_divergence_option_restore
+		flavor = fate_divergence_option_restore_flavor
+
+		effect = {
+			# 淇濆瓨澶╁瓙scope
+			title:e_huaxia.holder = { save_scope_as = zhou_emperor }
+
+			# 澶╁瓙鑾峰緱h_huaxia澶磋
+			if = {
+				limit = {
+					title:h_huaxia = {
+						is_title_created = no
+					}
+				}
+				create_title_and_vassal_change = {
+					type = created
+					save_scope_as = title_change
+					add_claim_on_loss = no
+				}
+				title:h_huaxia = {
+					grant_title = scope:zhou_emperor
+				}
+				resolve_title_and_vassal_change = scope:title_change
+			}
+			else = {
+				title:h_huaxia = {
+					if = {
+						limit = {
+							holder != scope:zhou_emperor
+						}
+						usurp_title = {
+							target = scope:zhou_emperor
+						}
+					}
+				}
+			}
+
+			# Root鑾峰緱浼犲"鍛ㄥ叕鍦ㄤ笘"
+			create_legend = {
+				type = saas_duke_of_zhou_reborn
+				quality = famed
+				protagonist = root
+			}
+
+			# Root鑾峰緱寮哄埗鎽勬斂鍦颁綅鍜屾弧绾ф憚鏀挎潈鍔?
+			# 璁剧疆鎽勬斂鏍囧織
+			scope:zhou_emperor = {
+				add_character_flag = ceremonial_liege_flag
+			}
+			root = {
+				add_character_flag = ceremonial_regent_flag
+			}
+
+			# 灏濊瘯寤虹珛diarchy锛堝鏋滃ぉ瀛愭槸root鐨勯涓伙級
+			if = {
+				limit = {
+					scope:zhou_emperor = {
+						is_alive = yes
+						is_ruler = yes
+					}
+				}
+				scope:zhou_emperor = {
+					if = {
+						limit = {
+							NOT = { has_active_diarchy = yes }
+							has_diarchy_type = grand_secretariat
+						}
+						try_start_diarchy = grand_secretariat
+						set_diarch = root
+					}
+					else_if = {
+						limit = {
+							NOT = { has_active_diarchy = yes }
+						}
+						# 浣跨敤閫氱敤diarchy
+					}
+				}
+			}
+
+			# 婊＄骇鎽勬斂鏉冨姏锛氶€氳繃modifier瀹炵幇
+			root = {
+				add_character_modifier = {
+					modifier = saas_supreme_regency_power_modifier
+					years = -1  # 姘镐箙
+				}
+			}
+
+			# 鍏ㄥ眬閫氱煡
+			situation:spring_and_autumn_situation = {
+				every_involved_ruler = {
+					send_interface_toast = {
+						type = event_toast_effect_good
+						title = fate_divergence_restore_toast_title
+						left_icon = scope:zhou_emperor
+						right_icon = root
+						custom_tooltip = fate_divergence_restore_toast_desc
+					}
+				}
+			}
+
+			# 缁撴潫灞€鍔?
+			end_situation = spring_and_autumn_situation
+		}
+
+		ai_chance = {
+			base = 50
+			modifier = {
+				add = 30
+				has_trait = humble
+			}
+			modifier = {
+				add = 30
+				has_trait = content
+			}
+			modifier = {
+				add = -30
+				has_trait = ambitious
+			}
+			modifier = {
+				add = -50
+				has_trait = arrogant
+			}
+		}
+	}
+
+	# =============================================
+	# 閫夐」2锛氭灦绌哄ぉ瀛?
+	# =============================================
+	option = {
+		name = fate_divergence_option_usurp
+		flavor = fate_divergence_option_usurp_flavor
+
+		effect = {
+			# 淇濆瓨澶╁瓙scope
+			title:e_huaxia.holder = { save_scope_as = zhou_emperor }
+
+			# Root鑾峰緱e_huaxia澶磋
+			title:e_huaxia = {
+				usurp_title = {
+					target = root
+				}
+			}
+
+			# Root鑾峰緱h_huaxia澶磋
+			if = {
+				limit = {
+					title:h_huaxia = {
+						is_title_created = no
+					}
+				}
+				create_title_and_vassal_change = {
+					type = created
+					save_scope_as = title_change
+					add_claim_on_loss = no
+				}
+				title:h_huaxia = {
+					grant_title = root
+				}
+				resolve_title_and_vassal_change = scope:title_change
+			}
+			else = {
+				title:h_huaxia = {
+					if = {
+						limit = {
+							holder != root
+						}
+						usurp_title = {
+							target = root
+						}
+					}
+				}
+			}
+
+			# 鍒涘缓鑽ｈ獕甯濆浗绾уご琛旓紝鎺堜簣鏃уぉ瀛?
+			if = {
+				limit = {
+					title:e_ceremonial_huaxia = {
+						is_title_created = no
+					}
+				}
+				create_title_and_vassal_change = {
+					type = created
+					save_scope_as = ceremonial_title_change
+					add_claim_on_loss = no
+				}
+				title:e_ceremonial_huaxia = {
+					grant_title = scope:zhou_emperor
+				}
+				resolve_title_and_vassal_change = scope:ceremonial_title_change
+			}
+			else = {
+				title:e_ceremonial_huaxia = {
+					if = {
+						limit = {
+							holder != scope:zhou_emperor
+						}
+						usurp_title = {
+							target = scope:zhou_emperor
+						}
+					}
+				}
+			}
+
+			# 鏃уぉ瀛愭垚涓簉oot鐨勯檮搴?
+			scope:zhou_emperor = {
+				if = {
+					limit = {
+						is_alive = yes
+						is_ruler = yes
+						liege != root
+					}
+					set_liege = root
+				}
+			}
+
+			# 璁剧疆鑽ｈ獕鏍囧織
+			scope:zhou_emperor = {
+				add_character_flag = ceremonial_liege_flag
+			}
+			root = {
+				add_character_flag = ceremonial_regent_flag
+			}
+
+			# 鍒涘缓浼犲"涓栫晫鎷晳鑰?
+			create_legend = {
+				type = saas_world_savior
+				quality = famed
+				protagonist = root
+			}
+
+			# 鍏ㄥ眬閫氱煡
+			situation:spring_and_autumn_situation = {
+				every_involved_ruler = {
+					send_interface_toast = {
+						type = event_toast_effect_bad
+						title = fate_divergence_usurp_toast_title
+						left_icon = root
+						right_icon = scope:zhou_emperor
+						custom_tooltip = fate_divergence_usurp_toast_desc
+					}
+				}
+			}
+
+			# 缁撴潫灞€鍔?
+			end_situation = spring_and_autumn_situation
+		}
+
+		ai_chance = {
+			base = 50
+			modifier = {
+				add = 50
+				has_trait = ambitious
+			}
+			modifier = {
+				add = 30
+				has_trait = arrogant
+			}
+			modifier = {
+				add = -30
+				has_trait = humble
+			}
+			modifier = {
+				add = -30
+				has_trait = content
+			}
+		}
+	}
+}
+
+
+# ========================================================
+# 鍐宠3锛氭柊鏈濆緛鏈?
+# 鏉′欢锛氬洓澶锋淳绯?+ 浠绘剰闃舵 + 鎺у埗h_huaxia 60%娉曠悊棰嗗湡
+# 鏁堟灉锛氶攢姣乪_huaxia锛岃幏寰梙_huaxia锛屼紶濂?璇稿寰佹湇鑰?锛岀粨鏉熷眬鍔?
+# ========================================================
+new_dynasty_conquest = {
+	title = new_dynasty_conquest_title
+	desc = new_dynasty_conquest_desc
+	confirm_text = new_dynasty_conquest_confirm
+
+	picture = {
+		reference = "gfx/interface/icons/dynastic_cycle/dynastic_cycle_group_independent.dds"
+	}
+
+	decision_group_type = major
+
+	is_shown = {
+		# 灞炰簬鍥涘し娲剧郴
+		has_trait = character_interloper_of_zhou_dynasty
+		# 鍦ㄥ眬鍔夸腑锛堜换鎰忛樁娈碉級
+		any_character_situation = {
+			type = spring_and_autumn_situation
+			involvement = involved
+		}
+		# 鎺у埗h_huaxia 60%娉曠悊棰嗗湡
+		custom_description = {
+			text = saas_controls_60_percent_h_huaxia_tt
+			title:h_huaxia = {
+				any_in_de_jure_hierarchy = {
+					count >= 37
+					tier = tier_county
+					holder = root
+				}
+			}
+		}
+	}
+
+	is_valid = {
+		is_available_adult = yes
+		is_imprisoned = no
+		is_commanding_army = no
+		is_in_prison = no
+		is_traveling = no
+		is_at_war = no
+	}
+
+	is_valid_showing_failures_only = {
+		is_available_adult = yes
+		is_imprisoned = no
+	}
+
+	cost = {
+		prestige = 2000
+		piety = 500
+	}
+
+	effect = {
+		# 閿€姣乪_huaxia澶磋
+		if = {
+			limit = {
+				title:e_huaxia = {
+					is_title_created = yes
+				}
+			}
+			title:e_huaxia = {
+				destroy_title = yes
+			}
+		}
+
+		# 鑾峰緱h_huaxia澶磋
+		if = {
+			limit = {
+				title:h_huaxia = {
+					is_title_created = no
+				}
+			}
+			create_title_and_vassal_change = {
+				type = created
+				save_scope_as = title_change
+				add_claim_on_loss = no
+			}
+			title:h_huaxia = {
+				grant_title = root
+			}
+			resolve_title_and_vassal_change = scope:title_change
+		}
+		else = {
+			title:h_huaxia = {
+				if = {
+					limit = {
+						holder != root
+					}
+					usurp_title = {
+						target = root
+					}
+				}
+			}
+		}
+
+		# 鍒涘缓浼犲"璇稿寰佹湇鑰?
+		create_legend = {
+			type = saas_huaxia_conqueror
+			quality = famed
+			protagonist = root
+		}
+
+		# 鍏ㄥ眬閫氱煡
+		situation:spring_and_autumn_situation = {
+			every_involved_ruler = {
+				send_interface_toast = {
+					type = event_toast_effect_bad
+					title = new_dynasty_conquest_toast_title
+					left_icon = root
+					custom_tooltip = new_dynasty_conquest_toast_desc
+				}
+			}
+		}
+
+		# 缁撴潫灞€鍔?
+		end_situation = spring_and_autumn_situation
+	}
+
+	ai_potential = {
+		always = no
+	}
+
+	ai_will_do = {
+		base = 0
+	}
+}

@@ -1,0 +1,11 @@
+﻿l_simp_chinese:
+ deny_titile_succession_cost_no_reason: "#low 无理由#!"
+ deny_titile_succession_again_cost_no_reason: "#low 无理由（再次否决）#!"
+
+ deny_titile_succession_cost_is_shunned: "#low 对方行为被忌讳#!"
+ deny_titile_succession_again_cost_is_shunned: "#low 对方行为被忌讳（再次否决）#!"
+
+ deny_titile_succession_cost_is_criminal: "#low 对方行为被视作罪恶#!"
+ deny_titile_succession_again_cost_is_criminal: "#low 对方行为被视作罪恶（再次否决）#!"
+
+ tt_build_domicile: "你的[house|E]开始修建[Concept('estate','庄园')|E]"

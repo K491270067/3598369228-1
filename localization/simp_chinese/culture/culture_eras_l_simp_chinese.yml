@@ -1,0 +1,15 @@
+﻿l_simp_chinese:
+ #GROUPS
+ culture_group_military: "军事"
+ culture_group_civic: "民政"
+ culture_group_regional: "文化和地域"
+ culture_group_any: "任何"
+ #ERAS
+ culture_era_tribal: "青铜时代"
+ culture_era_tribal_desc: "青铜器的使用将人类文明带入到了新的历史阶段，真正意义上的文明开始发展。城邦顺着人类的足迹开始蔓延，生产力的极大发展让宗教，语言，礼法和制度出现雏形。"
+ culture_era_early_medieval: "铁器时代"
+ culture_era_early_medieval_desc: "铁的出现让坚硬的土地不再是阻碍，开垦和耕种使得人口与经济迎来发展，[culture|E]得以向以往所不能触及的地方扩张，同时奴隶主们的权力也开始下移。"
+ culture_era_high_medieval: "古典时代早期"
+ culture_era_high_medieval_desc: "古典时代早期是伟大技术与行政进步的时代，见证了小镇成长为都市，以及地主阶级的崛起，奴隶主的权威已岌岌可危，历史上著名的技术和制度也在这一时期得到总结和应用。"
+ culture_era_late_medieval: "古典时代晚期"
+ culture_era_late_medieval_desc: "古典时代晚期标志着封建世界的起点。更精细化的劳动分工进一步瓦解了旧有统治阶级的权威，门阀士族开始出现并与君主组成政治同盟亦或是仇敌。"
