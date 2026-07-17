@@ -1,0 +1,162 @@
+﻿# Vanilla purge_excess_wanderer_riches_effect with only the adventurer branch
+# reweighted by the Spring-and-Autumn situation. Other branches are preserved.
+
+purge_excess_wanderer_riches_effect = {
+	save_scope_as = pool_character
+	while = {
+		limit = {
+			gold >= 1000
+			NOT = { any_player = { dynasty ?= scope:pool_character.dynasty } }
+			is_ruler = no
+		}
+		random_list = {
+			100 = {
+				trigger = {
+					ai_sociability > low_negative_ai_value
+					NOR = { has_trait = shy has_trait = reclusive }
+					exists = scope:pool_character.location
+					any_pool_character = {
+						province = scope:pool_character.location
+						is_physically_able_adult = yes
+						this != scope:pool_character
+						NOT = { has_any_scripted_relation = scope:pool_character }
+					}
+				}
+				random_pool_character = {
+					province = scope:pool_character.location
+					limit = {
+						is_physically_able_adult = yes
+						this != scope:pool_character
+						NOT = { has_any_scripted_relation = scope:pool_character }
+					}
+					save_temporary_scope_as = new_friend
+				}
+				add_prestige = major_prestige_value
+				set_random_friendship_reason = { TARGET = scope:new_friend }
+				pay_short_term_gold = { target = scope:new_friend gold = 500 }
+			}
+			150 = {
+				trigger = { ai_zeal >= medium_positive_ai_value learning < 30 }
+				add_learning_skill = 3
+				add_piety = major_piety_value
+				remove_short_term_gold = 500
+			}
+			200 = {
+				trigger = {
+					can_be_combatant_based_on_gender_trigger = { ARMY_OWNER = scope:pool_character }
+					prowess < 30
+				}
+				knight_increase_prowess_chance_effect = yes
+				add_prestige = major_prestige_value
+				remove_short_term_gold = 500
+			}
+			100 = {
+				trigger = {
+					can_be_combatant_based_on_gender_trigger = { ARMY_OWNER = scope:pool_character }
+					martial < 25
+				}
+				add_martial_skill = 2
+				add_prestige = major_prestige_value
+				remove_short_term_gold = 500
+			}
+			100 = {
+				trigger = { intrigue < 25 }
+				add_intrigue_skill = 3
+				add_prestige = major_prestige_value
+				remove_short_term_gold = 500
+			}
+			100 = {
+				trigger = { stewardship < 25 }
+				add_stewardship_skill = 3
+				add_prestige = major_prestige_value
+				remove_short_term_gold = 500
+			}
+			100 = {
+				trigger = { diplomacy < 25 }
+				add_diplomacy_skill = 3
+				add_prestige = major_prestige_value
+				remove_short_term_gold = 500
+			}
+			100 = {
+				trigger = {
+					age <= 40
+					is_married = no
+					is_concubine = no
+					OR = { has_sexuality = heterosexual has_sexuality = bisexual allowed_to_marry_same_sex_trigger = yes }
+					NOR = { has_trait = celibate has_trait = chaste }
+					fertility > low_fertility
+					can_marry_trigger = yes
+				}
+				save_temporary_scope_as = template
+				if = {
+					limit = {
+						exists = scope:pool_character.location
+						any_pool_character = {
+							province = scope:pool_character.location
+							allowed_to_marry_character_gender_trigger = { CHARACTER = scope:pool_character }
+							is_physically_able_adult = yes
+							age <= 40
+							is_married = no
+							can_marry_trigger = yes
+							is_concubine = no
+							is_attracted_to_gender_of = scope:pool_character
+						}
+					}
+					random_pool_character = {
+						province = scope:pool_character.location
+						limit = {
+							allowed_to_marry_character_gender_trigger = { CHARACTER = scope:pool_character }
+							is_physically_able_adult = yes
+							age <= 40
+							is_married = no
+							can_marry_trigger = yes
+							is_concubine = no
+							is_attracted_to_gender_of = scope:pool_character
+						}
+						save_temporary_scope_as = spouse
+					}
+				}
+				else = {
+					create_character = {
+						location = scope:template.location
+						gender_female_chance = scope:template.marriage_gender_adjusted_female_chance
+						template = mediocre_spouse
+						save_scope_as = spouse
+					}
+				}
+				marry = scope:spouse
+				scope:spouse = {
+					if = {
+						limit = { exists = scope:template.host }
+						visit_court_of = scope:template.host
+					}
+				}
+				remove_short_term_gold = 500
+			}
+			500 = {
+				modifier = { factor = 0.5 saas_is_ritual_restoration_phase_trigger = yes }
+				modifier = { factor = 2 saas_is_warring_states_phase_trigger = yes }
+				trigger = {
+					has_dlc_feature = roads_to_power
+					gold >= 500
+					is_physically_able_adult = yes
+					exists = location.county
+					ai_can_valid_to_create_laamp_trigger = yes
+				}
+				create_landless_adventurer_title_effect = {
+					REASON = flag:voluntary
+					FLAVOR_CHAR = root
+				}
+				if = {
+					limit = { NOT = { exists = global_var:pool_adventurer_spawn } }
+					set_global_variable = { name = pool_adventurer_spawn value = 1 }
+				}
+				else = { change_global_variable = { name = pool_adventurer_spawn add = 1 } }
+			}
+			500 = {
+				add_prestige = minor_prestige_value
+				remove_short_term_gold = 500
+			}
+		}
+	}
+}

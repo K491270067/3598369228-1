@@ -1,0 +1,1545 @@
+﻿#############娓犳悳
+jusoushi1={
+  name="bfyznan16"
+  dynasty=xin783
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+
+  2100.1.1 = {
+		birth = yes
+	}
+  2155.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jusoushi2={
+  name="bfyznan29"
+  dynasty=xin783
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+  father=jusoushi1
+
+  2123.1.1 = {
+		birth = yes
+	}
+  2176.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jusoushi3={
+  name="bfyznan32"
+  dynasty=xin783
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+  father=jusoushi2
+
+  2145.1.1 = {
+		birth = yes
+	}
+  2199.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jusoushi4={
+  name="bfyznan45"
+  dynasty=xin783
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+  father=jusoushi3
+
+  2167.1.1 = {
+		birth = yes
+	}
+  2224.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jusoushi5={
+  name="bfyznan56"
+  dynasty=xin783
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+  father=jusoushi4
+
+  2189.1.1 = {
+		birth = yes
+	}
+  2247.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jusoushi6={
+  name="bfyznan63"
+  dynasty=xin783
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+  father=jusoushi5
+
+  2211.1.1 = {
+		birth = yes
+	}
+  2271.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jusoushi7={
+  name="bfyznan76"
+  dynasty=xin783
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+  father=jusoushi6
+
+  2234.1.1 = {
+		birth = yes
+	}
+  2295.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jusoushi8={
+  name="bfyznan85"
+  dynasty=xin783
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+  father=jusoushi7
+
+  2257.1.1 = {
+		birth = yes
+	}
+  2319.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jusoushi9={
+  name="bfyznan95"
+  dynasty=xin783
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+  father=jusoushi8
+
+  2279.1.1 = {
+		birth = yes
+	}
+  2342.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jusoushi10={
+  name="bfyznan112"
+  dynasty=xin783
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+  father=jusoushi9
+
+  2301.1.1 = {
+		birth = yes
+	}
+  2365.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jusoushi11={
+  name="bfyznan122"
+  dynasty=xin783
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+  father=jusoushi10
+
+  2323.1.1 = {
+		birth = yes
+	}
+  2388.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jusoushi12={
+  name="bfyznan134"
+  dynasty=xin783
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+  father=jusoushi11
+
+  2345.1.1 = {
+		birth = yes
+	}
+  2410.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jusoushi13={
+  name="bfyznan143"
+  dynasty=xin783
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+  father=jusoushi12
+
+  2367.1.1 = {
+		birth = yes
+	}
+  2433.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jusoushi14={
+  name="bfyznan152"
+  dynasty=xin783
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+  father=jusoushi13
+
+  2389.1.1 = {
+		birth = yes
+	}
+  2455.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jusoushi15={
+  name="bfyznan158"
+  dynasty=xin783
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+  father=jusoushi14
+
+  2411.1.1 = {
+		birth = yes
+	}
+  2478.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jusoushi16={
+  name="bfyznan164"
+  dynasty=xin783
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+  father=jusoushi15
+
+  2433.1.1 = {
+		birth = yes
+	}
+  2501.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jusoushi17={
+  name="bfyznan173"
+  dynasty=xin783
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+  father=jusoushi16
+
+  2455.1.1 = {
+		birth = yes
+	}
+  2523.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jusoushi18={
+  name="bfyznan179"
+  dynasty=xin783
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+  father=jusoushi17
+
+  2477.1.1 = {
+		birth = yes
+	}
+  2545.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jusoushi19={
+  name="bfyznan188"
+  dynasty=xin783
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+  father=jusoushi18
+
+  2499.1.1 = {
+		birth = yes
+	}
+  2567.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jusoushi20={
+  name="bfyznan194"
+  dynasty=xin783
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+  father=jusoushi19
+
+  2521.1.1 = {
+		birth = yes
+	}
+  2589.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jusoushi21={
+  name="bfyznan200"
+  dynasty=xin783
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+  father=jusoushi20
+
+  2543.1.1 = {
+		birth = yes
+	}
+  2612.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jusoushi22={
+  name="bfyznan206"
+  dynasty=xin783
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+  father=jusoushi21
+
+  2565.1.1 = {
+		birth = yes
+	}
+  2634.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jusoushi23={
+  name="bfyznan212"
+  dynasty=xin783
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+  father=jusoushi22
+
+  2587.1.1 = {
+		birth = yes
+	}
+  2657.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jusoushi24={
+  name="bfyznan217"
+  dynasty=xin783
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+  father=jusoushi23
+
+  2609.1.1 = {
+		birth = yes
+	}
+  2679.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jusoushi25={
+  name="bfyznan220"
+  dynasty=xin783
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+  father=jusoushi24
+
+  2631.1.1 = {
+		birth = yes
+	}
+  2701.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jusoushi26={
+  name="bfyznan224"
+  dynasty=xin783
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+  father=jusoushi25
+
+  2653.1.1 = {
+		birth = yes
+	}
+  2724.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jusoushi27={
+  name="bfyznan227"
+  dynasty=xin783
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+  father=jusoushi26
+
+  2675.1.1 = {
+		birth = yes
+	}
+  2746.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jusoushi28={
+  name="bfyznan229"
+  dynasty=xin783
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+  father=jusoushi27
+
+  2697.1.1 = {
+		birth = yes
+	}
+  2768.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jusoushi29={
+  name="bfyznan238"
+  dynasty=xin783
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+  father=jusoushi28
+
+  2719.1.1 = {
+		birth = yes
+	}
+  2790.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jusoushi30={
+  name="bfyznan241"
+  dynasty=xin783
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+  father=jusoushi29
+
+  2741.1.1 = {
+		birth = yes
+	}
+  2812.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jusoushi31={
+  name="bfyznan244"
+  dynasty=xin783
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+  father=jusoushi30
+
+  2763.1.1 = {
+		birth = yes
+	}
+  2834.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jusoushi32={
+  name="bfyznan254"
+  dynasty=xin783
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+  father=jusoushi31
+
+  2785.1.1 = {
+		birth = yes
+	}
+  2856.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jusoushi33={
+  name="bfyznan257"
+  dynasty=xin783
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+  father=jusoushi32
+
+  2807.1.1 = {
+		birth = yes
+	}
+  2878.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jusoushi34={
+  name="bfyznan260"
+  dynasty=xin783
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+  father=jusoushi33
+
+  2829.1.1 = {
+		birth = yes
+	}
+  2900.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jusoushi35={
+  name="bfyznan267"
+  dynasty=xin783
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+  father=jusoushi34
+
+  2851.1.1 = {
+		birth = yes
+	}
+  2922.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jusoushi36={
+  name="bfyznan270"
+  dynasty=xin783
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+  father=jusoushi35
+
+  2873.1.1 = {
+		birth = yes
+	}
+  2944.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jusoushi37={
+  name="bfyznan273"
+  dynasty=xin783
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+  father=jusoushi36
+
+  2895.1.1 = {
+		birth = yes
+	}
+  2966.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jusoushi38={
+  name="bfyznan284"
+  dynasty=xin783
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+  father=jusoushi37
+
+  2917.1.1 = {
+		birth = yes
+	}
+  2988.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jusoushi39={
+  name="bfyznan291"
+  dynasty=xin783
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+  father=jusoushi38
+
+  2939.1.1 = {
+		birth = yes
+	}
+  3010.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jusoushi40={
+  name="bfyznan295"
+  dynasty=xin783
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+  father=jusoushi39
+
+  2961.1.1 = {
+		birth = yes
+	}
+  3032.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jusoushi41={
+  name="bfyznan297"
+  dynasty=xin783
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+  father=jusoushi40
+
+  2983.1.1 = {
+		birth = yes
+	}
+  3054.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jusoushi42={
+  name="bfyznan300"
+  dynasty=xin783
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+  father=jusoushi41
+
+  3005.1.1 = {
+		birth = yes
+	}
+  3076.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jusoushi43={
+  name="bfyznan316"
+  dynasty=xin783
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+  father=jusoushi42
+
+  3027.1.1 = {
+		birth = yes
+	}
+  3098.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jusoushi44={
+  name="bfyznan319"
+  dynasty=xin783
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+  father=jusoushi43
+
+  3049.1.1 = {
+		birth = yes
+	}
+  3120.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jusoushi45={
+  name="bfyznan334"
+  dynasty=xin783
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+  father=jusoushi44
+
+  3071.1.1 = {
+		birth = yes
+	}
+  3142.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jusoushi46={
+  name="bfyznan338"
+  dynasty=xin783
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+  father=jusoushi45
+
+  3093.1.1 = {
+		birth = yes
+	}
+  3164.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jusoushi47={
+  name="bfyznan347"
+  dynasty=xin783
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+  father=jusoushi46
+
+  3115.1.1 = {
+		birth = yes
+	}
+  3186.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jusoushi48={
+  name="bfyznan356"
+  dynasty=xin783
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+  father=jusoushi47
+
+  3137.1.1 = {
+		birth = yes
+	}
+  3208.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jusoushi49={
+  name="bfyznan363"
+  dynasty=xin783
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+  father=jusoushi48
+
+  3159.1.1 = {
+		birth = yes
+	}
+  3230.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jusoushi50={
+  name="bfyznan368"
+  dynasty=xin783
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+  father=jusoushi49
+
+  3181.1.1 = {
+		birth = yes
+	}
+  3252.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jusoushi51={
+  name="bfyznan198"
+  dynasty=xin783
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+  father=jusoushi50
+
+  3203.1.1 = {
+		birth = yes
+	}
+  3274.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jusoushi52={
+  name="bfyznan206"
+  dynasty=xin783
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+  father=jusoushi51
+
+  3225.1.1 = {
+		birth = yes
+	}
+  3296.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jusoushi53={
+  name="bfyznan221"
+  dynasty=xin783
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+  father=jusoushi52
+
+  3247.1.1 = {
+		birth = yes
+	}
+  3318.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jusoushi54={
+  name="bfyznan231"
+  dynasty=xin783
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+  father=jusoushi53
+
+  3269.1.1 = {
+		birth = yes
+	}
+  3340.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jusoushi55={
+  name="bfyznan243"
+  dynasty=xin783
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+  father=jusoushi54
+
+  3291.1.1 = {
+		birth = yes
+	}
+  3362.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jusoushi56={
+  name="bfyznan255"
+  dynasty=xin783
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+  father=jusoushi55
+
+  3313.1.1 = {
+		birth = yes
+	}
+  3384.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jusoushi57={
+  name="bfyznan267"
+  dynasty=xin783
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+  father=jusoushi56
+
+  3335.1.1 = {
+		birth = yes
+	}
+  3406.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jusoushi58={
+  name="bfyznan282"
+  dynasty=xin783
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+  father=jusoushi57
+
+  3357.1.1 = {
+		birth = yes
+	}
+  3428.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jusoushi59={
+  name="bfyznan299"
+  dynasty=xin783
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+  father=jusoushi58
+
+  3379.1.1 = {
+		birth = yes
+	}
+  3450.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jusoushi60={
+  name="bfyznan323"
+  dynasty=xin783
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+  father=jusoushi59
+
+  3401.1.1 = {
+		birth = yes
+	}
+  3472.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jusoushi61={
+  name="bfyznan333"
+  dynasty=xin783
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+  father=jusoushi60
+
+  3423.1.1 = {
+		birth = yes
+	}
+  3494.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jusoushi62={
+  name="bfyznan339"
+  dynasty=xin783
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+  father=jusoushi61
+
+  3445.1.1 = {
+		birth = yes
+	}
+  3516.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jusoushi63={
+  name="bfyznan361"
+  dynasty=xin783
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+  father=jusoushi62
+
+  3467.1.1 = {
+		birth = yes
+	}
+  3538.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jusoushi64={
+  name="bfyznan377"
+  dynasty=xin783
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+  father=jusoushi63
+
+  3489.1.1 = {
+		birth = yes
+	}
+  3560.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jusoushi65={
+  name="bfyznan494"
+  dynasty=xin783
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+  father=jusoushi64
+
+  3511.1.1 = {
+		birth = yes
+	}
+  3582.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jusoushi66={
+  name="bfyznan390"
+  dynasty=xin783
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+  father=jusoushi65
+
+  3533.1.1 = {
+		birth = yes
+	}
+  3604.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jusoushi67={
+  name="bfyznan399"
+  dynasty=xin783
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+  father=jusoushi66
+
+  3555.1.1 = {
+		birth = yes
+	}
+  3626.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jusoushi68={
+  name="bfyznan408"
+  dynasty=xin783
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+  father=jusoushi67
+
+  3577.1.1 = {
+		birth = yes
+	}
+  3648.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jusoushi69={
+  name="bfyznan417"
+  dynasty=xin783
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+  father=jusoushi68
+
+  3599.1.1 = {
+		birth = yes
+	}
+  3670.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jusoushi70={
+  name="bfyznan426"
+  dynasty=xin783
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+  father=jusoushi69
+
+  3621.1.1 = {
+		birth = yes
+	}
+  3692.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jusoushi71={
+  name="bfyznan430"
+  dynasty=xin783
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+  father=jusoushi70
+
+  3643.1.1 = {
+		birth = yes
+	}
+  3714.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+
+jusoushi72={
+  name="bfyznan430"
+  dynasty=xin783
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+  father=jusoushi71
+
+  3665.1.1 = {
+		birth = yes
+	}
+  3736.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jusoushi73={
+  name="bfyznan447"
+  dynasty=xin783
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+  father=jusoushi72
+
+  3687.1.1 = {
+		birth = yes
+	}
+  3758.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jusoushi74={
+  name="bfyznan453"
+  dynasty=xin783
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+  father=jusoushi73
+
+  3709.1.1 = {
+		birth = yes
+	}
+  3780.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jusoushi75={
+  name="bfyznan459"
+  dynasty=xin783
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+  father=jusoushi74
+
+  3731.1.1 = {
+		birth = yes
+	}
+  3802.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jusoushi76={
+  name="bfyznan466"
+  dynasty=xin783
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+  father=jusoushi75
+
+  3753.1.1 = {
+		birth = yes
+	}
+  3824.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jusoushi77={
+  name="bfyznan472"
+  dynasty=xin783
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+  father=jusoushi76
+
+  3775.1.1 = {
+		birth = yes
+	}
+  3826.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jusoushi78={
+  name="bfyznan484"
+  dynasty=xin783
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+  father=jusoushi77
+
+  3797.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jusoushi79={
+  name="bfyznan488"
+  dynasty=xin783
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+  father=jusoushi78
+
+  3819.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jusoushi80={
+  name="bfyznan491"
+  dynasty=xin783
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+  father=jusoushi78
+
+  3820.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jusoushi81={
+  name="bfyznan193"
+  dynasty=xin783
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+  father=jusoushi78
+
+  3821.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jusoushi81={
+  name="bfyznv69"
+  dynasty=xin783
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+  father=jusoushi78
+  female=yes
+
+  3823.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jusoushi81={
+  name="bfyznv112"
+  dynasty=xin783
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+  father=jusoushi78
+  female=yes
+
+  3825.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+###########娓犲京
+jusoushi82={
+  name="bfyznan497"
+  dynasty=xin784
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+  father=jusoushi77
+
+  3799.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jusoushi83={
+  name="bfyznan498"
+  dynasty=xin784
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+  father=jusoushi82
+
+  3817.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jusoushi84={
+  name="bfyznan499"
+  dynasty=xin784
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+  father=jusoushi82
+
+  3819.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jusoushi85={
+  name="bfyznan500"
+  dynasty=xin784
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+  father=jusoushi82
+
+  3823.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jusoushi86={
+  name="bfyznv60"
+  dynasty=xin784
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+  father=jusoushi82
+  female=yes
+
+  3823.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jusoushi87={
+  name="bfyznv80"
+  dynasty=xin784
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+  father=jusoushi82
+  female=yes
+
+  3823.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+###########娓犻噾
+jusoushi88={
+  name="bfyznan511"
+  dynasty=xin785
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+  father=jusoushi77
+
+  3807.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jusoushi89={
+  name="bfyznan521"
+  dynasty=xin785
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+  father=jusoushi88
+
+  3825.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jusoushi90={
+  name="bfyznan530"
+  dynasty=xin785
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+  father=jusoushi88
+
+  3826.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jusoushi91={
+  name="bfyznan539"
+  dynasty=xin785
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+  father=jusoushi88
+
+  3828.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jusoushi92={
+  name="bfyznan545"
+  dynasty=xin785
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+  father=jusoushi88
+
+  3830.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jusoushi93={
+  name="bfyznv81"
+  dynasty=xin785
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+  father=jusoushi88
+  female=yes
+
+  3830.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jusoushi94={
+  name="bfyznv100"
+  dynasty=xin785
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+  father=jusoushi88
+  female=yes
+
+  3830.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}

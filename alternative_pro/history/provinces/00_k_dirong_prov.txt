@@ -1,0 +1,88 @@
+﻿##### d_dishi3 ############################
+
+### c_didao1
+# DIDAO1
+1536 = {
+	culture = xirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+# ANGU
+1533 = {
+	holding = none
+}
+
+
+### c_yangsaguan
+# YANGSAGUAN
+3062 = {
+	culture = xirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+# ANLONGGUAN
+3061 = {
+	holding = none
+}
+
+
+##### d_baishishi ############################
+
+### c_shuichi
+# SHUICHI
+3066 = {
+	culture = xirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+# LANCHUAN
+3067 = {
+	holding = none
+}
+
+
+### c_daxia
+# DAXIA
+1540 = {
+	culture = xirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+# JINLIU
+3068 = {
+	holding = none
+}
+
+
+##### d_yunwushi ############################
+
+### c_fuhan
+# FUHAN
+1541 = {
+	culture = xirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+# HEGUAN
+1542 = {
+	holding = none
+}
+# BAISHI
+1543 = {
+	holding = none
+}
+
+
+### c_yunwu
+# YUNWU
+1546 = {
+	culture = xirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+# LONGZHI
+1547 = {
+	holding = none
+}
+
+

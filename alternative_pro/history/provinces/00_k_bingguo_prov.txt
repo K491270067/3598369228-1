@@ -1,0 +1,41 @@
+﻿##### d_bingshi ############################
+
+### c_bing
+# BING
+1489 = {
+	culture = yinshang
+	religion = yinli
+	holding = castle_holding
+}
+# LIANGYUAN
+1498 = {
+	holding = none
+}
+
+
+### c_qian2
+# QIAN2
+1500 = {
+	culture = yinshang
+	religion = yinli
+	holding = castle_holding
+}
+# SANXIANG
+2814 = {
+	holding = none
+}
+
+
+### c_qianyuan
+# QIANYUAN
+1508 = {
+	culture = yinshang
+	religion = yinli
+	holding = castle_holding
+}
+# RUIYIN
+2816 = {
+	holding = none
+}
+
+

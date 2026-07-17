@@ -1,0 +1,64 @@
+﻿c_kuai1 = {
+	3574.1.1 = {
+		liege = "k_maoguo1"
+		holder = han452
+	}
+	3606.12.31 = {
+		holder = han453
+	}
+	3623.1.1 = {
+		holder = han454
+	}
+	3654.1.1 = {
+		holder = han455
+	}
+	3680.1.1 = {
+		holder = han456
+	}
+	3707.1.1 = {
+		holder = han457
+	}
+	3730.1.1 = {
+		holder = han458
+	}
+	3773.1.1 = {
+		holder = han459
+	}
+	3849.1.1 = {
+		holder = han468
+		change_development_level = 29
+		government = feudal_government
+	}
+}
+k_maoguo1 = {
+	3574.1.1 = {
+		liege = "e_zhoutianzi"
+		holder = han452
+	}
+	3606.12.31 = {
+		holder = han453
+	}
+	3623.1.1 = {
+		holder = han454
+	}
+	3654.1.1 = {
+		holder = han455
+	}
+	3680.1.1 = {
+		holder = han456
+	}
+	3707.1.1 = {
+		holder = han457
+	}
+	3730.1.1 = {
+		holder = han458
+	}
+	3773.1.1 = {
+		holder = han459
+	}
+	3849.1.1 = {
+		holder = han460
+		change_development_level = 31
+		government = feudal_government
+	}
+}

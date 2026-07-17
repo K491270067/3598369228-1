@@ -1,0 +1,95 @@
+﻿##### d_zhengshi ############################
+
+### c_xinzheng
+# XINZHENG
+635 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+# ZHITIAN
+642 = {
+	holding = none
+}
+
+
+### c_zhu4
+# ZHU4
+636 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+### c_shanshi
+# SHANSHI
+637 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+##### d_yuanshi4 ############################
+
+### c_fei3
+# FEI3
+619 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+### c_tushi
+# TUSHI
+643 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+### c_jiaocheng
+# JIAOCHENG
+639 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+# YUGUAN
+638 = {
+	holding = none
+}
+
+
+##### d_lvshi2 ############################
+
+### c_weishi
+# WEISHI
+618 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+### c_qifeng
+# QIFENG
+640 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+### c_doucheng
+# DOUCHENG
+592 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+

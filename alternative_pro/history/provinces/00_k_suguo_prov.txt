@@ -1,0 +1,44 @@
+﻿##### d_sushi ############################
+
+### c_su
+# SU
+363 = {
+	culture = dongyi
+	religion = yili
+	holding = castle_holding
+}
+# WUYAN1
+366 = {
+	holding = none
+}
+
+
+### c_hou
+# HOU
+352 = {
+	culture = dongyi
+	religion = yili
+	holding = castle_holding
+}
+
+
+##### d_fushi ############################
+
+### c_pinglu
+# PINGLU
+353 = {
+	culture = dongyi
+	religion = yili
+	holding = castle_holding
+}
+
+
+### c_shou
+# SHOU
+362 = {
+	culture = dongyi
+	religion = yili
+	holding = castle_holding
+}
+
+

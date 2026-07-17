@@ -1,6 +1,9 @@
-﻿######################################################
-##################### SITUATION ######################
 ######################################################
+################ SPRING AND AUTUMN ###################
+######################################################
+# The layout follows vanilla gui/window_struggle.gui. The data bindings use
+# SituationWindow because Spring and Autumn is implemented as a Situation.
+
 window = {
 	name = "window_spring_and_autumn_situation"
 	widgetid = "window_spring_and_autumn_situation"
@@ -12,108 +15,856 @@ window = {
 	movable = no
 	allow_outside = yes
 
-	using = Window_Size_MainTab
-
-
+	using = Window_Background
+	using = sound_struggle_panel
+	size = { 687 100% }
 
 	state = {
 		name = _show
 		using = Animation_FadeIn_Quick
 		using = Sound_WindowShow_Standard
-		using = Window_Position_MainTab
+		position = { 42 0 }
+		on_start = "[PdxGuiTriggerAllAnimations('saas_struggle_appear')]"
+		on_start = "[SituationWindow.SetSelectedSubRegion( Situation.GetTopSubRegion.Self )]"
 		on_start = "[SetMapMode( 'situation' )]"
+		on_start = "[GetVariableSystem.Clear('showing_saas_ending_decisions')]"
 	}
 
 	state = {
 		name = _hide
+		on_finish = "[PdxGuiTriggerAllAnimations('saas_struggle_hide')]"
 		using = Animation_FadeOut_Quick
 		using = Sound_WindowHide_Standard
-		using = Window_Position_MainTab_Hide
+		position = { 75 0 }
 		on_start = "[SetMapMode( 'realms' )]"
 	}
 
-
-
 	margin_widget = {
 		size = { 100% 100% }
-		margin = { 0 0 }
-		margin_right = 0
-		layoutpolicy_horizontal = expanding
-		layoutpolicy_vertical = expanding
+		margin = { -10 26 }
 
-		margin_widget = {
+		widget = {
 			size = { 100% 100% }
-			margin_left = 0
-			margin_right = 0
-		layoutpolicy_horizontal = expanding
-		layoutpolicy_vertical = expanding
 
-			scrollbox = {
-				size = { 100% 100% }
+			background = {
+				name = "decorative_background"
+				margin_left = -40
+				margin_bottom = -410
+				texture = "[SituationWindow.GetSelectedSubRegion.GetCurrentPhase.GetType.GetIllustration]"
+				using = Mask_Rough_Edges
+				fittype = centercrop
+				alpha = 0.9
 
-				blockoverride "scrollbox_content" {
+				modify_texture = {
+					texture = "gfx/interface/component_masks/mask_fade_vertical.dds"
+					blend_mode = alphamultiply
+				}
+
+				modify_texture = {
+					texture = "gfx/interface/component_masks/mask_fade_vertical_up_dark.dds"
+					blend_mode = normal
+					mirror = vertical
+					alpha = 0.6
+				}
+			}
+
+			# Vanilla struggle current-phase banner backing.
+			widget = {
+				size = { 91% 110 }
+				parentanchor = top|hcenter
+				position = { 4 125 }
+
+				icon = {
+					size = { 100% 100% }
+					texture = "gfx/interface/window_struggle/point_based_phase_panel_involved.dds"
+				}
+			}
+
+			# Current phase banner, matching default_struggle_phase_banner visually.
+			container = {
+				position = { 60 100 }
+				size = { 125 145 }
+
+				icon = {
+					size = { 100% 100% }
+					texture = "gfx/interface/window_struggle/current_phase_point_based_phase.dds"
+				}
+
+				icon = {
+					size = { 21 21 }
+					parentanchor = top|hcenter
+					position = { 0 7 }
+					texture = "gfx/interface/icons/struggle_types/point_based_phase_icon.dds"
+				}
+
+				text_single = {
+					parentanchor = center
+					position = { 0 -46 }
+					text = "[SituationWindow.GetSelectedSubRegion.GetCurrentPhase.GetType.GetNameNoTooltip]"
+					default_format = "#high"
+					max_width = 115
+				}
+
+				container = {
+					parentanchor = center
+					position = { 0 18 }
+
+					icon = {
+						size = { 65 65 }
+						texture = "gfx/interface/icons/struggle_banners/icon_background_dark.dds"
+					}
+
+					icon = {
+						parentanchor = center
+						position = { 0 -1 }
+						size = { 45 45 }
+						texture = "[SituationWindow.GetSelectedSubRegion.GetCurrentPhase.GetType.GetIcon]"
+					}
+				}
+			}
+
+			vbox = {
+				margin_left = 38
+				margin_right = 35
+				margin_top = 18
+				layoutpolicy_vertical = expanding
+				layoutpolicy_horizontal = expanding
+
+				# Title and participant position: same location as Iberian involvement.
+				vbox = {
+					name = "saas_struggle_participants"
+					layoutpolicy_horizontal = expanding
+					spacing = 6
+					margin_right = 10
+
+					header_pattern = {
+						layoutpolicy_horizontal = expanding
+
+						blockoverride "header_text" {
+							text = "[Situation.GetNameNoTooltip]"
+						}
+
+						blockoverride "button_close" {
+							onclick = "[SituationWindow.Close]"
+						}
+
+						blockoverride "button_back" {
+							onclick = "[OpenGameView( 'situations' )]"
+						}
+					}
+
 					vbox = {
-						using = Window_Margins
+						margin_top = -15
+						spacing = 5
+						datacontext = "[SituationWindow.GetSelectedSubRegion.GetCharacterParticipantGroup( GetPlayer )]"
 
-						layoutpolicy_vertical = expanding
+						text_single = {
+							visible = "[SituationParticipantGroup.IsValid]"
+							text = "SAAS_SITUATION_PLAYER_INVOLVEMENT"
+							max_width = 650
+						}
+
+						text_single = {
+							visible = "[Not( SituationParticipantGroup.IsValid )]"
+							text = "SITUATION_WINDOW_NO_REGION_PARTICIPANT_GROUP"
+							max_width = 650
+							default_format = "#low"
+						}
+
+						button_standard = {
+							name = "saas_situation_involvement_button"
+							widgetid = "saas_situation_involvement_button"
+							size = { 230 32 }
+							minimumsize = { 200 0 }
+							onclick = "[SituationWindow.AccessParticipantCharacterList.Toggle]"
+							text = "SAAS_SITUATION_INVOLVEMENT_BUTTON"
+						}
+					}
+				}
+
+				# Current phase header and effect icons.
+				vbox = {
+					name = "current_phase_area"
+					margin_top = 18
+					layoutpolicy_horizontal = expanding
+
+					vbox = {
+						name = "current_phase_widget"
+						datacontext = "[SituationWindow.GetSelectedSubRegion.GetCurrentPhase.GetType]"
+						datacontext = "[GetPlayer]"
+						allow_outside = yes
 						layoutpolicy_horizontal = expanding
 
 						vbox = {
 							layoutpolicy_horizontal = expanding
-							spacing = 6
+							spacing = 5
 
-							header_pattern = {
+							hbox = {
 								layoutpolicy_horizontal = expanding
 
-								blockoverride "header_text"
-								{
-									text = "[Situation.GetNameNoTooltip]"
+								expand = { layoutpolicy_horizontal = expanding }
+
+								hbox = {
+									name = "current_phase_header"
+									layoutpolicy_horizontal = expanding
+									layoutpolicy_vertical = expanding
+									maximumsize = { 285 114 }
+									tooltipwidget = { using = situation_phase_type_tooltip }
+
+									container = {
+										name = "icon"
+
+										icon = {
+											size = { 74 74 }
+											texture = "gfx/interface/icons/struggle_banners/icon_background_02.dds"
+										}
+
+										icon = {
+											parentanchor = center
+											size = { 54 54 }
+											position = { 0 -2 }
+											texture = "[SituationPhaseType.GetIcon]"
+										}
+									}
+
+									spacer = { size = { 5 10 } }
+
+									vbox = {
+										name = "text"
+										margin_bottom = 8
+										margin_left = 30
+										layoutpolicy_horizontal = expanding
+										minimumsize = { 190 1 }
+
+										text_single = {
+											layoutpolicy_horizontal = expanding
+											text = "CURRENT_PHASE"
+											max_width = 190
+											using = Font_Size_Medium
+											margin_bottom = -6
+										}
+
+										text_single = {
+											layoutpolicy_horizontal = expanding
+											text = "[SituationPhaseType.GetNameNoTooltip]"
+											max_width = 190
+											using = Font_Size_Big
+											default_format = "#high"
+										}
+									}
 								}
 
-								blockoverride "button_close"
-								{
-									onclick = "[SituationWindow.Close]"
+								spacer = { size = { 20 10 } }
+
+								vbox = {
+									name = "current_phase_effects"
+									layoutpolicy_horizontal = expanding
+									layoutpolicy_vertical = expanding
+									maximumsize = { 225 1 }
+
+									text_label_center = {
+										text = "PHASE_EFFECTS_HEADER"
+										default_format = "#high"
+									}
+
+									fixedgridbox = {
+										addcolumn = 52
+										addrow = 52
+										setitemsizefromcell = yes
+										datamodel_wrap = 4
+										maxhorizontalslots = 4
+										maxverticalslots = 1
+										layoutanchor = topleft
+										datamodel = "[SituationPhaseType.GetModifierNamedSets]"
+
+										item = { saas_situation_phase_effect_item = {} }
+									}
+								}
+
+								expand = { layoutpolicy_horizontal = expanding }
+							}
+
+							# Open the settlement cards inside this situation window, matching
+							# vanilla struggle-ending presentation.
+							hbox = {
+								margin_top = 15
+								layoutpolicy_horizontal = expanding
+								expand = { layoutpolicy_horizontal = expanding }
+
+								button_primary = {
+									size = { 230 52 }
+									onclick = "[GetVariableSystem.Toggle('showing_saas_ending_decisions')]"
+									down = "[GetVariableSystem.Exists('showing_saas_ending_decisions')]"
+									text = "SAAS_SITUATION_ENDING_DECISIONS"
+									tooltip = "SAAS_SITUATION_ENDING_DECISIONS_TT"
+								}
+
+								expand = { layoutpolicy_horizontal = expanding }
+							}
+
+							hbox = {
+								name = "next_phase_info"
+								visible = "[Not(GetVariableSystem.Exists('showing_saas_ending_decisions'))]"
+								layoutpolicy_horizontal = expanding
+								maximumsize = { 550 1 }
+								margin = { 20 10 }
+
+								vbox = {
+									spacing = 5
+
+									text_single = {
+										text = "SAAS_SITUATION_CURRENT_PHASE_SUMMARY"
+										max_width = 520
+										using = Font_Size_Medium
+									}
+
+									text_multi = {
+										text = "[SituationPhaseType.GetDesc]"
+										max_width = 520
+										default_format = "#low;italic"
+										using = Font_Size_Small
+										autoresize = yes
+									}
+								}
+
+								background = { using = Background_Area_Dark }
+							}
+						}
+					}
+				}
+
+				# Settlement view. Each card binds directly to a registered decision,
+				# so clicking it opens the decision detail instead of the decision list.
+				vbox = {
+					name = "saas_ending_decision_area"
+					visible = "[GetVariableSystem.Exists('showing_saas_ending_decisions')]"
+					visible_at_creation = no
+					layoutpolicy_horizontal = expanding
+					layoutpolicy_vertical = expanding
+					margin = { 12 12 }
+					spacing = 8
+
+					background = {
+						using = Background_Area_Dark
+						alpha = 0.65
+					}
+
+					text_label_center = {
+						text = "SAAS_ENDING_DECISION_AREA_LABEL"
+						layoutpolicy_horizontal = expanding
+						align = center
+						autoresize = yes
+						max_width = 580
+					}
+
+					text_single = {
+						text = "SAAS_ENDING_DECISION_AREA_DESCRIPTION"
+						multiline = yes
+						align = center
+						autoresize = yes
+						max_width = 580
+						margin_bottom = 8
+					}
+
+					hbox = {
+						layoutpolicy_horizontal = expanding
+						spacing = 10
+
+						expand = { layoutpolicy_horizontal = expanding }
+
+						saas_situation_ending_decision_card = {
+							name = "declare_new_mandate_card"
+							datacontext = "[GetDecisionWithKey('declare_new_mandate')]"
+						}
+						saas_situation_ending_decision_card = {
+							name = "zhou_old_state_new_mandate_card"
+							datacontext = "[GetDecisionWithKey('zhou_old_state_new_mandate')]"
+						}
+						saas_situation_ending_decision_card = {
+							name = "fate_divergence_card"
+							datacontext = "[GetDecisionWithKey('fate_divergence')]"
+						}
+						saas_situation_ending_decision_card = {
+							name = "new_dynasty_conquest_card"
+							datacontext = "[GetDecisionWithKey('new_dynasty_conquest')]"
+						}
+
+						expand = { layoutpolicy_horizontal = expanding }
+					}
+
+					text_single = {
+						text = "SAAS_ENDING_DECISION_LOCKED_HINT"
+						align = center
+						layoutpolicy_horizontal = expanding
+						default_format = "#low;italic"
+						max_width = 580
+					}
+
+					button_standard = {
+						parentanchor = hcenter
+						size = { 210 36 }
+						text = "SAAS_ENDING_DECISION_BACK"
+						onclick = "[GetVariableSystem.Clear('showing_saas_ending_decisions')]"
+					}
+				}
+
+				# Iberian-style future phase banners.
+				vbox = {
+					name = "next_phase_area_tutorial_uses_this"
+					visible = "[Not(GetVariableSystem.Exists('showing_saas_ending_decisions'))]"
+					layoutpolicy_horizontal = expanding
+					layoutpolicy_vertical = expanding
+					margin_top = -5
+
+					widget = {
+						layoutpolicy_horizontal = expanding
+						size = { 200 186 }
+						scissor = yes
+
+						vbox = {
+							name = "next_phase_area"
+
+							flowcontainer = {
+								name = "next_phase_widgets"
+								datamodel = "[SituationWindow.GetSelectedSubRegion.GetCurrentPhase.GetFuturePhases]"
+
+								item = { saas_situation_next_phase_banner = {} }
+							}
+						}
+					}
+
+					# Selected/leading future phase details and catalyst list.
+					vbox = {
+						layoutpolicy_horizontal = expanding
+						layoutpolicy_vertical = expanding
+						margin_top = 10
+						margin_bottom = 25
+						datacontext = "[SituationWindow.GetSelectedOrLeadingFuturePhaseType]"
+
+						background = {
+							using = Background_Area_Dark
+							alpha = 0.5
+						}
+
+						vbox = {
+							name = "catalyst_information_area"
+							layoutpolicy_horizontal = expanding
+							layoutpolicy_vertical = expanding
+
+							state = {
+								name = "catalyst_refresh"
+								using = Animation_Refresh_FadeOut
+							}
+
+							state = { using = Animation_Refresh_FadeIn }
+							state = {
+								name = saas_struggle_appear
+								using = Animation_Curve_Default
+								alpha = 1
+								duration = 0.4
+							}
+
+							state = {
+								name = saas_struggle_hide
+								using = Animation_Curve_Default
+								alpha = 0
+							}
+
+							spacer = { size = { 0 5 } }
+
+							text_label_center = {
+								text = "SITUATION_WINDOW_FUTURE_CATALYSTS_HEADER"
+								max_width = 560
+								fontsize = 18
+							}
+
+							text_single = {
+								text = "SAAS_SITUATION_CATALYST_INFO"
+								max_width = 560
+							}
+
+							fixedgridbox = {
+								margin_top = 5
+								addcolumn = 42
+								addrow = 42
+								setitemsizefromcell = yes
+								datamodel_wrap = 6
+								maxhorizontalslots = 6
+								maxverticalslots = 1
+								layoutanchor = topleft
+								datamodel = "[SituationPhaseType.GetModifierNamedSets]"
+								item = { saas_situation_phase_effect_item_small = {} }
+							}
+
+							spacer = { size = { 0 10 } }
+
+							scrollbox = {
+								size = { 610 270 }
+								layoutpolicy_vertical = expanding
+								layoutpolicy_horizontal = expanding
+
+								blockoverride "scrollbox_background" {}
+								blockoverride "scrollbox_background_fade" {}
+								blockoverride "scrollbox_margins" {}
+
+								blockoverride "scrollbox_content" {
+									vbox = {
+										name = "catalyst_entries"
+										datamodel = "[SituationWindow.GetCatalystsForSelectedPhase]"
+										datacontext = "[SituationWindow.GetSelectedSubRegion.GetCurrentPhase]"
+										layoutpolicy_vertical = expanding
+										layoutpolicy_horizontal = expanding
+										margin_left = 10
+										margin_right = 15
+										maximumsize = { 1000 50 }
+
+										item = {
+											hbox = {
+												layoutpolicy_vertical = expanding
+												layoutpolicy_horizontal = expanding
+
+												widget = {
+													size = { 60 55 }
+
+													background = {
+														using = Background_Area_Dark
+														using = Color_Green
+														alpha = 0.1
+														margin_left = 4
+														margin_right = 6
+													}
+
+													background = {
+														using = Background_Frame
+														using = Color_Green
+														alpha = 0.3
+														margin_left = 4
+														margin_right = 6
+													}
+
+													hbox = {
+														layoutpolicy_horizontal = expanding
+
+														icon = {
+															size = { 25 25 }
+															texture = "[SituationWindow.GetSelectedOrLeadingFuturePhaseType.GetIcon]"
+														}
+
+														text_single = {
+															text = "[SituationCatalystEntry.GetPoints|+=]"
+															align = nobaseline
+														}
+													}
+												}
+
+												text_multi = {
+													layoutpolicy_horizontal = expanding
+													layoutpolicy_vertical = expanding
+													text = "[SituationCatalystEntry.GetCatalystDescription]"
+													autoresize = no
+													align = left|nobaseline
+													max_width = 455
+													margin = { 10 5 }
+												}
+
+												background = { using = Background_Area_Dark }
+
+												widget = {
+													size = { 50 60 }
+
+													background = {
+														visible = "[GreaterThan_int32( SituationPhase.GetNumCompletionsOfCatalystForPhase( SituationWindow.GetSelectedOrLeadingFuturePhaseType, SituationCatalystEntry.GetCatalyst ), '(int32)0' )]"
+														using = Background_Frame
+														color = { 0.4 0.603 0.298 1 }
+														alpha = 0.6
+													}
+
+													background = {
+														visible = "[EqualTo_int32( SituationPhase.GetNumCompletionsOfCatalystForPhase( SituationWindow.GetSelectedOrLeadingFuturePhaseType, SituationCatalystEntry.GetCatalyst ), '(int32)0' )]"
+														using = Background_Frame
+														using = Color_Grey
+														alpha = 0.4
+													}
+
+													text_single = {
+														parentanchor = center
+														align = nobaseline
+														raw_text = "x[SituationPhase.GetNumCompletionsOfCatalystForPhase( SituationWindow.GetSelectedOrLeadingFuturePhaseType, SituationCatalystEntry.GetCatalyst )]"
+													}
+												}
+											}
+										}
+									}
 								}
 							}
 						}
-
-
-	
-		vbox = {
-			hbox = {
-				#layoutpolicy_horizontal = expanding
-				#layoutpolicy_vertical = expanding
-				vbox = {
-                portrait_head = {
-					position = { 0 0 }	
-            	   datacontext = "[GetPlayer.PdxGetWidgetScreenSize(PdxGuiWidget.Self]"
-                      }
-
-				button_standard = {
-                layoutpolicy_vertical = expanding
-                text = "Participation"
-                raw_tooltip = "Window for GUI testing (test_gui.gui)"
-
-                onclick = "[ExecuteConsoleCommand('gui.CreateWidget gui/debug/test_gui.gui test_window')]"
-            }
+					}
 				}
-				icon = {
-					position = { 0 0 }	
-					texture = "gfx/interface/situations/situations_map_the_nine_regions.png"
-					#########放按钮
-				}
-   	 }
-	 
-
-
-				expand = {}
 			}
-		}					
 		}
-			expand = {	}
 	}
 
+	window_situation_participant_groups = {
+		datacontext = "[SituationWindow.AccessParticipantCharacterList]"
+		datacontext = "[SituationParticipantCharacterList.AccessCharacterList]"
+		visible = "[SituationParticipantCharacterList.IsVisible]"
 	}
 }
 
+types Situation
+{
+	type saas_situation_ending_decision_card = button_standard_clean {
+		visible = "[Decision.IsShownForPlayer]"
+		size = { 140 265 }
+		onclick = "[OpenGameViewData( 'decision_detail', Decision.Self)]"
+
+		tooltipwidget = {
+			decision_tooltip = {}
+		}
+
+		vbox = {
+			layoutpolicy_horizontal = expanding
+			layoutpolicy_vertical = expanding
+
+			background = {
+				name = "decision_background"
+				texture = "[Decision.GetExtraPicture]"
+				using = Mask_Rough_Edges
+				fittype = centercrop
+				alpha = "[Select_float(Decision.IsPossibleForPlayer, '(float)1', '(float)0.4')]"
+				margin = { -1 -1 }
+
+				modify_texture = {
+					texture = "gfx/interface/component_masks/mask_fade_vertical.dds"
+					blend_mode = alphamultiply
+					translate_uv = { 0 -0.1 }
+				}
+			}
+
+			hbox = {
+				visible = "[Not(Decision.IsPossibleForPlayer)]"
+				layoutpolicy_horizontal = expanding
+				margin = { 0 5 }
+
+				warning_icon = {
+					size = { 30 30 }
+					name = "not_possible"
+				}
+
+				background = { using = Background_Area_Dark }
+			}
+
+			expand = {}
+
+			hbox = {
+				layoutpolicy_horizontal = growing
+
+				background = {
+					using = Background_Area_Dark
+					modify_texture = {
+						texture = "gfx/interface/component_masks/mask_fade_vertical.dds"
+						blend_mode = alphamultiply
+						mirror = vertical
+					}
+				}
+
+				background = {
+					texture = "gfx/interface/skinned/mask_pattern.dds"
+					texture_density = 3
+					spriteType = Corneredtiled
+					color = { 0.6 0.7 0.65 0.2 }
+					alpha = 0.7
+
+					modify_texture = {
+						texture = "gfx/interface/component_masks/mask_fade_vertical_up.dds"
+						blend_mode = alphamultiply
+					}
+				}
+
+				text_single = {
+					visible = "[Decision.IsPossibleForPlayer]"
+					max_width = 130
+					margin = { 0 12 }
+					text = "[Decision.GetTitleForPlayer]"
+					default_format = "#clickable"
+					align = center
+				}
+
+				text_single = {
+					visible = "[Not(Decision.IsPossibleForPlayer)]"
+					max_width = 130
+					margin = { 0 12 }
+					text = "[Decision.GetTitleForPlayer]"
+					default_format = "#low"
+					align = center
+				}
+			}
+		}
+	}
+
+	type saas_situation_phase_effect_item = button_round {
+		size = { 52 52 }
+		datacontext = "[GetPlayer]"
+
+		icon = {
+			size = { 100% 100% }
+			texture = "gfx/interface/icons/struggle_banners/icon_background_02.dds"
+		}
+
+		icon = {
+			size = { 70% 70% }
+			parentanchor = center
+			alwaystransparent = yes
+			texture = "[SituationModifierNamedSet.GetIcon]"
+		}
+
+		tooltipwidget = { using = situation_modifier_named_set_tooltip }
+	}
+
+	type saas_situation_phase_effect_item_small = button_round {
+		size = { 42 42 }
+		datacontext = "[GetPlayer]"
+
+		icon = {
+			size = { 100% 100% }
+			texture = "gfx/interface/icons/struggle_banners/icon_background_dark.dds"
+		}
+
+		icon = {
+			size = { 70% 70% }
+			parentanchor = center
+			alwaystransparent = yes
+			texture = "[SituationModifierNamedSet.GetIcon]"
+		}
+
+		tooltipwidget = { using = situation_modifier_named_set_tooltip }
+	}
+
+	type saas_situation_next_phase_banner = container {
+		button = {
+			size = { 148 160 }
+			position = { 0 26 }
+			onclick = "[SituationWindow.ToggleSelectedFuturePhaseType( FutureSituationPhase.GetType.Self )]"
+			onclick = "[PdxGuiTriggerAllAnimations('catalyst_refresh')]"
+
+			tooltipwidget = {
+				datacontext = "[FutureSituationPhase.GetType]"
+				using = situation_phase_type_tooltip
+			}
+
+			widget = {
+				size = { 46 60 }
+				position = { 0 -27 }
+				parentanchor = hcenter|top
+				background = { using = Background_Area_Dark }
+			}
+
+			background = {
+				visible = "[ObjectsEqual( SituationWindow.GetSelectedFuturePhaseType.Self, FutureSituationPhase.GetType.Self )]"
+				using = Background_Area_Dark
+				alpha = 0.6
+
+				modify_texture = {
+					texture = "gfx/interface/component_masks/mask_fade_vertical_up.dds"
+					blend_mode = alphamultiply
+					alpha = 1
+				}
+			}
+
+			icon = {
+				size = { 100% 100% }
+				texture = "gfx/interface/window_struggle/current_phase_point_based_phase.dds"
+			}
+
+			icon = {
+				size = { 21 21 }
+				parentanchor = top|hcenter
+				position = { 0 7 }
+				texture = "gfx/interface/icons/struggle_types/point_based_phase_icon.dds"
+			}
+
+			text_single = {
+				parentanchor = center
+				position = { 0 -46 }
+				text = "[FutureSituationPhase.GetType.GetNameNoTooltip]"
+				default_format = "#high"
+				max_width = 135
+			}
+
+			container = {
+				parentanchor = center
+				position = { 0 12 }
+
+				icon = {
+					size = { 65 65 }
+					texture = "gfx/interface/icons/struggle_banners/icon_background_dark.dds"
+				}
+
+				icon = {
+					parentanchor = center
+					position = { 0 -1 }
+					size = { 45 45 }
+					texture = "[FutureSituationPhase.GetType.GetIcon]"
+				}
+			}
+
+			progressbar_standard = {
+				visible = "[FutureSituationPhase.HasPointsTakeoverType]"
+				parentanchor = bottom|hcenter
+				position = { 0 -23 }
+				size = { 80 12 }
+				value = "[FutureSituationPhase.GetRelativeProgressPercent]"
+				progresstexture = "gfx/interface/progressbars/progress_grandeur_increase.dds"
+			}
+
+			text_single = {
+				parentanchor = bottom|hcenter
+				position = { 0 -2 }
+				visible = "[FutureSituationPhase.HasPointsTakeoverType]"
+				text = "SITUATION_PHASE_POINT_TAKEOVER_VALUE"
+				default_format = "#high"
+			}
+
+			text_single = {
+				parentanchor = bottom|hcenter
+				position = { 0 -8 }
+				visible = "[FutureSituationPhase.HasDurationTakeoverType]"
+				text = "SITUATION_WINDOW_PHASE_TAKEOVER_DURATION"
+				max_width = 135
+			}
+
+			icon = {
+				name = "arrow"
+				visible = "[ObjectsEqual( SituationWindow.GetSelectedSubRegion.GetCurrentPhase.GetLeadingPhaseType.Self, FutureSituationPhase.GetType.Self )]"
+				parentanchor = center
+				texture = "gfx/interface/window_struggle/arrow.dds"
+				size = { 30 18 }
+				position = { -1 -90 }
+				allow_outside = yes
+			}
+
+			icon = {
+				name = "funnel_right"
+				visible = "[ObjectsEqual( SituationWindow.GetSelectedFuturePhaseType.Self, FutureSituationPhase.GetType.Self )]"
+				parentanchor = center
+				texture = "gfx/interface/window_struggle/funnel_divider.dds"
+				size = { 322 100 }
+				position = { 225 33 }
+				using = Color_Blue
+				alpha = 0.4
+			}
+
+			icon = {
+				name = "funnel_left"
+				visible = "[ObjectsEqual( SituationWindow.GetSelectedFuturePhaseType.Self, FutureSituationPhase.GetType.Self )]"
+				parentanchor = center
+				mirror = horizontal
+				texture = "gfx/interface/window_struggle/funnel_divider.dds"
+				size = { 322 100 }
+				position = { -225 33 }
+				using = Color_Grey
+				alpha = 0.4
+			}
+		}
+	}
 }

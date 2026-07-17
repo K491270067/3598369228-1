@@ -1,0 +1,235 @@
+﻿#############  鍛ㄥ浗--鍛ㄥ叕涓栫郴 #############
+han390={
+  name="chen2"#鍛ㄥ钩鍏紝鍛ㄥ叕鏃︽瀛?
+  dynasty_house=house_xin718
+	religion="xizhouli" 
+	culture="zhou"
+  father=han11
+
+  3565.1.6 = {
+		birth = yes
+	}
+  3616.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+    give_nickname=nick_pinggong
+  }
+}
+han391={
+  name="jing2"#澶辫€冧笘绯?
+  dynasty_house=house_xin718#濮?
+	religion="xizhouli" 
+	culture="zhou"
+  father=han390
+
+  3585.1.1 = {
+		birth = yes
+	}
+  3636.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han392={
+  name="zuo1"#澶辫€冧笘绯?
+  dynasty_house=house_xin718#濮?
+	religion="xizhouli" 
+	culture="zhou"
+  father=han391
+
+  3606.1.1 = {
+		birth = yes
+	}
+  3673.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han393={
+  name="chong1"#澶辫€冧笘绯?
+  dynasty_house=house_xin718#濮?
+	religion="xizhouli" 
+	culture="zhou"
+  father=han392
+
+  3629.1.1 = {
+		birth = yes
+	}
+  3693.11.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han394={
+  name="xia2"#澶辫€冧笘绯?
+  dynasty_house=house_xin718#濮?
+	religion="xizhouli" 
+	culture="zhou"
+  father=han393
+
+  3653.11.11 = {
+		birth = yes
+	}
+  3713.11.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han395={
+  name="qian"#澶辫€冧笘绯?
+  dynasty_house=house_xin718#濮?
+	religion="xizhouli" 
+	culture="zhou"
+  father=han394
+
+  3680.6.6 = {
+		birth = yes
+	}
+  3743.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han396={
+  name="bai"#澶辫€冧笘绯?
+  dynasty_house=house_xin718#濮?
+	religion="xizhouli" 
+	culture="zhou"
+  father=han395
+
+  3703.11.11 = {
+		birth = yes
+	}
+  3760.11.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han397={
+  name="chu3"#澶辫€冧笘绯?
+  dynasty_house=house_xin718#濮?
+	religion="xizhouli" 
+	culture="zhou"
+  father=han396
+
+  3732.1.1 = {
+		birth = yes
+	}
+  3793.11.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han398={
+  name="bi1"#鍛ㄥ畾鍏紝鍛ㄥ帀鐜嬨€佸懆瀹ｇ帇鏃躲€傚弬涓庡叡鍜屾墽鏀?
+  dynasty_house=house_xin718#濮?
+	religion="xizhouli" 
+	culture="zhou"
+  father=han397
+
+  3759.3.1 = {
+		birth = yes
+	}
+  3813.11.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+		give_nickname=nick_dinggong
+  }
+}
+han399={
+  name="liang"#澶辫€冧笘绯?
+  dynasty_house=house_xin718#濮?
+	religion="xizhouli" 
+	culture="zhou"
+  father=han398
+
+  3793.8.1 = {
+		birth = yes
+	}
+  3843.11.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han400={
+  name="qiao"#澶辫€冧笘绯伙紝骞崇帇涓滆縼鏃跺懆鍏紝寮€灞€鏃?4宀?
+  dynasty_house=house_xin718#濮?
+	religion="xizhouli" 
+	culture="zhou"
+  father=han399
+
+  3821.7.1 = {
+		birth = yes
+	}
+  3880.11.1 = {
+    death = yes
+  }
+}
+han401={
+  name="heijiang"#缂栭€狅紝鍌ㄥ悰1鍙凤紝娓告垙寮€灞€4宀?
+  dynasty_house=house_xin718#濮?
+	religion="xizhouli" 
+	culture="zhou"
+  father=han400
+
+  3839.1.1 = {
+		birth = yes
+	}
+  3880.11.1 = {
+    death = yes
+  }
+}
+han402={
+  name="xu3"#缂栭€狅紝鍌ㄥ悰1鍙凤紝娓告垙寮€灞€3宀?
+  dynasty_house=house_xin718#濮?
+	religion="xizhouli" 
+	culture="zhou"
+  father=han400
+
+  3840.1.1 = {
+		birth = yes
+	}
+  3880.11.1 = {
+    death = yes
+  }
+}
+han403={
+  name="ni1"#缂栭€狅紝濂?鍙凤紝娓告垙寮€灞€2宀?
+  dynasty_house=house_xin718#濮?
+	religion="xizhouli" 
+	culture="zhou"
+  father=han400
+  female=yes
+
+  3841.1.1 = {
+		birth = yes
+	}
+  3880.11.1 = {
+    death = yes
+  }
+}
+han404={
+  name="xi7"#缂栭€狅紝濂?鍙凤紝娓告垙寮€灞€1宀?
+  dynasty_house=house_xin718#濮?
+	religion="xizhouli" 
+	culture="zhou"
+  father=han400
+  female=yes
+
+  3842.1.1 = {
+		birth = yes
+	}
+  3880.11.1 = {
+    death = yes
+  }
+}

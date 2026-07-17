@@ -1,0 +1,133 @@
+﻿##### d_jushi2 ############################
+
+### c_tufei
+# JIANZHOUZ
+3170 = {
+	culture = dizu
+	religion = guiwu
+	holding = none
+}
+# HANSHOU
+3130 = {
+	holding = none
+}
+# YINSHAN2
+3639 = {
+	holding = none
+}
+
+
+### c_langzhou
+# LANGZHOU
+3171 = {
+	culture = dizu
+	religion = guiwu
+	holding = none
+}
+# CANGXI
+3187 = {
+	holding = none
+}
+
+
+##### d_danshi2 ############################
+
+### c_jiange
+# JIANGE
+3124 = {
+	culture = dizu
+	religion = guiwu
+	holding = none
+}
+# PUAN
+3180 = {
+	holding = none
+}
+# HANDE
+3152 = {
+	holding = none
+}
+
+
+### c_yonggui
+# YONGGUI
+3181 = {
+	culture = dizu
+	religion = guiwu
+	holding = none
+}
+# LINJIN
+3182 = {
+	holding = none
+}
+
+
+##### d_baishuishi ############################
+
+### c_baishuiguan
+# BAISHUIGUAN
+3127 = {
+	culture = dizu
+	religion = guiwu
+	holding = none
+}
+
+
+### c_baishui1
+# BAISHUI1
+3128 = {
+	culture = dizu
+	religion = guiwu
+	holding = none
+}
+# MOTIANLING
+3147 = {
+	holding = none
+}
+
+
+### c_yinping1
+# YINPING1
+3146 = {
+	culture = dizu
+	religion = guiwu
+	holding = none
+}
+# QIAOTOU
+3145 = {
+	holding = none
+}
+
+
+##### d_goushi ############################
+
+### c_shimenguan
+# SHIMENGUAN
+3126 = {
+	culture = dizu
+	religion = guiwu
+	holding = none
+}
+# YICHANG2
+3624 = {
+	holding = none
+}
+# JIBAJIN
+3625 = {
+	holding = none
+}
+
+
+### c_guancheng
+# GUANCHENG
+3129 = {
+	culture = dizu
+	religion = guiwu
+	holding = none
+}
+# JINNIUDAO
+3138 = {
+	holding = none
+}
+
+

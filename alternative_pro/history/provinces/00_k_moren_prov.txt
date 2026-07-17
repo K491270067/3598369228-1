@@ -1,0 +1,94 @@
+﻿##### d_moshi1 ############################
+
+### c_fushun
+
+
+### c_xiandu
+# XIANDU
+3472 = {
+	holding = none
+}
+# LIAOYANG1
+3473 = {
+	holding = none
+}
+
+
+### c_liaoyang1
+
+
+### c_wangpingxian
+
+
+### c_xincheng6
+
+
+### c_houcheng
+
+
+### c_momi
+
+
+### c_hou2
+
+
+### c_liangmo
+
+
+### c_mofu
+
+
+### c_gaoana
+# XINCHENG6
+3857 = {
+	holding = none
+}
+# HOUCHENG
+3858 = {
+	holding = none
+}
+# WANGPINGXIAN
+3856 = {
+	holding = none
+}
+# FUSHUN
+3484 = {
+	holding = none
+}
+
+
+### c_qujin
+# QUJIN
+3863 = {
+	holding = none
+}
+# HOU2
+3480 = {
+	holding = none
+}
+# ZHUANQIU
+3864 = {
+	holding = none
+}
+# MOMI
+3479 = {
+	holding = none
+}
+# GAOANA
+3862 = {
+	holding = none
+}
+
+
+### c_zhuangqiu
+
+
+### c_gaimou
+
+
+### c_mudi
+
+
+### c_dongna
+
+

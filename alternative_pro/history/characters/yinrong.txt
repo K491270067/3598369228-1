@@ -1,0 +1,226 @@
+﻿yunxingyinrong2={
+  name="keng1"
+  dynasty=xin753
+	religion="xirongfangling" 
+	culture="yiluozhirong"
+  father=yunxingluhunguo1
+
+  3580.1.1 = {
+		birth = yes
+	}
+  3625.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+yunxingyinrong3={
+  name="yichu1"
+  dynasty_house=house_xin754
+	religion="xirongfangling" 
+	culture="yiluozhirong"
+  father=yunxingyinrong2
+
+  3604.1.1 = {
+		birth = yes
+	}
+  3659.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+yunxingyinrong4={
+  name="quyu"
+  dynasty_house=house_xin754
+	religion="xirongfangling" 
+	culture="yiluozhirong"
+  father=yunxingyinrong3
+
+  3630.1.1 = {
+		birth = yes
+	}
+  3688.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+yunxingyinrong5={
+  name="zhouli"
+  dynasty_house=house_xin754
+	religion="xirongfangling" 
+	culture="yiluozhirong"
+  father=yunxingyinrong4
+
+  3656.1.1 = {
+		birth = yes
+	}
+  3703.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+yunxingyinrong6={
+  name="lv2"
+  dynasty_house=house_xin754
+	religion="xirongfangling" 
+	culture="yiluozhirong"
+  father=yunxingyinrong5
+
+  3689.1.1 = {
+		birth = yes
+	}
+  3747.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+yunxingyinrong7={
+  name="qian4"
+  dynasty_house=house_xin754
+	religion="xirongfangling" 
+	culture="yiluozhirong"
+  father=yunxingyinrong6
+
+  3714.1.1 = {
+		birth = yes
+	}
+  3765.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+yunxingyinrong8={
+  name="yuan5"
+  dynasty_house=house_xin754
+	religion="xirongfangling" 
+	culture="yiluozhirong"
+  father=yunxingyinrong7
+
+  3741.1.1 = {
+		birth = yes
+	}
+  3796.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+yunxingyinrong9={
+  name="xie3"
+  dynasty_house=house_xin754
+	religion="xirongfangling" 
+	culture="yiluozhirong"
+  father=yunxingyinrong8
+
+  3775.1.1 = {
+		birth = yes
+	}
+  3821.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+yunxingyinrong10={
+  name="ju4"
+  dynasty_house=house_xin754
+	religion="xirongfangling" 
+	culture="yiluozhirong"
+  father=yunxingyinrong9
+
+  3796.1.1 = {
+		birth = yes
+	}
+  3840.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+yunxingyinrong11={
+  name="xun5"
+  dynasty_house=house_xin754
+	religion="xirongfangling" 
+	culture="yiluozhirong"
+  father=yunxingyinrong10
+
+  3815.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+yunxingyinrong12={
+  name="nu2"
+  dynasty_house=house_xin754
+	religion="xirongfangling" 
+	culture="yiluozhirong"
+  father=yunxingyinrong11
+
+  3833.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+yunxingyinrong13={
+  name="mo2"
+  dynasty_house=house_xin754
+	religion="xirongfangling" 
+	culture="yiluozhirong"
+  father=yunxingyinrong11
+
+  3835.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+yunxingyinrong14={
+  name="nvming68"
+  dynasty_house=house_xin754
+	religion="xirongfangling" 
+	culture="yiluozhirong"
+  father=yunxingyinrong11
+  female=yes
+
+  3836.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+yunxingyinrong15={
+  name="nvming71"
+  dynasty_house=house_xin754
+	religion="xirongfangling" 
+	culture="yiluozhirong"
+  father=yunxingyinrong11
+  female=yes
+
+  3838.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}

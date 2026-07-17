@@ -1,0 +1,53 @@
+﻿##### d_tenshi ############################
+
+### c_ningwu
+# NINGWU
+509 = {
+	culture = lu
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_ten
+# TEN
+2273 = {
+	culture = lu
+	religion = xizhouli
+	holding = castle_holding
+}
+# HULING
+2274 = {
+	holding = none
+}
+
+
+### c_sigao
+# SIGAO
+2294 = {
+	culture = lu
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+##### d_tenshushi ############################
+
+### c_rongye
+# RONGYE
+2316 = {
+	culture = lu
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_feng
+# FENG
+480 = {
+	culture = lu
+	religion = xizhouli
+	holding = castle_holding
+}
+
+

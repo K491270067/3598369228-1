@@ -1,0 +1,89 @@
+﻿##### d_mianzhushi ############################
+
+### c_anyiguan
+# ANYIGUAN
+1510 = {
+	culture = xirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+
+
+### c_mianzhu
+# MIANZHU
+1512 = {
+	culture = xirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+# XIANQIN
+1537 = {
+	holding = none
+}
+
+
+### c_huandao
+# HUANDAO
+1522 = {
+	culture = xirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+# GAOLAN
+3050 = {
+	holding = none
+}
+
+
+##### d_wuyishi ############################
+
+### c_pingxiang1
+# PINGXIANG1
+1539 = {
+	culture = xirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+# MIAITIN
+1535 = {
+	holding = none
+}
+
+
+### c_huan2
+# HUAN2
+3051 = {
+	culture = xirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+# XIFENG1
+3052 = {
+	holding = none
+}
+
+
+##### d_shouyangshi ############################
+
+### c_xiangwu
+# XIANGWU
+1528 = {
+	culture = xirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+
+
+### c_shouyang
+# SHOUYANG
+1534 = {
+	culture = xirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+# GUPI
+3056 = {
+	holding = none
+}
+
+

@@ -1,0 +1,136 @@
+﻿d_jishi9 = {
+	2993.1.1 = {
+		liege = "k_jiguo3"
+		holder = han5878
+	}
+	3050.1.1 = {
+		holder = han5879
+	}
+	3089.1.1 = {
+		holder = han5880
+	}
+	3173.1.1 = {
+		holder = han5881
+	}
+	3200.1.1 = {
+		holder = han5882
+	}
+	3244.1.1 = {
+		holder = han5883
+	}
+	3283.1.1 = {
+		holder = han5884
+	}
+	3333.1.1 = {
+		holder = han5885
+	}
+	3400.1.1 = {
+		holder = han5886
+	}
+	3435.1.1 = {
+		holder = han5887
+	}
+	3484.1.1 = {
+		holder = han5888
+	}
+	3511.1.1 = {
+		holder = han5889
+	}
+	3567.1.1 = {
+		holder = han5890
+	}
+	3600.1.1 = {
+		holder = han5891
+	}
+	3623.1.1 = {
+		holder = han5892
+	}
+	3677.1.1 = {
+		holder = han5893
+	}
+	3700.1.1 = {
+		holder = han5894
+	}
+	3743.1.1 = {
+		holder = han5895
+	}
+	3779.1.1 = {
+		holder = han115
+	}
+	3825.1.1 = {
+		holder = han116
+	}
+	3849.1.1 = {
+		holder = han122
+		change_development_level = 26
+		government = feudal_government
+	}
+}
+k_jiguo3 = {
+	2993.1.1 = {
+		holder = han5878
+	}
+	3050.1.1 = {
+		holder = han5879
+	}
+	3089.1.1 = {
+		holder = han5880
+	}
+	3173.1.1 = {
+		holder = han5881
+	}
+	3200.1.1 = {
+		holder = han5882
+	}
+	3244.1.1 = {
+		holder = han5883
+	}
+	3283.1.1 = {
+		holder = han5884
+	}
+	3333.1.1 = {
+		holder = han5885
+	}
+	3400.1.1 = {
+		holder = han5886
+	}
+	3435.1.1 = {
+		holder = han5887
+	}
+	3484.1.1 = {
+		holder = han5888
+	}
+	3511.1.1 = {
+		holder = han5889
+	}
+	3567.1.1 = {
+		holder = han5890
+	}
+	3600.1.1 = {
+		liege = "e_zhoutianzi"
+		holder = han5891
+	}
+	3623.1.1 = {
+		holder = han5892
+	}
+	3677.1.1 = {
+		holder = han5893
+	}
+	3700.1.1 = {
+		holder = han5894
+	}
+	3743.1.1 = {
+		holder = han5895
+	}
+	3779.1.1 = {
+		holder = han115
+	}
+	3825.1.1 = {
+		holder = han116
+	}
+	3849.1.1 = {
+		holder = han117
+		change_development_level = 28
+		government = feudal_government
+	}
+}

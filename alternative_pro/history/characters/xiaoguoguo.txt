@@ -1,0 +1,131 @@
+﻿#############  灏忚櫌鍥?-濮  #############
+han5489={
+  name="fengren"
+  dynasty=xin830
+	religion="xizhouli" 
+	culture="zhou"
+  father=han603
+
+  3810.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+    death = yes
+  }
+}
+han5490={
+  name="hen1"
+  dynasty_house=house_xin831#濮?
+	religion="xizhouli" 
+	culture="zhou"
+  father=han5489
+
+  3828.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+    death = yes
+  }
+}
+han5491={
+  name="xin1"
+  dynasty_house=house_xin831#濮?
+	religion="xizhouli" 
+	culture="zhou"
+  father=han5489
+
+  3829.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+    death = yes
+  }
+}
+han5492={
+  name="nvming247"
+  dynasty_house=house_xin831#濮?
+	religion="xizhouli" 
+	culture="zhou"
+  father=han5489
+  female=yes
+
+  3830.11.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+    death = yes
+  }
+}
+han5493={
+  name="nvming248"
+  dynasty_house=house_xin831#濮?
+	religion="xizhouli" 
+	culture="zhou"
+  father=han5489
+  female=yes
+
+  3831.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+    death = yes
+  }
+}
+#############
+jixingxiaoguoguo1={
+  name="nanming967"
+  dynasty_house=house_xin832
+	religion="xizhouli" 
+	culture="zhou"
+  father=han5489
+
+  3830.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+    death = yes
+  }
+}
+jixingxiaoguoguo2={
+  name="nanming988"
+  dynasty_house=house_xin832
+	religion="xizhouli" 
+	culture="zhou"
+  father=jixingxiaoguoguo1
+
+  3848.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+    death = yes
+  }
+}
+jixingxiaoguoguo3={
+  name="nanming1017"
+  dynasty_house=house_xin832
+	religion="xizhouli" 
+	culture="zhou"
+  father=jixingxiaoguoguo1
+
+  3849.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+    death = yes
+  }
+}
+jixingxiaoguoguo4={
+  name="nvming88"
+  dynasty_house=house_xin832
+	religion="xizhouli" 
+	culture="zhou"
+  father=jixingxiaoguoguo1
+  female=yes
+
+  3849.2.2 = {
+		birth = yes
+	}
+  3880.12.31 = {
+    death = yes
+  }
+}

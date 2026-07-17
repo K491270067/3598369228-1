@@ -1,0 +1,261 @@
+﻿################灞堝浗 濮灞堟皬
+jixingqushi520={
+  name="bi"#閮囧彅涔嬪瓙
+  dynasty=xin660
+	religion="xizhouli" 
+	culture="jin"
+  father=han519
+
+  3588.11.1 = {
+		birth = yes
+	}
+  3628.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jixingqushi521={
+  name="qiu1"
+  dynasty_house=house_baijia124
+	religion="xizhouli" 
+	culture="jin"
+  father=jixingqushi520
+
+  3610.11.1 = {
+		birth = yes
+	}
+  3647.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jixingqushi522={
+  name="qitao"
+  dynasty_house=house_baijia124
+	religion="xizhouli" 
+	culture="jin"
+  father=jixingqushi521
+
+  3637.1.1 = {
+		birth = yes
+	}
+  3676.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jixingqushi523={
+  name="ye"
+  dynasty_house=house_baijia124
+	religion="xizhouli" 
+	culture="jin"
+  father=jixingqushi522
+
+  3650.1.1 = {
+		birth = yes
+	}
+  3713.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jixingqushi524={
+  name="dan2"
+  dynasty_house=house_baijia124
+	religion="xizhouli" 
+	culture="jin"
+  father=jixingqushi523
+
+  3679.1.1 = {
+		birth = yes
+	}
+  3751.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jixingqushi525={
+  name="song1"
+  dynasty_house=house_baijia124
+	religion="xizhouli" 
+	culture="jin"
+  father=jixingqushi524
+
+  3704.1.1 = {
+		birth = yes
+	}
+  3763.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jixingqushi526={
+  name="yan1"
+  dynasty_house=house_baijia124
+	religion="xizhouli" 
+	culture="jin"
+  father=jixingqushi525
+
+  3730.1.1 = {
+		birth = yes
+	}
+  3805.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jixingqushi527={
+  name="huo"
+  dynasty_house=house_baijia124
+	religion="xizhouli" 
+	culture="jin"
+  father=jixingqushi526
+
+  3757.1.1 = {
+		birth = yes
+	}
+  3820.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jixingqushi528={
+  name="pang"
+  dynasty_house=house_baijia124
+	religion="xizhouli" 
+	culture="jin"
+  father=jixingqushi527
+
+  3785.1.1 = {
+		birth = yes
+	}
+  3846.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jixingqushi529={
+  name="yansheng"#骞崇帇涓滆縼鏃跺師鍥藉浗鍚涳紝娓告垙寮€灞€鏃?9宀?
+  dynasty_house=house_baijia124
+	religion="dongzhouli" 
+	culture="jin"
+  father=jixingqushi528
+
+  3830.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+jixingqushi530={
+  name="guang"#鍌ㄥ悰1鍙?
+  dynasty_house=house_baijia124
+	religion="dongzhouli" 
+	culture="jin"
+  father=jixingqushi529
+
+  3848.10.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+jixingqushi531={
+  name="heng"#鍌ㄥ悰2鍙?
+  dynasty_house=house_baijia124
+	religion="dongzhouli" 
+	culture="jin"
+  father=jixingqushi529
+
+  3849.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+jixingqushi532={
+  name="waner"
+  dynasty_house=house_baijia124
+	religion="dongzhouli" 
+	culture="jin"
+  father=jixingqushi529
+  female=yes
+
+  3849.5.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+jixingqushi533={
+  name="yan6"
+  dynasty_house=house_baijia124
+	religion="dongzhouli" 
+	culture="jin"
+  father=jixingqushi529
+  female=yes
+
+  3849.6.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+##################
+jixingqushi1={
+  name="nanming1032"#骞崇帇涓滆縼鏃跺師鍥藉浗鍚涳紝娓告垙寮€灞€鏃?9宀?
+  dynasty_house=house_xin661
+	religion="dongzhouli" 
+	culture="jin"
+  father=jixingqushi528
+
+  3830.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+jixingqushi2={
+  name="nanming1051"#鍌ㄥ悰1鍙?
+  dynasty_house=house_xin661
+	religion="dongzhouli" 
+	culture="jin"
+  father=jixingqushi1
+
+  3848.10.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+jixingqushi3={
+  name="mi2"#鍌ㄥ悰2鍙?
+  dynasty_house=house_xin661
+	religion="dongzhouli" 
+	culture="jin"
+  father=jixingqushi1
+  female=yes
+
+  3849.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}

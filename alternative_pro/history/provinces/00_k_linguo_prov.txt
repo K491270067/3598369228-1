@@ -1,0 +1,48 @@
+﻿##### d_linshi ############################
+
+### c_anping
+# ANPING
+405 = {
+	culture = yinshang
+	religion = yinli
+	holding = castle_holding
+}
+# ANGUO
+417 = {
+	holding = none
+}
+
+
+### c_liwu
+# LIWU
+468 = {
+	culture = yinshang
+	religion = yinli
+	holding = castle_holding
+}
+
+
+##### d_bishi5 ############################
+
+### c_boling1
+# BOLING1
+473 = {
+	culture = yinshang
+	religion = yinli
+	holding = castle_holding
+}
+# LUCHENG
+475 = {
+	holding = none
+}
+
+
+### c_guangwang
+# GUANGWANG
+462 = {
+	culture = yinshang
+	religion = yinli
+	holding = castle_holding
+}
+
+

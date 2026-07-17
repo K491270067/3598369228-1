@@ -1,0 +1,37 @@
+﻿##### d_zhenxunshi ############################
+
+### c_han4
+# HAN
+2210 = {
+	culture = xiaren
+	religion = xiali
+	holding = castle_holding
+}
+# RAOGUO
+2212 = {
+	holding = none
+}
+
+
+### c_zhen
+# ZHEN
+142 = {
+	culture = xiaren
+	religion = xiali
+	holding = castle_holding
+}
+# LEDU
+136 = {
+	holding = none
+}
+
+
+### c_pingshou
+# PINGSHOU
+2211 = {
+	culture = xiaren
+	religion = xiali
+	holding = castle_holding
+}
+
+

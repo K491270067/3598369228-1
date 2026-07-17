@@ -1,0 +1,44 @@
+﻿##### d_fangshi ############################
+
+### c_fang5
+# FANG5
+1658 = {
+	holding = none
+}
+
+
+### c_quyang2
+# QUYANG2
+1659 = {
+	holding = none
+}
+
+
+### c_chongqiu1
+# CHONGQIU1
+1660 = {
+	holding = none
+}
+
+
+### c_wencheng
+# WENCHENG
+1661 = {
+	holding = none
+}
+
+
+### c_wuyin
+# WUYIN
+1711 = {
+	holding = none
+}
+
+
+### c_biyang2
+# BIYANG2
+1712 = {
+	holding = none
+}
+
+

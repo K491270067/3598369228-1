@@ -1,0 +1,65 @@
+﻿##### d_jiaoshi2 ############################
+
+### c_gaoshan
+# GAOSHAN
+299 = {
+	holding = none
+}
+
+
+### c_tan2
+# TAN2
+308 = {
+	holding = none
+}
+
+
+### c_jianyang1
+# 
+1980 = {
+	holding = none
+}
+
+
+### c_jiao6
+# 
+1981 = {
+	holding = none
+}
+
+
+### c_chuzhong
+# 
+2037 = {
+	holding = none
+}
+
+
+### c_yongyang1
+# 
+2038 = {
+	holding = none
+}
+
+
+### c_shigu
+# 
+2043 = {
+	holding = none
+}
+
+
+### c_zhuiqi
+# ZHUIQI
+2256 = {
+	holding = none
+}
+
+
+### c_bojing
+# THOUARS
+2257 = {
+	holding = none
+}
+
+

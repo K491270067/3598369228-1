@@ -1,0 +1,41 @@
+﻿##### d_liangshi ############################
+
+### c_xinli
+# XINLI
+964 = {
+	culture = qin
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_shaoliang
+# SHAOLIANG
+967 = {
+	culture = qin
+	religion = xizhouli
+	holding = castle_holding
+}
+# HEYANG
+968 = {
+	holding = none
+}
+
+
+### c_guyang1
+
+
+##### d_liangyoushi ############################
+
+### c_duping
+# DUPING
+981 = {
+	culture = qin
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_tu
+
+

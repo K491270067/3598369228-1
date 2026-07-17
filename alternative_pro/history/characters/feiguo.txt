@@ -1,0 +1,162 @@
+﻿### 璐瑰浗--璐规皬--鎳垮叕涔嬪瓩###
+luguo4={
+  name="nanming893"
+  dynasty=xin478
+	religion="xizhouli" 
+	culture="lu"
+  father=han69
+
+  3789.10.1 = {
+		birth = yes
+	}
+  3813.11.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+luguo5={
+  name="nanming1086"
+  dynasty_house=house_baijia65
+	religion="xizhouli" 
+	culture="lu"
+  father=luguo4
+
+  3811.10.1 = {
+		birth = yes
+	}
+  3897.11.1={
+    death = yes
+  }
+}
+luguo6={
+  name="shaoer"
+  dynasty_house=house_baijia65
+	religion="xizhouli" 
+	culture="lu"
+  father=luguo5
+  female=yes
+
+  3829.10.1 = {
+		birth = yes
+	}
+  3897.11.1={
+    death = yes
+  }
+}
+luguo7={
+  name="nanming946"
+  dynasty_house=house_baijia65
+	religion="xizhouli" 
+	culture="lu"
+  father=luguo5
+
+  3830.10.1 = {
+		birth = yes
+	}
+  3897.11.1={
+    death = yes
+  }
+}
+luguo8={
+  name="da1"
+  dynasty_house=house_baijia65
+	religion="xizhouli" 
+	culture="lu"
+  father=luguo5
+  female=yes
+
+  3831.10.1 = {
+		birth = yes
+	}
+  3897.11.1={
+    death = yes
+  }
+}
+luguo9={
+  name="nanming971"
+  dynasty_house=house_baijia65
+	religion="xizhouli" 
+	culture="lu"
+  father=luguo5
+
+  3832.10.1 = {
+		birth = yes
+	}
+  3897.11.1={
+    death = yes
+  }
+}
+########鍜镐笜姘?
+xianqiushi1={
+  name="nanming901"
+  dynasty_house=house_xin479
+	religion="xizhouli" 
+	culture="lu"
+  father=luguo4
+
+  3812.10.1 = {
+		birth = yes
+	}
+  3897.11.1={
+    death = yes
+  }
+}
+xianqiushi2={
+  name="lang1"
+  dynasty_house=house_xin479
+	religion="xizhouli" 
+	culture="lu"
+  father=xianqiushi1
+  female=yes
+
+  3830.10.1 = {
+		birth = yes
+	}
+  3897.11.1={
+    death = yes
+  }
+}
+xianqiushi3={
+  name="nanming922"
+  dynasty_house=house_xin479
+	religion="xizhouli" 
+	culture="lu"
+  father=xianqiushi1
+
+  3831.10.1 = {
+		birth = yes
+	}
+  3897.11.1={
+    death = yes
+  }
+}
+xianqiushi4={
+  name="xin2"
+  dynasty_house=house_xin479
+	religion="xizhouli" 
+	culture="lu"
+  father=xianqiushi1
+  female=yes
+
+  3832.10.1 = {
+		birth = yes
+	}
+  3897.11.1={
+    death = yes
+  }
+}
+xianqiushi5={
+  name="nanming952"
+  dynasty_house=house_xin479
+	religion="xizhouli" 
+	culture="lu"
+  father=xianqiushi1
+
+  3833.10.1 = {
+		birth = yes
+	}
+  3897.11.1={
+    death = yes
+  }
+}

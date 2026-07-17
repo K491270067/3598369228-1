@@ -1,0 +1,66 @@
+﻿##### d_zhushi3 ############################
+
+### c_zhu2
+# ZHU2
+425 = {
+	culture = lu
+	religion = xizhouli
+	holding = castle_holding
+}
+# TUO
+416 = {
+	holding = none
+}
+
+
+### c_zilou
+# ZILOU
+427 = {
+	culture = lu
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_lang
+# LANG
+435 = {
+	culture = lu
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+##### d_zhushi4 ############################
+
+### c_qi2
+# Q2
+428 = {
+	culture = lu
+	religion = xizhouli
+	holding = castle_holding
+}
+# NANPINGYANG
+2271 = {
+	holding = none
+}
+
+
+### c_yi2
+# YI2
+423 = {
+	culture = lu
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_zou
+# ZOU
+2280 = {
+	culture = lu
+	religion = xizhouli
+	holding = castle_holding
+}
+
+

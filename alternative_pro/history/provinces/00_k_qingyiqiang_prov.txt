@@ -1,0 +1,163 @@
+﻿##### d_qingshi ############################
+
+### c_lingguan
+# LINGGUAN
+3741 = {
+	holding = none
+}
+
+
+### c_qingyi1
+# QINGYI1
+3742 = {
+	holding = none
+}
+
+
+### c_meizhou
+# MEIZHOU
+3153 = {
+	holding = none
+}
+
+
+### c_qiongzhou
+# QIONGZHOU
+3156 = {
+	holding = none
+}
+
+
+### c_shuzhou1
+# SHUZHOU1
+3157 = {
+	holding = none
+}
+
+
+### c_pujiang
+# PUJING
+3272 = {
+	holding = none
+}
+
+
+### c_linxi
+# LINXI
+3273 = {
+	holding = none
+}
+
+
+### c_yizheng
+# YIZHENG
+3274 = {
+	holding = none
+}
+
+
+### c_anren
+# ANREN
+3275 = {
+	holding = none
+}
+
+
+### c_dayi
+# DAYI
+3276 = {
+	holding = none
+}
+
+
+### c_qingcheng
+# QINGCHENG
+3278 = {
+	holding = none
+}
+
+
+### c_jiajiang
+# JIAJIANG
+3257 = {
+	holding = none
+}
+
+
+### c_danling
+# DLING
+3263 = {
+	holding = none
+}
+
+
+### c_hongya
+# HYA
+3264 = {
+	holding = none
+}
+
+
+### c_baizhang
+# BAIZHANG
+3267 = {
+	holding = none
+}
+
+
+### c_jiazhou
+# JIAZHOU
+3110 = {
+	holding = none
+}
+
+
+### c_mingshan
+# MINGSHAN
+3268 = {
+	holding = none
+}
+
+
+### c_huojing
+# HUOJING
+3271 = {
+	holding = none
+}
+
+
+### c_jidongguan
+# JIDONGGUAN
+3731 = {
+	holding = none
+}
+
+
+### c_furenwu
+# FURENWU
+3732 = {
+	holding = none
+}
+
+
+### c_tongyi
+# TONGYI
+3733 = {
+	holding = none
+}
+
+
+### c_qingyi
+# QINGYI
+3734 = {
+	holding = none
+}
+
+
+### c_pingqiang
+# PINGQIANG
+3735 = {
+	holding = none
+}
+
+

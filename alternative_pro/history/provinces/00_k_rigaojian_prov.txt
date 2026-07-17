@@ -1,0 +1,452 @@
+﻿##### d_zhuboshi ############################
+
+### c_henei1
+# CHANGLU
+2859 = {
+	holding = none
+}
+
+
+### c_zhubo1
+# XIAZONG
+2852 = {
+	holding = none
+}
+
+
+### c_xingxi
+
+
+### c_baifa
+
+
+### c_cicheng
+
+
+### c_xinzhi1
+
+
+### c_jiuzi1
+
+
+### c_duokejun
+# JIUZHONG
+2983 = {
+	holding = none
+}
+
+
+### c_changlu
+
+
+### c_jiuzhong
+
+
+##### d_jimihoubushi ############################
+
+### c_naxu
+# NAXU
+2985 = {
+	holding = none
+}
+# XIAYE
+2858 = {
+	holding = none
+}
+# SHIBEI
+2986 = {
+	holding = none
+}
+
+
+### c_yandai
+
+
+### c_shibei
+
+
+### c_hezhao
+
+
+### c_yamojun
+# YANDAI
+2857 = {
+	holding = none
+}
+
+
+### c_achi1
+
+
+### c_zhinaibu
+# ACHI
+2988 = {
+	holding = none
+}
+# XINFU
+2989 = {
+	holding = none
+}
+
+
+##### d_pingqunshi ############################
+
+### c_pancheng
+
+
+### c_gaozi
+
+
+### c_shicheng4
+
+
+### c_achi
+
+
+### c_ranyu
+
+
+### c_gaoye1
+
+
+### c_shichuan
+# PANCHENG
+2856 = {
+	holding = none
+}
+
+
+### c_tiancun
+
+
+### c_shicheng6
+# SHICHENG4
+2987 = {
+	holding = none
+}
+# GAOZI
+2984 = {
+	holding = none
+}
+
+
+### c_xingfang
+
+
+### c_rili
+
+
+### c_yiju1
+
+
+##### d_shoubaixiangshi ############################
+
+### c_xinfu
+# RANYU
+2991 = {
+	holding = none
+}
+
+
+### c_futian
+# FUTIAN
+2993 = {
+	holding = none
+}
+# YIJIU
+2990 = {
+	holding = none
+}
+# SITAI
+2992 = {
+	holding = none
+}
+
+
+### c_mingqu
+
+
+##### d_yuzaoshi ############################
+
+### c_yijiu
+
+
+### c_luqian
+
+
+### c_yuzuo1
+
+
+### c_yizhi4
+
+
+##### d_agongliuweishi ############################
+
+### c_mulu
+
+
+### c_taosheng
+
+
+### c_yuantian
+
+
+### c_yuanshan
+# PANJING
+3568 = {
+	holding = none
+}
+
+
+### c_benliang
+
+
+### c_jixianma
+
+
+### c_sitai
+
+
+##### d_jianglashi ############################
+
+### c_yuqian
+# YUQIAN
+2821 = {
+	holding = none
+}
+
+
+### c_panjing
+
+
+### c_danze
+
+
+### c_hehejun
+
+
+### c_pifeng
+
+
+### c_sibo
+
+
+### c_yanshou
+# LUAO
+2817 = {
+	holding = none
+}
+
+
+##### d_panjushi ############################
+
+### c_dounan
+# DOUNAN
+3563 = {
+	holding = none
+}
+
+
+### c_sanhu1
+
+
+### c_jinguai
+# JINGUAI
+3564 = {
+	holding = none
+}
+
+
+##### d_bashidaoshi ############################
+
+### c_menyi
+# MENYI
+3565 = {
+	holding = none
+}
+
+
+### c_jiuhu
+# JIUHU
+3567 = {
+	holding = none
+}
+
+
+### c_lujiao
+
+
+### c_luao
+
+
+##### d_jinqinshi ############################
+
+### c_yuhou
+# YUHOU
+2847 = {
+	holding = none
+}
+
+
+### c_xianbei
+
+
+### c_qiutian
+# LUJIAO
+3566 = {
+	holding = none
+}
+# XIANBEU
+3571 = {
+	holding = none
+}
+
+
+### c_fengdao
+
+
+##### d_lingcaoshi ############################
+
+### c_biliujia
+# XIONGSHENG
+3570 = {
+	holding = none
+}
+
+
+### c_xiongsheng
+
+
+### c_youli1
+# YOULI1
+3572 = {
+	holding = none
+}
+
+
+### c_baohai
+
+
+##### d_zuishangshi ############################
+
+### c_luzhong
+# LUZHONG
+2855 = {
+	holding = none
+}
+# ZHICI
+3575 = {
+	holding = none
+}
+
+
+### c_zuishang
+# ZUISHANG
+3573 = {
+	holding = none
+}
+# LUQIAN
+2849 = {
+	holding = none
+}
+
+
+### c_tianchuan
+# TIANCHUAN
+3574 = {
+	holding = none
+}
+# BAOHAI
+3569 = {
+	holding = none
+}
+
+
+### c_zhici
+
+
+##### d_yizuoxigushi ############################
+
+### c_dudao
+# DUDAO
+2831 = {
+	holding = none
+}
+
+
+### c_houzhi
+# HOUZHI
+2819 = {
+	holding = none
+}
+
+
+### c_danzhang
+# DANZHANG
+2871 = {
+	holding = none
+}
+
+
+### c_rigao
+# RIGAO
+2872 = {
+	holding = none
+}
+
+
+### c_shishou
+# SHISHOU
+2826 = {
+	holding = none
+}
+
+
+### c_tianyan
+# TIANYAN
+2820 = {
+	holding = none
+}
+
+
+### c_beijian
+# BEIJIAN
+2828 = {
+	holding = none
+}
+
+
+##### d_zhujiaoshi ############################
+
+### c_genshi
+# GENSHI
+2843 = {
+	holding = none
+}
+# XIELI
+2829 = {
+	holding = none
+}
+# BEIHOU
+2862 = {
+	holding = none
+}
+
+
+### c_chuanlu
+# CHUANLU
+2838 = {
+	holding = none
+}
+
+
+### c_shisheng
+# SHISHENG
+2873 = {
+	holding = none
+}
+
+
+### c_beihou
+
+

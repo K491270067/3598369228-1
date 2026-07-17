@@ -1,0 +1,48 @@
+﻿##### d_duanshi ############################
+
+### c_wei3
+# WEI3
+1208 = {
+	culture = xiaren
+	religion = xiali
+	holding = castle_holding
+}
+# FANYANG
+1207 = {
+	holding = none
+}
+
+
+### c_yanghu
+# YANGHU
+1209 = {
+	culture = xiaren
+	religion = xiali
+	holding = castle_holding
+}
+
+
+##### d_jipushi ############################
+
+### c_jipu
+# JIPU
+1210 = {
+	culture = xiaren
+	religion = xiali
+	holding = castle_holding
+}
+# PINGEN
+56 = {
+	holding = none
+}
+
+
+### c_nanqu
+# NANQU
+65 = {
+	culture = xiaren
+	religion = xiali
+	holding = castle_holding
+}
+
+

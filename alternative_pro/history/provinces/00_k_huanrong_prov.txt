@@ -1,0 +1,138 @@
+﻿##### d_huanshi ############################
+
+### c_yuzhong
+# YUZHONG
+1545 = {
+	culture = xirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+# JINCHENG
+1544 = {
+	holding = none
+}
+
+
+### c_fangdang
+# FANGDANG
+3055 = {
+	culture = xirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+# YONGSHI2
+3054 = {
+	holding = none
+}
+
+
+### c_zhiyang1
+# ZHIYANG1
+1553 = {
+	culture = xirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+# JINCHENGGUAN
+1552 = {
+	holding = none
+}
+
+
+##### d_qianershi ############################
+
+### c_gaizhu
+# GAIZHU
+1554 = {
+	culture = xirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+# YONGDENG
+1556 = {
+	holding = none
+}
+
+
+### c_cangjiegu
+# CANGJIEGU
+1559 = {
+	culture = xirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+
+
+### c_guangwu3
+# GUANGWU3
+3097 = {
+	culture = xirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+# MIEMAN
+3099 = {
+	holding = none
+}
+
+
+##### d_tashi ############################
+
+### c_zhanyin
+# ZHANYIN
+1555 = {
+	culture = xirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+# NALIN
+3098 = {
+	holding = none
+}
+# YUMI
+3100 = {
+	holding = none
+}
+
+
+### c_weizai
+# WEIZAI
+3101 = {
+	culture = xirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+# JISANG
+1558 = {
+	holding = none
+}
+
+
+##### d_jinchengshi ############################
+
+### c_haowei
+# HAOWEI
+1548 = {
+	culture = xirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+# LINGJU
+1551 = {
+	holding = none
+}
+
+
+### c_yunjie
+# YUNJIE
+1549 = {
+	culture = xirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+# ZHENGBOJIN
+1550 = {
+	holding = none
+}
+
+

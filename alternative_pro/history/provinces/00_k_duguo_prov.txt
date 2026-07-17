@@ -1,0 +1,33 @@
+﻿##### d_dushi ############################
+
+### c_zhiyang
+# ZHIYANG
+858 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_lan1
+# LAN1
+861 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_du
+# DU
+863 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+# KUGU
+864 = {
+	holding = none
+}
+
+

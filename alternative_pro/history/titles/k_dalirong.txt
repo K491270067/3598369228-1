@@ -1,0 +1,92 @@
+﻿d_lifeishi = {
+	3567.1.1 = {
+		liege = "k_dalirong"
+		holder = han2904
+	}
+	3609.1.1 = {
+		holder = han2905
+	}
+	3657.1.1 = {
+		holder = han2906
+	}
+	3687.1.1 = {
+		holder = han2907
+	}
+	3727.1.1 = {
+		holder = han2908
+	}
+	3770.1.1 = {
+		holder = han2909
+	}
+	3810.1.1 = {
+		holder = han2910
+	}
+	3845.1.1 = {
+		holder = han2917
+	}
+	3849.1.1 = {
+		change_development_level = 25
+		government = tribal_government
+	}
+}
+d_lishi8 = {
+	3567.1.1 = {
+		liege = "k_dalirong"
+		holder = han2904
+	}
+	3609.1.1 = {
+		holder = han2905
+	}
+	3657.1.1 = {
+		holder = han2906
+	}
+	3687.1.1 = {
+		holder = han2907
+	}
+	3727.1.1 = {
+		holder = han2908
+	}
+	3770.1.1 = {
+		holder = han2909
+	}
+	3810.1.1 = {
+		holder = han2910
+	}
+	3845.1.1 = {
+		holder = han2916
+	}
+	3849.1.1 = {
+		change_development_level = 26
+		government = tribal_government
+	}
+}
+k_dalirong = {
+	3567.1.1 = {
+		holder = han2904
+	}
+	3609.1.1 = {
+		holder = han2905
+	}
+	3657.1.1 = {
+		holder = han2906
+	}
+	3687.1.1 = {
+		holder = han2907
+	}
+	3727.1.1 = {
+		holder = han2908
+	}
+	3770.1.1 = {
+		holder = han2909
+	}
+	3810.1.1 = {
+		holder = han2910
+	}
+	3845.1.1 = {
+		holder = han2911
+	}
+	3849.12.31 = {
+		government = tribal_government
+		change_development_level = 28
+	}
+}

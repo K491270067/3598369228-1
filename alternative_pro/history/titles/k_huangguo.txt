@@ -1,0 +1,124 @@
+﻿k_huangguo = {
+	2600.1.1 = {
+		holder = taidaihuangshi9
+	}
+	2643.1.1 = {
+		holder = taidaihuangshi10
+	}
+	2675.1.1 = {
+		holder = taidaihuangshi11
+	}
+	2707.1.1 = {
+		holder = taidaihuangshi12
+	}
+	2739.1.1 = {
+		holder = taidaihuangshi13
+	}
+	2771.1.1 = {
+		holder = taidaihuangshi14
+	}
+	2803.1.1 = {
+		holder = taidaihuangshi15
+	}
+	2835.1.1 = {
+		holder = taidaihuangshi16
+	}
+	2867.1.1 = {
+		holder = taidaihuangshi17
+	}
+	2899.1.1 = {
+		holder = taidaihuangshi18
+	}
+	2931.1.1 = {
+		holder = taidaihuangshi19
+	}
+	2963.1.1 = {
+		holder = taidaihuangshi20
+	}
+	2995.1.1 = {
+		holder = taidaihuangshi21
+	}
+	3026.1.1 = {
+		holder = taidaihuangshi22
+	}
+	3066.1.1 = {
+		holder = taidaihuangshi23
+	}
+	3093.1.1 = {
+		holder = taidaihuangshi24
+	}
+	3120.1.1 = {
+		holder = taidaihuangshi25
+	}
+	3158.1.1 = {
+		holder = taidaihuangshi26
+	}
+	3182.1.1 = {
+		holder = taidaihuangshi27
+	}
+	3221.1.1 = {
+		holder = taidaihuangshi28
+	}
+	3256.1.1 = {
+		holder = taidaihuangshi29
+	}
+	3278.1.1 = {
+		holder = taidaihuangshi30
+	}
+	3323.1.1 = {
+		holder = taidaihuangshi31
+	}
+	3344.1.1 = {
+		holder = taidaihuangshi32
+	}
+	3385.1.1 = {
+		holder = taidaihuangshi33
+	}
+	3412.1.1 = {
+		holder = taidaihuangshi34
+	}
+	3440.1.1 = {
+		holder = taidaihuangshi35
+	}
+	3479.1.1 = {
+		holder = taidaihuangshi36
+	}
+	3501.1.1 = {
+		holder = taidaihuangshi37
+	}
+	3543.1.1 = {
+		holder = taidaihuangshi38
+	}
+	3572.1.1 = {
+		holder = taidaihuangshi39
+	}
+	3605.1.1 = {
+		liege = "e_zhoutianzi"
+		holder = taidaihuangshi40
+	}
+	3631.1.1 = {
+		holder = taidaihuangshi41
+	}
+	3668.1.1 = {
+		holder = taidaihuangshi42
+	}
+	3704.1.1 = {
+		holder = taidaihuangshi43
+	}
+	3728.1.1 = {
+		holder = taidaihuangshi44
+	}
+	3764.1.1 = {
+		holder = taidaihuangshi45
+	}
+	3790.1.1 = {
+		holder = taidaihuangshi46
+	}
+	3806.1.1 = {
+		holder = taidaihuangshi47
+	}
+	3849.1.1 = {
+		change_development_level = 29
+		government = feudal_government
+	}
+}

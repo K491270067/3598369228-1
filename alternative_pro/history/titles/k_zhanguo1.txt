@@ -1,0 +1,24 @@
+﻿d_juanshi = {
+	3812.1.1 = {
+		liege = "k_zhanguo1"
+		holder = jizhanshi1
+	}
+	3831.1.1 = {
+		holder = jizhanshi6
+	}
+	3849.1.1 = {
+		change_development_level = 20
+		government = feudal_government
+	}
+}
+k_zhanguo1 = {
+	3812.1.1 = {
+		liege = "e_zhoutianzi"
+		holder = jizhanshi1
+	}
+	3849.1.1 = {
+		change_development_level = 24
+		liege = "e_zhoutianzi1"
+		government = feudal_government
+	}
+}

@@ -1,0 +1,37 @@
+﻿##### d_chengshi1 ############################
+
+### c_cheng3
+# CHENG3
+899 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_xianyang
+# XIANYANG
+900 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+# DUYOU
+901 = {
+	holding = none
+}
+
+
+### c_yulin
+# YULIN
+903 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+# HUKOU
+905 = {
+	holding = none
+}
+
+

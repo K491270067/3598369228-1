@@ -1,0 +1,56 @@
+﻿##### d_jinshi ############################
+
+### c_xintian
+
+
+### c_jiang
+# JIANG
+1034 = {
+	culture = jin
+	religion = dongzhouli
+	holding = castle_holding
+}
+# HAUNGFU
+1035 = {
+	holding = none
+}
+# TANG4
+1037 = {
+	holding = none
+}
+
+
+### c_ru2
+# RU2
+1038 = {
+	culture = jin
+	religion = dongzhouli
+	holding = castle_holding
+}
+# ZHOUYUAN
+1030 = {
+	holding = none
+}
+
+
+##### d_quwoshi ############################
+
+### c_quwo1
+# QUWO1
+1021 = {
+	culture = jin
+	religion = dongzhouli
+	holding = castle_holding
+}
+# YI5
+1024 = {
+	holding = none
+}
+
+
+### c_tong2
+
+
+### c_wangguan
+
+

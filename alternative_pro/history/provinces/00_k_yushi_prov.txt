@@ -1,0 +1,82 @@
+﻿##### d_yushi3 ############################
+
+### c_wuwei
+# WUWEI
+1560 = {
+	culture = xirong
+	religion = xirongfangling
+	holding = nomad_holding
+}
+# BAITING
+1574 = {
+	holding = none
+}
+
+
+### c_xuanwei
+# XUANWEI
+1561 = {
+	culture = xirong
+	religion = xirongfangling
+	holding = nomad_holding
+}
+# XIUTU
+1562 = {
+	holding = none
+}
+
+
+### c_xianmei
+# XIANMEI
+1575 = {
+	culture = xirong
+	religion = xirongfangling
+	holding = nomad_holding
+}
+
+
+##### d_yueshi4 ############################
+
+### c_luanniao
+# LUANNIAO
+1563 = {
+	culture = xirong
+	religion = xirongfangling
+	holding = nomad_holding
+}
+# ZHANGYE
+1566 = {
+	holding = none
+}
+# CANGSONG
+1567 = {
+	holding = none
+}
+
+
+### c_guzang
+# GUZANG
+1564 = {
+	culture = xirong
+	religion = xirongfangling
+	holding = nomad_holding
+}
+# MINGWEI
+1565 = {
+	holding = none
+}
+
+
+### c_puhuan
+# PUHUAN
+1568 = {
+	culture = xirong
+	religion = xirongfangling
+	holding = nomad_holding
+}
+# JUCI
+1570 = {
+	holding = none
+}
+
+

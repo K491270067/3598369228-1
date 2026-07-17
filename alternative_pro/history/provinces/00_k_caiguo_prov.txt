@@ -1,0 +1,58 @@
+﻿##### d_caishi ############################
+
+### c_deng
+# DENG
+1620 = {
+	holding = none
+}
+
+
+### c_shangcai
+# SHANGCAI
+1626 = {
+	holding = none
+}
+
+
+### c_xin3
+# XIN3
+1674 = {
+	holding = none
+}
+
+
+### c_sangqiu2
+# SANGQIU2
+1675 = {
+	holding = none
+}
+
+
+### c_lv3
+# LV3
+1676 = {
+	holding = none
+}
+
+
+### c_qinqiu
+# QINQIU
+1677 = {
+	holding = none
+}
+
+
+### c_dongling
+# DONGLING
+1679 = {
+	holding = none
+}
+
+
+### c_li14
+# LI14
+1681 = {
+	holding = none
+}
+
+

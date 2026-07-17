@@ -1,0 +1,291 @@
+﻿# Ordered effects for participant maintenance and situation progress.
+
+saas_clear_participant_stance_effect = {
+	if = {
+		limit = { has_trait = character_involve_supporters_of_zhou_dynasty }
+		remove_trait = character_involve_supporters_of_zhou_dynasty
+	}
+	if = {
+		limit = { has_trait = character_involve_opponents_of_zhou_dynasty }
+		remove_trait = character_involve_opponents_of_zhou_dynasty
+	}
+	if = {
+		limit = { has_trait = character_involve_neutral_of_zhou_dynasty }
+		remove_trait = character_involve_neutral_of_zhou_dynasty
+	}
+	if = {
+		limit = { has_trait = character_interloper_of_zhou_dynasty }
+		remove_trait = character_interloper_of_zhou_dynasty
+	}
+}
+
+saas_assign_ai_lijiao_stance_effect = {
+	random_list = {
+		40 = {
+			modifier = { add = 40 has_trait = just }
+			modifier = { add = 30 has_trait = humble }
+			modifier = { add = 25 has_trait = compassionate }
+			add_trait = character_involve_supporters_of_zhou_dynasty
+		}
+		35 = {
+			modifier = { add = 50 has_trait = ambitious }
+			modifier = { add = 35 has_trait = arrogant }
+			modifier = { add = 25 has_trait = deceitful }
+			add_trait = character_involve_opponents_of_zhou_dynasty
+		}
+		25 = {
+			modifier = { add = 40 has_trait = content }
+			modifier = { add = 30 has_trait = calm }
+			modifier = { add = 25 has_trait = patient }
+			add_trait = character_involve_neutral_of_zhou_dynasty
+		}
+	}
+}
+
+saas_refresh_participant_effect = {
+	if = {
+		limit = { NOT = { saas_eligible_participant_trigger = yes } }
+		saas_clear_participant_stance_effect = yes
+	}
+	else_if = {
+		limit = { NOT = { saas_is_lijiao_ruler_trigger = yes } }
+		if = {
+			limit = { NOT = { has_trait = character_interloper_of_zhou_dynasty } }
+			saas_clear_participant_stance_effect = yes
+			add_trait = character_interloper_of_zhou_dynasty
+		}
+	}
+	else = {
+		if = {
+			limit = { has_trait = character_interloper_of_zhou_dynasty }
+			saas_clear_participant_stance_effect = yes
+		}
+		if = {
+			limit = {
+				NOR = {
+					has_trait = character_involve_supporters_of_zhou_dynasty
+					has_trait = character_involve_opponents_of_zhou_dynasty
+					has_trait = character_involve_neutral_of_zhou_dynasty
+				}
+			}
+			if = {
+				limit = { is_ai = yes }
+				saas_assign_ai_lijiao_stance_effect = yes
+				if = {
+					limit = { has_trait = character_involve_supporters_of_zhou_dynasty }
+					saas_trigger_catalyst_effect = {
+						CATALYST = saas_catalyst_wangdao_gains_member
+						CHARACTER = this
+					}
+				}
+			}
+			else = {
+				trigger_event = fallen_of_zhou_dynasty_struggle.1004
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_trait = character_involve_supporters_of_zhou_dynasty
+			exists = title:e_huaxia.holder
+		}
+		if = {
+			limit = { saas_is_ritual_restoration_phase_trigger = yes }
+			add_opinion = {
+				target = title:e_huaxia.holder
+				modifier = saas_wangdao_reveres_tianzi_restoration_opinion
+			}
+		}
+		else_if = {
+			limit = { saas_is_ritual_collapse_phase_trigger = yes }
+			add_opinion = {
+				target = title:e_huaxia.holder
+				modifier = saas_wangdao_reveres_tianzi_collapse_opinion
+			}
+		}
+	}
+}
+
+saas_trigger_catalyst_effect = {
+	situation:spring_and_autumn_situation ?= {
+		if = {
+			limit = { situation_top_has_catalyst = $CATALYST$ }
+			trigger_situation_catalyst = {
+				catalyst = $CATALYST$
+				character = $CHARACTER$
+			}
+		}
+	}
+}
+
+saas_establish_tributary_effect = {
+	$TRIBUTARY$ = {
+		break_subject_contract_and_establish_tributary_effect = {
+			SUZERAIN = $SUZERAIN$
+			TRIBUTARY = $TRIBUTARY$
+			WAR = $WAR$
+		}
+	}
+}
+
+# Root is a character attending the Huimeng. YEARS is supplied by magnificence.
+saas_apply_huimeng_intent_reward_effect = {
+	if = {
+		limit = { has_activity_intent = huimeng_display_authority }
+		add_character_modifier = { modifier = saas_huimeng_impress_attendees_modifier years = $YEARS$ }
+	}
+	else_if = {
+		limit = { has_activity_intent = huimeng_isolate_opponents }
+		add_character_modifier = { modifier = saas_huimeng_weaken_detractors_modifier years = $YEARS$ }
+	}
+	else_if = {
+		limit = { has_activity_intent = huimeng_unite_supporters }
+		add_character_modifier = { modifier = saas_huimeng_embrace_supporters_modifier years = $YEARS$ }
+	}
+	else_if = {
+		limit = { has_activity_intent = huimeng_witness_oath }
+		add_character_modifier = { modifier = saas_huimeng_bear_witness_modifier years = $YEARS$ }
+	}
+	else_if = {
+		limit = { has_activity_intent = huimeng_offer_support }
+		add_character_modifier = { modifier = saas_huimeng_offer_support_modifier years = $YEARS$ }
+	}
+	else_if = {
+		limit = { has_activity_intent = huimeng_present_domain }
+		add_character_modifier = { modifier = saas_huimeng_advocate_domain_modifier years = $YEARS$ }
+	}
+	else_if = {
+		limit = { has_activity_intent = huimeng_assert_rights }
+		add_character_modifier = { modifier = saas_huimeng_profess_rights_modifier years = $YEARS$ }
+	}
+	else_if = {
+		limit = { has_activity_intent = huimeng_seek_advantage }
+		add_character_modifier = { modifier = saas_huimeng_seize_advantages_modifier years = $YEARS$ }
+	}
+	else_if = {
+		limit = { has_activity_intent = huimeng_disrupt_loyalty }
+		add_character_modifier = { modifier = saas_huimeng_disrupt_loyalists_modifier years = $YEARS$ }
+	}
+}
+
+# Root is the successful activity host and scope:activity is the Huimeng.
+saas_complete_huimeng_effect = {
+	if = {
+		limit = { NOT = { exists = house.house_confederation } }
+		house = { tgp_create_house_bloc_effect = { TYPE = ceremony } }
+	}
+	if = {
+		limit = { exists = house.house_confederation }
+		scope:activity = {
+			every_attending_character = {
+				limit = { is_in_guest_subset = { name = detractor } }
+				add_opinion = {
+					target = scope:host
+					modifier = saas_huimeng_detractor_opinion
+				}
+			}
+			every_attending_character = {
+				limit = {
+					is_in_guest_subset = { name = supporter }
+					exists = house
+					house != scope:host.house
+				}
+				if = {
+					limit = {
+						exists = house.house_confederation
+						house.house_confederation != scope:host.house.house_confederation
+					}
+					house = {
+						tgp_leave_house_bloc_effect = {
+							OPINION = flag:no
+							TRUCE = flag:no
+						}
+					}
+				}
+				house = {
+					tgp_join_house_bloc_effect = {
+						INVITER = scope:host.house
+						OPINION = flag:yes
+					}
+				}
+				add_opinion = {
+					target = scope:host
+					modifier = saas_huimeng_supporter_opinion
+				}
+			}
+		}
+	}
+}
+
+# Root is the character receiving h_huaxia. The hegemony is created when
+# necessary and otherwise transferred through the engine's title-change chain.
+saas_take_huaxia_hegemony_effect = {
+	if = {
+		limit = { title:h_huaxia = { is_title_created = no } }
+		create_title_and_vassal_change = {
+			type = created
+			save_scope_as = saas_hegemony_change
+			add_claim_on_loss = no
+		}
+		title:h_huaxia = {
+			change_title_holder = {
+				holder = root
+				change = scope:saas_hegemony_change
+				take_baronies = no
+			}
+		}
+		resolve_title_and_vassal_change = scope:saas_hegemony_change
+	}
+	else_if = {
+		limit = { title:h_huaxia = { NOT = { holder = root } } }
+		create_title_and_vassal_change = {
+			type = usurped
+			save_scope_as = saas_hegemony_change
+			add_claim_on_loss = no
+		}
+		title:h_huaxia = {
+			change_title_holder = {
+				holder = root
+				change = scope:saas_hegemony_change
+				take_baronies = no
+			}
+		}
+		resolve_title_and_vassal_change = scope:saas_hegemony_change
+	}
+}
+
+# Root is the decision taker. RECIPIENT is the character receiving h_huaxia.
+saas_grant_huaxia_hegemony_effect = {
+	if = {
+		limit = { title:h_huaxia = { is_title_created = no } }
+		create_title_and_vassal_change = {
+			type = created
+			save_scope_as = saas_hegemony_change
+			add_claim_on_loss = no
+		}
+		title:h_huaxia = {
+			change_title_holder = {
+				holder = $RECIPIENT$
+				change = scope:saas_hegemony_change
+				take_baronies = no
+			}
+		}
+		resolve_title_and_vassal_change = scope:saas_hegemony_change
+	}
+	else_if = {
+		limit = { title:h_huaxia = { NOT = { holder = $RECIPIENT$ } } }
+		create_title_and_vassal_change = {
+			type = usurped
+			save_scope_as = saas_hegemony_change
+			add_claim_on_loss = no
+		}
+		title:h_huaxia = {
+			change_title_holder = {
+				holder = $RECIPIENT$
+				change = scope:saas_hegemony_change
+				take_baronies = no
+			}
+		}
+		resolve_title_and_vassal_change = scope:saas_hegemony_change
+	}
+}

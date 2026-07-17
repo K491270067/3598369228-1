@@ -1,0 +1,40 @@
+﻿##### d_jishi2 ############################
+
+### c_ji6
+# JI6
+623 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+### c_zhongyang
+# ZHONGYANG
+634 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+##### d_jigongshi ############################
+
+### c_qing2
+# QING2
+631 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+### c_zhongmou
+# ZHONGMOU
+633 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+

@@ -1,0 +1,44 @@
+﻿##### d_kanshi ############################
+
+### c_kan
+# KAN
+450 = {
+	culture = lu
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_yuanqi
+# YUANQI
+2275 = {
+	culture = lu
+	religion = xizhouli
+	holding = castle_holding
+}
+# JUYE
+461 = {
+	holding = none
+}
+
+
+##### d_chengqiushi ############################
+
+### c_chengqiu
+# CHENGQIU
+453 = {
+	culture = lu
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_chongqiu
+# CHONGQIU
+458 = {
+	culture = lu
+	religion = xizhouli
+	holding = castle_holding
+}
+
+

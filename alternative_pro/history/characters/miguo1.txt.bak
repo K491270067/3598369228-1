@@ -1,0 +1,106 @@
+﻿### 寮浗--寮 ###
+han3448={
+  name="qiu5"
+  dynasty=xin819
+	religion="xizhouli" 
+	culture="zhou"
+	father=han24
+
+  3716.1.1 = {
+		birth = yes
+	}
+  3791.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han3449={
+  name="cang1"
+  dynasty_house=house_xin238
+	religion="xizhouli" 
+	culture="zhou"
+	father=han3448
+
+  3777.1.1 = {
+		birth = yes
+	}
+  3837.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han3450={
+  name="ju6"
+  dynasty_house=house_xin238
+	religion="xizhouli" 
+	culture="zhou"
+	father=han3449
+
+  3803.1.1 = {
+		birth = yes
+	}
+  3849.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han3451={
+  name="keng2"#骞崇帇涓滆縼鏃跺辑鍥藉浗鍚涳紝娓告垙寮€灞€20宀?
+  dynasty_house=house_xin238
+	religion="dongzhouli" 
+	culture="zhou"
+	father=han3450
+
+  3821.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han3452={
+  name="nanming13"#鍌ㄥ悰1鍙凤紝娓告垙寮€灞€鏃舵湭鎴愬勾
+  dynasty_house=house_xin238
+	religion="dongzhouli" 
+	culture="zhou"
+	father=han3451
+
+  3839.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han3453={
+  name="nanming32"#鍌ㄥ悰2鍙凤紝娓告垙寮€灞€鏃舵湭鎴愬勾
+  dynasty_house=house_xin238
+	religion="dongzhouli" 
+	culture="zhou"
+	father=han3451
+
+  3840.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han3454={
+  name="baoer"#濂?鍙?
+  dynasty_house=house_xin238
+	religion="dongzhouli" 
+	culture="zhou"
+	father=han3451
+  female=yes
+
+  3841.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}

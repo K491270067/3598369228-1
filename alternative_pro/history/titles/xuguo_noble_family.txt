@@ -1,0 +1,75 @@
+﻿c_baimingshi = {
+	3849.12.31 = {
+		liege = k_xuguo
+		holder = han1637
+		government = feudal_government
+		succession_laws = { noble_family_succession_law }
+	}
+	5000.10.1 = {
+		effect = {
+			destroy_landless_title_no_tgp_dlc_effect = {
+				DATE = 5000.10.1
+			}
+		}
+	}
+}
+c_feishi = {
+	3849.12.31 = {
+		liege = k_xuguo
+		holder = han1623
+		government = feudal_government
+		succession_laws = { noble_family_succession_law }
+	}
+	5000.10.1 = {
+		effect = {
+			destroy_landless_title_no_tgp_dlc_effect = {
+				DATE = 5000.10.1
+			}
+		}
+	}
+}
+c_jiangliangshi = {
+	3849.12.31 = {
+		liege = k_xuguo
+		holder = xu11
+		government = feudal_government
+		succession_laws = { noble_family_succession_law }
+	}
+	5000.10.1 = {
+		effect = {
+			destroy_landless_title_no_tgp_dlc_effect = {
+				DATE = 5000.10.1
+			}
+		}
+	}
+}
+c_ququeshi = {
+	3849.12.31 = {
+		liege = k_xuguo
+		holder = han1614
+		government = feudal_government
+		succession_laws = { noble_family_succession_law }
+	}
+	5000.10.1 = {
+		effect = {
+			destroy_landless_title_no_tgp_dlc_effect = {
+				DATE = 5000.10.1
+			}
+		}
+	}
+}
+c_xushi = {
+	3849.12.31 = {
+		liege = k_xuguo
+		holder = han1610
+		government = feudal_government
+		succession_laws = { noble_family_succession_law }
+	}
+	5000.10.1 = {
+		effect = {
+			destroy_landless_title_no_tgp_dlc_effect = {
+				DATE = 5000.10.1
+			}
+		}
+	}
+}

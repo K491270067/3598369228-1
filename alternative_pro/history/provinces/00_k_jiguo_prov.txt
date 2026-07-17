@@ -1,0 +1,165 @@
+﻿##### d_jishi ############################
+
+### c_ji
+# JI
+132 = {
+	culture = qi
+	religion = dongzhouli
+	holding = castle_holding
+}
+# SHUANGJIU
+2203 = {
+	holding = none
+}
+
+
+### c_shouguang
+# SHOUGUANG
+2207 = {
+	culture = qi
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+### c_liuquan
+# LIUQUAN
+2208 = {
+	culture = qi
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+##### d_xishi2 ############################
+
+### c_xi
+# XI
+125 = {
+	culture = qi
+	religion = dongzhouli
+	holding = castle_holding
+}
+# LI20
+2201 = {
+	holding = none
+}
+
+
+### c_guang
+# GUANG
+126 = {
+	culture = qi
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+### c_linqu
+# LINQU
+127 = {
+	culture = qi
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+##### d_lieshi ############################
+
+### c_taixiang
+# TAIXIANG
+129 = {
+	culture = qi
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+### c_louxian
+# LOUXIAN
+130 = {
+	culture = qi
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+### c_ai1
+# AI1
+131 = {
+	culture = qi
+	religion = dongzhouli
+	holding = castle_holding
+}
+# ZI6
+2202 = {
+	holding = none
+}
+
+
+##### d_zishi ############################
+
+### c_zi
+# ZI
+135 = {
+	culture = qi
+	religion = dongzhouli
+	holding = castle_holding
+}
+# GUAN
+2209 = {
+	holding = none
+}
+
+
+### c_beidian
+# BEIDIAN
+134 = {
+	culture = qi
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+### c_pingwang
+# PINGWANG
+2206 = {
+	culture = qi
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+##### d_pingshi ############################
+
+### c_dongyang
+# DONGYANG
+137 = {
+	culture = qi
+	religion = dongzhouli
+	holding = castle_holding
+}
+# CHOU2
+2204 = {
+	holding = none
+}
+
+
+### c_ping
+# PING
+138 = {
+	culture = qi
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+### c_mulingguan1
+# MULINGGUAN1
+2205 = {
+	culture = qi
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+

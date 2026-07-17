@@ -1,0 +1,32 @@
+﻿##### d_shanshi ############################
+
+### c_shan1
+# SHAN1
+1069 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+# HEYANG1
+1075 = {
+	holding = none
+}
+
+
+### c_meng3
+# MENG3
+1077 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+##### d_shanboshi ############################
+
+### c_hanye
+
+
+### c_gumi
+
+

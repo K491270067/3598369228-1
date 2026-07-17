@@ -1,0 +1,37 @@
+﻿##### d_ruanshi ############################
+
+### c_gong2
+# GONG2
+1483 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+# YUANDE
+1493 = {
+	holding = none
+}
+
+
+### c_lu2
+# LU2
+1497 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+### c_ruan
+# RUAN
+1492 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+# PANG3
+2812 = {
+	holding = none
+}
+
+

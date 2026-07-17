@@ -1,0 +1,18 @@
+﻿# Spring and Autumn situation catalysts.
+
+saas_catalyst_tribute_established = {}
+saas_catalyst_tianzi_victory = {}
+saas_catalyst_wangdao_gains_member = {}
+saas_catalyst_lijiao_alliance = {}
+saas_catalyst_successful_huimeng = {}
+saas_catalyst_long_peace = {}
+saas_catalyst_lijiao_aggressive_war = {}
+saas_catalyst_title_usurped = {}
+saas_catalyst_tianzi_defeat = {}
+saas_catalyst_siyi_conquest = {}
+saas_catalyst_adventurer_conquest = {}
+saas_catalyst_refused_tribute = {}
+saas_catalyst_wangdao_internal_war = {}
+saas_catalyst_tributary_lost = {}
+saas_catalyst_peace_restored = {}
+saas_catalyst_house_restored = {}

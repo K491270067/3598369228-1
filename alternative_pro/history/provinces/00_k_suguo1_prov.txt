@@ -1,0 +1,38 @@
+﻿##### d_sushi1 ############################
+
+### c_wen
+# WEN
+1081 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+# LI9
+1083 = {
+	holding = none
+}
+
+
+### c_xinqiu
+# XINQIU
+1082 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+##### d_wenshi ############################
+
+### c_xicheng
+
+
+### c_yin5
+# YIN5
+1091 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+

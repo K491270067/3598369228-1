@@ -1,0 +1,44 @@
+﻿##### d_wanshi ############################
+
+### c_wan2
+# 
+2066 = {
+	holding = none
+}
+
+
+### c_xiaochi
+# 
+2073 = {
+	holding = none
+}
+
+
+### c_shipai
+# 
+2074 = {
+	holding = none
+}
+
+
+### c_taihu
+# 
+2075 = {
+	holding = none
+}
+
+
+### c_songzi2
+# 
+2076 = {
+	holding = none
+}
+
+
+### c_xunyang
+# 
+2077 = {
+	holding = none
+}
+
+

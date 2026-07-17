@@ -1,0 +1,163 @@
+﻿##### d_ranshi ############################
+
+### c_miansi
+# MIANSI
+3164 = {
+	holding = none
+}
+
+
+### c_guangrou
+# GUANGROU
+3167 = {
+	holding = none
+}
+
+
+### c_luoxian
+# LUOXIAN
+3168 = {
+	holding = none
+}
+
+
+### c_mengyang
+# MENGYANG
+3288 = {
+	holding = none
+}
+
+
+### c_jiulong
+# JIULONG
+3289 = {
+	holding = none
+}
+
+
+### c_daojiang
+# DAOJIANG
+3290 = {
+	holding = none
+}
+
+
+### c_jintang
+# JINTANG
+3291 = {
+	holding = none
+}
+
+
+### c_deyang
+# DEYANG
+3292 = {
+	holding = none
+}
+
+
+### c_shifang
+# SHIFANG
+3293 = {
+	holding = none
+}
+
+
+### c_mianzhu1
+# MIANZHU1
+3294 = {
+	holding = none
+}
+
+
+### c_xichang
+# XICHANG
+3299 = {
+	holding = none
+}
+
+
+### c_shenquan
+# SHENQUAN
+3300 = {
+	holding = none
+}
+
+
+### c_luojiang
+# LUOJIANG
+3301 = {
+	holding = none
+}
+
+
+### c_wenshan1
+# WENSHAN1
+3712 = {
+	holding = none
+}
+
+
+### c_shiquan2
+# SHIQUAN2
+3713 = {
+	holding = none
+}
+
+
+### c_jizongguan
+# JIZONGGUAN
+3714 = {
+	holding = none
+}
+
+
+### c_jinshan
+# JINSHAN
+3715 = {
+	holding = none
+}
+
+
+### c_songlingguan
+# SONGLINGGUAN
+3716 = {
+	holding = none
+}
+
+
+### c_zhangshan
+# ZHANGSHAN
+3717 = {
+	holding = none
+}
+
+
+### c_baiancheng
+# BAIANCHENG
+3718 = {
+	holding = none
+}
+
+
+### c_ehecheng
+# EHECHENG
+3719 = {
+	holding = none
+}
+
+
+### c_shijiu
+# SHIJIU
+3720 = {
+	holding = none
+}
+
+
+### c_cangling
+# CANGLING
+3721 = {
+	holding = none
+}
+
+

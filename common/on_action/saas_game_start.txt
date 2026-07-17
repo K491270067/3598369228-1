@@ -1,0 +1,33 @@
+﻿on_game_start = {
+	on_actions = {
+		saas_start_spring_and_autumn_situation
+	}
+}
+
+# Keep situation creation and participant initialization in one ordered chain.
+saas_start_spring_and_autumn_situation = {
+	effect = {
+		if = {
+			limit = { NOT = { exists = situation:spring_and_autumn_situation } }
+			if = {
+				limit = { current_date >= 4170.1.1 }
+				start_situation = {
+					type = spring_and_autumn_situation
+					start_phase = warring_states_phase
+				}
+			}
+			else = {
+				start_situation = {
+					type = spring_and_autumn_situation
+					start_phase = spring_and_autumn_phase
+				}
+			}
+		}
+		if = {
+			limit = { exists = title:e_huaxia.holder }
+			title:e_huaxia.holder = {
+				trigger_event = { id = fallen_of_zhou_dynasty_struggle.1003 days = 1 }
+			}
+		}
+	}
+}

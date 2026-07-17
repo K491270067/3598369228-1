@@ -1,0 +1,160 @@
+﻿##### d_yanshi1 ############################
+
+### c_xixiang
+# XIXIANG
+1231 = {
+	culture = yan
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_yan11
+# YAN11
+2545 = {
+	culture = yan
+	religion = xizhouli
+	holding = castle_holding
+}
+# GUANGYANG1
+1241 = {
+	holding = none
+}
+# LIANGXIANG
+1235 = {
+	holding = none
+}
+
+
+### c_cuo1
+# CUO1
+2546 = {
+	culture = yan
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+##### d_lvfushi ############################
+
+### c_yi6
+# YI6
+524 = {
+	culture = yan
+	religion = xizhouli
+	holding = castle_holding
+}
+# SANTAI
+523 = {
+	holding = none
+}
+
+
+### c_fenmen
+# FENMEN
+534 = {
+	culture = yan
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_fanyang1
+# FANYANG1
+543 = {
+	culture = yan
+	religion = xizhouli
+	holding = castle_holding
+}
+# RONGCHENG
+542 = {
+	holding = none
+}
+
+
+##### d_jushi3 ############################
+
+### c_zhuo
+# ZHUO
+1232 = {
+	culture = yan
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_xincheng3
+# XINCHENG
+1234 = {
+	culture = yan
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_yu13
+# YU13
+2547 = {
+	culture = yan
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+##### d_shuangshi ############################
+
+### c_qiu1
+# QIU1
+559 = {
+	culture = yan
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_wuyang2
+# WUYANG2
+546 = {
+	culture = yan
+	religion = xizhouli
+	holding = castle_holding
+}
+# JINTAI
+1212 = {
+	holding = none
+}
+
+
+### c_guan2
+# GUAN2
+552 = {
+	culture = yan
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+##### d_yanshi3 ############################
+
+### c_lexu
+# LEXU
+544 = {
+	culture = yan
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_yanxiang
+# YANXIANG
+563 = {
+	culture = yan
+	religion = xizhouli
+	holding = castle_holding
+}
+# HOUTAI
+575 = {
+	holding = none
+}
+
+

@@ -1,139 +1,155 @@
-﻿
-namespace = fallen_of_zhou_dynasty_struggle
+﻿namespace = fallen_of_zhou_dynasty_struggle
 
+# Participant initialization after the situation has been created.
+fallen_of_zhou_dynasty_struggle.1003 = {
+	type = character_event
+	hidden = yes
 
-	#################鍔犲叆灞€鍔匡細閫夋嫨鍙備笌缁?
+	immediate = {
+		every_ruler = {
+			limit = { saas_eligible_participant_trigger = yes }
+			saas_refresh_participant_effect = yes
+		}
+	}
+}
 
 fallen_of_zhou_dynasty_struggle.1004 = {
 	type = character_event
 	window = big_event_window
-	hidden = no 
 	major = yes
 	title = fallen_of_zhou_dynasty_struggle.1004.t
 	desc = fallen_of_zhou_dynasty_struggle.1004.desc
 	theme = realm
-	immediate = {
+
+	trigger = {
+		saas_eligible_participant_trigger = yes
+		saas_is_lijiao_ruler_trigger = yes
 	}
-	left_portrait = {
-		character = root
-		animation = council
-	}
-	### 閫夐」涓€锛氱帇閬?鈥?鎴愪负鍛ㄧぜ鏀寔鑰?
+
+	left_portrait = { character = root animation = council }
+
 	option = {
 		name = fallen_of_zhou_dynasty_struggle.1004.a
+		saas_clear_participant_stance_effect = yes
 		add_trait = character_involve_supporters_of_zhou_dynasty
-		remove_trait = character_involve_opponents_of_zhou_dynasty
-		remove_trait = character_involve_neutral_of_zhou_dynasty
-		remove_trait = character_interloper_of_zhou_dynasty
-
+		saas_trigger_catalyst_effect = {
+			CATALYST = saas_catalyst_wangdao_gains_member
+			CHARACTER = root
+		}
 		ai_chance = {
-			base = 25
-			modifier = {
-				add = 30
-				has_government = feudal_admin_government
-			}
-			modifier = {
-				add = 20
-				religion = religion:lijiao_religion
-			}
+			base = 35
+			modifier = { add = 35 has_trait = just }
+			modifier = { add = 25 has_trait = humble }
 		}
 	}
-	### 閫夐」浜岋細闇搁亾 鈥?鎴愪负鍛ㄧぜ瀵规姉鑰?
+
 	option = {
 		name = fallen_of_zhou_dynasty_struggle.1004.b
+		saas_clear_participant_stance_effect = yes
 		add_trait = character_involve_opponents_of_zhou_dynasty
-		remove_trait = character_involve_supporters_of_zhou_dynasty
-		remove_trait = character_involve_neutral_of_zhou_dynasty
-		remove_trait = character_interloper_of_zhou_dynasty
-
 		ai_chance = {
-			base = 25
-			modifier = {
-				add = 30
-				has_government = feudal_admin_government
-			}
-			modifier = {
-				add = 20
-				NOR = {
-					religion = religion:lijiao_religion
-				}
-			}
+			base = 35
+			modifier = { add = 45 has_trait = ambitious }
+			modifier = { add = 30 has_trait = arrogant }
 		}
 	}
-	### 閫夐」涓夛細涓珛 鈥?鎴愪负涓珛娲?
+
 	option = {
 		name = fallen_of_zhou_dynasty_struggle.1004.c
+		saas_clear_participant_stance_effect = yes
 		add_trait = character_involve_neutral_of_zhou_dynasty
-		remove_trait = character_involve_supporters_of_zhou_dynasty
-		remove_trait = character_involve_opponents_of_zhou_dynasty
-		remove_trait = character_interloper_of_zhou_dynasty
-
 		ai_chance = {
-			base = 25
-			modifier = {
-				add = 15
-				has_trait = calm
-			}
-			modifier = {
-				add = 15
-				has_trait = patient
-			}
-		}
-	}
-	### 閫夐」鍥涳細鍥涘し 鈥?鎴愪负鍩熷鎼呭眬鑰?
-	option = {
-		name = fallen_of_zhou_dynasty_struggle.1004.d
-		add_trait = character_interloper_of_zhou_dynasty
-		remove_trait = character_involve_supporters_of_zhou_dynasty
-		remove_trait = character_involve_opponents_of_zhou_dynasty
-		remove_trait = character_involve_neutral_of_zhou_dynasty
-
-		ai_chance = {
-			base = 25
-			modifier = {
-				add = 30
-				NOR = {
-					has_cultural_pillar = heritage_zhouren
-					has_cultural_pillar = heritage_shangren
-					has_cultural_pillar = heritage_xiaren
-				}
-			}
-			modifier = {
-				add = 20
-				has_trait = ambitious
-			}
+			base = 30
+			modifier = { add = 35 has_trait = content }
+			modifier = { add = 25 has_trait = calm }
 		}
 	}
 }
 
-
-
-
-	#################寮€灞€鍒嗗彂锛氬悜灞€鍔胯寖鍥村唴鎵€鏈夌鍚堟潯浠剁殑瑙掕壊鎺ㄩ€佸姞鍏ラ€夋嫨浜嬩欢
-fallen_of_zhou_dynasty_struggle.1003 = {
-
+# Annual repair pass and low-frequency situation trends.
+fallen_of_zhou_dynasty_struggle.1010 = {
 	hidden = yes
 	scope = none
 
 	immediate = {
-		any_character_situation = {
-			type = spring_and_autumn_situation
-			involvement = involved
-			saved_scope_as = saa_participant
-		}
-		scope:saa_participant = {
-			if = {
-				limit = { 
+		every_ruler = {
+			limit = {
 				OR = {
-					highest_held_title_tier >= tier_kingdom
-					is_independent_ruler = yes
+					saas_eligible_participant_trigger = yes
+					saas_has_any_participant_stance_trigger = yes
 				}
 			}
-			trigger_event = fallen_of_zhou_dynasty_struggle.1004
+			saas_refresh_participant_effect = yes
+		}
+
+		every_ruler = {
+			limit = {
+				government_has_flag = government_is_landless_adventurer
+				saas_location_in_huaxia_trigger = yes
+			}
+			remove_character_modifier = saas_restoration_adventurer_restraint_modifier
+			remove_character_modifier = saas_warring_adventurer_impetus_modifier
+			if = {
+				limit = { saas_is_ritual_restoration_phase_trigger = yes }
+				add_character_modifier = { modifier = saas_restoration_adventurer_restraint_modifier months = 18 }
+			}
+			else_if = {
+				limit = { saas_is_warring_states_phase_trigger = yes }
+				add_character_modifier = { modifier = saas_warring_adventurer_impetus_modifier months = 18 }
 			}
 		}
 
+		if = {
+			limit = {
+				any_ruler = {
+					count < 4
+					saas_eligible_participant_trigger = yes
+					is_at_war = yes
+				}
+			}
+			if = {
+				limit = { exists = global_var:saas_low_war_years }
+				change_global_variable = { name = saas_low_war_years add = 1 }
+			}
+			else = { set_global_variable = { name = saas_low_war_years value = 1 } }
+		}
+		else = { set_global_variable = { name = saas_low_war_years value = 0 } }
+
+		if = {
+			limit = {
+				exists = global_var:saas_low_war_years
+				global_var:saas_low_war_years >= 5
+				exists = title:e_huaxia.holder
+			}
+			saas_trigger_catalyst_effect = {
+				CATALYST = saas_catalyst_long_peace
+				CHARACTER = title:e_huaxia.holder
+			}
+			if = {
+				limit = { situation:spring_and_autumn_situation = { situation_current_phase = warring_states_phase } }
+				saas_trigger_catalyst_effect = {
+					CATALYST = saas_catalyst_peace_restored
+					CHARACTER = title:e_huaxia.holder
+				}
+			}
+			set_global_variable = { name = saas_low_war_years value = 0 }
+		}
+
+		if = {
+			limit = { exists = title:e_huaxia.holder }
+			title:e_huaxia.holder = {
+				if = {
+					limit = {
+						exists = var:saas_previous_tributary_count
+						number_of_tributaries < var:saas_previous_tributary_count
+					}
+					saas_trigger_catalyst_effect = {
+						CATALYST = saas_catalyst_tributary_lost
+						CHARACTER = this
+					}
+				}
+				set_variable = { name = saas_previous_tributary_count value = number_of_tributaries }
+			}
+		}
 	}
 }
-
-

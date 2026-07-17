@@ -1,0 +1,33 @@
+﻿d_duanshi1 = {
+	3754.1.1 = {
+		liege = "k_lituzhidi"
+		holder = lituzhidi1
+	}
+	3803.12.31 = {
+		holder = lituzhidi2
+	}
+	3825.1.1 = {
+		holder = lituzhidi9
+	}
+	3849.1.1 = {
+		change_development_level = 23
+	}
+	3849.12.31 = {
+		government = tribal_government
+	}
+}
+k_lituzhidi = {
+	3754.1.1 = {
+		holder = lituzhidi1
+	}
+	3803.12.31 = {
+		holder = lituzhidi2
+	}
+	3825.1.1 = {
+		holder = lituzhidi3
+	}
+	3849.12.31 = {
+		government = tribal_government
+		change_development_level = 26
+	}
+}

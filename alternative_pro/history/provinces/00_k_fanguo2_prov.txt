@@ -1,0 +1,37 @@
+﻿##### d_fanshi2 ############################
+
+### c_fuhan1
+# FUHAN1
+1692 = {
+	holding = none
+}
+
+
+### c_sheng
+# SHENG
+1700 = {
+	holding = none
+}
+
+
+### c_fan6
+# FAN6
+1715 = {
+	holding = none
+}
+
+
+### c_pingchun
+# 
+1897 = {
+	holding = none
+}
+
+
+### c_meng4
+# 
+1900 = {
+	holding = none
+}
+
+

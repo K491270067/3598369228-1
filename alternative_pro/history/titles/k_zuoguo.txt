@@ -1,0 +1,81 @@
+﻿d_xushi2 = {
+	3574.1.1 = {
+		liege = "k_zuoguo"
+		holder = han1107
+	}
+	3616.12.31 = {
+		holder = han1108
+	}
+	3639.1.1 = {
+		holder = han1109
+	}
+	3670.1.1 = {
+		holder = han1110
+	}
+	3693.11.1 = {
+		holder = han1111
+	}
+	3718.11.1 = {
+		holder = han1112
+	}
+	3740.12.31 = {
+		holder = han1113
+	}
+	3769.11.1 = {
+		holder = han1114
+	}
+	3794.11.1 = {
+		holder = han1115
+	}
+	3808.11.1 = {
+		holder = han1116
+	}
+	3843.11.1 = {
+		holder = zuoxushi1
+	}
+	3849.1.1 = {
+		change_development_level = 20
+		government = feudal_government
+	}
+}
+k_zuoguo = {
+	3574.1.1 = {
+		liege = "e_zhoutianzi"
+		holder = han1107
+	}
+	3616.12.31 = {
+		holder = han1108
+	}
+	3639.1.1 = {
+		holder = han1109
+	}
+	3670.1.1 = {
+		holder = han1110
+	}
+	3693.11.1 = {
+		holder = han1111
+	}
+	3718.11.1 = {
+		holder = han1112
+	}
+	3740.12.31 = {
+		holder = han1113
+	}
+	3769.11.1 = {
+		holder = han1114
+	}
+	3794.11.1 = {
+		holder = han1115
+	}
+	3808.11.1 = {
+		holder = han1116
+	}
+	3843.11.1 = {
+		holder = han1117
+	}
+	3849.1.1 = {
+		change_development_level = 31
+		liege = "e_zhoutianzi1"
+		government = feudal_government
+	}
+}

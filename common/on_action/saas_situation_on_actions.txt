@@ -1,0 +1,51 @@
+﻿yearly_global_pulse = {
+	on_actions = {
+		saas_yearly_situation_audit
+	}
+}
+
+saas_yearly_situation_audit = {
+	trigger = { exists = situation:spring_and_autumn_situation }
+	effect = {
+		trigger_event = fallen_of_zhou_dynasty_struggle.1010
+	}
+}
+
+on_character_faith_change = {
+	on_actions = {
+		saas_refresh_character_after_faith_change
+	}
+}
+
+saas_refresh_character_after_faith_change = {
+	trigger = { exists = situation:spring_and_autumn_situation }
+	effect = {
+		saas_refresh_participant_effect = yes
+	}
+}
+
+on_title_gain = {
+	on_actions = {
+		saas_refresh_character_after_title_gain
+	}
+}
+
+saas_refresh_character_after_title_gain = {
+	trigger = { exists = situation:spring_and_autumn_situation }
+	effect = {
+		saas_refresh_participant_effect = yes
+	}
+}
+
+on_title_lost = {
+	on_actions = {
+		saas_refresh_character_after_title_loss
+	}
+}
+
+saas_refresh_character_after_title_loss = {
+	trigger = { exists = situation:spring_and_autumn_situation }
+	effect = {
+		saas_refresh_participant_effect = yes
+	}
+}

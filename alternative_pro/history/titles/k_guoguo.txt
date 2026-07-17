@@ -1,0 +1,292 @@
+﻿c_guo2 = {
+	2567.1.1 = {
+		liege = "d_guoshi1"
+		holder = zhenguan2
+	}
+	2640.1.1 = {
+		holder = zhenguan3
+	}
+	2700.1.1 = {
+		holder = zhenguan4
+	}
+	2783.1.1 = {
+		holder = zhenguan5
+	}
+	2812.1.1 = {
+		holder = zhenguan6
+	}
+	2847.1.1 = {
+		holder = zhenguan7
+	}
+	2900.1.1 = {
+		holder = zhenguan8
+	}
+	2957.1.1 = {
+		holder = zhenguan9
+	}
+	3004.1.1 = {
+		holder = zhenguan10
+	}
+	3066.1.1 = {
+		holder = zhenguan11
+	}
+	3123.1.1 = {
+		holder = zhenguan12
+	}
+	3189.1.1 = {
+		holder = zhenguan13
+	}
+	3222.1.1 = {
+		holder = zhenguan14
+	}
+	3260.1.1 = {
+		holder = zhenguan15
+	}
+	3333.1.1 = {
+		holder = zhenguan16
+	}
+	3400.1.1 = {
+		holder = zhenguan17
+	}
+	3488.1.1 = {
+		holder = zhenguan18
+	}
+	3555.1.1 = {
+		holder = zhenguan19
+	}
+	3621.1.1 = {
+		holder = zhenguan20
+	}
+	3700.1.1 = {
+		holder = zhenguan21
+	}
+	3753.1.1 = {
+		holder = zhenguan22
+	}
+	3800.1.1 = {
+		holder = zhenguan23
+	}
+	3848.1.1 = {
+		holder = zhenguan24
+	}
+}
+d_guoshi1 = {
+	2567.1.1 = {
+		liege = "k_guoguo"
+		holder = zhenguan2
+	}
+	2640.1.1 = {
+		holder = zhenguan3
+	}
+	2700.1.1 = {
+		holder = zhenguan4
+	}
+	2783.1.1 = {
+		holder = zhenguan5
+	}
+	2812.1.1 = {
+		holder = zhenguan6
+	}
+	2847.1.1 = {
+		holder = zhenguan7
+	}
+	2900.1.1 = {
+		holder = zhenguan8
+	}
+	2957.1.1 = {
+		holder = zhenguan9
+	}
+	3004.1.1 = {
+		holder = zhenguan10
+	}
+	3066.1.1 = {
+		holder = zhenguan11
+	}
+	3123.1.1 = {
+		holder = zhenguan12
+	}
+	3189.1.1 = {
+		holder = zhenguan13
+	}
+	3222.1.1 = {
+		holder = zhenguan14
+	}
+	3260.1.1 = {
+		holder = zhenguan15
+	}
+	3333.1.1 = {
+		holder = zhenguan16
+	}
+	3400.1.1 = {
+		holder = zhenguan17
+	}
+	3488.1.1 = {
+		holder = zhenguan18
+	}
+	3555.1.1 = {
+		holder = zhenguan19
+	}
+	3621.1.1 = {
+		holder = zhenguan20
+	}
+	3700.1.1 = {
+		holder = zhenguan21
+	}
+	3753.1.1 = {
+		holder = zhenguan22
+	}
+	3800.1.1 = {
+		holder = zhenguan23
+	}
+	3848.1.1 = {
+		holder = zhenguan24
+	}
+}
+d_zhenguanshi = {
+	2567.1.1 = {
+		liege = "k_guoguo"
+		holder = zhenguan2
+	}
+	2640.1.1 = {
+		holder = zhenguan3
+	}
+	2700.1.1 = {
+		holder = zhenguan4
+	}
+	2783.1.1 = {
+		holder = zhenguan5
+	}
+	2812.1.1 = {
+		holder = zhenguan6
+	}
+	2847.1.1 = {
+		holder = zhenguan7
+	}
+	2900.1.1 = {
+		holder = zhenguan8
+	}
+	2957.1.1 = {
+		holder = zhenguan9
+	}
+	3004.1.1 = {
+		holder = zhenguan10
+	}
+	3066.1.1 = {
+		holder = zhenguan11
+	}
+	3123.1.1 = {
+		holder = zhenguan12
+	}
+	3189.1.1 = {
+		holder = zhenguan13
+	}
+	3222.1.1 = {
+		holder = zhenguan14
+	}
+	3260.1.1 = {
+		holder = zhenguan15
+	}
+	3333.1.1 = {
+		holder = zhenguan16
+	}
+	3400.1.1 = {
+		holder = zhenguan17
+	}
+	3488.1.1 = {
+		holder = zhenguan18
+	}
+	3555.1.1 = {
+		holder = zhenguan19
+	}
+	3621.1.1 = {
+		holder = zhenguan20
+	}
+	3700.1.1 = {
+		holder = zhenguan30
+	}
+	3753.1.1 = {
+		holder = zhenguan31
+	}
+	3800.1.1 = {
+		holder = zhenguan32
+	}
+	3848.1.1 = {
+		holder = zhenguan33
+		government = feudal_government
+	}
+}
+k_guoguo = {
+	2567.1.1 = {
+		holder = zhenguan2
+	}
+	2640.1.1 = {
+		holder = donglai33
+	}
+	2688.12.31 = {
+		holder = zhenguan3
+	}
+	2700.1.1 = {
+		holder = zhenguan4
+	}
+	2783.1.1 = {
+		holder = zhenguan5
+	}
+	2812.1.1 = {
+		holder = zhenguan6
+	}
+	2847.1.1 = {
+		holder = zhenguan7
+	}
+	2900.1.1 = {
+		holder = zhenguan8
+	}
+	2957.1.1 = {
+		holder = zhenguan9
+	}
+	3004.1.1 = {
+		holder = zhenguan10
+	}
+	3066.1.1 = {
+		holder = zhenguan11
+	}
+	3123.1.1 = {
+		holder = zhenguan12
+	}
+	3189.1.1 = {
+		holder = zhenguan13
+	}
+	3222.1.1 = {
+		holder = zhenguan14
+	}
+	3260.1.1 = {
+		holder = zhenguan15
+	}
+	3333.1.1 = {
+		holder = zhenguan16
+	}
+	3400.1.1 = {
+		holder = zhenguan17
+	}
+	3488.1.1 = {
+		holder = zhenguan18
+	}
+	3555.1.1 = {
+		holder = zhenguan19
+	}
+	3621.1.1 = {
+		holder = zhenguan20
+	}
+	3700.1.1 = {
+		holder = zhenguan21
+	}
+	3753.1.1 = {
+		holder = zhenguan22
+	}
+	3800.1.1 = {
+		holder = zhenguan23
+	}
+	3848.1.1 = {
+		holder = zhenguan24
+		government = feudal_government
+	}
+}

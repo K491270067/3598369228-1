@@ -1,0 +1,83 @@
+﻿##### d_yishi ############################
+
+### c_zoulu
+# ZOULU
+166 = {
+	culture = dongyi
+	religion = yili
+	holding = castle_holding
+}
+# YU11
+2218 = {
+	holding = none
+}
+
+
+### c_jimo
+# JIMO
+168 = {
+	culture = dongyi
+	religion = yili
+	holding = castle_holding
+}
+# GUYING
+2217 = {
+	holding = none
+}
+
+
+### c_yi
+# YI
+191 = {
+	culture = dongyi
+	religion = yili
+	holding = castle_holding
+}
+# GUYOU
+181 = {
+	holding = none
+}
+
+
+### c_tui1
+# TUI1
+2219 = {
+	culture = dongyi
+	religion = yili
+	holding = castle_holding
+}
+
+
+##### d_sushashi ############################
+
+### c_gaoyu
+# GAOYU
+189 = {
+	culture = dongyi
+	religion = yili
+	holding = castle_holding
+}
+
+
+### c_buqi
+# BUQI
+190 = {
+	culture = dongyi
+	religion = yili
+	holding = castle_holding
+}
+
+
+### c_susha
+# SUSHA
+2223 = {
+	culture = dongyi
+	religion = yili
+	holding = castle_holding
+}
+# JI16
+2220 = {
+	holding = none
+}
+
+

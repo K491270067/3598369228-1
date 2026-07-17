@@ -1,0 +1,52 @@
+﻿##### d_shishi ############################
+
+### c_shi7
+# SHI7
+2184 = {
+	culture = lu
+	religion = xizhouli
+	holding = castle_holding
+}
+# SHIJIAO
+44 = {
+	holding = none
+}
+
+
+### c_qing
+# QING
+46 = {
+	culture = lu
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+##### d_lushi ############################
+
+### c_zhoushou
+# ZHOUSHOU
+50 = {
+	culture = lu
+	religion = xizhouli
+	holding = castle_holding
+}
+# SHIMEN
+2186 = {
+	holding = none
+}
+
+
+### c_lu
+# LU
+51 = {
+	culture = lu
+	religion = xizhouli
+	holding = castle_holding
+}
+# PINGYIN
+52 = {
+	holding = none
+}
+
+

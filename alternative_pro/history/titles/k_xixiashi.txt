@@ -1,0 +1,515 @@
+﻿d_duomashi = {
+	2487.1.1 = {
+		liege = "k_xixiashi"
+		holder = xixiashi1
+	}
+	2519.1.1 = {
+		holder = xixiashi2
+	}
+	2564.1.1 = {
+		holder = xixiashi3
+	}
+	2589.1.1 = {
+		holder = xixiashi4
+	}
+	2614.1.1 = {
+		holder = xixiashi5
+	}
+	2637.1.1 = {
+		holder = xixiashi6
+	}
+	2662.1.1 = {
+		holder = xixiashi7
+	}
+	2687.1.1 = {
+		holder = xixiashi8
+	}
+	2711.1.1 = {
+		holder = xixiashi9
+	}
+	2736.1.1 = {
+		holder = xixiashi10
+	}
+	2760.1.1 = {
+		holder = xixiashi11
+	}
+	2785.1.1 = {
+		holder = xixiashi12
+	}
+	2808.1.1 = {
+		holder = xixiashi13
+	}
+	2832.1.1 = {
+		holder = xixiashi14
+	}
+	2855.1.1 = {
+		holder = xixiashi15
+	}
+	2879.1.1 = {
+		holder = xixiashi16
+	}
+	2902.1.1 = {
+		holder = xixiashi17
+	}
+	2926.1.1 = {
+		holder = xixiashi18
+	}
+	2949.1.1 = {
+		holder = xixiashi19
+	}
+	2973.1.1 = {
+		holder = xixiashi20
+	}
+	2996.1.1 = {
+		holder = xixiashi21
+	}
+	3020.1.1 = {
+		holder = xixiashi22
+	}
+	3043.1.1 = {
+		holder = xixiashi23
+	}
+	3067.1.1 = {
+		holder = xixiashi24
+	}
+	3090.1.1 = {
+		holder = xixiashi25
+	}
+	3114.1.1 = {
+		holder = xixiashi26
+	}
+	3137.1.1 = {
+		holder = xixiashi27
+	}
+	3161.1.1 = {
+		holder = xixiashi28
+	}
+	3184.1.1 = {
+		holder = xixiashi29
+	}
+	3208.1.1 = {
+		holder = xixiashi30
+	}
+	3231.1.1 = {
+		holder = xixiashi31
+	}
+	3255.1.1 = {
+		holder = xixiashi32
+	}
+	3278.1.1 = {
+		holder = xixiashi33
+	}
+	3302.1.1 = {
+		holder = xixiashi34
+	}
+	3325.1.1 = {
+		holder = xixiashi35
+	}
+	3349.1.1 = {
+		holder = xixiashi36
+	}
+	3372.1.1 = {
+		holder = xixiashi37
+	}
+	3396.1.1 = {
+		holder = xixiashi38
+	}
+	3419.1.1 = {
+		holder = xixiashi39
+	}
+	3443.1.1 = {
+		holder = xixiashi40
+	}
+	3466.1.1 = {
+		holder = xixiashi41
+	}
+	3490.1.1 = {
+		holder = xixiashi42
+	}
+	3513.1.1 = {
+		holder = xixiashi43
+	}
+	3537.1.1 = {
+		holder = xixiashi44
+	}
+	3560.1.1 = {
+		holder = xixiashi45
+	}
+	3584.1.1 = {
+		holder = xixiashi46
+	}
+	3607.1.1 = {
+		holder = xixiashi47
+	}
+	3631.1.1 = {
+		holder = xixiashi48
+	}
+	3654.1.1 = {
+		holder = xixiashi49
+	}
+	3678.1.1 = {
+		holder = xixiashi50
+	}
+	3701.1.1 = {
+		holder = xixiashi51
+	}
+	3745.1.1 = {
+		holder = xixiashi52
+	}
+	3772.1.1 = {
+		holder = xixiashi53
+	}
+	3799.1.1 = {
+		holder = xixiashi54
+	}
+	3825.1.1 = {
+		holder = xixiashi66
+	}
+	3849.1.1 = {
+		change_development_level = 26
+		government = tribal_government
+	}
+}
+d_quanwushi = {
+	2487.1.1 = {
+		liege = "k_xixiashi"
+		holder = xixiashi1
+	}
+	2519.1.1 = {
+		holder = xixiashi2
+	}
+	2564.1.1 = {
+		holder = xixiashi3
+	}
+	2589.1.1 = {
+		holder = xixiashi4
+	}
+	2614.1.1 = {
+		holder = xixiashi5
+	}
+	2637.1.1 = {
+		holder = xixiashi6
+	}
+	2662.1.1 = {
+		holder = xixiashi7
+	}
+	2687.1.1 = {
+		holder = xixiashi8
+	}
+	2711.1.1 = {
+		holder = xixiashi9
+	}
+	2736.1.1 = {
+		holder = xixiashi10
+	}
+	2760.1.1 = {
+		holder = xixiashi11
+	}
+	2785.1.1 = {
+		holder = xixiashi12
+	}
+	2808.1.1 = {
+		holder = xixiashi13
+	}
+	2832.1.1 = {
+		holder = xixiashi14
+	}
+	2855.1.1 = {
+		holder = xixiashi15
+	}
+	2879.1.1 = {
+		holder = xixiashi16
+	}
+	2902.1.1 = {
+		holder = xixiashi17
+	}
+	2926.1.1 = {
+		holder = xixiashi18
+	}
+	2949.1.1 = {
+		holder = xixiashi19
+	}
+	2973.1.1 = {
+		holder = xixiashi20
+	}
+	2996.1.1 = {
+		holder = xixiashi21
+	}
+	3020.1.1 = {
+		holder = xixiashi22
+	}
+	3043.1.1 = {
+		holder = xixiashi23
+	}
+	3067.1.1 = {
+		holder = xixiashi24
+	}
+	3090.1.1 = {
+		holder = xixiashi25
+	}
+	3114.1.1 = {
+		holder = xixiashi26
+	}
+	3137.1.1 = {
+		holder = xixiashi27
+	}
+	3161.1.1 = {
+		holder = xixiashi28
+	}
+	3184.1.1 = {
+		holder = xixiashi29
+	}
+	3208.1.1 = {
+		holder = xixiashi30
+	}
+	3231.1.1 = {
+		holder = xixiashi31
+	}
+	3255.1.1 = {
+		holder = xixiashi32
+	}
+	3278.1.1 = {
+		holder = xixiashi33
+	}
+	3302.1.1 = {
+		holder = xixiashi34
+	}
+	3325.1.1 = {
+		holder = xixiashi35
+	}
+	3349.1.1 = {
+		holder = xixiashi36
+	}
+	3372.1.1 = {
+		holder = xixiashi37
+	}
+	3396.1.1 = {
+		holder = xixiashi38
+	}
+	3419.1.1 = {
+		holder = xixiashi39
+	}
+	3443.1.1 = {
+		holder = xixiashi40
+	}
+	3466.1.1 = {
+		holder = xixiashi41
+	}
+	3490.1.1 = {
+		holder = xixiashi42
+	}
+	3513.1.1 = {
+		holder = xixiashi43
+	}
+	3537.1.1 = {
+		holder = xixiashi44
+	}
+	3560.1.1 = {
+		holder = xixiashi45
+	}
+	3584.1.1 = {
+		holder = xixiashi46
+	}
+	3607.1.1 = {
+		holder = xixiashi47
+	}
+	3631.1.1 = {
+		holder = xixiashi48
+	}
+	3654.1.1 = {
+		holder = xixiashi49
+	}
+	3678.1.1 = {
+		holder = xixiashi50
+	}
+	3701.1.1 = {
+		holder = xixiashi51
+	}
+	3745.1.1 = {
+		holder = xixiashi52
+	}
+	3772.1.1 = {
+		holder = xixiashi53
+	}
+	3799.1.1 = {
+		holder = xixiashi54
+	}
+	3825.1.1 = {
+		holder = xixiashi61
+	}
+	3849.1.1 = {
+		change_development_level = 24
+		government = tribal_government
+	}
+}
+k_xixiashi = {
+	2487.1.1 = {
+		holder = xixiashi1
+	}
+	2519.1.1 = {
+		holder = xixiashi2
+	}
+	2564.1.1 = {
+		holder = xixiashi3
+	}
+	2589.1.1 = {
+		holder = xixiashi4
+	}
+	2614.1.1 = {
+		holder = xixiashi5
+	}
+	2637.1.1 = {
+		holder = xixiashi6
+	}
+	2662.1.1 = {
+		holder = xixiashi7
+	}
+	2687.1.1 = {
+		holder = xixiashi8
+	}
+	2711.1.1 = {
+		holder = xixiashi9
+	}
+	2736.1.1 = {
+		holder = xixiashi10
+	}
+	2760.1.1 = {
+		holder = xixiashi11
+	}
+	2785.1.1 = {
+		holder = xixiashi12
+	}
+	2808.1.1 = {
+		holder = xixiashi13
+	}
+	2832.1.1 = {
+		holder = xixiashi14
+	}
+	2855.1.1 = {
+		holder = xixiashi15
+	}
+	2879.1.1 = {
+		holder = xixiashi16
+	}
+	2902.1.1 = {
+		holder = xixiashi17
+	}
+	2926.1.1 = {
+		holder = xixiashi18
+	}
+	2949.1.1 = {
+		holder = xixiashi19
+	}
+	2973.1.1 = {
+		holder = xixiashi20
+	}
+	2996.1.1 = {
+		holder = xixiashi21
+	}
+	3020.1.1 = {
+		holder = xixiashi22
+	}
+	3043.1.1 = {
+		holder = xixiashi23
+	}
+	3067.1.1 = {
+		holder = xixiashi24
+	}
+	3090.1.1 = {
+		holder = xixiashi25
+	}
+	3114.1.1 = {
+		holder = xixiashi26
+	}
+	3137.1.1 = {
+		holder = xixiashi27
+	}
+	3161.1.1 = {
+		holder = xixiashi28
+	}
+	3184.1.1 = {
+		holder = xixiashi29
+	}
+	3208.1.1 = {
+		holder = xixiashi30
+	}
+	3231.1.1 = {
+		holder = xixiashi31
+	}
+	3255.1.1 = {
+		holder = xixiashi32
+	}
+	3278.1.1 = {
+		holder = xixiashi33
+	}
+	3302.1.1 = {
+		holder = xixiashi34
+	}
+	3325.1.1 = {
+		holder = xixiashi35
+	}
+	3349.1.1 = {
+		holder = xixiashi36
+	}
+	3372.1.1 = {
+		holder = xixiashi37
+	}
+	3396.1.1 = {
+		holder = xixiashi38
+	}
+	3419.1.1 = {
+		holder = xixiashi39
+	}
+	3443.1.1 = {
+		holder = xixiashi40
+	}
+	3466.1.1 = {
+		holder = xixiashi41
+	}
+	3490.1.1 = {
+		holder = xixiashi42
+	}
+	3513.1.1 = {
+		holder = xixiashi43
+	}
+	3537.1.1 = {
+		holder = xixiashi44
+	}
+	3560.1.1 = {
+		holder = xixiashi45
+	}
+	3584.1.1 = {
+		holder = xixiashi46
+	}
+	3607.1.1 = {
+		holder = xixiashi47
+	}
+	3631.1.1 = {
+		holder = xixiashi48
+	}
+	3654.1.1 = {
+		holder = xixiashi49
+	}
+	3678.1.1 = {
+		holder = xixiashi50
+	}
+	3701.1.1 = {
+		holder = xixiashi51
+	}
+	3745.1.1 = {
+		holder = xixiashi52
+	}
+	3772.1.1 = {
+		holder = xixiashi53
+	}
+	3799.1.1 = {
+		holder = xixiashi54
+	}
+	3825.1.1 = {
+		holder = xixiashi55
+	}
+	3849.12.31 = {
+		government = tribal_government
+		change_development_level = 27
+	}
+}

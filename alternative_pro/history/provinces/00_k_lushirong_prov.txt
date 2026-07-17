@@ -1,0 +1,37 @@
+﻿##### d_lushi5 ############################
+
+### c_lushi1
+# LUSHI
+3763 = {
+	holding = none
+}
+
+
+### c_tieguan
+# TIEGUAN
+3764 = {
+	holding = none
+}
+
+
+### c_duguan1
+# DUGUAN
+3765 = {
+	holding = none
+}
+
+
+### c_juyangchuan
+# JUYANGCHUAN
+3766 = {
+	holding = none
+}
+
+
+### c_liqingchuan
+# LIQINGCHUAN
+3767 = {
+	holding = none
+}
+
+

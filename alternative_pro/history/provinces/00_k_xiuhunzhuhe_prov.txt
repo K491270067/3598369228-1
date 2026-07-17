@@ -1,0 +1,71 @@
+﻿##### d_heshi ############################
+
+### c_anyang
+
+
+### c_jiuyuan1
+
+
+### c_chengyi
+
+
+##### d_xiuhunshi ############################
+
+### c_shimenzhang
+# SHIMENZHANG
+1406 = {
+	culture = hehuangzhirong
+	religion = xirongfangling
+	holding = nomad_holding
+}
+
+
+### c_wuyuan1
+# WUYUAN1
+1410 = {
+	culture = hehuangzhirong
+	religion = xirongfangling
+	holding = nomad_holding
+}
+
+
+### c_goulong
+
+
+##### d_xiutushi ############################
+
+### c_woye
+# WOYE
+1413 = {
+	culture = hehuangzhirong
+	religion = xirongfangling
+	holding = nomad_holding
+}
+# HUYAN
+1414 = {
+	holding = none
+}
+
+
+### c_gaoque
+# GAOQUE
+1415 = {
+	culture = hehuangzhirong
+	religion = xirongfangling
+	holding = nomad_holding
+}
+
+
+### c_hemu
+# HEMU
+1412 = {
+	culture = hehuangzhirong
+	religion = xirongfangling
+	holding = nomad_holding
+}
+# FUYANG2
+1411 = {
+	holding = none
+}
+
+

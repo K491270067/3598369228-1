@@ -1,0 +1,16 @@
+﻿yunxingquanrong1={
+  name="nanming921"
+  dynasty_house=house_xin727
+	religion="xirongfangling" 
+	culture="yiluozhirong"
+  father=yunxingluhunguo7
+
+  3749.1.1 = {
+		birth = yes
+	}
+  3796.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}

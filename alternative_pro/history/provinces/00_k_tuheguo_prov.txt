@@ -1,0 +1,156 @@
+﻿##### d_tuheshi ############################
+
+### c_bintu
+
+
+### c_tuhe
+# TUHE
+3488 = {
+	holding = none
+}
+# BINTU
+3487 = {
+	holding = none
+}
+# TALU
+3780 = {
+	holding = none
+}
+
+
+### c_changli
+# CHANGLI
+3486 = {
+	holding = none
+}
+# JIAOLI
+3776 = {
+	holding = none
+}
+
+
+### c_jiaoli
+
+
+### c_youcheng
+
+
+### c_husu
+# YOUCHENG
+3777 = {
+	holding = none
+}
+
+
+### c_dieyun
+
+
+### c_talu
+
+
+### c_yitu
+
+
+### c_sixuan
+# SIXUAN
+3782 = {
+	holding = none
+}
+
+
+### c_wulu1
+
+
+### c_fangxian
+
+
+### c_fuli1
+# FULI1
+3485 = {
+	holding = none
+}
+# FANGXIAN
+3476 = {
+	holding = none
+}
+
+
+### c_taian
+# TAIAN
+3498 = {
+	holding = none
+}
+# DAWA
+3499 = {
+	holding = none
+}
+# LIAOZHONG
+3500 = {
+	holding = none
+}
+# WULVE1
+3475 = {
+	holding = none
+}
+# HUNNAN
+3501 = {
+	holding = none
+}
+
+
+### c_dawa
+
+
+### c_liaozhong
+
+
+### c_hunnan
+
+
+### c_fangxian1
+
+
+### c_xiandu1
+# XIANDU1
+3784 = {
+	holding = none
+}
+# FANGXIAN1
+3783 = {
+	holding = none
+}
+# ZHISHIDAI
+3800 = {
+	holding = none
+}
+# SHEDIE
+3799 = {
+	holding = none
+}
+
+
+### c_pilou
+# PILOU
+3785 = {
+	holding = none
+}
+# BALI1
+3786 = {
+	holding = none
+}
+# YILU2
+3839 = {
+	holding = none
+}
+# YINAN1
+3838 = {
+	holding = none
+}
+
+
+### c_bali1
+
+
+### c_yishiyi
+
+

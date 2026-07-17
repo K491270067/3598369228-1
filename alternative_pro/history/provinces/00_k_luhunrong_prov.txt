@@ -1,0 +1,62 @@
+﻿##### d_luhunshi ############################
+
+### c_yichuan
+# YICHUAN
+804 = {
+	culture = yiluozhirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+
+
+### c_luhun
+# LUHUN
+806 = {
+	culture = yiluozhirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+# CHONG1
+805 = {
+	holding = none
+}
+
+
+### c_yangren
+# YANGREN
+1605 = {
+	culture = yiluozhirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+
+
+##### d_lushi6 ############################
+
+### c_danhu
+# DANHU
+1606 = {
+	culture = yiluozhirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+
+
+### c_zhu5
+# ZHU5
+1607 = {
+	culture = yiluozhirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+
+
+### c_ruyang
+# RUYANG
+1609 = {
+	culture = yiluozhirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+
+

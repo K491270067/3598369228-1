@@ -1,0 +1,109 @@
+﻿d_guaishi = {
+	3428.1.1 = {
+		liege = "k_guaiguo"
+		holder = jiangxingguaishi1
+	}
+	3481.1.1 = {
+		holder = jiangxingguaishi2
+	}
+	3529.1.1 = {
+		holder = jiangxingguaishi3
+	}
+	3557.1.1 = {
+		holder = jiangxingguaishi4
+	}
+	3584.1.1 = {
+		holder = jiangxingguaishi5
+	}
+	3609.1.1 = {
+		holder = jiangxingguaishi6
+	}
+	3633.1.1 = {
+		holder = jiangxingguaishi7
+	}
+	3656.1.1 = {
+		holder = jiangxingguaishi8
+	}
+	3678.1.1 = {
+		holder = jiangxingguaishi9
+	}
+	3701.1.1 = {
+		holder = jiangxingguaishi10
+	}
+	3724.1.1 = {
+		holder = jiangxingguaishi11
+	}
+	3747.1.1 = {
+		holder = jiangxingguaishi12
+	}
+	3769.1.1 = {
+		holder = jiangxingguaishi13
+	}
+	3792.1.1 = {
+		holder = jiangxingguaishi14
+	}
+	3815.1.1 = {
+		holder = jiangxingguaishi15
+	}
+	3837.1.1 = {
+		holder = jiangxingguaishi16
+	}
+}
+k_guaiguo = {
+	3428.1.1 = {
+		liege = "e_zhoutianzi"
+		holder = jiangxingguaishi1
+	}
+	3481.1.1 = {
+		holder = jiangxingguaishi2
+	}
+	3529.1.1 = {
+		holder = jiangxingguaishi3
+	}
+	3557.1.1 = {
+		holder = jiangxingguaishi4
+	}
+	3584.1.1 = {
+		holder = jiangxingguaishi5
+	}
+	3609.1.1 = {
+		holder = jiangxingguaishi6
+	}
+	3633.1.1 = {
+		holder = jiangxingguaishi7
+	}
+	3656.1.1 = {
+		holder = jiangxingguaishi8
+	}
+	3678.1.1 = {
+		holder = jiangxingguaishi9
+	}
+	3701.1.1 = {
+		holder = jiangxingguaishi10
+	}
+	3724.1.1 = {
+		holder = jiangxingguaishi11
+	}
+	3747.1.1 = {
+		holder = jiangxingguaishi12
+	}
+	3769.1.1 = {
+		holder = jiangxingguaishi13
+	}
+	3792.1.1 = {
+		holder = jiangxingguaishi14
+	}
+	3815.1.1 = {
+		holder = jiangxingguaishi15
+	}
+	3837.1.1 = {
+		holder = jiangxingguaishi16
+	}
+	3849.1.1 = {
+		change_development_level = 29
+	}
+	3849.12.31 = {
+		government = feudal_government
+		liege = "e_zhoutianzi1"
+	}
+}

@@ -1,0 +1,108 @@
+﻿##### d_xiongzengshi ############################
+
+### c_sugu
+
+
+### c_rizhi
+# SAMO
+2818 = {
+	holding = none
+}
+# YIZUO
+3527 = {
+	holding = none
+}
+
+
+### c_luerdao
+
+
+### c_shangyecheng
+# CHUSHUI
+3526 = {
+	holding = none
+}
+
+
+### c_zengyu
+
+
+### c_samo
+
+
+### c_shiluo
+
+
+### c_sangyuan
+# SANGYUAN
+3520 = {
+	holding = none
+}
+# DAYU
+2822 = {
+	holding = none
+}
+# NAKE
+3522 = {
+	holding = none
+}
+# SHILUO
+3519 = {
+	holding = none
+}
+
+
+### c_chushui
+
+
+### c_yizuo
+
+
+### c_dayu
+
+
+### c_nake
+
+
+### c_zhuye1
+
+
+### c_zhendao
+
+
+### c_meiyecuoqi
+
+
+### c_zitang
+# ZHUYE1
+3523 = {
+	holding = none
+}
+
+
+### c_lingyi
+
+
+### c_jiuchu
+# JIUCHU
+3521 = {
+	holding = none
+}
+
+
+##### d_duomishi ############################
+
+### c_xiongmao
+# XIONGMAO
+3517 = {
+	holding = none
+}
+# YUMO
+3518 = {
+	holding = none
+}
+
+
+### c_yumo
+
+

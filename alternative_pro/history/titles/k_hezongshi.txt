@@ -1,0 +1,308 @@
+﻿d_heshi1 = {
+	2396.1.1 = {
+		liege = "k_hezongshi"
+		holder = han2714
+	}
+	2458.1.1 = {
+		holder = han2715
+	}
+	2500.1.1 = {
+		holder = han2716
+	}
+	2546.1.1 = {
+		holder = han2717
+	}
+	2600.1.1 = {
+		holder = han2718
+	}
+	2666.1.1 = {
+		holder = han2719
+	}
+	2685.1.1 = {
+		holder = han2720
+	}
+	2715.1.1 = {
+		holder = han2721
+	}
+	2754.1.1 = {
+		holder = han2722
+	}
+	2803.1.1 = {
+		holder = han2723
+	}
+	2879.1.1 = {
+		holder = han2724
+	}
+	2920.1.1 = {
+		holder = han2725
+	}
+	2988.1.1 = {
+		holder = han2726
+	}
+	3022.1.1 = {
+		holder = han2727
+	}
+	3060.1.1 = {
+		holder = han2728
+	}
+	3100.1.1 = {
+		holder = han2729
+	}
+	3160.1.1 = {
+		holder = han2730
+	}
+	3200.1.1 = {
+		holder = han2731
+	}
+	3250.1.1 = {
+		holder = han2732
+	}
+	3290.1.1 = {
+		holder = han2733
+	}
+	3350.1.1 = {
+		holder = han2734
+	}
+	3412.1.1 = {
+		holder = han2735
+	}
+	3445.1.1 = {
+		holder = han2736
+	}
+	3498.1.1 = {
+		holder = han2737
+	}
+	3529.1.1 = {
+		holder = han2738
+	}
+	3547.1.1 = {
+		holder = han2739
+	}
+	3582.1.1 = {
+		holder = han2740
+	}
+	3602.1.1 = {
+		holder = han2741
+	}
+	3673.1.1 = {
+		holder = han2742
+	}
+	3722.1.1 = {
+		holder = han2743
+	}
+	3800.1.1 = {
+		holder = han2744
+	}
+	3827.1.1 = {
+		holder = hezongshi1
+	}
+	3849.1.1 = {
+		change_development_level = 29
+		government = tribal_government
+	}
+}
+d_peishi = {
+	2396.1.1 = {
+		liege = "k_hezongshi"
+		holder = han2714
+	}
+	2458.1.1 = {
+		holder = han2715
+	}
+	2500.1.1 = {
+		holder = han2716
+	}
+	2546.1.1 = {
+		holder = han2717
+	}
+	2600.1.1 = {
+		holder = han2718
+	}
+	2666.1.1 = {
+		holder = han2719
+	}
+	2685.1.1 = {
+		holder = han2720
+	}
+	2715.1.1 = {
+		holder = han2721
+	}
+	2754.1.1 = {
+		holder = han2722
+	}
+	2803.1.1 = {
+		holder = han2723
+	}
+	2879.1.1 = {
+		holder = han2724
+	}
+	2920.1.1 = {
+		holder = han2725
+	}
+	2988.1.1 = {
+		holder = han2726
+	}
+	3022.1.1 = {
+		holder = han2727
+	}
+	3060.1.1 = {
+		holder = han2728
+	}
+	3100.1.1 = {
+		holder = han2729
+	}
+	3160.1.1 = {
+		holder = han2730
+	}
+	3200.1.1 = {
+		holder = han2731
+	}
+	3250.1.1 = {
+		holder = han2732
+	}
+	3290.1.1 = {
+		holder = han2733
+	}
+	3350.1.1 = {
+		holder = han2734
+	}
+	3412.1.1 = {
+		holder = han2735
+	}
+	3445.1.1 = {
+		holder = han2736
+	}
+	3498.1.1 = {
+		holder = han2737
+	}
+	3529.1.1 = {
+		holder = han2738
+	}
+	3547.1.1 = {
+		holder = han2739
+	}
+	3582.1.1 = {
+		holder = han2740
+	}
+	3602.1.1 = {
+		holder = han2741
+	}
+	3673.1.1 = {
+		holder = han2742
+	}
+	3722.1.1 = {
+		holder = han2743
+	}
+	3800.1.1 = {
+		holder = han2744
+	}
+	3827.1.1 = {
+		holder = hezongshi6
+	}
+	3849.1.1 = {
+		change_development_level = 28
+		government = tribal_government
+	}
+}
+k_hezongshi = {
+	2396.1.1 = {
+		holder = han2714
+	}
+	2458.1.1 = {
+		holder = han2715
+	}
+	2500.1.1 = {
+		holder = han2716
+	}
+	2546.1.1 = {
+		holder = han2717
+	}
+	2600.1.1 = {
+		holder = han2718
+	}
+	2666.1.1 = {
+		holder = han2719
+	}
+	2685.1.1 = {
+		holder = han2720
+	}
+	2715.1.1 = {
+		holder = han2721
+	}
+	2754.1.1 = {
+		holder = han2722
+	}
+	2803.1.1 = {
+		holder = han2723
+	}
+	2879.1.1 = {
+		holder = han2724
+	}
+	2920.1.1 = {
+		holder = han2725
+	}
+	2988.1.1 = {
+		holder = han2726
+	}
+	3022.1.1 = {
+		holder = han2727
+	}
+	3060.1.1 = {
+		holder = han2728
+	}
+	3100.1.1 = {
+		holder = han2729
+	}
+	3160.1.1 = {
+		holder = han2730
+	}
+	3200.1.1 = {
+		holder = han2731
+	}
+	3250.1.1 = {
+		holder = han2732
+	}
+	3290.1.1 = {
+		holder = han2733
+	}
+	3350.1.1 = {
+		holder = han2734
+	}
+	3412.1.1 = {
+		holder = han2735
+	}
+	3445.1.1 = {
+		holder = han2736
+	}
+	3498.1.1 = {
+		holder = han2737
+	}
+	3529.1.1 = {
+		holder = han2738
+	}
+	3547.1.1 = {
+		holder = han2739
+	}
+	3582.1.1 = {
+		holder = han2740
+	}
+	3602.1.1 = {
+		holder = han2741
+	}
+	3673.1.1 = {
+		holder = han2742
+	}
+	3722.1.1 = {
+		holder = han2743
+	}
+	3800.1.1 = {
+		holder = han2744
+	}
+	3827.1.1 = {
+		holder = han2745
+	}
+	3849.12.31 = {
+		government = tribal_government
+		change_development_level = 31
+	}
+}

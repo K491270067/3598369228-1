@@ -1,0 +1,44 @@
+﻿##### d_lishi4 ############################
+
+### c_moyang
+# MOYANG
+1743 = {
+	holding = none
+}
+
+
+### c_li17
+# LI17
+1744 = {
+	holding = none
+}
+
+
+### c_yu8
+# YU8
+1745 = {
+	holding = none
+}
+
+
+### c_shunyang
+# SHUNYANG
+1761 = {
+	holding = none
+}
+
+
+### c_lintao
+# LINTAO
+1762 = {
+	holding = none
+}
+
+
+### c_weishi1
+# WEISHI1
+1766 = {
+	holding = none
+}
+
+

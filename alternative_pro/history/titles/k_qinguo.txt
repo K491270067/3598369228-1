@@ -1,0 +1,62 @@
+﻿d_linqiushi = {
+	3574.1.1 = {
+		liege = "k_qinguo"
+		holder = renqin1
+	}
+	3592.12.31 = {
+		holder = renqin2
+	}
+	3627.12.31 = {
+		holder = renqin3
+	}
+	3677.12.31 = {
+		holder = renqin4
+	}
+	3715.12.31 = {
+		holder = renqin5
+	}
+	3759.12.31 = {
+		holder = renqin6
+	}
+	3788.12.31 = {
+		holder = renqin7
+	}
+	3805.12.31 = {
+		holder = renqin14
+	}
+	3849.1.1 = {
+		change_development_level = 22
+		government = feudal_government
+	}
+}
+k_qinguo = {
+	3574.1.1 = {
+		liege = "e_zhoutianzi"
+		holder = renqin1
+	}
+	3592.12.31 = {
+		holder = renqin2
+	}
+	3627.12.31 = {
+		holder = renqin3
+	}
+	3677.12.31 = {
+		holder = renqin4
+	}
+	3715.12.31 = {
+		holder = renqin5
+	}
+	3759.12.31 = {
+		holder = renqin6
+	}
+	3788.12.31 = {
+		holder = renqin7
+	}
+	3805.12.31 = {
+		holder = renqin8
+	}
+	3849.1.1 = {
+		change_development_level = 23
+		government = feudal_government
+	}
+}

@@ -1,0 +1,81 @@
+﻿d_lushi6 = {
+	3553.1.1 = {
+		liege = "k_luhunrong"
+		holder = yunxingluhunguo1
+	}
+	3601.12.31 = {
+		holder = yunxingluhunguo2
+	}
+	3625.12.31 = {
+		holder = yunxingluhunguo3
+	}
+	3659.12.31 = {
+		holder = yunxingluhunguo4
+	}
+	3688.12.31 = {
+		holder = yunxingluhunguo5
+	}
+	3703.12.31 = {
+		holder = yunxingluhunguo6
+	}
+	3747.12.31 = {
+		holder = yunxingluhunguo7
+	}
+	3765.12.31 = {
+		holder = yunxingluhunguo8
+	}
+	3796.12.31 = {
+		holder = yunxingluhunguo9
+	}
+	3821.12.31 = {
+		holder = yunxingluhunguo10
+	}
+	3840.12.31 = {
+		holder = yunxingluhunguo11
+	}
+	3849.1.1 = {
+		change_development_level = 27
+	}
+	3849.12.31 = {
+		government = tribal_government
+	}
+}
+k_luhunrong = {
+	3553.1.1 = {
+		holder = yunxingluhunguo1
+	}
+	3601.12.31 = {
+		holder = yunxingluhunguo2
+	}
+	3625.12.31 = {
+		holder = yunxingluhunguo3
+	}
+	3659.12.31 = {
+		holder = yunxingluhunguo4
+	}
+	3688.12.31 = {
+		holder = yunxingluhunguo5
+	}
+	3703.12.31 = {
+		holder = yunxingluhunguo6
+	}
+	3747.12.31 = {
+		holder = yunxingluhunguo7
+	}
+	3765.12.31 = {
+		holder = yunxingluhunguo8
+	}
+	3796.12.31 = {
+		holder = yunxingluhunguo9
+	}
+	3821.12.31 = {
+		holder = yunxingluhunguo10
+	}
+	3840.12.31 = {
+		holder = yunxingluhunguo11
+	}
+	3849.12.31 = {
+		government = tribal_government
+		change_development_level = 29
+	}
+}

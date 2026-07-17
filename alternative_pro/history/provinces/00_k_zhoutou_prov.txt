@@ -1,0 +1,88 @@
+﻿##### d_zhoutoushi ############################
+
+### c_shicheng5
+
+
+### c_hongju
+
+
+### c_pikou
+# PIKOU
+3469 = {
+	holding = none
+}
+# HONGJU
+3468 = {
+	holding = none
+}
+# SHICHENG5
+3456 = {
+	holding = none
+}
+
+
+### c_huanggudao
+# HUANGUDAO
+3470 = {
+	holding = none
+}
+
+
+### c_daxing
+# DAXING
+3452 = {
+	holding = none
+}
+# BOZHUO
+3453 = {
+	holding = none
+}
+
+
+### c_bozhuo
+
+
+### c_wugu
+# WUGU
+3454 = {
+	holding = none
+}
+
+
+### c_jili
+
+
+### c_yizhi
+
+
+### c_ruoluo
+# JUJIU
+3465 = {
+	holding = none
+}
+
+
+### c_keting
+
+
+### c_zhili
+
+
+### c_houpu
+
+
+### c_sixian
+
+
+### c_bozhuokou
+
+
+### c_wuci
+
+
+### c_hudu
+
+
+### c_xilou
+
+

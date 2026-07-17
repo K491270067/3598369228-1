@@ -1,0 +1,48 @@
+﻿##### d_jiaoshi1 ############################
+
+### c_jiao3
+# JIAO3
+841 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+# QUWO
+842 = {
+	holding = none
+}
+
+
+### c_hanguguan
+# HANGUGUAN
+843 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+##### d_xialvshi ############################
+
+### c_baigu
+# BAIGU
+844 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+# SANGTIAN
+845 = {
+	holding = none
+}
+
+
+### c_xia2
+# XIA2
+847 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+

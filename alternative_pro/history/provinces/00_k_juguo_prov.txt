@@ -1,0 +1,107 @@
+﻿##### d_jushi ############################
+
+### c_quqiu1
+# QUQIU1
+220 = {
+	culture = dongyi
+	religion = yili
+	holding = castle_holding
+}
+
+
+### c_qieyu
+# QIEYU
+222 = {
+	culture = dongyi
+	religion = yili
+	holding = castle_holding
+}
+# GULI
+221 = {
+	holding = none
+}
+
+
+### c_ju
+# JU
+224 = {
+	culture = dongyi
+	religion = yili
+	holding = castle_holding
+}
+# XINSHAN
+2241 = {
+	holding = none
+}
+# JIANXIANG
+2238 = {
+	holding = none
+}
+
+
+### c_bai3
+# BAI3
+2239 = {
+	culture = dongyi
+	religion = yili
+	holding = castle_holding
+}
+
+
+##### d_jishi8 ############################
+
+### c_jufu
+# JUFU
+223 = {
+	culture = dongyi
+	religion = yili
+	holding = castle_holding
+}
+# DONGGUAN1
+2233 = {
+	holding = none
+}
+
+
+### c_fulai
+# FULAI
+231 = {
+	culture = dongyi
+	religion = yili
+	holding = castle_holding
+}
+
+
+### c_dongan
+# DONGAN
+2236 = {
+	culture = dongyi
+	religion = yili
+	holding = castle_holding
+}
+
+
+##### d_yunshi1 ############################
+
+### c_ji1
+# JI1
+229 = {
+	culture = dongyi
+	religion = yili
+	holding = castle_holding
+}
+
+
+### c_yun
+# YUN
+230 = {
+	culture = dongyi
+	religion = yili
+	holding = castle_holding
+}
+# SHANXIANG
+2237 = {
+	holding = none
+}
+
+

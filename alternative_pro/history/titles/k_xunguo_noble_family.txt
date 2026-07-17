@@ -1,0 +1,45 @@
+﻿c_geshi = {
+	3849.12.31 = {
+		liege = k_xunguo
+		holder = zhenxun33
+		government = feudal_government
+		succession_laws = { noble_family_succession_law }
+	}
+	5000.10.1 = {
+		effect = {
+			destroy_landless_title_no_tgp_dlc_effect = {
+				DATE = 5000.10.1
+			}
+		}
+	}
+}
+c_xunshi = {
+	3849.12.31 = {
+		liege = k_xunguo
+		holder = zhenxun40
+		government = feudal_government
+		succession_laws = { noble_family_succession_law }
+	}
+	5000.10.1 = {
+		effect = {
+			destroy_landless_title_no_tgp_dlc_effect = {
+				DATE = 5000.10.1
+			}
+		}
+	}
+}
+c_zhenxunshi = {
+	3849.12.31 = {
+		liege = k_xunguo
+		holder = zhenxun24
+		government = feudal_government
+		succession_laws = { noble_family_succession_law }
+	}
+	5000.10.1 = {
+		effect = {
+			destroy_landless_title_no_tgp_dlc_effect = {
+				DATE = 5000.10.1
+			}
+		}
+	}
+}

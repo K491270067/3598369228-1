@@ -1,0 +1,183 @@
+﻿##### d_jishi7 ############################
+
+### c_zhanchan
+# ZHANCHAN
+3417 = {
+	holding = none
+}
+# SUICHENG
+3418 = {
+	holding = none
+}
+# RANDAN
+3420 = {
+	holding = none
+}
+
+
+### c_suicheng
+
+
+### c_chaoxian
+
+
+### c_manfanhan
+
+
+### c_weicheng1
+
+
+### c_langshui
+
+
+### c_ruyi
+# RUYUI
+3449 = {
+	holding = none
+}
+
+
+### c_donglin
+# DONGLIN
+3450 = {
+	holding = none
+}
+# RENXINGLI
+3451 = {
+	holding = none
+}
+
+
+### c_renxingli
+
+
+### c_randan
+
+
+### c_hunmi
+
+
+### c_zengchi
+# ZENGCHI
+3422 = {
+	holding = none
+}
+# LANGSHUI
+3448 = {
+	holding = none
+}
+# HUNMI
+3421 = {
+	holding = none
+}
+
+
+### c_tixi1
+
+
+### c_loufang
+
+
+### c_ledu1
+
+
+### c_siwang
+# SIWANG
+3428 = {
+	holding = none
+}
+# LOUFANG
+3426 = {
+	holding = none
+}
+# BEIJIANG
+3429 = {
+	holding = none
+}
+# LEDU1
+3427 = {
+	holding = none
+}
+
+
+### c_beijiang
+
+
+### c_wuguan1
+
+
+### c_haiming
+
+
+### c_zhaoming
+
+
+### c_changcen
+# CHANGCEN
+3413 = {
+	holding = none
+}
+# HAIMING
+3411 = {
+	holding = none
+}
+# AIXIANG
+3348 = {
+	holding = none
+}
+
+
+### c_liekou
+# LIEKOU
+3414 = {
+	holding = none
+}
+# ZHAOMING
+3412 = {
+	holding = none
+}
+# DAIFANG
+3415 = {
+	holding = none
+}
+# HANZI
+3424 = {
+	holding = none
+}
+
+
+### c_daifang
+
+
+### c_tunyou
+# TUNYOU
+3416 = {
+	holding = none
+}
+# XIYAN
+3431 = {
+	holding = none
+}
+# WUGUAN1
+3430 = {
+	holding = none
+}
+# TIXI1
+3425 = {
+	holding = none
+}
+# CHAOXIAN
+3419 = {
+	holding = none
+}
+
+
+### c_hanzi
+
+
+### c_xiyan
+
+
+### c_aixiang
+
+

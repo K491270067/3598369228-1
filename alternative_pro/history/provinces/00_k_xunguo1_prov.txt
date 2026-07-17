@@ -1,0 +1,48 @@
+﻿##### d_xunshi1 ############################
+
+### c_sangquan
+# SANGQUAN
+991 = {
+	culture = jin
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+### c_linghu
+# LINGHU
+993 = {
+	culture = jin
+	religion = dongzhouli
+	holding = castle_holding
+}
+# KUSHOU
+992 = {
+	holding = none
+}
+
+
+##### d_shushi2 ############################
+
+### c_zhangcheng
+# ZHANGCHENG
+988 = {
+	culture = jin
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+### c_xia3
+# XIA3
+989 = {
+	culture = jin
+	religion = dongzhouli
+	holding = castle_holding
+}
+# JIELIANG
+990 = {
+	holding = none
+}
+
+

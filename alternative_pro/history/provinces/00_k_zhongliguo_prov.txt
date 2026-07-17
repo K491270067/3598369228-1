@@ -1,0 +1,103 @@
+﻿##### d_zhonglishi ############################
+
+### c_zhongli1
+# 
+1975 = {
+	culture = xu
+	religion = yili
+	holding = castle_holding
+}
+# 
+1979 = {
+	holding = none
+}
+
+
+### c_dongcheng
+# 
+2031 = {
+	culture = xu
+	religion = yili
+	holding = castle_holding
+}
+
+
+### c_haoshang
+# 
+2036 = {
+	culture = xu
+	religion = yili
+	holding = castle_holding
+}
+
+
+##### d_xiuyushi ############################
+
+### c_huailing
+# 
+1976 = {
+	culture = xu
+	religion = yili
+	holding = castle_holding
+}
+# 
+1977 = {
+	holding = none
+}
+
+
+### c_yan7
+# 
+2041 = {
+	culture = xu
+	religion = yili
+	holding = castle_holding
+}
+
+
+### c_ze1
+# 
+2042 = {
+	culture = xu
+	religion = yili
+	holding = castle_holding
+}
+
+
+##### d_tushanshi ############################
+
+### c_shouying
+# 
+1961 = {
+	culture = xu
+	religion = yili
+	holding = castle_holding
+}
+# 
+1972 = {
+	holding = none
+}
+
+
+### c_tushan
+# 
+1974 = {
+	culture = xu
+	religion = yili
+	holding = castle_holding
+}
+# 
+1973 = {
+	holding = none
+}
+
+
+### c_yinling
+# 
+1978 = {
+	culture = xu
+	religion = yili
+	holding = castle_holding
+}
+
+

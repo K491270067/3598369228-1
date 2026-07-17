@@ -1,0 +1,27 @@
+﻿##### d_pengshi1 ############################
+
+### c_peng
+# PENG
+1016 = {
+	culture = chidi
+	religion = dongzhouli
+	holding = castle_holding
+}
+# HENG2
+2457 = {
+	holding = none
+}
+
+
+### c_qingyuan
+
+
+### c_zhi8
+# ZHI8
+2458 = {
+	culture = jin
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+

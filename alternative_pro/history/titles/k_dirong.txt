@@ -1,0 +1,143 @@
+﻿d_baishishi = {
+	3589.1.1 = {
+		liege = "k_dirong"
+		holder = dirong1
+	}
+	3647.1.1 = {
+		holder = dirong2
+	}
+	3671.1.1 = {
+		holder = dirong3
+	}
+	3697.1.1 = {
+		holder = dirong4
+	}
+	3721.1.1 = {
+		holder = dirong5
+	}
+	3745.1.1 = {
+		holder = dirong6
+	}
+	3768.1.1 = {
+		holder = dirong7
+	}
+	3792.1.1 = {
+		holder = dirong8
+	}
+	3815.1.1 = {
+		holder = dirong9
+	}
+	3839.1.1 = {
+		holder = dirong19
+	}
+	3849.1.1 = {
+		change_development_level = 26
+		government = tribal_government
+	}
+}
+d_dishi3 = {
+	3589.1.1 = {
+		liege = "k_dirong"
+		holder = dirong1
+	}
+	3647.1.1 = {
+		holder = dirong2
+	}
+	3671.1.1 = {
+		holder = dirong3
+	}
+	3697.1.1 = {
+		holder = dirong4
+	}
+	3721.1.1 = {
+		holder = dirong5
+	}
+	3745.1.1 = {
+		holder = dirong6
+	}
+	3768.1.1 = {
+		holder = dirong7
+	}
+	3792.1.1 = {
+		holder = dirong8
+	}
+	3815.1.1 = {
+		holder = dirong9
+	}
+	3839.1.1 = {
+		holder = dirong10
+	}
+}
+d_yunwushi = {
+	3589.1.1 = {
+		liege = "k_dirong"
+		holder = dirong1
+	}
+	3647.1.1 = {
+		holder = dirong2
+	}
+	3671.1.1 = {
+		holder = dirong3
+	}
+	3697.1.1 = {
+		holder = dirong4
+	}
+	3721.1.1 = {
+		holder = dirong5
+	}
+	3745.1.1 = {
+		holder = dirong6
+	}
+	3768.1.1 = {
+		holder = dirong7
+	}
+	3792.1.1 = {
+		holder = dirong8
+	}
+	3815.1.1 = {
+		holder = dirong9
+	}
+	3839.1.1 = {
+		holder = dirong15
+	}
+	3849.1.1 = {
+		change_development_level = 25
+		government = tribal_government
+	}
+}
+k_dirong = {
+	3589.1.1 = {
+		holder = dirong1
+	}
+	3647.1.1 = {
+		holder = dirong2
+	}
+	3671.1.1 = {
+		holder = dirong3
+	}
+	3697.1.1 = {
+		holder = dirong4
+	}
+	3721.1.1 = {
+		holder = dirong5
+	}
+	3745.1.1 = {
+		holder = dirong6
+	}
+	3768.1.1 = {
+		holder = dirong7
+	}
+	3792.1.1 = {
+		holder = dirong8
+	}
+	3815.1.1 = {
+		holder = dirong9
+	}
+	3839.1.1 = {
+		holder = dirong10
+	}
+	3849.12.31 = {
+		government = tribal_government
+		change_development_level = 27
+	}
+}

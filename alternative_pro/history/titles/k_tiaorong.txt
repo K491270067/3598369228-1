@@ -1,0 +1,69 @@
+﻿d_benshi = {
+	3532.12.12 = {
+		liege = "k_tiaorong"
+		holder = tiaorong5
+	}
+	3580.1.1 = {
+		holder = tiaorong6
+	}
+	3614.1.1 = {
+		holder = tiaorong7
+	}
+	3651.1.1 = {
+		holder = tiaorong8
+	}
+	3684.1.1 = {
+		holder = tiaorong9
+	}
+	3717.1.1 = {
+		holder = tiaorong10
+	}
+	3758.1.1 = {
+		holder = tiaorong18
+	}
+	3802.1.1 = {
+		holder = tiaorong19
+	}
+	3821.1.1 = {
+		holder = tiaorong20
+	}
+	3849.1.1 = {
+		change_development_level = 25
+	}
+	3849.12.31 = {
+		government = tribal_government
+	}
+}
+k_tiaorong = {
+	3532.12.12 = {
+		holder = tiaorong5
+	}
+	3580.1.1 = {
+		holder = tiaorong6
+	}
+	3614.1.1 = {
+		holder = tiaorong7
+	}
+	3651.1.1 = {
+		holder = tiaorong8
+	}
+	3684.1.1 = {
+		holder = tiaorong9
+	}
+	3717.1.1 = {
+		holder = tiaorong10
+	}
+	3758.1.1 = {
+		holder = tiaorong11
+	}
+	3802.1.1 = {
+		holder = tiaorong12
+	}
+	3815.1.1 = {
+		holder = tiaorong13
+	}
+	3849.12.31 = {
+		government = tribal_government
+		change_development_level = 27
+	}
+}

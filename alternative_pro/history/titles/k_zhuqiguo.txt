@@ -1,0 +1,45 @@
+﻿d_gongloushi = {
+	3654.1.1 = {
+		liege = "k_zhuqiguo"
+		holder = zhuqi1
+	}
+	3711.1.1 = {
+		holder = zhuqi2
+	}
+	3739.1.1 = {
+		holder = zhuqi3
+	}
+	3780.1.1 = {
+		holder = zhuqi4
+	}
+	3828.1.1 = {
+		holder = zhuqi11
+	}
+	3849.1.1 = {
+		change_development_level = 21
+		government = feudal_government
+	}
+}
+k_zhuqiguo = {
+	3654.1.1 = {
+		holder = zhuqi1
+		liege = "e_zhoutianzi"
+	}
+	3711.1.1 = {
+		holder = zhuqi2
+	}
+	3739.1.1 = {
+		holder = zhuqi3
+	}
+	3780.1.1 = {
+		holder = zhuqi4
+	}
+	3828.1.1 = {
+		holder = zhuqi5
+	}
+	3849.1.1 = {
+		change_development_level = 23
+		government = feudal_government
+		liege = "e_zhoutianzi1"
+	}
+}

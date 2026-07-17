@@ -1,0 +1,177 @@
+﻿d_dishi = {
+	3555.1.1 = {
+		liege = "k_soumanguo"
+		holder = han5817
+	}
+	3600.12.31 = {
+		holder = han5818
+	}
+	3647.12.31 = {
+		holder = han5819
+	}
+	3688.12.31 = {
+		holder = han5820
+	}
+	3708.12.31 = {
+		holder = han5821
+	}
+	3737.12.31 = {
+		holder = han5822
+	}
+	3769.12.31 = {
+		holder = han5823
+	}
+	3807.12.31 = {
+		holder = qiaorushi14
+	}
+	3820.12.31 = {
+		holder = qiaorushi15
+	}
+	3849.1.1 = {
+		change_development_level = 17
+	}
+	3849.12.31 = {
+		government = tribal_government
+	}
+}
+d_fenrushi = {
+	3555.1.1 = {
+		liege = "k_soumanguo"
+		holder = han5817
+	}
+	3600.12.31 = {
+		holder = han5818
+	}
+	3647.12.31 = {
+		holder = han5819
+	}
+	3688.12.31 = {
+		holder = han5820
+	}
+	3708.12.31 = {
+		holder = han5821
+	}
+	3737.12.31 = {
+		holder = han5822
+	}
+	3769.12.31 = {
+		holder = han5823
+	}
+	3807.12.31 = {
+		holder = qiaorushi8
+	}
+	3819.12.31 = {
+		holder = qiaorushi9
+	}
+	3849.1.1 = {
+		change_development_level = 18
+	}
+	3849.12.31 = {
+		government = tribal_government
+	}
+}
+d_jianrushi = {
+	3555.1.1 = {
+		liege = "k_soumanguo"
+		holder = han5817
+	}
+	3600.12.31 = {
+		holder = han5818
+	}
+	3647.12.31 = {
+		holder = han5819
+	}
+	3688.12.31 = {
+		holder = han5820
+	}
+	3708.12.31 = {
+		holder = han5821
+	}
+	3737.12.31 = {
+		holder = han5822
+	}
+	3769.12.31 = {
+		holder = han5823
+	}
+	3807.12.31 = {
+		holder = qiaorushi21
+	}
+	3821.12.31 = {
+		holder = qiaorushi22
+	}
+	3849.1.1 = {
+		change_development_level = 16
+	}
+	3849.12.31 = {
+		government = tribal_government
+	}
+}
+d_qiaorushi = {
+	3555.1.1 = {
+		liege = "k_soumanguo"
+		holder = han5817
+	}
+	3600.12.31 = {
+		holder = han5818
+	}
+	3647.12.31 = {
+		holder = han5819
+	}
+	3688.12.31 = {
+		holder = han5820
+	}
+	3708.12.31 = {
+		holder = han5821
+	}
+	3737.12.31 = {
+		holder = han5822
+	}
+	3769.12.31 = {
+		holder = han5823
+	}
+	3807.12.31 = {
+		holder = qiaorushi1
+	}
+	3814.12.31 = {
+		holder = qiaorushi2
+	}
+	3849.1.1 = {
+		change_development_level = 20
+	}
+	3849.12.31 = {
+		government = tribal_government
+	}
+}
+k_soumanguo = {
+	3555.1.1 = {
+		holder = han5817
+	}
+	3600.12.31 = {
+		holder = han5818
+	}
+	3647.12.31 = {
+		holder = han5819
+	}
+	3688.12.31 = {
+		holder = han5820
+	}
+	3708.12.31 = {
+		holder = han5821
+	}
+	3737.12.31 = {
+		holder = han5822
+	}
+	3769.12.31 = {
+		holder = han5823
+	}
+	3807.12.31 = {
+		holder = han5824
+	}
+	3835.12.31 = {
+		holder = han5825
+	}
+	3849.12.31 = {
+		government = tribal_government
+		change_development_level = 25
+	}
+}

@@ -1,0 +1,44 @@
+﻿##### d_zhangshi ############################
+
+### c_zhang
+# ZHANG
+349 = {
+	culture = qi
+	religion = xizhouli
+	holding = castle_holding
+}
+# HUAN
+350 = {
+	holding = none
+}
+
+
+### c_tao
+# TAO
+354 = {
+	culture = qi
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+##### d_taoshi ############################
+
+### c_gang
+# GANG
+341 = {
+	culture = qi
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_chan
+# CHAN
+355 = {
+	culture = qi
+	religion = xizhouli
+	holding = castle_holding
+}
+
+

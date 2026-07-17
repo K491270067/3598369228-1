@@ -1,0 +1,63 @@
+﻿##### d_danboshi ############################
+
+### c_danchima
+# DANCHIMA
+2947 = {
+	holding = none
+}
+
+
+### c_gaoye
+
+
+### c_danbo1
+
+
+### c_yushe1
+# DANHOU
+2833 = {
+	holding = none
+}
+
+
+### c_danhou
+
+
+##### d_fuzhishi ############################
+
+### c_fuzhi
+# FUZHI
+3538 = {
+	holding = none
+}
+
+
+### c_bijiamei
+
+
+### c_helu
+
+
+##### d_santianshi ############################
+
+### c_guishan
+# GUISHAN
+3540 = {
+	holding = none
+}
+
+
+### c_danbo
+# DANBO
+2895 = {
+	holding = none
+}
+# DUOJI
+3539 = {
+	holding = none
+}
+
+
+### c_duoji
+
+

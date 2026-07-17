@@ -1,0 +1,63 @@
+﻿d_genshi = {
+	3574.1.1 = {
+		liege = "k_genmouguo"
+		holder = han1026
+	}
+	3603.1.1 = {
+		holder = han1027
+	}
+	3650.1.1 = {
+		holder = han1028
+	}
+	3703.1.1 = {
+		holder = han1029
+	}
+	3749.1.1 = {
+		holder = han1030
+	}
+	3818.1.1 = {
+		holder = han5513
+	}
+	3820.1.1 = {
+		holder = han1031
+	}
+	3844.1.1 = {
+		holder = genmou1
+	}
+	3849.1.1 = {
+		change_development_level = 20
+		government = feudal_government
+	}
+}
+k_genmouguo = {
+	3574.1.1 = {
+		holder = han1026
+		liege = "e_zhoutianzi"
+	}
+	3603.1.1 = {
+		holder = han1027
+	}
+	3650.1.1 = {
+		holder = han1028
+	}
+	3703.1.1 = {
+		holder = han1029
+	}
+	3749.1.1 = {
+		holder = han1030
+	}
+	3818.1.1 = {
+		holder = han5513
+	}
+	3820.1.1 = {
+		holder = han1031
+	}
+	3844.1.1 = {
+		holder = han1032
+	}
+	3849.1.1 = {
+		change_development_level = 22
+		government = feudal_government
+		liege = "e_zhoutianzi1"
+	}
+}

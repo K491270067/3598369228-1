@@ -1,0 +1,51 @@
+﻿##### d_dengshi ############################
+
+### c_rang
+# RANG
+1754 = {
+	holding = none
+}
+
+
+### c_fanying
+# FANYING
+1767 = {
+	holding = none
+}
+
+
+### c_deng1
+# DENG1
+1769 = {
+	holding = none
+}
+
+
+### c_hecheng
+# HECHENG
+1770 = {
+	holding = none
+}
+
+
+### c_zan
+# ZAN
+1773 = {
+	holding = none
+}
+
+
+### c_yudou
+# YUDOU
+1774 = {
+	holding = none
+}
+
+
+### c_dengling
+# DENGLING
+1775 = {
+	holding = none
+}
+
+

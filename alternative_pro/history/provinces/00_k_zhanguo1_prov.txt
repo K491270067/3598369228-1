@@ -1,0 +1,57 @@
+﻿##### d_zhanshi1 ############################
+
+### c_juan1
+# JUAN1
+702 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+# QINGQIU
+700 = {
+	holding = none
+}
+
+
+### c_maling3
+# MALING3
+2440 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+### c_lianyu
+# LIANYU
+689 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+##### d_juanshi ############################
+
+### c_xian1
+# XIAN1
+687 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+# TAO1
+690 = {
+	holding = none
+}
+
+
+### c_xiaqiu1
+# XIAQIU1
+688 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+

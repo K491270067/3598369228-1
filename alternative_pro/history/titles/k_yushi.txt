@@ -1,0 +1,61 @@
+﻿d_yueshi4 = {
+	3727.1.1 = {
+		liege = "k_yushi"
+		holder = han3296
+	}
+	3770.1.1 = {
+		holder = han3297
+	}
+	3798.1.1 = {
+		holder = han3298
+	}
+	3820.1.1 = {
+		holder = han3299
+	}
+	3847.1.1 = {
+		holder = dayushi1
+	}
+	3849.1.1 = {
+		change_development_level = 25
+		government = nomad_government
+	}
+}
+d_yushi3 = {
+	3727.1.1 = {
+		liege = "k_yushi"
+		holder = han3296
+	}
+	3770.1.1 = {
+		holder = han3297
+	}
+	3798.1.1 = {
+		holder = han3298
+	}
+	3820.1.1 = {
+		holder = han3299
+	}
+	3847.1.1 = {
+		holder = han3300
+	}
+}
+k_yushi = {
+	3727.1.1 = {
+		holder = han3296
+	}
+	3770.1.1 = {
+		holder = han3297
+	}
+	3798.1.1 = {
+		holder = han3298
+	}
+	3820.1.1 = {
+		holder = han3299
+	}
+	3847.1.1 = {
+		holder = han3300
+	}
+	3849.12.31 = {
+		government = nomad_government
+		change_development_level = 26
+	}
+}

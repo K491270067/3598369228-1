@@ -1,0 +1,44 @@
+﻿##### d_bishi1 ############################
+
+### c_beijing
+# BEIJING
+3669 = {
+	holding = none
+}
+
+
+### c_fengchang
+# FENGCHANG
+3671 = {
+	holding = none
+}
+
+
+### c_daning
+# DANING
+3672 = {
+	holding = none
+}
+
+
+### c_fuyu1
+# FUYU1
+3676 = {
+	holding = none
+}
+
+
+### c_qi18
+# QI18
+3678 = {
+	holding = none
+}
+
+
+### c_bi4
+# BI4
+3679 = {
+	holding = none
+}
+
+

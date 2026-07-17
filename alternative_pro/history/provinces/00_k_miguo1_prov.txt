@@ -1,0 +1,33 @@
+﻿##### d_mishi1 ############################
+
+### c_mi4
+# MI4
+862 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_qingni
+# QINGNI
+865 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+# HUHOUSHANSI
+1753 = {
+	holding = none
+}
+
+
+### c_yaoguan
+# YAOGUAN
+1752 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+

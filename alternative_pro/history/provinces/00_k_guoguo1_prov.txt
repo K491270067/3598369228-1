@@ -1,0 +1,90 @@
+﻿##### d_guoshi2 ############################
+
+### c_guo4
+# GUO
+2194 = {
+	culture = qi
+	religion = xizhouli
+	holding = castle_holding
+}
+# ZHONGQIU
+77 = {
+	holding = none
+}
+
+
+### c_xing
+# XING
+72 = {
+	culture = qi
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_anyang1
+# ANYANG1
+2195 = {
+	culture = qi
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+##### d_muqiushi ############################
+
+### c_muqiu
+# MUQIU
+66 = {
+	culture = qi
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_beixing
+# BEIXING
+71 = {
+	culture = qi
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_qing3
+# QING
+2193 = {
+	culture = qi
+	religion = xizhouli
+	holding = castle_holding
+}
+# LINYI
+2192 = {
+	holding = none
+}
+
+
+##### d_xiguoshi ############################
+
+### c_liushu
+# LIUSHU
+69 = {
+	culture = qi
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_ke
+# KE
+75 = {
+	culture = qi
+	religion = xizhouli
+	holding = castle_holding
+}
+# XUELING
+73 = {
+	holding = none
+}
+
+

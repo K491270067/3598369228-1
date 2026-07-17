@@ -1,0 +1,461 @@
+﻿#############  鐘垘鍥?-椤诲崪濮? #############
+han2974={
+  name="bfyznan24"
+  dynasty=xin221
+  culture="quanrong"
+  religion="xirongfangling"
+
+  3547.1.1 = {
+		birth = yes
+	}
+  3580.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han2975={
+  name="bfyznan42"
+  dynasty=xin221
+  culture="quanrong"
+  religion="xirongfangling"
+  father=han2974
+
+  3567.1.1 = {
+		birth = yes
+	}
+  3627.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han2976={
+  name="bfyznan74"
+  dynasty=xin221
+  culture="quanrong"
+  religion="xirongfangling"
+  father=han2975
+
+  3600.1.1 = {
+		birth = yes
+	}
+  3655.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han2977={
+  name="bfyznan85"
+  dynasty=xin221
+  culture="quanrong"
+  religion="xirongfangling"
+  father=han2976
+
+  3621.1.1 = {
+		birth = yes
+	}
+  3680.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han2978={
+  name="bfyznan137"
+  dynasty=xin221
+  culture="quanrong"
+  religion="xirongfangling"
+  father=han2977
+
+  3647.1.1 = {
+		birth = yes
+	}
+  3711.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han2979={
+  name="bfyznan151"
+  dynasty=xin221
+  culture="quanrong"
+  religion="xirongfangling"
+  father=han2978
+
+  3706.1.1 = {
+		birth = yes
+	}
+  3769.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han2980={
+  name="bfyznan185"
+  dynasty=xin221
+  culture="quanrong"
+  religion="xirongfangling"
+  father=han2979
+
+  3744.1.1 = {
+		birth = yes
+	}
+  3787.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han2981={
+  name="bfyznan205"
+  dynasty=xin221
+  culture="quanrong"
+  religion="xirongfangling"
+  father=han2980
+
+  3769.5.1 = {
+		birth = yes
+	}
+  3827.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han2982={
+  name="bfyznan362"
+  dynasty=xin221
+  culture="quanrong"
+  religion="xirongfangling"
+  father=han2981
+
+  3810.6.2 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han2983={
+  name="bfyznan260"
+  dynasty=xin221
+  culture="quanrong"
+  religion="xirongfangling"
+  father=han2982
+
+  3828.6.2 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han2984={
+  name="bfyznan226"
+  dynasty=xin221
+  culture="quanrong"
+  religion="xirongfangling"
+  father=han2982
+
+  3829.2.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han2985={
+  name="bfyznan272"
+  dynasty=xin221
+  culture="quanrong"
+  religion="xirongfangling"
+  father=han2982
+
+  3830.2.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han2986={
+  name="bfyznan290"
+  dynasty=xin221
+  culture="quanrong"
+  religion="xirongfangling"
+  father=han2982
+
+  3831.2.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han2987={
+  name="bfyznan306"
+  dynasty=xin221
+  culture="quanrong"
+  religion="xirongfangling"
+  father=han2982
+
+  3832.2.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han2988={
+  name="bfyznv146"
+  dynasty=xin221
+  culture="quanrong"
+  religion="xirongfangling"
+  father=han2982
+  female=yes
+
+  3833.2.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han2989={
+  name="bfyznv149"
+  dynasty=xin221
+  culture="quanrong"
+  religion="xirongfangling"
+  father=han2982
+  female=yes
+
+  3834.2.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+##############
+quanrong1={
+  name="bfyznan65"
+  dynasty=xin803
+  culture="quanrong"
+  religion="xirongfangling"
+  father=han2981
+
+  3812.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+quanrong2={
+  name="bfyznan82"
+  dynasty=xin803
+  culture="quanrong"
+  religion="xirongfangling"
+  father=quanrong1
+
+  3830.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+quanrong3={
+  name="bfyznv46"
+  dynasty=xin803
+  culture="quanrong"
+  religion="xirongfangling"
+  father=quanrong1
+  female=yes
+
+  3831.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+quanrong4={
+  name="bfyznan113"
+  dynasty=xin803
+  culture="quanrong"
+  religion="xirongfangling"
+  father=quanrong1
+
+  3832.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+quanrong5={
+  name="bfyznv63"
+  dynasty=xin803
+  culture="quanrong"
+  religion="xirongfangling"
+  father=quanrong1
+  female=yes
+
+  3833.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+##############
+quanrong6={
+  name="bfyznan366"
+  dynasty=xin804
+  culture="quanrong"
+  religion="xirongfangling"
+  father=han2981
+
+  3813.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+quanrong7={
+  name="bfyznan417"
+  dynasty=xin804
+  culture="quanrong"
+  religion="xirongfangling"
+  father=quanrong1
+
+  3831.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+quanrong8={
+  name="bfyznv41"
+  dynasty=xin804
+  culture="quanrong"
+  religion="xirongfangling"
+  father=quanrong1
+  female=yes
+
+  3832.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+quanrong9={
+  name="bfyznv55"
+  dynasty=xin804
+  culture="quanrong"
+  religion="xirongfangling"
+  father=quanrong1
+  female=yes
+
+  3833.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+quanrong10={
+  name="bfyznan463"
+  dynasty=xin804
+  culture="quanrong"
+  religion="xirongfangling"
+  father=quanrong1
+
+  3834.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+##############
+quanrong6={
+  name="bfyznan338"
+  dynasty=xin805
+  culture="quanrong"
+  religion="xirongfangling"
+  father=han2981
+
+  3815.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+quanrong7={
+  name="bfyznan353"
+  dynasty=xin805
+  culture="quanrong"
+  religion="xirongfangling"
+  father=quanrong1
+
+  3833.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+quanrong8={
+  name="bfyznan371"
+  dynasty=xin805
+  culture="quanrong"
+  religion="xirongfangling"
+  father=quanrong1
+
+  3834.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+quanrong9={
+  name="bfyznv115"
+  dynasty=xin805
+  culture="quanrong"
+  religion="xirongfangling"
+  father=quanrong1
+  female=yes
+
+  3835.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+quanrong10={
+  name="bfyznv135"
+  dynasty=xin805
+  culture="quanrong"
+  religion="xirongfangling"
+  father=quanrong1
+  female=yes
+
+  3836.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}

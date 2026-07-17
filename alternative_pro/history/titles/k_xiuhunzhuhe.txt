@@ -1,0 +1,137 @@
+﻿d_heshi = {
+	3574.1.1 = {
+		liege = "k_xiuhunzhuhe"
+		holder = xiuhunzhuhe4
+	}
+	3619.1.1 = {
+		holder = xiuhunzhuhe5
+	}
+	3643.1.1 = {
+		holder = xiuhunzhuhe6
+	}
+	3667.1.1 = {
+		holder = xiuhunzhuhe7
+	}
+	3691.1.1 = {
+		holder = xiuhunzhuhe8
+	}
+	3715.1.1 = {
+		holder = xiuhunzhuhe9
+	}
+	3739.1.1 = {
+		holder = xiuhunzhuhe10
+	}
+	3763.1.1 = {
+		holder = xiuhunzhuhe11
+	}
+	3787.1.1 = {
+		holder = xiuhunzhuhe12
+	}
+	3811.1.1 = {
+		holder = xiuhunzhuhe13
+	}
+	3822.1.1 = {
+		holder = xiuhunzhuhe14
+	}
+	3849.1.1 = {
+		change_development_level = 27
+		government = nomad_government
+	}
+}
+d_xiutushi = {
+	3493.1.1 = {
+		liege = "k_xiuhunzhuhe"
+		holder = xiuhunzhuluo1
+	}
+	3539.1.1 = {
+		holder = xiuhunzhuluo2
+	}
+	3570.1.1 = {
+		holder = xiuhunzhuluo3
+	}
+	3595.1.1 = {
+		holder = xiuhunzhuluo4
+	}
+	3619.1.1 = {
+		holder = xiuhunzhuluo5
+	}
+	3643.1.1 = {
+		holder = xiuhunzhuluo6
+	}
+	3667.1.1 = {
+		holder = xiuhunzhuluo7
+	}
+	3691.1.1 = {
+		holder = xiuhunzhuluo8
+	}
+	3715.1.1 = {
+		holder = xiuhunzhuluo9
+	}
+	3739.1.1 = {
+		holder = xiuhunzhuluo10
+	}
+	3763.1.1 = {
+		holder = xiuhunzhuluo11
+	}
+	3787.1.1 = {
+		holder = xiuhunzhuluo12
+	}
+	3811.1.1 = {
+		holder = xiuhunzhuluo13
+	}
+	3832.1.1 = {
+		holder = xiuhunzhuluo20
+	}
+	3849.1.1 = {
+		change_development_level = 25
+		government = nomad_government
+	}
+}
+k_xiuhunzhuhe = {
+	3493.1.1 = {
+		holder = xiuhunzhuluo1
+	}
+	3539.1.1 = {
+		holder = xiuhunzhuluo2
+	}
+	3570.1.1 = {
+		holder = xiuhunzhuluo3
+	}
+	3595.1.1 = {
+		holder = xiuhunzhuluo4
+	}
+	3619.1.1 = {
+		holder = xiuhunzhuluo5
+	}
+	3643.1.1 = {
+		holder = xiuhunzhuluo6
+	}
+	3667.1.1 = {
+		holder = xiuhunzhuluo7
+	}
+	3691.1.1 = {
+		holder = xiuhunzhuluo8
+	}
+	3715.1.1 = {
+		holder = xiuhunzhuluo9
+	}
+	3739.1.1 = {
+		holder = xiuhunzhuluo10
+	}
+	3763.1.1 = {
+		holder = xiuhunzhuluo11
+	}
+	3787.1.1 = {
+		holder = xiuhunzhuluo12
+	}
+	3811.1.1 = {
+		holder = xiuhunzhuluo13
+	}
+	3832.1.1 = {
+		holder = xiuhunzhuluo14
+	}
+	3849.12.31 = {
+		government = nomad_government
+		change_development_level = 28
+	}
+}

@@ -1,0 +1,286 @@
+﻿################绉﹀浗 濡婂绉︽皬
+renqin1={
+  name="heng1"
+  dynasty=xin468
+	religion="xizhouli" 
+	culture="lu"
+	father=han2157
+  
+  3550.1.1 = {
+		birth = yes
+	}
+  3592.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+renqin2={
+  name="ju1"
+  dynasty_house=house_xin469
+	religion="xizhouli" 
+	culture="lu"
+  father=renqin1
+  
+  3586.1.1 = {
+		birth = yes
+	}
+  3627.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+renqin3={
+  name="meng"
+  dynasty_house=house_xin469
+	religion="xizhouli" 
+	culture="lu"
+  father=renqin2
+  
+  3611.1.1 = {
+		birth = yes
+	}
+  3677.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+renqin4={
+  name="que"
+  dynasty_house=house_xin469
+	religion="xizhouli" 
+	culture="lu"
+  father=renqin3
+  
+  3657.1.1 = {
+		birth = yes
+	}
+  3715.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+renqin5={
+  name="zao"
+  dynasty_house=house_xin469
+	religion="xizhouli" 
+	culture="lu"
+  father=renqin4
+  
+  3695.1.1 = {
+		birth = yes
+	}
+  3759.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+renqin6={
+  name="qi4"
+  dynasty_house=house_xin469
+	religion="xizhouli" 
+	culture="lu"
+  father=renqin5
+  
+  3727.1.1 = {
+		birth = yes
+	}
+  3788.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+renqin7={
+  name="heng2"
+  dynasty_house=house_xin469
+	religion="xizhouli" 
+	culture="lu"
+  father=renqin6
+  
+  3763.1.1 = {
+		birth = yes
+	}
+  3805.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+renqin8={
+  name="hao1"#骞崇帇涓滆縼鏃?
+  dynasty_house=house_xin469
+	religion="xizhouli" 
+	culture="lu"
+  father=renqin7
+  
+  3800.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+renqin9={
+  name="shi1"
+  dynasty_house=house_xin469
+	religion="xizhouli" 
+	culture="lu"
+  father=renqin8
+  
+  3825.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+renqin10={
+  name="zang"
+  dynasty_house=house_xin469
+	religion="xizhouli" 
+	culture="lu"
+  father=renqin8
+  
+  3826.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+renqin11={
+  name="fu2"
+  dynasty_house=house_xin469
+	religion="xizhouli" 
+	culture="lu"
+  father=renqin8
+  
+  3828.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+renqin12={
+  name="nvming189"
+  dynasty_house=house_xin469
+	religion="xizhouli" 
+	culture="lu"
+  father=renqin8
+  female=yes
+  
+  3830.3.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+renqin13={
+  name="nvming200"
+  dynasty_house=house_xin469
+	religion="xizhouli" 
+	culture="lu"
+  father=renqin8
+  female=yes
+  
+  3832.3.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+##########寤笜姘?
+renqin14={
+  name="hao1"#骞崇帇涓滆縼鏃?
+  dynasty_house=house_xin470
+	religion="xizhouli" 
+	culture="lu"
+  father=renqin7
+  
+  3802.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+renqin15={
+  name="shi1"
+  dynasty_house=house_xin470
+	religion="xizhouli" 
+	culture="lu"
+  father=renqin14
+  
+  3825.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+renqin16={
+  name="zang"
+  dynasty_house=house_xin470
+	religion="xizhouli" 
+	culture="lu"
+  father=renqin14
+  
+  3826.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+renqin17={
+  name="fu2"
+  dynasty_house=house_xin470
+	religion="xizhouli" 
+	culture="lu"
+  father=renqin14
+  
+  3828.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+renqin18={
+  name="nvming189"
+  dynasty_house=house_xin470
+	religion="xizhouli" 
+	culture="lu"
+  father=renqin14
+  female=yes
+  
+  3830.3.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+renqin19={
+  name="nvming200"
+  dynasty_house=house_xin470
+	religion="xizhouli" 
+	culture="lu"
+  father=renqin14
+  female=yes
+  
+  3832.3.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}

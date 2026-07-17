@@ -1,0 +1,146 @@
+﻿c_xu6 = {
+	3333.1.1 = {
+		liege = "k_binguo"
+		holder = zixingbingguo1
+	}
+	3384.1.1 = {
+		holder = zixingbingguo2
+	}
+	3403.1.1 = {
+		holder = zixingbingguo3
+	}
+	3426.1.1 = {
+		holder = zixingbingguo4
+	}
+	3451.1.1 = {
+		holder = zixingbingguo5
+	}
+	3469.1.1 = {
+		holder = zixingbingguo6
+	}
+	3495.1.1 = {
+		holder = zixingbingguo7
+	}
+	3514.1.1 = {
+		holder = zixingbingguo8
+	}
+	3539.1.1 = {
+		holder = zixingbingguo9
+	}
+	3558.1.1 = {
+		holder = zixingbingguo10
+	}
+	3588.1.1 = {
+		holder = zixingbingguo11
+	}
+	3605.1.1 = {
+		holder = zixingbingguo12
+	}
+	3627.1.1 = {
+		holder = zixingbingguo13
+	}
+	3650.1.1 = {
+		holder = zixingbingguo14
+	}
+	3673.1.1 = {
+		holder = zixingbingguo15
+	}
+	3695.1.1 = {
+		holder = zixingbingguo16
+	}
+	3717.1.1 = {
+		holder = zixingbingguo17
+	}
+	3739.1.1 = {
+		holder = zixingbingguo18
+	}
+	3761.1.1 = {
+		holder = zixingbingguo19
+	}
+	3783.1.1 = {
+		holder = zixingbingguo20
+	}
+	3805.1.1 = {
+		holder = zixingbingguo21
+	}
+	3827.1.1 = {
+		holder = zixingbingguo24
+	}
+	3849.1.1 = {
+		change_development_level = 27
+		government = feudal_government
+	}
+}
+k_binguo = {
+	3333.1.1 = {
+		holder = zixingbingguo1
+	}
+	3384.1.1 = {
+		holder = zixingbingguo2
+	}
+	3403.1.1 = {
+		holder = zixingbingguo3
+	}
+	3426.1.1 = {
+		holder = zixingbingguo4
+	}
+	3451.1.1 = {
+		holder = zixingbingguo5
+	}
+	3469.1.1 = {
+		holder = zixingbingguo6
+	}
+	3495.1.1 = {
+		holder = zixingbingguo7
+	}
+	3514.1.1 = {
+		holder = zixingbingguo8
+	}
+	3539.1.1 = {
+		holder = zixingbingguo9
+	}
+	3558.1.1 = {
+		holder = zixingbingguo10
+	}
+	3588.1.1 = {
+		liege = "e_zhoutianzi"
+		holder = zixingbingguo11
+	}
+	3605.1.1 = {
+		holder = zixingbingguo12
+	}
+	3627.1.1 = {
+		holder = zixingbingguo13
+	}
+	3650.1.1 = {
+		holder = zixingbingguo14
+	}
+	3673.1.1 = {
+		holder = zixingbingguo15
+	}
+	3695.1.1 = {
+		holder = zixingbingguo16
+	}
+	3717.1.1 = {
+		holder = zixingbingguo17
+	}
+	3739.1.1 = {
+		holder = zixingbingguo18
+	}
+	3761.1.1 = {
+		holder = zixingbingguo19
+	}
+	3783.1.1 = {
+		holder = zixingbingguo20
+	}
+	3805.1.1 = {
+		holder = zixingbingguo21
+	}
+	3827.1.1 = {
+		holder = zixingbingguo22
+	}
+	3849.1.1 = {
+		change_development_level = 28
+		government = feudal_government
+	}
+}

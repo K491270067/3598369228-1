@@ -1,0 +1,30 @@
+﻿c_sanshi = {
+	3849.12.31 = {
+		liege = k_sanguo
+		holder = sanyishi2
+		government = feudal_government
+		succession_laws = { noble_family_succession_law }
+	}
+	5000.10.1 = {
+		effect = {
+			destroy_landless_title_no_tgp_dlc_effect = {
+				DATE = 5000.10.1
+			}
+		}
+	}
+}
+c_sanyishi = {
+	3849.12.31 = {
+		liege = k_sanguo
+		holder = han3172
+		government = feudal_government
+		succession_laws = { noble_family_succession_law }
+	}
+	5000.10.1 = {
+		effect = {
+			destroy_landless_title_no_tgp_dlc_effect = {
+				DATE = 5000.10.1
+			}
+		}
+	}
+}

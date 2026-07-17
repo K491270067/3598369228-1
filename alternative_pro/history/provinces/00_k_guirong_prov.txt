@@ -1,0 +1,94 @@
+﻿##### d_guirongshi ############################
+
+### c_gui1
+# GUI1
+1518 = {
+	culture = xirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+# WANGYUAN1
+1519 = {
+	holding = none
+}
+# HANKAI
+1516 = {
+	holding = none
+}
+
+
+### c_xichui
+# XICHUI
+1523 = {
+	culture = xirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+# MUMEN
+3616 = {
+	holding = none
+}
+# DIDAO
+3617 = {
+	holding = none
+}
+
+
+### c_hupan
+# HUPAN
+1525 = {
+	culture = xirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+# HUANGGUA
+1526 = {
+	holding = none
+}
+
+
+##### d_hankaishi ############################
+
+### c_wudu1
+# WUDU1
+3142 = {
+	culture = xirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+# JIANWEI
+3143 = {
+	holding = none
+}
+# SHICHANG
+3615 = {
+	holding = none
+}
+
+
+### c_xiabian
+# XIABIAN
+3614 = {
+	culture = xirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+# GUSHAN
+3144 = {
+	holding = none
+}
+
+
+### c_shanglu
+# SHANGLU
+3613 = {
+	culture = xirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+# PINGLEDAO
+3618 = {
+	holding = none
+}
+
+

@@ -1,0 +1,65 @@
+﻿d_yuyuanzhenshi = {
+	3716.1.1 = {
+		liege = "k_yuzhirong"
+		holder = han2990
+	}
+	3769.1.1 = {
+		holder = han2991
+	}
+	3788.1.1 = {
+		holder = han2992
+	}
+	3807.1.1 = {
+		holder = han2993
+	}
+	3837.1.1 = {
+		holder = yuzhirong6
+	}
+	3849.1.1 = {
+		change_development_level = 26
+		government = tribal_government
+	}
+}
+d_yuzhushi = {
+	3716.1.1 = {
+		liege = "k_yuzhirong"
+		holder = han2990
+	}
+	3769.1.1 = {
+		holder = han2991
+	}
+	3788.1.1 = {
+		holder = han2992
+	}
+	3807.1.1 = {
+		holder = han2993
+	}
+	3837.1.1 = {
+		holder = yuzhirong1
+	}
+	3849.1.1 = {
+		change_development_level = 27
+		government = tribal_government
+	}
+}
+k_yuzhirong = {
+	3716.1.1 = {
+		holder = han2990
+	}
+	3769.1.1 = {
+		holder = han2991
+	}
+	3788.1.1 = {
+		holder = han2992
+	}
+	3807.1.1 = {
+		holder = han2993
+	}
+	3837.1.1 = {
+		holder = han2994
+	}
+	3849.12.31 = {
+		government = tribal_government
+		change_development_level = 29
+	}
+}

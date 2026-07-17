@@ -1,0 +1,107 @@
+﻿##### d_suishi1 ############################
+
+### c_sui2
+# 
+1842 = {
+	holding = none
+}
+
+
+### c_junxiang
+# 
+1847 = {
+	holding = none
+}
+
+
+### c_xinshi1
+# 
+1851 = {
+	holding = none
+}
+
+
+### c_qingtan
+# 
+1852 = {
+	holding = none
+}
+
+
+### c_lixiang
+# 
+1853 = {
+	holding = none
+}
+
+
+### c_guanghua
+# 
+1854 = {
+	holding = none
+}
+
+
+### c_qingten
+# 
+1855 = {
+	holding = none
+}
+
+
+### c_pusao
+# 
+1856 = {
+	holding = none
+}
+
+
+### c_qiu2
+# 
+1861 = {
+	holding = none
+}
+
+
+### c_shenlu
+# 
+1862 = {
+	holding = none
+}
+
+
+### c_jiao5
+# 
+1863 = {
+	holding = none
+}
+
+
+### c_yongshi1
+# 
+1864 = {
+	holding = none
+}
+
+
+### c_chengjiu
+# 
+1865 = {
+	holding = none
+}
+
+
+### c_yundu
+# 
+1866 = {
+	holding = none
+}
+
+
+### c_yi8
+# 
+1907 = {
+	holding = none
+}
+
+

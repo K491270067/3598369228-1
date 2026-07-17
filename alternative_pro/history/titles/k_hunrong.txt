@@ -1,0 +1,155 @@
+﻿d_dangyushi = {
+	3553.1.1 = {
+		liege = "k_hunrong"
+		holder = yunxinghunrong1
+	}
+	3608.12.31 = {
+		holder = yunxinghunrong2
+	}
+	3642.12.31 = {
+		holder = yunxinghunrong3
+	}
+	3669.12.31 = {
+		holder = yunxinghunrong4
+	}
+	3692.12.31 = {
+		holder = yunxinghunrong5
+	}
+	3717.12.31 = {
+		holder = yunxinghunrong6
+	}
+	3741.12.31 = {
+		holder = yunxinghunrong7
+	}
+	3765.12.31 = {
+		holder = yunxinghunrong8
+	}
+	3789.12.31 = {
+		holder = yunxinghunrong9
+	}
+	3813.12.31 = {
+		holder = yunxinghunrong10
+	}
+	3837.12.31 = {
+		holder = yunxinghunrong21
+	}
+	3849.1.1 = {
+		change_development_level = 25
+		government = nomad_government
+	}
+}
+d_hunshi = {
+	3553.1.1 = {
+		liege = "k_hunrong"
+		holder = yunxinghunrong1
+	}
+	3608.12.31 = {
+		holder = yunxinghunrong2
+	}
+	3642.12.31 = {
+		holder = yunxinghunrong3
+	}
+	3669.12.31 = {
+		holder = yunxinghunrong4
+	}
+	3692.12.31 = {
+		holder = yunxinghunrong5
+	}
+	3717.12.31 = {
+		holder = yunxinghunrong6
+	}
+	3741.12.31 = {
+		holder = yunxinghunrong7
+	}
+	3765.12.31 = {
+		holder = yunxinghunrong8
+	}
+	3789.12.31 = {
+		holder = yunxinghunrong9
+	}
+	3813.12.31 = {
+		holder = yunxinghunrong10
+	}
+	3837.12.31 = {
+		holder = yunxinghunrong11
+	}
+}
+d_rongzhoushi = {
+	3553.1.1 = {
+		liege = "k_hunrong"
+		holder = yunxinghunrong1
+	}
+	3608.12.31 = {
+		holder = yunxinghunrong2
+	}
+	3642.12.31 = {
+		holder = yunxinghunrong3
+	}
+	3669.12.31 = {
+		holder = yunxinghunrong4
+	}
+	3692.12.31 = {
+		holder = yunxinghunrong5
+	}
+	3717.12.31 = {
+		holder = yunxinghunrong6
+	}
+	3741.12.31 = {
+		holder = yunxinghunrong7
+	}
+	3765.12.31 = {
+		holder = yunxinghunrong8
+	}
+	3789.12.31 = {
+		holder = yunxinghunrong9
+	}
+	3813.12.31 = {
+		holder = yunxinghunrong10
+	}
+	3837.12.31 = {
+		holder = yunxinghunrong16
+	}
+	3849.1.1 = {
+		change_development_level = 26
+		government = nomad_government
+	}
+}
+k_hunrong = {
+	3553.1.1 = {
+		holder = yunxinghunrong1
+	}
+	3608.12.31 = {
+		holder = yunxinghunrong2
+	}
+	3642.12.31 = {
+		holder = yunxinghunrong3
+	}
+	3669.12.31 = {
+		holder = yunxinghunrong4
+	}
+	3692.12.31 = {
+		holder = yunxinghunrong5
+	}
+	3717.12.31 = {
+		holder = yunxinghunrong6
+	}
+	3741.12.31 = {
+		holder = yunxinghunrong7
+	}
+	3765.12.31 = {
+		holder = yunxinghunrong8
+	}
+	3789.12.31 = {
+		holder = yunxinghunrong9
+	}
+	3813.12.31 = {
+		holder = yunxinghunrong10
+	}
+	3837.12.31 = {
+		holder = yunxinghunrong11
+	}
+	3849.12.31 = {
+		government = nomad_government
+		change_development_level = 27
+	}
+}

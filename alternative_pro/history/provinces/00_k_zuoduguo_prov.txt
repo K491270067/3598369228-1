@@ -1,0 +1,121 @@
+﻿##### d_zuoshi1 ############################
+
+### c_suji
+# SUJI
+3736 = {
+	holding = none
+}
+
+
+### c_anhezhen
+# ANHEZHEN
+3737 = {
+	holding = none
+}
+
+
+### c_zhigezhen
+# ZHIGEZHEN
+3738 = {
+	holding = none
+}
+
+
+### c_qianqiuping
+# QIANQIUPIN
+3739 = {
+	holding = none
+}
+
+
+### c_siyu
+# SIYU
+3740 = {
+	holding = none
+}
+
+
+### c_zuodu1
+# ZUODU1
+3743 = {
+	holding = none
+}
+
+
+### c_yazhou
+# YAZHOU
+3154 = {
+	holding = none
+}
+
+
+### c_lizhou
+# LIZHOU
+3155 = {
+	holding = none
+}
+
+
+### c_emei
+# EMEI
+3258 = {
+	holding = none
+}
+
+
+### c_luomu
+# LUOMU
+3259 = {
+	holding = none
+}
+
+
+### c_suishan
+# SUISHAN
+3260 = {
+	holding = none
+}
+
+
+### c_lushan
+# LUSHAN
+3265 = {
+	holding = none
+}
+
+
+### c_rongjing
+# RONGJING
+3266 = {
+	holding = none
+}
+
+
+### c_hanyuan
+# HANYUAN
+3269 = {
+	holding = none
+}
+
+
+### c_feiyue
+# FEIYUE
+3270 = {
+	holding = none
+}
+
+
+### c_fuwen
+# FUWEN
+3744 = {
+	holding = none
+}
+
+
+### c_muyuan
+# MUYUAN
+3730 = {
+	holding = none
+}
+
+

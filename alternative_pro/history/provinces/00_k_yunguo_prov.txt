@@ -1,0 +1,58 @@
+﻿##### d_yunshi ############################
+
+### c_suqi
+# 
+1908 = {
+	holding = none
+}
+
+
+### c_jingchi
+# 
+1910 = {
+	holding = none
+}
+
+
+### c_anlu
+# 
+1911 = {
+	holding = none
+}
+
+
+### c_shangchang
+# 
+1912 = {
+	holding = none
+}
+
+
+### c_xiaochang
+# 
+1913 = {
+	holding = none
+}
+
+
+### c_yun2
+# 
+1914 = {
+	holding = none
+}
+
+
+### c_yunmeng
+# 
+1915 = {
+	holding = none
+}
+
+
+### c_xiazhou
+# 
+1916 = {
+	holding = none
+}
+
+

@@ -1,0 +1,33 @@
+﻿##### d_hanshi2 ############################
+
+### c_pishi
+# PISHI
+1350 = {
+	culture = jin
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+### c_han3
+# HAN3
+1351 = {
+	culture = jin
+	religion = dongzhouli
+	holding = castle_holding
+}
+# LVXIANG
+1371 = {
+	holding = none
+}
+
+
+### c_pingchang2
+# PINGCHANG2
+2709 = {
+	culture = jin
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+

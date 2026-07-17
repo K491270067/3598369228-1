@@ -1,0 +1,326 @@
+﻿
+tiaorong5={
+  name="yihu"
+  dynasty=xin678
+	religion="xirongfangling" 
+	culture="guazhouzhirong"
+  father=jiangshirong4
+
+  3532.12.12 = {
+		birth = yes
+	}
+  3580.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+tiaorong6={
+  name="cimu"
+  dynasty_house=house_xin679
+	religion="xirongfangling" 
+	culture="guazhouzhirong"
+  father=tiaorong5
+
+  3567.12.12 = {
+		birth = yes
+	}
+  3614.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+tiaorong7={
+  name="fei"
+  dynasty_house=house_xin679
+	religion="xirongfangling" 
+	culture="guazhouzhirong"
+  father=tiaorong6
+
+  3593.12.12 = {
+		birth = yes
+	}
+  3651.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+tiaorong8={
+  name="gong"
+  dynasty_house=house_xin679
+	religion="xirongfangling" 
+	culture="guazhouzhirong"
+  father=tiaorong7
+
+  3631.12.12 = {
+		birth = yes
+	}
+  3684.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+tiaorong9={
+  name="gong1"
+  dynasty_house=house_xin679
+	religion="xirongfangling" 
+	culture="guazhouzhirong"
+  father=tiaorong8
+
+  3663.12.12 = {
+		birth = yes
+	}
+  3717.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+tiaorong10={
+  name="bian"
+  dynasty_house=house_xin679
+	religion="xirongfangling" 
+	culture="guazhouzhirong"
+  father=tiaorong9
+
+  3696.12.12 = {
+		birth = yes
+	}
+  3758.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+tiaorong11={
+  name="xian1"
+  dynasty_house=house_xin679
+	religion="xirongfangling" 
+	culture="guazhouzhirong"
+  father=tiaorong10
+
+  3743.12.12 = {
+		birth = yes
+	}
+  3802.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+tiaorong12={
+  name="bang"
+  dynasty_house=house_xin679
+	religion="xirongfangling" 
+	culture="guazhouzhirong"
+  father=tiaorong11
+
+  3777.12.12 = {
+		birth = yes
+	}
+  3815.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+tiaorong13={#寮€灞€
+  name="zhao1"
+  dynasty_house=house_xin679
+	religion="xirongfangling" 
+	culture="guazhouzhirong"
+  father=tiaorong12
+
+  3803.12.12 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+tiaorong14={
+  name="ao1"
+  dynasty_house=house_xin679
+	religion="xirongfangling" 
+	culture="guazhouzhirong"
+  father=tiaorong13
+
+  3821.12.12 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+tiaorong15={
+  name="he"
+  dynasty_house=house_xin679
+	religion="xirongfangling" 
+	culture="guazhouzhirong"
+  father=tiaorong13
+
+  3823.12.12 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+tiaorong16={
+  name="nvming77"
+  dynasty_house=house_xin679
+	religion="xirongfangling" 
+	culture="guazhouzhirong"
+  father=tiaorong13
+  female=yes
+
+  3825.12.12 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+tiaorong17={
+  name="nvming101"
+  dynasty_house=house_xin679
+	religion="xirongfangling" 
+	culture="guazhouzhirong"
+  father=tiaorong13
+  female=yes
+
+  3827.12.12 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+####################濂?
+tiaorong18={
+  name="du1"
+  dynasty_house=house_xin680
+	religion="xirongfangling" 
+	culture="guazhouzhirong"
+  father=tiaorong10
+
+  3752.12.12 = {
+		birth = yes
+	}
+  3802.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+tiaorong19={
+  name="chu1"
+  dynasty_house=house_xin680
+	religion="xirongfangling" 
+	culture="guazhouzhirong"
+  father=tiaorong18
+
+  3777.12.12 = {
+		birth = yes
+	}
+  3821.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+tiaorong20={#寮€灞€
+  name="huiyu"
+  dynasty_house=house_xin680
+	religion="xirongfangling" 
+	culture="guazhouzhirong"
+  father=tiaorong19
+
+  3807.12.12 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+tiaorong21={
+  name="dai1"
+  dynasty_house=house_xin680
+	religion="xirongfangling" 
+	culture="guazhouzhirong"
+  father=tiaorong20
+
+  3825.12.12 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+tiaorong22={
+  name="chao"
+  dynasty_house=house_xin680
+	religion="xirongfangling" 
+	culture="guazhouzhirong"
+  father=tiaorong20
+
+  3826.12.12 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+tiaorong23={
+  name="nvming124"
+  dynasty_house=house_xin680
+	religion="xirongfangling" 
+	culture="guazhouzhirong"
+  father=tiaorong20
+  female=yes
+
+  3827.12.12 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+tiaorong24={
+  name="nvming143"
+  dynasty_house=house_xin680
+	religion="xirongfangling" 
+	culture="guazhouzhirong"
+  father=tiaorong20
+  female=yes
+
+  3828.12.12 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}

@@ -1,0 +1,404 @@
+﻿kongtongshi1={
+  name="bfyznan22"
+  dynasty=xin853
+  culture="rongren"
+  religion="xirongfangling"
+
+  3456.1.1 = {
+		birth = yes
+	}
+  3501.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+kongtongshi2={
+  name="bfyznan41"
+  dynasty=xin853
+  culture="rongren"
+  religion="xirongfangling"
+  father=kongtongshi1
+
+  3491.1.1 = {
+		birth = yes
+	}
+  3543.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+kongtongshi3={
+  name="bfyznan53"
+  dynasty=xin853
+  culture="rongren"
+  religion="xirongfangling"
+  father=kongtongshi2
+
+  3515.1.1 = {
+		birth = yes
+	}
+  3570.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+kongtongshi4={
+  name="bfyznan58"
+  dynasty=xin853
+  culture="rongren"
+  religion="xirongfangling"
+  father=kongtongshi3
+
+  3538.1.1 = {
+		birth = yes
+	}
+  3595.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+kongtongshi5={
+  name="bfyznan65"
+  dynasty=xin853
+  culture="rongren"
+  religion="xirongfangling"
+  father=kongtongshi4
+
+  3561.1.1 = {
+		birth = yes
+	}
+  3619.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+kongtongshi6={
+  name="bfyznan70"
+  dynasty=xin853
+  culture="rongren"
+  religion="xirongfangling"
+  father=kongtongshi5
+
+  3585.1.1 = {
+		birth = yes
+	}
+  3644.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+kongtongshi7={
+  name="bfyznan84"
+  dynasty=xin853
+  culture="rongren"
+  religion="xirongfangling"
+  father=kongtongshi6
+
+  3607.1.1 = {
+		birth = yes
+	}
+  3666.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+kongtongshi8={
+  name="bfyznan93"
+  dynasty=xin853
+  culture="rongren"
+  religion="xirongfangling"
+  father=kongtongshi7
+
+  3630.1.1 = {
+		birth = yes
+	}
+  3691.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+kongtongshi9={
+  name="bfyznan105"
+  dynasty=xin853
+  culture="rongren"
+  religion="xirongfangling"
+  father=kongtongshi8
+
+  3654.1.1 = {
+		birth = yes
+	}
+  3715.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+kongtongshi10={
+  name="bfyznan117"
+  dynasty=xin853
+  culture="rongren"
+  religion="xirongfangling"
+  father=kongtongshi9
+
+  3676.1.1 = {
+		birth = yes
+	}
+  3737.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+kongtongshi11={
+  name="bfyznan127"
+  dynasty=xin853
+  culture="rongren"
+  religion="xirongfangling"
+  father=kongtongshi10
+
+  3699.1.1 = {
+		birth = yes
+	}
+  3762.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+kongtongshi12={
+  name="bfyznan131"
+  dynasty=xin853
+  culture="rongren"
+  religion="xirongfangling"
+  father=kongtongshi11
+
+  3735.1.1 = {
+		birth = yes
+	}
+  3786.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+kongtongshi13={
+  name="bfyznan147"
+  dynasty=xin853
+  culture="rongren"
+  religion="xirongfangling"
+  father=kongtongshi12
+
+  3757.1.1 = {
+		birth = yes
+	}
+  3811.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+kongtongshi14={
+  name="bfyznan156"
+  dynasty=xin853
+  culture="rongren"
+  religion="xirongfangling"
+  father=kongtongshi13
+
+  3781.1.1 = {
+		birth = yes
+	}
+  3834.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+kongtongshi15={
+  name="bfyznan171"
+  dynasty=xin853
+  culture="rongren"
+  religion="xirongfangling"
+  father=kongtongshi14
+
+  3804.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+kongtongshi16={
+  name="bfyznan180"
+  dynasty=xin853
+  culture="rongren"
+  religion="xirongfangling"
+  father=kongtongshi14
+
+  3824.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+kongtongshi17={
+  name="bfyznan189"
+  dynasty=xin853
+  culture="rongren"
+  religion="xirongfangling"
+  father=kongtongshi14
+
+  3827.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+kongtongshi18={
+  name="bfyznv93"
+  dynasty=xin853
+  culture="rongren"
+  religion="xirongfangling"
+  father=kongtongshi14
+  female=yes
+
+  3829.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+kongtongshi19={
+  name="bfyznan198"
+  dynasty=xin853
+  culture="rongren"
+  religion="xirongfangling"
+  father=kongtongshi14
+
+  3831.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+kongtongshi20={
+  name="bfyznv161"
+  dynasty=xin853
+  culture="rongren"
+  religion="xirongfangling"
+  father=kongtongshi14
+  female=yes
+
+  3833.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+################
+kongtongshi21={
+  name="bfyznan206"
+  dynasty=baijia384
+  culture="rongren"
+  religion="xirongfangling"
+  father=kongtongshi14
+
+  3809.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+kongtongshi22={
+  name="bfyznv35"
+  dynasty=baijia384
+  culture="rongren"
+  religion="xirongfangling"
+  father=kongtongshi21
+  female=yes
+
+  3827.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+kongtongshi23={
+  name="bfyznv54"
+  dynasty=baijia384
+  culture="rongren"
+  religion="xirongfangling"
+  father=kongtongshi21
+  female=yes
+
+  3828.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+kongtongshi24={
+  name="bfyznan224"
+  dynasty=baijia384
+  culture="rongren"
+  religion="xirongfangling"
+  father=kongtongshi21
+
+  3829.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+kongtongshi25={
+  name="bfyznan292"
+  dynasty=baijia384
+  culture="rongren"
+  religion="xirongfangling"
+  father=kongtongshi21
+
+  3831.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}

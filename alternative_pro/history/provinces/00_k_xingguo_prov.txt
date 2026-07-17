@@ -1,0 +1,160 @@
+﻿##### d_xingshi ############################
+
+### c_zhongqiu3
+# ZHONGQIU3
+1200 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_zhang1
+# ZHANG1
+1201 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_xing4
+# XING4
+1202 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+# CHAOPING
+1205 = {
+	holding = none
+}
+# NANHE
+1206 = {
+	holding = none
+}
+
+
+##### d_jianshi1 ############################
+
+### c_shaqiu
+# SHAQIU
+1195 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+# BOLUOJIN
+1196 = {
+	holding = none
+}
+
+
+### c_ren1
+# REN1
+1198 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+# PINGXIANG
+1204 = {
+	holding = none
+}
+
+
+### c_bairen
+# BAIREN
+1199 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+# GUANGXIANG
+1203 = {
+	holding = none
+}
+
+
+##### d_shangliangshi ############################
+
+### c_fangzi
+# FANGZI
+209 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_lin1
+# LIN1
+212 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+# BAIXIANG
+214 = {
+	holding = none
+}
+# YINGTAO
+228 = {
+	holding = none
+}
+
+
+### c_xiangshi
+# XIANGSHI
+227 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+##### d_nangongshi ############################
+
+### c_jing5
+# JING5
+67 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+# XINCHENG2
+53 = {
+	holding = none
+}
+
+
+### c_nangong
+# NANGONG
+68 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+# LIAO1
+74 = {
+	holding = none
+}
+# SUOTI
+76 = {
+	holding = none
+}
+
+
+### c_li11
+# LI11
+95 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+# FUYANG1
+89 = {
+	holding = none
+}
+
+

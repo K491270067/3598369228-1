@@ -1,0 +1,51 @@
+﻿##### d_xibugengshi ############################
+
+### c_fan5
+# FAN5
+1612 = {
+	holding = none
+}
+
+
+### c_xibugeng
+# XIBUGENG
+1613 = {
+	holding = none
+}
+
+
+### c_gaoyou1
+# GAOYOU1
+1614 = {
+	holding = none
+}
+
+
+### c_dingling
+# DINGLING
+1616 = {
+	holding = none
+}
+
+
+### c_yinyang1
+# YINYANG1
+1617 = {
+	holding = none
+}
+
+
+### c_yinqiang
+# YINQIANG
+1618 = {
+	holding = none
+}
+
+
+### c_xihua
+# XIHUA
+1619 = {
+	holding = none
+}
+
+

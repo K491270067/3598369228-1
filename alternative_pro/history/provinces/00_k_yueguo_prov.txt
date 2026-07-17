@@ -1,0 +1,233 @@
+﻿##### d_yueshi ############################
+
+### c_lingfu1
+# 
+2122 = {
+	holding = none
+}
+
+
+### c_tongrui1
+# 
+2123 = {
+	holding = none
+}
+
+
+### c_tong4
+# 
+2124 = {
+	holding = none
+}
+
+
+### c_mingling
+# 
+2125 = {
+	holding = none
+}
+
+
+### c_yue2
+# 
+2126 = {
+	holding = none
+}
+
+
+### c_yangxian
+# 
+2127 = {
+	holding = none
+}
+
+
+### c_guangying
+# 
+2128 = {
+	holding = none
+}
+
+
+### c_ming1
+# 
+2129 = {
+	holding = none
+}
+
+
+### c_anji
+# 
+2130 = {
+	holding = none
+}
+
+
+### c_guangde
+# GUANGDE
+2136 = {
+	holding = none
+}
+
+
+### c_jiuzhou
+# ABBEVILLE
+2137 = {
+	holding = none
+}
+
+
+### c_ningguo
+# DAX
+2138 = {
+	holding = none
+}
+
+
+### c_dan4
+# MIMIZAN
+2139 = {
+	holding = none
+}
+
+
+### c_huaian
+# HUAIAN
+2140 = {
+	holding = none
+}
+
+
+### c_qian4
+# MEDOC
+2141 = {
+	holding = none
+}
+
+
+### c_wucheng6
+# WUCHENG6
+2142 = {
+	holding = none
+}
+
+
+### c_yongan1
+# FRONSAC
+2143 = {
+	holding = none
+}
+
+
+### c_linshui1
+# BLAYE
+2144 = {
+	holding = none
+}
+
+
+### c_huanghuaguan
+# HUANGHUAGUAN
+2145 = {
+	holding = none
+}
+
+
+### c_yuhang
+# YUHANG
+2146 = {
+	holding = none
+}
+
+
+### c_haiyan
+# LA ROCHELLE
+2147 = {
+	holding = none
+}
+
+
+### c_yanguan
+# FONTENAY
+2148 = {
+	holding = none
+}
+
+
+### c_yuer
+# YUER
+2149 = {
+	holding = none
+}
+
+
+### c_ouyang
+# OUYANG
+2150 = {
+	holding = none
+}
+
+
+### c_zuili
+# RAIS
+2151 = {
+	holding = none
+}
+
+
+### c_chaibi
+# NANTES
+2152 = {
+	holding = none
+}
+
+
+### c_youquan
+# GUERANDE
+2153 = {
+	holding = none
+}
+
+
+### c_xing6
+# VANNES
+2154 = {
+	holding = none
+}
+
+
+### c_shangshe
+# LORIENT
+2155 = {
+	holding = none
+}
+
+
+### c_wuyuan2
+# WUYUAN2
+2156 = {
+	holding = none
+}
+
+
+### c_kunshan1
+# BREST
+2157 = {
+	holding = none
+}
+
+
+### c_huating1
+# LEON
+2158 = {
+	holding = none
+}
+
+
+### c_songyin
+# CORNOUAILLES
+2159 = {
+	holding = none
+}
+
+

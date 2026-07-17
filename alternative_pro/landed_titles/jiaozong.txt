@@ -1,0 +1,117 @@
+﻿e_shangdi = {
+	color = { 22 33 44 }
+	capital = c_gao3
+	landless = yes
+
+	can_create = { }
+	ai_primary_priority = {
+		if = {
+			limit = {
+				culture = {
+					has_cultural_pillar = heritage_heritage_zhouren
+				}
+			}
+			add = @correct_culture_primary_score
+		}
+	}
+	personal_relation_entry = {
+		first_valid = {
+			triggered_desc = {
+			trigger = {
+				exists = scope:target
+				scope:vassal ?= scope:target
+			}
+			desc = japan_personal_relation_ceremonial_regent_same
+		}
+			triggered_desc = {
+			trigger = {
+				exists = scope:vassal
+			}
+			desc = japan_personal_relation_ceremonial_regent_other
+		}
+
+		}
+	}
+	personal_relation_vassal = {
+		has_title = title:k_songguo
+	}
+}
+
+e_zhoutianzi = {
+	color = { 168 32 32 }
+	capital = c_gao3
+	landless = yes
+
+	can_create = { }
+	ai_primary_priority = {
+		if = {
+			limit = {
+				culture = {
+					has_cultural_pillar = heritage_heritage_zhouren
+				}
+			}
+			add = @correct_culture_primary_score
+		}
+	}
+	personal_relation_entry = {
+		first_valid = {
+			triggered_desc = {
+			trigger = {
+				exists = scope:target
+				scope:vassal ?= scope:target
+			}
+			desc = japan_personal_relation_ceremonial_regent_same
+		}
+			triggered_desc = {
+			trigger = {
+				exists = scope:vassal
+			}
+			desc = japan_personal_relation_ceremonial_regent_other
+		}
+
+		}
+	}
+	personal_relation_vassal = {
+		has_title = title:k_zhouguo3
+	}
+}
+
+e_zhoutianzi1 = {
+	color = { 120 60 160 }
+	capital = c_wangcheng
+	landless = yes
+
+	can_create = { }
+	ai_primary_priority = {
+		if = {
+			limit = {
+				culture = {
+					has_cultural_pillar = heritage_heritage_zhouren
+				}
+			}
+			add = @correct_culture_primary_score
+		}
+	}
+	personal_relation_entry = {
+		first_valid = {
+			triggered_desc = {
+			trigger = {
+				exists = scope:target
+				scope:vassal ?= scope:target
+			}
+			desc = japan_personal_relation_ceremonial_regent_same
+		}
+			triggered_desc = {
+			trigger = {
+				exists = scope:vassal
+			}
+			desc = japan_personal_relation_ceremonial_regent_other
+		}
+
+		}
+	}
+	personal_relation_vassal = {
+		has_title = title:k_zhouguo2
+	}
+}
+

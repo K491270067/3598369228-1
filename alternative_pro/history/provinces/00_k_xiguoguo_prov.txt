@@ -1,0 +1,68 @@
+﻿##### d_xiguoshi1 ############################
+
+### c_shangyang
+# SHANGYANG
+840 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+# XIASAI
+839 = {
+	holding = none
+}
+
+
+### c_shen2
+# SHEN2
+838 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+##### d_shangyangshi ############################
+
+### c_mianchi
+# MIANCHI
+836 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+# BANG
+837 = {
+	holding = none
+}
+
+
+### c_qiangren
+# QIANGREN
+823 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+##### d_xiayangshi ############################
+
+### c_zhiren
+# ZHIREN
+824 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_yao
+# YAO
+825 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+

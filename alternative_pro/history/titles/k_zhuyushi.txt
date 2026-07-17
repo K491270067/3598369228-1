@@ -1,0 +1,160 @@
+﻿d_mishi3 = {
+	3429.1.1 = {
+		liege = "k_zhuyushi"
+		holder = zhuyushi1
+	}
+	3491.12.31 = {
+		holder = zhuyushi2
+	}
+	3516.12.31 = {
+		holder = zhuyushi3
+	}
+	3539.12.31 = {
+		holder = zhuyushi4
+	}
+	3564.12.31 = {
+		holder = zhuyushi5
+	}
+	3588.12.31 = {
+		holder = zhuyushi6
+	}
+	3612.12.31 = {
+		holder = zhuyushi7
+	}
+	3636.12.31 = {
+		holder = zhuyushi8
+	}
+	3660.12.31 = {
+		holder = zhuyushi9
+	}
+	3684.12.31 = {
+		holder = zhuyushi10
+	}
+	3708.12.31 = {
+		holder = zhuyushi11
+	}
+	3732.12.31 = {
+		holder = zhuyushi12
+	}
+	3756.12.31 = {
+		holder = zhuyushi13
+	}
+	3780.12.31 = {
+		holder = zhuyushi14
+	}
+	3804.12.31 = {
+		holder = zhuyushi15
+	}
+	3828.12.31 = {
+		holder = zhuyushi16
+	}
+	3849.1.1 = {
+		change_development_level = 25
+		government = nomad_government
+	}
+}
+d_zhuyushi = {
+	3429.1.1 = {
+		liege = "k_zhuyushi"
+		holder = zhuyushi1
+	}
+	3491.12.31 = {
+		holder = zhuyushi2
+	}
+	3516.12.31 = {
+		holder = zhuyushi3
+	}
+	3539.12.31 = {
+		holder = zhuyushi4
+	}
+	3564.12.31 = {
+		holder = zhuyushi5
+	}
+	3588.12.31 = {
+		holder = zhuyushi6
+	}
+	3612.12.31 = {
+		holder = zhuyushi7
+	}
+	3636.12.31 = {
+		holder = zhuyushi8
+	}
+	3660.12.31 = {
+		holder = zhuyushi9
+	}
+	3684.12.31 = {
+		holder = zhuyushi10
+	}
+	3708.12.31 = {
+		holder = zhuyushi11
+	}
+	3732.12.31 = {
+		holder = zhuyushi12
+	}
+	3756.12.31 = {
+		holder = zhuyushi13
+	}
+	3780.12.31 = {
+		holder = zhuyushi14
+	}
+	3804.12.31 = {
+		holder = zhuyushi15
+	}
+	3828.12.31 = {
+		holder = zhuyushi16
+	}
+}
+k_zhuyushi = {
+	3429.1.1 = {
+		holder = zhuyushi1
+	}
+	3491.12.31 = {
+		holder = zhuyushi2
+	}
+	3516.12.31 = {
+		holder = zhuyushi3
+	}
+	3539.12.31 = {
+		holder = zhuyushi4
+	}
+	3564.12.31 = {
+		holder = zhuyushi5
+	}
+	3588.12.31 = {
+		holder = zhuyushi6
+	}
+	3612.12.31 = {
+		holder = zhuyushi7
+	}
+	3636.12.31 = {
+		holder = zhuyushi8
+	}
+	3660.12.31 = {
+		holder = zhuyushi9
+	}
+	3684.12.31 = {
+		holder = zhuyushi10
+	}
+	3708.12.31 = {
+		holder = zhuyushi11
+	}
+	3732.12.31 = {
+		holder = zhuyushi12
+	}
+	3756.12.31 = {
+		holder = zhuyushi13
+	}
+	3780.12.31 = {
+		holder = zhuyushi14
+	}
+	3804.12.31 = {
+		holder = zhuyushi15
+	}
+	3828.12.31 = {
+		holder = zhuyushi16
+	}
+	3849.12.31 = {
+		government = nomad_government
+		change_development_level = 26
+	}
+}

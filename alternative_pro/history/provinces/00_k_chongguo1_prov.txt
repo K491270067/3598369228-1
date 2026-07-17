@@ -1,0 +1,121 @@
+﻿##### d_chongshi1 ############################
+
+### c_xinjing
+# XINJING
+3192 = {
+	holding = none
+}
+
+
+### c_nanbu
+# NANBU
+3193 = {
+	holding = none
+}
+
+
+### c_qingshi
+# QINGSHI
+3315 = {
+	holding = none
+}
+
+
+### c_pengxi
+# PENGXI
+3316 = {
+	holding = none
+}
+
+
+### c_changjiang
+# CHANGJIANG
+3317 = {
+	holding = none
+}
+
+
+### c_liuxi
+# LIUXI
+3319 = {
+	holding = none
+}
+
+
+### c_xiangru
+# XIANGRU
+3321 = {
+	holding = none
+}
+
+
+### c_xichong
+# XICHONG
+3322 = {
+	holding = none
+}
+
+
+### c_nanchong
+# NANCHONG
+3323 = {
+	holding = none
+}
+
+
+### c_chishui
+# CHISHUI
+3704 = {
+	holding = none
+}
+
+
+### c_hanchu
+# HANCHU
+3705 = {
+	holding = none
+}
+
+
+### c_fangyi
+# FANGYI
+3318 = {
+	holding = none
+}
+
+
+### c_chongkan
+# CHONGKAN
+3304 = {
+	holding = none
+}
+
+
+### c_anju
+# ANJU
+3305 = {
+	holding = none
+}
+
+
+### c_suining
+# SUINING
+3165 = {
+	holding = none
+}
+
+
+### c_tongliang
+# TONGLIANG
+3722 = {
+	holding = none
+}
+
+
+### c_pukang
+# PUKANG
+3302 = {
+	holding = none
+}
+
+

@@ -1,0 +1,58 @@
+﻿##### d_nanzengshi ############################
+
+### c_zengguan
+# ZENGGUAN
+1703 = {
+	holding = none
+}
+
+
+### c_juan2
+# JUAN2
+1704 = {
+	holding = none
+}
+
+
+### c_yangqiu
+# YANGQIU
+1705 = {
+	holding = none
+}
+
+
+### c_zeng3
+# ZENG3
+1706 = {
+	holding = none
+}
+
+
+### c_zhong
+# ZHONG
+1710 = {
+	holding = none
+}
+
+
+### c_ciqiu
+# CIQIU
+1713 = {
+	holding = none
+}
+
+
+### c_zengqiu
+# ZENGQIU
+1714 = {
+	holding = none
+}
+
+
+### c_bi3
+# BI3
+1716 = {
+	holding = none
+}
+
+

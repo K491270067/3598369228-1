@@ -1,0 +1,114 @@
+﻿##### d_jirongshi ############################
+
+### c_ji13
+# JI13
+1520 = {
+	culture = xirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+# WUZHONG1
+1524 = {
+	holding = none
+}
+
+
+### c_xinxing
+# XINXING
+1527 = {
+	culture = xirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+# LUOMEN
+1521 = {
+	holding = none
+}
+
+
+### c_wuxi
+# WUXI
+1531 = {
+	culture = xirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+# ZHANG2
+1532 = {
+	holding = none
+}
+
+
+##### d_yanshi6 ############################
+
+### c_sanchaguan
+# SANCHAGUAN
+3065 = {
+	culture = xirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+# HONGHE
+3064 = {
+	holding = none
+}
+
+
+### c_taoyang
+# TAOYANG
+3069 = {
+	culture = xirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+# ZHUONI
+3063 = {
+	holding = none
+}
+
+
+### c_longsang
+# LONGSANG
+1530 = {
+	culture = xirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+# SUOXI
+1529 = {
+	holding = none
+}
+
+
+##### d_shendushi ############################
+
+### c_shendu
+# SHENDU
+3060 = {
+	culture = xirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+# SHANDAN
+3059 = {
+	holding = none
+}
+# MEICHUAN
+3058 = {
+	holding = none
+}
+
+
+### c_lintao1
+# LINTAO1
+3057 = {
+	culture = xirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+# WANGQU
+3070 = {
+	holding = none
+}
+
+

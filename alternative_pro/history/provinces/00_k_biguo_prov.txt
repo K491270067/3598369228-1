@@ -1,0 +1,37 @@
+﻿##### d_bishi ############################
+
+### c_quanqiu1
+# QUANQIU1
+898 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_bi2
+# BI2
+902 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+# HOULI
+904 = {
+	holding = none
+}
+
+
+### c_haozhi
+# HAOZHI
+906 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+# LIANGSHAN
+920 = {
+	holding = none
+}
+
+

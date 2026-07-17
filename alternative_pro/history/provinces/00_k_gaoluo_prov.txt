@@ -1,0 +1,62 @@
+﻿##### d_gaoluoshi ############################
+
+### c_gaoluo
+# GAOLUO
+1062 = {
+	culture = chidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+# NVJI
+1061 = {
+	holding = none
+}
+
+
+### c_luoxiao
+# LUOXIAO
+2470 = {
+	culture = chidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+
+
+### c_ju2
+# JU2
+1025 = {
+	culture = chidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+
+
+##### d_dongshanshi ############################
+
+### c_wangyuan
+# WANGYUAN
+1063 = {
+	culture = chidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+
+
+### c_huqiu
+# HUQIU
+1064 = {
+	culture = chidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+
+
+### c_pishao
+# PISHAO
+1065 = {
+	culture = chidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+
+

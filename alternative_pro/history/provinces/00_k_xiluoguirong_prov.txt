@@ -1,0 +1,137 @@
+﻿##### d_guishi ############################
+
+### c_fushi1
+# FUSHI1
+1434 = {
+	culture = beidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+# RULIN
+1449 = {
+	holding = none
+}
+
+
+### c_ganguan
+# GANGUAN
+1447 = {
+	culture = beidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+# CHENGPING
+1446 = {
+	holding = none
+}
+# YANSHUI
+1440 = {
+	holding = none
+}
+
+
+### c_dule
+# DULE
+1448 = {
+	culture = beidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+
+
+### c_pingzhou2
+# PINGZHOU2
+1433 = {
+	culture = beidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+
+
+##### d_daweishi ############################
+
+### c_qiuci
+# QIUCI
+1590 = {
+	culture = beidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+# LUANJINER
+2769 = {
+	holding = none
+}
+
+
+### c_huanyin
+# HUANYIN
+1437 = {
+	culture = beidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+# BAILIN
+2770 = {
+	holding = none
+}
+
+
+### c_zhenxiang
+# ZHENXIANG
+1438 = {
+	culture = beidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+
+
+### c_hongmen
+# HONGMEN
+1439 = {
+	culture = beidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+
+
+##### d_guifangshi ############################
+
+### c_yinyang
+# YINYANG
+1395 = {
+	culture = beidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+# ZHENGHE
+1394 = {
+	holding = none
+}
+
+
+### c_shen8
+# SHEN8
+2766 = {
+	culture = beidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+# KUANG2
+1436 = {
+	holding = none
+}
+
+
+### c_duiqiu
+# DUIQIU
+2768 = {
+	culture = beidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+# QIHUANG
+2767 = {
+	holding = none
+}
+
+

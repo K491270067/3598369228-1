@@ -1,0 +1,156 @@
+﻿##### d_xushi ############################
+
+### c_linhuai
+# LINHUAI
+2372 = {
+	culture = xu
+	religion = yili
+	holding = castle_holding
+}
+
+
+### c_gaoping
+# GAOPING
+289 = {
+	culture = xu
+	religion = yili
+	holding = castle_holding
+}
+
+
+### c_xu
+# XU
+292 = {
+	culture = xu
+	religion = yili
+	holding = castle_holding
+}
+# WUHE
+2364 = {
+	holding = none
+}
+# SUILING
+294 = {
+	holding = none
+}
+
+
+##### d_ququeshi ############################
+
+### c_louting
+# LOUTING
+2254 = {
+	culture = xu
+	religion = yili
+	holding = castle_holding
+}
+
+
+### c_xiaqiu
+# XIAQIU
+290 = {
+	culture = xu
+	religion = yili
+	holding = castle_holding
+}
+
+
+##### d_jiangliangshi ############################
+
+### c_pusui
+# PUSUI
+285 = {
+	culture = xu
+	religion = yili
+	holding = castle_holding
+}
+
+
+### c_tong
+# TONG
+288 = {
+	culture = xu
+	religion = yili
+	holding = castle_holding
+}
+
+
+### c_loulin
+# LOULIN
+291 = {
+	culture = xu
+	religion = yili
+	holding = castle_holding
+}
+
+
+##### d_feishi2 ############################
+
+### c_qulv
+# QULV
+286 = {
+	culture = xu
+	religion = yili
+	holding = castle_holding
+}
+# QINSHI
+2255 = {
+	holding = none
+}
+
+
+### c_hong1
+# HONG1
+586 = {
+	culture = xu
+	religion = yili
+	holding = castle_holding
+}
+
+
+### c_gaixia
+# GAIXIA
+587 = {
+	culture = xu
+	religion = yili
+	holding = castle_holding
+}
+
+
+##### d_baimingshi ############################
+
+### c_qiuyou
+# QIUYOU
+2249 = {
+	culture = xu
+	religion = yili
+	holding = castle_holding
+}
+
+
+### c_laoling1
+# LAOLING1
+2252 = {
+	culture = xu
+	religion = yili
+	holding = castle_holding
+}
+# SIYANG
+293 = {
+	holding = none
+}
+
+
+### c_suyu
+# SUYU
+2253 = {
+	culture = xu
+	religion = yili
+	holding = castle_holding
+}
+# QINGHE
+2251 = {
+	holding = none
+}
+
+

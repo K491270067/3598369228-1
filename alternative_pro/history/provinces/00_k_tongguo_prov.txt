@@ -1,0 +1,48 @@
+﻿##### d_tongshi ############################
+
+### c_wucheng1
+# WUCHENG1
+851 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_tong1
+# TONG1
+853 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+# ZHENG
+852 = {
+	holding = none
+}
+
+
+##### d_tongchengshi ############################
+
+### c_hu1
+# HU1
+848 = {
+	culture = xiaren
+	religion = xiali
+	holding = castle_holding
+}
+
+
+### c_yinjin
+# YINJIN
+849 = {
+	culture = xiaren
+	religion = xiali
+	holding = castle_holding
+}
+# PINGSHU
+850 = {
+	holding = none
+}
+
+

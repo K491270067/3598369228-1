@@ -1,0 +1,160 @@
+﻿##### d_yushi5 ############################
+
+### c_jicheng
+
+
+### c_zhaoyang
+# ZHAOYANG
+3490 = {
+	holding = none
+}
+# JICHENG
+3492 = {
+	holding = none
+}
+# YANGAN
+3788 = {
+	holding = none
+}
+
+
+### c_yinliangchuan
+
+
+### c_tuhuzhen
+
+
+### c_pinggang
+# PINGGANG
+3507 = {
+	holding = none
+}
+# YINLIANGCHUAN
+3515 = {
+	holding = none
+}
+# CHUHE
+3789 = {
+	holding = none
+}
+# TUHUZHEN
+3516 = {
+	holding = none
+}
+
+
+### c_yangan
+
+
+### c_chuhe
+
+
+### c_damogan
+
+
+### c_qielv
+
+
+### c_poyetou
+
+
+### c_yuedai
+
+
+### c_baozu
+# BAOZU
+3794 = {
+	holding = none
+}
+# YUJIA
+3795 = {
+	holding = none
+}
+# YUEDAI
+3793 = {
+	holding = none
+}
+# POYETOU
+3792 = {
+	holding = none
+}
+# QIELV
+3791 = {
+	holding = none
+}
+
+
+### c_yujia
+
+
+### c_wujie
+# WUJIE
+3796 = {
+	holding = none
+}
+# CHILI1
+3797 = {
+	holding = none
+}
+# BIHAN
+3798 = {
+	holding = none
+}
+
+
+### c_chili1
+
+
+### c_bihan
+
+
+### c_gouze
+
+
+### c_qiqiu
+# QIQIU
+3802 = {
+	holding = none
+}
+# GOUZE
+3801 = {
+	holding = none
+}
+# YUFEN
+3804 = {
+	holding = none
+}
+# DAMOGAN
+3790 = {
+	holding = none
+}
+
+
+### c_guizhu
+
+
+### c_yufen
+
+
+### c_xianping1
+
+
+### c_huye
+# HUYE
+3813 = {
+	holding = none
+}
+# SAGU
+3812 = {
+	holding = none
+}
+# XIANPING1
+3811 = {
+	holding = none
+}
+# GUIZHU
+3803 = {
+	holding = none
+}
+
+

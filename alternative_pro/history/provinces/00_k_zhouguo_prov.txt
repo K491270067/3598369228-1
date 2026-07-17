@@ -1,0 +1,79 @@
+﻿##### d_zhoushi ############################
+
+### c_wu
+# WU
+139 = {
+	culture = qi
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+### c_ping1
+# PING1
+140 = {
+	culture = qi
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+### c_yuanling
+# YUANLING
+141 = {
+	culture = qi
+	religion = dongzhouli
+	holding = castle_holding
+}
+# SANGDU
+2214 = {
+	holding = none
+}
+
+
+### c_anqiu
+# ANQIU
+144 = {
+	culture = qi
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+##### d_chunyushi ############################
+
+### c_chunyu
+# CHUNYU
+143 = {
+	culture = qi
+	religion = dongzhouli
+	holding = castle_holding
+}
+# CHANGAN1
+2213 = {
+	holding = none
+}
+# CHENGXIANG
+2215 = {
+	holding = none
+}
+
+
+### c_zhi7
+# ZHI7
+2226 = {
+	culture = qi
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+### c_zi1
+# ZI1
+202 = {
+	culture = qi
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+

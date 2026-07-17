@@ -1,0 +1,194 @@
+﻿###################闇濈埗鍥?闇濈埗姘?
+lingfushi1={
+  name="qiu"
+  dynasty=xin597
+	religion="yili" 
+	culture="dongyi"
+  father=han870
+  
+  3589.1.1 = {
+		birth = yes
+	}
+  3651.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+lingfushi2={
+  name="xingfu"
+  dynasty_house=house_xin598
+	religion="yili" 
+	culture="dongyi"
+  father=lingfushi1
+  
+  3623.1.1 = {
+		birth = yes
+	}
+  3682.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+lingfushi3={
+  name="wo"
+  dynasty_house=house_xin598
+	religion="yili" 
+	culture="dongyi"
+  father=lingfushi2
+  
+  3670.1.1 = {
+		birth = yes
+	}
+  3723.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+lingfushi4={
+  name="dan2"
+  dynasty_house=house_xin598
+	religion="yili" 
+	culture="dongyi"
+  father=lingfushi3
+  
+  3714.1.1 = {
+		birth = yes
+	}
+  3772.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+lingfushi5={
+  name="jiang"
+  dynasty_house=house_xin598
+	religion="yili" 
+	culture="dongyi"
+  father=lingfushi4
+  
+  3768.1.1 = {
+		birth = yes
+	}
+  3815.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+lingfushi6={
+  name="she"
+  dynasty_house=house_xin598
+	religion="yili" 
+	culture="dongyi"
+  father=lingfushi5
+  
+  3796.1.1 = {
+		birth = yes
+	}
+  3843.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+lingfushi7={
+  name="nanming1115"
+  dynasty_house=house_xin598
+	religion="yili" 
+	culture="dongyi"
+  father=lingfushi6
+  
+  3818.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+lingfushi8={
+  name="qi1"
+  dynasty_house=house_xin598
+	religion="yili" 
+	culture="dongyi"
+  father=lingfushi7
+  
+  3836.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+lingfushi9={
+  name="heijiang"
+  dynasty_house=house_xin598
+	religion="yili" 
+	culture="dongyi"
+  father=lingfushi7
+  
+  3838.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+lingfushi10={
+  name="nvming145"
+  dynasty_house=house_xin598
+	religion="yili" 
+	culture="dongyi"
+  father=lingfushi7
+  female=yes
+  
+  3840.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+lingfushi11={
+  name="nvming167"
+  dynasty_house=house_xin598
+	religion="yili" 
+	culture="dongyi"
+  father=lingfushi7
+  female=yes
+  
+  3842.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+#############缁庢皬
+lingfushi12={
+  name="nanming711"
+  dynasty_house=house_xin251
+	religion="yili" 
+	culture="dongyi"
+  father=niguo1
+
+  3839.2.2 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}

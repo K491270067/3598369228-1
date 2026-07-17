@@ -1,0 +1,730 @@
+﻿########## 莒国-己姓 ##########
+han778={
+  name="ziyuqi"#始封君
+  dynasty=xin404
+	religion="yili" 
+	culture="dongyi"
+	father=han1731
+
+  3546.1.1 = {
+		birth = yes
+	}
+  3603.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han779={
+  name="shu6"#周成王时
+  dynasty_house=house_xin31
+	religion="yili" 
+	culture="dongyi"
+  father=han778
+
+  3590.1.1 = {
+		birth = yes
+	}
+  3643.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han780={
+  name="pin2"
+  dynasty_house=house_xin31
+	religion="yili" 
+	culture="dongyi"
+  father=han779
+
+  3609.1.1 = {
+		birth = yes
+	}
+  3660.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han781={
+  name="lei"
+  dynasty_house=house_xin31
+	religion="yili" 
+	culture="dongyi"
+  father=han780
+
+  3630.1.1 = {
+		birth = yes
+	}
+  3693.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han782={
+  name="bu3"
+  dynasty_house=house_xin31
+	religion="yili" 
+	culture="dongyi"
+  father=han781
+
+  3679.1.1 = {
+		birth = yes
+	}
+  3717.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han783={
+  name="kuang1"
+  dynasty_house=house_xin31
+	religion="yili" 
+	culture="dongyi"
+  father=han782
+
+  3701.1.1 = {
+		birth = yes
+	}
+  3754.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han784={
+  name="yu13"
+  dynasty_house=house_xin31
+	religion="yili" 
+	culture="dongyi"
+  father=han783
+
+  3732.1.1 = {
+		birth = yes
+	}
+  3771.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han785={
+  name="chu5"
+  dynasty_house=house_xin31
+	religion="yili" 
+	culture="dongyi"
+  father=han784
+
+  3762.1.1 = {
+		birth = yes
+	}
+  3812.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han786={
+  name="dan6"
+  dynasty_house=house_xin31
+	religion="yili" 
+	culture="dongyi"
+  father=han785
+
+  3789.1.1 = {
+		birth = yes
+	}
+  3824.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han787={
+  name="liu4"
+  dynasty_house=house_xin31
+	religion="yili" 
+	culture="dongyi"
+  father=han786
+
+  3807.1.1 = {
+		birth = yes
+	}
+  3829.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han788={
+  name="luan1"#平王东迁时莒国国君，游戏开局时29岁
+  dynasty_house=house_xin31
+	religion="yili" 
+	culture="dongyi"
+  father=han787
+
+  3827.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han789={
+  name="ye1"#储君1号
+  dynasty_house=house_xin31
+	religion="yili" 
+	culture="dongyi"
+  father=han788
+
+  3845.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han790={
+  name="bai1"#储君2号，游戏开局时7岁
+  dynasty_house=house_xin31
+	religion="yili" 
+	culture="dongyi"
+  father=han788
+
+  3846.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han791={
+  name="luan2"#储君3号，游戏开局时5岁
+  dynasty_house=house_xin31
+	religion="yili" 
+	culture="dongyi"
+  father=han788
+
+  3847.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han792={
+  name="ai2"#女1号，游戏开局时6岁
+  dynasty_house=house_xin31
+	religion="yili" 
+	culture="dongyi"
+  father=han788
+  female=yes
+
+  3846.2.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han793={
+  name="mei6"#女2号，游戏开局时5岁
+  dynasty_house=house_xin31
+	religion="yili" 
+	culture="dongyi"
+  father=han788
+  female=yes
+
+  3848.2.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han794={
+  name="bin1"#弟1号
+  dynasty_house=house_xin31
+	religion="yili" 
+	culture="dongyi"
+  father=han787
+
+  3828.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han795={
+  name="zhou2"#弟2号
+  dynasty_house=house_xin31
+	religion="yili" 
+	culture="dongyi"
+  father=han787
+
+  3828.12.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+####计氏####
+han796={
+  name="zhu4"
+  dynasty_house=house_baijia113
+	religion="yili" 
+	culture="dongyi"
+  father=han782
+
+  3702.1.1 = {
+		birth = yes
+	}
+  3754.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han797={
+  name="li1"
+  dynasty_house=house_baijia113
+	religion="yili" 
+	culture="dongyi"
+  father=han796
+
+  3732.1.1 = {
+		birth = yes
+	}
+  3771.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han798={
+  name="hao"
+  dynasty_house=house_baijia113
+	religion="yili" 
+	culture="dongyi"
+  father=han797
+
+  3762.1.1 = {
+		birth = yes
+	}
+  3812.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han799={
+  name="shen"
+  dynasty_house=house_baijia113
+	religion="yili" 
+	culture="dongyi"
+  father=han798
+
+  3789.1.1 = {
+		birth = yes
+	}
+  3824.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han800={
+  name="xian1"
+  dynasty_house=house_baijia113
+	religion="yili" 
+	culture="dongyi"
+  father=han799
+
+  3807.1.1 = {
+		birth = yes
+	}
+  3829.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han801={
+  name="xuwu"#平王东迁时
+  dynasty_house=house_baijia113
+	religion="yili" 
+	culture="dongyi"
+  father=han800
+
+  3827.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han802={
+  name="dan3"#储君1号
+  dynasty_house=house_baijia113
+	religion="yili" 
+	culture="dongyi"
+  father=han801
+
+  3845.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han803={
+  name="zaikong"#储君2号，游戏开局时7岁
+  dynasty_house=house_baijia113
+	religion="yili" 
+	culture="dongyi"
+  father=han801
+
+  3846.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han804={
+  name="yu3"#储君3号，游戏开局时5岁
+  dynasty_house=house_baijia113
+	religion="yili" 
+	culture="dongyi"
+  father=han801
+
+  3847.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han805={
+  name="fu6"#女1号，游戏开局时6岁
+  dynasty_house=house_baijia113
+	religion="yili" 
+	culture="dongyi"
+  father=han801
+  female=yes
+
+  3846.2.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+##########兹氏
+juguo1={
+  name="nanming780"
+  dynasty_house=house_xin405
+	religion="yili" 
+	culture="dongyi"
+  father=han783
+
+  3742.1.1 = {
+		birth = yes
+	}
+  3771.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+juguo2={
+  name="nanming792"
+  dynasty_house=house_xin405
+	religion="yili" 
+	culture="dongyi"
+  father=juguo1
+
+  3762.1.1 = {
+		birth = yes
+	}
+  3812.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+juguo3={
+  name="nanming906"
+  dynasty_house=house_xin405
+	religion="yili" 
+	culture="dongyi"
+  father=juguo2
+
+  3789.1.1 = {
+		birth = yes
+	}
+  3824.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+juguo4={
+  name="nanming927"
+  dynasty_house=house_xin405
+	religion="yili" 
+	culture="dongyi"
+  father=juguo3
+
+  3807.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+juguo5={
+  name="nanming947"#储君1号
+  dynasty_house=house_xin405
+	religion="yili" 
+	culture="dongyi"
+  father=juguo4
+
+  3827.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+juguo6={
+  name="nanming960"#储君2号，游戏开局时7岁
+  dynasty_house=house_xin405
+	religion="yili" 
+	culture="dongyi"
+  father=juguo4
+
+  3828.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+juguo7={
+  name="nanming966"#储君3号，游戏开局时5岁
+  dynasty_house=house_xin405
+	religion="yili" 
+	culture="dongyi"
+  father=juguo4
+
+  3829.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+juguo8={
+  name="qi9"#女1号，游戏开局时6岁
+  dynasty_house=house_xin405
+	religion="yili" 
+	culture="dongyi"
+  father=juguo4
+  female=yes
+
+  3830.2.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+juguo9={
+  name="yan11"#女2号，游戏开局时5岁
+  dynasty_house=house_xin405
+	religion="yili" 
+	culture="dongyi"
+  father=juguo4
+  female=yes
+
+  3832.2.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+#######且于氏
+juguo10={
+  name="nanming888"
+  dynasty_house=house_xin406
+	religion="yili" 
+	culture="dongyi"
+  father=han786
+
+  3820.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+juguo11={
+  name="nanming1021"#储君1号
+  dynasty_house=house_xin406
+	religion="yili" 
+	culture="dongyi"
+  father=juguo10
+
+  3840.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+juguo12={
+  name="nanming1049"#储君2号，游戏开局时7岁
+  dynasty_house=house_xin406
+	religion="yili" 
+	culture="dongyi"
+  father=juguo10
+
+  3841.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+juguo13={
+  name="e2"#储君3号，游戏开局时5岁
+  dynasty_house=house_xin406
+	religion="yili" 
+	culture="dongyi"
+  father=juguo10
+  female=yes
+
+  3842.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+juguo14={
+  name="li6"#女1号，游戏开局时6岁
+  dynasty_house=house_xin406
+	religion="yili" 
+	culture="dongyi"
+  father=juguo10
+  female=yes
+
+  3843.2.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+#########郓氏
+juguo15={
+  name="nanming897"
+  dynasty_house=house_xin407
+	religion="yili" 
+	culture="dongyi"
+  father=han785
+
+  3800.1.1 = {
+		birth = yes
+	}
+  3835.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+juguo16={
+  name="nanming901"
+  dynasty_house=house_xin407
+	religion="yili" 
+	culture="dongyi"
+  father=juguo15
+
+  3818.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+juguo17={
+  name="nanming904"#储君1号
+  dynasty_house=house_xin407
+	religion="yili" 
+	culture="dongyi"
+  father=juguo16
+
+  3837.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+juguo18={
+  name="nanming909"#储君2号，游戏开局时7岁
+  dynasty_house=house_xin407
+	religion="yili" 
+	culture="dongyi"
+  father=juguo16
+
+  3838.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+juguo19={
+  name="nvming54"#女1号，游戏开局时6岁
+  dynasty_house=house_xin407
+	religion="yili" 
+	culture="dongyi"
+  father=juguo16
+  female=yes
+
+  3839.2.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+juguo20={
+  name="nvming57"#女2号，游戏开局时5岁
+  dynasty_house=house_xin407
+	religion="yili" 
+	culture="dongyi"
+  father=juguo16
+  female=yes
+
+  3840.2.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}

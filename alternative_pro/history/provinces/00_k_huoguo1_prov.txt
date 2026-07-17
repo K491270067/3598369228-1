@@ -1,0 +1,61 @@
+﻿##### d_huoshi1 ############################
+
+### c_huo3
+# HUO3
+3012 = {
+	culture = yinshang
+	religion = yinli
+	holding = castle_holding
+}
+# WUJING
+3029 = {
+	holding = none
+}
+
+
+### c_wuxiao
+# WUXIAO
+3026 = {
+	culture = yinshang
+	religion = yinli
+	holding = castle_holding
+}
+
+
+### c_anjin
+# ANJIN
+3028 = {
+	culture = yinshang
+	religion = yinli
+	holding = castle_holding
+}
+# QIANER
+3027 = {
+	holding = none
+}
+
+
+##### d_gengshi2 ############################
+
+### c_wangzuo
+# WANGZUO
+3030 = {
+	culture = yinshang
+	religion = yinli
+	holding = castle_holding
+}
+# XIE2
+3025 = {
+	holding = none
+}
+
+
+### c_mingyu
+# MINGYU
+3024 = {
+	culture = yinshang
+	religion = yinli
+	holding = castle_holding
+}
+
+

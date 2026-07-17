@@ -1,0 +1,745 @@
+﻿### 瑙傚浗涓栫郴锛屾瑙備箣鍚?###
+wuguan1={
+  name="duan"#姝﹁涔嬪瓙
+  dynasty_house=house_xin500
+	religion="xiali" 
+	culture="xiaren"
+  father=han1367
+
+  2571.1.2 = {
+		birth = yes
+	}
+  2628.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+wuguan2={
+  name="si3"
+  dynasty_house=house_xin500
+	religion="xiali" 
+	culture="xiaren"
+  father=wuguan1
+
+  2617.1.2 = {
+		birth = yes
+	}
+  2681.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+wuguan3={
+  name="su2"
+  dynasty_house=house_xin500
+	religion="xiali" 
+	culture="xiaren"
+  father=wuguan2
+
+  2653.1.2 = {
+		birth = yes
+	}
+  2704.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+wuguan4={
+  name="jie2"
+  dynasty_house=house_xin500
+	religion="xiali" 
+	culture="xiaren"
+  father=wuguan3
+
+  2689.1.2 = {
+		birth = yes
+	}
+  2748.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+wuguan5={
+  name="zhongsheng"
+  dynasty_house=house_xin500
+	religion="xiali" 
+	culture="xiaren"
+  father=wuguan4
+
+  2727.1.2 = {
+		birth = yes
+	}
+  2781.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+wuguan6={
+  name="tong1"
+  dynasty_house=house_xin500
+	religion="xiali" 
+	culture="xiaren"
+  father=wuguan5
+
+  2772.1.2 = {
+		birth = yes
+	}
+  2838.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+wuguan7={
+  name="bo4"
+  dynasty_house=house_xin500
+	religion="xiali" 
+	culture="xiaren"
+  father=wuguan6
+
+  2822.1.2 = {
+		birth = yes
+	}
+  2882.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+wuguan8={
+  name="li2"
+  dynasty_house=house_xin500
+	religion="xiali" 
+	culture="xiaren"
+  father=wuguan7
+
+  2867.1.2 = {
+		birth = yes
+	}
+  2911.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+wuguan9={
+  name="kun1"
+  dynasty_house=house_xin500
+	religion="xiali" 
+	culture="xiaren"
+  father=wuguan8
+
+  2890.1.2 = {
+		birth = yes
+	}
+  2966.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+wuguan10={
+  name="ke2"
+  dynasty_house=house_xin500
+	religion="xiali" 
+	culture="xiaren"
+  father=wuguan9
+
+  2937.1.2 = {
+		birth = yes
+	}
+  3000.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+wuguan11={
+  name="qiushou"
+  dynasty_house=house_xin500
+	religion="xiali" 
+	culture="xiaren"
+  father=wuguan10
+
+  2982.1.2 = {
+		birth = yes
+	}
+  3049.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+wuguan12={
+  name="suoshi"
+  dynasty_house=house_xin500
+	religion="xiali" 
+	culture="xiaren"
+  father=wuguan11
+
+  3027.1.2 = {
+		birth = yes
+	}
+  3091.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+wuguan13={
+  name="gu1"
+  dynasty_house=house_xin500
+	religion="xiali" 
+	culture="xiaren"
+  father=wuguan12
+
+  3074.1.2 = {
+		birth = yes
+	}
+  3121.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+wuguan14={
+  name="ke3"
+  dynasty_house=house_xin500
+	religion="xiali" 
+	culture="xiaren"
+  father=wuguan13
+
+  3109.1.2 = {
+		birth = yes
+	}
+  3173.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+wuguan15={
+  name="yao3"
+  dynasty_house=house_xin500
+	religion="xiali" 
+	culture="xiaren"
+  father=wuguan14
+
+  3158.1.2 = {
+		birth = yes
+	}
+  3211.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+wuguan16={
+  name="du1"
+  dynasty_house=house_xin500
+	religion="xiali" 
+	culture="xiaren"
+  father=wuguan15
+
+  3192.1.2 = {
+		birth = yes
+	}
+  3264.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+wuguan17={
+  name="liang"
+  dynasty_house=house_xin500
+	religion="xiali" 
+	culture="xiaren"
+  father=wuguan16
+
+  3259.1.2 = {
+		birth = yes
+	}
+  3311.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+wuguan18={
+  name="zaikong"
+  dynasty_house=house_xin500
+	religion="xiali" 
+	culture="xiaren"
+  father=wuguan17
+
+  3303.1.2 = {
+		birth = yes
+	}
+  3374.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+wuguan19={
+  name="yu3"
+  dynasty_house=house_xin500
+	religion="xiali" 
+	culture="xiaren"
+  father=wuguan18
+
+  3361.1.2 = {
+		birth = yes
+	}
+  3413.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+wuguan20={
+  name="jiao"
+  dynasty_house=house_xin500
+	religion="xiali" 
+	culture="xiaren"
+  father=wuguan19
+
+  3404.1.2 = {
+		birth = yes
+	}
+  3471.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+wuguan21={
+  name="ji3"
+  dynasty_house=house_xin500
+	religion="xiali" 
+	culture="xiaren"
+  father=wuguan20
+
+  3467.1.2 = {
+		birth = yes
+	}
+  3521.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+wuguan22={
+  name="xi4"
+  dynasty_house=house_xin500
+	religion="xiali" 
+	culture="xiaren"
+  father=wuguan21
+
+  3517.1.2 = {
+		birth = yes
+	}
+  3581.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+wuguan23={
+  name="xiqi"
+  dynasty_house=house_xin500
+	religion="xiali" 
+	culture="xiaren"
+  father=wuguan22
+
+  3573.1.2 = {
+		birth = yes
+	}
+  3629.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+wuguan24={
+  name="yigao"
+  dynasty_house=house_xin500
+	religion="xiali" 
+	culture="xiaren"
+  father=wuguan23
+
+  3611.1.2 = {
+		birth = yes
+	}
+  3677.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+wuguan25={
+  name="zhi2"
+  dynasty_house=house_xin500
+	religion="xiali" 
+	culture="xiaren"
+  father=wuguan24
+
+  3659.1.2 = {
+		birth = yes
+	}
+  3708.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+wuguan26={
+  name="lu"
+  dynasty_house=house_xin500
+	religion="xiali" 
+	culture="xiaren"
+  father=wuguan25
+
+  3688.1.2 = {
+		birth = yes
+	}
+  3747.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+wuguan27={
+  name="ji4"
+  dynasty_house=house_xin500
+	religion="xiali" 
+	culture="xiaren"
+  father=wuguan26
+
+  3727.1.2 = {
+		birth = yes
+	}
+  3788.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+wuguan28={
+  name="fang"
+  dynasty_house=house_xin500
+	religion="xiali" 
+	culture="xiaren"
+  father=wuguan27
+
+  3763.1.2 = {
+		birth = yes
+	}
+  3818.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+wuguan29={
+  name="xuan2"#骞崇帇涓滆縼鏃惰鍥藉浗鍚涳紝娓告垙寮€灞€鏃?9宀?
+  dynasty_house=house_xin500
+	religion="xiali" 
+	culture="xiaren"
+  father=wuguan28
+
+  3807.1.2 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+wuguan30={
+  name="nen"#鍌ㄥ悰1鍙凤紝娓告垙寮€灞€鏃?6宀?
+  dynasty_house=house_xin500
+	religion="xiali" 
+	culture="xiaren"
+  father=wuguan29
+
+  3825.1.2 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+wuguan31={
+  name="xiu1"#鍌ㄥ悰2鍙凤紝娓告垙寮€灞€鏃?3宀?
+  dynasty_house=house_xin500
+	religion="xiali" 
+	culture="xiaren"
+  father=wuguan29
+
+  3827.1.2 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+wuguan32={
+  name="hui"#鍌ㄥ悰3鍙凤紝娓告垙寮€灞€鏃?宀?
+  dynasty_house=house_xin500
+	religion="xiali" 
+	culture="xiaren"
+  father=wuguan29
+
+  3829.1.2 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+wuguan33={
+  name="nvming87"#濂?鍙凤紝娓告垙寮€灞€鏃?7宀?
+  dynasty_house=house_xin500
+	religion="xiali" 
+	culture="xiaren"
+  father=wuguan29
+  female=yes
+
+  3830.1.2 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+wuguan34={
+  name="nvming108"#濂?鍙凤紝娓告垙寮€灞€鏃?2宀?
+  dynasty_house=house_xin500
+	religion="xiali" 
+	culture="xiaren"
+  father=wuguan29
+  female=yes
+
+  3832.1.2 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+#############鍦夋皬
+wuguan35={
+  name="zhe"#骞崇帇涓滆縼鏃惰鍥藉浗鍚涳紝娓告垙寮€灞€鏃?9宀?
+  dynasty_house=house_xin501
+	religion="xiali" 
+	culture="xiaren"
+  father=wuguan28
+
+  3812.1.2 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+wuguan36={
+  name="huisun"
+  dynasty_house=house_xin501
+	religion="xiali" 
+	culture="xiaren"
+  father=wuguan35
+
+  3830.1.2 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+wuguan37={
+  name="buyi"
+  dynasty_house=house_xin501
+	religion="xiali" 
+	culture="xiaren"
+  father=wuguan35
+
+  3831.1.2 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+wuguan38={
+  name="gun"
+  dynasty_house=house_xin501
+	religion="xiali" 
+	culture="xiaren"
+  father=wuguan35
+
+  3832.1.2 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+wuguan39={
+  name="nvming128"
+  dynasty_house=house_xin501
+	religion="xiali" 
+	culture="xiaren"
+  father=wuguan35
+  female=yes
+
+  3833.1.2 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+wuguan40={
+  name="nvming140"
+  dynasty_house=house_xin501
+	religion="xiali" 
+	culture="xiaren"
+  father=wuguan35
+  female=yes
+
+  3834.1.2 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+###############楝绘皬
+wuguan41={
+  name="nanming521"#骞崇帇涓滆縼鏃惰鍥藉浗鍚涳紝娓告垙寮€灞€鏃?9宀?
+  dynasty_house=house_xin502
+	religion="xiali" 
+	culture="xiaren"
+  father=wuguan28
+
+  3813.1.2 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+wuguan42={
+  name="nanming534"
+  dynasty_house=house_xin502
+	religion="xiali" 
+	culture="xiaren"
+  father=wuguan41
+
+  3831.1.2 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+wuguan43={
+  name="nanming543"
+  dynasty_house=house_xin502
+	religion="xiali" 
+	culture="xiaren"
+  father=wuguan41
+
+  3832.1.2 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+wuguan44={
+  name="nanming600"
+  dynasty_house=house_xin502
+	religion="xiali" 
+	culture="xiaren"
+  father=wuguan41
+
+  3833.1.2 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+wuguan45={
+  name="nvming95"
+  dynasty_house=house_xin502
+	religion="xiali" 
+	culture="xiaren"
+  father=wuguan41
+  female=yes
+
+  3834.1.2 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+wuguan46={
+  name="nvming98"
+  dynasty_house=house_xin502
+	religion="xiali" 
+	culture="xiaren"
+  father=wuguan41
+  female=yes
+
+  3835.1.2 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}

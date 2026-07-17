@@ -1,0 +1,51 @@
+﻿##### d_yingshi ############################
+
+### c_niulan
+# NIULAN
+1636 = {
+	holding = none
+}
+
+
+### c_luyang
+# LUYANG
+1637 = {
+	holding = none
+}
+
+
+### c_ying2
+# YING2
+1640 = {
+	holding = none
+}
+
+
+### c_luguan
+# LUGUAN
+1641 = {
+	holding = none
+}
+
+
+### c_shangrong
+# SHANGRONG
+1642 = {
+	holding = none
+}
+
+
+### c_raojiao
+# RAOJIAO
+1643 = {
+	holding = none
+}
+
+
+### c_xu5
+# XU5
+1644 = {
+	holding = none
+}
+
+

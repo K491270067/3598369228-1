@@ -1,0 +1,179 @@
+﻿d_donglaishi = {
+	3574.1.1 = {
+		liege = "k_donglaiguo"
+		holder = donglai1
+	}
+	3600.1.1 = {
+		holder = donglai2
+	}
+	3635.1.1 = {
+		holder = donglai3
+	}
+	3688.1.1 = {
+		holder = donglai4
+	}
+	3716.1.1 = {
+		holder = donglai5
+	}
+	3765.1.1 = {
+		holder = donglai6
+	}
+	3809.1.1 = {
+		holder = donglai7
+	}
+	3839.1.1 = {
+		holder = donglai8
+	}
+}
+d_hanshi3 = {
+	2688.12.31 = {
+		holder = donglai34
+	}
+	2734.12.31 = {
+		holder = donglai35
+	}
+	2785.12.31 = {
+		holder = donglai36
+	}
+	2811.12.31 = {
+		holder = donglai37
+	}
+	2854.12.31 = {
+		holder = donglai38
+	}
+	2890.12.31 = {
+		holder = donglai39
+	}
+	2924.12.31 = {
+		holder = donglai40
+	}
+	2980.12.31 = {
+		holder = donglai41
+	}
+	3021.12.31 = {
+		holder = donglai42
+	}
+	3062.12.31 = {
+		holder = donglai43
+	}
+	3113.12.31 = {
+		holder = donglai44
+	}
+	3170.12.31 = {
+		holder = donglai45
+	}
+	3218.12.31 = {
+		holder = donglai46
+	}
+	3274.12.31 = {
+		holder = donglai47
+	}
+	3333.12.31 = {
+		holder = donglai48
+	}
+	3388.12.31 = {
+		holder = donglai49
+	}
+	3439.12.31 = {
+		holder = donglai50
+	}
+	3501.12.31 = {
+		holder = donglai51
+	}
+	3555.12.31 = {
+		holder = donglai52
+	}
+	3600.12.31 = {
+		liege = "k_donglaiguo"
+		holder = donglai53
+	}
+	3651.12.31 = {
+		holder = donglai54
+	}
+	3702.12.31 = {
+		holder = donglai55
+	}
+	3760.12.31 = {
+		holder = donglai56
+	}
+	3806.12.31 = {
+		holder = donglai57
+		government = feudal_government
+	}
+}
+d_jiceshi = {
+	3020.1.1 = {
+		holder = jice6
+	}
+	3066.1.1 = {
+		holder = jice7
+	}
+	3123.1.1 = {
+		holder = jice8
+	}
+	3189.1.1 = {
+		holder = donglai13
+	}
+	3222.1.1 = {
+		holder = donglai14
+	}
+	3260.1.1 = {
+		holder = donglai15
+	}
+	3333.1.1 = {
+		holder = donglai16
+	}
+	3400.1.1 = {
+		holder = donglai17
+	}
+	3488.1.1 = {
+		holder = donglai18
+	}
+	3555.1.1 = {
+		holder = donglai19
+	}
+	3621.1.1 = {
+		liege = "k_donglaiguo"
+		holder = donglai20
+	}
+	3700.1.1 = {
+		holder = donglai21
+	}
+	3753.1.1 = {
+		holder = donglai22
+	}
+	3800.1.1 = {
+		holder = donglai23
+	}
+	3848.1.1 = {
+		holder = donglai24
+		government = feudal_government
+	}
+}
+k_donglaiguo = {
+	3574.1.1 = {
+		holder = donglai1
+	}
+	3600.1.1 = {
+		holder = donglai2
+	}
+	3635.1.1 = {
+		holder = donglai3
+	}
+	3688.1.1 = {
+		holder = donglai4
+	}
+	3716.1.1 = {
+		holder = donglai5
+	}
+	3765.1.1 = {
+		holder = donglai6
+	}
+	3809.1.1 = {
+		holder = donglai7
+	}
+	3839.1.1 = {
+		holder = donglai8
+		government = feudal_government
+	}
+}

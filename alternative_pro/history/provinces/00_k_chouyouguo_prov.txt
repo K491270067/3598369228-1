@@ -1,0 +1,119 @@
+﻿##### d_chouyoushi ############################
+
+### c_chouyou
+# CHOUYOU
+339 = {
+	culture = baidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+# MANLI
+325 = {
+	holding = none
+}
+
+
+### c_mashou
+# MASHOU
+340 = {
+	culture = baidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+# SHOUYIN
+2578 = {
+	holding = none
+}
+
+
+### c_shangai
+# SHANGAI
+331 = {
+	culture = baidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+# DAYAOGU
+2580 = {
+	holding = none
+}
+
+
+##### d_qiuwushi ############################
+
+### c_yin7
+# YIN7
+2579 = {
+	culture = baidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+
+
+### c_pingdu1
+# PINGDU1
+1168 = {
+	culture = baidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+# ZHAN
+1150 = {
+	holding = none
+}
+
+
+### c_queyu2
+# QUEYU2
+1146 = {
+	culture = baidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+# YUANQIU
+2583 = {
+	holding = none
+}
+
+
+##### d_chizhangshi ############################
+
+### c_jingxingsai
+# JINGXINGSAI
+296 = {
+	culture = baidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+# WUXING
+324 = {
+	holding = none
+}
+
+
+### c_leping
+# LEPING
+337 = {
+	culture = baidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+# SHANGU
+2582 = {
+	holding = none
+}
+
+
+### c_chizhang
+# CHIZHANG
+2581 = {
+	culture = baidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+# SHANGYUAN
+328 = {
+	holding = none
+}
+
+

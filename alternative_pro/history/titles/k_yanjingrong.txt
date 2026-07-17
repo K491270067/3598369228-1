@@ -1,0 +1,146 @@
+﻿d_langshi = {
+	3480.1.1 = {
+		liege = "k_yanjingrong"
+		holder = yunxingyanjingrong1
+	}
+	3543.12.31 = {
+		holder = yunxingyanjingrong2
+	}
+	3569.12.31 = {
+		holder = yunxingyanjingrong3
+	}
+	3595.12.31 = {
+		holder = yunxingyanjingrong4
+	}
+	3620.12.31 = {
+		holder = yunxingyanjingrong5
+	}
+	3645.12.31 = {
+		holder = yunxingyanjingrong6
+	}
+	3670.12.31 = {
+		holder = yunxingyanjingrong7
+	}
+	3695.12.31 = {
+		holder = yunxingyanjingrong8
+	}
+	3720.12.31 = {
+		holder = yunxingyanjingrong9
+	}
+	3745.12.31 = {
+		holder = yunxingyanjingrong10
+	}
+	3770.12.31 = {
+		holder = yunxingyanjingrong11
+	}
+	3795.12.31 = {
+		holder = yunxingyanjingrong12
+	}
+	3820.12.31 = {
+		holder = yunxingyanjingrong13
+	}
+	3838.12.31 = {
+		holder = yunxingyanjingrong25
+	}
+	3849.1.1 = {
+		change_development_level = 25
+		government = tribal_government
+	}
+}
+d_yanfushi = {
+	3480.1.1 = {
+		liege = "k_yanjingrong"
+		holder = yunxingyanjingrong1
+	}
+	3543.12.31 = {
+		holder = yunxingyanjingrong2
+	}
+	3569.12.31 = {
+		holder = yunxingyanjingrong3
+	}
+	3595.12.31 = {
+		holder = yunxingyanjingrong4
+	}
+	3620.12.31 = {
+		holder = yunxingyanjingrong5
+	}
+	3645.12.31 = {
+		holder = yunxingyanjingrong6
+	}
+	3670.12.31 = {
+		holder = yunxingyanjingrong7
+	}
+	3695.12.31 = {
+		holder = yunxingyanjingrong8
+	}
+	3720.12.31 = {
+		holder = yunxingyanjingrong9
+	}
+	3745.12.31 = {
+		holder = yunxingyanjingrong10
+	}
+	3770.12.31 = {
+		holder = yunxingyanjingrong11
+	}
+	3795.12.31 = {
+		holder = yunxingyanjingrong12
+	}
+	3820.12.31 = {
+		holder = yunxingyanjingrong13
+	}
+	3838.12.31 = {
+		holder = yunxingyanjingrong20
+	}
+	3849.1.1 = {
+		change_development_level = 26
+		government = tribal_government
+	}
+}
+k_yanjingrong = {
+	3480.1.1 = {
+		holder = yunxingyanjingrong1
+	}
+	3543.12.31 = {
+		holder = yunxingyanjingrong2
+	}
+	3569.12.31 = {
+		holder = yunxingyanjingrong3
+	}
+	3595.12.31 = {
+		holder = yunxingyanjingrong4
+	}
+	3620.12.31 = {
+		holder = yunxingyanjingrong5
+	}
+	3645.12.31 = {
+		holder = yunxingyanjingrong6
+	}
+	3670.12.31 = {
+		holder = yunxingyanjingrong7
+	}
+	3695.12.31 = {
+		holder = yunxingyanjingrong8
+	}
+	3720.12.31 = {
+		holder = yunxingyanjingrong9
+	}
+	3745.12.31 = {
+		holder = yunxingyanjingrong10
+	}
+	3770.12.31 = {
+		holder = yunxingyanjingrong11
+	}
+	3795.12.31 = {
+		holder = yunxingyanjingrong12
+	}
+	3820.12.31 = {
+		holder = yunxingyanjingrong13
+	}
+	3838.12.31 = {
+		holder = yunxingyanjingrong14
+	}
+	3849.12.31 = {
+		government = tribal_government
+		change_development_level = 28
+	}
+}

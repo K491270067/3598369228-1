@@ -1,0 +1,65 @@
+﻿##### d_dunshi ############################
+
+### c_mao1
+# MAO1
+502 = {
+	holding = none
+}
+
+
+### c_zhuixiang
+# ZHUIXIANG
+583 = {
+	holding = none
+}
+
+
+### c_shansang
+# SHANSANG
+584 = {
+	holding = none
+}
+
+
+### c_dun1
+# DUN1
+2380 = {
+	holding = none
+}
+
+
+### c_yongcheng
+# YONGCHENG
+2381 = {
+	holding = none
+}
+
+
+### c_mian1
+# MIAN1
+2382 = {
+	holding = none
+}
+
+
+### c_ke1
+# KE1
+2383 = {
+	holding = none
+}
+
+
+### c_lu7
+# LU7
+2384 = {
+	holding = none
+}
+
+
+### c_lian2
+# LIAN2
+2385 = {
+	holding = none
+}
+
+

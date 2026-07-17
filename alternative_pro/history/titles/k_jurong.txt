@@ -1,0 +1,28 @@
+﻿c_gaomenguan = {
+	3800.1.1 = {
+		liege = "k_jurong"
+		holder = yunxingjurong1
+	}
+	3835.1.1 = {
+		holder = yunxingjurong4
+	}
+	3846.12.31 = {
+		holder = yunxingjurong2
+	}
+	3849.1.1 = {
+		change_development_level = 26
+		government = tribal_government
+	}
+}
+k_jurong = {
+	3800.1.1 = {
+		holder = yunxingjurong1
+	}
+	3846.12.31 = {
+		holder = yunxingjurong2
+	}
+	3849.12.31 = {
+		government = tribal_government
+		change_development_level = 28
+	}
+}

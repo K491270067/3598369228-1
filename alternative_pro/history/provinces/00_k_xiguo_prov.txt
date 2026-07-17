@@ -1,0 +1,44 @@
+﻿##### d_xishi ############################
+
+### c_gucheng1
+# GUCHENG1
+1684 = {
+	holding = none
+}
+
+
+### c_bai2
+# BAI2
+1685 = {
+	holding = none
+}
+
+
+### c_huqiu2
+# HUQIU2
+1686 = {
+	holding = none
+}
+
+
+### c_baoxin
+# BAOXIN
+1687 = {
+	holding = none
+}
+
+
+### c_xi3
+# XI3
+1688 = {
+	holding = none
+}
+
+
+### c_li15
+# LI15
+1689 = {
+	holding = none
+}
+
+

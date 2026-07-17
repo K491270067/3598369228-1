@@ -1,0 +1,292 @@
+﻿jiangxingguirong1={
+  name="bfyznan8"
+  dynasty=xin868
+	religion="xirongfangling" 
+	culture="xirong"
+  father=jiangshirong6
+
+  3598.12.12 = {
+		birth = yes
+	}
+  3655.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jiangxingguirong2={
+  name="bfyznan17"
+  dynasty_house=house_xin869
+	religion="xirongfangling" 
+	culture="xirong"
+  father=jiangxingguirong1
+
+  3624.12.12 = {
+		birth = yes
+	}
+  3681.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jiangxingguirong3={
+  name="bfyznan29"
+  dynasty_house=house_xin869
+	religion="xirongfangling" 
+	culture="xirong"
+  father=jiangxingguirong2
+
+  3644.5.8 = {
+		birth = yes
+	}
+  3702.9.21 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jiangxingguirong4={
+  name="bfyznan38"
+  dynasty_house=house_xin869
+	religion="xirongfangling" 
+	culture="xirong"
+  father=jiangxingguirong3
+
+  3667.3.15 = {
+		birth = yes
+	}
+  3719.7.4 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jiangxingguirong5={
+  name="bfyznan102"
+  dynasty_house=house_xin869
+	religion="xirongfangling" 
+	culture="xirong"
+  father=jiangxingguirong4
+
+  3689.11.02 = {
+		birth = yes
+	}
+  3750.04.18 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jiangxingguirong6={
+  name="bfyznan47"
+  dynasty_house=house_xin869
+	religion="xirongfangling" 
+	culture="xirong"
+  father=jiangxingguirong5
+
+  3715.6.30 = {
+		birth = yes
+	}
+  3763.12.9 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jiangxingguirong7={
+  name="bfyznan56"
+  dynasty_house=house_xin869
+	religion="xirongfangling" 
+	culture="xirong"
+  father=jiangxingguirong6
+
+  3738.2.14 = {
+		birth = yes
+	}
+  3796.5.26 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jiangxingguirong8={
+  name="bfyznan65"
+  dynasty_house=house_xin869
+	religion="xirongfangling" 
+	culture="xirong"
+  father=jiangxingguirong7
+
+  3761.9.7 = {
+		birth = yes
+	}
+  3817.8.11 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jiangxingguirong9={
+  name="bfyznan71"
+  dynasty_house=house_xin869
+	religion="xirongfangling" 
+	culture="xirong"
+  father=jiangxingguirong8
+
+  3785.4.22 = {
+		birth = yes
+	}
+  3842.1.30 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jiangxingguirong10={
+  name="bfyznan80"
+  dynasty_house=house_xin869
+	religion="xirongfangling" 
+	culture="xirong"
+  father=jiangxingguirong9
+
+  3809.12.5 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jiangxingguirong11={
+  name="bfyznan89"
+  dynasty_house=house_xin869
+	religion="xirongfangling" 
+	culture="xirong"
+  father=jiangxingguirong10
+
+  3829.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jiangxingguirong12={
+  name="bfyznan95"
+  dynasty_house=house_xin869
+	religion="xirongfangling" 
+	culture="xirong"
+  father=jiangxingguirong10
+
+  3831.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jiangxingguirong13={
+  name="bfyznv69"
+  dynasty_house=house_xin869
+	religion="xirongfangling" 
+	culture="xirong"
+  father=jiangxingguirong10
+  female=yes
+
+  3832.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jiangxingguirong14={
+  name="bfyznv88"
+  dynasty_house=house_xin869
+	religion="xirongfangling" 
+	culture="xirong"
+  father=jiangxingguirong10
+  female=yes
+
+  3833.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+###########
+jiangxingguirong15={
+  name="bfyznan450"
+  dynasty_house=house_xin870
+	religion="xirongfangling" 
+	culture="xirong"
+  father=jiangxingguirong8
+
+  3812.3.22 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jiangxingguirong16={
+  name="bfyznan461"
+  dynasty_house=house_xin870
+	religion="xirongfangling" 
+	culture="xirong"
+  father=jiangxingguirong15
+
+  3830.4.5 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jiangxingguirong17={
+  name="bfyznan539"
+  dynasty_house=house_xin870
+	religion="xirongfangling" 
+	culture="xirong"
+  father=jiangxingguirong15
+
+  3831.6.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jiangxingguirong18={
+  name="bfyznv82"
+  dynasty_house=house_xin870
+	religion="xirongfangling" 
+	culture="xirong"
+  father=jiangxingguirong15
+  female=yes
+
+  3831.9.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}

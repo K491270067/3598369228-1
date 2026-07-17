@@ -1,0 +1,151 @@
+﻿c_jingzi = {
+	3574.1.1 = {
+		liege = "k_suiguo"
+		holder = suiyinshi1
+	}
+	3575.1.1 = {
+		holder = suiyinshi2
+	}
+	3600.1.1 = {
+		holder = suiyinshi3
+	}
+	3624.1.1 = {
+		holder = suiyinshi4
+	}
+	3656.1.1 = {
+		holder = suiyinshi5
+	}
+	3684.1.1 = {
+		holder = suiyinshi6
+	}
+	3719.1.1 = {
+		holder = suiyinshi7
+	}
+	3756.1.1 = {
+		holder = suiyinshi8
+	}
+	3787.1.1 = {
+		holder = suiyinshi9
+	}
+	3811.1.1 = {
+		holder = suiyinshi21
+	}
+	3849.1.1 = {
+		change_development_level = 21
+		government = feudal_government
+	}
+}
+c_yangqiao = {
+	3574.1.1 = {
+		liege = "d_suiyinshi"
+		holder = suiyinshi1
+	}
+	3575.1.1 = {
+		holder = suiyinshi2
+	}
+	3600.1.1 = {
+		holder = suiyinshi3
+	}
+	3624.1.1 = {
+		holder = suiyinshi4
+	}
+	3656.1.1 = {
+		holder = suiyinshi5
+	}
+	3684.1.1 = {
+		holder = suiyinshi6
+	}
+	3719.1.1 = {
+		holder = suiyinshi7
+	}
+	3756.1.1 = {
+		holder = suiyinshi8
+	}
+	3787.1.1 = {
+		holder = suiyinshi9
+	}
+	3811.1.1 = {
+		holder = suiyinshi16
+	}
+	3829.1.1 = {
+		holder = suiyinshi26
+	}
+	3849.1.1 = {
+		change_development_level = 18
+		government = feudal_government
+	}
+}
+d_suiyinshi = {
+	3574.1.1 = {
+		liege = "k_suiguo"
+		holder = suiyinshi1
+	}
+	3575.1.1 = {
+		holder = suiyinshi2
+	}
+	3600.1.1 = {
+		holder = suiyinshi3
+	}
+	3624.1.1 = {
+		holder = suiyinshi4
+	}
+	3656.1.1 = {
+		holder = suiyinshi5
+	}
+	3684.1.1 = {
+		holder = suiyinshi6
+	}
+	3719.1.1 = {
+		holder = suiyinshi7
+	}
+	3756.1.1 = {
+		holder = suiyinshi8
+	}
+	3787.1.1 = {
+		holder = suiyinshi9
+	}
+	3811.1.1 = {
+		holder = suiyinshi16
+	}
+	3849.1.1 = {
+		change_development_level = 20
+		government = feudal_government
+	}
+}
+k_suiguo = {
+	3574.1.1 = {
+		liege = "e_zhoutianzi"
+		holder = suiyinshi1
+	}
+	3575.1.1 = {
+		holder = suiyinshi2
+	}
+	3600.1.1 = {
+		holder = suiyinshi3
+	}
+	3624.1.1 = {
+		holder = suiyinshi4
+	}
+	3656.1.1 = {
+		holder = suiyinshi5
+	}
+	3684.1.1 = {
+		holder = suiyinshi6
+	}
+	3719.1.1 = {
+		holder = suiyinshi7
+	}
+	3756.1.1 = {
+		holder = suiyinshi8
+	}
+	3787.1.1 = {
+		holder = suiyinshi9
+	}
+	3811.1.1 = {
+		holder = suiyinshi10
+	}
+	3849.1.1 = {
+		change_development_level = 25
+		government = feudal_government
+	}
+}

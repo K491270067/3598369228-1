@@ -1,0 +1,47 @@
+﻿##### d_boduoshi ############################
+
+### c_fanduo
+# FANDUO
+3533 = {
+	holding = none
+}
+# BODUO
+2925 = {
+	holding = none
+}
+# YUHE
+3531 = {
+	holding = none
+}
+
+
+### c_boduo
+
+
+### c_gaowang1
+# GAOWANG1
+3534 = {
+	holding = none
+}
+# TUZUO
+2870 = {
+	holding = none
+}
+
+
+### c_tuzuo
+
+
+### c_duzuo
+
+
+### c_xiangwomei
+
+
+### c_anyun1
+# DUZUO
+2923 = {
+	holding = none
+}
+
+

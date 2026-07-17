@@ -1,0 +1,58 @@
+﻿##### d_jishi3 ############################
+
+### c_wangcheng
+# WANGCHENG
+793 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+# GUCHENG
+820 = {
+	holding = none
+}
+# CHENGZHOU
+786 = {
+	holding = none
+}
+
+
+### c_ti
+# TI
+821 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+# HENSHUI
+822 = {
+	holding = none
+}
+
+
+### c_tang3
+# TANG3
+787 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+# MENGJIN
+790 = {
+	holding = none
+}
+
+
+### c_yin1
+# YIN1
+791 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+# WEI
+792 = {
+	holding = none
+}
+
+

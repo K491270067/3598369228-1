@@ -1,0 +1,48 @@
+﻿##### d_fengfushi ############################
+
+### c_changqiu
+# CHANGQIU
+661 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+### c_pingqiu
+# PINGQIU
+674 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+# KUANG1
+672 = {
+	holding = none
+}
+
+
+##### d_fengshi5 ############################
+
+### c_juju
+# JUJU
+673 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+# PU1
+679 = {
+	holding = none
+}
+
+
+### c_wufu
+# WUFU
+675 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+

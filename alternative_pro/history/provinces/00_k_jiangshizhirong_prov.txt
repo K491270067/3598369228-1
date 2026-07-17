@@ -1,0 +1,33 @@
+﻿##### d_jiangshi ############################
+
+### c_tai1
+# TAI1
+896 = {
+	culture = guazhouzhirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+
+
+### c_mei2
+# MEI2
+891 = {
+	culture = guazhouzhirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+# MEIYANG
+893 = {
+	holding = none
+}
+
+
+### c_jiangshi
+# JIANGSHI
+897 = {
+	culture = guazhouzhirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+
+

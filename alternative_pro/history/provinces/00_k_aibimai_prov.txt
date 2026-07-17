@@ -1,0 +1,48 @@
+﻿##### d_yiyushi ############################
+
+### c_yuhe
+# YIYU1
+2869 = {
+	holding = none
+}
+
+
+### c_xiduo
+
+
+### c_fuxue
+
+
+### c_yiyu1
+# YUMO
+3532 = {
+	holding = none
+}
+# FENGTIAN
+3537 = {
+	holding = none
+}
+# ZANQI
+2892 = {
+	holding = none
+}
+
+
+### c_jiumi
+
+
+### c_yumo2
+
+
+### c_fengzao
+
+
+### c_numa
+
+
+### c_xiaoshi
+
+
+### c_shenye
+
+

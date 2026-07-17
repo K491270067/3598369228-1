@@ -1,0 +1,160 @@
+﻿##### d_daishi1 ############################
+
+### c_fangshi
+# FANGSHI
+1273 = {
+	culture = yinshang
+	religion = yinli
+	holding = castle_holding
+}
+# GUO3
+1274 = {
+	holding = none
+}
+
+
+### c_dai1
+# DAI1
+1276 = {
+	culture = yinshang
+	religion = yinli
+	holding = castle_holding
+}
+# PINGSHU1
+1275 = {
+	holding = none
+}
+# DANG1
+1278 = {
+	holding = none
+}
+
+
+### c_goumao
+# GOUMAO
+1280 = {
+	culture = yinshang
+	religion = yinli
+	holding = castle_holding
+}
+# ZHULU
+1282 = {
+	holding = none
+}
+
+
+##### d_fanshi4 ############################
+
+### c_canhe
+# CANHE
+1312 = {
+	culture = yinshang
+	religion = yinli
+	holding = castle_holding
+}
+
+
+### c_daoren
+# DAOREN
+1314 = {
+	culture = yinshang
+	religion = yinli
+	holding = castle_holding
+}
+# GAOLIU
+1311 = {
+	holding = none
+}
+
+
+### c_tiancheng
+# TIANCHENG
+1315 = {
+	culture = yinshang
+	religion = yinli
+	holding = castle_holding
+}
+
+
+##### d_beiyinshi ############################
+
+### c_wuqiongzhimen
+# WUQIONGZHIMEN
+1279 = {
+	culture = yinshang
+	religion = yinli
+	holding = castle_holding
+}
+# SANGGAN
+1277 = {
+	holding = none
+}
+
+
+### c_pingyin1
+# PINGYIN1
+1313 = {
+	culture = yinshang
+	religion = yinli
+	holding = castle_holding
+}
+# YANGYUAN
+1309 = {
+	holding = none
+}
+# QUANJIN
+1310 = {
+	holding = none
+}
+
+
+### c_pingcheng
+# PINGCHENG
+1307 = {
+	culture = yinshang
+	religion = yinli
+	holding = castle_holding
+}
+# PINGYI
+1308 = {
+	holding = none
+}
+
+
+##### d_laishi2 ############################
+
+### c_banshi
+# BANSHI
+1306 = {
+	culture = yinshang
+	religion = yinli
+	holding = castle_holding
+}
+# HUANGHUA
+1305 = {
+	holding = none
+}
+
+
+### c_yinguan
+# YINGUAN
+1270 = {
+	culture = yinshang
+	religion = yinli
+	holding = castle_holding
+}
+
+
+### c_juyang1
+# JUYANG1
+1272 = {
+	culture = yinshang
+	religion = yinli
+	holding = castle_holding
+}
+# WANGTAO
+1271 = {
+	holding = none
+}
+
+

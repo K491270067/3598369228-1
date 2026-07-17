@@ -1,0 +1,65 @@
+﻿##### d_nishi1 ############################
+
+### c_quni
+# QUNI
+487 = {
+	culture = yinshang
+	religion = yinli
+	holding = castle_holding
+}
+# XIAWU
+479 = {
+	holding = none
+}
+
+
+### c_longdui
+# LONGDUI
+508 = {
+	culture = yinshang
+	religion = yinli
+	holding = castle_holding
+}
+# BEIPING
+512 = {
+	holding = none
+}
+
+
+### c_zhuolu
+# ZHUOLU
+511 = {
+	culture = yinshang
+	religion = yinli
+	holding = castle_holding
+}
+
+
+##### d_sangqiushi ############################
+
+### c_wusui1
+# WUSUI1
+498 = {
+	culture = yinshang
+	religion = yinli
+	holding = castle_holding
+}
+# GUANGYANG
+499 = {
+	holding = none
+}
+
+
+### c_sangqiu1
+# SANGQIU1
+488 = {
+	culture = yinshang
+	religion = yinli
+	holding = castle_holding
+}
+# JIN2
+500 = {
+	holding = none
+}
+
+

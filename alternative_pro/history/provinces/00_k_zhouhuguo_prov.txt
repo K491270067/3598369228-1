@@ -1,0 +1,18 @@
+﻿##### d_gaoyinashi ############################
+
+### c_danluo
+# DANLUO
+3383 = {
+	holding = none
+}
+
+
+### c_liangyina
+
+
+### c_fuyina
+
+
+### c_gaoyina
+
+

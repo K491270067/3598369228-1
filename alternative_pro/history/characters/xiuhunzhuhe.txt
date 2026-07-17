@@ -1,0 +1,646 @@
+﻿xiuhunzhuluo1={
+  name="bfyznan344"
+  dynasty=xin787
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+
+  3493.1.1 = {
+		birth = yes
+	}
+  3539.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+xiuhunzhuluo2={
+  name="bfyznan360"
+  dynasty=xin787
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+	father=xiuhunzhuluo1
+
+  3518.1.1 = {
+		birth = yes
+	}
+  3570.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+xiuhunzhuluo3={
+  name="bfyznan375"
+  dynasty=xin787
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+	father=xiuhunzhuluo2
+
+  3542.1.1 = {
+		birth = yes
+	}
+  3595.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+xiuhunzhuluo4={
+  name="bfyznan394"
+  dynasty=xin787
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+	father=xiuhunzhuluo3
+
+  3565.1.1 = {
+		birth = yes
+	}
+  3619.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+xiuhunzhuluo5={
+  name="bfyznan410"
+  dynasty=xin787
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+	father=xiuhunzhuluo4
+
+  3589.1.1 = {
+		birth = yes
+	}
+  3643.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+xiuhunzhuluo6={
+  name="bfyznan418"
+  dynasty=xin787
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+	father=xiuhunzhuluo5
+
+  3612.1.1 = {
+		birth = yes
+	}
+  3667.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+xiuhunzhuluo7={
+  name="bfyznan430"
+  dynasty=xin787
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+	father=xiuhunzhuluo6
+
+  3636.1.1 = {
+		birth = yes
+	}
+  3691.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+xiuhunzhuluo8={
+  name="bfyznan445"
+  dynasty=xin787
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+	father=xiuhunzhuluo7
+
+  3659.1.1 = {
+		birth = yes
+	}
+  3715.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+xiuhunzhuluo9={
+  name="bfyznan461"
+  dynasty=xin787
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+	father=xiuhunzhuluo8
+
+  3683.1.1 = {
+		birth = yes
+	}
+  3739.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+xiuhunzhuluo10={
+  name="bfyznan474"
+  dynasty=xin787
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+	father=xiuhunzhuluo9
+
+  3706.1.1 = {
+		birth = yes
+	}
+  3763.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+xiuhunzhuluo11={
+  name="bfyznan489"
+  dynasty=xin787
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+	father=xiuhunzhuluo10
+
+  3730.1.1 = {
+		birth = yes
+	}
+  3787.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+xiuhunzhuluo12={
+  name="bfyznan505"
+  dynasty=xin787
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+	father=xiuhunzhuluo11
+
+  3753.1.1 = {
+		birth = yes
+	}
+  3811.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+xiuhunzhuluo13={
+  name="bfyznan522"
+  dynasty=xin787
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+	father=xiuhunzhuluo12
+
+  3789.1.1 = {
+		birth = yes
+	}
+  3832.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+xiuhunzhuluo14={
+  name="bfyznan529"
+  dynasty=xin787
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+	father=xiuhunzhuluo13
+
+  3808.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+xiuhunzhuluo15={
+  name="bfyznan543"
+  dynasty=xin787
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+	father=xiuhunzhuluo14
+
+  3826.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+xiuhunzhuluo16={
+  name="bfyznan547"
+  dynasty=xin787
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+	father=xiuhunzhuluo14
+
+  3827.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+xiuhunzhuluo17={
+  name="bfyznan550"
+  dynasty=xin787
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+	father=xiuhunzhuluo14
+
+  3828.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+xiuhunzhuluo18={
+  name="bfyznv132"
+  dynasty=xin787
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+	father=xiuhunzhuluo14
+	female=yes
+
+  3830.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+xiuhunzhuluo19={
+  name="bfyznv151"
+  dynasty=xin787
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+	father=xiuhunzhuluo14
+	female=yes
+
+  3831.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+########################
+xiuhunzhuluo20={
+  name="bfyznan37"
+  dynasty=xin789
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+	father=xiuhunzhuluo13
+
+  3812.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+xiuhunzhuluo21={
+  name="bfyznan62"
+  dynasty=xin789
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+	father=xiuhunzhuluo20
+
+  3830.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+xiuhunzhuluo22={
+  name="bfyznan70"
+  dynasty=xin789
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+	father=xiuhunzhuluo20
+
+  3831.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+xiuhunzhuluo23={
+  name="bfyznv39"
+  dynasty=xin789
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+	father=xiuhunzhuluo20
+	female=yes
+
+  3832.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+xiuhunzhuluo24={
+  name="bfyznv42"
+  dynasty=xin789
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+	father=xiuhunzhuluo20
+	female=yes
+
+  3833.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+###################
+xiuhunzhuhe4={
+  name="bfyznan105"
+  dynasty=xin788
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+
+  3574.1.1 = {
+		birth = yes
+	}
+  3619.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+xiuhunzhuhe5={
+  name="bfyznan114"
+  dynasty=xin788
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+	father=xiuhunzhuhe4
+
+  3599.1.1 = {
+		birth = yes
+	}
+  3643.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+xiuhunzhuhe6={
+  name="bfyznan130"
+  dynasty=xin788
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+	father=xiuhunzhuhe5
+
+  3622.1.1 = {
+		birth = yes
+	}
+  3667.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+xiuhunzhuhe7={
+  name="bfyznan150"
+  dynasty=xin788
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+	father=xiuhunzhuhe6
+
+  3640.1.1 = {
+		birth = yes
+	}
+  3691.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+xiuhunzhuhe8={
+  name="bfyznan158"
+  dynasty=xin788
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+	father=xiuhunzhuhe7
+
+  3659.1.1 = {
+		birth = yes
+	}
+  3715.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+xiuhunzhuhe9={
+  name="bfyznan162"
+  dynasty=xin788
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+	father=xiuhunzhuhe8
+
+  3683.1.1 = {
+		birth = yes
+	}
+  3739.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+xiuhunzhuhe10={
+  name="bfyznan175"
+  dynasty=xin788
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+	father=xiuhunzhuhe9
+
+  3706.1.1 = {
+		birth = yes
+	}
+  3763.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+xiuhunzhuhe11={
+  name="bfyznan190"
+  dynasty=xin788
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+	father=xiuhunzhuhe10
+
+  3730.1.1 = {
+		birth = yes
+	}
+  3787.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+xiuhunzhuhe12={
+  name="bfyznan202"
+  dynasty=xin788
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+	father=xiuhunzhuhe11
+
+  3753.1.1 = {
+		birth = yes
+	}
+  3811.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+xiuhunzhuhe13={
+  name="bfyznan216"
+  dynasty=xin788
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+	father=xiuhunzhuhe12
+
+  3789.1.1 = {
+		birth = yes
+	}
+  3822.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+xiuhunzhuhe14={
+  name="bfyznan231"
+  dynasty=xin788
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+	father=xiuhunzhuhe13
+
+  3811.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+xiuhunzhuhe15={
+  name="bfyznan246"
+  dynasty=xin788
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+	father=xiuhunzhuhe14
+
+  3829.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+xiuhunzhuhe16={
+  name="bfyznan261"
+  dynasty=xin788
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+	father=xiuhunzhuhe14
+
+  3830.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+xiuhunzhuhe17={
+  name="bfyznan281"
+  dynasty=xin788
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+	father=xiuhunzhuhe14
+
+  3831.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+xiuhunzhuhe18={
+  name="bfyznv90"
+  dynasty=xin788
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+	father=xiuhunzhuhe14
+	female=yes
+
+  3832.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+xiuhunzhuhe19={
+  name="bfyznv137"
+  dynasty=xin788
+	religion="xirongfangling" 
+	culture="hehuangzhirong"
+	father=xiuhunzhuhe14
+	female=yes
+
+  3833.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}

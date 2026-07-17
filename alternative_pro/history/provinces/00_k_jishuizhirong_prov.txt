@@ -1,0 +1,99 @@
+﻿##### d_yousongshi ############################
+
+### c_mei1
+# MEI1
+463 = {
+	culture = dongyi
+	religion = yili
+	holding = tribal_holding
+}
+# TAOQIU1
+70 = {
+	holding = none
+}
+
+
+### c_gaoyu1
+# GAOYU1
+707 = {
+	culture = dongyi
+	religion = yili
+	holding = tribal_holding
+}
+# FAN1
+706 = {
+	holding = none
+}
+
+
+### c_bi1
+
+
+##### d_yangjiaoshi ############################
+
+### c_yangjiao
+# YANGJIAO
+705 = {
+	culture = dongyi
+	religion = yili
+	holding = tribal_holding
+}
+# LI5
+704 = {
+	holding = none
+}
+
+
+### c_gu2
+
+
+### c_duguan
+# DUGUAN
+703 = {
+	culture = dongyi
+	religion = yili
+	holding = tribal_holding
+}
+# HU7
+2442 = {
+	holding = none
+}
+
+
+##### d_chuishi ############################
+
+### c_chui1
+# CHUI1
+701 = {
+	culture = dongyi
+	religion = yili
+	holding = tribal_holding
+}
+# YANGJIN1
+2441 = {
+	holding = none
+}
+
+
+### c_yun1
+# YUN1
+464 = {
+	culture = dongyi
+	religion = yili
+	holding = tribal_holding
+}
+
+
+### c_chengyang
+# CHENGYANG
+699 = {
+	culture = dongyi
+	religion = yili
+	holding = tribal_holding
+}
+# GULIN
+2438 = {
+	holding = none
+}
+
+

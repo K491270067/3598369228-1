@@ -1,0 +1,191 @@
+﻿##### d_jinshi1 ############################
+
+### c_gouyehan
+
+
+### c_choudao
+
+
+### c_banlugu
+
+
+### c_tuilianghuo
+# MIWUXIEMA
+3401 = {
+	holding = none
+}
+
+
+### c_mushan
+
+
+### c_nannei
+
+
+### c_jiazhao
+# YIDI
+3389 = {
+	holding = none
+}
+
+
+### c_mali
+
+
+### c_wuyeshan
+# ZOUCAOMA
+3403 = {
+	holding = none
+}
+
+
+### c_shanghuo
+
+
+### c_qitu
+# GOUYEHAN
+3395 = {
+	holding = none
+}
+# BIANCHENJIETU
+3408 = {
+	holding = none
+}
+
+
+### c_gupu1
+
+
+### c_xiaoduosha
+
+
+### c_shiwu
+
+
+### c_chicun
+
+
+### c_zhipinchuan
+
+
+### c_wenhuoliang
+
+
+### c_jiazhuhuo
+
+
+### c_julao
+
+
+### c_maizhenyi
+
+
+### c_jiahuoliangu
+
+
+### c_hulu
+# HULU
+3393 = {
+	holding = none
+}
+
+
+### c_zhouxian
+# ZHOUXIAN
+3394 = {
+	holding = none
+}
+
+
+### c_gongyan
+# GONGYAN
+3396 = {
+	holding = none
+}
+
+
+### c_lidong
+# LIDONG
+3397 = {
+	holding = none
+}
+
+
+### c_banlu
+
+
+### c_miwuxiema
+
+
+### c_ganlu1
+
+
+### c_zoucaoma
+
+
+### c_anxie
+# ANXIE
+3404 = {
+	holding = none
+}
+# RUKAN
+3392 = {
+	holding = none
+}
+
+
+### c_dulu
+# DULU
+3405 = {
+	holding = none
+}
+
+
+### c_lenü
+# LENU
+3406 = {
+	holding = none
+}
+# GANLU1
+3402 = {
+	holding = none
+}
+# BUSI
+3390 = {
+	holding = none
+}
+
+
+### c_qixi
+# QIXI
+3407 = {
+	holding = none
+}
+
+
+### c_yidi
+
+
+### c_busi
+
+
+### c_junmi1
+# JUNMI1
+3391 = {
+	holding = none
+}
+
+
+### c_rukan
+
+
+### c_bianchenjietu
+
+
+### c_wumihan
+# WUMIHAN
+3409 = {
+	holding = none
+}
+
+

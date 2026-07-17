@@ -1,0 +1,97 @@
+﻿# Huimeng intents are independent from coronation intents so they remain available
+# to independent rulers and never invoke coronation-specific scripted content.
+
+huimeng_display_authority = {
+	icon = extoll_reign_intent
+	scripted_animation = { animation = storyteller }
+	auto_complete = yes
+}
+
+huimeng_isolate_opponents = {
+	icon = isolate_opponents_intent
+	scripted_animation = { animation = scheme }
+	auto_complete = yes
+}
+
+huimeng_unite_supporters = {
+	icon = empower_loyalists_intent
+	scripted_animation = { animation = admiration }
+	auto_complete = yes
+}
+
+huimeng_witness_oath = {
+	icon = bear_witness_intent
+	scripted_animation = { animation = admiration }
+	auto_complete = yes
+	ai_will_do = { value = 25 }
+}
+
+huimeng_offer_support = {
+	icon = altruism_intent
+	scripted_animation = { animation = obsequious_bow }
+	auto_complete = yes
+	is_valid = {
+		trigger_if = {
+			limit = { is_ai = yes }
+			NOT = { is_in_guest_subset = { name = detractor } }
+		}
+	}
+	ai_will_do = {
+		value = 10
+		if = {
+			limit = { opinion = { target = involved_activity.activity_host value >= 50 } }
+			add = 50
+		}
+	}
+}
+
+huimeng_present_domain = {
+	icon = advocate_domain_intent
+	scripted_animation = { animation = chancellor }
+	auto_complete = yes
+	is_shown = { is_landed = yes }
+	ai_will_do = {
+		value = 10
+		if = { limit = { stewardship >= high_skill_rating } add = 40 }
+	}
+}
+
+huimeng_assert_rights = {
+	icon = profess_rights_intent
+	scripted_animation = { animation = debating }
+	auto_complete = yes
+	is_shown = { is_landed = yes }
+	ai_will_do = {
+		value = 10
+		if = { limit = { diplomacy >= high_skill_rating } add = 40 }
+	}
+}
+
+huimeng_seek_advantage = {
+	icon = seize_advantages_intent
+	scripted_animation = { animation = interested }
+	auto_complete = yes
+	ai_will_do = {
+		value = 10
+		if = { limit = { intrigue >= high_skill_rating } add = 50 }
+	}
+}
+
+huimeng_disrupt_loyalty = {
+	icon = disrupt_loyalists_intent
+	scripted_animation = { animation = spymaster }
+	auto_complete = yes
+	is_valid = {
+		trigger_if = {
+			limit = { is_ai = yes }
+			NOT = { is_in_guest_subset = { name = supporter } }
+		}
+	}
+	ai_will_do = {
+		value = 0
+		if = {
+			limit = { opinion = { target = involved_activity.activity_host value <= -25 } }
+			add = 75
+		}
+	}
+}

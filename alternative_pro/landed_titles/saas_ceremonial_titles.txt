@@ -1,0 +1,32 @@
+﻿e_ceremonial_huaxia = {
+	color = { 255 215 0 }
+	landless = yes
+
+	color2 = { 200 0 0 }
+	capital = c_luoyang
+	ruler_uses_title_name = yes
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	personal_relation_entry = {
+		first_valid = {
+			triggered_desc = {
+			trigger = {
+				exists = scope:target
+				scope:vassal ?= scope:target
+			}
+			desc = saas_personal_relation_ceremonial_emperor_same
+		}
+			triggered_desc = {
+			trigger = {
+				exists = scope:vassal
+			}
+			desc = saas_personal_relation_ceremonial_emperor_other
+		}
+
+		}
+	}
+	personal_relation_vassal = {
+		has_title = title:h_huaxia
+	}
+}
+

@@ -1,0 +1,51 @@
+﻿##### d_tongshi2 ############################
+
+### c_tong3
+# 
+2064 = {
+	holding = none
+}
+
+
+### c_guache
+# 
+2065 = {
+	holding = none
+}
+
+
+### c_tongrui
+# 
+2067 = {
+	holding = none
+}
+
+
+### c_wankou
+# 
+2068 = {
+	holding = none
+}
+
+
+### c_nanchao
+# 
+2069 = {
+	holding = none
+}
+
+
+### c_leichi
+# 
+2071 = {
+	holding = none
+}
+
+
+### c_wangjiang
+# 
+2072 = {
+	holding = none
+}
+
+

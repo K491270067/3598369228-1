@@ -1,0 +1,43 @@
+﻿##### d_gengshi ############################
+
+### c_jinyin
+# JINYIN
+997 = {
+	culture = jin
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+### c_geng1
+
+
+### c_fukui
+# FUKUI
+1000 = {
+	culture = jin
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+##### d_linghushi ############################
+
+### c_xun3
+# XUN3
+994 = {
+	culture = jin
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+### c_luliu
+# LULIU
+996 = {
+	culture = jin
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+

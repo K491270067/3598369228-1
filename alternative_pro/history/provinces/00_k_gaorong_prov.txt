@@ -1,0 +1,33 @@
+﻿##### d_gaoshi2 ############################
+
+### c_fuliu
+# FULIU
+807 = {
+	culture = yiluozhirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+
+
+### c_gao2
+# GAO2
+809 = {
+	culture = yiluozhirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+# YIYANG
+808 = {
+	holding = none
+}
+
+
+### c_dongting
+# DONGTING
+810 = {
+	culture = yiluozhirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+
+

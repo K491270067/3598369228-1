@@ -1,0 +1,66 @@
+﻿##### d_quanshi2 ############################
+
+### c_quan1
+# QUAN1
+1131 = {
+	culture = chidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+# MU2
+2502 = {
+	holding = none
+}
+
+
+### c_he1
+# HE1
+2503 = {
+	culture = chidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+
+
+### c_xuanshi
+# XUANSHI
+1128 = {
+	culture = chidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+
+
+##### d_xuanshi ############################
+
+### c_gaodu1
+# GAODU1
+1126 = {
+	culture = chidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+
+
+### c_guanglang
+# GUANGLANG
+1127 = {
+	culture = chidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+
+
+### c_guta
+# GUTA
+2501 = {
+	culture = chidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+# TIANMEN
+1125 = {
+	holding = none
+}
+
+

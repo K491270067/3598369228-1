@@ -1,0 +1,64 @@
+﻿##### d_zuoshi ############################
+
+### c_ancheng
+# ANCHENG
+655 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+# YANGWU
+659 = {
+	holding = none
+}
+
+
+### c_zuo
+# ZUO
+656 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+# CHENGDI
+653 = {
+	holding = none
+}
+
+
+### c_jijin
+# JIJIN
+663 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+##### d_xushi2 ############################
+
+### c_suanzao
+# SUANZAO
+657 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+### c_chonglao
+# CHONGLAO
+660 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+# ECAO
+658 = {
+	holding = none
+}
+
+
+### c_xu1
+
+

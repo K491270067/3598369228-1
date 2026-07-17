@@ -1,0 +1,51 @@
+﻿d_lishi7 = {
+	3582.1.1 = {
+		liege = "k_weiguo1"
+		holder = han1991
+	}
+	3646.12.31 = {
+		holder = han1992
+	}
+	3677.12.31 = {
+		holder = han1993
+	}
+	3708.12.31 = {
+		holder = han1994
+	}
+	3763.12.31 = {
+		holder = han1995
+	}
+	3820.12.31 = {
+		holder = jixinglishi1
+	}
+	3849.1.1 = {
+		change_development_level = 28
+		government = feudal_government
+	}
+}
+k_weiguo1 = {
+	3582.1.1 = {
+		liege = "e_zhoutianzi"
+		holder = han1991
+	}
+	3646.12.31 = {
+		holder = han1992
+	}
+	3677.12.31 = {
+		holder = han1993
+	}
+	3708.12.31 = {
+		holder = han1994
+	}
+	3763.12.31 = {
+		holder = han1995
+	}
+	3820.12.31 = {
+		holder = han1996
+	}
+	3849.1.1 = {
+		change_development_level = 31
+		government = feudal_government
+		liege = "e_zhoutianzi1"
+	}
+}

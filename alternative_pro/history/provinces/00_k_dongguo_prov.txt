@@ -1,0 +1,31 @@
+﻿##### d_dongshi ############################
+
+### c_ji8
+# JI8
+1026 = {
+	culture = jin
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+### c_dong
+# DONGFU
+2455 = {
+	holding = none
+}
+
+
+### c_zuo1
+# ZUO1
+1027 = {
+	culture = jin
+	religion = dongzhouli
+	holding = castle_holding
+}
+# JING7
+2456 = {
+	holding = none
+}
+
+

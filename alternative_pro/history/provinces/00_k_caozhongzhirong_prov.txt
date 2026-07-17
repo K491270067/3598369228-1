@@ -1,0 +1,62 @@
+﻿##### d_caoshi1 ############################
+
+### c_yishi
+# YISHI
+1116 = {
+	culture = guazhouzhirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+
+
+### c_qianmu
+# QIANMU
+1119 = {
+	culture = guazhouzhirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+
+
+### c_zhou5
+# ZHOU5
+2490 = {
+	culture = guazhouzhirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+
+
+##### d_xuanshi1 ############################
+
+### c_guyuan
+# GUYUAN
+1118 = {
+	culture = guazhouzhirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+
+
+### c_jushang
+# JUSHANG
+1120 = {
+	culture = guazhouzhirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+
+
+### c_xuan2
+# XUAN2
+2489 = {
+	culture = guazhouzhirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+# ZHI
+2488 = {
+	holding = none
+}
+
+

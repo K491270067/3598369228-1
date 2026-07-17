@@ -1,0 +1,28 @@
+﻿##### d_boqishi ############################
+
+### c_boqi
+# BOQI
+2950 = {
+	holding = none
+}
+
+
+### c_riye
+
+
+### c_boshe
+
+
+### c_baqiao
+# BOSHE
+2893 = {
+	holding = none
+}
+
+
+### c_jiumi2
+
+
+### c_hecun
+
+

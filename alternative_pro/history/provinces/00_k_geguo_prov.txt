@@ -1,0 +1,57 @@
+﻿##### d_yougeshi ############################
+
+### c_ge
+# GE
+101 = {
+	culture = dongyi
+	religion = xiali
+	holding = castle_holding
+}
+# PINGYUAN
+87 = {
+	holding = none
+}
+
+
+### c_zhongqiu1
+# ZHONGQIU1
+102 = {
+	culture = dongyi
+	religion = xiali
+	holding = castle_holding
+}
+
+
+### c_ande
+# ANDE
+88 = {
+	culture = dongyi
+	religion = xiali
+	holding = castle_holding
+}
+
+
+##### d_geshi ############################
+
+### c_ayang
+# AYANG
+2191 = {
+	culture = dongyi
+	religion = xiali
+	holding = castle_holding
+}
+# CHANGCHENG
+86 = {
+	holding = none
+}
+
+
+### c_gaotang
+# GAOTANG
+63 = {
+	culture = dongyi
+	religion = xiali
+	holding = castle_holding
+}
+
+

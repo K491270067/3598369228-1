@@ -1,0 +1,86 @@
+﻿##### d_yiqushi ############################
+
+### c_yiqu
+# YIQU
+1478 = {
+	culture = xirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+# CANLUAN
+1479 = {
+	holding = none
+}
+
+
+### c_fuyi
+# FUYI
+3003 = {
+	culture = xirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+# XIELIE
+3015 = {
+	holding = none
+}
+
+
+### c_zhengbo
+# ZHENGBO
+3018 = {
+	culture = xirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+# TIAOREN
+3020 = {
+	holding = none
+}
+
+
+##### d_hunyeshi ############################
+
+### c_nangang1
+# NANGANG1
+3023 = {
+	culture = xirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+# SHANGLUO1
+3022 = {
+	holding = none
+}
+
+
+### c_malin
+# MALIN
+1480 = {
+	culture = xirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+# YUANLAI
+3019 = {
+	holding = none
+}
+
+
+### c_fangqu
+# FANGQU
+3017 = {
+	culture = xirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+# WUHELI
+3016 = {
+	holding = none
+}
+# NALOU
+3021 = {
+	holding = none
+}
+
+

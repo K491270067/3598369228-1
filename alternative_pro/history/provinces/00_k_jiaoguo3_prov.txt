@@ -1,0 +1,44 @@
+﻿##### d_jiaoshi3 ############################
+
+### c_jiao4
+# 
+1778 = {
+	holding = none
+}
+
+
+### c_yunguan
+# 
+1779 = {
+	holding = none
+}
+
+
+### c_jushi
+# 
+1781 = {
+	holding = none
+}
+
+
+### c_ren2
+# 
+1782 = {
+	holding = none
+}
+
+
+### c_shiyan
+# SHIYAN
+3118 = {
+	holding = none
+}
+
+
+### c_xunxiang
+# XUNXIANG
+3119 = {
+	holding = none
+}
+
+

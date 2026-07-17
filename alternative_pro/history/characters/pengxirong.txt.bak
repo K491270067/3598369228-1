@@ -1,0 +1,100 @@
+﻿#############  褰垙姘忓浗--褰垙姘?#############
+han2001={
+  name="nanming418"
+  dynasty=xin78
+  culture="xirong"
+  religion="xirongfangling"
+
+  3796.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han2002={
+  name="nanming69"
+  dynasty=xin78
+  culture="xirong"
+  religion="xirongfangling"
+  father=han2001
+
+  3816.5.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han2003={
+  name="nanming40" 
+  dynasty=xin78
+  culture="xirong"
+  religion="xirongfangling"
+  father=han2001
+
+  3817.5.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han2004={
+  name="nanming25"
+  dynasty=xin78
+  culture="xirong"
+  religion="xirongfangling"
+  father=han2001
+
+  3818.5.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han2005={
+  name="nvming102"
+  dynasty=xin78
+  culture="xirong"
+  religion="xirongfangling"
+  father=han2001
+  female=yes
+
+  3819.5.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han2006={
+  name="lan1"
+  dynasty=xin78
+  culture="xirong"
+  religion="xirongfangling"
+  father=han2001
+  female=yes
+
+  3820.5.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han2007={
+  name="zhi7" 
+  dynasty=xin78
+  culture="xirong"
+  religion="xirongfangling"
+  father=han2001
+
+  3821.5.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}

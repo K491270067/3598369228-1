@@ -1,0 +1,441 @@
+﻿### 阳国--姬姓 ###
+#参考《阳都三题》
+#《东夷古国——阳国，历经夏商周，因不服齐桓公而亡国》：“阳伯旅鼎”中铭文显示：“叔姬作阳伯旅鼎，永用。”，从中可以看出周代阳国当为姬姓
+yangguo1={
+  name="nanming362"
+  dynasty=baijia297
+	religion="xizhouli" 
+	culture="zhou"
+	father=han1361
+
+  3313.6.6 = {
+		birth = yes
+	}
+  3368.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+yangguo2={
+  name="nanming390"
+  dynasty=baijia297
+	religion="xizhouli" 
+	culture="zhou"
+	father=yangguo1
+
+  3344.6.6 = {
+		birth = yes
+	}
+  3410.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+yangguo3={
+  name="nanming417"
+  dynasty=baijia297
+	religion="xizhouli" 
+	culture="zhou"
+	father=yangguo2
+
+  3404.6.6 = {
+		birth = yes
+	}
+  3467.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+yangguo4={
+  name="nanming426"
+  dynasty=baijia297
+	religion="xizhouli" 
+	culture="zhou"
+	father=yangguo3
+
+  3455.6.6 = {
+		birth = yes
+	}
+  3519.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+yangguo5={
+  name="nanming495"
+  dynasty=baijia297
+	religion="xizhouli" 
+	culture="zhou"
+	father=yangguo4
+
+  3500.6.6 = {
+		birth = yes
+	}
+  3563.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+yangguo6={
+  name="nanming505"
+  dynasty=xin414
+	religion="xizhouli" 
+	culture="lu"
+	father=yangguo5
+
+  3530.6.6 = {
+		birth = yes
+	}
+  3589.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+yangguo7={
+  name="nanming511"
+  dynasty_house=house_baijia500
+	religion="xizhouli" 
+	culture="lu"
+	father=yangguo6
+
+  3561.1.1 = {
+		birth = yes
+	}
+  3617.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+yangguo8={
+  name="nanming517"
+  dynasty_house=house_baijia500
+	religion="xizhouli" 
+	culture="lu"
+	father=yangguo7
+
+  3595.1.1 = {
+		birth = yes
+	}
+  3658.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+yangguo9={
+  name="nanming523"
+  dynasty_house=house_baijia500
+	religion="xizhouli" 
+	culture="lu"
+	father=yangguo8
+
+  3623.1.1 = {
+		birth = yes
+	}
+  3681.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+yangguo10={
+  name="nanming529"
+  dynasty_house=house_baijia500
+	religion="xizhouli" 
+	culture="lu"
+	father=yangguo9
+
+  3666.1.1 = {
+		birth = yes
+	}
+  3711.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+yangguo11={
+  name="nanming535"
+  dynasty_house=house_baijia500
+	religion="xizhouli" 
+	culture="lu"
+	father=yangguo10
+
+  3689.1.1 = {
+		birth = yes
+	}
+  3745.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+yangguo12={
+  name="nanming544"
+  dynasty_house=house_baijia500
+	religion="xizhouli" 
+	culture="lu"
+	father=yangguo11
+
+  3718.1.1 = {
+		birth = yes
+	}
+  3777.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+yangguo13={
+  name="nanming553"
+  dynasty_house=house_baijia500
+	religion="xizhouli" 
+	culture="lu"
+	father=yangguo12
+
+  3750.1.1 = {
+		birth = yes
+	}
+  3809.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+yangguo14={
+  name="nanming566"
+  dynasty_house=house_baijia500
+	religion="xizhouli" 
+	culture="lu"
+	father=yangguo13
+
+  3787.1.1 = {
+		birth = yes
+	}
+  3838.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+yangguo15={
+  name="nanming581"#平王东迁时阳国国君，游戏开局时23岁
+  dynasty_house=house_baijia500
+	religion="xizhouli" 
+	culture="lu"
+	father=yangguo14
+
+  3809.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+yangguo16={
+  name="nanming611"#储君
+  dynasty_house=house_baijia500
+	religion="xizhouli" 
+	culture="lu"
+	father=yangguo15
+
+  3830.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+yangguo17={
+  name="nanming619"#储君二号，开局时未成年
+  dynasty_house=house_baijia500
+	religion="xizhouli" 
+	culture="lu"
+	father=yangguo15
+
+  3831.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+yangguo18={
+  name="mei3"#女
+  dynasty_house=house_baijia500
+	religion="xizhouli" 
+	culture="lu"
+	father=yangguo15
+	female=yes
+
+  3832.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+yangguo19={
+  name="yu8"
+  dynasty_house=house_baijia500
+	religion="xizhouli" 
+	culture="lu"
+	father=yangguo15
+	female=yes
+
+  3833.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+yangguo20={
+  name="meng1"
+  dynasty_house=house_baijia500
+	religion="xizhouli" 
+	culture="lu"
+	father=yangguo15
+	female=yes
+
+  3834.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+#######郠氏
+yangguo21={
+  name="chang2"
+  dynasty_house=house_xin415
+	religion="xizhouli" 
+	culture="lu"
+	father=yangguo12
+
+  3762.1.1 = {
+		birth = yes
+	}
+  3809.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+yangguo22={
+  name="nanming355"
+  dynasty_house=house_xin415
+	religion="xizhouli" 
+	culture="lu"
+	father=yangguo21
+
+  3797.1.1 = {
+		birth = yes
+	}
+  3838.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+yangguo23={
+  name="nanming368"#平王东迁时阳国国君，游戏开局时23岁
+  dynasty_house=house_xin415
+	religion="xizhouli" 
+	culture="lu"
+	father=yangguo22
+
+  3819.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+yangguo24={
+  name="nanming379"#储君
+  dynasty_house=house_xin415
+	religion="xizhouli" 
+	culture="lu"
+	father=yangguo23
+
+  3839.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+yangguo25={
+  name="nanming389"#储君二号，开局时未成年
+  dynasty_house=house_xin415
+	religion="xizhouli" 
+	culture="lu"
+	father=yangguo23
+
+  3841.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+yangguo26={
+  name="nvming151"#女
+  dynasty_house=house_xin415
+	religion="xizhouli" 
+	culture="lu"
+	father=yangguo23
+	female=yes
+
+  3842.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+yangguo27={
+  name="nvming155"
+  dynasty_house=house_xin415
+	religion="xizhouli" 
+	culture="lu"
+	father=yangguo23
+	female=yes
+
+  3843.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}

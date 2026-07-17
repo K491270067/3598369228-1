@@ -1,0 +1,65 @@
+﻿##### d_lushi3 ############################
+
+### c_gaohu
+# 
+1787 = {
+	holding = none
+}
+
+
+### c_xiangyang
+# 
+1788 = {
+	holding = none
+}
+
+
+### c_lu3
+# 
+1789 = {
+	holding = none
+}
+
+
+### c_zhelin
+# 
+1790 = {
+	holding = none
+}
+
+
+### c_longzhong
+# 
+1791 = {
+	holding = none
+}
+
+
+### c_yiqing
+# YIQING
+1758 = {
+	holding = none
+}
+
+
+### c_zhonglu
+# 
+1792 = {
+	holding = none
+}
+
+
+### c_qi10
+# 
+1793 = {
+	holding = none
+}
+
+
+### c_nanzhang
+# 
+1797 = {
+	holding = none
+}
+
+

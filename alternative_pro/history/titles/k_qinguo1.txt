@@ -1,0 +1,147 @@
+﻿c_lveyang = {
+	3732.1.1 = {
+		liege = "d_chengjishi"
+		holder = han2866
+	}
+	3762.1.1 = {
+		holder = han2867
+	}
+	3772.1.1 = {
+		holder = han2868
+	}
+	3775.1.1 = {
+		holder = han2869
+	}
+	3798.2.1 = {
+		holder = han2888
+	}
+	3836.1.1 = {
+		holder = han2889
+	}
+	3849.1.1 = {
+		change_development_level = 25
+		government = feudal_government
+	}
+}
+c_rong3 = {
+	3732.1.1 = {
+		liege = "k_qinguo1"
+		holder = han2866
+	}
+	3762.1.1 = {
+		holder = han2867
+	}
+	3772.1.1 = {
+		holder = han2868
+	}
+	3775.1.1 = {
+		holder = han2869
+	}
+	3798.2.1 = {
+		holder = han2870
+	}
+	3842.1.1 = {
+		holder = han2875
+	}
+	3849.1.1 = {
+		change_development_level = 27
+		government = feudal_government
+	}
+}
+d_chengjishi = {
+	3732.1.1 = {
+		liege = "k_qinguo1"
+		holder = han2866
+	}
+	3762.1.1 = {
+		holder = han2867
+	}
+	3772.1.1 = {
+		holder = han2868
+	}
+	3775.1.1 = {
+		holder = han2869
+	}
+	3798.2.1 = {
+		holder = han2883
+	}
+	3836.1.1 = {
+		holder = han2884
+	}
+	3849.1.1 = {
+		change_development_level = 26
+		government = feudal_government
+	}
+}
+d_guandongshi = {
+	3732.1.1 = {
+		liege = "k_qinguo1"
+		holder = han2866
+	}
+	3762.1.1 = {
+		holder = han2867
+	}
+	3772.1.1 = {
+		holder = han2868
+	}
+	3775.1.1 = {
+		holder = han2869
+	}
+	3798.2.1 = {
+		holder = han2879
+	}
+	3832.1.1 = {
+		holder = han2880
+	}
+	3849.1.1 = {
+		change_development_level = 26
+		government = feudal_government
+	}
+}
+d_qinshi1 = {
+	3732.1.1 = {
+		liege = "k_qinguo1"
+		holder = han2866
+	}
+	3762.1.1 = {
+		holder = han2867
+	}
+	3772.1.1 = {
+		holder = han2868
+	}
+	3775.1.1 = {
+		holder = han2869
+	}
+	3798.2.1 = {
+		holder = han2870
+	}
+	3842.1.1 = {
+		holder = han2871
+	}
+}
+k_qinguo1 = {
+	3732.1.1 = {
+		liege = "e_zhoutianzi"
+		holder = han2866
+	}
+	3762.1.1 = {
+		holder = han2867
+	}
+	3772.1.1 = {
+		holder = han2868
+	}
+	3775.1.1 = {
+		holder = han2869
+	}
+	3798.2.1 = {
+		holder = han2870
+	}
+	3842.1.1 = {
+		holder = han2871
+	}
+	3849.1.1 = {
+		change_development_level = 28
+		government = feudal_government
+		liege = "e_zhoutianzi1"
+	}
+}

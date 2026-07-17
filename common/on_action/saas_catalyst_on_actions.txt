@@ -1,0 +1,120 @@
+﻿# Append situation catalyst handlers without replacing vanilla on_action effects.
+
+on_alliance_added = { on_actions = { saas_catalyst_alliance_added } }
+on_marriage = { on_actions = { saas_catalyst_marriage } }
+on_title_gain_usurpation = { on_actions = { saas_catalyst_title_usurped } }
+on_title_gain = { on_actions = { saas_catalyst_title_created } }
+on_release_from_prison = { on_actions = { saas_catalyst_ruler_released } }
+on_death = { on_actions = { saas_catalyst_tianzi_killed } }
+on_war_won_attacker = { on_actions = { saas_catalyst_attacker_won } }
+on_war_won_defender = { on_actions = { saas_catalyst_defender_won } }
+
+saas_catalyst_alliance_added = {
+	effect = {
+		if = {
+			limit = {
+				scope:first = { saas_eligible_participant_trigger = yes saas_is_lijiao_ruler_trigger = yes }
+				scope:second = { saas_eligible_participant_trigger = yes saas_is_lijiao_ruler_trigger = yes }
+			}
+			saas_trigger_catalyst_effect = { CATALYST = saas_catalyst_lijiao_alliance CHARACTER = scope:first }
+		}
+	}
+}
+
+saas_catalyst_marriage = {
+	effect = {
+		if = {
+			limit = {
+				root = { religion = religion:lijiao_religion }
+				scope:spouse = { religion = religion:lijiao_religion }
+				root.top_liege = { saas_eligible_participant_trigger = yes }
+				scope:spouse.top_liege = { saas_eligible_participant_trigger = yes }
+				root.top_liege != scope:spouse.top_liege
+			}
+			saas_trigger_catalyst_effect = { CATALYST = saas_catalyst_lijiao_alliance CHARACTER = root.top_liege }
+		}
+	}
+}
+
+saas_catalyst_title_usurped = {
+	effect = {
+		if = {
+			limit = { root = { saas_eligible_participant_trigger = yes } scope:transfer_type = flag:usurped }
+			saas_trigger_catalyst_effect = { CATALYST = saas_catalyst_title_usurped CHARACTER = root }
+		}
+	}
+}
+
+saas_catalyst_title_created = {
+	effect = {
+		if = {
+			limit = {
+				NOT = { exists = scope:previous_holder }
+				scope:title.tier >= tier_duchy
+				root = { saas_is_lijiao_ruler_trigger = yes }
+			}
+			saas_trigger_catalyst_effect = { CATALYST = saas_catalyst_house_restored CHARACTER = root }
+		}
+	}
+}
+
+saas_catalyst_ruler_released = {
+	effect = {
+		if = {
+			limit = { root = { saas_is_lijiao_ruler_trigger = yes highest_held_title_tier >= tier_kingdom } }
+			saas_trigger_catalyst_effect = { CATALYST = saas_catalyst_peace_restored CHARACTER = root }
+		}
+	}
+}
+
+saas_catalyst_tianzi_killed = {
+	effect = {
+		if = {
+			limit = { root = { has_title = title:e_huaxia } exists = scope:killer }
+			saas_trigger_catalyst_effect = { CATALYST = saas_catalyst_tianzi_defeat CHARACTER = scope:killer }
+		}
+		if = {
+			limit = {
+				exists = scope:killer
+				scope:killer = { saas_is_badao_trigger = yes }
+				root = { is_ruler = yes saas_eligible_participant_trigger = yes }
+			}
+			saas_trigger_catalyst_effect = { CATALYST = saas_catalyst_title_usurped CHARACTER = scope:killer }
+		}
+	}
+}
+
+saas_catalyst_attacker_won = {
+	effect = {
+		if = {
+			limit = { scope:attacker = { saas_is_siyi_trigger = yes } scope:defender = { saas_is_lijiao_ruler_trigger = yes } }
+			saas_trigger_catalyst_effect = { CATALYST = saas_catalyst_siyi_conquest CHARACTER = scope:attacker }
+		}
+		if = {
+			limit = {
+				root.war = {
+					OR = {
+						using_cb = ep3_laamp_adventurer_county_invasion
+						using_cb = ep3_laamp_adventurer_duchy_invasion
+						using_cb = ep3_laamp_adventurer_kingdom_invasion
+						using_cb = ep3_laamp_adventurer_empire_invasion
+					}
+				}
+			}
+			saas_trigger_catalyst_effect = { CATALYST = saas_catalyst_adventurer_conquest CHARACTER = scope:attacker }
+		}
+	}
+}
+
+saas_catalyst_defender_won = {
+	effect = {
+		if = {
+			limit = { scope:defender = { has_title = title:e_huaxia } }
+			saas_trigger_catalyst_effect = { CATALYST = saas_catalyst_tianzi_victory CHARACTER = scope:defender }
+		}
+		if = {
+			limit = { scope:attacker = { has_title = title:e_huaxia } }
+			saas_trigger_catalyst_effect = { CATALYST = saas_catalyst_tianzi_defeat CHARACTER = scope:attacker }
+		}
+	}
+}

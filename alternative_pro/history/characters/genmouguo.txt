@@ -1,0 +1,316 @@
+﻿######鏍圭墴鍥?鏍圭墴姘?#######
+han1026={
+  name="nanming31"#琚揩涓滆縼锛屽缓绔嬫牴鐗熷浗
+  dynasty=xin435
+	religion="yili" 
+	culture="dongyi"
+	father=han5985
+
+  3550.1.1 = {
+		birth = yes
+	}
+  3603.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1027={
+  name="nanming32"
+  dynasty_house=house_xin38 
+	religion="yili" 
+	culture="dongyi"
+  father=han1026
+
+  3583.1.1 = {
+		birth = yes
+	}
+  3650.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1028={
+  name="nanming33"
+  dynasty_house=house_xin38 
+	religion="yili" 
+	culture="dongyi"
+  father=han1027
+
+  3640.1.1 = {
+		birth = yes
+	}
+  3703.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1029={
+  name="nanming34"
+  dynasty_house=house_xin38 
+	religion="yili" 
+	culture="dongyi"
+  father=han1028
+
+  3690.1.1 = {
+		birth = yes
+	}
+  3749.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1030={
+  name="nanming35"
+  dynasty_house=house_xin38 
+	religion="yili" 
+	culture="dongyi"
+  father=han1029
+
+  3743.1.1 = {
+		birth = yes
+	}
+  3818.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han5513={
+  name="nanming36"
+  dynasty_house=house_xin38 
+	religion="yili" 
+	culture="dongyi"
+  father=han1030
+
+  3769.1.1 = {
+		birth = yes
+	}
+  3820.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1031={
+  name="nanming37"
+  dynasty_house=house_xin38 
+	religion="yili" 
+	culture="dongyi"
+  father=han5513
+
+  3800.1.1 = {
+		birth = yes
+	}
+  3844.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1032={
+  name="nanming38"#骞崇帇涓滆縼鏃舵牴鐗熷浗鍥藉悰
+  dynasty_house=house_xin38 
+	religion="yili" 
+	culture="dongyi"
+  father=han1031
+
+  3830.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han1033={
+  name="nanming39"#鍌ㄥ悰
+  dynasty_house=house_xin38 
+	religion="yili" 
+	culture="dongyi"
+  father=han1032
+
+  3848.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han1034={
+  name="nvming5"#濂?
+  dynasty_house=house_xin38 
+	religion="yili" 
+	culture="dongyi"
+  father=han1032
+  female=yes
+
+  3849.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han1035={
+  name="nanming40"#寮?鍙?
+  dynasty_house=house_xin38 
+	religion="yili" 
+	culture="dongyi"
+  father=han1031
+
+  3831.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han1036={
+  name="nanming41"#寮?鍙?
+  dynasty_house=house_xin38 
+	religion="yili" 
+	culture="dongyi"
+  father=han1031
+
+  3832.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han1037={
+  name="nanming42"#寮?鍙?
+  dynasty_house=house_xin38 
+	religion="yili" 
+	culture="dongyi"
+  father=han1031
+
+  3833.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han1038={
+  name="nanming43"#寮?鍙?
+  dynasty_house=house_xin38 
+	religion="yili" 
+	culture="dongyi"
+  father=han1031
+
+  3834.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han1039={
+  name="nvming6"#濡?
+  dynasty_house=house_xin38 
+	religion="yili" 
+	culture="dongyi"
+  father=han1031
+  female=yes
+
+  3834.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han1040={
+  name="nvming7"#濡?
+  dynasty_house=house_xin38 
+	religion="yili" 
+	culture="dongyi"
+  father=han1031
+  female=yes
+
+  3835.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+#########鏍规皬
+genmou1={
+  name="nanming917"
+  dynasty_house=house_xin436
+	religion="yili" 
+	culture="dongyi"
+  father=han5513
+
+  3818.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+genmou2={
+  name="nanming926"
+  dynasty_house=house_xin436
+	religion="yili" 
+	culture="dongyi"
+  father=genmou1
+
+  3836.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+genmou3={
+  name="nanming945"
+  dynasty_house=house_xin436
+	religion="yili" 
+	culture="dongyi"
+  father=genmou1
+
+  3837.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+genmou4={
+  name="nanming964"
+  dynasty_house=house_xin436
+	religion="yili" 
+	culture="dongyi"
+  father=genmou1
+
+  3838.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+genmou5={
+  name="jiuluo"
+  dynasty_house=house_xin436
+	religion="yili" 
+	culture="dongyi"
+  father=genmou1
+  female=yes
+
+  3839.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}

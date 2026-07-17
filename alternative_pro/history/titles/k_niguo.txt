@@ -1,0 +1,49 @@
+﻿c_jiao = {
+	3835.1.1 = {
+		holder = niguo1
+	}
+	3839.1.1 = {
+		liege = "d_xiashi1"
+		holder = niguo5
+	}
+	3849.1.1 = {
+		change_development_level = 19
+		government = feudal_government
+	}
+}
+c_juyi = {
+	3835.1.1 = {
+		holder = niguo1
+	}
+	3838.1.1 = {
+		liege = "d_xiashi1"
+		holder = niguo4
+	}
+	3849.1.1 = {
+		change_development_level = 17
+		government = feudal_government
+	}
+}
+d_xiashi1 = {
+	3835.1.1 = {
+		holder = niguo1
+	}
+	3837.1.1 = {
+		liege = "k_niguo"
+		holder = niguo3
+	}
+	3849.1.1 = {
+		change_development_level = 18
+		government = feudal_government
+	}
+}
+k_niguo = {
+	3835.1.1 = {
+		liege = "e_zhoutianzi"
+		holder = niguo1
+	}
+	3849.1.1 = {
+		change_development_level = 22
+		government = feudal_government
+	}
+}

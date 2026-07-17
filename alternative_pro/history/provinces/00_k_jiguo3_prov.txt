@@ -1,0 +1,66 @@
+﻿##### d_jibaishi ############################
+
+### c_jiqiu1
+# JIQIU1
+1192 = {
+	culture = xiaren
+	religion = xiali
+	holding = castle_holding
+}
+# LI23
+2538 = {
+	holding = none
+}
+
+
+### c_quliang1
+# QULIANG1
+1194 = {
+	culture = xiaren
+	religion = xiali
+	holding = castle_holding
+}
+
+
+### c_julu
+# JULU
+1197 = {
+	culture = xiaren
+	religion = xiali
+	holding = castle_holding
+}
+
+
+##### d_jishi9 ############################
+
+### c_jipei
+# JIPEI
+1185 = {
+	culture = xiaren
+	religion = xiali
+	holding = castle_holding
+}
+# FEI4
+1187 = {
+	holding = none
+}
+
+
+### c_hanhui
+# HANHUI
+1186 = {
+	culture = xiaren
+	religion = xiali
+	holding = castle_holding
+}
+
+
+### c_lieren
+# LIEREN
+1193 = {
+	culture = xiaren
+	religion = xiali
+	holding = castle_holding
+}
+
+

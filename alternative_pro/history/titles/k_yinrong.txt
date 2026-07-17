@@ -1,0 +1,73 @@
+﻿c_yiyang1 = {
+	3580.1.1 = {
+		liege = "k_yinrong"
+		holder = yunxingyinrong2
+	}
+	3625.12.31 = {
+		holder = yunxingyinrong3
+	}
+	3659.12.31 = {
+		holder = yunxingyinrong4
+	}
+	3688.12.31 = {
+		holder = yunxingyinrong5
+	}
+	3703.12.31 = {
+		holder = yunxingyinrong6
+	}
+	3747.12.31 = {
+		holder = yunxingyinrong7
+	}
+	3765.12.31 = {
+		holder = yunxingyinrong8
+	}
+	3796.12.31 = {
+		holder = yunxingyinrong9
+	}
+	3821.12.31 = {
+		holder = yunxingyinrong10
+	}
+	3840.12.31 = {
+		holder = yunxingyinrong13
+	}
+	3849.1.1 = {
+		change_development_level = 26
+		government = tribal_government
+	}
+}
+k_yinrong = {
+	3580.1.1 = {
+		holder = yunxingyinrong2
+	}
+	3625.12.31 = {
+		holder = yunxingyinrong3
+	}
+	3659.12.31 = {
+		holder = yunxingyinrong4
+	}
+	3688.12.31 = {
+		holder = yunxingyinrong5
+	}
+	3703.12.31 = {
+		holder = yunxingyinrong6
+	}
+	3747.12.31 = {
+		holder = yunxingyinrong7
+	}
+	3765.12.31 = {
+		holder = yunxingyinrong8
+	}
+	3796.12.31 = {
+		holder = yunxingyinrong9
+	}
+	3821.12.31 = {
+		holder = yunxingyinrong10
+	}
+	3840.12.31 = {
+		holder = yunxingyinrong11
+	}
+	3849.12.31 = {
+		government = tribal_government
+		change_development_level = 28
+	}
+}

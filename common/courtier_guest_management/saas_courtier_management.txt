@@ -1,0 +1,104 @@
+﻿# Vanilla courtier departure model with situation-aware phase weights.
+# Eligible characters are already restricted by courtier_allowed_to_leave_trigger,
+# which excludes councillors and holders of court positions.
+
+courtier_management = {
+	can_leave = {
+		any_traveling_family_member = {
+			count = all
+			courtier_allowed_to_leave_trigger = yes
+		}
+	}
+
+	monthly_leave_chance_x10 = {
+		base = 20
+
+		# Restoration halves the baseline; Warring States doubles it.
+		modifier = {
+			saas_is_ritual_restoration_phase_trigger = yes
+			add = -10
+		}
+		modifier = {
+			saas_is_warring_states_phase_trigger = yes
+			add = 20
+		}
+
+		ai_value_modifier = {
+			ai_energy = { value = high_positive_ai_value_inverse multiply = 3 }
+			ai_boldness = { value = high_positive_ai_value_inverse multiply = 3 }
+			ai_greed = { value = high_positive_ai_value_inverse multiply = 3 }
+		}
+
+		modifier = {
+			any_claim = { useful_courtier_or_guest_claim_trigger = { RULER = scope:liege } }
+			add = -10
+		}
+
+		opinion_modifier = {
+			opinion_target = scope:liege
+			multiplier = -0.1
+			min = -5
+			max = 5
+		}
+		modifier = { has_relation_friend = scope:liege add = -2 }
+		modifier = { has_relation_lover = scope:liege add = -2 }
+		modifier = { is_close_family_of = scope:liege add = -2 }
+		modifier = { has_relation_rival = scope:liege add = 5 }
+		modifier = {
+			any_child = { any_parent = { this = scope:liege } }
+			add = -1
+		}
+
+		modifier = {
+			any_relation = { type = lover is_courtier_of = scope:liege }
+			add = -2
+		}
+		modifier = {
+			any_relation = { type = friend is_courtier_of = scope:liege }
+			add = -1
+		}
+		modifier = {
+			any_close_family_member = {
+				this != scope:liege
+				is_courtier_of = scope:liege
+				reverse_opinion = { target = scope:courtier value >= high_positive_opinion }
+			}
+			add = -2
+		}
+
+		modifier = { has_trait = bastard add = 3 }
+		modifier = { has_trait = pregnant add = -10 }
+		modifier = { health <= poor_health add = -3 }
+		modifier = { primary_spouse ?= { is_courtier_of = scope:liege } add = -5 }
+
+		modifier = {
+			culture = { has_cultural_parameter = more_likely_to_leave_court }
+			add = 5
+		}
+		modifier = {
+			culture = { has_cultural_parameter = courtiers_less_likely_to_leave_same_culture_court }
+			this.culture = scope:liege.culture
+			add = -3
+		}
+		modifier = {
+			liege = { has_character_modifier = united_family_modifier }
+			is_close_family_of = liege
+			add = -5
+		}
+
+		min = { value = 10 }
+		max = {
+			value = {
+				value = 30
+				if = {
+					limit = { saas_is_warring_states_phase_trigger = yes }
+					add = 10
+				}
+				if = {
+					limit = { is_adult = no }
+					multiply = 0
+				}
+			}
+		}
+	}
+}

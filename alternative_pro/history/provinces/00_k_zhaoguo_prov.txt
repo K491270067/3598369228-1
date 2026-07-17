@@ -1,0 +1,37 @@
+﻿##### d_zhaoshi ############################
+
+### c_pingyang2
+# PINGYANG2
+884 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+# BIYAN
+892 = {
+	holding = none
+}
+
+
+### c_zhao
+# ZHAO
+885 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+# JING3
+889 = {
+	holding = none
+}
+
+
+### c_zheng1
+# ZHENG1
+890 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+

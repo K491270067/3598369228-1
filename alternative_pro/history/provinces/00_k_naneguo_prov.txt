@@ -1,0 +1,44 @@
+﻿##### d_naneshi ############################
+
+### c_wucheng5
+# WUCHENG5
+1707 = {
+	holding = none
+}
+
+
+### c_zhi5
+# ZHI5
+1708 = {
+	holding = none
+}
+
+
+### c_bowang1
+# BOWANG1
+1709 = {
+	holding = none
+}
+
+
+### c_e1
+# E1
+1722 = {
+	holding = none
+}
+
+
+### c_eryang
+# ERYANG
+1725 = {
+	holding = none
+}
+
+
+### c_dongwu
+# DONGWU
+1728 = {
+	holding = none
+}
+
+

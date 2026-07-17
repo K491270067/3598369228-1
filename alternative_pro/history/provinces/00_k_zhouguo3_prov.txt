@@ -1,0 +1,32 @@
+﻿##### d_jishi4 ############################
+
+### c_gao3
+# GAO3
+868 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+# CHULI
+866 = {
+	holding = none
+}
+# CHANGAN
+867 = {
+	holding = none
+}
+
+
+### c_feng2
+# FENG2
+870 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+# HU2
+873 = {
+	holding = none
+}
+
+

@@ -1,0 +1,45 @@
+﻿c_jiashi3 = {
+	3849.12.31 = {
+		liege = k_miguo
+		holder = jixingmiguo1
+		government = feudal_government
+		succession_laws = { noble_family_succession_law }
+	}
+	5000.10.1 = {
+		effect = {
+			destroy_landless_title_no_tgp_dlc_effect = {
+				DATE = 5000.10.1
+			}
+		}
+	}
+}
+c_mishi = {
+	3849.12.31 = {
+		liege = k_miguo
+		holder = han1208
+		government = feudal_government
+		succession_laws = { noble_family_succession_law }
+	}
+	5000.10.1 = {
+		effect = {
+			destroy_landless_title_no_tgp_dlc_effect = {
+				DATE = 5000.10.1
+			}
+		}
+	}
+}
+c_yingshi1 = {
+	3849.12.31 = {
+		liege = k_miguo
+		holder = jixingmiguo6
+		government = feudal_government
+		succession_laws = { noble_family_succession_law }
+	}
+	5000.10.1 = {
+		effect = {
+			destroy_landless_title_no_tgp_dlc_effect = {
+				DATE = 5000.10.1
+			}
+		}
+	}
+}

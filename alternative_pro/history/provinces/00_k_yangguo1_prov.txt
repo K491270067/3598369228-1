@@ -1,0 +1,66 @@
+﻿##### d_yangshi2 ############################
+
+### c_yang2
+# YANG2
+1041 = {
+	culture = jin
+	religion = xizhouli
+	holding = castle_holding
+}
+# WUSUI
+1046 = {
+	holding = none
+}
+
+
+### c_yanghousai
+# YANGHOUSAI
+1047 = {
+	culture = jin
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_chuiji
+# CHUIJI
+1052 = {
+	culture = jin
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+##### d_qiushi ############################
+
+### c_chou
+# CHOU
+1042 = {
+	culture = jin
+	religion = xizhouli
+	holding = castle_holding
+}
+# KUNDU
+1039 = {
+	holding = none
+}
+
+
+### c_xiangling1
+# XIANGLING1
+1045 = {
+	culture = jin
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_gaoliang
+# GAOLIANG
+1040 = {
+	culture = jin
+	religion = xizhouli
+	holding = castle_holding
+}
+
+

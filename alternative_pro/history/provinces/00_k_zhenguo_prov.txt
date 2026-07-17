@@ -1,0 +1,54 @@
+﻿##### d_zhenshi ############################
+
+### c_bing1
+# 
+1857 = {
+	holding = none
+}
+
+
+### c_zhen1
+# 
+1858 = {
+	holding = none
+}
+
+
+### c_shiyang
+# 
+1859 = {
+	holding = none
+}
+
+
+### c_peng1
+# 
+1860 = {
+	holding = none
+}
+
+
+### c_jishi8
+
+
+### c_yu9
+# 
+1868 = {
+	holding = none
+}
+
+
+### c_ling
+# 
+1869 = {
+	holding = none
+}
+
+
+### c_zhi6
+# 
+1870 = {
+	holding = none
+}
+
+

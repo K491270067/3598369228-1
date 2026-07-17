@@ -1,0 +1,167 @@
+﻿c_masui = {
+	3574.1.1 = {
+		liege = "d_geshi2"
+		holder = sixinggeguo1
+	}
+	3594.1.1 = {
+		holder = sixinggeguo2
+	}
+	3637.1.1 = {
+		holder = sixinggeguo3
+	}
+	3671.1.1 = {
+		holder = sixinggeguo4
+	}
+	3707.1.1 = {
+		holder = sixinggeguo5
+	}
+	3734.1.1 = {
+		holder = sixinggeguo6
+	}
+	3763.1.1 = {
+		holder = sixinggeguo7
+	}
+	3786.1.1 = {
+		holder = sixinggeguo8
+	}
+	3809.1.1 = {
+		holder = sixinggeguo9
+	}
+	3849.12.31 = {
+		liege = "k_quanrong1"
+		holder = han2983
+		change_development_level = 28
+		government = nomad_government
+	}
+}
+c_yiyang2 = {
+	3574.1.1 = {
+		liege = "d_geshi2"
+		holder = sixinggeguo1
+	}
+	3594.1.1 = {
+		holder = sixinggeguo2
+	}
+	3637.1.1 = {
+		holder = sixinggeguo3
+	}
+	3671.1.1 = {
+		holder = sixinggeguo4
+	}
+	3707.1.1 = {
+		holder = sixinggeguo5
+	}
+	3734.1.1 = {
+		holder = sixinggeguo6
+	}
+	3763.1.1 = {
+		holder = sixinggeguo7
+	}
+	3786.1.1 = {
+		holder = sixinggeguo8
+	}
+	3809.1.1 = {
+		holder = sixinggeguo9
+	}
+	3849.12.31 = {
+		liege = "k_quanrong1"
+		holder = han2983
+		change_development_level = 30
+		government = nomad_government
+	}
+}
+d_geshi2 = {
+	3574.1.1 = {
+		liege = "k_geguo2"
+		holder = sixinggeguo1
+	}
+	3587.12.31 = {
+		holder = han1935
+	}
+	3594.1.1 = {
+		holder = sixinggeguo2
+	}
+	3611.12.31 = {
+		holder = han1936
+	}
+	3637.1.1 = {
+		holder = sixinggeguo3
+	}
+	3659.12.31 = {
+		holder = han1937
+	}
+	3671.1.1 = {
+		holder = sixinggeguo4
+	}
+	3682.12.31 = {
+		holder = han1938
+	}
+	3707.1.1 = {
+		holder = sixinggeguo5
+	}
+	3727.12.31 = {
+		holder = han1939
+	}
+	3734.1.1 = {
+		holder = sixinggeguo6
+	}
+	3763.1.1 = {
+		holder = sixinggeguo7
+	}
+	3765.12.31 = {
+		holder = han1940
+	}
+	3786.1.1 = {
+		holder = sixinggeguo8
+	}
+	3792.12.31 = {
+		holder = han1941
+	}
+	3809.1.1 = {
+		holder = sixinggeguo9
+	}
+	3835.12.31 = {
+		holder = jixingdiaoguo1
+	}
+	3849.1.1 = {
+		change_development_level = 28
+	}
+	3849.12.31 = {
+		government = feudal_government
+		liege = "e_zhoutianzi1"
+	}
+}
+k_geguo2 = {
+	3574.1.1 = {
+		liege = "e_zhoutianzi"
+		holder = sixinggeguo1
+	}
+	3594.1.1 = {
+		holder = sixinggeguo2
+	}
+	3637.1.1 = {
+		holder = sixinggeguo3
+	}
+	3671.1.1 = {
+		holder = sixinggeguo4
+	}
+	3707.1.1 = {
+		holder = sixinggeguo5
+	}
+	3734.1.1 = {
+		holder = sixinggeguo6
+	}
+	3763.1.1 = {
+		holder = sixinggeguo7
+	}
+	3786.1.1 = {
+		holder = sixinggeguo8
+	}
+	3809.1.1 = {
+		holder = sixinggeguo9
+	}
+	3849.1.1 = {
+		change_development_level = 33
+		government = feudal_government
+	}
+}

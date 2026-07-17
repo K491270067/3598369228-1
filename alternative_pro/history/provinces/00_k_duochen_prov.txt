@@ -1,0 +1,66 @@
+﻿##### d_duochenshi ############################
+
+### c_duochen
+# DUOCHEN
+2506 = {
+	culture = chidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+# SHANGSI
+2504 = {
+	holding = none
+}
+
+
+### c_ju3
+# JU3
+2498 = {
+	culture = chidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+
+
+### c_dongyu1
+# DONGYU1
+2499 = {
+	culture = chidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+
+
+##### d_duoshi1 ############################
+
+### c_lingchuang
+# LINGCHUANG
+360 = {
+	culture = chidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+
+
+### c_suoshi1
+# SUOSHI1
+2505 = {
+	culture = chidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+# GUI2
+2500 = {
+	holding = none
+}
+
+
+### c_duohe
+# DUOHE
+2513 = {
+	culture = chidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+
+

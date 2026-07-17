@@ -1,0 +1,118 @@
+hbox = {
+	name = "huimeng_special_type_progression" # Must match the GUI file name.
+	spacing = 10
+
+	datacontext = "[ActivityWindow.GetActivity]"
+
+	text_single = {
+		text = "activity_huimeng_special_type_title"
+		align = nobaseline
+		max_width = 120
+
+		tooltip = activity_huimeng_special_type_desc
+	}
+
+	hbox = {
+		margin_right = 10
+	}
+
+	widget = {
+		layoutpolicy_horizontal = expanding
+		size = { 350 20 }
+		allow_outside = yes
+
+		datacontext = "[ActivityWindow.AccessSpecialTypeComplexBar( 'activity_special_type_progression' )]"
+
+		hbox_complex_bar_progress_next = {
+			layoutpolicy_horizontal = expanding
+			tooltip = "HUIMENG_WINDOW_SPECIAL_PROGRESS_TOOLTIP"
+			using = tooltip_se
+		}
+
+		# Vanilla's complex bar exposes fixed 25-point levels. Huimeng keeps the
+		# same marker component and layout, but places its four levels at 30/50/80/95.
+		widget_level_marker_no_anchor = {
+			parentanchor = left|vcenter
+			position = { 105 0 }
+
+			blockoverride "visible_active"
+			{
+				visible = "[And( GreaterThanOrEqualTo_CFixedPoint( ActivityWindow.GetSpecialProgressValue, '(CFixedPoint)30' ), LessThan_CFixedPoint( ActivityWindow.GetSpecialProgressValue, '(CFixedPoint)50' ) )]"
+			}
+
+			blockoverride "visible_inactive"
+			{
+				visible = "[Not( And( GreaterThanOrEqualTo_CFixedPoint( ActivityWindow.GetSpecialProgressValue, '(CFixedPoint)30' ), LessThan_CFixedPoint( ActivityWindow.GetSpecialProgressValue, '(CFixedPoint)50' ) ) )]"
+			}
+
+			blockoverride "marker_tooltip"
+			{
+				tooltip = "activity_huimeng_special_type_bar_segment_tt_0"
+				using = tooltip_se
+			}
+		}
+
+		widget_level_marker_no_anchor = {
+			parentanchor = left|vcenter
+			position = { 175 0 }
+
+			blockoverride "visible_active"
+			{
+				visible = "[And( GreaterThanOrEqualTo_CFixedPoint( ActivityWindow.GetSpecialProgressValue, '(CFixedPoint)50' ), LessThan_CFixedPoint( ActivityWindow.GetSpecialProgressValue, '(CFixedPoint)80' ) )]"
+			}
+
+			blockoverride "visible_inactive"
+			{
+				visible = "[Not( And( GreaterThanOrEqualTo_CFixedPoint( ActivityWindow.GetSpecialProgressValue, '(CFixedPoint)50' ), LessThan_CFixedPoint( ActivityWindow.GetSpecialProgressValue, '(CFixedPoint)80' ) ) )]"
+			}
+
+			blockoverride "marker_tooltip"
+			{
+				tooltip = "activity_huimeng_special_type_bar_segment_tt_1"
+				using = tooltip_se
+			}
+		}
+
+		widget_level_marker_no_anchor = {
+			parentanchor = left|vcenter
+			position = { 280 0 }
+
+			blockoverride "visible_active"
+			{
+				visible = "[And( GreaterThanOrEqualTo_CFixedPoint( ActivityWindow.GetSpecialProgressValue, '(CFixedPoint)80' ), LessThan_CFixedPoint( ActivityWindow.GetSpecialProgressValue, '(CFixedPoint)95' ) )]"
+			}
+
+			blockoverride "visible_inactive"
+			{
+				visible = "[Not( And( GreaterThanOrEqualTo_CFixedPoint( ActivityWindow.GetSpecialProgressValue, '(CFixedPoint)80' ), LessThan_CFixedPoint( ActivityWindow.GetSpecialProgressValue, '(CFixedPoint)95' ) ) )]"
+			}
+
+			blockoverride "marker_tooltip"
+			{
+				tooltip = "activity_huimeng_special_type_bar_segment_tt_2"
+				using = tooltip_se
+			}
+		}
+
+		widget_level_marker_no_anchor = {
+			parentanchor = left|vcenter
+			position = { 333 0 }
+
+			blockoverride "visible_active"
+			{
+				visible = "[GreaterThanOrEqualTo_CFixedPoint( ActivityWindow.GetSpecialProgressValue, '(CFixedPoint)95' )]"
+			}
+
+			blockoverride "visible_inactive"
+			{
+				visible = "[LessThan_CFixedPoint( ActivityWindow.GetSpecialProgressValue, '(CFixedPoint)95' )]"
+			}
+
+			blockoverride "marker_tooltip"
+			{
+				tooltip = "activity_huimeng_special_type_bar_segment_tt_3"
+				using = tooltip_se
+			}
+		}
+	}
+}

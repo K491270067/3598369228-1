@@ -1,0 +1,42 @@
+﻿c_jiuqu = {
+	3768.1.1 = {
+		liege = "k_yinguo"
+		holder = han1911
+	}
+	3845.12.31 = {
+		holder = han1913
+	}
+	3849.1.1 = {
+		change_development_level = 28
+		government = feudal_government
+	}
+}
+c_xiashi = {
+	3768.1.1 = {
+		liege = "k_yinguo"
+		holder = han1911
+	}
+	3800.1.1 = {
+		holder = han1924
+	}
+	3845.12.31 = {
+		holder = han1925
+	}
+	3849.1.1 = {
+		change_development_level = 29
+		government = feudal_government
+	}
+}
+k_yinguo = {
+	3768.1.1 = {
+		liege = "e_zhoutianzi"
+		holder = han1911
+	}
+	3845.12.31 = {
+		holder = han1912
+	}
+	3849.1.1 = {
+		change_development_level = 32
+		government = feudal_government
+	}
+}

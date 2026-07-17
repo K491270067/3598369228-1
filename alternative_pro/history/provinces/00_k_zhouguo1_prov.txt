@@ -1,0 +1,37 @@
+﻿##### d_zhoushi1 ############################
+
+### c_zhou1
+# ZHOU1
+887 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+# MAO4
+894 = {
+	holding = none
+}
+
+
+### c_qi6
+# QI6
+895 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_duyang1
+# DUYANG1
+922 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+# DULIN
+921 = {
+	holding = none
+}
+
+

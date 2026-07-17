@@ -1,0 +1,44 @@
+﻿##### d_zhuanshi ############################
+
+### c_zhuan
+# ZHUAN
+267 = {
+	culture = dongyi
+	religion = yili
+	holding = castle_holding
+}
+# XIANGBI
+379 = {
+	holding = none
+}
+
+
+### c_xiang1
+# XIANG1
+378 = {
+	culture = dongyi
+	religion = yili
+	holding = castle_holding
+}
+
+
+##### d_zhuqiushi ############################
+
+### c_jiqiu
+# JIQIU
+251 = {
+	culture = dongyi
+	religion = yili
+	holding = castle_holding
+}
+
+
+### c_wuyang
+# WUYANG
+377 = {
+	culture = dongyi
+	religion = yili
+	holding = castle_holding
+}
+
+

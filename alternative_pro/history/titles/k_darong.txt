@@ -1,0 +1,74 @@
+﻿c_huxing = {
+	3679.1.1 = {
+		liege = "k_darong"
+		holder = jixinghushi1
+	}
+	3736.1.1 = {
+		holder = jixinghushi2
+	}
+	3757.1.1 = {
+		holder = jixinghushi3
+	}
+	3781.1.1 = {
+		holder = jixinghushi4
+	}
+	3804.1.1 = {
+		holder = jixinghushi5
+	}
+	3827.1.1 = {
+		holder = jixinghushi7
+	}
+	3849.1.1 = {
+		change_development_level = 27
+		government = tribal_government
+	}
+}
+c_lishi = {
+	3679.1.1 = {
+		liege = "k_darong"
+		holder = jixinghushi1
+	}
+	3736.1.1 = {
+		holder = jixinghushi2
+	}
+	3757.1.1 = {
+		holder = jixinghushi3
+	}
+	3781.1.1 = {
+		holder = jixinghushi4
+	}
+	3804.1.1 = {
+		holder = jixinghushi5
+	}
+	3827.1.1 = {
+		holder = jixinghushi8
+	}
+	3849.1.1 = {
+		change_development_level = 26
+		government = tribal_government
+	}
+}
+k_darong = {
+	3679.1.1 = {
+		holder = jixinghushi1
+	}
+	3736.1.1 = {
+		holder = jixinghushi2
+	}
+	3757.1.1 = {
+		holder = jixinghushi3
+	}
+	3781.1.1 = {
+		holder = jixinghushi4
+	}
+	3804.1.1 = {
+		holder = jixinghushi5
+	}
+	3827.1.1 = {
+		holder = jixinghushi6
+	}
+	3849.12.31 = {
+		government = tribal_government
+		change_development_level = 28
+	}
+}

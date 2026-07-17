@@ -1,0 +1,42 @@
+﻿##### d_nanyanshi ############################
+
+### c_yan3
+# LINYAN
+662 = {
+	holding = none
+}
+
+
+### c_wanpu
+
+
+### c_wa
+# WA
+667 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+##### d_yanshi5 ############################
+
+### c_zilou1
+
+
+### c_taoren
+# GUILING
+682 = {
+	holding = none
+}
+
+
+### c_pingyang1
+# PINGYANG1
+670 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+

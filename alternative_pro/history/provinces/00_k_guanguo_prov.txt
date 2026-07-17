@@ -1,0 +1,66 @@
+﻿##### d_guanshi ############################
+
+### c_dunqiu
+# DUNQIU
+716 = {
+	culture = xiaren
+	religion = xiali
+	holding = castle_holding
+}
+
+
+### c_guan1
+# XIANGNIU
+721 = {
+	holding = none
+}
+
+
+##### d_yushi8 ############################
+
+### c_maoshi
+# MAOSHI
+717 = {
+	culture = xiaren
+	religion = xiali
+	holding = castle_holding
+}
+
+
+### c_yu4
+# YU4
+720 = {
+	culture = xiaren
+	religion = xiali
+	holding = castle_holding
+}
+# GAN1
+718 = {
+	holding = none
+}
+
+
+##### d_yushi7 ############################
+
+### c_tie
+# TIE
+714 = {
+	culture = xiaren
+	religion = xiali
+	holding = castle_holding
+}
+
+
+### c_qi5
+# QI5
+715 = {
+	culture = xiaren
+	religion = xiali
+	holding = castle_holding
+}
+# GANGPING
+719 = {
+	holding = none
+}
+
+

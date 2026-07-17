@@ -1,0 +1,51 @@
+﻿##### d_shushi ############################
+
+### c_linhu
+# 
+2052 = {
+	holding = none
+}
+
+
+### c_huangpu1
+# 
+2056 = {
+	holding = none
+}
+
+
+### c_wuqiang1
+# 
+2057 = {
+	holding = none
+}
+
+
+### c_shu2
+# 
+2058 = {
+	holding = none
+}
+
+
+### c_jiashi
+# 
+2059 = {
+	holding = none
+}
+
+
+### c_jin4
+# 
+2060 = {
+	holding = none
+}
+
+
+### c_mi6
+# 
+2063 = {
+	holding = none
+}
+
+

@@ -1,0 +1,53 @@
+﻿##### d_xiangshi ############################
+
+### c_xiang
+# XIANG
+253 = {
+	culture = qi
+	religion = dongzhouli
+	holding = castle_holding
+}
+# GAOXIANG
+254 = {
+	holding = none
+}
+
+
+### c_shu3
+# SHU3
+2245 = {
+	culture = qi
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+### c_yushan
+# YUSHAN
+2246 = {
+	culture = qi
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+##### d_bishi2 ############################
+
+### c_youli
+# YOULI
+252 = {
+	culture = qi
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+### c_pi
+# PI
+255 = {
+	culture = qi
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+

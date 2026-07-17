@@ -1,0 +1,76 @@
+﻿##### d_baoshi1 ############################
+
+### c_bao1
+# TREGUIER
+2161 = {
+	culture = xiaren
+	religion = xiali
+	holding = castle_holding
+}
+# HANYANG1
+3620 = {
+	holding = none
+}
+
+
+### c_baogu
+# PORHOET
+2163 = {
+	culture = xiaren
+	religion = xiali
+	holding = castle_holding
+}
+# JIGU1
+2164 = {
+	holding = none
+}
+
+
+##### d_nanmenshi ############################
+
+### c_mianyang
+# BAYEUX
+2170 = {
+	culture = xiaren
+	religion = xiali
+	holding = castle_holding
+}
+
+
+### c_yangpingguan
+# YANGPINGGUAN
+3125 = {
+	culture = xiaren
+	religion = xiali
+	holding = castle_holding
+}
+# JUXIAN5
+3619 = {
+	holding = none
+}
+
+
+##### d_chenggongshi ############################
+
+### c_huangjin
+# RENNES
+2165 = {
+	culture = xiaren
+	religion = xiali
+	holding = castle_holding
+}
+
+
+### c_nanzheng
+# CHATEAUBRIANT
+2166 = {
+	culture = xiaren
+	religion = xiali
+	holding = castle_holding
+}
+# COUTANCES
+2168 = {
+	holding = none
+}
+
+

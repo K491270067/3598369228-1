@@ -1,0 +1,57 @@
+﻿##### d_tongshi1 ############################
+
+### c_tong5
+# TONG5
+2776 = {
+	culture = yinshang
+	religion = yinli
+	holding = castle_holding
+}
+# FENG6
+2779 = {
+	holding = none
+}
+
+
+### c_han6
+# HAN6
+2778 = {
+	culture = yinshang
+	religion = yinli
+	holding = castle_holding
+}
+
+
+### c_peng2
+# PENG2
+2780 = {
+	culture = yinshang
+	religion = yinli
+	holding = castle_holding
+}
+
+
+##### d_fushi1 ############################
+
+### c_pengya
+# PENGYA
+965 = {
+	culture = yinshang
+	religion = yinli
+	holding = castle_holding
+}
+
+
+### c_fu1
+# FU1
+974 = {
+	culture = yinshang
+	religion = yinli
+	holding = castle_holding
+}
+# LUOCHUAN
+1456 = {
+	holding = none
+}
+
+

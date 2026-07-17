@@ -1,0 +1,37 @@
+﻿##### d_kuaishi ############################
+
+### c_jing
+# JING
+624 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+# ZHAIYANG
+2433 = {
+	holding = none
+}
+
+
+### c_kuai
+# KUAI
+625 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+# MI2
+763 = {
+	holding = none
+}
+
+
+### c_zi8
+# ZI8
+2446 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+

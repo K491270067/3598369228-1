@@ -1,0 +1,62 @@
+﻿##### d_gaoshi1 ############################
+
+### c_gao1
+# GAO1
+526 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+# CHENGWU
+2322 = {
+	holding = none
+}
+
+
+### c_du1
+# DU1
+550 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+### c_chu1
+# CHU1
+2392 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+##### d_liangqiu ############################
+
+### c_liangqiu
+# LIANGQIU
+521 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+### c_lushang
+# LUSHANG
+520 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+### c_jiying
+# JIYING
+537 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+

@@ -1,0 +1,56 @@
+﻿d_yimushi = {
+	3589.1.1 = {
+		liege = "k_lingfuguo"
+		holder = lingfushi1
+	}
+	3651.12.31 = {
+		holder = lingfushi2
+	}
+	3682.12.31 = {
+		holder = lingfushi3
+	}
+	3723.12.31 = {
+		holder = lingfushi4
+	}
+	3772.12.31 = {
+		holder = lingfushi5
+	}
+	3815.12.31 = {
+		holder = lingfushi6
+	}
+	3843.12.31 = {
+		holder = lingfushi12
+	}
+	3849.1.1 = {
+		government = feudal_government
+		change_development_level = 26
+	}
+}
+k_lingfuguo = {
+	3589.1.1 = {
+		liege = "e_zhoutianzi"
+		holder = lingfushi1
+	}
+	3651.12.31 = {
+		holder = lingfushi2
+	}
+	3682.12.31 = {
+		holder = lingfushi3
+	}
+	3723.12.31 = {
+		holder = lingfushi4
+	}
+	3772.12.31 = {
+		holder = lingfushi5
+	}
+	3815.12.31 = {
+		holder = lingfushi6
+	}
+	3843.12.31 = {
+		holder = lingfushi7
+	}
+	3849.1.1 = {
+		government = feudal_government
+		change_development_level = 27
+	}
+}

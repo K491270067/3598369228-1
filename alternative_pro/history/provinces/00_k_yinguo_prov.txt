@@ -1,0 +1,33 @@
+﻿##### d_yinshi1 ############################
+
+### c_yin2
+# YIN2
+816 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+# YINDAO
+819 = {
+	holding = none
+}
+
+
+### c_jiuqu
+# JIUQU
+826 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_xiashi
+# XIASHI
+827 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+

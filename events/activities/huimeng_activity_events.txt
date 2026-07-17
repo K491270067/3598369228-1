@@ -1,0 +1,99 @@
+﻿namespace = huimeng_activity
+
+# Opening: the host establishes protocol without borrowing coronation effects.
+huimeng_activity.0001 = {
+	type = activity_event
+	title = huimeng_activity.0001.t
+	desc = huimeng_activity.0001.desc
+	theme = diplomacy
+
+	left_portrait = {
+		character = root
+		animation = storyteller
+	}
+
+	option = {
+		name = huimeng_activity.0001.a
+		scope:activity = { activity_special_type_progression_medium = yes }
+		add_prestige = minor_prestige_gain
+	}
+	option = {
+		name = huimeng_activity.0001.b
+		remove_short_term_gold = medium_gold_value
+		scope:activity = { activity_special_type_progression_major = yes }
+		add_prestige = medium_prestige_gain
+		ai_chance = { base = 30 }
+	}
+}
+
+# Deliberations: diplomacy stabilizes the gathering, intrigue risks polarization.
+huimeng_activity.0010 = {
+	type = activity_event
+	title = huimeng_activity.0010.t
+	desc = huimeng_activity.0010.desc
+	theme = diplomacy
+
+	left_portrait = {
+		character = root
+		animation = chancellor
+	}
+
+	option = {
+		name = huimeng_activity.0010.a
+		add_diplomacy_lifestyle_xp = 50
+		scope:activity = { activity_special_type_progression_variable = { NUM = 8 } }
+		ai_chance = { base = 60 modifier = { add = 30 diplomacy >= high_skill_rating } }
+	}
+	option = {
+		name = huimeng_activity.0010.b
+		add_intrigue_lifestyle_xp = 50
+		random_list = {
+			50 = { scope:activity = { activity_special_type_progression_variable = { NUM = 12 } } }
+			50 = { scope:activity = { activity_special_type_progression_variable = { NUM = -8 } } }
+		}
+		ai_chance = { base = 40 modifier = { add = 30 intrigue >= high_skill_rating } }
+	}
+}
+
+# Oath: the final public act contributes the last magnificence adjustment.
+huimeng_activity.0020 = {
+	type = activity_event
+	title = huimeng_activity.0020.t
+	desc = huimeng_activity.0020.desc
+	theme = diplomacy
+
+	left_portrait = {
+		character = root
+		animation = council
+	}
+
+	option = {
+		name = huimeng_activity.0020.a
+		scope:activity = { activity_special_type_progression_major = yes }
+		add_piety = minor_piety_gain
+		add_prestige = minor_prestige_gain
+	}
+	option = {
+		name = huimeng_activity.0020.b
+		scope:activity = { activity_special_type_progression_medium = yes }
+		change_influence = minor_influence_gain
+	}
+}
+
+# Failed result: no House Bloc is created and no successful-Huimeng catalyst fires.
+huimeng_activity.0090 = {
+	type = activity_event
+	title = huimeng_activity.0090.t
+	desc = huimeng_activity.0090.desc
+	theme = diplomacy
+
+	left_portrait = {
+		character = root
+		animation = shame
+	}
+
+	option = {
+		name = huimeng_activity.0090.a
+		add_prestige = major_prestige_loss
+	}
+}

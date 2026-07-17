@@ -1,0 +1,53 @@
+﻿##### d_ruishi ############################
+
+### c_longmen
+# LONGMEN
+971 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_rui
+# RUI
+972 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+# JIGU
+973 = {
+	holding = none
+}
+
+
+### c_long3
+# LONG3
+2775 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+##### d_pangshi ############################
+
+### c_fan3
+# FAN3
+969 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_pang
+# PANG
+970 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+

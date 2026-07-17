@@ -1,0 +1,37 @@
+﻿##### d_xiangshi1 ############################
+
+### c_nandun
+# NANDUN
+1629 = {
+	holding = none
+}
+
+
+### c_damin
+# DAMIN
+1630 = {
+	holding = none
+}
+
+
+### c_xiang6
+# XIANG6
+1669 = {
+	holding = none
+}
+
+
+### c_yang4
+# YANG4
+1670 = {
+	holding = none
+}
+
+
+### c_juemo
+# JUEMO
+1672 = {
+	holding = none
+}
+
+

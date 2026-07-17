@@ -1,0 +1,79 @@
+﻿##### d_zhenfanshi ############################
+
+### c_youxiumoutun
+# YOUXIUMOUTUN
+3353 = {
+	holding = none
+}
+# DASHISUO
+3352 = {
+	holding = none
+}
+# XIAOSHISUO
+3351 = {
+	holding = none
+}
+# SANGWAI
+3350 = {
+	holding = none
+}
+# MOUSHUI
+3349 = {
+	holding = none
+}
+
+
+### c_moushui
+
+
+### c_sangwai
+
+
+### c_xiaoshisuo
+
+
+### c_dashisuo
+
+
+### c_zhenfan
+
+
+### c_pingshi1
+# GULI1
+3357 = {
+	holding = none
+}
+# JIAPING
+3447 = {
+	holding = none
+}
+
+
+### c_qichong
+
+
+### c_boji
+# BOJI
+3354 = {
+	holding = none
+}
+
+
+### c_lianggu
+
+
+### c_sengliang
+
+
+### c_gongmuda
+
+
+### c_yusinei
+
+
+### c_guli1
+
+
+### c_jiaping
+
+

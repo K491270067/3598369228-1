@@ -1,0 +1,910 @@
+﻿#############  杞国-姒姓杞氏（修改） #############
+#参考"娄氏""楼氏"来源
+qiguo1={
+  name="kua1"#启弟
+  dynasty=xin397
+	religion="xiali" 
+	culture="xiaren"
+  father=han1337
+
+  2558.12.31 = {
+		birth = yes
+	}
+  2611.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+qiguo2={
+  name="kang1"
+  dynasty_house=house_xin19
+	religion="xiali" 
+	culture="xiaren"
+  father=qiguo1
+
+  2587.1.1 = {
+		birth = yes
+	}
+  2640.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+qiguo3={
+  name="ning"
+  dynasty_house=house_xin19
+	religion="xiali" 
+	culture="xiaren"
+  father=qiguo2
+
+  2633.1.1 = {
+		birth = yes
+	}
+  2707.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+qiguo4={
+  name="zhuang1"
+  dynasty_house=house_xin19
+	religion="xiali" 
+	culture="xiaren"
+  father=qiguo3
+
+  2703.1.1 = {
+		birth = yes
+	}
+  2751.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+qiguo5={
+  name="mu2"
+  dynasty_house=house_xin19
+	religion="xiali" 
+	culture="xiaren"
+  father=qiguo4
+
+  2743.1.1 = {
+		birth = yes
+	}
+  2801.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+qiguo6={
+  name="boheng"
+  dynasty_house=house_xin19
+	religion="xiali" 
+	culture="xiaren"
+  father=qiguo5
+
+  2789.1.1 = {
+		birth = yes
+	}
+  2847.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+qiguo7={
+  name="ping"
+  dynasty_house=house_xin19
+	religion="xiali" 
+	culture="xiaren"
+  father=qiguo6
+
+  2833.1.1 = {
+		birth = yes
+	}
+  2900.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+qiguo8={
+  name="wei4"
+  dynasty_house=house_xin19
+	religion="xiali" 
+	culture="xiaren"
+  father=qiguo7
+
+  2889.1.1 = {
+		birth = yes
+	}
+  2954.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+qiguo9={
+  name="zhao1"
+  dynasty_house=house_xin19
+	religion="xiali" 
+	culture="xiaren"
+  father=qiguo8
+
+  2927.1.1 = {
+		birth = yes
+	}
+  2978.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han5836={
+  name="nanming1019"#15
+  dynasty_house=house_xin19
+	religion="xiali" 
+	culture="xiaren"
+  father=qiguo9
+
+  2960.6.6 = {
+		birth = yes
+	}
+  3014.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han5837={
+  name="mo2"#16
+  dynasty_house=house_xin19
+	religion="xiali" 
+	culture="xiaren"
+  father=han5836
+
+  3001.6.6 = {
+		birth = yes
+	}
+  3069.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han5838={
+  name="wei8"#17
+  dynasty_house=house_xin19
+	religion="xiali" 
+	culture="xiaren"
+  father=han5837
+
+  3061.6.6 = {
+		birth = yes
+	}
+  3111.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han5839={
+  name="zi1"#18
+  dynasty_house=house_xin19
+	religion="xiali" 
+	culture="xiaren"
+  father=han5838
+
+  3092.6.6 = {
+		birth = yes
+	}
+  3154.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han5840={
+  name="chuan1"#19
+  dynasty_house=house_xin19
+	religion="xiali" 
+	culture="xiaren"
+  father=han5839
+
+  3137.6.6 = {
+		birth = yes
+	}
+  3193.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han5841={
+  name="nanming20"#20
+  dynasty_house=house_xin19
+	religion="xiali" 
+	culture="xiaren"
+  father=han5840
+
+  3188.6.6 = {
+		birth = yes
+	}
+  3244.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han5842={
+  name="nanming26"#21
+  dynasty_house=house_xin19
+	religion="xiali" 
+	culture="xiaren"
+  father=han5841
+
+  3234.6.6 = {
+		birth = yes
+	}
+  3300.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han5843={
+  name="nanming31"#22
+  dynasty_house=house_xin19
+	religion="xiali" 
+	culture="xiaren"
+  father=han5842
+
+  3288.6.6 = {
+		birth = yes
+	}
+  3344.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han5844={
+  name="nanming500"#23
+  dynasty_house=house_xin19
+	religion="xiali" 
+	culture="xiaren"
+  father=han5843
+
+  3328.6.6 = {
+		birth = yes
+	}
+  3390.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han5845={
+  name="nanming509"#24
+  dynasty_house=house_xin19
+	religion="xiali" 
+	culture="xiaren"
+  father=han5844
+
+  3378.6.6 = {
+		birth = yes
+	}
+  3434.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han5846={
+  name="nanming547"#25
+  dynasty_house=house_xin19
+	religion="xiali" 
+	culture="xiaren"
+  father=han5845
+
+  3421.6.6 = {
+		birth = yes
+	}
+  3489.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han5847={
+  name="nanming614"#26
+  dynasty_house=house_xin19
+	religion="xiali" 
+	culture="xiaren"
+  father=han5846
+
+  3468.6.6 = {
+		birth = yes
+	}
+  3511.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han5848={
+  name="nanming621"#27
+  dynasty_house=house_xin19
+	religion="xiali" 
+	culture="xiaren"
+  father=han5847
+
+  3493.1.1 = {
+		birth = yes
+	}
+  3533.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han5849={
+  name="nanming648"#28
+  dynasty_house=house_xin19
+	religion="xiali" 
+	culture="xiaren"
+  father=han5848
+
+  3521.1.1 = {
+		birth = yes
+	}
+  3570.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han247={
+  name="qu2"#东楼公/杞东楼公
+  dynasty_house=house_xin19#楼
+	religion="xiali" 
+	culture="xiaren"
+	father=han5849
+
+  3564.1.1 = {
+		birth = yes
+	}
+  3603.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+    give_nickname=nick_donglougong
+  }
+}
+han248={
+  name="jing1"#西楼公/杞西楼公
+  dynasty_house=house_xin19#楼
+	religion="xiali" 
+	culture="xiaren"
+  father=han247
+
+  3601.7.1 = {
+		birth = yes
+	}
+  3680.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+    give_nickname=nick_xilougong
+  }
+}
+han249={
+  name="nan"#杞题公
+  dynasty_house=house_xin19#楼
+	religion="xiali" 
+	culture="xiaren"
+  father=han248
+
+  3678.1.1 = {
+		birth = yes
+	}
+  3760.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+    give_nickname=nick_tigong
+  }
+}
+han250={
+  name="gui3"#杞谋娶公
+  dynasty_house=house_xin19#楼
+	religion="xiali" 
+	culture="xiaren"
+  father=han249
+
+  3759.1.1 = {
+		birth = yes
+	}
+  3830.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+    give_nickname=nick_mouqugong
+  }
+}
+han251={
+  name="meibi"#杞伯每亡，见于杞伯鼎等一批铭文，春秋或西周晚期杞伯
+  dynasty_house=house_xin19#楼
+	religion="xiali" 
+	culture="xiaren"
+  father=han250
+
+  3825.1.1 = {
+		birth = yes
+	}
+  3919.1.1 = {
+    death = yes
+  }
+}
+han252={
+  name="wu"#储君1号
+  dynasty_house=house_xin19#楼
+	religion="xiali" 
+	culture="xiaren"
+  father=han251
+
+  3845.1.1 = {
+		birth = yes
+	}
+  3919.1.1 = {
+    death = yes
+  }
+}
+han253={
+  name="chou2"#储君2号
+  dynasty_house=house_xin19#楼
+	religion="xiali" 
+	culture="xiaren"
+  father=han251
+
+  3846.1.1 = {
+		birth = yes
+	}
+  3919.1.1 = {
+    death = yes
+  }
+}
+han254={
+  name="zheng1"#储君3号
+  dynasty_house=house_xin19#楼
+	religion="xiali" 
+	culture="xiaren"
+  father=han251
+
+  3847.1.1 = {
+		birth = yes
+	}
+  3919.1.1 = {
+    death = yes
+  }
+}
+han255={
+  name="lihua"#女1
+  dynasty_house=house_xin19#楼
+	religion="xiali" 
+	culture="xiaren"
+  father=han251
+  female=yes
+
+  3848.1.1 = {
+		birth = yes
+	}
+  3919.1.1 = {
+    death = yes
+  }
+}
+han256={
+  name="shaoer"#女2
+  dynasty_house=house_xin19#楼
+	religion="xiali" 
+	culture="xiaren"
+  father=han251
+  female=yes
+
+  3849.1.1 = {
+		birth = yes
+	}
+  3919.1.1 = {
+    death = yes
+  }
+}
+#############  杞国公族-题氏 #############
+qiguo10={
+  name="zhong"#
+  dynasty_house=house_xin398
+	religion="xiali" 
+	culture="xiaren"
+  father=han249
+
+  3700.1.1 = {
+		birth = yes
+	}
+  3761.1.1 = {
+    death = yes
+  }
+}
+qiguo11={
+  name="nanming1087"#
+  dynasty_house=house_xin398
+	religion="xiali" 
+	culture="xiaren"
+  father=qiguo10
+
+  3754.1.1 = {
+		birth = yes
+	}
+  3813.1.1 = {
+    death = yes
+  }
+}
+qiguo12={
+  name="nanming1021"
+  dynasty_house=house_xin398
+	religion="xiali" 
+	culture="xiaren"
+  father=qiguo11
+
+  3789.1.1 = {
+		birth = yes
+	}
+  3842.1.1 = {
+    death = yes
+  }
+}
+han257={
+  name="yucheng"#
+  dynasty_house=house_xin398
+	religion="xiali" 
+	culture="xiaren"
+  father=qiguo12
+
+  3826.1.1 = {
+		birth = yes
+	}
+  3919.1.1 = {
+    death = yes
+  }
+}
+han258={
+  name="ban"#
+  dynasty_house=house_xin398
+	religion="xiali" 
+	culture="xiaren"
+  father=han257
+
+  3845.1.1 = {
+		birth = yes
+	}
+  3919.1.1 = {
+    death = yes
+  }
+}
+han259={
+  name="yifang"#
+  dynasty_house=house_xin398
+	religion="xiali" 
+	culture="xiaren"
+  father=han257
+  female=yes
+
+  3846.1.1 = {
+		birth = yes
+	}
+  3919.1.1 = {
+    death = yes
+  }
+}
+han260={
+  name="nvming4"#
+  dynasty_house=house_xin398
+	religion="xiali" 
+	culture="xiaren"
+  father=han257
+  female=yes
+
+  3847.1.1 = {
+		birth = yes
+	}
+  3919.1.1 = {
+    death = yes
+  }
+}
+#############  杞国公族-东楼氏 #############
+qiguo13={
+  name="nanming658"#
+  dynasty_house=house_xin399
+	religion="xiali" 
+	culture="xiaren"
+  father=han247
+
+  3602.6.24 = {
+		birth = yes
+	}
+  3660.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+qiguo14={
+  name="nanming665"#
+  dynasty_house=house_xin399
+	religion="xiali" 
+	culture="xiaren"
+  father=qiguo13
+
+  3654.6.24 = {
+		birth = yes
+	}
+  3711.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+qiguo15={
+  name="nanming682"#
+  dynasty_house=house_xin399
+	religion="xiali" 
+	culture="xiaren"
+  father=qiguo14
+
+  3687.6.24 = {
+		birth = yes
+	}
+  3733.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+qiguo16={
+  name="nanming692"#
+  dynasty_house=house_xin399
+	religion="xiali" 
+	culture="xiaren"
+  father=qiguo15
+
+  3719.6.24 = {
+		birth = yes
+	}
+  3768.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+qiguo17={
+  name="nanming707"#
+  dynasty_house=house_xin399
+	religion="xiali" 
+	culture="xiaren"
+  father=qiguo16
+
+  3754.1.1 = {
+		birth = yes
+	}
+  3813.1.1 = {
+    death = yes
+  }
+}
+qiguo18={
+  name="nanming721"
+  dynasty_house=house_xin399
+	religion="xiali" 
+	culture="xiaren"
+  father=qiguo17
+
+  3789.1.1 = {
+		birth = yes
+	}
+  3842.1.1 = {
+    death = yes
+  }
+}
+qiguo19={
+  name="nanming739"#
+  dynasty_house=house_xin399
+	religion="xiali" 
+	culture="xiaren"
+  father=qiguo18
+
+  3826.1.1 = {
+		birth = yes
+	}
+  3919.1.1 = {
+    death = yes
+  }
+}
+qiguo20={
+  name="nanming754"#
+  dynasty_house=house_xin399
+	religion="xiali" 
+	culture="xiaren"
+  father=qiguo19
+
+  3845.1.1 = {
+		birth = yes
+	}
+  3919.1.1 = {
+    death = yes
+  }
+}
+qiguo21={
+  name="nanming640"#
+  dynasty_house=house_xin399
+	religion="xiali" 
+	culture="xiaren"
+  father=qiguo19
+
+  3846.1.1 = {
+		birth = yes
+	}
+  3919.1.1 = {
+    death = yes
+  }
+}
+qiguo22={
+  name="nvming9"#
+  dynasty_house=house_xin399
+	religion="xiali" 
+	culture="xiaren"
+  father=qiguo19
+  female=yes
+
+  3847.1.1 = {
+		birth = yes
+	}
+  3919.1.1 = {
+    death = yes
+  }
+}
+#############  杞国公族-西楼氏 #############
+qiguo23={
+  name="nanming960"#
+  dynasty_house=house_xin400
+	religion="xiali" 
+	culture="xiaren"
+  father=han248
+
+  3679.6.24 = {
+		birth = yes
+	}
+  3711.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+qiguo24={
+  name="nanming962"#
+  dynasty_house=house_xin400
+	religion="xiali" 
+	culture="xiaren"
+  father=qiguo23
+
+  3697.6.24 = {
+		birth = yes
+	}
+  3733.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+qiguo25={
+  name="nanming988"#
+  dynasty_house=house_xin400
+	religion="xiali" 
+	culture="xiaren"
+  father=qiguo24
+
+  3719.6.24 = {
+		birth = yes
+	}
+  3768.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+qiguo26={
+  name="nanming998"#
+  dynasty_house=house_xin400
+	religion="xiali" 
+	culture="xiaren"
+  father=qiguo25
+
+  3754.1.1 = {
+		birth = yes
+	}
+  3813.1.1 = {
+    death = yes
+  }
+}
+qiguo27={
+  name="nanming1014"
+  dynasty_house=house_xin400
+	religion="xiali" 
+	culture="xiaren"
+  father=qiguo26
+
+  3789.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+qiguo28={
+  name="nanming1032"#
+  dynasty_house=house_xin400
+	religion="xiali" 
+	culture="xiaren"
+  father=qiguo27
+
+  3825.1.1 = {
+		birth = yes
+	}
+  3919.1.1 = {
+    death = yes
+  }
+}
+qiguo29={
+  name="nanming1046"#
+  dynasty_house=house_xin400
+	religion="xiali" 
+	culture="xiaren"
+  father=qiguo27
+
+  3827.1.1 = {
+		birth = yes
+	}
+  3919.1.1 = {
+    death = yes
+  }
+}
+qiguo30={
+  name="yujing"#
+  dynasty_house=house_xin400
+	religion="xiali" 
+	culture="xiaren"
+  father=qiguo27
+  female=yes
+
+  3830.1.1 = {
+		birth = yes
+	}
+  3919.1.1 = {
+    death = yes
+  }
+}
+qiguo31={
+  name="mei2"#
+  dynasty_house=house_xin400
+	religion="xiali" 
+	culture="xiaren"
+  father=qiguo27
+  female=yes
+
+  3831.1.1 = {
+		birth = yes
+	}
+  3919.1.1 = {
+    death = yes
+  }
+}

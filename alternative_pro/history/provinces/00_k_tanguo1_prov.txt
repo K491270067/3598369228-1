@@ -1,0 +1,48 @@
+﻿##### d_tanshi1 ############################
+
+### c_tan1
+# TAN1
+270 = {
+	culture = dongyi
+	religion = yili
+	holding = castle_holding
+}
+# LIANG
+283 = {
+	holding = none
+}
+
+
+### c_yongshi
+# YONGSHI
+272 = {
+	culture = dongyi
+	religion = yili
+	holding = castle_holding
+}
+
+
+##### d_dongqiushi ############################
+
+### c_rongqiu
+# RONGQIU
+465 = {
+	culture = dongyi
+	religion = yili
+	holding = castle_holding
+}
+# WUYUAN3
+2289 = {
+	holding = none
+}
+
+
+### c_gaochai
+# GAOCHAI
+2291 = {
+	culture = dongyi
+	religion = yili
+	holding = castle_holding
+}
+
+

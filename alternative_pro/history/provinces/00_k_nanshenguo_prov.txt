@@ -1,0 +1,65 @@
+﻿##### d_nanshenshi ############################
+
+### c_nanshi
+# NANSHI
+1717 = {
+	holding = none
+}
+
+
+### c_xie
+# XIE
+1718 = {
+	holding = none
+}
+
+
+### c_huangji
+# HUANGJI
+1719 = {
+	holding = none
+}
+
+
+### c_chao1
+# CHAO1
+1720 = {
+	holding = none
+}
+
+
+### c_chuisha
+# CHUISHA
+1721 = {
+	holding = none
+}
+
+
+### c_li16
+# LI16
+1731 = {
+	holding = none
+}
+
+
+### c_fengshan
+# FENGSHAN
+1732 = {
+	holding = none
+}
+
+
+### c_sheng1
+# SHENG1
+1733 = {
+	holding = none
+}
+
+
+### c_wan1
+# WAN1
+1734 = {
+	holding = none
+}
+
+

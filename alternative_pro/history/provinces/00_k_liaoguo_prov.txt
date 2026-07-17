@@ -1,0 +1,58 @@
+﻿##### d_liaoshi ############################
+
+### c_liao2
+# LIAO2
+1724 = {
+	holding = none
+}
+
+
+### c_xindu1
+# XINDU1
+1727 = {
+	holding = none
+}
+
+
+### c_yiqiu
+# YIQIU
+1729 = {
+	holding = none
+}
+
+
+### c_shima
+# SHIMA
+1730 = {
+	holding = none
+}
+
+
+### c_biyin
+# BIYIN
+1736 = {
+	holding = none
+}
+
+
+### c_pingshi
+# PINGSHI
+1740 = {
+	holding = none
+}
+
+
+### c_zonghu
+# 
+1831 = {
+	holding = none
+}
+
+
+### c_tangzi
+# 
+1832 = {
+	holding = none
+}
+
+

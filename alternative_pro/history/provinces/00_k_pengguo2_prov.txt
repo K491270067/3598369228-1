@@ -1,0 +1,51 @@
+﻿##### d_jianshi ############################
+
+### c_fangzhu
+# FANGZHU
+3656 = {
+	holding = none
+}
+
+
+### c_dahong
+# DAHONG
+3657 = {
+	holding = none
+}
+
+
+### c_censhan
+# CENSHAN
+3658 = {
+	holding = none
+}
+
+
+### c_xieshan
+# XIESHAN
+3659 = {
+	holding = none
+}
+
+
+### c_zhuji
+# ZHUJI
+3660 = {
+	holding = none
+}
+
+
+### c_luomo
+# LUOMOSHAN
+3662 = {
+	holding = none
+}
+
+
+### c_shangfen
+# SHANGFEN
+3664 = {
+	holding = none
+}
+
+

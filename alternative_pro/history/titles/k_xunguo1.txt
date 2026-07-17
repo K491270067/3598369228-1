@@ -1,0 +1,159 @@
+﻿d_shushi2 = {
+	2687.11.11 = {
+		liege = "k_xunguo1"
+		holder = yishi34
+	}
+	2734.12.31 = {
+		holder = yishi35
+	}
+	2785.12.31 = {
+		holder = yishi36
+	}
+	2811.12.31 = {
+		holder = yishi37
+	}
+	2854.12.31 = {
+		holder = yishi38
+	}
+	2890.12.31 = {
+		holder = yishi39
+	}
+	2924.12.31 = {
+		holder = yishi40
+	}
+	2980.12.31 = {
+		holder = yishi41
+	}
+	3021.12.31 = {
+		holder = yishi42
+	}
+	3062.12.31 = {
+		holder = yishi43
+	}
+	3113.12.31 = {
+		holder = yishi44
+	}
+	3170.12.31 = {
+		holder = yishi45
+	}
+	3218.12.31 = {
+		holder = yishi46
+	}
+	3274.12.31 = {
+		holder = yishi47
+	}
+	3333.12.31 = {
+		holder = yishi48
+	}
+	3388.12.31 = {
+		holder = yishi49
+	}
+	3439.12.31 = {
+		holder = yishi50
+	}
+	3501.12.31 = {
+		holder = yishi51
+	}
+	3555.12.31 = {
+		holder = yishi52
+	}
+	3600.12.31 = {
+		holder = yishi53
+	}
+	3651.12.31 = {
+		holder = yishi54
+	}
+	3702.12.31 = {
+		holder = yishi55
+	}
+	3760.12.31 = {
+		holder = yishi56
+	}
+	3806.12.31 = {
+		holder = yishi62
+	}
+	3849.1.1 = {
+		change_development_level = 27
+		government = feudal_government
+	}
+}
+k_xunguo1 = {
+	2687.11.11 = {
+		holder = yishi34
+	}
+	2734.12.31 = {
+		holder = yishi35
+	}
+	2785.12.31 = {
+		holder = yishi36
+	}
+	2811.12.31 = {
+		holder = yishi37
+	}
+	2854.12.31 = {
+		holder = yishi38
+	}
+	2890.12.31 = {
+		holder = yishi39
+	}
+	2924.12.31 = {
+		holder = yishi40
+	}
+	2980.12.31 = {
+		holder = yishi41
+	}
+	3021.12.31 = {
+		holder = yishi42
+	}
+	3062.12.31 = {
+		holder = yishi43
+	}
+	3113.12.31 = {
+		holder = yishi44
+	}
+	3170.12.31 = {
+		holder = yishi45
+	}
+	3218.12.31 = {
+		holder = yishi46
+	}
+	3274.12.31 = {
+		holder = yishi47
+	}
+	3333.12.31 = {
+		holder = yishi48
+	}
+	3388.12.31 = {
+		holder = yishi49
+	}
+	3439.12.31 = {
+		holder = yishi50
+	}
+	3501.12.31 = {
+		holder = yishi51
+	}
+	3555.12.31 = {
+		holder = yishi52
+	}
+	3600.12.31 = {
+		liege = "e_zhoutianzi"
+		holder = yishi53
+	}
+	3651.12.31 = {
+		holder = yishi54
+	}
+	3702.12.31 = {
+		holder = yishi55
+	}
+	3760.12.31 = {
+		holder = yishi56
+	}
+	3806.12.31 = {
+		holder = yishi57
+	}
+	3849.1.1 = {
+		change_development_level = 32
+		government = feudal_government
+		liege = "e_zhoutianzi1"
+	}
+}

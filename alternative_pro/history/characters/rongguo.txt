@@ -1,0 +1,277 @@
+﻿##########鎴庡浗 宸辨皬
+jirong1={
+  name="nanming265"
+  dynasty=xin514
+	religion="yili" 
+	culture="dongyi"
+	father=yousongshi28
+	
+  3580.1.1 = {
+		birth = yes
+	}
+  3641.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jirong2={
+  name="nanming268"
+  dynasty_house=house_xin515
+	religion="yili" 
+	culture="dongyi"
+	father=jirong1
+	
+  3621.1.1 = {
+		birth = yes
+	}
+  3685.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jirong3={
+  name="nanming272"
+  dynasty_house=house_xin515
+	religion="yili" 
+	culture="dongyi"
+	father=jirong2
+	
+  3667.1.1 = {
+		birth = yes
+	}
+  3722.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jirong4={
+  name="nanming284"
+  dynasty_house=house_xin515
+	religion="yili" 
+	culture="dongyi"
+	father=jirong3
+	
+  3695.1.1 = {
+		birth = yes
+	}
+  3758.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jirong5={
+  name="nanming296"
+  dynasty_house=house_xin515
+	religion="yili" 
+	culture="dongyi"
+	father=jirong4
+	
+  3737.1.1 = {
+		birth = yes
+	}
+  3800.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jirong6={
+  name="nanming313"
+  dynasty_house=house_xin515
+	religion="yili" 
+	culture="dongyi"
+	father=jirong5
+	
+  3773.1.1 = {
+		birth = yes
+	}
+  3821.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jirong7={#寮€灞€
+  name="nanming322"
+  dynasty_house=house_xin515
+	religion="yili" 
+	culture="dongyi"
+	father=jirong6
+	
+  3813.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jirong8={
+  name="nanming334"
+  dynasty_house=house_xin515
+	religion="yili" 
+	culture="dongyi"
+	father=jirong7
+	
+  3831.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jirong9={
+  name="nanming351"
+  dynasty_house=house_xin515
+	religion="yili" 
+	culture="dongyi"
+	father=jirong7
+	
+  3832.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jirong10={
+  name="nanming368"
+  dynasty_house=house_xin515
+	religion="yili" 
+	culture="dongyi"
+	father=jirong7
+	
+  3833.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jirong11={
+  name="nvming281"
+  dynasty_house=house_xin515
+	religion="yili" 
+	culture="dongyi"
+	father=jirong7
+	female=yes
+	
+  3834.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jirong12={
+  name="nvming311"
+  dynasty_house=house_xin515
+	religion="yili" 
+	culture="dongyi"
+	father=jirong7
+	female=yes
+	
+  3835.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+###########妤氫笜姘?
+jirong13={
+  name="nanming332"
+  dynasty_house=house_xin516
+	religion="yili" 
+	culture="dongyi"
+	father=jirong6
+	
+  3815.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jirong14={
+  name="nanming351"
+  dynasty_house=house_xin516
+	religion="yili" 
+	culture="dongyi"
+	father=jirong13
+	
+  3833.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jirong15={
+  name="nanming364"
+  dynasty_house=house_xin516
+	religion="yili" 
+	culture="dongyi"
+	father=jirong13
+	
+  3834.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jirong16={
+  name="nanming376"
+  dynasty_house=house_xin516
+	religion="yili" 
+	culture="dongyi"
+	father=jirong13
+	
+  3835.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+jirong17={
+  name="nvming179"
+  dynasty_house=house_xin516
+	religion="yili" 
+	culture="dongyi"
+	father=jirong13
+	female=yes
+	
+  3835.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}

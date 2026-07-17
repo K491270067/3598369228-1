@@ -1,0 +1,191 @@
+﻿#############  璐惧浗--濮璐炬皬 #############
+### 鐢变簬鏈夋槑纭浗鍚涗笘绯昏杞戒笖鏃犵浉鍏冲璋卞弬鑰冨偍鍚涙儏鍐碉紝瀹氬紑灞€鍥藉悰闈掑勾锛屽彟缂栧嚭1瀛?濂?
+han637={
+  name="gongming"#鍞愬彅铏炰箣瀛愶紝璋ュ彿璐惧叡鍏紝鍙茬О璐句集鍏槑銆傝淳鍥藉埌搴曟槸鍏繕鏄集锛岃鎴戞湁鐐硅挋锛岃哎鍙锋湁鍏篃鏈変集
+  dynasty_house=house_xin647
+	religion="xizhouli" 
+	culture="jin"
+  father=han18
+
+  3585.1.1 = {
+		birth = yes
+	}
+  3641.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+		give_nickname=nick_jiagonggong
+  }
+} 
+han638={
+  name="liang2"#璐惧鍏?
+  dynasty_house=house_baijia137
+	religion="xizhouli" 
+	culture="jin"
+  father=han637
+
+  3630.1.1 = {
+		birth = yes
+	}
+  3691.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+		give_nickname=nick_xuanngong
+  }
+} 
+han639={
+  name="bi3"#璐剧浉鍏?
+  dynasty_house=house_baijia137
+	religion="xizhouli" 
+	culture="jin"
+  father=han638
+
+  3673.1.1 = {
+		birth = yes
+	}
+  3731.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+		give_nickname=nick_jiaxianggong
+  }
+} 
+han640={
+  name="weng1"
+  dynasty_house=house_baijia137
+	religion="xizhouli" 
+	culture="jin"
+  father=han639
+
+  3703.1.1 = {
+		birth = yes
+	}
+  3760.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+} 
+han641={
+  name="huan2"
+  dynasty_house=house_baijia137
+	religion="xizhouli" 
+	culture="jin"
+  father=han640
+
+  3728.1.1 = {
+		birth = yes
+	}
+  3780.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+} 
+han642={
+  name="qi9"
+  dynasty_house=house_baijia137
+	religion="xizhouli" 
+	culture="jin"
+  father=han641
+
+  3753.1.1 = {
+		birth = yes
+	}
+  3808.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+} 
+han643={
+  name="boche"
+  dynasty_house=house_baijia137
+	religion="xizhouli" 
+	culture="jin"
+  father=han642
+
+  3780.1.1 = {
+		birth = yes
+	}
+  3833.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+} 
+han644={
+  name="si4"
+  dynasty_house=house_baijia137
+	religion="xizhouli" 
+	culture="jin"
+  father=han643
+
+  3803.1.1 = {
+		birth = yes
+	}
+  3840.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+		give_nickname=nick_huibo
+  }
+} 
+han645={
+  name="wuji1"#璐句粈涔堜笉鐭ラ亾锛屽亣璁句负骞崇帇涓滆縼鏃惰淳鍥藉悰涓伙紝寮€灞€鏃?0鍑哄ご
+  dynasty_house=house_baijia137
+	religion="dongzhouli" 
+	culture="jin"
+  father=han644
+
+  3829.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+    death = yes
+  }
+}
+han646={
+  name="jiang4"#璐捐景鍏紝鍌ㄥ悰涓€鍙凤紝寮€灞€鏃舵湭鎴愬勾
+  dynasty_house=house_baijia137
+	religion="dongzhouli" 
+	culture="jin"
+  father=han645
+
+  3847.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+    death = yes
+  }
+}
+han647={
+  name="lie1"#涓哄钩琛℃父鎴忕紪閫犱汉鐗╋紝鍌ㄥ悰浜屽彿锛屽紑灞€鏃舵湭鎴愬勾
+  dynasty_house=house_baijia137
+	religion="dongzhouli" 
+	culture="jin"
+  father=han645
+
+  3848.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+    death = yes
+  }
+}
+han648={
+  name="ling2"#涓哄钩琛℃父鎴忕紪閫犱汉鐗╋紝濂筹紝寮€灞€鏃舵湭鎴愬勾
+  dynasty_house=house_baijia137
+	religion="dongzhouli" 
+	culture="jin"
+  father=han645
+  female=yes
+
+  3849.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+    death = yes
+  }
+}

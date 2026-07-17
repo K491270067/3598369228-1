@@ -1,0 +1,68 @@
+﻿##### d_yulongshi ############################
+
+### c_yincheng1
+# YINCHENG1
+1504 = {
+	culture = jin
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_zishi
+# ZISHI
+1505 = {
+	culture = jin
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_jiang3
+# JIANG
+2461 = {
+	culture = jin
+	religion = xizhouli
+	holding = castle_holding
+}
+# PINGTAO
+1503 = {
+	holding = none
+}
+
+
+##### d_longshi ############################
+
+### c_daling1
+# DALING1
+1502 = {
+	culture = jin
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_qi7
+# YI9
+2466 = {
+	holding = none
+}
+
+
+### c_shihuiguan
+# SHIHUIGUAN
+1147 = {
+	culture = jin
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+##### d_tangsunshi ############################
+
+### c_wu5
+
+
+### c_zhongdu1
+
+

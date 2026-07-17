@@ -1,0 +1,412 @@
+﻿#############  涔屾皬鍥?-涔屽 鐐庡笣鍚庤 #############
+han3029={
+  name="bfyznan34"
+  dynasty=baijia221
+  culture="xirong"
+  religion="xirongfangling"
+
+  3293.1.1 = {
+		birth = yes
+	}
+  3330.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han3030={
+  name="bfyznan53"
+  dynasty=baijia221
+  culture="xirong"
+  religion="xirongfangling"
+  father=han3029
+
+  3320.1.1 = {
+		birth = yes
+	}
+  3377.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han3031={
+  name="bfyznan69"
+  dynasty=baijia221
+  culture="xirong"
+  religion="xirongfangling"
+  father=han3030
+
+  3340.1.1 = {
+		birth = yes
+	}
+  3413.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han3032={
+  name="bfyznan82"
+  dynasty=baijia221
+  culture="xirong"
+  religion="xirongfangling"
+  father=han3031
+
+  3380.1.1 = {
+		birth = yes
+	}
+  3446.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han3033={
+  name="bfyznan84"
+  dynasty=baijia221
+  culture="xirong"
+  religion="xirongfangling"
+  father=han3032
+
+  3421.1.1 = {
+		birth = yes
+	}
+  3470.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han3034={
+  name="bfyznan91"
+  dynasty=baijia221
+  culture="xirong"
+  religion="xirongfangling"
+  father=han3033
+
+  3442.1.1 = {
+		birth = yes
+	}
+  3515.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han3035={
+  name="bfyznan103"
+  dynasty=baijia221
+  culture="xirong"
+  religion="xirongfangling"
+  father=han3034
+
+  3505.1.1 = {
+		birth = yes
+	}
+  3582.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han3036={
+  name="bfyznan117"
+  dynasty=baijia221
+  culture="xirong"
+  religion="xirongfangling"
+  father=han3035
+
+  3566.1.1 = {
+		birth = yes
+	}
+  3630.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han3037={
+  name="bfyznan129"
+  dynasty=baijia221
+  culture="xirong"
+  religion="xirongfangling"
+  father=han3036
+
+  3596.1.1 = {
+		birth = yes
+	}
+  3655.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han3038={
+  name="bfyznan144"
+  dynasty=baijia221
+  culture="xirong"
+  religion="xirongfangling"
+  father=han3037
+
+  3617.1.1 = {
+		birth = yes
+	}
+  3674.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han3039={
+  name="bfyznan159"
+  dynasty=baijia221
+  culture="xirong"
+  religion="xirongfangling"
+  father=han3038
+
+  3656.1.1 = {
+		birth = yes
+	}
+  3720.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han3040={
+  name="bfyznan180"
+  dynasty=baijia221
+  culture="xirong"
+  religion="xirongfangling"
+  father=han3039
+
+  3687.1.1 = {
+		birth = yes
+	}
+  3745.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han3041={
+  name="bfyznan181"
+  dynasty=baijia221
+  culture="xirong"
+  religion="xirongfangling"
+  father=han3040
+
+  3726.1.1 = {
+		birth = yes
+	}
+  3770.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han3042={
+  name="bfyznan188"
+  dynasty=baijia221
+  culture="xirong"
+  religion="xirongfangling"
+  father=han3041
+
+  3759.1.1 = {
+		birth = yes
+	}
+  3820.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han3043={
+  name="bfyznan192"
+  dynasty=baijia221
+  culture="xirong"
+  religion="xirongfangling"
+  father=han3042
+
+  3799.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han3044={
+  name="bfyznan334"
+  dynasty=baijia221
+  culture="xirong"
+  religion="xirongfangling"
+  father=han3043
+
+  3820.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han3045={
+  name="bfyznan349"
+  dynasty=baijia221
+  culture="xirong"
+  religion="xirongfangling"
+  father=han3043
+
+  3821.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han3046={
+  name="bfyznan365"
+  dynasty=baijia221
+  culture="xirong"
+  religion="xirongfangling"
+  father=han3043
+
+  3822.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han3047={
+  name="bfyznan386"
+  dynasty=baijia221
+  culture="xirong"
+  religion="xirongfangling"
+  father=han3043
+
+  3823.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han3048={
+  name="bfyznv35"#
+  dynasty=baijia221
+  culture="xirong"
+  religion="xirongfangling"
+  father=han3043
+  female=yes
+
+  3824.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han3049={
+  name="bfyznv48"#
+  dynasty=baijia221
+  culture="xirong"
+  religion="xirongfangling"
+  father=han3043
+  female=yes
+
+  3825.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han3050={
+  name="bfyznv62"#
+  dynasty=baijia221
+  culture="xirong"
+  religion="xirongfangling"
+  father=han3043
+  female=yes
+
+  3826.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+###########
+wushirong1={
+  name="bfyznan405"
+  dynasty=xin852
+  culture="xirong"
+  religion="xirongfangling"
+  father=han3042
+
+  3803.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+wushirong2={
+  name="bfyznan425"
+  dynasty=xin852
+  culture="xirong"
+  religion="xirongfangling"
+  father=wushirong1
+
+  3823.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+wushirong3={
+  name="bfyznan444"
+  dynasty=xin852
+  culture="xirong"
+  religion="xirongfangling"
+  father=wushirong1
+
+  3825.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+wushirong4={
+  name="bfyznv74"
+  dynasty=xin852
+  culture="xirong"
+  religion="xirongfangling"
+  father=wushirong1
+  female=yes
+
+  3829.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+wushirong5={
+  name="bfyznv124"
+  dynasty=xin852
+  culture="xirong"
+  religion="xirongfangling"
+  father=wushirong1
+  female=yes
+
+  3832.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}

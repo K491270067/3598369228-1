@@ -1,0 +1,65 @@
+﻿##### d_ceshi ############################
+
+### c_ce
+# CE
+875 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+# CHANG2
+3137 = {
+	holding = none
+}
+
+
+### c_wugong
+# WUGONG
+876 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+# DAN2
+907 = {
+	holding = none
+}
+
+
+### c_tangluo
+# TANGLUO
+3135 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+# XINGSHI
+3136 = {
+	holding = none
+}
+
+
+##### d_yishi2 ############################
+
+### c_yi4
+# YI4
+886 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+# WEI1
+877 = {
+	holding = none
+}
+
+
+### c_xieyuguan
+# XIEYUGUAN
+2162 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+

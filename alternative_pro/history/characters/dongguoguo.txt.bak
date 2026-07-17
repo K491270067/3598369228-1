@@ -1,0 +1,276 @@
+﻿#############  涓滆櫌鍥?-濮 #############
+### 涓栫郴宸插け鑰冿紝鍏ㄩ潬缂?###
+han610={
+  name="qian4"#铏徊涔嬪瓙
+  dynasty_house=house_xin318#濮?
+	religion="xizhouli" 
+	culture="zhou"
+  father=han6
+
+  3548.11.1 = {
+		birth = yes
+	}
+  3623.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han611={
+  name="mian"
+  dynasty_house=house_xin318#濮?
+	religion="xizhouli" 
+	culture="zhou"
+  father=han610
+
+  3570.11.1 = {
+		birth = yes
+	}
+  3637.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han612={
+  name="tuo3"
+  dynasty_house=house_xin318#濮?
+	religion="xizhouli" 
+	culture="zhou"
+  father=han611
+
+  3603.11.1 = {
+		birth = yes
+	}
+  3676.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han613={
+  name="wen2"
+  dynasty_house=house_xin318#濮?
+	religion="xizhouli" 
+	culture="zhou"
+  father=han612
+
+  3626.1.1 = {
+		birth = yes
+	}
+  3713.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han614={
+  name="lv1"
+  dynasty_house=house_xin318#濮?
+	religion="xizhouli" 
+	culture="zhou"
+  father=han613
+
+  3664.1.1 = {
+		birth = yes
+	}
+  3750.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han615={
+  name="jing4"
+  dynasty_house=house_xin318#濮?
+	religion="xizhouli" 
+	culture="zhou"
+  father=han614
+
+  3702.1.1 = {
+		birth = yes
+	}
+  3761.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han616={
+  name="lu4"
+  dynasty_house=house_xin318#濮?
+	religion="xizhouli" 
+	culture="zhou"
+  father=han615
+
+  3750.1.1 = {
+		birth = yes
+	}
+  3805.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han617={
+  name="shen"
+  dynasty_house=house_xin318#濮?
+	religion="xizhouli" 
+	culture="zhou"
+  father=han616
+
+  3775.1.1 = {
+		birth = yes
+	}
+  3823.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han618={
+  name="zhe1"
+  dynasty_house=house_xin318#濮?
+	religion="xizhouli" 
+	culture="zhou"
+  father=han617
+
+  3804.1.1 = {
+		birth = yes
+	}
+  3846.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han619={
+  name="shu4"#浜″浗涔嬪悰锛屽钩鐜嬩笢杩佹椂涓滆櫌鍥藉浗鍚涳紝娓告垙寮€灞€鏃?4宀?
+  dynasty_house=house_xin318#濮?
+	religion="dongzhouli" 
+	culture="zhou"
+  father=han618
+
+  3826.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+    death = yes
+  }
+}
+han620={
+  name="xu5"#鍌ㄥ悰1鍙?
+  dynasty_house=house_xin318#濮?
+	religion="dongzhouli" 
+	culture="zhou"
+  father=han619
+
+  3844.10.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+    death = yes
+  }
+}
+han621={
+  name="chang2"#鍌ㄥ悰2鍙?
+  dynasty_house=house_xin318#濮?
+	religion="dongzhouli" 
+	culture="zhou"
+  father=han619
+
+  3845.10.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+    death = yes
+  }
+}
+han622={
+  name="mengxi"#濂?
+  dynasty_house=house_xin318#濮?
+	religion="dongzhouli" 
+	culture="zhou"
+  father=han619
+  female=yes
+
+  3846.10.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+    death = yes
+  }
+}
+han623={
+  name="meng1"#濂?
+  dynasty_house=house_xin318#濮?
+	religion="dongzhouli" 
+	culture="zhou"
+  father=han619
+  female=yes
+
+  3847.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+    death = yes
+  }
+}
+###########
+jixingdongguoguo1={
+  name="yigao"#浜″浗涔嬪悰锛屽钩鐜嬩笢杩佹椂涓滆櫌鍥藉浗鍚涳紝娓告垙寮€灞€鏃?4宀?
+  dynasty_house=house_xin711
+	religion="dongzhouli" 
+	culture="zhou"
+  father=han618
+
+  3828.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+    death = yes
+  }
+}
+jixingdongguoguo2={
+  name="keng1"
+  dynasty_house=house_xin711
+	religion="dongzhouli" 
+	culture="zhou"
+  father=jixingdongguoguo1
+
+  3846.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+    death = yes
+  }
+}
+jixingdongguoguo3={
+  name="jiang4"
+  dynasty_house=house_xin711
+	religion="dongzhouli" 
+	culture="zhou"
+  father=jixingdongguoguo1
+
+  3847.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+    death = yes
+  }
+}
+jixingdongguoguo4={
+  name="yu14"
+  dynasty_house=house_xin711
+	religion="dongzhouli" 
+	culture="zhou"
+  father=jixingdongguoguo1
+  female=yes
+
+  3848.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+    death = yes
+  }
+}

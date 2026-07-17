@@ -1,0 +1,45 @@
+﻿k_jiangshizhirong = {
+	3381.12.12 = {
+		holder = jiangshirong1
+	}
+	3426.1.1 = {
+		holder = jiangshirong2
+	}
+	3466.1.1 = {
+		holder = jiangshirong3
+	}
+	3508.1.1 = {
+		holder = jiangshirong4
+	}
+	3555.1.1 = {
+		holder = jiangshirong5
+	}
+	3580.1.1 = {
+		holder = jiangshirong6
+	}
+	3614.1.1 = {
+		holder = jiangshirong7
+	}
+	3651.1.1 = {
+		holder = jiangshirong8
+	}
+	3684.1.1 = {
+		holder = jiangshirong9
+	}
+	3717.1.1 = {
+		holder = jiangshirong10
+	}
+	3758.1.1 = {
+		holder = jiangshirong11
+	}
+	3802.1.1 = {
+		holder = jiangshirong12
+	}
+	3815.1.1 = {
+		holder = jiangshirong13
+	}
+	3849.12.31 = {
+		government = tribal_government
+		change_development_level = 32
+	}
+}

@@ -1,0 +1,51 @@
+﻿##### d_xiaoshi ############################
+
+### c_xiao
+# XIAO
+481 = {
+	holding = none
+}
+
+
+### c_cha1
+# CHA1
+482 = {
+	holding = none
+}
+
+
+### c_shuqiu
+# SHUQIU
+483 = {
+	holding = none
+}
+
+
+### c_hutai1
+# HUTAI1
+2293 = {
+	holding = none
+}
+
+
+### c_tiao
+# TIAO
+2398 = {
+	holding = none
+}
+
+
+### c_ji18
+# JI18
+2399 = {
+	holding = none
+}
+
+
+### c_qi13
+# QI13
+2400 = {
+	holding = none
+}
+
+

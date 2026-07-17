@@ -1,0 +1,33 @@
+﻿##### d_sishi ############################
+
+### c_beiqu
+# BEIQU
+1374 = {
+	culture = jin
+	religion = yili
+	holding = castle_holding
+}
+
+
+### c_e
+# E
+1375 = {
+	culture = jin
+	religion = yili
+	holding = castle_holding
+}
+
+
+### c_li25
+# LI25
+2744 = {
+	culture = jin
+	religion = yili
+	holding = castle_holding
+}
+# JIN5
+2745 = {
+	holding = none
+}
+
+

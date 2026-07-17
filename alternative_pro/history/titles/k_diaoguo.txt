@@ -1,0 +1,37 @@
+﻿k_diaoguo = {
+	3574.1.1 = {
+		liege = "e_zhoutianzi"
+		holder = han1934
+	}
+	3587.12.31 = {
+		holder = han1935
+	}
+	3611.12.31 = {
+		holder = han1936
+	}
+	3659.12.31 = {
+		holder = han1937
+	}
+	3682.12.31 = {
+		holder = han1938
+	}
+	3727.12.31 = {
+		holder = han1939
+	}
+	3765.12.31 = {
+		holder = han1940
+	}
+	3792.12.31 = {
+		holder = han1941
+	}
+	3835.12.31 = {
+		holder = han1942
+	}
+	3849.1.1 = {
+		change_development_level = 30
+	}
+	3849.12.31 = {
+		government = feudal_government
+		liege = "e_zhoutianzi1"
+	}
+}

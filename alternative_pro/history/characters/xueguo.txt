@@ -1,0 +1,975 @@
+﻿#############  薛国--上古世系 任姓 #############
+han2122={
+  name="nanming440"##黄帝之子，禺/禹阳
+  dynasty=baijia58#任
+	religion="xiali" 
+	culture="xuanyuanshi"
+  father=han1310
+  
+  2220.1.1 = {
+		birth = yes
+	}
+  2285.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han2123={
+  name="nanming441"##黄帝之子，禺/禹阳
+  dynasty=baijia58#任
+	religion="xiali" 
+	culture="xuanyuanshi"
+  father=han2122
+  
+  2261.1.1 = {
+		birth = yes
+	}
+  2323.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han2124={
+  name="nanming442"
+  dynasty=baijia58#任
+	religion="xiali" 
+	culture="xuanyuanshi"
+  father=han2123
+
+  2301.1.1 = {
+		birth = yes
+	}
+  2363.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han2125={
+  name="nanming443"
+  dynasty=baijia58#任
+	religion="xiali" 
+	culture="xuanyuanshi"
+  father=han2124
+
+  2351.1.1 = {
+		birth = yes
+	}
+  2434.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han2126={
+  name="nanming444"
+  dynasty=baijia58#任
+	religion="xiali" 
+	culture="xuanyuanshi"
+  father=han2125
+
+  2400.11.1 = {
+		birth = yes
+	}
+  2472.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han2127={
+  name="nanming445"#当夏禹之时封为薛，为禹掌车服大夫。又叫莱朱，又名中垒
+  dynasty=baijia58#薛
+	religion="xiali" 
+	culture="xiaren"
+  father=han2126
+
+  2468.1.1 = {
+		birth = yes
+	}
+  2527.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han2128={
+  name="nanming446"
+  dynasty=baijia58#薛
+	religion="xiali" 
+	culture="xiaren"
+  father=han2127
+
+  2488.1.1 = {
+		birth = yes
+	}
+  2559.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han2129={
+  name="nanming150"#编1
+  dynasty=baijia58#薛
+	religion="xiali" 
+	culture="xiaren"
+  father=han2128
+
+  2541.1.1 = {
+		birth = yes
+	}
+  2606.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han2130={
+  name="he3"#编2
+  dynasty=baijia58#薛
+	religion="xiali" 
+	culture="xiaren"
+  father=han2129
+
+  2583.1.1 = {
+		birth = yes
+	}
+  2643.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han2131={
+  name="nanming447"#编3
+  dynasty=baijia58#薛
+	religion="xiali" 
+	culture="xiaren"
+  father=han2130
+
+  2620.1.1 = {
+		birth = yes
+	}
+  2671.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han2132={
+  name="nanming448"#编4
+  dynasty=baijia58#薛
+	religion="xiali" 
+	culture="xiaren"
+  father=han2131
+
+  2660.11.31 = {
+		birth = yes
+	}
+  2732.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han2133={
+  name="luan3"#编5
+  dynasty=baijia58#薛
+	religion="xiali" 
+	culture="xiaren"
+  father=han2132
+
+  2689.1.1 = {
+		birth = yes
+	}
+  2749.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han2134={
+  name="nanming449"#编6
+  dynasty=baijia58#薛
+	religion="xiali" 
+	culture="xiaren"
+  father=han2133
+
+  2730.1.1 = {
+		birth = yes
+	}
+  2793.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han2135={
+  name="nanming450"#编7
+  dynasty=baijia58#薛
+	religion="xiali" 
+	culture="xiaren"
+  father=han2134
+
+  2789.1.1 = {
+		birth = yes
+	}
+  2851.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han2136={
+  name="nanming451"#编8
+  dynasty=baijia58#薛
+	religion="xiali" 
+	culture="xiaren"
+  father=han2135
+
+  2810.1.1 = {
+		birth = yes
+	}
+  2867.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han2137={
+  name="nanming368"#编9
+  dynasty=baijia58#薛
+	religion="xiali" 
+	culture="xiaren"
+  father=han2136
+
+  2847.1.1 = {
+		birth = yes
+	}
+  2925.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han2138={
+  name="hui2"#编10
+  dynasty=baijia58#薛
+	religion="xiali" 
+	culture="xiaren"
+  father=han2137
+
+  2865.1.1 = {
+		birth = yes
+	}
+  2936.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han2139={
+  name="nanming453"#编11
+  dynasty=baijia58#薛
+	religion="xiali" 
+	culture="xiaren"
+  father=han2138
+
+  2890.12.1 = {
+		birth = yes
+	}
+  2944.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han2140={
+  name="nanming454"#奚仲12世孙，为商汤左相
+  dynasty=baijia58#薛
+	religion="yinli" 
+	culture="yinshang"
+  father=han2139
+
+  2942.1.1 = {
+		birth = yes
+	}
+  3020.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han2141={
+  name="ying6"#编
+  dynasty=baijia58#薛
+	religion="yinli" 
+	culture="yinshang"
+  father=han2140
+
+  2994.1.1 = {
+		birth = yes
+	}
+  3034.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han2142={
+  name="zhun2"#编
+  dynasty=baijia58#薛
+	religion="yinli" 
+	culture="yinshang"
+  father=han2141
+
+  3025.1.1 = {
+		birth = yes
+	}
+  3070.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han2143={
+  name="nanming455"#与伊陟同辅太戊
+  dynasty=baijia58#薛
+	religion="yinli" 
+	culture="yinshang"
+  father=han2142
+
+  3055.1.1 = {
+		birth = yes
+	}
+  3100.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han2144={
+  name="nanming456"#编
+  dynasty=baijia58#薛
+	religion="yinli" 
+	culture="yinshang"
+  father=han2143
+
+  3080.1.1 = {
+		birth = yes
+	}
+  3132.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han2145={
+  name="lan1"#编
+  dynasty=baijia58#薛
+	religion="yinli" 
+	culture="yinshang"
+  father=han2144
+
+  3107.1.1 = {
+		birth = yes
+	}
+  3162.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han2146={
+  name="chuan"#编
+  dynasty=baijia58#薛
+	religion="yinli" 
+	culture="yinshang"
+  father=han2145
+
+  3128.1.1 = {
+		birth = yes
+	}
+  3183.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han2147={
+  name="nanming113"#武丁时期
+  dynasty=baijia58#薛
+	religion="yinli" 
+	culture="yinshang"
+  father=han2146
+
+  3159.1.1 = {
+		birth = yes
+	}
+  3214.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han2148={
+  name="jia3"#编1
+  dynasty=baijia58#薛
+	religion="yinli" 
+	culture="yinshang"
+  father=han2147
+
+  3180.1.1 = {
+		birth = yes
+	}
+  3235.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han2149={
+  name="ding1"#编2
+  dynasty=baijia58#薛
+	religion="yinli" 
+	culture="yinshang"
+  father=han2148
+
+  3221.1.1 = {
+		birth = yes
+	}
+  3266.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han2150={
+  name="nanming457"#编5，名字是存在的
+  dynasty=baijia58#薛
+	religion="yinli" 
+	culture="yinshang"
+  father=han2149
+
+  3242.1.1 = {
+		birth = yes
+	}
+  3307.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han2151={#商后期,祖巳七世孙薛成侯由下邳迁都于挚,改称挚国
+  name="cheng"#祖已七世孙薛成侯，季历的老丈人，姬昌的外祖父
+  dynasty=baijia58#薛
+	religion="yinli" 
+	culture="yinshang"
+  father=han2150
+
+  3292.1.1 = {
+		birth = yes
+	}
+  3369.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han2152={
+  name="nanming458"
+  dynasty=baijia58#薛
+	religion="yinli" 
+	culture="yinshang"
+  father=han2151
+  
+  3335.1.1 = {
+		birth = yes
+	}
+  3388.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han2153={#《诗经·大明》:明明在下，赫赫在上，天难忱斯，不易维王。天位殷适，使不挟四方。挚仲氏任，自彼殷商，来嫁于周，曰嫔于京。乃及王季，维德之行。太任有身，生此文王。
+  name="ci3"#太任太任太任，季历的妻子，姬昌的母亲，暂定名任嫔，商朝末期贵族挚任氏的二女儿
+  dynasty=baijia58#薛
+	religion="yinli" 
+	culture="zhou"
+  father=han2151
+  female=yes
+  
+  3341.7.1 = {
+		birth = yes
+	}
+  3359.1.1={
+		add_spouse=han4
+	}	
+  3460.7.3 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han2154={
+  name="nanming459"#任姓世系里写是“献侯”,别的信息没有
+  dynasty=baijia58#薛
+	religion="yinli" 
+	culture="yinshang"
+  father=han2152
+  
+  3363.1.1 = {
+		birth = yes
+	}
+  3429.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han2155={
+  name="sheng5"#编
+  dynasty=baijia58#薛
+	religion="yinli" 
+	culture="yinshang"
+  father=han2154
+  
+  3384.1.1 = {
+		birth = yes
+	}
+  3450.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han2156={
+  name="zhou2"#编
+  dynasty=baijia58#薛
+	religion="yinli" 
+	culture="yinshang"
+  father=han2155
+  
+  3423.1.1 = {
+		birth = yes
+	}
+  3504.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han2157={
+  name="nanming460"#编
+  dynasty=baijia58#薛
+	religion="yinli" 
+	culture="yinshang"
+  father=han2156
+  
+  3484.1.1 = {
+		birth = yes
+	}
+  3554.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han951={
+  name="zhen1"#西周初年,“周武王封任姓后裔畛,复于薛国,爵为侯，不知谥号，有记载称其为薛畛侯
+  dynasty=baijia58
+	religion="xizhouli" 
+	culture="lu"
+	father=han2157
+  
+  3548.1.1 = {
+		birth = yes
+	}
+  3591.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han952={
+  name="chu6"#不知谥号，有记载称其为薛初侯
+  dynasty=baijia58
+	religion="xizhouli" 
+	culture="lu"
+  father=han951
+  
+  3569.1.1 = {
+		birth = yes
+	}
+  3618.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han953={
+  name="ling"#薛厉侯
+  dynasty=baijia58
+	religion="xizhouli" 
+	culture="lu"
+  father=han952
+  
+  3590.1.1 = {
+		birth = yes
+	}
+  3629.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han954={
+  name="fan1"#薛宣武侯
+  dynasty=baijia58
+	religion="xizhouli" 
+	culture="lu"
+  father=han953
+  
+  3610.1.1 = {
+		birth = yes
+	}
+  3661.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han955={
+  name="bao3"#薛哀侯
+  dynasty=baijia58
+	religion="xizhouli" 
+	culture="lu"
+  father=han954
+  
+  3628.1.1 = {
+		birth = yes
+	}
+  3690.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han956={
+  name="yuan"#薛庄侯
+  dynasty=baijia58
+	religion="xizhouli" 
+	culture="lu"
+  father=han955
+  
+  3657.1.1 = {
+		birth = yes
+	}
+  3724.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han957={
+  name="gui1"#薛平侯
+  dynasty=baijia58
+	religion="xizhouli" 
+	culture="lu"
+  father=han956
+  
+  3680.1.1 = {
+		birth = yes
+	}
+  3754.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han958={
+  name="zhi14"#薛昭侯
+  dynasty=baijia58
+	religion="xizhouli" 
+	culture="lu"
+  father=han957
+  
+  3703.1.1 = {
+		birth = yes
+	}
+  3770.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han959={
+  name="yi1"#薛襄侯
+  dynasty=baijia58
+	religion="xizhouli" 
+	culture="lu"
+  father=han958
+  
+  3733.1.1 = {
+		birth = yes
+	}
+  3795.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han960={
+  name="bian2"#薛桓侯
+  dynasty=baijia58
+	religion="xizhouli" 
+	culture="lu"
+  father=han959
+  
+  3754.1.1 = {
+		birth = yes
+	}
+  3822.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han961={
+  name="anxing"#薛康侯，平王东迁时薛国国君，登场时40岁
+  dynasty=baijia58
+	religion="xizhouli" 
+	culture="lu"
+  father=han960
+  
+  3810.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han962={
+  name="xiang4"#薛定公，储君2号，登场时20岁
+  dynasty=baijia58
+	religion="xizhouli" 
+	culture="lu"
+  father=han961
+  
+  3830.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han963={
+  name="shang"#薛恭侯，第3代，登场时2岁
+  dynasty=baijia58
+	religion="xizhouli" 
+	culture="lu"
+  father=han962
+  
+  3848.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han964={
+  name="li8"#仲子厘，第3代，登场时1岁，任氏家谱中任不齐的曾祖
+  dynasty=baijia58
+	religion="xizhouli" 
+	culture="lu"
+  father=han962
+  
+  3849.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han965={
+  name="zhu5"#编造的储君2号，登场时17岁
+  dynasty=baijia58
+	religion="xizhouli" 
+	culture="lu"
+  father=han961
+  
+  3832.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han966={
+  name="zhang"#编造的储君3号，登场时15岁
+  dynasty=baijia58
+	religion="xizhouli" 
+	culture="lu"
+  father=han961
+  
+  3835.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han967={
+  name="fang6"#编造的女1号
+  dynasty=baijia58
+	religion="xizhouli" 
+	culture="lu"
+  father=han961
+  female=yes
+  
+  3832.3.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han968={
+  name="zhong2"#编造的女2号
+  dynasty=baijia58
+	religion="xizhouli" 
+	culture="lu"
+  father=han961
+  female=yes
+  
+  3833.3.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han969={
+  name="hu9"#编造的女3号，第3代
+  dynasty=baijia58
+	religion="xizhouli" 
+	culture="lu"
+  father=han962
+  female=yes
+  
+  3848.12.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+##########薛氏
+xueshi1={
+  name="yi1"#
+  dynasty_house=house_baijia68
+	religion="xizhouli" 
+	culture="lu"
+  father=han958
+  
+  3747.1.1 = {
+		birth = yes
+	}
+  3795.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+xueshi2={
+  name="bian2"
+  dynasty_house=house_baijia68
+	religion="xizhouli" 
+	culture="lu"
+  father=xueshi1
+  
+  3787.1.1 = {
+		birth = yes
+	}
+  3822.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+xueshi3={
+  name="anxing"#薛康侯，平王东迁时薛国国君，登场时40岁
+  dynasty_house=house_baijia68
+	religion="xizhouli" 
+	culture="lu"
+  father=xueshi2
+  
+  3821.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+xueshi4={
+  name="xiang4"
+  dynasty_house=house_baijia68
+	religion="xizhouli" 
+	culture="lu"
+  father=xueshi3
+  
+  3839.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+xueshi5={
+  name="shang"
+  dynasty_house=house_baijia68
+	religion="xizhouli" 
+	culture="lu"
+  father=xueshi3
+  
+  3840.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+xueshi6={
+  name="fang6"#编造的女1号
+  dynasty_house=house_baijia68
+	religion="xizhouli" 
+	culture="lu"
+  father=xueshi3
+  female=yes
+  
+  3842.3.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+xueshi7={
+  name="zhong2"#编造的女2号
+  dynasty_house=house_baijia68
+	religion="xizhouli" 
+	culture="lu"
+  father=xueshi3
+  female=yes
+  
+  3843.3.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}

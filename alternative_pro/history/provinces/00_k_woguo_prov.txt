@@ -1,0 +1,211 @@
+﻿##### d_shennushi ############################
+
+### c_shejin
+# SHEJIN
+2887 = {
+	holding = none
+}
+
+
+### c_xiangcaojin
+
+
+### c_chuanbian
+
+
+### c_tuyuan
+# XIANGCAOJIN
+2908 = {
+	holding = none
+}
+
+
+### c_langsu
+
+
+##### d_wubushi1 ############################
+
+### c_fanhenei
+# FANHENEI
+2917 = {
+	holding = none
+}
+
+
+### c_henei
+
+
+### c_chuannei
+
+
+### c_shenbu
+# HENEI
+2879 = {
+	holding = none
+}
+
+
+### c_zhigui
+
+
+##### d_gongchushi ############################
+
+### c_jiangyuangong
+# JIANGYUANGONG
+2912 = {
+	holding = none
+}
+
+
+### c_hequan1
+
+
+### c_rigen1
+
+
+### c_shicuan
+
+
+##### d_daheshi ############################
+
+### c_dahe
+# DAHE
+2867 = {
+	holding = none
+}
+
+
+### c_yuzhi2
+
+
+### c_tanyuan
+
+
+### c_wo3
+# WO3
+2915 = {
+	holding = none
+}
+
+
+### c_gecheng1
+
+
+### c_renhai
+
+
+### c_shishi1
+
+
+### c_shixia
+
+
+### c_shanbian
+# SHANBIAN
+2996 = {
+	holding = none
+}
+
+
+### c_zhongzhou
+# ZHONGZHOU
+2907 = {
+	holding = none
+}
+# YIHE
+2891 = {
+	holding = none
+}
+
+
+### c_sigui
+
+
+### c_guanlai
+
+
+##### d_abaoshi ############################
+
+### c_yihe
+
+
+### c_yingjun
+
+
+### c_shandai
+
+
+### c_anbei
+
+
+##### d_shandaishi ############################
+
+### c_shanbei
+# SHANBEI
+2951 = {
+	holding = none
+}
+
+
+### c_shancheng
+
+
+### c_fengbanguan
+
+
+### c_diguo
+# SHANCHENG
+2894 = {
+	holding = none
+}
+# FENGBANGUAN
+2900 = {
+	holding = none
+}
+
+
+##### d_sanlunshi ############################
+
+### c_yezhou
+
+
+### c_sutai
+# SUTAI
+3543 = {
+	holding = none
+}
+# SHUIKOU
+3544 = {
+	holding = none
+}
+# YEZHOU
+3542 = {
+	holding = none
+}
+
+
+### c_jinjiang
+
+
+### c_shuikou
+
+
+### c_shenqian
+# JINJIANG
+2835 = {
+	holding = none
+}
+
+
+### c_quanshang1
+
+
+### c_bantian
+
+
+### c_qianjing
+
+
+### c_yixiang1
+
+

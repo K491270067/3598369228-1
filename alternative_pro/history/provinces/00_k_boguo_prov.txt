@@ -1,0 +1,149 @@
+﻿##### d_boshi1 ############################
+
+### c_kaibian
+# KAIBIAN
+3232 = {
+	holding = none
+}
+
+
+### c_yibin
+# YIBIN
+3233 = {
+	holding = none
+}
+
+
+### c_wanshou
+# WANSHOU
+3222 = {
+	holding = none
+}
+
+
+### c_hejiang
+# HEJIANG
+3224 = {
+	holding = none
+}
+
+
+### c_jiangan
+# JIANGAN
+3226 = {
+	holding = none
+}
+
+
+### c_jingnan
+# JINGNAN
+3227 = {
+	holding = none
+}
+
+
+### c_mianshui
+# MIANSHUI
+3228 = {
+	holding = none
+}
+
+
+### c_yongchuan
+# YONGCHUAN
+3229 = {
+	holding = none
+}
+
+
+### c_mianshui1
+# MIANSHUI1
+3725 = {
+	holding = none
+}
+
+
+### c_luzhou
+# LUZHOU
+3102 = {
+	holding = none
+}
+
+
+### c_changzhou
+# CHANGZHOU
+3105 = {
+	holding = none
+}
+
+
+### c_qingxi1
+# QINGXI1
+3724 = {
+	holding = none
+}
+
+
+### c_dazu
+# DAZU
+3230 = {
+	holding = none
+}
+
+
+### c_jingnan1
+# JINGNAN1
+3231 = {
+	holding = none
+}
+
+
+### c_fuyi1
+# FUYI1
+3225 = {
+	holding = none
+}
+
+
+### c_rongzhou
+# RONGZHOU
+3103 = {
+	holding = none
+}
+
+
+### c_guishun
+# GUISHUN
+3234 = {
+	holding = none
+}
+
+
+### c_nanxi
+# NANXI
+3235 = {
+	holding = none
+}
+
+
+### c_heyi
+# HEYI
+3238 = {
+	holding = none
+}
+
+
+### c_laiyi
+# LAIYI
+3161 = {
+	holding = none
+}
+
+
+### c_nixia
+# NIXI
+3729 = {
+	holding = none
+}
+
+

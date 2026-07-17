@@ -1,0 +1,19 @@
+﻿##### d_yiqishi1 ############################
+
+### c_yinqi
+
+
+### c_cijun
+# YINQI
+3530 = {
+	holding = none
+}
+# YULING
+3580 = {
+	holding = none
+}
+
+
+### c_zhifu1
+
+

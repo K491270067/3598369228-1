@@ -1,0 +1,86 @@
+﻿##### d_fengshi2 ############################
+
+### c_fengguo
+# FENGGUO
+3188 = {
+	holding = none
+}
+
+
+### c_qinghua
+# QINGHUA
+3194 = {
+	holding = none
+}
+
+
+### c_huacheng
+# HUACHENG
+3195 = {
+	holding = none
+}
+
+
+### c_enyang
+# ENYANG
+3196 = {
+	holding = none
+}
+
+
+### c_qipan
+# QIPAN
+3197 = {
+	holding = none
+}
+
+
+### c_jiachuan
+# JIACHUAN
+3638 = {
+	holding = none
+}
+
+
+### c_damou
+# DAMOU
+3697 = {
+	holding = none
+}
+
+
+### c_yilong
+# YILONG
+3698 = {
+	holding = none
+}
+
+
+### c_douzi
+# DOUZISHAN
+3699 = {
+	holding = none
+}
+
+
+### c_xuanhan
+# XUANHAN
+3700 = {
+	holding = none
+}
+
+
+### c_hanshou1
+# HANSHOU1
+3133 = {
+	holding = none
+}
+
+
+### c_xinzheng1
+# XINZHENGZ
+3191 = {
+	holding = none
+}
+
+

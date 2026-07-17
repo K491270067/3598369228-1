@@ -1,0 +1,33 @@
+﻿##### d_maoshi1 ############################
+
+### c_kuai1
+# KUAI1
+814 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_mao3
+# MAO3
+815 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+# BANDAO
+818 = {
+	holding = none
+}
+
+
+### c_cijian
+# CIJIAN
+817 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+

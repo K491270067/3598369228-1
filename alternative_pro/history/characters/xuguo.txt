@@ -1,0 +1,1377 @@
+﻿##########徐国世系 赢氏###########
+#参考《徐国世系表》
+han1572={
+  name="nanming321"#徐国初代君主
+  dynasty=xin378
+	religion="yili" 
+	culture="xu"
+  father=han1334
+
+  2541.2.1 = {
+		birth = yes
+	}
+  2568.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1573={
+  name="nanming322"
+  dynasty_house=house_baijia150#徐
+	religion="yili" 
+	culture="xu"
+  father=han1572
+
+  2560.1.1 = {
+		birth = yes
+	}
+  2617.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1574={
+  name="nanming323"
+  dynasty_house=house_baijia150#徐
+	religion="yili" 
+	culture="xu"
+  father=han1573
+
+  2580.1.1 = {
+		birth = yes
+	}
+  2634.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1575={
+  name="nanming324"
+  dynasty_house=house_baijia150#徐
+	religion="yili" 
+	culture="xu"
+  father=han1574
+
+  2613.1.1 = {
+		birth = yes
+	}
+  2702.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1576={
+  name="nanming325"
+  dynasty_house=house_baijia150#徐
+	religion="yili" 
+	culture="xu"
+  father=han1575
+
+  2644.1.1 = {
+		birth = yes
+	}
+  2717.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1577={
+  name="liang"
+  dynasty_house=house_baijia150#徐
+	religion="yili" 
+	culture="xu"
+  father=han1576
+
+  2684.1.1 = {
+		birth = yes
+	}
+  2752.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1578={
+  name="nanming326"
+  dynasty_house=house_baijia150#徐
+	religion="yili" 
+	culture="xu"
+  father=han1577
+
+  2700.1.1 = {
+		birth = yes
+	}
+  2787.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1579={
+  name="nanming327"
+  dynasty_house=house_baijia150#徐
+	religion="yili" 
+	culture="xu"
+  father=han1578
+
+  2723.1.1 = {
+		birth = yes
+	}
+  2816.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1580={
+  name="nanming328"
+  dynasty_house=house_baijia150#徐
+	religion="yili" 
+	culture="xu"
+  father=han1579
+
+  2744.1.1 = {
+		birth = yes
+	}
+  2837.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1581={
+  name="jing4"
+  dynasty_house=house_baijia150#徐
+	religion="yili" 
+	culture="xu"
+  father=han1580
+
+  2795.1.1 = {
+		birth = yes
+	}
+  2889.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1582={
+  name="nanming329"
+  dynasty_house=house_baijia150#徐
+	religion="yili" 
+	culture="xu"
+  father=han1581
+
+  2846.1.1 = {
+		birth = yes
+	}
+  2925.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1583={
+  name="nanming330"
+  dynasty_house=house_baijia150#徐
+	religion="yili" 
+	culture="xu"
+  father=han1582
+
+  2897.1.1 = {
+		birth = yes
+	}
+  2952.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1584={
+  name="jing6"
+  dynasty_house=house_baijia150#徐
+	religion="yili" 
+	culture="xu"
+  father=han1583
+
+  2928.1.1 = {
+		birth = yes
+	}
+  2996.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1585={
+  name="nanming331"
+  dynasty_house=house_baijia150#徐
+	religion="yili" 
+	culture="xu"
+  father=han1584
+
+  2949.1.1 = {
+		birth = yes
+	}
+  3027.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1586={
+  name="yun2"
+  dynasty_house=house_baijia150#徐
+	religion="yili" 
+	culture="xu"
+  father=han1585
+
+  2970.1.1 = {
+		birth = yes
+	}
+  3053.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1587={
+  name="nanming332"
+  dynasty_house=house_baijia150#徐
+	religion="yili" 
+	culture="xu"
+  father=han1586
+
+  3001.1.1 = {
+		birth = yes
+	}
+  3072.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1588={
+  name="xiao"
+  dynasty_house=house_baijia150#徐
+	religion="yili" 
+	culture="xu"
+  father=han1587
+
+  3038.1.1 = {
+		birth = yes
+	}
+  3100.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1589={
+  name="xun6"
+  dynasty_house=house_baijia150#徐
+	religion="yili" 
+	culture="xu"
+  father=han1588
+
+  3074.1.1 = {
+		birth = yes
+	}
+  3153.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1590={
+  name="nanming333"
+  dynasty_house=house_baijia150#徐
+	religion="yili" 
+	culture="xu"
+  father=han1589
+
+  3108.1.1 = {
+		birth = yes
+	}
+  3190.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1591={
+  name="nanming334"
+  dynasty_house=house_baijia150#徐
+	religion="yili" 
+	culture="xu"
+  father=han1590
+
+  3143.1.1 = {
+		birth = yes
+	}
+  3203.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1592={
+  name="nanming335"
+  dynasty_house=house_baijia150#徐
+	religion="yili" 
+	culture="xu"
+  father=han1591
+
+  3179.1.1 = {
+		birth = yes
+	}
+  3254.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1593={
+  name="nanming336"
+  dynasty_house=house_baijia150#徐
+	religion="yili" 
+	culture="xu"
+  father=han1592
+
+  3213.1.1 = {
+		birth = yes
+	}
+  3300.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1594={
+  name="xing"
+  dynasty_house=house_baijia150#徐
+	religion="yili" 
+	culture="xu"
+  father=han1593
+
+  3255.1.1 = {
+		birth = yes
+	}
+  3340.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1595={
+  name="biao1"
+  dynasty_house=house_baijia150#徐
+	religion="yili" 
+	culture="xu"
+  father=han1594
+
+  3289.1.1 = {
+		birth = yes
+	}
+  3364.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1596={
+  name="nanming337"
+  dynasty_house=house_baijia150#徐
+	religion="yili" 
+	culture="xu"
+  father=han1595
+
+  3325.1.1 = {
+		birth = yes
+	}
+  3402.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1597={
+  name="nanming338"
+  dynasty_house=house_baijia150#徐
+	religion="yili" 
+	culture="xu"
+  father=han1596
+
+  3358.1.1 = {
+		birth = yes
+	}
+  3443.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1598={
+  name="nanming339"
+  dynasty_house=house_baijia150#徐
+	religion="yili" 
+	culture="xu"
+  father=han1597
+
+  3394.1.1 = {
+		birth = yes
+	}
+  3480.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1599={
+  name="guang1"
+  dynasty_house=house_baijia150#徐
+	religion="yili" 
+	culture="xu"
+  father=han1598
+
+  3428.1.1 = {
+		birth = yes
+	}
+  3502.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1600={
+  name="tong1"
+  dynasty_house=house_baijia150#徐
+	religion="yili" 
+	culture="xu"
+  father=han1599
+
+  3463.1.1 = {
+		birth = yes
+	}
+  3544.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1601={
+  name="nanming340"
+  dynasty_house=house_baijia150#徐
+	religion="yili" 
+	culture="xu"
+  father=han1600
+
+  3517.1.1 = {
+		birth = yes
+	}
+  3594.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1602={
+  name="nanming341"#有可能是徐驹王
+  dynasty_house=house_baijia150#徐
+	religion="yili" 
+	culture="xu"
+  father=han1601
+
+  3543.1.1 = {
+		birth = yes
+	}
+  3620.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+    give_nickname=nick_xujuwang
+  }
+}
+han1603={
+  name="dan6"
+  dynasty_house=house_baijia150#徐
+	religion="yili" 
+	culture="xu"
+  father=han1602
+
+  3618.1.1 = {
+		birth = yes
+	}
+  3690.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+    give_nickname=nick_yanwang
+  }
+}
+han1604={
+  name="zong1"
+  dynasty_house=house_baijia150#徐
+	religion="yili" 
+	culture="xu"
+  father=han1603
+
+  3640.1.1 = {
+		birth = yes
+	}
+  3705.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1605={
+  name="nanming342"
+  dynasty_house=house_baijia150#徐
+	religion="yili" 
+	culture="xu"
+  father=han1604
+
+  3671.1.1 = {
+		birth = yes
+	}
+  3728.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1606={
+  name="xiu2"
+  dynasty_house=house_baijia150#徐
+	religion="yili" 
+	culture="xu"
+  father=han1605
+
+  3695.1.1 = {
+		birth = yes
+	}
+  3742.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1607={
+  name="nanming343"
+  dynasty_house=house_baijia150#徐
+	religion="yili" 
+	culture="xu"
+  father=han1606
+
+  3716.1.1 = {
+		birth = yes
+	}
+  3791.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1608={
+  name="gui"
+  dynasty_house=house_baijia150#徐
+	religion="yili" 
+	culture="xu"
+  father=han1607
+
+  3777.1.1 = {
+		birth = yes
+	}
+  3837.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1609={
+  name="nanming344"
+  dynasty_house=house_baijia150#徐
+	religion="yili" 
+	culture="xu"
+  father=han1608
+
+  3803.1.1 = {
+		birth = yes
+	}
+  3849.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1610={
+  name="hun2"#平王东迁时徐国国君
+  dynasty_house=house_baijia150#徐
+	religion="yili" 
+	culture="xu"
+  father=han1609
+
+  3830.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han1611={
+  name="nanming345"#储君
+  dynasty_house=house_baijia150#徐
+	religion="yili" 
+	culture="xu"
+  father=han1610
+
+  3848.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han1612={
+  name="nvming57"#女
+  dynasty_house=house_baijia150#徐
+	religion="yili" 
+	culture="xu"
+  father=han1610
+  female=yes
+
+  3849.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han1613={
+  name="nanming229"#储君
+  dynasty_house=house_baijia150#徐
+	religion="yili" 
+	culture="xu"
+  father=han1610
+
+  3849.11.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+#徐国 瞿鹊氏
+han1614={
+  name="nanming184"#平王东迁时国君弟1号，给一块封地
+  dynasty_house=house_xin380
+	religion="yili" 
+	culture="xu"
+  father=han1609
+
+  3831.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han1615={
+  name="suan"#弟1号子1
+  dynasty_house=house_xin380
+	religion="yili" 
+	culture="xu"
+  father=han1614
+
+  3849.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han1616={
+  name="nanming347"#弟1号子2
+  dynasty_house=house_xin380
+	religion="yili" 
+	culture="xu"
+  father=han1614
+
+  3849.2.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han1617={
+  name="nvming58"#弟1号女
+  dynasty_house=house_xin380
+	religion="yili" 
+	culture="xu"
+  father=han1614
+  female=yes
+
+  3849.2.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+### 徐国公族 费氏###
+han1618={
+  name="yuan5"#假设为徐偃王之子一脉
+  dynasty_house=house_xin63#白冥
+	religion="yili" 
+	culture="xu"
+  father=han1603
+
+  3641.1.1 = {
+		birth = yes
+	}
+  3705.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1619={
+  name="nanming113"
+  dynasty_house=house_xin63#白冥
+	religion="yili" 
+	culture="xu"
+  father=han1618
+
+  3669.1.1 = {
+		birth = yes
+	}
+  3728.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1620={
+  name="nanming232"
+  dynasty_house=house_xin63#白冥
+	religion="yili" 
+	culture="xu"
+  father=han1619
+
+  3691.1.1 = {
+		birth = yes
+	}
+  3745.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1621={
+  name="nanming87"
+  dynasty_house=house_xin63#白冥
+	religion="yili" 
+	culture="xu"
+  father=han1620
+
+  3716.1.1 = {
+		birth = yes
+	}
+  3777.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1622={
+  name="yue"
+  dynasty_house=house_xin63#白冥
+	religion="yili" 
+	culture="xu"
+  father=han1621
+
+  3744.1.1 = {
+		birth = yes
+	}
+  3827.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1623={
+  name="dan3"#平王东迁时徐国公族
+  dynasty_house=house_xin63#白冥
+	religion="yili" 
+	culture="xu"
+  father=han1622
+
+  3803.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han1624={
+  name="ren"#储君1号
+  dynasty_house=house_xin63#白冥
+	religion="yili" 
+	culture="xu"
+  father=han1623
+
+  3823.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han1625={
+  name="kai"#储君1号子1
+  dynasty_house=house_xin63#白冥
+	religion="yili" 
+	culture="xu"
+  father=han1624
+
+  3843.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han1626={
+  name="jia2"#储君1号子2
+  dynasty_house=house_xin63#白冥
+	religion="yili" 
+	culture="xu"
+  father=han1624
+
+  3844.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han1627={
+  name="gui1"#储君1号子3
+  dynasty_house=house_xin63#白冥
+	religion="yili" 
+	culture="xu"
+  father=han1624
+
+  3845.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han1628={
+  name="nvming59"#储君1号女1
+  dynasty_house=house_xin63#白冥
+	religion="yili" 
+	culture="xu"
+  father=han1624
+  female=yes
+
+  3846.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han1629={
+  name="nvming60"#储君1号女2
+  dynasty_house=house_xin63#白冥
+	religion="yili" 
+	culture="xu"
+  father=han1624
+  female=yes
+
+  3847.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han1630={
+  name="nanming121"#储君2号
+  dynasty_house=house_xin63#白冥
+	religion="yili" 
+	culture="xu"
+  father=han1623
+
+  3833.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han1631={
+  name="qi3"#储君3号
+  dynasty_house=house_xin63#白冥
+	religion="yili" 
+	culture="xu"
+  father=han1623
+
+  3838.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han1632={
+  name="nvming61"#女1
+  dynasty_house=house_xin63#白冥
+	religion="yili" 
+	culture="xu"
+  father=han1623
+  female=yes
+
+  3839.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han1633={
+  name="nvming62"#女2
+  dynasty_house=house_xin63#白冥
+	religion="yili" 
+	culture="xu"
+  father=han1623
+  female=yes
+
+  3840.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+### 徐国公族--白冥 ###
+han1634={
+  name="gui3"
+  dynasty_house=house_xin64#白冥
+	religion="yili" 
+	culture="xu"
+  father=han1605
+
+  3692.1.1 = {
+		birth = yes
+	}
+  3746.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1635={
+  name="can1"
+  dynasty_house=house_xin64#白冥
+	religion="yili" 
+	culture="xu"
+  father=han1634
+
+  3716.1.1 = {
+		birth = yes
+	}
+  3791.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1636={
+  name="cheng"
+  dynasty_house=house_xin64#白冥
+	religion="yili" 
+	culture="xu"
+  father=han1635
+
+  3777.1.1 = {
+		birth = yes
+	}
+  3846.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han1637={
+  name="wu"#平王东迁时徐国公族
+  dynasty_house=house_xin64#白冥
+	religion="yili" 
+	culture="xu"
+  father=han1636
+
+  3823.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han1638={
+  name="ji"#储君1号
+  dynasty_house=house_xin64#白冥
+	religion="yili" 
+	culture="xu"
+  father=han1637
+
+  3843.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han1639={
+  name="nanming190"#储君2号
+  dynasty_house=house_xin64#白冥
+	religion="yili" 
+	culture="xu"
+  father=han1637
+
+  3844.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han1640={
+  name="nanming349"#储君3号
+  dynasty_house=house_xin64#白冥
+	religion="yili" 
+	culture="xu"
+  father=han1637
+
+  3845.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han1641={
+  name="nvming63"#女1
+  dynasty_house=house_xin64#白冥
+	religion="yili" 
+	culture="xu"
+  father=han1637
+  female=yes
+
+  3846.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han1642={
+  name="nvming64"#女2
+  dynasty_house=house_xin64#白冥
+	religion="yili" 
+	culture="xu"
+  father=han1637
+  female=yes
+
+  3847.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han1643={
+  name="wu1"#弟1号
+  dynasty_house=house_xin64#白冥
+	religion="yili" 
+	culture="xu"
+  father=han1636
+
+  3833.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han1644={
+  name="xian1"#弟2号
+  dynasty_house=house_xin64#白冥
+	religion="yili" 
+	culture="xu"
+  father=han1636
+
+  3834.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han1645={
+  name="nvming65"#妹1
+  dynasty_house=house_xin64#白冥
+	religion="yili" 
+	culture="xu"
+  father=han1636
+  female=yes
+
+  3835.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han1646={
+  name="nvming66"#妹2
+  dynasty_house=house_xin64#白冥
+	religion="yili" 
+	culture="xu"
+  father=han1636
+  female=yes
+
+  3836.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+### 徐国公族 将梁氏###
+xu1={
+  name="nanming385"
+  dynasty_house=house_xin379
+	religion="yili" 
+	culture="xu"
+  father=han1599
+
+  3473.1.1 = {
+		birth = yes
+	}
+  3544.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+xu2={
+  name="nanming389"
+  dynasty_house=house_xin379
+	religion="yili" 
+	culture="xu"
+  father=xu1
+
+  3517.1.1 = {
+		birth = yes
+	}
+  3594.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+xu3={
+  name="nanming395"
+  dynasty_house=house_xin379
+	religion="yili" 
+	culture="xu"
+  father=xu2
+
+  3543.1.1 = {
+		birth = yes
+	}
+  3620.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+xu4={
+  name="nanming402"
+  dynasty_house=house_xin379
+	religion="yili" 
+	culture="xu"
+  father=xu3
+
+  3618.1.1 = {
+		birth = yes
+	}
+  3690.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+xu5={
+  name="nanming412"
+  dynasty_house=house_xin379
+	religion="yili" 
+	culture="xu"
+  father=xu4
+
+  3640.1.1 = {
+		birth = yes
+	}
+  3705.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+xu6={
+  name="nanming430"
+  dynasty_house=house_xin379
+	religion="yili" 
+	culture="xu"
+  father=xu5
+
+  3671.1.1 = {
+		birth = yes
+	}
+  3728.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+xu7={
+  name="nanming433"
+  dynasty_house=house_xin379
+	religion="yili" 
+	culture="xu"
+  father=xu6
+
+  3695.1.1 = {
+		birth = yes
+	}
+  3742.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+xu8={
+  name="nanming447"
+  dynasty_house=house_xin379
+	religion="yili" 
+	culture="xu"
+  father=xu7
+
+  3716.1.1 = {
+		birth = yes
+	}
+  3791.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+xu9={
+  name="nanming460"
+  dynasty_house=house_xin379
+	religion="yili" 
+	culture="xu"
+  father=xu8
+
+  3777.1.1 = {
+		birth = yes
+	}
+  3837.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+xu10={
+  name="nanming462"
+  dynasty_house=house_xin379
+	religion="yili" 
+	culture="xu"
+  father=xu9
+
+  3803.1.1 = {
+		birth = yes
+	}
+  3849.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+xu11={
+  name="nanming469"#平王东迁时徐国国君
+  dynasty_house=house_xin379
+	religion="yili" 
+	culture="xu"
+  father=xu10
+
+  3823.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+xu12={
+  name="nanming482"#储君
+  dynasty_house=house_xin379
+	religion="yili" 
+	culture="xu"
+  father=xu11
+
+  3843.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+xu13={
+  name="nvming61"#女
+  dynasty_house=house_xin379
+	religion="yili" 
+	culture="xu"
+  father=xu11
+  female=yes
+
+  3844.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+xu14={
+  name="nanming497"#储君
+  dynasty_house=house_xin379
+	religion="yili" 
+	culture="xu"
+  father=xu11
+
+  3845.11.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}

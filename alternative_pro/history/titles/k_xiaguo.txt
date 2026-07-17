@@ -1,0 +1,39 @@
+﻿d_xiagongshi1 = {
+	3729.1.1 = {
+		liege = "k_xiaguo"
+		holder = jixingxiaguo1
+	}
+	3781.1.1 = {
+		holder = jixingxiaguo2
+	}
+	3800.1.1 = {
+		holder = jixingxiaguo3
+	}
+	3823.1.1 = {
+		holder = jixingxiaguo8
+	}
+	3849.1.1 = {
+		change_development_level = 28
+		government = feudal_government
+	}
+}
+k_xiaguo = {
+	3729.1.1 = {
+		liege = "e_zhoutianzi"
+		holder = jixingxiaguo1
+	}
+	3781.1.1 = {
+		holder = jixingxiaguo2
+	}
+	3800.1.1 = {
+		holder = jixingxiaguo3
+	}
+	3823.1.1 = {
+		holder = jixingxiaguo4
+	}
+	3849.1.1 = {
+		change_development_level = 30
+		government = feudal_government
+		liege = "e_zhoutianzi1"
+	}
+}

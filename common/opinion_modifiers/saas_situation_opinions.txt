@@ -1,0 +1,36 @@
+﻿saas_wangdao_reveres_tianzi_restoration_opinion = {
+	opinion = 30
+	months = 18
+}
+
+saas_wangdao_reveres_tianzi_collapse_opinion = {
+	opinion = 15
+	months = 18
+}
+
+saas_wangdao_broke_ritual_peace_opinion = {
+	opinion = -30
+	years = 10
+}
+
+saas_refused_tianzi_tribute_opinion = {
+	opinion = -25
+	years = 10
+}
+
+saas_huimeng_supporter_opinion = {
+	opinion = 20
+	years = 10
+}
+
+saas_huimeng_detractor_opinion = {
+	opinion = -20
+	years = 10
+}
+
+saas_wangdao_war_crime_opinion = {
+	opinion = -50
+	years = 10
+	imprisonment_reason = yes
+	revoke_title_reason = yes
+}

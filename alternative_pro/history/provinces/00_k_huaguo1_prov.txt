@@ -1,0 +1,44 @@
+﻿##### d_huashi1 ############################
+
+### c_huanyuanguan
+# HUANYUANGUAN
+770 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+### c_houshi
+# HOUSHI
+775 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+##### d_lunshi ############################
+
+### c_lunshi
+# LUNSHI
+771 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+### c_fushu
+# FUSHU
+768 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+# YINGGU
+769 = {
+	holding = none
+}
+
+

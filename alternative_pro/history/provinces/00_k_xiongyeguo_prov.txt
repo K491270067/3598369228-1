@@ -1,0 +1,37 @@
+﻿##### d_xiongyeshi ############################
+
+### c_xiongye
+# XIONGYE
+2921 = {
+	holding = none
+}
+
+
+### c_xiaye1
+# XIAYE1
+2911 = {
+	holding = none
+}
+
+
+### c_xiongyeshenyi
+# XIONGYESHENYI
+2910 = {
+	holding = none
+}
+
+
+### c_douji
+# DOUJI
+2916 = {
+	holding = none
+}
+# HUANGBANJIN
+2909 = {
+	holding = none
+}
+
+
+### c_huangbanjin
+
+

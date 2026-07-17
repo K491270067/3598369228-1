@@ -1,0 +1,260 @@
+﻿d_wushi1 = {
+	2531.1.1 = {
+		liege = "k_wuluoguo"
+		holder = yunxingwuluoguo1
+	}
+	2600.12.31 = {
+		holder = yunxingwuluoguo2
+	}
+	2628.12.31 = {
+		holder = yunxingwuluoguo3
+	}
+	2672.12.31 = {
+		holder = yunxingwuluoguo4
+	}
+	2711.12.31 = {
+		holder = yunxingwuluoguo5
+	}
+	2747.12.31 = {
+		holder = yunxingwuluoguo6
+	}
+	2778.12.31 = {
+		holder = yunxingwuluoguo7
+	}
+	2809.12.31 = {
+		holder = yunxingwuluoguo8
+	}
+	2847.12.31 = {
+		holder = yunxingwuluoguo9
+	}
+	2877.12.31 = {
+		holder = yunxingwuluoguo10
+	}
+	2900.12.31 = {
+		holder = yunxingwuluoguo11
+	}
+	2928.12.31 = {
+		holder = yunxingwuluoguo12
+	}
+	2975.12.31 = {
+		holder = yunxingwuluoguo13
+	}
+	3011.12.31 = {
+		holder = yunxingwuluoguo14
+	}
+	3023.12.31 = {
+		holder = yunxingwuluoguo15
+	}
+	3071.12.31 = {
+		holder = yunxingwuluoguo16
+	}
+	3100.12.31 = {
+		holder = yunxingwuluoguo17
+	}
+	3121.12.31 = {
+		holder = yunxingwuluoguo18
+	}
+	3162.12.31 = {
+		holder = yunxingwuluoguo19
+	}
+	3183.12.31 = {
+		holder = yunxingwuluoguo20
+	}
+	3214.12.31 = {
+		holder = yunxingwuluoguo21
+	}
+	3251.12.31 = {
+		holder = yunxingwuluoguo22
+	}
+	3290.12.31 = {
+		holder = yunxingwuluoguo23
+	}
+	3312.12.31 = {
+		holder = yunxingwuluoguo24
+	}
+	3361.12.31 = {
+		holder = yunxingwuluoguo25
+	}
+	3407.12.31 = {
+		holder = yunxingwuluoguo26
+	}
+	3448.12.31 = {
+		holder = yunxingwuluoguo27
+	}
+	3471.12.31 = {
+		holder = yunxingwuluoguo28
+	}
+	3509.12.31 = {
+		holder = yunxingwuluoguo29
+	}
+	3537.12.31 = {
+		holder = yunxingwuluoguo30
+	}
+	3560.12.31 = {
+		holder = yunxingwuluoguo31
+	}
+	3583.12.31 = {
+		holder = yunxingwuluoguo32
+	}
+	3607.12.31 = {
+		holder = yunxingwuluoguo33
+	}
+	3631.12.31 = {
+		holder = yunxingwuluoguo34
+	}
+	3673.12.31 = {
+		holder = yunxingwuluoguo35
+	}
+	3705.12.31 = {
+		holder = yunxingwuluoguo36
+	}
+	3728.12.31 = {
+		holder = yunxingwuluoguo37
+	}
+	3751.12.31 = {
+		holder = yunxingwuluoguo38
+	}
+	3784.12.31 = {
+		holder = yunxingwuluoguo39
+	}
+	3807.12.31 = {
+		holder = yunxingwuluoguo40
+	}
+	3834.12.31 = {
+		holder = yunxingwuluoguo46
+	}
+	3849.1.1 = {
+		government = feudal_government
+		change_development_level = 26
+	}
+}
+k_wuluoguo = {
+	2531.1.1 = {
+		holder = yunxingwuluoguo1
+	}
+	2600.12.31 = {
+		holder = yunxingwuluoguo2
+	}
+	2628.12.31 = {
+		holder = yunxingwuluoguo3
+	}
+	2672.12.31 = {
+		holder = yunxingwuluoguo4
+	}
+	2711.12.31 = {
+		holder = yunxingwuluoguo5
+	}
+	2747.12.31 = {
+		holder = yunxingwuluoguo6
+	}
+	2778.12.31 = {
+		holder = yunxingwuluoguo7
+	}
+	2809.12.31 = {
+		holder = yunxingwuluoguo8
+	}
+	2847.12.31 = {
+		holder = yunxingwuluoguo9
+	}
+	2877.12.31 = {
+		holder = yunxingwuluoguo10
+	}
+	2900.12.31 = {
+		holder = yunxingwuluoguo11
+	}
+	2928.12.31 = {
+		holder = yunxingwuluoguo12
+	}
+	2975.12.31 = {
+		holder = yunxingwuluoguo13
+	}
+	3011.12.31 = {
+		holder = yunxingwuluoguo14
+	}
+	3023.12.31 = {
+		holder = yunxingwuluoguo15
+	}
+	3071.12.31 = {
+		holder = yunxingwuluoguo16
+	}
+	3100.12.31 = {
+		holder = yunxingwuluoguo17
+	}
+	3121.12.31 = {
+		holder = yunxingwuluoguo18
+	}
+	3162.12.31 = {
+		holder = yunxingwuluoguo19
+	}
+	3183.12.31 = {
+		holder = yunxingwuluoguo20
+	}
+	3214.12.31 = {
+		holder = yunxingwuluoguo21
+	}
+	3251.12.31 = {
+		holder = yunxingwuluoguo22
+	}
+	3290.12.31 = {
+		holder = yunxingwuluoguo23
+	}
+	3312.12.31 = {
+		holder = yunxingwuluoguo24
+	}
+	3361.12.31 = {
+		holder = yunxingwuluoguo25
+	}
+	3407.12.31 = {
+		holder = yunxingwuluoguo26
+	}
+	3448.12.31 = {
+		holder = yunxingwuluoguo27
+	}
+	3471.12.31 = {
+		holder = yunxingwuluoguo28
+	}
+	3509.12.31 = {
+		holder = yunxingwuluoguo29
+	}
+	3537.12.31 = {
+		holder = yunxingwuluoguo30
+	}
+	3560.12.31 = {
+		holder = yunxingwuluoguo31
+	}
+	3583.12.31 = {
+		liege = "e_zhoutianzi"
+		holder = yunxingwuluoguo32
+	}
+	3607.12.31 = {
+		holder = yunxingwuluoguo33
+	}
+	3631.12.31 = {
+		holder = yunxingwuluoguo34
+	}
+	3673.12.31 = {
+		holder = yunxingwuluoguo35
+	}
+	3705.12.31 = {
+		holder = yunxingwuluoguo36
+	}
+	3728.12.31 = {
+		holder = yunxingwuluoguo37
+	}
+	3751.12.31 = {
+		holder = yunxingwuluoguo38
+	}
+	3784.12.31 = {
+		holder = yunxingwuluoguo39
+	}
+	3807.12.31 = {
+		holder = yunxingwuluoguo40
+	}
+	3834.12.31 = {
+		holder = yunxingwuluoguo41
+	}
+	3849.1.1 = {
+		government = feudal_government
+		change_development_level = 28
+	}
+}

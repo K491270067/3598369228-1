@@ -1,0 +1,51 @@
+﻿d_zaishi = {
+	3574.1.1 = {
+		liege = "k_daiguo"
+		holder = song1276
+	}
+	3638.1.1 = {
+		holder = song1277
+	}
+	3670.1.1 = {
+		holder = song1278
+	}
+	3743.1.1 = {
+		holder = song1279
+	}
+	3767.1.1 = {
+		holder = song1280
+	}
+	3821.1.1 = {
+		holder = song1286
+	}
+	3849.1.1 = {
+		change_development_level = 20
+		government = feudal_government
+	}
+}
+k_daiguo = {
+	3574.1.1 = {
+		liege = "e_zhoutianzi"
+		holder = song1276
+	}
+	3638.1.1 = {
+		holder = song1277
+	}
+	3670.1.1 = {
+		holder = song1278
+	}
+	3743.1.1 = {
+		holder = song1279
+	}
+	3767.1.1 = {
+		holder = song1280
+	}
+	3821.1.1 = {
+		holder = song1281
+	}
+	3849.1.1 = {
+		change_development_level = 24
+		liege = "e_zhoutianzi1"
+		government = feudal_government
+	}
+}

@@ -1,0 +1,91 @@
+﻿##### d_maoyeshi ############################
+
+### c_zhizhifu
+# ZHIZHIFU
+2969 = {
+	holding = none
+}
+
+
+### c_xintian1
+
+
+### c_duohu
+
+
+### c_meizhinai
+# WUYEZHI
+2970 = {
+	holding = none
+}
+
+
+### c_zuowei
+
+
+### c_piangan
+
+
+### c_ligen
+
+
+### c_yuxubi
+
+
+### c_cheping
+
+
+### c_shangye
+# SHANGYE
+2850 = {
+	holding = none
+}
+
+
+### c_wuyezhi
+
+
+### c_yematuo
+
+
+### c_erduoduo
+
+
+### c_yubolianqi
+
+
+### c_bafan
+
+
+### c_zuhe
+
+
+### c_xiaye
+
+
+### c_xinzhi
+# XINZHI
+2971 = {
+	holding = none
+}
+# ZHUBO
+2972 = {
+	holding = none
+}
+
+
+### c_zhubo
+
+
+### c_hanchuanjun1
+
+
+### c_naxujun
+
+
+### c_fanghe
+
+
+### c_heneijun
+
+

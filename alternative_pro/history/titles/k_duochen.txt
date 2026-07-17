@@ -1,0 +1,63 @@
+﻿d_duoshi1 = {
+	3570.1.1 = {
+		liege = "k_duochen"
+		holder = duochenshi1
+	}
+	3629.12.31 = {
+		holder = duochenshi2
+	}
+	3648.12.31 = {
+		holder = duochenshi3
+	}
+	3681.12.31 = {
+		holder = duochenshi4
+	}
+	3710.12.31 = {
+		holder = duochenshi5
+	}
+	3757.12.31 = {
+		holder = duochenshi6
+	}
+	3791.12.31 = {
+		holder = duochenshi7
+	}
+	3814.12.31 = {
+		holder = duochenshi14
+	}
+	3849.1.1 = {
+		change_development_level = 18
+	}
+	3849.12.31 = {
+		government = tribal_government
+	}
+}
+k_duochen = {
+	3570.1.1 = {
+		holder = duochenshi1
+	}
+	3629.12.31 = {
+		holder = duochenshi2
+	}
+	3648.12.31 = {
+		holder = duochenshi3
+	}
+	3681.12.31 = {
+		holder = duochenshi4
+	}
+	3710.12.31 = {
+		holder = duochenshi5
+	}
+	3757.12.31 = {
+		holder = duochenshi6
+	}
+	3791.12.31 = {
+		holder = duochenshi7
+	}
+	3814.12.31 = {
+		holder = duochenshi8
+	}
+	3849.12.31 = {
+		government = tribal_government
+		change_development_level = 21
+	}
+}

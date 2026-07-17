@@ -1,0 +1,37 @@
+﻿##### d_daoshi ############################
+
+### c_dao
+# DAO
+1662 = {
+	holding = none
+}
+
+
+### c_sangsui
+# SANGSUI
+1665 = {
+	holding = none
+}
+
+
+### c_yichun
+# YICHUN
+1696 = {
+	holding = none
+}
+
+
+### c_anchang
+# ANCHANG
+1697 = {
+	holding = none
+}
+
+
+### c_langling
+# LANGLING
+1699 = {
+	holding = none
+}
+
+

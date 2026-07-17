@@ -1,0 +1,22 @@
+﻿d_xishi5 = {
+	3796.1.1 = {
+		liege = "k_pengxirong"
+		holder = han2001
+	}
+	3821.5.1 = {
+		holder = han2007
+	}
+	3849.1.1 = {
+		change_development_level = 28
+		government = tribal_government
+	}
+}
+k_pengxirong = {
+	3796.1.1 = {
+		holder = han2001
+	}
+	3849.12.31 = {
+		government = tribal_government
+		change_development_level = 29
+	}
+}

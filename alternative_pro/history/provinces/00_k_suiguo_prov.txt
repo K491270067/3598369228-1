@@ -1,0 +1,48 @@
+﻿##### d_suishi ############################
+
+### c_sui
+# SUI
+348 = {
+	culture = lu
+	religion = xizhouli
+	holding = castle_holding
+}
+# FEI
+345 = {
+	holding = none
+}
+
+
+### c_jingzi
+# JINGZI
+347 = {
+	culture = lu
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+##### d_suiyinshi ############################
+
+### c_yangqiao
+# YANGQIAO
+335 = {
+	culture = lu
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_bo1
+# BO1
+336 = {
+	culture = lu
+	religion = xizhouli
+	holding = castle_holding
+}
+# SHU
+333 = {
+	holding = none
+}
+
+

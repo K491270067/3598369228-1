@@ -1,0 +1,114 @@
+﻿##### d_hanshi ############################
+
+### c_fuling
+# FULING
+297 = {
+	holding = none
+}
+
+
+### c_shangdao
+# SHANGDAO
+298 = {
+	holding = none
+}
+
+
+### c_dongyang1
+# DONGYANG1
+300 = {
+	holding = none
+}
+
+
+### c_anyi
+# ANYI
+301 = {
+	holding = none
+}
+
+
+### c_pingan
+# PINGAN
+302 = {
+	holding = none
+}
+
+
+### c_jiangdu
+# JIANGDU
+303 = {
+	holding = none
+}
+
+
+### c_han
+# HAN
+304 = {
+	holding = none
+}
+
+
+### c_beiliang
+# BEILIANG
+305 = {
+	holding = none
+}
+
+
+### c_yu1
+# YU1
+306 = {
+	holding = none
+}
+
+
+### c_huaipu
+# HUAIPU
+309 = {
+	holding = none
+}
+
+
+### c_huaiyin
+# HUAIYIN
+310 = {
+	holding = none
+}
+
+
+### c_nanchang
+# NANCHANG
+311 = {
+	holding = none
+}
+
+
+### c_shanyang
+# SHANYANG
+312 = {
+	holding = none
+}
+
+
+### c_sheyang
+# SHEYANG
+314 = {
+	holding = none
+}
+
+
+### c_haiyang
+# HAIYANG
+318 = {
+	holding = none
+}
+
+
+### c_shibie
+# SHIBIE
+2267 = {
+	holding = none
+}
+
+

@@ -1,0 +1,119 @@
+﻿##### d_yuzhishi ############################
+
+### c_yuzhi1
+# YUZHI1
+1471 = {
+	culture = xirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+# TONGLUO
+2800 = {
+	holding = none
+}
+# WULI
+2804 = {
+	holding = none
+}
+
+
+### c_chudao
+# CHUDAO
+1472 = {
+	culture = xirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+
+
+### c_guye
+# GUYE
+2801 = {
+	culture = xirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+# DASUJI
+2802 = {
+	holding = none
+}
+
+
+##### d_yuyuanzhenshi ############################
+
+### c_fangchi
+# FANGCHI
+1473 = {
+	culture = xirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+
+
+### c_pingrong
+# PINGRONG
+2798 = {
+	culture = xirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+# BAOHU
+2799 = {
+	holding = none
+}
+
+
+### c_guide
+# GUIDE
+1465 = {
+	culture = xirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+
+
+##### d_yuzhushi ############################
+
+### c_luodu
+# LUODU
+1466 = {
+	culture = xirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+# XICHUAN
+2797 = {
+	holding = none
+}
+# FUZHENG
+2790 = {
+	holding = none
+}
+
+
+### c_kuang3
+# KUANG3
+2789 = {
+	culture = xirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+# FANG6
+2788 = {
+	holding = none
+}
+
+
+### c_geng2
+# GENG2
+2796 = {
+	culture = xirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+# BAOAN
+2794 = {
+	holding = none
+}
+
+

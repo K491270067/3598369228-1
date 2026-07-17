@@ -1,0 +1,81 @@
+﻿d_jintianshi = {
+	color = { 255 215 60 }
+	capital = c_ju
+}
+
+e_hanchao = {
+	color = { 0 117 55 }
+	capital = c_linle
+}
+
+e_jintianshi = {
+	color = { 255 215 60 }
+	capital = c_ju
+}
+
+e_shennongshi = {
+	color = { 180 0 0 }
+	capital = c_qufu
+}
+
+e_yuchao = {
+	color = { 160 120 60 }
+	capital = c_puban
+}
+
+k_boguguo = {
+	color = { 168 27 132 }
+	capital = c_pugu
+}
+
+k_gucaoguo = {
+	color = { 42 126 168 }
+	capital = c_cao1
+}
+
+k_guyanguo = {
+	color = { 42 138 78 }
+	capital = c_zhi1
+}
+
+k_guyuguo = {
+	color = { 8 247 3 }
+	capital = c_puban
+}
+
+k_hanguo3 = {
+	color = { 2 27 5 }
+	capital = c_han4
+}
+
+k_haoguo = {
+	color = { 42 189 93 }
+
+	capital = c_hu2
+}
+
+k_jice = {
+	color = { 170 24 132 }
+	capital = c_zi
+}
+
+k_shiweiguo = {
+	color = { 168 18 87 }
+	capital = c_hua
+}
+
+k_tushanguo = {
+	color = { 169 171 87 }
+	capital = c_tushan
+}
+
+k_xianmou = {
+	color = { 42 54 143 }
+	capital = c_fulai
+}
+
+k_zhujiguo = {
+	color = { 168 129 162 }
+	capital = c_pi1
+}
+

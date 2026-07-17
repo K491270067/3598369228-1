@@ -1,0 +1,158 @@
+﻿#############  瑗挎鍥?-瀣村 #############
+han2893={
+  name="kang1"#姊佸悍浼紝骞崇帇涓滆縼鏃舵鍥藉浗鍚涳紝瀛椾集渚冿紝绉︿徊涔嬪瓙
+  dynasty=xin797
+	religion="xizhouli" 
+	culture="qin"
+  father=han2869
+
+  3788.1.1 = {
+		birth = yes
+	}
+  3864.1.1 = {
+    death = yes
+  }
+}
+han2894={
+  name="nanming584"#鍌ㄥ悰涓€鍙?
+  dynasty_house=house_baijia128
+	religion="xizhouli" 
+	culture="qin"
+  father=han2893
+
+  3808.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han2895={#鍙傝€冦€婃姘忓鏃忎笘绯绘帓鍒楃患杩般€嬫煡鍒扮殑浜虹墿
+  name="nanming585"#鍌ㄥ悰浜屽彿锛屾父鎴忓紑灞€鏃舵湭鎴愬勾
+  dynasty_house=house_baijia128
+	religion="xizhouli" 
+	culture="qin"
+  father=han2893
+
+  3809.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han2896={#鍙傝€冦€婃姘忓鏃忎笘绯绘帓鍒楃患杩般€嬫煡鍒扮殑浜虹墿
+  name="nanming586"#鍌ㄥ悰涓夊彿锛屾父鎴忓紑灞€鏃舵湭鎴愬勾
+  dynasty_house=house_baijia128
+	religion="xizhouli" 
+	culture="qin"
+  father=han2893
+
+  3810.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han2897={#鍙傝€冦€婃姘忓鏃忎笘绯绘帓鍒楃患杩般€嬫煡鍒扮殑浜虹墿
+  name="nanming487"#鍌ㄥ悰鍥涘彿锛屾父鎴忓紑灞€鏃舵湭鎴愬勾
+  dynasty_house=house_baijia128
+	religion="xizhouli" 
+	culture="qin"
+  father=han2893
+
+  3811.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han2898={
+  name="nvming100"#濂充竴鍙凤紝涓哄钩琛℃父鎴忕紪閫犱汉鐗?
+  dynasty_house=house_baijia128
+	religion="xizhouli" 
+	culture="qin"
+  father=han2893
+  female=yes
+
+  3818.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han2899={
+  name="nvming104"#濂充簩鍙凤紝涓哄钩琛℃父鎴忕紪閫犱汉鐗?
+  dynasty_house=house_baijia128
+	religion="xizhouli" 
+	culture="qin"
+  father=han2893
+  female=yes
+
+  3819.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han2900={
+  name="hong2"#绗笁浠ｏ紝鐢蜂竴
+  dynasty_house=house_baijia128
+	religion="xizhouli" 
+	culture="qin"
+  father=han2894
+
+  3828.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han2901={#鍙傝€冦€婃姘忓鏃忎笘绯绘帓鍒楃患杩般€嬫煡鍒扮殑浜虹墿
+  name="zong1"#绗笁浠ｏ紝鐢蜂簩
+  dynasty_house=house_baijia128
+	religion="xizhouli" 
+	culture="qin"
+  father=han2894
+
+  3829.5.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han2902={#鍙傝€冦€婃姘忓鏃忎笘绯绘帓鍒楃患杩般€嬫煡鍒扮殑浜虹墿
+  name="an2"#绗笁浠ｏ紝鐢蜂笁
+  dynasty_house=house_baijia128
+	religion="xizhouli" 
+	culture="qin"
+  father=han2894
+
+  3830.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han2903={#鍙傝€冦€婃姘忓鏃忎笘绯绘帓鍒楃患杩般€嬫煡鍒扮殑浜虹墿
+  name="tiying"#绗笁浠ｏ紝濂筹紝涓哄钩琛℃父鎴忕紪閫犱汉鐗?
+  dynasty_house=house_baijia128
+	religion="xizhouli" 
+	culture="qin"
+  father=han2894
+  female=yes
+
+  3831.11.11 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}

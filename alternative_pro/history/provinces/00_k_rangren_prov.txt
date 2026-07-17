@@ -1,0 +1,100 @@
+﻿##### d_rangshi ############################
+
+### c_yuzhou
+# YUZHOU
+3104 = {
+	holding = none
+}
+
+
+### c_rang2
+# RANG
+3685 = {
+	holding = none
+}
+
+
+### c_liangshan1
+# LIANGHAN1
+3207 = {
+	holding = none
+}
+
+
+### c_dianjiang
+# DJIANG
+3215 = {
+	holding = none
+}
+
+
+### c_yuewen
+# YUEWEN
+3217 = {
+	holding = none
+}
+
+
+### c_linshui2
+# LINSHUI2
+3326 = {
+	holding = none
+}
+
+
+### c_linshan
+# LINSHAN
+3327 = {
+	holding = none
+}
+
+
+### c_nongli
+# NONGLI
+3706 = {
+	holding = none
+}
+
+
+### c_laitan
+# LAITAN
+3709 = {
+	holding = none
+}
+
+
+### c_yunmen
+# YUNMEN
+3710 = {
+	holding = none
+}
+
+
+### c_yanchi
+# YANCHI
+3711 = {
+	holding = none
+}
+
+
+### c_hezhou
+# HEZHOU
+3106 = {
+	holding = none
+}
+
+
+### c_bishan
+# BISHAN
+3223 = {
+	holding = none
+}
+
+
+### c_bachuan
+# BACHUAN
+3723 = {
+	holding = none
+}
+
+

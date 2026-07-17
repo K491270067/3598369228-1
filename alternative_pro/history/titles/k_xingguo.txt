@@ -1,0 +1,165 @@
+﻿d_jianshi1 = {
+	3574.1.1 = {
+		liege = "k_xingguo"
+		holder = han148
+	}
+	3592.12.31 = {
+		holder = han149
+	}
+	3606.1.1 = {
+		holder = han150
+	}
+	3628.1.1 = {
+		holder = han151
+	}
+	3649.11.1 = {
+		holder = han152
+	}
+	3669.11.1 = {
+		holder = han153
+	}
+	3689.12.31 = {
+		holder = han154
+	}
+	3697.11.1 = {
+		holder = han155
+	}
+	3740.11.1 = {
+		holder = han156
+	}
+	3800.11.1 = {
+		holder = xingguonangongshi15
+	}
+	3821.11.1 = {
+		holder = xingguonangongshi16
+	}
+	3849.1.1 = {
+		government = feudal_government
+		change_development_level = 26
+	}
+}
+d_nangongshi = {
+	3574.1.1 = {
+		liege = "k_xingguo"
+		holder = han148
+	}
+	3592.12.31 = {
+		holder = han149
+	}
+	3606.1.1 = {
+		holder = han150
+	}
+	3628.1.1 = {
+		holder = han151
+	}
+	3649.11.1 = {
+		holder = han152
+	}
+	3669.11.1 = {
+		holder = han153
+	}
+	3689.12.31 = {
+		holder = han154
+	}
+	3697.11.1 = {
+		holder = han155
+	}
+	3740.11.1 = {
+		holder = han156
+	}
+	3800.11.1 = {
+		holder = han157
+	}
+	3823.11.1 = {
+		holder = xingguonangongshi1
+	}
+	3835.11.1 = {
+		holder = xingguonangongshi2
+	}
+	3849.1.1 = {
+		government = feudal_government
+		change_development_level = 24
+	}
+}
+d_shangliangshi = {
+	3574.1.1 = {
+		liege = "k_xingguo"
+		holder = han148
+	}
+	3592.12.31 = {
+		holder = han149
+	}
+	3606.1.1 = {
+		holder = han150
+	}
+	3628.1.1 = {
+		holder = han151
+	}
+	3649.11.1 = {
+		holder = han152
+	}
+	3669.11.1 = {
+		holder = han153
+	}
+	3689.12.31 = {
+		holder = han154
+	}
+	3697.11.1 = {
+		holder = han155
+	}
+	3740.11.1 = {
+		holder = xingguonangongshi7
+	}
+	3781.11.1 = {
+		holder = xingguonangongshi8
+	}
+	3812.11.1 = {
+		holder = xingguonangongshi9
+	}
+	3849.1.1 = {
+		government = feudal_government
+		change_development_level = 25
+	}
+}
+k_xingguo = {
+	3574.1.1 = {
+		liege = "e_zhoutianzi"
+		holder = han148
+	}
+	3592.12.31 = {
+		holder = han149
+	}
+	3606.1.1 = {
+		holder = han150
+	}
+	3628.1.1 = {
+		holder = han151
+	}
+	3649.11.1 = {
+		holder = han152
+	}
+	3669.11.1 = {
+		holder = han153
+	}
+	3689.12.31 = {
+		holder = han154
+	}
+	3697.11.1 = {
+		holder = han155
+	}
+	3740.11.1 = {
+		holder = han156
+	}
+	3800.11.1 = {
+		holder = han157
+	}
+	3823.11.1 = {
+		holder = han158
+	}
+	3825.1.1 = {
+		government = feudal_government
+	}
+	3849.1.1 = {
+		change_development_level = 30
+	}
+}

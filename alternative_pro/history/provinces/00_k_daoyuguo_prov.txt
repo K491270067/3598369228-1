@@ -1,0 +1,31 @@
+﻿##### d_daoyushi ############################
+
+### c_qiduo
+
+
+### c_yinfan
+# YINFAN
+2896 = {
+	holding = none
+}
+
+
+### c_daoye
+# DAOYE
+2945 = {
+	holding = none
+}
+
+
+### c_shuiyi
+
+
+### c_bashang
+
+
+### c_zhitou
+
+
+### c_yimei
+
+

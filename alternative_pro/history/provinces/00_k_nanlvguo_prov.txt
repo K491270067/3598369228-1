@@ -1,0 +1,44 @@
+﻿##### d_nanlvshi ############################
+
+### c_lv4
+# LV4
+1735 = {
+	holding = none
+}
+
+
+### c_laoyang
+# LAOYANG
+1737 = {
+	holding = none
+}
+
+
+### c_yuyang1
+# YUYANG1
+1738 = {
+	holding = none
+}
+
+
+### c_anzhong
+# ANZHONG
+1739 = {
+	holding = none
+}
+
+
+### c_xincheng5
+# XINCHENG5
+1741 = {
+	holding = none
+}
+
+
+### c_nieyang
+# NIEYANG
+1742 = {
+	holding = none
+}
+
+

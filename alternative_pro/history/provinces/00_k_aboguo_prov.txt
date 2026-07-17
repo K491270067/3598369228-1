@@ -1,0 +1,35 @@
+﻿##### d_sujibushi ############################
+
+### c_zhang4
+# ZHANG4
+2922 = {
+	holding = none
+}
+
+
+### c_danei
+
+
+### c_shengpu
+
+
+### c_suguo
+# DANEI
+3535 = {
+	holding = none
+}
+
+
+### c_hanchuan
+
+
+### c_meima
+
+
+### c_sanye
+# HANCHUAN
+3536 = {
+	holding = none
+}
+
+

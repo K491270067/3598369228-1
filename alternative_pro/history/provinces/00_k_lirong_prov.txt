@@ -1,0 +1,37 @@
+﻿##### d_lishi1 ############################
+
+### c_li6
+# LI6
+855 = {
+	culture = xirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+# XI2
+854 = {
+	holding = none
+}
+
+
+### c_zui
+# ZUI
+856 = {
+	culture = xirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+
+
+### c_chaiyang
+# CHAIYANG
+857 = {
+	culture = xirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+# HAN2
+860 = {
+	holding = none
+}
+
+

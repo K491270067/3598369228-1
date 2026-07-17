@@ -1,0 +1,44 @@
+﻿##### d_yuanshi1 ############################
+
+### c_yuan2
+# YUAN2
+1084 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+# CHI
+1085 = {
+	holding = none
+}
+
+
+### c_shaoqu
+# SHAOQU
+1092 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+##### d_xishi4 ############################
+
+### c_hao3
+# HAO3
+2471 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+### c_xicheng2
+# XICHENG2
+2477 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+

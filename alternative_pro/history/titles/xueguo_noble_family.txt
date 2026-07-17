@@ -1,0 +1,30 @@
+﻿c_renshi1 = {
+	3849.12.31 = {
+		liege = k_xueguo
+		holder = han961
+		government = feudal_government
+		succession_laws = { noble_family_succession_law }
+	}
+	5000.10.1 = {
+		effect = {
+			destroy_landless_title_no_tgp_dlc_effect = {
+				DATE = 5000.10.1
+			}
+		}
+	}
+}
+c_xueshi = {
+	3849.12.31 = {
+		liege = k_xueguo
+		holder = xueshi3
+		government = feudal_government
+		succession_laws = { noble_family_succession_law }
+	}
+	5000.10.1 = {
+		effect = {
+			destroy_landless_title_no_tgp_dlc_effect = {
+				DATE = 5000.10.1
+			}
+		}
+	}
+}

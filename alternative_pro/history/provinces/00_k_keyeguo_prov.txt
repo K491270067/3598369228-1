@@ -1,0 +1,58 @@
+﻿##### d_duoshi ############################
+
+### c_zhumo
+
+
+### c_xinnong
+# XINNONG
+2848 = {
+	holding = none
+}
+# JIAFEI
+2889 = {
+	holding = none
+}
+
+
+### c_zoufang
+
+
+### c_yina
+# YINA
+3552 = {
+	holding = none
+}
+# ZOUFANG
+3551 = {
+	holding = none
+}
+# SHEYE
+3556 = {
+	holding = none
+}
+
+
+### c_zuojiu
+
+
+##### d_anyunbushi ############################
+
+### c_anyun2
+
+
+### c_keye
+
+
+### c_gengji
+
+
+### c_keyepin
+
+
+### c_gaojin
+# KEYE
+2965 = {
+	holding = none
+}
+
+

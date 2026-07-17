@@ -1,0 +1,15 @@
+﻿c_zhuqishi = {
+	3849.12.31 = {
+		liege = k_zhuqiguo
+		holder = zhuqi5
+		government = feudal_government
+		succession_laws = { noble_family_succession_law }
+	}
+	5000.10.1 = {
+		effect = {
+			destroy_landless_title_no_tgp_dlc_effect = {
+				DATE = 5000.10.1
+			}
+		}
+	}
+}

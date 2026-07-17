@@ -1,0 +1,173 @@
+﻿##### d_motaishi ############################
+
+### c_lulong
+
+
+### c_jieshi
+# JIESHI
+3494 = {
+	holding = none
+}
+# LULONG
+3493 = {
+	holding = none
+}
+# JIUJIANG
+3497 = {
+	holding = none
+}
+# FENGRUN
+3512 = {
+	holding = none
+}
+
+
+### c_suizhong
+# SUIZHONG
+3495 = {
+	holding = none
+}
+# NINGYUAN
+3496 = {
+	holding = none
+}
+# DABA
+3775 = {
+	holding = none
+}
+
+
+### c_jiujiang
+
+
+### c_xifeng2
+# XIFENG2
+3510 = {
+	holding = none
+}
+# XINGLONG
+3513 = {
+	holding = none
+}
+# LUANXING
+2632 = {
+	holding = none
+}
+
+
+### c_fengrun
+
+
+### c_pingquan1
+# PINGQUAN1
+3508 = {
+	holding = none
+}
+# LIPING
+3505 = {
+	holding = none
+}
+# CHENGDE1
+3509 = {
+	holding = none
+}
+# HALAHETAO
+2631 = {
+	holding = none
+}
+
+
+### c_chengde1
+
+
+### c_qianan
+# FUSU
+3504 = {
+	holding = none
+}
+# MASHOU1
+3772 = {
+	holding = none
+}
+# BAILANG
+3491 = {
+	holding = none
+}
+
+
+### c_xinglong
+
+
+### c_keye1
+# KEYE1
+3514 = {
+	holding = none
+}
+# KEDAN
+3768 = {
+	holding = none
+}
+# QIANAN
+3511 = {
+	holding = none
+}
+# LINGYUAN
+3506 = {
+	holding = none
+}
+
+
+### c_ningyuan
+
+
+### c_fusu
+
+
+### c_liping
+
+
+### c_bailang
+
+
+### c_ande1
+
+
+### c_lingyuan
+
+
+### c_kedan
+
+
+### c_luolei
+
+
+### c_hudiyu
+# ANDE1
+3503 = {
+	holding = none
+}
+
+
+### c_shuluogan
+
+
+### c_mashou1
+
+
+### c_wencheng1
+# WENCHENG1
+3773 = {
+	holding = none
+}
+# YANFU
+3774 = {
+	holding = none
+}
+
+
+### c_yanfu
+
+
+### c_daba
+
+

@@ -1,0 +1,44 @@
+﻿##### d_zhushi2 ############################
+
+### c_quchi
+# QUCHI
+343 = {
+	culture = lu
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_zhu1
+# ZHU1
+344 = {
+	culture = lu
+	religion = xizhouli
+	holding = castle_holding
+}
+# JUPING
+2269 = {
+	holding = none
+}
+
+
+##### d_longqiushi ############################
+
+### c_long
+# LONG
+338 = {
+	culture = lu
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_ji2
+# JI2
+342 = {
+	culture = lu
+	religion = xizhouli
+	holding = castle_holding
+}
+
+

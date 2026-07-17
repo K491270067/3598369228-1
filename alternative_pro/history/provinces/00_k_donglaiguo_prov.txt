@@ -1,0 +1,95 @@
+﻿##### d_donglaishi ############################
+
+### c_buye
+# BUYE
+174 = {
+	culture = lai
+	religion = yili
+	holding = castle_holding
+}
+# CHANGYANG
+185 = {
+	holding = none
+}
+
+
+### c_haiyang1
+# HAIYANG1
+186 = {
+	culture = lai
+	religion = yili
+	holding = castle_holding
+}
+
+
+### c_dasong
+# DASONG
+2216 = {
+	culture = lai
+	religion = yili
+	holding = castle_holding
+}
+
+
+##### d_jiceshi ############################
+
+### c_ting
+# TING
+167 = {
+	culture = lai
+	religion = yili
+	holding = castle_holding
+}
+
+
+### c_guanyang
+# GUANYANG
+178 = {
+	culture = lai
+	religion = yili
+	holding = castle_holding
+}
+
+
+### c_changguang
+# CHANGGUANG
+187 = {
+	culture = lai
+	religion = yili
+	holding = castle_holding
+}
+
+
+##### d_hanshi3 ############################
+
+### c_dongmu
+# DONGMU
+176 = {
+	culture = lai
+	religion = yili
+	holding = castle_holding
+}
+
+
+### c_chui
+# CHUI
+169 = {
+	culture = lai
+	religion = yili
+	holding = castle_holding
+}
+# DONGQUCHENG
+150 = {
+	holding = none
+}
+
+
+### c_qi11
+# QI11
+2221 = {
+	culture = lai
+	religion = yili
+	holding = castle_holding
+}
+
+

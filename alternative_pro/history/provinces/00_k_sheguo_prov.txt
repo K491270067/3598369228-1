@@ -1,0 +1,70 @@
+﻿##### d_sheshi ############################
+
+### c_wuan
+# WUAN
+1169 = {
+	culture = yinshang
+	religion = yinli
+	holding = castle_holding
+}
+
+
+### c_wushi
+# WUSHI
+1170 = {
+	culture = yinshang
+	religion = yinli
+	holding = castle_holding
+}
+
+
+### c_handan
+# HANDAN
+1191 = {
+	culture = yinshang
+	religion = yinli
+	holding = castle_holding
+}
+# XINDU
+1211 = {
+	holding = none
+}
+# TANTAI
+2537 = {
+	holding = none
+}
+
+
+##### d_weishengshi ############################
+
+### c_fanwu
+# FANWU
+1188 = {
+	culture = yinshang
+	religion = yinli
+	holding = castle_holding
+}
+# GENIE
+1184 = {
+	holding = none
+}
+
+
+### c_liangqi
+# LIANGQI
+1189 = {
+	culture = yinshang
+	religion = yinli
+	holding = castle_holding
+}
+
+
+### c_fukou
+# FUKOU
+1190 = {
+	culture = yinshang
+	religion = yinli
+	holding = castle_holding
+}
+
+

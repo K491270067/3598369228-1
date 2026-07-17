@@ -1,0 +1,113 @@
+﻿##### d_huhai ############################
+
+### c_bilichen
+
+
+### c_pinbu
+
+
+### c_shiben
+
+
+### c_zhulou
+# ZHULOU
+3808 = {
+	holding = none
+}
+# SHIBEN
+3807 = {
+	holding = none
+}
+# PINGBU
+3806 = {
+	holding = none
+}
+# BILICHEN
+3805 = {
+	holding = none
+}
+# NIANGWAN
+3809 = {
+	holding = none
+}
+
+
+### c_niangwan
+
+
+### c_yishi3
+
+
+### c_sagu
+# YISHI
+3810 = {
+	holding = none
+}
+# FUDI
+3829 = {
+	holding = none
+}
+# DIELA
+3814 = {
+	holding = none
+}
+
+
+### c_diela
+
+
+### c_xiangqiu1
+
+
+### c_ruokouyin
+# RUOKOUYIN
+3816 = {
+	holding = none
+}
+# TUJU
+3817 = {
+	holding = none
+}
+# NIELA
+3818 = {
+	holding = none
+}
+# XIANGQIU1
+3815 = {
+	holding = none
+}
+
+
+### c_tuju
+
+
+### c_niela
+
+
+### c_tulvbu
+
+
+### c_nawei
+# NAWEI
+3820 = {
+	holding = none
+}
+# JIJIE
+3821 = {
+	holding = none
+}
+# TULVBU
+3819 = {
+	holding = none
+}
+
+
+### c_jijie
+
+
+### c_piban
+
+
+### c_fudi
+
+

@@ -1,0 +1,109 @@
+﻿##### d_wuzhongshi ############################
+
+### c_yongnu
+# YONGNU
+1242 = {
+	holding = none
+}
+# XIANGHE
+1256 = {
+	holding = none
+}
+# HUOYIN
+1244 = {
+	culture = yan
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_xincang
+
+
+### c_lu1
+
+
+### c_xianghe
+
+
+### c_sanhe
+# SANHE
+1257 = {
+	holding = none
+}
+# DULIANG
+2553 = {
+	holding = none
+}
+
+
+### c_wuzhong
+# WUZHONG
+1258 = {
+	holding = none
+}
+# LUTAI
+2552 = {
+	holding = none
+}
+
+
+### c_xuwu1
+# XUWU1
+2551 = {
+	holding = none
+}
+# XINCANG
+1243 = {
+	holding = none
+}
+
+
+### c_lutai
+
+
+### c_duliang
+
+
+### c_genjin
+# GENJIN
+2554 = {
+	holding = none
+}
+# GENGYING
+2555 = {
+	holding = none
+}
+# RIGEN
+2556 = {
+	holding = none
+}
+
+
+### c_gengyin
+
+
+### c_rigen
+
+
+### c_xiyang3
+
+
+### c_shanyou
+
+
+### c_zhongyu
+# ZHONGYU
+2560 = {
+	holding = none
+}
+# SHANYOU
+2558 = {
+	holding = none
+}
+# XIYANG3
+2557 = {
+	holding = none
+}
+
+

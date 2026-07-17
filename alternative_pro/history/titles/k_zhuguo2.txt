@@ -1,0 +1,68 @@
+﻿d_longqiushi = {
+	3574.1.1 = {
+		liege = "k_zhuguo2"
+		holder = zhuzao2
+	}
+	3591.12.31 = {
+		holder = zhuzao3
+	}
+	3623.12.31 = {
+		holder = zhuzao4
+	}
+	3657.12.31 = {
+		holder = zhuzao5
+	}
+	3697.12.31 = {
+		holder = zhuzao6
+	}
+	3713.12.31 = {
+		holder = zhuzao7
+	}
+	3759.12.31 = {
+		holder = zhuzao8
+	}
+	3790.12.31 = {
+		holder = zhuzao9
+	}
+	3807.12.31 = {
+		holder = zhuzao16
+	}
+	3849.1.1 = {
+		change_development_level = 23
+		government = feudal_government
+	}
+}
+k_zhuguo2 = {
+	3574.1.1 = {
+		liege = "e_zhoutianzi"
+		holder = zhuzao2
+	}
+	3591.12.31 = {
+		holder = zhuzao3
+	}
+	3623.12.31 = {
+		holder = zhuzao4
+	}
+	3657.12.31 = {
+		holder = zhuzao5
+	}
+	3697.12.31 = {
+		holder = zhuzao6
+	}
+	3713.12.31 = {
+		holder = zhuzao7
+	}
+	3759.12.31 = {
+		holder = zhuzao8
+	}
+	3790.12.31 = {
+		holder = zhuzao9
+	}
+	3807.12.31 = {
+		holder = zhuzao10
+	}
+	3849.1.1 = {
+		change_development_level = 25
+		government = feudal_government
+	}
+}

@@ -1,0 +1,44 @@
+﻿##### d_jishi6 ############################
+
+### c_ji12
+# JI12
+1352 = {
+	culture = jin
+	religion = dongzhouli
+	holding = castle_holding
+}
+# WUPINGGUAN
+2710 = {
+	holding = none
+}
+
+
+### c_feiliang
+# FEILIANG
+2707 = {
+	culture = jin
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+##### d_qishi1 ############################
+
+### c_qi8
+# QI8
+1376 = {
+	culture = jin
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+### c_shicheng3
+# SHICHENG3
+2711 = {
+	culture = jin
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+

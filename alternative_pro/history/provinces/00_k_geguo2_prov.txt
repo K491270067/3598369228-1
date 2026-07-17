@@ -1,0 +1,37 @@
+﻿##### d_geshi2 ############################
+
+### c_jingyang
+# JINGYANG
+911 = {
+	culture = xiaren
+	religion = xiali
+	holding = castle_holding
+}
+# GAOLING
+908 = {
+	holding = none
+}
+
+
+### c_yiyang2
+# YIYANG2
+912 = {
+	culture = xiaren
+	religion = xiali
+	holding = castle_holding
+}
+# CHIYANG
+914 = {
+	holding = none
+}
+
+
+### c_masui
+# MASUI
+915 = {
+	culture = xiaren
+	religion = xiali
+	holding = castle_holding
+}
+
+

@@ -1,0 +1,61 @@
+﻿##### d_mangshi ############################
+
+### c_mang
+# MANG
+2299 = {
+	culture = song
+	religion = yinli
+	holding = castle_holding
+}
+# JIANCHENG
+504 = {
+	holding = none
+}
+
+
+### c_bianjing
+# BIANJING
+2313 = {
+	culture = song
+	religion = yinli
+	holding = castle_holding
+}
+# WENXU
+2314 = {
+	holding = none
+}
+
+
+### c_mangdang
+# MANGDANG
+493 = {
+	culture = song
+	religion = yinli
+	holding = castle_holding
+}
+
+
+##### d_xiangshi2 ############################
+
+### c_chenggao
+# CHENGGAO
+486 = {
+	culture = song
+	religion = yinli
+	holding = castle_holding
+}
+
+
+### c_xiang2
+# XIANG2
+491 = {
+	culture = song
+	religion = yinli
+	holding = castle_holding
+}
+# FUYANG4
+2298 = {
+	holding = none
+}
+
+

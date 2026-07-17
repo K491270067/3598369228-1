@@ -1,0 +1,103 @@
+﻿# Shared triggers for the Spring and Autumn situation.
+
+saas_situation_active_trigger = {
+	exists = situation:spring_and_autumn_situation
+}
+
+saas_is_ritual_restoration_phase_trigger = {
+	situation:spring_and_autumn_situation ?= {
+		situation_current_phase = zhou_reborn_phase
+	}
+}
+
+saas_is_ritual_collapse_phase_trigger = {
+	situation:spring_and_autumn_situation ?= {
+		situation_current_phase = spring_and_autumn_phase
+	}
+}
+
+saas_is_warring_states_phase_trigger = {
+	situation:spring_and_autumn_situation ?= {
+		situation_current_phase = warring_states_phase
+	}
+}
+
+saas_is_lijiao_ruler_trigger = {
+	religion = religion:lijiao_religion
+}
+
+saas_capital_in_huaxia_trigger = {
+	capital_province = {
+		OR = {
+			geographical_region = world_huaxia_jingzhou
+			geographical_region = world_huaxia_yangzhou
+			geographical_region = world_huaxia_yongzhou
+			geographical_region = world_huaxia_bingzhou
+			geographical_region = world_huaxia_yizhou
+			geographical_region = world_huaxia_qingzhou
+			geographical_region = world_huaxia_yuzhou
+			geographical_region = world_huaxia_sili
+			geographical_region = world_huaxia_jizhou
+		}
+	}
+}
+
+saas_location_in_huaxia_trigger = {
+	exists = location
+	location = {
+		OR = {
+			geographical_region = world_huaxia_jingzhou
+			geographical_region = world_huaxia_yangzhou
+			geographical_region = world_huaxia_yongzhou
+			geographical_region = world_huaxia_bingzhou
+			geographical_region = world_huaxia_yizhou
+			geographical_region = world_huaxia_qingzhou
+			geographical_region = world_huaxia_yuzhou
+			geographical_region = world_huaxia_sili
+			geographical_region = world_huaxia_jizhou
+		}
+	}
+}
+
+saas_eligible_participant_trigger = {
+	is_landed = yes
+	highest_held_title_tier >= tier_duchy
+	saas_capital_in_huaxia_trigger = yes
+}
+
+saas_is_wangdao_trigger = {
+	has_trait = character_involve_supporters_of_zhou_dynasty
+}
+
+saas_is_badao_trigger = {
+	has_trait = character_involve_opponents_of_zhou_dynasty
+}
+
+saas_is_neutral_trigger = {
+	has_trait = character_involve_neutral_of_zhou_dynasty
+}
+
+saas_is_siyi_trigger = {
+	has_trait = character_interloper_of_zhou_dynasty
+}
+
+saas_has_any_participant_stance_trigger = {
+	OR = {
+		saas_is_wangdao_trigger = yes
+		saas_is_badao_trigger = yes
+		saas_is_neutral_trigger = yes
+		saas_is_siyi_trigger = yes
+	}
+}
+
+saas_can_host_huimeng_trigger = {
+	saas_is_ritual_collapse_phase_trigger = yes
+	saas_is_lijiao_ruler_trigger = yes
+	#is_independent_ruler = yes
+	highest_held_title_tier >= tier_kingdom
+	prestige_level >= 3
+	OR = {
+		NOT = { exists = confederation }
+		confederation.leading_house ?= house
+	}
+}

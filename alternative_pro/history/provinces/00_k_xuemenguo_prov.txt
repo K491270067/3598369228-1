@@ -1,0 +1,89 @@
+﻿##### d_xuemenshi ############################
+
+### c_xuemen
+# XUEMEN
+2937 = {
+	holding = none
+}
+
+
+### c_houxia
+
+
+### c_changmen
+# CHANGMEN
+2881 = {
+	holding = none
+}
+
+
+### c_shamopu
+# ZHOUFANG
+2874 = {
+	holding = none
+}
+
+
+### c_awu1
+# AWU1
+2939 = {
+	holding = none
+}
+# SHAMOPU
+2938 = {
+	holding = none
+}
+
+
+##### d_zhoufangshi ############################
+
+### c_xiongmao1
+# BOJIUQI
+2940 = {
+	holding = none
+}
+# 
+2886 = {
+	holding = none
+}
+
+
+### c_dadao
+
+
+### c_shaba
+
+
+### c_dunu
+
+
+### c_zhoufang
+
+
+### c_bojiuqi
+
+
+##### d_wubushi ############################
+
+### c_shijian
+# SHIJIAN
+2860 = {
+	holding = none
+}
+
+
+### c_jianaiazhi
+
+
+### c_sanye1
+
+
+### c_nahe
+
+
+### c_ermo
+
+
+### c_yizhi2
+
+

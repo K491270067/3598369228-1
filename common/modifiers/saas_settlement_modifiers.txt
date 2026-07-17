@@ -1,0 +1,8 @@
+# Permanent reward for the Wangdao restoration path in Fate's Crossroads.
+saas_supreme_regency_power_modifier = {
+	diplomacy = 3
+	stewardship = 3
+	monthly_prestige_gain_mult = 0.2
+	monthly_influence_mult = 0.2
+	vassal_opinion = 10
+}

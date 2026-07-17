@@ -1,0 +1,200 @@
+﻿c_jiaogang = {
+	3393.1.1 = {
+		liege = "k_puguo"
+		holder = weixingpuguo1
+	}
+	3444.1.1 = {
+		holder = weixingpuguo2
+	}
+	3463.1.1 = {
+		holder = weixingpuguo3
+	}
+	3502.1.1 = {
+		holder = weixingpuguo4
+	}
+	3528.1.1 = {
+		holder = weixingpuguo5
+	}
+	3539.1.1 = {
+		holder = weixingpuguo6
+	}
+	3557.1.1 = {
+		holder = weixingpuguo7
+	}
+	3585.1.1 = {
+		holder = weixingpuguo8
+	}
+	3602.1.1 = {
+		holder = weixingpuguo9
+	}
+	3629.1.1 = {
+		holder = weixingpuguo10
+	}
+	3645.1.1 = {
+		holder = weixingpuguo11
+	}
+	3667.1.1 = {
+		holder = weixingpuguo12
+	}
+	3693.1.1 = {
+		holder = weixingpuguo13
+	}
+	3715.1.1 = {
+		holder = weixingpuguo14
+	}
+	3738.1.1 = {
+		holder = weixingpuguo15
+	}
+	3755.1.1 = {
+		holder = weixingpuguo16
+	}
+	3779.1.1 = {
+		holder = weixingpuguo17
+	}
+	3801.1.1 = {
+		holder = weixingpuguo18
+	}
+	3824.1.1 = {
+		holder = weixingpuguo19
+	}
+	3846.1.1 = {
+		holder = weixingpuguo29
+	}
+	3849.1.1 = {
+		change_development_level = 26
+		government = tribal_government
+	}
+}
+d_puyushi = {
+	3393.1.1 = {
+		liege = "k_puguo"
+		holder = weixingpuguo1
+	}
+	3444.1.1 = {
+		holder = weixingpuguo2
+	}
+	3463.1.1 = {
+		holder = weixingpuguo3
+	}
+	3502.1.1 = {
+		holder = weixingpuguo4
+	}
+	3528.1.1 = {
+		holder = weixingpuguo5
+	}
+	3539.1.1 = {
+		holder = weixingpuguo6
+	}
+	3557.1.1 = {
+		holder = weixingpuguo7
+	}
+	3585.1.1 = {
+		holder = weixingpuguo8
+	}
+	3602.1.1 = {
+		holder = weixingpuguo9
+	}
+	3629.1.1 = {
+		holder = weixingpuguo10
+	}
+	3645.1.1 = {
+		holder = weixingpuguo11
+	}
+	3667.1.1 = {
+		holder = weixingpuguo12
+	}
+	3693.1.1 = {
+		holder = weixingpuguo13
+	}
+	3715.1.1 = {
+		holder = weixingpuguo14
+	}
+	3738.1.1 = {
+		holder = weixingpuguo15
+	}
+	3755.1.1 = {
+		holder = weixingpuguo16
+	}
+	3779.1.1 = {
+		holder = weixingpuguo17
+	}
+	3801.1.1 = {
+		holder = weixingpuguo18
+	}
+	3824.1.1 = {
+		holder = weixingpuguo19
+	}
+	3846.1.1 = {
+		holder = weixingpuguo25
+	}
+	3849.1.1 = {
+		change_development_level = 27
+		government = tribal_government
+	}
+}
+k_puguo = {
+	3393.1.1 = {
+		holder = weixingpuguo1
+	}
+	3444.1.1 = {
+		holder = weixingpuguo2
+	}
+	3463.1.1 = {
+		holder = weixingpuguo3
+	}
+	3502.1.1 = {
+		holder = weixingpuguo4
+	}
+	3528.1.1 = {
+		holder = weixingpuguo5
+	}
+	3539.1.1 = {
+		holder = weixingpuguo6
+	}
+	3557.1.1 = {
+		holder = weixingpuguo7
+	}
+	3585.1.1 = {
+		holder = weixingpuguo8
+	}
+	3602.1.1 = {
+		holder = weixingpuguo9
+	}
+	3629.1.1 = {
+		holder = weixingpuguo10
+	}
+	3645.1.1 = {
+		holder = weixingpuguo11
+	}
+	3667.1.1 = {
+		holder = weixingpuguo12
+	}
+	3693.1.1 = {
+		holder = weixingpuguo13
+	}
+	3715.1.1 = {
+		holder = weixingpuguo14
+	}
+	3738.1.1 = {
+		holder = weixingpuguo15
+	}
+	3755.1.1 = {
+		holder = weixingpuguo16
+	}
+	3779.1.1 = {
+		holder = weixingpuguo17
+	}
+	3801.1.1 = {
+		holder = weixingpuguo18
+	}
+	3824.1.1 = {
+		holder = weixingpuguo19
+	}
+	3846.1.1 = {
+		holder = weixingpuguo20
+	}
+	3849.12.31 = {
+		government = tribal_government
+		change_development_level = 29
+	}
+}

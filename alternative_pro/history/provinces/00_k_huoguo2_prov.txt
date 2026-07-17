@@ -1,0 +1,159 @@
+﻿##### d_jianxushi ############################
+
+### c_songpu
+
+
+### c_weibei
+# WEIBEI
+2936 = {
+	holding = none
+}
+# HUO2
+2934 = {
+	holding = none
+}
+# TIANCAO
+2935 = {
+	holding = none
+}
+
+
+### c_qiumo
+
+
+### c_tiancao
+
+
+### c_chudao1
+
+
+### c_xiaocheng
+
+
+### c_shenqi
+
+
+### c_moluo
+# MOLUO
+2927 = {
+	holding = none
+}
+# SONGPU
+3528 = {
+	holding = none
+}
+
+
+### c_feiqian
+
+
+### c_gaolai
+# GAOLAI
+3529 = {
+	holding = none
+}
+# GEJIN
+2926 = {
+	holding = none
+}
+# FEIQIAN
+2836 = {
+	holding = none
+}
+
+
+### c_gejin
+
+
+### c_shanlu
+
+
+### c_futu
+
+
+### c_yicheng5
+
+
+### c_baotian
+
+
+### c_jiazhibo
+
+
+### c_feihou
+
+
+### c_asu
+# ASU
+2933 = {
+	holding = none
+}
+
+
+### c_huo2
+
+
+##### d_zhuzishi ############################
+
+### c_zhuzi
+
+
+### c_yuanhegang
+
+
+### c_anshou
+
+
+### c_zongxiang
+
+
+### c_yidu
+# ZHUQIAN
+2823 = {
+	holding = none
+}
+
+
+### c_zaoliang
+
+
+### c_suibo
+
+
+### c_yexu
+# ZHUZI
+2929 = {
+	holding = none
+}
+
+
+### c_zhuqian
+
+
+### c_sanmao
+# FEIHOU
+2839 = {
+	holding = none
+}
+# ZUHOU
+2877 = {
+	holding = none
+}
+# ZHUZHIMIDUO
+2928 = {
+	holding = none
+}
+
+
+### c_yangmie
+
+
+### c_deyi
+
+
+### c_zhouhou
+
+
+### c_zhuzhimiduo
+
+

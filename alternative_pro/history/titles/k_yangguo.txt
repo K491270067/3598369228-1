@@ -1,0 +1,74 @@
+﻿d_gengshi1 = {
+	3574.1.1 = {
+		liege = "k_yangguo"
+		holder = yangguo6
+	}
+	3589.1.1 = {
+		holder = yangguo7
+	}
+	3617.1.1 = {
+		holder = yangguo8
+	}
+	3658.1.1 = {
+		holder = yangguo9
+	}
+	3681.1.1 = {
+		holder = yangguo10
+	}
+	3711.1.1 = {
+		holder = yangguo11
+	}
+	3745.1.1 = {
+		holder = yangguo12
+	}
+	3777.1.1 = {
+		holder = yangguo21
+	}
+	3809.1.1 = {
+		holder = yangguo22
+	}
+	3838.1.1 = {
+		holder = yangguo23
+	}
+	3849.1.1 = {
+		change_development_level = 18
+		government = feudal_government
+	}
+}
+k_yangguo = {
+	3574.1.1 = {
+		liege = "e_zhoutianzi"
+		holder = yangguo6
+	}
+	3589.1.1 = {
+		holder = yangguo7
+	}
+	3617.1.1 = {
+		holder = yangguo8
+	}
+	3658.1.1 = {
+		holder = yangguo9
+	}
+	3681.1.1 = {
+		holder = yangguo10
+	}
+	3711.1.1 = {
+		holder = yangguo11
+	}
+	3745.1.1 = {
+		holder = yangguo12
+	}
+	3777.1.1 = {
+		holder = yangguo13
+	}
+	3809.1.1 = {
+		holder = yangguo14
+	}
+	3838.1.1 = {
+		holder = yangguo15
+	}
+	3849.1.1 = {
+		change_development_level = 22
+		government = feudal_government
+	}
+}

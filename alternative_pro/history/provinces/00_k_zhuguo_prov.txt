@@ -1,0 +1,57 @@
+﻿##### d_zhushi ############################
+
+### c_zhuke
+# ZHUKE
+41 = {
+	culture = qi
+	religion = xizhouli
+	holding = castle_holding
+}
+# YAN9
+2183 = {
+	holding = none
+}
+
+
+### c_an2
+# AN2
+2182 = {
+	culture = qi
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+##### d_zhukeshi ############################
+
+### c_longluo
+# LONGLUO
+2190 = {
+	culture = qi
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_yuan
+# YUAN
+61 = {
+	culture = qi
+	religion = xizhouli
+	holding = castle_holding
+}
+# YUGUO
+2189 = {
+	holding = none
+}
+
+
+### c_zhou
+# ZHOU
+64 = {
+	culture = qi
+	religion = xizhouli
+	holding = castle_holding
+}
+
+

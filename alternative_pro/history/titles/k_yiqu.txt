@@ -1,0 +1,175 @@
+﻿d_hunyeshi = {
+	2346.11.1 = {
+		holder = han2918
+		liege = "k_yiqu"
+	}
+	2393.1.1 = {
+		holder = han2919
+	}
+	2450.1.1 = {
+		holder = han2920
+	}
+	2500.1.1 = {
+		holder = han2921
+	}
+	2551.1.1 = {
+		holder = han2922
+	}
+	2614.1.1 = {
+		holder = han2923
+	}
+	2669.1.1 = {
+		holder = han2924
+	}
+	2725.1.1 = {
+		holder = han2925
+	}
+	2770.1.1 = {
+		holder = han2926
+	}
+	2810.1.1 = {
+		holder = han2927
+	}
+	2880.1.1 = {
+		holder = han2928
+	}
+	2945.1.1 = {
+		holder = han2929
+	}
+	3021.1.1 = {
+		holder = han2930
+	}
+	3088.1.1 = {
+		holder = han2931
+	}
+	3134.1.1 = {
+		holder = han2932
+	}
+	3200.1.1 = {
+		holder = han2933
+	}
+	3250.1.1 = {
+		holder = han2934
+	}
+	3310.1.1 = {
+		holder = han2935
+	}
+	3390.1.1 = {
+		holder = han2936
+	}
+	3468.1.1 = {
+		holder = han2937
+	}
+	3521.1.1 = {
+		holder = han2938
+	}
+	3579.1.1 = {
+		holder = han2939
+	}
+	3611.1.1 = {
+		holder = han2940
+	}
+	3670.1.1 = {
+		holder = han2941
+	}
+	3720.1.1 = {
+		holder = han2942
+	}
+	3771.1.1 = {
+		holder = han2943
+	}
+	3821.1.1 = {
+		holder = yiquguo1
+	}
+	3849.1.1 = {
+		change_development_level = 27
+		government = tribal_government
+	}
+}
+k_yiqu = {
+	2346.11.1 = {
+		holder = han2918
+	}
+	2393.1.1 = {
+		holder = han2919
+	}
+	2450.1.1 = {
+		holder = han2920
+	}
+	2500.1.1 = {
+		holder = han2921
+	}
+	2551.1.1 = {
+		holder = han2922
+	}
+	2614.1.1 = {
+		holder = han2923
+	}
+	2669.1.1 = {
+		holder = han2924
+	}
+	2725.1.1 = {
+		holder = han2925
+	}
+	2770.1.1 = {
+		holder = han2926
+	}
+	2810.1.1 = {
+		holder = han2927
+	}
+	2880.1.1 = {
+		holder = han2928
+	}
+	2945.1.1 = {
+		holder = han2929
+	}
+	3021.1.1 = {
+		holder = han2930
+	}
+	3088.1.1 = {
+		holder = han2931
+	}
+	3134.1.1 = {
+		holder = han2932
+	}
+	3200.1.1 = {
+		holder = han2933
+	}
+	3250.1.1 = {
+		holder = han2934
+	}
+	3310.1.1 = {
+		holder = han2935
+	}
+	3390.1.1 = {
+		holder = han2936
+	}
+	3468.1.1 = {
+		holder = han2937
+	}
+	3521.1.1 = {
+		holder = han2938
+	}
+	3579.1.1 = {
+		holder = han2939
+	}
+	3611.1.1 = {
+		holder = han2940
+	}
+	3670.1.1 = {
+		holder = han2941
+	}
+	3720.1.1 = {
+		holder = han2942
+	}
+	3771.1.1 = {
+		holder = han2943
+	}
+	3821.1.1 = {
+		holder = han2944
+	}
+	3849.12.31 = {
+		government = tribal_government
+		change_development_level = 29
+	}
+}

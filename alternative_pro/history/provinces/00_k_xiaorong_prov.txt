@@ -1,0 +1,50 @@
+﻿##### d_xiaorongshi ############################
+
+### c_tuyun
+# TUYUN
+1383 = {
+	culture = xirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+# PEIFANG
+2704 = {
+	holding = none
+}
+
+
+### c_xicheng1
+# XICHENG1
+1385 = {
+	culture = xirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+# FANGFANG
+2701 = {
+	holding = none
+}
+
+
+### c_lin2
+# LIN2
+1386 = {
+	culture = xirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+
+
+### c_zhongyang1
+# ZHONGYANG1
+1388 = {
+	culture = xirong
+	religion = xirongfangling
+	holding = tribal_holding
+}
+# ZUO2
+2702 = {
+	holding = none
+}
+
+

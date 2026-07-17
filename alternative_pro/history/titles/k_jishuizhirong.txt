@@ -1,0 +1,191 @@
+﻿d_chuishi = {
+	3581.12.31 = {
+		liege = "k_jishuizhirong"
+		holder = yousongshi29
+	}
+	3631.12.31 = {
+		holder = yousongshi30
+	}
+	3685.12.31 = {
+		holder = yousongshi101
+	}
+	3722.12.31 = {
+		holder = yousongshi31
+	}
+	3758.12.31 = {
+		holder = yousongshi32
+	}
+	3800.12.31 = {
+		holder = yousongshi33
+	}
+	3821.12.31 = {
+		holder = yousongshi38
+	}
+	3849.1.1 = {
+		change_development_level = 17
+		government = tribal_government
+	}
+}
+d_yangjiaoshi = {
+	3581.12.31 = {
+		liege = "k_jishuizhirong"
+		holder = yousongshi29
+	}
+	3631.12.31 = {
+		holder = yousongshi30
+	}
+	3685.12.31 = {
+		holder = yousongshi101
+	}
+	3722.12.31 = {
+		holder = yousongshi31
+	}
+	3758.12.31 = {
+		holder = yousongshi32
+	}
+	3800.12.31 = {
+		holder = yousongshi33
+	}
+	3821.12.31 = {
+		holder = yousongshi39
+	}
+	3849.1.1 = {
+		change_development_level = 17
+		government = tribal_government
+	}
+}
+d_yousongshi = {
+	2401.1.1 = {
+		holder = yousongshi1
+	}
+	2458.12.31 = {
+		holder = yousongshi4
+	}
+	2508.12.31 = {
+		holder = yousongshi5
+	}
+	2559.12.31 = {
+		holder = yousongshi6
+	}
+	2607.12.31 = {
+		holder = yousongshi7
+	}
+	2647.12.31 = {
+		holder = yousongshi8
+	}
+	2685.12.31 = {
+		holder = yousongshi9
+	}
+	2727.12.31 = {
+		holder = yousongshi10
+	}
+	2778.12.31 = {
+		holder = yousongshi11
+	}
+	2821.12.31 = {
+		holder = yousongshi12
+	}
+	2868.12.31 = {
+		holder = yousongshi100
+	}
+	2907.12.31 = {
+		holder = yousongshi13
+	}
+	2961.12.31 = {
+		holder = yousongshi14
+	}
+	3004.12.31 = {
+		holder = yousongshi15
+	}
+	3043.12.31 = {
+		holder = yousongshi16
+	}
+	3084.12.31 = {
+		holder = yousongshi17
+	}
+	3111.12.31 = {
+		holder = yousongshi18
+	}
+	3154.12.31 = {
+		holder = yousongshi19
+	}
+	3181.12.31 = {
+		holder = yousongshi20
+	}
+	3229.12.31 = {
+		holder = yousongshi21
+	}
+	3271.12.31 = {
+		holder = yousongshi22
+	}
+	3319.12.31 = {
+		holder = yousongshi23
+	}
+	3370.12.31 = {
+		holder = yousongshi24
+	}
+	3411.12.31 = {
+		holder = yousongshi25
+	}
+	3470.12.31 = {
+		holder = yousongshi26
+	}
+	3505.12.31 = {
+		holder = yousongshi27
+	}
+	3547.12.31 = {
+		holder = yousongshi28
+	}
+	3581.12.31 = {
+		liege = "k_jishuizhirong"
+		holder = yousongshi29
+	}
+	3631.12.31 = {
+		holder = yousongshi30
+	}
+	3685.12.31 = {
+		holder = yousongshi101
+	}
+	3722.12.31 = {
+		holder = yousongshi31
+	}
+	3758.12.31 = {
+		holder = yousongshi32
+	}
+	3800.12.31 = {
+		holder = yousongshi33
+	}
+	3821.12.31 = {
+		holder = yousongshi34
+	}
+	3849.1.1 = {
+		government = tribal_government
+	}
+}
+k_jishuizhirong = {
+	3581.12.31 = {
+		holder = yousongshi29
+	}
+	3631.12.31 = {
+		holder = yousongshi30
+	}
+	3685.12.31 = {
+		holder = yousongshi101
+	}
+	3722.12.31 = {
+		holder = yousongshi31
+	}
+	3758.12.31 = {
+		holder = yousongshi32
+	}
+	3800.12.31 = {
+		holder = yousongshi33
+	}
+	3821.12.31 = {
+		holder = yousongshi34
+	}
+	3849.1.1 = {
+		change_development_level = 18
+		government = tribal_government
+	}
+}

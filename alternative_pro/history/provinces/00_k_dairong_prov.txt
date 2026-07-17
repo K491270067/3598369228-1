@@ -1,0 +1,127 @@
+﻿##### d_dairong ############################
+
+### c_gangcheng1
+# GANGCHENG1
+2652 = {
+	culture = baidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+# XIAONING
+1294 = {
+	holding = none
+}
+# HEICHENG
+1295 = {
+	holding = none
+}
+
+
+### c_macheng
+# MACHENG
+1296 = {
+	culture = baidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+# YANLING1
+1297 = {
+	holding = none
+}
+
+
+### c_rongchuan
+# RONGCHUAN
+2651 = {
+	culture = baidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+# BUXIAN
+2654 = {
+	holding = none
+}
+
+
+##### d_maoyushi ############################
+
+### c_yingfan
+# YINGFAN
+2656 = {
+	culture = baidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+# DAYE
+2655 = {
+	holding = none
+}
+
+
+### c_maoer
+# MAOER
+2657 = {
+	culture = baidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+
+
+### c_jiushijiuquan
+# JIUSHIJIUQUAN
+2659 = {
+	culture = baidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+# ZHUWEN
+2660 = {
+	holding = none
+}
+# FANXIU
+2662 = {
+	holding = none
+}
+
+
+##### d_helaishi ############################
+
+### c_qiangyin
+# QIANGYIN
+1316 = {
+	culture = baidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+# XUANNING
+2661 = {
+	holding = none
+}
+
+
+### c_baideng
+# BAIDENG
+1317 = {
+	culture = baidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+# QIONGLU
+2658 = {
+	holding = none
+}
+
+
+### c_baiyang
+# BAIYANG
+1318 = {
+	culture = baidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+# WUZHOUSAI
+1321 = {
+	holding = none
+}
+
+

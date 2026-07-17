@@ -1,0 +1,44 @@
+﻿##### d_xujushi ############################
+
+### c_yanggu
+# YANGGU
+54 = {
+	culture = dongyi
+	religion = yili
+	holding = castle_holding
+}
+
+
+### c_xuju
+# XUJU
+368 = {
+	culture = dongyi
+	religion = yili
+	holding = castle_holding
+}
+# YANGZHOU
+365 = {
+	holding = none
+}
+
+
+##### d_qushi1 ############################
+
+### c_gu
+# GU
+49 = {
+	culture = dongyi
+	religion = yili
+	holding = castle_holding
+}
+
+
+### c_xi5
+# XI5
+2185 = {
+	culture = dongyi
+	religion = yili
+	holding = castle_holding
+}
+
+

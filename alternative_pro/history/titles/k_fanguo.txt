@@ -1,0 +1,40 @@
+﻿c_mao5 = {
+	3786.3.1 = {
+		liege = "k_fanguo"
+		holder = jixingfanzhongpu1
+	}
+	3838.11.1 = {
+		holder = jixingfanzhongpu8
+	}
+	3849.1.1 = {
+		change_development_level = 29
+		government = feudal_government
+	}
+}
+d_xinyuanshi = {
+	3786.3.1 = {
+		liege = "k_fanguo"
+		holder = jixingfanzhongpu1
+	}
+	3838.11.1 = {
+		holder = jixingfanzhongpu11
+	}
+	3849.1.1 = {
+		change_development_level = 28
+		government = feudal_government
+	}
+}
+k_fanguo = {
+	3786.3.1 = {
+		liege = "e_zhoutianzi"
+		holder = jixingfanzhongpu1
+	}
+	3838.11.1 = {
+		holder = jixingfanzhongpu2
+	}
+	3849.1.1 = {
+		change_development_level = 31
+		government = feudal_government
+		liege = "e_zhoutianzi1"
+	}
+}

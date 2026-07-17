@@ -1,0 +1,44 @@
+﻿##### d_shenshi1 ############################
+
+### c_shen4
+# SHEN4
+1363 = {
+	culture = jin
+	religion = yili
+	holding = castle_holding
+}
+# SI1
+1364 = {
+	holding = none
+}
+
+
+### c_ru1
+# RU1
+1365 = {
+	culture = jin
+	religion = yili
+	holding = castle_holding
+}
+
+
+##### d_zhangshi1 ############################
+
+### c_huchu
+# HUCHU
+1361 = {
+	culture = jin
+	religion = yili
+	holding = castle_holding
+}
+
+
+### c_ji19
+# JI19
+2460 = {
+	culture = jin
+	religion = yili
+	holding = castle_holding
+}
+
+

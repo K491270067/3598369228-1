@@ -1,0 +1,189 @@
+﻿################涓藉湡涔嬬媱 璧ょ媱涓芥皬
+lituzhidi1={
+  name="yong1"
+  dynasty=xin560
+  culture="chidi"
+  religion="beidifangling"
+  father=duochenshi5
+
+  3754.1.1 = {
+		birth = yes
+	}
+  3803.12.31 = {
+    death = yes
+  }
+}
+lituzhidi2={
+  name="xu5"
+  dynasty_house=house_xin561
+  culture="chidi"
+  religion="beidifangling"
+  father=lituzhidi1
+  
+  3788.12.12 = {
+		birth = yes
+	}
+  3825.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+lituzhidi3={
+  name="mie1"#寮€灞€
+  dynasty_house=house_xin561
+  culture="chidi"
+  religion="beidifangling"
+  father=lituzhidi2
+
+  3817.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+    death = yes
+  }
+}
+lituzhidi4={
+  name="huan2"
+  dynasty_house=house_xin561
+  culture="chidi"
+  religion="beidifangling"
+  father=lituzhidi3
+
+  3835.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+    death = yes
+  }
+}
+lituzhidi5={
+  name="liang3"
+  dynasty_house=house_xin561
+  culture="chidi"
+  religion="beidifangling"
+  father=lituzhidi3
+
+  3836.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+    death = yes
+  }
+}
+lituzhidi6={
+  name="mei4"
+  dynasty_house=house_xin561
+  culture="chidi"
+  religion="beidifangling"
+  father=lituzhidi3
+
+  3837.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+    death = yes
+  }
+}
+lituzhidi7={
+  name="li6"
+  dynasty_house=house_xin561
+  culture="chidi"
+  religion="beidifangling"
+  father=lituzhidi3
+  female=yes
+
+  3838.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+    death = yes
+  }
+}
+lituzhidi8={
+  name="yu15"
+  dynasty_house=house_xin561
+  culture="chidi"
+  religion="beidifangling"
+  father=lituzhidi3
+  female=yes
+
+  3839.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+    death = yes
+  }
+}
+################涓藉湡涔嬬媱 璧ょ媱绔皬
+lituzhidi9={
+  name="nanming273"#寮€灞€
+  dynasty_house=house_xin562
+  culture="chidi"
+  religion="beidifangling"
+  father=lituzhidi2
+
+  3820.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+    death = yes
+  }
+}
+lituzhidi10={
+  name="nanming279"
+  dynasty_house=house_xin562
+  culture="chidi"
+  religion="beidifangling"
+  father=lituzhidi9
+
+  3838.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+    death = yes
+  }
+}
+lituzhidi11={
+  name="nanming294"
+  dynasty_house=house_xin562
+  culture="chidi"
+  religion="beidifangling"
+  father=lituzhidi9
+
+  3839.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+    death = yes
+  }
+}
+lituzhidi12={
+  name="nanming318"
+  dynasty_house=house_xin562
+  culture="chidi"
+  religion="beidifangling"
+  father=lituzhidi9
+
+  3840.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+    death = yes
+  }
+}
+lituzhidi13={
+  name="nvming4"
+  dynasty_house=house_xin562
+  culture="chidi"
+  religion="beidifangling"
+  father=lituzhidi9
+  female=yes
+
+  3841.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+    death = yes
+  }
+}

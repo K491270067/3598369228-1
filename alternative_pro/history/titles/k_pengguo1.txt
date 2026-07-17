@@ -1,0 +1,38 @@
+﻿k_pengguo1 = {
+	3515.1.1 = {
+		holder = weixingpengguo1
+	}
+	3563.1.1 = {
+		holder = weixingpengguo2
+	}
+	3605.1.1 = {
+		liege = "e_zhoutianzi"
+		holder = weixingpengguo3
+	}
+	3621.1.1 = {
+		holder = weixingpengguo4
+	}
+	3658.1.1 = {
+		holder = weixingpengguo5
+	}
+	3684.1.1 = {
+		holder = weixingpengguo6
+	}
+	3703.1.1 = {
+		holder = weixingpengguo7
+	}
+	3749.1.1 = {
+		holder = weixingpengguo8
+	}
+	3781.1.1 = {
+		holder = weixingpengguo9
+	}
+	3812.1.1 = {
+		holder = weixingpengguo10
+	}
+	3849.1.1 = {
+		change_development_level = 31
+		government = feudal_government
+		liege = "e_zhoutianzi1"
+	}
+}

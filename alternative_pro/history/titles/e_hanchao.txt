@@ -1,0 +1,45 @@
+﻿e_hanchao = {
+	2640.12.31 = {
+		holder = han1370
+	}
+	2688.12.31 = {
+		holder = 0
+	}
+}
+k_hanguo3 = {
+	2546.1.1 = {
+		holder = donglai31
+	}
+	2597.1.1 = {
+		holder = donglai32
+	}
+	2611.12.31 = {
+		holder = han1370
+	}
+	2688.12.31 = {
+		holder = 0
+	}
+}
+k_jice = {
+	2743.1.1 = {
+		holder = jice1
+	}
+	2812.1.1 = {
+		holder = jice2
+	}
+	2847.1.1 = {
+		holder = jice3
+	}
+	2900.1.1 = {
+		holder = jice4
+	}
+	2957.1.1 = {
+		holder = jice5
+	}
+	3004.1.1 = {
+		holder = jice6
+	}
+	3020.1.1 = {
+		holder = 0
+	}
+}

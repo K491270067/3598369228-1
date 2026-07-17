@@ -1,0 +1,50 @@
+﻿##### d_chongshi ############################
+
+### c_luoyin
+# LUOYIN
+933 = {
+	culture = xiaren
+	religion = xiali
+	holding = castle_holding
+}
+# HUAIDE
+932 = {
+	holding = none
+}
+
+
+### c_zhongquan
+# ZHONGQUAN
+934 = {
+	culture = xiaren
+	religion = xiali
+	holding = castle_holding
+}
+
+
+### c_wangcheng1
+# WANGCHENG1
+956 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+# XIE1
+859 = {
+	holding = none
+}
+# JINGSHAN
+959 = {
+	holding = none
+}
+
+
+### c_chong2
+# CHONG2
+957 = {
+	culture = xiaren
+	religion = xiali
+	holding = castle_holding
+}
+
+

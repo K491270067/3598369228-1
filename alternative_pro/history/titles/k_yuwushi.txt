@@ -1,0 +1,39 @@
+﻿d_wugaoshi = {
+	3714.1.1 = {
+		liege = "k_yuwushi"
+		holder = yuwurong1
+	}
+	3766.12.31 = {
+		holder = yuwurong9
+	}
+	3803.12.31 = {
+		holder = yuwurong10
+	}
+	3834.12.31 = {
+		holder = yuwurong11
+	}
+	3849.1.1 = {
+		change_development_level = 20
+	}
+	3849.12.31 = {
+		government = tribal_government
+	}
+}
+k_yuwushi = {
+	3714.1.1 = {
+		holder = yuwurong1
+	}
+	3766.12.31 = {
+		holder = yuwurong2
+	}
+	3803.12.31 = {
+		holder = yuwurong3
+	}
+	3834.12.31 = {
+		holder = yuwurong4
+	}
+	3849.12.31 = {
+		government = tribal_government
+		change_development_level = 21
+	}
+}

@@ -1,0 +1,48 @@
+﻿##### d_maoshi ############################
+
+### c_mao
+# MAO
+433 = {
+	culture = lu
+	religion = xizhouli
+	holding = castle_holding
+}
+# KANGFU
+455 = {
+	holding = none
+}
+
+
+### c_xianqiu
+# XIANQIU
+460 = {
+	culture = lu
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+##### d_kanfushi ############################
+
+### c_min
+# MIN
+517 = {
+	culture = lu
+	religion = xizhouli
+	holding = castle_holding
+}
+# SHANYANG2
+518 = {
+	holding = none
+}
+
+
+### c_tang2
+# TANG2
+456 = {
+	culture = lu
+	religion = xizhouli
+	holding = castle_holding
+}
+
+

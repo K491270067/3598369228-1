@@ -1,0 +1,292 @@
+﻿d_yushi7 = {
+	2553.1.2 = {
+		liege = "k_guanguo"
+		holder = han1367
+	}
+	2572.12.31 = {
+		holder = wuguan1
+	}
+	2628.12.31 = {
+		holder = wuguan2
+	}
+	2681.12.31 = {
+		holder = wuguan3
+	}
+	2704.12.31 = {
+		holder = wuguan4
+	}
+	2748.12.31 = {
+		holder = wuguan5
+	}
+	2781.12.31 = {
+		holder = wuguan6
+	}
+	2838.12.31 = {
+		holder = wuguan7
+	}
+	2882.12.31 = {
+		holder = wuguan8
+	}
+	2911.12.31 = {
+		holder = wuguan9
+	}
+	2966.12.31 = {
+		holder = wuguan10
+	}
+	3000.12.31 = {
+		holder = wuguan11
+	}
+	3049.12.31 = {
+		holder = wuguan12
+	}
+	3091.12.31 = {
+		holder = wuguan13
+	}
+	3121.12.31 = {
+		holder = wuguan14
+	}
+	3173.12.31 = {
+		holder = wuguan15
+	}
+	3211.12.31 = {
+		holder = wuguan16
+	}
+	3264.12.31 = {
+		holder = wuguan17
+	}
+	3311.12.31 = {
+		holder = wuguan18
+	}
+	3374.12.31 = {
+		holder = wuguan19
+	}
+	3413.12.31 = {
+		holder = wuguan20
+	}
+	3471.12.31 = {
+		holder = wuguan21
+	}
+	3521.12.31 = {
+		holder = wuguan22
+	}
+	3581.12.31 = {
+		holder = wuguan23
+	}
+	3629.12.31 = {
+		holder = wuguan24
+	}
+	3677.12.31 = {
+		holder = wuguan25
+	}
+	3708.12.31 = {
+		holder = wuguan26
+	}
+	3747.12.31 = {
+		holder = wuguan27
+	}
+	3788.12.31 = {
+		holder = wuguan28
+	}
+	3818.12.31 = {
+		holder = wuguan41
+	}
+	3849.1.1 = {
+		change_development_level = 18
+		government = feudal_government
+	}
+}
+d_yushi8 = {
+	2553.1.2 = {
+		liege = "k_guanguo"
+		holder = han1367
+	}
+	2572.12.31 = {
+		holder = wuguan1
+	}
+	2628.12.31 = {
+		holder = wuguan2
+	}
+	2681.12.31 = {
+		holder = wuguan3
+	}
+	2704.12.31 = {
+		holder = wuguan4
+	}
+	2748.12.31 = {
+		holder = wuguan5
+	}
+	2781.12.31 = {
+		holder = wuguan6
+	}
+	2838.12.31 = {
+		holder = wuguan7
+	}
+	2882.12.31 = {
+		holder = wuguan8
+	}
+	2911.12.31 = {
+		holder = wuguan9
+	}
+	2966.12.31 = {
+		holder = wuguan10
+	}
+	3000.12.31 = {
+		holder = wuguan11
+	}
+	3049.12.31 = {
+		holder = wuguan12
+	}
+	3091.12.31 = {
+		holder = wuguan13
+	}
+	3121.12.31 = {
+		holder = wuguan14
+	}
+	3173.12.31 = {
+		holder = wuguan15
+	}
+	3211.12.31 = {
+		holder = wuguan16
+	}
+	3264.12.31 = {
+		holder = wuguan17
+	}
+	3311.12.31 = {
+		holder = wuguan18
+	}
+	3374.12.31 = {
+		holder = wuguan19
+	}
+	3413.12.31 = {
+		holder = wuguan20
+	}
+	3471.12.31 = {
+		holder = wuguan21
+	}
+	3521.12.31 = {
+		holder = wuguan22
+	}
+	3581.12.31 = {
+		holder = wuguan23
+	}
+	3629.12.31 = {
+		holder = wuguan24
+	}
+	3677.12.31 = {
+		holder = wuguan25
+	}
+	3708.12.31 = {
+		holder = wuguan26
+	}
+	3747.12.31 = {
+		holder = wuguan27
+	}
+	3788.12.31 = {
+		holder = wuguan28
+	}
+	3818.12.31 = {
+		holder = wuguan35
+	}
+	3849.1.1 = {
+		change_development_level = 19
+		government = feudal_government
+	}
+}
+k_guanguo = {
+	2553.1.2 = {
+		holder = han1367
+	}
+	2572.12.31 = {
+		holder = wuguan1
+	}
+	2628.12.31 = {
+		holder = wuguan2
+	}
+	2681.12.31 = {
+		holder = wuguan3
+	}
+	2704.12.31 = {
+		holder = wuguan4
+	}
+	2748.12.31 = {
+		holder = wuguan5
+	}
+	2781.12.31 = {
+		holder = wuguan6
+	}
+	2838.12.31 = {
+		holder = wuguan7
+	}
+	2882.12.31 = {
+		holder = wuguan8
+	}
+	2911.12.31 = {
+		holder = wuguan9
+	}
+	2966.12.31 = {
+		holder = wuguan10
+	}
+	3000.12.31 = {
+		holder = wuguan11
+	}
+	3049.12.31 = {
+		holder = wuguan12
+	}
+	3091.12.31 = {
+		holder = wuguan13
+	}
+	3121.12.31 = {
+		holder = wuguan14
+	}
+	3173.12.31 = {
+		holder = wuguan15
+	}
+	3211.12.31 = {
+		holder = wuguan16
+	}
+	3264.12.31 = {
+		holder = wuguan17
+	}
+	3311.12.31 = {
+		holder = wuguan18
+	}
+	3374.12.31 = {
+		holder = wuguan19
+	}
+	3413.12.31 = {
+		holder = wuguan20
+	}
+	3471.12.31 = {
+		holder = wuguan21
+	}
+	3521.12.31 = {
+		holder = wuguan22
+	}
+	3581.12.31 = {
+		liege = "e_zhoutianzi"
+		holder = wuguan23
+	}
+	3629.12.31 = {
+		holder = wuguan24
+	}
+	3677.12.31 = {
+		holder = wuguan25
+	}
+	3708.12.31 = {
+		holder = wuguan26
+	}
+	3747.12.31 = {
+		holder = wuguan27
+	}
+	3788.12.31 = {
+		holder = wuguan28
+	}
+	3818.12.31 = {
+		holder = wuguan29
+	}
+	3849.1.1 = {
+		change_development_level = 23
+		liege = "e_zhoutianzi1"
+		government = feudal_government
+	}
+}

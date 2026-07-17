@@ -1,0 +1,48 @@
+﻿##### d_beishi ############################
+
+### c_beiqiu1
+# BEIQIU1
+25 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+# XINXIANG
+31 = {
+	holding = none
+}
+
+
+### c_dige
+# DIGE
+27 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+##### d_guanshi1 ############################
+
+### c_tunshi
+# TUNSHI
+6 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_guanshi
+# GUANSHI
+16 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+# QINGYUAN1
+21 = {
+	holding = none
+}
+
+

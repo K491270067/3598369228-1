@@ -1,0 +1,89 @@
+﻿##### d_gushi ############################
+
+### c_gu3
+# GU3
+192 = {
+	culture = baidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+# XIYANG1
+184 = {
+	holding = none
+}
+# JINXIA
+175 = {
+	holding = none
+}
+
+
+### c_xiaquyang
+# XIAQUYANG
+196 = {
+	culture = baidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+# ANXIANG
+198 = {
+	holding = none
+}
+
+
+### c_shi3
+# SHI3
+164 = {
+	culture = baidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+# LEXIN
+200 = {
+	holding = none
+}
+
+
+##### d_qiaoshi ############################
+
+### c_shangbo
+# SHANGBO
+161 = {
+	culture = baidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+
+
+### c_qiao
+# QIAO
+162 = {
+	culture = baidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+
+
+##### d_lishi5 ############################
+
+### c_jin1
+# JIN1
+173 = {
+	culture = baidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+
+
+### c_li12
+# LI12
+182 = {
+	culture = baidi
+	religion = beidifangling
+	holding = tribal_holding
+}
+# YANGCHENG
+183 = {
+	holding = none
+}
+
+

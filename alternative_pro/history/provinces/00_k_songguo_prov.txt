@@ -1,0 +1,197 @@
+﻿##### d_zixing ############################
+
+### c_kongtong
+# KONGTONG
+530 = {
+	culture = song
+	religion = yinli
+	holding = castle_holding
+}
+
+
+### c_yitai
+# YITAI
+532 = {
+	culture = song
+	religion = yinli
+	holding = castle_holding
+}
+
+
+### c_shangqiu
+# SHANGQIU
+533 = {
+	culture = song
+	religion = yinli
+	holding = castle_holding
+}
+# MENG1
+535 = {
+	holding = none
+}
+# ZI2
+2327 = {
+	holding = none
+}
+
+
+##### d_kongshi ############################
+
+### c_quanqiu
+# QUANQIU
+494 = {
+	culture = song
+	religion = yinli
+	holding = castle_holding
+}
+# ZHAOJIA
+505 = {
+	holding = none
+}
+
+
+### c_li3
+# LI3
+497 = {
+	culture = song
+	religion = yinli
+	holding = castle_holding
+}
+# CUO
+2315 = {
+	holding = none
+}
+
+
+### c_ji4
+# JI4
+506 = {
+	culture = song
+	religion = yinli
+	holding = castle_holding
+}
+
+
+##### d_yueshi1 ############################
+
+### c_goudu
+# GOUDU
+558 = {
+	culture = song
+	religion = yinli
+	holding = castle_holding
+}
+# XINCHENG
+560 = {
+	holding = none
+}
+
+
+### c_guqiu
+# GUQIU
+557 = {
+	culture = song
+	religion = yinli
+	holding = castle_holding
+}
+
+
+### c_yangliang
+# YANGLIANG
+604 = {
+	culture = song
+	religion = yinli
+	holding = castle_holding
+}
+
+
+##### d_songshi ############################
+
+### c_dang
+# DANG
+495 = {
+	culture = song
+	religion = yinli
+	holding = castle_holding
+}
+# HUOQIU
+2302 = {
+	holding = none
+}
+
+
+### c_xiayi
+# XIAYI
+496 = {
+	culture = song
+	religion = yinli
+	holding = castle_holding
+}
+
+
+##### d_huashi2 ############################
+
+### c_hongkou
+# HONGKOU
+531 = {
+	culture = song
+	religion = yinli
+	holding = castle_holding
+}
+# BEAUGENCY
+2320 = {
+	holding = none
+}
+
+
+### c_qixiang
+# QIXIANG
+485 = {
+	culture = song
+	religion = yinli
+	holding = castle_holding
+}
+
+
+### c_hufu
+# HUFU
+2301 = {
+	culture = song
+	religion = yinli
+	holding = castle_holding
+}
+
+
+##### d_huangfushi ############################
+
+### c_jishi
+# JISHI
+2323 = {
+	culture = song
+	religion = yinli
+	holding = castle_holding
+}
+
+
+### c_bo
+# BO
+536 = {
+	culture = song
+	religion = yinli
+	holding = castle_holding
+}
+
+
+### c_duoyu
+# DUOYU
+529 = {
+	culture = song
+	religion = yinli
+	holding = castle_holding
+}
+# LUPU
+2319 = {
+	holding = none
+}
+
+

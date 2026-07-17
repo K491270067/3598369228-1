@@ -1,0 +1,32 @@
+﻿##### d_yushi2 ############################
+
+### c_yu6
+# YU6
+1093 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+# XING3
+1094 = {
+	holding = none
+}
+
+
+### c_kuizi
+# KUIZI
+1095 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+##### d_xingshi1 ############################
+
+### c_yewang
+
+
+### c_zhou2
+
+

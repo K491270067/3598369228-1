@@ -1,0 +1,241 @@
+﻿##### d_shanrongshi ############################
+
+### c_huguan1
+
+
+### c_guyang3
+# GUYANG3
+2608 = {
+	holding = none
+}
+# BAOQIU1
+2609 = {
+	holding = none
+}
+# HUGUAN1
+2607 = {
+	holding = none
+}
+
+
+### c_baoqiu1
+
+
+### c_baitan
+
+
+### c_modaoyu
+# MODAOYU
+2611 = {
+	holding = none
+}
+# JIANGJUNSHIGUAN
+2613 = {
+	holding = none
+}
+# JUNMI
+2612 = {
+	holding = none
+}
+# BAIMACHUAN
+2633 = {
+	holding = none
+}
+
+
+### c_junmi
+
+
+### c_jiangjunshiguan
+
+
+### c_xiaoxingzhou
+
+
+### c_huyan1
+
+
+### c_yaoyang
+# YAIYANG
+2616 = {
+	holding = none
+}
+# XIAOXINGZHOU
+2614 = {
+	holding = none
+}
+# HUTUSAI
+2619 = {
+	holding = none
+}
+# LUYE
+2620 = {
+	holding = none
+}
+
+
+### c_miyun
+
+
+### c_mantaoer
+# MANTAOER
+2618 = {
+	holding = none
+}
+# MIYUN
+2617 = {
+	holding = none
+}
+# HADANG
+2621 = {
+	holding = none
+}
+
+
+### c_hutusai
+
+
+### c_luye
+
+
+### c_hadang
+
+
+### c_huayan
+
+
+### c_tixi
+# TIXI
+1260 = {
+	holding = none
+}
+# GUANGPING
+1259 = {
+	culture = yan
+	religion = xizhouli
+	holding = castle_holding
+}
+# HUYAN1
+2615 = {
+	holding = none
+}
+# HUAYAN
+1254 = {
+	holding = none
+}
+# BAITAN
+2610 = {
+	holding = none
+}
+
+
+### c_zhulu
+
+
+### c_juyongguan
+
+
+### c_yiyu
+
+
+### c_juyong
+# JUYONG
+1285 = {
+	holding = none
+}
+# JUYONGGUAN
+1283 = {
+	holding = none
+}
+# YIYU
+1284 = {
+	holding = none
+}
+# JUYANG2
+1286 = {
+	holding = none
+}
+
+
+### c_juyang2
+
+
+### c_quanshang
+
+
+### c_qieju
+
+
+### c_xialuo
+
+
+### c_pang1
+# PANG1
+1290 = {
+	holding = none
+}
+
+
+### c_ru
+# RU
+1291 = {
+	holding = none
+}
+# GUANGNING
+1293 = {
+	holding = none
+}
+# WENDE
+1292 = {
+	holding = none
+}
+# XIALUO
+1289 = {
+	holding = none
+}
+# QIEJU
+1288 = {
+	holding = none
+}
+# QUANSHANG
+1287 = {
+	holding = none
+}
+
+
+### c_wende
+
+
+### c_guangning
+
+
+### c_nvqi
+# NVQI
+1299 = {
+	holding = none
+}
+# WANGYUN
+2605 = {
+	holding = none
+}
+# SONGXING
+2606 = {
+	holding = none
+}
+
+
+### c_wangyun
+
+
+### c_songxing
+
+
+### c_halahetao
+
+
+### c_luanxing
+
+
+### c_baimachuan
+
+

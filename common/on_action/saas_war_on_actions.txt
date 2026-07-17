@@ -1,0 +1,69 @@
+﻿on_war_started = {
+	on_actions = {
+		saas_handle_situation_war_started
+	}
+}
+
+saas_handle_situation_war_started = {
+	trigger = { exists = situation:spring_and_autumn_situation }
+	effect = {
+		if = {
+			limit = {
+				scope:attacker = {
+					saas_is_ritual_restoration_phase_trigger = yes
+					saas_is_wangdao_trigger = yes
+				}
+				scope:defender = { saas_is_wangdao_trigger = yes }
+			}
+			scope:attacker = {
+				add_prestige = -500
+				add_piety = -250
+				add_legitimacy = -20
+				add_character_modifier = {
+					modifier = saas_wangdao_war_criminal_modifier
+					years = 10
+				}
+			}
+			every_ruler = {
+				limit = {
+					saas_is_wangdao_trigger = yes
+					saas_eligible_participant_trigger = yes
+					this != scope:attacker
+				}
+				add_opinion = {
+					target = scope:attacker
+					modifier = saas_wangdao_broke_ritual_peace_opinion
+				}
+			}
+			if = {
+				limit = {
+					exists = title:e_huaxia.holder
+					scope:attacker = { is_vassal_of = title:e_huaxia.holder }
+				}
+				title:e_huaxia.holder = {
+					add_opinion = {
+						target = scope:attacker
+						modifier = saas_wangdao_war_crime_opinion
+					}
+				}
+			}
+			saas_trigger_catalyst_effect = {
+				CATALYST = saas_catalyst_wangdao_internal_war
+				CHARACTER = scope:attacker
+			}
+		}
+		else_if = {
+			limit = {
+				scope:attacker = {
+					saas_is_ritual_collapse_phase_trigger = yes
+					saas_is_lijiao_ruler_trigger = yes
+				}
+				scope:defender = { saas_is_lijiao_ruler_trigger = yes }
+			}
+			saas_trigger_catalyst_effect = {
+				CATALYST = saas_catalyst_lijiao_aggressive_war
+				CHARACTER = scope:attacker
+			}
+		}
+	}
+}

@@ -1,0 +1,48 @@
+﻿##### d_fanshi1 ############################
+
+### c_mengmen
+# MENGMEN
+1098 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+### c_fan4
+# FAN4
+1102 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+# BAIQUAN
+1103 = {
+	holding = none
+}
+
+
+##### d_tuishi ############################
+
+### c_cuanmao
+# CUANMAO
+1099 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+### c_tui
+# TUI
+1101 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+# HU8
+2480 = {
+	holding = none
+}
+
+

@@ -1,0 +1,76 @@
+﻿##### d_pengshi ############################
+
+### c_wu2
+# WU2
+484 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+### c_pengcheng
+# PENGCHENG
+474 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+# CUISUI
+471 = {
+	holding = none
+}
+# TAIQIU
+2297 = {
+	holding = none
+}
+
+
+##### d_pengzushi ############################
+
+### c_zhu3
+# ZHU2
+490 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+### c_ziqiu
+# ZIQIU
+492 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+# HUOPI
+2305 = {
+	holding = none
+}
+
+
+##### d_shiweishi ############################
+
+### c_yongmen
+# YONGMEN
+470 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+# LIYANG2
+2307 = {
+	holding = none
+}
+
+
+### c_dunqiu2
+# DUNQIU2
+2306 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+

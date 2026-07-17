@@ -1,0 +1,53 @@
+﻿##### d_baoshi ############################
+
+### c_bi
+# BI
+647 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+### c_baosui
+# BAOSUI
+648 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+### c_jiantu
+# JIANTU
+650 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+##### d_bishi4 ############################
+
+### c_juan
+# JUAN
+651 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+### c_huanyong
+# HUANYONG
+654 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+# XIUZE
+652 = {
+	holding = none
+}
+
+

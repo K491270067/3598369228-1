@@ -1,0 +1,30 @@
+﻿c_moushi = {
+	3849.12.31 = {
+		liege = k_mouguo
+		holder = han826
+		government = feudal_government
+		succession_laws = { noble_family_succession_law }
+	}
+	5000.10.1 = {
+		effect = {
+			destroy_landless_title_no_tgp_dlc_effect = {
+				DATE = 5000.10.1
+			}
+		}
+	}
+}
+c_xianmoushi = {
+	3849.12.31 = {
+		liege = k_mouguo
+		holder = xianmou9
+		government = feudal_government
+		succession_laws = { noble_family_succession_law }
+	}
+	5000.10.1 = {
+		effect = {
+			destroy_landless_title_no_tgp_dlc_effect = {
+				DATE = 5000.10.1
+			}
+		}
+	}
+}

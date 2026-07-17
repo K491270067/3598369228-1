@@ -1,0 +1,44 @@
+﻿##### d_yingshi1 ############################
+
+### c_meiying
+# 
+1955 = {
+	holding = none
+}
+
+
+### c_qiepi
+# 
+1960 = {
+	holding = none
+}
+
+
+### c_qiong
+# 
+1962 = {
+	holding = none
+}
+
+
+### c_biyang3
+# 
+1963 = {
+	holding = none
+}
+
+
+### c_yingshi
+# 
+1964 = {
+	holding = none
+}
+
+
+### c_boxiang
+# 
+1965 = {
+	holding = none
+}
+
+

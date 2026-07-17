@@ -1,0 +1,130 @@
+﻿yunxingquanrong1={
+  name="nanming792"
+  dynasty=xin732
+	religion="xirongfangling" 
+	culture="yiluozhirong"
+  father=yunxingluhunguo7
+
+  3749.1.1 = {
+		birth = yes
+	}
+  3796.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+yunxingquanrong2={
+  name="nanming798"
+  dynasty_house=house_xin733
+	religion="xirongfangling" 
+	culture="yiluozhirong"
+  father=yunxingquanrong1
+
+  3784.1.1 = {
+		birth = yes
+	}
+  3829.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+yunxingquanrong3={
+  name="nanming815"
+  dynasty_house=house_xin733
+	religion="xirongfangling" 
+	culture="yiluozhirong"
+  father=yunxingquanrong2
+
+  3808.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+yunxingquanrong4={
+  name="nanming831"
+  dynasty_house=house_xin733
+	religion="xirongfangling" 
+	culture="yiluozhirong"
+  father=yunxingquanrong3
+
+  3826.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+yunxingquanrong5={
+  name="nanming843"
+  dynasty_house=house_xin733
+	religion="xirongfangling" 
+	culture="yiluozhirong"
+  father=yunxingquanrong3
+
+  3828.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+yunxingquanrong6={
+  name="nanming851"
+  dynasty_house=house_xin733
+	religion="xirongfangling" 
+	culture="yiluozhirong"
+  father=yunxingquanrong3
+
+  3829.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+yunxingquanrong7={
+  name="nvming241"
+  dynasty_house=house_xin733
+	religion="xirongfangling" 
+	culture="yiluozhirong"
+  father=yunxingquanrong3
+  female=yes
+
+  3831.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+yunxingquanrong8={
+  name="nvming246"
+  dynasty_house=house_xin733
+	religion="xirongfangling" 
+	culture="yiluozhirong"
+  father=yunxingquanrong3
+  female=yes
+
+  3833.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}

@@ -1,0 +1,164 @@
+﻿#############  鏈堟皬鍥?-鏈堝  #############
+han3296={
+  name="bfyznan328"
+  dynasty=xin230
+  culture="xirong"
+  religion="xirongfangling"
+
+  3727.1.1 = {
+		birth = yes
+	}
+  3770.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han3297={
+  name="bfyznan360"
+  dynasty=xin230
+  culture="xirong"
+  religion="xirongfangling"
+  father=han3296
+
+  3747.1.1 = {
+		birth = yes
+	}
+  3798.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han3298={
+  name="bfyznan376"
+  dynasty=xin230
+  culture="xirong"
+  religion="xirongfangling"
+  father=han3297
+
+  3767.5.1 = {
+		birth = yes
+	}
+  3820.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han3299={
+  name="bfyznan392"
+  dynasty=xin230
+  culture="xirong"
+  religion="xirongfangling"
+  father=han3298
+
+  3794.5.1 = {
+		birth = yes
+	}
+  3847.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han3300={
+  name="bfyznan408"
+  dynasty=xin230
+  culture="xirong"
+  religion="xirongfangling"
+  father=han3299
+
+  3815.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han3301={
+  name="bfyznan428"
+  dynasty=xin230
+  culture="xirong"
+  religion="xirongfangling"
+  father=han3300
+
+  3833.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han3302={
+  name="bfyznan445"
+  dynasty=xin230
+  culture="xirong"
+  religion="xirongfangling"
+  father=han3300
+
+  3834.5.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han3303={
+  name="bfyznan458"
+  dynasty=xin230
+  culture="xirong"
+  religion="xirongfangling"
+  father=han3300
+
+  3835.5.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han3304={
+  name="bfyznan468"
+  dynasty=xin230
+  culture="xirong"
+  religion="xirongfangling"
+  father=han3300
+
+  3836.5.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han3305={
+  name="bfyznv152"
+  dynasty=xin230
+  culture="xirong"
+  religion="xirongfangling"
+  father=han3300
+  female=yes
+
+  3837.5.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han3306={
+  name="bfyznv159"
+  dynasty=xin230
+  culture="xirong"
+  religion="xirongfangling"
+  father=han3300
+  female=yes
+
+  3838.5.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}

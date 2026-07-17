@@ -1,0 +1,30 @@
+﻿##### d_shuliaoshi ############################
+
+### c_shuliao
+# 
+2013 = {
+	holding = none
+}
+
+
+### c_liao5
+# 
+2016 = {
+	holding = none
+}
+
+
+### c_cong
+# 
+2017 = {
+	holding = none
+}
+
+
+### c_you4
+# 
+2018 = {
+	holding = none
+}
+
+

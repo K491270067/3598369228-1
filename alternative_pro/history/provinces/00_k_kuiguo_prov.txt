@@ -1,0 +1,72 @@
+﻿##### d_kuishi ############################
+
+### c_xiling1
+# 
+1886 = {
+	holding = none
+}
+
+
+### c_kui
+# 
+1887 = {
+	holding = none
+}
+
+
+### c_xinling
+# 
+1888 = {
+	holding = none
+}
+
+
+### c_zongqiu
+# 
+1889 = {
+	holding = none
+}
+
+
+### c_danyang1
+# 
+1890 = {
+	holding = none
+}
+
+
+### c_taiqing
+# 
+1891 = {
+	holding = none
+}
+
+
+### c_anshu
+# 
+1885 = {
+	holding = none
+}
+
+
+### c_yichang1
+# 
+1893 = {
+	holding = none
+}
+
+
+### c_xingshan
+# 
+1894 = {
+	holding = none
+}
+
+
+### c_zhuzhong
+# JUZHONG
+3681 = {
+	holding = none
+}
+
+

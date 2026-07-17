@@ -1,0 +1,59 @@
+﻿##### d_wuzangshi ############################
+
+### c_wuzang
+
+
+### c_zhifu
+
+
+### c_jianghu
+
+
+### c_jiuliangqi
+# JIULIANGQI
+3562 = {
+	holding = none
+}
+# XIANGMO
+2890 = {
+	holding = none
+}
+
+
+### c_duomo
+
+
+### c_qianyu
+# WUZANG
+2851 = {
+	holding = none
+}
+
+
+### c_zhizhimo
+
+
+### c_ataizhi
+
+
+### c_bizhi
+
+
+### c_yubaozuozhi
+
+
+### c_banzuobo
+
+
+### c_zhizhifuguo
+
+
+### c_gutaiwan
+
+
+### c_hemei
+
+
+### c_nahejun1
+
+

@@ -1,0 +1,51 @@
+﻿##### d_danshi ############################
+
+### c_dan1
+# DAN1
+644 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+# HUANGCHI
+580 = {
+	holding = none
+}
+
+
+### c_daliang
+# SHAHAI
+646 = {
+	holding = none
+}
+
+
+### c_laoqiu
+# LAOQIU
+577 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+##### d_shenshi4 ############################
+
+### c_xinli1
+# XINLI1
+576 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+
+### c_shen7
+# SHEN7
+2329 = {
+	culture = zhou
+	religion = dongzhouli
+	holding = castle_holding
+}
+
+

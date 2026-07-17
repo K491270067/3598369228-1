@@ -1,0 +1,296 @@
+﻿d_shenshi = {
+	2624.1.1 = {
+		liege = "k_shenguo"
+		holder = han5866
+	}
+	2680.12.31 = {
+		holder = han5867
+	}
+	2701.12.31 = {
+		holder = han5868
+	}
+	2742.1.1 = {
+		holder = han5869
+	}
+	2788.1.1 = {
+		holder = han5870
+	}
+	2800.1.1 = {
+		holder = han5871
+	}
+	2833.1.1 = {
+		holder = han5872
+	}
+	2870.1.1 = {
+		holder = han5873
+	}
+	2900.1.1 = {
+		holder = han5874
+	}
+	2936.1.1 = {
+		holder = han5875
+	}
+	2980.1.1 = {
+		holder = han5876
+	}
+	3011.1.1 = {
+		holder = sixingyoushenshi1
+	}
+	3031.1.1 = {
+		holder = sixingyoushenshi2
+	}
+	3064.1.1 = {
+		holder = sixingyoushenshi3
+	}
+	3086.1.1 = {
+		holder = sixingyoushenshi4
+	}
+	3112.1.1 = {
+		holder = sixingyoushenshi5
+	}
+	3130.1.1 = {
+		holder = sixingyoushenshi6
+	}
+	3159.1.1 = {
+		holder = sixingyoushenshi7
+	}
+	3178.1.1 = {
+		holder = sixingyoushenshi8
+	}
+	3200.1.1 = {
+		holder = sixingyoushenshi9
+	}
+	3228.1.1 = {
+		holder = sixingyoushenshi10
+	}
+	3246.1.1 = {
+		holder = sixingyoushenshi11
+	}
+	3273.1.1 = {
+		holder = sixingyoushenshi12
+	}
+	3296.1.1 = {
+		holder = sixingyoushenshi13
+	}
+	3312.1.1 = {
+		holder = sixingyoushenshi14
+	}
+	3341.1.1 = {
+		holder = sixingyoushenshi15
+	}
+	3362.1.1 = {
+		holder = sixingyoushenshi16
+	}
+	3387.1.1 = {
+		holder = sixingyoushenshi17
+	}
+	3412.1.1 = {
+		holder = sixingyoushenshi18
+	}
+	3428.1.1 = {
+		holder = sixingyoushenshi19
+	}
+	3455.1.1 = {
+		holder = sixingyoushenshi20
+	}
+	3478.1.1 = {
+		holder = sixingyoushenshi21
+	}
+	3503.1.1 = {
+		holder = sixingyoushenshi22
+	}
+	3526.1.1 = {
+		holder = sixingyoushenshi23
+	}
+	3551.1.1 = {
+		holder = sixingyoushenshi24
+	}
+	3573.1.1 = {
+		holder = sixingyoushenshi25
+	}
+	3597.1.1 = {
+		holder = sixingyoushenshi26
+	}
+	3623.1.1 = {
+		holder = sixingyoushenshi27
+	}
+	3641.1.1 = {
+		holder = sixingyoushenshi28
+	}
+	3668.1.1 = {
+		holder = sixingyoushenshi29
+	}
+	3692.1.1 = {
+		holder = sixingyoushenshi30
+	}
+	3713.1.1 = {
+		holder = sixingyoushenshi31
+	}
+	3738.1.1 = {
+		holder = sixingyoushenshi32
+	}
+	3765.1.1 = {
+		holder = sixingyoushenshi33
+	}
+	3782.1.1 = {
+		holder = sixingyoushenshi34
+	}
+	3808.1.1 = {
+		holder = sixingyoushenshi35
+	}
+	3833.1.1 = {
+		holder = sixingyoushenshi41
+	}
+	3849.1.1 = {
+		change_development_level = 29
+		government = feudal_government
+	}
+}
+k_shenguo = {
+	2624.1.1 = {
+		holder = han5866
+	}
+	2680.12.31 = {
+		holder = han5867
+	}
+	2701.12.31 = {
+		holder = han5868
+	}
+	2742.1.1 = {
+		holder = han5869
+	}
+	2788.1.1 = {
+		holder = han5870
+	}
+	2800.1.1 = {
+		holder = han5871
+	}
+	2833.1.1 = {
+		holder = han5872
+	}
+	2870.1.1 = {
+		holder = han5873
+	}
+	2900.1.1 = {
+		holder = han5874
+	}
+	2936.1.1 = {
+		holder = han5875
+	}
+	2980.1.1 = {
+		holder = han5876
+	}
+	3011.1.1 = {
+		holder = sixingyoushenshi1
+	}
+	3031.1.1 = {
+		holder = sixingyoushenshi2
+	}
+	3064.1.1 = {
+		holder = sixingyoushenshi3
+	}
+	3086.1.1 = {
+		holder = sixingyoushenshi4
+	}
+	3112.1.1 = {
+		holder = sixingyoushenshi5
+	}
+	3130.1.1 = {
+		holder = sixingyoushenshi6
+	}
+	3159.1.1 = {
+		holder = sixingyoushenshi7
+	}
+	3178.1.1 = {
+		holder = sixingyoushenshi8
+	}
+	3200.1.1 = {
+		holder = sixingyoushenshi9
+	}
+	3228.1.1 = {
+		holder = sixingyoushenshi10
+	}
+	3246.1.1 = {
+		holder = sixingyoushenshi11
+	}
+	3273.1.1 = {
+		holder = sixingyoushenshi12
+	}
+	3296.1.1 = {
+		holder = sixingyoushenshi13
+	}
+	3312.1.1 = {
+		holder = sixingyoushenshi14
+	}
+	3341.1.1 = {
+		holder = sixingyoushenshi15
+	}
+	3362.1.1 = {
+		holder = sixingyoushenshi16
+	}
+	3387.1.1 = {
+		holder = sixingyoushenshi17
+	}
+	3412.1.1 = {
+		holder = sixingyoushenshi18
+	}
+	3428.1.1 = {
+		holder = sixingyoushenshi19
+	}
+	3455.1.1 = {
+		holder = sixingyoushenshi20
+	}
+	3478.1.1 = {
+		holder = sixingyoushenshi21
+	}
+	3503.1.1 = {
+		holder = sixingyoushenshi22
+	}
+	3526.1.1 = {
+		holder = sixingyoushenshi23
+	}
+	3551.1.1 = {
+		holder = sixingyoushenshi24
+	}
+	3573.1.1 = {
+		holder = sixingyoushenshi25
+	}
+	3597.1.1 = {
+		liege = "e_zhoutianzi"
+		holder = sixingyoushenshi26
+	}
+	3623.1.1 = {
+		holder = sixingyoushenshi27
+	}
+	3641.1.1 = {
+		holder = sixingyoushenshi28
+	}
+	3668.1.1 = {
+		holder = sixingyoushenshi29
+	}
+	3692.1.1 = {
+		holder = sixingyoushenshi30
+	}
+	3713.1.1 = {
+		holder = sixingyoushenshi31
+	}
+	3738.1.1 = {
+		holder = sixingyoushenshi32
+	}
+	3765.1.1 = {
+		holder = sixingyoushenshi33
+	}
+	3782.1.1 = {
+		holder = sixingyoushenshi34
+	}
+	3808.1.1 = {
+		holder = sixingyoushenshi35
+	}
+	3833.1.1 = {
+		holder = sixingyoushenshi36
+	}
+	3849.1.1 = {
+		change_development_level = 32
+		government = feudal_government
+	}
+}

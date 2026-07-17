@@ -1,202 +1,57 @@
-﻿############### 绀煎穿涔愬潖 - 瑕佹眰灏佽嚕鏀规崲闃佃惀 ###############
+﻿# Spring and Autumn political interactions.
 
-demand_faction_switch = {
+saas_demand_tianzi_tribute_interaction = {
 	category = interaction_category_diplomacy
 	common_interaction = no
-	interface_priority = 20
-
-	icon = icon_culture
+	icon = become_tributary_interaction
+	interface_priority = 90
+	use_diplomatic_range = yes
 
 	is_shown = {
-		always = yes
-	}
-
-	is_valid = {
 		scope:actor = {
-			every_character_situation = {
-				type = spring_and_autumn_situation
-				involvement = involved
-			}
-			NOT = {
-				has_trait = character_interloper_of_zhou_dynasty
-			}
-			is_available_adult = yes
-			is_imprisoned = no
+			has_title = title:e_huaxia
+			saas_is_ritual_restoration_phase_trigger = yes
 		}
 		scope:recipient = {
-			every_character_situation = {
-				type = spring_and_autumn_situation
-				involvement = involved
-			}
-			NOT = {
-				has_trait = character_interloper_of_zhou_dynasty
-			}
-			is_available_adult = yes
-			is_imprisoned = no
-			NOT = { has_character_flag = recently_switched_faction_flag }
+			is_independent_ruler = yes
+			is_landed = yes
+			saas_is_lijiao_ruler_trigger = yes
+			NOT = { is_tributary_of = scope:actor }
 		}
-		NOR = {
-			scope:actor = { has_trait = character_involve_supporters_of_zhou_dynasty }
-			scope:recipient = { has_trait = character_involve_supporters_of_zhou_dynasty }
-		}
-		NOR = {
-			scope:actor = { has_trait = character_involve_opponents_of_zhou_dynasty }
-			scope:recipient = { has_trait = character_involve_opponents_of_zhou_dynasty }
-		}
-		NOR = {
-			scope:actor = { has_trait = character_involve_neutral_of_zhou_dynasty }
-			scope:recipient = { has_trait = character_involve_neutral_of_zhou_dynasty }
-		}
+		scope:recipient != scope:actor
 	}
 
 	is_valid_showing_failures_only = {
 		scope:actor = {
-			is_commanding_army = no
-			is_traveling = no
+			is_at_war = no
+			is_imprisoned = no
 		}
 		scope:recipient = {
-			is_commanding_army = no
-			is_traveling = no
+			is_at_war = no
+			is_imprisoned = no
+			NOT = { government_has_flag = cannot_be_vassal_or_liege }
 		}
 	}
 
-	### 灏戦噺璐胯祩锛氬鏂规€昏储瀵岀殑10%锛?10鎯呮効鍊?###
-	send_option = {
-		is_shown = {
-			scope:recipient = { gold >= 1 }
+	# The invalid government check is shown separately without making ordinary rulers fail.
+	is_valid = {
+		scope:recipient = {
+			NOT = { government_has_flag = cannot_be_vassal_or_liege }
 		}
-		is_valid = {
-			scope:actor = { gold >= scope:recipient.gold * 0.1 }
-		}
-		flag = bribe_small
-
-		localization = demand_faction_switch_bribe_small
-		current_description = demand_faction_switch_bribe_small_desc
-		can_be_changed = { always = yes }
 	}
-
-	### 涓噺璐胯祩锛氬鏂规€昏储瀵岀殑30%锛?30鎯呮効鍊?###
-	send_option = {
-		is_shown = {
-			scope:recipient = { gold >= 1 }
-		}
-		is_valid = {
-			scope:actor = { gold >= scope:recipient.gold * 0.3 }
-		}
-		flag = bribe_medium
-		localization = demand_faction_switch_bribe_medium
-		current_description = demand_faction_switch_bribe_medium_desc
-		can_be_changed = { always = yes }
-	}
-
-	### 澶ч噺璐胯祩锛氬鏂规€昏储瀵岀殑100%锛?50鎯呮効鍊?###
-	send_option = {
-		is_shown = {
-			scope:recipient = { gold >= 1 }
-		}
-		is_valid = {
-			scope:actor = { gold >= scope:recipient.gold }
-		}
-		flag = bribe_large
-		localization = demand_faction_switch_bribe_large
-		current_description = demand_faction_switch_bribe_large_desc
-		can_be_changed = { always = yes }
-	}
-
-	### 閫艰揩锛氭秷鑰楀鏂规€诲▉鏈涚殑60%锛?40鎯呮効鍊?###
-	send_option = {
-		is_shown = { always = yes }
-		is_valid = {
-			scope:actor = { prestige >= scope:recipient.prestige * 0.6 }
-		}
-		flag = force_switch
-		localization = demand_faction_switch_force
-		current_description = demand_faction_switch_force_desc
-		#starts_enabled = { always = yes }
-		can_be_changed = { always = yes }
-			}
-
-	### 浣跨敤鐗靛埗 ###
-	send_option = {
-		is_shown = {
-			scope:actor = {
-				has_strong_hook = scope:recipient
-			}
-		}
-		flag = use_hook
-		localization = demand_faction_switch_hook
-		current_description = demand_faction_switch_hook_desc
-		starts_enabled = { always = yes }
-		can_be_changed = { always = yes }
-	}
-	
-	send_options_exclusive = yes
-
-	desc = demand_faction_switch_desc
-	greeting = neutral
-	prompt = demand_faction_switch_prompt
-	notification_text = demand_faction_switch_notification
 
 	auto_accept = no
-	use_diplomatic_range = yes
-
-	cooldown = { years = 5 }
-
-	ai_frequency = 120
+	cooldown_against_recipient = { years = 5 }
 
 	on_accept = {
-		# 浜斿勾鍐峰嵈鏍囧織
-		scope:recipient = {
-			add_character_flag = {
-				flag = recently_switched_faction_flag
-				years = 5
-			}
-
-			# 绉婚櫎鎵€鏈夋棫娲剧郴鐗硅川
-			remove_trait ?= character_involve_supporters_of_zhou_dynasty
-			remove_trait ?= character_involve_opponents_of_zhou_dynasty
-			remove_trait ?= character_involve_neutral_of_zhou_dynasty
+		saas_establish_tributary_effect = {
+			SUZERAIN = scope:actor
+			TRIBUTARY = scope:recipient
+			WAR = no
 		}
-
-		# 鎺ユ敹鏂规敼涓鸿姹傛柟鐨勬淳绯?
-		if = {
-			limit = { scope:actor = { has_trait = character_involve_supporters_of_zhou_dynasty } }
-			scope:recipient = { add_trait = character_involve_supporters_of_zhou_dynasty }
-		}
-		else_if = {
-			limit = { scope:actor = { has_trait = character_involve_opponents_of_zhou_dynasty } }
-			scope:recipient = { add_trait = character_involve_opponents_of_zhou_dynasty }
-		}
-		else_if = {
-			limit = { scope:actor = { has_trait = character_involve_neutral_of_zhou_dynasty } }
-			scope:recipient = { add_trait = character_involve_neutral_of_zhou_dynasty }
-		}
-
-		# 灏戦噺璐胯祩
-		if = {
-			limit = { has_flag = bribe_small }
-			scope:actor = { add_gold = { value = scope:recipient.gold multiply = -0.1 } }
-			scope:recipient = { add_gold = { value = scope:recipient.gold multiply = 0.1 } }
-		}
-
-		# 涓噺璐胯祩
-		if = {
-			limit = { has_flag = bribe_medium }
-			scope:actor = { add_gold = { value = scope:recipient.gold multiply = -0.3 } }
-			scope:recipient = { add_gold = { value = scope:recipient.gold multiply = 0.3 } }
-		}
-
-		# 澶ч噺璐胯祩
-		if = {
-			limit = { has_flag = bribe_large }
-			scope:actor = { add_gold = { value = scope:recipient.gold multiply = -1 } }
-			scope:recipient = { add_gold = { value = scope:recipient.gold multiply = 1 } }
-		}
-
-		# 閫艰揩
-		if = {
-			limit = { has_flag = force_switch }
-			scope:actor = { add_prestige = { value = scope:recipient.prestige multiply = -0.6 } }
+		saas_trigger_catalyst_effect = {
+			CATALYST = saas_catalyst_tribute_established
+			CHARACTER = scope:actor
 		}
 	}
 
@@ -204,172 +59,260 @@ demand_faction_switch = {
 		scope:recipient = {
 			add_opinion = {
 				target = scope:actor
-				modifier = opinion_refused_demand
+				modifier = saas_refused_tianzi_tribute_opinion
+			}
+		}
+		saas_trigger_catalyst_effect = {
+			CATALYST = saas_catalyst_refused_tribute
+			CHARACTER = scope:recipient
+		}
+		scope:actor = {
+			start_war = {
+				casus_belli = saas_tianzi_force_tributary_cb
+				target = scope:recipient
 			}
 		}
 	}
 
 	ai_accept = {
-		base = -80
-
-		# 濂芥劅搴︾洿鎺ュ奖鍝嶆儏鎰垮€硷細姝ｅソ鎰熷姞鍊硷紝璐熷ソ鎰熷噺鍊硷紙姣?0鐐?卤10锛?
-		### 姝ｉ潰濂芥劅 ###
-		modifier = {
-			add = 10
-			scope:recipient = { opinion_of = { target = scope:actor value >= 10 } }
-		}
-		modifier = {
-			add = 10
-			scope:recipient = { opinion_of = { target = scope:actor value >= 20 } }
-		}
-		modifier = {
-			add = 10
-			scope:recipient = { opinion_of = { target = scope:actor value >= 30 } }
-		}
-		modifier = {
-			add = 10
-			scope:recipient = { opinion_of = { target = scope:actor value >= 40 } }
-		}
-		modifier = {
-			add = 10
-			scope:recipient = { opinion_of = { target = scope:actor value >= 50 } }
-		}
-		modifier = {
-			add = 10
-			scope:recipient = { opinion_of = { target = scope:actor value >= 60 } }
-		}
-		modifier = {
-			add = 10
-			scope:recipient = { opinion_of = { target = scope:actor value >= 70 } }
-		}
-		modifier = {
-			add = 10
-			scope:recipient = { opinion_of = { target = scope:actor value >= 80 } }
-		}
-		modifier = {
-			add = 10
-			scope:recipient = { opinion_of = { target = scope:actor value >= 90 } }
-		}
-		modifier = {
-			add = 10
-			scope:recipient = { opinion_of = { target = scope:actor value >= 100 } }
-		}
-
-		### 璐熼潰濂芥劅 ###
-		modifier = {
-			add = -10
-			scope:recipient = { NOT = { opinion_of = { target = scope:actor value >= -9 } } }
-		}
-		modifier = {
-			add = -10
-			scope:recipient = { NOT = { opinion_of = { target = scope:actor value >= -19 } } }
-		}
-		modifier = {
-			add = -10
-			scope:recipient = { NOT = { opinion_of = { target = scope:actor value >= -29 } } }
-		}
-		modifier = {
-			add = -10
-			scope:recipient = { NOT = { opinion_of = { target = scope:actor value >= -39 } } }
-		}
-		modifier = {
-			add = -10
-			scope:recipient = { NOT = { opinion_of = { target = scope:actor value >= -49 } } }
-		}
-		modifier = {
-			add = -10
-			scope:recipient = { NOT = { opinion_of = { target = scope:actor value >= -59 } } }
-		}
-		modifier = {
-			add = -10
-			scope:recipient = { NOT = { opinion_of = { target = scope:actor value >= -69 } } }
-		}
-		modifier = {
-			add = -10
-			scope:recipient = { NOT = { opinion_of = { target = scope:actor value >= -79 } } }
-		}
-		modifier = {
-			add = -10
-			scope:recipient = { NOT = { opinion_of = { target = scope:actor value >= -89 } } }
-		}
-		modifier = {
-			add = -10
-			scope:recipient = { NOT = { opinion_of = { target = scope:actor value >= -99 } } }
-		}
-
-		# 灏戦噺璐胯祩 +10
-		modifier = {
-			add = 10
-			has_flag = bribe_small
-		}
-
-		# 涓噺璐胯祩 +30
-		modifier = {
-			add = 30
-			has_flag = bribe_medium
-		}
-
-		# 澶ч噺璐胯祩 +50
+		base = -20
 		modifier = {
 			add = 50
-			has_flag = bribe_large
+			scope:recipient = { opinion = { target = scope:actor value >= 50 } }
 		}
-
-		# 灏佽嚕璐┆鐗硅川锛氳纯璧傞澶?10
 		modifier = {
-			add = 10
-			scope:recipient = { has_trait = greedy }
+			add = 30
+			scope:actor.current_military_strength >= scope:recipient.current_military_strength
+		}
+		modifier = {
+			add = 30
+			scope:recipient = { has_trait = character_involve_supporters_of_zhou_dynasty }
+		}
+		modifier = {
+			add = -50
+			scope:recipient = { has_trait = ambitious }
+		}
+	}
+
+	ai_will_do = { base = 50 }
+}
+
+# A Huimeng-specific route into the host's House Bloc. It supplements the
+# vanilla interaction and provides the promised +10/+25/+50 acceptance tiers.
+saas_join_huimeng_bloc_interaction = {
+	category = interaction_category_diplomacy
+	common_interaction = yes
+	icon = icon_join_bloc
+	use_diplomatic_range = yes
+	cooldown_against_recipient = { years = 5 }
+
+	is_shown = {
+		scope:actor = {
+			government_has_flag = government_has_house_blocs
+			house.house_head ?= this
+			saas_is_lijiao_ruler_trigger = yes
+		}
+		scope:recipient = {
+			government_has_flag = government_has_house_blocs
+			exists = house.house_confederation
+			house.house_confederation.leading_house.house_head ?= this
 			OR = {
-				has_flag = bribe_small
-				has_flag = bribe_medium
-				has_flag = bribe_large
+				has_character_modifier = saas_huimeng_modest_attraction_modifier
+				has_character_modifier = saas_huimeng_grand_attraction_modifier
+				has_character_modifier = saas_huimeng_splendid_attraction_modifier
 			}
 		}
-
-		# 閫艰揩 +40
-		modifier = {
-			add = 40
-			has_flag = force_switch
-		}
-
-		# 浣跨敤鐗靛埗 +80锛堝己鐗靛埗锛?
-		modifier = {
-			add = 80
-			has_flag = use_hook
-		}
-
-		# 娓╁拰娲剧郴鐨勫皝鑷ｆ洿闅捐璇存湇
-		modifier = {
-			add = -20
-			scope:recipient = { has_trait = character_involve_neutral_of_zhou_dynasty }
-		}
-
-
+		scope:actor != scope:recipient
+		NOT = { scope:actor.house.house_confederation ?= scope:recipient.house.house_confederation }
 	}
 
-	ai_will_do = {
-		base = 50
-		# 寮哄娍棰嗕富鏇村€惧悜浜庤繖鏍疯姹?
-		modifier = {
-			add = 40
-			scope:actor = { has_trait = arrogant }
+	is_valid_showing_failures_only = {
+		scope:actor = {
+			NOT = { is_at_war_with = scope:recipient }
+			NOT = { has_character_flag = recently_joined_bloc }
+			tgp_house_bloc_interaction_valid_showing_failures_trigger = yes
 		}
-		modifier = {
-			add = 20
-			scope:actor = { has_trait = ambitious }
+		scope:recipient = { tgp_house_bloc_interaction_valid_showing_failures_trigger = yes }
+	}
+
+	on_accept = {
+		if = {
+			limit = { scope:actor = { is_confederation_member = yes } }
+			scope:actor.house = {
+				tgp_leave_house_bloc_effect = {
+					OPINION = flag:yes
+					TRUCE = flag:no
+				}
+			}
 		}
-		# 娓╁拰鐨勯涓讳笉澶細杩欐牱鍋?
-		modifier = {
-			add = -30
-			scope:actor = { has_trait = compassionate }
-		}
-		modifier = {
-			add = -20
-			scope:actor = { has_trait = content }
+		scope:actor.house = {
+			tgp_join_house_bloc_effect = {
+				INVITER = scope:recipient.house
+				OPINION = flag:yes
+			}
 		}
 	}
 
-	ai_potential = {
-		always = yes
+	ai_accept = {
+		base = -25
+		opinion_modifier = {
+			who = scope:recipient
+			opinion_target = scope:actor
+			multiplier = 0.5
+			step = 5
+			max = 50
+		}
+		modifier = {
+			add = 10
+			scope:recipient = { has_character_modifier = saas_huimeng_modest_attraction_modifier }
+			desc = saas_huimeng_modest_join_acceptance
+		}
+		modifier = {
+			add = 25
+			scope:recipient = { has_character_modifier = saas_huimeng_grand_attraction_modifier }
+			desc = saas_huimeng_grand_join_acceptance
+		}
+		modifier = {
+			add = 50
+			scope:recipient = { has_character_modifier = saas_huimeng_splendid_attraction_modifier }
+			desc = saas_huimeng_splendid_join_acceptance
+		}
 	}
+
+	ai_frequency_by_tier = {
+		barony = 0
+		county = 0
+		duchy = 12
+		kingdom = 12
+		empire = 12
+		hegemony = 0
+	}
+	ai_targets = { ai_recipients = neighboring_rulers }
+}
+
+demand_faction_switch = {
+	category = interaction_category_diplomacy
+	common_interaction = no
+	interface_priority = 20
+	icon = icon_culture
+	use_diplomatic_range = yes
+	auto_accept = no
+	cooldown_against_recipient = { years = 5 }
+
+	is_shown = {
+		scope:actor = {
+			saas_eligible_participant_trigger = yes
+			saas_is_lijiao_ruler_trigger = yes
+			OR = {
+				saas_is_wangdao_trigger = yes
+				saas_is_badao_trigger = yes
+				saas_is_neutral_trigger = yes
+			}
+		}
+		scope:recipient = {
+			saas_eligible_participant_trigger = yes
+			saas_is_lijiao_ruler_trigger = yes
+			NOT = { has_character_flag = recently_switched_faction_flag }
+		}
+		scope:recipient != scope:actor
+	}
+
+	is_valid = {
+		NOT = {
+			OR = {
+				AND = { scope:actor = { saas_is_wangdao_trigger = yes } scope:recipient = { saas_is_wangdao_trigger = yes } }
+				AND = { scope:actor = { saas_is_badao_trigger = yes } scope:recipient = { saas_is_badao_trigger = yes } }
+				AND = { scope:actor = { saas_is_neutral_trigger = yes } scope:recipient = { saas_is_neutral_trigger = yes } }
+			}
+		}
+	}
+
+	send_option = {
+		flag = bribe_small
+		localization = demand_faction_switch_bribe_small
+		current_description = demand_faction_switch_bribe_small_desc
+		is_valid = { scope:actor.gold >= { value = scope:recipient.gold multiply = 0.1 } }
+	}
+	send_option = {
+		flag = bribe_medium
+		localization = demand_faction_switch_bribe_medium
+		current_description = demand_faction_switch_bribe_medium_desc
+		is_valid = { scope:actor.gold >= { value = scope:recipient.gold multiply = 0.3 } }
+	}
+	send_option = {
+		flag = bribe_large
+		localization = demand_faction_switch_bribe_large
+		current_description = demand_faction_switch_bribe_large_desc
+		is_valid = { scope:actor.gold >= scope:recipient.gold }
+	}
+	send_option = {
+		flag = force_switch
+		localization = demand_faction_switch_force
+		current_description = demand_faction_switch_force_desc
+		is_valid = { scope:actor.prestige >= { value = scope:recipient.prestige multiply = 0.6 } }
+	}
+	send_option = {
+		flag = use_hook
+		localization = demand_faction_switch_hook
+		current_description = demand_faction_switch_hook_desc
+		is_shown = { scope:actor = { has_strong_hook = scope:recipient } }
+	}
+	send_options_exclusive = yes
+
+	on_accept = {
+		scope:recipient = {
+			saas_clear_participant_stance_effect = yes
+			add_character_flag = { flag = recently_switched_faction_flag years = 5 }
+		}
+		if = {
+			limit = { scope:actor = { saas_is_wangdao_trigger = yes } }
+			scope:recipient = { add_trait = character_involve_supporters_of_zhou_dynasty }
+		}
+		else_if = {
+			limit = { scope:actor = { saas_is_badao_trigger = yes } }
+			scope:recipient = { add_trait = character_involve_opponents_of_zhou_dynasty }
+		}
+		else = {
+			scope:recipient = { add_trait = character_involve_neutral_of_zhou_dynasty }
+		}
+		if = {
+			limit = { scope:bribe_small = yes }
+			scope:actor = { pay_short_term_gold = { target = scope:recipient gold = { value = scope:recipient.gold multiply = 0.1 } } }
+		}
+		else_if = {
+			limit = { scope:bribe_medium = yes }
+			scope:actor = { pay_short_term_gold = { target = scope:recipient gold = { value = scope:recipient.gold multiply = 0.3 } } }
+		}
+		else_if = {
+			limit = { scope:bribe_large = yes }
+			scope:actor = { pay_short_term_gold = { target = scope:recipient gold = scope:recipient.gold } }
+		}
+		else_if = {
+			limit = { scope:force_switch = yes }
+			scope:actor = { add_prestige = { value = scope:recipient.prestige multiply = -0.6 } }
+		}
+		else_if = {
+			limit = { scope:use_hook = yes }
+			scope:actor = { use_hook = scope:recipient }
+		}
+	}
+
+	on_decline = {
+		scope:recipient = {
+			add_opinion = { target = scope:actor modifier = opinion_refused_demand }
+		}
+	}
+
+	ai_accept = {
+		base = -60
+		modifier = { add = 10 scope:bribe_small = yes }
+		modifier = { add = 30 scope:bribe_medium = yes }
+		modifier = { add = 50 scope:bribe_large = yes }
+		modifier = { add = 40 scope:force_switch = yes }
+		modifier = { add = 80 scope:use_hook = yes }
+		modifier = { add = 30 scope:recipient = { opinion = { target = scope:actor value >= 50 } } }
+		modifier = { add = -30 scope:recipient = { has_trait = content } }
+	}
+
+	ai_will_do = { base = 25 }
 }

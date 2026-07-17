@@ -1,0 +1,33 @@
+﻿##### d_huangshi ############################
+
+### c_huang4
+# HUANG4
+1366 = {
+	culture = jin
+	religion = yili
+	holding = castle_holding
+}
+# YANG6
+2719 = {
+	holding = none
+}
+
+
+### c_shexia
+# SHEXIA
+2715 = {
+	culture = jin
+	religion = yili
+	holding = castle_holding
+}
+
+
+### c_you6
+# YOU6
+2720 = {
+	culture = jin
+	religion = yili
+	holding = castle_holding
+}
+
+

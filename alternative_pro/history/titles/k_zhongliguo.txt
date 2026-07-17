@@ -1,0 +1,213 @@
+﻿d_tushanshi = {
+	2442.1.1 = {
+		holder = tushanshi1
+	}
+	2500.1.1 = {
+		holder = tushanshi2
+	}
+	2548.1.1 = {
+		holder = tushanshi4
+	}
+	2600.1.1 = {
+		holder = tushanshi5
+	}
+	2641.1.1 = {
+		holder = tushanshi6
+	}
+	2700.1.1 = {
+		holder = tushanshi7
+	}
+	2763.1.1 = {
+		holder = tushanshi8
+	}
+	2803.1.1 = {
+		holder = tushanshi9
+	}
+	2843.1.1 = {
+		holder = tushanshi10
+	}
+	2881.1.1 = {
+		holder = tushanshi11
+	}
+	2922.1.1 = {
+		holder = tushanshi12
+	}
+	2964.1.1 = {
+		holder = tushanshi13
+	}
+	3001.12.31 = {
+		holder = tushanshi14
+	}
+	3030.12.31 = {
+		holder = tushanshi15
+	}
+	3094.12.31 = {
+		holder = tushanshi16
+	}
+	3122.12.31 = {
+		holder = tushanshi17
+	}
+	3170.12.31 = {
+		holder = tushanshi18
+	}
+	3217.12.31 = {
+		holder = tushanshi19
+	}
+	3259.12.31 = {
+		holder = tushanshi20
+	}
+	3285.12.31 = {
+		holder = tushanshi21
+	}
+	3329.12.31 = {
+		holder = tushanshi22
+	}
+	3378.12.31 = {
+		holder = tushanshi23
+	}
+	3404.12.31 = {
+		holder = tushanshi24
+	}
+	3456.12.31 = {
+		holder = tushanshi25
+	}
+	3494.12.31 = {
+		holder = tushanshi26
+	}
+	3550.12.31 = {
+		holder = tushanshi27
+	}
+	3590.12.31 = {
+		holder = tushanshi28
+	}
+	3625.12.31 = {
+		liege = "k_zhongliguo"
+		holder = tushanshi29
+	}
+	3661.12.31 = {
+		holder = tushanshi30
+	}
+	3701.12.31 = {
+		holder = tushanshi31
+	}
+	3755.12.31 = {
+		holder = tushanshi32
+	}
+	3789.12.31 = {
+		holder = tushanshi33
+	}
+	3801.12.31 = {
+		holder = tushanshi34
+	}
+	3838.12.31 = {
+		holder = tushanshi35
+	}
+	3849.1.1 = {
+		change_development_level = 20
+		government = feudal_government
+	}
+}
+d_xiuyushi = {
+	3619.1.1 = {
+		liege = "k_zhongliguo"
+		holder = han1671
+	}
+	3699.1.1 = {
+		holder = xiuyushi1
+	}
+	3703.12.31 = {
+		holder = xiuyushi2
+	}
+	3729.12.31 = {
+		holder = xiuyushi3
+	}
+	3742.12.31 = {
+		holder = xiuyushi4
+	}
+	3791.12.31 = {
+		holder = xiuyushi6
+	}
+	3837.12.31 = {
+		holder = xiuyushi7
+	}
+	3849.1.1 = {
+		change_development_level = 21
+		government = feudal_government
+	}
+}
+k_tushanguo = {
+	2442.1.1 = {
+		holder = tushanshi1
+	}
+	2500.1.1 = {
+		holder = tushanshi2
+	}
+	2548.1.1 = {
+		holder = tushanshi4
+	}
+	2600.1.1 = {
+		holder = tushanshi5
+	}
+	2641.1.1 = {
+		holder = tushanshi6
+	}
+	2700.1.1 = {
+		holder = tushanshi7
+	}
+	2763.1.1 = {
+		holder = tushanshi8
+	}
+	2803.1.1 = {
+		holder = tushanshi9
+	}
+	2843.1.1 = {
+		holder = tushanshi10
+	}
+	2881.1.1 = {
+		holder = tushanshi11
+	}
+	2922.1.1 = {
+		holder = tushanshi12
+	}
+	2964.1.1 = {
+		holder = tushanshi13
+	}
+	3001.12.31 = {
+		holder = tushanshi14
+	}
+	3030.12.31 = {
+		holder = 0
+	}
+}
+k_zhongliguo = {
+	3619.1.1 = {
+		liege = "e_zhoutianzi"
+		holder = han1671
+	}
+	3699.1.1 = {
+		holder = han1672
+	}
+	3703.12.31 = {
+		holder = han1673
+	}
+	3729.12.31 = {
+		holder = han1674
+	}
+	3742.12.31 = {
+		holder = han1675
+	}
+	3791.12.31 = {
+		holder = han1676
+	}
+	3837.12.31 = {
+		holder = han1677
+	}
+	3849.1.1 = {
+		change_development_level = 26
+		government = feudal_government
+		liege = "e_zhoutianzi1"
+	}
+	3849.12.31 = {
+		holder = han1678
+	}
+}

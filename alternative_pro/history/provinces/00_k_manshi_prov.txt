@@ -1,0 +1,37 @@
+﻿##### d_manshi ############################
+
+### c_manshi
+# MANSHI
+1631 = {
+	holding = none
+}
+
+
+### c_huo1
+# HUO1
+1632 = {
+	holding = none
+}
+
+
+### c_liang2
+# LIANG2
+1633 = {
+	holding = none
+}
+
+
+### c_chengfu
+# CHENGFU
+1634 = {
+	holding = none
+}
+
+
+### c_longxing
+# LONGXING
+1635 = {
+	holding = none
+}
+
+

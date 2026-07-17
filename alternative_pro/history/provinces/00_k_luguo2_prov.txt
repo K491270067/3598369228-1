@@ -1,0 +1,51 @@
+﻿##### d_lushi4 ############################
+
+### c_qiujun
+# 
+1994 = {
+	holding = none
+}
+
+
+### c_siding
+# 
+1995 = {
+	holding = none
+}
+
+
+### c_xiaoyaojin
+# 
+1999 = {
+	holding = none
+}
+
+
+### c_lu5
+# 
+2000 = {
+	holding = none
+}
+
+
+### c_shen6
+# 
+2002 = {
+	holding = none
+}
+
+
+### c_sundi
+# 
+2023 = {
+	holding = none
+}
+
+
+### c_hu6
+# 
+2025 = {
+	holding = none
+}
+
+

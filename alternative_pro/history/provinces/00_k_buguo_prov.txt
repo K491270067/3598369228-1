@@ -1,0 +1,58 @@
+﻿##### d_bushi ############################
+
+### c_xiao1
+# XIAO1
+585 = {
+	holding = none
+}
+
+
+### c_guyang
+# GUYANG
+588 = {
+	holding = none
+}
+
+
+### c_liancheng
+# LIANCHENG
+2365 = {
+	holding = none
+}
+
+
+### c_gaochang
+# GAOCHANG
+2366 = {
+	holding = none
+}
+
+
+### c_sibing
+# SIBING
+2367 = {
+	holding = none
+}
+
+
+### c_tuoyang
+# TUOYANG
+2368 = {
+	holding = none
+}
+
+
+### c_lingbi
+# LINGBI
+2370 = {
+	holding = none
+}
+
+
+### c_bu1
+# BU1
+2371 = {
+	holding = none
+}
+
+

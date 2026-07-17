@@ -1,0 +1,125 @@
+﻿##### d_qingqiushi ############################
+
+### c_fuzhou
+
+
+### c_pingguo
+
+
+### c_wen1
+
+
+### c_anshi
+# ANSHI
+3462 = {
+	holding = none
+}
+# WEN1
+3461 = {
+	holding = none
+}
+# JILI
+3455 = {
+	holding = none
+}
+
+
+### c_xinchang1
+
+
+### c_xiangping
+
+
+### c_jujiu
+
+
+### c_lishan
+# Kiskunhalas
+3866 = {
+	holding = none
+}
+# XINCHANG1
+3463 = {
+	holding = none
+}
+
+
+### c_liaokou
+# LIAOKOU
+3867 = {
+	holding = none
+}
+# LIANYUNDAO
+3483 = {
+	holding = none
+}
+# XIANGPING
+3464 = {
+	holding = none
+}
+# MOFU
+3861 = {
+	holding = none
+}
+
+
+### c_changshengdao
+
+
+### c_zhongdaoshan
+
+
+### c_qingqiuze
+# FUZHOU
+3467 = {
+	holding = none
+}
+# CHANGSHENGDAO
+3868 = {
+	holding = none
+}
+# BEISHA
+3457 = {
+	holding = none
+}
+# PINGGUO
+3460 = {
+	holding = none
+}
+
+
+### c_beifeng
+
+
+### c_beisha
+
+
+### c_douli
+
+
+### c_tashi
+# TASHI
+3466 = {
+	holding = none
+}
+# BEISHA
+3458 = {
+	holding = none
+}
+# DOULI
+3459 = {
+	holding = none
+}
+# QINGQIUZE
+3870 = {
+	holding = none
+}
+# ZHONGDAOSHAN
+3869 = {
+	holding = none
+}
+
+
+### c_lianyun
+
+

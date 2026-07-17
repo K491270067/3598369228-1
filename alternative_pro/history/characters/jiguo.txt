@@ -1,0 +1,1414 @@
+﻿### 纪国--姜姓纪氏 ###
+#参考纪国世系，综合分析为姜太公未远族亲
+#世系明确，大部分名字失载，兄弟与父子关系根据在位年份和谥号推测而来
+han5832={
+  name="nanming289"#纪了公，假设为先二之子
+  dynasty=xin338
+	religion="yinli" 
+	culture="shennongshi"
+  father=han3245
+
+  3446.1.1 = {
+		birth = yes
+	}
+  3498.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han5833={
+  name="nanming277"#纪归公
+  dynasty_house=house_baijia122
+	religion="yinli" 
+	culture="shennongshi"
+  father=han5832
+
+  3470.1.1 = {
+		birth = yes
+	}
+  3523.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han5834={
+  name="bo3"#纪丁公
+  dynasty_house=house_baijia122
+	religion="yinli" 
+	culture="shennongshi"
+  father=han5833
+
+  3491.1.1 = {
+		birth = yes
+	}
+  3535.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han5835={
+  name="guang"#纪元公
+  dynasty_house=house_baijia122
+	religion="yinli" 
+	culture="shennongshi"
+  father=han5834
+
+  3527.1.1 = {
+		birth = yes
+	}
+  3560.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han261={#纪国开始
+  name="ding1"#纪文侯
+  dynasty_house=house_baijia122
+	religion="xizhouli" 
+	culture="qi"
+	father=han5835
+
+  3554.1.1 = {
+		birth = yes
+	}
+  3594.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+    give_nickname=nick_wenhou
+  }
+}
+han262={
+  name="hong1"#纪景侯
+  dynasty_house=house_baijia122#纪
+	religion="xizhouli" 
+	culture="qi"
+  father=han261
+
+  3580.1.1 = {
+		birth = yes
+	}
+  3624.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+    give_nickname=nick_jinhou
+  }
+}
+han263={
+  name="kou1"#纪昭侯，姜寇父
+  dynasty_house=house_baijia122#纪
+	religion="xizhouli" 
+	culture="qi"
+  father=han262
+
+  3601.1.1 = {
+		birth = yes
+	}
+  3645.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+    give_nickname=nick_zhaohou
+  }
+}
+han264={
+  name="yao2"#姜窔/姜虎，姜窔父，纪穆侯，姜寇父之子
+  dynasty_house=house_baijia122#纪
+	religion="xizhouli" 
+	culture="qi"
+  father=han262
+
+  3607.1.1 = {
+		birth = yes
+	}
+  3656.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+    give_nickname=nick_muhou
+  }
+}
+han265={
+  name="mozi"#纪烈侯，姜貉子，姜寇父之子
+  dynasty_house=house_baijia122#纪
+	religion="xizhouli" 
+	culture="qi"
+  father=han264
+
+  3628.1.1 = {
+		birth = yes
+	}
+  3672.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+    give_nickname=nick_liehou
+  }
+}
+han266={
+  name="hua1"#纪历侯，姜华父，姜寇父之子
+  dynasty_house=house_baijia122#纪
+	religion="xizhouli" 
+	culture="qi"
+  father=han265
+
+  3648.1.1 = {
+		birth = yes
+	}
+  3678.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+    give_nickname=nick_lihou1
+  }
+}
+han267={
+  name="gai"#纪灵侯，姜华父之子
+  dynasty_house=house_baijia122#纪
+	religion="xizhouli" 
+	culture="qi"
+  father=han266
+
+  3668.1.1 = {
+		birth = yes
+	}
+  3690.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+    give_nickname=nick_linghou
+  }
+}
+han268={
+  name="shezhi"#纪怀侯，纪灵侯之子
+  dynasty_house=house_baijia122#纪
+	religion="xizhouli" 
+	culture="qi"
+  father=han267
+
+  3686.1.1 = {
+		birth = yes
+	}
+  3717.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+    give_nickname=nick_huaihou
+  }
+}
+han269={
+  name="pan1"#纪愍侯，纪灵侯之子
+  dynasty_house=house_baijia122#纪
+	religion="xizhouli" 
+	culture="qi"
+  father=han267
+
+  3687.1.1 = {
+		birth = yes
+	}
+  3721.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+    give_nickname=nick_minhou
+  }
+}
+han270={
+  name="wushang"#纪悼侯，纪灵侯之子
+  dynasty_house=house_baijia122#纪
+	religion="xizhouli" 
+	culture="qi"
+  father=han267
+
+  3688.11.1= {
+		birth = yes
+	}
+  3723.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+    give_nickname=nick_daohou
+  }
+}
+han271={
+  name="yigao"#纪成侯，纪悼侯之子
+  dynasty_house=house_baijia122#纪
+	religion="xizhouli" 
+	culture="qi"
+  father=han270
+
+  3706.1.1= {
+		birth = yes
+	}
+  3729.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+    give_nickname=nick_chenghou
+  }
+}
+han272={
+  name="xuan2"#纪康侯，纪怀侯之子
+  dynasty_house=house_baijia122#纪
+	religion="xizhouli" 
+	culture="qi"
+  father=han270
+
+  3707.1.1= {
+		birth = yes
+	}
+  3731.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+    give_nickname=nick_kanghou
+  }
+}
+han273={
+  name="mao1"#纪殇侯，纪康侯之子
+  dynasty_house=house_baijia122#纪
+	religion="xizhouli" 
+	culture="qi"
+  father=han272
+
+  3724.1.1= {
+		birth = yes
+	}
+  3740.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+    give_nickname=nick_shanghou
+  }
+}
+han274={
+  name="hang"#纪炀侯
+  dynasty_house=house_baijia122#纪
+	religion="xizhouli" 
+	culture="qi"
+  father=han272
+
+  3725.1.1= {
+		birth = yes
+	}
+  3755.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+    give_nickname=nick_yanhou
+  }
+}
+han275={
+  name="ji4"#纪献侯，纪殇侯之子
+  dynasty_house=house_baijia122#纪
+	religion="xizhouli" 
+	culture="qi"
+  father=han272
+
+  3726.1.1= {
+		birth = yes
+	}
+  3758.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+    give_nickname=nick_xianhou1
+  }
+}
+han276={
+  name="luo"#纪泯侯，纪殇侯之子
+  dynasty_house=house_baijia122#纪
+	religion="xizhouli" 
+	culture="qi"
+  father=han275
+
+  3741.1.1 = {
+		birth = yes
+	}
+  3761.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+    give_nickname=nick_jiminhou
+  }
+}
+han277={
+  name="li2"#纪厘侯，纪献侯之子
+  dynasty_house=house_baijia122#纪
+	religion="xizhouli" 
+	culture="qi"
+  father=han275
+
+  3742.1.1 = {
+		birth = yes
+	}
+  3772.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+    give_nickname=nick_jilihou
+  }
+}
+han278={
+  name="chang"#纪成侯，纪献侯之子
+  dynasty_house=house_baijia122#纪
+	religion="xizhouli" 
+	culture="qi"
+  father=han277
+
+  3760.1.1 = {
+		birth = yes
+	}
+  3782.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+    give_nickname=nick_chenghou
+  }
+}
+han279={
+  name="yu7"#纪襄侯
+  dynasty_house=house_baijia122#纪
+	religion="xizhouli" 
+	culture="qi"
+  father=han278
+
+  3776.1.1 = {
+		birth = yes
+	}
+  3792.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+    give_nickname=nick_xianhou
+  }
+}
+han280={
+  name="shi3"#纪定侯
+  dynasty_house=house_baijia122#纪
+	religion="xizhouli" 
+	culture="qi"
+  father=han278
+
+  3777.1.1 = {
+		birth = yes
+	}
+  3798.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+    give_nickname=nick_dinghou
+  }
+}
+han281={
+  name="hu4"#纪闵侯，纪定侯之子
+  dynasty_house=house_baijia122#纪
+	religion="xizhouli" 
+	culture="qi"
+  father=han280
+
+  3796.1.1 = {
+		birth = yes
+	}
+  3820.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+    give_nickname=nick_jiminhou1
+  }
+}
+han282={
+  name="you2"#纪共侯，纪定侯之子
+  dynasty_house=house_baijia122#纪
+	religion="xizhouli" 
+	culture="qi"
+  father=han281
+
+  3816.1.1 = {
+		birth = yes
+	}
+  3829.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+    give_nickname=nick_jigonghou
+  }
+}
+han283={
+  name="xia2"#纪懿侯，纪闵侯之子，平王东迁时纪国国君
+  dynasty_house=house_baijia122#纪
+	religion="dongzhouli" 
+	culture="qi"
+  father=han282
+
+  3828.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han284={
+  name="zhe"#
+  dynasty_house=house_baijia122#纪
+	religion="dongzhouli" 
+	culture="qi"
+  father=han283
+
+  3848.1.1 = {
+		birth = yes
+	}
+  3900.1.1 = {
+    death = yes
+  }
+}
+han285={
+  name="buyi"#
+  dynasty_house=house_baijia122#纪
+	religion="dongzhouli" 
+	culture="qi"
+  father=han283
+
+  3848.11.11 = {
+		birth = yes
+	}
+  3900.1.1 = {
+    death = yes
+  }
+}
+han286={
+  name="jiang2"#
+  dynasty_house=house_baijia122#纪
+	religion="dongzhouli" 
+	culture="qi"
+  father=han283
+
+  3849.1.1 = {
+		birth = yes
+	}
+  3900.1.1 = {
+    death = yes
+  }
+}
+han287={
+  name="jiang3"#储君1号女1
+  dynasty_house=house_baijia122#纪
+	religion="dongzhouli" 
+	culture="qi"
+  father=han283
+  female=yes
+
+  3849.2.2 = {
+		birth = yes
+	}
+  3900.1.1 = {
+    death = yes
+  }
+}
+han288={
+  name="rong1"#储君1号女2
+  dynasty_house=house_baijia122#纪
+	religion="dongzhouli" 
+	culture="qi"
+  father=han283
+  female=yes
+
+  3849.3.2 = {
+		birth = yes
+	}
+  3900.1.1 = {
+    death = yes
+  }
+}
+### 纪国公室--姜姓公纪氏 ###
+han289={
+  name="che1"#
+  dynasty_house=house_xin20#纪
+	religion="dongzhouli" 
+	culture="qi"
+  father=han281
+
+  3817.1.1 = {
+		birth = yes
+	}
+  3860.1.1 = {
+    death = yes
+  }
+}
+han290={
+  name="zhou"#
+  dynasty_house=house_xin20#纪
+	religion="dongzhouli" 
+	culture="qi"
+  father=han289
+
+  3833.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han291={
+  name="cheng"#
+  dynasty_house=house_xin20#纪
+	religion="dongzhouli" 
+	culture="qi"
+  father=han290
+
+  3848.1.1 = {
+		birth = yes
+	}
+  3900.1.1 = {
+    death = yes
+  }
+}
+han292={
+  name="zhang"#
+  dynasty_house=house_xin20#纪
+	religion="dongzhouli" 
+	culture="qi"
+  father=han290
+
+  3848.11.11 = {
+		birth = yes
+	}
+  3900.1.1 = {
+    death = yes
+  }
+}
+han293={
+  name="qian1"#
+  dynasty_house=house_xin20#纪
+	religion="dongzhouli" 
+	culture="qi"
+  father=han290
+
+  3849.1.1 = {
+		birth = yes
+	}
+  3900.1.1 = {
+    death = yes
+  }
+}
+han294={
+  name="nongyu"#储君1号女1
+  dynasty_house=house_xin20#纪
+	religion="dongzhouli" 
+	culture="qi"
+  father=han290
+  female=yes
+
+  3849.2.2 = {
+		birth = yes
+	}
+  3900.1.1 = {
+    death = yes
+  }
+}
+### 纪国公室--姜姓酅氏 ###
+han295={
+  name="jiao2"#
+  dynasty_house=house_xin339#纪
+	religion="dongzhouli" 
+	culture="qi"
+  father=han282
+
+  3829.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han296={
+  name="ji7"#
+  dynasty_house=house_xin339#纪
+	religion="dongzhouli" 
+	culture="qi"
+  father=han295
+
+  3848.1.1 = {
+		birth = yes
+	}
+  3900.1.1 = {
+    death = yes
+  }
+}
+han297={
+  name="ding3"#
+  dynasty_house=house_xin339#纪
+	religion="dongzhouli" 
+	culture="qi"
+  father=han295
+
+  3848.11.11 = {
+		birth = yes
+	}
+  3900.1.1 = {
+    death = yes
+  }
+}
+ji1={
+  name="nanming1050"#
+  dynasty_house=house_xin339#纪
+	religion="dongzhouli" 
+	culture="qi"
+  father=han295
+
+  3848.12.21 = {
+		birth = yes
+	}
+  3900.1.1 = {
+    death = yes
+  }
+}
+ji2={
+  name="bfyznv18"#
+  dynasty_house=house_xin339#纪
+	religion="dongzhouli" 
+	culture="qi"
+  father=han295
+  female=yes
+
+  3848.12.11 = {
+		birth = yes
+	}
+  3900.1.1 = {
+    death = yes
+  }
+}
+### 纪国公室--姜姓裂氏 ###
+ji3={
+  name="tang1"
+  dynasty_house=house_xin342
+	religion="xizhouli" 
+	culture="qi"
+  father=han276
+
+  3760.1.1 = {
+		birth = yes
+	}
+  3821.1.1 = {
+    death = yes
+  }
+}
+ji4={
+  name="jie3"
+  dynasty_house=house_xin342
+	religion="dongzhouli" 
+	culture="qi"
+  father=ji3
+
+  3816.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+ji5={
+  name="shi7"
+  dynasty_house=house_xin342
+	religion="dongzhouli" 
+	culture="qi"
+  father=ji4
+
+  3835.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+ji6={
+  name="wen1"#
+  dynasty_house=house_xin342#纪
+	religion="dongzhouli" 
+	culture="qi"
+  father=ji4
+
+  3836.1.1 = {
+		birth = yes
+	}
+  3900.1.1 = {
+    death = yes
+  }
+}
+ji7={
+  name="tuo3"#
+  dynasty_house=house_xin342#纪
+	religion="dongzhouli" 
+	culture="qi"
+  father=ji4
+
+  3837.11.11 = {
+		birth = yes
+	}
+  3900.1.1 = {
+    death = yes
+  }
+}
+ji8={
+  name="jijian"#
+  dynasty_house=house_xin342#纪
+	religion="dongzhouli" 
+	culture="qi"
+  father=ji4
+
+  3838.1.1 = {
+		birth = yes
+	}
+  3900.1.1 = {
+    death = yes
+  }
+}
+ji9={
+  name="tuo4"#储君1号女1
+  dynasty_house=house_xin342#纪
+	religion="dongzhouli" 
+	culture="qi"
+  father=ji4
+  female=yes
+
+  3839.2.2 = {
+		birth = yes
+	}
+  3900.1.1 = {
+    death = yes
+  }
+}
+ji10={
+  name="shao1"#储君1号女2
+  dynasty_house=house_xin342#纪
+	religion="dongzhouli" 
+	culture="qi"
+  father=ji4
+  female=yes
+
+  3839.3.2 = {
+		birth = yes
+	}
+  3900.1.1 = {
+    death = yes
+  }
+}
+### 纪国公室--姜姓鄑氏 ###
+ji11={
+  name="chi1"
+  dynasty_house=house_xin343
+	religion="xizhouli" 
+	culture="qi"
+  father=han263
+
+  3644.1.1 = {
+		birth = yes
+	}
+  3700.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+ji12={
+  name="chan"
+  dynasty_house=house_xin343
+	religion="xizhouli" 
+	culture="qi"
+  father=ji11
+
+  3683.1.1 = {
+		birth = yes
+	}
+  3748.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+ji13={
+  name="zhang1"
+  dynasty_house=house_xin343
+	religion="xizhouli" 
+	culture="qi"
+  father=ji12
+
+  3718.1.1 = {
+		birth = yes
+	}
+  3760.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+ji14={
+  name="yan5"
+  dynasty_house=house_xin343
+	religion="xizhouli" 
+	culture="qi"
+  father=ji13
+
+  3746.1.1 = {
+		birth = yes
+	}
+  3797.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+ji15={
+  name="che1"
+  dynasty_house=house_xin343
+	religion="xizhouli" 
+	culture="qi"
+  father=ji14
+
+  3780.1.1 = {
+		birth = yes
+	}
+  3817.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+ji16={
+  name="dai3"#开局
+  dynasty_house=house_xin343
+	religion="dongzhouli" 
+	culture="qi"
+  father=ji15
+
+  3811.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+ji17={
+  name="jia3"
+  dynasty_house=house_xin343
+	religion="dongzhouli" 
+	culture="qi"
+  father=ji16
+
+  3831.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+ji18={
+  name="anshu"
+  dynasty_house=house_xin343
+	religion="dongzhouli" 
+	culture="qi"
+  father=ji16
+
+  3832.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+ji19={
+  name="yuan2"
+  dynasty_house=house_xin343
+	religion="dongzhouli" 
+	culture="qi"
+  father=ji16
+  female=yes
+
+  3833.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+ji20={
+  name="xin2"
+  dynasty_house=house_xin343
+	religion="dongzhouli" 
+	culture="qi"
+  father=ji16
+  female=yes
+
+  3834.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+### 纪国公室--姜姓郱氏 ###
+ji21={
+  name="nanming497"
+  dynasty_house=house_xin344
+	religion="xizhouli" 
+	culture="qi"
+  father=han269
+
+  3709.1.1 = {
+		birth = yes
+	}
+  3751.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+ji22={
+  name="nanming513"
+  dynasty_house=house_xin344
+	religion="xizhouli" 
+	culture="qi"
+  father=ji21
+
+  3733.1.1 = {
+		birth = yes
+	}
+  3777.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+ji23={
+  name="nanming525"
+  dynasty_house=house_xin344
+	religion="xizhouli" 
+	culture="qi"
+  father=ji22
+
+  3756.1.1 = {
+		birth = yes
+	}
+  3798.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+ji24={
+  name="nanming540"
+  dynasty_house=house_xin344
+	religion="xizhouli" 
+	culture="qi"
+  father=ji23
+
+  3781.1.1 = {
+		birth = yes
+	}
+  3820.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+ji25={
+  name="nanming549"#
+  dynasty_house=house_xin344
+	religion="dongzhouli" 
+	culture="qi"
+  father=ji24
+
+  3805.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+ji26={
+  name="nanming558"#
+  dynasty_house=house_xin344
+	religion="dongzhouli" 
+	culture="qi"
+  father=ji25
+
+  3824.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+ji27={
+  name="nanming577"#
+  dynasty_house=house_xin344
+	religion="dongzhouli" 
+	culture="qi"
+  father=ji25
+
+  3825.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+ji28={
+  name="meng1"#
+  dynasty_house=house_xin344
+	religion="dongzhouli" 
+	culture="qi"
+  father=ji25
+  female=yes
+
+  3826.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+ji29={
+  name="tengyu"#
+  dynasty_house=house_xin344
+	religion="dongzhouli" 
+	culture="qi"
+  father=ji25
+  female=yes
+
+  3827.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+ji30={
+  name="chu4"#
+  dynasty_house=house_xin344
+	religion="dongzhouli" 
+	culture="qi"
+  father=ji25
+  female=yes
+
+  3828.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+### 纪国公室--姜姓郚氏 ###
+ji31={
+  name="nanming372"
+  dynasty_house=house_xin345
+	religion="xizhouli" 
+	culture="qi"
+  father=han268
+
+  3709.1.1 = {
+		birth = yes
+	}
+  3751.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+ji32={
+  name="nanming377"
+  dynasty_house=house_xin345
+	religion="xizhouli" 
+	culture="qi"
+  father=ji31
+
+  3733.1.1 = {
+		birth = yes
+	}
+  3777.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+ji33={
+  name="nanming385"
+  dynasty_house=house_xin345
+	religion="xizhouli" 
+	culture="qi"
+  father=ji32
+
+  3756.1.1 = {
+		birth = yes
+	}
+  3798.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+ji34={
+  name="nanming397"
+  dynasty_house=house_xin345
+	religion="xizhouli" 
+	culture="qi"
+  father=ji33
+
+  3781.1.1 = {
+		birth = yes
+	}
+  3820.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+ji35={
+  name="nanming412"#
+  dynasty_house=house_xin345
+	religion="dongzhouli" 
+	culture="qi"
+  father=ji34
+
+  3804.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+ji36={
+  name="nanming430"#
+  dynasty_house=house_xin345
+	religion="dongzhouli" 
+	culture="qi"
+  father=ji35
+
+  3824.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+ji37={
+  name="nanming581"#
+  dynasty_house=house_xin345
+	religion="dongzhouli" 
+	culture="qi"
+  father=ji35
+
+  3825.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+ji38={
+  name="nvming77"#
+  dynasty_house=house_xin345
+	religion="dongzhouli" 
+	culture="qi"
+  father=ji35
+  female=yes
+
+  3826.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+ji39={
+  name="nvming80"#
+  dynasty_house=house_xin345
+	religion="dongzhouli" 
+	culture="qi"
+  father=ji35
+  female=yes
+
+  3827.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+ji40={
+  name="nvming83"#
+  dynasty_house=house_xin345
+	religion="dongzhouli" 
+	culture="qi"
+  father=ji35
+  female=yes
+
+  3828.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+
+#############  纪国卿族--伊祁姓刘氏 #############
+ji41={
+  name="nanming70"
+  dynasty=xin346
+	religion="xizhouli" 
+	culture="qi"
+  father=han2808
+
+  3578.12.12 = {
+		birth = yes
+	}
+  3625.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+ji42={
+  name="nanming77"
+  dynasty_house=house_xin347 
+	religion="xizhouli" 
+	culture="qi"
+  father=ji41
+
+  3604.1.1 = {
+		birth = yes
+	}
+  3648.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+ji43={
+  name="nanming92"
+  dynasty_house=house_xin347
+	religion="xizhouli" 
+	culture="qi"
+  father=ji42
+
+  3628.1.1 = {
+		birth = yes
+	}
+  3690.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+ji44={
+  name="nanming113"
+  dynasty_house=house_xin347
+	religion="xizhouli" 
+	culture="qi"
+  father=ji43
+
+  3660.1.1 = {
+		birth = yes
+	}
+  3707.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+ji45={
+  name="nanming125"
+  dynasty_house=house_xin347
+	religion="xizhouli" 
+	culture="qi"
+  father=ji44
+
+  3688.1.1 = {
+		birth = yes
+	}
+  3734.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+ji46={
+  name="nanming135"
+  dynasty_house=house_xin347
+	religion="xizhouli" 
+	culture="qi"
+  father=ji45
+
+  3718.1.1 = {
+		birth = yes
+	}
+  3765.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+ji47={
+  name="nanming158"
+  dynasty_house=house_xin347
+	religion="xizhouli" 
+	culture="qi"
+  father=ji46
+
+  3740.1.1 = {
+		birth = yes
+	}
+  3799.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+ji48={
+  name="nanming1072"#平王东迁时
+  dynasty_house=house_xin347
+	religion="dongzhouli" 
+	culture="qi"
+  father=ji47
+
+  3792.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+ji49={
+  name="nanming180"#储君1号
+  dynasty_house=house_xin347
+	religion="dongzhouli" 
+	culture="qi"
+  father=ji48
+
+  3830.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+ji50={
+  name="nvming273"#女1
+  dynasty_house=house_xin347
+	religion="dongzhouli" 
+	culture="qi"
+  father=ji48
+  female=yes
+
+  3834.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}

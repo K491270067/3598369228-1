@@ -1,0 +1,51 @@
+﻿##### d_zhenjianshi ############################
+
+### c_bomo
+
+
+### c_zhenjianya
+
+
+### c_chisui
+
+
+### c_yibao
+
+
+### c_shiwan
+# ZHENJIANYA
+2949 = {
+	holding = none
+}
+
+
+##### d_tuoheshi ############################
+
+### c_tuohe
+
+
+### c_zhenjian
+# ZHENJIAN
+2948 = {
+	holding = none
+}
+
+
+### c_xuehe
+# BOMO
+2883 = {
+	holding = none
+}
+
+
+##### d_mingshishi ############################
+
+### c_chishi
+
+
+### c_hemao
+
+
+### c_meinan
+
+

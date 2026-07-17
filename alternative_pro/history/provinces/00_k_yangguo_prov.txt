@@ -1,0 +1,57 @@
+﻿##### d_yangshi ############################
+
+### c_yanling
+# YANLING
+226 = {
+	culture = lu
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_yang
+# YANG
+241 = {
+	culture = lu
+	religion = xizhouli
+	holding = castle_holding
+}
+# DUYANG
+242 = {
+	holding = none
+}
+
+
+### c_fang1
+# FANG1
+373 = {
+	culture = lu
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+##### d_gengshi1 ############################
+
+### c_geng
+# GENG
+225 = {
+	culture = lu
+	religion = xizhouli
+	holding = castle_holding
+}
+# MI1
+371 = {
+	holding = none
+}
+
+
+### c_lu6
+# LU6
+2285 = {
+	culture = lu
+	religion = xizhouli
+	holding = castle_holding
+}
+
+

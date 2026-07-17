@@ -1,0 +1,193 @@
+﻿##### d_laishi ############################
+
+### c_muping
+# MUPING
+170 = {
+	culture = lai
+	religion = yili
+	holding = castle_holding
+}
+
+
+### c_lai1
+# LAI1
+171 = {
+	culture = lai
+	religion = yili
+	holding = castle_holding
+}
+# XUXIANG
+2222 = {
+	holding = none
+}
+
+
+### c_nanchangshan
+# NANCHANGSHAN
+177 = {
+	culture = lai
+	religion = yili
+	holding = castle_holding
+}
+
+
+##### d_huishi1 ############################
+
+### c_xian
+# XIAN
+172 = {
+	culture = lai
+	religion = yili
+	holding = castle_holding
+}
+
+
+### c_linqu1
+# LINQU1
+163 = {
+	culture = lai
+	religion = yili
+	holding = castle_holding
+}
+
+
+### c_xiqucheng
+# XIQUCHENG
+149 = {
+	culture = lai
+	religion = yili
+	holding = castle_holding
+}
+
+
+##### d_shuangjiushi1 ############################
+
+### c_ye
+# YE
+160 = {
+	culture = lai
+	religion = yili
+	holding = castle_holding
+}
+# YANGLE
+157 = {
+	holding = none
+}
+# YANGSHI
+159 = {
+	holding = none
+}
+
+
+### c_luxiang
+# LUXIANG
+179 = {
+	culture = lai
+	religion = yili
+	holding = castle_holding
+}
+
+
+### c_dangli
+# DANGLI
+158 = {
+	culture = lai
+	religion = yili
+	holding = castle_holding
+}
+
+
+##### d_tangshi1 ############################
+
+### c_tang1
+# TANG1
+165 = {
+	culture = lai
+	religion = yili
+	holding = castle_holding
+}
+# TINGKOU
+180 = {
+	holding = none
+}
+# YUZHI
+154 = {
+	holding = none
+}
+
+
+### c_qianzou
+# QIANZOU
+197 = {
+	culture = lai
+	religion = yili
+	holding = castle_holding
+}
+
+
+### c_pingdu
+# PINGDU
+153 = {
+	culture = lai
+	religion = yili
+	holding = castle_holding
+}
+
+
+##### d_qiushi1 ############################
+
+### c_mi
+# MI
+210 = {
+	culture = lai
+	religion = yili
+	holding = castle_holding
+}
+
+
+### c_mixian
+# MIXIANG
+211 = {
+	culture = lai
+	religion = yili
+	holding = castle_holding
+}
+
+
+### c_pingcheng1
+# PINGCHENG1
+2227 = {
+	culture = lai
+	religion = yili
+	holding = castle_holding
+}
+
+
+##### d_zhengyushi ############################
+
+### c_yiwei
+# YIWEI
+156 = {
+	culture = lai
+	religion = yili
+	holding = castle_holding
+}
+# DAO1
+2231 = {
+	holding = none
+}
+# JIAOYANG
+2228 = {
+	holding = none
+}
+
+
+### c_gaomi
+# GAOMI
+145 = {
+	culture = lai
+	religion = yili
+	holding = castle_holding
+}
+
+

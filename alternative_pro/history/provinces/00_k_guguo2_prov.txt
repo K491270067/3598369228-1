@@ -1,0 +1,44 @@
+﻿##### d_gushi2 ############################
+
+### c_saicheng
+# 
+1776 = {
+	holding = none
+}
+
+
+### c_linping
+# 
+1780 = {
+	holding = none
+}
+
+
+### c_shixi
+# 
+1783 = {
+	holding = none
+}
+
+
+### c_gu7
+# 
+1784 = {
+	holding = none
+}
+
+
+### c_zhuyang
+# 
+1785 = {
+	holding = none
+}
+
+
+### c_shandu
+# 
+1786 = {
+	holding = none
+}
+
+
