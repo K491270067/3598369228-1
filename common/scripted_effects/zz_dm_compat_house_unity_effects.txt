@@ -1,0 +1,52 @@
+﻿# Vanilla 1.19.0.6 compatibility override.
+# Only the eligibility check changes; the original unity mutation remains unchanged.
+add_clan_unity_interaction_effect = {
+	if = {
+		limit = {
+			$CHARACTER$ = { dm_compat_uses_house_unity_trigger = yes }
+			$TARGET$ = { dm_compat_uses_house_unity_trigger = yes }
+			exists = $CHARACTER$.house
+			exists = $TARGET$.house
+			$CHARACTER$.house = $TARGET$.house
+			trigger_if = {
+				limit = {
+					exists = scope:actor
+					exists = scope:recipient
+					scope:actor != scope:recipient
+				}
+				NOT = { $CHARACTER$ = $TARGET$ }
+			}
+		}
+
+		apply_clan_unity_interaction_effect = {
+			CHARACTER = $CHARACTER$
+			TARGET = $TARGET$
+			DESC = $DESC$
+			VALUE = $VALUE$
+			VALUE_REVERSED = no
+		}
+	}
+	else_if = {
+		limit = {
+			$REVERSE_NON_HOUSE_TARGET$ = yes
+			$CHARACTER$ = { dm_compat_uses_house_unity_trigger = yes }
+			$CHARACTER$.house ?= {
+				house_head = $CHARACTER$
+			}
+			OR = {
+				AND = {
+					exists = $TARGET$.house
+					NOT = { $CHARACTER$.house = $TARGET$.house }
+				}
+				$TARGET$ = { is_lowborn = yes }
+			}
+		}
+		apply_clan_unity_interaction_effect = {
+			CHARACTER = $CHARACTER$
+			TARGET = $TARGET$
+			DESC = $DESC$
+			VALUE = $VALUE$
+			VALUE_REVERSED = yes
+		}
+	}
+}

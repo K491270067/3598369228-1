@@ -1,4 +1,4 @@
-######################################################
+﻿######################################################
 ################ SPRING AND AUTUMN ###################
 ######################################################
 # The layout follows vanilla gui/window_struggle.gui. The data bindings use
@@ -81,7 +81,7 @@ window = {
 			}
 
 			# Current phase banner, matching default_struggle_phase_banner visually.
-			container = {
+			widget = {
 				position = { 60 100 }
 				size = { 125 145 }
 
@@ -401,7 +401,6 @@ window = {
 					}
 
 					button_standard = {
-						parentanchor = hcenter
 						size = { 210 36 }
 						text = "SAAS_ENDING_DECISION_BACK"
 						onclick = "[GetVariableSystem.Clear('showing_saas_ending_decisions')]"
@@ -483,8 +482,9 @@ window = {
 								max_width = 560
 							}
 
+							spacer = { size = { 0 5 } }
+
 							fixedgridbox = {
-								margin_top = 5
 								addcolumn = 42
 								addrow = 42
 								setitemsizefromcell = yes
@@ -748,9 +748,7 @@ types Situation
 			onclick = "[PdxGuiTriggerAllAnimations('catalyst_refresh')]"
 
 			tooltipwidget = {
-				situation_phase_type_tooltip = {
-					datacontext = "[FutureSituationPhase.GetType]"
-				}
+				using = situation_phase_type_tooltip
 			}
 
 			widget = {

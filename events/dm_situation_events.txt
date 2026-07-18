@@ -32,10 +32,6 @@ fallen_of_zhou_dynasty_struggle.1004 = {
 		name = fallen_of_zhou_dynasty_struggle.1004.a
 		saas_clear_participant_stance_effect = yes
 		add_trait = character_involve_supporters_of_zhou_dynasty
-		saas_trigger_catalyst_effect = {
-			CATALYST = saas_catalyst_wangdao_gains_member
-			CHARACTER = root
-		}
 		ai_chance = {
 			base = 35
 			modifier = { add = 35 has_trait = just }

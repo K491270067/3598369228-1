@@ -1,51 +1,4 @@
-﻿# 封建制 #
-feudal_admin_government = {
-	government_rules = {
-		create_cadet_branches = yes
-		rulers_should_have_dynasty = yes
-		dynasty_named_realms = yes
-		legitimacy = yes
-		inherit_from_dynastic_government = no
-		noble_families = yes
-		allow_accolades = yes
-	}
-
-	royal_court = any
-
-	fallback = 1
-
-	primary_holding = castle_holding
-	valid_holdings = { temple_citadel_holding }
-	required_county_holdings = { castle_holding city_holding church_holding }
-
-	domicile_type = estate
-	compatible_government_type_succession = { feudal_admin_government }
-
-	vassal_contract_group = feudal_vassal
-
-	ai = {
-		use_legends = yes
-	}
-
-	# Use flags instead of has_government for moddability if possible (i.e., wherever not visible to the player).
-	flags = {
-		government_is_feudal
-		government_is_settled
-		may_elevate_co_monarch
-		government_uses_crown_authority
-		government_uses_domain_limit
-		government_uses_domicile_but_not_adventurer
-		government_has_county_tier_noble_families
-	}
-
-	mechanic_type = feudal
-	is_mechanic_type_default = yes
-
-	color = hsv{ 0.67 1.00 0.78 }
-	realm_mask_offset = { 0.0 0.01 }
-	realm_mask_scale = { 1 1 }
-}
-# 封建行政制 #
+﻿# 封建行政制 #
 feudal_admin_government = {
 	government_rules = {
 		create_cadet_branches = yes
@@ -67,7 +20,7 @@ feudal_admin_government = {
 		admin_allows_holding_multiple_primary_tier_titles = yes
 	}
 	fallback = 2
-	
+
 	mechanic_type = administrative
 	is_mechanic_type_default = no
 
@@ -78,6 +31,7 @@ feudal_admin_government = {
 	required_county_holdings = { castle_holding city_holding church_holding }
 
 	domicile_type = estate
+	house_unity = clan_house_unity
 	main_administrative_tier = duchy
 	min_appointment_tier = county
 	minimum_provincial_maa_tier = county

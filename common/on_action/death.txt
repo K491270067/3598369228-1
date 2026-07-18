@@ -1268,7 +1268,7 @@ on_death = {
 		# Effect of reducing the house unity has to be delayed in death_management.0100 so that your succession laws don't change from lowered house unity before the succession happens
 		if = {
 			limit = {
-				government_has_flag = government_is_clan
+				dm_compat_uses_house_unity_trigger = yes
 				house ?= {
 					house_head = root
 					NOT = { has_house_unity_stage = impassive }

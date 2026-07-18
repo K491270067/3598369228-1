@@ -1,0 +1,125 @@
+﻿# Vanilla 1.19.0.6 compatibility override.
+# Prevent a stale or duplicated house-bloc list entry from adding a truce to itself.
+tgp_leave_house_bloc_effect = {
+	save_scope_as = leaver
+	house_confederation ?= {
+		save_scope_as = bloc
+		leading_house ?= { save_scope_as = leader }
+	}
+	if = {
+		limit = {
+			exists = scope:bloc
+			scope:leaver.house_head.house.house_confederation ?= scope:bloc
+		}
+		if = {
+			limit = {
+				scope:bloc = {
+					any_confederation_member_house = { count <= 2 }
+				}
+			}
+			custom_description = {
+				text = leave_house_bloc_effect
+				subject = scope:leaver.house_head
+				object = scope:bloc.leading_house.house_head
+			}
+			custom_description = {
+				text = disband_house_bloc_effect
+				subject = scope:bloc.leading_house.house_head
+			}
+		}
+		else_if = {
+			limit = { scope:leader != scope:leaver }
+			custom_description = {
+				text = leave_house_bloc_cooldown_effect
+				subject = scope:leaver.house_head
+				object = scope:bloc.leading_house.house_head
+				add_to_variable_list = {
+					name = left_bloc_cooldown
+					target = scope:bloc
+					years = tgp_leave_house_bloc_cooldown_years_value
+				}
+			}
+		}
+		if = {
+			limit = { scope:leader = scope:leaver }
+			scope:bloc = {
+				show_as_tooltip = { tgp_find_new_house_bloc_leader_effect = yes }
+			}
+		}
+		else = {
+			if = {
+				limit = { $OPINION$ = flag:yes }
+				scope:leader ?= {
+					house_head ?= {
+						if = {
+							limit = {
+								has_opinion_modifier = {
+									target = scope:leaver.house_head
+									modifier = joined_house_bloc_opinion
+								}
+							}
+							remove_opinion = {
+								target = scope:leaver.house_head
+								modifier = joined_house_bloc_opinion
+							}
+						}
+						add_opinion = {
+							target = scope:leaver.house_head
+							modifier = left_house_bloc_opinion
+							opinion = -15
+						}
+					}
+					change_house_relation_effect = {
+						HOUSE = scope:leaver
+						VALUE = house_relation_damage_medium_value
+						REASON = left_bloc
+						CHAR = scope:leaver.house_head
+						TARGET_CHAR = scope:leader.house_head
+						TITLE = scope:dummy_gender
+					}
+				}
+			}
+			if = {
+				limit = { $TRUCE$ = flag:yes }
+				scope:leaver.house_head = {
+					custom_tooltip = {
+						text = tgp_leave_house_bloc_truce_tt
+						scope:bloc = {
+							every_confederation_member_house = {
+								every_house_member = {
+									limit = {
+										top_liege = scope:leaver.house_head.top_liege
+										is_landed = yes
+									}
+									if = {
+										limit = { house != scope:leaver }
+										add_to_list = truce_targets
+									}
+									else = { add_to_list = truce_getters }
+								}
+							}
+							every_in_list = {
+								list = truce_targets
+								save_temporary_scope_as = truce_target_temp
+								every_in_list = {
+									list = truce_getters
+									if = {
+										limit = { this != scope:truce_target_temp }
+										add_truce_one_way = {
+											character = scope:truce_target_temp
+											years = tgp_leave_house_bloc_truce_years_value
+											name = TRUCE_LEFT_BLOC
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		scope:bloc ?= {
+			hidden_effect = { remove_confederation_member_house = scope:leaver }
+		}
+	}
+}

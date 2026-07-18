@@ -1050,7 +1050,7 @@ fp3_free_house_member_cb = {
 	allowed_for_character = {
 		is_house_head = yes
 		OR = {
-			government_has_flag = government_is_clan
+			dm_compat_uses_house_unity_trigger = yes
 			has_perk = thicker_than_water_perk
 		}
 		NOT = {
@@ -1108,7 +1108,7 @@ fp3_free_house_member_cb = {
 		scope:attacker = {
 			if = {
 				limit = {
-					government_has_flag = government_is_clan
+					dm_compat_uses_house_unity_trigger = yes
 				}
 				house = {
 					add_unity_value = {
@@ -1195,7 +1195,7 @@ fp3_unify_house_cb = {
 	allowed_for_character = {
 		is_house_head = yes
 		OR = {
-			government_has_flag = government_is_clan
+			dm_compat_uses_house_unity_trigger = yes
 			has_perk = thicker_than_water_perk
 		}
 		is_independent_ruler = yes

@@ -1183,15 +1183,34 @@ world_persian_empire = {}
 
 world_siberia = {}
 
-world_steppe = {}
+world_steppe = {
+	regions = {
+		world_steppe_west
+		world_steppe_central
+		world_steppe_east
+	}
+}
 
-world_steppe_central = {}
+world_steppe_central = {
+	regions = {
+		world_huaxia_bingzhou
+		world_huaxia_daidi
+	}
+}
 
-world_steppe_east = {}
+world_steppe_east = {
+	regions = {
+		world_huaxia_youzhou
+	}
+}
 
 world_steppe_tarim = {}
 
-world_steppe_west = {}
+world_steppe_west = {
+	regions = {
+		world_huaxia_yongzhou
+	}
+}
 
 world_tibet = {}
 
