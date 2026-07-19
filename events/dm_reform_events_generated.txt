@@ -1,0 +1,2926 @@
+namespace = dm_reform
+
+dm_reform.1101 = {
+	type = character_event
+	title = dm_reform.1101.t
+	desc = dm_reform.1101.desc
+	theme = court_event
+	left_portrait = scope:dm_reform_actor
+	immediate = {
+		scope:dm_reform_story = {
+			random_in_list = {
+				variable = dm_reform_opponents
+				save_scope_as = dm_reform_actor
+			}
+		}
+		if = {
+			limit = { NOT = { exists = scope:dm_reform_actor } }
+			root = { save_scope_as = dm_reform_actor }
+		}
+	}
+	option = {
+		name = dm_reform.event.measured_response
+		custom_tooltip = dm_reform.event.chance_tt
+		random_list = {
+			50 = {
+				modifier = {
+					add = 35
+					root = { martial >= 22 }
+				}
+				modifier = {
+					add = 25
+					scope:dm_reform_story = {
+						dm_reform_has_reformer_trigger = yes
+						var:dm_reform_reformer = { martial >= 22 }
+					}
+				}
+				modifier = {
+					add = 10
+					root = { OR = { has_trait = brave has_trait = strategist } }
+				}
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = 3 }
+					change_variable = { name = dm_reform_support add = 1 }
+					set_variable = { name = dm_reform_last_result value = flag:success }
+				}
+			trigger_event = { id = dm_reform.2101 days = 1 }
+			}
+			50 = {
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = -4 }
+					change_variable = { name = dm_reform_support add = -2 }
+					set_variable = { name = dm_reform_last_result value = flag:failure }
+				}
+			trigger_event = { id = dm_reform.2101 days = 1 }
+			}
+		}
+	}
+	option = {
+		name = dm_reform.event.costly_response
+		trigger = { prestige >= 100 }
+		add_prestige = -100
+		scope:dm_reform_story = {
+			change_variable = { name = dm_reform_progress add = 5 }
+			change_variable = { name = dm_reform_support add = 1 }
+			set_variable = { name = dm_reform_last_result value = flag:great_success }
+		}
+			trigger_event = { id = dm_reform.2101 days = 1 }
+	}
+}
+
+dm_reform.1102 = {
+	type = character_event
+	title = dm_reform.1102.t
+	desc = dm_reform.1102.desc
+	theme = court_event
+	left_portrait = scope:dm_reform_actor
+	immediate = {
+		scope:dm_reform_story = {
+			random_in_list = {
+				variable = dm_reform_opponents
+				save_scope_as = dm_reform_actor
+			}
+		}
+		if = {
+			limit = { NOT = { exists = scope:dm_reform_actor } }
+			root = { save_scope_as = dm_reform_actor }
+		}
+	}
+	option = {
+		name = dm_reform.event.measured_response
+		custom_tooltip = dm_reform.event.chance_tt
+		random_list = {
+			50 = {
+				modifier = {
+					add = 35
+					root = { intrigue >= 22 }
+				}
+				modifier = {
+					add = 25
+					scope:dm_reform_story = {
+						dm_reform_has_reformer_trigger = yes
+						var:dm_reform_reformer = { intrigue >= 22 }
+					}
+				}
+				modifier = {
+					add = 10
+					root = { OR = { has_trait = deceitful has_trait = schemer } }
+				}
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = 3 }
+					change_variable = { name = dm_reform_support add = 1 }
+					set_variable = { name = dm_reform_last_result value = flag:success }
+				}
+			trigger_event = { id = dm_reform.2102 days = 1 }
+			}
+			50 = {
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = -4 }
+					change_variable = { name = dm_reform_support add = -2 }
+					set_variable = { name = dm_reform_last_result value = flag:failure }
+				}
+			trigger_event = { id = dm_reform.2102 days = 1 }
+			}
+		}
+	}
+	option = {
+		name = dm_reform.event.costly_response
+		trigger = { prestige >= 100 }
+		add_prestige = -100
+		scope:dm_reform_story = {
+			change_variable = { name = dm_reform_progress add = 5 }
+			change_variable = { name = dm_reform_support add = 1 }
+			set_variable = { name = dm_reform_last_result value = flag:great_success }
+		}
+			trigger_event = { id = dm_reform.2102 days = 1 }
+	}
+}
+
+dm_reform.1103 = {
+	type = character_event
+	title = dm_reform.1103.t
+	desc = dm_reform.1103.desc
+	theme = court_event
+	left_portrait = scope:dm_reform_actor
+	immediate = {
+		scope:dm_reform_story = {
+			random_in_list = {
+				variable = dm_reform_opponents
+				save_scope_as = dm_reform_actor
+			}
+		}
+		if = {
+			limit = { NOT = { exists = scope:dm_reform_actor } }
+			root = { save_scope_as = dm_reform_actor }
+		}
+	}
+	option = {
+		name = dm_reform.event.measured_response
+		custom_tooltip = dm_reform.event.chance_tt
+		random_list = {
+			50 = {
+				modifier = {
+					add = 35
+					root = { diplomacy >= 22 }
+				}
+				modifier = {
+					add = 25
+					scope:dm_reform_story = {
+						dm_reform_has_reformer_trigger = yes
+						var:dm_reform_reformer = { diplomacy >= 22 }
+					}
+				}
+				modifier = {
+					add = 10
+					root = { OR = { has_trait = gregarious has_trait = just } }
+				}
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = 3 }
+					change_variable = { name = dm_reform_support add = 1 }
+					set_variable = { name = dm_reform_last_result value = flag:success }
+				}
+			trigger_event = { id = dm_reform.2103 days = 1 }
+			}
+			50 = {
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = -4 }
+					change_variable = { name = dm_reform_support add = -2 }
+					set_variable = { name = dm_reform_last_result value = flag:failure }
+				}
+			trigger_event = { id = dm_reform.2103 days = 1 }
+			}
+		}
+	}
+	option = {
+		name = dm_reform.event.costly_response
+		trigger = { prestige >= 100 }
+		add_prestige = -100
+		scope:dm_reform_story = {
+			change_variable = { name = dm_reform_progress add = 5 }
+			change_variable = { name = dm_reform_support add = 1 }
+			set_variable = { name = dm_reform_last_result value = flag:great_success }
+		}
+			trigger_event = { id = dm_reform.2103 days = 1 }
+	}
+}
+
+dm_reform.1104 = {
+	type = character_event
+	title = dm_reform.1104.t
+	desc = dm_reform.1104.desc
+	theme = court_event
+	left_portrait = scope:dm_reform_actor
+	immediate = {
+		scope:dm_reform_story = {
+			random_in_list = {
+				variable = dm_reform_opponents
+				save_scope_as = dm_reform_actor
+			}
+		}
+		if = {
+			limit = { NOT = { exists = scope:dm_reform_actor } }
+			root = { save_scope_as = dm_reform_actor }
+		}
+	}
+	option = {
+		name = dm_reform.event.measured_response
+		custom_tooltip = dm_reform.event.chance_tt
+		random_list = {
+			50 = {
+				modifier = {
+					add = 35
+					root = { stewardship >= 22 }
+				}
+				modifier = {
+					add = 25
+					scope:dm_reform_story = {
+						dm_reform_has_reformer_trigger = yes
+						var:dm_reform_reformer = { stewardship >= 22 }
+					}
+				}
+				modifier = {
+					add = 10
+					root = { OR = { has_trait = diligent has_trait = administrator } }
+				}
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = 3 }
+					change_variable = { name = dm_reform_support add = 1 }
+					set_variable = { name = dm_reform_last_result value = flag:success }
+				}
+			trigger_event = { id = dm_reform.2104 days = 1 }
+			}
+			50 = {
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = -4 }
+					change_variable = { name = dm_reform_support add = -2 }
+					set_variable = { name = dm_reform_last_result value = flag:failure }
+				}
+			trigger_event = { id = dm_reform.2104 days = 1 }
+			}
+		}
+	}
+	option = {
+		name = dm_reform.event.costly_response
+		trigger = { prestige >= 100 }
+		add_prestige = -100
+		scope:dm_reform_story = {
+			change_variable = { name = dm_reform_progress add = 5 }
+			change_variable = { name = dm_reform_support add = 1 }
+			set_variable = { name = dm_reform_last_result value = flag:great_success }
+		}
+			trigger_event = { id = dm_reform.2104 days = 1 }
+	}
+}
+
+dm_reform.1105 = {
+	type = character_event
+	title = dm_reform.1105.t
+	desc = dm_reform.1105.desc
+	theme = court_event
+	left_portrait = scope:dm_reform_actor
+	immediate = {
+		scope:dm_reform_story = {
+			random_in_list = {
+				variable = dm_reform_opponents
+				save_scope_as = dm_reform_actor
+			}
+		}
+		if = {
+			limit = { NOT = { exists = scope:dm_reform_actor } }
+			root = { save_scope_as = dm_reform_actor }
+		}
+	}
+	option = {
+		name = dm_reform.event.measured_response
+		custom_tooltip = dm_reform.event.chance_tt
+		random_list = {
+			50 = {
+				modifier = {
+					add = 35
+					root = { learning >= 22 }
+				}
+				modifier = {
+					add = 25
+					scope:dm_reform_story = {
+						dm_reform_has_reformer_trigger = yes
+						var:dm_reform_reformer = { learning >= 22 }
+					}
+				}
+				modifier = {
+					add = 10
+					root = { OR = { has_trait = scholar has_trait = shrewd } }
+				}
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = 3 }
+					change_variable = { name = dm_reform_support add = 1 }
+					set_variable = { name = dm_reform_last_result value = flag:success }
+				}
+			trigger_event = { id = dm_reform.2105 days = 1 }
+			}
+			50 = {
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = -4 }
+					change_variable = { name = dm_reform_support add = -2 }
+					set_variable = { name = dm_reform_last_result value = flag:failure }
+				}
+			trigger_event = { id = dm_reform.2105 days = 1 }
+			}
+		}
+	}
+	option = {
+		name = dm_reform.event.costly_response
+		trigger = { prestige >= 100 }
+		add_prestige = -100
+		scope:dm_reform_story = {
+			change_variable = { name = dm_reform_progress add = 5 }
+			change_variable = { name = dm_reform_support add = 1 }
+			set_variable = { name = dm_reform_last_result value = flag:great_success }
+		}
+			trigger_event = { id = dm_reform.2105 days = 1 }
+	}
+}
+
+dm_reform.1106 = {
+	type = character_event
+	title = dm_reform.1106.t
+	desc = dm_reform.1106.desc
+	theme = court_event
+	left_portrait = scope:dm_reform_actor
+	immediate = {
+		scope:dm_reform_story = {
+			random_in_list = {
+				variable = dm_reform_opponents
+				save_scope_as = dm_reform_actor
+			}
+		}
+		if = {
+			limit = { NOT = { exists = scope:dm_reform_actor } }
+			root = { save_scope_as = dm_reform_actor }
+		}
+	}
+	option = {
+		name = dm_reform.event.measured_response
+		custom_tooltip = dm_reform.event.chance_tt
+		random_list = {
+			50 = {
+				modifier = {
+					add = 35
+					root = { prowess >= 22 }
+				}
+				modifier = {
+					add = 25
+					scope:dm_reform_story = {
+						dm_reform_has_reformer_trigger = yes
+						var:dm_reform_reformer = { prowess >= 22 }
+					}
+				}
+				modifier = {
+					add = 10
+					root = { OR = { has_trait = brave has_trait = strong } }
+				}
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = 3 }
+					change_variable = { name = dm_reform_support add = 1 }
+					set_variable = { name = dm_reform_last_result value = flag:success }
+				}
+			trigger_event = { id = dm_reform.2106 days = 1 }
+			}
+			50 = {
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = -4 }
+					change_variable = { name = dm_reform_support add = -2 }
+					set_variable = { name = dm_reform_last_result value = flag:failure }
+				}
+			trigger_event = { id = dm_reform.2106 days = 1 }
+			}
+		}
+	}
+	option = {
+		name = dm_reform.event.costly_response
+		trigger = { prestige >= 100 }
+		add_prestige = -100
+		scope:dm_reform_story = {
+			change_variable = { name = dm_reform_progress add = 5 }
+			change_variable = { name = dm_reform_support add = 1 }
+			set_variable = { name = dm_reform_last_result value = flag:great_success }
+		}
+			trigger_event = { id = dm_reform.2106 days = 1 }
+	}
+}
+
+dm_reform.1107 = {
+	type = character_event
+	title = dm_reform.1107.t
+	desc = dm_reform.1107.desc
+	theme = court_event
+	left_portrait = scope:dm_reform_actor
+	immediate = {
+		scope:dm_reform_story = {
+			random_in_list = {
+				variable = dm_reform_opponents
+				save_scope_as = dm_reform_actor
+			}
+		}
+		if = {
+			limit = { NOT = { exists = scope:dm_reform_actor } }
+			root = { save_scope_as = dm_reform_actor }
+		}
+	}
+	option = {
+		name = dm_reform.event.measured_response
+		custom_tooltip = dm_reform.event.chance_tt
+		random_list = {
+			50 = {
+				modifier = {
+					add = 35
+					root = { stewardship >= 22 }
+				}
+				modifier = {
+					add = 25
+					scope:dm_reform_story = {
+						dm_reform_has_reformer_trigger = yes
+						var:dm_reform_reformer = { stewardship >= 22 }
+					}
+				}
+				modifier = {
+					add = 10
+					root = { OR = { has_trait = diligent has_trait = administrator } }
+				}
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = 3 }
+					change_variable = { name = dm_reform_support add = 1 }
+					set_variable = { name = dm_reform_last_result value = flag:success }
+				}
+			trigger_event = { id = dm_reform.2107 days = 1 }
+			}
+			50 = {
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = -4 }
+					change_variable = { name = dm_reform_support add = -2 }
+					set_variable = { name = dm_reform_last_result value = flag:failure }
+				}
+			trigger_event = { id = dm_reform.2107 days = 1 }
+			}
+		}
+	}
+	option = {
+		name = dm_reform.event.costly_response
+		trigger = { prestige >= 100 }
+		add_prestige = -100
+		scope:dm_reform_story = {
+			change_variable = { name = dm_reform_progress add = 5 }
+			change_variable = { name = dm_reform_support add = 1 }
+			set_variable = { name = dm_reform_last_result value = flag:great_success }
+		}
+			trigger_event = { id = dm_reform.2107 days = 1 }
+	}
+}
+
+dm_reform.1108 = {
+	type = character_event
+	title = dm_reform.1108.t
+	desc = dm_reform.1108.desc
+	theme = court_event
+	left_portrait = scope:dm_reform_actor
+	immediate = {
+		scope:dm_reform_story = {
+			random_in_list = {
+				variable = dm_reform_opponents
+				save_scope_as = dm_reform_actor
+			}
+		}
+		if = {
+			limit = { NOT = { exists = scope:dm_reform_actor } }
+			root = { save_scope_as = dm_reform_actor }
+		}
+	}
+	option = {
+		name = dm_reform.event.measured_response
+		custom_tooltip = dm_reform.event.chance_tt
+		random_list = {
+			50 = {
+				modifier = {
+					add = 35
+					root = { diplomacy >= 18 }
+				}
+				modifier = {
+					add = 25
+					scope:dm_reform_story = {
+						dm_reform_has_reformer_trigger = yes
+						var:dm_reform_reformer = { diplomacy >= 18 }
+					}
+				}
+				modifier = {
+					add = 10
+					root = { OR = { has_trait = gregarious has_trait = just } }
+				}
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = 2 }
+					change_variable = { name = dm_reform_support add = 1 }
+					set_variable = { name = dm_reform_last_result value = flag:success }
+				}
+			trigger_event = { id = dm_reform.2108 days = 1 }
+			}
+			50 = {
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = -2 }
+					change_variable = { name = dm_reform_support add = -1 }
+					set_variable = { name = dm_reform_last_result value = flag:failure }
+				}
+			trigger_event = { id = dm_reform.2108 days = 1 }
+			}
+		}
+	}
+	option = {
+		name = dm_reform.event.costly_response
+		trigger = { prestige >= 100 }
+		add_prestige = -100
+		scope:dm_reform_story = {
+			change_variable = { name = dm_reform_progress add = 4 }
+			change_variable = { name = dm_reform_support add = 1 }
+			set_variable = { name = dm_reform_last_result value = flag:great_success }
+		}
+			trigger_event = { id = dm_reform.2108 days = 1 }
+	}
+}
+
+dm_reform.1109 = {
+	type = character_event
+	title = dm_reform.1109.t
+	desc = dm_reform.1109.desc
+	theme = court_event
+	left_portrait = scope:dm_reform_actor
+	immediate = {
+		scope:dm_reform_story = {
+			random_in_list = {
+				variable = dm_reform_opponents
+				save_scope_as = dm_reform_actor
+			}
+		}
+		if = {
+			limit = { NOT = { exists = scope:dm_reform_actor } }
+			root = { save_scope_as = dm_reform_actor }
+		}
+	}
+	option = {
+		name = dm_reform.event.measured_response
+		custom_tooltip = dm_reform.event.chance_tt
+		random_list = {
+			50 = {
+				modifier = {
+					add = 35
+					root = { stewardship >= 18 }
+				}
+				modifier = {
+					add = 25
+					scope:dm_reform_story = {
+						dm_reform_has_reformer_trigger = yes
+						var:dm_reform_reformer = { stewardship >= 18 }
+					}
+				}
+				modifier = {
+					add = 10
+					root = { OR = { has_trait = diligent has_trait = administrator } }
+				}
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = 2 }
+					change_variable = { name = dm_reform_support add = 1 }
+					set_variable = { name = dm_reform_last_result value = flag:success }
+				}
+			trigger_event = { id = dm_reform.2109 days = 1 }
+			}
+			50 = {
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = -2 }
+					change_variable = { name = dm_reform_support add = -1 }
+					set_variable = { name = dm_reform_last_result value = flag:failure }
+				}
+			trigger_event = { id = dm_reform.2109 days = 1 }
+			}
+		}
+	}
+	option = {
+		name = dm_reform.event.costly_response
+		trigger = { prestige >= 100 }
+		add_prestige = -100
+		scope:dm_reform_story = {
+			change_variable = { name = dm_reform_progress add = 4 }
+			change_variable = { name = dm_reform_support add = 1 }
+			set_variable = { name = dm_reform_last_result value = flag:great_success }
+		}
+			trigger_event = { id = dm_reform.2109 days = 1 }
+	}
+}
+
+dm_reform.1110 = {
+	type = character_event
+	title = dm_reform.1110.t
+	desc = dm_reform.1110.desc
+	theme = court_event
+	left_portrait = scope:dm_reform_actor
+	immediate = {
+		scope:dm_reform_story = {
+			random_in_list = {
+				variable = dm_reform_opponents
+				save_scope_as = dm_reform_actor
+			}
+		}
+		if = {
+			limit = { NOT = { exists = scope:dm_reform_actor } }
+			root = { save_scope_as = dm_reform_actor }
+		}
+	}
+	option = {
+		name = dm_reform.event.measured_response
+		custom_tooltip = dm_reform.event.chance_tt
+		random_list = {
+			50 = {
+				modifier = {
+					add = 35
+					root = { martial >= 18 }
+				}
+				modifier = {
+					add = 25
+					scope:dm_reform_story = {
+						dm_reform_has_reformer_trigger = yes
+						var:dm_reform_reformer = { martial >= 18 }
+					}
+				}
+				modifier = {
+					add = 10
+					root = { OR = { has_trait = brave has_trait = strategist } }
+				}
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = 2 }
+					change_variable = { name = dm_reform_support add = 1 }
+					set_variable = { name = dm_reform_last_result value = flag:success }
+				}
+			trigger_event = { id = dm_reform.2110 days = 1 }
+			}
+			50 = {
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = -2 }
+					change_variable = { name = dm_reform_support add = -1 }
+					set_variable = { name = dm_reform_last_result value = flag:failure }
+				}
+			trigger_event = { id = dm_reform.2110 days = 1 }
+			}
+		}
+	}
+	option = {
+		name = dm_reform.event.costly_response
+		trigger = { prestige >= 100 }
+		add_prestige = -100
+		scope:dm_reform_story = {
+			change_variable = { name = dm_reform_progress add = 4 }
+			change_variable = { name = dm_reform_support add = 1 }
+			set_variable = { name = dm_reform_last_result value = flag:great_success }
+		}
+			trigger_event = { id = dm_reform.2110 days = 1 }
+	}
+}
+
+dm_reform.1111 = {
+	type = character_event
+	title = dm_reform.1111.t
+	desc = dm_reform.1111.desc
+	theme = court_event
+	left_portrait = scope:dm_reform_actor
+	immediate = {
+		scope:dm_reform_story = {
+			random_in_list = {
+				variable = dm_reform_opponents
+				save_scope_as = dm_reform_actor
+			}
+		}
+		if = {
+			limit = { NOT = { exists = scope:dm_reform_actor } }
+			root = { save_scope_as = dm_reform_actor }
+		}
+	}
+	option = {
+		name = dm_reform.event.measured_response
+		custom_tooltip = dm_reform.event.chance_tt
+		random_list = {
+			50 = {
+				modifier = {
+					add = 35
+					root = { intrigue >= 18 }
+				}
+				modifier = {
+					add = 25
+					scope:dm_reform_story = {
+						dm_reform_has_reformer_trigger = yes
+						var:dm_reform_reformer = { intrigue >= 18 }
+					}
+				}
+				modifier = {
+					add = 10
+					root = { OR = { has_trait = deceitful has_trait = schemer } }
+				}
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = 2 }
+					change_variable = { name = dm_reform_support add = 1 }
+					set_variable = { name = dm_reform_last_result value = flag:success }
+				}
+			trigger_event = { id = dm_reform.2111 days = 1 }
+			}
+			50 = {
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = -2 }
+					change_variable = { name = dm_reform_support add = -1 }
+					set_variable = { name = dm_reform_last_result value = flag:failure }
+				}
+			trigger_event = { id = dm_reform.2111 days = 1 }
+			}
+		}
+	}
+	option = {
+		name = dm_reform.event.costly_response
+		trigger = { prestige >= 100 }
+		add_prestige = -100
+		scope:dm_reform_story = {
+			change_variable = { name = dm_reform_progress add = 4 }
+			change_variable = { name = dm_reform_support add = 1 }
+			set_variable = { name = dm_reform_last_result value = flag:great_success }
+		}
+			trigger_event = { id = dm_reform.2111 days = 1 }
+	}
+}
+
+dm_reform.1112 = {
+	type = character_event
+	title = dm_reform.1112.t
+	desc = dm_reform.1112.desc
+	theme = court_event
+	left_portrait = scope:dm_reform_actor
+	immediate = {
+		scope:dm_reform_story = {
+			random_in_list = {
+				variable = dm_reform_opponents
+				save_scope_as = dm_reform_actor
+			}
+		}
+		if = {
+			limit = { NOT = { exists = scope:dm_reform_actor } }
+			root = { save_scope_as = dm_reform_actor }
+		}
+	}
+	option = {
+		name = dm_reform.event.measured_response
+		custom_tooltip = dm_reform.event.chance_tt
+		random_list = {
+			50 = {
+				modifier = {
+					add = 35
+					root = { learning >= 18 }
+				}
+				modifier = {
+					add = 25
+					scope:dm_reform_story = {
+						dm_reform_has_reformer_trigger = yes
+						var:dm_reform_reformer = { learning >= 18 }
+					}
+				}
+				modifier = {
+					add = 10
+					root = { OR = { has_trait = scholar has_trait = shrewd } }
+				}
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = 2 }
+					change_variable = { name = dm_reform_support add = 1 }
+					set_variable = { name = dm_reform_last_result value = flag:success }
+				}
+			trigger_event = { id = dm_reform.2112 days = 1 }
+			}
+			50 = {
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = -2 }
+					change_variable = { name = dm_reform_support add = -1 }
+					set_variable = { name = dm_reform_last_result value = flag:failure }
+				}
+			trigger_event = { id = dm_reform.2112 days = 1 }
+			}
+		}
+	}
+	option = {
+		name = dm_reform.event.costly_response
+		trigger = { prestige >= 100 }
+		add_prestige = -100
+		scope:dm_reform_story = {
+			change_variable = { name = dm_reform_progress add = 4 }
+			change_variable = { name = dm_reform_support add = 1 }
+			set_variable = { name = dm_reform_last_result value = flag:great_success }
+		}
+			trigger_event = { id = dm_reform.2112 days = 1 }
+	}
+}
+
+dm_reform.1113 = {
+	type = character_event
+	title = dm_reform.1113.t
+	desc = dm_reform.1113.desc
+	theme = court_event
+	left_portrait = scope:dm_reform_actor
+	immediate = {
+		scope:dm_reform_story = {
+			random_in_list = {
+				variable = dm_reform_opponents
+				save_scope_as = dm_reform_actor
+			}
+		}
+		if = {
+			limit = { NOT = { exists = scope:dm_reform_actor } }
+			root = { save_scope_as = dm_reform_actor }
+		}
+	}
+	option = {
+		name = dm_reform.event.measured_response
+		custom_tooltip = dm_reform.event.chance_tt
+		random_list = {
+			50 = {
+				modifier = {
+					add = 35
+					root = { diplomacy >= 18 }
+				}
+				modifier = {
+					add = 25
+					scope:dm_reform_story = {
+						dm_reform_has_reformer_trigger = yes
+						var:dm_reform_reformer = { diplomacy >= 18 }
+					}
+				}
+				modifier = {
+					add = 10
+					root = { OR = { has_trait = gregarious has_trait = just } }
+				}
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = 2 }
+					change_variable = { name = dm_reform_support add = 1 }
+					set_variable = { name = dm_reform_last_result value = flag:success }
+				}
+			trigger_event = { id = dm_reform.2113 days = 1 }
+			}
+			50 = {
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = -2 }
+					change_variable = { name = dm_reform_support add = -1 }
+					set_variable = { name = dm_reform_last_result value = flag:failure }
+				}
+			trigger_event = { id = dm_reform.2113 days = 1 }
+			}
+		}
+	}
+	option = {
+		name = dm_reform.event.costly_response
+		trigger = { prestige >= 100 }
+		add_prestige = -100
+		scope:dm_reform_story = {
+			change_variable = { name = dm_reform_progress add = 4 }
+			change_variable = { name = dm_reform_support add = 1 }
+			set_variable = { name = dm_reform_last_result value = flag:great_success }
+		}
+			trigger_event = { id = dm_reform.2113 days = 1 }
+	}
+}
+
+dm_reform.1114 = {
+	type = character_event
+	title = dm_reform.1114.t
+	desc = dm_reform.1114.desc
+	theme = court_event
+	left_portrait = scope:dm_reform_actor
+	immediate = {
+		scope:dm_reform_story = {
+			random_in_list = {
+				variable = dm_reform_opponents
+				save_scope_as = dm_reform_actor
+			}
+		}
+		if = {
+			limit = { NOT = { exists = scope:dm_reform_actor } }
+			root = { save_scope_as = dm_reform_actor }
+		}
+	}
+	option = {
+		name = dm_reform.event.measured_response
+		custom_tooltip = dm_reform.event.chance_tt
+		random_list = {
+			50 = {
+				modifier = {
+					add = 35
+					root = { prowess >= 18 }
+				}
+				modifier = {
+					add = 25
+					scope:dm_reform_story = {
+						dm_reform_has_reformer_trigger = yes
+						var:dm_reform_reformer = { prowess >= 18 }
+					}
+				}
+				modifier = {
+					add = 10
+					root = { OR = { has_trait = brave has_trait = strong } }
+				}
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = 2 }
+					change_variable = { name = dm_reform_support add = 1 }
+					set_variable = { name = dm_reform_last_result value = flag:success }
+				}
+			trigger_event = { id = dm_reform.2114 days = 1 }
+			}
+			50 = {
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = -2 }
+					change_variable = { name = dm_reform_support add = -1 }
+					set_variable = { name = dm_reform_last_result value = flag:failure }
+				}
+			trigger_event = { id = dm_reform.2114 days = 1 }
+			}
+		}
+	}
+	option = {
+		name = dm_reform.event.costly_response
+		trigger = { prestige >= 100 }
+		add_prestige = -100
+		scope:dm_reform_story = {
+			change_variable = { name = dm_reform_progress add = 4 }
+			change_variable = { name = dm_reform_support add = 1 }
+			set_variable = { name = dm_reform_last_result value = flag:great_success }
+		}
+			trigger_event = { id = dm_reform.2114 days = 1 }
+	}
+}
+
+dm_reform.1115 = {
+	type = character_event
+	title = dm_reform.1115.t
+	desc = dm_reform.1115.desc
+	theme = court_event
+	left_portrait = scope:dm_reform_actor
+	immediate = {
+		scope:dm_reform_story = {
+			random_in_list = {
+				variable = dm_reform_supporters
+				save_scope_as = dm_reform_actor
+			}
+		}
+		if = {
+			limit = { NOT = { exists = scope:dm_reform_actor } }
+			root = { save_scope_as = dm_reform_actor }
+		}
+	}
+	option = {
+		name = dm_reform.event.measured_response
+		custom_tooltip = dm_reform.event.chance_tt
+		random_list = {
+			50 = {
+				modifier = {
+					add = 35
+					root = { learning >= 14 }
+				}
+				modifier = {
+					add = 25
+					scope:dm_reform_story = {
+						dm_reform_has_reformer_trigger = yes
+						var:dm_reform_reformer = { learning >= 14 }
+					}
+				}
+				modifier = {
+					add = 10
+					root = { OR = { has_trait = scholar has_trait = shrewd } }
+				}
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = 1 }
+					change_variable = { name = dm_reform_support add = 0 }
+					set_variable = { name = dm_reform_last_result value = flag:success }
+				}
+			trigger_event = { id = dm_reform.2115 days = 1 }
+			}
+			50 = {
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = 0 }
+					change_variable = { name = dm_reform_support add = 0 }
+					set_variable = { name = dm_reform_last_result value = flag:failure }
+				}
+			trigger_event = { id = dm_reform.2115 days = 1 }
+			}
+		}
+	}
+	option = {
+		name = dm_reform.event.costly_response
+		trigger = { prestige >= 100 }
+		add_prestige = -100
+		scope:dm_reform_story = {
+			change_variable = { name = dm_reform_progress add = 3 }
+			change_variable = { name = dm_reform_support add = 0 }
+			set_variable = { name = dm_reform_last_result value = flag:great_success }
+		}
+			trigger_event = { id = dm_reform.2115 days = 1 }
+	}
+}
+
+dm_reform.1116 = {
+	type = character_event
+	title = dm_reform.1116.t
+	desc = dm_reform.1116.desc
+	theme = court_event
+	left_portrait = scope:dm_reform_actor
+	immediate = {
+		scope:dm_reform_story = {
+			random_in_list = {
+				variable = dm_reform_supporters
+				save_scope_as = dm_reform_actor
+			}
+		}
+		if = {
+			limit = { NOT = { exists = scope:dm_reform_actor } }
+			root = { save_scope_as = dm_reform_actor }
+		}
+	}
+	option = {
+		name = dm_reform.event.measured_response
+		custom_tooltip = dm_reform.event.chance_tt
+		random_list = {
+			50 = {
+				modifier = {
+					add = 35
+					root = { stewardship >= 14 }
+				}
+				modifier = {
+					add = 25
+					scope:dm_reform_story = {
+						dm_reform_has_reformer_trigger = yes
+						var:dm_reform_reformer = { stewardship >= 14 }
+					}
+				}
+				modifier = {
+					add = 10
+					root = { OR = { has_trait = diligent has_trait = administrator } }
+				}
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = 1 }
+					change_variable = { name = dm_reform_support add = 0 }
+					set_variable = { name = dm_reform_last_result value = flag:success }
+				}
+			trigger_event = { id = dm_reform.2116 days = 1 }
+			}
+			50 = {
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = 0 }
+					change_variable = { name = dm_reform_support add = 0 }
+					set_variable = { name = dm_reform_last_result value = flag:failure }
+				}
+			trigger_event = { id = dm_reform.2116 days = 1 }
+			}
+		}
+	}
+	option = {
+		name = dm_reform.event.costly_response
+		trigger = { prestige >= 100 }
+		add_prestige = -100
+		scope:dm_reform_story = {
+			change_variable = { name = dm_reform_progress add = 3 }
+			change_variable = { name = dm_reform_support add = 0 }
+			set_variable = { name = dm_reform_last_result value = flag:great_success }
+		}
+			trigger_event = { id = dm_reform.2116 days = 1 }
+	}
+}
+
+dm_reform.1117 = {
+	type = character_event
+	title = dm_reform.1117.t
+	desc = dm_reform.1117.desc
+	theme = court_event
+	left_portrait = scope:dm_reform_actor
+	immediate = {
+		scope:dm_reform_story = {
+			random_in_list = {
+				variable = dm_reform_supporters
+				save_scope_as = dm_reform_actor
+			}
+		}
+		if = {
+			limit = { NOT = { exists = scope:dm_reform_actor } }
+			root = { save_scope_as = dm_reform_actor }
+		}
+	}
+	option = {
+		name = dm_reform.event.measured_response
+		custom_tooltip = dm_reform.event.chance_tt
+		random_list = {
+			50 = {
+				modifier = {
+					add = 35
+					root = { intrigue >= 14 }
+				}
+				modifier = {
+					add = 25
+					scope:dm_reform_story = {
+						dm_reform_has_reformer_trigger = yes
+						var:dm_reform_reformer = { intrigue >= 14 }
+					}
+				}
+				modifier = {
+					add = 10
+					root = { OR = { has_trait = deceitful has_trait = schemer } }
+				}
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = 1 }
+					change_variable = { name = dm_reform_support add = 0 }
+					set_variable = { name = dm_reform_last_result value = flag:success }
+				}
+			trigger_event = { id = dm_reform.2117 days = 1 }
+			}
+			50 = {
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = 0 }
+					change_variable = { name = dm_reform_support add = 0 }
+					set_variable = { name = dm_reform_last_result value = flag:failure }
+				}
+			trigger_event = { id = dm_reform.2117 days = 1 }
+			}
+		}
+	}
+	option = {
+		name = dm_reform.event.costly_response
+		trigger = { prestige >= 100 }
+		add_prestige = -100
+		scope:dm_reform_story = {
+			change_variable = { name = dm_reform_progress add = 3 }
+			change_variable = { name = dm_reform_support add = 0 }
+			set_variable = { name = dm_reform_last_result value = flag:great_success }
+		}
+			trigger_event = { id = dm_reform.2117 days = 1 }
+	}
+}
+
+dm_reform.1118 = {
+	type = character_event
+	title = dm_reform.1118.t
+	desc = dm_reform.1118.desc
+	theme = court_event
+	left_portrait = scope:dm_reform_actor
+	immediate = {
+		scope:dm_reform_story = {
+			random_in_list = {
+				variable = dm_reform_supporters
+				save_scope_as = dm_reform_actor
+			}
+		}
+		if = {
+			limit = { NOT = { exists = scope:dm_reform_actor } }
+			root = { save_scope_as = dm_reform_actor }
+		}
+	}
+	option = {
+		name = dm_reform.event.measured_response
+		custom_tooltip = dm_reform.event.chance_tt
+		random_list = {
+			50 = {
+				modifier = {
+					add = 35
+					root = { martial >= 14 }
+				}
+				modifier = {
+					add = 25
+					scope:dm_reform_story = {
+						dm_reform_has_reformer_trigger = yes
+						var:dm_reform_reformer = { martial >= 14 }
+					}
+				}
+				modifier = {
+					add = 10
+					root = { OR = { has_trait = brave has_trait = strategist } }
+				}
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = 1 }
+					change_variable = { name = dm_reform_support add = 0 }
+					set_variable = { name = dm_reform_last_result value = flag:success }
+				}
+			trigger_event = { id = dm_reform.2118 days = 1 }
+			}
+			50 = {
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = 0 }
+					change_variable = { name = dm_reform_support add = 0 }
+					set_variable = { name = dm_reform_last_result value = flag:failure }
+				}
+			trigger_event = { id = dm_reform.2118 days = 1 }
+			}
+		}
+	}
+	option = {
+		name = dm_reform.event.costly_response
+		trigger = { prestige >= 100 }
+		add_prestige = -100
+		scope:dm_reform_story = {
+			change_variable = { name = dm_reform_progress add = 3 }
+			change_variable = { name = dm_reform_support add = 0 }
+			set_variable = { name = dm_reform_last_result value = flag:great_success }
+		}
+			trigger_event = { id = dm_reform.2118 days = 1 }
+	}
+}
+
+dm_reform.1119 = {
+	type = character_event
+	title = dm_reform.1119.t
+	desc = dm_reform.1119.desc
+	theme = court_event
+	left_portrait = scope:dm_reform_actor
+	immediate = {
+		scope:dm_reform_story = {
+			random_in_list = {
+				variable = dm_reform_supporters
+				save_scope_as = dm_reform_actor
+			}
+		}
+		if = {
+			limit = { NOT = { exists = scope:dm_reform_actor } }
+			root = { save_scope_as = dm_reform_actor }
+		}
+	}
+	option = {
+		name = dm_reform.event.measured_response
+		custom_tooltip = dm_reform.event.chance_tt
+		random_list = {
+			50 = {
+				modifier = {
+					add = 35
+					root = { diplomacy >= 14 }
+				}
+				modifier = {
+					add = 25
+					scope:dm_reform_story = {
+						dm_reform_has_reformer_trigger = yes
+						var:dm_reform_reformer = { diplomacy >= 14 }
+					}
+				}
+				modifier = {
+					add = 10
+					root = { OR = { has_trait = gregarious has_trait = just } }
+				}
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = 1 }
+					change_variable = { name = dm_reform_support add = 0 }
+					set_variable = { name = dm_reform_last_result value = flag:success }
+				}
+			trigger_event = { id = dm_reform.2119 days = 1 }
+			}
+			50 = {
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = 0 }
+					change_variable = { name = dm_reform_support add = 0 }
+					set_variable = { name = dm_reform_last_result value = flag:failure }
+				}
+			trigger_event = { id = dm_reform.2119 days = 1 }
+			}
+		}
+	}
+	option = {
+		name = dm_reform.event.costly_response
+		trigger = { prestige >= 100 }
+		add_prestige = -100
+		scope:dm_reform_story = {
+			change_variable = { name = dm_reform_progress add = 3 }
+			change_variable = { name = dm_reform_support add = 0 }
+			set_variable = { name = dm_reform_last_result value = flag:great_success }
+		}
+			trigger_event = { id = dm_reform.2119 days = 1 }
+	}
+}
+
+dm_reform.1120 = {
+	type = character_event
+	title = dm_reform.1120.t
+	desc = dm_reform.1120.desc
+	theme = court_event
+	left_portrait = scope:dm_reform_actor
+	immediate = {
+		scope:dm_reform_story = {
+			random_in_list = {
+				variable = dm_reform_supporters
+				save_scope_as = dm_reform_actor
+			}
+		}
+		if = {
+			limit = { NOT = { exists = scope:dm_reform_actor } }
+			root = { save_scope_as = dm_reform_actor }
+		}
+	}
+	option = {
+		name = dm_reform.event.measured_response
+		custom_tooltip = dm_reform.event.chance_tt
+		random_list = {
+			50 = {
+				modifier = {
+					add = 35
+					root = { prowess >= 14 }
+				}
+				modifier = {
+					add = 25
+					scope:dm_reform_story = {
+						dm_reform_has_reformer_trigger = yes
+						var:dm_reform_reformer = { prowess >= 14 }
+					}
+				}
+				modifier = {
+					add = 10
+					root = { OR = { has_trait = brave has_trait = strong } }
+				}
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = 1 }
+					change_variable = { name = dm_reform_support add = 0 }
+					set_variable = { name = dm_reform_last_result value = flag:success }
+				}
+			trigger_event = { id = dm_reform.2120 days = 1 }
+			}
+			50 = {
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = 0 }
+					change_variable = { name = dm_reform_support add = 0 }
+					set_variable = { name = dm_reform_last_result value = flag:failure }
+				}
+			trigger_event = { id = dm_reform.2120 days = 1 }
+			}
+		}
+	}
+	option = {
+		name = dm_reform.event.costly_response
+		trigger = { prestige >= 100 }
+		add_prestige = -100
+		scope:dm_reform_story = {
+			change_variable = { name = dm_reform_progress add = 3 }
+			change_variable = { name = dm_reform_support add = 0 }
+			set_variable = { name = dm_reform_last_result value = flag:great_success }
+		}
+			trigger_event = { id = dm_reform.2120 days = 1 }
+	}
+}
+
+dm_reform.1121 = {
+	type = character_event
+	title = dm_reform.1121.t
+	desc = dm_reform.1121.desc
+	theme = court_event
+	left_portrait = scope:dm_reform_actor
+	immediate = {
+		scope:dm_reform_story = {
+			random_in_list = {
+				variable = dm_reform_supporters
+				save_scope_as = dm_reform_actor
+			}
+		}
+		if = {
+			limit = { NOT = { exists = scope:dm_reform_actor } }
+			root = { save_scope_as = dm_reform_actor }
+		}
+	}
+	option = {
+		name = dm_reform.event.measured_response
+		custom_tooltip = dm_reform.event.chance_tt
+		random_list = {
+			50 = {
+				modifier = {
+					add = 35
+					root = { learning >= 14 }
+				}
+				modifier = {
+					add = 25
+					scope:dm_reform_story = {
+						dm_reform_has_reformer_trigger = yes
+						var:dm_reform_reformer = { learning >= 14 }
+					}
+				}
+				modifier = {
+					add = 10
+					root = { OR = { has_trait = scholar has_trait = shrewd } }
+				}
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = 1 }
+					change_variable = { name = dm_reform_support add = 0 }
+					set_variable = { name = dm_reform_last_result value = flag:success }
+				}
+			trigger_event = { id = dm_reform.2121 days = 1 }
+			}
+			50 = {
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = 0 }
+					change_variable = { name = dm_reform_support add = 0 }
+					set_variable = { name = dm_reform_last_result value = flag:failure }
+				}
+			trigger_event = { id = dm_reform.2121 days = 1 }
+			}
+		}
+	}
+	option = {
+		name = dm_reform.event.costly_response
+		trigger = { prestige >= 100 }
+		add_prestige = -100
+		scope:dm_reform_story = {
+			change_variable = { name = dm_reform_progress add = 3 }
+			change_variable = { name = dm_reform_support add = 0 }
+			set_variable = { name = dm_reform_last_result value = flag:great_success }
+		}
+			trigger_event = { id = dm_reform.2121 days = 1 }
+	}
+}
+
+dm_reform.1122 = {
+	type = character_event
+	title = dm_reform.1122.t
+	desc = dm_reform.1122.desc
+	theme = court_event
+	left_portrait = scope:dm_reform_actor
+	immediate = {
+		scope:dm_reform_story = {
+			random_in_list = {
+				variable = dm_reform_supporters
+				save_scope_as = dm_reform_actor
+			}
+		}
+		if = {
+			limit = { NOT = { exists = scope:dm_reform_actor } }
+			root = { save_scope_as = dm_reform_actor }
+		}
+	}
+	option = {
+		name = dm_reform.event.measured_response
+		custom_tooltip = dm_reform.event.chance_tt
+		random_list = {
+			50 = {
+				modifier = {
+					add = 35
+					root = { diplomacy >= 18 }
+				}
+				modifier = {
+					add = 25
+					scope:dm_reform_story = {
+						dm_reform_has_reformer_trigger = yes
+						var:dm_reform_reformer = { diplomacy >= 18 }
+					}
+				}
+				modifier = {
+					add = 10
+					root = { OR = { has_trait = gregarious has_trait = just } }
+				}
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = 4 }
+					change_variable = { name = dm_reform_support add = 1 }
+					set_variable = { name = dm_reform_last_result value = flag:success }
+				}
+			trigger_event = { id = dm_reform.2122 days = 1 }
+			}
+			50 = {
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = -1 }
+					change_variable = { name = dm_reform_support add = 0 }
+					set_variable = { name = dm_reform_last_result value = flag:failure }
+				}
+			trigger_event = { id = dm_reform.2122 days = 1 }
+			}
+		}
+	}
+	option = {
+		name = dm_reform.event.costly_response
+		trigger = { prestige >= 100 }
+		add_prestige = -100
+		scope:dm_reform_story = {
+			change_variable = { name = dm_reform_progress add = 6 }
+			change_variable = { name = dm_reform_support add = 1 }
+			set_variable = { name = dm_reform_last_result value = flag:great_success }
+		}
+			trigger_event = { id = dm_reform.2122 days = 1 }
+	}
+}
+
+dm_reform.1123 = {
+	type = character_event
+	title = dm_reform.1123.t
+	desc = dm_reform.1123.desc
+	theme = court_event
+	left_portrait = scope:dm_reform_actor
+	immediate = {
+		scope:dm_reform_story = {
+			random_in_list = {
+				variable = dm_reform_supporters
+				save_scope_as = dm_reform_actor
+			}
+		}
+		if = {
+			limit = { NOT = { exists = scope:dm_reform_actor } }
+			root = { save_scope_as = dm_reform_actor }
+		}
+	}
+	option = {
+		name = dm_reform.event.measured_response
+		custom_tooltip = dm_reform.event.chance_tt
+		random_list = {
+			50 = {
+				modifier = {
+					add = 35
+					root = { learning >= 18 }
+				}
+				modifier = {
+					add = 25
+					scope:dm_reform_story = {
+						dm_reform_has_reformer_trigger = yes
+						var:dm_reform_reformer = { learning >= 18 }
+					}
+				}
+				modifier = {
+					add = 10
+					root = { OR = { has_trait = scholar has_trait = shrewd } }
+				}
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = 4 }
+					change_variable = { name = dm_reform_support add = 1 }
+					set_variable = { name = dm_reform_last_result value = flag:success }
+				}
+			trigger_event = { id = dm_reform.2123 days = 1 }
+			}
+			50 = {
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = -1 }
+					change_variable = { name = dm_reform_support add = 0 }
+					set_variable = { name = dm_reform_last_result value = flag:failure }
+				}
+			trigger_event = { id = dm_reform.2123 days = 1 }
+			}
+		}
+	}
+	option = {
+		name = dm_reform.event.costly_response
+		trigger = { prestige >= 100 }
+		add_prestige = -100
+		scope:dm_reform_story = {
+			change_variable = { name = dm_reform_progress add = 6 }
+			change_variable = { name = dm_reform_support add = 1 }
+			set_variable = { name = dm_reform_last_result value = flag:great_success }
+		}
+			trigger_event = { id = dm_reform.2123 days = 1 }
+	}
+}
+
+dm_reform.1124 = {
+	type = character_event
+	title = dm_reform.1124.t
+	desc = dm_reform.1124.desc
+	theme = court_event
+	left_portrait = scope:dm_reform_actor
+	immediate = {
+		scope:dm_reform_story = {
+			random_in_list = {
+				variable = dm_reform_supporters
+				save_scope_as = dm_reform_actor
+			}
+		}
+		if = {
+			limit = { NOT = { exists = scope:dm_reform_actor } }
+			root = { save_scope_as = dm_reform_actor }
+		}
+	}
+	option = {
+		name = dm_reform.event.measured_response
+		custom_tooltip = dm_reform.event.chance_tt
+		random_list = {
+			50 = {
+				modifier = {
+					add = 35
+					root = { stewardship >= 18 }
+				}
+				modifier = {
+					add = 25
+					scope:dm_reform_story = {
+						dm_reform_has_reformer_trigger = yes
+						var:dm_reform_reformer = { stewardship >= 18 }
+					}
+				}
+				modifier = {
+					add = 10
+					root = { OR = { has_trait = diligent has_trait = administrator } }
+				}
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = 4 }
+					change_variable = { name = dm_reform_support add = 1 }
+					set_variable = { name = dm_reform_last_result value = flag:success }
+				}
+			trigger_event = { id = dm_reform.2124 days = 1 }
+			}
+			50 = {
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = -1 }
+					change_variable = { name = dm_reform_support add = 0 }
+					set_variable = { name = dm_reform_last_result value = flag:failure }
+				}
+			trigger_event = { id = dm_reform.2124 days = 1 }
+			}
+		}
+	}
+	option = {
+		name = dm_reform.event.costly_response
+		trigger = { prestige >= 100 }
+		add_prestige = -100
+		scope:dm_reform_story = {
+			change_variable = { name = dm_reform_progress add = 6 }
+			change_variable = { name = dm_reform_support add = 1 }
+			set_variable = { name = dm_reform_last_result value = flag:great_success }
+		}
+			trigger_event = { id = dm_reform.2124 days = 1 }
+	}
+}
+
+dm_reform.1125 = {
+	type = character_event
+	title = dm_reform.1125.t
+	desc = dm_reform.1125.desc
+	theme = court_event
+	left_portrait = scope:dm_reform_actor
+	immediate = {
+		scope:dm_reform_story = {
+			random_in_list = {
+				variable = dm_reform_supporters
+				save_scope_as = dm_reform_actor
+			}
+		}
+		if = {
+			limit = { NOT = { exists = scope:dm_reform_actor } }
+			root = { save_scope_as = dm_reform_actor }
+		}
+	}
+	option = {
+		name = dm_reform.event.measured_response
+		custom_tooltip = dm_reform.event.chance_tt
+		random_list = {
+			50 = {
+				modifier = {
+					add = 35
+					root = { martial >= 18 }
+				}
+				modifier = {
+					add = 25
+					scope:dm_reform_story = {
+						dm_reform_has_reformer_trigger = yes
+						var:dm_reform_reformer = { martial >= 18 }
+					}
+				}
+				modifier = {
+					add = 10
+					root = { OR = { has_trait = brave has_trait = strategist } }
+				}
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = 4 }
+					change_variable = { name = dm_reform_support add = 1 }
+					set_variable = { name = dm_reform_last_result value = flag:success }
+				}
+			trigger_event = { id = dm_reform.2125 days = 1 }
+			}
+			50 = {
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = -1 }
+					change_variable = { name = dm_reform_support add = 0 }
+					set_variable = { name = dm_reform_last_result value = flag:failure }
+				}
+			trigger_event = { id = dm_reform.2125 days = 1 }
+			}
+		}
+	}
+	option = {
+		name = dm_reform.event.costly_response
+		trigger = { prestige >= 100 }
+		add_prestige = -100
+		scope:dm_reform_story = {
+			change_variable = { name = dm_reform_progress add = 6 }
+			change_variable = { name = dm_reform_support add = 1 }
+			set_variable = { name = dm_reform_last_result value = flag:great_success }
+		}
+			trigger_event = { id = dm_reform.2125 days = 1 }
+	}
+}
+
+dm_reform.1126 = {
+	type = character_event
+	title = dm_reform.1126.t
+	desc = dm_reform.1126.desc
+	theme = court_event
+	left_portrait = scope:dm_reform_actor
+	immediate = {
+		scope:dm_reform_story = {
+			random_in_list = {
+				variable = dm_reform_supporters
+				save_scope_as = dm_reform_actor
+			}
+		}
+		if = {
+			limit = { NOT = { exists = scope:dm_reform_actor } }
+			root = { save_scope_as = dm_reform_actor }
+		}
+	}
+	option = {
+		name = dm_reform.event.measured_response
+		custom_tooltip = dm_reform.event.chance_tt
+		random_list = {
+			50 = {
+				modifier = {
+					add = 35
+					root = { intrigue >= 18 }
+				}
+				modifier = {
+					add = 25
+					scope:dm_reform_story = {
+						dm_reform_has_reformer_trigger = yes
+						var:dm_reform_reformer = { intrigue >= 18 }
+					}
+				}
+				modifier = {
+					add = 10
+					root = { OR = { has_trait = deceitful has_trait = schemer } }
+				}
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = 4 }
+					change_variable = { name = dm_reform_support add = 1 }
+					set_variable = { name = dm_reform_last_result value = flag:success }
+				}
+			}
+			50 = {
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = -1 }
+					change_variable = { name = dm_reform_support add = 0 }
+					set_variable = { name = dm_reform_last_result value = flag:failure }
+				}
+			}
+		}
+	}
+	option = {
+		name = dm_reform.event.costly_response
+		trigger = { prestige >= 100 }
+		add_prestige = -100
+		scope:dm_reform_story = {
+			change_variable = { name = dm_reform_progress add = 6 }
+			change_variable = { name = dm_reform_support add = 1 }
+			set_variable = { name = dm_reform_last_result value = flag:great_success }
+		}
+	}
+}
+
+dm_reform.1127 = {
+	type = character_event
+	title = dm_reform.1127.t
+	desc = dm_reform.1127.desc
+	theme = court_event
+	left_portrait = scope:dm_reform_actor
+	immediate = {
+		scope:dm_reform_story = {
+			random_in_list = {
+				variable = dm_reform_supporters
+				save_scope_as = dm_reform_actor
+			}
+		}
+		if = {
+			limit = { NOT = { exists = scope:dm_reform_actor } }
+			root = { save_scope_as = dm_reform_actor }
+		}
+	}
+	option = {
+		name = dm_reform.event.measured_response
+		custom_tooltip = dm_reform.event.chance_tt
+		random_list = {
+			50 = {
+				modifier = {
+					add = 35
+					root = { prowess >= 18 }
+				}
+				modifier = {
+					add = 25
+					scope:dm_reform_story = {
+						dm_reform_has_reformer_trigger = yes
+						var:dm_reform_reformer = { prowess >= 18 }
+					}
+				}
+				modifier = {
+					add = 10
+					root = { OR = { has_trait = brave has_trait = strong } }
+				}
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = 4 }
+					change_variable = { name = dm_reform_support add = 1 }
+					set_variable = { name = dm_reform_last_result value = flag:success }
+				}
+			}
+			50 = {
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = -1 }
+					change_variable = { name = dm_reform_support add = 0 }
+					set_variable = { name = dm_reform_last_result value = flag:failure }
+				}
+			}
+		}
+	}
+	option = {
+		name = dm_reform.event.costly_response
+		trigger = { prestige >= 100 }
+		add_prestige = -100
+		scope:dm_reform_story = {
+			change_variable = { name = dm_reform_progress add = 6 }
+			change_variable = { name = dm_reform_support add = 1 }
+			set_variable = { name = dm_reform_last_result value = flag:great_success }
+		}
+	}
+}
+
+dm_reform.1128 = {
+	type = character_event
+	title = dm_reform.1128.t
+	desc = dm_reform.1128.desc
+	theme = court_event
+	left_portrait = scope:dm_reform_actor
+	immediate = {
+		scope:dm_reform_story = {
+			random_in_list = {
+				variable = dm_reform_supporters
+				save_scope_as = dm_reform_actor
+			}
+		}
+		if = {
+			limit = { NOT = { exists = scope:dm_reform_actor } }
+			root = { save_scope_as = dm_reform_actor }
+		}
+	}
+	option = {
+		name = dm_reform.event.measured_response
+		custom_tooltip = dm_reform.event.chance_tt
+		random_list = {
+			50 = {
+				modifier = {
+					add = 35
+					root = { diplomacy >= 18 }
+				}
+				modifier = {
+					add = 25
+					scope:dm_reform_story = {
+						dm_reform_has_reformer_trigger = yes
+						var:dm_reform_reformer = { diplomacy >= 18 }
+					}
+				}
+				modifier = {
+					add = 10
+					root = { OR = { has_trait = gregarious has_trait = just } }
+				}
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = 4 }
+					change_variable = { name = dm_reform_support add = 1 }
+					set_variable = { name = dm_reform_last_result value = flag:success }
+				}
+			}
+			50 = {
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = -1 }
+					change_variable = { name = dm_reform_support add = 0 }
+					set_variable = { name = dm_reform_last_result value = flag:failure }
+				}
+			}
+		}
+	}
+	option = {
+		name = dm_reform.event.costly_response
+		trigger = { prestige >= 100 }
+		add_prestige = -100
+		scope:dm_reform_story = {
+			change_variable = { name = dm_reform_progress add = 6 }
+			change_variable = { name = dm_reform_support add = 1 }
+			set_variable = { name = dm_reform_last_result value = flag:great_success }
+		}
+	}
+}
+
+dm_reform.1129 = {
+	type = character_event
+	title = dm_reform.1129.t
+	desc = dm_reform.1129.desc
+	theme = court_event
+	left_portrait = scope:dm_reform_actor
+	immediate = {
+		scope:dm_reform_story = {
+			random_in_list = {
+				variable = dm_reform_supporters
+				save_scope_as = dm_reform_actor
+			}
+		}
+		if = {
+			limit = { NOT = { exists = scope:dm_reform_actor } }
+			root = { save_scope_as = dm_reform_actor }
+		}
+	}
+	option = {
+		name = dm_reform.event.measured_response
+		custom_tooltip = dm_reform.event.chance_tt
+		random_list = {
+			50 = {
+				modifier = {
+					add = 35
+					root = { intrigue >= 22 }
+				}
+				modifier = {
+					add = 25
+					scope:dm_reform_story = {
+						dm_reform_has_reformer_trigger = yes
+						var:dm_reform_reformer = { intrigue >= 22 }
+					}
+				}
+				modifier = {
+					add = 10
+					root = { OR = { has_trait = deceitful has_trait = schemer } }
+				}
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = 7 }
+					change_variable = { name = dm_reform_support add = 2 }
+					set_variable = { name = dm_reform_last_result value = flag:success }
+				}
+			}
+			50 = {
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = -2 }
+					change_variable = { name = dm_reform_support add = -1 }
+					set_variable = { name = dm_reform_last_result value = flag:failure }
+				}
+			}
+		}
+	}
+	option = {
+		name = dm_reform.event.costly_response
+		trigger = { prestige >= 100 }
+		add_prestige = -100
+		scope:dm_reform_story = {
+			change_variable = { name = dm_reform_progress add = 9 }
+			change_variable = { name = dm_reform_support add = 2 }
+			set_variable = { name = dm_reform_last_result value = flag:great_success }
+		}
+	}
+}
+
+dm_reform.1130 = {
+	type = character_event
+	title = dm_reform.1130.t
+	desc = dm_reform.1130.desc
+	theme = court_event
+	left_portrait = scope:dm_reform_actor
+	immediate = {
+		scope:dm_reform_story = {
+			random_in_list = {
+				variable = dm_reform_supporters
+				save_scope_as = dm_reform_actor
+			}
+		}
+		if = {
+			limit = { NOT = { exists = scope:dm_reform_actor } }
+			root = { save_scope_as = dm_reform_actor }
+		}
+	}
+	option = {
+		name = dm_reform.event.measured_response
+		custom_tooltip = dm_reform.event.chance_tt
+		random_list = {
+			50 = {
+				modifier = {
+					add = 35
+					root = { diplomacy >= 22 }
+				}
+				modifier = {
+					add = 25
+					scope:dm_reform_story = {
+						dm_reform_has_reformer_trigger = yes
+						var:dm_reform_reformer = { diplomacy >= 22 }
+					}
+				}
+				modifier = {
+					add = 10
+					root = { OR = { has_trait = gregarious has_trait = just } }
+				}
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = 7 }
+					change_variable = { name = dm_reform_support add = 2 }
+					set_variable = { name = dm_reform_last_result value = flag:success }
+				}
+			}
+			50 = {
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = -2 }
+					change_variable = { name = dm_reform_support add = -1 }
+					set_variable = { name = dm_reform_last_result value = flag:failure }
+				}
+			}
+		}
+	}
+	option = {
+		name = dm_reform.event.costly_response
+		trigger = { prestige >= 100 }
+		add_prestige = -100
+		scope:dm_reform_story = {
+			change_variable = { name = dm_reform_progress add = 9 }
+			change_variable = { name = dm_reform_support add = 2 }
+			set_variable = { name = dm_reform_last_result value = flag:great_success }
+		}
+	}
+}
+
+dm_reform.1131 = {
+	type = character_event
+	title = dm_reform.1131.t
+	desc = dm_reform.1131.desc
+	theme = court_event
+	left_portrait = scope:dm_reform_actor
+	immediate = {
+		scope:dm_reform_story = {
+			random_in_list = {
+				variable = dm_reform_supporters
+				save_scope_as = dm_reform_actor
+			}
+		}
+		if = {
+			limit = { NOT = { exists = scope:dm_reform_actor } }
+			root = { save_scope_as = dm_reform_actor }
+		}
+	}
+	option = {
+		name = dm_reform.event.measured_response
+		custom_tooltip = dm_reform.event.chance_tt
+		random_list = {
+			50 = {
+				modifier = {
+					add = 35
+					root = { learning >= 22 }
+				}
+				modifier = {
+					add = 25
+					scope:dm_reform_story = {
+						dm_reform_has_reformer_trigger = yes
+						var:dm_reform_reformer = { learning >= 22 }
+					}
+				}
+				modifier = {
+					add = 10
+					root = { OR = { has_trait = scholar has_trait = shrewd } }
+				}
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = 7 }
+					change_variable = { name = dm_reform_support add = 2 }
+					set_variable = { name = dm_reform_last_result value = flag:success }
+				}
+			}
+			50 = {
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = -2 }
+					change_variable = { name = dm_reform_support add = -1 }
+					set_variable = { name = dm_reform_last_result value = flag:failure }
+				}
+			}
+		}
+	}
+	option = {
+		name = dm_reform.event.costly_response
+		trigger = { prestige >= 100 }
+		add_prestige = -100
+		scope:dm_reform_story = {
+			change_variable = { name = dm_reform_progress add = 9 }
+			change_variable = { name = dm_reform_support add = 2 }
+			set_variable = { name = dm_reform_last_result value = flag:great_success }
+		}
+	}
+}
+
+dm_reform.1132 = {
+	type = character_event
+	title = dm_reform.1132.t
+	desc = dm_reform.1132.desc
+	theme = court_event
+	left_portrait = scope:dm_reform_actor
+	immediate = {
+		scope:dm_reform_story = {
+			random_in_list = {
+				variable = dm_reform_supporters
+				save_scope_as = dm_reform_actor
+			}
+		}
+		if = {
+			limit = { NOT = { exists = scope:dm_reform_actor } }
+			root = { save_scope_as = dm_reform_actor }
+		}
+	}
+	option = {
+		name = dm_reform.event.measured_response
+		custom_tooltip = dm_reform.event.chance_tt
+		random_list = {
+			50 = {
+				modifier = {
+					add = 35
+					root = { stewardship >= 22 }
+				}
+				modifier = {
+					add = 25
+					scope:dm_reform_story = {
+						dm_reform_has_reformer_trigger = yes
+						var:dm_reform_reformer = { stewardship >= 22 }
+					}
+				}
+				modifier = {
+					add = 10
+					root = { OR = { has_trait = diligent has_trait = administrator } }
+				}
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = 7 }
+					change_variable = { name = dm_reform_support add = 2 }
+					set_variable = { name = dm_reform_last_result value = flag:success }
+				}
+			}
+			50 = {
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = -2 }
+					change_variable = { name = dm_reform_support add = -1 }
+					set_variable = { name = dm_reform_last_result value = flag:failure }
+				}
+			}
+		}
+	}
+	option = {
+		name = dm_reform.event.costly_response
+		trigger = { prestige >= 100 }
+		add_prestige = -100
+		scope:dm_reform_story = {
+			change_variable = { name = dm_reform_progress add = 9 }
+			change_variable = { name = dm_reform_support add = 2 }
+			set_variable = { name = dm_reform_last_result value = flag:great_success }
+		}
+	}
+}
+
+dm_reform.1133 = {
+	type = character_event
+	title = dm_reform.1133.t
+	desc = dm_reform.1133.desc
+	theme = court_event
+	left_portrait = scope:dm_reform_actor
+	immediate = {
+		scope:dm_reform_story = {
+			random_in_list = {
+				variable = dm_reform_supporters
+				save_scope_as = dm_reform_actor
+			}
+		}
+		if = {
+			limit = { NOT = { exists = scope:dm_reform_actor } }
+			root = { save_scope_as = dm_reform_actor }
+		}
+	}
+	option = {
+		name = dm_reform.event.measured_response
+		custom_tooltip = dm_reform.event.chance_tt
+		random_list = {
+			50 = {
+				modifier = {
+					add = 35
+					root = { martial >= 22 }
+				}
+				modifier = {
+					add = 25
+					scope:dm_reform_story = {
+						dm_reform_has_reformer_trigger = yes
+						var:dm_reform_reformer = { martial >= 22 }
+					}
+				}
+				modifier = {
+					add = 10
+					root = { OR = { has_trait = brave has_trait = strategist } }
+				}
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = 7 }
+					change_variable = { name = dm_reform_support add = 2 }
+					set_variable = { name = dm_reform_last_result value = flag:success }
+				}
+			}
+			50 = {
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = -2 }
+					change_variable = { name = dm_reform_support add = -1 }
+					set_variable = { name = dm_reform_last_result value = flag:failure }
+				}
+			}
+		}
+	}
+	option = {
+		name = dm_reform.event.costly_response
+		trigger = { prestige >= 100 }
+		add_prestige = -100
+		scope:dm_reform_story = {
+			change_variable = { name = dm_reform_progress add = 9 }
+			change_variable = { name = dm_reform_support add = 2 }
+			set_variable = { name = dm_reform_last_result value = flag:great_success }
+		}
+	}
+}
+
+dm_reform.1134 = {
+	type = character_event
+	title = dm_reform.1134.t
+	desc = dm_reform.1134.desc
+	theme = court_event
+	left_portrait = scope:dm_reform_actor
+	immediate = {
+		scope:dm_reform_story = {
+			random_in_list = {
+				variable = dm_reform_supporters
+				save_scope_as = dm_reform_actor
+			}
+		}
+		if = {
+			limit = { NOT = { exists = scope:dm_reform_actor } }
+			root = { save_scope_as = dm_reform_actor }
+		}
+	}
+	option = {
+		name = dm_reform.event.measured_response
+		custom_tooltip = dm_reform.event.chance_tt
+		random_list = {
+			50 = {
+				modifier = {
+					add = 35
+					root = { prowess >= 22 }
+				}
+				modifier = {
+					add = 25
+					scope:dm_reform_story = {
+						dm_reform_has_reformer_trigger = yes
+						var:dm_reform_reformer = { prowess >= 22 }
+					}
+				}
+				modifier = {
+					add = 10
+					root = { OR = { has_trait = brave has_trait = strong } }
+				}
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = 7 }
+					change_variable = { name = dm_reform_support add = 2 }
+					set_variable = { name = dm_reform_last_result value = flag:success }
+				}
+			}
+			50 = {
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = -2 }
+					change_variable = { name = dm_reform_support add = -1 }
+					set_variable = { name = dm_reform_last_result value = flag:failure }
+				}
+			}
+		}
+	}
+	option = {
+		name = dm_reform.event.costly_response
+		trigger = { prestige >= 100 }
+		add_prestige = -100
+		scope:dm_reform_story = {
+			change_variable = { name = dm_reform_progress add = 9 }
+			change_variable = { name = dm_reform_support add = 2 }
+			set_variable = { name = dm_reform_last_result value = flag:great_success }
+		}
+	}
+}
+
+dm_reform.1135 = {
+	type = character_event
+	title = dm_reform.1135.t
+	desc = dm_reform.1135.desc
+	theme = court_event
+	left_portrait = scope:dm_reform_actor
+	immediate = {
+		scope:dm_reform_story = {
+			random_in_list = {
+				variable = dm_reform_supporters
+				save_scope_as = dm_reform_actor
+			}
+		}
+		if = {
+			limit = { NOT = { exists = scope:dm_reform_actor } }
+			root = { save_scope_as = dm_reform_actor }
+		}
+	}
+	option = {
+		name = dm_reform.event.measured_response
+		custom_tooltip = dm_reform.event.chance_tt
+		random_list = {
+			50 = {
+				modifier = {
+					add = 35
+					root = { diplomacy >= 22 }
+				}
+				modifier = {
+					add = 25
+					scope:dm_reform_story = {
+						dm_reform_has_reformer_trigger = yes
+						var:dm_reform_reformer = { diplomacy >= 22 }
+					}
+				}
+				modifier = {
+					add = 10
+					root = { OR = { has_trait = gregarious has_trait = just } }
+				}
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = 7 }
+					change_variable = { name = dm_reform_support add = 2 }
+					set_variable = { name = dm_reform_last_result value = flag:success }
+				}
+			}
+			50 = {
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = -2 }
+					change_variable = { name = dm_reform_support add = -1 }
+					set_variable = { name = dm_reform_last_result value = flag:failure }
+				}
+			}
+		}
+	}
+	option = {
+		name = dm_reform.event.costly_response
+		trigger = { prestige >= 100 }
+		add_prestige = -100
+		scope:dm_reform_story = {
+			change_variable = { name = dm_reform_progress add = 9 }
+			change_variable = { name = dm_reform_support add = 2 }
+			set_variable = { name = dm_reform_last_result value = flag:great_success }
+		}
+	}
+}
+
+dm_reform.2101 = {
+	type = character_event
+	title = dm_reform.chain_followup.t
+	desc = dm_reform.chain_followup.desc
+	theme = court_event
+	left_portrait = scope:dm_reform_actor
+	option = {
+		name = dm_reform.chain_followup.a
+		trigger_event = { id = dm_reform.3101 days = 2 }
+	}
+}
+
+dm_reform.3101 = {
+	type = character_event
+	title = dm_reform.chain_followup.t
+	desc = dm_reform.chain_followup.desc
+	theme = court_event
+	left_portrait = scope:dm_reform_actor
+	option = {
+		name = dm_reform.chain_followup.a
+	}
+}
+
+dm_reform.2102 = {
+	type = character_event
+	title = dm_reform.chain_followup.t
+	desc = dm_reform.chain_followup.desc
+	theme = court_event
+	left_portrait = scope:dm_reform_actor
+	option = {
+		name = dm_reform.chain_followup.a
+		trigger_event = { id = dm_reform.3102 days = 2 }
+	}
+}
+
+dm_reform.3102 = {
+	type = character_event
+	title = dm_reform.chain_followup.t
+	desc = dm_reform.chain_followup.desc
+	theme = court_event
+	left_portrait = scope:dm_reform_actor
+	option = {
+		name = dm_reform.chain_followup.a
+	}
+}
+
+dm_reform.2103 = {
+	type = character_event
+	title = dm_reform.chain_followup.t
+	desc = dm_reform.chain_followup.desc
+	theme = court_event
+	left_portrait = scope:dm_reform_actor
+	option = {
+		name = dm_reform.chain_followup.a
+		trigger_event = { id = dm_reform.3103 days = 2 }
+	}
+}
+
+dm_reform.3103 = {
+	type = character_event
+	title = dm_reform.chain_followup.t
+	desc = dm_reform.chain_followup.desc
+	theme = court_event
+	left_portrait = scope:dm_reform_actor
+	option = {
+		name = dm_reform.chain_followup.a
+	}
+}
+
+dm_reform.2104 = {
+	type = character_event
+	title = dm_reform.chain_followup.t
+	desc = dm_reform.chain_followup.desc
+	theme = court_event
+	left_portrait = scope:dm_reform_actor
+	option = {
+		name = dm_reform.chain_followup.a
+		trigger_event = { id = dm_reform.3104 days = 2 }
+	}
+}
+
+dm_reform.3104 = {
+	type = character_event
+	title = dm_reform.chain_followup.t
+	desc = dm_reform.chain_followup.desc
+	theme = court_event
+	left_portrait = scope:dm_reform_actor
+	option = {
+		name = dm_reform.chain_followup.a
+	}
+}
+
+dm_reform.2105 = {
+	type = character_event
+	title = dm_reform.chain_followup.t
+	desc = dm_reform.chain_followup.desc
+	theme = court_event
+	left_portrait = scope:dm_reform_actor
+	option = {
+		name = dm_reform.chain_followup.a
+		trigger_event = { id = dm_reform.3105 days = 2 }
+	}
+}
+
+dm_reform.3105 = {
+	type = character_event
+	title = dm_reform.chain_followup.t
+	desc = dm_reform.chain_followup.desc
+	theme = court_event
+	left_portrait = scope:dm_reform_actor
+	option = {
+		name = dm_reform.chain_followup.a
+	}
+}
+
+dm_reform.2106 = {
+	type = character_event
+	title = dm_reform.chain_followup.t
+	desc = dm_reform.chain_followup.desc
+	theme = court_event
+	left_portrait = scope:dm_reform_actor
+	option = {
+		name = dm_reform.chain_followup.a
+		trigger_event = { id = dm_reform.3106 days = 2 }
+	}
+}
+
+dm_reform.3106 = {
+	type = character_event
+	title = dm_reform.chain_followup.t
+	desc = dm_reform.chain_followup.desc
+	theme = court_event
+	left_portrait = scope:dm_reform_actor
+	option = {
+		name = dm_reform.chain_followup.a
+	}
+}
+
+dm_reform.2107 = {
+	type = character_event
+	title = dm_reform.chain_followup.t
+	desc = dm_reform.chain_followup.desc
+	theme = court_event
+	left_portrait = scope:dm_reform_actor
+	option = {
+		name = dm_reform.chain_followup.a
+		trigger_event = { id = dm_reform.3107 days = 2 }
+	}
+}
+
+dm_reform.3107 = {
+	type = character_event
+	title = dm_reform.chain_followup.t
+	desc = dm_reform.chain_followup.desc
+	theme = court_event
+	left_portrait = scope:dm_reform_actor
+	option = {
+		name = dm_reform.chain_followup.a
+	}
+}
+
+dm_reform.2108 = {
+	type = character_event
+	title = dm_reform.chain_followup.t
+	desc = dm_reform.chain_followup.desc
+	theme = court_event
+	left_portrait = scope:dm_reform_actor
+	option = {
+		name = dm_reform.chain_followup.a
+		trigger_event = { id = dm_reform.3108 days = 2 }
+	}
+}
+
+dm_reform.3108 = {
+	type = character_event
+	title = dm_reform.chain_followup.t
+	desc = dm_reform.chain_followup.desc
+	theme = court_event
+	left_portrait = scope:dm_reform_actor
+	option = {
+		name = dm_reform.chain_followup.a
+	}
+}
+
+dm_reform.2109 = {
+	type = character_event
+	title = dm_reform.chain_followup.t
+	desc = dm_reform.chain_followup.desc
+	theme = court_event
+	left_portrait = scope:dm_reform_actor
+	option = {
+		name = dm_reform.chain_followup.a
+		trigger_event = { id = dm_reform.3109 days = 2 }
+	}
+}
+
+dm_reform.3109 = {
+	type = character_event
+	title = dm_reform.chain_followup.t
+	desc = dm_reform.chain_followup.desc
+	theme = court_event
+	left_portrait = scope:dm_reform_actor
+	option = {
+		name = dm_reform.chain_followup.a
+	}
+}
+
+dm_reform.2110 = {
+	type = character_event
+	title = dm_reform.chain_followup.t
+	desc = dm_reform.chain_followup.desc
+	theme = court_event
+	left_portrait = scope:dm_reform_actor
+	option = {
+		name = dm_reform.chain_followup.a
+		trigger_event = { id = dm_reform.3110 days = 2 }
+	}
+}
+
+dm_reform.3110 = {
+	type = character_event
+	title = dm_reform.chain_followup.t
+	desc = dm_reform.chain_followup.desc
+	theme = court_event
+	left_portrait = scope:dm_reform_actor
+	option = {
+		name = dm_reform.chain_followup.a
+	}
+}
+
+dm_reform.2111 = {
+	type = character_event
+	title = dm_reform.chain_followup.t
+	desc = dm_reform.chain_followup.desc
+	theme = court_event
+	left_portrait = scope:dm_reform_actor
+	option = {
+		name = dm_reform.chain_followup.a
+		trigger_event = { id = dm_reform.3111 days = 2 }
+	}
+}
+
+dm_reform.3111 = {
+	type = character_event
+	title = dm_reform.chain_followup.t
+	desc = dm_reform.chain_followup.desc
+	theme = court_event
+	left_portrait = scope:dm_reform_actor
+	option = {
+		name = dm_reform.chain_followup.a
+	}
+}
+
+dm_reform.2112 = {
+	type = character_event
+	title = dm_reform.chain_followup.t
+	desc = dm_reform.chain_followup.desc
+	theme = court_event
+	left_portrait = scope:dm_reform_actor
+	option = {
+		name = dm_reform.chain_followup.a
+		trigger_event = { id = dm_reform.3112 days = 2 }
+	}
+}
+
+dm_reform.3112 = {
+	type = character_event
+	title = dm_reform.chain_followup.t
+	desc = dm_reform.chain_followup.desc
+	theme = court_event
+	left_portrait = scope:dm_reform_actor
+	option = {
+		name = dm_reform.chain_followup.a
+	}
+}
+
+dm_reform.2113 = {
+	type = character_event
+	title = dm_reform.chain_followup.t
+	desc = dm_reform.chain_followup.desc
+	theme = court_event
+	left_portrait = scope:dm_reform_actor
+	option = {
+		name = dm_reform.chain_followup.a
+		trigger_event = { id = dm_reform.3113 days = 2 }
+	}
+}
+
+dm_reform.3113 = {
+	type = character_event
+	title = dm_reform.chain_followup.t
+	desc = dm_reform.chain_followup.desc
+	theme = court_event
+	left_portrait = scope:dm_reform_actor
+	option = {
+		name = dm_reform.chain_followup.a
+	}
+}
+
+dm_reform.2114 = {
+	type = character_event
+	title = dm_reform.chain_followup.t
+	desc = dm_reform.chain_followup.desc
+	theme = court_event
+	left_portrait = scope:dm_reform_actor
+	option = {
+		name = dm_reform.chain_followup.a
+		trigger_event = { id = dm_reform.3114 days = 2 }
+	}
+}
+
+dm_reform.3114 = {
+	type = character_event
+	title = dm_reform.chain_followup.t
+	desc = dm_reform.chain_followup.desc
+	theme = court_event
+	left_portrait = scope:dm_reform_actor
+	option = {
+		name = dm_reform.chain_followup.a
+	}
+}
+
+dm_reform.2115 = {
+	type = character_event
+	title = dm_reform.chain_followup.t
+	desc = dm_reform.chain_followup.desc
+	theme = court_event
+	left_portrait = scope:dm_reform_actor
+	option = {
+		name = dm_reform.chain_followup.a
+		trigger_event = { id = dm_reform.3115 days = 2 }
+	}
+}
+
+dm_reform.3115 = {
+	type = character_event
+	title = dm_reform.chain_followup.t
+	desc = dm_reform.chain_followup.desc
+	theme = court_event
+	left_portrait = scope:dm_reform_actor
+	option = {
+		name = dm_reform.chain_followup.a
+	}
+}
+
+dm_reform.2116 = {
+	type = character_event
+	title = dm_reform.chain_followup.t
+	desc = dm_reform.chain_followup.desc
+	theme = court_event
+	left_portrait = scope:dm_reform_actor
+	option = {
+		name = dm_reform.chain_followup.a
+		trigger_event = { id = dm_reform.3116 days = 2 }
+	}
+}
+
+dm_reform.3116 = {
+	type = character_event
+	title = dm_reform.chain_followup.t
+	desc = dm_reform.chain_followup.desc
+	theme = court_event
+	left_portrait = scope:dm_reform_actor
+	option = {
+		name = dm_reform.chain_followup.a
+	}
+}
+
+dm_reform.2117 = {
+	type = character_event
+	title = dm_reform.chain_followup.t
+	desc = dm_reform.chain_followup.desc
+	theme = court_event
+	left_portrait = scope:dm_reform_actor
+	option = {
+		name = dm_reform.chain_followup.a
+		trigger_event = { id = dm_reform.3117 days = 2 }
+	}
+}
+
+dm_reform.3117 = {
+	type = character_event
+	title = dm_reform.chain_followup.t
+	desc = dm_reform.chain_followup.desc
+	theme = court_event
+	left_portrait = scope:dm_reform_actor
+	option = {
+		name = dm_reform.chain_followup.a
+	}
+}
+
+dm_reform.2118 = {
+	type = character_event
+	title = dm_reform.chain_followup.t
+	desc = dm_reform.chain_followup.desc
+	theme = court_event
+	left_portrait = scope:dm_reform_actor
+	option = {
+		name = dm_reform.chain_followup.a
+		trigger_event = { id = dm_reform.3118 days = 2 }
+	}
+}
+
+dm_reform.3118 = {
+	type = character_event
+	title = dm_reform.chain_followup.t
+	desc = dm_reform.chain_followup.desc
+	theme = court_event
+	left_portrait = scope:dm_reform_actor
+	option = {
+		name = dm_reform.chain_followup.a
+	}
+}
+
+dm_reform.2119 = {
+	type = character_event
+	title = dm_reform.chain_followup.t
+	desc = dm_reform.chain_followup.desc
+	theme = court_event
+	left_portrait = scope:dm_reform_actor
+	option = {
+		name = dm_reform.chain_followup.a
+		trigger_event = { id = dm_reform.3119 days = 2 }
+	}
+}
+
+dm_reform.3119 = {
+	type = character_event
+	title = dm_reform.chain_followup.t
+	desc = dm_reform.chain_followup.desc
+	theme = court_event
+	left_portrait = scope:dm_reform_actor
+	option = {
+		name = dm_reform.chain_followup.a
+	}
+}
+
+dm_reform.2120 = {
+	type = character_event
+	title = dm_reform.chain_followup.t
+	desc = dm_reform.chain_followup.desc
+	theme = court_event
+	left_portrait = scope:dm_reform_actor
+	option = {
+		name = dm_reform.chain_followup.a
+		trigger_event = { id = dm_reform.3120 days = 2 }
+	}
+}
+
+dm_reform.3120 = {
+	type = character_event
+	title = dm_reform.chain_followup.t
+	desc = dm_reform.chain_followup.desc
+	theme = court_event
+	left_portrait = scope:dm_reform_actor
+	option = {
+		name = dm_reform.chain_followup.a
+	}
+}
+
+dm_reform.2121 = {
+	type = character_event
+	title = dm_reform.chain_followup.t
+	desc = dm_reform.chain_followup.desc
+	theme = court_event
+	left_portrait = scope:dm_reform_actor
+	option = {
+		name = dm_reform.chain_followup.a
+		trigger_event = { id = dm_reform.3121 days = 2 }
+	}
+}
+
+dm_reform.3121 = {
+	type = character_event
+	title = dm_reform.chain_followup.t
+	desc = dm_reform.chain_followup.desc
+	theme = court_event
+	left_portrait = scope:dm_reform_actor
+	option = {
+		name = dm_reform.chain_followup.a
+	}
+}
+
+dm_reform.2122 = {
+	type = character_event
+	title = dm_reform.chain_followup.t
+	desc = dm_reform.chain_followup.desc
+	theme = court_event
+	left_portrait = scope:dm_reform_actor
+	option = {
+		name = dm_reform.chain_followup.a
+		trigger_event = { id = dm_reform.3122 days = 2 }
+	}
+}
+
+dm_reform.3122 = {
+	type = character_event
+	title = dm_reform.chain_followup.t
+	desc = dm_reform.chain_followup.desc
+	theme = court_event
+	left_portrait = scope:dm_reform_actor
+	option = {
+		name = dm_reform.chain_followup.a
+	}
+}
+
+dm_reform.2123 = {
+	type = character_event
+	title = dm_reform.chain_followup.t
+	desc = dm_reform.chain_followup.desc
+	theme = court_event
+	left_portrait = scope:dm_reform_actor
+	option = {
+		name = dm_reform.chain_followup.a
+		trigger_event = { id = dm_reform.3123 days = 2 }
+	}
+}
+
+dm_reform.3123 = {
+	type = character_event
+	title = dm_reform.chain_followup.t
+	desc = dm_reform.chain_followup.desc
+	theme = court_event
+	left_portrait = scope:dm_reform_actor
+	option = {
+		name = dm_reform.chain_followup.a
+	}
+}
+
+dm_reform.2124 = {
+	type = character_event
+	title = dm_reform.chain_followup.t
+	desc = dm_reform.chain_followup.desc
+	theme = court_event
+	left_portrait = scope:dm_reform_actor
+	option = {
+		name = dm_reform.chain_followup.a
+		trigger_event = { id = dm_reform.3124 days = 2 }
+	}
+}
+
+dm_reform.3124 = {
+	type = character_event
+	title = dm_reform.chain_followup.t
+	desc = dm_reform.chain_followup.desc
+	theme = court_event
+	left_portrait = scope:dm_reform_actor
+	option = {
+		name = dm_reform.chain_followup.a
+	}
+}
+
+dm_reform.2125 = {
+	type = character_event
+	title = dm_reform.chain_followup.t
+	desc = dm_reform.chain_followup.desc
+	theme = court_event
+	left_portrait = scope:dm_reform_actor
+	option = {
+		name = dm_reform.chain_followup.a
+		trigger_event = { id = dm_reform.3125 days = 2 }
+	}
+}
+
+dm_reform.3125 = {
+	type = character_event
+	title = dm_reform.chain_followup.t
+	desc = dm_reform.chain_followup.desc
+	theme = court_event
+	left_portrait = scope:dm_reform_actor
+	option = {
+		name = dm_reform.chain_followup.a
+	}
+}

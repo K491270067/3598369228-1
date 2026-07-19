@@ -1,0 +1,263 @@
+dm_reform_invite_reformer_interaction = {
+	category = interaction_category_friendly
+	common_interaction = yes
+	popup_on_receive = yes
+	desc = dm_reform_invite_reformer_interaction_desc
+	icon = scroll_scales
+	ai_min_reply_days = 2
+	ai_max_reply_days = 5
+
+	is_shown = {
+		scope:actor != scope:recipient
+		scope:actor = {
+			any_owned_story = {
+				type = dm_reform_story
+				NOR = {
+					dm_reform_has_reformer_trigger = yes
+				}
+			}
+		}
+		scope:recipient = {
+			is_alive = yes
+			is_available_adult = yes
+			is_imprisoned = no
+			OR = {
+				is_courtier_of = scope:actor
+				AND = {
+					top_liege = scope:actor
+					scope:actor = {
+						OR = {
+							government_has_flag = government_is_administrative
+							government_has_flag = government_is_celestial
+						}
+					}
+				}
+			}
+		}
+	}
+
+	is_valid_showing_failures_only = {
+		scope:actor = {
+			any_owned_story = {
+				type = dm_reform_story
+				NOR = {
+					dm_reform_has_reformer_trigger = yes
+				}
+			}
+		}
+	}
+
+	on_accept = {
+		scope:actor = {
+			random_owned_story = {
+				limit = {
+					type = dm_reform_story
+					NOR = {
+						dm_reform_has_reformer_trigger = yes
+					}
+				}
+				set_variable = {
+					name = dm_reform_reformer
+					value = scope:recipient
+				}
+			}
+		}
+		scope:recipient = { trigger_event = dm_reform.0202 }
+	}
+
+	on_decline = {
+		scope:recipient = { trigger_event = dm_reform.0203 }
+	}
+
+	ai_accept = {
+		base = 30
+		opinion_modifier = {
+			who = scope:recipient
+			opinion_target = scope:actor
+			multiplier = 0.3
+		}
+		modifier = {
+			add = 20
+			scope:recipient = { has_trait = ambitious }
+		}
+		modifier = {
+			add = 15
+			scope:recipient = { has_trait = diligent }
+		}
+		modifier = {
+			add = -25
+			scope:recipient = { has_trait = content }
+		}
+		modifier = {
+			add = -20
+			scope:recipient = { has_trait = craven }
+		}
+		modifier = {
+			add = 15
+			scope:recipient = {
+				OR = {
+					diplomacy >= 15
+					stewardship >= 15
+					learning >= 15
+				}
+			}
+		}
+	}
+}
+
+dm_reform_lobby_opponent_interaction = {
+	category = interaction_category_diplomacy
+	common_interaction = yes
+	popup_on_receive = yes
+	desc = dm_reform_lobby_opponent_interaction_desc
+	icon = scroll_scales
+	ai_min_reply_days = 2
+	ai_max_reply_days = 5
+	options_heading = dm_reform_lobby_options_heading
+	send_options_exclusive = yes
+
+	send_option = {
+		flag = dm_reform_money
+		localization = dm_reform_lobby_money
+		starts_enabled = { always = yes }
+		is_valid = { scope:actor = { gold >= 100 } }
+	}
+	send_option = {
+		flag = dm_reform_prestige
+		localization = dm_reform_lobby_prestige
+		is_valid = { scope:actor = { prestige >= 100 } }
+	}
+	send_option = {
+		flag = dm_reform_influence
+		localization = dm_reform_lobby_influence
+		is_shown = {
+			scope:actor = { government_has_flag = government_has_influence }
+		}
+		is_valid = { scope:actor = { influence >= 50 } }
+	}
+	send_option = {
+		flag = dm_reform_weak_hook
+		localization = dm_reform_lobby_weak_hook
+		is_shown = {
+			scope:actor = {
+				has_usable_hook = scope:recipient
+				NOT = { has_strong_hook = scope:recipient }
+			}
+		}
+	}
+	send_option = {
+		flag = dm_reform_strong_hook
+		localization = dm_reform_lobby_strong_hook
+		is_shown = {
+			scope:actor = { has_strong_hook = scope:recipient }
+		}
+	}
+
+	cost = {
+		gold = {
+			value = 0
+			if = {
+				limit = { scope:dm_reform_money = yes }
+				add = 100
+			}
+		}
+		prestige = {
+			value = 0
+			if = {
+				limit = { scope:dm_reform_prestige = yes }
+				add = 100
+			}
+		}
+		influence = {
+			value = 0
+			if = {
+				limit = { scope:dm_reform_influence = yes }
+				add = 50
+			}
+		}
+	}
+
+	is_shown = {
+		scope:actor != scope:recipient
+		OR = {
+			scope:actor = {
+				any_owned_story = {
+					type = dm_reform_story
+					dm_reform_is_formal_trigger = yes
+					is_target_in_variable_list = {
+						name = dm_reform_opponents
+						target = scope:recipient
+					}
+				}
+			}
+			scope:actor.top_liege = {
+				any_owned_story = {
+					type = dm_reform_story
+					dm_reform_is_formal_trigger = yes
+					var:dm_reform_reformer = scope:actor
+					is_target_in_variable_list = {
+						name = dm_reform_opponents
+						target = scope:recipient
+					}
+				}
+			}
+		}
+	}
+
+	is_valid_showing_failures_only = {
+		scope:recipient = {
+			NOT = { has_character_flag = dm_reform_lobby_global_refusal }
+			NOT = {
+				is_target_in_variable_list = {
+					name = dm_reform_lobby_rejected_actors
+					target = scope:actor
+				}
+			}
+		}
+	}
+
+	on_send = {
+		if = {
+			limit = {
+				OR = {
+					scope:dm_reform_weak_hook = yes
+					scope:dm_reform_strong_hook = yes
+				}
+			}
+			scope:actor = { use_hook = scope:recipient }
+		}
+	}
+
+	on_accept = {
+		scope:actor = { dm_reform_save_actor_story_effect = yes }
+		random_list = {
+			dm_reform_lobby_success_value = {
+				scope:dm_reform_story = { dm_reform_lobby_success_effect = yes }
+			}
+			dm_reform_lobby_failure_value = {
+				dm_reform_lobby_failure_effect = yes
+			}
+		}
+	}
+
+	on_decline = {
+		dm_reform_lobby_failure_effect = yes
+	}
+
+	ai_accept = {
+		base = -20
+		opinion_modifier = {
+			who = scope:recipient
+			opinion_target = scope:actor
+			multiplier = 0.5
+		}
+		modifier = {
+			add = 100
+			scope:dm_reform_strong_hook = yes
+		}
+		modifier = {
+			add = 40
+			scope:dm_reform_weak_hook = yes
+		}
+	}
+}

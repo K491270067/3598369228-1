@@ -1,0 +1,1786 @@
+######################################################
+############### CHANGE SUCCESSION LAW ################
+######################################################
+
+window = {
+	name = "succession_law_change_window"
+	size = { 1200 875 }
+	position = { 610 100 }
+	layer = middle
+
+	using = Window_Background
+	using = Window_Decoration
+	using = Animation_ShowHide_Standard
+
+	vbox = {
+		using = Window_Margins
+		layoutpolicy_horizontal = expanding
+		layoutpolicy_vertical = expanding
+		#restrictparent_min = yes
+
+		header_pattern = {
+			layoutpolicy_horizontal = expanding
+
+			blockoverride "header_text"
+			{
+				text = "SUCCESSION_LAW_CHANGE_WINDOW_TITLE"
+			}
+
+			blockoverride "button_close"
+			{
+				onclick = "[SuccessionLawChangeWindow.Close]"
+			}
+		}
+
+		vbox = {
+			layoutpolicy_horizontal = expanding
+			layoutpolicy_vertical = expanding
+
+			hbox = {
+				layoutpolicy_horizontal = expanding
+				layoutpolicy_vertical = expanding
+
+				## Left Side
+				vbox = {
+					layoutpolicy_horizontal = expanding
+					layoutpolicy_vertical = expanding
+
+					vbox = {
+						layoutpolicy_horizontal = expanding
+						layoutpolicy_vertical = expanding
+						minimumsize = { 0 312 }
+						margin = { 14 14 }
+						spacing = 10
+
+						background = {
+							using = Background_Area
+						}
+
+						text_label_center = {
+							text = "SUCCESSION_LAW_CHANGE_WINDOW_CHOOSE_NEW"
+						}
+
+						vbox = {
+							visible = "[DataModelHasItems(SuccessionLawChangeWindow.GetPartitionLaws)]"
+							spacing = 10
+
+							text_single = {
+								text = "SUCCESSION_LAW_CHANGE_WINDOW_PARTITION_LAWS"
+							}
+
+							hbox = {
+								datamodel = "[SuccessionLawChangeWindow.GetPartitionLaws]"
+								spacing = 10
+
+								item = {
+									vbox = {
+										button_default_law_choice = {}
+										button_clan_law_choice = {}
+									}
+								}
+							}
+						}
+
+						vbox = {
+							visible = "[DataModelHasItems(SuccessionLawChangeWindow.GetAppointmentLaws)]"
+							spacing = 10
+
+							text_single = {
+								text = "SUCCESSION_LAW_CHANGE_WINDOW_APPOINTMENT_LAWS"
+							}
+
+							hbox = {
+								datamodel = "[SuccessionLawChangeWindow.GetAppointmentLaws]"
+								spacing = 10
+
+								item = {
+									vbox = {
+										button_default_law_choice = {}
+										button_clan_law_choice = {}
+									}
+								}
+							}
+						}
+
+						vbox = {
+							visible = "[DataModelHasItems(SuccessionLawChangeWindow.GetSingleHeirLaws)]"
+							spacing = 5
+
+							text_single = {
+								text = "SUCCESSION_LAW_CHANGE_WINDOW_SINGLE_HEIR_LAWS"
+							}
+
+							hbox = {
+								datamodel = "[SuccessionLawChangeWindow.GetSingleHeirLaws]"
+								spacing = 10
+
+								item = {
+									vbox = {
+										button_default_law_choice = {}
+										button_clan_law_choice = {}
+									}
+								}
+							}
+						}
+
+						vbox = {
+							visible = "[DataModelHasItems(SuccessionLawChangeWindow.GetOtherLaws)]"
+							margin_left = 12
+
+							fixedgridbox = {
+								datamodel = "[SuccessionLawChangeWindow.GetOtherLaws]"
+								addcolumn = 130
+								addrow = 90
+								datamodel_wrap = 5
+								flipdirection = yes
+
+								item = {
+									container = {
+										button_default_law_choice = {}
+										button_clan_law_choice = {}
+									}
+								}
+							}
+						}
+
+						hbox = {
+							datacontext = "[SuccessionLawChangeWindow.GetDynastyHouse]"
+							datacontext = "[DynastyHouse.GetCurrentHouseUnityStage]"
+							visible = "[And( DynastyHouse.IsValid, DynastyHouse.HasHouseUnity)]"
+
+							margin = { 20 10 }
+							spacing = 5
+
+							background = {
+								using = Background_Area_Dark
+								alpha = 0.6
+							}
+
+							text_single = {
+								text = "HOUSE_UNITY_VALUE_TT_TITLE"
+								align = nobaseline
+							}
+
+							text_single = {
+								text = "[DynastyHouse.GetHouseUnityValue|0]"
+								align = nobaseline
+							}
+
+							spacer =  {
+								size = { 40 1 }
+							}
+
+							text_single = {
+								text = "[HouseUnityStage.GetName]"
+								align = nobaseline
+							}
+
+							icon = {
+								size = { 40 40 }
+								texture = "[HouseUnityStage.GetIcon]"
+							}
+						}
+						expand = {}
+					}
+
+					vbox = {
+						visible = no # Powerful-vassal approval is replaced by the reform story.
+						layoutpolicy_horizontal = expanding
+						margin = { 0 20 }
+
+						background = {
+							using = Background_Area
+						}
+
+						expand = {}
+
+						vbox = {
+							spacing = 6
+
+							text_label_center = {
+								text = "SUCCESSION_LAW_CHANGE_WINDOW_POWERFUL_VASSALS"
+							}
+
+							text_multi = {
+								text = "SUCCESSION_LAW_CHANGE_WINDOW_POWERFUL_VASSALS_DESC"
+								default_format = "#weak"
+								autoresize = yes
+								max_width = 500
+							}
+						}
+
+						vbox = {
+							layoutpolicy_horizontal = expanding
+							margin_left = 28
+
+							fixedgridbox = {
+								datamodel = "[SuccessionLawChangeWindow.GetPowerfulVassals]"
+								layoutpolicy_horizontal = expanding
+
+								addcolumn = 120
+								addrow = 155
+								datamodel_wrap = 5
+								flipdirection = yes
+
+								item = {
+									flowcontainer = {
+										direction = vertical
+
+										portrait_head = {}
+
+										flowcontainer = {
+											visible = "[Character.IsOpposing]"
+											parentanchor = hcenter
+											ignoreinvisible = yes
+											tooltip = "SUCCESSION_LAW_CHANGE_WINDOW_POWERFUL_OPPOSE_TT"
+											using = tooltip_se
+
+											icon = {
+												size = { 30 30 }
+												texture = "gfx/interface/icons/symbols/icon_cross.dds"
+											}
+
+											text_single = {
+												text = "SUCCESSION_LAW_CHANGE_WINDOW_POWERFUL_OPPOSE"
+												max_width = 80
+											}
+										}
+
+										text_single = {
+											visible = "[Not( Character.IsOpposing)]"
+											parentanchor = hcenter
+											text = "SUCCESSION_LAW_CHANGE_WINDOW_POWERFUL_APPROVE"
+
+											tooltip = "SUCCESSION_LAW_CHANGE_WINDOW_POWERFUL_APPROVE_TT"
+											using = tooltip_se
+											max_width = 110
+										}
+									}
+								}
+							}
+						}
+
+						expand = {}
+					}
+
+					vbox = {
+						visible = yes
+						layoutpolicy_horizontal = expanding
+						#layoutpolicy_vertical = expanding
+						margin = { 0 20 }
+
+						background = {
+							using = Background_Area_Dark
+							alpha = 0.6
+						}
+
+						vbox = {
+							spacing = 6
+
+							text_label_center = {
+								text = "dm_reform_law_window_title"
+							}
+
+							text_multi = {
+								text = "dm_reform_law_window_desc"
+								default_format = "#weak"
+								autoresize = yes
+								max_width = 500
+							}
+						}
+					}
+				}
+
+				## Right Side
+				vbox_law_desc = {
+					max_width = 300
+					min_width = 300
+					margin = { 15 15 }
+					spacing = 10
+
+					background = {
+						using = Background_Area
+					}
+
+					blockoverride "law_datacontext" {
+						datacontext = "[SuccessionLawChangeWindow.GetSelectedLaw.GetLaw]"
+					}
+				}
+			}
+
+			# Buttons when character can change laws manually
+			vbox = {
+				#visible = "[SuccessionLawChangeWindow.GetSelectedLaw.ShouldBeApproved]"
+
+				layoutpolicy_horizontal = expanding
+				spacing = 10
+				margin_bottom = 12
+
+				text_single = {
+					text = "SUCCESSION_LAW_CHANGE_WINDOW_ENACT_COST"
+					tooltip = "SUCCESSION_LAW_CHANGE_WINDOW_ENACT_COST_TOOLTIP"
+					using = Font_Size_Medium
+				}
+
+				hbox = {
+					spacing = 20
+
+					button_standard = {
+						onclick = "[SuccessionLawChangeWindow.Close]"
+						text = "CANCEL"
+						using = tooltip_above
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'top_liege_redirected_to_border_wars_law' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_top_liege_redirected_to_border_wars_law_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_top_liege_redirected_to_border_wars_law_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'top_liege_not_redirected_to_border_wars_law' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_top_liege_not_redirected_to_border_wars_law_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_top_liege_not_redirected_to_border_wars_law_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'candidate_score_merit_law' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_candidate_score_merit_law_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_candidate_score_merit_law_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'candidate_score_prestige_law' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_candidate_score_prestige_law_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_candidate_score_prestige_law_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'celestial_army_liege_law_0' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_celestial_army_liege_law_0_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_celestial_army_liege_law_0_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'celestial_army_liege_law_1' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_celestial_army_liege_law_1_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_celestial_army_liege_law_1_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'celestial_army_liege_law_2' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_celestial_army_liege_law_2_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_celestial_army_liege_law_2_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'celestial_army_liege_law_3' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_celestial_army_liege_law_3_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_celestial_army_liege_law_3_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'celestial_army_vassal_law_0' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_celestial_army_vassal_law_0_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_celestial_army_vassal_law_0_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'celestial_army_vassal_law_1' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_celestial_army_vassal_law_1_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_celestial_army_vassal_law_1_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'celestial_army_vassal_law_2' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_celestial_army_vassal_law_2_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_celestial_army_vassal_law_2_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'celestial_army_vassal_law_3' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_celestial_army_vassal_law_3_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_celestial_army_vassal_law_3_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'celestial_bureaucracy_0' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_celestial_bureaucracy_0_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_celestial_bureaucracy_0_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'celestial_bureaucracy_1' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_celestial_bureaucracy_1_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_celestial_bureaucracy_1_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'celestial_bureaucracy_2' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_celestial_bureaucracy_2_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_celestial_bureaucracy_2_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'celestial_bureaucracy_3' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_celestial_bureaucracy_3_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_celestial_bureaucracy_3_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'celestial_retirement_law_0' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_celestial_retirement_law_0_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_celestial_retirement_law_0_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'celestial_retirement_law_1' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_celestial_retirement_law_1_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_celestial_retirement_law_1_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'celestial_retirement_law_2' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_celestial_retirement_law_2_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_celestial_retirement_law_2_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'celestial_retirement_law_3' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_celestial_retirement_law_3_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_celestial_retirement_law_3_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'celestial_retirement_law_4' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_celestial_retirement_law_4_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_celestial_retirement_law_4_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'celestial_retirement_law_5' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_celestial_retirement_law_5_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_celestial_retirement_law_5_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'crown_authority_legacy_head' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_crown_authority_legacy_head_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_crown_authority_legacy_head_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'crown_authority_titular_liege' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_crown_authority_titular_liege_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_crown_authority_titular_liege_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'crown_authority_0' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_crown_authority_0_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_crown_authority_0_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'crown_authority_1' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_crown_authority_1_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_crown_authority_1_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'crown_authority_2' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_crown_authority_2_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_crown_authority_2_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'crown_authority_3' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_crown_authority_3_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_crown_authority_3_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'grand_chancellor_law' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_grand_chancellor_law_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_grand_chancellor_law_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'grand_marshal_law' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_grand_marshal_law_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_grand_marshal_law_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'grand_censor_law' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_grand_censor_law_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_grand_censor_law_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'imperial_bureaucracy_0' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_imperial_bureaucracy_0_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_imperial_bureaucracy_0_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'imperial_bureaucracy_1' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_imperial_bureaucracy_1_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_imperial_bureaucracy_1_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'imperial_bureaucracy_2' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_imperial_bureaucracy_2_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_imperial_bureaucracy_2_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'imperial_bureaucracy_3' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_imperial_bureaucracy_3_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_imperial_bureaucracy_3_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'defense_mobilization_law' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_defense_mobilization_law_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_defense_mobilization_law_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'disarmament_law' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_disarmament_law_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_disarmament_law_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'isolation_law' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_isolation_law_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_isolation_law_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'imperial_expansion_law' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_imperial_expansion_law_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_imperial_expansion_law_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'manor_reform_law' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_manor_reform_law_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_manor_reform_law_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'bandit_crackdown_law' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_bandit_crackdown_law_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_bandit_crackdown_law_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'japanese_bureaucracy_0' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_japanese_bureaucracy_0_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_japanese_bureaucracy_0_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'japanese_bureaucracy_1' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_japanese_bureaucracy_1_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_japanese_bureaucracy_1_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'japanese_bureaucracy_2' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_japanese_bureaucracy_2_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_japanese_bureaucracy_2_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'japanese_bureaucracy_3' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_japanese_bureaucracy_3_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_japanese_bureaucracy_3_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'law_candidate_preference_policy_powerful_gentry' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_law_candidate_preference_policy_powerful_gentry_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_law_candidate_preference_policy_powerful_gentry_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'law_candidate_preference_policy_local_talent' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_law_candidate_preference_policy_local_talent_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_law_candidate_preference_policy_local_talent_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'law_candidate_preference_policy_favor_nepotism' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_law_candidate_preference_policy_favor_nepotism_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_law_candidate_preference_policy_favor_nepotism_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'law_candidate_preference_policy_talent_only' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_law_candidate_preference_policy_talent_only_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_law_candidate_preference_policy_talent_only_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'law_candidate_preference_policy_bureaucrat_promotion' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_law_candidate_preference_policy_bureaucrat_promotion_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_law_candidate_preference_policy_bureaucrat_promotion_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'law_vassal_revoke_title_policy_prohibit_revoke' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_law_vassal_revoke_title_policy_prohibit_revoke_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_law_vassal_revoke_title_policy_prohibit_revoke_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'law_vassal_revoke_title_policy_allow_revoke' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_law_vassal_revoke_title_policy_allow_revoke_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_law_vassal_revoke_title_policy_allow_revoke_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'law_vassal_succession_rights_policy_hereditary' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_law_vassal_succession_rights_policy_hereditary_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_law_vassal_succession_rights_policy_hereditary_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'law_vassal_succession_rights_policy_forced_partition' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_law_vassal_succession_rights_policy_forced_partition_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_law_vassal_succession_rights_policy_forced_partition_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'law_vassal_succession_rights_policy_grant_recognition' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_law_vassal_succession_rights_policy_grant_recognition_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_law_vassal_succession_rights_policy_grant_recognition_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'law_vassal_succession_rights_policy_court_supervision' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_law_vassal_succession_rights_policy_court_supervision_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_law_vassal_succession_rights_policy_court_supervision_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'law_vassal_succession_rights_policy_governor_appointment' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_law_vassal_succession_rights_policy_governor_appointment_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_law_vassal_succession_rights_policy_governor_appointment_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'law_vassal_title_leave_realm_policy_allowed' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_law_vassal_title_leave_realm_policy_allowed_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_law_vassal_title_leave_realm_policy_allowed_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'law_vassal_title_leave_realm_policy_restricted' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_law_vassal_title_leave_realm_policy_restricted_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_law_vassal_title_leave_realm_policy_restricted_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'law_vassal_war_policy_no_restriction' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_law_vassal_war_policy_no_restriction_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_law_vassal_war_policy_no_restriction_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'law_vassal_war_policy_prohibit_internal_wars' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_law_vassal_war_policy_prohibit_internal_wars_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_law_vassal_war_policy_prohibit_internal_wars_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'law_vassal_war_policy_prohibit_all_wars' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_law_vassal_war_policy_prohibit_all_wars_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_law_vassal_war_policy_prohibit_all_wars_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'law_vassal_war_policy_permanent_prohibit_all_wars' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_law_vassal_war_policy_permanent_prohibit_all_wars_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_law_vassal_war_policy_permanent_prohibit_all_wars_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'mandala_decree_none' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_mandala_decree_none_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_mandala_decree_none_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'mandala_decree_prosperity' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_mandala_decree_prosperity_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_mandala_decree_prosperity_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'mandala_decree_expansion' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_mandala_decree_expansion_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_mandala_decree_expansion_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'mandala_decree_reverence' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_mandala_decree_reverence_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_mandala_decree_reverence_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'meritocratic_bureaucracy_0' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_meritocratic_bureaucracy_0_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_meritocratic_bureaucracy_0_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'meritocratic_bureaucracy_1' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_meritocratic_bureaucracy_1_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_meritocratic_bureaucracy_1_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'meritocratic_bureaucracy_2' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_meritocratic_bureaucracy_2_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_meritocratic_bureaucracy_2_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'meritocratic_bureaucracy_3' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_meritocratic_bureaucracy_3_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_meritocratic_bureaucracy_3_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'nomadic_authority_1' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_nomadic_authority_1_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_nomadic_authority_1_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'nomadic_authority_2' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_nomadic_authority_2_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_nomadic_authority_2_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'nomadic_authority_3' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_nomadic_authority_3_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_nomadic_authority_3_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'nomadic_authority_4' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_nomadic_authority_4_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_nomadic_authority_4_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'nomadic_authority_5' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_nomadic_authority_5_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_nomadic_authority_5_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'province_border_law_0' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_province_border_law_0_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_province_border_law_0_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'province_border_law_1' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_province_border_law_1_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_province_border_law_1_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'province_border_law_2' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_province_border_law_2_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_province_border_law_2_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'province_war_law_0' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_province_war_law_0_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_province_war_law_0_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'province_war_law_1' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_province_war_law_1_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_province_war_law_1_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'province_war_law_2' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_province_war_law_2_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_province_war_law_2_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'province_war_law_3' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_province_war_law_3_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_province_war_law_3_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'saas_no_stipend_law' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_saas_no_stipend_law_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_saas_no_stipend_law_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'saas_limited_stipend_law' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_saas_limited_stipend_law_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_saas_limited_stipend_law_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'saas_normal_stipend_law' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_saas_normal_stipend_law_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_saas_normal_stipend_law_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'saas_large_stipend_law' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_saas_large_stipend_law_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_saas_large_stipend_law_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'saas_double_stipend_law' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_saas_double_stipend_law_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_saas_double_stipend_law_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'male_only_law' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_male_only_law_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_male_only_law_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'male_preference_law' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_male_preference_law_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_male_preference_law_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'equal_law' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_equal_law_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_equal_law_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'female_preference_law' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_female_preference_law_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_female_preference_law_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'female_only_law' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_female_only_law_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_female_only_law_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'confederate_partition_succession_law' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_confederate_partition_succession_law_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_confederate_partition_succession_law_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'partition_succession_law' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_partition_succession_law_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_partition_succession_law_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'high_partition_succession_law' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_high_partition_succession_law_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_high_partition_succession_law_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'single_heir_succession_law' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_single_heir_succession_law_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_single_heir_succession_law_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'single_heir_succession_kurultai_law' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_single_heir_succession_kurultai_law_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_single_heir_succession_kurultai_law_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'single_heir_succession_law_youngest' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_single_heir_succession_law_youngest_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_single_heir_succession_law_youngest_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'single_heir_dynasty_house' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_single_heir_dynasty_house_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_single_heir_dynasty_house_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'acclamation_succession_law' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_acclamation_succession_law_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_acclamation_succession_law_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'appointment_succession_law' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_appointment_succession_law_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_appointment_succession_law_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'landless_adventurer_succession_law' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_landless_adventurer_succession_law_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_landless_adventurer_succession_law_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'bishop_theocratic_succession_law' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_bishop_theocratic_succession_law_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_bishop_theocratic_succession_law_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'holy_order_succession_law' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_holy_order_succession_law_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_holy_order_succession_law_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'mercenary_company_succession_law' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_mercenary_company_succession_law_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_mercenary_company_succession_law_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'city_succession_law' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_city_succession_law_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_city_succession_law_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'clan_antagonistic_partition_succession_law' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_clan_antagonistic_partition_succession_law_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_clan_antagonistic_partition_succession_law_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'clan_competitive_partition_succession_law' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_clan_competitive_partition_succession_law_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_clan_competitive_partition_succession_law_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'clan_impassive_partition_succession_law' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_clan_impassive_partition_succession_law_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_clan_impassive_partition_succession_law_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'clan_friendly_partition_succession_law' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_clan_friendly_partition_succession_law_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_clan_friendly_partition_succession_law_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'clan_harmonious_partition_succession_law' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_clan_harmonious_partition_succession_law_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_clan_harmonious_partition_succession_law_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'herder_succession_law' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_herder_succession_law_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_herder_succession_law_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'celestial_appointment_succession_law' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_celestial_appointment_succession_law_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_celestial_appointment_succession_law_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'celestial_military_appointment_succession_law' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_celestial_military_appointment_succession_law_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_celestial_military_appointment_succession_law_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'japanese_regency_succession_law' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_japanese_regency_succession_law_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_japanese_regency_succession_law_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'japanese_appointment_succession_law' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_japanese_appointment_succession_law_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_japanese_appointment_succession_law_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'japanese_military_appointment_succession_law' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_japanese_military_appointment_succession_law_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_japanese_military_appointment_succession_law_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'mandala_succession_law' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_mandala_succession_law_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_mandala_succession_law_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'meritocratic_appointment_succession_law' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_meritocratic_appointment_succession_law_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_meritocratic_appointment_succession_law_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'meritocratic_military_appointment_succession_law' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_meritocratic_military_appointment_succession_law_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_meritocratic_military_appointment_succession_law_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'meritocratic_regency_succession_law' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_meritocratic_regency_succession_law_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_meritocratic_regency_succession_law_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'feudal_governor_appointment_succession_law' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_feudal_governor_appointment_succession_law_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_feudal_governor_appointment_succession_law_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'feudal_governor_promotion_succession_law' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_feudal_governor_promotion_succession_law_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_feudal_governor_promotion_succession_law_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'last_will_succession_law' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_last_will_succession_law_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_last_will_succession_law_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'diwan_top_liege_succession_law' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_diwan_top_liege_succession_law_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_diwan_top_liege_succession_law_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'diwan_governor_succession_law' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_diwan_governor_succession_law_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_diwan_governor_succession_law_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'dawla_vassal_succession_law' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_dawla_vassal_succession_law_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_dawla_vassal_succession_law_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'diwan_vassal_illegal_succession_law' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_diwan_vassal_illegal_succession_law_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_diwan_vassal_illegal_succession_law_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'tribal_authority_0' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_tribal_authority_0_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_tribal_authority_0_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'tribal_authority_1' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_tribal_authority_1_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_tribal_authority_1_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'tribal_authority_2' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_tribal_authority_2_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_tribal_authority_2_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+
+					button_primary = {
+						datacontext = "[GetPlayer]"
+						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'tribal_authority_3' )]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_tribal_authority_3_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_tribal_authority_3_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_button_tooltip"
+					}
+				}
+			}
+		}
+	}
+}
+
+
+types SuccessionLawTypes
+{
+	type button_law_choice_base = button_standard {
+		visible = "[GuiLaw.IsWidgetVisible(PdxGuiWidget.Self)]"
+
+		datacontext = "[GuiLaw.GetLaw]"
+
+		onclick = "[GuiLaw.SetSelected]"
+		down = "[GuiLaw.IsSelected]"
+		alwaystransparent = "[GuiLaw.IsSelected]"
+
+		selection_glow = {
+			visible = "[GuiLaw.IsSelected]"
+		}
+
+		block "content" {}
+		
+		tooltip = "LAW_CHOICE_TOOLTIP"
+
+		text_multi = {
+			visible = "[Or(GuiLaw.CanEnact, GuiLaw.IsEnacted)]"
+			text = "[Law.GetNameNoTooltip]"
+			size = { 100% 100% }
+			align = hcenter|nobaseline
+			margin = { 8 5 }
+			default_format = "#clickable"
+		}
+
+		text_multi = {
+			visible = "[And( Not( GuiLaw.IsEnacted ), Not( GuiLaw.CanEnact ) )]"
+			text = "[Law.GetNameNoTooltip]"
+			size = { 100% 100% }
+			align = hcenter|nobaseline
+			margin = { 8 5 }
+			default_format = "#low"
+		}
+
+
+		blockoverride "button_standard_current" 
+		{
+			visible = "[GuiLaw.IsEnacted]"
+		}
+
+		
+
+		icon = {
+			visible = "[And( Not( GuiLaw.IsEnacted ), Not( GuiLaw.CanEnact ) )]"
+			size = { 30 30 }
+			parentanchor = bottom|right
+			texture = "gfx/interface/icons/symbols/icon_cross.dds"
+		}
+	}
+
+	type button_default_law_choice = button_law_choice_base {
+		size = { 120 80 }
+	}
+
+	type button_clan_law_choice = button_law_choice_base {
+		name = "widget_clan_law"
+
+		size = { 120 160 }
+
+		blockoverride "content" {
+			icon = {
+				size = { 55 55 }
+				position = { 32 12 }
+				texture = "[GuiLaw.GetHouseUnityStage.GetIcon]"
+			}
+		}
+	}
+
+	type vbox_law_desc = vbox {
+		layoutpolicy_horizontal = expanding
+		layoutpolicy_vertical = expanding
+		margin = { 10 10 }
+
+		block "law_datacontext" {}
+		vbox = {
+			text_single = {
+				text = "[Law.GetNameNoTooltip]"
+				margin = { 10 10 }
+			}
+
+			text_label_center = {
+				layoutpolicy_horizontal = expanding
+				text = "[Law.GetSubName]"
+				visible = "[Law.HasSubName]"
+				default_format = "#low"
+				max_width = 280
+			}
+		}
+		
+		scrollbox = {
+			min_width = 350
+			layoutpolicy_horizontal = expanding
+			layoutpolicy_vertical = expanding
+
+			blockoverride "scrollbox_content"
+			{
+				vbox = {
+					layoutpolicy_horizontal = expanding
+
+					text_multi = {
+						layoutpolicy_horizontal = expanding
+						autoresize = yes
+						max_width = 350
+						margin_right = 40
+						text = "[Law.GetEffectDescription]"
+					}
+				}
+			}
+		}
+
+		#expand = {}
+
+	}
+}

@@ -1,0 +1,606 @@
+namespace = dm_reform
+
+dm_reform.0001 = {
+	type = character_event
+	title = dm_reform.0001.t
+	desc = dm_reform.0001.desc
+	theme = court_event
+	left_portrait = root
+	option = {
+		name = dm_reform.0001.a
+	}
+}
+
+dm_reform.0002 = {
+	type = character_event
+	title = dm_reform.0002.t
+	desc = dm_reform.0002.desc
+	theme = court_event
+	left_portrait = root
+	option = {
+		name = dm_reform.0002.a
+	}
+}
+
+dm_reform.0201 = {
+	type = character_event
+	title = dm_reform.0201.t
+	desc = dm_reform.0201.desc
+	theme = court_event
+	left_portrait = root
+	option = { name = dm_reform.0201.a }
+}
+
+dm_reform.0202 = {
+	type = character_event
+	title = dm_reform.0202.t
+	desc = dm_reform.0202.desc
+	theme = court_event
+	left_portrait = root
+	option = { name = dm_reform.0202.a }
+}
+
+dm_reform.0203 = {
+	type = character_event
+	title = dm_reform.0203.t
+	desc = dm_reform.0203.desc
+	theme = court_event
+	left_portrait = root
+	option = { name = dm_reform.0203.a }
+}
+
+dm_reform.0301 = {
+	type = character_event
+	title = dm_reform.0301.t
+	desc = dm_reform.0301.desc
+	theme = court_event
+	left_portrait = root
+	option = { name = dm_reform.0301.a }
+}
+
+dm_reform.0302 = {
+	type = character_event
+	title = dm_reform.0302.t
+	desc = dm_reform.0302.desc
+	theme = court_event
+	left_portrait = root
+	option = { name = dm_reform.0302.a }
+}
+
+# Category dispatcher. The fixed weights exactly follow the five support bands.
+dm_reform.1000 = {
+	hidden = yes
+	immediate = {
+		if = {
+			limit = { scope:dm_reform_story = { var:dm_reform_support <= -6 } }
+			random_list = {
+				35 = { trigger_event = dm_reform.1010 }
+				35 = { trigger_event = dm_reform.1011 }
+				20 = { trigger_event = dm_reform.1012 }
+				8 = { trigger_event = dm_reform.1013 }
+				2 = { trigger_event = dm_reform.1014 }
+			}
+		}
+		else_if = {
+			limit = { scope:dm_reform_story = { var:dm_reform_support <= -2 } }
+			random_list = {
+				20 = { trigger_event = dm_reform.1010 }
+				30 = { trigger_event = dm_reform.1011 }
+				25 = { trigger_event = dm_reform.1012 }
+				20 = { trigger_event = dm_reform.1013 }
+				5 = { trigger_event = dm_reform.1014 }
+			}
+		}
+		else_if = {
+			limit = { scope:dm_reform_story = { var:dm_reform_support <= 1 } }
+			random_list = {
+				10 = { trigger_event = dm_reform.1010 }
+				20 = { trigger_event = dm_reform.1011 }
+				40 = { trigger_event = dm_reform.1012 }
+				20 = { trigger_event = dm_reform.1013 }
+				10 = { trigger_event = dm_reform.1014 }
+			}
+		}
+		else_if = {
+			limit = { scope:dm_reform_story = { var:dm_reform_support <= 5 } }
+			random_list = {
+				5 = { trigger_event = dm_reform.1010 }
+				20 = { trigger_event = dm_reform.1011 }
+				25 = { trigger_event = dm_reform.1012 }
+				30 = { trigger_event = dm_reform.1013 }
+				20 = { trigger_event = dm_reform.1014 }
+			}
+		}
+		else = {
+			random_list = {
+				2 = { trigger_event = dm_reform.1010 }
+				8 = { trigger_event = dm_reform.1011 }
+				20 = { trigger_event = dm_reform.1012 }
+				35 = { trigger_event = dm_reform.1013 }
+				35 = { trigger_event = dm_reform.1014 }
+			}
+		}
+	}
+}
+
+dm_reform.1010 = {
+	hidden = yes
+	immediate = {
+		random_list = {
+			1 = { trigger_event = dm_reform.1101 }
+			1 = { trigger_event = dm_reform.1102 }
+			1 = { trigger_event = dm_reform.1103 }
+			1 = { trigger_event = dm_reform.1104 }
+			1 = { trigger_event = dm_reform.1105 }
+			1 = { trigger_event = dm_reform.1106 }
+			1 = { trigger_event = dm_reform.1107 }
+		}
+	}
+}
+
+dm_reform.1011 = {
+	hidden = yes
+	immediate = {
+		random_list = {
+			1 = { trigger_event = dm_reform.1108 }
+			1 = { trigger_event = dm_reform.1109 }
+			1 = { trigger_event = dm_reform.1110 }
+			1 = { trigger_event = dm_reform.1111 }
+			1 = { trigger_event = dm_reform.1112 }
+			1 = { trigger_event = dm_reform.1113 }
+			1 = { trigger_event = dm_reform.1114 }
+		}
+	}
+}
+
+dm_reform.1012 = {
+	hidden = yes
+	immediate = {
+		random_list = {
+			1 = { trigger_event = dm_reform.1115 }
+			1 = { trigger_event = dm_reform.1116 }
+			1 = { trigger_event = dm_reform.1117 }
+			1 = { trigger_event = dm_reform.1118 }
+			1 = { trigger_event = dm_reform.1119 }
+			1 = { trigger_event = dm_reform.1120 }
+			1 = { trigger_event = dm_reform.1121 }
+		}
+	}
+}
+
+dm_reform.1013 = {
+	hidden = yes
+	immediate = {
+		random_list = {
+			1 = { trigger_event = dm_reform.1122 }
+			1 = { trigger_event = dm_reform.1123 }
+			1 = { trigger_event = dm_reform.1124 }
+			1 = { trigger_event = dm_reform.1125 }
+			1 = { trigger_event = dm_reform.1126 }
+			1 = { trigger_event = dm_reform.1127 }
+			1 = { trigger_event = dm_reform.1128 }
+		}
+	}
+}
+
+dm_reform.1014 = {
+	hidden = yes
+	immediate = {
+		random_list = {
+			1 = { trigger_event = dm_reform.1129 }
+			1 = { trigger_event = dm_reform.1130 }
+			1 = { trigger_event = dm_reform.1131 }
+			1 = { trigger_event = dm_reform.1132 }
+			1 = { trigger_event = dm_reform.1133 }
+			1 = { trigger_event = dm_reform.1134 }
+			1 = { trigger_event = dm_reform.1135 }
+		}
+	}
+}
+
+dm_reform.9050 = {
+	hidden = yes
+	immediate = {
+		if = {
+			limit = {
+				scope:dm_reform_story = { dm_reform_has_reformer_trigger = yes }
+			}
+			scope:dm_reform_story.var:dm_reform_reformer = {
+				save_scope_as = dm_reform_reformer
+			}
+		}
+		random_list = {
+			dm_reform_timeout_success_value = {
+				scope:dm_reform_story = { dm_reform_success_effect = yes }
+			}
+			dm_reform_timeout_failure_value = {
+				scope:dm_reform_story = { dm_reform_failure_effect = yes }
+			}
+		}
+	}
+}
+
+dm_reform.9100 = {
+	hidden = yes
+	immediate = {
+		random_list = {
+			8 = { trigger_event = dm_reform.9101 }
+			10 = { trigger_event = dm_reform.9102 }
+			10 = { trigger_event = dm_reform.9103 }
+			10 = { trigger_event = dm_reform.9104 }
+			10 = {
+				trigger = { exists = scope:dm_reform_reformer }
+				trigger_event = dm_reform.9105
+			}
+			8 = {
+				trigger = { exists = scope:dm_reform_reformer }
+				trigger_event = dm_reform.9106
+			}
+			6 = {
+				trigger = { exists = scope:dm_reform_reformer }
+				trigger_event = dm_reform.9107
+			}
+			4 = {
+				trigger = { exists = scope:dm_reform_reformer }
+				trigger_event = dm_reform.9108
+			}
+			5 = {
+				trigger = {
+					exists = scope:dm_reform_reformer
+					scope:dm_reform_reformer = { any_close_family_member = { count > 0 } }
+				}
+				trigger_event = dm_reform.9109
+			}
+			12 = { trigger_event = dm_reform.9110 }
+			10 = { trigger_event = dm_reform.9111 }
+			12 = { trigger_event = dm_reform.9112 }
+		}
+	}
+}
+
+dm_reform.9101 = {
+	type = character_event
+	title = dm_reform.9101.t
+	desc = dm_reform.9101.desc
+	theme = court_event
+	left_portrait = root
+	option = {
+		name = dm_reform.9101.a
+		set_character_flag = { flag = abdicated_from_throne years = 10 }
+		depose = yes
+	}
+	option = {
+		name = dm_reform.extreme.resist
+		add_character_modifier = {
+			modifier = dm_reform_extreme_failure_modifier
+			years = 15
+		}
+	}
+}
+
+dm_reform.9102 = {
+	type = character_event
+	title = dm_reform.9102.t
+	desc = dm_reform.9102.desc
+	theme = court_event
+	option = {
+		name = dm_reform.extreme.concede
+		add_character_modifier = { modifier = dm_reform_power_curtailed years = 10 }
+	}
+}
+
+dm_reform.9103 = {
+	type = character_event
+	title = dm_reform.9103.t
+	desc = dm_reform.9103.desc
+	theme = court_event
+	option = {
+		name = dm_reform.extreme.concede
+		add_prestige = -300
+		add_character_modifier = { modifier = dm_reform_power_curtailed years = 5 }
+	}
+}
+
+dm_reform.9104 = {
+	type = character_event
+	title = dm_reform.9104.t
+	desc = dm_reform.9104.desc
+	theme = court_event
+	option = {
+		name = dm_reform.extreme.apologize
+		add_piety = -250
+		every_vassal = {
+			add_opinion = { target = root modifier = grateful_opinion opinion = 10 years = 5 }
+		}
+	}
+}
+
+dm_reform.9105 = {
+	type = character_event
+	title = dm_reform.9105.t
+	desc = dm_reform.9105.desc
+	theme = court_event
+	left_portrait = scope:dm_reform_reformer
+	option = {
+		name = dm_reform.extreme.dismiss
+		scope:dm_reform_reformer = {
+			add_opinion = { target = root modifier = betrayed_opinion opinion = -60 years = 20 }
+		}
+	}
+	option = {
+		name = dm_reform.extreme.protect
+		every_vassal = {
+			add_opinion = { target = root modifier = angry_opinion opinion = -15 years = 10 }
+		}
+	}
+}
+
+dm_reform.9106 = {
+	type = character_event
+	title = dm_reform.9106.t
+	desc = dm_reform.9106.desc
+	theme = court_event
+	left_portrait = scope:dm_reform_reformer
+	option = {
+		name = dm_reform.extreme.arrest
+		imprison = { target = scope:dm_reform_reformer type = house_arrest }
+	}
+	option = {
+		name = dm_reform.extreme.protect
+		every_vassal = {
+			add_opinion = { target = root modifier = angry_opinion opinion = -20 years = 10 }
+		}
+	}
+}
+
+dm_reform.9107 = {
+	type = character_event
+	title = dm_reform.9107.t
+	desc = dm_reform.9107.desc
+	theme = court_event
+	left_portrait = scope:dm_reform_reformer
+	option = {
+		name = dm_reform.extreme.exile
+		scope:dm_reform_reformer = { banish = yes }
+	}
+	option = {
+		name = dm_reform.extreme.protect
+		add_legitimacy = -10
+	}
+}
+
+dm_reform.9108 = {
+	type = character_event
+	title = dm_reform.9108.t
+	desc = dm_reform.9108.desc
+	theme = court_event
+	left_portrait = scope:dm_reform_reformer
+	option = {
+		name = dm_reform.extreme.execute
+		scope:dm_reform_reformer = {
+			death = { death_reason = death_execution killer = root }
+		}
+	}
+	option = {
+		name = dm_reform.extreme.protect
+		add_legitimacy = -20
+	}
+}
+
+dm_reform.9109 = {
+	type = character_event
+	title = dm_reform.9109.t
+	desc = dm_reform.9109.desc
+	theme = court_event
+	left_portrait = scope:dm_reform_reformer
+	option = {
+		name = dm_reform.extreme.refuse
+		every_vassal = {
+			add_opinion = { target = root modifier = angry_opinion opinion = -25 years = 10 }
+		}
+	}
+}
+
+dm_reform.9110 = {
+	type = character_event
+	title = dm_reform.9110.t
+	desc = dm_reform.9110.desc
+	theme = court_event
+	option = {
+		name = dm_reform.extreme.resist
+		add_character_modifier = { modifier = dm_reform_civil_war_pressure years = 10 }
+	}
+}
+
+dm_reform.9111 = {
+	type = character_event
+	title = dm_reform.9111.t
+	desc = dm_reform.9111.desc
+	theme = court_event
+	option = {
+		name = dm_reform.extreme.endure
+		add_character_modifier = { modifier = dm_reform_administrative_paralysis years = 10 }
+	}
+}
+
+dm_reform.9112 = {
+	type = character_event
+	title = dm_reform.9112.t
+	desc = dm_reform.9112.desc
+	theme = court_event
+	option = {
+		name = dm_reform.extreme.endure
+		every_vassal = {
+			add_opinion = { target = root modifier = angry_opinion opinion = -20 years = 10 }
+		}
+		add_character_modifier = { modifier = dm_reform_faction_discontent years = 10 }
+	}
+}
+
+dm_reform.9200 = {
+	hidden = yes
+	immediate = {
+		if = {
+			limit = {
+				NOT = { exists = scope:dm_reform_reformer }
+			}
+		}
+		else = {
+			random_list = {
+				25 = {
+					modifier = {
+						add = 20
+						scope:dm_reform_reformer = { has_trait = ambitious }
+					}
+					trigger_event = dm_reform.9201
+				}
+				20 = {
+					modifier = {
+						add = 20
+						scope:dm_reform_reformer = { has_trait = content }
+					}
+					trigger_event = dm_reform.9202
+				}
+				25 = {
+					modifier = {
+						add = 15
+						scope:dm_reform_reformer = { has_trait = greedy }
+					}
+					trigger_event = dm_reform.9203
+				}
+				5 = {
+					modifier = {
+						add = 20
+						scope:dm_reform_reformer = { has_trait = fickle }
+					}
+					trigger_event = dm_reform.9204
+				}
+				25 = { trigger_event = dm_reform.9205 }
+			}
+		}
+	}
+}
+
+dm_reform.9201 = {
+	type = character_event
+	title = dm_reform.9201.t
+	desc = dm_reform.9201.desc
+	theme = court_event
+	left_portrait = scope:dm_reform_reformer
+	option = {
+		name = dm_reform.9201.a
+		scope:dm_reform_reformer = { add_prestige = 250 }
+	}
+	option = {
+		name = dm_reform.9201.b
+		scope:dm_reform_reformer = {
+			add_opinion = { target = root modifier = disappointed_opinion opinion = -30 years = 10 }
+		}
+	}
+}
+
+dm_reform.9202 = {
+	type = character_event
+	title = dm_reform.9202.t
+	desc = dm_reform.9202.desc
+	theme = court_event
+	left_portrait = scope:dm_reform_reformer
+	option = {
+		name = dm_reform.9202.a
+		scope:dm_reform_reformer = { add_piety = 100 }
+	}
+}
+
+dm_reform.9203 = {
+	type = character_event
+	title = dm_reform.9203.t
+	desc = dm_reform.9203.desc
+	theme = court_event
+	left_portrait = scope:dm_reform_reformer
+	option = {
+		name = dm_reform.9203.a
+		add_gold = -150
+		scope:dm_reform_reformer = { add_gold = 150 }
+	}
+	option = {
+		name = dm_reform.9203.b
+		scope:dm_reform_reformer = {
+			add_opinion = { target = root modifier = disappointed_opinion opinion = -20 years = 10 }
+		}
+	}
+}
+
+dm_reform.9204 = {
+	type = character_event
+	title = dm_reform.9204.t
+	desc = dm_reform.9204.desc
+	theme = court_event
+	left_portrait = scope:dm_reform_reformer
+	immediate = {
+		if = {
+			limit = {
+				scope:dm_reform_reformer = {
+					has_dlc_feature = roads_to_power
+					is_physically_able_adult = yes
+					exists = location.county
+					ai_can_valid_to_create_laamp_trigger = yes
+				}
+			}
+			scope:dm_reform_reformer = {
+				create_landless_adventurer_title_effect = {
+					REASON = flag:voluntary
+					FLAVOR_CHAR = root
+				}
+			}
+		}
+		else = {
+			scope:dm_reform_reformer = { banish = yes }
+		}
+	}
+	option = { name = dm_reform.9204.a }
+}
+
+dm_reform.9205 = {
+	type = character_event
+	title = dm_reform.9205.t
+	desc = dm_reform.9205.desc
+	theme = court_event
+	left_portrait = scope:dm_reform_reformer
+	option = { name = dm_reform.9205.a }
+}
+
+dm_reform.9001 = {
+	type = character_event
+	title = dm_reform.9001.t
+	desc = dm_reform.9001.desc
+	theme = court_event
+	left_portrait = root
+	option = { name = dm_reform.9001.a }
+}
+
+dm_reform.9002 = {
+	type = character_event
+	title = dm_reform.9002.t
+	desc = dm_reform.9002.desc
+	theme = court_event
+	left_portrait = root
+	option = { name = dm_reform.9002.a }
+}
+
+dm_reform.9003 = {
+	type = character_event
+	title = dm_reform.9003.t
+	desc = dm_reform.9003.desc
+	theme = court_event
+	left_portrait = root
+	option = { name = dm_reform.9003.a }
+}
+
+dm_reform.9004 = {
+	type = character_event
+	title = dm_reform.9004.t
+	desc = dm_reform.9004.desc
+	theme = court_event
+	left_portrait = root
+	option = { name = dm_reform.9004.a }
+}

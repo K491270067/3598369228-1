@@ -1,0 +1,28 @@
+dm_reform_can_start_trigger = {
+	is_ruler = yes
+	is_alive = yes
+	is_imprisoned = no
+	NOT = { has_character_flag = dm_reform_cooldown }
+	NOR = {
+		any_owned_story = {
+			type = dm_reform_story
+		}
+	}
+}
+
+# ROOT: participant; scope:dm_reform_ruler: current reform ruler.
+dm_reform_participant_supports_trigger = {
+	dm_reform_stance_score_value > 0
+}
+
+dm_reform_is_formal_trigger = {
+	var:dm_reform_phase = flag:formal
+}
+
+dm_reform_has_reformer_trigger = {
+	exists = var:dm_reform_reformer
+	var:dm_reform_reformer = {
+		is_alive = yes
+		is_available_adult = yes
+	}
+}

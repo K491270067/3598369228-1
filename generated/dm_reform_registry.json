@@ -1,0 +1,2493 @@
+{
+  "schema": 1,
+  "vanilla_root": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game",
+  "laws": [
+    {
+      "key": "top_liege_redirected_to_border_wars_law",
+      "group": "border_wars_laws",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\02_admininistrative_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "military",
+      "axis": "military_control",
+      "level": -3,
+      "budget": false,
+      "cost_resources": []
+    },
+    {
+      "key": "top_liege_not_redirected_to_border_wars_law",
+      "group": "border_wars_laws",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\02_admininistrative_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "military",
+      "axis": "military_control",
+      "level": 3,
+      "budget": false,
+      "cost_resources": []
+    },
+    {
+      "key": "budget_allocation_military_0",
+      "group": "budget_allocation_military_law",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\02_admininistrative_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "military",
+      "axis": "military_control",
+      "level": -3,
+      "budget": true,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "budget_allocation_military_5",
+      "group": "budget_allocation_military_law",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\02_admininistrative_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "military",
+      "axis": "military_control",
+      "level": -3,
+      "budget": true,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "budget_allocation_military_10",
+      "group": "budget_allocation_military_law",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\02_admininistrative_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "military",
+      "axis": "military_control",
+      "level": -2,
+      "budget": true,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "budget_allocation_military_15",
+      "group": "budget_allocation_military_law",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\02_admininistrative_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "military",
+      "axis": "military_control",
+      "level": -2,
+      "budget": true,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "budget_allocation_military_20",
+      "group": "budget_allocation_military_law",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\02_admininistrative_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "military",
+      "axis": "military_control",
+      "level": -2,
+      "budget": true,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "budget_allocation_military_25",
+      "group": "budget_allocation_military_law",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\02_admininistrative_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "military",
+      "axis": "military_control",
+      "level": -2,
+      "budget": true,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "budget_allocation_military_30",
+      "group": "budget_allocation_military_law",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\02_admininistrative_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "military",
+      "axis": "military_control",
+      "level": -1,
+      "budget": true,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "budget_allocation_military_35",
+      "group": "budget_allocation_military_law",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\02_admininistrative_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "military",
+      "axis": "military_control",
+      "level": -1,
+      "budget": true,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "budget_allocation_military_40",
+      "group": "budget_allocation_military_law",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\02_admininistrative_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "military",
+      "axis": "military_control",
+      "level": -1,
+      "budget": true,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "budget_allocation_military_45",
+      "group": "budget_allocation_military_law",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\02_admininistrative_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "military",
+      "axis": "military_control",
+      "level": 0,
+      "budget": true,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "budget_allocation_military_50",
+      "group": "budget_allocation_military_law",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\02_admininistrative_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "military",
+      "axis": "military_control",
+      "level": 0,
+      "budget": true,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "budget_allocation_military_55",
+      "group": "budget_allocation_military_law",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\02_admininistrative_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "military",
+      "axis": "military_control",
+      "level": 0,
+      "budget": true,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "budget_allocation_military_60",
+      "group": "budget_allocation_military_law",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\02_admininistrative_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "military",
+      "axis": "military_control",
+      "level": 1,
+      "budget": true,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "budget_allocation_military_65",
+      "group": "budget_allocation_military_law",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\02_admininistrative_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "military",
+      "axis": "military_control",
+      "level": 1,
+      "budget": true,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "budget_allocation_military_70",
+      "group": "budget_allocation_military_law",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\02_admininistrative_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "military",
+      "axis": "military_control",
+      "level": 1,
+      "budget": true,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "budget_allocation_military_75",
+      "group": "budget_allocation_military_law",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\02_admininistrative_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "military",
+      "axis": "military_control",
+      "level": 2,
+      "budget": true,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "budget_allocation_military_80",
+      "group": "budget_allocation_military_law",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\02_admininistrative_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "military",
+      "axis": "military_control",
+      "level": 2,
+      "budget": true,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "budget_allocation_military_85",
+      "group": "budget_allocation_military_law",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\02_admininistrative_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "military",
+      "axis": "military_control",
+      "level": 2,
+      "budget": true,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "budget_allocation_military_90",
+      "group": "budget_allocation_military_law",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\02_admininistrative_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "military",
+      "axis": "military_control",
+      "level": 2,
+      "budget": true,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "budget_allocation_military_95",
+      "group": "budget_allocation_military_law",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\02_admininistrative_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "military",
+      "axis": "military_control",
+      "level": 3,
+      "budget": true,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "budget_allocation_military_100",
+      "group": "budget_allocation_military_law",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\02_admininistrative_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "military",
+      "axis": "military_control",
+      "level": 3,
+      "budget": true,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "budget_allocation_ministry_0",
+      "group": "budget_allocation_ministry_law",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\02_admininistrative_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "finance",
+      "axis": "administrative_unity",
+      "level": -3,
+      "budget": true,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "budget_allocation_ministry_5",
+      "group": "budget_allocation_ministry_law",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\02_admininistrative_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "finance",
+      "axis": "administrative_unity",
+      "level": -3,
+      "budget": true,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "budget_allocation_ministry_10",
+      "group": "budget_allocation_ministry_law",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\02_admininistrative_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "finance",
+      "axis": "administrative_unity",
+      "level": -2,
+      "budget": true,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "budget_allocation_ministry_15",
+      "group": "budget_allocation_ministry_law",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\02_admininistrative_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "finance",
+      "axis": "administrative_unity",
+      "level": -2,
+      "budget": true,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "budget_allocation_ministry_20",
+      "group": "budget_allocation_ministry_law",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\02_admininistrative_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "finance",
+      "axis": "administrative_unity",
+      "level": -2,
+      "budget": true,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "budget_allocation_ministry_25",
+      "group": "budget_allocation_ministry_law",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\02_admininistrative_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "finance",
+      "axis": "administrative_unity",
+      "level": -2,
+      "budget": true,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "budget_allocation_ministry_30",
+      "group": "budget_allocation_ministry_law",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\02_admininistrative_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "finance",
+      "axis": "administrative_unity",
+      "level": -1,
+      "budget": true,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "budget_allocation_ministry_35",
+      "group": "budget_allocation_ministry_law",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\02_admininistrative_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "finance",
+      "axis": "administrative_unity",
+      "level": -1,
+      "budget": true,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "budget_allocation_ministry_40",
+      "group": "budget_allocation_ministry_law",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\02_admininistrative_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "finance",
+      "axis": "administrative_unity",
+      "level": -1,
+      "budget": true,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "budget_allocation_ministry_45",
+      "group": "budget_allocation_ministry_law",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\02_admininistrative_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "finance",
+      "axis": "administrative_unity",
+      "level": 0,
+      "budget": true,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "budget_allocation_ministry_50",
+      "group": "budget_allocation_ministry_law",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\02_admininistrative_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "finance",
+      "axis": "administrative_unity",
+      "level": 0,
+      "budget": true,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "budget_allocation_ministry_55",
+      "group": "budget_allocation_ministry_law",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\02_admininistrative_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "finance",
+      "axis": "administrative_unity",
+      "level": 0,
+      "budget": true,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "budget_allocation_ministry_60",
+      "group": "budget_allocation_ministry_law",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\02_admininistrative_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "finance",
+      "axis": "administrative_unity",
+      "level": 1,
+      "budget": true,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "budget_allocation_ministry_65",
+      "group": "budget_allocation_ministry_law",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\02_admininistrative_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "finance",
+      "axis": "administrative_unity",
+      "level": 1,
+      "budget": true,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "budget_allocation_ministry_70",
+      "group": "budget_allocation_ministry_law",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\02_admininistrative_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "finance",
+      "axis": "administrative_unity",
+      "level": 1,
+      "budget": true,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "budget_allocation_ministry_75",
+      "group": "budget_allocation_ministry_law",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\02_admininistrative_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "finance",
+      "axis": "administrative_unity",
+      "level": 2,
+      "budget": true,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "budget_allocation_ministry_80",
+      "group": "budget_allocation_ministry_law",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\02_admininistrative_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "finance",
+      "axis": "administrative_unity",
+      "level": 2,
+      "budget": true,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "budget_allocation_ministry_85",
+      "group": "budget_allocation_ministry_law",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\02_admininistrative_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "finance",
+      "axis": "administrative_unity",
+      "level": 2,
+      "budget": true,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "budget_allocation_ministry_90",
+      "group": "budget_allocation_ministry_law",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\02_admininistrative_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "finance",
+      "axis": "administrative_unity",
+      "level": 2,
+      "budget": true,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "budget_allocation_ministry_95",
+      "group": "budget_allocation_ministry_law",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\02_admininistrative_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "finance",
+      "axis": "administrative_unity",
+      "level": 3,
+      "budget": true,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "budget_allocation_ministry_100",
+      "group": "budget_allocation_ministry_law",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\02_admininistrative_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "finance",
+      "axis": "administrative_unity",
+      "level": 3,
+      "budget": true,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "budget_allocation_salary_0",
+      "group": "budget_allocation_salary_law",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\02_admininistrative_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "finance",
+      "axis": "court_expenditure",
+      "level": -3,
+      "budget": true,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "budget_allocation_salary_5",
+      "group": "budget_allocation_salary_law",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\02_admininistrative_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "finance",
+      "axis": "court_expenditure",
+      "level": -3,
+      "budget": true,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "budget_allocation_salary_10",
+      "group": "budget_allocation_salary_law",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\02_admininistrative_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "finance",
+      "axis": "court_expenditure",
+      "level": -2,
+      "budget": true,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "budget_allocation_salary_15",
+      "group": "budget_allocation_salary_law",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\02_admininistrative_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "finance",
+      "axis": "court_expenditure",
+      "level": -2,
+      "budget": true,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "budget_allocation_salary_20",
+      "group": "budget_allocation_salary_law",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\02_admininistrative_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "finance",
+      "axis": "court_expenditure",
+      "level": -2,
+      "budget": true,
+      "cost_resources": []
+    },
+    {
+      "key": "budget_allocation_salary_25",
+      "group": "budget_allocation_salary_law",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\02_admininistrative_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "finance",
+      "axis": "court_expenditure",
+      "level": -2,
+      "budget": true,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "budget_allocation_salary_30",
+      "group": "budget_allocation_salary_law",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\02_admininistrative_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "finance",
+      "axis": "court_expenditure",
+      "level": -1,
+      "budget": true,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "budget_allocation_salary_35",
+      "group": "budget_allocation_salary_law",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\02_admininistrative_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "finance",
+      "axis": "court_expenditure",
+      "level": -1,
+      "budget": true,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "budget_allocation_salary_40",
+      "group": "budget_allocation_salary_law",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\02_admininistrative_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "finance",
+      "axis": "court_expenditure",
+      "level": -1,
+      "budget": true,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "budget_allocation_salary_45",
+      "group": "budget_allocation_salary_law",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\02_admininistrative_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "finance",
+      "axis": "court_expenditure",
+      "level": 0,
+      "budget": true,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "budget_allocation_salary_50",
+      "group": "budget_allocation_salary_law",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\02_admininistrative_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "finance",
+      "axis": "court_expenditure",
+      "level": 0,
+      "budget": true,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "budget_allocation_salary_55",
+      "group": "budget_allocation_salary_law",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\02_admininistrative_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "finance",
+      "axis": "court_expenditure",
+      "level": 0,
+      "budget": true,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "budget_allocation_salary_60",
+      "group": "budget_allocation_salary_law",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\02_admininistrative_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "finance",
+      "axis": "court_expenditure",
+      "level": 1,
+      "budget": true,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "budget_allocation_salary_65",
+      "group": "budget_allocation_salary_law",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\02_admininistrative_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "finance",
+      "axis": "court_expenditure",
+      "level": 1,
+      "budget": true,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "budget_allocation_salary_70",
+      "group": "budget_allocation_salary_law",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\02_admininistrative_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "finance",
+      "axis": "court_expenditure",
+      "level": 1,
+      "budget": true,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "budget_allocation_salary_75",
+      "group": "budget_allocation_salary_law",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\02_admininistrative_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "finance",
+      "axis": "court_expenditure",
+      "level": 2,
+      "budget": true,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "budget_allocation_salary_80",
+      "group": "budget_allocation_salary_law",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\02_admininistrative_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "finance",
+      "axis": "court_expenditure",
+      "level": 2,
+      "budget": true,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "budget_allocation_salary_85",
+      "group": "budget_allocation_salary_law",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\02_admininistrative_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "finance",
+      "axis": "court_expenditure",
+      "level": 2,
+      "budget": true,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "budget_allocation_salary_90",
+      "group": "budget_allocation_salary_law",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\02_admininistrative_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "finance",
+      "axis": "court_expenditure",
+      "level": 2,
+      "budget": true,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "budget_allocation_salary_95",
+      "group": "budget_allocation_salary_law",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\02_admininistrative_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "finance",
+      "axis": "court_expenditure",
+      "level": 3,
+      "budget": true,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "budget_allocation_salary_100",
+      "group": "budget_allocation_salary_law",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\02_admininistrative_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "finance",
+      "axis": "court_expenditure",
+      "level": 3,
+      "budget": true,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "candidate_score_merit_law",
+      "group": "candidate_score_laws",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\02_admininistrative_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "administration",
+      "axis": "meritocracy",
+      "level": -3,
+      "budget": false,
+      "cost_resources": [
+        "influence",
+        "treasury"
+      ]
+    },
+    {
+      "key": "candidate_score_prestige_law",
+      "group": "candidate_score_laws",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\02_admininistrative_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "administration",
+      "axis": "meritocracy",
+      "level": 3,
+      "budget": false,
+      "cost_resources": [
+        "influence",
+        "treasury"
+      ]
+    },
+    {
+      "key": "celestial_army_liege_law_0",
+      "group": "celestial_army_liege_law",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\02_admininistrative_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "military",
+      "axis": "military_control",
+      "level": -3,
+      "budget": false,
+      "cost_resources": []
+    },
+    {
+      "key": "celestial_army_liege_law_1",
+      "group": "celestial_army_liege_law",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\02_admininistrative_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "military",
+      "axis": "military_control",
+      "level": -1,
+      "budget": false,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "celestial_army_liege_law_2",
+      "group": "celestial_army_liege_law",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\02_admininistrative_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "military",
+      "axis": "military_control",
+      "level": 1,
+      "budget": false,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "celestial_army_liege_law_3",
+      "group": "celestial_army_liege_law",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\02_admininistrative_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "military",
+      "axis": "military_control",
+      "level": 3,
+      "budget": false,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "celestial_army_vassal_law_0",
+      "group": "celestial_army_vassal_law",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\02_admininistrative_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "military",
+      "axis": "military_control",
+      "level": -3,
+      "budget": false,
+      "cost_resources": []
+    },
+    {
+      "key": "celestial_army_vassal_law_1",
+      "group": "celestial_army_vassal_law",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\02_admininistrative_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "military",
+      "axis": "military_control",
+      "level": -1,
+      "budget": false,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "celestial_army_vassal_law_2",
+      "group": "celestial_army_vassal_law",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\02_admininistrative_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "military",
+      "axis": "military_control",
+      "level": 1,
+      "budget": false,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "celestial_army_vassal_law_3",
+      "group": "celestial_army_vassal_law",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\02_admininistrative_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "military",
+      "axis": "military_control",
+      "level": 3,
+      "budget": false,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "celestial_bureaucracy_0",
+      "group": "celestial_bureaucracy",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\00_realm_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "ritual",
+      "axis": "ritual_legitimacy",
+      "level": -3,
+      "budget": false,
+      "cost_resources": []
+    },
+    {
+      "key": "celestial_bureaucracy_1",
+      "group": "celestial_bureaucracy",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\00_realm_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "ritual",
+      "axis": "ritual_legitimacy",
+      "level": -1,
+      "budget": false,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "celestial_bureaucracy_2",
+      "group": "celestial_bureaucracy",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\00_realm_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "ritual",
+      "axis": "ritual_legitimacy",
+      "level": 1,
+      "budget": false,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "celestial_bureaucracy_3",
+      "group": "celestial_bureaucracy",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\00_realm_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "ritual",
+      "axis": "ritual_legitimacy",
+      "level": 3,
+      "budget": false,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "celestial_retirement_law_0",
+      "group": "celestial_retirement_law",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\02_admininistrative_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "administration",
+      "axis": "meritocracy",
+      "level": -3,
+      "budget": false,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "celestial_retirement_law_1",
+      "group": "celestial_retirement_law",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\02_admininistrative_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "administration",
+      "axis": "meritocracy",
+      "level": -2,
+      "budget": false,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "celestial_retirement_law_2",
+      "group": "celestial_retirement_law",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\02_admininistrative_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "administration",
+      "axis": "meritocracy",
+      "level": -1,
+      "budget": false,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "celestial_retirement_law_3",
+      "group": "celestial_retirement_law",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\02_admininistrative_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "administration",
+      "axis": "meritocracy",
+      "level": 1,
+      "budget": false,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "celestial_retirement_law_4",
+      "group": "celestial_retirement_law",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\02_admininistrative_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "administration",
+      "axis": "meritocracy",
+      "level": 2,
+      "budget": false,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "celestial_retirement_law_5",
+      "group": "celestial_retirement_law",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\02_admininistrative_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "administration",
+      "axis": "meritocracy",
+      "level": 3,
+      "budget": false,
+      "cost_resources": []
+    },
+    {
+      "key": "crown_authority_legacy_head",
+      "group": "crown_authority",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\00_realm_laws_M_COPF.txt",
+      "source_layer": "mod",
+      "theme": "authority",
+      "axis": "centralization",
+      "level": -3,
+      "budget": false,
+      "cost_resources": []
+    },
+    {
+      "key": "crown_authority_titular_liege",
+      "group": "crown_authority",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\00_realm_laws_M_COPF.txt",
+      "source_layer": "mod",
+      "theme": "authority",
+      "axis": "centralization",
+      "level": -2,
+      "budget": false,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "crown_authority_0",
+      "group": "crown_authority",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\00_realm_laws_M_COPF.txt",
+      "source_layer": "mod",
+      "theme": "authority",
+      "axis": "centralization",
+      "level": -1,
+      "budget": false,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "crown_authority_1",
+      "group": "crown_authority",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\00_realm_laws_M_COPF.txt",
+      "source_layer": "mod",
+      "theme": "authority",
+      "axis": "centralization",
+      "level": 1,
+      "budget": false,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "crown_authority_2",
+      "group": "crown_authority",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\00_realm_laws_M_COPF.txt",
+      "source_layer": "mod",
+      "theme": "authority",
+      "axis": "centralization",
+      "level": 2,
+      "budget": false,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "crown_authority_3",
+      "group": "crown_authority",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\00_realm_laws_M_COPF.txt",
+      "source_layer": "mod",
+      "theme": "authority",
+      "axis": "centralization",
+      "level": 3,
+      "budget": false,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "grand_chancellor_law",
+      "group": "grand_secretariat_laws",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\02_admininistrative_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "administration",
+      "axis": "administrative_unity",
+      "level": -3,
+      "budget": false,
+      "cost_resources": []
+    },
+    {
+      "key": "grand_marshal_law",
+      "group": "grand_secretariat_laws",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\02_admininistrative_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "administration",
+      "axis": "administrative_unity",
+      "level": 0,
+      "budget": false,
+      "cost_resources": []
+    },
+    {
+      "key": "grand_censor_law",
+      "group": "grand_secretariat_laws",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\02_admininistrative_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "administration",
+      "axis": "administrative_unity",
+      "level": 3,
+      "budget": false,
+      "cost_resources": []
+    },
+    {
+      "key": "imperial_bureaucracy_0",
+      "group": "imperial_bureaucracy",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\00_realm_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "administration",
+      "axis": "administrative_unity",
+      "level": -3,
+      "budget": false,
+      "cost_resources": []
+    },
+    {
+      "key": "imperial_bureaucracy_1",
+      "group": "imperial_bureaucracy",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\00_realm_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "administration",
+      "axis": "administrative_unity",
+      "level": -1,
+      "budget": false,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "imperial_bureaucracy_2",
+      "group": "imperial_bureaucracy",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\00_realm_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "administration",
+      "axis": "administrative_unity",
+      "level": 1,
+      "budget": false,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "imperial_bureaucracy_3",
+      "group": "imperial_bureaucracy",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\00_realm_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "administration",
+      "axis": "administrative_unity",
+      "level": 3,
+      "budget": false,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "defense_mobilization_law",
+      "group": "imperial_policy_laws",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\03_imperial_policies.txt",
+      "source_layer": "vanilla",
+      "theme": "authority",
+      "axis": "centralization",
+      "level": -3,
+      "budget": false,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "disarmament_law",
+      "group": "imperial_policy_laws",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\03_imperial_policies.txt",
+      "source_layer": "vanilla",
+      "theme": "authority",
+      "axis": "centralization",
+      "level": -2,
+      "budget": false,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "isolation_law",
+      "group": "imperial_policy_laws",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\03_imperial_policies.txt",
+      "source_layer": "vanilla",
+      "theme": "authority",
+      "axis": "centralization",
+      "level": -1,
+      "budget": false,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "imperial_expansion_law",
+      "group": "imperial_policy_laws",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\03_imperial_policies.txt",
+      "source_layer": "vanilla",
+      "theme": "authority",
+      "axis": "centralization",
+      "level": 1,
+      "budget": false,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "manor_reform_law",
+      "group": "imperial_policy_laws",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\03_imperial_policies.txt",
+      "source_layer": "vanilla",
+      "theme": "authority",
+      "axis": "centralization",
+      "level": 2,
+      "budget": false,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "bandit_crackdown_law",
+      "group": "imperial_policy_laws",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\03_imperial_policies.txt",
+      "source_layer": "vanilla",
+      "theme": "authority",
+      "axis": "centralization",
+      "level": 3,
+      "budget": false,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "japanese_bureaucracy_0",
+      "group": "japanese_bureaucracy",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\00_realm_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "administration",
+      "axis": "administrative_unity",
+      "level": -3,
+      "budget": false,
+      "cost_resources": []
+    },
+    {
+      "key": "japanese_bureaucracy_1",
+      "group": "japanese_bureaucracy",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\00_realm_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "administration",
+      "axis": "administrative_unity",
+      "level": -1,
+      "budget": false,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "japanese_bureaucracy_2",
+      "group": "japanese_bureaucracy",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\00_realm_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "administration",
+      "axis": "administrative_unity",
+      "level": 1,
+      "budget": false,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "japanese_bureaucracy_3",
+      "group": "japanese_bureaucracy",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\00_realm_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "administration",
+      "axis": "administrative_unity",
+      "level": 3,
+      "budget": false,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "law_candidate_preference_policy_powerful_gentry",
+      "group": "law_group_candidate_preference_policy_feudal_governor",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\01_1_laws_succession_rights_policy_A_COPF.txt",
+      "source_layer": "mod",
+      "theme": "administration",
+      "axis": "meritocracy",
+      "level": -3,
+      "budget": false,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "law_candidate_preference_policy_local_talent",
+      "group": "law_group_candidate_preference_policy_feudal_governor",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\01_1_laws_succession_rights_policy_A_COPF.txt",
+      "source_layer": "mod",
+      "theme": "administration",
+      "axis": "meritocracy",
+      "level": -2,
+      "budget": false,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "law_candidate_preference_policy_favor_nepotism",
+      "group": "law_group_candidate_preference_policy_feudal_governor",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\01_1_laws_succession_rights_policy_A_COPF.txt",
+      "source_layer": "mod",
+      "theme": "administration",
+      "axis": "meritocracy",
+      "level": 0,
+      "budget": false,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "law_candidate_preference_policy_talent_only",
+      "group": "law_group_candidate_preference_policy_feudal_governor",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\01_1_laws_succession_rights_policy_A_COPF.txt",
+      "source_layer": "mod",
+      "theme": "administration",
+      "axis": "meritocracy",
+      "level": 2,
+      "budget": false,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "law_candidate_preference_policy_bureaucrat_promotion",
+      "group": "law_group_candidate_preference_policy_feudal_governor",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\01_1_laws_succession_rights_policy_A_COPF.txt",
+      "source_layer": "mod",
+      "theme": "administration",
+      "axis": "meritocracy",
+      "level": 3,
+      "budget": false,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "law_vassal_revoke_title_policy_prohibit_revoke",
+      "group": "law_group_vassal_revoke_title_policy",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\01_2_laws_subject_power_policy_A_COPF.txt",
+      "source_layer": "mod",
+      "theme": "authority",
+      "axis": "centralization",
+      "level": -3,
+      "budget": false,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "law_vassal_revoke_title_policy_allow_revoke",
+      "group": "law_group_vassal_revoke_title_policy",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\01_2_laws_subject_power_policy_A_COPF.txt",
+      "source_layer": "mod",
+      "theme": "authority",
+      "axis": "centralization",
+      "level": 3,
+      "budget": false,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "law_vassal_succession_rights_policy_hereditary",
+      "group": "law_group_vassal_succession_rights_policy",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\01_1_laws_succession_rights_policy_A_COPF.txt",
+      "source_layer": "mod",
+      "theme": "succession",
+      "axis": "succession_concentration",
+      "level": -3,
+      "budget": false,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "law_vassal_succession_rights_policy_forced_partition",
+      "group": "law_group_vassal_succession_rights_policy",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\01_1_laws_succession_rights_policy_A_COPF.txt",
+      "source_layer": "mod",
+      "theme": "succession",
+      "axis": "succession_concentration",
+      "level": -2,
+      "budget": false,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "law_vassal_succession_rights_policy_grant_recognition",
+      "group": "law_group_vassal_succession_rights_policy",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\01_1_laws_succession_rights_policy_A_COPF.txt",
+      "source_layer": "mod",
+      "theme": "succession",
+      "axis": "succession_concentration",
+      "level": 0,
+      "budget": false,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "law_vassal_succession_rights_policy_court_supervision",
+      "group": "law_group_vassal_succession_rights_policy",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\01_1_laws_succession_rights_policy_A_COPF.txt",
+      "source_layer": "mod",
+      "theme": "succession",
+      "axis": "succession_concentration",
+      "level": 2,
+      "budget": false,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "law_vassal_succession_rights_policy_governor_appointment",
+      "group": "law_group_vassal_succession_rights_policy",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\01_1_laws_succession_rights_policy_A_COPF.txt",
+      "source_layer": "mod",
+      "theme": "succession",
+      "axis": "succession_concentration",
+      "level": 3,
+      "budget": false,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "law_vassal_title_leave_realm_policy_allowed",
+      "group": "law_group_vassal_title_leave_realm_policy",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\01_2_laws_subject_power_policy_A_COPF.txt",
+      "source_layer": "mod",
+      "theme": "authority",
+      "axis": "centralization",
+      "level": -3,
+      "budget": false,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "law_vassal_title_leave_realm_policy_restricted",
+      "group": "law_group_vassal_title_leave_realm_policy",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\01_2_laws_subject_power_policy_A_COPF.txt",
+      "source_layer": "mod",
+      "theme": "authority",
+      "axis": "centralization",
+      "level": 3,
+      "budget": false,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "law_vassal_war_policy_no_restriction",
+      "group": "law_group_vassal_war_policy",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\01_2_laws_subject_power_policy_A_COPF.txt",
+      "source_layer": "mod",
+      "theme": "military",
+      "axis": "military_control",
+      "level": -3,
+      "budget": false,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "law_vassal_war_policy_prohibit_internal_wars",
+      "group": "law_group_vassal_war_policy",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\01_2_laws_subject_power_policy_A_COPF.txt",
+      "source_layer": "mod",
+      "theme": "military",
+      "axis": "military_control",
+      "level": -1,
+      "budget": false,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "law_vassal_war_policy_prohibit_all_wars",
+      "group": "law_group_vassal_war_policy",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\01_2_laws_subject_power_policy_A_COPF.txt",
+      "source_layer": "mod",
+      "theme": "military",
+      "axis": "military_control",
+      "level": 1,
+      "budget": false,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "law_vassal_war_policy_permanent_prohibit_all_wars",
+      "group": "law_group_vassal_war_policy",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\01_2_laws_subject_power_policy_A_COPF.txt",
+      "source_layer": "mod",
+      "theme": "military",
+      "axis": "military_control",
+      "level": 3,
+      "budget": false,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "mandala_decree_none",
+      "group": "mandala_decree",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\00_realm_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "ritual",
+      "axis": "ritual_legitimacy",
+      "level": -3,
+      "budget": false,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "mandala_decree_prosperity",
+      "group": "mandala_decree",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\00_realm_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "ritual",
+      "axis": "ritual_legitimacy",
+      "level": -1,
+      "budget": false,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "mandala_decree_expansion",
+      "group": "mandala_decree",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\00_realm_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "ritual",
+      "axis": "ritual_legitimacy",
+      "level": 1,
+      "budget": false,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "mandala_decree_reverence",
+      "group": "mandala_decree",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\00_realm_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "ritual",
+      "axis": "ritual_legitimacy",
+      "level": 3,
+      "budget": false,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "meritocratic_bureaucracy_0",
+      "group": "meritocratic_bureaucracy",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\00_realm_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "administration",
+      "axis": "meritocracy",
+      "level": -3,
+      "budget": false,
+      "cost_resources": []
+    },
+    {
+      "key": "meritocratic_bureaucracy_1",
+      "group": "meritocratic_bureaucracy",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\00_realm_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "administration",
+      "axis": "meritocracy",
+      "level": -1,
+      "budget": false,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "meritocratic_bureaucracy_2",
+      "group": "meritocratic_bureaucracy",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\00_realm_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "administration",
+      "axis": "meritocracy",
+      "level": 1,
+      "budget": false,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "meritocratic_bureaucracy_3",
+      "group": "meritocratic_bureaucracy",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\00_realm_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "administration",
+      "axis": "meritocracy",
+      "level": 3,
+      "budget": false,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "nomadic_authority_1",
+      "group": "nomadic_authority",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\00_realm_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "tribal_nomadic",
+      "axis": "state_settlement",
+      "level": -3,
+      "budget": false,
+      "cost_resources": []
+    },
+    {
+      "key": "nomadic_authority_2",
+      "group": "nomadic_authority",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\00_realm_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "tribal_nomadic",
+      "axis": "state_settlement",
+      "level": -2,
+      "budget": false,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "nomadic_authority_3",
+      "group": "nomadic_authority",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\00_realm_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "tribal_nomadic",
+      "axis": "state_settlement",
+      "level": 0,
+      "budget": false,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "nomadic_authority_4",
+      "group": "nomadic_authority",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\00_realm_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "tribal_nomadic",
+      "axis": "state_settlement",
+      "level": 2,
+      "budget": false,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "nomadic_authority_5",
+      "group": "nomadic_authority",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\00_realm_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "tribal_nomadic",
+      "axis": "state_settlement",
+      "level": 3,
+      "budget": false,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "province_border_law_0",
+      "group": "province_border_law",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\02_admininistrative_laws_M_COPF.txt",
+      "source_layer": "mod",
+      "theme": "administration",
+      "axis": "administrative_unity",
+      "level": -3,
+      "budget": false,
+      "cost_resources": []
+    },
+    {
+      "key": "province_border_law_1",
+      "group": "province_border_law",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\02_admininistrative_laws_M_COPF.txt",
+      "source_layer": "mod",
+      "theme": "administration",
+      "axis": "administrative_unity",
+      "level": 0,
+      "budget": false,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "province_border_law_2",
+      "group": "province_border_law",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\02_admininistrative_laws_M_COPF.txt",
+      "source_layer": "mod",
+      "theme": "administration",
+      "axis": "administrative_unity",
+      "level": 3,
+      "budget": false,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "province_war_law_0",
+      "group": "province_war_law",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\02_admininistrative_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "military",
+      "axis": "military_control",
+      "level": -3,
+      "budget": false,
+      "cost_resources": []
+    },
+    {
+      "key": "province_war_law_1",
+      "group": "province_war_law",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\02_admininistrative_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "military",
+      "axis": "military_control",
+      "level": -1,
+      "budget": false,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "province_war_law_2",
+      "group": "province_war_law",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\02_admininistrative_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "military",
+      "axis": "military_control",
+      "level": 1,
+      "budget": false,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "province_war_law_3",
+      "group": "province_war_law",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\02_admininistrative_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "military",
+      "axis": "military_control",
+      "level": 3,
+      "budget": false,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "saas_no_stipend_law",
+      "group": "saas_courtier_stipend_law_group",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\saas_courtier_stipend_laws.txt",
+      "source_layer": "mod",
+      "theme": "finance",
+      "axis": "court_expenditure",
+      "level": -3,
+      "budget": false,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "saas_limited_stipend_law",
+      "group": "saas_courtier_stipend_law_group",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\saas_courtier_stipend_laws.txt",
+      "source_layer": "mod",
+      "theme": "finance",
+      "axis": "court_expenditure",
+      "level": -2,
+      "budget": false,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "saas_normal_stipend_law",
+      "group": "saas_courtier_stipend_law_group",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\saas_courtier_stipend_laws.txt",
+      "source_layer": "mod",
+      "theme": "finance",
+      "axis": "court_expenditure",
+      "level": 0,
+      "budget": false,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "saas_large_stipend_law",
+      "group": "saas_courtier_stipend_law_group",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\saas_courtier_stipend_laws.txt",
+      "source_layer": "mod",
+      "theme": "finance",
+      "axis": "court_expenditure",
+      "level": 2,
+      "budget": false,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "saas_double_stipend_law",
+      "group": "saas_courtier_stipend_law_group",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\saas_courtier_stipend_laws.txt",
+      "source_layer": "mod",
+      "theme": "finance",
+      "axis": "court_expenditure",
+      "level": 3,
+      "budget": false,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "male_only_law",
+      "group": "succession_gender_laws",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\00_succession_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "succession",
+      "axis": "succession_concentration",
+      "level": -3,
+      "budget": false,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "male_preference_law",
+      "group": "succession_gender_laws",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\00_succession_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "succession",
+      "axis": "succession_concentration",
+      "level": -2,
+      "budget": false,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "equal_law",
+      "group": "succession_gender_laws",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\00_succession_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "succession",
+      "axis": "succession_concentration",
+      "level": 0,
+      "budget": false,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "female_preference_law",
+      "group": "succession_gender_laws",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\00_succession_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "succession",
+      "axis": "succession_concentration",
+      "level": 2,
+      "budget": false,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "female_only_law",
+      "group": "succession_gender_laws",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\00_succession_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "succession",
+      "axis": "succession_concentration",
+      "level": 3,
+      "budget": false,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "confederate_partition_succession_law",
+      "group": "succession_order_laws",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\00_succession_laws_M_COPF.txt",
+      "source_layer": "mod",
+      "theme": "succession",
+      "axis": "succession_concentration",
+      "level": -3,
+      "budget": false,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "partition_succession_law",
+      "group": "succession_order_laws",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\00_succession_laws_M_COPF.txt",
+      "source_layer": "mod",
+      "theme": "succession",
+      "axis": "succession_concentration",
+      "level": -3,
+      "budget": false,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "high_partition_succession_law",
+      "group": "succession_order_laws",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\00_succession_laws_M_COPF.txt",
+      "source_layer": "mod",
+      "theme": "succession",
+      "axis": "succession_concentration",
+      "level": -3,
+      "budget": false,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "single_heir_succession_law",
+      "group": "succession_order_laws",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\00_succession_laws_M_COPF.txt",
+      "source_layer": "mod",
+      "theme": "succession",
+      "axis": "succession_concentration",
+      "level": -2,
+      "budget": false,
+      "cost_resources": [
+        "prestige",
+        "piety"
+      ]
+    },
+    {
+      "key": "single_heir_succession_kurultai_law",
+      "group": "succession_order_laws",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\00_succession_laws_M_COPF.txt",
+      "source_layer": "mod",
+      "theme": "succession",
+      "axis": "succession_concentration",
+      "level": -2,
+      "budget": false,
+      "cost_resources": []
+    },
+    {
+      "key": "single_heir_succession_law_youngest",
+      "group": "succession_order_laws",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\00_succession_laws_M_COPF.txt",
+      "source_layer": "mod",
+      "theme": "succession",
+      "axis": "succession_concentration",
+      "level": -2,
+      "budget": false,
+      "cost_resources": [
+        "prestige",
+        "piety"
+      ]
+    },
+    {
+      "key": "single_heir_dynasty_house",
+      "group": "succession_order_laws",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\00_succession_laws_M_COPF.txt",
+      "source_layer": "mod",
+      "theme": "succession",
+      "axis": "succession_concentration",
+      "level": -2,
+      "budget": false,
+      "cost_resources": [
+        "prestige",
+        "piety"
+      ]
+    },
+    {
+      "key": "acclamation_succession_law",
+      "group": "succession_order_laws",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\00_succession_laws_M_COPF.txt",
+      "source_layer": "mod",
+      "theme": "succession",
+      "axis": "succession_concentration",
+      "level": -2,
+      "budget": false,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "appointment_succession_law",
+      "group": "succession_order_laws",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\00_succession_laws_M_COPF.txt",
+      "source_layer": "mod",
+      "theme": "succession",
+      "axis": "succession_concentration",
+      "level": -2,
+      "budget": false,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "landless_adventurer_succession_law",
+      "group": "succession_order_laws",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\00_succession_laws_M_COPF.txt",
+      "source_layer": "mod",
+      "theme": "succession",
+      "axis": "succession_concentration",
+      "level": -1,
+      "budget": false,
+      "cost_resources": []
+    },
+    {
+      "key": "bishop_theocratic_succession_law",
+      "group": "succession_order_laws",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\00_succession_laws_M_COPF.txt",
+      "source_layer": "mod",
+      "theme": "succession",
+      "axis": "succession_concentration",
+      "level": -1,
+      "budget": false,
+      "cost_resources": []
+    },
+    {
+      "key": "holy_order_succession_law",
+      "group": "succession_order_laws",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\00_succession_laws_M_COPF.txt",
+      "source_layer": "mod",
+      "theme": "succession",
+      "axis": "succession_concentration",
+      "level": -1,
+      "budget": false,
+      "cost_resources": []
+    },
+    {
+      "key": "mercenary_company_succession_law",
+      "group": "succession_order_laws",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\00_succession_laws_M_COPF.txt",
+      "source_layer": "mod",
+      "theme": "succession",
+      "axis": "succession_concentration",
+      "level": -1,
+      "budget": false,
+      "cost_resources": []
+    },
+    {
+      "key": "city_succession_law",
+      "group": "succession_order_laws",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\00_succession_laws_M_COPF.txt",
+      "source_layer": "mod",
+      "theme": "succession",
+      "axis": "succession_concentration",
+      "level": -1,
+      "budget": false,
+      "cost_resources": []
+    },
+    {
+      "key": "clan_antagonistic_partition_succession_law",
+      "group": "succession_order_laws",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\00_succession_laws_M_COPF.txt",
+      "source_layer": "mod",
+      "theme": "succession",
+      "axis": "succession_concentration",
+      "level": -1,
+      "budget": false,
+      "cost_resources": []
+    },
+    {
+      "key": "clan_competitive_partition_succession_law",
+      "group": "succession_order_laws",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\00_succession_laws_M_COPF.txt",
+      "source_layer": "mod",
+      "theme": "succession",
+      "axis": "succession_concentration",
+      "level": 0,
+      "budget": false,
+      "cost_resources": []
+    },
+    {
+      "key": "clan_impassive_partition_succession_law",
+      "group": "succession_order_laws",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\00_succession_laws_M_COPF.txt",
+      "source_layer": "mod",
+      "theme": "succession",
+      "axis": "succession_concentration",
+      "level": 0,
+      "budget": false,
+      "cost_resources": []
+    },
+    {
+      "key": "clan_friendly_partition_succession_law",
+      "group": "succession_order_laws",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\00_succession_laws_M_COPF.txt",
+      "source_layer": "mod",
+      "theme": "succession",
+      "axis": "succession_concentration",
+      "level": 0,
+      "budget": false,
+      "cost_resources": []
+    },
+    {
+      "key": "clan_harmonious_partition_succession_law",
+      "group": "succession_order_laws",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\00_succession_laws_M_COPF.txt",
+      "source_layer": "mod",
+      "theme": "succession",
+      "axis": "succession_concentration",
+      "level": 0,
+      "budget": false,
+      "cost_resources": []
+    },
+    {
+      "key": "herder_succession_law",
+      "group": "succession_order_laws",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\00_succession_laws_M_COPF.txt",
+      "source_layer": "mod",
+      "theme": "succession",
+      "axis": "succession_concentration",
+      "level": 0,
+      "budget": false,
+      "cost_resources": []
+    },
+    {
+      "key": "celestial_appointment_succession_law",
+      "group": "succession_order_laws",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\00_succession_laws_M_COPF.txt",
+      "source_layer": "mod",
+      "theme": "succession",
+      "axis": "succession_concentration",
+      "level": 0,
+      "budget": false,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "celestial_military_appointment_succession_law",
+      "group": "succession_order_laws",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\00_succession_laws_M_COPF.txt",
+      "source_layer": "mod",
+      "theme": "succession",
+      "axis": "succession_concentration",
+      "level": 1,
+      "budget": false,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "japanese_regency_succession_law",
+      "group": "succession_order_laws",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\00_succession_laws_M_COPF.txt",
+      "source_layer": "mod",
+      "theme": "succession",
+      "axis": "succession_concentration",
+      "level": 1,
+      "budget": false,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "japanese_appointment_succession_law",
+      "group": "succession_order_laws",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\00_succession_laws_M_COPF.txt",
+      "source_layer": "mod",
+      "theme": "succession",
+      "axis": "succession_concentration",
+      "level": 1,
+      "budget": false,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "japanese_military_appointment_succession_law",
+      "group": "succession_order_laws",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\00_succession_laws_M_COPF.txt",
+      "source_layer": "mod",
+      "theme": "succession",
+      "axis": "succession_concentration",
+      "level": 1,
+      "budget": false,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "mandala_succession_law",
+      "group": "succession_order_laws",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\00_succession_laws_M_COPF.txt",
+      "source_layer": "mod",
+      "theme": "succession",
+      "axis": "succession_concentration",
+      "level": 1,
+      "budget": false,
+      "cost_resources": []
+    },
+    {
+      "key": "meritocratic_appointment_succession_law",
+      "group": "succession_order_laws",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\00_succession_laws_M_COPF.txt",
+      "source_layer": "mod",
+      "theme": "succession",
+      "axis": "succession_concentration",
+      "level": 1,
+      "budget": false,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "meritocratic_military_appointment_succession_law",
+      "group": "succession_order_laws",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\00_succession_laws_M_COPF.txt",
+      "source_layer": "mod",
+      "theme": "succession",
+      "axis": "succession_concentration",
+      "level": 2,
+      "budget": false,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "meritocratic_regency_succession_law",
+      "group": "succession_order_laws",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\00_succession_laws_M_COPF.txt",
+      "source_layer": "mod",
+      "theme": "succession",
+      "axis": "succession_concentration",
+      "level": 2,
+      "budget": false,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "feudal_governor_appointment_succession_law",
+      "group": "succession_order_laws",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\00_succession_laws_M_COPF.txt",
+      "source_layer": "mod",
+      "theme": "succession",
+      "axis": "succession_concentration",
+      "level": 2,
+      "budget": false,
+      "cost_resources": []
+    },
+    {
+      "key": "feudal_governor_promotion_succession_law",
+      "group": "succession_order_laws",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\00_succession_laws_M_COPF.txt",
+      "source_layer": "mod",
+      "theme": "succession",
+      "axis": "succession_concentration",
+      "level": 2,
+      "budget": false,
+      "cost_resources": []
+    },
+    {
+      "key": "last_will_succession_law",
+      "group": "succession_order_laws",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\00_succession_laws_M_COPF.txt",
+      "source_layer": "mod",
+      "theme": "succession",
+      "axis": "succession_concentration",
+      "level": 2,
+      "budget": false,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "diwan_top_liege_succession_law",
+      "group": "succession_order_laws",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\00_succession_laws_M_COPF.txt",
+      "source_layer": "mod",
+      "theme": "succession",
+      "axis": "succession_concentration",
+      "level": 2,
+      "budget": false,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "diwan_governor_succession_law",
+      "group": "succession_order_laws",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\00_succession_laws_M_COPF.txt",
+      "source_layer": "mod",
+      "theme": "succession",
+      "axis": "succession_concentration",
+      "level": 3,
+      "budget": false,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "dawla_vassal_succession_law",
+      "group": "succession_order_laws",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\00_succession_laws_M_COPF.txt",
+      "source_layer": "mod",
+      "theme": "succession",
+      "axis": "succession_concentration",
+      "level": 3,
+      "budget": false,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "diwan_vassal_illegal_succession_law",
+      "group": "succession_order_laws",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\00_succession_laws_M_COPF.txt",
+      "source_layer": "mod",
+      "theme": "succession",
+      "axis": "succession_concentration",
+      "level": 3,
+      "budget": false,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "tribal_authority_0",
+      "group": "tribal_authority",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\00_realm_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "tribal_nomadic",
+      "axis": "state_settlement",
+      "level": -3,
+      "budget": false,
+      "cost_resources": []
+    },
+    {
+      "key": "tribal_authority_1",
+      "group": "tribal_authority",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\00_realm_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "tribal_nomadic",
+      "axis": "state_settlement",
+      "level": -1,
+      "budget": false,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "tribal_authority_2",
+      "group": "tribal_authority",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\00_realm_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "tribal_nomadic",
+      "axis": "state_settlement",
+      "level": 1,
+      "budget": false,
+      "cost_resources": [
+        "prestige"
+      ]
+    },
+    {
+      "key": "tribal_authority_3",
+      "group": "tribal_authority",
+      "source": "D:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\laws\\00_realm_laws.txt",
+      "source_layer": "vanilla",
+      "theme": "tribal_nomadic",
+      "axis": "state_settlement",
+      "level": 3,
+      "budget": false,
+      "cost_resources": [
+        "prestige"
+      ]
+    }
+  ]
+}

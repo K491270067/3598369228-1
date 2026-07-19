@@ -1,0 +1,60 @@
+dm_reform_success_modifier = {
+	diplomacy = 1
+	stewardship = 1
+	vassal_opinion = 5
+	monthly_prestige = 0.5
+}
+
+dm_reform_failure_modifier = {
+	diplomacy = -1
+	vassal_opinion = -5
+}
+
+dm_reform_extreme_failure_modifier = {
+	diplomacy = -2
+	stewardship = -2
+	vassal_opinion = -15
+}
+
+dm_reform_aborted_modifier = {
+	diplomacy = -1
+	vassal_opinion = -5
+	monthly_prestige = -0.1
+}
+
+dm_reform_decisive_modifier = {
+	diplomacy = 1
+	stewardship = 1
+	monthly_prestige = 0.25
+}
+
+dm_reform_theme_authority = { dread_gain_mult = 0.1 }
+dm_reform_theme_succession = { dynasty_opinion = 5 }
+dm_reform_theme_military = { martial = 1 }
+dm_reform_theme_administration = { stewardship = 1 }
+dm_reform_theme_finance = { monthly_income_mult = 0.05 }
+dm_reform_theme_ritual = { monthly_piety = 0.25 }
+dm_reform_theme_settlement = { development_growth_factor = 0.05 }
+
+dm_reform_power_curtailed = {
+	diplomacy = -1
+	dread_gain_mult = -0.25
+	vassal_opinion = 5
+}
+
+dm_reform_civil_war_pressure = {
+	diplomacy = -2
+	vassal_opinion = -15
+	levy_size = -0.15
+}
+
+dm_reform_administrative_paralysis = {
+	stewardship = -3
+	monthly_income_mult = -0.15
+	development_growth_factor = -0.1
+}
+
+dm_reform_faction_discontent = {
+	diplomacy = -2
+	vassal_opinion = -20
+}

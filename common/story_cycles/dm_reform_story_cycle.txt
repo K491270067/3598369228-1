@@ -1,0 +1,191 @@
+dm_reform_story = {
+	visible = yes
+
+	icon = {
+		trigger = { always = yes }
+		reference = "gfx/interface/icons/decisions/major_decision.dds"
+	}
+
+	background = {
+		trigger = { always = yes }
+		reference = "gfx/interface/illustrations/event_scenes/court_event.dds"
+	}
+
+	visualization = {
+		character = {
+			variable_name = "dm_reform_ruler"
+			label = "dm_reform_ruler_label"
+		}
+		character = {
+			variable_name = "dm_reform_reformer"
+			label = "dm_reform_reformer_label"
+		}
+		character_list = {
+			variable_name = "dm_reform_supporters"
+			label = "dm_reform_supporters_label"
+		}
+		character_list = {
+			variable_name = "dm_reform_opponents"
+			label = "dm_reform_opponents_label"
+		}
+		title = {
+			variable_name = "dm_reform_primary_title"
+			label = "dm_reform_primary_title_label"
+		}
+		basic_counter = {
+			variable_name = "dm_reform_progress"
+			min = 0
+			max = 100
+			label = "dm_reform_progress_label"
+			min_label = "dm_reform_progress_min"
+			max_label = "dm_reform_progress_max"
+		}
+		tug_of_war_counter = {
+			variable_name = "dm_reform_support"
+			min = -10
+			max = 10
+			label = "dm_reform_support_label"
+			min_label = "dm_reform_support_min"
+			max_label = "dm_reform_support_max"
+		}
+		decisions = {
+			dm_reform_abort_decision
+		}
+		custom_string_key = "dm_reform_story_summary"
+	}
+
+	on_setup = {
+		set_variable = { name = dm_reform_progress value = 0 }
+		set_variable = { name = dm_reform_support value = 0 }
+		set_variable = { name = dm_reform_elapsed_days value = 0 }
+		set_variable = { name = dm_reform_phase value = flag:preparing }
+		story_owner = {
+			save_scope_as = dm_reform_ruler
+			scope:story = {
+				set_variable = {
+					name = dm_reform_ruler
+					value = scope:dm_reform_ruler
+				}
+				set_variable = {
+					name = dm_reform_primary_title
+					value = scope:dm_reform_ruler.primary_title
+				}
+			}
+		}
+	}
+
+	on_end = {
+		clear_variable_list = dm_reform_supporters
+		clear_variable_list = dm_reform_opponents
+	}
+
+	on_owner_death = {
+		if = {
+			limit = {
+				exists = var:dm_reform_primary_title.holder
+				var:dm_reform_primary_title.holder = { is_alive = yes }
+			}
+			make_story_owner = var:dm_reform_primary_title.holder
+			set_variable = {
+				name = dm_reform_ruler
+				value = var:dm_reform_primary_title.holder
+			}
+			set_variable = { name = dm_reform_phase value = flag:inheritance_wait }
+			set_variable = { name = dm_reform_inheritance_days value = 0 }
+		}
+		else = {
+			end_story = yes
+		}
+	}
+
+	effect_group = {
+		days = 1
+		triggered_effect = {
+			trigger = { var:dm_reform_phase = flag:preparing }
+			effect = {
+				change_variable = { name = dm_reform_elapsed_days add = 1 }
+				if = {
+					limit = { var:dm_reform_elapsed_days >= 30 }
+					dm_reform_initialize_formal_effect = yes
+				}
+			}
+		}
+	}
+
+	effect_group = {
+		days = 1
+		triggered_effect = {
+			trigger = { var:dm_reform_phase = flag:inheritance_wait }
+			effect = {
+				change_variable = { name = dm_reform_inheritance_days add = 1 }
+				if = {
+					limit = { var:dm_reform_inheritance_days >= 10 }
+					dm_reform_initialize_formal_effect = yes
+				}
+			}
+		}
+	}
+
+	effect_group = {
+		days = 30
+		triggered_effect = {
+			trigger = { dm_reform_is_formal_trigger = yes }
+			effect = {
+				change_variable = { name = dm_reform_elapsed_days add = 30 }
+			}
+		}
+	}
+
+	effect_group = {
+		days = { 20 40 }
+		trigger = { dm_reform_is_formal_trigger = yes }
+		triggered_effect = {
+			trigger = { always = yes }
+			effect = {
+				if = {
+					limit = { var:dm_reform_support <= -10 }
+					dm_reform_extreme_failure_effect = yes
+				}
+				else_if = {
+					limit = {
+						NOT = { dm_reform_target_is_not_current_trigger = yes }
+					}
+					dm_reform_success_effect = yes
+				}
+				else_if = {
+					limit = {
+						OR = {
+							NOT = { dm_reform_target_is_valid_trigger = yes }
+							NOT = { exists = var:dm_reform_primary_title.holder }
+							var:dm_reform_primary_title.holder != story_owner
+						}
+					}
+					dm_reform_neutral_end_effect = yes
+				}
+				else = {
+					dm_reform_progress_pulse_effect = yes
+					if = {
+						limit = { var:dm_reform_support <= -10 }
+						dm_reform_extreme_failure_effect = yes
+					}
+					else_if = {
+						limit = { var:dm_reform_progress >= 100 }
+						dm_reform_success_effect = yes
+					}
+					else_if = {
+						limit = { var:dm_reform_elapsed_days >= 10950 }
+						save_scope_as = dm_reform_story
+						story_owner = {
+							save_scope_as = dm_reform_ruler
+							trigger_event = dm_reform.9050
+						}
+					}
+					else = {
+						save_scope_as = dm_reform_story
+						story_owner = { trigger_event = dm_reform.1000 }
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,128 @@
+version = 1
+
+[settings]
+exclude_groups = [
+	"title_succession_laws",
+	"camp_purpose",
+	"succession_faith",
+	"succession_rel_head",
+	"crowned_laws",
+]
+budget_groups = [
+	"budget_allocation_salary_law",
+	"budget_allocation_ministry_law",
+	"budget_allocation_military_law",
+]
+
+[groups.crown_authority]
+theme = "authority"
+axis = "centralization"
+
+[groups.tribal_authority]
+theme = "tribal_nomadic"
+axis = "state_settlement"
+
+[groups.nomadic_authority]
+theme = "tribal_nomadic"
+axis = "state_settlement"
+
+[groups.imperial_bureaucracy]
+theme = "administration"
+axis = "administrative_unity"
+
+[groups.celestial_bureaucracy]
+theme = "ritual"
+axis = "ritual_legitimacy"
+
+[groups.meritocratic_bureaucracy]
+theme = "administration"
+axis = "meritocracy"
+
+[groups.japanese_bureaucracy]
+theme = "administration"
+axis = "administrative_unity"
+
+[groups.mandala_decree]
+theme = "ritual"
+axis = "ritual_legitimacy"
+
+[groups.succession_order_laws]
+theme = "succession"
+axis = "succession_concentration"
+
+[groups.succession_gender_laws]
+theme = "succession"
+axis = "succession_concentration"
+
+[groups.law_group_vassal_succession_rights_policy]
+theme = "succession"
+axis = "succession_concentration"
+
+[groups.law_group_candidate_preference_policy_feudal_governor]
+theme = "administration"
+axis = "meritocracy"
+
+[groups.law_group_vassal_title_leave_realm_policy]
+theme = "authority"
+axis = "centralization"
+
+[groups.law_group_vassal_revoke_title_policy]
+theme = "authority"
+axis = "centralization"
+
+[groups.law_group_vassal_war_policy]
+theme = "military"
+axis = "military_control"
+
+[groups.province_war_law]
+theme = "military"
+axis = "military_control"
+
+[groups.province_border_law]
+theme = "administration"
+axis = "administrative_unity"
+
+[groups.celestial_army_liege_law]
+theme = "military"
+axis = "military_control"
+
+[groups.celestial_army_vassal_law]
+theme = "military"
+axis = "military_control"
+
+[groups.celestial_retirement_law]
+theme = "administration"
+axis = "meritocracy"
+
+[groups.border_wars_laws]
+theme = "military"
+axis = "military_control"
+
+[groups.grand_secretariat_laws]
+theme = "administration"
+axis = "administrative_unity"
+
+[groups.candidate_score_laws]
+theme = "administration"
+axis = "meritocracy"
+
+[groups.imperial_policy_laws]
+theme = "authority"
+axis = "centralization"
+
+[groups.saas_courtier_stipend_law_group]
+theme = "finance"
+axis = "court_expenditure"
+
+[groups.budget_allocation_salary_law]
+theme = "finance"
+axis = "court_expenditure"
+
+[groups.budget_allocation_ministry_law]
+theme = "finance"
+axis = "administrative_unity"
+
+[groups.budget_allocation_military_law]
+theme = "military"
+axis = "military_control"
+

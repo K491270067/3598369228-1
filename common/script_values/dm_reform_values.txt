@@ -1,0 +1,490 @@
+dm_reform_max_diplomacy_value = {
+	value = scope:dm_reform_ruler.diplomacy
+	if = {
+		limit = {
+			exists = scope:dm_reform_reformer
+			scope:dm_reform_reformer.diplomacy > scope:dm_reform_ruler.diplomacy
+		}
+		value = scope:dm_reform_reformer.diplomacy
+	}
+}
+
+dm_reform_max_stewardship_value = {
+	value = scope:dm_reform_ruler.stewardship
+	if = {
+		limit = {
+			exists = scope:dm_reform_reformer
+			scope:dm_reform_reformer.stewardship > scope:dm_reform_ruler.stewardship
+		}
+		value = scope:dm_reform_reformer.stewardship
+	}
+}
+
+dm_reform_max_learning_value = {
+	value = scope:dm_reform_ruler.learning
+	if = {
+		limit = {
+			exists = scope:dm_reform_reformer
+			scope:dm_reform_reformer.learning > scope:dm_reform_ruler.learning
+		}
+		value = scope:dm_reform_reformer.learning
+	}
+}
+
+dm_reform_capacity_value = {
+	value = dm_reform_max_diplomacy_value
+	multiply = 0.3
+	add = {
+		value = dm_reform_max_stewardship_value
+		multiply = 0.5
+	}
+	add = {
+		value = dm_reform_max_learning_value
+		multiply = 0.2
+	}
+}
+
+dm_reform_ruler_education_value = {
+	value = 0
+	if = {
+		limit = {
+			scope:dm_reform_ruler = {
+				OR = {
+					has_trait = education_diplomacy_3
+					has_trait = education_martial_3
+					has_trait = education_stewardship_3
+					has_trait = education_intrigue_3
+					has_trait = education_learning_3
+				}
+			}
+		}
+		add = 0.1
+	}
+	else_if = {
+		limit = {
+			scope:dm_reform_ruler = {
+				OR = {
+					has_trait = education_diplomacy_4
+					has_trait = education_martial_4
+					has_trait = education_stewardship_4
+					has_trait = education_intrigue_4
+					has_trait = education_learning_4
+				}
+			}
+		}
+		add = 0.4
+	}
+	else_if = {
+		limit = {
+			scope:dm_reform_ruler = {
+				OR = {
+					has_trait = education_diplomacy_5
+					has_trait = education_martial_5
+					has_trait = education_stewardship_5
+					has_trait = education_intrigue_5
+					has_trait = education_learning_5
+				}
+			}
+		}
+		add = 0.8
+	}
+}
+
+dm_reform_reformer_education_value = {
+	value = 0
+	if = {
+		limit = {
+			exists = scope:dm_reform_reformer
+			scope:dm_reform_reformer = {
+				OR = {
+					has_trait = education_diplomacy_5
+					has_trait = education_martial_5
+					has_trait = education_stewardship_5
+					has_trait = education_intrigue_5
+					has_trait = education_learning_5
+				}
+			}
+		}
+		add = 0.8
+	}
+	else_if = {
+		limit = {
+			exists = scope:dm_reform_reformer
+			scope:dm_reform_reformer = {
+				OR = {
+					has_trait = education_diplomacy_4
+					has_trait = education_martial_4
+					has_trait = education_stewardship_4
+					has_trait = education_intrigue_4
+					has_trait = education_learning_4
+				}
+			}
+		}
+		add = 0.4
+	}
+	else_if = {
+		limit = {
+			exists = scope:dm_reform_reformer
+			scope:dm_reform_reformer = {
+				OR = {
+					has_trait = education_diplomacy_3
+					has_trait = education_martial_3
+					has_trait = education_stewardship_3
+					has_trait = education_intrigue_3
+					has_trait = education_learning_3
+				}
+			}
+		}
+		add = 0.1
+	}
+}
+
+dm_reform_passive_progress_value = {
+	value = dm_reform_ruler_education_value
+	add = dm_reform_reformer_education_value
+	multiply = {
+		value = dm_reform_capacity_value
+		divide = 5
+		add = 1
+	}
+	if = {
+		limit = { scope:story.var:dm_reform_support >= 10 }
+		multiply = 1.25
+	}
+}
+
+dm_reform_lobby_success_value = {
+	value = 20
+	if = {
+		limit = { scope:dm_reform_strong_hook = yes }
+		value = 95
+	}
+	else_if = {
+		limit = { scope:dm_reform_weak_hook = yes }
+		add = {
+			value = scope:actor.intrigue
+			multiply = 2
+		}
+		add = 40
+	}
+	else_if = {
+		limit = { scope:dm_reform_money = yes }
+		add = {
+			value = scope:actor.diplomacy
+			multiply = 1.4
+		}
+		add = {
+			value = scope:actor.stewardship
+			multiply = 0.6
+		}
+	}
+	else_if = {
+		limit = { scope:dm_reform_prestige = yes }
+		add = {
+			value = scope:actor.diplomacy
+			multiply = 1.4
+		}
+		add = {
+			value = scope:actor.martial
+			multiply = 0.6
+		}
+		add = 10
+	}
+	else_if = {
+		limit = { scope:dm_reform_influence = yes }
+		add = {
+			value = scope:actor.stewardship
+			multiply = 1.4
+		}
+		add = {
+			value = scope:actor.intrigue
+			multiply = 0.6
+		}
+		add = 15
+	}
+	add = {
+		value = {
+			if = {
+				limit = {
+					scope:recipient = {
+						save_temporary_opinion_value_as = {
+							name = dm_reform_lobby_opinion
+							target = scope:actor
+						}
+					}
+				}
+				value = scope:dm_reform_lobby_opinion
+				divide = 5
+			}
+		}
+	}
+	min = 5
+	max = 95
+}
+
+dm_reform_lobby_failure_value = {
+	value = 100
+	subtract = dm_reform_lobby_success_value
+}
+
+dm_reform_terminal_score_value = {
+	value = scope:dm_reform_story.var:dm_reform_progress
+	add = {
+		value = scope:dm_reform_story.var:dm_reform_support
+		multiply = 3
+	}
+	add = dm_reform_capacity_value
+	add = {
+		value = dm_reform_ruler_education_value
+		add = dm_reform_reformer_education_value
+		multiply = 10
+	}
+}
+
+dm_reform_timeout_success_value = {
+	value = 25
+	if = {
+		limit = { dm_reform_terminal_score_value >= 130 }
+		value = 95
+	}
+	else_if = {
+		limit = { dm_reform_terminal_score_value >= 100 }
+		value = 75
+	}
+	else_if = {
+		limit = { dm_reform_terminal_score_value >= 70 }
+		value = 50
+	}
+}
+
+dm_reform_timeout_failure_value = {
+	value = 100
+	subtract = dm_reform_timeout_success_value
+}
+
+dm_reform_interest_coefficient_value = {
+	value = 0
+	if = {
+		limit = { scope:story = { var:dm_reform_axis = flag:centralization } }
+		value = -10
+		if = {
+			limit = { var:movement_member = flag:conservative }
+			value = -15
+		}
+	}
+	else_if = {
+		limit = { scope:story = { var:dm_reform_axis = flag:succession_concentration } }
+		value = -5
+		if = {
+			limit = { var:movement_member = flag:conservative }
+			value = -8
+		}
+		else_if = {
+			limit = { var:movement_member = flag:advancement }
+			value = 4
+		}
+		else_if = {
+			limit = { var:movement_member = flag:expansion }
+			value = 2
+		}
+	}
+	else_if = {
+		limit = { scope:story = { var:dm_reform_axis = flag:meritocracy } }
+		value = -6
+		if = {
+			limit = { var:movement_member = flag:conservative }
+			value = -15
+		}
+		else_if = {
+			limit = { var:movement_member = flag:advancement }
+			value = 15
+		}
+		else_if = {
+			limit = { var:movement_member = flag:expansion }
+			value = 4
+		}
+	}
+	else_if = {
+		limit = { scope:story = { var:dm_reform_axis = flag:military_control } }
+		value = -8
+		if = {
+			limit = { var:movement_member = flag:advancement }
+			value = 3
+		}
+		else_if = {
+			limit = { var:movement_member = flag:expansion }
+			value = 15
+		}
+	}
+	else_if = {
+		limit = { scope:story = { var:dm_reform_axis = flag:administrative_unity } }
+		value = -6
+		if = {
+			limit = { var:movement_member = flag:conservative }
+			value = -12
+		}
+		else_if = {
+			limit = { var:movement_member = flag:advancement }
+			value = 15
+		}
+		else_if = {
+			limit = { var:movement_member = flag:expansion }
+			value = 3
+		}
+	}
+	else_if = {
+		limit = { scope:story = { var:dm_reform_axis = flag:fiscal_extraction } }
+		value = -12
+		if = {
+			limit = { var:movement_member = flag:conservative }
+			value = -10
+		}
+		else_if = {
+			limit = { var:movement_member = flag:advancement }
+			value = 5
+		}
+		else_if = {
+			limit = { var:movement_member = flag:expansion }
+			value = 8
+		}
+	}
+	else_if = {
+		limit = { scope:story = { var:dm_reform_axis = flag:court_expenditure } }
+		value = 0
+		if = {
+			limit = { var:movement_member = flag:conservative }
+			value = 3
+		}
+		else_if = {
+			limit = { var:movement_member = flag:advancement }
+			value = 5
+		}
+	}
+	else_if = {
+		limit = { scope:story = { var:dm_reform_axis = flag:ritual_legitimacy } }
+		value = 0
+		if = {
+			limit = { var:movement_member = flag:conservative }
+			value = 15
+		}
+	}
+	else_if = {
+		limit = { scope:story = { var:dm_reform_axis = flag:state_settlement } }
+		value = -4
+		if = {
+			limit = { government_has_flag = government_is_tribal }
+			value = -12
+		}
+		else_if = {
+			limit = { government_has_flag = government_is_nomadic }
+			value = -15
+		}
+		else_if = {
+			limit = { var:movement_member = flag:conservative }
+			value = -15
+		}
+		else_if = {
+			limit = { var:movement_member = flag:advancement }
+			value = 12
+		}
+		else_if = {
+			limit = { var:movement_member = flag:expansion }
+			value = -5
+		}
+	}
+}
+
+dm_reform_law_interest_value = {
+	value = scope:story.var:dm_reform_interest_delta
+	multiply = dm_reform_interest_coefficient_value
+	if = {
+		limit = { var:movement_member = flag:pro_hegemon }
+		add = 30
+	}
+	min = -100
+	max = 100
+}
+
+dm_reform_stance_score_value = {
+	value = dm_reform_law_interest_value
+	multiply = 0.4
+	if = { limit = { has_trait = diligent } add = 3 }
+	if = { limit = { has_trait = lazy } add = -4 }
+	if = { limit = { has_trait = brave } add = 2 }
+	if = { limit = { has_trait = craven } add = -2 }
+	if = { limit = { has_trait = fickle } add = 2 }
+	if = { limit = { has_trait = stubborn } add = -3 }
+	if = { limit = { has_trait = content } add = -3 }
+	if = { limit = { has_trait = patient } add = 1 }
+	if = { limit = { has_trait = paranoid } add = -2 }
+	if = { limit = { has_trait = trusting } add = 1 }
+	if = {
+		limit = {
+			has_trait = impatient
+			scope:story = { var:dm_reform_progress < 50 }
+		}
+		add = -2
+	}
+	if = {
+		limit = { has_trait = ambitious }
+		if = {
+			limit = { dm_reform_law_interest_value > 0 }
+			add = 3
+		}
+		else_if = {
+			limit = { dm_reform_law_interest_value < 0 }
+			add = -4
+		}
+		else = { add = 1 }
+	}
+	if = {
+		limit = {
+			save_temporary_opinion_value_as = {
+				name = dm_reform_ruler_opinion
+				target = scope:dm_reform_ruler
+			}
+		}
+		add = {
+			value = scope:dm_reform_ruler_opinion
+			if = {
+				limit = { exists = scope:dm_reform_reformer }
+				multiply = 0.25
+			}
+			else = { multiply = 0.4 }
+		}
+	}
+	if = {
+		limit = {
+			exists = scope:dm_reform_reformer
+			save_temporary_opinion_value_as = {
+				name = dm_reform_reformer_opinion
+				target = scope:dm_reform_reformer
+			}
+		}
+		add = {
+			value = scope:dm_reform_reformer_opinion
+			multiply = 0.15
+		}
+	}
+	if = {
+		limit = {
+			scope:story = { var:dm_reform_axis = flag:meritocracy }
+			has_trait = just
+		}
+		add = 2
+	}
+	if = {
+		limit = {
+			scope:story = { var:dm_reform_axis = flag:fiscal_extraction }
+			has_trait = greedy
+		}
+		add = -2
+	}
+	if = {
+		limit = {
+			scope:story = { var:dm_reform_axis = flag:ritual_legitimacy }
+			has_trait = zealous
+		}
+		add = 3
+	}
+}
