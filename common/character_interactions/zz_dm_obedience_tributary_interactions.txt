@@ -1,0 +1,503 @@
+﻿# Synced from CK3 1.19.0.6 demand_courtier_interaction.
+# Nomad-only branches use an explicit government trigger after obedience became universal.
+#tiger-ignore(file, key=deprecated)
+
+demand_courtier_interaction = {
+	category = interaction_category_vassal
+	common_interaction = no
+	icon = request_courtier_interaction
+	interface_priority = 45
+
+	desc = demand_courtier_interaction_desc
+
+	ai_targets = {
+		ai_recipients = tributaries
+		ai_recipients = vassals
+	}
+	ai_target_quick_trigger = {
+		adult = yes
+	}
+	ai_frequency_by_tier = {
+		barony = 0
+		county = 60
+		duchy = 12
+		kingdom = 12
+		empire = 12
+		hegemony = 12
+	}
+	cooldown_against_recipient = { years = 3 }
+
+	greeting = positive
+	notification_text = DEMAND_COURTIER_NOTIFICATION
+
+	highlighted_reason = HIGHLIGHTED_SKILLED_COURTIER
+	is_highlighted = {
+		scope:recipient = {
+			any_courtier = {
+				is_available_healthy_ai_adult = yes
+				NOR = {
+					is_consort_of = scope:recipient
+					is_heir_of = scope:recipient
+					AND = {
+						is_female = yes
+						patrilinear_marriage = yes
+					}
+					AND = {
+						is_male = yes
+						matrilinear_marriage = yes
+					}
+					is_diarch = yes
+					is_designated_diarch = yes
+					has_character_flag = has_been_offered_as_concubine
+				}
+				OR = {
+					sum_of_all_skills_value >= sum_of_all_skills_threshold_good
+					martial >= monumentally_high_skill_rating
+					prowess >= extremely_high_skill_rating
+					AND = {
+						diplomacy >= monumentally_high_skill_rating
+						scope:actor.cp:councillor_chancellor ?= { diplomacy < monumentally_high_skill_rating }
+					}
+					AND = {
+						diplomacy >= monumentally_high_skill_rating
+						scope:actor.cp:councillor_steward ?= { stewardship < monumentally_high_skill_rating }
+					}
+					AND = {
+						diplomacy >= monumentally_high_skill_rating
+						scope:actor.cp:councillor_spymaster ?= { intrigue < monumentally_high_skill_rating }
+					}
+					trigger_if = {
+						limit = {
+							scope:actor = {
+								government_has_flag = government_is_nomadic
+							}
+						}
+						OR = {
+							aptitude:master_of_hunt_court_position >= 4
+							aptitude:keeper_of_the_horses_court_position >= 4
+							aptitude:boyan_court_position >= 4
+							aptitude:siege_engineer_court_position >= 4
+							aptitude:yurtchi_court_position >= 4
+							aptitude:cherbi_court_position >= 4
+							aptitude:yeke_jarquchi_court_position >= 4
+							aptitude:foreign_emissary_court_position >= 4
+						}
+					}
+				}
+			}
+		}
+	}
+
+	needs_recipient_to_open = yes
+
+	populate_actor_list = {
+		scope:recipient = {
+			every_courtier = {
+				limit = {
+					is_available_healthy_ai_adult = yes
+					NOR = {
+						is_consort_of = scope:recipient
+						is_heir_of = scope:recipient
+						AND = {
+							is_female = yes
+							patrilinear_marriage = yes
+						}
+						AND = {
+							is_male = yes
+							matrilinear_marriage = yes
+						}
+						is_diarch = yes
+						is_designated_diarch = yes
+						has_character_flag = has_been_offered_as_concubine
+					}
+				}
+				add_to_list = characters
+			}
+		}
+	}
+
+	is_shown = {
+		scope:actor != scope:recipient
+		scope:recipient = {
+			OR = {
+				trigger_if = {
+					limit = {
+						scope:actor = {
+							dm_original_obedience_government_trigger = yes
+						}
+					}
+					is_vassal_of = scope:actor
+				}
+				is_tributary_of = scope:actor
+				AND = { # Celestial has this available towards vassals
+					scope:actor = { government_has_flag = government_is_celestial }
+					liege = scope:actor
+				}
+				AND = { # The minister of personnel can use it against every ruler in the realm
+					scope:actor = { has_title = title:e_minister_of_personnel }
+					is_ruler = yes
+					top_liege = scope:actor.top_liege
+					# Except the top liege
+					top_liege != this
+				}
+			}
+		}
+	}
+
+	is_valid_showing_failures_only = {
+		custom_tooltip = {
+			text = demand_courtier_valid_courtier_tt
+			scope:recipient = {
+				any_courtier = {
+					is_available_healthy_ai_adult = yes
+					NOR = {
+						is_consort_of = scope:recipient
+						is_heir_of = scope:recipient
+						AND = {
+							is_female = yes
+							patrilinear_marriage = yes
+						}
+						AND = {
+							is_male = yes
+							matrilinear_marriage = yes
+						}
+						is_diarch = yes
+						is_designated_diarch = yes
+						has_character_flag = has_been_offered_as_concubine
+					}
+				}
+			}
+		}
+	}
+
+	can_be_picked = {
+		is_adult = yes
+	}
+
+	can_send = {
+	}
+
+	auto_accept = {
+		scope:actor = {
+			has_title = title:e_minister_of_personnel
+			custom_tooltip = {
+				text = same_realm_tt
+				top_liege = scope:recipient.top_liege
+			}
+		}
+		scope:recipient = {
+			is_ai = yes
+		}
+	}
+	
+	send_options_exclusive = no
+	
+	# Use hook
+	send_option = {
+		is_shown = { # Not available towards tributaries
+			scope:recipient = {
+				NOT = { is_tributary_of = scope:actor }
+			}
+		}
+		is_valid = {
+			scope:actor = {
+				has_usable_hook = scope:recipient
+			}
+		}
+		flag = hook
+		localization = SCHEME_HOOK
+	}
+	should_use_extra_icon = {
+		scope:actor = {
+			has_usable_hook = scope:recipient
+		}
+		scope:recipient = {
+			NOT = { is_tributary_of = scope:actor }
+		}
+	}
+	extra_icon = "gfx/interface/icons/character_interactions/hook_icon.dds"
+
+	ai_accept = {
+		base = 0
+
+		modifier = {
+			add = 1000
+			scope:recipient = {
+				is_obedient_to = scope:actor
+			}
+			desc = AI_OBEDIENT_REASON
+		}
+
+		modifier = {
+			add = 25
+			scope:recipient = {
+				has_dread_level_towards = {
+					target = scope:actor
+					level = 1
+				}
+			}
+			desc = INTIMIDATED_REASON
+		}
+
+		modifier = {
+			add = 50
+			scope:recipient = {
+				has_dread_level_towards = {
+					target = scope:actor
+					level = 2
+				}
+			}
+			desc = COWED_REASON
+		}
+
+		opinion_modifier = { # Opinion Factor
+			who = scope:recipient
+			opinion_target = scope:actor
+			multiplier = 1.0
+			desc = AI_OPINION_REASON
+		}
+
+		modifier = {
+			add = -25
+			scope:secondary_actor = {
+				OR = {
+					is_councillor = yes
+					has_any_court_position = yes
+				}
+			}
+			desc = AI_EMPLOYED_COURTIER_REASON
+		}
+
+		modifier = {
+			add = -15
+			scope:secondary_actor = {
+				is_knight = yes
+			}
+			desc = AI_IS_KNIGHT_REASON
+		}
+
+		modifier = {
+			add = -50
+			exists = scope:secondary_actor.inspiration
+			desc = AI_INSPIRED_REASON
+		}
+
+		modifier = {
+			add = -25
+			scope:secondary_actor = {
+				is_close_or_extended_family_of = scope:recipient
+			}
+			desc = AI_FAMILY_REASON
+		}
+
+		modifier = {
+			add = -50
+			scope:secondary_actor = {
+				has_relation_friend = scope:recipient
+			}
+			desc = AI_FRIEND_REASON
+		}
+		
+		# Used a hook
+		modifier = {
+			add = 100
+			scope:hook ?= yes
+			desc = SCHEME_WEAK_HOOK_USED
+		}
+
+		modifier = {
+			add = 1000
+			scope:secondary_actor = {
+				has_relation_rival = scope:recipient
+			}
+			desc = AI_RIVAL_REASON
+		}
+	}
+
+	ai_potential = {
+		ai_greed >= 0
+		any_tributary = { }
+	}
+
+	ai_will_do = {
+		base = 0
+
+		modifier = {
+			add = 100
+			scope:secondary_actor = {
+				OR = {
+					has_relation_friend = scope:actor
+					has_relation_lover = scope:actor
+					sum_of_all_skills_value >= sum_of_all_skills_threshold_good
+					martial >= monumentally_high_skill_rating
+					prowess >= extremely_high_skill_rating
+					exists = inspiration
+					AND = {
+						diplomacy >= monumentally_high_skill_rating
+						scope:actor.cp:councillor_chancellor ?= { diplomacy < monumentally_high_skill_rating }
+					}
+					AND = {
+						diplomacy >= monumentally_high_skill_rating
+						scope:actor.cp:councillor_steward ?= { stewardship < monumentally_high_skill_rating }
+					}
+					AND = {
+						diplomacy >= monumentally_high_skill_rating
+						scope:actor.cp:councillor_spymaster ?= { intrigue < monumentally_high_skill_rating }
+					}
+					trigger_if = {
+						limit = {
+							scope:actor = {
+								dm_original_obedience_government_trigger = yes
+							}
+						}
+						OR = {
+							AND = {
+								sum_of_all_skills_value >= sum_of_all_skills_threshold_average
+								scope:actor = {
+									any_courtier = {
+										count < 10
+									}
+								}
+							}
+							aptitude:master_of_hunt_court_position >= 4
+							aptitude:keeper_of_the_horses_court_position >= 4
+							aptitude:boyan_court_position >= 4
+							aptitude:siege_engineer_court_position >= 4
+							aptitude:yurtchi_court_position >= 4
+							aptitude:cherbi_court_position >= 4
+							aptitude:yeke_jarquchi_court_position >= 4
+							aptitude:foreign_emissary_court_position >= 4
+						}
+					}
+				}
+			}
+		}
+
+		modifier = {
+			factor = 0
+			scope:recipient = {
+				OR = {
+					has_relation_friend = scope:actor
+					has_relation_lover = scope:actor
+				}
+			}
+		}
+		modifier = {
+			factor = 0
+			scope:actor = {
+				has_title = title:e_minister_of_personnel
+			}
+		}
+	}
+
+	on_send = {
+		scope:secondary_actor = { # to block the same character from being offered twice
+			add_character_flag = {
+				flag = has_been_offered_as_concubine
+				days = 5
+			}
+		}
+	}
+
+	on_accept = {
+		if = {
+			limit = {
+				scope:actor = {
+					has_title = title:e_minister_of_personnel
+				}
+				scope:recipient = {
+					top_liege = scope:actor.top_liege
+				}
+			}
+			scope:actor = {
+				add_courtier = scope:secondary_actor
+				scope:secondary_actor = {
+					every_consort = {
+						limit = {
+							is_courtier_of = scope:recipient
+						}
+						scope:actor = {
+							add_courtier = prev
+						}
+					}
+					every_child = {
+						limit = {
+							is_adult = no
+							is_courtier_of = scope:recipient
+						}
+						scope:actor = {
+							add_courtier = prev
+						}
+					}
+				}
+			}
+		}
+		else = {
+			scope:secondary_actor = {
+				add_opinion = {
+					target = scope:recipient
+					modifier = annoyed_opinion
+					opinion = -10
+				}
+			}
+			scope:actor = {
+				add_courtier = scope:secondary_actor
+				scope:secondary_actor = {
+					every_consort = {
+						limit = {
+							is_courtier_of = scope:recipient
+						}
+						scope:actor = {
+							add_courtier = prev
+						}
+					}
+					every_child = {
+						limit = {
+							is_adult = no
+							is_courtier_of = scope:recipient
+						}
+						scope:actor = {
+							add_courtier = prev
+						}
+					}
+				}
+				add_opinion = {
+					target = scope:recipient
+					modifier = pleased_opinion
+					opinion = 20
+				}
+				# Use Hook
+				if = {
+					limit = { scope:hook = yes }
+					use_hook = scope:recipient
+				}
+			}
+			scope:recipient = {
+				add_opinion = {
+					target = scope:actor
+					modifier = upset_opinion
+					opinion = -15
+				}
+			}
+		}
+	}
+
+	on_decline = {
+		scope:actor = {
+			send_interface_toast = {
+				type = event_toast_effect_bad
+				title = msg_courtier_demand_rejected_title
+				right_icon = scope:recipient
+				left_icon = scope:secondary_actor
+				custom_tooltip = msg_courtier_demand_rejected
+			}
+		}
+		scope:actor = {
+			add_opinion = {
+				target = scope:recipient
+				modifier = upset_opinion
+				opinion = -15
+			}
+		}
+	}
+}

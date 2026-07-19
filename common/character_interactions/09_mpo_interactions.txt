@@ -5187,7 +5187,6 @@ mpo_demand_obedience_interaction = {
 				is_at_war_with = scope:recipient
 			}
 		}
-		scope:actor = { dread >= medium_dread_value }
 	}
 
 	cost = { prestige = minor_prestige_value }
@@ -9904,6 +9903,22 @@ mpo_negotiate_obedience_interaction = {
 				multiply = 2
 			}
 		}
+		influence = {
+			value = 0
+			if = {
+				limit = { scope:dm_obedience_influence ?= yes }
+				add = medium_influence_value
+				desc = DM_OBEDIENCE_INFLUENCE_COST
+			}
+		}
+		piety = {
+			value = 0
+			if = {
+				limit = { scope:dm_obedience_piety ?= yes }
+				add = medium_piety_value
+				desc = DM_OBEDIENCE_PIETY_COST
+			}
+		}
 	}
 
 	is_valid_showing_failures_only = {
@@ -9952,6 +9967,11 @@ mpo_negotiate_obedience_interaction = {
 	}
 
 	send_option = {
+		is_shown = {
+			scope:actor = {
+				NOT = { government_has_flag = government_is_republic }
+			}
+		}
 		is_valid = {
 			scope:actor = {
 				gold >= medium_gold_value
@@ -9959,6 +9979,70 @@ mpo_negotiate_obedience_interaction = {
 		}
 		flag = gold
 		localization = OFFER_GOLD_FOR_BETTER_AI_ACCEPTANCE
+	}
+
+	send_option = {
+		is_shown = {
+			scope:actor = { government_has_flag = government_is_republic }
+		}
+		is_valid = {
+			scope:actor = {
+				gold >= dm_obedience_republic_gold_cost_value
+				trigger_if = {
+					limit = { is_ai = yes }
+					gold >= dm_obedience_republic_gold_ai_reserve_value
+					scope:recipient.dm_negotiate_obedience_baseline_acceptance_value < 0
+					scope:recipient.dm_negotiate_obedience_baseline_acceptance_value >= -200
+				}
+			}
+		}
+		flag = dm_obedience_republic_gold
+		localization = DM_OBEDIENCE_REPUBLIC_GOLD_OPTION
+		current_description = DM_OBEDIENCE_REPUBLIC_GOLD_OPTION_DESC
+	}
+
+	send_option = {
+		is_shown = {
+			scope:actor = { government_has_flag = government_has_influence }
+		}
+		is_valid = {
+			scope:actor = {
+				influence >= medium_influence_value
+				trigger_if = {
+					limit = { is_ai = yes }
+					influence >= dm_obedience_influence_ai_reserve_value
+					scope:recipient.dm_negotiate_obedience_baseline_acceptance_value < 0
+					scope:recipient.dm_negotiate_obedience_baseline_acceptance_value >= -100
+				}
+			}
+			custom_tooltip = {
+				text = DM_OBEDIENCE_INFLUENCE_SAME_REALM_TT
+				scope:recipient.top_liege = scope:actor.top_liege
+			}
+		}
+		flag = dm_obedience_influence
+		localization = DM_OBEDIENCE_INFLUENCE_OPTION
+		current_description = DM_OBEDIENCE_INFLUENCE_OPTION_DESC
+	}
+
+	send_option = {
+		is_shown = {
+			scope:actor = { government_has_flag = government_is_theocracy }
+		}
+		is_valid = {
+			scope:actor = {
+				piety >= medium_piety_value
+				trigger_if = {
+					limit = { is_ai = yes }
+					piety >= dm_obedience_piety_ai_reserve_value
+					scope:recipient.dm_negotiate_obedience_baseline_acceptance_value < 0
+					scope:recipient.dm_negotiate_obedience_baseline_acceptance_value >= -100
+				}
+			}
+		}
+		flag = dm_obedience_piety
+		localization = DM_OBEDIENCE_PIETY_OPTION
+		current_description = DM_OBEDIENCE_PIETY_OPTION_DESC
 	}
 
 	send_option = {
@@ -9982,188 +10066,28 @@ mpo_negotiate_obedience_interaction = {
 	send_options_exclusive = no
 
 	ai_accept = {
-		base = -95
-		modifier = {
-			trigger = {
-				scope:hook ?= yes
-			}
-			add = 100
-			desc = MIGRATION_HOOK_USED
-		}
-		modifier = {
-			trigger = {
-				scope:gold ?= yes
-			}
-			add = 100
-			desc = TRADE_GOLD_FOR_BETTER_AI_ACCEPTANCE_TT
-		}
-		modifier = {
-			trigger = {
-				scope:herd ?= yes
-			}
-			add = 100
-			desc = TRADE_HERD_FOR_BETTER_AI_ACCEPTANCE_TT
-		}
-		modifier = {
-			add = 5
-			scope:actor = {
-				OR = {
-					has_realm_law = nomadic_authority_2
-					has_realm_law = meritocratic_bureaucracy_1
-				}
-			}
-			desc = DEMAND_OBEDIENCE_INTERACTION_DOMINANCE_ACCEPTANCE
-		}
-		modifier = {
-			add = 10
-			scope:actor = {
-				OR = {
-					has_realm_law = nomadic_authority_3
-					has_realm_law = meritocratic_bureaucracy_2
-				}
-			}
-			desc = DEMAND_OBEDIENCE_INTERACTION_DOMINANCE_ACCEPTANCE
-		}
-		modifier = {
-			add = 20
-			scope:actor = {
-				OR = {
-					has_realm_law = nomadic_authority_4
-					has_realm_law = meritocratic_bureaucracy_3
-				}
-			}
-			desc = DEMAND_OBEDIENCE_INTERACTION_DOMINANCE_ACCEPTANCE
-		}
-		modifier = {
-			add = 100
-			scope:actor = { has_realm_law = nomadic_authority_5 }
-			desc = DEMAND_OBEDIENCE_INTERACTION_DOMINANCE_ACCEPTANCE
-		}
-		modifier = {
-			add = -30
-			scope:actor = { legitimacy_level = 1 }
-			desc = DEMAND_OBEDIENCE_INTERACTION_LEGITIMACY_ACCEPTANCE
-		}
-		modifier = {
-			add = -20
-			scope:actor = { legitimacy_level = 2 }
-			desc = DEMAND_OBEDIENCE_INTERACTION_LEGITIMACY_ACCEPTANCE
-		}
-		modifier = {
-			add = 5
-			scope:actor = { legitimacy_level = 3 }
-			desc = DEMAND_OBEDIENCE_INTERACTION_LEGITIMACY_ACCEPTANCE
-		}
-		modifier = {
-			add = 15
-			scope:actor = { legitimacy_level = 4 }
-			desc = DEMAND_OBEDIENCE_INTERACTION_LEGITIMACY_ACCEPTANCE
-		}
-		modifier = {
-			add = 30
-			scope:actor = { legitimacy_level = 5 }
-			desc = DEMAND_OBEDIENCE_INTERACTION_LEGITIMACY_ACCEPTANCE
-		}
+		base = 0
 		modifier = {
 			add = {
-				value = ai_boldness
-				multiply = -1
-				divide = 2
+				value = scope:recipient.dm_negotiate_obedience_baseline_acceptance_value
 			}
-			NOT = { ai_boldness = 0 }
-			desc = ARTIFACT_BOLDNESS_REASON
+			desc = DM_OBEDIENCE_BASE_ACCEPTANCE
 		}
 		modifier = {
-			add = {
-				value = ai_greed
-				multiply = -1
-				divide = 2
-			}
-			ai_greed > 0
-			desc = ARTIFACT_GREED_REASON
+			trigger = { scope:dm_obedience_influence ?= yes }
+			add = 100
+			desc = DM_OBEDIENCE_INFLUENCE_ACCEPTANCE
 		}
 		modifier = {
-			add = {
-				value = ai_honor
-				divide = 4
-			}
-			NOT = { ai_honor = 0 }
-			desc = ARTIFACT_HONOR_REASON
+			trigger = { scope:dm_obedience_piety ?= yes }
+			add = 100
+			desc = DM_OBEDIENCE_PIETY_ACCEPTANCE
 		}
 		modifier = {
-			add = -20
-			scope:recipient = {
-				has_trait = brave
-			}
-			desc = BLACKMAIL_INTERACTION_BRAVE_ACCEPTANCE
+			trigger = { scope:dm_obedience_republic_gold ?= yes }
+			add = 200
+			desc = DM_OBEDIENCE_REPUBLIC_GOLD_ACCEPTANCE
 		}
-		modifier = {
-			add = -50
-			scope:recipient = {
-				has_trait = arrogant
-			}
-			desc = BLACKMAIL_INTERACTION_ARROGANT_ACCEPTANCE
-		}
-		modifier = {
-			add = 25
-			scope:recipient = {
-				has_trait = trusting
-			}
-			desc = BLACKMAIL_INTERACTION_TRUSTING_ACCEPTANCE
-		}
-		modifier = {
-			add = -50
-			scope:recipient = {
-				has_trait = disloyal
-			}
-			desc = DEMAND_OBEDIENCE_INTERACTION_DISLOYAL_ACCEPTANCE
-		}
-		modifier = {
-			add = -500
-			scope:actor = { government_has_flag = government_is_nomadic }
-			scope:recipient = {
-				exists = domicile
-				domicile.herd >= 100
-				domicile.herd > scope:actor.domicile.herd
-			}
-			desc = DEMAND_OBEDIENCE_INTERACTION_HERD_ACCEPTANCE
-		}
-		modifier = {
-			add = -500
-			scope:recipient = {
-				current_military_strength >= 100
-				current_military_strength > scope:actor.current_military_strength
-			}
-			desc = DEMAND_OBEDIENCE_INTERACTION_MILITARY_MIGHT_ACCEPTANCE
-		}
-		modifier = {
-			add = 10
-			scope:recipient = {
-				has_trait = craven
-			}
-			desc = BLACKMAIL_INTERACTION_CRAVEN_ACCEPTANCE
-		}
-		modifier = {
-			add = 10
-			scope:recipient = {
-				has_trait = content
-			}
-			desc = DEMAND_OBEDIENCE_INTERACTION_CONTENT_ACCEPTANCE
-		}
-		modifier = {
-			add = 25
-			any_character_situation = {
-				any_situation_sub_region = {
-					has_sub_region_phase_parameter = the_great_steppe_easier_obedience
-					any_situation_sub_region_participant_group = {
-						participant_group_type = nomad_rulers_capital
-						participant_group_has_character = scope:actor
-					}
-				}
-			}
-			desc = DEMAND_OBEDIENCE_INTERACTION_ZUD_ACCEPTANCE
-		}
-		bp2_hostage_dread_modifier = yes
 	}
 
 	ai_will_do = {
@@ -10178,6 +10102,18 @@ mpo_negotiate_obedience_interaction = {
 		}
 		modifier = {
 			scope:hook ?= yes
+			add = -1
+		}
+		modifier = {
+			scope:dm_obedience_influence ?= yes
+			add = -1
+		}
+		modifier = {
+			scope:dm_obedience_piety ?= yes
+			add = -1
+		}
+		modifier = {
+			scope:dm_obedience_republic_gold ?= yes
 			add = -1
 		}
 		modifier = {
@@ -10210,6 +10146,13 @@ mpo_negotiate_obedience_interaction = {
 					pay_short_term_gold = {
 						target = scope:recipient
 						gold = medium_gold_value
+					}
+				}
+				if = {
+					limit = { scope:dm_obedience_republic_gold = yes }
+					pay_short_term_gold = {
+						target = scope:recipient
+						gold = dm_obedience_republic_gold_cost_value
 					}
 				}
 				if = {

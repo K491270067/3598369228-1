@@ -1,0 +1,188 @@
+﻿# Shared acceptance calculation for negotiating obedience.
+# ROOT is the recipient; scope:actor and the interaction option scopes are supplied by the interaction.
+
+dm_negotiate_obedience_baseline_acceptance_value = {
+	value = -95
+
+	if = {
+		limit = { scope:hook ?= yes }
+		add = { value = 100 desc = MIGRATION_HOOK_USED }
+	}
+	if = {
+		limit = { scope:gold ?= yes }
+		add = { value = 100 desc = TRADE_GOLD_FOR_BETTER_AI_ACCEPTANCE_TT }
+	}
+	if = {
+		limit = { scope:herd ?= yes }
+		add = { value = 100 desc = TRADE_HERD_FOR_BETTER_AI_ACCEPTANCE_TT }
+	}
+
+	if = {
+		limit = {
+			scope:actor = {
+				OR = {
+					has_realm_law = nomadic_authority_2
+					has_realm_law = meritocratic_bureaucracy_1
+				}
+			}
+		}
+		add = { value = 5 desc = DEMAND_OBEDIENCE_INTERACTION_DOMINANCE_ACCEPTANCE }
+	}
+	if = {
+		limit = {
+			scope:actor = {
+				OR = {
+					has_realm_law = nomadic_authority_3
+					has_realm_law = meritocratic_bureaucracy_2
+				}
+			}
+		}
+		add = { value = 10 desc = DEMAND_OBEDIENCE_INTERACTION_DOMINANCE_ACCEPTANCE }
+	}
+	if = {
+		limit = {
+			scope:actor = {
+				OR = {
+					has_realm_law = nomadic_authority_4
+					has_realm_law = meritocratic_bureaucracy_3
+				}
+			}
+		}
+		add = { value = 20 desc = DEMAND_OBEDIENCE_INTERACTION_DOMINANCE_ACCEPTANCE }
+	}
+	if = {
+		limit = { scope:actor = { has_realm_law = nomadic_authority_5 } }
+		add = { value = 100 desc = DEMAND_OBEDIENCE_INTERACTION_DOMINANCE_ACCEPTANCE }
+	}
+
+	if = {
+		limit = { scope:actor = { legitimacy_level = 1 } }
+		add = { value = -30 desc = DEMAND_OBEDIENCE_INTERACTION_LEGITIMACY_ACCEPTANCE }
+	}
+	if = {
+		limit = { scope:actor = { legitimacy_level = 2 } }
+		add = { value = -20 desc = DEMAND_OBEDIENCE_INTERACTION_LEGITIMACY_ACCEPTANCE }
+	}
+	if = {
+		limit = { scope:actor = { legitimacy_level = 3 } }
+		add = { value = 5 desc = DEMAND_OBEDIENCE_INTERACTION_LEGITIMACY_ACCEPTANCE }
+	}
+	if = {
+		limit = { scope:actor = { legitimacy_level = 4 } }
+		add = { value = 15 desc = DEMAND_OBEDIENCE_INTERACTION_LEGITIMACY_ACCEPTANCE }
+	}
+	if = {
+		limit = { scope:actor = { legitimacy_level = 5 } }
+		add = { value = 30 desc = DEMAND_OBEDIENCE_INTERACTION_LEGITIMACY_ACCEPTANCE }
+	}
+
+	if = {
+		limit = { NOT = { ai_boldness = 0 } }
+		add = {
+			value = ai_boldness
+			multiply = -1
+			divide = 2
+			desc = ARTIFACT_BOLDNESS_REASON
+		}
+	}
+	if = {
+		limit = { ai_greed > 0 }
+		add = {
+			value = ai_greed
+			multiply = -1
+			divide = 2
+			desc = ARTIFACT_GREED_REASON
+		}
+	}
+	if = {
+		limit = { NOT = { ai_honor = 0 } }
+		add = {
+			value = ai_honor
+			divide = 4
+			desc = ARTIFACT_HONOR_REASON
+		}
+	}
+
+	if = {
+		limit = { has_trait = brave }
+		add = { value = -20 desc = BLACKMAIL_INTERACTION_BRAVE_ACCEPTANCE }
+	}
+	if = {
+		limit = { has_trait = arrogant }
+		add = { value = -50 desc = BLACKMAIL_INTERACTION_ARROGANT_ACCEPTANCE }
+	}
+	if = {
+		limit = { has_trait = trusting }
+		add = { value = 25 desc = BLACKMAIL_INTERACTION_TRUSTING_ACCEPTANCE }
+	}
+	if = {
+		limit = { has_trait = disloyal }
+		add = { value = -50 desc = DEMAND_OBEDIENCE_INTERACTION_DISLOYAL_ACCEPTANCE }
+	}
+	if = {
+		limit = {
+			scope:actor = { government_has_flag = government_is_nomadic }
+			exists = domicile
+			domicile.herd >= 100
+			domicile.herd > scope:actor.domicile.herd
+		}
+		add = { value = -500 desc = DEMAND_OBEDIENCE_INTERACTION_HERD_ACCEPTANCE }
+	}
+	if = {
+		limit = {
+			current_military_strength >= 100
+			current_military_strength > scope:actor.current_military_strength
+		}
+		add = { value = -500 desc = DEMAND_OBEDIENCE_INTERACTION_MILITARY_MIGHT_ACCEPTANCE }
+	}
+	if = {
+		limit = { has_trait = craven }
+		add = { value = 10 desc = BLACKMAIL_INTERACTION_CRAVEN_ACCEPTANCE }
+	}
+	if = {
+		limit = { has_trait = content }
+		add = { value = 10 desc = DEMAND_OBEDIENCE_INTERACTION_CONTENT_ACCEPTANCE }
+	}
+	if = {
+		limit = {
+			any_character_situation = {
+				any_situation_sub_region = {
+					has_sub_region_phase_parameter = the_great_steppe_easier_obedience
+					any_situation_sub_region_participant_group = {
+						participant_group_type = nomad_rulers_capital
+						participant_group_has_character = scope:actor
+					}
+				}
+			}
+		}
+		add = { value = 25 desc = DEMAND_OBEDIENCE_INTERACTION_ZUD_ACCEPTANCE }
+	}
+	if = {
+		limit = { has_dread_level_towards = { target = scope:actor level = 1 } }
+		add = { value = intimidated_halved_reason_value desc = INTIMIDATED_REASON }
+	}
+	if = {
+		limit = { has_dread_level_towards = { target = scope:actor level = 2 } }
+		add = { value = cowed_halved_reason_value desc = COWED_REASON }
+	}
+}
+
+dm_obedience_republic_gold_cost_value = {
+	value = medium_gold_value
+	multiply = 2
+}
+
+dm_obedience_republic_gold_ai_reserve_value = {
+	value = medium_gold_value
+	multiply = 4
+}
+
+dm_obedience_influence_ai_reserve_value = {
+	value = medium_influence_value
+	multiply = 2
+}
+
+dm_obedience_piety_ai_reserve_value = {
+	value = medium_piety_value
+	multiply = 2
+}

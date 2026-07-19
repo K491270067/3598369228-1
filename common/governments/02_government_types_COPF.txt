@@ -1,6 +1,7 @@
 ﻿# 封建行政制 #
 feudal_admin_government = {
 	government_rules = {
+		obedience = yes
 		create_cadet_branches = yes
 		rulers_should_have_dynasty = yes
 		dynasty_named_realms = no
