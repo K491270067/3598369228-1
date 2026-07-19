@@ -15,6 +15,98 @@ dm_reform_participant_supports_trigger = {
 	dm_reform_stance_score_value > 0
 }
 
+dm_reform_event_available_trigger = {
+	OR = {
+		NOT = { has_variable = $VARIABLE$ }
+		var:$VARIABLE$ <= var:dm_reform_elapsed_days
+	}
+}
+
+dm_reform_crisis_event_available_trigger = {
+	any_in_list = {
+		variable = dm_reform_opponents
+		is_alive = yes
+		NOT = { has_character_flag = dm_reform_event_actor_cooldown }
+	}
+	OR = {
+		dm_reform_event_available_trigger = { VARIABLE = dm_reform_event_1101_next_day }
+		dm_reform_event_available_trigger = { VARIABLE = dm_reform_event_1102_next_day }
+		dm_reform_event_available_trigger = { VARIABLE = dm_reform_event_1103_next_day }
+		dm_reform_event_available_trigger = { VARIABLE = dm_reform_event_1104_next_day }
+		dm_reform_event_available_trigger = { VARIABLE = dm_reform_event_1105_next_day }
+		dm_reform_event_available_trigger = { VARIABLE = dm_reform_event_1106_next_day }
+		dm_reform_event_available_trigger = { VARIABLE = dm_reform_event_1107_next_day }
+	}
+}
+
+dm_reform_setback_event_available_trigger = {
+	any_in_list = {
+		variable = dm_reform_opponents
+		is_alive = yes
+		NOT = { has_character_flag = dm_reform_event_actor_cooldown }
+	}
+	OR = {
+		dm_reform_event_available_trigger = { VARIABLE = dm_reform_event_1108_next_day }
+		dm_reform_event_available_trigger = { VARIABLE = dm_reform_event_1109_next_day }
+		dm_reform_event_available_trigger = { VARIABLE = dm_reform_event_1110_next_day }
+		dm_reform_event_available_trigger = { VARIABLE = dm_reform_event_1111_next_day }
+		dm_reform_event_available_trigger = { VARIABLE = dm_reform_event_1112_next_day }
+		dm_reform_event_available_trigger = { VARIABLE = dm_reform_event_1113_next_day }
+		dm_reform_event_available_trigger = { VARIABLE = dm_reform_event_1114_next_day }
+	}
+}
+
+dm_reform_calm_event_available_trigger = {
+	any_in_list = {
+		variable = dm_reform_supporters
+		is_alive = yes
+		NOT = { has_character_flag = dm_reform_event_actor_cooldown }
+	}
+	OR = {
+		dm_reform_event_available_trigger = { VARIABLE = dm_reform_event_1115_next_day }
+		dm_reform_event_available_trigger = { VARIABLE = dm_reform_event_1116_next_day }
+		dm_reform_event_available_trigger = { VARIABLE = dm_reform_event_1117_next_day }
+		dm_reform_event_available_trigger = { VARIABLE = dm_reform_event_1118_next_day }
+		dm_reform_event_available_trigger = { VARIABLE = dm_reform_event_1119_next_day }
+		dm_reform_event_available_trigger = { VARIABLE = dm_reform_event_1120_next_day }
+		dm_reform_event_available_trigger = { VARIABLE = dm_reform_event_1121_next_day }
+	}
+}
+
+dm_reform_encouragement_event_available_trigger = {
+	any_in_list = {
+		variable = dm_reform_supporters
+		is_alive = yes
+		NOT = { has_character_flag = dm_reform_event_actor_cooldown }
+	}
+	OR = {
+		dm_reform_event_available_trigger = { VARIABLE = dm_reform_event_1122_next_day }
+		dm_reform_event_available_trigger = { VARIABLE = dm_reform_event_1123_next_day }
+		dm_reform_event_available_trigger = { VARIABLE = dm_reform_event_1124_next_day }
+		dm_reform_event_available_trigger = { VARIABLE = dm_reform_event_1125_next_day }
+		dm_reform_event_available_trigger = { VARIABLE = dm_reform_event_1126_next_day }
+		dm_reform_event_available_trigger = { VARIABLE = dm_reform_event_1127_next_day }
+		dm_reform_event_available_trigger = { VARIABLE = dm_reform_event_1128_next_day }
+	}
+}
+
+dm_reform_breakthrough_event_available_trigger = {
+	any_in_list = {
+		variable = dm_reform_supporters
+		is_alive = yes
+		NOT = { has_character_flag = dm_reform_event_actor_cooldown }
+	}
+	OR = {
+		dm_reform_event_available_trigger = { VARIABLE = dm_reform_event_1129_next_day }
+		dm_reform_event_available_trigger = { VARIABLE = dm_reform_event_1130_next_day }
+		dm_reform_event_available_trigger = { VARIABLE = dm_reform_event_1131_next_day }
+		dm_reform_event_available_trigger = { VARIABLE = dm_reform_event_1132_next_day }
+		dm_reform_event_available_trigger = { VARIABLE = dm_reform_event_1133_next_day }
+		dm_reform_event_available_trigger = { VARIABLE = dm_reform_event_1134_next_day }
+		dm_reform_event_available_trigger = { VARIABLE = dm_reform_event_1135_next_day }
+	}
+}
+
 dm_reform_is_formal_trigger = {
 	var:dm_reform_phase = flag:formal
 }
@@ -24,5 +116,57 @@ dm_reform_has_reformer_trigger = {
 	var:dm_reform_reformer = {
 		is_alive = yes
 		is_available_adult = yes
+		custom_description = {
+			text = dm_reform_reformer_still_eligible_tt
+			OR = {
+				is_courtier_of = prev.story_owner
+				AND = {
+					top_liege = prev.story_owner
+					prev.story_owner = {
+						OR = {
+							government_has_flag = government_is_administrative
+							government_has_flag = government_is_celestial
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+dm_reform_japan_defense_mobilization_valid_trigger = {
+	# CHARACTER is the interaction actor. This mirrors the loaded TGP trigger
+	# while avoiding its law-context ROOT reference in a rootless interaction.
+	custom_tooltip = {
+		text = defense_mobilization_law_valid_trigger
+		OR = {
+			AND = {
+				is_at_war = yes
+				save_temporary_scope_as = liege_temp
+				any_character_war = {
+					is_civil_war = no
+					save_temporary_scope_as = war_temp
+					scope:liege_temp = {
+						is_leader_in_war = scope:war_temp
+						is_defender_in_war = scope:war_temp
+					}
+					OR = {
+						war_attacker_total_strength_value > scope:liege_temp.max_strength_fifty_percent_value
+						primary_attacker.max_strength_with_allies_value > scope:liege_temp.max_strength_fifty_percent_value
+					}
+					primary_attacker = {
+						OR = {
+							capital_county.empire != scope:liege_temp.capital_county.empire
+							NOT = { government_is_japanese_trigger = yes }
+						}
+					}
+				}
+			}
+			capital_county.empire = {
+				any_de_jure_county = {
+					holder.top_liege != $CHARACTER$.top_liege
+				}
+			}
+		}
 	}
 }

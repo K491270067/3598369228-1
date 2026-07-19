@@ -1,9 +1,102 @@
+﻿dm_reform_select_reformer_interaction = {
+	category = interaction_category_friendly
+	icon = scroll_scales
+	auto_accept = yes
+
+	populate_recipient_list = {
+		scope:recipient = {
+			every_courtier = {
+				limit = {
+					is_alive = yes
+					is_available_adult = yes
+					is_imprisoned = no
+					this != scope:recipient
+				}
+				add_to_list = characters
+			}
+			if = {
+				limit = {
+					OR = {
+						government_has_flag = government_is_administrative
+						government_has_flag = government_is_celestial
+					}
+				}
+				every_vassal = {
+					limit = {
+						is_alive = yes
+						is_available_adult = yes
+						is_imprisoned = no
+					}
+					add_to_list = characters
+				}
+			}
+		}
+	}
+
+	is_shown = {
+		scope:actor = scope:recipient
+		scope:actor = {
+			is_ruler = yes
+			NOR = { any_owned_story = { type = dm_reform_story } }
+		}
+	}
+
+	can_be_picked = {
+		is_alive = yes
+		is_available_adult = yes
+		is_imprisoned = no
+		this != scope:actor
+		OR = {
+			is_courtier_of = scope:actor
+			AND = {
+				top_liege = scope:actor
+				scope:actor = {
+					OR = {
+						government_has_flag = government_is_administrative
+						government_has_flag = government_is_celestial
+					}
+				}
+			}
+		}
+	}
+
+	on_accept = {
+		scope:actor = {
+			set_variable = {
+				name = dm_reform_pending_reformer
+				value = scope:secondary_recipient
+			}
+		}
+	}
+
+	ai_will_do = { base = 0 }
+}
+
+dm_reform_clear_pending_reformer_interaction = {
+	category = interaction_category_friendly
+	common_interaction = yes
+	hidden = yes
+	auto_accept = yes
+	popup_on_receive = no
+	ai_targets = { ai_recipients = self }
+	is_shown = {
+		scope:actor = scope:recipient
+		scope:actor = { has_variable = dm_reform_pending_reformer }
+	}
+	on_accept = {
+		scope:actor = { remove_variable = dm_reform_pending_reformer }
+	}
+	ai_will_do = { base = 0 }
+}
+
 dm_reform_invite_reformer_interaction = {
 	category = interaction_category_friendly
 	common_interaction = yes
 	popup_on_receive = yes
 	desc = dm_reform_invite_reformer_interaction_desc
 	icon = scroll_scales
+	ai_maybe = yes
+	ai_frequency = 1
 	ai_min_reply_days = 2
 	ai_max_reply_days = 5
 
@@ -51,7 +144,7 @@ dm_reform_invite_reformer_interaction = {
 		scope:actor = {
 			random_owned_story = {
 				limit = {
-					type = dm_reform_story
+					story_type = dm_reform_story
 					NOR = {
 						dm_reform_has_reformer_trigger = yes
 					}
@@ -59,6 +152,18 @@ dm_reform_invite_reformer_interaction = {
 				set_variable = {
 					name = dm_reform_reformer
 					value = scope:recipient
+				}
+				remove_list_variable = {
+					name = dm_reform_pending_participants
+					target = scope:recipient
+				}
+				remove_list_variable = {
+					name = dm_reform_supporters
+					target = scope:recipient
+				}
+				remove_list_variable = {
+					name = dm_reform_opponents
+					target = scope:recipient
 				}
 			}
 		}
@@ -103,6 +208,19 @@ dm_reform_invite_reformer_interaction = {
 			}
 		}
 	}
+
+	ai_will_do = {
+		base = 100
+		modifier = {
+			factor = 0
+			scope:actor = {
+				any_owned_story = {
+					type = dm_reform_story
+					var:dm_reform_elapsed_days > 25
+				}
+			}
+		}
+	}
 }
 
 dm_reform_lobby_opponent_interaction = {
@@ -111,6 +229,8 @@ dm_reform_lobby_opponent_interaction = {
 	popup_on_receive = yes
 	desc = dm_reform_lobby_opponent_interaction_desc
 	icon = scroll_scales
+	ai_maybe = yes
+	ai_frequency = 6
 	ai_min_reply_days = 2
 	ai_max_reply_days = 5
 	options_heading = dm_reform_lobby_options_heading
@@ -205,6 +325,12 @@ dm_reform_lobby_opponent_interaction = {
 	}
 
 	is_valid_showing_failures_only = {
+		scope:actor = {
+			trigger_if = {
+				limit = { is_ai = yes }
+				NOT = { has_character_flag = dm_reform_ai_lobby_cycle }
+			}
+		}
 		scope:recipient = {
 			NOT = { has_character_flag = dm_reform_lobby_global_refusal }
 			NOT = {
@@ -217,6 +343,15 @@ dm_reform_lobby_opponent_interaction = {
 	}
 
 	on_send = {
+		scope:actor = {
+			if = {
+				limit = { is_ai = yes }
+				add_character_flag = {
+					flag = dm_reform_ai_lobby_cycle
+					days = 180
+				}
+			}
+		}
 		if = {
 			limit = {
 				OR = {
@@ -231,10 +366,12 @@ dm_reform_lobby_opponent_interaction = {
 	on_accept = {
 		scope:actor = { dm_reform_save_actor_story_effect = yes }
 		random_list = {
-			dm_reform_lobby_success_value = {
+			0 = {
+				modifier = { add = dm_reform_lobby_success_value }
 				scope:dm_reform_story = { dm_reform_lobby_success_effect = yes }
 			}
-			dm_reform_lobby_failure_value = {
+			0 = {
+				modifier = { add = dm_reform_lobby_failure_value }
 				dm_reform_lobby_failure_effect = yes
 			}
 		}
@@ -259,5 +396,118 @@ dm_reform_lobby_opponent_interaction = {
 			add = 40
 			scope:dm_reform_weak_hook = yes
 		}
+	}
+
+	ai_will_do = {
+		base = 75
+		modifier = {
+			factor = 0
+			dm_reform_lobby_success_value < 60
+		}
+		modifier = {
+			factor = 0
+			scope:actor = { is_in_debt = yes }
+		}
+	}
+}
+
+dm_reform_replace_reformer_interaction = {
+	category = interaction_category_friendly
+	common_interaction = yes
+	popup_on_receive = yes
+	desc = dm_reform_replace_reformer_interaction_desc
+	icon = scroll_scales
+	ai_maybe = no
+	ai_min_reply_days = 2
+	ai_max_reply_days = 5
+
+	cost = {
+		prestige = {
+			value = 100
+			if = {
+				limit = { scope:actor.highest_held_title_tier >= tier_kingdom }
+				value = 200
+			}
+			if = {
+				limit = { scope:actor.highest_held_title_tier >= tier_empire }
+				value = 300
+			}
+		}
+	}
+
+	is_shown = {
+		scope:actor != scope:recipient
+		scope:actor = {
+			any_owned_story = {
+				type = dm_reform_story
+				dm_reform_has_reformer_trigger = yes
+				var:dm_reform_reformer != scope:recipient
+			}
+		}
+		scope:recipient = {
+			is_alive = yes
+			is_available_adult = yes
+			is_imprisoned = no
+			OR = {
+				is_courtier_of = scope:actor
+				AND = {
+					top_liege = scope:actor
+					scope:actor = {
+						OR = {
+							government_has_flag = government_is_administrative
+							government_has_flag = government_is_celestial
+						}
+					}
+				}
+			}
+		}
+	}
+
+	on_accept = {
+		scope:actor = {
+			random_owned_story = {
+				limit = {
+					story_type = dm_reform_story
+					dm_reform_has_reformer_trigger = yes
+				}
+				var:dm_reform_reformer = {
+					add_opinion = {
+						target = scope:actor
+						modifier = disappointed_opinion
+						opinion = -30
+						years = 10
+					}
+					save_scope_as = dm_reform_old_reformer
+				}
+				change_variable = { name = dm_reform_progress add = -20 }
+				if = {
+					limit = {
+						scope:dm_reform_old_reformer = {
+							is_powerful_vassal_of = scope:actor
+						}
+					}
+					add_to_variable_list = {
+						name = dm_reform_opponents
+						target = scope:dm_reform_old_reformer
+					}
+				}
+				set_variable = {
+					name = dm_reform_reformer
+					value = scope:recipient
+				}
+			}
+		}
+		scope:recipient = { trigger_event = dm_reform.0202 }
+	}
+
+	ai_accept = {
+		base = 30
+		opinion_modifier = {
+			who = scope:recipient
+			opinion_target = scope:actor
+			multiplier = 0.3
+		}
+		modifier = { add = 20 scope:recipient = { has_trait = ambitious } }
+		modifier = { add = -25 scope:recipient = { has_trait = content } }
 	}
 }

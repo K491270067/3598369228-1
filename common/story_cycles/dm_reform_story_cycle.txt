@@ -3,12 +3,12 @@ dm_reform_story = {
 
 	icon = {
 		trigger = { always = yes }
-		reference = "gfx/interface/icons/decisions/major_decision.dds"
+		reference = "gfx/interface/icons/story_cycles/story_icon_palace_politics.dds"
 	}
 
 	background = {
 		trigger = { always = yes }
-		reference = "gfx/interface/illustrations/event_scenes/court_event.dds"
+		reference = "gfx/interface/illustrations/event_scenes/tgp_courtyard_asia.dds"
 	}
 
 	visualization = {
@@ -75,8 +75,21 @@ dm_reform_story = {
 	}
 
 	on_end = {
+		every_in_list = {
+			variable = dm_reform_supporters
+			remove_character_flag = dm_reform_event_actor_cooldown
+			remove_character_flag = dm_reform_lobby_global_refusal
+			clear_variable_list = dm_reform_lobby_rejected_actors
+		}
+		every_in_list = {
+			variable = dm_reform_opponents
+			remove_character_flag = dm_reform_event_actor_cooldown
+			remove_character_flag = dm_reform_lobby_global_refusal
+			clear_variable_list = dm_reform_lobby_rejected_actors
+		}
 		clear_variable_list = dm_reform_supporters
 		clear_variable_list = dm_reform_opponents
+		clear_variable_list = dm_reform_pending_participants
 	}
 
 	on_owner_death = {
@@ -90,8 +103,13 @@ dm_reform_story = {
 				name = dm_reform_ruler
 				value = var:dm_reform_primary_title.holder
 			}
-			set_variable = { name = dm_reform_phase value = flag:inheritance_wait }
-			set_variable = { name = dm_reform_inheritance_days value = 0 }
+			if = {
+				limit = {
+					var:dm_reform_reformer = var:dm_reform_primary_title.holder
+				}
+				remove_variable = dm_reform_reformer
+			}
+			dm_reform_begin_statements_effect = yes
 		}
 		else = {
 			end_story = yes
@@ -106,7 +124,7 @@ dm_reform_story = {
 				change_variable = { name = dm_reform_elapsed_days add = 1 }
 				if = {
 					limit = { var:dm_reform_elapsed_days >= 30 }
-					dm_reform_initialize_formal_effect = yes
+					dm_reform_begin_statements_effect = yes
 				}
 			}
 		}
@@ -115,11 +133,12 @@ dm_reform_story = {
 	effect_group = {
 		days = 1
 		triggered_effect = {
-			trigger = { var:dm_reform_phase = flag:inheritance_wait }
+			trigger = { var:dm_reform_phase = flag:statements }
 			effect = {
-				change_variable = { name = dm_reform_inheritance_days add = 1 }
+				change_variable = { name = dm_reform_statement_days add = 1 }
+				change_variable = { name = dm_reform_elapsed_days add = 1 }
 				if = {
-					limit = { var:dm_reform_inheritance_days >= 10 }
+					limit = { var:dm_reform_statement_days >= 10 }
 					dm_reform_initialize_formal_effect = yes
 				}
 			}
@@ -138,7 +157,16 @@ dm_reform_story = {
 
 	effect_group = {
 		days = { 20 40 }
-		trigger = { dm_reform_is_formal_trigger = yes }
+		trigger = {
+			dm_reform_is_formal_trigger = yes
+			OR = {
+				dm_reform_has_reformer_trigger = yes
+				story_owner = {
+					is_imprisoned = no
+					NOT = { has_trait = incapable }
+				}
+			}
+		}
 		triggered_effect = {
 			trigger = { always = yes }
 			effect = {

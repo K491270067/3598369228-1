@@ -8,6 +8,14 @@ exclude_groups = [
 	"succession_rel_head",
 	"crowned_laws",
 ]
+exclude_laws = [
+	# Optional compatibility laws whose external definitions are not loaded.
+	"last_will_succession_law",
+	"diwan_top_liege_succession_law",
+	"diwan_governor_succession_law",
+	"dawla_vassal_succession_law",
+	"diwan_vassal_illegal_succession_law",
+]
 budget_groups = [
 	"budget_allocation_salary_law",
 	"budget_allocation_ministry_law",
@@ -125,4 +133,3 @@ axis = "administrative_unity"
 [groups.budget_allocation_military_law]
 theme = "military"
 axis = "military_control"
-

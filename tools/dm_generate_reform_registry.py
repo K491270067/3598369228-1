@@ -230,6 +230,7 @@ def is_law_candidate(key: str, value: Value) -> bool:
 
 def collect_laws(manifest: dict) -> tuple[list[Law], list[str]]:
 	excluded = set(manifest["settings"]["exclude_groups"])
+	excluded_laws = set(manifest["settings"].get("exclude_laws", []))
 	budgets = set(manifest["settings"]["budget_groups"])
 	group_meta = manifest.get("groups", {})
 	groups = effective_groups()
@@ -267,6 +268,8 @@ def collect_laws(manifest: dict) -> tuple[list[Law], list[str]]:
 		count = len(children)
 		for index, (law_key, block) in enumerate(children):
 			assert isinstance(block, list)
+			if law_key in excluded_laws:
+				continue
 			if count == 1:
 				level = 0
 			else:
@@ -336,6 +339,64 @@ def resource_cost(law: Law) -> Block:
 	return value if isinstance(value, list) else []
 
 
+def adapt_interaction_scope(value: Value, *, drop_value_descriptions: bool = False) -> Value:
+	"""Translate law-context ROOT references to the interaction actor."""
+	if isinstance(value, str):
+		if value == "root":
+			return "scope:actor"
+		if value.startswith("root."):
+			return "scope:actor." + value[5:]
+		return value
+	adapted: Block = []
+	for key, child in value:
+		if drop_value_descriptions and key == "desc":
+			continue
+		if key == "tgp_japan_defense_mobilization_valid_trigger":
+			adapted.append(
+				(
+					"dm_reform_japan_defense_mobilization_valid_trigger",
+					[("CHARACTER", "scope:actor")],
+				)
+			)
+			continue
+		adapted_key = "scope:actor" if key == "root" else key
+		adapted.append(
+			(
+				adapted_key,
+				adapt_interaction_scope(
+					child,
+					drop_value_descriptions=drop_value_descriptions,
+				),
+			)
+		)
+	return adapted
+
+
+def interaction_cost(law: Law) -> Block:
+	"""Render pass costs in the actor scope expected by character interactions."""
+	return [
+		(
+			resource,
+			[
+				("value", "0"),
+				(
+					"scope:actor",
+					[
+						(
+							"add",
+							adapt_interaction_scope(
+								value,
+								drop_value_descriptions=True,
+							),
+						)
+					],
+				),
+			],
+		)
+		for resource, value in resource_cost(law)
+	]
+
+
 def block_contains_atom(block: Block, expected: set[str]) -> bool:
 	for key, value in block:
 		if key in expected:
@@ -388,56 +449,121 @@ def law_condition_text(law: Law, keys: tuple[str, ...], tabs: int) -> str:
 	for key in keys:
 		value = first(law.block, key)
 		if isinstance(value, list):
-			blocks.append(strip_powerful_vassal_approval(value))
+			blocks.append(
+				adapt_interaction_scope(strip_powerful_vassal_approval(value))
+			)
 	if not blocks:
 		return ""
 	return "\n".join(render_block_entries(block, tabs) for block in blocks if block)
 
 
+def refundable_costs(law: Law) -> list[tuple[str, Value]]:
+	return [
+		(resource, value)
+		for resource, value in resource_cost(law)
+		if resource in {"gold", "prestige", "piety", "influence", "legitimacy"}
+	]
+
+
+def render_paid_cost_capture(law: Law) -> str:
+	lines: list[str] = []
+	for resource, value in refundable_costs(law):
+		rendered = render_value(
+			adapt_interaction_scope(value, drop_value_descriptions=True),
+			4,
+		)
+		lines.append(
+			"\t\t\tsave_scope_value_as = {\n"
+			f"\t\t\t\tname = dm_reform_paid_{resource}\n"
+			f"\t\t\t\tvalue = {rendered}\n"
+			"\t\t\t}"
+		)
+	return "\n".join(lines)
+
+
 def render_paid_cost_variables(law: Law) -> str:
 	lines: list[str] = []
-	for resource, value in resource_cost(law):
-		if resource not in {"gold", "prestige", "piety", "influence", "legitimacy"}:
-			continue
-		rendered = render_value(value, 4)
+	for resource, _ in refundable_costs(law):
 		lines.append(
-			f"\t\t\t\tset_variable = {{ name = dm_reform_paid_{resource} value = {rendered} }}"
+			f"\t\t\t\tset_variable = {{ name = dm_reform_paid_{resource} "
+			f"value = scope:dm_reform_paid_{resource} }}"
 		)
 	return "\n".join(lines)
 
 
 def render_interaction(law: Law) -> str:
-	cost = resource_cost(law)
+	cost = interaction_cost(law)
 	cost_text = ""
 	if cost:
-		cost_text = "\n\tcost = " + render_value(cost, 1)
+		cost_text = "\tcost = " + render_value(cost, 1) + "\n"
 	shown_conditions = law_condition_text(law, ("potential",), 3)
 	valid_parts = []
+	valid_item_count = 0
 	if law.group_conditions:
-		valid_parts.append(render_block_entries(law.group_conditions, 2))
+		adapted_group_conditions = adapt_interaction_scope(law.group_conditions)
+		assert isinstance(adapted_group_conditions, list)
+		valid_parts.append(render_block_entries(adapted_group_conditions, 2))
+		valid_item_count += len(adapted_group_conditions)
 	law_valid = law_condition_text(law, ("can_have", "can_pass"), 2)
 	if law_valid:
 		valid_parts.append(law_valid)
+	for key in ("can_have", "can_pass"):
+		value = first(law.block, key)
+		if isinstance(value, list):
+			valid_item_count += len(strip_powerful_vassal_approval(value))
 	valid_conditions = "\n".join(valid_parts)
 	if shown_conditions:
 		shown_conditions = "\n" + shown_conditions
 	if valid_conditions:
-		valid_conditions = "\n" + valid_conditions
+		if valid_item_count == 1:
+			valid_conditions = (
+				"\n\t\t\tcustom_description = {\n"
+				"\t\t\t\ttext = dm_reform_law_requirements_tt\n"
+				+ indent(valid_conditions, 2)
+				+ "\n\t\t\t}"
+			)
+		else:
+			valid_conditions = (
+				"\n\t\t\tcustom_description = {\n"
+				"\t\t\t\ttext = dm_reform_law_requirements_tt\n"
+				"\t\t\t\tAND = {\n"
+				+ indent(valid_conditions, 3)
+				+ "\n\t\t\t\t}\n"
+				"\t\t\t}"
+			)
 	paid_costs = render_paid_cost_variables(law)
 	if paid_costs:
 		paid_costs = "\n" + paid_costs
+	paid_cost_capture = render_paid_cost_capture(law)
+	if paid_cost_capture:
+		paid_cost_capture += "\n"
 	return f"""dm_reform_start_{law.key}_interaction = {{
 \tcategory = interaction_category_friendly
 \tcommon_interaction = yes
 \thidden = yes
 \tpopup_on_receive = no
-\tai_maybe = no
+\tai_maybe = yes
+\tai_frequency = 36
 \tai_accept = {{ base = 100 }}
+\tai_will_do = {{
+\t\tbase = {max(0, 20 + law.level * 5)}
+\t\tmodifier = {{
+\t\t\tfactor = 0
+\t\t\tscope:actor = {{ is_in_debt = yes }}
+\t\t}}
+\t\tmodifier = {{
+\t\t\tfactor = 1.5
+\t\t\tscope:actor = {{ OR = {{ has_trait = ambitious has_trait = diligent }} }}
+\t\t}}
+\t\tmodifier = {{
+\t\t\tfactor = 0.5
+\t\t\tscope:actor = {{ OR = {{ has_trait = content has_trait = lazy }} }}
+\t\t}}
+\t}}
 \tai_targets = {{ ai_recipients = self }}
 \tdesc = dm_reform_start_interaction_desc
 \ticon = scroll_scales
-\t{cost_text.strip()}
-\tis_shown = {{
+{cost_text}\tis_shown = {{
 \t\tscope:recipient = scope:actor
 \t\tscope:actor = {{
 \t\t\tis_ruler = yes
@@ -452,15 +578,27 @@ def render_interaction(law: Law) -> str:
 \t}}
 \ton_accept = {{
 \t\tscope:actor = {{
-\t\t\tcreate_story = dm_reform_story
+{paid_cost_capture}\t\t\tcreate_story = dm_reform_story
 \t\t\trandom_owned_story = {{
-\t\t\t\tlimit = {{ type = dm_reform_story }}
+\t\t\t\tlimit = {{ story_type = dm_reform_story }}
 \t\t\t\tset_variable = {{ name = dm_reform_target value = flag:{law.key} }}
 \t\t\t\tset_variable = {{ name = dm_reform_theme value = flag:{law.theme} }}
 \t\t\t\tset_variable = {{ name = dm_reform_axis value = flag:{law.axis} }}
 \t\t\t\tset_variable = {{ name = dm_reform_target_level value = {law.level} }}
 \t\t\t\tset_variable = {{ name = dm_reform_target_is_budget value = {1 if law.is_budget else 0} }}{paid_costs}
 \t\t\t\tdm_reform_capture_current_level_effect = yes
+\t\t\t\tif = {{
+\t\t\t\t\tlimit = {{ story_owner = {{ has_variable = dm_reform_pending_reformer }} }}
+\t\t\t\t\tset_variable = {{
+\t\t\t\t\t\tname = dm_reform_pending_reformer
+\t\t\t\t\t\tvalue = story_owner.var:dm_reform_pending_reformer
+\t\t\t\t\t}}
+\t\t\t\t\tsave_scope_as = dm_reform_story
+\t\t\t\t\tstory_owner.var:dm_reform_pending_reformer = {{
+\t\t\t\t\t\ttrigger_event = {{ id = dm_reform.0210 days = 1 }}
+\t\t\t\t\t}}
+\t\t\t\t\tstory_owner = {{ remove_variable = dm_reform_pending_reformer }}
+\t\t\t\t}}
 \t\t\t}}
 \t\t\ttrigger_event = {{ id = dm_reform.0001 days = 1 }}
 \t\t}}
@@ -485,7 +623,27 @@ def render_success_effect(laws: list[Law]) -> str:
 				"\t}",
 			]
 		)
-	lines.extend(["\telse = { log = \"DM_REFORM_ERROR: no registered target law\" }", "}", ""])
+	for combo in budget_combinations():
+		key = budget_combo_key(combo)
+		lines.extend(
+			[
+				"\telse_if = {",
+				f"\t\tlimit = {{ var:dm_reform_target = flag:{key} }}",
+				"\t\tstory_owner = {",
+				f"\t\t\tadd_realm_law = budget_allocation_salary_{combo[0]}",
+				f"\t\t\tadd_realm_law = budget_allocation_ministry_{combo[1]}",
+				f"\t\t\tadd_realm_law = budget_allocation_military_{combo[2]}",
+				"\t\t}",
+				"\t}",
+			]
+		)
+	lines.extend(
+		[
+			"\telse = { debug_log = \"DM_REFORM_ERROR: no registered target law\" }",
+			"}",
+			"",
+		]
+	)
 	lines.extend(
 		[
 			"dm_reform_capture_current_level_effect = {",
@@ -545,6 +703,22 @@ def render_target_valid_trigger(laws: list[Law]) -> str:
 				"\t\t}",
 			]
 		)
+	for combo in budget_combinations():
+		key = budget_combo_key(combo)
+		lines.extend(
+			[
+				"\t\tAND = {",
+				f"\t\t\tvar:dm_reform_target = flag:{key}",
+				"\t\t\tstory_owner = {",
+				"\t\t\t\tNOT = {",
+				f"\t\t\t\t\thas_realm_law = budget_allocation_salary_{combo[0]}",
+				f"\t\t\t\t\thas_realm_law = budget_allocation_ministry_{combo[1]}",
+				f"\t\t\t\t\thas_realm_law = budget_allocation_military_{combo[2]}",
+				"\t\t\t\t}",
+				"\t\t\t}",
+				"\t\t}",
+			]
+		)
 	lines.extend(["\t}", "}"])
 	lines.extend(["", "dm_reform_target_is_valid_trigger = {", "\t# ROOT: reform story", "\tOR = {"])
 	for law in laws:
@@ -566,6 +740,19 @@ def render_target_valid_trigger(laws: list[Law]) -> str:
 				"\t\tAND = {",
 				f"\t\t\tvar:dm_reform_target = flag:{law.key}",
 				f"\t\t\tstory_owner = {{{rendered_conditions}",
+				"\t\t\t}",
+				"\t\t}",
+			]
+		)
+	for combo in budget_combinations():
+		key = budget_combo_key(combo)
+		lines.extend(
+			[
+				"\t\tAND = {",
+				f"\t\t\tvar:dm_reform_target = flag:{key}",
+				"\t\t\tstory_owner = {",
+				"\t\t\t\trealm_uses_treasury_laws_trigger = yes",
+				"\t\t\t\tis_independent_ruler = yes",
 				"\t\t\t}",
 				"\t\t}",
 			]
@@ -652,6 +839,26 @@ ATTRIBUTE_TRAITS = {
 }
 
 
+def budget_combinations() -> list[tuple[int, int, int]]:
+	all_combinations = [
+		(salary, ministry, 100 - salary - ministry)
+		for salary in range(0, 101, 5)
+		for ministry in range(0, 101 - salary, 5)
+	]
+	indices = [
+		round(index * (len(all_combinations) - 1) / 59)
+		for index in range(60)
+	]
+	combinations = [all_combinations[index] for index in indices]
+	if len(combinations) != 60 or len(set(combinations)) != 60:
+		raise ValueError("budget combination sampler did not produce 60 unique entries")
+	return combinations
+
+
+def budget_combo_key(combo: tuple[int, int, int]) -> str:
+	return f"dm_reform_budget_{combo[0]}_{combo[1]}_{combo[2]}"
+
+
 def reform_event_id(index: int) -> int:
 	return 1101 + index
 
@@ -664,6 +871,7 @@ def reform_actor_list(category: str) -> str:
 
 def render_reform_event_entry(index: int, category: str, attribute: str) -> str:
 	eid = reform_event_id(index)
+	cooldown_days = 3650 if index < 25 else 1825
 	fail_progress, fail_support, success_progress, success_support, difficulty = (
 		CATEGORY_RULES[category]
 	)
@@ -675,18 +883,29 @@ def render_reform_event_entry(index: int, category: str, attribute: str) -> str:
 \ttype = character_event
 \ttitle = dm_reform.{eid}.t
 \tdesc = dm_reform.{eid}.desc
-\ttheme = court_event
+\ttheme = court
 \tleft_portrait = scope:dm_reform_actor
 \timmediate = {{
 \t\tscope:dm_reform_story = {{
+\t\t\tset_variable = {{
+\t\t\t\tname = dm_reform_event_{eid}_next_day
+\t\t\t\tvalue = var:dm_reform_elapsed_days
+\t\t\t}}
+\t\t\tchange_variable = {{
+\t\t\t\tname = dm_reform_event_{eid}_next_day
+\t\t\t\tadd = {cooldown_days}
+\t\t\t}}
 \t\t\trandom_in_list = {{
 \t\t\t\tvariable = {reform_actor_list(category)}
+\t\t\t\tlimit = {{ NOT = {{ has_character_flag = dm_reform_event_actor_cooldown }} }}
 \t\t\t\tsave_scope_as = dm_reform_actor
 \t\t\t}}
 \t\t}}
-\t\tif = {{
-\t\t\tlimit = {{ NOT = {{ exists = scope:dm_reform_actor }} }}
-\t\t\troot = {{ save_scope_as = dm_reform_actor }}
+\t\tscope:dm_reform_actor = {{
+\t\t\tadd_character_flag = {{
+\t\t\t\tflag = dm_reform_event_actor_cooldown
+\t\t\t\tyears = 2
+\t\t\t}}
 \t\t}}
 \t}}
 \toption = {{
@@ -695,15 +914,8 @@ def render_reform_event_entry(index: int, category: str, attribute: str) -> str:
 \t\trandom_list = {{
 \t\t\t50 = {{
 \t\t\t\tmodifier = {{
-\t\t\t\t\tadd = 35
-\t\t\t\t\troot = {{ {attribute} >= {difficulty} }}
-\t\t\t\t}}
-\t\t\t\tmodifier = {{
-\t\t\t\t\tadd = 25
-\t\t\t\t\tscope:dm_reform_story = {{
-\t\t\t\t\t\tdm_reform_has_reformer_trigger = yes
-\t\t\t\t\t\tvar:dm_reform_reformer = {{ {attribute} >= {difficulty} }}
-\t\t\t\t\t}}
+\t\t\t\t\tadd = 60
+\t\t\t\t\tdm_reform_check_{attribute}_value >= {difficulty}
 \t\t\t\t}}
 \t\t\t\tmodifier = {{
 \t\t\t\t\tadd = 10
@@ -713,6 +925,7 @@ def render_reform_event_entry(index: int, category: str, attribute: str) -> str:
 \t\t\t\t\tchange_variable = {{ name = dm_reform_progress add = {success_progress} }}
 \t\t\t\t\tchange_variable = {{ name = dm_reform_support add = {success_support} }}
 \t\t\t\t\tset_variable = {{ name = dm_reform_last_result value = flag:success }}
+\t\t\t\t\tdm_reform_check_immediate_outcome_effect = yes
 \t\t\t\t}}{next_event}
 \t\t\t}}
 \t\t\t50 = {{
@@ -720,6 +933,7 @@ def render_reform_event_entry(index: int, category: str, attribute: str) -> str:
 \t\t\t\t\tchange_variable = {{ name = dm_reform_progress add = {fail_progress} }}
 \t\t\t\t\tchange_variable = {{ name = dm_reform_support add = {fail_support} }}
 \t\t\t\t\tset_variable = {{ name = dm_reform_last_result value = flag:failure }}
+\t\t\t\t\tdm_reform_check_immediate_outcome_effect = yes
 \t\t\t\t}}{next_event}
 \t\t\t}}
 \t\t}}
@@ -728,11 +942,28 @@ def render_reform_event_entry(index: int, category: str, attribute: str) -> str:
 \t\tname = dm_reform.event.costly_response
 \t\ttrigger = {{ prestige >= 100 }}
 \t\tadd_prestige = -100
-\t\tscope:dm_reform_story = {{
-\t\t\tchange_variable = {{ name = dm_reform_progress add = {success_progress + 2} }}
-\t\t\tchange_variable = {{ name = dm_reform_support add = {max(0, success_support)} }}
-\t\t\tset_variable = {{ name = dm_reform_last_result value = flag:great_success }}
-\t\t}}{next_event}
+\t\trandom_list = {{
+\t\t\t60 = {{
+\t\t\t\tmodifier = {{
+\t\t\t\t\tadd = 30
+\t\t\t\t\tdm_reform_check_{attribute}_value >= {difficulty}
+\t\t\t\t}}
+\t\t\t\tscope:dm_reform_story = {{
+\t\t\t\t\tchange_variable = {{ name = dm_reform_progress add = {success_progress + 2} }}
+\t\t\t\t\tchange_variable = {{ name = dm_reform_support add = {max(0, success_support)} }}
+\t\t\t\t\tset_variable = {{ name = dm_reform_last_result value = flag:great_success }}
+\t\t\t\t\tdm_reform_check_immediate_outcome_effect = yes
+\t\t\t\t}}{next_event}
+\t\t\t}}
+\t\t\t40 = {{
+\t\t\t\tscope:dm_reform_story = {{
+\t\t\t\t\tchange_variable = {{ name = dm_reform_progress add = {fail_progress} }}
+\t\t\t\t\tchange_variable = {{ name = dm_reform_support add = {fail_support} }}
+\t\t\t\t\tset_variable = {{ name = dm_reform_last_result value = flag:failure }}
+\t\t\t\t\tdm_reform_check_immediate_outcome_effect = yes
+\t\t\t\t}}{next_event}
+\t\t\t}}
+\t\t}}
 \t}}
 }}"""
 
@@ -746,7 +977,13 @@ def render_reform_followup(index: int, final: bool) -> str:
 \ttype = character_event
 \ttitle = dm_reform.chain_followup.t
 \tdesc = dm_reform.chain_followup.desc
-\ttheme = court_event
+\ttheme = court
+\ttrigger = {{
+\t\texists = scope:dm_reform_story
+\t\texists = scope:dm_reform_actor
+\t\tscope:dm_reform_actor = {{ is_alive = yes }}
+\t}}
+\ton_trigger_fail = {{ trigger_event = dm_reform.0231 }}
 \tleft_portrait = scope:dm_reform_actor
 \toption = {{
 \t\tname = dm_reform.chain_followup.a{next_text}
@@ -780,7 +1017,101 @@ def render_event_localization() -> str:
 		eid = reform_event_id(index)
 		lines.append(f' dm_reform.{eid}.t:0 "{title}"')
 		lines.append(f' dm_reform.{eid}.desc:0 "{category_desc[category]}"')
+	for combo in budget_combinations():
+		key = budget_combo_key(combo)
+		lines.append(
+			f' {key}:0 "俸禄{combo[0]}%／部院{combo[1]}%／军事{combo[2]}%"'
+		)
 	return "\ufeff" + "\n".join(lines) + "\n"
+
+
+def render_budget_interaction() -> str:
+	options = []
+	for index, combo in enumerate(budget_combinations()):
+		key = budget_combo_key(combo)
+		starts = "\n\t\tstarts_enabled = { always = yes }" if index == 0 else ""
+		options.append(
+			f"""\tsend_option = {{
+\t\tflag = {key}
+\t\tlocalization = {key}{starts}
+\t}}"""
+		)
+	option_text = "\n".join(options)
+	target_branches = []
+	for index, combo in enumerate(budget_combinations()):
+		command = "if" if index == 0 else "else_if"
+		key = budget_combo_key(combo)
+		theme = "military" if combo[2] > max(combo[0], combo[1]) else "finance"
+		target_branches.append(
+			f"""\t\t\t{command} = {{
+\t\t\t\tlimit = {{ scope:{key} = yes }}
+\t\t\t\tset_variable = {{ name = dm_reform_target value = flag:{key} }}
+\t\t\t\tset_variable = {{ name = dm_reform_theme value = flag:{theme} }}
+\t\t\t\tset_variable = {{ name = dm_reform_axis value = flag:fiscal_extraction }}
+\t\t\t\tset_variable = {{ name = dm_reform_budget_salary value = {combo[0]} }}
+\t\t\t\tset_variable = {{ name = dm_reform_budget_ministry value = {combo[1]} }}
+\t\t\t\tset_variable = {{ name = dm_reform_budget_military value = {combo[2]} }}
+\t\t\t}}"""
+		)
+	branch_text = "\n".join(target_branches)
+	return f"""dm_reform_start_budget_interaction = {{
+\tcategory = interaction_category_friendly
+\tcommon_interaction = yes
+\thidden = yes
+\tpopup_on_receive = no
+\tai_maybe = yes
+\tai_frequency = 36
+\tai_targets = {{ ai_recipients = self }}
+\tai_accept = {{ base = 100 }}
+\tai_will_do = {{
+\t\tbase = 15
+\t\tmodifier = {{ factor = 0 scope:actor = {{ is_in_debt = yes }} }}
+\t}}
+\tdesc = dm_reform_start_budget_interaction_desc
+\ticon = scroll_scales
+\toptions_heading = dm_reform_budget_options_heading
+\tsend_options_exclusive = yes
+{option_text}
+\tcost = {{
+\t\tprestige = {{ add = change_admin_budget_law_prestige_cost }}
+\t}}
+\tis_shown = {{
+\t\tscope:recipient = scope:actor
+\t\tscope:actor = {{
+\t\t\tdm_reform_can_start_trigger = yes
+\t\t\trealm_uses_treasury_laws_trigger = yes
+\t\t\tis_independent_ruler = yes
+\t\t}}
+\t}}
+\ton_accept = {{
+\t\tscope:actor = {{
+\t\t\tsave_scope_value_as = {{
+\t\t\t\tname = dm_reform_paid_prestige
+\t\t\t\tvalue = change_admin_budget_law_prestige_cost
+\t\t\t}}
+\t\t\tcreate_story = dm_reform_story
+\t\t\trandom_owned_story = {{
+\t\t\t\tlimit = {{ story_type = dm_reform_story }}
+\t\t\t\tset_variable = {{ name = dm_reform_target_is_budget value = 1 }}
+\t\t\t\tset_variable = {{ name = dm_reform_paid_prestige value = scope:dm_reform_paid_prestige }}
+{branch_text}
+\t\t\t\tif = {{
+\t\t\t\t\tlimit = {{ story_owner = {{ has_variable = dm_reform_pending_reformer }} }}
+\t\t\t\t\tset_variable = {{
+\t\t\t\t\t\tname = dm_reform_pending_reformer
+\t\t\t\t\t\tvalue = story_owner.var:dm_reform_pending_reformer
+\t\t\t\t\t}}
+\t\t\t\t\tsave_scope_as = dm_reform_story
+\t\t\t\t\tstory_owner.var:dm_reform_pending_reformer = {{
+\t\t\t\t\t\ttrigger_event = {{ id = dm_reform.0210 days = 1 }}
+\t\t\t\t\t}}
+\t\t\t\t\tstory_owner = {{ remove_variable = dm_reform_pending_reformer }}
+\t\t\t\t}}
+\t\t\t}}
+\t\t\ttrigger_event = {{ id = dm_reform.0001 days = 1 }}
+\t\t}}
+\t}}
+}}"""
 
 
 def render_reform_law_buttons(laws: list[Law]) -> str:
@@ -826,6 +1157,41 @@ def render_succession_gui(laws: list[Law]) -> str:
 		'text = "dm_reform_law_window_desc"',
 		1,
 	)
+	reformer_desc = """text_multi = {
+								text = "dm_reform_law_window_desc"
+								default_format = "#weak"
+								autoresize = yes
+								max_width = 500
+							}"""
+	reformer_picker = reformer_desc + """
+
+							hbox = {
+								layoutpolicy_horizontal = expanding
+								spacing = 10
+
+								portrait_head_small = {
+									datacontext = "[GetPlayer.MakeScope.Var('dm_reform_pending_reformer').Char]"
+									visible = "[Character.IsValid]"
+								}
+
+								button_standard = {
+									datacontext = "[GetPlayer]"
+									onclick = "[OpenCharacterInteraction( 'dm_reform_select_reformer_interaction', Character.Self )]"
+									text = "dm_reform_select_reformer_button"
+									tooltip = "dm_reform_select_reformer_button_tooltip"
+								}
+
+								button_standard = {
+									datacontext = "[GetPlayer]"
+									visible = "[GetPlayer.MakeScope.Var('dm_reform_pending_reformer').Char.IsValid]"
+									enabled = "[Character.CanSendPlayerInteraction('dm_reform_clear_pending_reformer_interaction')]"
+									onclick = "[Character.SendPlayerInteraction('dm_reform_clear_pending_reformer_interaction')]"
+									text = "dm_reform_self_host_button"
+								}
+							}"""
+	if reformer_desc not in text:
+		raise ValueError(f"{source_path}: reformer description insertion point changed")
+	text = text.replace(reformer_desc, reformer_picker, 1)
 	old_button = """button_primary = {
 						enabled = "[SuccessionLawChangeWindow.GetSelectedLaw.CanEnact]"
 						onclick = "[SuccessionLawChangeWindow.GetSelectedLaw.Enact]"
@@ -842,11 +1208,72 @@ def render_succession_gui(laws: list[Law]) -> str:
 	return text
 
 
+def render_treasury_budget_gui() -> str:
+	source_path = VANILLA / "gui" / "window_treasury_budget_change.gui"
+	text = source_path.read_text(encoding="utf-8-sig")
+	old_button = """button_primary = {
+						enabled = "[TreasuryBudgetChangeWindow.CanEnact]"
+						onclick = "[TreasuryBudgetChangeWindow.EnactBudget]"
+
+						text = "WINDOW_TREASURY_BUDGET_CHANGE_ENACT_BUDGET"
+
+						using = tooltip_above
+						tooltip = "[TreasuryBudgetChangeWindow.GetCanEnactBudgetDescription]"
+					}"""
+	new_button = """button_primary = {
+						datacontext = "[GetPlayer]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_budget_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_start_budget_interaction')]"
+						text = "dm_reform_start_button"
+						using = tooltip_above
+						tooltip = "dm_reform_start_budget_button_tooltip"
+					}"""
+	if old_button not in text:
+		raise ValueError(f"{source_path}: budget enact button template changed")
+	text = text.replace(old_button, new_button, 1)
+	cost_text = """text_single = {
+					text = "WINDOW_TREASURY_BUDGET_CHANGE_ENACT_COST"
+					tooltip = "WINDOW_TREASURY_BUDGET_CHANGE_ENACT_COST_TOOLTIP"
+					using = Font_Size_Medium
+				}"""
+	picker = cost_text + """
+
+				hbox = {
+					layoutpolicy_horizontal = expanding
+					spacing = 10
+
+					portrait_head_small = {
+						datacontext = "[GetPlayer.MakeScope.Var('dm_reform_pending_reformer').Char]"
+						visible = "[Character.IsValid]"
+					}
+
+					button_standard = {
+						datacontext = "[GetPlayer]"
+						onclick = "[OpenCharacterInteraction( 'dm_reform_select_reformer_interaction', Character.Self )]"
+						text = "dm_reform_select_reformer_button"
+						tooltip = "dm_reform_select_reformer_button_tooltip"
+					}
+
+					button_standard = {
+						datacontext = "[GetPlayer]"
+						visible = "[GetPlayer.MakeScope.Var('dm_reform_pending_reformer').Char.IsValid]"
+						enabled = "[Character.CanSendPlayerInteraction('dm_reform_clear_pending_reformer_interaction')]"
+						onclick = "[Character.SendPlayerInteraction('dm_reform_clear_pending_reformer_interaction')]"
+						text = "dm_reform_self_host_button"
+					}
+				}"""
+	if cost_text not in text:
+		raise ValueError(f"{source_path}: budget reformer insertion point changed")
+	return text.replace(cost_text, picker, 1)
+
+
 def output_files(laws: list[Law]) -> dict[Path, str]:
 	header = "# GENERATED by tools/dm_generate_reform_registry.py. DO NOT EDIT.\n\n"
 	interactions = (
 		header
 		+ "\n\n".join(render_interaction(law) for law in laws if not law.is_budget)
+		+ "\n\n"
+		+ render_budget_interaction()
 		+ "\n"
 	)
 	effects = header + render_success_effect(laws) + "\n"
@@ -862,6 +1289,7 @@ def output_files(laws: list[Law]) -> dict[Path, str]:
 		/ "simp_chinese"
 		/ "dm_reform_events_generated_l_simp_chinese.yml": render_event_localization(),
 		ROOT / "gui" / "window_succession_change_law.gui": render_succession_gui(laws),
+		ROOT / "gui" / "window_treasury_budget_change.gui": render_treasury_budget_gui(),
 	}
 
 
@@ -896,6 +1324,20 @@ def main() -> int:
 		print(f"registered laws: {len(laws)}", file=sys.stderr)
 		return 0
 	outputs = output_files(laws)
+	for path, text in list(outputs.items()):
+		text = "\n".join(line.rstrip() for line in text.split("\n"))
+		if (
+			(
+				path.suffix == ".txt"
+				or (
+					path.suffix in {".gui", ".yml"}
+					and any(ord(character) > 127 for character in text)
+				)
+			)
+			and not text.startswith("\ufeff")
+		):
+			text = "\ufeff" + text
+		outputs[path] = text
 	if not write_or_check(outputs, args.check):
 		return 1
 	print(f"reform registry OK: {len(laws)} laws, {len(outputs)} generated files")

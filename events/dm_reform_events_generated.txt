@@ -1,21 +1,32 @@
-namespace = dm_reform
+﻿namespace = dm_reform
 
 dm_reform.1101 = {
 	type = character_event
 	title = dm_reform.1101.t
 	desc = dm_reform.1101.desc
-	theme = court_event
+	theme = court
 	left_portrait = scope:dm_reform_actor
 	immediate = {
 		scope:dm_reform_story = {
+			set_variable = {
+				name = dm_reform_event_1101_next_day
+				value = var:dm_reform_elapsed_days
+			}
+			change_variable = {
+				name = dm_reform_event_1101_next_day
+				add = 3650
+			}
 			random_in_list = {
 				variable = dm_reform_opponents
+				limit = { NOT = { has_character_flag = dm_reform_event_actor_cooldown } }
 				save_scope_as = dm_reform_actor
 			}
 		}
-		if = {
-			limit = { NOT = { exists = scope:dm_reform_actor } }
-			root = { save_scope_as = dm_reform_actor }
+		scope:dm_reform_actor = {
+			add_character_flag = {
+				flag = dm_reform_event_actor_cooldown
+				years = 2
+			}
 		}
 	}
 	option = {
@@ -24,15 +35,8 @@ dm_reform.1101 = {
 		random_list = {
 			50 = {
 				modifier = {
-					add = 35
-					root = { martial >= 22 }
-				}
-				modifier = {
-					add = 25
-					scope:dm_reform_story = {
-						dm_reform_has_reformer_trigger = yes
-						var:dm_reform_reformer = { martial >= 22 }
-					}
+					add = 60
+					dm_reform_check_martial_value >= 22
 				}
 				modifier = {
 					add = 10
@@ -42,6 +46,7 @@ dm_reform.1101 = {
 					change_variable = { name = dm_reform_progress add = 3 }
 					change_variable = { name = dm_reform_support add = 1 }
 					set_variable = { name = dm_reform_last_result value = flag:success }
+					dm_reform_check_immediate_outcome_effect = yes
 				}
 			trigger_event = { id = dm_reform.2101 days = 1 }
 			}
@@ -50,6 +55,7 @@ dm_reform.1101 = {
 					change_variable = { name = dm_reform_progress add = -4 }
 					change_variable = { name = dm_reform_support add = -2 }
 					set_variable = { name = dm_reform_last_result value = flag:failure }
+					dm_reform_check_immediate_outcome_effect = yes
 				}
 			trigger_event = { id = dm_reform.2101 days = 1 }
 			}
@@ -59,12 +65,30 @@ dm_reform.1101 = {
 		name = dm_reform.event.costly_response
 		trigger = { prestige >= 100 }
 		add_prestige = -100
-		scope:dm_reform_story = {
-			change_variable = { name = dm_reform_progress add = 5 }
-			change_variable = { name = dm_reform_support add = 1 }
-			set_variable = { name = dm_reform_last_result value = flag:great_success }
-		}
+		random_list = {
+			60 = {
+				modifier = {
+					add = 30
+					dm_reform_check_martial_value >= 22
+				}
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = 5 }
+					change_variable = { name = dm_reform_support add = 1 }
+					set_variable = { name = dm_reform_last_result value = flag:great_success }
+					dm_reform_check_immediate_outcome_effect = yes
+				}
 			trigger_event = { id = dm_reform.2101 days = 1 }
+			}
+			40 = {
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = -4 }
+					change_variable = { name = dm_reform_support add = -2 }
+					set_variable = { name = dm_reform_last_result value = flag:failure }
+					dm_reform_check_immediate_outcome_effect = yes
+				}
+			trigger_event = { id = dm_reform.2101 days = 1 }
+			}
+		}
 	}
 }
 
@@ -72,18 +96,29 @@ dm_reform.1102 = {
 	type = character_event
 	title = dm_reform.1102.t
 	desc = dm_reform.1102.desc
-	theme = court_event
+	theme = court
 	left_portrait = scope:dm_reform_actor
 	immediate = {
 		scope:dm_reform_story = {
+			set_variable = {
+				name = dm_reform_event_1102_next_day
+				value = var:dm_reform_elapsed_days
+			}
+			change_variable = {
+				name = dm_reform_event_1102_next_day
+				add = 3650
+			}
 			random_in_list = {
 				variable = dm_reform_opponents
+				limit = { NOT = { has_character_flag = dm_reform_event_actor_cooldown } }
 				save_scope_as = dm_reform_actor
 			}
 		}
-		if = {
-			limit = { NOT = { exists = scope:dm_reform_actor } }
-			root = { save_scope_as = dm_reform_actor }
+		scope:dm_reform_actor = {
+			add_character_flag = {
+				flag = dm_reform_event_actor_cooldown
+				years = 2
+			}
 		}
 	}
 	option = {
@@ -92,15 +127,8 @@ dm_reform.1102 = {
 		random_list = {
 			50 = {
 				modifier = {
-					add = 35
-					root = { intrigue >= 22 }
-				}
-				modifier = {
-					add = 25
-					scope:dm_reform_story = {
-						dm_reform_has_reformer_trigger = yes
-						var:dm_reform_reformer = { intrigue >= 22 }
-					}
+					add = 60
+					dm_reform_check_intrigue_value >= 22
 				}
 				modifier = {
 					add = 10
@@ -110,6 +138,7 @@ dm_reform.1102 = {
 					change_variable = { name = dm_reform_progress add = 3 }
 					change_variable = { name = dm_reform_support add = 1 }
 					set_variable = { name = dm_reform_last_result value = flag:success }
+					dm_reform_check_immediate_outcome_effect = yes
 				}
 			trigger_event = { id = dm_reform.2102 days = 1 }
 			}
@@ -118,6 +147,7 @@ dm_reform.1102 = {
 					change_variable = { name = dm_reform_progress add = -4 }
 					change_variable = { name = dm_reform_support add = -2 }
 					set_variable = { name = dm_reform_last_result value = flag:failure }
+					dm_reform_check_immediate_outcome_effect = yes
 				}
 			trigger_event = { id = dm_reform.2102 days = 1 }
 			}
@@ -127,12 +157,30 @@ dm_reform.1102 = {
 		name = dm_reform.event.costly_response
 		trigger = { prestige >= 100 }
 		add_prestige = -100
-		scope:dm_reform_story = {
-			change_variable = { name = dm_reform_progress add = 5 }
-			change_variable = { name = dm_reform_support add = 1 }
-			set_variable = { name = dm_reform_last_result value = flag:great_success }
-		}
+		random_list = {
+			60 = {
+				modifier = {
+					add = 30
+					dm_reform_check_intrigue_value >= 22
+				}
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = 5 }
+					change_variable = { name = dm_reform_support add = 1 }
+					set_variable = { name = dm_reform_last_result value = flag:great_success }
+					dm_reform_check_immediate_outcome_effect = yes
+				}
 			trigger_event = { id = dm_reform.2102 days = 1 }
+			}
+			40 = {
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = -4 }
+					change_variable = { name = dm_reform_support add = -2 }
+					set_variable = { name = dm_reform_last_result value = flag:failure }
+					dm_reform_check_immediate_outcome_effect = yes
+				}
+			trigger_event = { id = dm_reform.2102 days = 1 }
+			}
+		}
 	}
 }
 
@@ -140,18 +188,29 @@ dm_reform.1103 = {
 	type = character_event
 	title = dm_reform.1103.t
 	desc = dm_reform.1103.desc
-	theme = court_event
+	theme = court
 	left_portrait = scope:dm_reform_actor
 	immediate = {
 		scope:dm_reform_story = {
+			set_variable = {
+				name = dm_reform_event_1103_next_day
+				value = var:dm_reform_elapsed_days
+			}
+			change_variable = {
+				name = dm_reform_event_1103_next_day
+				add = 3650
+			}
 			random_in_list = {
 				variable = dm_reform_opponents
+				limit = { NOT = { has_character_flag = dm_reform_event_actor_cooldown } }
 				save_scope_as = dm_reform_actor
 			}
 		}
-		if = {
-			limit = { NOT = { exists = scope:dm_reform_actor } }
-			root = { save_scope_as = dm_reform_actor }
+		scope:dm_reform_actor = {
+			add_character_flag = {
+				flag = dm_reform_event_actor_cooldown
+				years = 2
+			}
 		}
 	}
 	option = {
@@ -160,15 +219,8 @@ dm_reform.1103 = {
 		random_list = {
 			50 = {
 				modifier = {
-					add = 35
-					root = { diplomacy >= 22 }
-				}
-				modifier = {
-					add = 25
-					scope:dm_reform_story = {
-						dm_reform_has_reformer_trigger = yes
-						var:dm_reform_reformer = { diplomacy >= 22 }
-					}
+					add = 60
+					dm_reform_check_diplomacy_value >= 22
 				}
 				modifier = {
 					add = 10
@@ -178,6 +230,7 @@ dm_reform.1103 = {
 					change_variable = { name = dm_reform_progress add = 3 }
 					change_variable = { name = dm_reform_support add = 1 }
 					set_variable = { name = dm_reform_last_result value = flag:success }
+					dm_reform_check_immediate_outcome_effect = yes
 				}
 			trigger_event = { id = dm_reform.2103 days = 1 }
 			}
@@ -186,6 +239,7 @@ dm_reform.1103 = {
 					change_variable = { name = dm_reform_progress add = -4 }
 					change_variable = { name = dm_reform_support add = -2 }
 					set_variable = { name = dm_reform_last_result value = flag:failure }
+					dm_reform_check_immediate_outcome_effect = yes
 				}
 			trigger_event = { id = dm_reform.2103 days = 1 }
 			}
@@ -195,12 +249,30 @@ dm_reform.1103 = {
 		name = dm_reform.event.costly_response
 		trigger = { prestige >= 100 }
 		add_prestige = -100
-		scope:dm_reform_story = {
-			change_variable = { name = dm_reform_progress add = 5 }
-			change_variable = { name = dm_reform_support add = 1 }
-			set_variable = { name = dm_reform_last_result value = flag:great_success }
-		}
+		random_list = {
+			60 = {
+				modifier = {
+					add = 30
+					dm_reform_check_diplomacy_value >= 22
+				}
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = 5 }
+					change_variable = { name = dm_reform_support add = 1 }
+					set_variable = { name = dm_reform_last_result value = flag:great_success }
+					dm_reform_check_immediate_outcome_effect = yes
+				}
 			trigger_event = { id = dm_reform.2103 days = 1 }
+			}
+			40 = {
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = -4 }
+					change_variable = { name = dm_reform_support add = -2 }
+					set_variable = { name = dm_reform_last_result value = flag:failure }
+					dm_reform_check_immediate_outcome_effect = yes
+				}
+			trigger_event = { id = dm_reform.2103 days = 1 }
+			}
+		}
 	}
 }
 
@@ -208,18 +280,29 @@ dm_reform.1104 = {
 	type = character_event
 	title = dm_reform.1104.t
 	desc = dm_reform.1104.desc
-	theme = court_event
+	theme = court
 	left_portrait = scope:dm_reform_actor
 	immediate = {
 		scope:dm_reform_story = {
+			set_variable = {
+				name = dm_reform_event_1104_next_day
+				value = var:dm_reform_elapsed_days
+			}
+			change_variable = {
+				name = dm_reform_event_1104_next_day
+				add = 3650
+			}
 			random_in_list = {
 				variable = dm_reform_opponents
+				limit = { NOT = { has_character_flag = dm_reform_event_actor_cooldown } }
 				save_scope_as = dm_reform_actor
 			}
 		}
-		if = {
-			limit = { NOT = { exists = scope:dm_reform_actor } }
-			root = { save_scope_as = dm_reform_actor }
+		scope:dm_reform_actor = {
+			add_character_flag = {
+				flag = dm_reform_event_actor_cooldown
+				years = 2
+			}
 		}
 	}
 	option = {
@@ -228,15 +311,8 @@ dm_reform.1104 = {
 		random_list = {
 			50 = {
 				modifier = {
-					add = 35
-					root = { stewardship >= 22 }
-				}
-				modifier = {
-					add = 25
-					scope:dm_reform_story = {
-						dm_reform_has_reformer_trigger = yes
-						var:dm_reform_reformer = { stewardship >= 22 }
-					}
+					add = 60
+					dm_reform_check_stewardship_value >= 22
 				}
 				modifier = {
 					add = 10
@@ -246,6 +322,7 @@ dm_reform.1104 = {
 					change_variable = { name = dm_reform_progress add = 3 }
 					change_variable = { name = dm_reform_support add = 1 }
 					set_variable = { name = dm_reform_last_result value = flag:success }
+					dm_reform_check_immediate_outcome_effect = yes
 				}
 			trigger_event = { id = dm_reform.2104 days = 1 }
 			}
@@ -254,6 +331,7 @@ dm_reform.1104 = {
 					change_variable = { name = dm_reform_progress add = -4 }
 					change_variable = { name = dm_reform_support add = -2 }
 					set_variable = { name = dm_reform_last_result value = flag:failure }
+					dm_reform_check_immediate_outcome_effect = yes
 				}
 			trigger_event = { id = dm_reform.2104 days = 1 }
 			}
@@ -263,12 +341,30 @@ dm_reform.1104 = {
 		name = dm_reform.event.costly_response
 		trigger = { prestige >= 100 }
 		add_prestige = -100
-		scope:dm_reform_story = {
-			change_variable = { name = dm_reform_progress add = 5 }
-			change_variable = { name = dm_reform_support add = 1 }
-			set_variable = { name = dm_reform_last_result value = flag:great_success }
-		}
+		random_list = {
+			60 = {
+				modifier = {
+					add = 30
+					dm_reform_check_stewardship_value >= 22
+				}
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = 5 }
+					change_variable = { name = dm_reform_support add = 1 }
+					set_variable = { name = dm_reform_last_result value = flag:great_success }
+					dm_reform_check_immediate_outcome_effect = yes
+				}
 			trigger_event = { id = dm_reform.2104 days = 1 }
+			}
+			40 = {
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = -4 }
+					change_variable = { name = dm_reform_support add = -2 }
+					set_variable = { name = dm_reform_last_result value = flag:failure }
+					dm_reform_check_immediate_outcome_effect = yes
+				}
+			trigger_event = { id = dm_reform.2104 days = 1 }
+			}
+		}
 	}
 }
 
@@ -276,18 +372,29 @@ dm_reform.1105 = {
 	type = character_event
 	title = dm_reform.1105.t
 	desc = dm_reform.1105.desc
-	theme = court_event
+	theme = court
 	left_portrait = scope:dm_reform_actor
 	immediate = {
 		scope:dm_reform_story = {
+			set_variable = {
+				name = dm_reform_event_1105_next_day
+				value = var:dm_reform_elapsed_days
+			}
+			change_variable = {
+				name = dm_reform_event_1105_next_day
+				add = 3650
+			}
 			random_in_list = {
 				variable = dm_reform_opponents
+				limit = { NOT = { has_character_flag = dm_reform_event_actor_cooldown } }
 				save_scope_as = dm_reform_actor
 			}
 		}
-		if = {
-			limit = { NOT = { exists = scope:dm_reform_actor } }
-			root = { save_scope_as = dm_reform_actor }
+		scope:dm_reform_actor = {
+			add_character_flag = {
+				flag = dm_reform_event_actor_cooldown
+				years = 2
+			}
 		}
 	}
 	option = {
@@ -296,15 +403,8 @@ dm_reform.1105 = {
 		random_list = {
 			50 = {
 				modifier = {
-					add = 35
-					root = { learning >= 22 }
-				}
-				modifier = {
-					add = 25
-					scope:dm_reform_story = {
-						dm_reform_has_reformer_trigger = yes
-						var:dm_reform_reformer = { learning >= 22 }
-					}
+					add = 60
+					dm_reform_check_learning_value >= 22
 				}
 				modifier = {
 					add = 10
@@ -314,6 +414,7 @@ dm_reform.1105 = {
 					change_variable = { name = dm_reform_progress add = 3 }
 					change_variable = { name = dm_reform_support add = 1 }
 					set_variable = { name = dm_reform_last_result value = flag:success }
+					dm_reform_check_immediate_outcome_effect = yes
 				}
 			trigger_event = { id = dm_reform.2105 days = 1 }
 			}
@@ -322,6 +423,7 @@ dm_reform.1105 = {
 					change_variable = { name = dm_reform_progress add = -4 }
 					change_variable = { name = dm_reform_support add = -2 }
 					set_variable = { name = dm_reform_last_result value = flag:failure }
+					dm_reform_check_immediate_outcome_effect = yes
 				}
 			trigger_event = { id = dm_reform.2105 days = 1 }
 			}
@@ -331,12 +433,30 @@ dm_reform.1105 = {
 		name = dm_reform.event.costly_response
 		trigger = { prestige >= 100 }
 		add_prestige = -100
-		scope:dm_reform_story = {
-			change_variable = { name = dm_reform_progress add = 5 }
-			change_variable = { name = dm_reform_support add = 1 }
-			set_variable = { name = dm_reform_last_result value = flag:great_success }
-		}
+		random_list = {
+			60 = {
+				modifier = {
+					add = 30
+					dm_reform_check_learning_value >= 22
+				}
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = 5 }
+					change_variable = { name = dm_reform_support add = 1 }
+					set_variable = { name = dm_reform_last_result value = flag:great_success }
+					dm_reform_check_immediate_outcome_effect = yes
+				}
 			trigger_event = { id = dm_reform.2105 days = 1 }
+			}
+			40 = {
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = -4 }
+					change_variable = { name = dm_reform_support add = -2 }
+					set_variable = { name = dm_reform_last_result value = flag:failure }
+					dm_reform_check_immediate_outcome_effect = yes
+				}
+			trigger_event = { id = dm_reform.2105 days = 1 }
+			}
+		}
 	}
 }
 
@@ -344,18 +464,29 @@ dm_reform.1106 = {
 	type = character_event
 	title = dm_reform.1106.t
 	desc = dm_reform.1106.desc
-	theme = court_event
+	theme = court
 	left_portrait = scope:dm_reform_actor
 	immediate = {
 		scope:dm_reform_story = {
+			set_variable = {
+				name = dm_reform_event_1106_next_day
+				value = var:dm_reform_elapsed_days
+			}
+			change_variable = {
+				name = dm_reform_event_1106_next_day
+				add = 3650
+			}
 			random_in_list = {
 				variable = dm_reform_opponents
+				limit = { NOT = { has_character_flag = dm_reform_event_actor_cooldown } }
 				save_scope_as = dm_reform_actor
 			}
 		}
-		if = {
-			limit = { NOT = { exists = scope:dm_reform_actor } }
-			root = { save_scope_as = dm_reform_actor }
+		scope:dm_reform_actor = {
+			add_character_flag = {
+				flag = dm_reform_event_actor_cooldown
+				years = 2
+			}
 		}
 	}
 	option = {
@@ -364,15 +495,8 @@ dm_reform.1106 = {
 		random_list = {
 			50 = {
 				modifier = {
-					add = 35
-					root = { prowess >= 22 }
-				}
-				modifier = {
-					add = 25
-					scope:dm_reform_story = {
-						dm_reform_has_reformer_trigger = yes
-						var:dm_reform_reformer = { prowess >= 22 }
-					}
+					add = 60
+					dm_reform_check_prowess_value >= 22
 				}
 				modifier = {
 					add = 10
@@ -382,6 +506,7 @@ dm_reform.1106 = {
 					change_variable = { name = dm_reform_progress add = 3 }
 					change_variable = { name = dm_reform_support add = 1 }
 					set_variable = { name = dm_reform_last_result value = flag:success }
+					dm_reform_check_immediate_outcome_effect = yes
 				}
 			trigger_event = { id = dm_reform.2106 days = 1 }
 			}
@@ -390,6 +515,7 @@ dm_reform.1106 = {
 					change_variable = { name = dm_reform_progress add = -4 }
 					change_variable = { name = dm_reform_support add = -2 }
 					set_variable = { name = dm_reform_last_result value = flag:failure }
+					dm_reform_check_immediate_outcome_effect = yes
 				}
 			trigger_event = { id = dm_reform.2106 days = 1 }
 			}
@@ -399,12 +525,30 @@ dm_reform.1106 = {
 		name = dm_reform.event.costly_response
 		trigger = { prestige >= 100 }
 		add_prestige = -100
-		scope:dm_reform_story = {
-			change_variable = { name = dm_reform_progress add = 5 }
-			change_variable = { name = dm_reform_support add = 1 }
-			set_variable = { name = dm_reform_last_result value = flag:great_success }
-		}
+		random_list = {
+			60 = {
+				modifier = {
+					add = 30
+					dm_reform_check_prowess_value >= 22
+				}
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = 5 }
+					change_variable = { name = dm_reform_support add = 1 }
+					set_variable = { name = dm_reform_last_result value = flag:great_success }
+					dm_reform_check_immediate_outcome_effect = yes
+				}
 			trigger_event = { id = dm_reform.2106 days = 1 }
+			}
+			40 = {
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = -4 }
+					change_variable = { name = dm_reform_support add = -2 }
+					set_variable = { name = dm_reform_last_result value = flag:failure }
+					dm_reform_check_immediate_outcome_effect = yes
+				}
+			trigger_event = { id = dm_reform.2106 days = 1 }
+			}
+		}
 	}
 }
 
@@ -412,18 +556,29 @@ dm_reform.1107 = {
 	type = character_event
 	title = dm_reform.1107.t
 	desc = dm_reform.1107.desc
-	theme = court_event
+	theme = court
 	left_portrait = scope:dm_reform_actor
 	immediate = {
 		scope:dm_reform_story = {
+			set_variable = {
+				name = dm_reform_event_1107_next_day
+				value = var:dm_reform_elapsed_days
+			}
+			change_variable = {
+				name = dm_reform_event_1107_next_day
+				add = 3650
+			}
 			random_in_list = {
 				variable = dm_reform_opponents
+				limit = { NOT = { has_character_flag = dm_reform_event_actor_cooldown } }
 				save_scope_as = dm_reform_actor
 			}
 		}
-		if = {
-			limit = { NOT = { exists = scope:dm_reform_actor } }
-			root = { save_scope_as = dm_reform_actor }
+		scope:dm_reform_actor = {
+			add_character_flag = {
+				flag = dm_reform_event_actor_cooldown
+				years = 2
+			}
 		}
 	}
 	option = {
@@ -432,15 +587,8 @@ dm_reform.1107 = {
 		random_list = {
 			50 = {
 				modifier = {
-					add = 35
-					root = { stewardship >= 22 }
-				}
-				modifier = {
-					add = 25
-					scope:dm_reform_story = {
-						dm_reform_has_reformer_trigger = yes
-						var:dm_reform_reformer = { stewardship >= 22 }
-					}
+					add = 60
+					dm_reform_check_stewardship_value >= 22
 				}
 				modifier = {
 					add = 10
@@ -450,6 +598,7 @@ dm_reform.1107 = {
 					change_variable = { name = dm_reform_progress add = 3 }
 					change_variable = { name = dm_reform_support add = 1 }
 					set_variable = { name = dm_reform_last_result value = flag:success }
+					dm_reform_check_immediate_outcome_effect = yes
 				}
 			trigger_event = { id = dm_reform.2107 days = 1 }
 			}
@@ -458,6 +607,7 @@ dm_reform.1107 = {
 					change_variable = { name = dm_reform_progress add = -4 }
 					change_variable = { name = dm_reform_support add = -2 }
 					set_variable = { name = dm_reform_last_result value = flag:failure }
+					dm_reform_check_immediate_outcome_effect = yes
 				}
 			trigger_event = { id = dm_reform.2107 days = 1 }
 			}
@@ -467,12 +617,30 @@ dm_reform.1107 = {
 		name = dm_reform.event.costly_response
 		trigger = { prestige >= 100 }
 		add_prestige = -100
-		scope:dm_reform_story = {
-			change_variable = { name = dm_reform_progress add = 5 }
-			change_variable = { name = dm_reform_support add = 1 }
-			set_variable = { name = dm_reform_last_result value = flag:great_success }
-		}
+		random_list = {
+			60 = {
+				modifier = {
+					add = 30
+					dm_reform_check_stewardship_value >= 22
+				}
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = 5 }
+					change_variable = { name = dm_reform_support add = 1 }
+					set_variable = { name = dm_reform_last_result value = flag:great_success }
+					dm_reform_check_immediate_outcome_effect = yes
+				}
 			trigger_event = { id = dm_reform.2107 days = 1 }
+			}
+			40 = {
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = -4 }
+					change_variable = { name = dm_reform_support add = -2 }
+					set_variable = { name = dm_reform_last_result value = flag:failure }
+					dm_reform_check_immediate_outcome_effect = yes
+				}
+			trigger_event = { id = dm_reform.2107 days = 1 }
+			}
+		}
 	}
 }
 
@@ -480,18 +648,29 @@ dm_reform.1108 = {
 	type = character_event
 	title = dm_reform.1108.t
 	desc = dm_reform.1108.desc
-	theme = court_event
+	theme = court
 	left_portrait = scope:dm_reform_actor
 	immediate = {
 		scope:dm_reform_story = {
+			set_variable = {
+				name = dm_reform_event_1108_next_day
+				value = var:dm_reform_elapsed_days
+			}
+			change_variable = {
+				name = dm_reform_event_1108_next_day
+				add = 3650
+			}
 			random_in_list = {
 				variable = dm_reform_opponents
+				limit = { NOT = { has_character_flag = dm_reform_event_actor_cooldown } }
 				save_scope_as = dm_reform_actor
 			}
 		}
-		if = {
-			limit = { NOT = { exists = scope:dm_reform_actor } }
-			root = { save_scope_as = dm_reform_actor }
+		scope:dm_reform_actor = {
+			add_character_flag = {
+				flag = dm_reform_event_actor_cooldown
+				years = 2
+			}
 		}
 	}
 	option = {
@@ -500,15 +679,8 @@ dm_reform.1108 = {
 		random_list = {
 			50 = {
 				modifier = {
-					add = 35
-					root = { diplomacy >= 18 }
-				}
-				modifier = {
-					add = 25
-					scope:dm_reform_story = {
-						dm_reform_has_reformer_trigger = yes
-						var:dm_reform_reformer = { diplomacy >= 18 }
-					}
+					add = 60
+					dm_reform_check_diplomacy_value >= 18
 				}
 				modifier = {
 					add = 10
@@ -518,6 +690,7 @@ dm_reform.1108 = {
 					change_variable = { name = dm_reform_progress add = 2 }
 					change_variable = { name = dm_reform_support add = 1 }
 					set_variable = { name = dm_reform_last_result value = flag:success }
+					dm_reform_check_immediate_outcome_effect = yes
 				}
 			trigger_event = { id = dm_reform.2108 days = 1 }
 			}
@@ -526,6 +699,7 @@ dm_reform.1108 = {
 					change_variable = { name = dm_reform_progress add = -2 }
 					change_variable = { name = dm_reform_support add = -1 }
 					set_variable = { name = dm_reform_last_result value = flag:failure }
+					dm_reform_check_immediate_outcome_effect = yes
 				}
 			trigger_event = { id = dm_reform.2108 days = 1 }
 			}
@@ -535,12 +709,30 @@ dm_reform.1108 = {
 		name = dm_reform.event.costly_response
 		trigger = { prestige >= 100 }
 		add_prestige = -100
-		scope:dm_reform_story = {
-			change_variable = { name = dm_reform_progress add = 4 }
-			change_variable = { name = dm_reform_support add = 1 }
-			set_variable = { name = dm_reform_last_result value = flag:great_success }
-		}
+		random_list = {
+			60 = {
+				modifier = {
+					add = 30
+					dm_reform_check_diplomacy_value >= 18
+				}
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = 4 }
+					change_variable = { name = dm_reform_support add = 1 }
+					set_variable = { name = dm_reform_last_result value = flag:great_success }
+					dm_reform_check_immediate_outcome_effect = yes
+				}
 			trigger_event = { id = dm_reform.2108 days = 1 }
+			}
+			40 = {
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = -2 }
+					change_variable = { name = dm_reform_support add = -1 }
+					set_variable = { name = dm_reform_last_result value = flag:failure }
+					dm_reform_check_immediate_outcome_effect = yes
+				}
+			trigger_event = { id = dm_reform.2108 days = 1 }
+			}
+		}
 	}
 }
 
@@ -548,18 +740,29 @@ dm_reform.1109 = {
 	type = character_event
 	title = dm_reform.1109.t
 	desc = dm_reform.1109.desc
-	theme = court_event
+	theme = court
 	left_portrait = scope:dm_reform_actor
 	immediate = {
 		scope:dm_reform_story = {
+			set_variable = {
+				name = dm_reform_event_1109_next_day
+				value = var:dm_reform_elapsed_days
+			}
+			change_variable = {
+				name = dm_reform_event_1109_next_day
+				add = 3650
+			}
 			random_in_list = {
 				variable = dm_reform_opponents
+				limit = { NOT = { has_character_flag = dm_reform_event_actor_cooldown } }
 				save_scope_as = dm_reform_actor
 			}
 		}
-		if = {
-			limit = { NOT = { exists = scope:dm_reform_actor } }
-			root = { save_scope_as = dm_reform_actor }
+		scope:dm_reform_actor = {
+			add_character_flag = {
+				flag = dm_reform_event_actor_cooldown
+				years = 2
+			}
 		}
 	}
 	option = {
@@ -568,15 +771,8 @@ dm_reform.1109 = {
 		random_list = {
 			50 = {
 				modifier = {
-					add = 35
-					root = { stewardship >= 18 }
-				}
-				modifier = {
-					add = 25
-					scope:dm_reform_story = {
-						dm_reform_has_reformer_trigger = yes
-						var:dm_reform_reformer = { stewardship >= 18 }
-					}
+					add = 60
+					dm_reform_check_stewardship_value >= 18
 				}
 				modifier = {
 					add = 10
@@ -586,6 +782,7 @@ dm_reform.1109 = {
 					change_variable = { name = dm_reform_progress add = 2 }
 					change_variable = { name = dm_reform_support add = 1 }
 					set_variable = { name = dm_reform_last_result value = flag:success }
+					dm_reform_check_immediate_outcome_effect = yes
 				}
 			trigger_event = { id = dm_reform.2109 days = 1 }
 			}
@@ -594,6 +791,7 @@ dm_reform.1109 = {
 					change_variable = { name = dm_reform_progress add = -2 }
 					change_variable = { name = dm_reform_support add = -1 }
 					set_variable = { name = dm_reform_last_result value = flag:failure }
+					dm_reform_check_immediate_outcome_effect = yes
 				}
 			trigger_event = { id = dm_reform.2109 days = 1 }
 			}
@@ -603,12 +801,30 @@ dm_reform.1109 = {
 		name = dm_reform.event.costly_response
 		trigger = { prestige >= 100 }
 		add_prestige = -100
-		scope:dm_reform_story = {
-			change_variable = { name = dm_reform_progress add = 4 }
-			change_variable = { name = dm_reform_support add = 1 }
-			set_variable = { name = dm_reform_last_result value = flag:great_success }
-		}
+		random_list = {
+			60 = {
+				modifier = {
+					add = 30
+					dm_reform_check_stewardship_value >= 18
+				}
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = 4 }
+					change_variable = { name = dm_reform_support add = 1 }
+					set_variable = { name = dm_reform_last_result value = flag:great_success }
+					dm_reform_check_immediate_outcome_effect = yes
+				}
 			trigger_event = { id = dm_reform.2109 days = 1 }
+			}
+			40 = {
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = -2 }
+					change_variable = { name = dm_reform_support add = -1 }
+					set_variable = { name = dm_reform_last_result value = flag:failure }
+					dm_reform_check_immediate_outcome_effect = yes
+				}
+			trigger_event = { id = dm_reform.2109 days = 1 }
+			}
+		}
 	}
 }
 
@@ -616,18 +832,29 @@ dm_reform.1110 = {
 	type = character_event
 	title = dm_reform.1110.t
 	desc = dm_reform.1110.desc
-	theme = court_event
+	theme = court
 	left_portrait = scope:dm_reform_actor
 	immediate = {
 		scope:dm_reform_story = {
+			set_variable = {
+				name = dm_reform_event_1110_next_day
+				value = var:dm_reform_elapsed_days
+			}
+			change_variable = {
+				name = dm_reform_event_1110_next_day
+				add = 3650
+			}
 			random_in_list = {
 				variable = dm_reform_opponents
+				limit = { NOT = { has_character_flag = dm_reform_event_actor_cooldown } }
 				save_scope_as = dm_reform_actor
 			}
 		}
-		if = {
-			limit = { NOT = { exists = scope:dm_reform_actor } }
-			root = { save_scope_as = dm_reform_actor }
+		scope:dm_reform_actor = {
+			add_character_flag = {
+				flag = dm_reform_event_actor_cooldown
+				years = 2
+			}
 		}
 	}
 	option = {
@@ -636,15 +863,8 @@ dm_reform.1110 = {
 		random_list = {
 			50 = {
 				modifier = {
-					add = 35
-					root = { martial >= 18 }
-				}
-				modifier = {
-					add = 25
-					scope:dm_reform_story = {
-						dm_reform_has_reformer_trigger = yes
-						var:dm_reform_reformer = { martial >= 18 }
-					}
+					add = 60
+					dm_reform_check_martial_value >= 18
 				}
 				modifier = {
 					add = 10
@@ -654,6 +874,7 @@ dm_reform.1110 = {
 					change_variable = { name = dm_reform_progress add = 2 }
 					change_variable = { name = dm_reform_support add = 1 }
 					set_variable = { name = dm_reform_last_result value = flag:success }
+					dm_reform_check_immediate_outcome_effect = yes
 				}
 			trigger_event = { id = dm_reform.2110 days = 1 }
 			}
@@ -662,6 +883,7 @@ dm_reform.1110 = {
 					change_variable = { name = dm_reform_progress add = -2 }
 					change_variable = { name = dm_reform_support add = -1 }
 					set_variable = { name = dm_reform_last_result value = flag:failure }
+					dm_reform_check_immediate_outcome_effect = yes
 				}
 			trigger_event = { id = dm_reform.2110 days = 1 }
 			}
@@ -671,12 +893,30 @@ dm_reform.1110 = {
 		name = dm_reform.event.costly_response
 		trigger = { prestige >= 100 }
 		add_prestige = -100
-		scope:dm_reform_story = {
-			change_variable = { name = dm_reform_progress add = 4 }
-			change_variable = { name = dm_reform_support add = 1 }
-			set_variable = { name = dm_reform_last_result value = flag:great_success }
-		}
+		random_list = {
+			60 = {
+				modifier = {
+					add = 30
+					dm_reform_check_martial_value >= 18
+				}
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = 4 }
+					change_variable = { name = dm_reform_support add = 1 }
+					set_variable = { name = dm_reform_last_result value = flag:great_success }
+					dm_reform_check_immediate_outcome_effect = yes
+				}
 			trigger_event = { id = dm_reform.2110 days = 1 }
+			}
+			40 = {
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = -2 }
+					change_variable = { name = dm_reform_support add = -1 }
+					set_variable = { name = dm_reform_last_result value = flag:failure }
+					dm_reform_check_immediate_outcome_effect = yes
+				}
+			trigger_event = { id = dm_reform.2110 days = 1 }
+			}
+		}
 	}
 }
 
@@ -684,18 +924,29 @@ dm_reform.1111 = {
 	type = character_event
 	title = dm_reform.1111.t
 	desc = dm_reform.1111.desc
-	theme = court_event
+	theme = court
 	left_portrait = scope:dm_reform_actor
 	immediate = {
 		scope:dm_reform_story = {
+			set_variable = {
+				name = dm_reform_event_1111_next_day
+				value = var:dm_reform_elapsed_days
+			}
+			change_variable = {
+				name = dm_reform_event_1111_next_day
+				add = 3650
+			}
 			random_in_list = {
 				variable = dm_reform_opponents
+				limit = { NOT = { has_character_flag = dm_reform_event_actor_cooldown } }
 				save_scope_as = dm_reform_actor
 			}
 		}
-		if = {
-			limit = { NOT = { exists = scope:dm_reform_actor } }
-			root = { save_scope_as = dm_reform_actor }
+		scope:dm_reform_actor = {
+			add_character_flag = {
+				flag = dm_reform_event_actor_cooldown
+				years = 2
+			}
 		}
 	}
 	option = {
@@ -704,15 +955,8 @@ dm_reform.1111 = {
 		random_list = {
 			50 = {
 				modifier = {
-					add = 35
-					root = { intrigue >= 18 }
-				}
-				modifier = {
-					add = 25
-					scope:dm_reform_story = {
-						dm_reform_has_reformer_trigger = yes
-						var:dm_reform_reformer = { intrigue >= 18 }
-					}
+					add = 60
+					dm_reform_check_intrigue_value >= 18
 				}
 				modifier = {
 					add = 10
@@ -722,6 +966,7 @@ dm_reform.1111 = {
 					change_variable = { name = dm_reform_progress add = 2 }
 					change_variable = { name = dm_reform_support add = 1 }
 					set_variable = { name = dm_reform_last_result value = flag:success }
+					dm_reform_check_immediate_outcome_effect = yes
 				}
 			trigger_event = { id = dm_reform.2111 days = 1 }
 			}
@@ -730,6 +975,7 @@ dm_reform.1111 = {
 					change_variable = { name = dm_reform_progress add = -2 }
 					change_variable = { name = dm_reform_support add = -1 }
 					set_variable = { name = dm_reform_last_result value = flag:failure }
+					dm_reform_check_immediate_outcome_effect = yes
 				}
 			trigger_event = { id = dm_reform.2111 days = 1 }
 			}
@@ -739,12 +985,30 @@ dm_reform.1111 = {
 		name = dm_reform.event.costly_response
 		trigger = { prestige >= 100 }
 		add_prestige = -100
-		scope:dm_reform_story = {
-			change_variable = { name = dm_reform_progress add = 4 }
-			change_variable = { name = dm_reform_support add = 1 }
-			set_variable = { name = dm_reform_last_result value = flag:great_success }
-		}
+		random_list = {
+			60 = {
+				modifier = {
+					add = 30
+					dm_reform_check_intrigue_value >= 18
+				}
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = 4 }
+					change_variable = { name = dm_reform_support add = 1 }
+					set_variable = { name = dm_reform_last_result value = flag:great_success }
+					dm_reform_check_immediate_outcome_effect = yes
+				}
 			trigger_event = { id = dm_reform.2111 days = 1 }
+			}
+			40 = {
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = -2 }
+					change_variable = { name = dm_reform_support add = -1 }
+					set_variable = { name = dm_reform_last_result value = flag:failure }
+					dm_reform_check_immediate_outcome_effect = yes
+				}
+			trigger_event = { id = dm_reform.2111 days = 1 }
+			}
+		}
 	}
 }
 
@@ -752,18 +1016,29 @@ dm_reform.1112 = {
 	type = character_event
 	title = dm_reform.1112.t
 	desc = dm_reform.1112.desc
-	theme = court_event
+	theme = court
 	left_portrait = scope:dm_reform_actor
 	immediate = {
 		scope:dm_reform_story = {
+			set_variable = {
+				name = dm_reform_event_1112_next_day
+				value = var:dm_reform_elapsed_days
+			}
+			change_variable = {
+				name = dm_reform_event_1112_next_day
+				add = 3650
+			}
 			random_in_list = {
 				variable = dm_reform_opponents
+				limit = { NOT = { has_character_flag = dm_reform_event_actor_cooldown } }
 				save_scope_as = dm_reform_actor
 			}
 		}
-		if = {
-			limit = { NOT = { exists = scope:dm_reform_actor } }
-			root = { save_scope_as = dm_reform_actor }
+		scope:dm_reform_actor = {
+			add_character_flag = {
+				flag = dm_reform_event_actor_cooldown
+				years = 2
+			}
 		}
 	}
 	option = {
@@ -772,15 +1047,8 @@ dm_reform.1112 = {
 		random_list = {
 			50 = {
 				modifier = {
-					add = 35
-					root = { learning >= 18 }
-				}
-				modifier = {
-					add = 25
-					scope:dm_reform_story = {
-						dm_reform_has_reformer_trigger = yes
-						var:dm_reform_reformer = { learning >= 18 }
-					}
+					add = 60
+					dm_reform_check_learning_value >= 18
 				}
 				modifier = {
 					add = 10
@@ -790,6 +1058,7 @@ dm_reform.1112 = {
 					change_variable = { name = dm_reform_progress add = 2 }
 					change_variable = { name = dm_reform_support add = 1 }
 					set_variable = { name = dm_reform_last_result value = flag:success }
+					dm_reform_check_immediate_outcome_effect = yes
 				}
 			trigger_event = { id = dm_reform.2112 days = 1 }
 			}
@@ -798,6 +1067,7 @@ dm_reform.1112 = {
 					change_variable = { name = dm_reform_progress add = -2 }
 					change_variable = { name = dm_reform_support add = -1 }
 					set_variable = { name = dm_reform_last_result value = flag:failure }
+					dm_reform_check_immediate_outcome_effect = yes
 				}
 			trigger_event = { id = dm_reform.2112 days = 1 }
 			}
@@ -807,12 +1077,30 @@ dm_reform.1112 = {
 		name = dm_reform.event.costly_response
 		trigger = { prestige >= 100 }
 		add_prestige = -100
-		scope:dm_reform_story = {
-			change_variable = { name = dm_reform_progress add = 4 }
-			change_variable = { name = dm_reform_support add = 1 }
-			set_variable = { name = dm_reform_last_result value = flag:great_success }
-		}
+		random_list = {
+			60 = {
+				modifier = {
+					add = 30
+					dm_reform_check_learning_value >= 18
+				}
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = 4 }
+					change_variable = { name = dm_reform_support add = 1 }
+					set_variable = { name = dm_reform_last_result value = flag:great_success }
+					dm_reform_check_immediate_outcome_effect = yes
+				}
 			trigger_event = { id = dm_reform.2112 days = 1 }
+			}
+			40 = {
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = -2 }
+					change_variable = { name = dm_reform_support add = -1 }
+					set_variable = { name = dm_reform_last_result value = flag:failure }
+					dm_reform_check_immediate_outcome_effect = yes
+				}
+			trigger_event = { id = dm_reform.2112 days = 1 }
+			}
+		}
 	}
 }
 
@@ -820,18 +1108,29 @@ dm_reform.1113 = {
 	type = character_event
 	title = dm_reform.1113.t
 	desc = dm_reform.1113.desc
-	theme = court_event
+	theme = court
 	left_portrait = scope:dm_reform_actor
 	immediate = {
 		scope:dm_reform_story = {
+			set_variable = {
+				name = dm_reform_event_1113_next_day
+				value = var:dm_reform_elapsed_days
+			}
+			change_variable = {
+				name = dm_reform_event_1113_next_day
+				add = 3650
+			}
 			random_in_list = {
 				variable = dm_reform_opponents
+				limit = { NOT = { has_character_flag = dm_reform_event_actor_cooldown } }
 				save_scope_as = dm_reform_actor
 			}
 		}
-		if = {
-			limit = { NOT = { exists = scope:dm_reform_actor } }
-			root = { save_scope_as = dm_reform_actor }
+		scope:dm_reform_actor = {
+			add_character_flag = {
+				flag = dm_reform_event_actor_cooldown
+				years = 2
+			}
 		}
 	}
 	option = {
@@ -840,15 +1139,8 @@ dm_reform.1113 = {
 		random_list = {
 			50 = {
 				modifier = {
-					add = 35
-					root = { diplomacy >= 18 }
-				}
-				modifier = {
-					add = 25
-					scope:dm_reform_story = {
-						dm_reform_has_reformer_trigger = yes
-						var:dm_reform_reformer = { diplomacy >= 18 }
-					}
+					add = 60
+					dm_reform_check_diplomacy_value >= 18
 				}
 				modifier = {
 					add = 10
@@ -858,6 +1150,7 @@ dm_reform.1113 = {
 					change_variable = { name = dm_reform_progress add = 2 }
 					change_variable = { name = dm_reform_support add = 1 }
 					set_variable = { name = dm_reform_last_result value = flag:success }
+					dm_reform_check_immediate_outcome_effect = yes
 				}
 			trigger_event = { id = dm_reform.2113 days = 1 }
 			}
@@ -866,6 +1159,7 @@ dm_reform.1113 = {
 					change_variable = { name = dm_reform_progress add = -2 }
 					change_variable = { name = dm_reform_support add = -1 }
 					set_variable = { name = dm_reform_last_result value = flag:failure }
+					dm_reform_check_immediate_outcome_effect = yes
 				}
 			trigger_event = { id = dm_reform.2113 days = 1 }
 			}
@@ -875,12 +1169,30 @@ dm_reform.1113 = {
 		name = dm_reform.event.costly_response
 		trigger = { prestige >= 100 }
 		add_prestige = -100
-		scope:dm_reform_story = {
-			change_variable = { name = dm_reform_progress add = 4 }
-			change_variable = { name = dm_reform_support add = 1 }
-			set_variable = { name = dm_reform_last_result value = flag:great_success }
-		}
+		random_list = {
+			60 = {
+				modifier = {
+					add = 30
+					dm_reform_check_diplomacy_value >= 18
+				}
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = 4 }
+					change_variable = { name = dm_reform_support add = 1 }
+					set_variable = { name = dm_reform_last_result value = flag:great_success }
+					dm_reform_check_immediate_outcome_effect = yes
+				}
 			trigger_event = { id = dm_reform.2113 days = 1 }
+			}
+			40 = {
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = -2 }
+					change_variable = { name = dm_reform_support add = -1 }
+					set_variable = { name = dm_reform_last_result value = flag:failure }
+					dm_reform_check_immediate_outcome_effect = yes
+				}
+			trigger_event = { id = dm_reform.2113 days = 1 }
+			}
+		}
 	}
 }
 
@@ -888,18 +1200,29 @@ dm_reform.1114 = {
 	type = character_event
 	title = dm_reform.1114.t
 	desc = dm_reform.1114.desc
-	theme = court_event
+	theme = court
 	left_portrait = scope:dm_reform_actor
 	immediate = {
 		scope:dm_reform_story = {
+			set_variable = {
+				name = dm_reform_event_1114_next_day
+				value = var:dm_reform_elapsed_days
+			}
+			change_variable = {
+				name = dm_reform_event_1114_next_day
+				add = 3650
+			}
 			random_in_list = {
 				variable = dm_reform_opponents
+				limit = { NOT = { has_character_flag = dm_reform_event_actor_cooldown } }
 				save_scope_as = dm_reform_actor
 			}
 		}
-		if = {
-			limit = { NOT = { exists = scope:dm_reform_actor } }
-			root = { save_scope_as = dm_reform_actor }
+		scope:dm_reform_actor = {
+			add_character_flag = {
+				flag = dm_reform_event_actor_cooldown
+				years = 2
+			}
 		}
 	}
 	option = {
@@ -908,15 +1231,8 @@ dm_reform.1114 = {
 		random_list = {
 			50 = {
 				modifier = {
-					add = 35
-					root = { prowess >= 18 }
-				}
-				modifier = {
-					add = 25
-					scope:dm_reform_story = {
-						dm_reform_has_reformer_trigger = yes
-						var:dm_reform_reformer = { prowess >= 18 }
-					}
+					add = 60
+					dm_reform_check_prowess_value >= 18
 				}
 				modifier = {
 					add = 10
@@ -926,6 +1242,7 @@ dm_reform.1114 = {
 					change_variable = { name = dm_reform_progress add = 2 }
 					change_variable = { name = dm_reform_support add = 1 }
 					set_variable = { name = dm_reform_last_result value = flag:success }
+					dm_reform_check_immediate_outcome_effect = yes
 				}
 			trigger_event = { id = dm_reform.2114 days = 1 }
 			}
@@ -934,6 +1251,7 @@ dm_reform.1114 = {
 					change_variable = { name = dm_reform_progress add = -2 }
 					change_variable = { name = dm_reform_support add = -1 }
 					set_variable = { name = dm_reform_last_result value = flag:failure }
+					dm_reform_check_immediate_outcome_effect = yes
 				}
 			trigger_event = { id = dm_reform.2114 days = 1 }
 			}
@@ -943,12 +1261,30 @@ dm_reform.1114 = {
 		name = dm_reform.event.costly_response
 		trigger = { prestige >= 100 }
 		add_prestige = -100
-		scope:dm_reform_story = {
-			change_variable = { name = dm_reform_progress add = 4 }
-			change_variable = { name = dm_reform_support add = 1 }
-			set_variable = { name = dm_reform_last_result value = flag:great_success }
-		}
+		random_list = {
+			60 = {
+				modifier = {
+					add = 30
+					dm_reform_check_prowess_value >= 18
+				}
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = 4 }
+					change_variable = { name = dm_reform_support add = 1 }
+					set_variable = { name = dm_reform_last_result value = flag:great_success }
+					dm_reform_check_immediate_outcome_effect = yes
+				}
 			trigger_event = { id = dm_reform.2114 days = 1 }
+			}
+			40 = {
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = -2 }
+					change_variable = { name = dm_reform_support add = -1 }
+					set_variable = { name = dm_reform_last_result value = flag:failure }
+					dm_reform_check_immediate_outcome_effect = yes
+				}
+			trigger_event = { id = dm_reform.2114 days = 1 }
+			}
+		}
 	}
 }
 
@@ -956,18 +1292,29 @@ dm_reform.1115 = {
 	type = character_event
 	title = dm_reform.1115.t
 	desc = dm_reform.1115.desc
-	theme = court_event
+	theme = court
 	left_portrait = scope:dm_reform_actor
 	immediate = {
 		scope:dm_reform_story = {
+			set_variable = {
+				name = dm_reform_event_1115_next_day
+				value = var:dm_reform_elapsed_days
+			}
+			change_variable = {
+				name = dm_reform_event_1115_next_day
+				add = 3650
+			}
 			random_in_list = {
 				variable = dm_reform_supporters
+				limit = { NOT = { has_character_flag = dm_reform_event_actor_cooldown } }
 				save_scope_as = dm_reform_actor
 			}
 		}
-		if = {
-			limit = { NOT = { exists = scope:dm_reform_actor } }
-			root = { save_scope_as = dm_reform_actor }
+		scope:dm_reform_actor = {
+			add_character_flag = {
+				flag = dm_reform_event_actor_cooldown
+				years = 2
+			}
 		}
 	}
 	option = {
@@ -976,15 +1323,8 @@ dm_reform.1115 = {
 		random_list = {
 			50 = {
 				modifier = {
-					add = 35
-					root = { learning >= 14 }
-				}
-				modifier = {
-					add = 25
-					scope:dm_reform_story = {
-						dm_reform_has_reformer_trigger = yes
-						var:dm_reform_reformer = { learning >= 14 }
-					}
+					add = 60
+					dm_reform_check_learning_value >= 14
 				}
 				modifier = {
 					add = 10
@@ -994,6 +1334,7 @@ dm_reform.1115 = {
 					change_variable = { name = dm_reform_progress add = 1 }
 					change_variable = { name = dm_reform_support add = 0 }
 					set_variable = { name = dm_reform_last_result value = flag:success }
+					dm_reform_check_immediate_outcome_effect = yes
 				}
 			trigger_event = { id = dm_reform.2115 days = 1 }
 			}
@@ -1002,6 +1343,7 @@ dm_reform.1115 = {
 					change_variable = { name = dm_reform_progress add = 0 }
 					change_variable = { name = dm_reform_support add = 0 }
 					set_variable = { name = dm_reform_last_result value = flag:failure }
+					dm_reform_check_immediate_outcome_effect = yes
 				}
 			trigger_event = { id = dm_reform.2115 days = 1 }
 			}
@@ -1011,12 +1353,30 @@ dm_reform.1115 = {
 		name = dm_reform.event.costly_response
 		trigger = { prestige >= 100 }
 		add_prestige = -100
-		scope:dm_reform_story = {
-			change_variable = { name = dm_reform_progress add = 3 }
-			change_variable = { name = dm_reform_support add = 0 }
-			set_variable = { name = dm_reform_last_result value = flag:great_success }
-		}
+		random_list = {
+			60 = {
+				modifier = {
+					add = 30
+					dm_reform_check_learning_value >= 14
+				}
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = 3 }
+					change_variable = { name = dm_reform_support add = 0 }
+					set_variable = { name = dm_reform_last_result value = flag:great_success }
+					dm_reform_check_immediate_outcome_effect = yes
+				}
 			trigger_event = { id = dm_reform.2115 days = 1 }
+			}
+			40 = {
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = 0 }
+					change_variable = { name = dm_reform_support add = 0 }
+					set_variable = { name = dm_reform_last_result value = flag:failure }
+					dm_reform_check_immediate_outcome_effect = yes
+				}
+			trigger_event = { id = dm_reform.2115 days = 1 }
+			}
+		}
 	}
 }
 
@@ -1024,18 +1384,29 @@ dm_reform.1116 = {
 	type = character_event
 	title = dm_reform.1116.t
 	desc = dm_reform.1116.desc
-	theme = court_event
+	theme = court
 	left_portrait = scope:dm_reform_actor
 	immediate = {
 		scope:dm_reform_story = {
+			set_variable = {
+				name = dm_reform_event_1116_next_day
+				value = var:dm_reform_elapsed_days
+			}
+			change_variable = {
+				name = dm_reform_event_1116_next_day
+				add = 3650
+			}
 			random_in_list = {
 				variable = dm_reform_supporters
+				limit = { NOT = { has_character_flag = dm_reform_event_actor_cooldown } }
 				save_scope_as = dm_reform_actor
 			}
 		}
-		if = {
-			limit = { NOT = { exists = scope:dm_reform_actor } }
-			root = { save_scope_as = dm_reform_actor }
+		scope:dm_reform_actor = {
+			add_character_flag = {
+				flag = dm_reform_event_actor_cooldown
+				years = 2
+			}
 		}
 	}
 	option = {
@@ -1044,15 +1415,8 @@ dm_reform.1116 = {
 		random_list = {
 			50 = {
 				modifier = {
-					add = 35
-					root = { stewardship >= 14 }
-				}
-				modifier = {
-					add = 25
-					scope:dm_reform_story = {
-						dm_reform_has_reformer_trigger = yes
-						var:dm_reform_reformer = { stewardship >= 14 }
-					}
+					add = 60
+					dm_reform_check_stewardship_value >= 14
 				}
 				modifier = {
 					add = 10
@@ -1062,6 +1426,7 @@ dm_reform.1116 = {
 					change_variable = { name = dm_reform_progress add = 1 }
 					change_variable = { name = dm_reform_support add = 0 }
 					set_variable = { name = dm_reform_last_result value = flag:success }
+					dm_reform_check_immediate_outcome_effect = yes
 				}
 			trigger_event = { id = dm_reform.2116 days = 1 }
 			}
@@ -1070,6 +1435,7 @@ dm_reform.1116 = {
 					change_variable = { name = dm_reform_progress add = 0 }
 					change_variable = { name = dm_reform_support add = 0 }
 					set_variable = { name = dm_reform_last_result value = flag:failure }
+					dm_reform_check_immediate_outcome_effect = yes
 				}
 			trigger_event = { id = dm_reform.2116 days = 1 }
 			}
@@ -1079,12 +1445,30 @@ dm_reform.1116 = {
 		name = dm_reform.event.costly_response
 		trigger = { prestige >= 100 }
 		add_prestige = -100
-		scope:dm_reform_story = {
-			change_variable = { name = dm_reform_progress add = 3 }
-			change_variable = { name = dm_reform_support add = 0 }
-			set_variable = { name = dm_reform_last_result value = flag:great_success }
-		}
+		random_list = {
+			60 = {
+				modifier = {
+					add = 30
+					dm_reform_check_stewardship_value >= 14
+				}
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = 3 }
+					change_variable = { name = dm_reform_support add = 0 }
+					set_variable = { name = dm_reform_last_result value = flag:great_success }
+					dm_reform_check_immediate_outcome_effect = yes
+				}
 			trigger_event = { id = dm_reform.2116 days = 1 }
+			}
+			40 = {
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = 0 }
+					change_variable = { name = dm_reform_support add = 0 }
+					set_variable = { name = dm_reform_last_result value = flag:failure }
+					dm_reform_check_immediate_outcome_effect = yes
+				}
+			trigger_event = { id = dm_reform.2116 days = 1 }
+			}
+		}
 	}
 }
 
@@ -1092,18 +1476,29 @@ dm_reform.1117 = {
 	type = character_event
 	title = dm_reform.1117.t
 	desc = dm_reform.1117.desc
-	theme = court_event
+	theme = court
 	left_portrait = scope:dm_reform_actor
 	immediate = {
 		scope:dm_reform_story = {
+			set_variable = {
+				name = dm_reform_event_1117_next_day
+				value = var:dm_reform_elapsed_days
+			}
+			change_variable = {
+				name = dm_reform_event_1117_next_day
+				add = 3650
+			}
 			random_in_list = {
 				variable = dm_reform_supporters
+				limit = { NOT = { has_character_flag = dm_reform_event_actor_cooldown } }
 				save_scope_as = dm_reform_actor
 			}
 		}
-		if = {
-			limit = { NOT = { exists = scope:dm_reform_actor } }
-			root = { save_scope_as = dm_reform_actor }
+		scope:dm_reform_actor = {
+			add_character_flag = {
+				flag = dm_reform_event_actor_cooldown
+				years = 2
+			}
 		}
 	}
 	option = {
@@ -1112,15 +1507,8 @@ dm_reform.1117 = {
 		random_list = {
 			50 = {
 				modifier = {
-					add = 35
-					root = { intrigue >= 14 }
-				}
-				modifier = {
-					add = 25
-					scope:dm_reform_story = {
-						dm_reform_has_reformer_trigger = yes
-						var:dm_reform_reformer = { intrigue >= 14 }
-					}
+					add = 60
+					dm_reform_check_intrigue_value >= 14
 				}
 				modifier = {
 					add = 10
@@ -1130,6 +1518,7 @@ dm_reform.1117 = {
 					change_variable = { name = dm_reform_progress add = 1 }
 					change_variable = { name = dm_reform_support add = 0 }
 					set_variable = { name = dm_reform_last_result value = flag:success }
+					dm_reform_check_immediate_outcome_effect = yes
 				}
 			trigger_event = { id = dm_reform.2117 days = 1 }
 			}
@@ -1138,6 +1527,7 @@ dm_reform.1117 = {
 					change_variable = { name = dm_reform_progress add = 0 }
 					change_variable = { name = dm_reform_support add = 0 }
 					set_variable = { name = dm_reform_last_result value = flag:failure }
+					dm_reform_check_immediate_outcome_effect = yes
 				}
 			trigger_event = { id = dm_reform.2117 days = 1 }
 			}
@@ -1147,12 +1537,30 @@ dm_reform.1117 = {
 		name = dm_reform.event.costly_response
 		trigger = { prestige >= 100 }
 		add_prestige = -100
-		scope:dm_reform_story = {
-			change_variable = { name = dm_reform_progress add = 3 }
-			change_variable = { name = dm_reform_support add = 0 }
-			set_variable = { name = dm_reform_last_result value = flag:great_success }
-		}
+		random_list = {
+			60 = {
+				modifier = {
+					add = 30
+					dm_reform_check_intrigue_value >= 14
+				}
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = 3 }
+					change_variable = { name = dm_reform_support add = 0 }
+					set_variable = { name = dm_reform_last_result value = flag:great_success }
+					dm_reform_check_immediate_outcome_effect = yes
+				}
 			trigger_event = { id = dm_reform.2117 days = 1 }
+			}
+			40 = {
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = 0 }
+					change_variable = { name = dm_reform_support add = 0 }
+					set_variable = { name = dm_reform_last_result value = flag:failure }
+					dm_reform_check_immediate_outcome_effect = yes
+				}
+			trigger_event = { id = dm_reform.2117 days = 1 }
+			}
+		}
 	}
 }
 
@@ -1160,18 +1568,29 @@ dm_reform.1118 = {
 	type = character_event
 	title = dm_reform.1118.t
 	desc = dm_reform.1118.desc
-	theme = court_event
+	theme = court
 	left_portrait = scope:dm_reform_actor
 	immediate = {
 		scope:dm_reform_story = {
+			set_variable = {
+				name = dm_reform_event_1118_next_day
+				value = var:dm_reform_elapsed_days
+			}
+			change_variable = {
+				name = dm_reform_event_1118_next_day
+				add = 3650
+			}
 			random_in_list = {
 				variable = dm_reform_supporters
+				limit = { NOT = { has_character_flag = dm_reform_event_actor_cooldown } }
 				save_scope_as = dm_reform_actor
 			}
 		}
-		if = {
-			limit = { NOT = { exists = scope:dm_reform_actor } }
-			root = { save_scope_as = dm_reform_actor }
+		scope:dm_reform_actor = {
+			add_character_flag = {
+				flag = dm_reform_event_actor_cooldown
+				years = 2
+			}
 		}
 	}
 	option = {
@@ -1180,15 +1599,8 @@ dm_reform.1118 = {
 		random_list = {
 			50 = {
 				modifier = {
-					add = 35
-					root = { martial >= 14 }
-				}
-				modifier = {
-					add = 25
-					scope:dm_reform_story = {
-						dm_reform_has_reformer_trigger = yes
-						var:dm_reform_reformer = { martial >= 14 }
-					}
+					add = 60
+					dm_reform_check_martial_value >= 14
 				}
 				modifier = {
 					add = 10
@@ -1198,6 +1610,7 @@ dm_reform.1118 = {
 					change_variable = { name = dm_reform_progress add = 1 }
 					change_variable = { name = dm_reform_support add = 0 }
 					set_variable = { name = dm_reform_last_result value = flag:success }
+					dm_reform_check_immediate_outcome_effect = yes
 				}
 			trigger_event = { id = dm_reform.2118 days = 1 }
 			}
@@ -1206,6 +1619,7 @@ dm_reform.1118 = {
 					change_variable = { name = dm_reform_progress add = 0 }
 					change_variable = { name = dm_reform_support add = 0 }
 					set_variable = { name = dm_reform_last_result value = flag:failure }
+					dm_reform_check_immediate_outcome_effect = yes
 				}
 			trigger_event = { id = dm_reform.2118 days = 1 }
 			}
@@ -1215,12 +1629,30 @@ dm_reform.1118 = {
 		name = dm_reform.event.costly_response
 		trigger = { prestige >= 100 }
 		add_prestige = -100
-		scope:dm_reform_story = {
-			change_variable = { name = dm_reform_progress add = 3 }
-			change_variable = { name = dm_reform_support add = 0 }
-			set_variable = { name = dm_reform_last_result value = flag:great_success }
-		}
+		random_list = {
+			60 = {
+				modifier = {
+					add = 30
+					dm_reform_check_martial_value >= 14
+				}
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = 3 }
+					change_variable = { name = dm_reform_support add = 0 }
+					set_variable = { name = dm_reform_last_result value = flag:great_success }
+					dm_reform_check_immediate_outcome_effect = yes
+				}
 			trigger_event = { id = dm_reform.2118 days = 1 }
+			}
+			40 = {
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = 0 }
+					change_variable = { name = dm_reform_support add = 0 }
+					set_variable = { name = dm_reform_last_result value = flag:failure }
+					dm_reform_check_immediate_outcome_effect = yes
+				}
+			trigger_event = { id = dm_reform.2118 days = 1 }
+			}
+		}
 	}
 }
 
@@ -1228,18 +1660,29 @@ dm_reform.1119 = {
 	type = character_event
 	title = dm_reform.1119.t
 	desc = dm_reform.1119.desc
-	theme = court_event
+	theme = court
 	left_portrait = scope:dm_reform_actor
 	immediate = {
 		scope:dm_reform_story = {
+			set_variable = {
+				name = dm_reform_event_1119_next_day
+				value = var:dm_reform_elapsed_days
+			}
+			change_variable = {
+				name = dm_reform_event_1119_next_day
+				add = 3650
+			}
 			random_in_list = {
 				variable = dm_reform_supporters
+				limit = { NOT = { has_character_flag = dm_reform_event_actor_cooldown } }
 				save_scope_as = dm_reform_actor
 			}
 		}
-		if = {
-			limit = { NOT = { exists = scope:dm_reform_actor } }
-			root = { save_scope_as = dm_reform_actor }
+		scope:dm_reform_actor = {
+			add_character_flag = {
+				flag = dm_reform_event_actor_cooldown
+				years = 2
+			}
 		}
 	}
 	option = {
@@ -1248,15 +1691,8 @@ dm_reform.1119 = {
 		random_list = {
 			50 = {
 				modifier = {
-					add = 35
-					root = { diplomacy >= 14 }
-				}
-				modifier = {
-					add = 25
-					scope:dm_reform_story = {
-						dm_reform_has_reformer_trigger = yes
-						var:dm_reform_reformer = { diplomacy >= 14 }
-					}
+					add = 60
+					dm_reform_check_diplomacy_value >= 14
 				}
 				modifier = {
 					add = 10
@@ -1266,6 +1702,7 @@ dm_reform.1119 = {
 					change_variable = { name = dm_reform_progress add = 1 }
 					change_variable = { name = dm_reform_support add = 0 }
 					set_variable = { name = dm_reform_last_result value = flag:success }
+					dm_reform_check_immediate_outcome_effect = yes
 				}
 			trigger_event = { id = dm_reform.2119 days = 1 }
 			}
@@ -1274,6 +1711,7 @@ dm_reform.1119 = {
 					change_variable = { name = dm_reform_progress add = 0 }
 					change_variable = { name = dm_reform_support add = 0 }
 					set_variable = { name = dm_reform_last_result value = flag:failure }
+					dm_reform_check_immediate_outcome_effect = yes
 				}
 			trigger_event = { id = dm_reform.2119 days = 1 }
 			}
@@ -1283,12 +1721,30 @@ dm_reform.1119 = {
 		name = dm_reform.event.costly_response
 		trigger = { prestige >= 100 }
 		add_prestige = -100
-		scope:dm_reform_story = {
-			change_variable = { name = dm_reform_progress add = 3 }
-			change_variable = { name = dm_reform_support add = 0 }
-			set_variable = { name = dm_reform_last_result value = flag:great_success }
-		}
+		random_list = {
+			60 = {
+				modifier = {
+					add = 30
+					dm_reform_check_diplomacy_value >= 14
+				}
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = 3 }
+					change_variable = { name = dm_reform_support add = 0 }
+					set_variable = { name = dm_reform_last_result value = flag:great_success }
+					dm_reform_check_immediate_outcome_effect = yes
+				}
 			trigger_event = { id = dm_reform.2119 days = 1 }
+			}
+			40 = {
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = 0 }
+					change_variable = { name = dm_reform_support add = 0 }
+					set_variable = { name = dm_reform_last_result value = flag:failure }
+					dm_reform_check_immediate_outcome_effect = yes
+				}
+			trigger_event = { id = dm_reform.2119 days = 1 }
+			}
+		}
 	}
 }
 
@@ -1296,18 +1752,29 @@ dm_reform.1120 = {
 	type = character_event
 	title = dm_reform.1120.t
 	desc = dm_reform.1120.desc
-	theme = court_event
+	theme = court
 	left_portrait = scope:dm_reform_actor
 	immediate = {
 		scope:dm_reform_story = {
+			set_variable = {
+				name = dm_reform_event_1120_next_day
+				value = var:dm_reform_elapsed_days
+			}
+			change_variable = {
+				name = dm_reform_event_1120_next_day
+				add = 3650
+			}
 			random_in_list = {
 				variable = dm_reform_supporters
+				limit = { NOT = { has_character_flag = dm_reform_event_actor_cooldown } }
 				save_scope_as = dm_reform_actor
 			}
 		}
-		if = {
-			limit = { NOT = { exists = scope:dm_reform_actor } }
-			root = { save_scope_as = dm_reform_actor }
+		scope:dm_reform_actor = {
+			add_character_flag = {
+				flag = dm_reform_event_actor_cooldown
+				years = 2
+			}
 		}
 	}
 	option = {
@@ -1316,15 +1783,8 @@ dm_reform.1120 = {
 		random_list = {
 			50 = {
 				modifier = {
-					add = 35
-					root = { prowess >= 14 }
-				}
-				modifier = {
-					add = 25
-					scope:dm_reform_story = {
-						dm_reform_has_reformer_trigger = yes
-						var:dm_reform_reformer = { prowess >= 14 }
-					}
+					add = 60
+					dm_reform_check_prowess_value >= 14
 				}
 				modifier = {
 					add = 10
@@ -1334,6 +1794,7 @@ dm_reform.1120 = {
 					change_variable = { name = dm_reform_progress add = 1 }
 					change_variable = { name = dm_reform_support add = 0 }
 					set_variable = { name = dm_reform_last_result value = flag:success }
+					dm_reform_check_immediate_outcome_effect = yes
 				}
 			trigger_event = { id = dm_reform.2120 days = 1 }
 			}
@@ -1342,6 +1803,7 @@ dm_reform.1120 = {
 					change_variable = { name = dm_reform_progress add = 0 }
 					change_variable = { name = dm_reform_support add = 0 }
 					set_variable = { name = dm_reform_last_result value = flag:failure }
+					dm_reform_check_immediate_outcome_effect = yes
 				}
 			trigger_event = { id = dm_reform.2120 days = 1 }
 			}
@@ -1351,12 +1813,30 @@ dm_reform.1120 = {
 		name = dm_reform.event.costly_response
 		trigger = { prestige >= 100 }
 		add_prestige = -100
-		scope:dm_reform_story = {
-			change_variable = { name = dm_reform_progress add = 3 }
-			change_variable = { name = dm_reform_support add = 0 }
-			set_variable = { name = dm_reform_last_result value = flag:great_success }
-		}
+		random_list = {
+			60 = {
+				modifier = {
+					add = 30
+					dm_reform_check_prowess_value >= 14
+				}
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = 3 }
+					change_variable = { name = dm_reform_support add = 0 }
+					set_variable = { name = dm_reform_last_result value = flag:great_success }
+					dm_reform_check_immediate_outcome_effect = yes
+				}
 			trigger_event = { id = dm_reform.2120 days = 1 }
+			}
+			40 = {
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = 0 }
+					change_variable = { name = dm_reform_support add = 0 }
+					set_variable = { name = dm_reform_last_result value = flag:failure }
+					dm_reform_check_immediate_outcome_effect = yes
+				}
+			trigger_event = { id = dm_reform.2120 days = 1 }
+			}
+		}
 	}
 }
 
@@ -1364,18 +1844,29 @@ dm_reform.1121 = {
 	type = character_event
 	title = dm_reform.1121.t
 	desc = dm_reform.1121.desc
-	theme = court_event
+	theme = court
 	left_portrait = scope:dm_reform_actor
 	immediate = {
 		scope:dm_reform_story = {
+			set_variable = {
+				name = dm_reform_event_1121_next_day
+				value = var:dm_reform_elapsed_days
+			}
+			change_variable = {
+				name = dm_reform_event_1121_next_day
+				add = 3650
+			}
 			random_in_list = {
 				variable = dm_reform_supporters
+				limit = { NOT = { has_character_flag = dm_reform_event_actor_cooldown } }
 				save_scope_as = dm_reform_actor
 			}
 		}
-		if = {
-			limit = { NOT = { exists = scope:dm_reform_actor } }
-			root = { save_scope_as = dm_reform_actor }
+		scope:dm_reform_actor = {
+			add_character_flag = {
+				flag = dm_reform_event_actor_cooldown
+				years = 2
+			}
 		}
 	}
 	option = {
@@ -1384,15 +1875,8 @@ dm_reform.1121 = {
 		random_list = {
 			50 = {
 				modifier = {
-					add = 35
-					root = { learning >= 14 }
-				}
-				modifier = {
-					add = 25
-					scope:dm_reform_story = {
-						dm_reform_has_reformer_trigger = yes
-						var:dm_reform_reformer = { learning >= 14 }
-					}
+					add = 60
+					dm_reform_check_learning_value >= 14
 				}
 				modifier = {
 					add = 10
@@ -1402,6 +1886,7 @@ dm_reform.1121 = {
 					change_variable = { name = dm_reform_progress add = 1 }
 					change_variable = { name = dm_reform_support add = 0 }
 					set_variable = { name = dm_reform_last_result value = flag:success }
+					dm_reform_check_immediate_outcome_effect = yes
 				}
 			trigger_event = { id = dm_reform.2121 days = 1 }
 			}
@@ -1410,6 +1895,7 @@ dm_reform.1121 = {
 					change_variable = { name = dm_reform_progress add = 0 }
 					change_variable = { name = dm_reform_support add = 0 }
 					set_variable = { name = dm_reform_last_result value = flag:failure }
+					dm_reform_check_immediate_outcome_effect = yes
 				}
 			trigger_event = { id = dm_reform.2121 days = 1 }
 			}
@@ -1419,12 +1905,30 @@ dm_reform.1121 = {
 		name = dm_reform.event.costly_response
 		trigger = { prestige >= 100 }
 		add_prestige = -100
-		scope:dm_reform_story = {
-			change_variable = { name = dm_reform_progress add = 3 }
-			change_variable = { name = dm_reform_support add = 0 }
-			set_variable = { name = dm_reform_last_result value = flag:great_success }
-		}
+		random_list = {
+			60 = {
+				modifier = {
+					add = 30
+					dm_reform_check_learning_value >= 14
+				}
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = 3 }
+					change_variable = { name = dm_reform_support add = 0 }
+					set_variable = { name = dm_reform_last_result value = flag:great_success }
+					dm_reform_check_immediate_outcome_effect = yes
+				}
 			trigger_event = { id = dm_reform.2121 days = 1 }
+			}
+			40 = {
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = 0 }
+					change_variable = { name = dm_reform_support add = 0 }
+					set_variable = { name = dm_reform_last_result value = flag:failure }
+					dm_reform_check_immediate_outcome_effect = yes
+				}
+			trigger_event = { id = dm_reform.2121 days = 1 }
+			}
+		}
 	}
 }
 
@@ -1432,18 +1936,29 @@ dm_reform.1122 = {
 	type = character_event
 	title = dm_reform.1122.t
 	desc = dm_reform.1122.desc
-	theme = court_event
+	theme = court
 	left_portrait = scope:dm_reform_actor
 	immediate = {
 		scope:dm_reform_story = {
+			set_variable = {
+				name = dm_reform_event_1122_next_day
+				value = var:dm_reform_elapsed_days
+			}
+			change_variable = {
+				name = dm_reform_event_1122_next_day
+				add = 3650
+			}
 			random_in_list = {
 				variable = dm_reform_supporters
+				limit = { NOT = { has_character_flag = dm_reform_event_actor_cooldown } }
 				save_scope_as = dm_reform_actor
 			}
 		}
-		if = {
-			limit = { NOT = { exists = scope:dm_reform_actor } }
-			root = { save_scope_as = dm_reform_actor }
+		scope:dm_reform_actor = {
+			add_character_flag = {
+				flag = dm_reform_event_actor_cooldown
+				years = 2
+			}
 		}
 	}
 	option = {
@@ -1452,15 +1967,8 @@ dm_reform.1122 = {
 		random_list = {
 			50 = {
 				modifier = {
-					add = 35
-					root = { diplomacy >= 18 }
-				}
-				modifier = {
-					add = 25
-					scope:dm_reform_story = {
-						dm_reform_has_reformer_trigger = yes
-						var:dm_reform_reformer = { diplomacy >= 18 }
-					}
+					add = 60
+					dm_reform_check_diplomacy_value >= 18
 				}
 				modifier = {
 					add = 10
@@ -1470,6 +1978,7 @@ dm_reform.1122 = {
 					change_variable = { name = dm_reform_progress add = 4 }
 					change_variable = { name = dm_reform_support add = 1 }
 					set_variable = { name = dm_reform_last_result value = flag:success }
+					dm_reform_check_immediate_outcome_effect = yes
 				}
 			trigger_event = { id = dm_reform.2122 days = 1 }
 			}
@@ -1478,6 +1987,7 @@ dm_reform.1122 = {
 					change_variable = { name = dm_reform_progress add = -1 }
 					change_variable = { name = dm_reform_support add = 0 }
 					set_variable = { name = dm_reform_last_result value = flag:failure }
+					dm_reform_check_immediate_outcome_effect = yes
 				}
 			trigger_event = { id = dm_reform.2122 days = 1 }
 			}
@@ -1487,12 +1997,30 @@ dm_reform.1122 = {
 		name = dm_reform.event.costly_response
 		trigger = { prestige >= 100 }
 		add_prestige = -100
-		scope:dm_reform_story = {
-			change_variable = { name = dm_reform_progress add = 6 }
-			change_variable = { name = dm_reform_support add = 1 }
-			set_variable = { name = dm_reform_last_result value = flag:great_success }
-		}
+		random_list = {
+			60 = {
+				modifier = {
+					add = 30
+					dm_reform_check_diplomacy_value >= 18
+				}
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = 6 }
+					change_variable = { name = dm_reform_support add = 1 }
+					set_variable = { name = dm_reform_last_result value = flag:great_success }
+					dm_reform_check_immediate_outcome_effect = yes
+				}
 			trigger_event = { id = dm_reform.2122 days = 1 }
+			}
+			40 = {
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = -1 }
+					change_variable = { name = dm_reform_support add = 0 }
+					set_variable = { name = dm_reform_last_result value = flag:failure }
+					dm_reform_check_immediate_outcome_effect = yes
+				}
+			trigger_event = { id = dm_reform.2122 days = 1 }
+			}
+		}
 	}
 }
 
@@ -1500,18 +2028,29 @@ dm_reform.1123 = {
 	type = character_event
 	title = dm_reform.1123.t
 	desc = dm_reform.1123.desc
-	theme = court_event
+	theme = court
 	left_portrait = scope:dm_reform_actor
 	immediate = {
 		scope:dm_reform_story = {
+			set_variable = {
+				name = dm_reform_event_1123_next_day
+				value = var:dm_reform_elapsed_days
+			}
+			change_variable = {
+				name = dm_reform_event_1123_next_day
+				add = 3650
+			}
 			random_in_list = {
 				variable = dm_reform_supporters
+				limit = { NOT = { has_character_flag = dm_reform_event_actor_cooldown } }
 				save_scope_as = dm_reform_actor
 			}
 		}
-		if = {
-			limit = { NOT = { exists = scope:dm_reform_actor } }
-			root = { save_scope_as = dm_reform_actor }
+		scope:dm_reform_actor = {
+			add_character_flag = {
+				flag = dm_reform_event_actor_cooldown
+				years = 2
+			}
 		}
 	}
 	option = {
@@ -1520,15 +2059,8 @@ dm_reform.1123 = {
 		random_list = {
 			50 = {
 				modifier = {
-					add = 35
-					root = { learning >= 18 }
-				}
-				modifier = {
-					add = 25
-					scope:dm_reform_story = {
-						dm_reform_has_reformer_trigger = yes
-						var:dm_reform_reformer = { learning >= 18 }
-					}
+					add = 60
+					dm_reform_check_learning_value >= 18
 				}
 				modifier = {
 					add = 10
@@ -1538,6 +2070,7 @@ dm_reform.1123 = {
 					change_variable = { name = dm_reform_progress add = 4 }
 					change_variable = { name = dm_reform_support add = 1 }
 					set_variable = { name = dm_reform_last_result value = flag:success }
+					dm_reform_check_immediate_outcome_effect = yes
 				}
 			trigger_event = { id = dm_reform.2123 days = 1 }
 			}
@@ -1546,6 +2079,7 @@ dm_reform.1123 = {
 					change_variable = { name = dm_reform_progress add = -1 }
 					change_variable = { name = dm_reform_support add = 0 }
 					set_variable = { name = dm_reform_last_result value = flag:failure }
+					dm_reform_check_immediate_outcome_effect = yes
 				}
 			trigger_event = { id = dm_reform.2123 days = 1 }
 			}
@@ -1555,12 +2089,30 @@ dm_reform.1123 = {
 		name = dm_reform.event.costly_response
 		trigger = { prestige >= 100 }
 		add_prestige = -100
-		scope:dm_reform_story = {
-			change_variable = { name = dm_reform_progress add = 6 }
-			change_variable = { name = dm_reform_support add = 1 }
-			set_variable = { name = dm_reform_last_result value = flag:great_success }
-		}
+		random_list = {
+			60 = {
+				modifier = {
+					add = 30
+					dm_reform_check_learning_value >= 18
+				}
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = 6 }
+					change_variable = { name = dm_reform_support add = 1 }
+					set_variable = { name = dm_reform_last_result value = flag:great_success }
+					dm_reform_check_immediate_outcome_effect = yes
+				}
 			trigger_event = { id = dm_reform.2123 days = 1 }
+			}
+			40 = {
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = -1 }
+					change_variable = { name = dm_reform_support add = 0 }
+					set_variable = { name = dm_reform_last_result value = flag:failure }
+					dm_reform_check_immediate_outcome_effect = yes
+				}
+			trigger_event = { id = dm_reform.2123 days = 1 }
+			}
+		}
 	}
 }
 
@@ -1568,18 +2120,29 @@ dm_reform.1124 = {
 	type = character_event
 	title = dm_reform.1124.t
 	desc = dm_reform.1124.desc
-	theme = court_event
+	theme = court
 	left_portrait = scope:dm_reform_actor
 	immediate = {
 		scope:dm_reform_story = {
+			set_variable = {
+				name = dm_reform_event_1124_next_day
+				value = var:dm_reform_elapsed_days
+			}
+			change_variable = {
+				name = dm_reform_event_1124_next_day
+				add = 3650
+			}
 			random_in_list = {
 				variable = dm_reform_supporters
+				limit = { NOT = { has_character_flag = dm_reform_event_actor_cooldown } }
 				save_scope_as = dm_reform_actor
 			}
 		}
-		if = {
-			limit = { NOT = { exists = scope:dm_reform_actor } }
-			root = { save_scope_as = dm_reform_actor }
+		scope:dm_reform_actor = {
+			add_character_flag = {
+				flag = dm_reform_event_actor_cooldown
+				years = 2
+			}
 		}
 	}
 	option = {
@@ -1588,15 +2151,8 @@ dm_reform.1124 = {
 		random_list = {
 			50 = {
 				modifier = {
-					add = 35
-					root = { stewardship >= 18 }
-				}
-				modifier = {
-					add = 25
-					scope:dm_reform_story = {
-						dm_reform_has_reformer_trigger = yes
-						var:dm_reform_reformer = { stewardship >= 18 }
-					}
+					add = 60
+					dm_reform_check_stewardship_value >= 18
 				}
 				modifier = {
 					add = 10
@@ -1606,6 +2162,7 @@ dm_reform.1124 = {
 					change_variable = { name = dm_reform_progress add = 4 }
 					change_variable = { name = dm_reform_support add = 1 }
 					set_variable = { name = dm_reform_last_result value = flag:success }
+					dm_reform_check_immediate_outcome_effect = yes
 				}
 			trigger_event = { id = dm_reform.2124 days = 1 }
 			}
@@ -1614,6 +2171,7 @@ dm_reform.1124 = {
 					change_variable = { name = dm_reform_progress add = -1 }
 					change_variable = { name = dm_reform_support add = 0 }
 					set_variable = { name = dm_reform_last_result value = flag:failure }
+					dm_reform_check_immediate_outcome_effect = yes
 				}
 			trigger_event = { id = dm_reform.2124 days = 1 }
 			}
@@ -1623,12 +2181,30 @@ dm_reform.1124 = {
 		name = dm_reform.event.costly_response
 		trigger = { prestige >= 100 }
 		add_prestige = -100
-		scope:dm_reform_story = {
-			change_variable = { name = dm_reform_progress add = 6 }
-			change_variable = { name = dm_reform_support add = 1 }
-			set_variable = { name = dm_reform_last_result value = flag:great_success }
-		}
+		random_list = {
+			60 = {
+				modifier = {
+					add = 30
+					dm_reform_check_stewardship_value >= 18
+				}
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = 6 }
+					change_variable = { name = dm_reform_support add = 1 }
+					set_variable = { name = dm_reform_last_result value = flag:great_success }
+					dm_reform_check_immediate_outcome_effect = yes
+				}
 			trigger_event = { id = dm_reform.2124 days = 1 }
+			}
+			40 = {
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = -1 }
+					change_variable = { name = dm_reform_support add = 0 }
+					set_variable = { name = dm_reform_last_result value = flag:failure }
+					dm_reform_check_immediate_outcome_effect = yes
+				}
+			trigger_event = { id = dm_reform.2124 days = 1 }
+			}
+		}
 	}
 }
 
@@ -1636,18 +2212,29 @@ dm_reform.1125 = {
 	type = character_event
 	title = dm_reform.1125.t
 	desc = dm_reform.1125.desc
-	theme = court_event
+	theme = court
 	left_portrait = scope:dm_reform_actor
 	immediate = {
 		scope:dm_reform_story = {
+			set_variable = {
+				name = dm_reform_event_1125_next_day
+				value = var:dm_reform_elapsed_days
+			}
+			change_variable = {
+				name = dm_reform_event_1125_next_day
+				add = 3650
+			}
 			random_in_list = {
 				variable = dm_reform_supporters
+				limit = { NOT = { has_character_flag = dm_reform_event_actor_cooldown } }
 				save_scope_as = dm_reform_actor
 			}
 		}
-		if = {
-			limit = { NOT = { exists = scope:dm_reform_actor } }
-			root = { save_scope_as = dm_reform_actor }
+		scope:dm_reform_actor = {
+			add_character_flag = {
+				flag = dm_reform_event_actor_cooldown
+				years = 2
+			}
 		}
 	}
 	option = {
@@ -1656,15 +2243,8 @@ dm_reform.1125 = {
 		random_list = {
 			50 = {
 				modifier = {
-					add = 35
-					root = { martial >= 18 }
-				}
-				modifier = {
-					add = 25
-					scope:dm_reform_story = {
-						dm_reform_has_reformer_trigger = yes
-						var:dm_reform_reformer = { martial >= 18 }
-					}
+					add = 60
+					dm_reform_check_martial_value >= 18
 				}
 				modifier = {
 					add = 10
@@ -1674,6 +2254,7 @@ dm_reform.1125 = {
 					change_variable = { name = dm_reform_progress add = 4 }
 					change_variable = { name = dm_reform_support add = 1 }
 					set_variable = { name = dm_reform_last_result value = flag:success }
+					dm_reform_check_immediate_outcome_effect = yes
 				}
 			trigger_event = { id = dm_reform.2125 days = 1 }
 			}
@@ -1682,6 +2263,7 @@ dm_reform.1125 = {
 					change_variable = { name = dm_reform_progress add = -1 }
 					change_variable = { name = dm_reform_support add = 0 }
 					set_variable = { name = dm_reform_last_result value = flag:failure }
+					dm_reform_check_immediate_outcome_effect = yes
 				}
 			trigger_event = { id = dm_reform.2125 days = 1 }
 			}
@@ -1691,12 +2273,30 @@ dm_reform.1125 = {
 		name = dm_reform.event.costly_response
 		trigger = { prestige >= 100 }
 		add_prestige = -100
-		scope:dm_reform_story = {
-			change_variable = { name = dm_reform_progress add = 6 }
-			change_variable = { name = dm_reform_support add = 1 }
-			set_variable = { name = dm_reform_last_result value = flag:great_success }
-		}
+		random_list = {
+			60 = {
+				modifier = {
+					add = 30
+					dm_reform_check_martial_value >= 18
+				}
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = 6 }
+					change_variable = { name = dm_reform_support add = 1 }
+					set_variable = { name = dm_reform_last_result value = flag:great_success }
+					dm_reform_check_immediate_outcome_effect = yes
+				}
 			trigger_event = { id = dm_reform.2125 days = 1 }
+			}
+			40 = {
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = -1 }
+					change_variable = { name = dm_reform_support add = 0 }
+					set_variable = { name = dm_reform_last_result value = flag:failure }
+					dm_reform_check_immediate_outcome_effect = yes
+				}
+			trigger_event = { id = dm_reform.2125 days = 1 }
+			}
+		}
 	}
 }
 
@@ -1704,18 +2304,29 @@ dm_reform.1126 = {
 	type = character_event
 	title = dm_reform.1126.t
 	desc = dm_reform.1126.desc
-	theme = court_event
+	theme = court
 	left_portrait = scope:dm_reform_actor
 	immediate = {
 		scope:dm_reform_story = {
+			set_variable = {
+				name = dm_reform_event_1126_next_day
+				value = var:dm_reform_elapsed_days
+			}
+			change_variable = {
+				name = dm_reform_event_1126_next_day
+				add = 1825
+			}
 			random_in_list = {
 				variable = dm_reform_supporters
+				limit = { NOT = { has_character_flag = dm_reform_event_actor_cooldown } }
 				save_scope_as = dm_reform_actor
 			}
 		}
-		if = {
-			limit = { NOT = { exists = scope:dm_reform_actor } }
-			root = { save_scope_as = dm_reform_actor }
+		scope:dm_reform_actor = {
+			add_character_flag = {
+				flag = dm_reform_event_actor_cooldown
+				years = 2
+			}
 		}
 	}
 	option = {
@@ -1724,15 +2335,8 @@ dm_reform.1126 = {
 		random_list = {
 			50 = {
 				modifier = {
-					add = 35
-					root = { intrigue >= 18 }
-				}
-				modifier = {
-					add = 25
-					scope:dm_reform_story = {
-						dm_reform_has_reformer_trigger = yes
-						var:dm_reform_reformer = { intrigue >= 18 }
-					}
+					add = 60
+					dm_reform_check_intrigue_value >= 18
 				}
 				modifier = {
 					add = 10
@@ -1742,6 +2346,7 @@ dm_reform.1126 = {
 					change_variable = { name = dm_reform_progress add = 4 }
 					change_variable = { name = dm_reform_support add = 1 }
 					set_variable = { name = dm_reform_last_result value = flag:success }
+					dm_reform_check_immediate_outcome_effect = yes
 				}
 			}
 			50 = {
@@ -1749,6 +2354,7 @@ dm_reform.1126 = {
 					change_variable = { name = dm_reform_progress add = -1 }
 					change_variable = { name = dm_reform_support add = 0 }
 					set_variable = { name = dm_reform_last_result value = flag:failure }
+					dm_reform_check_immediate_outcome_effect = yes
 				}
 			}
 		}
@@ -1757,10 +2363,27 @@ dm_reform.1126 = {
 		name = dm_reform.event.costly_response
 		trigger = { prestige >= 100 }
 		add_prestige = -100
-		scope:dm_reform_story = {
-			change_variable = { name = dm_reform_progress add = 6 }
-			change_variable = { name = dm_reform_support add = 1 }
-			set_variable = { name = dm_reform_last_result value = flag:great_success }
+		random_list = {
+			60 = {
+				modifier = {
+					add = 30
+					dm_reform_check_intrigue_value >= 18
+				}
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = 6 }
+					change_variable = { name = dm_reform_support add = 1 }
+					set_variable = { name = dm_reform_last_result value = flag:great_success }
+					dm_reform_check_immediate_outcome_effect = yes
+				}
+			}
+			40 = {
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = -1 }
+					change_variable = { name = dm_reform_support add = 0 }
+					set_variable = { name = dm_reform_last_result value = flag:failure }
+					dm_reform_check_immediate_outcome_effect = yes
+				}
+			}
 		}
 	}
 }
@@ -1769,18 +2392,29 @@ dm_reform.1127 = {
 	type = character_event
 	title = dm_reform.1127.t
 	desc = dm_reform.1127.desc
-	theme = court_event
+	theme = court
 	left_portrait = scope:dm_reform_actor
 	immediate = {
 		scope:dm_reform_story = {
+			set_variable = {
+				name = dm_reform_event_1127_next_day
+				value = var:dm_reform_elapsed_days
+			}
+			change_variable = {
+				name = dm_reform_event_1127_next_day
+				add = 1825
+			}
 			random_in_list = {
 				variable = dm_reform_supporters
+				limit = { NOT = { has_character_flag = dm_reform_event_actor_cooldown } }
 				save_scope_as = dm_reform_actor
 			}
 		}
-		if = {
-			limit = { NOT = { exists = scope:dm_reform_actor } }
-			root = { save_scope_as = dm_reform_actor }
+		scope:dm_reform_actor = {
+			add_character_flag = {
+				flag = dm_reform_event_actor_cooldown
+				years = 2
+			}
 		}
 	}
 	option = {
@@ -1789,15 +2423,8 @@ dm_reform.1127 = {
 		random_list = {
 			50 = {
 				modifier = {
-					add = 35
-					root = { prowess >= 18 }
-				}
-				modifier = {
-					add = 25
-					scope:dm_reform_story = {
-						dm_reform_has_reformer_trigger = yes
-						var:dm_reform_reformer = { prowess >= 18 }
-					}
+					add = 60
+					dm_reform_check_prowess_value >= 18
 				}
 				modifier = {
 					add = 10
@@ -1807,6 +2434,7 @@ dm_reform.1127 = {
 					change_variable = { name = dm_reform_progress add = 4 }
 					change_variable = { name = dm_reform_support add = 1 }
 					set_variable = { name = dm_reform_last_result value = flag:success }
+					dm_reform_check_immediate_outcome_effect = yes
 				}
 			}
 			50 = {
@@ -1814,6 +2442,7 @@ dm_reform.1127 = {
 					change_variable = { name = dm_reform_progress add = -1 }
 					change_variable = { name = dm_reform_support add = 0 }
 					set_variable = { name = dm_reform_last_result value = flag:failure }
+					dm_reform_check_immediate_outcome_effect = yes
 				}
 			}
 		}
@@ -1822,10 +2451,27 @@ dm_reform.1127 = {
 		name = dm_reform.event.costly_response
 		trigger = { prestige >= 100 }
 		add_prestige = -100
-		scope:dm_reform_story = {
-			change_variable = { name = dm_reform_progress add = 6 }
-			change_variable = { name = dm_reform_support add = 1 }
-			set_variable = { name = dm_reform_last_result value = flag:great_success }
+		random_list = {
+			60 = {
+				modifier = {
+					add = 30
+					dm_reform_check_prowess_value >= 18
+				}
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = 6 }
+					change_variable = { name = dm_reform_support add = 1 }
+					set_variable = { name = dm_reform_last_result value = flag:great_success }
+					dm_reform_check_immediate_outcome_effect = yes
+				}
+			}
+			40 = {
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = -1 }
+					change_variable = { name = dm_reform_support add = 0 }
+					set_variable = { name = dm_reform_last_result value = flag:failure }
+					dm_reform_check_immediate_outcome_effect = yes
+				}
+			}
 		}
 	}
 }
@@ -1834,18 +2480,29 @@ dm_reform.1128 = {
 	type = character_event
 	title = dm_reform.1128.t
 	desc = dm_reform.1128.desc
-	theme = court_event
+	theme = court
 	left_portrait = scope:dm_reform_actor
 	immediate = {
 		scope:dm_reform_story = {
+			set_variable = {
+				name = dm_reform_event_1128_next_day
+				value = var:dm_reform_elapsed_days
+			}
+			change_variable = {
+				name = dm_reform_event_1128_next_day
+				add = 1825
+			}
 			random_in_list = {
 				variable = dm_reform_supporters
+				limit = { NOT = { has_character_flag = dm_reform_event_actor_cooldown } }
 				save_scope_as = dm_reform_actor
 			}
 		}
-		if = {
-			limit = { NOT = { exists = scope:dm_reform_actor } }
-			root = { save_scope_as = dm_reform_actor }
+		scope:dm_reform_actor = {
+			add_character_flag = {
+				flag = dm_reform_event_actor_cooldown
+				years = 2
+			}
 		}
 	}
 	option = {
@@ -1854,15 +2511,8 @@ dm_reform.1128 = {
 		random_list = {
 			50 = {
 				modifier = {
-					add = 35
-					root = { diplomacy >= 18 }
-				}
-				modifier = {
-					add = 25
-					scope:dm_reform_story = {
-						dm_reform_has_reformer_trigger = yes
-						var:dm_reform_reformer = { diplomacy >= 18 }
-					}
+					add = 60
+					dm_reform_check_diplomacy_value >= 18
 				}
 				modifier = {
 					add = 10
@@ -1872,6 +2522,7 @@ dm_reform.1128 = {
 					change_variable = { name = dm_reform_progress add = 4 }
 					change_variable = { name = dm_reform_support add = 1 }
 					set_variable = { name = dm_reform_last_result value = flag:success }
+					dm_reform_check_immediate_outcome_effect = yes
 				}
 			}
 			50 = {
@@ -1879,6 +2530,7 @@ dm_reform.1128 = {
 					change_variable = { name = dm_reform_progress add = -1 }
 					change_variable = { name = dm_reform_support add = 0 }
 					set_variable = { name = dm_reform_last_result value = flag:failure }
+					dm_reform_check_immediate_outcome_effect = yes
 				}
 			}
 		}
@@ -1887,10 +2539,27 @@ dm_reform.1128 = {
 		name = dm_reform.event.costly_response
 		trigger = { prestige >= 100 }
 		add_prestige = -100
-		scope:dm_reform_story = {
-			change_variable = { name = dm_reform_progress add = 6 }
-			change_variable = { name = dm_reform_support add = 1 }
-			set_variable = { name = dm_reform_last_result value = flag:great_success }
+		random_list = {
+			60 = {
+				modifier = {
+					add = 30
+					dm_reform_check_diplomacy_value >= 18
+				}
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = 6 }
+					change_variable = { name = dm_reform_support add = 1 }
+					set_variable = { name = dm_reform_last_result value = flag:great_success }
+					dm_reform_check_immediate_outcome_effect = yes
+				}
+			}
+			40 = {
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = -1 }
+					change_variable = { name = dm_reform_support add = 0 }
+					set_variable = { name = dm_reform_last_result value = flag:failure }
+					dm_reform_check_immediate_outcome_effect = yes
+				}
+			}
 		}
 	}
 }
@@ -1899,18 +2568,29 @@ dm_reform.1129 = {
 	type = character_event
 	title = dm_reform.1129.t
 	desc = dm_reform.1129.desc
-	theme = court_event
+	theme = court
 	left_portrait = scope:dm_reform_actor
 	immediate = {
 		scope:dm_reform_story = {
+			set_variable = {
+				name = dm_reform_event_1129_next_day
+				value = var:dm_reform_elapsed_days
+			}
+			change_variable = {
+				name = dm_reform_event_1129_next_day
+				add = 1825
+			}
 			random_in_list = {
 				variable = dm_reform_supporters
+				limit = { NOT = { has_character_flag = dm_reform_event_actor_cooldown } }
 				save_scope_as = dm_reform_actor
 			}
 		}
-		if = {
-			limit = { NOT = { exists = scope:dm_reform_actor } }
-			root = { save_scope_as = dm_reform_actor }
+		scope:dm_reform_actor = {
+			add_character_flag = {
+				flag = dm_reform_event_actor_cooldown
+				years = 2
+			}
 		}
 	}
 	option = {
@@ -1919,15 +2599,8 @@ dm_reform.1129 = {
 		random_list = {
 			50 = {
 				modifier = {
-					add = 35
-					root = { intrigue >= 22 }
-				}
-				modifier = {
-					add = 25
-					scope:dm_reform_story = {
-						dm_reform_has_reformer_trigger = yes
-						var:dm_reform_reformer = { intrigue >= 22 }
-					}
+					add = 60
+					dm_reform_check_intrigue_value >= 22
 				}
 				modifier = {
 					add = 10
@@ -1937,6 +2610,7 @@ dm_reform.1129 = {
 					change_variable = { name = dm_reform_progress add = 7 }
 					change_variable = { name = dm_reform_support add = 2 }
 					set_variable = { name = dm_reform_last_result value = flag:success }
+					dm_reform_check_immediate_outcome_effect = yes
 				}
 			}
 			50 = {
@@ -1944,6 +2618,7 @@ dm_reform.1129 = {
 					change_variable = { name = dm_reform_progress add = -2 }
 					change_variable = { name = dm_reform_support add = -1 }
 					set_variable = { name = dm_reform_last_result value = flag:failure }
+					dm_reform_check_immediate_outcome_effect = yes
 				}
 			}
 		}
@@ -1952,10 +2627,27 @@ dm_reform.1129 = {
 		name = dm_reform.event.costly_response
 		trigger = { prestige >= 100 }
 		add_prestige = -100
-		scope:dm_reform_story = {
-			change_variable = { name = dm_reform_progress add = 9 }
-			change_variable = { name = dm_reform_support add = 2 }
-			set_variable = { name = dm_reform_last_result value = flag:great_success }
+		random_list = {
+			60 = {
+				modifier = {
+					add = 30
+					dm_reform_check_intrigue_value >= 22
+				}
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = 9 }
+					change_variable = { name = dm_reform_support add = 2 }
+					set_variable = { name = dm_reform_last_result value = flag:great_success }
+					dm_reform_check_immediate_outcome_effect = yes
+				}
+			}
+			40 = {
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = -2 }
+					change_variable = { name = dm_reform_support add = -1 }
+					set_variable = { name = dm_reform_last_result value = flag:failure }
+					dm_reform_check_immediate_outcome_effect = yes
+				}
+			}
 		}
 	}
 }
@@ -1964,18 +2656,29 @@ dm_reform.1130 = {
 	type = character_event
 	title = dm_reform.1130.t
 	desc = dm_reform.1130.desc
-	theme = court_event
+	theme = court
 	left_portrait = scope:dm_reform_actor
 	immediate = {
 		scope:dm_reform_story = {
+			set_variable = {
+				name = dm_reform_event_1130_next_day
+				value = var:dm_reform_elapsed_days
+			}
+			change_variable = {
+				name = dm_reform_event_1130_next_day
+				add = 1825
+			}
 			random_in_list = {
 				variable = dm_reform_supporters
+				limit = { NOT = { has_character_flag = dm_reform_event_actor_cooldown } }
 				save_scope_as = dm_reform_actor
 			}
 		}
-		if = {
-			limit = { NOT = { exists = scope:dm_reform_actor } }
-			root = { save_scope_as = dm_reform_actor }
+		scope:dm_reform_actor = {
+			add_character_flag = {
+				flag = dm_reform_event_actor_cooldown
+				years = 2
+			}
 		}
 	}
 	option = {
@@ -1984,15 +2687,8 @@ dm_reform.1130 = {
 		random_list = {
 			50 = {
 				modifier = {
-					add = 35
-					root = { diplomacy >= 22 }
-				}
-				modifier = {
-					add = 25
-					scope:dm_reform_story = {
-						dm_reform_has_reformer_trigger = yes
-						var:dm_reform_reformer = { diplomacy >= 22 }
-					}
+					add = 60
+					dm_reform_check_diplomacy_value >= 22
 				}
 				modifier = {
 					add = 10
@@ -2002,6 +2698,7 @@ dm_reform.1130 = {
 					change_variable = { name = dm_reform_progress add = 7 }
 					change_variable = { name = dm_reform_support add = 2 }
 					set_variable = { name = dm_reform_last_result value = flag:success }
+					dm_reform_check_immediate_outcome_effect = yes
 				}
 			}
 			50 = {
@@ -2009,6 +2706,7 @@ dm_reform.1130 = {
 					change_variable = { name = dm_reform_progress add = -2 }
 					change_variable = { name = dm_reform_support add = -1 }
 					set_variable = { name = dm_reform_last_result value = flag:failure }
+					dm_reform_check_immediate_outcome_effect = yes
 				}
 			}
 		}
@@ -2017,10 +2715,27 @@ dm_reform.1130 = {
 		name = dm_reform.event.costly_response
 		trigger = { prestige >= 100 }
 		add_prestige = -100
-		scope:dm_reform_story = {
-			change_variable = { name = dm_reform_progress add = 9 }
-			change_variable = { name = dm_reform_support add = 2 }
-			set_variable = { name = dm_reform_last_result value = flag:great_success }
+		random_list = {
+			60 = {
+				modifier = {
+					add = 30
+					dm_reform_check_diplomacy_value >= 22
+				}
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = 9 }
+					change_variable = { name = dm_reform_support add = 2 }
+					set_variable = { name = dm_reform_last_result value = flag:great_success }
+					dm_reform_check_immediate_outcome_effect = yes
+				}
+			}
+			40 = {
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = -2 }
+					change_variable = { name = dm_reform_support add = -1 }
+					set_variable = { name = dm_reform_last_result value = flag:failure }
+					dm_reform_check_immediate_outcome_effect = yes
+				}
+			}
 		}
 	}
 }
@@ -2029,18 +2744,29 @@ dm_reform.1131 = {
 	type = character_event
 	title = dm_reform.1131.t
 	desc = dm_reform.1131.desc
-	theme = court_event
+	theme = court
 	left_portrait = scope:dm_reform_actor
 	immediate = {
 		scope:dm_reform_story = {
+			set_variable = {
+				name = dm_reform_event_1131_next_day
+				value = var:dm_reform_elapsed_days
+			}
+			change_variable = {
+				name = dm_reform_event_1131_next_day
+				add = 1825
+			}
 			random_in_list = {
 				variable = dm_reform_supporters
+				limit = { NOT = { has_character_flag = dm_reform_event_actor_cooldown } }
 				save_scope_as = dm_reform_actor
 			}
 		}
-		if = {
-			limit = { NOT = { exists = scope:dm_reform_actor } }
-			root = { save_scope_as = dm_reform_actor }
+		scope:dm_reform_actor = {
+			add_character_flag = {
+				flag = dm_reform_event_actor_cooldown
+				years = 2
+			}
 		}
 	}
 	option = {
@@ -2049,15 +2775,8 @@ dm_reform.1131 = {
 		random_list = {
 			50 = {
 				modifier = {
-					add = 35
-					root = { learning >= 22 }
-				}
-				modifier = {
-					add = 25
-					scope:dm_reform_story = {
-						dm_reform_has_reformer_trigger = yes
-						var:dm_reform_reformer = { learning >= 22 }
-					}
+					add = 60
+					dm_reform_check_learning_value >= 22
 				}
 				modifier = {
 					add = 10
@@ -2067,6 +2786,7 @@ dm_reform.1131 = {
 					change_variable = { name = dm_reform_progress add = 7 }
 					change_variable = { name = dm_reform_support add = 2 }
 					set_variable = { name = dm_reform_last_result value = flag:success }
+					dm_reform_check_immediate_outcome_effect = yes
 				}
 			}
 			50 = {
@@ -2074,6 +2794,7 @@ dm_reform.1131 = {
 					change_variable = { name = dm_reform_progress add = -2 }
 					change_variable = { name = dm_reform_support add = -1 }
 					set_variable = { name = dm_reform_last_result value = flag:failure }
+					dm_reform_check_immediate_outcome_effect = yes
 				}
 			}
 		}
@@ -2082,10 +2803,27 @@ dm_reform.1131 = {
 		name = dm_reform.event.costly_response
 		trigger = { prestige >= 100 }
 		add_prestige = -100
-		scope:dm_reform_story = {
-			change_variable = { name = dm_reform_progress add = 9 }
-			change_variable = { name = dm_reform_support add = 2 }
-			set_variable = { name = dm_reform_last_result value = flag:great_success }
+		random_list = {
+			60 = {
+				modifier = {
+					add = 30
+					dm_reform_check_learning_value >= 22
+				}
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = 9 }
+					change_variable = { name = dm_reform_support add = 2 }
+					set_variable = { name = dm_reform_last_result value = flag:great_success }
+					dm_reform_check_immediate_outcome_effect = yes
+				}
+			}
+			40 = {
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = -2 }
+					change_variable = { name = dm_reform_support add = -1 }
+					set_variable = { name = dm_reform_last_result value = flag:failure }
+					dm_reform_check_immediate_outcome_effect = yes
+				}
+			}
 		}
 	}
 }
@@ -2094,18 +2832,29 @@ dm_reform.1132 = {
 	type = character_event
 	title = dm_reform.1132.t
 	desc = dm_reform.1132.desc
-	theme = court_event
+	theme = court
 	left_portrait = scope:dm_reform_actor
 	immediate = {
 		scope:dm_reform_story = {
+			set_variable = {
+				name = dm_reform_event_1132_next_day
+				value = var:dm_reform_elapsed_days
+			}
+			change_variable = {
+				name = dm_reform_event_1132_next_day
+				add = 1825
+			}
 			random_in_list = {
 				variable = dm_reform_supporters
+				limit = { NOT = { has_character_flag = dm_reform_event_actor_cooldown } }
 				save_scope_as = dm_reform_actor
 			}
 		}
-		if = {
-			limit = { NOT = { exists = scope:dm_reform_actor } }
-			root = { save_scope_as = dm_reform_actor }
+		scope:dm_reform_actor = {
+			add_character_flag = {
+				flag = dm_reform_event_actor_cooldown
+				years = 2
+			}
 		}
 	}
 	option = {
@@ -2114,15 +2863,8 @@ dm_reform.1132 = {
 		random_list = {
 			50 = {
 				modifier = {
-					add = 35
-					root = { stewardship >= 22 }
-				}
-				modifier = {
-					add = 25
-					scope:dm_reform_story = {
-						dm_reform_has_reformer_trigger = yes
-						var:dm_reform_reformer = { stewardship >= 22 }
-					}
+					add = 60
+					dm_reform_check_stewardship_value >= 22
 				}
 				modifier = {
 					add = 10
@@ -2132,6 +2874,7 @@ dm_reform.1132 = {
 					change_variable = { name = dm_reform_progress add = 7 }
 					change_variable = { name = dm_reform_support add = 2 }
 					set_variable = { name = dm_reform_last_result value = flag:success }
+					dm_reform_check_immediate_outcome_effect = yes
 				}
 			}
 			50 = {
@@ -2139,6 +2882,7 @@ dm_reform.1132 = {
 					change_variable = { name = dm_reform_progress add = -2 }
 					change_variable = { name = dm_reform_support add = -1 }
 					set_variable = { name = dm_reform_last_result value = flag:failure }
+					dm_reform_check_immediate_outcome_effect = yes
 				}
 			}
 		}
@@ -2147,10 +2891,27 @@ dm_reform.1132 = {
 		name = dm_reform.event.costly_response
 		trigger = { prestige >= 100 }
 		add_prestige = -100
-		scope:dm_reform_story = {
-			change_variable = { name = dm_reform_progress add = 9 }
-			change_variable = { name = dm_reform_support add = 2 }
-			set_variable = { name = dm_reform_last_result value = flag:great_success }
+		random_list = {
+			60 = {
+				modifier = {
+					add = 30
+					dm_reform_check_stewardship_value >= 22
+				}
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = 9 }
+					change_variable = { name = dm_reform_support add = 2 }
+					set_variable = { name = dm_reform_last_result value = flag:great_success }
+					dm_reform_check_immediate_outcome_effect = yes
+				}
+			}
+			40 = {
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = -2 }
+					change_variable = { name = dm_reform_support add = -1 }
+					set_variable = { name = dm_reform_last_result value = flag:failure }
+					dm_reform_check_immediate_outcome_effect = yes
+				}
+			}
 		}
 	}
 }
@@ -2159,18 +2920,29 @@ dm_reform.1133 = {
 	type = character_event
 	title = dm_reform.1133.t
 	desc = dm_reform.1133.desc
-	theme = court_event
+	theme = court
 	left_portrait = scope:dm_reform_actor
 	immediate = {
 		scope:dm_reform_story = {
+			set_variable = {
+				name = dm_reform_event_1133_next_day
+				value = var:dm_reform_elapsed_days
+			}
+			change_variable = {
+				name = dm_reform_event_1133_next_day
+				add = 1825
+			}
 			random_in_list = {
 				variable = dm_reform_supporters
+				limit = { NOT = { has_character_flag = dm_reform_event_actor_cooldown } }
 				save_scope_as = dm_reform_actor
 			}
 		}
-		if = {
-			limit = { NOT = { exists = scope:dm_reform_actor } }
-			root = { save_scope_as = dm_reform_actor }
+		scope:dm_reform_actor = {
+			add_character_flag = {
+				flag = dm_reform_event_actor_cooldown
+				years = 2
+			}
 		}
 	}
 	option = {
@@ -2179,15 +2951,8 @@ dm_reform.1133 = {
 		random_list = {
 			50 = {
 				modifier = {
-					add = 35
-					root = { martial >= 22 }
-				}
-				modifier = {
-					add = 25
-					scope:dm_reform_story = {
-						dm_reform_has_reformer_trigger = yes
-						var:dm_reform_reformer = { martial >= 22 }
-					}
+					add = 60
+					dm_reform_check_martial_value >= 22
 				}
 				modifier = {
 					add = 10
@@ -2197,6 +2962,7 @@ dm_reform.1133 = {
 					change_variable = { name = dm_reform_progress add = 7 }
 					change_variable = { name = dm_reform_support add = 2 }
 					set_variable = { name = dm_reform_last_result value = flag:success }
+					dm_reform_check_immediate_outcome_effect = yes
 				}
 			}
 			50 = {
@@ -2204,6 +2970,7 @@ dm_reform.1133 = {
 					change_variable = { name = dm_reform_progress add = -2 }
 					change_variable = { name = dm_reform_support add = -1 }
 					set_variable = { name = dm_reform_last_result value = flag:failure }
+					dm_reform_check_immediate_outcome_effect = yes
 				}
 			}
 		}
@@ -2212,10 +2979,27 @@ dm_reform.1133 = {
 		name = dm_reform.event.costly_response
 		trigger = { prestige >= 100 }
 		add_prestige = -100
-		scope:dm_reform_story = {
-			change_variable = { name = dm_reform_progress add = 9 }
-			change_variable = { name = dm_reform_support add = 2 }
-			set_variable = { name = dm_reform_last_result value = flag:great_success }
+		random_list = {
+			60 = {
+				modifier = {
+					add = 30
+					dm_reform_check_martial_value >= 22
+				}
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = 9 }
+					change_variable = { name = dm_reform_support add = 2 }
+					set_variable = { name = dm_reform_last_result value = flag:great_success }
+					dm_reform_check_immediate_outcome_effect = yes
+				}
+			}
+			40 = {
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = -2 }
+					change_variable = { name = dm_reform_support add = -1 }
+					set_variable = { name = dm_reform_last_result value = flag:failure }
+					dm_reform_check_immediate_outcome_effect = yes
+				}
+			}
 		}
 	}
 }
@@ -2224,18 +3008,29 @@ dm_reform.1134 = {
 	type = character_event
 	title = dm_reform.1134.t
 	desc = dm_reform.1134.desc
-	theme = court_event
+	theme = court
 	left_portrait = scope:dm_reform_actor
 	immediate = {
 		scope:dm_reform_story = {
+			set_variable = {
+				name = dm_reform_event_1134_next_day
+				value = var:dm_reform_elapsed_days
+			}
+			change_variable = {
+				name = dm_reform_event_1134_next_day
+				add = 1825
+			}
 			random_in_list = {
 				variable = dm_reform_supporters
+				limit = { NOT = { has_character_flag = dm_reform_event_actor_cooldown } }
 				save_scope_as = dm_reform_actor
 			}
 		}
-		if = {
-			limit = { NOT = { exists = scope:dm_reform_actor } }
-			root = { save_scope_as = dm_reform_actor }
+		scope:dm_reform_actor = {
+			add_character_flag = {
+				flag = dm_reform_event_actor_cooldown
+				years = 2
+			}
 		}
 	}
 	option = {
@@ -2244,15 +3039,8 @@ dm_reform.1134 = {
 		random_list = {
 			50 = {
 				modifier = {
-					add = 35
-					root = { prowess >= 22 }
-				}
-				modifier = {
-					add = 25
-					scope:dm_reform_story = {
-						dm_reform_has_reformer_trigger = yes
-						var:dm_reform_reformer = { prowess >= 22 }
-					}
+					add = 60
+					dm_reform_check_prowess_value >= 22
 				}
 				modifier = {
 					add = 10
@@ -2262,6 +3050,7 @@ dm_reform.1134 = {
 					change_variable = { name = dm_reform_progress add = 7 }
 					change_variable = { name = dm_reform_support add = 2 }
 					set_variable = { name = dm_reform_last_result value = flag:success }
+					dm_reform_check_immediate_outcome_effect = yes
 				}
 			}
 			50 = {
@@ -2269,6 +3058,7 @@ dm_reform.1134 = {
 					change_variable = { name = dm_reform_progress add = -2 }
 					change_variable = { name = dm_reform_support add = -1 }
 					set_variable = { name = dm_reform_last_result value = flag:failure }
+					dm_reform_check_immediate_outcome_effect = yes
 				}
 			}
 		}
@@ -2277,10 +3067,27 @@ dm_reform.1134 = {
 		name = dm_reform.event.costly_response
 		trigger = { prestige >= 100 }
 		add_prestige = -100
-		scope:dm_reform_story = {
-			change_variable = { name = dm_reform_progress add = 9 }
-			change_variable = { name = dm_reform_support add = 2 }
-			set_variable = { name = dm_reform_last_result value = flag:great_success }
+		random_list = {
+			60 = {
+				modifier = {
+					add = 30
+					dm_reform_check_prowess_value >= 22
+				}
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = 9 }
+					change_variable = { name = dm_reform_support add = 2 }
+					set_variable = { name = dm_reform_last_result value = flag:great_success }
+					dm_reform_check_immediate_outcome_effect = yes
+				}
+			}
+			40 = {
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = -2 }
+					change_variable = { name = dm_reform_support add = -1 }
+					set_variable = { name = dm_reform_last_result value = flag:failure }
+					dm_reform_check_immediate_outcome_effect = yes
+				}
+			}
 		}
 	}
 }
@@ -2289,18 +3096,29 @@ dm_reform.1135 = {
 	type = character_event
 	title = dm_reform.1135.t
 	desc = dm_reform.1135.desc
-	theme = court_event
+	theme = court
 	left_portrait = scope:dm_reform_actor
 	immediate = {
 		scope:dm_reform_story = {
+			set_variable = {
+				name = dm_reform_event_1135_next_day
+				value = var:dm_reform_elapsed_days
+			}
+			change_variable = {
+				name = dm_reform_event_1135_next_day
+				add = 1825
+			}
 			random_in_list = {
 				variable = dm_reform_supporters
+				limit = { NOT = { has_character_flag = dm_reform_event_actor_cooldown } }
 				save_scope_as = dm_reform_actor
 			}
 		}
-		if = {
-			limit = { NOT = { exists = scope:dm_reform_actor } }
-			root = { save_scope_as = dm_reform_actor }
+		scope:dm_reform_actor = {
+			add_character_flag = {
+				flag = dm_reform_event_actor_cooldown
+				years = 2
+			}
 		}
 	}
 	option = {
@@ -2309,15 +3127,8 @@ dm_reform.1135 = {
 		random_list = {
 			50 = {
 				modifier = {
-					add = 35
-					root = { diplomacy >= 22 }
-				}
-				modifier = {
-					add = 25
-					scope:dm_reform_story = {
-						dm_reform_has_reformer_trigger = yes
-						var:dm_reform_reformer = { diplomacy >= 22 }
-					}
+					add = 60
+					dm_reform_check_diplomacy_value >= 22
 				}
 				modifier = {
 					add = 10
@@ -2327,6 +3138,7 @@ dm_reform.1135 = {
 					change_variable = { name = dm_reform_progress add = 7 }
 					change_variable = { name = dm_reform_support add = 2 }
 					set_variable = { name = dm_reform_last_result value = flag:success }
+					dm_reform_check_immediate_outcome_effect = yes
 				}
 			}
 			50 = {
@@ -2334,6 +3146,7 @@ dm_reform.1135 = {
 					change_variable = { name = dm_reform_progress add = -2 }
 					change_variable = { name = dm_reform_support add = -1 }
 					set_variable = { name = dm_reform_last_result value = flag:failure }
+					dm_reform_check_immediate_outcome_effect = yes
 				}
 			}
 		}
@@ -2342,10 +3155,27 @@ dm_reform.1135 = {
 		name = dm_reform.event.costly_response
 		trigger = { prestige >= 100 }
 		add_prestige = -100
-		scope:dm_reform_story = {
-			change_variable = { name = dm_reform_progress add = 9 }
-			change_variable = { name = dm_reform_support add = 2 }
-			set_variable = { name = dm_reform_last_result value = flag:great_success }
+		random_list = {
+			60 = {
+				modifier = {
+					add = 30
+					dm_reform_check_diplomacy_value >= 22
+				}
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = 9 }
+					change_variable = { name = dm_reform_support add = 2 }
+					set_variable = { name = dm_reform_last_result value = flag:great_success }
+					dm_reform_check_immediate_outcome_effect = yes
+				}
+			}
+			40 = {
+				scope:dm_reform_story = {
+					change_variable = { name = dm_reform_progress add = -2 }
+					change_variable = { name = dm_reform_support add = -1 }
+					set_variable = { name = dm_reform_last_result value = flag:failure }
+					dm_reform_check_immediate_outcome_effect = yes
+				}
+			}
 		}
 	}
 }
@@ -2354,7 +3184,13 @@ dm_reform.2101 = {
 	type = character_event
 	title = dm_reform.chain_followup.t
 	desc = dm_reform.chain_followup.desc
-	theme = court_event
+	theme = court
+	trigger = {
+		exists = scope:dm_reform_story
+		exists = scope:dm_reform_actor
+		scope:dm_reform_actor = { is_alive = yes }
+	}
+	on_trigger_fail = { trigger_event = dm_reform.0231 }
 	left_portrait = scope:dm_reform_actor
 	option = {
 		name = dm_reform.chain_followup.a
@@ -2366,7 +3202,13 @@ dm_reform.3101 = {
 	type = character_event
 	title = dm_reform.chain_followup.t
 	desc = dm_reform.chain_followup.desc
-	theme = court_event
+	theme = court
+	trigger = {
+		exists = scope:dm_reform_story
+		exists = scope:dm_reform_actor
+		scope:dm_reform_actor = { is_alive = yes }
+	}
+	on_trigger_fail = { trigger_event = dm_reform.0231 }
 	left_portrait = scope:dm_reform_actor
 	option = {
 		name = dm_reform.chain_followup.a
@@ -2377,7 +3219,13 @@ dm_reform.2102 = {
 	type = character_event
 	title = dm_reform.chain_followup.t
 	desc = dm_reform.chain_followup.desc
-	theme = court_event
+	theme = court
+	trigger = {
+		exists = scope:dm_reform_story
+		exists = scope:dm_reform_actor
+		scope:dm_reform_actor = { is_alive = yes }
+	}
+	on_trigger_fail = { trigger_event = dm_reform.0231 }
 	left_portrait = scope:dm_reform_actor
 	option = {
 		name = dm_reform.chain_followup.a
@@ -2389,7 +3237,13 @@ dm_reform.3102 = {
 	type = character_event
 	title = dm_reform.chain_followup.t
 	desc = dm_reform.chain_followup.desc
-	theme = court_event
+	theme = court
+	trigger = {
+		exists = scope:dm_reform_story
+		exists = scope:dm_reform_actor
+		scope:dm_reform_actor = { is_alive = yes }
+	}
+	on_trigger_fail = { trigger_event = dm_reform.0231 }
 	left_portrait = scope:dm_reform_actor
 	option = {
 		name = dm_reform.chain_followup.a
@@ -2400,7 +3254,13 @@ dm_reform.2103 = {
 	type = character_event
 	title = dm_reform.chain_followup.t
 	desc = dm_reform.chain_followup.desc
-	theme = court_event
+	theme = court
+	trigger = {
+		exists = scope:dm_reform_story
+		exists = scope:dm_reform_actor
+		scope:dm_reform_actor = { is_alive = yes }
+	}
+	on_trigger_fail = { trigger_event = dm_reform.0231 }
 	left_portrait = scope:dm_reform_actor
 	option = {
 		name = dm_reform.chain_followup.a
@@ -2412,7 +3272,13 @@ dm_reform.3103 = {
 	type = character_event
 	title = dm_reform.chain_followup.t
 	desc = dm_reform.chain_followup.desc
-	theme = court_event
+	theme = court
+	trigger = {
+		exists = scope:dm_reform_story
+		exists = scope:dm_reform_actor
+		scope:dm_reform_actor = { is_alive = yes }
+	}
+	on_trigger_fail = { trigger_event = dm_reform.0231 }
 	left_portrait = scope:dm_reform_actor
 	option = {
 		name = dm_reform.chain_followup.a
@@ -2423,7 +3289,13 @@ dm_reform.2104 = {
 	type = character_event
 	title = dm_reform.chain_followup.t
 	desc = dm_reform.chain_followup.desc
-	theme = court_event
+	theme = court
+	trigger = {
+		exists = scope:dm_reform_story
+		exists = scope:dm_reform_actor
+		scope:dm_reform_actor = { is_alive = yes }
+	}
+	on_trigger_fail = { trigger_event = dm_reform.0231 }
 	left_portrait = scope:dm_reform_actor
 	option = {
 		name = dm_reform.chain_followup.a
@@ -2435,7 +3307,13 @@ dm_reform.3104 = {
 	type = character_event
 	title = dm_reform.chain_followup.t
 	desc = dm_reform.chain_followup.desc
-	theme = court_event
+	theme = court
+	trigger = {
+		exists = scope:dm_reform_story
+		exists = scope:dm_reform_actor
+		scope:dm_reform_actor = { is_alive = yes }
+	}
+	on_trigger_fail = { trigger_event = dm_reform.0231 }
 	left_portrait = scope:dm_reform_actor
 	option = {
 		name = dm_reform.chain_followup.a
@@ -2446,7 +3324,13 @@ dm_reform.2105 = {
 	type = character_event
 	title = dm_reform.chain_followup.t
 	desc = dm_reform.chain_followup.desc
-	theme = court_event
+	theme = court
+	trigger = {
+		exists = scope:dm_reform_story
+		exists = scope:dm_reform_actor
+		scope:dm_reform_actor = { is_alive = yes }
+	}
+	on_trigger_fail = { trigger_event = dm_reform.0231 }
 	left_portrait = scope:dm_reform_actor
 	option = {
 		name = dm_reform.chain_followup.a
@@ -2458,7 +3342,13 @@ dm_reform.3105 = {
 	type = character_event
 	title = dm_reform.chain_followup.t
 	desc = dm_reform.chain_followup.desc
-	theme = court_event
+	theme = court
+	trigger = {
+		exists = scope:dm_reform_story
+		exists = scope:dm_reform_actor
+		scope:dm_reform_actor = { is_alive = yes }
+	}
+	on_trigger_fail = { trigger_event = dm_reform.0231 }
 	left_portrait = scope:dm_reform_actor
 	option = {
 		name = dm_reform.chain_followup.a
@@ -2469,7 +3359,13 @@ dm_reform.2106 = {
 	type = character_event
 	title = dm_reform.chain_followup.t
 	desc = dm_reform.chain_followup.desc
-	theme = court_event
+	theme = court
+	trigger = {
+		exists = scope:dm_reform_story
+		exists = scope:dm_reform_actor
+		scope:dm_reform_actor = { is_alive = yes }
+	}
+	on_trigger_fail = { trigger_event = dm_reform.0231 }
 	left_portrait = scope:dm_reform_actor
 	option = {
 		name = dm_reform.chain_followup.a
@@ -2481,7 +3377,13 @@ dm_reform.3106 = {
 	type = character_event
 	title = dm_reform.chain_followup.t
 	desc = dm_reform.chain_followup.desc
-	theme = court_event
+	theme = court
+	trigger = {
+		exists = scope:dm_reform_story
+		exists = scope:dm_reform_actor
+		scope:dm_reform_actor = { is_alive = yes }
+	}
+	on_trigger_fail = { trigger_event = dm_reform.0231 }
 	left_portrait = scope:dm_reform_actor
 	option = {
 		name = dm_reform.chain_followup.a
@@ -2492,7 +3394,13 @@ dm_reform.2107 = {
 	type = character_event
 	title = dm_reform.chain_followup.t
 	desc = dm_reform.chain_followup.desc
-	theme = court_event
+	theme = court
+	trigger = {
+		exists = scope:dm_reform_story
+		exists = scope:dm_reform_actor
+		scope:dm_reform_actor = { is_alive = yes }
+	}
+	on_trigger_fail = { trigger_event = dm_reform.0231 }
 	left_portrait = scope:dm_reform_actor
 	option = {
 		name = dm_reform.chain_followup.a
@@ -2504,7 +3412,13 @@ dm_reform.3107 = {
 	type = character_event
 	title = dm_reform.chain_followup.t
 	desc = dm_reform.chain_followup.desc
-	theme = court_event
+	theme = court
+	trigger = {
+		exists = scope:dm_reform_story
+		exists = scope:dm_reform_actor
+		scope:dm_reform_actor = { is_alive = yes }
+	}
+	on_trigger_fail = { trigger_event = dm_reform.0231 }
 	left_portrait = scope:dm_reform_actor
 	option = {
 		name = dm_reform.chain_followup.a
@@ -2515,7 +3429,13 @@ dm_reform.2108 = {
 	type = character_event
 	title = dm_reform.chain_followup.t
 	desc = dm_reform.chain_followup.desc
-	theme = court_event
+	theme = court
+	trigger = {
+		exists = scope:dm_reform_story
+		exists = scope:dm_reform_actor
+		scope:dm_reform_actor = { is_alive = yes }
+	}
+	on_trigger_fail = { trigger_event = dm_reform.0231 }
 	left_portrait = scope:dm_reform_actor
 	option = {
 		name = dm_reform.chain_followup.a
@@ -2527,7 +3447,13 @@ dm_reform.3108 = {
 	type = character_event
 	title = dm_reform.chain_followup.t
 	desc = dm_reform.chain_followup.desc
-	theme = court_event
+	theme = court
+	trigger = {
+		exists = scope:dm_reform_story
+		exists = scope:dm_reform_actor
+		scope:dm_reform_actor = { is_alive = yes }
+	}
+	on_trigger_fail = { trigger_event = dm_reform.0231 }
 	left_portrait = scope:dm_reform_actor
 	option = {
 		name = dm_reform.chain_followup.a
@@ -2538,7 +3464,13 @@ dm_reform.2109 = {
 	type = character_event
 	title = dm_reform.chain_followup.t
 	desc = dm_reform.chain_followup.desc
-	theme = court_event
+	theme = court
+	trigger = {
+		exists = scope:dm_reform_story
+		exists = scope:dm_reform_actor
+		scope:dm_reform_actor = { is_alive = yes }
+	}
+	on_trigger_fail = { trigger_event = dm_reform.0231 }
 	left_portrait = scope:dm_reform_actor
 	option = {
 		name = dm_reform.chain_followup.a
@@ -2550,7 +3482,13 @@ dm_reform.3109 = {
 	type = character_event
 	title = dm_reform.chain_followup.t
 	desc = dm_reform.chain_followup.desc
-	theme = court_event
+	theme = court
+	trigger = {
+		exists = scope:dm_reform_story
+		exists = scope:dm_reform_actor
+		scope:dm_reform_actor = { is_alive = yes }
+	}
+	on_trigger_fail = { trigger_event = dm_reform.0231 }
 	left_portrait = scope:dm_reform_actor
 	option = {
 		name = dm_reform.chain_followup.a
@@ -2561,7 +3499,13 @@ dm_reform.2110 = {
 	type = character_event
 	title = dm_reform.chain_followup.t
 	desc = dm_reform.chain_followup.desc
-	theme = court_event
+	theme = court
+	trigger = {
+		exists = scope:dm_reform_story
+		exists = scope:dm_reform_actor
+		scope:dm_reform_actor = { is_alive = yes }
+	}
+	on_trigger_fail = { trigger_event = dm_reform.0231 }
 	left_portrait = scope:dm_reform_actor
 	option = {
 		name = dm_reform.chain_followup.a
@@ -2573,7 +3517,13 @@ dm_reform.3110 = {
 	type = character_event
 	title = dm_reform.chain_followup.t
 	desc = dm_reform.chain_followup.desc
-	theme = court_event
+	theme = court
+	trigger = {
+		exists = scope:dm_reform_story
+		exists = scope:dm_reform_actor
+		scope:dm_reform_actor = { is_alive = yes }
+	}
+	on_trigger_fail = { trigger_event = dm_reform.0231 }
 	left_portrait = scope:dm_reform_actor
 	option = {
 		name = dm_reform.chain_followup.a
@@ -2584,7 +3534,13 @@ dm_reform.2111 = {
 	type = character_event
 	title = dm_reform.chain_followup.t
 	desc = dm_reform.chain_followup.desc
-	theme = court_event
+	theme = court
+	trigger = {
+		exists = scope:dm_reform_story
+		exists = scope:dm_reform_actor
+		scope:dm_reform_actor = { is_alive = yes }
+	}
+	on_trigger_fail = { trigger_event = dm_reform.0231 }
 	left_portrait = scope:dm_reform_actor
 	option = {
 		name = dm_reform.chain_followup.a
@@ -2596,7 +3552,13 @@ dm_reform.3111 = {
 	type = character_event
 	title = dm_reform.chain_followup.t
 	desc = dm_reform.chain_followup.desc
-	theme = court_event
+	theme = court
+	trigger = {
+		exists = scope:dm_reform_story
+		exists = scope:dm_reform_actor
+		scope:dm_reform_actor = { is_alive = yes }
+	}
+	on_trigger_fail = { trigger_event = dm_reform.0231 }
 	left_portrait = scope:dm_reform_actor
 	option = {
 		name = dm_reform.chain_followup.a
@@ -2607,7 +3569,13 @@ dm_reform.2112 = {
 	type = character_event
 	title = dm_reform.chain_followup.t
 	desc = dm_reform.chain_followup.desc
-	theme = court_event
+	theme = court
+	trigger = {
+		exists = scope:dm_reform_story
+		exists = scope:dm_reform_actor
+		scope:dm_reform_actor = { is_alive = yes }
+	}
+	on_trigger_fail = { trigger_event = dm_reform.0231 }
 	left_portrait = scope:dm_reform_actor
 	option = {
 		name = dm_reform.chain_followup.a
@@ -2619,7 +3587,13 @@ dm_reform.3112 = {
 	type = character_event
 	title = dm_reform.chain_followup.t
 	desc = dm_reform.chain_followup.desc
-	theme = court_event
+	theme = court
+	trigger = {
+		exists = scope:dm_reform_story
+		exists = scope:dm_reform_actor
+		scope:dm_reform_actor = { is_alive = yes }
+	}
+	on_trigger_fail = { trigger_event = dm_reform.0231 }
 	left_portrait = scope:dm_reform_actor
 	option = {
 		name = dm_reform.chain_followup.a
@@ -2630,7 +3604,13 @@ dm_reform.2113 = {
 	type = character_event
 	title = dm_reform.chain_followup.t
 	desc = dm_reform.chain_followup.desc
-	theme = court_event
+	theme = court
+	trigger = {
+		exists = scope:dm_reform_story
+		exists = scope:dm_reform_actor
+		scope:dm_reform_actor = { is_alive = yes }
+	}
+	on_trigger_fail = { trigger_event = dm_reform.0231 }
 	left_portrait = scope:dm_reform_actor
 	option = {
 		name = dm_reform.chain_followup.a
@@ -2642,7 +3622,13 @@ dm_reform.3113 = {
 	type = character_event
 	title = dm_reform.chain_followup.t
 	desc = dm_reform.chain_followup.desc
-	theme = court_event
+	theme = court
+	trigger = {
+		exists = scope:dm_reform_story
+		exists = scope:dm_reform_actor
+		scope:dm_reform_actor = { is_alive = yes }
+	}
+	on_trigger_fail = { trigger_event = dm_reform.0231 }
 	left_portrait = scope:dm_reform_actor
 	option = {
 		name = dm_reform.chain_followup.a
@@ -2653,7 +3639,13 @@ dm_reform.2114 = {
 	type = character_event
 	title = dm_reform.chain_followup.t
 	desc = dm_reform.chain_followup.desc
-	theme = court_event
+	theme = court
+	trigger = {
+		exists = scope:dm_reform_story
+		exists = scope:dm_reform_actor
+		scope:dm_reform_actor = { is_alive = yes }
+	}
+	on_trigger_fail = { trigger_event = dm_reform.0231 }
 	left_portrait = scope:dm_reform_actor
 	option = {
 		name = dm_reform.chain_followup.a
@@ -2665,7 +3657,13 @@ dm_reform.3114 = {
 	type = character_event
 	title = dm_reform.chain_followup.t
 	desc = dm_reform.chain_followup.desc
-	theme = court_event
+	theme = court
+	trigger = {
+		exists = scope:dm_reform_story
+		exists = scope:dm_reform_actor
+		scope:dm_reform_actor = { is_alive = yes }
+	}
+	on_trigger_fail = { trigger_event = dm_reform.0231 }
 	left_portrait = scope:dm_reform_actor
 	option = {
 		name = dm_reform.chain_followup.a
@@ -2676,7 +3674,13 @@ dm_reform.2115 = {
 	type = character_event
 	title = dm_reform.chain_followup.t
 	desc = dm_reform.chain_followup.desc
-	theme = court_event
+	theme = court
+	trigger = {
+		exists = scope:dm_reform_story
+		exists = scope:dm_reform_actor
+		scope:dm_reform_actor = { is_alive = yes }
+	}
+	on_trigger_fail = { trigger_event = dm_reform.0231 }
 	left_portrait = scope:dm_reform_actor
 	option = {
 		name = dm_reform.chain_followup.a
@@ -2688,7 +3692,13 @@ dm_reform.3115 = {
 	type = character_event
 	title = dm_reform.chain_followup.t
 	desc = dm_reform.chain_followup.desc
-	theme = court_event
+	theme = court
+	trigger = {
+		exists = scope:dm_reform_story
+		exists = scope:dm_reform_actor
+		scope:dm_reform_actor = { is_alive = yes }
+	}
+	on_trigger_fail = { trigger_event = dm_reform.0231 }
 	left_portrait = scope:dm_reform_actor
 	option = {
 		name = dm_reform.chain_followup.a
@@ -2699,7 +3709,13 @@ dm_reform.2116 = {
 	type = character_event
 	title = dm_reform.chain_followup.t
 	desc = dm_reform.chain_followup.desc
-	theme = court_event
+	theme = court
+	trigger = {
+		exists = scope:dm_reform_story
+		exists = scope:dm_reform_actor
+		scope:dm_reform_actor = { is_alive = yes }
+	}
+	on_trigger_fail = { trigger_event = dm_reform.0231 }
 	left_portrait = scope:dm_reform_actor
 	option = {
 		name = dm_reform.chain_followup.a
@@ -2711,7 +3727,13 @@ dm_reform.3116 = {
 	type = character_event
 	title = dm_reform.chain_followup.t
 	desc = dm_reform.chain_followup.desc
-	theme = court_event
+	theme = court
+	trigger = {
+		exists = scope:dm_reform_story
+		exists = scope:dm_reform_actor
+		scope:dm_reform_actor = { is_alive = yes }
+	}
+	on_trigger_fail = { trigger_event = dm_reform.0231 }
 	left_portrait = scope:dm_reform_actor
 	option = {
 		name = dm_reform.chain_followup.a
@@ -2722,7 +3744,13 @@ dm_reform.2117 = {
 	type = character_event
 	title = dm_reform.chain_followup.t
 	desc = dm_reform.chain_followup.desc
-	theme = court_event
+	theme = court
+	trigger = {
+		exists = scope:dm_reform_story
+		exists = scope:dm_reform_actor
+		scope:dm_reform_actor = { is_alive = yes }
+	}
+	on_trigger_fail = { trigger_event = dm_reform.0231 }
 	left_portrait = scope:dm_reform_actor
 	option = {
 		name = dm_reform.chain_followup.a
@@ -2734,7 +3762,13 @@ dm_reform.3117 = {
 	type = character_event
 	title = dm_reform.chain_followup.t
 	desc = dm_reform.chain_followup.desc
-	theme = court_event
+	theme = court
+	trigger = {
+		exists = scope:dm_reform_story
+		exists = scope:dm_reform_actor
+		scope:dm_reform_actor = { is_alive = yes }
+	}
+	on_trigger_fail = { trigger_event = dm_reform.0231 }
 	left_portrait = scope:dm_reform_actor
 	option = {
 		name = dm_reform.chain_followup.a
@@ -2745,7 +3779,13 @@ dm_reform.2118 = {
 	type = character_event
 	title = dm_reform.chain_followup.t
 	desc = dm_reform.chain_followup.desc
-	theme = court_event
+	theme = court
+	trigger = {
+		exists = scope:dm_reform_story
+		exists = scope:dm_reform_actor
+		scope:dm_reform_actor = { is_alive = yes }
+	}
+	on_trigger_fail = { trigger_event = dm_reform.0231 }
 	left_portrait = scope:dm_reform_actor
 	option = {
 		name = dm_reform.chain_followup.a
@@ -2757,7 +3797,13 @@ dm_reform.3118 = {
 	type = character_event
 	title = dm_reform.chain_followup.t
 	desc = dm_reform.chain_followup.desc
-	theme = court_event
+	theme = court
+	trigger = {
+		exists = scope:dm_reform_story
+		exists = scope:dm_reform_actor
+		scope:dm_reform_actor = { is_alive = yes }
+	}
+	on_trigger_fail = { trigger_event = dm_reform.0231 }
 	left_portrait = scope:dm_reform_actor
 	option = {
 		name = dm_reform.chain_followup.a
@@ -2768,7 +3814,13 @@ dm_reform.2119 = {
 	type = character_event
 	title = dm_reform.chain_followup.t
 	desc = dm_reform.chain_followup.desc
-	theme = court_event
+	theme = court
+	trigger = {
+		exists = scope:dm_reform_story
+		exists = scope:dm_reform_actor
+		scope:dm_reform_actor = { is_alive = yes }
+	}
+	on_trigger_fail = { trigger_event = dm_reform.0231 }
 	left_portrait = scope:dm_reform_actor
 	option = {
 		name = dm_reform.chain_followup.a
@@ -2780,7 +3832,13 @@ dm_reform.3119 = {
 	type = character_event
 	title = dm_reform.chain_followup.t
 	desc = dm_reform.chain_followup.desc
-	theme = court_event
+	theme = court
+	trigger = {
+		exists = scope:dm_reform_story
+		exists = scope:dm_reform_actor
+		scope:dm_reform_actor = { is_alive = yes }
+	}
+	on_trigger_fail = { trigger_event = dm_reform.0231 }
 	left_portrait = scope:dm_reform_actor
 	option = {
 		name = dm_reform.chain_followup.a
@@ -2791,7 +3849,13 @@ dm_reform.2120 = {
 	type = character_event
 	title = dm_reform.chain_followup.t
 	desc = dm_reform.chain_followup.desc
-	theme = court_event
+	theme = court
+	trigger = {
+		exists = scope:dm_reform_story
+		exists = scope:dm_reform_actor
+		scope:dm_reform_actor = { is_alive = yes }
+	}
+	on_trigger_fail = { trigger_event = dm_reform.0231 }
 	left_portrait = scope:dm_reform_actor
 	option = {
 		name = dm_reform.chain_followup.a
@@ -2803,7 +3867,13 @@ dm_reform.3120 = {
 	type = character_event
 	title = dm_reform.chain_followup.t
 	desc = dm_reform.chain_followup.desc
-	theme = court_event
+	theme = court
+	trigger = {
+		exists = scope:dm_reform_story
+		exists = scope:dm_reform_actor
+		scope:dm_reform_actor = { is_alive = yes }
+	}
+	on_trigger_fail = { trigger_event = dm_reform.0231 }
 	left_portrait = scope:dm_reform_actor
 	option = {
 		name = dm_reform.chain_followup.a
@@ -2814,7 +3884,13 @@ dm_reform.2121 = {
 	type = character_event
 	title = dm_reform.chain_followup.t
 	desc = dm_reform.chain_followup.desc
-	theme = court_event
+	theme = court
+	trigger = {
+		exists = scope:dm_reform_story
+		exists = scope:dm_reform_actor
+		scope:dm_reform_actor = { is_alive = yes }
+	}
+	on_trigger_fail = { trigger_event = dm_reform.0231 }
 	left_portrait = scope:dm_reform_actor
 	option = {
 		name = dm_reform.chain_followup.a
@@ -2826,7 +3902,13 @@ dm_reform.3121 = {
 	type = character_event
 	title = dm_reform.chain_followup.t
 	desc = dm_reform.chain_followup.desc
-	theme = court_event
+	theme = court
+	trigger = {
+		exists = scope:dm_reform_story
+		exists = scope:dm_reform_actor
+		scope:dm_reform_actor = { is_alive = yes }
+	}
+	on_trigger_fail = { trigger_event = dm_reform.0231 }
 	left_portrait = scope:dm_reform_actor
 	option = {
 		name = dm_reform.chain_followup.a
@@ -2837,7 +3919,13 @@ dm_reform.2122 = {
 	type = character_event
 	title = dm_reform.chain_followup.t
 	desc = dm_reform.chain_followup.desc
-	theme = court_event
+	theme = court
+	trigger = {
+		exists = scope:dm_reform_story
+		exists = scope:dm_reform_actor
+		scope:dm_reform_actor = { is_alive = yes }
+	}
+	on_trigger_fail = { trigger_event = dm_reform.0231 }
 	left_portrait = scope:dm_reform_actor
 	option = {
 		name = dm_reform.chain_followup.a
@@ -2849,7 +3937,13 @@ dm_reform.3122 = {
 	type = character_event
 	title = dm_reform.chain_followup.t
 	desc = dm_reform.chain_followup.desc
-	theme = court_event
+	theme = court
+	trigger = {
+		exists = scope:dm_reform_story
+		exists = scope:dm_reform_actor
+		scope:dm_reform_actor = { is_alive = yes }
+	}
+	on_trigger_fail = { trigger_event = dm_reform.0231 }
 	left_portrait = scope:dm_reform_actor
 	option = {
 		name = dm_reform.chain_followup.a
@@ -2860,7 +3954,13 @@ dm_reform.2123 = {
 	type = character_event
 	title = dm_reform.chain_followup.t
 	desc = dm_reform.chain_followup.desc
-	theme = court_event
+	theme = court
+	trigger = {
+		exists = scope:dm_reform_story
+		exists = scope:dm_reform_actor
+		scope:dm_reform_actor = { is_alive = yes }
+	}
+	on_trigger_fail = { trigger_event = dm_reform.0231 }
 	left_portrait = scope:dm_reform_actor
 	option = {
 		name = dm_reform.chain_followup.a
@@ -2872,7 +3972,13 @@ dm_reform.3123 = {
 	type = character_event
 	title = dm_reform.chain_followup.t
 	desc = dm_reform.chain_followup.desc
-	theme = court_event
+	theme = court
+	trigger = {
+		exists = scope:dm_reform_story
+		exists = scope:dm_reform_actor
+		scope:dm_reform_actor = { is_alive = yes }
+	}
+	on_trigger_fail = { trigger_event = dm_reform.0231 }
 	left_portrait = scope:dm_reform_actor
 	option = {
 		name = dm_reform.chain_followup.a
@@ -2883,7 +3989,13 @@ dm_reform.2124 = {
 	type = character_event
 	title = dm_reform.chain_followup.t
 	desc = dm_reform.chain_followup.desc
-	theme = court_event
+	theme = court
+	trigger = {
+		exists = scope:dm_reform_story
+		exists = scope:dm_reform_actor
+		scope:dm_reform_actor = { is_alive = yes }
+	}
+	on_trigger_fail = { trigger_event = dm_reform.0231 }
 	left_portrait = scope:dm_reform_actor
 	option = {
 		name = dm_reform.chain_followup.a
@@ -2895,7 +4007,13 @@ dm_reform.3124 = {
 	type = character_event
 	title = dm_reform.chain_followup.t
 	desc = dm_reform.chain_followup.desc
-	theme = court_event
+	theme = court
+	trigger = {
+		exists = scope:dm_reform_story
+		exists = scope:dm_reform_actor
+		scope:dm_reform_actor = { is_alive = yes }
+	}
+	on_trigger_fail = { trigger_event = dm_reform.0231 }
 	left_portrait = scope:dm_reform_actor
 	option = {
 		name = dm_reform.chain_followup.a
@@ -2906,7 +4024,13 @@ dm_reform.2125 = {
 	type = character_event
 	title = dm_reform.chain_followup.t
 	desc = dm_reform.chain_followup.desc
-	theme = court_event
+	theme = court
+	trigger = {
+		exists = scope:dm_reform_story
+		exists = scope:dm_reform_actor
+		scope:dm_reform_actor = { is_alive = yes }
+	}
+	on_trigger_fail = { trigger_event = dm_reform.0231 }
 	left_portrait = scope:dm_reform_actor
 	option = {
 		name = dm_reform.chain_followup.a
@@ -2918,7 +4042,13 @@ dm_reform.3125 = {
 	type = character_event
 	title = dm_reform.chain_followup.t
 	desc = dm_reform.chain_followup.desc
-	theme = court_event
+	theme = court
+	trigger = {
+		exists = scope:dm_reform_story
+		exists = scope:dm_reform_actor
+		scope:dm_reform_actor = { is_alive = yes }
+	}
+	on_trigger_fail = { trigger_event = dm_reform.0231 }
 	left_portrait = scope:dm_reform_actor
 	option = {
 		name = dm_reform.chain_followup.a

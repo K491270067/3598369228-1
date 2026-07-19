@@ -287,6 +287,31 @@ window = {
 								autoresize = yes
 								max_width = 500
 							}
+
+							hbox = {
+								layoutpolicy_horizontal = expanding
+								spacing = 10
+
+								portrait_head_small = {
+									datacontext = "[GetPlayer.MakeScope.Var('dm_reform_pending_reformer').Char]"
+									visible = "[Character.IsValid]"
+								}
+
+								button_standard = {
+									datacontext = "[GetPlayer]"
+									onclick = "[OpenCharacterInteraction( 'dm_reform_select_reformer_interaction', Character.Self )]"
+									text = "dm_reform_select_reformer_button"
+									tooltip = "dm_reform_select_reformer_button_tooltip"
+								}
+
+								button_standard = {
+									datacontext = "[GetPlayer]"
+									visible = "[GetPlayer.MakeScope.Var('dm_reform_pending_reformer').Char.IsValid]"
+									enabled = "[Character.CanSendPlayerInteraction('dm_reform_clear_pending_reformer_interaction')]"
+									onclick = "[Character.SendPlayerInteraction('dm_reform_clear_pending_reformer_interaction')]"
+									text = "dm_reform_self_host_button"
+								}
+							}
 						}
 					}
 				}
@@ -1573,56 +1598,6 @@ window = {
 
 					button_primary = {
 						datacontext = "[GetPlayer]"
-						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'last_will_succession_law' )]"
-						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_last_will_succession_law_interaction')]"
-						onclick = "[Character.SendPlayerInteraction('dm_reform_start_last_will_succession_law_interaction')]"
-						text = "dm_reform_start_button"
-						using = tooltip_above
-						tooltip = "dm_reform_start_button_tooltip"
-					}
-
-					button_primary = {
-						datacontext = "[GetPlayer]"
-						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'diwan_top_liege_succession_law' )]"
-						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_diwan_top_liege_succession_law_interaction')]"
-						onclick = "[Character.SendPlayerInteraction('dm_reform_start_diwan_top_liege_succession_law_interaction')]"
-						text = "dm_reform_start_button"
-						using = tooltip_above
-						tooltip = "dm_reform_start_button_tooltip"
-					}
-
-					button_primary = {
-						datacontext = "[GetPlayer]"
-						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'diwan_governor_succession_law' )]"
-						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_diwan_governor_succession_law_interaction')]"
-						onclick = "[Character.SendPlayerInteraction('dm_reform_start_diwan_governor_succession_law_interaction')]"
-						text = "dm_reform_start_button"
-						using = tooltip_above
-						tooltip = "dm_reform_start_button_tooltip"
-					}
-
-					button_primary = {
-						datacontext = "[GetPlayer]"
-						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'dawla_vassal_succession_law' )]"
-						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_dawla_vassal_succession_law_interaction')]"
-						onclick = "[Character.SendPlayerInteraction('dm_reform_start_dawla_vassal_succession_law_interaction')]"
-						text = "dm_reform_start_button"
-						using = tooltip_above
-						tooltip = "dm_reform_start_button_tooltip"
-					}
-
-					button_primary = {
-						datacontext = "[GetPlayer]"
-						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'diwan_vassal_illegal_succession_law' )]"
-						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_diwan_vassal_illegal_succession_law_interaction')]"
-						onclick = "[Character.SendPlayerInteraction('dm_reform_start_diwan_vassal_illegal_succession_law_interaction')]"
-						text = "dm_reform_start_button"
-						using = tooltip_above
-						tooltip = "dm_reform_start_button_tooltip"
-					}
-
-					button_primary = {
-						datacontext = "[GetPlayer]"
 						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'tribal_authority_0' )]"
 						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_tribal_authority_0_interaction')]"
 						onclick = "[Character.SendPlayerInteraction('dm_reform_start_tribal_authority_0_interaction')]"
@@ -1683,7 +1658,7 @@ types SuccessionLawTypes
 		}
 
 		block "content" {}
-		
+
 		tooltip = "LAW_CHOICE_TOOLTIP"
 
 		text_multi = {
@@ -1705,12 +1680,12 @@ types SuccessionLawTypes
 		}
 
 
-		blockoverride "button_standard_current" 
+		blockoverride "button_standard_current"
 		{
 			visible = "[GuiLaw.IsEnacted]"
 		}
 
-		
+
 
 		icon = {
 			visible = "[And( Not( GuiLaw.IsEnacted ), Not( GuiLaw.CanEnact ) )]"
@@ -1758,7 +1733,7 @@ types SuccessionLawTypes
 				max_width = 280
 			}
 		}
-		
+
 		scrollbox = {
 			min_width = 350
 			layoutpolicy_horizontal = expanding

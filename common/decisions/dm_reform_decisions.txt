@@ -1,8 +1,8 @@
 dm_reform_abort_decision = {
+	decision_group_type = major
 	picture = {
 		reference = "gfx/interface/illustrations/decisions/decision_dynasty_house.dds"
 	}
-	major = yes
 	ai_check_interval = 180
 	is_shown = {
 		any_owned_story = { type = dm_reform_story }
@@ -12,7 +12,7 @@ dm_reform_abort_decision = {
 	}
 	effect = {
 		random_owned_story = {
-			limit = { type = dm_reform_story }
+			limit = { story_type = dm_reform_story }
 			dm_reform_abort_effect = yes
 		}
 	}
@@ -24,8 +24,8 @@ dm_reform_abort_decision = {
 			any_owned_story = {
 				type = dm_reform_story
 				var:dm_reform_support <= -7
+				var:dm_reform_elapsed_days >= 730
 			}
 		}
 	}
 }
-

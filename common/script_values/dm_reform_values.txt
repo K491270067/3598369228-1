@@ -488,3 +488,147 @@ dm_reform_stance_score_value = {
 		add = 3
 	}
 }
+
+dm_reform_ruler_check_diplomacy_value = {
+	value = root.diplomacy
+	multiply = 0.7
+	add = { value = root.stewardship multiply = 0.3 }
+}
+dm_reform_reformer_check_diplomacy_value = {
+	value = scope:dm_reform_story.var:dm_reform_reformer.diplomacy
+	multiply = 0.7
+	add = {
+		value = scope:dm_reform_story.var:dm_reform_reformer.stewardship
+		multiply = 0.3
+	}
+}
+dm_reform_check_diplomacy_value = {
+	value = dm_reform_ruler_check_diplomacy_value
+	if = {
+		limit = {
+			scope:dm_reform_story = { dm_reform_has_reformer_trigger = yes }
+			dm_reform_reformer_check_diplomacy_value > dm_reform_ruler_check_diplomacy_value
+		}
+		value = dm_reform_reformer_check_diplomacy_value
+	}
+}
+
+dm_reform_ruler_check_martial_value = {
+	value = root.martial
+	multiply = 0.7
+	add = { value = root.prowess multiply = 0.3 }
+}
+dm_reform_reformer_check_martial_value = {
+	value = scope:dm_reform_story.var:dm_reform_reformer.martial
+	multiply = 0.7
+	add = {
+		value = scope:dm_reform_story.var:dm_reform_reformer.prowess
+		multiply = 0.3
+	}
+}
+dm_reform_check_martial_value = {
+	value = dm_reform_ruler_check_martial_value
+	if = {
+		limit = {
+			scope:dm_reform_story = { dm_reform_has_reformer_trigger = yes }
+			dm_reform_reformer_check_martial_value > dm_reform_ruler_check_martial_value
+		}
+		value = dm_reform_reformer_check_martial_value
+	}
+}
+
+dm_reform_ruler_check_stewardship_value = {
+	value = root.stewardship
+	multiply = 0.7
+	add = { value = root.learning multiply = 0.3 }
+}
+dm_reform_reformer_check_stewardship_value = {
+	value = scope:dm_reform_story.var:dm_reform_reformer.stewardship
+	multiply = 0.7
+	add = {
+		value = scope:dm_reform_story.var:dm_reform_reformer.learning
+		multiply = 0.3
+	}
+}
+dm_reform_check_stewardship_value = {
+	value = dm_reform_ruler_check_stewardship_value
+	if = {
+		limit = {
+			scope:dm_reform_story = { dm_reform_has_reformer_trigger = yes }
+			dm_reform_reformer_check_stewardship_value > dm_reform_ruler_check_stewardship_value
+		}
+		value = dm_reform_reformer_check_stewardship_value
+	}
+}
+
+dm_reform_ruler_check_intrigue_value = {
+	value = root.intrigue
+	multiply = 0.7
+	add = { value = root.diplomacy multiply = 0.3 }
+}
+dm_reform_reformer_check_intrigue_value = {
+	value = scope:dm_reform_story.var:dm_reform_reformer.intrigue
+	multiply = 0.7
+	add = {
+		value = scope:dm_reform_story.var:dm_reform_reformer.diplomacy
+		multiply = 0.3
+	}
+}
+dm_reform_check_intrigue_value = {
+	value = dm_reform_ruler_check_intrigue_value
+	if = {
+		limit = {
+			scope:dm_reform_story = { dm_reform_has_reformer_trigger = yes }
+			dm_reform_reformer_check_intrigue_value > dm_reform_ruler_check_intrigue_value
+		}
+		value = dm_reform_reformer_check_intrigue_value
+	}
+}
+
+dm_reform_ruler_check_learning_value = {
+	value = root.learning
+	multiply = 0.7
+	add = { value = root.stewardship multiply = 0.3 }
+}
+dm_reform_reformer_check_learning_value = {
+	value = scope:dm_reform_story.var:dm_reform_reformer.learning
+	multiply = 0.7
+	add = {
+		value = scope:dm_reform_story.var:dm_reform_reformer.stewardship
+		multiply = 0.3
+	}
+}
+dm_reform_check_learning_value = {
+	value = dm_reform_ruler_check_learning_value
+	if = {
+		limit = {
+			scope:dm_reform_story = { dm_reform_has_reformer_trigger = yes }
+			dm_reform_reformer_check_learning_value > dm_reform_ruler_check_learning_value
+		}
+		value = dm_reform_reformer_check_learning_value
+	}
+}
+
+dm_reform_ruler_check_prowess_value = {
+	value = root.prowess
+	multiply = 0.7
+	add = { value = root.martial multiply = 0.3 }
+}
+dm_reform_reformer_check_prowess_value = {
+	value = scope:dm_reform_story.var:dm_reform_reformer.prowess
+	multiply = 0.7
+	add = {
+		value = scope:dm_reform_story.var:dm_reform_reformer.martial
+		multiply = 0.3
+	}
+}
+dm_reform_check_prowess_value = {
+	value = dm_reform_ruler_check_prowess_value
+	if = {
+		limit = {
+			scope:dm_reform_story = { dm_reform_has_reformer_trigger = yes }
+			dm_reform_reformer_check_prowess_value > dm_reform_ruler_check_prowess_value
+		}
+		value = dm_reform_reformer_check_prowess_value
+	}
+}

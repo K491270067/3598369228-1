@@ -4,7 +4,7 @@ dm_reform.0001 = {
 	type = character_event
 	title = dm_reform.0001.t
 	desc = dm_reform.0001.desc
-	theme = court_event
+	theme = court
 	left_portrait = root
 	option = {
 		name = dm_reform.0001.a
@@ -15,7 +15,7 @@ dm_reform.0002 = {
 	type = character_event
 	title = dm_reform.0002.t
 	desc = dm_reform.0002.desc
-	theme = court_event
+	theme = court
 	left_portrait = root
 	option = {
 		name = dm_reform.0002.a
@@ -26,7 +26,7 @@ dm_reform.0201 = {
 	type = character_event
 	title = dm_reform.0201.t
 	desc = dm_reform.0201.desc
-	theme = court_event
+	theme = court
 	left_portrait = root
 	option = { name = dm_reform.0201.a }
 }
@@ -35,7 +35,7 @@ dm_reform.0202 = {
 	type = character_event
 	title = dm_reform.0202.t
 	desc = dm_reform.0202.desc
-	theme = court_event
+	theme = court
 	left_portrait = root
 	option = { name = dm_reform.0202.a }
 }
@@ -44,16 +44,124 @@ dm_reform.0203 = {
 	type = character_event
 	title = dm_reform.0203.t
 	desc = dm_reform.0203.desc
-	theme = court_event
+	theme = court
 	left_portrait = root
 	option = { name = dm_reform.0203.a }
+}
+
+dm_reform.0210 = {
+	type = character_event
+	title = dm_reform.0210.t
+	desc = dm_reform.0210.desc
+	theme = court
+	left_portrait = root
+	option = {
+		name = dm_reform.0210.a
+		scope:dm_reform_story = {
+			set_variable = {
+				name = dm_reform_reformer
+				value = root
+			}
+			remove_list_variable = {
+				name = dm_reform_pending_participants
+				target = root
+			}
+			remove_list_variable = {
+				name = dm_reform_supporters
+				target = root
+			}
+			remove_list_variable = {
+				name = dm_reform_opponents
+				target = root
+			}
+			remove_variable = dm_reform_pending_reformer
+		}
+		ai_chance = {
+			base = 40
+			opinion_modifier = {
+				who = root
+				opinion_target = scope:dm_reform_story.story_owner
+				multiplier = 0.3
+			}
+			modifier = { add = 20 root = { has_trait = ambitious } }
+			modifier = { add = 15 root = { has_trait = diligent } }
+			modifier = { add = -25 root = { has_trait = content } }
+			modifier = { add = -20 root = { has_trait = craven } }
+		}
+	}
+	option = {
+		name = dm_reform.0210.b
+		scope:dm_reform_story = { remove_variable = dm_reform_pending_reformer }
+		ai_chance = {
+			base = 60
+			modifier = { factor = 0 root = { has_trait = ambitious } }
+		}
+	}
+}
+
+dm_reform.0220 = {
+	type = character_event
+	title = dm_reform.0220.t
+	desc = dm_reform.0220.desc
+	theme = court
+	left_portrait = root
+
+	trigger = {
+		is_alive = yes
+		exists = scope:dm_reform_story
+		scope:dm_reform_story = {
+			story_type = dm_reform_story
+			is_target_in_variable_list = {
+				name = dm_reform_pending_participants
+				target = root
+			}
+		}
+	}
+
+	option = {
+		name = dm_reform.0220.a
+		hidden_effect = {
+			save_scope_as = dm_reform_participant
+			scope:dm_reform_story = { dm_reform_record_support_effect = yes }
+		}
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = 100
+				root = { dm_reform_participant_supports_trigger = yes }
+			}
+		}
+	}
+	option = {
+		name = dm_reform.0220.b
+		hidden_effect = {
+			save_scope_as = dm_reform_participant
+			scope:dm_reform_story = { dm_reform_record_opposition_effect = yes }
+		}
+		ai_chance = {
+			base = 100
+			modifier = {
+				factor = 0
+				root = { dm_reform_participant_supports_trigger = yes }
+			}
+		}
+	}
+}
+
+dm_reform.0231 = {
+	type = character_event
+	title = dm_reform.0231.t
+	desc = dm_reform.0231.desc
+	theme = court
+	left_portrait = root
+	option = { name = dm_reform.0231.a }
 }
 
 dm_reform.0301 = {
 	type = character_event
 	title = dm_reform.0301.t
 	desc = dm_reform.0301.desc
-	theme = court_event
+	theme = court
 	left_portrait = root
 	option = { name = dm_reform.0301.a }
 }
@@ -62,7 +170,7 @@ dm_reform.0302 = {
 	type = character_event
 	title = dm_reform.0302.t
 	desc = dm_reform.0302.desc
-	theme = court_event
+	theme = court
 	left_portrait = root
 	option = { name = dm_reform.0302.a }
 }
@@ -74,50 +182,50 @@ dm_reform.1000 = {
 		if = {
 			limit = { scope:dm_reform_story = { var:dm_reform_support <= -6 } }
 			random_list = {
-				35 = { trigger_event = dm_reform.1010 }
-				35 = { trigger_event = dm_reform.1011 }
-				20 = { trigger_event = dm_reform.1012 }
-				8 = { trigger_event = dm_reform.1013 }
-				2 = { trigger_event = dm_reform.1014 }
+				35 = { trigger = { scope:dm_reform_story = { dm_reform_crisis_event_available_trigger = yes } } trigger_event = dm_reform.1010 }
+				35 = { trigger = { scope:dm_reform_story = { dm_reform_setback_event_available_trigger = yes } } trigger_event = dm_reform.1011 }
+				20 = { trigger = { scope:dm_reform_story = { dm_reform_calm_event_available_trigger = yes } } trigger_event = dm_reform.1012 }
+				8 = { trigger = { scope:dm_reform_story = { dm_reform_encouragement_event_available_trigger = yes } } trigger_event = dm_reform.1013 }
+				2 = { trigger = { scope:dm_reform_story = { dm_reform_breakthrough_event_available_trigger = yes } } trigger_event = dm_reform.1014 }
 			}
 		}
 		else_if = {
 			limit = { scope:dm_reform_story = { var:dm_reform_support <= -2 } }
 			random_list = {
-				20 = { trigger_event = dm_reform.1010 }
-				30 = { trigger_event = dm_reform.1011 }
-				25 = { trigger_event = dm_reform.1012 }
-				20 = { trigger_event = dm_reform.1013 }
-				5 = { trigger_event = dm_reform.1014 }
+				20 = { trigger = { scope:dm_reform_story = { dm_reform_crisis_event_available_trigger = yes } } trigger_event = dm_reform.1010 }
+				30 = { trigger = { scope:dm_reform_story = { dm_reform_setback_event_available_trigger = yes } } trigger_event = dm_reform.1011 }
+				25 = { trigger = { scope:dm_reform_story = { dm_reform_calm_event_available_trigger = yes } } trigger_event = dm_reform.1012 }
+				20 = { trigger = { scope:dm_reform_story = { dm_reform_encouragement_event_available_trigger = yes } } trigger_event = dm_reform.1013 }
+				5 = { trigger = { scope:dm_reform_story = { dm_reform_breakthrough_event_available_trigger = yes } } trigger_event = dm_reform.1014 }
 			}
 		}
 		else_if = {
 			limit = { scope:dm_reform_story = { var:dm_reform_support <= 1 } }
 			random_list = {
-				10 = { trigger_event = dm_reform.1010 }
-				20 = { trigger_event = dm_reform.1011 }
-				40 = { trigger_event = dm_reform.1012 }
-				20 = { trigger_event = dm_reform.1013 }
-				10 = { trigger_event = dm_reform.1014 }
+				10 = { trigger = { scope:dm_reform_story = { dm_reform_crisis_event_available_trigger = yes } } trigger_event = dm_reform.1010 }
+				20 = { trigger = { scope:dm_reform_story = { dm_reform_setback_event_available_trigger = yes } } trigger_event = dm_reform.1011 }
+				40 = { trigger = { scope:dm_reform_story = { dm_reform_calm_event_available_trigger = yes } } trigger_event = dm_reform.1012 }
+				20 = { trigger = { scope:dm_reform_story = { dm_reform_encouragement_event_available_trigger = yes } } trigger_event = dm_reform.1013 }
+				10 = { trigger = { scope:dm_reform_story = { dm_reform_breakthrough_event_available_trigger = yes } } trigger_event = dm_reform.1014 }
 			}
 		}
 		else_if = {
 			limit = { scope:dm_reform_story = { var:dm_reform_support <= 5 } }
 			random_list = {
-				5 = { trigger_event = dm_reform.1010 }
-				20 = { trigger_event = dm_reform.1011 }
-				25 = { trigger_event = dm_reform.1012 }
-				30 = { trigger_event = dm_reform.1013 }
-				20 = { trigger_event = dm_reform.1014 }
+				5 = { trigger = { scope:dm_reform_story = { dm_reform_crisis_event_available_trigger = yes } } trigger_event = dm_reform.1010 }
+				20 = { trigger = { scope:dm_reform_story = { dm_reform_setback_event_available_trigger = yes } } trigger_event = dm_reform.1011 }
+				25 = { trigger = { scope:dm_reform_story = { dm_reform_calm_event_available_trigger = yes } } trigger_event = dm_reform.1012 }
+				30 = { trigger = { scope:dm_reform_story = { dm_reform_encouragement_event_available_trigger = yes } } trigger_event = dm_reform.1013 }
+				20 = { trigger = { scope:dm_reform_story = { dm_reform_breakthrough_event_available_trigger = yes } } trigger_event = dm_reform.1014 }
 			}
 		}
 		else = {
 			random_list = {
-				2 = { trigger_event = dm_reform.1010 }
-				8 = { trigger_event = dm_reform.1011 }
-				20 = { trigger_event = dm_reform.1012 }
-				35 = { trigger_event = dm_reform.1013 }
-				35 = { trigger_event = dm_reform.1014 }
+				2 = { trigger = { scope:dm_reform_story = { dm_reform_crisis_event_available_trigger = yes } } trigger_event = dm_reform.1010 }
+				8 = { trigger = { scope:dm_reform_story = { dm_reform_setback_event_available_trigger = yes } } trigger_event = dm_reform.1011 }
+				20 = { trigger = { scope:dm_reform_story = { dm_reform_calm_event_available_trigger = yes } } trigger_event = dm_reform.1012 }
+				35 = { trigger = { scope:dm_reform_story = { dm_reform_encouragement_event_available_trigger = yes } } trigger_event = dm_reform.1013 }
+				35 = { trigger = { scope:dm_reform_story = { dm_reform_breakthrough_event_available_trigger = yes } } trigger_event = dm_reform.1014 }
 			}
 		}
 	}
@@ -127,13 +235,34 @@ dm_reform.1010 = {
 	hidden = yes
 	immediate = {
 		random_list = {
-			1 = { trigger_event = dm_reform.1101 }
-			1 = { trigger_event = dm_reform.1102 }
-			1 = { trigger_event = dm_reform.1103 }
-			1 = { trigger_event = dm_reform.1104 }
-			1 = { trigger_event = dm_reform.1105 }
-			1 = { trigger_event = dm_reform.1106 }
-			1 = { trigger_event = dm_reform.1107 }
+			1 = {
+				trigger = { scope:dm_reform_story = { dm_reform_event_available_trigger = { VARIABLE = dm_reform_event_1101_next_day } } }
+				trigger_event = dm_reform.1101
+			}
+			1 = {
+				trigger = { scope:dm_reform_story = { dm_reform_event_available_trigger = { VARIABLE = dm_reform_event_1102_next_day } } }
+				trigger_event = dm_reform.1102
+			}
+			1 = {
+				trigger = { scope:dm_reform_story = { dm_reform_event_available_trigger = { VARIABLE = dm_reform_event_1103_next_day } } }
+				trigger_event = dm_reform.1103
+			}
+			1 = {
+				trigger = { scope:dm_reform_story = { dm_reform_event_available_trigger = { VARIABLE = dm_reform_event_1104_next_day } } }
+				trigger_event = dm_reform.1104
+			}
+			1 = {
+				trigger = { scope:dm_reform_story = { dm_reform_event_available_trigger = { VARIABLE = dm_reform_event_1105_next_day } } }
+				trigger_event = dm_reform.1105
+			}
+			1 = {
+				trigger = { scope:dm_reform_story = { dm_reform_event_available_trigger = { VARIABLE = dm_reform_event_1106_next_day } } }
+				trigger_event = dm_reform.1106
+			}
+			1 = {
+				trigger = { scope:dm_reform_story = { dm_reform_event_available_trigger = { VARIABLE = dm_reform_event_1107_next_day } } }
+				trigger_event = dm_reform.1107
+			}
 		}
 	}
 }
@@ -142,13 +271,34 @@ dm_reform.1011 = {
 	hidden = yes
 	immediate = {
 		random_list = {
-			1 = { trigger_event = dm_reform.1108 }
-			1 = { trigger_event = dm_reform.1109 }
-			1 = { trigger_event = dm_reform.1110 }
-			1 = { trigger_event = dm_reform.1111 }
-			1 = { trigger_event = dm_reform.1112 }
-			1 = { trigger_event = dm_reform.1113 }
-			1 = { trigger_event = dm_reform.1114 }
+			1 = {
+				trigger = { scope:dm_reform_story = { dm_reform_event_available_trigger = { VARIABLE = dm_reform_event_1108_next_day } } }
+				trigger_event = dm_reform.1108
+			}
+			1 = {
+				trigger = { scope:dm_reform_story = { dm_reform_event_available_trigger = { VARIABLE = dm_reform_event_1109_next_day } } }
+				trigger_event = dm_reform.1109
+			}
+			1 = {
+				trigger = { scope:dm_reform_story = { dm_reform_event_available_trigger = { VARIABLE = dm_reform_event_1110_next_day } } }
+				trigger_event = dm_reform.1110
+			}
+			1 = {
+				trigger = { scope:dm_reform_story = { dm_reform_event_available_trigger = { VARIABLE = dm_reform_event_1111_next_day } } }
+				trigger_event = dm_reform.1111
+			}
+			1 = {
+				trigger = { scope:dm_reform_story = { dm_reform_event_available_trigger = { VARIABLE = dm_reform_event_1112_next_day } } }
+				trigger_event = dm_reform.1112
+			}
+			1 = {
+				trigger = { scope:dm_reform_story = { dm_reform_event_available_trigger = { VARIABLE = dm_reform_event_1113_next_day } } }
+				trigger_event = dm_reform.1113
+			}
+			1 = {
+				trigger = { scope:dm_reform_story = { dm_reform_event_available_trigger = { VARIABLE = dm_reform_event_1114_next_day } } }
+				trigger_event = dm_reform.1114
+			}
 		}
 	}
 }
@@ -157,13 +307,34 @@ dm_reform.1012 = {
 	hidden = yes
 	immediate = {
 		random_list = {
-			1 = { trigger_event = dm_reform.1115 }
-			1 = { trigger_event = dm_reform.1116 }
-			1 = { trigger_event = dm_reform.1117 }
-			1 = { trigger_event = dm_reform.1118 }
-			1 = { trigger_event = dm_reform.1119 }
-			1 = { trigger_event = dm_reform.1120 }
-			1 = { trigger_event = dm_reform.1121 }
+			1 = {
+				trigger = { scope:dm_reform_story = { dm_reform_event_available_trigger = { VARIABLE = dm_reform_event_1115_next_day } } }
+				trigger_event = dm_reform.1115
+			}
+			1 = {
+				trigger = { scope:dm_reform_story = { dm_reform_event_available_trigger = { VARIABLE = dm_reform_event_1116_next_day } } }
+				trigger_event = dm_reform.1116
+			}
+			1 = {
+				trigger = { scope:dm_reform_story = { dm_reform_event_available_trigger = { VARIABLE = dm_reform_event_1117_next_day } } }
+				trigger_event = dm_reform.1117
+			}
+			1 = {
+				trigger = { scope:dm_reform_story = { dm_reform_event_available_trigger = { VARIABLE = dm_reform_event_1118_next_day } } }
+				trigger_event = dm_reform.1118
+			}
+			1 = {
+				trigger = { scope:dm_reform_story = { dm_reform_event_available_trigger = { VARIABLE = dm_reform_event_1119_next_day } } }
+				trigger_event = dm_reform.1119
+			}
+			1 = {
+				trigger = { scope:dm_reform_story = { dm_reform_event_available_trigger = { VARIABLE = dm_reform_event_1120_next_day } } }
+				trigger_event = dm_reform.1120
+			}
+			1 = {
+				trigger = { scope:dm_reform_story = { dm_reform_event_available_trigger = { VARIABLE = dm_reform_event_1121_next_day } } }
+				trigger_event = dm_reform.1121
+			}
 		}
 	}
 }
@@ -172,13 +343,34 @@ dm_reform.1013 = {
 	hidden = yes
 	immediate = {
 		random_list = {
-			1 = { trigger_event = dm_reform.1122 }
-			1 = { trigger_event = dm_reform.1123 }
-			1 = { trigger_event = dm_reform.1124 }
-			1 = { trigger_event = dm_reform.1125 }
-			1 = { trigger_event = dm_reform.1126 }
-			1 = { trigger_event = dm_reform.1127 }
-			1 = { trigger_event = dm_reform.1128 }
+			1 = {
+				trigger = { scope:dm_reform_story = { dm_reform_event_available_trigger = { VARIABLE = dm_reform_event_1122_next_day } } }
+				trigger_event = dm_reform.1122
+			}
+			1 = {
+				trigger = { scope:dm_reform_story = { dm_reform_event_available_trigger = { VARIABLE = dm_reform_event_1123_next_day } } }
+				trigger_event = dm_reform.1123
+			}
+			1 = {
+				trigger = { scope:dm_reform_story = { dm_reform_event_available_trigger = { VARIABLE = dm_reform_event_1124_next_day } } }
+				trigger_event = dm_reform.1124
+			}
+			1 = {
+				trigger = { scope:dm_reform_story = { dm_reform_event_available_trigger = { VARIABLE = dm_reform_event_1125_next_day } } }
+				trigger_event = dm_reform.1125
+			}
+			1 = {
+				trigger = { scope:dm_reform_story = { dm_reform_event_available_trigger = { VARIABLE = dm_reform_event_1126_next_day } } }
+				trigger_event = dm_reform.1126
+			}
+			1 = {
+				trigger = { scope:dm_reform_story = { dm_reform_event_available_trigger = { VARIABLE = dm_reform_event_1127_next_day } } }
+				trigger_event = dm_reform.1127
+			}
+			1 = {
+				trigger = { scope:dm_reform_story = { dm_reform_event_available_trigger = { VARIABLE = dm_reform_event_1128_next_day } } }
+				trigger_event = dm_reform.1128
+			}
 		}
 	}
 }
@@ -187,13 +379,34 @@ dm_reform.1014 = {
 	hidden = yes
 	immediate = {
 		random_list = {
-			1 = { trigger_event = dm_reform.1129 }
-			1 = { trigger_event = dm_reform.1130 }
-			1 = { trigger_event = dm_reform.1131 }
-			1 = { trigger_event = dm_reform.1132 }
-			1 = { trigger_event = dm_reform.1133 }
-			1 = { trigger_event = dm_reform.1134 }
-			1 = { trigger_event = dm_reform.1135 }
+			1 = {
+				trigger = { scope:dm_reform_story = { dm_reform_event_available_trigger = { VARIABLE = dm_reform_event_1129_next_day } } }
+				trigger_event = dm_reform.1129
+			}
+			1 = {
+				trigger = { scope:dm_reform_story = { dm_reform_event_available_trigger = { VARIABLE = dm_reform_event_1130_next_day } } }
+				trigger_event = dm_reform.1130
+			}
+			1 = {
+				trigger = { scope:dm_reform_story = { dm_reform_event_available_trigger = { VARIABLE = dm_reform_event_1131_next_day } } }
+				trigger_event = dm_reform.1131
+			}
+			1 = {
+				trigger = { scope:dm_reform_story = { dm_reform_event_available_trigger = { VARIABLE = dm_reform_event_1132_next_day } } }
+				trigger_event = dm_reform.1132
+			}
+			1 = {
+				trigger = { scope:dm_reform_story = { dm_reform_event_available_trigger = { VARIABLE = dm_reform_event_1133_next_day } } }
+				trigger_event = dm_reform.1133
+			}
+			1 = {
+				trigger = { scope:dm_reform_story = { dm_reform_event_available_trigger = { VARIABLE = dm_reform_event_1134_next_day } } }
+				trigger_event = dm_reform.1134
+			}
+			1 = {
+				trigger = { scope:dm_reform_story = { dm_reform_event_available_trigger = { VARIABLE = dm_reform_event_1135_next_day } } }
+				trigger_event = dm_reform.1135
+			}
 		}
 	}
 }
@@ -210,10 +423,12 @@ dm_reform.9050 = {
 			}
 		}
 		random_list = {
-			dm_reform_timeout_success_value = {
+			0 = {
+				modifier = { add = dm_reform_timeout_success_value }
 				scope:dm_reform_story = { dm_reform_success_effect = yes }
 			}
-			dm_reform_timeout_failure_value = {
+			0 = {
+				modifier = { add = dm_reform_timeout_failure_value }
 				scope:dm_reform_story = { dm_reform_failure_effect = yes }
 			}
 		}
@@ -251,7 +466,10 @@ dm_reform.9100 = {
 				}
 				trigger_event = dm_reform.9109
 			}
-			12 = { trigger_event = dm_reform.9110 }
+			12 = {
+				scope:dm_reform_story = { dm_reform_start_opposition_war_effect = yes }
+				trigger_event = dm_reform.9110
+			}
 			10 = { trigger_event = dm_reform.9111 }
 			12 = { trigger_event = dm_reform.9112 }
 		}
@@ -262,11 +480,11 @@ dm_reform.9101 = {
 	type = character_event
 	title = dm_reform.9101.t
 	desc = dm_reform.9101.desc
-	theme = court_event
+	theme = court
 	left_portrait = root
 	option = {
 		name = dm_reform.9101.a
-		set_character_flag = { flag = abdicated_from_throne years = 10 }
+		add_character_flag = { flag = abdicated_from_throne years = 10 }
 		depose = yes
 	}
 	option = {
@@ -282,7 +500,7 @@ dm_reform.9102 = {
 	type = character_event
 	title = dm_reform.9102.t
 	desc = dm_reform.9102.desc
-	theme = court_event
+	theme = court
 	option = {
 		name = dm_reform.extreme.concede
 		add_character_modifier = { modifier = dm_reform_power_curtailed years = 10 }
@@ -293,7 +511,7 @@ dm_reform.9103 = {
 	type = character_event
 	title = dm_reform.9103.t
 	desc = dm_reform.9103.desc
-	theme = court_event
+	theme = court
 	option = {
 		name = dm_reform.extreme.concede
 		add_prestige = -300
@@ -305,7 +523,7 @@ dm_reform.9104 = {
 	type = character_event
 	title = dm_reform.9104.t
 	desc = dm_reform.9104.desc
-	theme = court_event
+	theme = court
 	option = {
 		name = dm_reform.extreme.apologize
 		add_piety = -250
@@ -319,12 +537,12 @@ dm_reform.9105 = {
 	type = character_event
 	title = dm_reform.9105.t
 	desc = dm_reform.9105.desc
-	theme = court_event
+	theme = court
 	left_portrait = scope:dm_reform_reformer
 	option = {
 		name = dm_reform.extreme.dismiss
 		scope:dm_reform_reformer = {
-			add_opinion = { target = root modifier = betrayed_opinion opinion = -60 years = 20 }
+			add_opinion = { target = root modifier = disappointed_opinion opinion = -60 years = 20 }
 		}
 	}
 	option = {
@@ -339,7 +557,7 @@ dm_reform.9106 = {
 	type = character_event
 	title = dm_reform.9106.t
 	desc = dm_reform.9106.desc
-	theme = court_event
+	theme = court
 	left_portrait = scope:dm_reform_reformer
 	option = {
 		name = dm_reform.extreme.arrest
@@ -357,7 +575,7 @@ dm_reform.9107 = {
 	type = character_event
 	title = dm_reform.9107.t
 	desc = dm_reform.9107.desc
-	theme = court_event
+	theme = court
 	left_portrait = scope:dm_reform_reformer
 	option = {
 		name = dm_reform.extreme.exile
@@ -373,7 +591,7 @@ dm_reform.9108 = {
 	type = character_event
 	title = dm_reform.9108.t
 	desc = dm_reform.9108.desc
-	theme = court_event
+	theme = court
 	left_portrait = scope:dm_reform_reformer
 	option = {
 		name = dm_reform.extreme.execute
@@ -391,7 +609,7 @@ dm_reform.9109 = {
 	type = character_event
 	title = dm_reform.9109.t
 	desc = dm_reform.9109.desc
-	theme = court_event
+	theme = court
 	left_portrait = scope:dm_reform_reformer
 	option = {
 		name = dm_reform.extreme.refuse
@@ -405,7 +623,7 @@ dm_reform.9110 = {
 	type = character_event
 	title = dm_reform.9110.t
 	desc = dm_reform.9110.desc
-	theme = court_event
+	theme = court
 	option = {
 		name = dm_reform.extreme.resist
 		add_character_modifier = { modifier = dm_reform_civil_war_pressure years = 10 }
@@ -416,7 +634,7 @@ dm_reform.9111 = {
 	type = character_event
 	title = dm_reform.9111.t
 	desc = dm_reform.9111.desc
-	theme = court_event
+	theme = court
 	option = {
 		name = dm_reform.extreme.endure
 		add_character_modifier = { modifier = dm_reform_administrative_paralysis years = 10 }
@@ -427,7 +645,7 @@ dm_reform.9112 = {
 	type = character_event
 	title = dm_reform.9112.t
 	desc = dm_reform.9112.desc
-	theme = court_event
+	theme = court
 	option = {
 		name = dm_reform.extreme.endure
 		every_vassal = {
@@ -485,7 +703,7 @@ dm_reform.9201 = {
 	type = character_event
 	title = dm_reform.9201.t
 	desc = dm_reform.9201.desc
-	theme = court_event
+	theme = court
 	left_portrait = scope:dm_reform_reformer
 	option = {
 		name = dm_reform.9201.a
@@ -503,7 +721,7 @@ dm_reform.9202 = {
 	type = character_event
 	title = dm_reform.9202.t
 	desc = dm_reform.9202.desc
-	theme = court_event
+	theme = court
 	left_portrait = scope:dm_reform_reformer
 	option = {
 		name = dm_reform.9202.a
@@ -515,11 +733,11 @@ dm_reform.9203 = {
 	type = character_event
 	title = dm_reform.9203.t
 	desc = dm_reform.9203.desc
-	theme = court_event
+	theme = court
 	left_portrait = scope:dm_reform_reformer
 	option = {
 		name = dm_reform.9203.a
-		add_gold = -150
+		remove_short_term_gold = 150
 		scope:dm_reform_reformer = { add_gold = 150 }
 	}
 	option = {
@@ -534,7 +752,7 @@ dm_reform.9204 = {
 	type = character_event
 	title = dm_reform.9204.t
 	desc = dm_reform.9204.desc
-	theme = court_event
+	theme = court
 	left_portrait = scope:dm_reform_reformer
 	immediate = {
 		if = {
@@ -564,7 +782,7 @@ dm_reform.9205 = {
 	type = character_event
 	title = dm_reform.9205.t
 	desc = dm_reform.9205.desc
-	theme = court_event
+	theme = court
 	left_portrait = scope:dm_reform_reformer
 	option = { name = dm_reform.9205.a }
 }
@@ -573,7 +791,7 @@ dm_reform.9001 = {
 	type = character_event
 	title = dm_reform.9001.t
 	desc = dm_reform.9001.desc
-	theme = court_event
+	theme = court
 	left_portrait = root
 	option = { name = dm_reform.9001.a }
 }
@@ -582,7 +800,7 @@ dm_reform.9002 = {
 	type = character_event
 	title = dm_reform.9002.t
 	desc = dm_reform.9002.desc
-	theme = court_event
+	theme = court
 	left_portrait = root
 	option = { name = dm_reform.9002.a }
 }
@@ -591,7 +809,7 @@ dm_reform.9003 = {
 	type = character_event
 	title = dm_reform.9003.t
 	desc = dm_reform.9003.desc
-	theme = court_event
+	theme = court
 	left_portrait = root
 	option = { name = dm_reform.9003.a }
 }
@@ -600,7 +818,7 @@ dm_reform.9004 = {
 	type = character_event
 	title = dm_reform.9004.t
 	desc = dm_reform.9004.desc
-	theme = court_event
+	theme = court
 	left_portrait = root
 	option = { name = dm_reform.9004.a }
 }
