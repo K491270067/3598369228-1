@@ -6153,14 +6153,9 @@ house_xin840 = {
 	dynasty = xin840
 }
 
-house_xin841 = {
-	name = "dynn_xin841"
-	dynasty = xin841
-}
-
 house_xin842 = {
 	name = "dynn_xin842"
-	dynasty = xin842
+	dynasty = xin840
 }
 
 house_xin843 = {
@@ -6511,4 +6506,14 @@ house_xin911 = {
 house_xin912 = {
 	name = "dynn_xin912"
 	dynasty = xin912
+}
+
+house_xin913 = {
+	name = "dynn_xin913"
+	dynasty = xin913
+}
+
+house_xin914 = {
+	name = "dynn_xin914"
+	dynasty = xin913
 }
